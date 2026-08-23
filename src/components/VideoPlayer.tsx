@@ -28,32 +28,137 @@ export const VideoPlayer: React.FC<VideoPlayerProps> = ({
   const [qualities, setQualities] = useState<{ height: number; index: number }[]>([]);
   const [currentQuality, setCurrentQuality] = useState<number>(-1);
   const [showQualityMenu, setShowQualityMenu] = useState<boolean>(false);
+  const [playbackSpeed, setPlaybackSpeed] = useState<number>(1);
+  const [showSpeedMenu, setShowSpeedMenu] = useState<boolean>(false);
   const [selectedServerIndex, setSelectedServerIndex] = useState<number>(0);
+  const [resolvedStreamUrl, setResolvedStreamUrl] = useState<string | null>(null);
+  const [streamLoading, setStreamLoading] = useState<boolean>(false);
+  const [streamError, setStreamError] = useState<string | null>(null);
 
-  // Reset selected server when lecture item changes
+  const speedOptions = [0.5, 0.75, 1, 1.25, 1.5, 1.75, 2, 2.5, 3];
+
+  const handleSpeedChange = (spd: number) => {
+    setPlaybackSpeed(spd);
+    if (videoRef.current) {
+      videoRef.current.playbackRate = spd;
+    }
+    setShowSpeedMenu(false);
+  };
+
+  // Reset server selection when lecture changes
   useEffect(() => {
     setSelectedServerIndex(0);
+    setResolvedStreamUrl(null);
+    setStreamError(null);
   }, [currentIndex]);
 
-  const servers: ServerOption[] = currentItem?.servers && currentItem.servers.length > 0
-    ? currentItem.servers
-    : [{ name: 'Server 1', url: currentItem?.url || '', type: currentItem?.type }];
+  // Build servers list from item
+  const servers: ServerOption[] = (() => {
+    if (currentItem?.servers && currentItem.servers.length > 0) {
+      return currentItem.servers;
+    }
+    return [
+      { name: 'Server 1', url: currentItem?.url || '', type: currentItem?.type },
+    ];
+  })();
 
   const activeServer = servers[selectedServerIndex] || servers[0];
   const activeUrl = activeServer?.url || currentItem?.url || '';
 
-  const getYouTubeID = (url: string) => {
-    const m = url.match(/(?:v=|youtu\.be\/|live\/)([a-zA-Z0-9_-]{11})/);
+  // Extract Vidmoly file code from embed URL
+  function extractVidmolyCode(url: string): string | null {
+    const m = url.match(/(?:embed-|w\/|vidmoly\.(?:net|me)\/)([a-zA-Z0-9]{10,16})/);
     return m ? m[1] : null;
-  };
+  }
 
+  // Extract Earnvids file code from morencius URL
+  function extractEarnvidsCode(url: string): string | null {
+    const m = url.match(/morencius\.com\/v\/([a-zA-Z0-9]{10,16})/);
+    return m ? m[1] : null;
+  }
+
+  // Determine if we need to resolve stream URL via API
+  const isVidmolyUrl = activeUrl.includes('vidmoly.');
+  const isEarnvidsUrl = activeUrl.includes('morencius.') || activeUrl.includes('earnvids.');
+  const isYouTubeUrl = activeUrl.includes('youtube.') || activeUrl.includes('youtu.be');
+  const isHlsUrl = activeUrl.includes('.m3u8');
+  const needsApiResolution = (isVidmolyUrl || isEarnvidsUrl) && !isHlsUrl;
+
+  // Resolve stream URL via our server-side API
+  useEffect(() => {
+    if (!needsApiResolution || !activeUrl) return;
+
+    setStreamLoading(true);
+    setResolvedStreamUrl(null);
+    setStreamError(null);
+
+    let code: string | null = null;
+    let provider = 'vidmoly';
+
+    if (isVidmolyUrl) {
+      code = extractVidmolyCode(activeUrl);
+    } else if (isEarnvidsUrl) {
+      code = extractEarnvidsCode(activeUrl);
+      provider = 'earnvids';
+    }
+
+    if (!code) {
+      setStreamLoading(false);
+      return;
+    }
+
+    fetch(`/api/stream?code=${code}&provider=${provider}`)
+      .then((r) => r.json())
+      .then((data) => {
+        if (data.streamUrl) {
+          setResolvedStreamUrl(data.streamUrl);
+        }
+        setStreamLoading(false);
+      })
+      .catch(() => {
+        setStreamLoading(false);
+      });
+  }, [activeUrl, selectedServerIndex]);
+
+  // Load HLS when streamUrl is resolved
+  const hlsUrl = isHlsUrl ? activeUrl : resolvedStreamUrl;
+
+  useEffect(() => {
+    if (!hlsUrl || !videoRef.current) return;
+
+    const video = videoRef.current;
+    setQualities([]);
+    setCurrentQuality(-1);
+    setIsPlaying(false);
+
+    if (Hls.isSupported()) {
+      if (hlsRef.current) hlsRef.current.destroy();
+      const hls = new Hls({ enableWorker: true, maxBufferLength: 30 });
+      hlsRef.current = hls;
+      hls.loadSource(hlsUrl);
+      hls.attachMedia(video);
+      hls.on(Hls.Events.MANIFEST_PARSED, (_, data) => {
+        const levels = data.levels.map((lvl, idx) => ({ height: lvl.height, index: idx }));
+        setQualities(levels);
+        video.play().catch(() => {});
+      });
+      hls.on(Hls.Events.ERROR, (_, data) => {
+        if (data.fatal) {
+          setStreamError('Playback error. Please try another server.');
+        }
+      });
+      return () => { hls.destroy(); hlsRef.current = null; };
+    } else if (video.canPlayType('application/vnd.apple.mpegurl')) {
+      video.src = hlsUrl;
+      video.play().catch(() => {});
+    }
+  }, [hlsUrl]);
+
+  // Play/pause/skip handlers
   const togglePlayPause = useCallback(() => {
     if (!videoRef.current) return;
-    if (videoRef.current.paused) {
-      videoRef.current.play().catch(() => {});
-    } else {
-      videoRef.current.pause();
-    }
+    if (videoRef.current.paused) videoRef.current.play().catch(() => {});
+    else videoRef.current.pause();
   }, []);
 
   const skipVideo = useCallback((seconds: number) => {
@@ -65,247 +170,358 @@ export const VideoPlayer: React.FC<VideoPlayerProps> = ({
   const toggleFullscreen = useCallback(() => {
     const target = containerRef.current || videoRef.current;
     if (!target) return;
-
-    if (!document.fullscreenElement) {
-      if (target.requestFullscreen) target.requestFullscreen();
-    } else {
-      if (document.exitFullscreen) document.exitFullscreen();
-    }
+    if (!document.fullscreenElement) target.requestFullscreen?.();
+    else document.exitFullscreen?.();
   }, []);
-
-  useEffect(() => {
-    if (!currentItem || currentItem.type !== 'hls' || !videoRef.current) return;
-
-    const video = videoRef.current;
-    setQualities([]);
-    setCurrentQuality(-1);
-
-    if (Hls.isSupported()) {
-      if (hlsRef.current) {
-        hlsRef.current.destroy();
-      }
-      const hls = new Hls({ enableWorker: true, maxBufferLength: 30 });
-      hlsRef.current = hls;
-
-      hls.loadSource(activeUrl);
-      hls.attachMedia(video);
-
-      hls.on(Hls.Events.MANIFEST_PARSED, (_, data) => {
-        const levels = data.levels.map((lvl, idx) => ({ height: lvl.height, index: idx }));
-        setQualities(levels);
-        video.play().catch(() => {});
-      });
-
-      return () => {
-        hls.destroy();
-        hlsRef.current = null;
-      };
-    } else if (video.canPlayType('application/vnd.apple.mpegurl')) {
-      video.src = activeUrl;
-      video.play().catch(() => {});
-    }
-  }, [currentItem, activeUrl]);
 
   useEffect(() => {
     const video = videoRef.current;
     if (!video) return;
-
     const onPlay = () => setIsPlaying(true);
     const onPause = () => setIsPlaying(false);
-
     video.addEventListener('play', onPlay);
     video.addEventListener('pause', onPause);
+    return () => { video.removeEventListener('play', onPlay); video.removeEventListener('pause', onPause); };
+  }, [hlsUrl]);
 
-    return () => {
-      video.removeEventListener('play', onPlay);
-      video.removeEventListener('pause', onPause);
-    };
-  }, [currentItem]);
-
+  // Anti-piracy: Block keyboard shortcuts (Save page, Inspect, etc.)
   useEffect(() => {
     const handleKeyDown = (e: KeyboardEvent) => {
-      const tag = (e.target as HTMLElement)?.tagName?.toLowerCase();
-      if (tag === 'input' || tag === 'textarea' || tag === 'select' || tag === 'button') return;
+      // Prevent Ctrl+S, Ctrl+U, F12
+      if ((e.ctrlKey || e.metaKey) && (e.key === 's' || e.key === 'S' || e.key === 'u' || e.key === 'U')) {
+        e.preventDefault();
+        return;
+      }
 
+      const tag = (e.target as HTMLElement)?.tagName?.toLowerCase();
+      if (['input', 'textarea', 'select', 'button'].includes(tag)) return;
       switch (e.key) {
-        case ' ':
-          e.preventDefault();
-          togglePlayPause();
-          break;
-        case 'f':
-        case 'F':
-          e.preventDefault();
-          toggleFullscreen();
-          break;
-        case 'ArrowLeft':
-          e.preventDefault();
-          skipVideo(-10);
-          break;
-        case 'ArrowRight':
-          e.preventDefault();
-          skipVideo(10);
-          break;
-        case 'Escape':
-          onClose();
-          break;
+        case ' ': e.preventDefault(); togglePlayPause(); break;
+        case 'f': case 'F': e.preventDefault(); toggleFullscreen(); break;
+        case 'ArrowLeft': e.preventDefault(); skipVideo(-10); break;
+        case 'ArrowRight': e.preventDefault(); skipVideo(10); break;
+        case 'Escape': onClose(); break;
       }
     };
-
     window.addEventListener('keydown', handleKeyDown);
     return () => window.removeEventListener('keydown', handleKeyDown);
   }, [togglePlayPause, skipVideo, toggleFullscreen, onClose]);
 
   if (!currentItem) return null;
-  const ytId = currentItem.type === 'youtube' ? getYouTubeID(activeUrl) : null;
-  const isEmbedableExternal = activeUrl.includes('vidmoly.me/') || activeUrl.includes('morencius.com/') || activeUrl.includes('/w/') || activeUrl.includes('/v/');
 
-  const handleDirectDownload = () => {
-    const dlTarget = currentItem.downloadUrl || activeUrl;
-    window.open(dlTarget, '_blank');
-  };
+  const ytId = isYouTubeUrl
+    ? activeUrl.match(/(?:v=|youtu\.be\/|live\/)([a-zA-Z0-9_-]{11})/)?.[1] ?? null
+    : null;
+
+  // Determine iframe source if HLS direct stream is not active
+  const embedIframeUrl = (() => {
+    if (isVidmolyUrl) {
+      const code = extractVidmolyCode(activeUrl);
+      return code ? `https://vidmoly.net/embed-${code}.html` : activeUrl;
+    }
+    if (isEarnvidsUrl) {
+      const code = extractEarnvidsCode(activeUrl);
+      return code ? `https://morencius.com/v/${code}` : activeUrl;
+    }
+    return activeUrl;
+  })();
+
+  const showVideo = Boolean(hlsUrl);
+  const showYoutube = Boolean(ytId);
+  const showLoading = streamLoading;
+  const showIframeFallback = !showVideo && !showYoutube && !showLoading;
 
   return (
-    <div id="player-modal" className="open" role="dialog" aria-modal="true" aria-label="Video Player">
-      <div className="player-backdrop" id="player-backdrop" onClick={onClose}></div>
-      <div className="player-box" id="player-box" ref={containerRef}>
-        <div className="player-top-bar" style={{ flexWrap: 'wrap', gap: '8px' }}>
-          <div className="player-info" style={{ flex: 1, minWidth: '200px' }}>
-            <div className="player-course-label" id="player-course-label">{courseName}</div>
-            <div className="player-lecture-title" id="player-lecture-title">{currentItem.label}</div>
+    <div
+      id="player-modal"
+      className="open"
+      role="dialog"
+      aria-modal="true"
+      aria-label="Video Player"
+    >
+      <div className="player-backdrop" onClick={onClose} />
+      <div className="player-box" ref={containerRef}>
+        {/* TOP BAR */}
+        <div
+          className="player-top-bar"
+          style={{
+            display: 'flex',
+            alignItems: 'center',
+            justifyContent: 'space-between',
+            padding: '14px 20px',
+            borderBottom: '1px solid rgba(255,255,255,0.08)',
+            background: 'rgba(0,0,0,0.4)',
+            gap: '12px',
+          }}
+        >
+          <div style={{ flex: 1, minWidth: 0 }}>
+            <div
+              style={{
+                fontSize: '11px',
+                textTransform: 'uppercase',
+                letterSpacing: '0.6px',
+                color: 'var(--accent)',
+                fontWeight: 600,
+                marginBottom: '2px',
+              }}
+            >
+              {courseName}
+            </div>
+            <div
+              style={{
+                fontSize: '14px',
+                fontWeight: 600,
+                color: '#fff',
+                whiteSpace: 'nowrap',
+                overflow: 'hidden',
+                textOverflow: 'ellipsis',
+              }}
+            >
+              {currentItem.label}
+            </div>
           </div>
 
-          {/* Server Switcher */}
+          {/* SERVER SWITCHER */}
           {servers.length > 1 && (
-            <div className="server-switcher" style={{ display: 'flex', gap: '6px', alignItems: 'center' }}>
-              <span style={{ fontSize: '11px', opacity: 0.7, textTransform: 'uppercase', letterSpacing: '0.5px' }}>Servers:</span>
+            <div
+              style={{
+                display: 'flex',
+                alignItems: 'center',
+                gap: '4px',
+                background: 'rgba(255,255,255,0.08)',
+                padding: '3px 4px',
+                borderRadius: '100px',
+                border: '1px solid rgba(255,255,255,0.12)'
+              }}
+            >
               {servers.map((srv, idx) => (
                 <button
                   key={idx}
-                  onClick={() => setSelectedServerIndex(idx)}
-                  className={`server-btn ${selectedServerIndex === idx ? 'active' : ''}`}
+                  onClick={() => {
+                    setSelectedServerIndex(idx);
+                    setResolvedStreamUrl(null);
+                    setStreamError(null);
+                  }}
                   style={{
-                    padding: '4px 10px',
-                    fontSize: '12px',
-                    fontWeight: 600,
-                    borderRadius: 'var(--r-md)',
-                    border: '1px solid var(--border)',
-                    background: selectedServerIndex === idx ? 'var(--accent)' : 'var(--bg-card)',
-                    color: selectedServerIndex === idx ? '#ffffff' : 'var(--text)',
+                    padding: '5px 12px',
+                    fontSize: '11px',
+                    fontWeight: 700,
+                    letterSpacing: '0.3px',
+                    borderRadius: '100px',
+                    border: 'none',
+                    background: selectedServerIndex === idx ? 'var(--accent)' : 'transparent',
+                    color: selectedServerIndex === idx ? '#fff' : 'rgba(255,255,255,0.6)',
                     cursor: 'pointer',
                     transition: 'all 0.2s ease',
+                    whiteSpace: 'nowrap',
                   }}
                 >
-                  Server {idx + 1}
+                  {srv.name || `Server ${idx + 1}`}
                 </button>
               ))}
             </div>
           )}
 
-          <button className="player-close-btn" onClick={onClose} title="Close (Esc)">
-            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5">
+          <button
+            onClick={onClose}
+            style={{
+              background: 'none',
+              border: 'none',
+              color: 'rgba(255,255,255,0.6)',
+              cursor: 'pointer',
+              padding: '4px',
+              borderRadius: '6px',
+            }}
+          >
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5">
               <path d="M18 6 6 18M6 6l12 12" />
             </svg>
           </button>
         </div>
 
-        <div className="player-screen" id="player-screen">
-          {currentItem.type === 'hls' ? (
-            <video ref={videoRef} controls autoPlay playsInline />
-          ) : ytId ? (
+        {/* PLAYER SCREEN */}
+        <div
+          style={{
+            width: '100%',
+            aspectRatio: '16/9',
+            background: '#000',
+            position: 'relative',
+            display: 'flex',
+            alignItems: 'center',
+            justifyContent: 'center',
+            overflow: 'hidden',
+          }}
+        >
+          {showLoading && (
+            <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', gap: '16px', color: '#fff' }}>
+              <div
+                style={{
+                  width: '40px',
+                  height: '40px',
+                  border: '3px solid rgba(255,255,255,0.15)',
+                  borderTopColor: 'var(--accent)',
+                  borderRadius: '50%',
+                  animation: 'spin 0.8s linear infinite',
+                }}
+              />
+              <span style={{ fontSize: '14px', opacity: 0.7 }}>Loading secure stream…</span>
+            </div>
+          )}
+
+          {showYoutube && (
             <iframe
               src={`https://www.youtube.com/embed/${ytId}?autoplay=1&rel=0&modestbranding=1`}
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
               allowFullScreen
+              style={{ position: 'absolute', inset: 0, width: '100%', height: '100%', border: 'none' }}
             />
-          ) : isEmbedableExternal ? (
+          )}
+
+          {showVideo && (
+            <video
+              ref={videoRef}
+              controls
+              controlsList="nodownload"
+              disablePictureInPicture
+              autoPlay
+              playsInline
+              style={{ position: 'absolute', inset: 0, width: '100%', height: '100%', background: '#000' }}
+            />
+          )}
+
+          {showIframeFallback && (
             <iframe
-              src={activeUrl}
+              src={embedIframeUrl}
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
               allowFullScreen
-              style={{ width: '100%', height: '100%', border: 'none' }}
+              style={{ position: 'absolute', inset: 0, width: '100%', height: '100%', border: 'none' }}
             />
-          ) : (
-            <div className="player-ext-msg">
-              <p>This lecture is hosted on an external site.</p>
-              <a href={activeUrl} target="_blank" rel="noopener noreferrer" className="open-ext-btn">
-                Open Content ↗
-              </a>
-            </div>
           )}
         </div>
 
-        <div className="player-controls">
-          <button
-            className="player-nav-btn"
-            id="btn-prev"
-            disabled={currentIndex === 0}
-            onClick={() => onNavigate(currentIndex - 1)}
-            title="Previous Lecture"
-          >
-            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5">
-              <path d="M19 12H5M12 19l-7-7 7-7" />
-            </svg>
-            <span className="ctrl-label">Prev</span>
-          </button>
-
-          <button
-            className="player-nav-btn player-skip-btn"
-            id="btn-skip-back"
-            onClick={() => skipVideo(-10)}
-            title="Skip back 10s (←)"
-          >
-            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-              <path d="M11 17l-5-5 5-5" />
-              <path d="M18 17l-5-5 5-5" />
-            </svg>
-            <span className="ctrl-label">10s</span>
-          </button>
-
-          <button
-            className="player-nav-btn player-play-btn"
-            id="btn-play-pause"
-            onClick={togglePlayPause}
-            title="Play / Pause (Space)"
-          >
-            {isPlaying ? (
-              <svg id="icon-pause" width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
-                <rect x="6" y="4" width="4" height="16" />
-                <rect x="14" y="4" width="4" height="16" />
+        {/* CONTROLS BAR (For custom video element) */}
+        {showVideo && (
+          <div className="player-controls">
+            <button
+              className="player-nav-btn"
+              disabled={currentIndex === 0}
+              onClick={() => onNavigate(currentIndex - 1)}
+              title="Previous (←)"
+            >
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5">
+                <path d="M19 12H5M12 19l-7-7 7-7" />
               </svg>
-            ) : (
-              <svg id="icon-play" width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
-                <polygon points="5,3 19,12 5,21" />
+              <span className="ctrl-label">Prev</span>
+            </button>
+
+            <button className="player-nav-btn player-skip-btn" onClick={() => skipVideo(-10)} title="-10s">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+                <path d="M11 17l-5-5 5-5" />
+                <path d="M18 17l-5-5 5-5" />
               </svg>
+              <span className="ctrl-label">10s</span>
+            </button>
+
+            <button className="player-nav-btn player-play-btn" onClick={togglePlayPause} title="Play/Pause (Space)">
+              {isPlaying ? (
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+                  <rect x="6" y="4" width="4" height="16" />
+                  <rect x="14" y="4" width="4" height="16" />
+                </svg>
+              ) : (
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+                  <polygon points="5,3 19,12 5,21" />
+                </svg>
+              )}
+            </button>
+
+            <button className="player-nav-btn player-skip-btn" onClick={() => skipVideo(10)} title="+10s">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+                <path d="M13 17l5-5-5-5" />
+                <path d="M6 17l5-5-5-5" />
+              </svg>
+              <span className="ctrl-label">10s</span>
+            </button>
+
+            {qualities.length > 0 && (
+              <div style={{ position: 'relative' }}>
+                <button className="player-nav-btn" onClick={() => setShowQualityMenu((q) => !q)}>
+                  {currentQuality === -1 ? 'Auto' : `${qualities[currentQuality]?.height}p`}
+                </button>
+                {showQualityMenu && (
+                  <div
+                    style={{
+                      position: 'absolute',
+                      bottom: '100%',
+                      left: '50%',
+                      transform: 'translateX(-50%)',
+                      background: 'var(--bg-card)',
+                      border: '1px solid var(--border)',
+                      borderRadius: 'var(--r-md)',
+                      padding: '8px',
+                      marginBottom: '8px',
+                      zIndex: 100,
+                      minWidth: '90px',
+                    }}
+                  >
+                    <button
+                      className="quality-opt"
+                      style={{
+                        display: 'block',
+                        width: '100%',
+                        padding: '5px 10px',
+                        textAlign: 'left',
+                        fontSize: '12px',
+                      }}
+                      onClick={() => {
+                        if (hlsRef.current) hlsRef.current.currentLevel = -1;
+                        setCurrentQuality(-1);
+                        setShowQualityMenu(false);
+                      }}
+                    >
+                      Auto
+                    </button>
+                    {qualities.map((q) => (
+                      <button
+                        key={q.index}
+                        className="quality-opt"
+                        style={{
+                          display: 'block',
+                          width: '100%',
+                          padding: '5px 10px',
+                          textAlign: 'left',
+                          fontSize: '12px',
+                        }}
+                        onClick={() => {
+                          if (hlsRef.current) hlsRef.current.currentLevel = q.index;
+                          setCurrentQuality(q.index);
+                          setShowQualityMenu(false);
+                        }}
+                      >
+                        {q.height}p
+                      </button>
+                    ))}
+                  </div>
+                )}
+              </div>
             )}
-          </button>
 
-          <button
-            className="player-nav-btn player-skip-btn"
-            id="btn-skip-fwd"
-            onClick={() => skipVideo(10)}
-            title="Skip forward 10s (→)"
-          >
-            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-              <path d="M13 17l5-5-5-5" />
-              <path d="M6 17l5-5-5-5" />
-            </svg>
-            <span className="ctrl-label">10s</span>
-          </button>
-
-          {qualities.length > 0 && (
-            <div id="quality-selector" style={{ position: 'relative' }}>
+            {/* SPEED CONTROLLER */}
+            <div style={{ position: 'relative' }}>
               <button
                 className="player-nav-btn"
-                id="btn-quality"
-                onClick={() => setShowQualityMenu(!showQualityMenu)}
+                onClick={() => {
+                  setShowSpeedMenu((s) => !s);
+                  setShowQualityMenu(false);
+                }}
+                title="Playback Speed"
+                style={{ fontWeight: 700, minWidth: '42px' }}
               >
-                Quality: {currentQuality === -1 ? 'Auto' : `${qualities[currentQuality]?.height}p`}
+                {playbackSpeed === 1 ? '1x' : `${playbackSpeed}x`}
               </button>
-              {showQualityMenu && (
+              {showSpeedMenu && (
                 <div
-                  id="quality-menu"
                   style={{
-                    display: 'block',
                     position: 'absolute',
                     bottom: '100%',
                     left: '50%',
@@ -313,86 +529,142 @@ export const VideoPlayer: React.FC<VideoPlayerProps> = ({
                     background: 'var(--bg-card)',
                     border: '1px solid var(--border)',
                     borderRadius: 'var(--r-md)',
-                    padding: '8px',
+                    padding: '6px',
                     marginBottom: '8px',
                     zIndex: 100,
-                    minWidth: '100px',
+                    minWidth: '96px',
+                    maxHeight: '220px',
+                    overflowY: 'auto',
+                    boxShadow: '0 8px 24px rgba(0,0,0,0.35)',
                   }}
                 >
-                  <button
-                    className="quality-opt"
-                    style={{ display: 'block', width: '100%', padding: '6px 10px', textAlign: 'left', fontSize: '12px' }}
-                    onClick={() => {
-                      if (hlsRef.current) hlsRef.current.currentLevel = -1;
-                      setCurrentQuality(-1);
-                      setShowQualityMenu(false);
+                  <div
+                    style={{
+                      fontSize: '10px',
+                      textTransform: 'uppercase',
+                      color: 'var(--text-muted)',
+                      fontWeight: 700,
+                      padding: '4px 8px',
+                      letterSpacing: '0.5px',
                     }}
                   >
-                    Auto
-                  </button>
-                  {qualities.map((q) => (
+                    Speed
+                  </div>
+                  {speedOptions.map((spd) => (
                     <button
-                      key={q.index}
+                      key={spd}
                       className="quality-opt"
-                      style={{ display: 'block', width: '100%', padding: '6px 10px', textAlign: 'left', fontSize: '12px' }}
-                      onClick={() => {
-                        if (hlsRef.current) hlsRef.current.currentLevel = q.index;
-                        setCurrentQuality(q.index);
-                        setShowQualityMenu(false);
+                      style={{
+                        display: 'block',
+                        width: '100%',
+                        padding: '5px 10px',
+                        textAlign: 'left',
+                        fontSize: '12px',
+                        fontWeight: playbackSpeed === spd ? 700 : 500,
+                        color: playbackSpeed === spd ? 'var(--accent)' : 'var(--text)',
+                        background: playbackSpeed === spd ? 'rgba(204,120,92,0.12)' : 'transparent',
+                        borderRadius: 'var(--r-sm)',
+                        border: 'none',
+                        cursor: 'pointer',
                       }}
+                      onClick={() => handleSpeedChange(spd)}
                     >
-                      {q.height}p
+                      {spd === 1 ? '1x Normal' : `${spd}x`}
                     </button>
                   ))}
                 </div>
               )}
             </div>
-          )}
 
-          <button
-            className="player-nav-btn"
-            id="btn-download"
-            onClick={handleDirectDownload}
-            title="Direct Download Video"
-          >
-            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
-              <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4M7 10l5 5 5-5M12 15V3" />
-            </svg>
-            <span className="ctrl-label">Download</span>
-          </button>
+            <button className="player-nav-btn" onClick={toggleFullscreen} title="Fullscreen (F)">
+              <svg
+                width="14"
+                height="14"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                strokeWidth="2.5"
+                strokeLinecap="round"
+                strokeLinejoin="round"
+              >
+                <polyline points="15 3 21 3 21 9" />
+                <polyline points="9 21 3 21 3 15" />
+                <line x1="21" y1="3" x2="14" y2="10" />
+                <line x1="3" y1="21" x2="10" y2="14" />
+              </svg>
+              <span className="ctrl-label">Fullscreen</span>
+            </button>
 
-          <button
-            className="player-nav-btn"
-            id="btn-fullscreen"
-            onClick={toggleFullscreen}
-            title="Fullscreen (F)"
-          >
-            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
-              <polyline points="15 3 21 3 21 9" />
-              <polyline points="9 21 3 21 3 15" />
-              <line x1="21" y1="3" x2="14" y2="10" />
-              <line x1="3" y1="21" x2="10" y2="14" />
-            </svg>
-            <span className="ctrl-label">Fullscreen</span>
-          </button>
+            <button
+              className="player-nav-btn"
+              disabled={currentIndex >= playlist.length - 1}
+              onClick={() => onNavigate(currentIndex + 1)}
+              title="Next"
+            >
+              <span className="ctrl-label">Next</span>
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5">
+                <path d="M5 12h14M12 5l7 7-7 7" />
+              </svg>
+            </button>
+          </div>
+        )}
 
-          <button
-            className="player-nav-btn"
-            id="btn-next"
-            disabled={currentIndex >= playlist.length - 1}
-            onClick={() => onNavigate(currentIndex + 1)}
-            title="Next Lecture"
-          >
-            <span className="ctrl-label">Next</span>
-            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5">
-              <path d="M5 12h14M12 5l7 7-7 7" />
-            </svg>
-          </button>
-        </div>
+        {/* CONTROLS BAR (For iframe fallback - simple navigation) */}
+        {!showVideo && !showLoading && (
+          <div className="player-controls">
+            <button
+              className="player-nav-btn"
+              disabled={currentIndex === 0}
+              onClick={() => onNavigate(currentIndex - 1)}
+              title="Previous (←)"
+            >
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5">
+                <path d="M19 12H5M12 19l-7-7 7-7" />
+              </svg>
+              <span className="ctrl-label">Prev</span>
+            </button>
+
+            <button className="player-nav-btn" onClick={toggleFullscreen} title="Fullscreen">
+              <svg
+                width="14"
+                height="14"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                strokeWidth="2.5"
+                strokeLinecap="round"
+                strokeLinejoin="round"
+              >
+                <polyline points="15 3 21 3 21 9" />
+                <polyline points="9 21 3 21 3 15" />
+                <line x1="21" y1="3" x2="14" y2="10" />
+                <line x1="3" y1="21" x2="10" y2="14" />
+              </svg>
+              <span className="ctrl-label">Fullscreen</span>
+            </button>
+
+            <button
+              className="player-nav-btn"
+              disabled={currentIndex >= playlist.length - 1}
+              onClick={() => onNavigate(currentIndex + 1)}
+              title="Next"
+            >
+              <span className="ctrl-label">Next</span>
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5">
+                <path d="M5 12h14M12 5l7 7-7 7" />
+              </svg>
+            </button>
+          </div>
+        )}
+
         <div className="player-progress-bar">
-          <div className="player-progress-track" id="player-progress-track" style={{ width: '100%' }}></div>
+          <div className="player-progress-track" style={{ width: '100%' }} />
         </div>
       </div>
+
+      <style>{`
+        @keyframes spin { to { transform: rotate(360deg); } }
+      `}</style>
     </div>
   );
 };

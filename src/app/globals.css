@@ -1,11 +1,75 @@
 /* ================================================================
-   STUTOSED — DESIGN SYSTEM (Claude Editorial Style)
-   Restored from original stutosed.netlify.app design
+   STUTOSED — DESIGN SYSTEM (Claude Editorial Style + Atyp Typography)
    ================================================================ */
 
+@font-face {
+  font-family: 'Atyp Display';
+  src: url('/fonts/atyp/AtypDisplayTRIAL-Regular-BF65727125d566e.otf') format('opentype');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Atyp Display';
+  src: url('/fonts/atyp/AtypDisplayTRIAL-Medium-BF65727125b8683.otf') format('opentype');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Atyp Display';
+  src: url('/fonts/atyp/AtypDisplayTRIAL-Semibold-BF65727125c6fc9.otf') format('opentype');
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Atyp Display';
+  src: url('/fonts/atyp/AtypDisplayTRIAL-Bold-BF65727125c8d1d.otf') format('opentype');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Atyp Text';
+  src: url('/fonts/atyp/AtypTextTRIAL-Regular-BF65727125ea126.otf') format('opentype');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Atyp Text';
+  src: url('/fonts/atyp/AtypTextTRIAL-Medium-BF65727125d9c4c.otf') format('opentype');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Atyp Text';
+  src: url('/fonts/atyp/AtypTextTRIAL-Semibold-BF65727125e65f1.otf') format('opentype');
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Atyp Text';
+  src: url('/fonts/atyp/AtypTextTRIAL-Bold-BF65727125ceed1.otf') format('opentype');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
 :root {
-  --font-serif: var(--font-cormorant), 'Cormorant Garamond', Georgia, "Times New Roman", serif;
-  --font-sans: var(--font-inter), 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  --font-display: 'Atyp Display', var(--font-cormorant), Georgia, serif;
+  --font-serif: 'Atyp Display', var(--font-cormorant), Georgia, serif;
+  --font-sans: 'Atyp Text', var(--font-inter), -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
   --font-mono: 'JetBrains Mono', ui-monospace, monospace;
   
   --nav-h: 64px;
@@ -581,6 +645,90 @@ svg { flex-shrink: 0; }
 }
 .video-play-btn:hover { background: var(--accent-hover); }
 .video-play-btn:active { transform: scale(0.95); }
+.video-row-thumb {
+  width: 92px;
+  aspect-ratio: 16/9;
+  border-radius: var(--r-md);
+  overflow: hidden;
+  position: relative;
+  flex-shrink: 0;
+  background: var(--bg-card-hover);
+  border: 1px solid var(--border);
+}
+.video-row-thumb img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.25s ease;
+}
+.video-row:hover .video-row-thumb img {
+  transform: scale(1.06);
+}
+.video-row-thumb-num {
+  position: absolute;
+  bottom: 4px;
+  right: 4px;
+  background: rgba(0, 0, 0, 0.75);
+  backdrop-filter: blur(2px);
+  color: #fff;
+  font-size: 9px;
+  font-weight: 700;
+  padding: 1px 5px;
+  border-radius: 3px;
+}
+
+/* LECTURE GRID VIEW */
+.lecture-grid-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+  gap: 20px;
+}
+.lecture-card-grid {
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: var(--r-xl);
+  overflow: hidden;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  transition: transform 0.2s ease, box-shadow 0.2s ease, border-color 0.2s ease;
+  box-shadow: var(--sh-card);
+}
+.lecture-card-grid:hover {
+  transform: translateY(-4px);
+  border-color: var(--accent);
+  box-shadow: 0 12px 28px rgba(0, 0, 0, 0.12);
+}
+.lecture-card-grid.watched {
+  border-color: rgba(93, 184, 114, 0.4);
+}
+.grid-play-hover-btn {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(0.85);
+  width: 46px;
+  height: 46px;
+  border-radius: 50%;
+  background: var(--accent);
+  color: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 16px;
+  opacity: 0;
+  transition: all 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+  box-shadow: 0 4px 20px rgba(204, 120, 92, 0.5);
+  backdrop-filter: blur(4px);
+}
+.lecture-card-grid:hover .grid-play-hover-btn {
+  opacity: 1;
+  transform: translate(-50%, -50%) scale(1);
+}
+.lecture-card-grid:hover .grid-thumb-img {
+  transform: scale(1.06);
+}
+
 .watched-badge {
   display: none; align-items: center; gap: 4px;
   font-size: 11px; font-weight: 600; color: var(--green);
@@ -880,7 +1028,9 @@ svg { flex-shrink: 0; }
   .course-name { font-size: 20px; }
 
   .overlay-bar-search-wrap { display: none; }
-  .overlay-bar { padding: 0 16px; }
+  .overlay-bar-search-wrap.mobile-expanded { display: flex; width: 100%; position: relative; }
+  .overlay-search-toggle-btn { display: flex !important; }
+  .overlay-bar { padding: 0 16px; gap: 8px; }
   .overlay-bar-title { font-size: 15px; }
 
   .overlay-hero-strip { padding: 24px 20px; gap: 16px; }
@@ -954,4 +1104,15 @@ button[class*="nextjs"] {
   opacity: 0 !important;
   pointer-events: none !important;
 }
+
+.domain-portal-card {
+  transition: transform 0.25s cubic-bezier(0.4, 0, 0.2, 1), border-color 0.25s ease, box-shadow 0.25s ease;
+}
+
+.domain-portal-card:hover {
+  transform: translateY(-4px);
+  border-color: var(--accent) !important;
+  box-shadow: 0 12px 32px rgba(204, 120, 92, 0.14) !important;
+}
+
 

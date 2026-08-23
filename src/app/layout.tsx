@@ -20,9 +20,9 @@ export const metadata: Metadata = {
   title: 'stutosed | Free Education & Course Resources',
   description: 'Your complete SSC & competitive examination preparation companion. High-quality lectures, notes, and resources.',
   icons: {
-    icon: '/favicon.jpg',
-    shortcut: '/favicon.ico',
-    apple: '/favicon.jpg',
+    icon: '/favicon.svg',
+    shortcut: '/favicon.svg',
+    apple: '/favicon.svg',
   },
 };
 

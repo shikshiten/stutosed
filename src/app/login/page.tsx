@@ -17,7 +17,7 @@ export default function LoginPage() {
 
   useEffect(() => {
     const supabase = createClient();
-    supabase.auth.getUser().then(({ data }) => {
+    supabase.auth.getUser().then(({ data }: any) => {
       if (data?.user) {
         setUser({
           id: data.user.id,

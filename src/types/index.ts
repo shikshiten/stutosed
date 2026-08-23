@@ -3,6 +3,7 @@ export type MediaURLType = 'hls' | 'youtube' | 'pdf' | 'external' | 'unknown';
 export interface ServerOption {
   name: string;
   url: string;
+  downloadUrl?: string;
   type?: MediaURLType;
 }
 
@@ -12,6 +13,7 @@ export interface LectureItem {
   url: string;
   downloadUrl?: string;
   type: MediaURLType;
+  thumb?: string;
   subject?: string;
   topic?: string;
   category?: 'videos' | 'pdfs';
@@ -22,6 +24,8 @@ export interface LectureItem {
 export interface CourseTab {
   id: string;
   label: string;
+  thumb?: string;
+  subname?: string;
   items: LectureItem[];
 }
 
@@ -41,6 +45,7 @@ export interface Course {
   teacher: string;
   subject: string;
   thumb: string;
+  isFolderMode?: boolean;
   tabs?: CourseTab[];
   isParmar?: boolean;
   parmarData?: Record<string, ParmarSubjectData>;

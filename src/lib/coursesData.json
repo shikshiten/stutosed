@@ -1,1417 +1,2947 @@
 [
   {
     "id": "parmar-gk-3-0",
-    "name": "PARMAR GK 3.0",
-    "subname": "PARMAR GK 3.0 (Live Sync)",
-    "teacher": "Faculty",
-    "subject": "PARMAR GK 3.0",
-    "thumb": "/assets/general_thumbnail_1782650802166.png",
+    "name": "Parmar GK 3.0",
+    "subname": "Complete General Knowledge & Static GK",
+    "teacher": "Parmar Sir",
+    "subject": "General Knowledge",
+    "thumb": "/thumbnails/parmar_gk_3.jpg",
     "tabs": [
       {
-        "id": "q7ojwzcyd2",
-        "label": "▶ static gk parmar",
+        "id": "static-gk",
+        "label": "▶ Static GK",
         "items": [
           {
+            "id": "ng3o7geyjzrr",
+            "label": "FOLK DANCES PART1",
+            "url": "https://vidmoly.net/embed-ng3o7geyjzrr.html",
+            "downloadUrl": "https://vidmoly.me/ng3o7geyjzrr.html",
+            "type": "external",
+            "servers": [
+              {
+                "name": "Server 1",
+                "url": "https://vidmoly.net/embed-ng3o7geyjzrr.html",
+                "downloadUrl": "https://vidmoly.me/ng3o7geyjzrr.html",
+                "type": "external"
+              },
+              {
+                "name": "Server 2",
+                "url": "https://vidmoly.net/embed-ng3o7geyjzrr.html",
+                "downloadUrl": "https://vidmoly.me/ng3o7geyjzrr.html",
+                "type": "external"
+              }
+            ],
+            "subject": "Static GK"
+          },
+          {
+            "id": "rslcococbyuz",
+            "label": "FOLK DANCE PART 2",
+            "url": "https://vidmoly.net/embed-rslcococbyuz.html",
+            "downloadUrl": "https://vidmoly.me/rslcococbyuz.html",
+            "type": "external",
+            "servers": [
+              {
+                "name": "Server 1",
+                "url": "https://vidmoly.net/embed-rslcococbyuz.html",
+                "downloadUrl": "https://vidmoly.me/rslcococbyuz.html",
+                "type": "external"
+              },
+              {
+                "name": "Server 2",
+                "url": "https://vidmoly.net/embed-rslcococbyuz.html",
+                "downloadUrl": "https://vidmoly.me/rslcococbyuz.html",
+                "type": "external"
+              }
+            ],
+            "subject": "Static GK"
+          },
+          {
+            "id": "fcoftta4iy3w",
+            "label": "FESTIVALS OF INDIA",
+            "url": "https://vidmoly.net/embed-fcoftta4iy3w.html",
+            "downloadUrl": "https://vidmoly.me/fcoftta4iy3w.html",
+            "type": "external",
+            "servers": [
+              {
+                "name": "Server 1",
+                "url": "https://vidmoly.net/embed-fcoftta4iy3w.html",
+                "downloadUrl": "https://vidmoly.me/fcoftta4iy3w.html",
+                "type": "external"
+              },
+              {
+                "name": "Server 2",
+                "url": "https://vidmoly.net/embed-fcoftta4iy3w.html",
+                "downloadUrl": "https://vidmoly.me/fcoftta4iy3w.html",
+                "type": "external"
+              }
+            ],
+            "subject": "Static GK"
+          },
+          {
+            "id": "ogg9zicshq76",
+            "label": "FESTIVALS OF INDIA PART 2",
+            "url": "https://vidmoly.net/embed-ogg9zicshq76.html",
+            "downloadUrl": "https://vidmoly.me/ogg9zicshq76.html",
+            "type": "external",
+            "servers": [
+              {
+                "name": "Server 1",
+                "url": "https://vidmoly.net/embed-ogg9zicshq76.html",
+                "downloadUrl": "https://vidmoly.me/ogg9zicshq76.html",
+                "type": "external"
+              },
+              {
+                "name": "Server 2",
+                "url": "https://vidmoly.net/embed-ogg9zicshq76.html",
+                "downloadUrl": "https://vidmoly.me/ogg9zicshq76.html",
+                "type": "external"
+              }
+            ],
+            "subject": "Static GK"
+          },
+          {
+            "id": "abtmtjb1hho0",
+            "label": "FESTIVALS OF INDIA PART 2 (1)",
+            "url": "https://vidmoly.net/embed-abtmtjb1hho0.html",
+            "downloadUrl": "https://vidmoly.me/abtmtjb1hho0.html",
+            "type": "external",
+            "servers": [
+              {
+                "name": "Server 1",
+                "url": "https://vidmoly.net/embed-abtmtjb1hho0.html",
+                "downloadUrl": "https://vidmoly.me/abtmtjb1hho0.html",
+                "type": "external"
+              },
+              {
+                "name": "Server 2",
+                "url": "https://vidmoly.net/embed-abtmtjb1hho0.html",
+                "downloadUrl": "https://vidmoly.me/abtmtjb1hho0.html",
+                "type": "external"
+              }
+            ],
+            "subject": "Static GK"
+          },
+          {
+            "id": "e1kpczz4gxy1",
+            "label": "CLASSICAL DANCE",
+            "url": "https://vidmoly.net/embed-e1kpczz4gxy1.html",
+            "downloadUrl": "https://vidmoly.me/e1kpczz4gxy1.html",
+            "type": "external",
+            "servers": [
+              {
+                "name": "Server 1",
+                "url": "https://vidmoly.net/embed-e1kpczz4gxy1.html",
+                "downloadUrl": "https://vidmoly.me/e1kpczz4gxy1.html",
+                "type": "external"
+              },
+              {
+                "name": "Server 2",
+                "url": "https://vidmoly.net/embed-e1kpczz4gxy1.html",
+                "downloadUrl": "https://vidmoly.me/e1kpczz4gxy1.html",
+                "type": "external"
+              }
+            ],
+            "subject": "Static GK"
+          },
+          {
+            "id": "vdqd7k1dntv3",
+            "label": "CENSUS",
+            "url": "https://vidmoly.net/embed-vdqd7k1dntv3.html",
+            "downloadUrl": "https://vidmoly.me/vdqd7k1dntv3.html",
+            "type": "external",
+            "servers": [
+              {
+                "name": "Server 1",
+                "url": "https://vidmoly.net/embed-vdqd7k1dntv3.html",
+                "downloadUrl": "https://vidmoly.me/vdqd7k1dntv3.html",
+                "type": "external"
+              },
+              {
+                "name": "Server 2",
+                "url": "https://vidmoly.net/embed-vdqd7k1dntv3.html",
+                "downloadUrl": "https://vidmoly.me/vdqd7k1dntv3.html",
+                "type": "external"
+              }
+            ],
+            "subject": "Static GK"
+          },
+          {
+            "id": "2o4ikft0qf7s",
+            "label": "BOOKS AND AUTHORS PART 2",
+            "url": "https://vidmoly.net/embed-2o4ikft0qf7s.html",
+            "downloadUrl": "https://vidmoly.me/2o4ikft0qf7s.html",
+            "type": "external",
+            "servers": [
+              {
+                "name": "Server 1",
+                "url": "https://vidmoly.net/embed-2o4ikft0qf7s.html",
+                "downloadUrl": "https://vidmoly.me/2o4ikft0qf7s.html",
+                "type": "external"
+              },
+              {
+                "name": "Server 2",
+                "url": "https://vidmoly.net/embed-2o4ikft0qf7s.html",
+                "downloadUrl": "https://vidmoly.me/2o4ikft0qf7s.html",
+                "type": "external"
+              }
+            ],
+            "subject": "Static GK"
+          },
+          {
+            "id": "7n7dh8095qzo",
+            "label": "BOOKS AND AUTHORS PART 1",
+            "url": "https://vidmoly.net/embed-7n7dh8095qzo.html",
+            "downloadUrl": "https://vidmoly.me/7n7dh8095qzo.html",
+            "type": "external",
+            "servers": [
+              {
+                "name": "Server 1",
+                "url": "https://vidmoly.net/embed-7n7dh8095qzo.html",
+                "downloadUrl": "https://vidmoly.me/7n7dh8095qzo.html",
+                "type": "external"
+              },
+              {
+                "name": "Server 2",
+                "url": "https://vidmoly.net/embed-7n7dh8095qzo.html",
+                "downloadUrl": "https://vidmoly.me/7n7dh8095qzo.html",
+                "type": "external"
+              }
+            ],
+            "subject": "Static GK"
+          },
+          {
             "id": "x6jw1do8uk45",
-            "label": "SPORTS LEC 1 RATNA",
-            "url": "https://vidmoly.me/w/x6jw1do8uk45",
+            "label": "SPORTS LEC 1",
+            "url": "https://vidmoly.net/embed-x6jw1do8uk45.html",
             "downloadUrl": "https://vidmoly.me/x6jw1do8uk45.html",
             "type": "external",
             "servers": [
               {
                 "name": "Server 1",
-                "url": "https://vidmoly.me/w/x6jw1do8uk45",
+                "url": "https://vidmoly.net/embed-x6jw1do8uk45.html",
+                "downloadUrl": "https://vidmoly.me/x6jw1do8uk45.html",
+                "type": "external"
+              },
+              {
+                "name": "Server 2",
+                "url": "https://vidmoly.net/embed-x6jw1do8uk45.html",
+                "downloadUrl": "https://vidmoly.me/x6jw1do8uk45.html",
                 "type": "external"
               }
-            ]
+            ],
+            "subject": "Static GK"
           },
           {
             "id": "2iv9vnq5dlxa",
-            "label": "SPORT PART 2 RATNA",
-            "url": "https://vidmoly.me/w/2iv9vnq5dlxa",
+            "label": "SPORT PART 2",
+            "url": "https://vidmoly.net/embed-2iv9vnq5dlxa.html",
             "downloadUrl": "https://vidmoly.me/2iv9vnq5dlxa.html",
             "type": "external",
             "servers": [
               {
                 "name": "Server 1",
-                "url": "https://vidmoly.me/w/2iv9vnq5dlxa",
+                "url": "https://vidmoly.net/embed-2iv9vnq5dlxa.html",
+                "downloadUrl": "https://vidmoly.me/2iv9vnq5dlxa.html",
+                "type": "external"
+              },
+              {
+                "name": "Server 2",
+                "url": "https://vidmoly.net/embed-2iv9vnq5dlxa.html",
+                "downloadUrl": "https://vidmoly.me/2iv9vnq5dlxa.html",
                 "type": "external"
               }
-            ]
+            ],
+            "subject": "Static GK"
           },
           {
             "id": "zwtd100toap7",
-            "label": "NATIONAL ORGANIZATIONS RATNA",
-            "url": "https://vidmoly.me/w/zwtd100toap7",
+            "label": "NATIONAL ORGANIZATIONS",
+            "url": "https://vidmoly.net/embed-zwtd100toap7.html",
             "downloadUrl": "https://vidmoly.me/zwtd100toap7.html",
             "type": "external",
             "servers": [
               {
                 "name": "Server 1",
-                "url": "https://vidmoly.me/w/zwtd100toap7",
+                "url": "https://vidmoly.net/embed-zwtd100toap7.html",
+                "downloadUrl": "https://vidmoly.me/zwtd100toap7.html",
+                "type": "external"
+              },
+              {
+                "name": "Server 2",
+                "url": "https://vidmoly.net/embed-zwtd100toap7.html",
+                "downloadUrl": "https://vidmoly.me/zwtd100toap7.html",
                 "type": "external"
               }
-            ]
+            ],
+            "subject": "Static GK"
           },
           {
             "id": "lkrmjhweuq44",
-            "label": "MUSICAL INSTRUMENTS RATNA",
-            "url": "https://vidmoly.me/w/lkrmjhweuq44",
+            "label": "MUSICAL INSTRUMENTS",
+            "url": "https://vidmoly.net/embed-lkrmjhweuq44.html",
             "downloadUrl": "https://vidmoly.me/lkrmjhweuq44.html",
             "type": "external",
             "servers": [
               {
                 "name": "Server 1",
-                "url": "https://vidmoly.me/w/lkrmjhweuq44",
+                "url": "https://vidmoly.net/embed-lkrmjhweuq44.html",
+                "downloadUrl": "https://vidmoly.me/lkrmjhweuq44.html",
+                "type": "external"
+              },
+              {
+                "name": "Server 2",
+                "url": "https://vidmoly.net/embed-lkrmjhweuq44.html",
+                "downloadUrl": "https://vidmoly.me/lkrmjhweuq44.html",
                 "type": "external"
               }
-            ]
+            ],
+            "subject": "Static GK"
           },
           {
             "id": "cd31wt0m71et",
-            "label": "INTERNATIONAL ORGANISATIONS RATNA",
-            "url": "https://vidmoly.me/w/cd31wt0m71et",
+            "label": "INTERNATIONAL ORGANISATIONS",
+            "url": "https://vidmoly.net/embed-cd31wt0m71et.html",
             "downloadUrl": "https://vidmoly.me/cd31wt0m71et.html",
             "type": "external",
             "servers": [
               {
                 "name": "Server 1",
-                "url": "https://vidmoly.me/w/cd31wt0m71et",
+                "url": "https://vidmoly.net/embed-cd31wt0m71et.html",
+                "downloadUrl": "https://vidmoly.me/cd31wt0m71et.html",
+                "type": "external"
+              },
+              {
+                "name": "Server 2",
+                "url": "https://vidmoly.net/embed-cd31wt0m71et.html",
+                "downloadUrl": "https://vidmoly.me/cd31wt0m71et.html",
                 "type": "external"
               }
-            ]
+            ],
+            "subject": "Static GK"
           },
           {
             "id": "t7x9iwm7gjvn",
-            "label": "IMPORTANT DAYS RATNA",
-            "url": "https://vidmoly.me/w/t7x9iwm7gjvn",
+            "label": "IMPORTANT DAYS",
+            "url": "https://vidmoly.net/embed-t7x9iwm7gjvn.html",
             "downloadUrl": "https://vidmoly.me/t7x9iwm7gjvn.html",
             "type": "external",
             "servers": [
               {
                 "name": "Server 1",
-                "url": "https://vidmoly.me/w/t7x9iwm7gjvn",
+                "url": "https://vidmoly.net/embed-t7x9iwm7gjvn.html",
+                "downloadUrl": "https://vidmoly.me/t7x9iwm7gjvn.html",
+                "type": "external"
+              },
+              {
+                "name": "Server 2",
+                "url": "https://vidmoly.net/embed-t7x9iwm7gjvn.html",
+                "downloadUrl": "https://vidmoly.me/t7x9iwm7gjvn.html",
                 "type": "external"
               }
-            ]
+            ],
+            "subject": "Static GK"
           },
           {
             "id": "73ta9i5xcayz",
-            "label": "GHARANA AND MUSIC RATNA",
-            "url": "https://vidmoly.me/w/73ta9i5xcayz",
+            "label": "GHARANA AND MUSIC",
+            "url": "https://vidmoly.net/embed-73ta9i5xcayz.html",
             "downloadUrl": "https://vidmoly.me/73ta9i5xcayz.html",
             "type": "external",
             "servers": [
               {
                 "name": "Server 1",
-                "url": "https://vidmoly.me/w/73ta9i5xcayz",
+                "url": "https://vidmoly.net/embed-73ta9i5xcayz.html",
+                "downloadUrl": "https://vidmoly.me/73ta9i5xcayz.html",
+                "type": "external"
+              },
+              {
+                "name": "Server 2",
+                "url": "https://vidmoly.net/embed-73ta9i5xcayz.html",
+                "downloadUrl": "https://vidmoly.me/73ta9i5xcayz.html",
                 "type": "external"
               }
-            ]
+            ],
+            "subject": "Static GK"
           },
           {
             "id": "t2z4br9ufk35",
-            "label": "FOLK DANCES PART1 RATNA",
-            "url": "https://vidmoly.me/w/t2z4br9ufk35",
+            "label": "FOLK DANCES PART1",
+            "url": "https://vidmoly.net/embed-t2z4br9ufk35.html",
             "downloadUrl": "https://vidmoly.me/t2z4br9ufk35.html",
             "type": "external",
             "servers": [
               {
                 "name": "Server 1",
-                "url": "https://vidmoly.me/w/t2z4br9ufk35",
+                "url": "https://vidmoly.net/embed-t2z4br9ufk35.html",
+                "downloadUrl": "https://vidmoly.me/t2z4br9ufk35.html",
+                "type": "external"
+              },
+              {
+                "name": "Server 2",
+                "url": "https://vidmoly.net/embed-t2z4br9ufk35.html",
+                "downloadUrl": "https://vidmoly.me/t2z4br9ufk35.html",
                 "type": "external"
               }
-            ]
+            ],
+            "subject": "Static GK"
           },
           {
             "id": "ho36kk5z435o",
-            "label": "FOLK DANCE PART 2 RATNA",
-            "url": "https://vidmoly.me/w/ho36kk5z435o",
+            "label": "FOLK DANCE PART 2",
+            "url": "https://vidmoly.net/embed-ho36kk5z435o.html",
             "downloadUrl": "https://vidmoly.me/ho36kk5z435o.html",
             "type": "external",
             "servers": [
               {
                 "name": "Server 1",
-                "url": "https://vidmoly.me/w/ho36kk5z435o",
+                "url": "https://vidmoly.net/embed-ho36kk5z435o.html",
+                "downloadUrl": "https://vidmoly.me/ho36kk5z435o.html",
+                "type": "external"
+              },
+              {
+                "name": "Server 2",
+                "url": "https://vidmoly.net/embed-ho36kk5z435o.html",
+                "downloadUrl": "https://vidmoly.me/ho36kk5z435o.html",
                 "type": "external"
               }
-            ]
+            ],
+            "subject": "Static GK"
           },
           {
             "id": "dfaad4va5z8k",
-            "label": "FESTIVALS OF INDIA RATNA",
-            "url": "https://vidmoly.me/w/dfaad4va5z8k",
+            "label": "FESTIVALS OF INDIA",
+            "url": "https://vidmoly.net/embed-dfaad4va5z8k.html",
             "downloadUrl": "https://vidmoly.me/dfaad4va5z8k.html",
             "type": "external",
             "servers": [
               {
                 "name": "Server 1",
-                "url": "https://vidmoly.me/w/dfaad4va5z8k",
+                "url": "https://vidmoly.net/embed-dfaad4va5z8k.html",
+                "downloadUrl": "https://vidmoly.me/dfaad4va5z8k.html",
+                "type": "external"
+              },
+              {
+                "name": "Server 2",
+                "url": "https://vidmoly.net/embed-dfaad4va5z8k.html",
+                "downloadUrl": "https://vidmoly.me/dfaad4va5z8k.html",
                 "type": "external"
               }
-            ]
+            ],
+            "subject": "Static GK"
           },
           {
             "id": "87pb6ibbf5ek",
-            "label": "FESTIVALS OF INDIA PART 2 RATNA",
-            "url": "https://vidmoly.me/w/87pb6ibbf5ek",
+            "label": "FESTIVALS OF INDIA PART 2",
+            "url": "https://vidmoly.net/embed-87pb6ibbf5ek.html",
             "downloadUrl": "https://vidmoly.me/87pb6ibbf5ek.html",
             "type": "external",
             "servers": [
               {
                 "name": "Server 1",
-                "url": "https://vidmoly.me/w/87pb6ibbf5ek",
+                "url": "https://vidmoly.net/embed-87pb6ibbf5ek.html",
+                "downloadUrl": "https://vidmoly.me/87pb6ibbf5ek.html",
+                "type": "external"
+              },
+              {
+                "name": "Server 2",
+                "url": "https://vidmoly.net/embed-87pb6ibbf5ek.html",
+                "downloadUrl": "https://vidmoly.me/87pb6ibbf5ek.html",
                 "type": "external"
               }
-            ]
+            ],
+            "subject": "Static GK"
           },
           {
             "id": "vbvv1atfb3wz",
-            "label": "FESTIVALS OF INDIA PART 2 RATNA (1)",
-            "url": "https://vidmoly.me/w/vbvv1atfb3wz",
+            "label": "FESTIVALS OF INDIA PART 2 (1)",
+            "url": "https://vidmoly.net/embed-vbvv1atfb3wz.html",
             "downloadUrl": "https://vidmoly.me/vbvv1atfb3wz.html",
             "type": "external",
             "servers": [
               {
                 "name": "Server 1",
-                "url": "https://vidmoly.me/w/vbvv1atfb3wz",
+                "url": "https://vidmoly.net/embed-vbvv1atfb3wz.html",
+                "downloadUrl": "https://vidmoly.me/vbvv1atfb3wz.html",
+                "type": "external"
+              },
+              {
+                "name": "Server 2",
+                "url": "https://vidmoly.net/embed-vbvv1atfb3wz.html",
+                "downloadUrl": "https://vidmoly.me/vbvv1atfb3wz.html",
                 "type": "external"
               }
-            ]
+            ],
+            "subject": "Static GK"
           },
           {
             "id": "oblkpugg2y8i",
-            "label": "CLASSICAL DANCE RATNA",
-            "url": "https://vidmoly.me/w/oblkpugg2y8i",
+            "label": "CLASSICAL DANCE",
+            "url": "https://vidmoly.net/embed-oblkpugg2y8i.html",
             "downloadUrl": "https://vidmoly.me/oblkpugg2y8i.html",
             "type": "external",
             "servers": [
               {
                 "name": "Server 1",
-                "url": "https://vidmoly.me/w/oblkpugg2y8i",
+                "url": "https://vidmoly.net/embed-oblkpugg2y8i.html",
+                "downloadUrl": "https://vidmoly.me/oblkpugg2y8i.html",
+                "type": "external"
+              },
+              {
+                "name": "Server 2",
+                "url": "https://vidmoly.net/embed-oblkpugg2y8i.html",
+                "downloadUrl": "https://vidmoly.me/oblkpugg2y8i.html",
                 "type": "external"
               }
-            ]
+            ],
+            "subject": "Static GK"
           },
           {
             "id": "yjpo87rnaxj1",
-            "label": "CENSUS RATNA",
-            "url": "https://vidmoly.me/w/yjpo87rnaxj1",
+            "label": "CENSUS",
+            "url": "https://vidmoly.net/embed-yjpo87rnaxj1.html",
             "downloadUrl": "https://vidmoly.me/yjpo87rnaxj1.html",
             "type": "external",
             "servers": [
               {
                 "name": "Server 1",
-                "url": "https://vidmoly.me/w/yjpo87rnaxj1",
+                "url": "https://vidmoly.net/embed-yjpo87rnaxj1.html",
+                "downloadUrl": "https://vidmoly.me/yjpo87rnaxj1.html",
+                "type": "external"
+              },
+              {
+                "name": "Server 2",
+                "url": "https://vidmoly.net/embed-yjpo87rnaxj1.html",
+                "downloadUrl": "https://vidmoly.me/yjpo87rnaxj1.html",
                 "type": "external"
               }
-            ]
+            ],
+            "subject": "Static GK"
           },
           {
             "id": "6g3a8ull18fk",
-            "label": "BOOKS AND AUTHORS PART 2 RATNA",
-            "url": "https://vidmoly.me/w/6g3a8ull18fk",
+            "label": "BOOKS AND AUTHORS PART 2",
+            "url": "https://vidmoly.net/embed-6g3a8ull18fk.html",
             "downloadUrl": "https://vidmoly.me/6g3a8ull18fk.html",
             "type": "external",
             "servers": [
               {
                 "name": "Server 1",
-                "url": "https://vidmoly.me/w/6g3a8ull18fk",
+                "url": "https://vidmoly.net/embed-6g3a8ull18fk.html",
+                "downloadUrl": "https://vidmoly.me/6g3a8ull18fk.html",
+                "type": "external"
+              },
+              {
+                "name": "Server 2",
+                "url": "https://vidmoly.net/embed-6g3a8ull18fk.html",
+                "downloadUrl": "https://vidmoly.me/6g3a8ull18fk.html",
                 "type": "external"
               }
-            ]
+            ],
+            "subject": "Static GK"
           },
           {
             "id": "23o1k671jzxd",
-            "label": "BOOKS AND AUTHORS PART 1 RATNA",
-            "url": "https://vidmoly.me/w/23o1k671jzxd",
+            "label": "BOOKS AND AUTHORS PART 1",
+            "url": "https://vidmoly.net/embed-23o1k671jzxd.html",
             "downloadUrl": "https://vidmoly.me/23o1k671jzxd.html",
             "type": "external",
             "servers": [
               {
                 "name": "Server 1",
-                "url": "https://vidmoly.me/w/23o1k671jzxd",
+                "url": "https://vidmoly.net/embed-23o1k671jzxd.html",
+                "downloadUrl": "https://vidmoly.me/23o1k671jzxd.html",
+                "type": "external"
+              },
+              {
+                "name": "Server 2",
+                "url": "https://vidmoly.net/embed-23o1k671jzxd.html",
+                "downloadUrl": "https://vidmoly.me/23o1k671jzxd.html",
                 "type": "external"
               }
-            ]
+            ],
+            "subject": "Static GK"
           }
         ]
       },
       {
-        "id": "m32epok30e",
-        "label": "▶ ECONOMICS PARMAR",
-        "items": [
-          {
-            "id": "98s1mwzt46dk",
-            "label": "Poverty RATNA",
-            "url": "https://vidmoly.me/w/98s1mwzt46dk",
-            "downloadUrl": "https://vidmoly.me/98s1mwzt46dk.html",
-            "type": "external",
-            "servers": [
-              {
-                "name": "Server 1",
-                "url": "https://vidmoly.me/w/98s1mwzt46dk",
-                "type": "external"
-              }
-            ]
-          },
-          {
-            "id": "t9ra1te1e7g3",
-            "label": "NATIONAL INCOME RATNA",
-            "url": "https://vidmoly.me/w/t9ra1te1e7g3",
-            "downloadUrl": "https://vidmoly.me/t9ra1te1e7g3.html",
-            "type": "external",
-            "servers": [
-              {
-                "name": "Server 1",
-                "url": "https://vidmoly.me/w/t9ra1te1e7g3",
-                "type": "external"
-              }
-            ]
-          },
-          {
-            "id": "9i7c1ei6104q",
-            "label": "National Income MCQs RATNA",
-            "url": "https://vidmoly.me/w/9i7c1ei6104q",
-            "downloadUrl": "https://vidmoly.me/9i7c1ei6104q.html",
-            "type": "external",
-            "servers": [
-              {
-                "name": "Server 1",
-                "url": "https://vidmoly.me/w/9i7c1ei6104q",
-                "type": "external"
-              }
-            ]
-          },
-          {
-            "id": "68vft6futgba",
-            "label": "MONEY SUPPLY RATNA",
-            "url": "https://vidmoly.me/w/68vft6futgba",
-            "downloadUrl": "https://vidmoly.me/68vft6futgba.html",
-            "type": "external",
-            "servers": [
-              {
-                "name": "Server 1",
-                "url": "https://vidmoly.me/w/68vft6futgba",
-                "type": "external"
-              }
-            ]
-          },
-          {
-            "id": "tixohfbri0ta",
-            "label": "MONEY AND BANKING PART1 RATNA",
-            "url": "https://vidmoly.me/w/tixohfbri0ta",
-            "downloadUrl": "https://vidmoly.me/tixohfbri0ta.html",
-            "type": "external",
-            "servers": [
-              {
-                "name": "Server 1",
-                "url": "https://vidmoly.me/w/tixohfbri0ta",
-                "type": "external"
-              }
-            ]
-          },
-          {
-            "id": "vixsjjsfmw0i",
-            "label": "MONETARY POLICY TOOLS RATNA",
-            "url": "https://vidmoly.me/w/vixsjjsfmw0i",
-            "downloadUrl": "https://vidmoly.me/vixsjjsfmw0i.html",
-            "type": "external",
-            "servers": [
-              {
-                "name": "Server 1",
-                "url": "https://vidmoly.me/w/vixsjjsfmw0i",
-                "type": "external"
-              }
-            ]
-          },
-          {
-            "id": "6hsz9kllcr56",
-            "label": "MICROECONOMICS RATNA",
-            "url": "https://vidmoly.me/w/6hsz9kllcr56",
-            "downloadUrl": "https://vidmoly.me/6hsz9kllcr56.html",
-            "type": "external",
-            "servers": [
-              {
-                "name": "Server 1",
-                "url": "https://vidmoly.me/w/6hsz9kllcr56",
-                "type": "external"
-              }
-            ]
-          },
-          {
-            "id": "pw2frsw0oqb5",
-            "label": "MICROECONOMICS MCQs RATNA",
-            "url": "https://vidmoly.me/w/pw2frsw0oqb5",
-            "downloadUrl": "https://vidmoly.me/pw2frsw0oqb5.html",
-            "type": "external",
-            "servers": [
-              {
-                "name": "Server 1",
-                "url": "https://vidmoly.me/w/pw2frsw0oqb5",
-                "type": "external"
-              }
-            ]
-          },
-          {
-            "id": "cm2kvnhmss3s",
-            "label": "INFLATION & UNEMPLOYMENT RATNA",
-            "url": "https://vidmoly.me/w/cm2kvnhmss3s",
-            "downloadUrl": "https://vidmoly.me/cm2kvnhmss3s.html",
-            "type": "external",
-            "servers": [
-              {
-                "name": "Server 1",
-                "url": "https://vidmoly.me/w/cm2kvnhmss3s",
-                "type": "external"
-              }
-            ]
-          },
-          {
-            "id": "sgm7iwdaln17",
-            "label": "BUDGET & TAXATION RATNA",
-            "url": "https://vidmoly.me/w/sgm7iwdaln17",
-            "downloadUrl": "https://vidmoly.me/sgm7iwdaln17.html",
-            "type": "external",
-            "servers": [
-              {
-                "name": "Server 1",
-                "url": "https://vidmoly.me/w/sgm7iwdaln17",
-                "type": "external"
-              }
-            ]
-          },
-          {
-            "id": "ft2nxjnhdmlf",
-            "label": "BASICS OF ECONOMY RATNA",
-            "url": "https://vidmoly.me/w/ft2nxjnhdmlf",
-            "downloadUrl": "https://vidmoly.me/ft2nxjnhdmlf.html",
-            "type": "external",
-            "servers": [
-              {
-                "name": "Server 1",
-                "url": "https://vidmoly.me/w/ft2nxjnhdmlf",
-                "type": "external"
-              }
-            ]
-          },
-          {
-            "id": "o2atebw2vqfz",
-            "label": "5 YEAR PLAN RATNA",
-            "url": "https://vidmoly.me/w/o2atebw2vqfz",
-            "downloadUrl": "https://vidmoly.me/o2atebw2vqfz.html",
-            "type": "external",
-            "servers": [
-              {
-                "name": "Server 1",
-                "url": "https://vidmoly.me/w/o2atebw2vqfz",
-                "type": "external"
-              }
-            ]
-          }
-        ]
-      },
-      {
-        "id": "rin2c84xer",
-        "label": "▶ BIOLOGY-PARMAR",
+        "id": "biology",
+        "label": "▶ Biology",
         "items": [
           {
             "id": "4kpose4dhud9",
             "label": "REPRODUCTION",
-            "url": "https://vidmoly.me/w/4kpose4dhud9",
+            "url": "https://vidmoly.net/embed-4kpose4dhud9.html",
             "downloadUrl": "https://vidmoly.me/4kpose4dhud9.html",
             "type": "external",
             "servers": [
               {
                 "name": "Server 1",
-                "url": "https://vidmoly.me/w/4kpose4dhud9",
+                "url": "https://vidmoly.net/embed-4kpose4dhud9.html",
+                "downloadUrl": "https://vidmoly.me/4kpose4dhud9.html",
                 "type": "external"
               },
               {
                 "name": "Server 2",
                 "url": "https://morencius.com/v/tisvu0nip0gb",
+                "downloadUrl": "https://morencius.com/file/tisvu0nip0gb",
                 "type": "external"
               }
-            ]
+            ],
+            "subject": "Biology"
           },
           {
             "id": "f7rfsbe1160j",
             "label": "PLANT TISSUE",
-            "url": "https://vidmoly.me/w/f7rfsbe1160j",
+            "url": "https://vidmoly.net/embed-f7rfsbe1160j.html",
             "downloadUrl": "https://vidmoly.me/f7rfsbe1160j.html",
             "type": "external",
             "servers": [
               {
                 "name": "Server 1",
-                "url": "https://vidmoly.me/w/f7rfsbe1160j",
+                "url": "https://vidmoly.net/embed-f7rfsbe1160j.html",
+                "downloadUrl": "https://vidmoly.me/f7rfsbe1160j.html",
+                "type": "external"
+              },
+              {
+                "name": "Server 2",
+                "url": "https://vidmoly.net/embed-f7rfsbe1160j.html",
+                "downloadUrl": "https://vidmoly.me/f7rfsbe1160j.html",
                 "type": "external"
               }
-            ]
+            ],
+            "subject": "Biology"
           },
           {
             "id": "74b3umsjsljd",
             "label": "PLANT KINGDOM",
-            "url": "https://vidmoly.me/w/74b3umsjsljd",
+            "url": "https://vidmoly.net/embed-74b3umsjsljd.html",
             "downloadUrl": "https://vidmoly.me/74b3umsjsljd.html",
             "type": "external",
             "servers": [
               {
                 "name": "Server 1",
-                "url": "https://vidmoly.me/w/74b3umsjsljd",
+                "url": "https://vidmoly.net/embed-74b3umsjsljd.html",
+                "downloadUrl": "https://vidmoly.me/74b3umsjsljd.html",
+                "type": "external"
+              },
+              {
+                "name": "Server 2",
+                "url": "https://vidmoly.net/embed-74b3umsjsljd.html",
+                "downloadUrl": "https://vidmoly.me/74b3umsjsljd.html",
                 "type": "external"
               }
-            ]
+            ],
+            "subject": "Biology"
           },
           {
             "id": "b9na8xkh7f2v",
             "label": "NUTRITION",
-            "url": "https://vidmoly.me/w/b9na8xkh7f2v",
+            "url": "https://vidmoly.net/embed-b9na8xkh7f2v.html",
             "downloadUrl": "https://vidmoly.me/b9na8xkh7f2v.html",
             "type": "external",
             "servers": [
               {
                 "name": "Server 1",
-                "url": "https://vidmoly.me/w/b9na8xkh7f2v",
+                "url": "https://vidmoly.net/embed-b9na8xkh7f2v.html",
+                "downloadUrl": "https://vidmoly.me/b9na8xkh7f2v.html",
+                "type": "external"
+              },
+              {
+                "name": "Server 2",
+                "url": "https://vidmoly.net/embed-b9na8xkh7f2v.html",
+                "downloadUrl": "https://vidmoly.me/b9na8xkh7f2v.html",
                 "type": "external"
               }
-            ]
+            ],
+            "subject": "Biology"
           },
           {
             "id": "xs0guqf4c10g",
             "label": "NERVOUS SYSTEM",
-            "url": "https://vidmoly.me/w/xs0guqf4c10g",
+            "url": "https://vidmoly.net/embed-xs0guqf4c10g.html",
             "downloadUrl": "https://vidmoly.me/xs0guqf4c10g.html",
             "type": "external",
             "servers": [
               {
                 "name": "Server 1",
-                "url": "https://vidmoly.me/w/xs0guqf4c10g",
+                "url": "https://vidmoly.net/embed-xs0guqf4c10g.html",
+                "downloadUrl": "https://vidmoly.me/xs0guqf4c10g.html",
+                "type": "external"
+              },
+              {
+                "name": "Server 2",
+                "url": "https://vidmoly.net/embed-xs0guqf4c10g.html",
+                "downloadUrl": "https://vidmoly.me/xs0guqf4c10g.html",
                 "type": "external"
               }
-            ]
+            ],
+            "subject": "Biology"
           },
           {
             "id": "p2y5uqvd6va1",
             "label": "HORMONES OR PLANT MOVEMENT",
-            "url": "https://vidmoly.me/w/p2y5uqvd6va1",
+            "url": "https://vidmoly.net/embed-p2y5uqvd6va1.html",
             "downloadUrl": "https://vidmoly.me/p2y5uqvd6va1.html",
             "type": "external",
             "servers": [
               {
                 "name": "Server 1",
-                "url": "https://vidmoly.me/w/p2y5uqvd6va1",
+                "url": "https://vidmoly.net/embed-p2y5uqvd6va1.html",
+                "downloadUrl": "https://vidmoly.me/p2y5uqvd6va1.html",
+                "type": "external"
+              },
+              {
+                "name": "Server 2",
+                "url": "https://vidmoly.net/embed-p2y5uqvd6va1.html",
+                "downloadUrl": "https://vidmoly.me/p2y5uqvd6va1.html",
                 "type": "external"
               }
-            ]
+            ],
+            "subject": "Biology"
           },
           {
             "id": "a2ojlqlv0hci",
             "label": "GENETICS AND SKELETAL SYSTEM",
-            "url": "https://vidmoly.me/w/a2ojlqlv0hci",
+            "url": "https://vidmoly.net/embed-a2ojlqlv0hci.html",
             "downloadUrl": "https://vidmoly.me/a2ojlqlv0hci.html",
             "type": "external",
             "servers": [
               {
                 "name": "Server 1",
-                "url": "https://vidmoly.me/w/a2ojlqlv0hci",
+                "url": "https://vidmoly.net/embed-a2ojlqlv0hci.html",
+                "downloadUrl": "https://vidmoly.me/a2ojlqlv0hci.html",
+                "type": "external"
+              },
+              {
+                "name": "Server 2",
+                "url": "https://vidmoly.net/embed-a2ojlqlv0hci.html",
+                "downloadUrl": "https://vidmoly.me/a2ojlqlv0hci.html",
                 "type": "external"
               }
-            ]
+            ],
+            "subject": "Biology"
           },
           {
             "id": "8m7i7m0lz9jm",
             "label": "GENETICS AND SKELETAL SYSTEM MCQ",
-            "url": "https://vidmoly.me/w/8m7i7m0lz9jm",
+            "url": "https://vidmoly.net/embed-8m7i7m0lz9jm.html",
             "downloadUrl": "https://vidmoly.me/8m7i7m0lz9jm.html",
             "type": "external",
             "servers": [
               {
                 "name": "Server 1",
-                "url": "https://vidmoly.me/w/8m7i7m0lz9jm",
+                "url": "https://vidmoly.net/embed-8m7i7m0lz9jm.html",
+                "downloadUrl": "https://vidmoly.me/8m7i7m0lz9jm.html",
+                "type": "external"
+              },
+              {
+                "name": "Server 2",
+                "url": "https://vidmoly.net/embed-8m7i7m0lz9jm.html",
+                "downloadUrl": "https://vidmoly.me/8m7i7m0lz9jm.html",
                 "type": "external"
               }
-            ]
+            ],
+            "subject": "Biology"
           },
           {
             "id": "na89irpce6kk",
             "label": "DISEASES",
-            "url": "https://vidmoly.me/w/na89irpce6kk",
+            "url": "https://vidmoly.net/embed-na89irpce6kk.html",
             "downloadUrl": "https://vidmoly.me/na89irpce6kk.html",
             "type": "external",
             "servers": [
               {
                 "name": "Server 1",
-                "url": "https://vidmoly.me/w/na89irpce6kk",
+                "url": "https://vidmoly.net/embed-na89irpce6kk.html",
+                "downloadUrl": "https://vidmoly.me/na89irpce6kk.html",
+                "type": "external"
+              },
+              {
+                "name": "Server 2",
+                "url": "https://vidmoly.net/embed-na89irpce6kk.html",
+                "downloadUrl": "https://vidmoly.me/na89irpce6kk.html",
                 "type": "external"
               }
-            ]
+            ],
+            "subject": "Biology"
           },
           {
             "id": "vkfas42vlef9",
             "label": "DISEASES MCQ",
-            "url": "https://vidmoly.me/w/vkfas42vlef9",
+            "url": "https://vidmoly.net/embed-vkfas42vlef9.html",
             "downloadUrl": "https://vidmoly.me/vkfas42vlef9.html",
             "type": "external",
             "servers": [
               {
                 "name": "Server 1",
-                "url": "https://vidmoly.me/w/vkfas42vlef9",
+                "url": "https://vidmoly.net/embed-vkfas42vlef9.html",
+                "downloadUrl": "https://vidmoly.me/vkfas42vlef9.html",
+                "type": "external"
+              },
+              {
+                "name": "Server 2",
+                "url": "https://vidmoly.net/embed-vkfas42vlef9.html",
+                "downloadUrl": "https://vidmoly.me/vkfas42vlef9.html",
                 "type": "external"
               }
-            ]
+            ],
+            "subject": "Biology"
           },
           {
             "id": "p6u7wxxq1q0z",
             "label": "DIGESTIVE AND RESPIRATORY SYSTEM",
-            "url": "https://vidmoly.me/w/p6u7wxxq1q0z",
+            "url": "https://vidmoly.net/embed-p6u7wxxq1q0z.html",
             "downloadUrl": "https://vidmoly.me/p6u7wxxq1q0z.html",
             "type": "external",
             "servers": [
               {
                 "name": "Server 1",
-                "url": "https://vidmoly.me/w/p6u7wxxq1q0z",
+                "url": "https://vidmoly.net/embed-p6u7wxxq1q0z.html",
+                "downloadUrl": "https://vidmoly.me/p6u7wxxq1q0z.html",
+                "type": "external"
+              },
+              {
+                "name": "Server 2",
+                "url": "https://vidmoly.net/embed-p6u7wxxq1q0z.html",
+                "downloadUrl": "https://vidmoly.me/p6u7wxxq1q0z.html",
                 "type": "external"
               }
-            ]
+            ],
+            "subject": "Biology"
           },
           {
             "id": "fm4lg0b54lbh",
             "label": "CIRCULATORY AND EXCRETARY SYSTEM",
-            "url": "https://vidmoly.me/w/fm4lg0b54lbh",
+            "url": "https://vidmoly.net/embed-fm4lg0b54lbh.html",
             "downloadUrl": "https://vidmoly.me/fm4lg0b54lbh.html",
             "type": "external",
             "servers": [
               {
                 "name": "Server 1",
-                "url": "https://vidmoly.me/w/fm4lg0b54lbh",
+                "url": "https://vidmoly.net/embed-fm4lg0b54lbh.html",
+                "downloadUrl": "https://vidmoly.me/fm4lg0b54lbh.html",
+                "type": "external"
+              },
+              {
+                "name": "Server 2",
+                "url": "https://vidmoly.net/embed-fm4lg0b54lbh.html",
+                "downloadUrl": "https://vidmoly.me/fm4lg0b54lbh.html",
                 "type": "external"
               }
-            ]
+            ],
+            "subject": "Biology"
           },
           {
             "id": "y0lr4260ci0y",
             "label": "CELL",
-            "url": "https://vidmoly.me/w/y0lr4260ci0y",
+            "url": "https://vidmoly.net/embed-y0lr4260ci0y.html",
             "downloadUrl": "https://vidmoly.me/y0lr4260ci0y.html",
             "type": "external",
             "servers": [
               {
                 "name": "Server 1",
-                "url": "https://vidmoly.me/w/y0lr4260ci0y",
+                "url": "https://vidmoly.net/embed-y0lr4260ci0y.html",
+                "downloadUrl": "https://vidmoly.me/y0lr4260ci0y.html",
+                "type": "external"
+              },
+              {
+                "name": "Server 2",
+                "url": "https://vidmoly.net/embed-y0lr4260ci0y.html",
+                "downloadUrl": "https://vidmoly.me/y0lr4260ci0y.html",
                 "type": "external"
               }
-            ]
+            ],
+            "subject": "Biology"
           },
           {
             "id": "2gohcam0v6gf",
             "label": "CELL QUESTION ASKED IN UPSC",
-            "url": "https://vidmoly.me/w/2gohcam0v6gf",
+            "url": "https://vidmoly.net/embed-2gohcam0v6gf.html",
             "downloadUrl": "https://vidmoly.me/2gohcam0v6gf.html",
             "type": "external",
             "servers": [
               {
                 "name": "Server 1",
-                "url": "https://vidmoly.me/w/2gohcam0v6gf",
+                "url": "https://vidmoly.net/embed-2gohcam0v6gf.html",
+                "downloadUrl": "https://vidmoly.me/2gohcam0v6gf.html",
+                "type": "external"
+              },
+              {
+                "name": "Server 2",
+                "url": "https://vidmoly.net/embed-2gohcam0v6gf.html",
+                "downloadUrl": "https://vidmoly.me/2gohcam0v6gf.html",
                 "type": "external"
               }
-            ]
+            ],
+            "subject": "Biology"
           },
           {
             "id": "ihq991pakp6l",
             "label": "ANIMAL TISSUE",
-            "url": "https://vidmoly.me/w/ihq991pakp6l",
+            "url": "https://vidmoly.net/embed-ihq991pakp6l.html",
             "downloadUrl": "https://vidmoly.me/ihq991pakp6l.html",
             "type": "external",
             "servers": [
               {
                 "name": "Server 1",
-                "url": "https://vidmoly.me/w/ihq991pakp6l",
+                "url": "https://vidmoly.net/embed-ihq991pakp6l.html",
+                "downloadUrl": "https://vidmoly.me/ihq991pakp6l.html",
+                "type": "external"
+              },
+              {
+                "name": "Server 2",
+                "url": "https://vidmoly.net/embed-ihq991pakp6l.html",
+                "downloadUrl": "https://vidmoly.me/ihq991pakp6l.html",
                 "type": "external"
               }
-            ]
+            ],
+            "subject": "Biology"
           },
           {
             "id": "7brwny4pon1i",
             "label": "ANIMAL KINGDOM",
-            "url": "https://vidmoly.me/w/7brwny4pon1i",
+            "url": "https://vidmoly.net/embed-7brwny4pon1i.html",
             "downloadUrl": "https://vidmoly.me/7brwny4pon1i.html",
             "type": "external",
             "servers": [
               {
                 "name": "Server 1",
-                "url": "https://vidmoly.me/w/7brwny4pon1i",
+                "url": "https://vidmoly.net/embed-7brwny4pon1i.html",
+                "downloadUrl": "https://vidmoly.me/7brwny4pon1i.html",
+                "type": "external"
+              },
+              {
+                "name": "Server 2",
+                "url": "https://vidmoly.net/embed-7brwny4pon1i.html",
+                "downloadUrl": "https://vidmoly.me/7brwny4pon1i.html",
                 "type": "external"
               }
-            ]
+            ],
+            "subject": "Biology"
           },
           {
             "id": "8ro1undfwyn6",
             "label": "ANIMAL KINGDOM MCQ",
-            "url": "https://vidmoly.me/w/8ro1undfwyn6",
+            "url": "https://vidmoly.net/embed-8ro1undfwyn6.html",
             "downloadUrl": "https://vidmoly.me/8ro1undfwyn6.html",
             "type": "external",
             "servers": [
               {
                 "name": "Server 1",
-                "url": "https://vidmoly.me/w/8ro1undfwyn6",
+                "url": "https://vidmoly.net/embed-8ro1undfwyn6.html",
+                "downloadUrl": "https://vidmoly.me/8ro1undfwyn6.html",
+                "type": "external"
+              },
+              {
+                "name": "Server 2",
+                "url": "https://vidmoly.net/embed-8ro1undfwyn6.html",
+                "downloadUrl": "https://vidmoly.me/8ro1undfwyn6.html",
                 "type": "external"
               }
-            ]
+            ],
+            "subject": "Biology"
           }
         ]
       },
       {
-        "id": "1oz7ak2h2z",
-        "label": "▶ POLITY 3.0",
-        "items": []
+        "id": "economics",
+        "label": "▶ Economics",
+        "items": [
+          {
+            "id": "1svlqwd3qck3",
+            "label": "BASICS OF ECONOMY",
+            "url": "https://vidmoly.net/embed-1svlqwd3qck3.html",
+            "downloadUrl": "https://vidmoly.me/1svlqwd3qck3.html",
+            "type": "external",
+            "servers": [
+              {
+                "name": "Server 1",
+                "url": "https://vidmoly.net/embed-1svlqwd3qck3.html",
+                "downloadUrl": "https://vidmoly.me/1svlqwd3qck3.html",
+                "type": "external"
+              },
+              {
+                "name": "Server 2",
+                "url": "https://vidmoly.net/embed-1svlqwd3qck3.html",
+                "downloadUrl": "https://vidmoly.me/1svlqwd3qck3.html",
+                "type": "external"
+              }
+            ],
+            "subject": "Economics"
+          },
+          {
+            "id": "98s1mwzt46dk",
+            "label": "Poverty",
+            "url": "https://vidmoly.net/embed-98s1mwzt46dk.html",
+            "downloadUrl": "https://vidmoly.me/98s1mwzt46dk.html",
+            "type": "external",
+            "servers": [
+              {
+                "name": "Server 1",
+                "url": "https://vidmoly.net/embed-98s1mwzt46dk.html",
+                "downloadUrl": "https://vidmoly.me/98s1mwzt46dk.html",
+                "type": "external"
+              },
+              {
+                "name": "Server 2",
+                "url": "https://vidmoly.net/embed-98s1mwzt46dk.html",
+                "downloadUrl": "https://vidmoly.me/98s1mwzt46dk.html",
+                "type": "external"
+              }
+            ],
+            "subject": "Economics"
+          },
+          {
+            "id": "t9ra1te1e7g3",
+            "label": "NATIONAL INCOME",
+            "url": "https://vidmoly.net/embed-t9ra1te1e7g3.html",
+            "downloadUrl": "https://vidmoly.me/t9ra1te1e7g3.html",
+            "type": "external",
+            "servers": [
+              {
+                "name": "Server 1",
+                "url": "https://vidmoly.net/embed-t9ra1te1e7g3.html",
+                "downloadUrl": "https://vidmoly.me/t9ra1te1e7g3.html",
+                "type": "external"
+              },
+              {
+                "name": "Server 2",
+                "url": "https://vidmoly.net/embed-t9ra1te1e7g3.html",
+                "downloadUrl": "https://vidmoly.me/t9ra1te1e7g3.html",
+                "type": "external"
+              }
+            ],
+            "subject": "Economics"
+          },
+          {
+            "id": "9i7c1ei6104q",
+            "label": "National Income MCQs",
+            "url": "https://vidmoly.net/embed-9i7c1ei6104q.html",
+            "downloadUrl": "https://vidmoly.me/9i7c1ei6104q.html",
+            "type": "external",
+            "servers": [
+              {
+                "name": "Server 1",
+                "url": "https://vidmoly.net/embed-9i7c1ei6104q.html",
+                "downloadUrl": "https://vidmoly.me/9i7c1ei6104q.html",
+                "type": "external"
+              },
+              {
+                "name": "Server 2",
+                "url": "https://vidmoly.net/embed-9i7c1ei6104q.html",
+                "downloadUrl": "https://vidmoly.me/9i7c1ei6104q.html",
+                "type": "external"
+              }
+            ],
+            "subject": "Economics"
+          },
+          {
+            "id": "68vft6futgba",
+            "label": "MONEY SUPPLY",
+            "url": "https://vidmoly.net/embed-68vft6futgba.html",
+            "downloadUrl": "https://vidmoly.me/68vft6futgba.html",
+            "type": "external",
+            "servers": [
+              {
+                "name": "Server 1",
+                "url": "https://vidmoly.net/embed-68vft6futgba.html",
+                "downloadUrl": "https://vidmoly.me/68vft6futgba.html",
+                "type": "external"
+              },
+              {
+                "name": "Server 2",
+                "url": "https://vidmoly.net/embed-68vft6futgba.html",
+                "downloadUrl": "https://vidmoly.me/68vft6futgba.html",
+                "type": "external"
+              }
+            ],
+            "subject": "Economics"
+          },
+          {
+            "id": "tixohfbri0ta",
+            "label": "MONEY AND BANKING PART1",
+            "url": "https://vidmoly.net/embed-tixohfbri0ta.html",
+            "downloadUrl": "https://vidmoly.me/tixohfbri0ta.html",
+            "type": "external",
+            "servers": [
+              {
+                "name": "Server 1",
+                "url": "https://vidmoly.net/embed-tixohfbri0ta.html",
+                "downloadUrl": "https://vidmoly.me/tixohfbri0ta.html",
+                "type": "external"
+              },
+              {
+                "name": "Server 2",
+                "url": "https://vidmoly.net/embed-tixohfbri0ta.html",
+                "downloadUrl": "https://vidmoly.me/tixohfbri0ta.html",
+                "type": "external"
+              }
+            ],
+            "subject": "Economics"
+          },
+          {
+            "id": "vixsjjsfmw0i",
+            "label": "MONETARY POLICY TOOLS",
+            "url": "https://vidmoly.net/embed-vixsjjsfmw0i.html",
+            "downloadUrl": "https://vidmoly.me/vixsjjsfmw0i.html",
+            "type": "external",
+            "servers": [
+              {
+                "name": "Server 1",
+                "url": "https://vidmoly.net/embed-vixsjjsfmw0i.html",
+                "downloadUrl": "https://vidmoly.me/vixsjjsfmw0i.html",
+                "type": "external"
+              },
+              {
+                "name": "Server 2",
+                "url": "https://vidmoly.net/embed-vixsjjsfmw0i.html",
+                "downloadUrl": "https://vidmoly.me/vixsjjsfmw0i.html",
+                "type": "external"
+              }
+            ],
+            "subject": "Economics"
+          },
+          {
+            "id": "6hsz9kllcr56",
+            "label": "MICROECONOMICS",
+            "url": "https://vidmoly.net/embed-6hsz9kllcr56.html",
+            "downloadUrl": "https://vidmoly.me/6hsz9kllcr56.html",
+            "type": "external",
+            "servers": [
+              {
+                "name": "Server 1",
+                "url": "https://vidmoly.net/embed-6hsz9kllcr56.html",
+                "downloadUrl": "https://vidmoly.me/6hsz9kllcr56.html",
+                "type": "external"
+              },
+              {
+                "name": "Server 2",
+                "url": "https://vidmoly.net/embed-6hsz9kllcr56.html",
+                "downloadUrl": "https://vidmoly.me/6hsz9kllcr56.html",
+                "type": "external"
+              }
+            ],
+            "subject": "Economics"
+          },
+          {
+            "id": "pw2frsw0oqb5",
+            "label": "MICROECONOMICS MCQs",
+            "url": "https://vidmoly.net/embed-pw2frsw0oqb5.html",
+            "downloadUrl": "https://vidmoly.me/pw2frsw0oqb5.html",
+            "type": "external",
+            "servers": [
+              {
+                "name": "Server 1",
+                "url": "https://vidmoly.net/embed-pw2frsw0oqb5.html",
+                "downloadUrl": "https://vidmoly.me/pw2frsw0oqb5.html",
+                "type": "external"
+              },
+              {
+                "name": "Server 2",
+                "url": "https://vidmoly.net/embed-pw2frsw0oqb5.html",
+                "downloadUrl": "https://vidmoly.me/pw2frsw0oqb5.html",
+                "type": "external"
+              }
+            ],
+            "subject": "Economics"
+          },
+          {
+            "id": "cm2kvnhmss3s",
+            "label": "INFLATION & UNEMPLOYMENT",
+            "url": "https://vidmoly.net/embed-cm2kvnhmss3s.html",
+            "downloadUrl": "https://vidmoly.me/cm2kvnhmss3s.html",
+            "type": "external",
+            "servers": [
+              {
+                "name": "Server 1",
+                "url": "https://vidmoly.net/embed-cm2kvnhmss3s.html",
+                "downloadUrl": "https://vidmoly.me/cm2kvnhmss3s.html",
+                "type": "external"
+              },
+              {
+                "name": "Server 2",
+                "url": "https://vidmoly.net/embed-cm2kvnhmss3s.html",
+                "downloadUrl": "https://vidmoly.me/cm2kvnhmss3s.html",
+                "type": "external"
+              }
+            ],
+            "subject": "Economics"
+          },
+          {
+            "id": "sgm7iwdaln17",
+            "label": "BUDGET & TAXATION",
+            "url": "https://vidmoly.net/embed-sgm7iwdaln17.html",
+            "downloadUrl": "https://vidmoly.me/sgm7iwdaln17.html",
+            "type": "external",
+            "servers": [
+              {
+                "name": "Server 1",
+                "url": "https://vidmoly.net/embed-sgm7iwdaln17.html",
+                "downloadUrl": "https://vidmoly.me/sgm7iwdaln17.html",
+                "type": "external"
+              },
+              {
+                "name": "Server 2",
+                "url": "https://vidmoly.net/embed-sgm7iwdaln17.html",
+                "downloadUrl": "https://vidmoly.me/sgm7iwdaln17.html",
+                "type": "external"
+              }
+            ],
+            "subject": "Economics"
+          },
+          {
+            "id": "ft2nxjnhdmlf",
+            "label": "BASICS OF ECONOMY",
+            "url": "https://vidmoly.net/embed-ft2nxjnhdmlf.html",
+            "downloadUrl": "https://vidmoly.me/ft2nxjnhdmlf.html",
+            "type": "external",
+            "servers": [
+              {
+                "name": "Server 1",
+                "url": "https://vidmoly.net/embed-ft2nxjnhdmlf.html",
+                "downloadUrl": "https://vidmoly.me/ft2nxjnhdmlf.html",
+                "type": "external"
+              },
+              {
+                "name": "Server 2",
+                "url": "https://vidmoly.net/embed-ft2nxjnhdmlf.html",
+                "downloadUrl": "https://vidmoly.me/ft2nxjnhdmlf.html",
+                "type": "external"
+              }
+            ],
+            "subject": "Economics"
+          },
+          {
+            "id": "o2atebw2vqfz",
+            "label": "5 YEAR PLAN",
+            "url": "https://vidmoly.net/embed-o2atebw2vqfz.html",
+            "downloadUrl": "https://vidmoly.me/o2atebw2vqfz.html",
+            "type": "external",
+            "servers": [
+              {
+                "name": "Server 1",
+                "url": "https://vidmoly.net/embed-o2atebw2vqfz.html",
+                "downloadUrl": "https://vidmoly.me/o2atebw2vqfz.html",
+                "type": "external"
+              },
+              {
+                "name": "Server 2",
+                "url": "https://vidmoly.net/embed-o2atebw2vqfz.html",
+                "downloadUrl": "https://vidmoly.me/o2atebw2vqfz.html",
+                "type": "external"
+              }
+            ],
+            "subject": "Economics"
+          }
+        ]
+      },
+      {
+        "id": "chemistry",
+        "label": "▶ Chemistry",
+        "items": [
+          {
+            "id": "vo9kfmharnci",
+            "label": "Matter MCQ",
+            "url": "https://vidmoly.net/embed-vo9kfmharnci.html",
+            "downloadUrl": "https://vidmoly.me/vo9kfmharnci.html",
+            "type": "external",
+            "servers": [
+              {
+                "name": "Server 1",
+                "url": "https://vidmoly.net/embed-vo9kfmharnci.html",
+                "downloadUrl": "https://vidmoly.me/vo9kfmharnci.html",
+                "type": "external"
+              },
+              {
+                "name": "Server 2",
+                "url": "https://vidmoly.net/embed-vo9kfmharnci.html",
+                "downloadUrl": "https://vidmoly.me/vo9kfmharnci.html",
+                "type": "external"
+              }
+            ],
+            "subject": "Chemistry"
+          },
+          {
+            "id": "0wmp0lgkcvd5",
+            "label": "PERIODIC TABLE",
+            "url": "https://vidmoly.net/embed-0wmp0lgkcvd5.html",
+            "downloadUrl": "https://vidmoly.me/0wmp0lgkcvd5.html",
+            "type": "external",
+            "servers": [
+              {
+                "name": "Server 1",
+                "url": "https://vidmoly.net/embed-0wmp0lgkcvd5.html",
+                "downloadUrl": "https://vidmoly.me/0wmp0lgkcvd5.html",
+                "type": "external"
+              },
+              {
+                "name": "Server 2",
+                "url": "https://vidmoly.net/embed-0wmp0lgkcvd5.html",
+                "downloadUrl": "https://vidmoly.me/0wmp0lgkcvd5.html",
+                "type": "external"
+              }
+            ],
+            "subject": "Chemistry"
+          },
+          {
+            "id": "vm6yhsepej02",
+            "label": "PERIODIC TABLE MCQs",
+            "url": "https://vidmoly.net/embed-vm6yhsepej02.html",
+            "downloadUrl": "https://vidmoly.me/vm6yhsepej02.html",
+            "type": "external",
+            "servers": [
+              {
+                "name": "Server 1",
+                "url": "https://vidmoly.net/embed-vm6yhsepej02.html",
+                "downloadUrl": "https://vidmoly.me/vm6yhsepej02.html",
+                "type": "external"
+              },
+              {
+                "name": "Server 2",
+                "url": "https://vidmoly.net/embed-vm6yhsepej02.html",
+                "downloadUrl": "https://vidmoly.me/vm6yhsepej02.html",
+                "type": "external"
+              }
+            ],
+            "subject": "Chemistry"
+          },
+          {
+            "id": "873038nercvo",
+            "label": "METALS AND NON METALS",
+            "url": "https://vidmoly.net/embed-873038nercvo.html",
+            "downloadUrl": "https://vidmoly.me/873038nercvo.html",
+            "type": "external",
+            "servers": [
+              {
+                "name": "Server 1",
+                "url": "https://vidmoly.net/embed-873038nercvo.html",
+                "downloadUrl": "https://vidmoly.me/873038nercvo.html",
+                "type": "external"
+              },
+              {
+                "name": "Server 2",
+                "url": "https://vidmoly.net/embed-873038nercvo.html",
+                "downloadUrl": "https://vidmoly.me/873038nercvo.html",
+                "type": "external"
+              }
+            ],
+            "subject": "Chemistry"
+          },
+          {
+            "id": "ujmzsohslejf",
+            "label": "MATTER & ITS PURITY",
+            "url": "https://vidmoly.net/embed-ujmzsohslejf.html",
+            "downloadUrl": "https://vidmoly.me/ujmzsohslejf.html",
+            "type": "external",
+            "servers": [
+              {
+                "name": "Server 1",
+                "url": "https://vidmoly.net/embed-ujmzsohslejf.html",
+                "downloadUrl": "https://vidmoly.me/ujmzsohslejf.html",
+                "type": "external"
+              },
+              {
+                "name": "Server 2",
+                "url": "https://vidmoly.net/embed-ujmzsohslejf.html",
+                "downloadUrl": "https://vidmoly.me/ujmzsohslejf.html",
+                "type": "external"
+              }
+            ],
+            "subject": "Chemistry"
+          },
+          {
+            "id": "pdfgktbz71mb",
+            "label": "GASEOUS LAWS",
+            "url": "https://vidmoly.net/embed-pdfgktbz71mb.html",
+            "downloadUrl": "https://vidmoly.me/pdfgktbz71mb.html",
+            "type": "external",
+            "servers": [
+              {
+                "name": "Server 1",
+                "url": "https://vidmoly.net/embed-pdfgktbz71mb.html",
+                "downloadUrl": "https://vidmoly.me/pdfgktbz71mb.html",
+                "type": "external"
+              },
+              {
+                "name": "Server 2",
+                "url": "https://vidmoly.net/embed-pdfgktbz71mb.html",
+                "downloadUrl": "https://vidmoly.me/pdfgktbz71mb.html",
+                "type": "external"
+              }
+            ],
+            "subject": "Chemistry"
+          },
+          {
+            "id": "tmmqaustm6zi",
+            "label": "CHEMICAL REACTIONS",
+            "url": "https://vidmoly.net/embed-tmmqaustm6zi.html",
+            "downloadUrl": "https://vidmoly.me/tmmqaustm6zi.html",
+            "type": "external",
+            "servers": [
+              {
+                "name": "Server 1",
+                "url": "https://vidmoly.net/embed-tmmqaustm6zi.html",
+                "downloadUrl": "https://vidmoly.me/tmmqaustm6zi.html",
+                "type": "external"
+              },
+              {
+                "name": "Server 2",
+                "url": "https://vidmoly.net/embed-tmmqaustm6zi.html",
+                "downloadUrl": "https://vidmoly.me/tmmqaustm6zi.html",
+                "type": "external"
+              }
+            ],
+            "subject": "Chemistry"
+          },
+          {
+            "id": "7nljlvnjlnro",
+            "label": "CARBON AND ITS COMPOUNDS",
+            "url": "https://vidmoly.net/embed-7nljlvnjlnro.html",
+            "downloadUrl": "https://vidmoly.me/7nljlvnjlnro.html",
+            "type": "external",
+            "servers": [
+              {
+                "name": "Server 1",
+                "url": "https://vidmoly.net/embed-7nljlvnjlnro.html",
+                "downloadUrl": "https://vidmoly.me/7nljlvnjlnro.html",
+                "type": "external"
+              },
+              {
+                "name": "Server 2",
+                "url": "https://vidmoly.net/embed-7nljlvnjlnro.html",
+                "downloadUrl": "https://vidmoly.me/7nljlvnjlnro.html",
+                "type": "external"
+              }
+            ],
+            "subject": "Chemistry"
+          },
+          {
+            "id": "sw2i85t07k5h",
+            "label": "Carbon and Its Compounds MCQs",
+            "url": "https://vidmoly.net/embed-sw2i85t07k5h.html",
+            "downloadUrl": "https://vidmoly.me/sw2i85t07k5h.html",
+            "type": "external",
+            "servers": [
+              {
+                "name": "Server 1",
+                "url": "https://vidmoly.net/embed-sw2i85t07k5h.html",
+                "downloadUrl": "https://vidmoly.me/sw2i85t07k5h.html",
+                "type": "external"
+              },
+              {
+                "name": "Server 2",
+                "url": "https://vidmoly.net/embed-sw2i85t07k5h.html",
+                "downloadUrl": "https://vidmoly.me/sw2i85t07k5h.html",
+                "type": "external"
+              }
+            ],
+            "subject": "Chemistry"
+          },
+          {
+            "id": "2z1da6psm50x",
+            "label": "ATOM AND ITS STRUCTURE",
+            "url": "https://vidmoly.net/embed-2z1da6psm50x.html",
+            "downloadUrl": "https://vidmoly.me/2z1da6psm50x.html",
+            "type": "external",
+            "servers": [
+              {
+                "name": "Server 1",
+                "url": "https://vidmoly.net/embed-2z1da6psm50x.html",
+                "downloadUrl": "https://vidmoly.me/2z1da6psm50x.html",
+                "type": "external"
+              },
+              {
+                "name": "Server 2",
+                "url": "https://vidmoly.net/embed-2z1da6psm50x.html",
+                "downloadUrl": "https://vidmoly.me/2z1da6psm50x.html",
+                "type": "external"
+              }
+            ],
+            "subject": "Chemistry"
+          },
+          {
+            "id": "8esc8rxjgfct",
+            "label": "ACID BASE AND SALT",
+            "url": "https://vidmoly.net/embed-8esc8rxjgfct.html",
+            "downloadUrl": "https://vidmoly.me/8esc8rxjgfct.html",
+            "type": "external",
+            "servers": [
+              {
+                "name": "Server 1",
+                "url": "https://vidmoly.net/embed-8esc8rxjgfct.html",
+                "downloadUrl": "https://vidmoly.me/8esc8rxjgfct.html",
+                "type": "external"
+              },
+              {
+                "name": "Server 2",
+                "url": "https://vidmoly.net/embed-8esc8rxjgfct.html",
+                "downloadUrl": "https://vidmoly.me/8esc8rxjgfct.html",
+                "type": "external"
+              }
+            ],
+            "subject": "Chemistry"
+          }
+        ]
+      },
+      {
+        "id": "env-ecology",
+        "label": "▶ Environment & Ecology",
+        "items": [
+          {
+            "id": "33v7xiks7dgm",
+            "label": "ENVIRONMENT AND ECOLOGY LEC 1",
+            "url": "https://vidmoly.net/embed-33v7xiks7dgm.html",
+            "downloadUrl": "https://vidmoly.me/33v7xiks7dgm.html",
+            "type": "external",
+            "servers": [
+              {
+                "name": "Server 1",
+                "url": "https://vidmoly.net/embed-33v7xiks7dgm.html",
+                "downloadUrl": "https://vidmoly.me/33v7xiks7dgm.html",
+                "type": "external"
+              },
+              {
+                "name": "Server 2",
+                "url": "https://vidmoly.net/embed-33v7xiks7dgm.html",
+                "downloadUrl": "https://vidmoly.me/33v7xiks7dgm.html",
+                "type": "external"
+              }
+            ],
+            "subject": "Environment & Ecology"
+          },
+          {
+            "id": "z3b0yjsmrso0",
+            "label": "ENVIRONMENT AND ECOLOGY LEC 3",
+            "url": "https://vidmoly.net/embed-z3b0yjsmrso0.html",
+            "downloadUrl": "https://vidmoly.me/z3b0yjsmrso0.html",
+            "type": "external",
+            "servers": [
+              {
+                "name": "Server 1",
+                "url": "https://vidmoly.net/embed-z3b0yjsmrso0.html",
+                "downloadUrl": "https://vidmoly.me/z3b0yjsmrso0.html",
+                "type": "external"
+              },
+              {
+                "name": "Server 2",
+                "url": "https://vidmoly.net/embed-z3b0yjsmrso0.html",
+                "downloadUrl": "https://vidmoly.me/z3b0yjsmrso0.html",
+                "type": "external"
+              }
+            ],
+            "subject": "Environment & Ecology"
+          },
+          {
+            "id": "5y2qmfxfiui6",
+            "label": "ENVIRONMENT AND ECOLOGY LEC 2",
+            "url": "https://vidmoly.net/embed-5y2qmfxfiui6.html",
+            "downloadUrl": "https://vidmoly.me/5y2qmfxfiui6.html",
+            "type": "external",
+            "servers": [
+              {
+                "name": "Server 1",
+                "url": "https://vidmoly.net/embed-5y2qmfxfiui6.html",
+                "downloadUrl": "https://vidmoly.me/5y2qmfxfiui6.html",
+                "type": "external"
+              },
+              {
+                "name": "Server 2",
+                "url": "https://vidmoly.net/embed-5y2qmfxfiui6.html",
+                "downloadUrl": "https://vidmoly.me/5y2qmfxfiui6.html",
+                "type": "external"
+              }
+            ],
+            "subject": "Environment & Ecology"
+          }
+        ]
       }
     ]
   },
   {
     "id": "beu-1st-year",
-    "name": "BEU 1ST YEAR",
-    "subname": "BEU 1ST YEAR (Live Sync)",
-    "teacher": "Faculty",
-    "subject": "BEU 1ST YEAR",
-    "thumb": "/assets/computer_thumbnail_1782650750820.png",
+    "name": "BEU 1st Sem",
+    "subname": "B.Tech 1st Semester Courses",
+    "teacher": "BEU Faculty",
+    "subject": "B.Tech Engineering",
+    "thumb": "/thumbnails/beu_1st_sem_course.jpg",
     "tabs": [
       {
-        "id": "goxq5r4to2",
-        "label": "▶ ENG CHEMISTRY",
+        "id": "ece-ee-eee",
+        "label": "ECE / EE / EEE",
+        "subname": "Physics, Chemistry, Maths-II, English & Graphics (174 Lectures)",
+        "thumb": "/thumbnails/beu_ece_ee_eee.jpg",
         "items": [
           {
-            "id": "xr8clxl5hlx6",
-            "label": "(Engineering Chemistry)(Practice Session)(Engineering Chemis",
-            "url": "https://vidmoly.me/w/xr8clxl5hlx6",
-            "downloadUrl": "https://vidmoly.me/xr8clxl5hlx6.html",
-            "type": "external",
-            "servers": [
-              {
-                "name": "Server 1",
-                "url": "https://vidmoly.me/w/xr8clxl5hlx6",
-                "type": "external"
-              }
-            ]
+            "label": "Lecture 01 • Electromagnetic Radiation",
+            "url": "https://vidmoly.net/embed-jwm50200cizn.html",
+            "type": "hls",
+            "subject": "Engineering Physics"
           },
           {
-            "id": "bf9lvfpcqx00",
-            "label": "(Engineering Chemistry)(Practice Session)(Engineering Chemis (4)",
-            "url": "https://vidmoly.me/w/bf9lvfpcqx00",
-            "downloadUrl": "https://vidmoly.me/bf9lvfpcqx00.html",
-            "type": "external",
-            "servers": [
-              {
-                "name": "Server 1",
-                "url": "https://vidmoly.me/w/bf9lvfpcqx00",
-                "type": "external"
-              }
-            ]
+            "label": "Lecture 02 • Dual Nature of Electron & Heisenberg Uncertainty Principle",
+            "url": "https://vidmoly.net/embed-fs9x2qd692dm.html",
+            "type": "hls",
+            "subject": "Engineering Physics"
           },
           {
-            "id": "frknyzzwu499",
-            "label": "(Engineering Chemistry)(Practice Session)(Engineering Chemis (3)",
-            "url": "https://vidmoly.me/w/frknyzzwu499",
-            "downloadUrl": "https://vidmoly.me/frknyzzwu499.html",
-            "type": "external",
-            "servers": [
-              {
-                "name": "Server 1",
-                "url": "https://vidmoly.me/w/frknyzzwu499",
-                "type": "external"
-              }
-            ]
+            "label": "Lecture 01 • Polymerization Techniques (Free Radical)",
+            "url": "https://vidmoly.net/embed-yjr5whkwzi0c.html",
+            "type": "hls",
+            "subject": "Engineering Chemistry"
           },
           {
-            "id": "pe7oj703n9o8",
-            "label": "(Engineering Chemistry)(Practice Session)(Engineering Chemis (2)",
-            "url": "https://vidmoly.me/w/pe7oj703n9o8",
-            "downloadUrl": "https://vidmoly.me/pe7oj703n9o8.html",
-            "type": "external",
-            "servers": [
-              {
-                "name": "Server 1",
-                "url": "https://vidmoly.me/w/pe7oj703n9o8",
-                "type": "external"
-              }
-            ]
+            "label": "Lecture 02 • Ionic & Coordination Mechanism",
+            "url": "https://vidmoly.net/embed-lqqgbrxalg0v.html",
+            "type": "hls",
+            "subject": "Engineering Chemistry"
           },
           {
-            "id": "wps7v8kngr66",
-            "label": "(Engineering Chemistry)(Module 6) Lect 03 Epoxide ring",
-            "url": "https://vidmoly.me/w/wps7v8kngr66",
-            "downloadUrl": "https://vidmoly.me/wps7v8kngr66.html",
-            "type": "external",
-            "servers": [
-              {
-                "name": "Server 1",
-                "url": "https://vidmoly.me/w/wps7v8kngr66",
-                "type": "external"
-              }
-            ]
+            "label": "Lecture 03 • Technical Application of Phenol Formaldehyde Resin",
+            "url": "https://vidmoly.net/embed-n1ejqj66ojg1.html",
+            "type": "hls",
+            "subject": "Engineering Chemistry"
           },
           {
-            "id": "b08uu3lsgqs1",
-            "label": "(Engineering Chemistry)(Module 6) Lect 02 Diels alder reac",
-            "url": "https://vidmoly.me/w/b08uu3lsgqs1",
-            "downloadUrl": "https://vidmoly.me/b08uu3lsgqs1.html",
-            "type": "external",
-            "servers": [
-              {
-                "name": "Server 1",
-                "url": "https://vidmoly.me/w/b08uu3lsgqs1",
-                "type": "external"
-              }
-            ]
+            "label": "Lecture 04 • Elastomers",
+            "url": "https://vidmoly.net/embed-o9p1qcv8kk69.html",
+            "type": "hls",
+            "subject": "Engineering Chemistry"
           },
           {
-            "id": "x5lc4g9zpt7i",
-            "label": "(Engineering Chemistry)(Module 6) Lect 01 organic reaction",
-            "url": "https://vidmoly.me/w/x5lc4g9zpt7i",
-            "downloadUrl": "https://vidmoly.me/x5lc4g9zpt7i.html",
-            "type": "external",
-            "servers": [
-              {
-                "name": "Server 1",
-                "url": "https://vidmoly.me/w/x5lc4g9zpt7i",
-                "type": "external"
-              }
-            ]
+            "label": "Lecture 05 • Buna-S & Buna-N",
+            "url": "https://vidmoly.net/embed-2besbh2xnt82.html",
+            "type": "hls",
+            "subject": "Engineering Chemistry"
           },
           {
-            "id": "q6bk0x18cc2y",
-            "label": "(Engineering Chemistry)(Module 4) Lect 07 Caustic Embrittl",
-            "url": "https://vidmoly.me/w/q6bk0x18cc2y",
-            "downloadUrl": "https://vidmoly.me/q6bk0x18cc2y.html",
-            "type": "external",
-            "servers": [
-              {
-                "name": "Server 1",
-                "url": "https://vidmoly.me/w/q6bk0x18cc2y",
-                "type": "external"
-              }
-            ]
+            "label": "Lecture 06 • Inorganic Polymer Silicone Adhesive & Epoxy Resin",
+            "url": "https://vidmoly.net/embed-et05fw3ng33c.html",
+            "type": "hls",
+            "subject": "Engineering Chemistry"
           },
           {
-            "id": "iy41ljk4s8j9",
-            "label": "(Engineering Chemistry)(Module 4) Lect 06 Chemistry",
-            "url": "https://vidmoly.me/w/iy41ljk4s8j9",
-            "downloadUrl": "https://vidmoly.me/iy41ljk4s8j9.html",
-            "type": "external",
-            "servers": [
-              {
-                "name": "Server 1",
-                "url": "https://vidmoly.me/w/iy41ljk4s8j9",
-                "type": "external"
-              }
-            ]
+            "label": "Lecture 07 • Thermoplastic vs Thermosetting Plastics & PVC",
+            "url": "https://vidmoly.net/embed-3iveccuhymvk.html",
+            "type": "hls",
+            "subject": "Engineering Chemistry"
           },
           {
-            "id": "ijtn2ssgb7xt",
-            "label": "(Engineering Chemistry)(Module 4) Lect 05 Boiler",
-            "url": "https://vidmoly.me/w/ijtn2ssgb7xt",
-            "downloadUrl": "https://vidmoly.me/ijtn2ssgb7xt.html",
-            "type": "external",
-            "servers": [
-              {
-                "name": "Server 1",
-                "url": "https://vidmoly.me/w/ijtn2ssgb7xt",
-                "type": "external"
-              }
-            ]
+            "label": "Lecture 08 • Polythene & Polystyrene",
+            "url": "https://vidmoly.net/embed-8i0abxxats5m.html",
+            "type": "hls",
+            "subject": "Engineering Chemistry"
           },
           {
-            "id": "67jxrue19qzb",
-            "label": "(Engineering Chemistry)(Module 4) Lect 04 Chemistry",
-            "url": "https://vidmoly.me/w/67jxrue19qzb",
-            "downloadUrl": "https://vidmoly.me/67jxrue19qzb.html",
-            "type": "external",
-            "servers": [
-              {
-                "name": "Server 1",
-                "url": "https://vidmoly.me/w/67jxrue19qzb",
-                "type": "external"
-              }
-            ]
+            "label": "Lecture 09 • Organic Reactions",
+            "url": "https://vidmoly.net/embed-8o9q49w7c5pt.html",
+            "type": "hls",
+            "subject": "Engineering Chemistry"
           },
           {
-            "id": "iv4l1dunv03r",
-            "label": "(Engineering Chemistry)(Module 4) Lect 03 Alkalinity M",
-            "url": "https://vidmoly.me/w/iv4l1dunv03r",
-            "downloadUrl": "https://vidmoly.me/iv4l1dunv03r.html",
-            "type": "external",
-            "servers": [
-              {
-                "name": "Server 1",
-                "url": "https://vidmoly.me/w/iv4l1dunv03r",
-                "type": "external"
-              }
-            ]
+            "label": "Lecture 10 • Diels-Alder Reaction",
+            "url": "https://vidmoly.net/embed-jhh2f6tccjko.html",
+            "type": "hls",
+            "subject": "Engineering Chemistry"
           },
           {
-            "id": "uprbrnwk2c56",
-            "label": "(Engineering Chemistry)(Module 4) Lect 02 Hardness of",
-            "url": "https://vidmoly.me/w/uprbrnwk2c56",
-            "downloadUrl": "https://vidmoly.me/uprbrnwk2c56.html",
-            "type": "external",
-            "servers": [
-              {
-                "name": "Server 1",
-                "url": "https://vidmoly.me/w/uprbrnwk2c56",
-                "type": "external"
-              }
-            ]
+            "label": "Lecture 11 • Epoxide Ring Reactions",
+            "url": "https://vidmoly.net/embed-dmegx7y2by47.html",
+            "type": "hls",
+            "subject": "Engineering Chemistry"
           },
           {
-            "id": "f3ssaux2o3q2",
-            "label": "(Engineering Chemistry)(Module 4) Lect 01 Hardness of",
-            "url": "https://vidmoly.me/w/f3ssaux2o3q2",
-            "downloadUrl": "https://vidmoly.me/f3ssaux2o3q2.html",
-            "type": "external",
-            "servers": [
-              {
-                "name": "Server 1",
-                "url": "https://vidmoly.me/w/f3ssaux2o3q2",
-                "type": "external"
-              }
-            ]
+            "label": "Lecture 12 • Electrochemical Cell",
+            "url": "https://vidmoly.net/embed-km7nythee3z2.html",
+            "type": "hls",
+            "subject": "Engineering Chemistry"
           },
           {
-            "id": "tqu6eu3ui628",
-            "label": "(Engineering Chemistry)(Module 3) Lect 09 Chemistry Le",
-            "url": "https://vidmoly.me/w/tqu6eu3ui628",
-            "downloadUrl": "https://vidmoly.me/tqu6eu3ui628.html",
-            "type": "external",
-            "servers": [
-              {
-                "name": "Server 1",
-                "url": "https://vidmoly.me/w/tqu6eu3ui628",
-                "type": "external"
-              }
-            ]
+            "label": "Lecture 13 • Electrochemical Cell — Part 2",
+            "url": "https://vidmoly.net/embed-pt5hzr9b2ok8.html",
+            "type": "hls",
+            "subject": "Engineering Chemistry"
           },
           {
-            "id": "svoap3krewxl",
-            "label": "(Engineering Chemistry)(Module 3) Lect 08 Lead Storage",
-            "url": "https://vidmoly.me/w/svoap3krewxl",
-            "downloadUrl": "https://vidmoly.me/svoap3krewxl.html",
-            "type": "external",
-            "servers": [
-              {
-                "name": "Server 1",
-                "url": "https://vidmoly.me/w/svoap3krewxl",
-                "type": "external"
-              }
-            ]
+            "label": "Lecture 14 • Electromotive Force (EMF)",
+            "url": "https://vidmoly.net/embed-n5hcft3oobw5.html",
+            "type": "hls",
+            "subject": "Engineering Chemistry"
           },
           {
-            "id": "79o7cnnl5jil",
-            "label": "(Engineering Chemistry)(Module 3) Lect 07 Chemistry",
-            "url": "https://vidmoly.me/w/79o7cnnl5jil",
-            "downloadUrl": "https://vidmoly.me/79o7cnnl5jil.html",
-            "type": "external",
-            "servers": [
-              {
-                "name": "Server 1",
-                "url": "https://vidmoly.me/w/79o7cnnl5jil",
-                "type": "external"
-              }
-            ]
+            "label": "Lecture 15 • Nernst Equation",
+            "url": "https://vidmoly.net/embed-yr4ntwfgjv41.html",
+            "type": "hls",
+            "subject": "Engineering Chemistry"
           },
           {
-            "id": "jdt2c2bgb4yr",
-            "label": "(Engineering Chemistry)(Module 3) Lect 06 Corrosion",
-            "url": "https://vidmoly.me/w/jdt2c2bgb4yr",
-            "downloadUrl": "https://vidmoly.me/jdt2c2bgb4yr.html",
-            "type": "external",
-            "servers": [
-              {
-                "name": "Server 1",
-                "url": "https://vidmoly.me/w/jdt2c2bgb4yr",
-                "type": "external"
-              }
-            ]
+            "label": "Lecture 16 • Mechanism of Corrosion — Part 1",
+            "url": "https://vidmoly.net/embed-aqo6ps0ihmss.html",
+            "type": "hls",
+            "subject": "Engineering Chemistry"
           },
           {
-            "id": "vwxuocprne9d",
-            "label": "(Engineering Chemistry)(Module 3) Lect 05 Corrosion",
-            "url": "https://vidmoly.me/w/vwxuocprne9d",
-            "downloadUrl": "https://vidmoly.me/vwxuocprne9d.html",
-            "type": "external",
-            "servers": [
-              {
-                "name": "Server 1",
-                "url": "https://vidmoly.me/w/vwxuocprne9d",
-                "type": "external"
-              }
-            ]
+            "label": "Lecture 17 • Corrosion Prevention — Part 2",
+            "url": "https://vidmoly.net/embed-fwfaejh4tysi.html",
+            "type": "hls",
+            "subject": "Engineering Chemistry"
           },
           {
-            "id": "ov5a1y6h0lqn",
-            "label": "(Engineering Chemistry)(Module 3) Lect 04 Nernst Equat",
-            "url": "https://vidmoly.me/w/ov5a1y6h0lqn",
-            "downloadUrl": "https://vidmoly.me/ov5a1y6h0lqn.html",
-            "type": "external",
-            "servers": [
-              {
-                "name": "Server 1",
-                "url": "https://vidmoly.me/w/ov5a1y6h0lqn",
-                "type": "external"
-              }
-            ]
+            "label": "Lecture 18 • Molecular Orbital Theory (MOT)",
+            "url": "https://vidmoly.net/embed-tuycxdqhhnjb.html",
+            "type": "hls",
+            "subject": "Engineering Chemistry"
           },
           {
-            "id": "gcw3h1rbyfjo",
-            "label": "(Engineering Chemistry)(Module 3) Lect 03 EMF",
-            "url": "https://vidmoly.me/w/gcw3h1rbyfjo",
-            "downloadUrl": "https://vidmoly.me/gcw3h1rbyfjo.html",
-            "type": "external",
-            "servers": [
-              {
-                "name": "Server 1",
-                "url": "https://vidmoly.me/w/gcw3h1rbyfjo",
-                "type": "external"
-              }
-            ]
+            "label": "Lecture 19 • Lead Storage Battery",
+            "url": "https://vidmoly.net/embed-0k4jrv4spllh.html",
+            "type": "hls",
+            "subject": "Engineering Chemistry"
           },
           {
-            "id": "k7q68h2yai3a",
-            "label": "(Engineering Chemistry)(Module 3) Lect 02 Electrochemi",
-            "url": "https://vidmoly.me/w/k7q68h2yai3a",
-            "downloadUrl": "https://vidmoly.me/k7q68h2yai3a.html",
-            "type": "external",
-            "servers": [
-              {
-                "name": "Server 1",
-                "url": "https://vidmoly.me/w/k7q68h2yai3a",
-                "type": "external"
-              }
-            ]
+            "label": "Lecture 20 • Leclanché Cell & Dry Cell",
+            "url": "https://vidmoly.net/embed-vehp0r1r6oxk.html",
+            "type": "hls",
+            "subject": "Engineering Chemistry"
           },
           {
-            "id": "fenvznyavcfu",
-            "label": "(Engineering Chemistry)(Module 3) Lect 01 Electrochemi",
-            "url": "https://vidmoly.me/w/fenvznyavcfu",
-            "downloadUrl": "https://vidmoly.me/fenvznyavcfu.html",
-            "type": "external",
-            "servers": [
-              {
-                "name": "Server 1",
-                "url": "https://vidmoly.me/w/fenvznyavcfu",
-                "type": "external"
-              }
-            ]
+            "label": "Lecture 21 • Hardness of Water",
+            "url": "https://vidmoly.net/embed-vfvprrper4pa.html",
+            "type": "hls",
+            "subject": "Engineering Chemistry"
           },
           {
-            "id": "x7kt8lbq9i3n",
-            "label": "(Engineering Chemistry)(Module 2) Lect 04",
-            "url": "https://vidmoly.me/w/x7kt8lbq9i3n",
-            "downloadUrl": "https://vidmoly.me/x7kt8lbq9i3n.html",
-            "type": "external",
-            "servers": [
-              {
-                "name": "Server 1",
-                "url": "https://vidmoly.me/w/x7kt8lbq9i3n",
-                "type": "external"
-              }
-            ]
+            "label": "Lecture 22 • Hardness of Water — Part 2",
+            "url": "https://vidmoly.net/embed-a0xig2gfyjdw.html",
+            "type": "hls",
+            "subject": "Engineering Chemistry"
           },
           {
-            "id": "8ihi1yu72vtc",
-            "label": "(Engineering Chemistry)(Module 2) Lect 03 Spectroscopy",
-            "url": "https://vidmoly.me/w/8ihi1yu72vtc",
-            "downloadUrl": "https://vidmoly.me/8ihi1yu72vtc.html",
-            "type": "external",
-            "servers": [
-              {
-                "name": "Server 1",
-                "url": "https://vidmoly.me/w/8ihi1yu72vtc",
-                "type": "external"
-              }
-            ]
+            "label": "Lecture 23 • Alkalinity of Water & Estimation",
+            "url": "https://vidmoly.net/embed-w72ulc5x4jwy.html",
+            "type": "hls",
+            "subject": "Engineering Chemistry"
           },
           {
-            "id": "unldj85zhm0k",
-            "label": "(Engineering Chemistry)(Module 2) Lect 02 Spectroscopy",
-            "url": "https://vidmoly.me/w/unldj85zhm0k",
-            "downloadUrl": "https://vidmoly.me/unldj85zhm0k.html",
-            "type": "external",
-            "servers": [
-              {
-                "name": "Server 1",
-                "url": "https://vidmoly.me/w/unldj85zhm0k",
-                "type": "external"
-              },
-              {
-                "name": "Server 2",
-                "url": "https://morencius.com/v/wzawghk3h2qo",
-                "type": "external"
-              }
-            ]
+            "label": "Lecture 24 • Water Treatment & Softening",
+            "url": "https://vidmoly.net/embed-ffi4uxq3c9k2.html",
+            "type": "hls",
+            "subject": "Engineering Chemistry"
           },
           {
-            "id": "jf5mkvx89zxz",
-            "label": "(Engineering Chemistry)(Module 2) Lect 01 Principal of",
-            "url": "https://vidmoly.me/w/jf5mkvx89zxz",
-            "downloadUrl": "https://vidmoly.me/jf5mkvx89zxz.html",
-            "type": "external",
-            "servers": [
-              {
-                "name": "Server 1",
-                "url": "https://vidmoly.me/w/jf5mkvx89zxz",
-                "type": "external"
-              },
-              {
-                "name": "Server 2",
-                "url": "https://morencius.com/v/msaip5b2hfpp",
-                "type": "external"
-              }
-            ]
+            "label": "Lecture 25 • Boiler Feed Water & Operations",
+            "url": "https://vidmoly.net/embed-jqnip5s8qe35.html",
+            "type": "hls",
+            "subject": "Engineering Chemistry"
           },
           {
-            "id": "cw3lwkhyvmsa",
-            "label": "(Engineering Chemistry)(Module 1) Lect 10 Metal Carbon",
-            "url": "https://vidmoly.me/w/cw3lwkhyvmsa",
-            "downloadUrl": "https://vidmoly.me/cw3lwkhyvmsa.html",
-            "type": "external",
-            "servers": [
-              {
-                "name": "Server 1",
-                "url": "https://vidmoly.me/w/cw3lwkhyvmsa",
-                "type": "external"
-              },
-              {
-                "name": "Server 2",
-                "url": "https://morencius.com/v/m9s0n396q9wc",
-                "type": "external"
-              }
-            ]
+            "label": "Lecture 26 • Boiler Troubles: Sludge, Scale, Priming & Foaming",
+            "url": "https://vidmoly.net/embed-ys9vif74hk2z.html",
+            "type": "hls",
+            "subject": "Engineering Chemistry"
           },
           {
-            "id": "5uxql2kjgxds",
-            "label": "(Engineering Chemistry)(Module 1) Lect 9 Chemistry Iso",
-            "url": "https://vidmoly.me/w/5uxql2kjgxds",
-            "downloadUrl": "https://vidmoly.me/5uxql2kjgxds.html",
-            "type": "external",
-            "servers": [
-              {
-                "name": "Server 1",
-                "url": "https://vidmoly.me/w/5uxql2kjgxds",
-                "type": "external"
-              },
-              {
-                "name": "Server 2",
-                "url": "https://morencius.com/v/ex2fgh5m141m",
-                "type": "external"
-              }
-            ]
+            "label": "Lecture 27 • Water Analysis & Problem Solving",
+            "url": "https://vidmoly.net/embed-dojn15j3bars.html",
+            "type": "hls",
+            "subject": "Engineering Chemistry"
           },
           {
-            "id": "urwg5a6fyfzk",
-            "label": "(Engineering Chemistry)(Module 1) Lect 08 Coordination",
-            "url": "https://vidmoly.me/w/urwg5a6fyfzk",
-            "downloadUrl": "https://vidmoly.me/urwg5a6fyfzk.html",
-            "type": "external",
-            "servers": [
-              {
-                "name": "Server 1",
-                "url": "https://vidmoly.me/w/urwg5a6fyfzk",
-                "type": "external"
-              },
-              {
-                "name": "Server 2",
-                "url": "https://morencius.com/v/yik4qj4i9d4l",
-                "type": "external"
-              }
-            ]
+            "label": "Lecture 28 • Polymerization Techniques (Free Radical) — Revision",
+            "url": "https://vidmoly.net/embed-1yrenpitf57b.html",
+            "type": "hls",
+            "subject": "Engineering Chemistry"
           },
           {
-            "id": "zligdcfd1nh4",
-            "label": "(Engineering Chemistry)(Module 1) Lect 07 VSEPR Theory",
-            "url": "https://vidmoly.me/w/zligdcfd1nh4",
-            "downloadUrl": "https://vidmoly.me/zligdcfd1nh4.html",
-            "type": "external",
-            "servers": [
-              {
-                "name": "Server 1",
-                "url": "https://vidmoly.me/w/zligdcfd1nh4",
-                "type": "external"
-              },
-              {
-                "name": "Server 2",
-                "url": "https://morencius.com/v/rvdd4qy382bb",
-                "type": "external"
-              }
-            ]
+            "label": "Lecture 29 • Ionic & Coordination Mechanism — Revision",
+            "url": "https://vidmoly.net/embed-cil42rdtbg2a.html",
+            "type": "hls",
+            "subject": "Engineering Chemistry"
           },
           {
-            "id": "i56owm6cfbji",
-            "label": "(Engineering Chemistry)(Module 1) Lect 06 VSEPR Theory",
-            "url": "https://vidmoly.me/w/i56owm6cfbji",
-            "downloadUrl": "https://vidmoly.me/i56owm6cfbji.html",
-            "type": "external",
-            "servers": [
-              {
-                "name": "Server 1",
-                "url": "https://vidmoly.me/w/i56owm6cfbji",
-                "type": "external"
-              },
-              {
-                "name": "Server 2",
-                "url": "https://morencius.com/v/yekum5hnykwl",
-                "type": "external"
-              }
-            ]
+            "label": "Lecture 30 • Phenol Formaldehyde Resin Applications",
+            "url": "https://vidmoly.net/embed-eggxzqbltsdr.html",
+            "type": "hls",
+            "subject": "Engineering Chemistry"
           },
           {
-            "id": "iiriw9w8wacg",
-            "label": "(Engineering Chemistry)(Module 1) Lect 05 Molecular Or",
-            "url": "https://vidmoly.me/w/iiriw9w8wacg",
-            "downloadUrl": "https://vidmoly.me/iiriw9w8wacg.html",
-            "type": "external",
-            "servers": [
-              {
-                "name": "Server 1",
-                "url": "https://vidmoly.me/w/iiriw9w8wacg",
-                "type": "external"
-              },
-              {
-                "name": "Server 2",
-                "url": "https://morencius.com/v/dw7db2m20yqw",
-                "type": "external"
-              }
-            ]
+            "label": "Lecture 31 • Elastomers & Synthetic Rubbers",
+            "url": "https://vidmoly.net/embed-3i3m4j3p8ri1.html",
+            "type": "hls",
+            "subject": "Engineering Chemistry"
           },
           {
-            "id": "tuwbb21uzrq6",
-            "label": "(Engineering Chemistry)(Module 1) Lect 04 Atomic and M",
-            "url": "https://vidmoly.me/w/tuwbb21uzrq6",
-            "downloadUrl": "https://vidmoly.me/tuwbb21uzrq6.html",
-            "type": "external",
-            "servers": [
-              {
-                "name": "Server 1",
-                "url": "https://vidmoly.me/w/tuwbb21uzrq6",
-                "type": "external"
-              },
-              {
-                "name": "Server 2",
-                "url": "https://morencius.com/v/lumx7r93pv6k",
-                "type": "external"
-              }
-            ]
+            "label": "Lecture 32 • Buna-S & Buna-N Polymers",
+            "url": "https://vidmoly.net/embed-mmu2zlxznqkm.html",
+            "type": "hls",
+            "subject": "Engineering Chemistry"
           },
           {
-            "id": "vo2xgvo24m6a",
-            "label": "(Engineering Chemistry)(Module 1) Lect 03 photoelectri",
-            "url": "https://vidmoly.me/w/vo2xgvo24m6a",
-            "downloadUrl": "https://vidmoly.me/vo2xgvo24m6a.html",
-            "type": "external",
-            "servers": [
-              {
-                "name": "Server 1",
-                "url": "https://vidmoly.me/w/vo2xgvo24m6a",
-                "type": "external"
-              },
-              {
-                "name": "Server 2",
-                "url": "https://morencius.com/v/u22perv8cql8",
-                "type": "external"
-              }
-            ]
+            "label": "Lecture 33 • Silicone Adhesive & Epoxy Resins",
+            "url": "https://vidmoly.net/embed-e5j1yxd0ikyv.html",
+            "type": "hls",
+            "subject": "Engineering Chemistry"
           },
           {
-            "id": "uoevermf2269",
-            "label": "(Engineering Chemistry)(Module 1) Lect 02 Dual nature",
-            "url": "https://vidmoly.me/w/uoevermf2269",
-            "downloadUrl": "https://vidmoly.me/uoevermf2269.html",
-            "type": "external",
-            "servers": [
-              {
-                "name": "Server 1",
-                "url": "https://vidmoly.me/w/uoevermf2269",
-                "type": "external"
-              },
-              {
-                "name": "Server 2",
-                "url": "https://morencius.com/v/kbuaz0t6xac7",
-                "type": "external"
-              }
-            ]
+            "label": "Lecture 34 • Thermoplastic vs Thermoset Plastics & PVC",
+            "url": "https://vidmoly.net/embed-npg2hy8r4897.html",
+            "type": "hls",
+            "subject": "Engineering Chemistry"
           },
           {
-            "id": "umevc53v7vwr",
-            "label": "(Engineering Chemistry)(Module 1) Lect 01 Chemistry E",
-            "url": "https://vidmoly.me/w/umevc53v7vwr",
-            "downloadUrl": "https://vidmoly.me/umevc53v7vwr.html",
-            "type": "external",
-            "servers": [
-              {
-                "name": "Server 1",
-                "url": "https://vidmoly.me/w/umevc53v7vwr",
-                "type": "external"
-              },
-              {
-                "name": "Server 2",
-                "url": "https://morencius.com/v/utcfmxk7bqzs",
-                "type": "external"
-              }
-            ]
+            "label": "Lecture 01 • Line Integral",
+            "url": "https://vidmoly.net/embed-ee2d4ek3pz5b.html",
+            "type": "hls",
+            "subject": "Engineering Mathematics-II"
           },
           {
-            "id": "09et4t8ce8mb",
-            "label": "(Engineering Chemistry)(Module 05) Lect 08 Polythene Pol",
-            "url": "https://vidmoly.me/w/09et4t8ce8mb",
-            "downloadUrl": "https://vidmoly.me/09et4t8ce8mb.html",
-            "type": "external",
-            "servers": [
-              {
-                "name": "Server 1",
-                "url": "https://vidmoly.me/w/09et4t8ce8mb",
-                "type": "external"
-              },
-              {
-                "name": "Server 2",
-                "url": "https://morencius.com/v/ws8rsa2e2m0b",
-                "type": "external"
-              }
-            ]
+            "label": "Lecture 02 • Contour Integral",
+            "url": "https://vidmoly.net/embed-bi4yvri04fsy.html",
+            "type": "hls",
+            "subject": "Engineering Mathematics-II"
           },
           {
-            "id": "833x2jec42ub",
-            "label": "(Engineering Chemistry)(Module 05) Lect 07 Structural di",
-            "url": "https://vidmoly.me/w/833x2jec42ub",
-            "downloadUrl": "https://vidmoly.me/833x2jec42ub.html",
-            "type": "external",
-            "servers": [
-              {
-                "name": "Server 1",
-                "url": "https://vidmoly.me/w/833x2jec42ub",
-                "type": "external"
-              },
-              {
-                "name": "Server 2",
-                "url": "https://morencius.com/v/0jw8a3y0muwn",
-                "type": "external"
-              }
-            ]
+            "label": "Lecture 03 • Complex Integration",
+            "url": "https://vidmoly.net/embed-y31tw3g5g21m.html",
+            "type": "hls",
+            "subject": "Engineering Mathematics-II"
           },
           {
-            "id": "biivz3rq9269",
-            "label": "(Engineering Chemistry)(Module 05) Lect 06 Inorganic Pol",
-            "url": "https://vidmoly.me/w/biivz3rq9269",
-            "downloadUrl": "https://vidmoly.me/biivz3rq9269.html",
-            "type": "external",
-            "servers": [
-              {
-                "name": "Server 1",
-                "url": "https://vidmoly.me/w/biivz3rq9269",
-                "type": "external"
-              },
-              {
-                "name": "Server 2",
-                "url": "https://morencius.com/v/bq7noctviils",
-                "type": "external"
-              }
-            ]
+            "label": "Lecture 04 • Cauchy's Integral Formula",
+            "url": "https://vidmoly.net/embed-mzsr08b4uium.html",
+            "type": "hls",
+            "subject": "Engineering Mathematics-II"
           },
           {
-            "id": "ghjhisjeplq8",
-            "label": "(Engineering Chemistry)(Module 05) Lect 05 Buna S and Bu",
-            "url": "https://vidmoly.me/w/ghjhisjeplq8",
-            "downloadUrl": "https://vidmoly.me/ghjhisjeplq8.html",
-            "type": "external",
-            "servers": [
-              {
-                "name": "Server 1",
-                "url": "https://vidmoly.me/w/ghjhisjeplq8",
-                "type": "external"
-              },
-              {
-                "name": "Server 2",
-                "url": "https://morencius.com/v/bzxia4mhssjd",
-                "type": "external"
-              }
-            ]
+            "label": "Lecture 05 • Zero of Analytic Function & Singularity",
+            "url": "https://vidmoly.net/embed-km56w41wrzxi.html",
+            "type": "hls",
+            "subject": "Engineering Mathematics-II"
           },
           {
-            "id": "xadjze8shagc",
-            "label": "(Engineering Chemistry)(Module 05) Lect 04 Elastomers",
-            "url": "https://vidmoly.me/w/xadjze8shagc",
-            "downloadUrl": "https://vidmoly.me/xadjze8shagc.html",
-            "type": "external",
-            "servers": [
-              {
-                "name": "Server 1",
-                "url": "https://vidmoly.me/w/xadjze8shagc",
-                "type": "external"
-              },
-              {
-                "name": "Server 2",
-                "url": "https://morencius.com/v/vqf8g1o5iuhc",
-                "type": "external"
-              }
-            ]
+            "label": "Lecture 06 • Taylor's Series",
+            "url": "https://vidmoly.net/embed-dr0abg5bk12v.html",
+            "type": "hls",
+            "subject": "Engineering Mathematics-II"
           },
           {
-            "id": "abkgcowtor0y",
-            "label": "(Engineering Chemistry)(Module 05) Lect 03 Technical App",
-            "url": "https://vidmoly.me/w/abkgcowtor0y",
-            "downloadUrl": "https://vidmoly.me/abkgcowtor0y.html",
-            "type": "external",
-            "servers": [
-              {
-                "name": "Server 1",
-                "url": "https://vidmoly.me/w/abkgcowtor0y",
-                "type": "external"
-              },
-              {
-                "name": "Server 2",
-                "url": "https://morencius.com/v/ed6u9mmcc2ib",
-                "type": "external"
-              }
-            ]
+            "label": "Lecture 07 • Taylor's Series — Part 2",
+            "url": "https://vidmoly.net/embed-8d5krz887dnz.html",
+            "type": "hls",
+            "subject": "Engineering Mathematics-II"
           },
           {
-            "id": "k62w1gbedadt",
-            "label": "(Engineering Chemistry)(Module 05) Lect 02 Ionic and coo",
-            "url": "https://vidmoly.me/w/k62w1gbedadt",
-            "downloadUrl": "https://vidmoly.me/k62w1gbedadt.html",
-            "type": "external",
-            "servers": [
-              {
-                "name": "Server 1",
-                "url": "https://vidmoly.me/w/k62w1gbedadt",
-                "type": "external"
-              },
-              {
-                "name": "Server 2",
-                "url": "https://morencius.com/v/058f1lsuk9kq",
-                "type": "external"
-              }
-            ]
+            "label": "Lecture 08 • Residue Values",
+            "url": "https://vidmoly.net/embed-wu9kftvub7k7.html",
+            "type": "hls",
+            "subject": "Engineering Mathematics-II"
           },
           {
-            "id": "c2buih7b1kg2",
-            "label": "(Engineering Chemistry)(Module 05) Lect 01 Polymerizatio",
-            "url": "https://vidmoly.me/w/c2buih7b1kg2",
-            "downloadUrl": "https://vidmoly.me/c2buih7b1kg2.html",
-            "type": "external",
-            "servers": [
-              {
-                "name": "Server 1",
-                "url": "https://vidmoly.me/w/c2buih7b1kg2",
-                "type": "external"
-              },
-              {
-                "name": "Server 2",
-                "url": "https://morencius.com/v/4dm1ydzca73a",
-                "type": "external"
-              }
-            ]
+            "label": "Lecture 09 • Cauchy's Residue Theorem",
+            "url": "https://vidmoly.net/embed-xdn3txzfs1r7.html",
+            "type": "hls",
+            "subject": "Engineering Mathematics-II"
+          },
+          {
+            "label": "Lecture 10 • Cauchy's Residue Theorem — Part 2",
+            "url": "https://vidmoly.net/embed-tdc493zsnsf6.html",
+            "type": "hls",
+            "subject": "Engineering Mathematics-II"
+          },
+          {
+            "label": "Lecture 11 • Functions of Complex Variable",
+            "url": "https://vidmoly.net/embed-tmfrqjoc8q7u.html",
+            "type": "hls",
+            "subject": "Engineering Mathematics-II"
+          },
+          {
+            "label": "Lecture 12 • Functions of Complex Variable — Part 2",
+            "url": "https://vidmoly.net/embed-xj4ztjbrcrkt.html",
+            "type": "hls",
+            "subject": "Engineering Mathematics-II"
+          },
+          {
+            "label": "Lecture 13 • Functions of Complex Variable — Part 3",
+            "url": "https://vidmoly.net/embed-wsc5j91by71r.html",
+            "type": "hls",
+            "subject": "Engineering Mathematics-II"
+          },
+          {
+            "label": "Lecture 14 • Analytic Functions & Properties",
+            "url": "https://vidmoly.net/embed-315stqu9f3h6.html",
+            "type": "hls",
+            "subject": "Engineering Mathematics-II"
+          },
+          {
+            "label": "Lecture 15 • Analytic Functions — Part 2",
+            "url": "https://vidmoly.net/embed-ltcqbbop3edg.html",
+            "type": "hls",
+            "subject": "Engineering Mathematics-II"
+          },
+          {
+            "label": "Lecture 16 • Cauchy-Riemann Conditions in Polar Form",
+            "url": "https://vidmoly.net/embed-o987mppn8p0s.html",
+            "type": "hls",
+            "subject": "Engineering Mathematics-II"
+          },
+          {
+            "label": "Lecture 17 • Analytic Functions & Harmonic Conjugates",
+            "url": "https://vidmoly.net/embed-xf5otzf2lvgp.html",
+            "type": "hls",
+            "subject": "Engineering Mathematics-II"
+          },
+          {
+            "label": "Lecture 18 • Complex Analysis Practice Class",
+            "url": "https://vidmoly.net/embed-2ycxfl9ttlpl.html",
+            "type": "hls",
+            "subject": "Engineering Mathematics-II"
+          },
+          {
+            "label": "Lecture 19 • Fourier Series — Introduction",
+            "url": "https://vidmoly.net/embed-vmircx6p8ohi.html",
+            "type": "hls",
+            "subject": "Engineering Mathematics-II"
+          },
+          {
+            "label": "Lecture 20 • Fourier Series — Part 2",
+            "url": "https://vidmoly.net/embed-oshmu0jmqhcr.html",
+            "type": "hls",
+            "subject": "Engineering Mathematics-II"
+          },
+          {
+            "label": "Lecture 21 • Fourier Series — Part 3",
+            "url": "https://vidmoly.net/embed-08zkjqmk58it.html",
+            "type": "hls",
+            "subject": "Engineering Mathematics-II"
+          },
+          {
+            "label": "Lecture 22 • Fourier Series — Part 4",
+            "url": "https://vidmoly.net/embed-tjzqbsj1s39b.html",
+            "type": "hls",
+            "subject": "Engineering Mathematics-II"
+          },
+          {
+            "label": "Lecture 23 • Half Range Cosine Series",
+            "url": "https://vidmoly.net/embed-esnb8b11lj5i.html",
+            "type": "hls",
+            "subject": "Engineering Mathematics-II"
+          },
+          {
+            "label": "Lecture 24 • Half Range Sine Series",
+            "url": "https://vidmoly.net/embed-tbn5rv6sq3da.html",
+            "type": "hls",
+            "subject": "Engineering Mathematics-II"
+          },
+          {
+            "label": "Lecture 25 • Ordinary Differential Equations",
+            "url": "https://vidmoly.net/embed-vksjpzwtsqg6.html",
+            "type": "hls",
+            "subject": "Engineering Mathematics-II"
+          },
+          {
+            "label": "Lecture 26 • Higher Order Linear Differential Equations",
+            "url": "https://vidmoly.net/embed-aqhknzn22og4.html",
+            "type": "hls",
+            "subject": "Engineering Mathematics-II"
+          },
+          {
+            "label": "Lecture 27 • Higher Order Linear Differential Equations — Part 2",
+            "url": "https://vidmoly.net/embed-wp6q5gxzo1g6.html",
+            "type": "hls",
+            "subject": "Engineering Mathematics-II"
+          },
+          {
+            "label": "Lecture 28 • Higher Order Differential Equations — Part 3",
+            "url": "https://vidmoly.net/embed-m5u7plpqxp52.html",
+            "type": "hls",
+            "subject": "Engineering Mathematics-II"
+          },
+          {
+            "label": "Lecture 29 • Higher Order Differential Equations — Part 4",
+            "url": "https://vidmoly.net/embed-13p669tb9rb5.html",
+            "type": "hls",
+            "subject": "Engineering Mathematics-II"
+          },
+          {
+            "label": "Lecture 30 • Higher Order Ordinary Differential Equations",
+            "url": "https://vidmoly.net/embed-9swpn2b65k1k.html",
+            "type": "hls",
+            "subject": "Engineering Mathematics-II"
+          },
+          {
+            "label": "Lecture 31 • Higher Order Differential Equations — Part 5",
+            "url": "https://vidmoly.net/embed-rh5yravoszso.html",
+            "type": "hls",
+            "subject": "Engineering Mathematics-II"
+          },
+          {
+            "label": "Lecture 32 • Higher Order Differential Equations — Part 6",
+            "url": "https://vidmoly.net/embed-uahd3j9zgb5u.html",
+            "type": "hls",
+            "subject": "Engineering Mathematics-II"
+          },
+          {
+            "label": "Lecture 33 • Differential Equations Practice Class",
+            "url": "https://vidmoly.net/embed-ssigamjp6gww.html",
+            "type": "hls",
+            "subject": "Engineering Mathematics-II"
+          },
+          {
+            "label": "Lecture 34 • Differential Equations Applications",
+            "url": "https://vidmoly.net/embed-rzp34w9g3dz8.html",
+            "type": "hls",
+            "subject": "Engineering Mathematics-II"
+          },
+          {
+            "label": "Lecture 35 • Cauchy-Euler Differential Equations",
+            "url": "https://vidmoly.net/embed-ughjkml62iu2.html",
+            "type": "hls",
+            "subject": "Engineering Mathematics-II"
+          },
+          {
+            "label": "Lecture 36 • Ordinary Differential Equations — Revision",
+            "url": "https://vidmoly.net/embed-p78ybtchray0.html",
+            "type": "hls",
+            "subject": "Engineering Mathematics-II"
+          },
+          {
+            "label": "Lecture 37 • Higher Order Linear Differential Equations — Advanced",
+            "url": "https://vidmoly.net/embed-4x1d87c5zsum.html",
+            "type": "hls",
+            "subject": "Engineering Mathematics-II"
+          },
+          {
+            "label": "Lecture 38 • Higher Order Linear Differential Equations — Part 2 (Advanced)",
+            "url": "https://vidmoly.net/embed-a31khpjwguzo.html",
+            "type": "hls",
+            "subject": "Engineering Mathematics-II"
+          },
+          {
+            "label": "Lecture 39 • Higher Order Differential Equations — Practice",
+            "url": "https://vidmoly.net/embed-m3ba7vbhm9ci.html",
+            "type": "hls",
+            "subject": "Engineering Mathematics-II"
+          },
+          {
+            "label": "Lecture 40 • Higher Order Differential Equations — Practice 2",
+            "url": "https://vidmoly.net/embed-al6b71j9noua.html",
+            "type": "hls",
+            "subject": "Engineering Mathematics-II"
+          },
+          {
+            "label": "Lecture 41 • Higher Order Ordinary Differential Equations — Advanced",
+            "url": "https://vidmoly.net/embed-jx22w1gcrlcy.html",
+            "type": "hls",
+            "subject": "Engineering Mathematics-II"
+          },
+          {
+            "label": "Lecture 42 • Higher Order Differential Equations — Advanced Part 2",
+            "url": "https://vidmoly.net/embed-8r2iitl84rik.html",
+            "type": "hls",
+            "subject": "Engineering Mathematics-II"
+          },
+          {
+            "label": "Lecture 43 • Higher Order Differential Equations — Advanced Part 3",
+            "url": "https://vidmoly.net/embed-4m02pwgnc1of.html",
+            "type": "hls",
+            "subject": "Engineering Mathematics-II"
+          },
+          {
+            "label": "Lecture 44 • Differential Equations Practice Class 2",
+            "url": "https://vidmoly.net/embed-bc4fs7qkowby.html",
+            "type": "hls",
+            "subject": "Engineering Mathematics-II"
+          },
+          {
+            "label": "Lecture 45 • Differential Equations Solutions",
+            "url": "https://vidmoly.net/embed-4s00ph4titss.html",
+            "type": "hls",
+            "subject": "Engineering Mathematics-II"
+          },
+          {
+            "label": "Lecture 46 • Cauchy-Euler Differential Equations — Advanced",
+            "url": "https://vidmoly.net/embed-y8esu2q5xeik.html",
+            "type": "hls",
+            "subject": "Engineering Mathematics-II"
+          },
+          {
+            "label": "Lecture 47 • Sequences & Infinite Series",
+            "url": "https://vidmoly.net/embed-1uj49ju6ga4b.html",
+            "type": "hls",
+            "subject": "Engineering Mathematics-II"
+          },
+          {
+            "label": "Lecture 48 • Sequences & Series — Part 2",
+            "url": "https://vidmoly.net/embed-jbt4vrfnicb8.html",
+            "type": "hls",
+            "subject": "Engineering Mathematics-II"
+          },
+          {
+            "label": "Lecture 49 • Comparison Test for Series Convergence",
+            "url": "https://vidmoly.net/embed-aev7qbwjrole.html",
+            "type": "hls",
+            "subject": "Engineering Mathematics-II"
+          },
+          {
+            "label": "Lecture 50 • Cauchy's Integral Test",
+            "url": "https://vidmoly.net/embed-ogri5l8aze62.html",
+            "type": "hls",
+            "subject": "Engineering Mathematics-II"
+          },
+          {
+            "label": "Lecture 51 • D'Alembert's Ratio Test",
+            "url": "https://vidmoly.net/embed-oy58k4onherq.html",
+            "type": "hls",
+            "subject": "Engineering Mathematics-II"
+          },
+          {
+            "label": "Lecture 52 • Cauchy's Root Test & Raabe's Test",
+            "url": "https://vidmoly.net/embed-poacqq5gw6kt.html",
+            "type": "hls",
+            "subject": "Engineering Mathematics-II"
+          },
+          {
+            "label": "Lecture 53 • Logarithmic Test for Convergence",
+            "url": "https://vidmoly.net/embed-jwf9427jyn5g.html",
+            "type": "hls",
+            "subject": "Engineering Mathematics-II"
+          },
+          {
+            "label": "Lecture 54 • De Morgan & Bertrand's Test",
+            "url": "https://vidmoly.net/embed-zcljwbnf89iq.html",
+            "type": "hls",
+            "subject": "Engineering Mathematics-II"
+          },
+          {
+            "label": "Lecture 55 • Cauchy's Condensation Test",
+            "url": "https://vidmoly.net/embed-5h4s0gjoo88b.html",
+            "type": "hls",
+            "subject": "Engineering Mathematics-II"
+          },
+          {
+            "label": "Lecture 56 • Ordinary Differential Equations — Special Topics",
+            "url": "https://vidmoly.net/embed-qir568u0pcrs.html",
+            "type": "hls",
+            "subject": "Engineering Mathematics-II"
+          },
+          {
+            "label": "Lecture 57 • Higher Order Linear Differential Equations — Problem Set",
+            "url": "https://vidmoly.net/embed-ug8hihdgvl0d.html",
+            "type": "hls",
+            "subject": "Engineering Mathematics-II"
+          },
+          {
+            "label": "Lecture 58 • Higher Order Linear Differential Equations — Problem Set 2",
+            "url": "https://vidmoly.net/embed-zubqio989be5.html",
+            "type": "hls",
+            "subject": "Engineering Mathematics-II"
+          },
+          {
+            "label": "Lecture 59 • Higher Order Differential Equations — Problem Set 3",
+            "url": "https://vidmoly.net/embed-hdci661ow04j.html",
+            "type": "hls",
+            "subject": "Engineering Mathematics-II"
+          },
+          {
+            "label": "Lecture 60 • Higher Order Differential Equations — Problem Set 4",
+            "url": "https://vidmoly.net/embed-s5dct7pa2j87.html",
+            "type": "hls",
+            "subject": "Engineering Mathematics-II"
+          },
+          {
+            "label": "Lecture 61 • Higher Order Ordinary Differential Equations — Problem Set 5",
+            "url": "https://vidmoly.net/embed-8ehrp0ngej18.html",
+            "type": "hls",
+            "subject": "Engineering Mathematics-II"
+          },
+          {
+            "label": "Lecture 62 • Higher Order Differential Equations — Problem Set 6",
+            "url": "https://vidmoly.net/embed-zokyitzaqjro.html",
+            "type": "hls",
+            "subject": "Engineering Mathematics-II"
+          },
+          {
+            "label": "Lecture 63 • Higher Order Differential Equations — Problem Set 7",
+            "url": "https://vidmoly.net/embed-yjjcwj1a09qi.html",
+            "type": "hls",
+            "subject": "Engineering Mathematics-II"
+          },
+          {
+            "label": "Lecture 64 • Differential Equations Practice Class 3",
+            "url": "https://vidmoly.net/embed-xqo9q8ix170u.html",
+            "type": "hls",
+            "subject": "Engineering Mathematics-II"
+          },
+          {
+            "label": "Lecture 65 • Differential Equations Final Practice",
+            "url": "https://vidmoly.net/embed-ecwikb5sp18r.html",
+            "type": "hls",
+            "subject": "Engineering Mathematics-II"
+          },
+          {
+            "label": "Lecture 66 • Cauchy-Euler Equations Final Practice",
+            "url": "https://vidmoly.net/embed-t2j6x30aie5t.html",
+            "type": "hls",
+            "subject": "Engineering Mathematics-II"
+          },
+          {
+            "label": "Lecture 67 • Functions of Complex Variable — Review",
+            "url": "https://vidmoly.net/embed-y4obzt1s5mc9.html",
+            "type": "hls",
+            "subject": "Engineering Mathematics-II"
+          },
+          {
+            "label": "Lecture 68 • Functions of Complex Variable — Review 2",
+            "url": "https://vidmoly.net/embed-mojttua4m7yr.html",
+            "type": "hls",
+            "subject": "Engineering Mathematics-II"
+          },
+          {
+            "label": "Lecture 69 • Analytic Information & Functions Review",
+            "url": "https://vidmoly.net/embed-w93lfeeizjb9.html",
+            "type": "hls",
+            "subject": "Engineering Mathematics-II"
+          },
+          {
+            "label": "Lecture 01 • Kinds of Sentences",
+            "url": "https://vidmoly.net/embed-or3oqafw3p3r.html",
+            "type": "hls",
+            "subject": "Communicative English"
+          },
+          {
+            "label": "Lecture 02 • English Tenses — Introduction",
+            "url": "https://vidmoly.net/embed-puc0jg1enl1n.html",
+            "type": "hls",
+            "subject": "Communicative English"
+          },
+          {
+            "label": "Lecture 03 • English Grammar & Usage",
+            "url": "https://vidmoly.net/embed-r9x388iumcik.html",
+            "type": "hls",
+            "subject": "Communicative English"
+          },
+          {
+            "label": "Lecture 04 • Nature of Word Formation",
+            "url": "https://vidmoly.net/embed-rebf64hh76qt.html",
+            "type": "hls",
+            "subject": "Communicative English"
+          },
+          {
+            "label": "Lecture 05 • Nature of Word Formation — Part 2",
+            "url": "https://vidmoly.net/embed-l2uq4gfns7xz.html",
+            "type": "hls",
+            "subject": "Communicative English"
+          },
+          {
+            "label": "Lecture 06 • Nature of Word Formation — Part 3",
+            "url": "https://vidmoly.net/embed-6ggch7qw554f.html",
+            "type": "hls",
+            "subject": "Communicative English"
+          },
+          {
+            "label": "Lecture 07 • Prefixes & Word Building",
+            "url": "https://vidmoly.net/embed-wzdvwvxtt1mn.html",
+            "type": "hls",
+            "subject": "Communicative English"
+          },
+          {
+            "label": "Lecture 08 • Prefixes & Word Usage",
+            "url": "https://vidmoly.net/embed-bvbj1ku48m09.html",
+            "type": "hls",
+            "subject": "Communicative English"
+          },
+          {
+            "label": "Lecture 09 • Prefixes & Suffixes",
+            "url": "https://vidmoly.net/embed-3w99muycjgcz.html",
+            "type": "hls",
+            "subject": "Communicative English"
+          },
+          {
+            "label": "Lecture 10 • Prefixes & Suffixes — Part 2",
+            "url": "https://vidmoly.net/embed-0u6pj6r7vf1l.html",
+            "type": "hls",
+            "subject": "Communicative English"
+          },
+          {
+            "label": "Lecture 11 • Synonyms & Antonyms",
+            "url": "https://vidmoly.net/embed-l6dj3nezu4kw.html",
+            "type": "hls",
+            "subject": "Communicative English"
+          },
+          {
+            "label": "Lecture 12 • Synonyms & Antonyms — Part 2",
+            "url": "https://vidmoly.net/embed-frvhi2nscwp4.html",
+            "type": "hls",
+            "subject": "Communicative English"
+          },
+          {
+            "label": "Lecture 13 • Homophones & Confusable Words",
+            "url": "https://vidmoly.net/embed-54c7b3ut7urv.html",
+            "type": "hls",
+            "subject": "Communicative English"
+          },
+          {
+            "label": "Lecture 14 • Abbreviations & Acronyms",
+            "url": "https://vidmoly.net/embed-mj657w4nodd8.html",
+            "type": "hls",
+            "subject": "Communicative English"
+          },
+          {
+            "label": "Lecture 15 • \"Of Studies\" by Sir Francis Bacon",
+            "url": "https://vidmoly.net/embed-sxri3tbwigb4.html",
+            "type": "hls",
+            "subject": "Communicative English"
+          },
+          {
+            "label": "Lecture 16 • \"The Sun Rising\" by John Donne",
+            "url": "https://vidmoly.net/embed-0rnr0vq5cntz.html",
+            "type": "hls",
+            "subject": "Communicative English"
+          },
+          {
+            "label": "Lecture 17 • \"The Last Leaf\" by O. Henry",
+            "url": "https://vidmoly.net/embed-qktx3y64pv7z.html",
+            "type": "hls",
+            "subject": "Communicative English"
+          },
+          {
+            "label": "Lecture 18 • \"The Last Leaf\" — Part 2",
+            "url": "https://vidmoly.net/embed-5jk2hfttp708.html",
+            "type": "hls",
+            "subject": "Communicative English"
+          },
+          {
+            "label": "Lecture 19 • Formal Letters, Cover Letters & Job Applications",
+            "url": "https://vidmoly.net/embed-kkbtmkqsm3k5.html",
+            "type": "hls",
+            "subject": "Communicative English"
+          },
+          {
+            "label": "Lecture 20 • Professional Resume & CV Writing",
+            "url": "https://vidmoly.net/embed-pwmyz291leaj.html",
+            "type": "hls",
+            "subject": "Communicative English"
+          },
+          {
+            "label": "Lecture 21 • Professional Email Writing Etiquette",
+            "url": "https://vidmoly.net/embed-61phach8jrpe.html",
+            "type": "hls",
+            "subject": "Communicative English"
+          },
+          {
+            "label": "Lecture 22 • Article Writing & Contemporary Media Writing",
+            "url": "https://vidmoly.net/embed-8k0b774zlyac.html",
+            "type": "hls",
+            "subject": "Communicative English"
+          },
+          {
+            "label": "Lecture 23 • Defining, Describing, Classifying & Exemplifying",
+            "url": "https://vidmoly.net/embed-6s1j7ucnysm0.html",
+            "type": "hls",
+            "subject": "Communicative English"
+          },
+          {
+            "label": "Lecture 24 • References, Quotations, Illustrations & Paragraph Organization",
+            "url": "https://vidmoly.net/embed-y3un7tik40cl.html",
+            "type": "hls",
+            "subject": "Communicative English"
+          },
+          {
+            "label": "Lecture 25 • 7 Cs of Professional Writing: Clear, Concise, Concrete & Courteous",
+            "url": "https://vidmoly.net/embed-wodgtir7gvh2.html",
+            "type": "hls",
+            "subject": "Communicative English"
+          },
+          {
+            "label": "Lecture 26 • Nature of Word Formation — Advanced",
+            "url": "https://vidmoly.net/embed-rxwz7jvoqghs.html",
+            "type": "hls",
+            "subject": "Communicative English"
+          },
+          {
+            "label": "Lecture 27 • Nature of Word Formation — Advanced Part 2",
+            "url": "https://vidmoly.net/embed-4p7har73kpdx.html",
+            "type": "hls",
+            "subject": "Communicative English"
+          },
+          {
+            "label": "Lecture 28 • Nature of Word Formation — Advanced Part 3",
+            "url": "https://vidmoly.net/embed-qavluh45wmq2.html",
+            "type": "hls",
+            "subject": "Communicative English"
+          },
+          {
+            "label": "Lecture 29 • Prefixes in Technical English",
+            "url": "https://vidmoly.net/embed-i17yt7rld3nd.html",
+            "type": "hls",
+            "subject": "Communicative English"
+          },
+          {
+            "label": "Lecture 30 • Prefixes in Technical English — Part 2",
+            "url": "https://vidmoly.net/embed-rq5x4zaaromm.html",
+            "type": "hls",
+            "subject": "Communicative English"
+          },
+          {
+            "label": "Lecture 31 • Prefixes in Technical English — Part 3",
+            "url": "https://vidmoly.net/embed-ut6zsq3jyq0z.html",
+            "type": "hls",
+            "subject": "Communicative English"
+          },
+          {
+            "label": "Lecture 32 • Prefixes & Suffixes — Advanced",
+            "url": "https://vidmoly.net/embed-l4q7n5w31xah.html",
+            "type": "hls",
+            "subject": "Communicative English"
+          },
+          {
+            "label": "Lecture 33 • Prefixes & Suffixes — Advanced Part 2",
+            "url": "https://vidmoly.net/embed-74eul8deyucm.html",
+            "type": "hls",
+            "subject": "Communicative English"
+          },
+          {
+            "label": "Lecture 34 • Synonyms & Antonyms in Context",
+            "url": "https://vidmoly.net/embed-ri4pk74dpij8.html",
+            "type": "hls",
+            "subject": "Communicative English"
+          },
+          {
+            "label": "Lecture 35 • Synonyms & Antonyms in Context — Part 2",
+            "url": "https://vidmoly.net/embed-mko9e0zm8qul.html",
+            "type": "hls",
+            "subject": "Communicative English"
+          },
+          {
+            "label": "Lecture 36 • Homophones & Homonyms in English",
+            "url": "https://vidmoly.net/embed-l81rlp0fhoog.html",
+            "type": "hls",
+            "subject": "Communicative English"
+          },
+          {
+            "label": "Lecture 37 • Abbreviations, Acronyms & Contractions",
+            "url": "https://vidmoly.net/embed-l49ug5gr3nc5.html",
+            "type": "hls",
+            "subject": "Communicative English"
+          },
+          {
+            "label": "Lecture 38 • Kinds of Sentences & Syntactic Structures",
+            "url": "https://vidmoly.net/embed-mqz4vzkethk4.html",
+            "type": "hls",
+            "subject": "Communicative English"
+          },
+          {
+            "label": "Lecture 39 • Phrases & Clauses in English",
+            "url": "https://vidmoly.net/embed-m2abkgdqbiap.html",
+            "type": "hls",
+            "subject": "Communicative English"
+          },
+          {
+            "label": "Lecture 40 • Verb Tenses & Aspect",
+            "url": "https://vidmoly.net/embed-0uw6iy2htrg4.html",
+            "type": "hls",
+            "subject": "Communicative English"
+          },
+          {
+            "label": "Lecture 41 • English Grammar & Communicative Skills",
+            "url": "https://vidmoly.net/embed-2lln3bz6ejz6.html",
+            "type": "hls",
+            "subject": "Communicative English"
+          },
+          {
+            "label": "Lecture 01 • Principles of Engineering Graphics & Drawing Instruments",
+            "url": "https://vidmoly.net/embed-gai1ik4p8ugp.html",
+            "type": "hls",
+            "subject": "Engineering Graphics & Design"
+          },
+          {
+            "label": "Lecture 02 • Engineering Lettering & Dimensioning Techniques",
+            "url": "https://vidmoly.net/embed-rgf73u27vgig.html",
+            "type": "hls",
+            "subject": "Engineering Graphics & Design"
+          },
+          {
+            "label": "Lecture 03 • Lettering Styles & Representative Scales",
+            "url": "https://vidmoly.net/embed-a215890pc535.html",
+            "type": "hls",
+            "subject": "Engineering Graphics & Design"
+          },
+          {
+            "label": "Lecture 04 • Construction of Plain Scales",
+            "url": "https://vidmoly.net/embed-qtirg10la6m9.html",
+            "type": "hls",
+            "subject": "Engineering Graphics & Design"
+          },
+          {
+            "label": "Lecture 05 • Construction of Diagonal & Vernier Scales",
+            "url": "https://vidmoly.net/embed-gebwqrwprj9m.html",
+            "type": "hls",
+            "subject": "Engineering Graphics & Design"
+          },
+          {
+            "label": "Lecture 06 • Ellipse Construction Methods",
+            "url": "https://vidmoly.net/embed-cq0r36q5ske9.html",
+            "type": "hls",
+            "subject": "Engineering Graphics & Design"
+          },
+          {
+            "label": "Lecture 07 • Conic Sections & Rectangular Hyperbola",
+            "url": "https://vidmoly.net/embed-q0ugfain59ri.html",
+            "type": "hls",
+            "subject": "Engineering Graphics & Design"
+          },
+          {
+            "label": "Lecture 08 • Cycloidal Curves: Cycloid, Epicycloid & Hypocycloid",
+            "url": "https://vidmoly.net/embed-ght7be1y8ubt.html",
+            "type": "hls",
+            "subject": "Engineering Graphics & Design"
+          },
+          {
+            "label": "Lecture 09 • Principles of Orthographic Projections & Conventions",
+            "url": "https://vidmoly.net/embed-wfwjz3vcl3c2.html",
+            "type": "hls",
+            "subject": "Engineering Graphics & Design"
+          },
+          {
+            "label": "Lecture 10 • Principles of Orthographic Projections — Part 2",
+            "url": "https://vidmoly.net/embed-cs1l53mvyl0o.html",
+            "type": "hls",
+            "subject": "Engineering Graphics & Design"
+          },
+          {
+            "label": "Lecture 11 • Projections of Points in Different Quadrants",
+            "url": "https://vidmoly.net/embed-xniy1munlqo6.html",
+            "type": "hls",
+            "subject": "Engineering Graphics & Design"
+          },
+          {
+            "label": "Lecture 12 • Projections of Points in Different Quadrants — Part 2",
+            "url": "https://vidmoly.net/embed-14z2fg7worfe.html",
+            "type": "hls",
+            "subject": "Engineering Graphics & Design"
+          },
+          {
+            "label": "Lecture 13 • Projections of Straight Lines",
+            "url": "https://vidmoly.net/embed-6npy7n2tz18d.html",
+            "type": "hls",
+            "subject": "Engineering Graphics & Design"
+          },
+          {
+            "label": "Lecture 14 • Projections of Planes & Laminae",
+            "url": "https://vidmoly.net/embed-j45smuvr6tjx.html",
+            "type": "hls",
+            "subject": "Engineering Graphics & Design"
+          },
+          {
+            "label": "Lecture 15 • Projections of Planes Inclined to Auxiliary Planes",
+            "url": "https://vidmoly.net/embed-fxfnkasjg7mb.html",
+            "type": "hls",
+            "subject": "Engineering Graphics & Design"
+          },
+          {
+            "label": "Lecture 16 • Projections of Planes Inclined to Auxiliary Planes — Part 2",
+            "url": "https://vidmoly.net/embed-gedr235i8284.html",
+            "type": "hls",
+            "subject": "Engineering Graphics & Design"
+          },
+          {
+            "label": "Lecture 17 • Types of Solids & Introduction to Projections of Solids",
+            "url": "https://vidmoly.net/embed-oa19bowd87om.html",
+            "type": "hls",
+            "subject": "Engineering Graphics & Design"
+          },
+          {
+            "label": "Lecture 18 • Projections of Prisms & Pyramids",
+            "url": "https://vidmoly.net/embed-bnrb5yapmnjr.html",
+            "type": "hls",
+            "subject": "Engineering Graphics & Design"
+          },
+          {
+            "label": "Lecture 19 • Projections of Prisms & Pyramids — Part 2",
+            "url": "https://vidmoly.net/embed-4cv43k4n294h.html",
+            "type": "hls",
+            "subject": "Engineering Graphics & Design"
+          },
+          {
+            "label": "Lecture 20 • Projections of Solids: Prisms on Inclined Axes",
+            "url": "https://vidmoly.net/embed-wh4urn0p8lx3.html",
+            "type": "hls",
+            "subject": "Engineering Graphics & Design"
+          },
+          {
+            "label": "Lecture 21 • Solids Inclined to Both Reference Planes & Auxiliary Views",
+            "url": "https://vidmoly.net/embed-rleyc7rvh0nw.html",
+            "type": "hls",
+            "subject": "Engineering Graphics & Design"
+          },
+          {
+            "label": "Lecture 22 • Solids Inclined to Both Reference Planes — Part 2",
+            "url": "https://vidmoly.net/embed-239yc9grrd3w.html",
+            "type": "hls",
+            "subject": "Engineering Graphics & Design"
+          },
+          {
+            "label": "Lecture 23 • Sectioning of Cylinders & Auxiliary Sectional Views",
+            "url": "https://vidmoly.net/embed-ahziy56is387.html",
+            "type": "hls",
+            "subject": "Engineering Graphics & Design"
+          },
+          {
+            "label": "Lecture 24 • Section of Solids: Prisms, Cylinders, Pyramids & Cones",
+            "url": "https://vidmoly.net/embed-5a57w74fdu5h.html",
+            "type": "hls",
+            "subject": "Engineering Graphics & Design"
+          },
+          {
+            "label": "Lecture 25 • Development of Lateral Surfaces of Regular Solids",
+            "url": "https://vidmoly.net/embed-3z1waf53karv.html",
+            "type": "hls",
+            "subject": "Engineering Graphics & Design"
+          },
+          {
+            "label": "Lecture 26 • Sectional Orthographic Views of Engineering Geometrical Solids",
+            "url": "https://vidmoly.net/embed-wu3avbdpnf96.html",
+            "type": "hls",
+            "subject": "Engineering Graphics & Design"
+          },
+          {
+            "label": "Lecture 27 • CAD Software Fundamentals, Menu Systems & Toolbars",
+            "url": "https://vidmoly.net/embed-74vbim3se9tw.html",
+            "type": "hls",
+            "subject": "Engineering Graphics & Design"
+          },
+          {
+            "label": "Lecture 28 • CAD Coordinate Systems, Zooming & Isometric Modeling",
+            "url": "https://vidmoly.net/embed-mqnppunxg6kk.html",
+            "type": "hls",
+            "subject": "Engineering Graphics & Design"
+          }
+        ]
+      },
+      {
+        "id": "engineering-chemistry",
+        "label": "Engineering Chemistry",
+        "subname": "Electromagnetic, Spectroscopy, Electrochemistry & Water (45 Lectures)",
+        "thumb": "/thumbnails/beu_1st_year.jpg",
+        "items": [
+          {
+            "id": "beu-chem-1",
+            "label": "Lecture 01 • Electromagnetic Radiation",
+            "url": "https://vidmoly.net/embed-c2buih7b1kg2.html",
+            "type": "hls",
+            "subject": "Module 1"
+          },
+          {
+            "id": "beu-chem-2",
+            "label": "Lecture 02 • Dual Nature of Electron & Heisenberg Uncertainty Principle",
+            "url": "https://vidmoly.net/embed-k62w1gbedadt.html",
+            "type": "hls",
+            "subject": "Module 1"
+          },
+          {
+            "id": "beu-chem-3",
+            "label": "Lecture 03 • Photoelectric Effect",
+            "url": "https://vidmoly.net/embed-abkgcowtor0y.html",
+            "type": "hls",
+            "subject": "Module 1"
+          },
+          {
+            "id": "beu-chem-4",
+            "label": "Lecture 04 • Atomic & Molecular Orbitals",
+            "url": "https://vidmoly.net/embed-xadjze8shagc.html",
+            "type": "hls",
+            "subject": "Module 1"
+          },
+          {
+            "id": "beu-chem-5",
+            "label": "Lecture 05 • Molecular Orbital & Bent Theory",
+            "url": "https://vidmoly.net/embed-ghjhisjeplq8.html",
+            "type": "hls",
+            "subject": "Module 1"
+          },
+          {
+            "id": "beu-chem-6",
+            "label": "Lecture 06 • VSEPR Theory",
+            "url": "https://vidmoly.net/embed-biivz3rq9269.html",
+            "type": "hls",
+            "subject": "Module 1"
+          },
+          {
+            "id": "beu-chem-7",
+            "label": "Lecture 07 • VSEPR Theory — Part 2",
+            "url": "https://vidmoly.net/embed-833x2jec42ub.html",
+            "type": "hls",
+            "subject": "Module 1"
+          },
+          {
+            "id": "beu-chem-8",
+            "label": "Lecture 08 • Coordination Number & Geometry",
+            "url": "https://vidmoly.net/embed-09et4t8ce8mb.html",
+            "type": "hls",
+            "subject": "Module 1"
+          },
+          {
+            "id": "beu-chem-9",
+            "label": "Lecture 09 • Isomerism in Transition Metal Compounds",
+            "url": "https://vidmoly.net/embed-umevc53v7vwr.html",
+            "type": "hls",
+            "subject": "Module 1"
+          },
+          {
+            "id": "beu-chem-10",
+            "label": "Lecture 10 • Metal Carbonyls — Synthesis & Structure",
+            "url": "https://vidmoly.net/embed-uoevermf2269.html",
+            "type": "hls",
+            "subject": "Module 1"
+          },
+          {
+            "id": "beu-chem-11",
+            "label": "Lecture 01 • Principles of Rotational & Vibrational Spectroscopy",
+            "url": "https://vidmoly.net/embed-vo2xgvo24m6a.html",
+            "type": "hls",
+            "subject": "Module 2"
+          },
+          {
+            "id": "beu-chem-12",
+            "label": "Lecture 02 • Spectroscopy Applications",
+            "url": "https://vidmoly.net/embed-tuwbb21uzrq6.html",
+            "type": "hls",
+            "subject": "Module 2"
+          },
+          {
+            "id": "beu-chem-13",
+            "label": "Lecture 03 • NMR Spectroscopy Fundamentals",
+            "url": "https://vidmoly.net/embed-iiriw9w8wacg.html",
+            "type": "hls",
+            "subject": "Module 2"
+          },
+          {
+            "id": "beu-chem-14",
+            "label": "Lecture 04 • NMR Spectroscopy Analysis",
+            "url": "https://vidmoly.net/embed-i56owm6cfbji.html",
+            "type": "hls",
+            "subject": "Module 2"
+          },
+          {
+            "id": "beu-chem-15",
+            "label": "Lecture 01 • Electrochemical Cell",
+            "url": "https://vidmoly.net/embed-zligdcfd1nh4.html",
+            "type": "hls",
+            "subject": "Module 3"
+          },
+          {
+            "id": "beu-chem-16",
+            "label": "Lecture 02 • Electrochemical Cell — Part 2",
+            "url": "https://vidmoly.net/embed-urwg5a6fyfzk.html",
+            "type": "hls",
+            "subject": "Module 3"
+          },
+          {
+            "id": "beu-chem-17",
+            "label": "Lecture 03 • Electromotive Force (EMF)",
+            "url": "https://vidmoly.net/embed-5uxql2kjgxds.html",
+            "type": "hls",
+            "subject": "Module 3"
+          },
+          {
+            "id": "beu-chem-18",
+            "label": "Lecture 04 • Nernst Equation",
+            "url": "https://vidmoly.net/embed-cw3lwkhyvmsa.html",
+            "type": "hls",
+            "subject": "Module 3"
+          },
+          {
+            "id": "beu-chem-19",
+            "label": "Lecture 05 • Corrosion — Part 1",
+            "url": "https://vidmoly.net/embed-jf5mkvx89zxz.html",
+            "type": "hls",
+            "subject": "Module 3"
+          },
+          {
+            "id": "beu-chem-20",
+            "label": "Lecture 06 • Corrosion — Part 2",
+            "url": "https://vidmoly.net/embed-unldj85zhm0k.html",
+            "type": "hls",
+            "subject": "Module 3"
+          },
+          {
+            "id": "beu-chem-21",
+            "label": "Lecture 07 • Corrosion — Part 3",
+            "url": "https://vidmoly.net/embed-8ihi1yu72vtc.html",
+            "type": "hls",
+            "subject": "Module 3"
+          },
+          {
+            "id": "beu-chem-22",
+            "label": "Lecture 08 • Lead Storage Battery",
+            "url": "https://vidmoly.net/embed-x7kt8lbq9i3n.html",
+            "type": "hls",
+            "subject": "Module 3"
+          },
+          {
+            "id": "beu-chem-23",
+            "label": "Lecture 09 • Leclanché Cell & Dry Cell",
+            "url": "https://vidmoly.net/embed-fenvznyavcfu.html",
+            "type": "hls",
+            "subject": "Module 3"
+          },
+          {
+            "id": "beu-chem-24",
+            "label": "Lecture 01 • Hardness of Water",
+            "url": "https://vidmoly.net/embed-k7q68h2yai3a.html",
+            "type": "hls",
+            "subject": "Module 4"
+          },
+          {
+            "id": "beu-chem-25",
+            "label": "Lecture 02 • Hardness of Water — Part 2",
+            "url": "https://vidmoly.net/embed-gcw3h1rbyfjo.html",
+            "type": "hls",
+            "subject": "Module 4"
+          },
+          {
+            "id": "beu-chem-26",
+            "label": "Lecture 03 • Alkalinity Method & Estimation",
+            "url": "https://vidmoly.net/embed-ov5a1y6h0lqn.html",
+            "type": "hls",
+            "subject": "Module 4"
+          },
+          {
+            "id": "beu-chem-27",
+            "label": "Lecture 04 • Water Softening Methods",
+            "url": "https://vidmoly.net/embed-vwxuocprne9d.html",
+            "type": "hls",
+            "subject": "Module 4"
+          },
+          {
+            "id": "beu-chem-28",
+            "label": "Lecture 05 • Boiler Feed Water",
+            "url": "https://vidmoly.net/embed-jdt2c2bgb4yr.html",
+            "type": "hls",
+            "subject": "Module 4"
+          },
+          {
+            "id": "beu-chem-29",
+            "label": "Lecture 06 • Boiler Troubles: Sludge, Scale, Priming & Foaming",
+            "url": "https://vidmoly.net/embed-79o7cnnl5jil.html",
+            "type": "hls",
+            "subject": "Module 4"
+          },
+          {
+            "id": "beu-chem-30",
+            "label": "Lecture 07 • Caustic Embrittlement & Treatment",
+            "url": "https://vidmoly.net/embed-svoap3krewxl.html",
+            "type": "hls",
+            "subject": "Module 4"
+          },
+          {
+            "id": "beu-chem-31",
+            "label": "Lecture 01 • Free Radical Polymerization",
+            "url": "https://vidmoly.net/embed-tqu6eu3ui628.html",
+            "type": "hls",
+            "subject": "Module 5"
+          },
+          {
+            "id": "beu-chem-32",
+            "label": "Lecture 02 • Ionic & Coordination Mechanisms",
+            "url": "https://vidmoly.net/embed-f3ssaux2o3q2.html",
+            "type": "hls",
+            "subject": "Module 5"
+          },
+          {
+            "id": "beu-chem-33",
+            "label": "Lecture 03 • Applications of Phenol-Formaldehyde Resin",
+            "url": "https://vidmoly.net/embed-uprbrnwk2c56.html",
+            "type": "hls",
+            "subject": "Module 5"
+          },
+          {
+            "id": "beu-chem-34",
+            "label": "Lecture 04 • Elastomers & Natural Rubbers",
+            "url": "https://vidmoly.net/embed-iv4l1dunv03r.html",
+            "type": "hls",
+            "subject": "Module 5"
+          },
+          {
+            "id": "beu-chem-35",
+            "label": "Lecture 05 • Buna-S & Buna-N Polymers",
+            "url": "https://vidmoly.net/embed-67jxrue19qzb.html",
+            "type": "hls",
+            "subject": "Module 5"
+          },
+          {
+            "id": "beu-chem-36",
+            "label": "Lecture 06 • Inorganic Polymers, Silicones, Adhesives & Epoxy Resins",
+            "url": "https://vidmoly.net/embed-ijtn2ssgb7xt.html",
+            "type": "hls",
+            "subject": "Module 5"
+          },
+          {
+            "id": "beu-chem-37",
+            "label": "Lecture 07 • Thermoplastics vs Thermosetting Plastics & PVC",
+            "url": "https://vidmoly.net/embed-iy41ljk4s8j9.html",
+            "type": "hls",
+            "subject": "Module 5"
+          },
+          {
+            "id": "beu-chem-38",
+            "label": "Lecture 08 • Polythene & Polystyrene",
+            "url": "https://vidmoly.net/embed-q6bk0x18cc2y.html",
+            "type": "hls",
+            "subject": "Module 5"
+          },
+          {
+            "id": "beu-chem-39",
+            "label": "Lecture 01 • Organic Reactions & Mechanisms",
+            "url": "https://vidmoly.net/embed-x5lc4g9zpt7i.html",
+            "type": "hls",
+            "subject": "Module 6"
+          },
+          {
+            "id": "beu-chem-40",
+            "label": "Lecture 02 • Diels-Alder Reaction",
+            "url": "https://vidmoly.net/embed-b08uu3lsgqs1.html",
+            "type": "hls",
+            "subject": "Module 6"
+          },
+          {
+            "id": "beu-chem-41",
+            "label": "Lecture 03 • Epoxide Ring Reactions",
+            "url": "https://vidmoly.net/embed-wps7v8kngr66.html",
+            "type": "hls",
+            "subject": "Module 6"
+          },
+          {
+            "id": "beu-chem-42",
+            "label": "Lecture 01 • Previous Year Questions & Analysis",
+            "url": "https://vidmoly.net/embed-pe7oj703n9o8.html",
+            "type": "hls",
+            "subject": "Practice Session"
+          },
+          {
+            "id": "beu-chem-43",
+            "label": "Lecture 02 • Previous Year Questions & Solutions",
+            "url": "https://vidmoly.net/embed-frknyzzwu499.html",
+            "type": "hls",
+            "subject": "Practice Session"
+          },
+          {
+            "id": "beu-chem-44",
+            "label": "Lecture 03 • Model Paper Discussion",
+            "url": "https://vidmoly.net/embed-bf9lvfpcqx00.html",
+            "type": "hls",
+            "subject": "Practice Session"
+          },
+          {
+            "id": "beu-chem-45",
+            "label": "Lecture 04 • Exam Revision & Formula Sheet",
+            "url": "https://vidmoly.net/embed-xr8clxl5hlx6.html",
+            "type": "hls",
+            "subject": "Practice Session"
           }
         ]
       }
-    ]
+    ],
+    "isFolderMode": true
   },
   {
     "id": "computer",
