@@ -12,6 +12,18 @@ interface VideoPlayerProps {
   onNavigate: (index: number) => void;
 }
 
+// Extract Vidmoly file code from embed URL
+function extractVidmolyCode(url: string): string | null {
+  const m = url.match(/(?:embed-|w\/|vidmoly\.(?:net|me)\/)([a-zA-Z0-9]{10,16})/);
+  return m ? m[1] : null;
+}
+
+// Extract Earnvids file code from morencius URL
+function extractEarnvidsCode(url: string): string | null {
+  const m = url.match(/morencius\.com\/v\/([a-zA-Z0-9]{10,16})/);
+  return m ? m[1] : null;
+}
+
 export const VideoPlayer: React.FC<VideoPlayerProps> = ({
   playlist,
   currentIndex,
@@ -52,10 +64,22 @@ export const VideoPlayer: React.FC<VideoPlayerProps> = ({
     setStreamError(null);
   }, [currentIndex]);
 
+  // Determine URL types
+  const isVidmolyUrl = (currentItem?.url || '').includes('vidmoly.');
+  const isEarnvidsUrl = (currentItem?.url || '').includes('morencius.') || (currentItem?.url || '').includes('earnvids.');
+  const isYouTubeUrl = (currentItem?.url || '').includes('youtube.') || (currentItem?.url || '').includes('youtu.be');
+  const isHlsUrl = (currentItem?.url || '').includes('.m3u8');
+
   // Build servers list from item
   const servers: ServerOption[] = (() => {
     if (currentItem?.servers && currentItem.servers.length > 0) {
       return currentItem.servers;
+    }
+    if (isVidmolyUrl || isEarnvidsUrl) {
+      return [
+        { name: '⚡ HD Stream', url: currentItem?.url || '', type: 'hls' },
+        { name: '🎬 Embed Player', url: currentItem?.url || '', type: 'external' },
+      ];
     }
     return [
       { name: 'Server 1', url: currentItem?.url || '', type: currentItem?.type },
@@ -64,27 +88,10 @@ export const VideoPlayer: React.FC<VideoPlayerProps> = ({
 
   const activeServer = servers[selectedServerIndex] || servers[0];
   const activeUrl = activeServer?.url || currentItem?.url || '';
+  const isEmbedServer = selectedServerIndex === 1 && (isVidmolyUrl || isEarnvidsUrl);
+  const needsApiResolution = (isVidmolyUrl || isEarnvidsUrl) && !isHlsUrl && !isEmbedServer;
 
-  // Extract Vidmoly file code from embed URL
-  function extractVidmolyCode(url: string): string | null {
-    const m = url.match(/(?:embed-|w\/|vidmoly\.(?:net|me)\/)([a-zA-Z0-9]{10,16})/);
-    return m ? m[1] : null;
-  }
-
-  // Extract Earnvids file code from morencius URL
-  function extractEarnvidsCode(url: string): string | null {
-    const m = url.match(/morencius\.com\/v\/([a-zA-Z0-9]{10,16})/);
-    return m ? m[1] : null;
-  }
-
-  // Determine URL types
-  const isVidmolyUrl = activeUrl.includes('vidmoly.');
-  const isEarnvidsUrl = activeUrl.includes('morencius.') || activeUrl.includes('earnvids.');
-  const isYouTubeUrl = activeUrl.includes('youtube.') || activeUrl.includes('youtu.be');
-  const isHlsUrl = activeUrl.includes('.m3u8');
-  const needsApiResolution = (isVidmolyUrl || isEarnvidsUrl) && !isHlsUrl;
-
-  // Resolve stream URL via our server-side API
+  // Resolve stream URL via our server-side API with automatic fallback
   useEffect(() => {
     if (!needsApiResolution || !activeUrl) {
       setStreamLoading(false);
@@ -111,7 +118,12 @@ export const VideoPlayer: React.FC<VideoPlayerProps> = ({
     }
 
     const abortController = new AbortController();
-    const timer = setTimeout(() => abortController.abort(), 8000);
+    const timer = setTimeout(() => {
+      abortController.abort();
+      // Auto fallback to Embed Player if HD stream resolution times out
+      setSelectedServerIndex(1);
+      setStreamLoading(false);
+    }, 6000);
 
     fetch(`/api/stream?code=${code}&provider=${provider}`, { signal: abortController.signal })
       .then((r) => r.json())
@@ -119,11 +131,15 @@ export const VideoPlayer: React.FC<VideoPlayerProps> = ({
         clearTimeout(timer);
         if (data.streamUrl) {
           setResolvedStreamUrl(data.streamUrl);
+        } else {
+          // Auto fallback to Embed Player if stream not found
+          setSelectedServerIndex(1);
         }
         setStreamLoading(false);
       })
       .catch(() => {
         clearTimeout(timer);
+        setSelectedServerIndex(1);
         setStreamLoading(false);
       });
 
@@ -134,7 +150,7 @@ export const VideoPlayer: React.FC<VideoPlayerProps> = ({
   }, [activeUrl, selectedServerIndex]);
 
   // Direct HLS stream or resolved stream URL
-  const hlsUrl = isHlsUrl ? activeUrl : resolvedStreamUrl;
+  const hlsUrl = !isEmbedServer ? (isHlsUrl ? activeUrl : resolvedStreamUrl) : null;
 
   useEffect(() => {
     if (!hlsUrl || !videoRef.current) return;
@@ -500,7 +516,6 @@ export const VideoPlayer: React.FC<VideoPlayerProps> = ({
           {showIframeFallback && (
             <iframe
               src={embedIframeUrl}
-              referrerPolicy="no-referrer"
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; fullscreen"
               allowFullScreen
               style={{ position: 'absolute', inset: 0, width: '100%', height: '100%', border: 'none' }}
