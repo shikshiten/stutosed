@@ -82,9 +82,59 @@ export const VideoPlayer: React.FC<VideoPlayerProps> = ({
   const isEarnvidsUrl = activeUrl.includes('morencius.') || activeUrl.includes('earnvids.');
   const isYouTubeUrl = activeUrl.includes('youtube.') || activeUrl.includes('youtu.be');
   const isHlsUrl = activeUrl.includes('.m3u8');
+  const needsApiResolution = (isVidmolyUrl || isEarnvidsUrl) && !isHlsUrl;
 
-  // Direct HLS stream (e.g. CloudFront m3u8)
-  const hlsUrl = isHlsUrl ? activeUrl : null;
+  // Resolve stream URL via our server-side API
+  useEffect(() => {
+    if (!needsApiResolution || !activeUrl) {
+      setStreamLoading(false);
+      return;
+    }
+
+    setStreamLoading(true);
+    setResolvedStreamUrl(null);
+    setStreamError(null);
+
+    let code: string | null = null;
+    let provider = 'vidmoly';
+
+    if (isVidmolyUrl) {
+      code = extractVidmolyCode(activeUrl);
+    } else if (isEarnvidsUrl) {
+      code = extractEarnvidsCode(activeUrl);
+      provider = 'earnvids';
+    }
+
+    if (!code) {
+      setStreamLoading(false);
+      return;
+    }
+
+    const abortController = new AbortController();
+    const timer = setTimeout(() => abortController.abort(), 8000);
+
+    fetch(`/api/stream?code=${code}&provider=${provider}`, { signal: abortController.signal })
+      .then((r) => r.json())
+      .then((data) => {
+        clearTimeout(timer);
+        if (data.streamUrl) {
+          setResolvedStreamUrl(data.streamUrl);
+        }
+        setStreamLoading(false);
+      })
+      .catch(() => {
+        clearTimeout(timer);
+        setStreamLoading(false);
+      });
+
+    return () => {
+      clearTimeout(timer);
+      abortController.abort();
+    };
+  }, [activeUrl, selectedServerIndex]);
+
+  // Direct HLS stream or resolved stream URL
+  const hlsUrl = isHlsUrl ? activeUrl : resolvedStreamUrl;
 
   useEffect(() => {
     if (!hlsUrl || !videoRef.current) return;
@@ -107,7 +157,7 @@ export const VideoPlayer: React.FC<VideoPlayerProps> = ({
       });
       hls.on(Hls.Events.ERROR, (_, data) => {
         if (data.fatal) {
-          console.warn('HLS Fatal error:', data.type);
+          console.warn('HLS fatal error:', data.type);
         }
       });
       return () => {
@@ -218,7 +268,8 @@ export const VideoPlayer: React.FC<VideoPlayerProps> = ({
 
   const showVideo = Boolean(hlsUrl);
   const showYoutube = Boolean(ytId);
-  const showIframeFallback = !showVideo && !showYoutube;
+  const showLoading = streamLoading;
+  const showIframeFallback = !showVideo && !showYoutube && !showLoading;
 
   return (
     <div
@@ -341,6 +392,22 @@ export const VideoPlayer: React.FC<VideoPlayerProps> = ({
             overflow: 'hidden',
           }}
         >
+          {showLoading && (
+            <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', gap: '14px', color: '#fff' }}>
+              <div
+                style={{
+                  width: '38px',
+                  height: '38px',
+                  border: '3px solid rgba(255,255,255,0.15)',
+                  borderTopColor: 'var(--accent)',
+                  borderRadius: '50%',
+                  animation: 'spin 0.8s linear infinite',
+                }}
+              />
+              <span style={{ fontSize: '13px', color: 'rgba(255,255,255,0.85)', fontWeight: 500 }}>Connecting to HD stream…</span>
+            </div>
+          )}
+
           {showYoutube && (
             <iframe
               src={`https://www.youtube.com/embed/${ytId}?autoplay=1&rel=0&modestbranding=1`}
