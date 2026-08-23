@@ -293,15 +293,15 @@ export const VideoPlayer: React.FC<VideoPlayerProps> = ({
     ? activeUrl.match(/(?:v=|youtu\.be\/|live\/)([a-zA-Z0-9_-]{11})/)?.[1] ?? null
     : null;
 
-  // Determine iframe source if direct HLS stream is not active
+  // Determine iframe source — use our embed proxy for speed control bridge
   const embedIframeUrl = (() => {
     if (isVidmolyUrl) {
       const code = extractVidmolyCode(activeUrl);
-      return code ? `https://vidmoly.net/embed-${code}.html` : activeUrl;
+      return code ? `/api/embed?code=${code}&provider=vidmoly` : activeUrl;
     }
     if (isEarnvidsUrl) {
       const code = extractEarnvidsCode(activeUrl);
-      return code ? `https://morencius.com/v/${code}` : activeUrl;
+      return code ? `/api/embed?code=${code}&provider=earnvids` : activeUrl;
     }
     return activeUrl;
   })();
@@ -733,7 +733,7 @@ export const VideoPlayer: React.FC<VideoPlayerProps> = ({
           </div>
         )}
 
-        {/* CONTROLS BAR (For iframe fallback - simple navigation) */}
+        {/* CONTROLS BAR (For iframe fallback - navigation + speed) */}
         {!showVideo && (
           <div className="player-controls">
             <button
@@ -747,6 +747,83 @@ export const VideoPlayer: React.FC<VideoPlayerProps> = ({
               </svg>
               <span className="ctrl-label">Prev</span>
             </button>
+
+            {/* SPEED CONTROLLER for embed player */}
+            <div style={{ position: 'relative' }}>
+              <button
+                className="player-nav-btn"
+                onClick={() => {
+                  setShowSpeedMenu((s) => !s);
+                  setShowQualityMenu(false);
+                }}
+                title="Playback Speed"
+                style={{ fontWeight: 700, minWidth: '42px' }}
+              >
+                {playbackSpeed === 1 ? '1x' : `${playbackSpeed}x`}
+              </button>
+              {showSpeedMenu && (
+                <div
+                  style={{
+                    position: 'absolute',
+                    bottom: '100%',
+                    left: '50%',
+                    transform: 'translateX(-50%)',
+                    background: 'var(--bg-card)',
+                    border: '1px solid var(--border)',
+                    borderRadius: 'var(--r-md)',
+                    padding: '6px',
+                    marginBottom: '8px',
+                    zIndex: 100,
+                    minWidth: '96px',
+                    maxHeight: '220px',
+                    overflowY: 'auto',
+                    boxShadow: '0 8px 24px rgba(0,0,0,0.35)',
+                  }}
+                >
+                  <div
+                    style={{
+                      fontSize: '10px',
+                      textTransform: 'uppercase',
+                      color: 'var(--text-muted)',
+                      fontWeight: 700,
+                      padding: '4px 8px',
+                      letterSpacing: '0.5px',
+                    }}
+                  >
+                    Speed
+                  </div>
+                  {speedOptions.map((spd) => (
+                    <button
+                      key={spd}
+                      className="quality-opt"
+                      style={{
+                        display: 'block',
+                        width: '100%',
+                        padding: '5px 10px',
+                        textAlign: 'left',
+                        fontSize: '12px',
+                        fontWeight: playbackSpeed === spd ? 700 : 500,
+                        color: playbackSpeed === spd ? 'var(--accent)' : 'var(--text)',
+                        background: playbackSpeed === spd ? 'rgba(204,120,92,0.12)' : 'transparent',
+                        borderRadius: 'var(--r-sm)',
+                        border: 'none',
+                        cursor: 'pointer',
+                      }}
+                      onClick={() => {
+                        handleSpeedChange(spd);
+                        // Send speed change to iframe via postMessage
+                        const iframe = document.querySelector('#player-modal iframe') as HTMLIFrameElement;
+                        if (iframe?.contentWindow) {
+                          iframe.contentWindow.postMessage({ type: 'setPlaybackRate', rate: spd }, '*');
+                        }
+                      }}
+                    >
+                      {spd === 1 ? '1x Normal' : `${spd}x`}
+                    </button>
+                  ))}
+                </div>
+              )}
+            </div>
 
             <button className="player-nav-btn" onClick={toggleFullscreen} title="Fullscreen">
               <svg
