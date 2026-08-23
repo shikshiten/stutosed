@@ -144,9 +144,21 @@ export const VideoPlayer: React.FC<VideoPlayerProps> = ({
     setCurrentQuality(-1);
     setIsPlaying(false);
 
-    if (Hls.isSupported()) {
+    const isSafari = typeof navigator !== 'undefined' && /^((?!chrome|android).)*safari/i.test(navigator.userAgent);
+
+    if (video.canPlayType('application/vnd.apple.mpegurl') && (isSafari || !Hls.isSupported())) {
+      video.src = hlsUrl;
+      video.load();
+      video.play().catch(() => {});
+    } else if (Hls.isSupported()) {
       if (hlsRef.current) hlsRef.current.destroy();
-      const hls = new Hls({ enableWorker: true, maxBufferLength: 30 });
+      const hls = new Hls({
+        enableWorker: true,
+        maxBufferLength: 20,
+        maxMaxBufferLength: 40,
+        startLevel: -1,
+        capLevelToPlayerSize: true,
+      });
       hlsRef.current = hls;
       hls.loadSource(hlsUrl);
       hls.attachMedia(video);
@@ -157,7 +169,18 @@ export const VideoPlayer: React.FC<VideoPlayerProps> = ({
       });
       hls.on(Hls.Events.ERROR, (_, data) => {
         if (data.fatal) {
-          console.warn('HLS fatal error:', data.type);
+          switch (data.type) {
+            case Hls.ErrorTypes.NETWORK_ERROR:
+              hls.startLoad();
+              break;
+            case Hls.ErrorTypes.MEDIA_ERROR:
+              hls.recoverMediaError();
+              break;
+            default:
+              hls.destroy();
+              hlsRef.current = null;
+              break;
+          }
         }
       });
       return () => {
@@ -166,6 +189,7 @@ export const VideoPlayer: React.FC<VideoPlayerProps> = ({
       };
     } else if (video.canPlayType('application/vnd.apple.mpegurl')) {
       video.src = hlsUrl;
+      video.load();
       video.play().catch(() => {});
     }
   }, [hlsUrl]);
@@ -419,15 +443,58 @@ export const VideoPlayer: React.FC<VideoPlayerProps> = ({
           )}
 
           {showVideo && (
-            <video
-              ref={videoRef}
-              controls
-              controlsList="nodownload"
-              disablePictureInPicture
-              autoPlay
-              playsInline
-              style={{ position: 'absolute', inset: 0, width: '100%', height: '100%', background: '#000' }}
-            />
+            <>
+              <video
+                ref={videoRef}
+                controls
+                controlsList="nodownload"
+                disablePictureInPicture
+                playsInline
+                preload="auto"
+                style={{ position: 'absolute', inset: 0, width: '100%', height: '100%', background: '#000' }}
+              />
+
+              {/* Big Tap to Play button (critical for Mobile when autoplay is blocked) */}
+              {!isPlaying && !showLoading && (
+                <div
+                  onClick={togglePlayPause}
+                  style={{
+                    position: 'absolute',
+                    inset: 0,
+                    display: 'flex',
+                    flexDirection: 'column',
+                    alignItems: 'center',
+                    justifyContent: 'center',
+                    background: 'rgba(0, 0, 0, 0.45)',
+                    cursor: 'pointer',
+                    zIndex: 10,
+                    gap: '10px',
+                  }}
+                >
+                  <div
+                    style={{
+                      width: '62px',
+                      height: '62px',
+                      borderRadius: '50%',
+                      background: 'var(--accent)',
+                      color: '#ffffff',
+                      display: 'flex',
+                      alignItems: 'center',
+                      justifyContent: 'center',
+                      boxShadow: '0 0 30px rgba(204, 120, 92, 0.65)',
+                      transition: 'transform 0.2s ease',
+                    }}
+                  >
+                    <svg width="26" height="26" viewBox="0 0 24 24" fill="currentColor" style={{ marginLeft: '3px' }}>
+                      <polygon points="5,3 19,12 5,21" />
+                    </svg>
+                  </div>
+                  <span style={{ color: '#fff', fontSize: '13px', fontWeight: 600, textShadow: '0 2px 4px rgba(0,0,0,0.8)' }}>
+                    Tap to Play
+                  </span>
+                </div>
+              )}
+            </>
           )}
 
           {showIframeFallback && (
