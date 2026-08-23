@@ -131,37 +131,84 @@ export const AuthModal: React.FC<AuthModalProps> = ({
         </button>
 
         <div style={{ padding: '28px 28px 24px' }}>
-          {/* Brand Header */}
+          {/* Brand Header with Animated Original Celestial Logo */}
           <div style={{ textAlign: 'center', marginBottom: '20px' }}>
             <div
-              className="auth-animated-logo-container"
+              className="auth-animated-brand-logo"
               style={{
                 display: 'inline-flex',
                 alignItems: 'center',
                 justifyContent: 'center',
-                width: '64px',
-                height: '64px',
+                width: '68px',
+                height: '68px',
                 borderRadius: '50%',
-                background: 'rgba(204, 120, 92, 0.12)',
-                border: '2px solid rgba(204, 120, 92, 0.3)',
+                background: 'radial-gradient(circle, rgba(204, 120, 92, 0.2) 0%, rgba(204, 120, 92, 0.05) 70%, transparent 100%)',
+                border: '1.5px solid rgba(204, 120, 92, 0.35)',
                 color: 'var(--accent)',
                 marginBottom: '14px',
                 position: 'relative',
-                boxShadow: '0 0 20px rgba(204, 120, 92, 0.25)',
-                animation: 'authGlowPulse 3s ease-in-out infinite alternate',
+                boxShadow: '0 0 24px rgba(204, 120, 92, 0.25)',
+                animation: 'brandBadgeFloat 4s ease-in-out infinite alternate',
               }}
             >
-              <img
-                src="/profile_icon.jpg"
-                alt="stutosed"
-                style={{
-                  width: '50px',
-                  height: '50px',
-                  borderRadius: '50%',
-                  objectFit: 'cover',
-                  animation: 'authLogoRotateFloat 5s ease-in-out infinite',
-                }}
-              />
+              <svg
+                viewBox="0 0 48 48"
+                width="40"
+                height="40"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                {/* Rotating Outer Rays */}
+                <g style={{ transformOrigin: '24px 24px', animation: 'spinRays 16s linear infinite' }}>
+                  <line x1="24" y1="2" x2="24" y2="7" stroke="var(--accent)" strokeWidth="2.2" strokeLinecap="round" opacity="0.9" />
+                  <line x1="24" y1="41" x2="24" y2="46" stroke="var(--accent)" strokeWidth="2.2" strokeLinecap="round" opacity="0.9" />
+                  <line x1="2" y1="24" x2="7" y2="24" stroke="var(--accent)" strokeWidth="2.2" strokeLinecap="round" opacity="0.9" />
+                  <line x1="41" y1="24" x2="46" y2="24" stroke="var(--accent)" strokeWidth="2.2" strokeLinecap="round" opacity="0.9" />
+                  <line x1="8.5" y1="8.5" x2="12.5" y2="12.5" stroke="var(--accent)" strokeWidth="2" strokeLinecap="round" opacity="0.75" />
+                  <line x1="35.5" y1="35.5" x2="39.5" y2="39.5" stroke="var(--accent)" strokeWidth="2" strokeLinecap="round" opacity="0.75" />
+                  <line x1="8.5" y1="39.5" x2="12.5" y2="35.5" stroke="var(--accent)" strokeWidth="2" strokeLinecap="round" opacity="0.75" />
+                  <line x1="35.5" y1="12.5" x2="39.5" y2="8.5" stroke="var(--accent)" strokeWidth="2" strokeLinecap="round" opacity="0.75" />
+                </g>
+
+                {/* Counter-rotating Outer Orbit Ring */}
+                <circle
+                  cx="24"
+                  cy="24"
+                  r="17"
+                  stroke="var(--accent)"
+                  strokeWidth="1.2"
+                  strokeDasharray="4 4"
+                  opacity="0.6"
+                  style={{ transformOrigin: '24px 24px', animation: 'spinOrbit 10s linear infinite reverse' }}
+                />
+
+                {/* Middle Ring */}
+                <circle
+                  cx="24"
+                  cy="24"
+                  r="12"
+                  stroke="var(--accent)"
+                  strokeWidth="1.6"
+                  opacity="0.85"
+                  style={{ transformOrigin: '24px 24px', animation: 'orbitPulse 3s ease-in-out infinite alternate' }}
+                />
+
+                {/* Glowing Core Sun */}
+                <circle
+                  cx="24"
+                  cy="24"
+                  r="6.5"
+                  fill="var(--accent)"
+                  style={{ transformOrigin: '24px 24px', animation: 'corePulse 2s ease-in-out infinite alternate' }}
+                />
+                <circle
+                  cx="24"
+                  cy="24"
+                  r="2.5"
+                  fill="#ffffff"
+                  opacity="0.85"
+                />
+              </svg>
             </div>
 
             <h2
@@ -405,30 +452,26 @@ export const AuthModal: React.FC<AuthModalProps> = ({
       </div>
 
       <style>{`
-        @keyframes authGlowPulse {
-          0% {
-            box-shadow: 0 0 12px rgba(204, 120, 92, 0.2), 0 0 0 0 rgba(204, 120, 92, 0.2);
-            transform: scale(1);
-          }
-          50% {
-            box-shadow: 0 0 28px rgba(204, 120, 92, 0.5), 0 0 0 6px rgba(204, 120, 92, 0.15);
-            transform: scale(1.06);
-          }
-          100% {
-            box-shadow: 0 0 12px rgba(204, 120, 92, 0.2), 0 0 0 0 rgba(204, 120, 92, 0.2);
-            transform: scale(1);
-          }
+        @keyframes spinRays {
+          from { transform: rotate(0deg); }
+          to { transform: rotate(360deg); }
         }
-        @keyframes authLogoRotateFloat {
-          0%, 100% {
-            transform: rotate(0deg) scale(1);
-          }
-          25% {
-            transform: rotate(4deg) scale(1.03);
-          }
-          75% {
-            transform: rotate(-4deg) scale(0.97);
-          }
+        @keyframes spinOrbit {
+          from { transform: rotate(0deg); }
+          to { transform: rotate(360deg); }
+        }
+        @keyframes orbitPulse {
+          0% { transform: scale(0.93); opacity: 0.7; }
+          100% { transform: scale(1.07); opacity: 1; }
+        }
+        @keyframes corePulse {
+          0% { transform: scale(0.88); filter: drop-shadow(0 0 3px var(--accent)); }
+          100% { transform: scale(1.15); filter: drop-shadow(0 0 10px var(--accent)); }
+        }
+        @keyframes brandBadgeFloat {
+          0% { transform: translateY(0) scale(1); box-shadow: 0 0 16px rgba(204, 120, 92, 0.2); }
+          50% { transform: translateY(-4px) scale(1.03); box-shadow: 0 0 28px rgba(204, 120, 92, 0.45); }
+          100% { transform: translateY(0) scale(1); box-shadow: 0 0 16px rgba(204, 120, 92, 0.2); }
         }
       `}</style>
     </div>

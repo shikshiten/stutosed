@@ -77,51 +77,14 @@ export const VideoPlayer: React.FC<VideoPlayerProps> = ({
     return m ? m[1] : null;
   }
 
-  // Determine if we need to resolve stream URL via API
+  // Determine URL types
   const isVidmolyUrl = activeUrl.includes('vidmoly.');
   const isEarnvidsUrl = activeUrl.includes('morencius.') || activeUrl.includes('earnvids.');
   const isYouTubeUrl = activeUrl.includes('youtube.') || activeUrl.includes('youtu.be');
   const isHlsUrl = activeUrl.includes('.m3u8');
-  const needsApiResolution = (isVidmolyUrl || isEarnvidsUrl) && !isHlsUrl;
 
-  // Resolve stream URL via our server-side API
-  useEffect(() => {
-    if (!needsApiResolution || !activeUrl) return;
-
-    setStreamLoading(true);
-    setResolvedStreamUrl(null);
-    setStreamError(null);
-
-    let code: string | null = null;
-    let provider = 'vidmoly';
-
-    if (isVidmolyUrl) {
-      code = extractVidmolyCode(activeUrl);
-    } else if (isEarnvidsUrl) {
-      code = extractEarnvidsCode(activeUrl);
-      provider = 'earnvids';
-    }
-
-    if (!code) {
-      setStreamLoading(false);
-      return;
-    }
-
-    fetch(`/api/stream?code=${code}&provider=${provider}`)
-      .then((r) => r.json())
-      .then((data) => {
-        if (data.streamUrl) {
-          setResolvedStreamUrl(data.streamUrl);
-        }
-        setStreamLoading(false);
-      })
-      .catch(() => {
-        setStreamLoading(false);
-      });
-  }, [activeUrl, selectedServerIndex]);
-
-  // Load HLS when streamUrl is resolved
-  const hlsUrl = isHlsUrl ? activeUrl : resolvedStreamUrl;
+  // Direct HLS stream (e.g. CloudFront m3u8)
+  const hlsUrl = isHlsUrl ? activeUrl : null;
 
   useEffect(() => {
     if (!hlsUrl || !videoRef.current) return;
@@ -144,15 +107,25 @@ export const VideoPlayer: React.FC<VideoPlayerProps> = ({
       });
       hls.on(Hls.Events.ERROR, (_, data) => {
         if (data.fatal) {
-          setStreamError('Playback error. Please try another server.');
+          console.warn('HLS Fatal error:', data.type);
         }
       });
-      return () => { hls.destroy(); hlsRef.current = null; };
+      return () => {
+        hls.destroy();
+        hlsRef.current = null;
+      };
     } else if (video.canPlayType('application/vnd.apple.mpegurl')) {
       video.src = hlsUrl;
       video.play().catch(() => {});
     }
   }, [hlsUrl]);
+
+  // Sync playback rate when speed changes
+  useEffect(() => {
+    if (videoRef.current) {
+      videoRef.current.playbackRate = playbackSpeed;
+    }
+  }, [hlsUrl, playbackSpeed]);
 
   // Play/pause/skip handlers
   const togglePlayPause = useCallback(() => {
@@ -181,13 +154,15 @@ export const VideoPlayer: React.FC<VideoPlayerProps> = ({
     const onPause = () => setIsPlaying(false);
     video.addEventListener('play', onPlay);
     video.addEventListener('pause', onPause);
-    return () => { video.removeEventListener('play', onPlay); video.removeEventListener('pause', onPause); };
+    return () => {
+      video.removeEventListener('play', onPlay);
+      video.removeEventListener('pause', onPause);
+    };
   }, [hlsUrl]);
 
   // Anti-piracy: Block keyboard shortcuts (Save page, Inspect, etc.)
   useEffect(() => {
     const handleKeyDown = (e: KeyboardEvent) => {
-      // Prevent Ctrl+S, Ctrl+U, F12
       if ((e.ctrlKey || e.metaKey) && (e.key === 's' || e.key === 'S' || e.key === 'u' || e.key === 'U')) {
         e.preventDefault();
         return;
@@ -196,11 +171,26 @@ export const VideoPlayer: React.FC<VideoPlayerProps> = ({
       const tag = (e.target as HTMLElement)?.tagName?.toLowerCase();
       if (['input', 'textarea', 'select', 'button'].includes(tag)) return;
       switch (e.key) {
-        case ' ': e.preventDefault(); togglePlayPause(); break;
-        case 'f': case 'F': e.preventDefault(); toggleFullscreen(); break;
-        case 'ArrowLeft': e.preventDefault(); skipVideo(-10); break;
-        case 'ArrowRight': e.preventDefault(); skipVideo(10); break;
-        case 'Escape': onClose(); break;
+        case ' ':
+          e.preventDefault();
+          togglePlayPause();
+          break;
+        case 'f':
+        case 'F':
+          e.preventDefault();
+          toggleFullscreen();
+          break;
+        case 'ArrowLeft':
+          e.preventDefault();
+          skipVideo(-10);
+          break;
+        case 'ArrowRight':
+          e.preventDefault();
+          skipVideo(10);
+          break;
+        case 'Escape':
+          onClose();
+          break;
       }
     };
     window.addEventListener('keydown', handleKeyDown);
@@ -213,7 +203,7 @@ export const VideoPlayer: React.FC<VideoPlayerProps> = ({
     ? activeUrl.match(/(?:v=|youtu\.be\/|live\/)([a-zA-Z0-9_-]{11})/)?.[1] ?? null
     : null;
 
-  // Determine iframe source if HLS direct stream is not active
+  // Determine iframe source if direct HLS stream is not active
   const embedIframeUrl = (() => {
     if (isVidmolyUrl) {
       const code = extractVidmolyCode(activeUrl);
@@ -228,8 +218,7 @@ export const VideoPlayer: React.FC<VideoPlayerProps> = ({
 
   const showVideo = Boolean(hlsUrl);
   const showYoutube = Boolean(ytId);
-  const showLoading = streamLoading;
-  const showIframeFallback = !showVideo && !showYoutube && !showLoading;
+  const showIframeFallback = !showVideo && !showYoutube;
 
   return (
     <div
@@ -352,25 +341,10 @@ export const VideoPlayer: React.FC<VideoPlayerProps> = ({
             overflow: 'hidden',
           }}
         >
-          {showLoading && (
-            <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', gap: '16px', color: '#fff' }}>
-              <div
-                style={{
-                  width: '40px',
-                  height: '40px',
-                  border: '3px solid rgba(255,255,255,0.15)',
-                  borderTopColor: 'var(--accent)',
-                  borderRadius: '50%',
-                  animation: 'spin 0.8s linear infinite',
-                }}
-              />
-              <span style={{ fontSize: '14px', opacity: 0.7 }}>Loading secure stream…</span>
-            </div>
-          )}
-
           {showYoutube && (
             <iframe
               src={`https://www.youtube.com/embed/${ytId}?autoplay=1&rel=0&modestbranding=1`}
+              referrerPolicy="no-referrer"
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
               allowFullScreen
               style={{ position: 'absolute', inset: 0, width: '100%', height: '100%', border: 'none' }}
@@ -392,7 +366,8 @@ export const VideoPlayer: React.FC<VideoPlayerProps> = ({
           {showIframeFallback && (
             <iframe
               src={embedIframeUrl}
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              referrerPolicy="no-referrer"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; fullscreen"
               allowFullScreen
               style={{ position: 'absolute', inset: 0, width: '100%', height: '100%', border: 'none' }}
             />
@@ -610,7 +585,7 @@ export const VideoPlayer: React.FC<VideoPlayerProps> = ({
         )}
 
         {/* CONTROLS BAR (For iframe fallback - simple navigation) */}
-        {!showVideo && !showLoading && (
+        {!showVideo && (
           <div className="player-controls">
             <button
               className="player-nav-btn"
