@@ -8,7 +8,7 @@
  */
 import { NextRequest } from 'next/server';
 
-export const runtime = 'edge';
+export const dynamic = 'force-dynamic';
 
 export async function GET(request: NextRequest) {
   const targetUrl = request.nextUrl.searchParams.get('url');
@@ -38,16 +38,37 @@ export async function GET(request: NextRequest) {
     const isPlaylist = decoded.includes('.m3u8');
 
     if (isPlaylist) {
-      // ── m3u8 playlist: rewrite every absolute URL to go through proxy ──
-      let body = await upstreamRes.text();
+      const body = await upstreamRes.text();
+      const baseUrl = new URL(decoded);
 
-      body = body.replace(
-        /https?:\/\/[^\s"',]+/g,
-        (match: string) =>
-          `/api/hls-proxy?url=${encodeURIComponent(match)}`,
-      );
+      // Process line by line for HLS tags and segment URIs
+      const lines = body.split('\n');
+      const rewrittenLines = lines.map((line) => {
+        const trimmed = line.trim();
+        if (!trimmed) return line;
 
-      return new Response(body, {
+        // Rewrite URI="..." attributes (e.g. #EXT-X-I-FRAME-STREAM-INF or #EXT-X-KEY)
+        if (trimmed.startsWith('#')) {
+          return trimmed.replace(/URI=["']([^"']+)["']/g, (_, uri) => {
+            try {
+              const absoluteUri = new URL(uri, baseUrl).toString();
+              return `URI="/api/hls-proxy?url=${encodeURIComponent(absoluteUri)}"`;
+            } catch {
+              return `URI="${uri}"`;
+            }
+          });
+        }
+
+        // It's a segment or child playlist URI line
+        try {
+          const absoluteUrl = new URL(trimmed, baseUrl).toString();
+          return `/api/hls-proxy?url=${encodeURIComponent(absoluteUrl)}`;
+        } catch {
+          return line;
+        }
+      });
+
+      return new Response(rewrittenLines.join('\n'), {
         headers: {
           'Content-Type': 'application/vnd.apple.mpegurl',
           'Access-Control-Allow-Origin': '*',
@@ -58,14 +79,22 @@ export async function GET(request: NextRequest) {
     }
 
     // ── Binary segment (.ts, thumbnails, etc.) → stream through ──
+    const contentType = upstreamRes.headers.get('Content-Type') || 'video/MP2T';
+    const contentLength = upstreamRes.headers.get('Content-Length');
+    const acceptRanges = upstreamRes.headers.get('Accept-Ranges');
+
+    const headers: Record<string, string> = {
+      'Content-Type': contentType,
+      'Access-Control-Allow-Origin': '*',
+      'Access-Control-Allow-Methods': 'GET, OPTIONS',
+      'Cache-Control': 'public, max-age=86400, immutable',
+    };
+    if (contentLength) headers['Content-Length'] = contentLength;
+    if (acceptRanges) headers['Accept-Ranges'] = acceptRanges;
+
     return new Response(upstreamRes.body, {
-      headers: {
-        'Content-Type':
-          upstreamRes.headers.get('Content-Type') || 'video/MP2T',
-        'Access-Control-Allow-Origin': '*',
-        'Access-Control-Allow-Methods': 'GET, OPTIONS',
-        'Cache-Control': 'public, max-age=86400, immutable',
-      },
+      status: upstreamRes.status,
+      headers,
     });
   } catch (err: unknown) {
     const message = err instanceof Error ? err.message : 'Proxy error';

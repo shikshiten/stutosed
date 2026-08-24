@@ -42,7 +42,6 @@ export const VideoPlayer: React.FC<VideoPlayerProps> = ({
   const [showQualityMenu, setShowQualityMenu] = useState<boolean>(false);
   const [playbackSpeed, setPlaybackSpeed] = useState<number>(1);
   const [showSpeedMenu, setShowSpeedMenu] = useState<boolean>(false);
-  const [selectedServerIndex, setSelectedServerIndex] = useState<number>(0);
   const [resolvedStreamUrl, setResolvedStreamUrl] = useState<string | null>(null);
   const [streamLoading, setStreamLoading] = useState<boolean>(false);
   const [streamError, setStreamError] = useState<string | null>(null);
@@ -57,43 +56,19 @@ export const VideoPlayer: React.FC<VideoPlayerProps> = ({
     setShowSpeedMenu(false);
   };
 
-  // Reset server selection when lecture changes
-  useEffect(() => {
-    setSelectedServerIndex(0);
-    setResolvedStreamUrl(null);
-    setStreamError(null);
-  }, [currentIndex]);
+  const activeUrl = currentItem?.url || '';
 
   // Determine URL types
-  const isVidmolyUrl = (currentItem?.url || '').includes('vidmoly.');
-  const isEarnvidsUrl = (currentItem?.url || '').includes('morencius.') || (currentItem?.url || '').includes('earnvids.');
-  const isYouTubeUrl = (currentItem?.url || '').includes('youtube.') || (currentItem?.url || '').includes('youtu.be');
-  const isHlsUrl = (currentItem?.url || '').includes('.m3u8');
+  const isVidmolyUrl = activeUrl.includes('vidmoly.');
+  const isEarnvidsUrl = activeUrl.includes('morencius.') || activeUrl.includes('earnvids.');
+  const isYouTubeUrl = activeUrl.includes('youtube.') || activeUrl.includes('youtu.be');
+  const isHlsUrl = activeUrl.includes('.m3u8');
+  const needsApiResolution = (isVidmolyUrl || isEarnvidsUrl) && !isHlsUrl;
 
-  // Build servers list from item
-  const servers: ServerOption[] = (() => {
-    if (currentItem?.servers && currentItem.servers.length > 0) {
-      return currentItem.servers;
-    }
-    if (isVidmolyUrl || isEarnvidsUrl) {
-      return [
-        { name: '⚡ HD Stream', url: currentItem?.url || '', type: 'hls' },
-        { name: '🎬 Embed Player', url: currentItem?.url || '', type: 'external' },
-      ];
-    }
-    return [
-      { name: 'Server 1', url: currentItem?.url || '', type: currentItem?.type },
-    ];
-  })();
-
-  const activeServer = servers[selectedServerIndex] || servers[0];
-  const activeUrl = activeServer?.url || currentItem?.url || '';
-  const isEmbedServer = selectedServerIndex === 1 && (isVidmolyUrl || isEarnvidsUrl);
-  const needsApiResolution = (isVidmolyUrl || isEarnvidsUrl) && !isHlsUrl && !isEmbedServer;
-
-  // Resolve stream URL via our server-side API with automatic fallback
+  // Resolve stream URL via our server-side API
   useEffect(() => {
     if (!needsApiResolution || !activeUrl) {
+      setResolvedStreamUrl(null);
       setStreamLoading(false);
       return;
     }
@@ -114,43 +89,36 @@ export const VideoPlayer: React.FC<VideoPlayerProps> = ({
 
     if (!code) {
       setStreamLoading(false);
+      setStreamError('Invalid video code');
       return;
     }
 
     const abortController = new AbortController();
-    const timer = setTimeout(() => {
-      abortController.abort();
-      // Auto fallback to Embed Player if HD stream resolution times out
-      setSelectedServerIndex(1);
-      setStreamLoading(false);
-    }, 6000);
 
     fetch(`/api/stream?code=${code}&provider=${provider}`, { signal: abortController.signal })
       .then((r) => r.json())
       .then((data) => {
-        clearTimeout(timer);
         if (data.streamUrl) {
           setResolvedStreamUrl(data.streamUrl);
         } else {
-          // Auto fallback to Embed Player if stream not found
-          setSelectedServerIndex(1);
+          setStreamError(data.error || 'Unable to load video stream');
         }
         setStreamLoading(false);
       })
-      .catch(() => {
-        clearTimeout(timer);
-        setSelectedServerIndex(1);
-        setStreamLoading(false);
+      .catch((err) => {
+        if (err.name !== 'AbortError') {
+          setStreamError('Connection to video stream timed out');
+          setStreamLoading(false);
+        }
       });
 
     return () => {
-      clearTimeout(timer);
       abortController.abort();
     };
-  }, [activeUrl, selectedServerIndex]);
+  }, [activeUrl, needsApiResolution, isVidmolyUrl, isEarnvidsUrl]);
 
   // Direct HLS stream or resolved stream URL
-  const hlsUrl = !isEmbedServer ? (isHlsUrl ? activeUrl : resolvedStreamUrl) : null;
+  const hlsUrl = isHlsUrl ? activeUrl : resolvedStreamUrl;
 
   useEffect(() => {
     if (!hlsUrl || !videoRef.current) return;
@@ -293,23 +261,9 @@ export const VideoPlayer: React.FC<VideoPlayerProps> = ({
     ? activeUrl.match(/(?:v=|youtu\.be\/|live\/)([a-zA-Z0-9_-]{11})/)?.[1] ?? null
     : null;
 
-  // Determine iframe source — use our embed proxy for speed control bridge
-  const embedIframeUrl = (() => {
-    if (isVidmolyUrl) {
-      const code = extractVidmolyCode(activeUrl);
-      return code ? `/api/embed?code=${code}&provider=vidmoly` : activeUrl;
-    }
-    if (isEarnvidsUrl) {
-      const code = extractEarnvidsCode(activeUrl);
-      return code ? `/api/embed?code=${code}&provider=earnvids` : activeUrl;
-    }
-    return activeUrl;
-  })();
-
   const showVideo = Boolean(hlsUrl);
   const showYoutube = Boolean(ytId);
   const showLoading = streamLoading;
-  const showIframeFallback = !showVideo && !showYoutube && !showLoading;
 
   return (
     <div
@@ -361,47 +315,6 @@ export const VideoPlayer: React.FC<VideoPlayerProps> = ({
             </div>
           </div>
 
-          {/* SERVER SWITCHER */}
-          {servers.length > 1 && (
-            <div
-              style={{
-                display: 'flex',
-                alignItems: 'center',
-                gap: '4px',
-                background: 'rgba(255,255,255,0.08)',
-                padding: '3px 4px',
-                borderRadius: '100px',
-                border: '1px solid rgba(255,255,255,0.12)'
-              }}
-            >
-              {servers.map((srv, idx) => (
-                <button
-                  key={idx}
-                  onClick={() => {
-                    setSelectedServerIndex(idx);
-                    setResolvedStreamUrl(null);
-                    setStreamError(null);
-                  }}
-                  style={{
-                    padding: '5px 12px',
-                    fontSize: '11px',
-                    fontWeight: 700,
-                    letterSpacing: '0.3px',
-                    borderRadius: '100px',
-                    border: 'none',
-                    background: selectedServerIndex === idx ? 'var(--accent)' : 'transparent',
-                    color: selectedServerIndex === idx ? '#fff' : 'rgba(255,255,255,0.6)',
-                    cursor: 'pointer',
-                    transition: 'all 0.2s ease',
-                    whiteSpace: 'nowrap',
-                  }}
-                >
-                  {srv.name || `Server ${idx + 1}`}
-                </button>
-              ))}
-            </div>
-          )}
-
           <button
             onClick={onClose}
             style={{
@@ -409,11 +322,15 @@ export const VideoPlayer: React.FC<VideoPlayerProps> = ({
               border: 'none',
               color: 'rgba(255,255,255,0.6)',
               cursor: 'pointer',
-              padding: '4px',
+              padding: '6px',
               borderRadius: '6px',
+              display: 'flex',
+              alignItems: 'center',
+              justifyContent: 'center',
             }}
+            title="Close (Esc)"
           >
-            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5">
               <path d="M18 6 6 18M6 6l12 12" />
             </svg>
           </button>
@@ -436,8 +353,8 @@ export const VideoPlayer: React.FC<VideoPlayerProps> = ({
             <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', gap: '14px', color: '#fff' }}>
               <div
                 style={{
-                  width: '38px',
-                  height: '38px',
+                  width: '42px',
+                  height: '42px',
                   border: '3px solid rgba(255,255,255,0.15)',
                   borderTopColor: 'var(--accent)',
                   borderRadius: '50%',
@@ -445,6 +362,17 @@ export const VideoPlayer: React.FC<VideoPlayerProps> = ({
                 }}
               />
               <span style={{ fontSize: '13px', color: 'rgba(255,255,255,0.85)', fontWeight: 500 }}>Connecting to HD stream…</span>
+            </div>
+          )}
+
+          {streamError && !showLoading && (
+            <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', gap: '10px', color: '#ff6b6b', padding: '20px', textAlign: 'center' }}>
+              <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+                <circle cx="12" cy="12" r="10" />
+                <line x1="12" y1="8" x2="12" y2="12" />
+                <line x1="12" y1="16" x2="12.01" y2="16" />
+              </svg>
+              <span style={{ fontSize: '14px', fontWeight: 600 }}>{streamError}</span>
             </div>
           )}
 
@@ -511,15 +439,6 @@ export const VideoPlayer: React.FC<VideoPlayerProps> = ({
                 </div>
               )}
             </>
-          )}
-
-          {showIframeFallback && (
-            <iframe
-              src={embedIframeUrl}
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; fullscreen"
-              allowFullScreen
-              style={{ position: 'absolute', inset: 0, width: '100%', height: '100%', border: 'none' }}
-            />
           )}
         </div>
 
@@ -701,131 +620,6 @@ export const VideoPlayer: React.FC<VideoPlayerProps> = ({
             </div>
 
             <button className="player-nav-btn" onClick={toggleFullscreen} title="Fullscreen (F)">
-              <svg
-                width="14"
-                height="14"
-                viewBox="0 0 24 24"
-                fill="none"
-                stroke="currentColor"
-                strokeWidth="2.5"
-                strokeLinecap="round"
-                strokeLinejoin="round"
-              >
-                <polyline points="15 3 21 3 21 9" />
-                <polyline points="9 21 3 21 3 15" />
-                <line x1="21" y1="3" x2="14" y2="10" />
-                <line x1="3" y1="21" x2="10" y2="14" />
-              </svg>
-              <span className="ctrl-label">Fullscreen</span>
-            </button>
-
-            <button
-              className="player-nav-btn"
-              disabled={currentIndex >= playlist.length - 1}
-              onClick={() => onNavigate(currentIndex + 1)}
-              title="Next"
-            >
-              <span className="ctrl-label">Next</span>
-              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5">
-                <path d="M5 12h14M12 5l7 7-7 7" />
-              </svg>
-            </button>
-          </div>
-        )}
-
-        {/* CONTROLS BAR (For iframe fallback - navigation + speed) */}
-        {!showVideo && (
-          <div className="player-controls">
-            <button
-              className="player-nav-btn"
-              disabled={currentIndex === 0}
-              onClick={() => onNavigate(currentIndex - 1)}
-              title="Previous (←)"
-            >
-              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5">
-                <path d="M19 12H5M12 19l-7-7 7-7" />
-              </svg>
-              <span className="ctrl-label">Prev</span>
-            </button>
-
-            {/* SPEED CONTROLLER for embed player */}
-            <div style={{ position: 'relative' }}>
-              <button
-                className="player-nav-btn"
-                onClick={() => {
-                  setShowSpeedMenu((s) => !s);
-                  setShowQualityMenu(false);
-                }}
-                title="Playback Speed"
-                style={{ fontWeight: 700, minWidth: '42px' }}
-              >
-                {playbackSpeed === 1 ? '1x' : `${playbackSpeed}x`}
-              </button>
-              {showSpeedMenu && (
-                <div
-                  style={{
-                    position: 'absolute',
-                    bottom: '100%',
-                    left: '50%',
-                    transform: 'translateX(-50%)',
-                    background: 'var(--bg-card)',
-                    border: '1px solid var(--border)',
-                    borderRadius: 'var(--r-md)',
-                    padding: '6px',
-                    marginBottom: '8px',
-                    zIndex: 100,
-                    minWidth: '96px',
-                    maxHeight: '220px',
-                    overflowY: 'auto',
-                    boxShadow: '0 8px 24px rgba(0,0,0,0.35)',
-                  }}
-                >
-                  <div
-                    style={{
-                      fontSize: '10px',
-                      textTransform: 'uppercase',
-                      color: 'var(--text-muted)',
-                      fontWeight: 700,
-                      padding: '4px 8px',
-                      letterSpacing: '0.5px',
-                    }}
-                  >
-                    Speed
-                  </div>
-                  {speedOptions.map((spd) => (
-                    <button
-                      key={spd}
-                      className="quality-opt"
-                      style={{
-                        display: 'block',
-                        width: '100%',
-                        padding: '5px 10px',
-                        textAlign: 'left',
-                        fontSize: '12px',
-                        fontWeight: playbackSpeed === spd ? 700 : 500,
-                        color: playbackSpeed === spd ? 'var(--accent)' : 'var(--text)',
-                        background: playbackSpeed === spd ? 'rgba(204,120,92,0.12)' : 'transparent',
-                        borderRadius: 'var(--r-sm)',
-                        border: 'none',
-                        cursor: 'pointer',
-                      }}
-                      onClick={() => {
-                        handleSpeedChange(spd);
-                        // Send speed change to iframe via postMessage
-                        const iframe = document.querySelector('#player-modal iframe') as HTMLIFrameElement;
-                        if (iframe?.contentWindow) {
-                          iframe.contentWindow.postMessage({ type: 'setPlaybackRate', rate: spd }, '*');
-                        }
-                      }}
-                    >
-                      {spd === 1 ? '1x Normal' : `${spd}x`}
-                    </button>
-                  ))}
-                </div>
-              )}
-            </div>
-
-            <button className="player-nav-btn" onClick={toggleFullscreen} title="Fullscreen">
               <svg
                 width="14"
                 height="14"
