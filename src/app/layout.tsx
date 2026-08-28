@@ -10,7 +10,7 @@ const spaceGrotesk = Space_Grotesk({
 });
 
 export const metadata: Metadata = {
-  title: 'stutosed | Free SSC & BEU B.Tech Course Platform',
+  title: 'stutosed',
   description: 'Your complete study portal for SSC, Competitive Exams and Bihar Engineering University (BEU) B.Tech courses, lectures, notes, and PDF resources.',
   icons: {
     icon: '/favicon.svg',
