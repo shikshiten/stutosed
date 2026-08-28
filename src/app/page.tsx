@@ -259,10 +259,25 @@ export default function HomePage() {
     } catch {}
   }, []);
 
-  // Supabase User Auth listener
+  // Supabase User Auth listener & PKCE code exchange
   useEffect(() => {
     try {
       const supabase = createClient();
+
+      // Handle OAuth PKCE code parameter in URL if redirected here directly
+      if (typeof window !== 'undefined' && window.location.search.includes('code=')) {
+        const urlParams = new URLSearchParams(window.location.search);
+        const code = urlParams.get('code');
+        if (code) {
+          supabase.auth.exchangeCodeForSession(code).then(() => {
+            urlParams.delete('code');
+            const newQuery = urlParams.toString();
+            const cleanUrl = window.location.pathname + (newQuery ? `?${newQuery}` : '');
+            window.history.replaceState({}, '', cleanUrl);
+          }).catch(() => {});
+        }
+      }
+
       supabase.auth.getUser().then(({ data }: any) => {
         if (data?.user) {
           const metaName = data.user.user_metadata?.full_name || data.user.user_metadata?.display_name || data.user.user_metadata?.name;
