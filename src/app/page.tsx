@@ -731,13 +731,23 @@ export default function HomePage() {
                         <span style={{ fontSize: '18px' }}>{greetingData.emoji}</span>
                         <h2 style={{ fontFamily: 'var(--font-display)', fontSize: '20px', fontWeight: 700, color: 'var(--text)', margin: 0, display: 'flex', alignItems: 'center', gap: '8px' }}>
                           <span>{greetingData.greeting}</span>
-                          <img
-                            src="/favicon.svg"
-                            alt="stutosed"
-                            width={20}
-                            height={20}
-                            style={{ display: 'block', flexShrink: 0 }}
-                          />
+                          <svg
+                            className="brand-spike"
+                            viewBox="0 0 24 24"
+                            width="20"
+                            height="20"
+                            fill="none"
+                            stroke="currentColor"
+                            strokeWidth="2"
+                            strokeLinecap="round"
+                            strokeLinejoin="round"
+                            style={{ color: 'var(--accent)', flexShrink: 0 }}
+                          >
+                            <circle cx="12" cy="12" r="3.5" fill="currentColor" />
+                            <circle cx="12" cy="12" r="6.5" stroke="currentColor" strokeWidth="1.2" />
+                            <circle cx="12" cy="12" r="9" stroke="currentColor" strokeWidth="0.8" />
+                            <path d="M12 3.5V1M12 20.5v2.5M3.5 12H1M20.5 12h2.5M6 6L4 4M18 18l2 2M6 18l-2 2M18 6l2-2" />
+                          </svg>
                         </h2>
                       </div>
                       <p style={{ fontSize: '13px', color: 'var(--text-muted)', margin: '4px 0 0', lineHeight: 1.4 }}>

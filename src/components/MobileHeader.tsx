@@ -59,13 +59,12 @@ export const MobileHeader: React.FC<MobileHeaderProps> = ({
         }}
       >
         <div className="brand-logo-pill">
-          <img
-            src="/favicon.svg"
-            alt="stutosed"
-            width={20}
-            height={20}
-            style={{ display: 'block', flexShrink: 0 }}
-          />
+          <svg className="brand-spike" viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+            <circle cx="12" cy="12" r="3.5" fill="currentColor" />
+            <circle cx="12" cy="12" r="6.5" stroke="currentColor" strokeWidth="1.2" />
+            <circle cx="12" cy="12" r="9" stroke="currentColor" strokeWidth="0.8" />
+            <path d="M12 3.5V1M12 20.5v2.5M3.5 12H1M20.5 12h2.5M6 6L4 4M18 18l2 2M6 18l-2 2M18 6l2-2" />
+          </svg>
           <span style={{ fontFamily: 'var(--font-brand)', fontWeight: 700, letterSpacing: '-0.3px' }}>stutosed</span>
         </div>
       </div>

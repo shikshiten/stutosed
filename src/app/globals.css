@@ -221,7 +221,9 @@ svg { flex-shrink: 0; }
 }
 .brand-spike {
   color: var(--accent);
+  animation: rotateSpike 24s linear infinite;
 }
+@keyframes rotateSpike { to { transform: rotate(360deg); } }
 .sidebar-links {
   display: flex; flex-direction: column; gap: 6px;
   flex: 1;
