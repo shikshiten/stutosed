@@ -1,7 +1,7 @@
 'use client';
 
-import React, { useState } from 'react';
-import { X, Mail, Lock, UserCheck, Sparkles, LogIn, ArrowRight } from 'lucide-react';
+import React, { useState, useMemo } from 'react';
+import { X, Mail, Lock, User, Eye, EyeOff, Sparkles, CheckCircle2, AlertCircle, ArrowRight, ShieldCheck } from 'lucide-react';
 import { createClient } from '@/lib/supabase/client';
 import { UserProfile } from '@/types';
 
@@ -10,6 +10,7 @@ interface AuthModalProps {
   onClose: () => void;
   user: UserProfile | null;
   onSignOut: () => void;
+  isCompulsory?: boolean;
 }
 
 export const AuthModal: React.FC<AuthModalProps> = ({
@@ -17,12 +18,31 @@ export const AuthModal: React.FC<AuthModalProps> = ({
   onClose,
   user,
   onSignOut,
+  isCompulsory = false,
 }) => {
   const [isSignUp, setIsSignUp] = useState(false);
+  const [fullName, setFullName] = useState('');
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
+  const [confirmPassword, setConfirmPassword] = useState('');
+  const [showPassword, setShowPassword] = useState(false);
+  const [showConfirmPassword, setShowConfirmPassword] = useState(false);
   const [loading, setLoading] = useState(false);
   const [message, setMessage] = useState<{ text: string; type: 'error' | 'success' } | null>(null);
+
+  // Password strength calculation
+  const passwordStrength = useMemo(() => {
+    if (!password) return { score: 0, label: '', color: 'transparent' };
+    let score = 0;
+    if (password.length >= 6) score++;
+    if (password.length >= 8) score++;
+    if (/[A-Z]/.test(password) || /[0-9]/.test(password)) score++;
+    if (/[^A-Za-z0-9]/.test(password)) score++;
+
+    if (score <= 1) return { score: 1, label: 'Weak', color: '#ef4444' };
+    if (score === 2 || score === 3) return { score: 2, label: 'Medium', color: '#f59e0b' };
+    return { score: 3, label: 'Strong', color: '#22c55e' };
+  }, [password]);
 
   if (!isOpen) return null;
 
@@ -49,26 +69,61 @@ export const AuthModal: React.FC<AuthModalProps> = ({
     setLoading(true);
     setMessage(null);
 
+    // Validation
+    if (isSignUp) {
+      if (!fullName.trim()) {
+        setMessage({ text: 'Please enter your Full Name', type: 'error' });
+        setLoading(false);
+        return;
+      }
+      if (password.length < 6) {
+        setMessage({ text: 'Password must be at least 6 characters', type: 'error' });
+        setLoading(false);
+        return;
+      }
+      if (password !== confirmPassword) {
+        setMessage({ text: 'Passwords do not match', type: 'error' });
+        setLoading(false);
+        return;
+      }
+    }
+
     try {
       const supabase = createClient();
       if (isSignUp) {
+        const cleanName = fullName.trim();
         const { error } = await supabase.auth.signUp({
-          email,
+          email: email.trim(),
           password,
+          options: {
+            data: {
+              full_name: cleanName,
+              display_name: cleanName,
+            },
+          },
         });
         if (error) throw error;
-        setMessage({ text: 'Account created! Please check your email to confirm.', type: 'success' });
+        try {
+          localStorage.setItem('stutosed_user_name', cleanName);
+        } catch {}
+        setMessage({ text: 'Account created! Please check your email to confirm or sign in.', type: 'success' });
       } else {
-        const { error } = await supabase.auth.signInWithPassword({
-          email,
+        const { data, error } = await supabase.auth.signInWithPassword({
+          email: email.trim(),
           password,
         });
         if (error) throw error;
-        setMessage({ text: 'Signed in successfully!', type: 'success' });
-        setTimeout(() => onClose(), 700);
+
+        if (data?.user?.user_metadata?.full_name) {
+          try {
+            localStorage.setItem('stutosed_user_name', data.user.user_metadata.full_name);
+          } catch {}
+        }
+        setMessage({ text: 'Welcome back! Signed in successfully.', type: 'success' });
+        setTimeout(() => onClose(), 600);
       }
     } catch (err: any) {
-      setMessage({ text: err.message || 'Authentication failed', type: 'error' });
+      setMessage({ text: err.message || 'Authentication failed. Please try again.', type: 'error' });
     } finally {
       setLoading(false);
     }
@@ -80,170 +135,139 @@ export const AuthModal: React.FC<AuthModalProps> = ({
         position: 'fixed',
         inset: 0,
         zIndex: 9999,
-        background: 'rgba(0, 0, 0, 0.65)',
-        backdropFilter: 'blur(6px)',
+        background: 'rgba(18, 17, 16, 0.75)',
+        backdropFilter: 'blur(8px)',
         display: 'flex',
         alignItems: 'center',
         justifyContent: 'center',
         padding: '16px',
-        animation: 'fadeIn 0.2s ease-out',
+        animation: 'authFadeIn 0.25s cubic-bezier(0.16, 1, 0.3, 1) forwards',
       }}
       onClick={(e) => {
-        if (e.target === e.currentTarget) onClose();
+        // If not compulsory, allow clicking outside to close
+        if (!isCompulsory && e.target === e.currentTarget) {
+          onClose();
+        }
       }}
     >
       <div
         style={{
           background: 'var(--bg-card)',
           border: '1px solid var(--border)',
-          borderRadius: 'var(--r-xl)',
+          borderRadius: 'var(--r-2xl)',
           width: '100%',
-          maxWidth: '420px',
-          boxShadow: '0 25px 50px -12px rgba(0, 0, 0, 0.4)',
+          maxWidth: '440px',
+          boxShadow: '0 30px 60px -12px rgba(0, 0, 0, 0.5), 0 0 0 1px rgba(255, 255, 255, 0.05)',
           position: 'relative',
           overflow: 'hidden',
         }}
       >
-        {/* Top Decorative Border */}
-        <div style={{ height: '4px', background: 'linear-gradient(90deg, var(--accent), #e8a55a)' }} />
+        {/* Top Decorative Brand Gradient Bar */}
+        <div style={{ height: '4px', background: 'linear-gradient(90deg, var(--accent), var(--beu-blue), var(--govt-indigo))' }} />
 
-        {/* Close Button */}
-        <button
-          onClick={onClose}
-          style={{
-            position: 'absolute',
-            top: '16px',
-            right: '16px',
-            background: 'none',
-            border: 'none',
-            color: 'var(--text-muted)',
-            cursor: 'pointer',
-            padding: '6px',
-            borderRadius: '50%',
-            display: 'flex',
-            alignItems: 'center',
-            justifyContent: 'center',
-            transition: 'all 0.2s',
-          }}
-          aria-label="Close"
-        >
-          <X width={18} height={18} />
-        </button>
+        {/* Close Button (only if not strictly compulsory login) */}
+        {!isCompulsory && (
+          <button
+            onClick={onClose}
+            style={{
+              position: 'absolute',
+              top: '16px',
+              right: '16px',
+              background: 'var(--bg-card-subtle)',
+              border: '1px solid var(--border)',
+              color: 'var(--text-muted)',
+              cursor: 'pointer',
+              padding: '6px',
+              borderRadius: '50%',
+              display: 'flex',
+              alignItems: 'center',
+              justifyContent: 'center',
+              transition: 'all 0.2s',
+            }}
+            aria-label="Close"
+          >
+            <X width={16} height={16} />
+          </button>
+        )}
 
-        <div style={{ padding: '28px 28px 24px' }}>
-          {/* Brand Header with Animated Original Celestial Logo */}
-          <div style={{ textAlign: 'center', marginBottom: '20px' }}>
+        <div style={{ padding: '32px 28px 24px' }}>
+          {/* Brand Header */}
+          <div style={{ textAlign: 'center', marginBottom: '22px' }}>
             <div
-              className="auth-animated-brand-logo"
               style={{
                 display: 'inline-flex',
                 alignItems: 'center',
                 justifyContent: 'center',
-                width: '68px',
-                height: '68px',
+                width: '64px',
+                height: '64px',
                 borderRadius: '50%',
                 background: 'radial-gradient(circle, rgba(204, 120, 92, 0.2) 0%, rgba(204, 120, 92, 0.05) 70%, transparent 100%)',
                 border: '1.5px solid rgba(204, 120, 92, 0.35)',
                 color: 'var(--accent)',
-                marginBottom: '14px',
+                marginBottom: '12px',
                 position: 'relative',
                 boxShadow: '0 0 24px rgba(204, 120, 92, 0.25)',
-                animation: 'brandBadgeFloat 4s ease-in-out infinite alternate',
               }}
             >
-              <svg
-                viewBox="0 0 48 48"
-                width="40"
-                height="40"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                {/* Rotating Outer Rays */}
-                <g style={{ transformOrigin: '24px 24px', animation: 'spinRays 16s linear infinite' }}>
-                  <line x1="24" y1="2" x2="24" y2="7" stroke="var(--accent)" strokeWidth="2.2" strokeLinecap="round" opacity="0.9" />
-                  <line x1="24" y1="41" x2="24" y2="46" stroke="var(--accent)" strokeWidth="2.2" strokeLinecap="round" opacity="0.9" />
-                  <line x1="2" y1="24" x2="7" y2="24" stroke="var(--accent)" strokeWidth="2.2" strokeLinecap="round" opacity="0.9" />
-                  <line x1="41" y1="24" x2="46" y2="24" stroke="var(--accent)" strokeWidth="2.2" strokeLinecap="round" opacity="0.9" />
-                  <line x1="8.5" y1="8.5" x2="12.5" y2="12.5" stroke="var(--accent)" strokeWidth="2" strokeLinecap="round" opacity="0.75" />
-                  <line x1="35.5" y1="35.5" x2="39.5" y2="39.5" stroke="var(--accent)" strokeWidth="2" strokeLinecap="round" opacity="0.75" />
-                  <line x1="8.5" y1="39.5" x2="12.5" y2="35.5" stroke="var(--accent)" strokeWidth="2" strokeLinecap="round" opacity="0.75" />
-                  <line x1="35.5" y1="12.5" x2="39.5" y2="8.5" stroke="var(--accent)" strokeWidth="2" strokeLinecap="round" opacity="0.75" />
+              <svg viewBox="0 0 48 48" width="38" height="38" fill="none">
+                <g style={{ transformOrigin: '24px 24px', animation: 'spinRays 20s linear infinite' }}>
+                  <line x1="24" y1="3" x2="24" y2="8" stroke="var(--accent)" strokeWidth="2.2" strokeLinecap="round" />
+                  <line x1="24" y1="40" x2="24" y2="45" stroke="var(--accent)" strokeWidth="2.2" strokeLinecap="round" />
+                  <line x1="3" y1="24" x2="8" y2="24" stroke="var(--accent)" strokeWidth="2.2" strokeLinecap="round" />
+                  <line x1="40" y1="24" x2="45" y2="24" stroke="var(--accent)" strokeWidth="2.2" strokeLinecap="round" />
+                  <line x1="9" y1="9" x2="13" y2="13" stroke="var(--accent)" strokeWidth="2" strokeLinecap="round" />
+                  <line x1="35" y1="35" x2="39" y2="39" stroke="var(--accent)" strokeWidth="2" strokeLinecap="round" />
+                  <line x1="9" y1="39" x2="13" y2="35" stroke="var(--accent)" strokeWidth="2" strokeLinecap="round" />
+                  <line x1="35" y1="13" x2="39" y2="9" stroke="var(--accent)" strokeWidth="2" strokeLinecap="round" />
                 </g>
-
-                {/* Counter-rotating Outer Orbit Ring */}
-                <circle
-                  cx="24"
-                  cy="24"
-                  r="17"
-                  stroke="var(--accent)"
-                  strokeWidth="1.2"
-                  strokeDasharray="4 4"
-                  opacity="0.6"
-                  style={{ transformOrigin: '24px 24px', animation: 'spinOrbit 10s linear infinite reverse' }}
-                />
-
-                {/* Middle Ring */}
-                <circle
-                  cx="24"
-                  cy="24"
-                  r="12"
-                  stroke="var(--accent)"
-                  strokeWidth="1.6"
-                  opacity="0.85"
-                  style={{ transformOrigin: '24px 24px', animation: 'orbitPulse 3s ease-in-out infinite alternate' }}
-                />
-
-                {/* Glowing Core Sun */}
-                <circle
-                  cx="24"
-                  cy="24"
-                  r="6.5"
-                  fill="var(--accent)"
-                  style={{ transformOrigin: '24px 24px', animation: 'corePulse 2s ease-in-out infinite alternate' }}
-                />
-                <circle
-                  cx="24"
-                  cy="24"
-                  r="2.5"
-                  fill="#ffffff"
-                  opacity="0.85"
-                />
+                <circle cx="24" cy="24" r="14" stroke="var(--accent)" strokeWidth="1.2" strokeDasharray="4 4" opacity="0.6" />
+                <circle cx="24" cy="24" r="7" fill="var(--accent)" />
+                <circle cx="24" cy="24" r="2.5" fill="#ffffff" />
               </svg>
             </div>
 
             <h2
               style={{
                 fontFamily: 'var(--font-display)',
-                fontSize: '24px',
+                fontSize: '23px',
                 fontWeight: 700,
                 color: 'var(--text)',
                 margin: '0 0 4px',
+                letterSpacing: '-0.3px',
               }}
             >
-              {user ? 'Your Account' : isSignUp ? 'Create stutosed Account' : 'Welcome to stutosed'}
+              {user ? 'Your Student Account' : isSignUp ? 'Create Student Account' : 'Sign In to stutosed'}
             </h2>
             <p style={{ fontSize: '13px', color: 'var(--text-muted)', margin: 0 }}>
               {user
-                ? 'Manage your cloud synced progress'
-                : 'Sign in to save watched classes & resume on any device.'}
+                ? 'Your learning progress is synced with your account.'
+                : 'Free & permanent access to all courses, lectures & PDF notes.'}
             </p>
           </div>
 
-          {/* Feedback Message */}
+          {/* Feedback Banner */}
           {message && (
             <div
               style={{
+                display: 'flex',
+                alignItems: 'center',
+                gap: '8px',
                 padding: '10px 14px',
                 borderRadius: 'var(--r-md)',
                 fontSize: '12px',
+                fontWeight: 500,
                 marginBottom: '16px',
-                textAlign: 'center',
                 background: message.type === 'error' ? 'rgba(239, 68, 68, 0.12)' : 'rgba(34, 197, 94, 0.12)',
                 color: message.type === 'error' ? '#ef4444' : '#22c55e',
                 border: `1px solid ${message.type === 'error' ? 'rgba(239, 68, 68, 0.25)' : 'rgba(34, 197, 94, 0.25)'}`,
               }}
             >
-              {message.text}
+              {message.type === 'error' ? (
+                <AlertCircle width={16} height={16} style={{ flexShrink: 0 }} />
+              ) : (
+                <CheckCircle2 width={16} height={16} style={{ flexShrink: 0 }} />
+              )}
+              <span>{message.text}</span>
             </div>
           )}
 
@@ -252,7 +276,7 @@ export const AuthModal: React.FC<AuthModalProps> = ({
             <div style={{ display: 'flex', flexDirection: 'column', gap: '16px', textAlign: 'center' }}>
               <div
                 style={{
-                  background: 'var(--bg)',
+                  background: 'var(--bg-card-subtle)',
                   border: '1px solid var(--border)',
                   borderRadius: 'var(--r-lg)',
                   padding: '16px',
@@ -261,15 +285,29 @@ export const AuthModal: React.FC<AuthModalProps> = ({
                   gap: '12px',
                 }}
               >
-                <img
-                  src="/profile_icon.jpg"
-                  alt=""
-                  style={{ width: '48px', height: '48px', borderRadius: '50%', objectFit: 'cover', border: '2px solid var(--accent)' }}
-                />
+                <div
+                  style={{
+                    width: '44px',
+                    height: '44px',
+                    borderRadius: '50%',
+                    background: 'linear-gradient(135deg, var(--accent) 0%, #e08264 100%)',
+                    color: '#ffffff',
+                    display: 'flex',
+                    alignItems: 'center',
+                    justifyContent: 'center',
+                    fontSize: '16px',
+                    fontWeight: 700,
+                  }}
+                >
+                  {user.full_name?.charAt(0).toUpperCase() || 'S'}
+                </div>
                 <div style={{ textAlign: 'left', flex: 1, minWidth: 0 }}>
-                  <div style={{ fontWeight: 700, fontSize: '14px', color: 'var(--text)' }}>{user.full_name || 'Student'}</div>
-                  <div style={{ fontSize: '12px', color: 'var(--text-muted)', overflow: 'hidden', textOverflow: 'ellipsis' }}>
-                    {user.email ? `${user.email.slice(0, 2)}••••@${user.email.split('@')[1] || 'mail.com'}` : 'Cloud Progress Synced'}
+                  <div style={{ fontWeight: 700, fontSize: '15px', color: 'var(--text)' }}>
+                    {user.full_name || 'Student'}
+                  </div>
+                  <div style={{ display: 'inline-flex', alignItems: 'center', gap: '4px', fontSize: '12px', color: 'var(--green)', fontWeight: 600 }}>
+                    <ShieldCheck width={13} height={13} />
+                    <span>Cloud Progress Synced</span>
                   </div>
                 </div>
               </div>
@@ -281,7 +319,7 @@ export const AuthModal: React.FC<AuthModalProps> = ({
                 }}
                 style={{
                   width: '100%',
-                  padding: '10px',
+                  padding: '11px',
                   borderRadius: 'var(--r-md)',
                   background: 'rgba(239,68,68,0.1)',
                   color: '#ef4444',
@@ -289,13 +327,14 @@ export const AuthModal: React.FC<AuthModalProps> = ({
                   fontSize: '13px',
                   fontWeight: 600,
                   cursor: 'pointer',
+                  transition: 'background 0.2s',
                 }}
               >
                 Sign Out
               </button>
             </div>
           ) : (
-            /* Auth Options */
+            /* Auth Form (Google & Email/Password) */
             <div style={{ display: 'flex', flexDirection: 'column', gap: '14px' }}>
               {/* Google OAuth Button */}
               <button
@@ -306,16 +345,18 @@ export const AuthModal: React.FC<AuthModalProps> = ({
                   justifyContent: 'center',
                   gap: '10px',
                   width: '100%',
-                  padding: '11px 16px',
+                  padding: '12px 16px',
                   borderRadius: 'var(--r-md)',
                   background: 'var(--bg)',
                   border: '1px solid var(--border)',
                   color: 'var(--text)',
-                  fontSize: '13px',
+                  fontSize: '14px',
                   fontWeight: 600,
                   cursor: 'pointer',
-                  transition: 'all 0.2s',
+                  boxShadow: 'var(--sh-card)',
+                  transition: 'all 0.2s cubic-bezier(0.16, 1, 0.3, 1)',
                 }}
+                className="google-signin-btn"
               >
                 <svg style={{ width: '18px', height: '18px' }} viewBox="0 0 24 24">
                   <path fill="#4285F4" d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z" />
@@ -323,127 +364,210 @@ export const AuthModal: React.FC<AuthModalProps> = ({
                   <path fill="#FBBC05" d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.06H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.94l2.85-2.22.81-.63z" />
                   <path fill="#EA4335" d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.06l3.66 2.84c.87-2.6 3.3-4.52 6.16-4.52z" />
                 </svg>
-                Continue with Google
+                <span>Continue with Google</span>
               </button>
 
-              <div style={{ display: 'flex', alignItems: 'center', gap: '10px', margin: '2px 0' }}>
+              {/* Clean Divider */}
+              <div style={{ display: 'flex', alignItems: 'center', gap: '10px', margin: '4px 0' }}>
                 <div style={{ flex: 1, height: '1px', background: 'var(--border)' }} />
-                <span style={{ fontSize: '11px', color: 'var(--text-dim)', textTransform: 'uppercase', letterSpacing: '0.6px' }}>or email</span>
+                <span style={{ fontSize: '11px', color: 'var(--text-dim)', textTransform: 'uppercase', letterSpacing: '0.8px', fontWeight: 600 }}>
+                  or continue with email
+                </span>
                 <div style={{ flex: 1, height: '1px', background: 'var(--border)' }} />
               </div>
 
-              {/* Email/Password Form */}
+              {/* Email / Password Form */}
               <form onSubmit={handleEmailAuth} style={{ display: 'flex', flexDirection: 'column', gap: '12px' }}>
+                {/* Full Name Field (Sign Up Only) */}
+                {isSignUp && (
+                  <div>
+                    <label style={{ display: 'block', fontSize: '11px', fontWeight: 700, textTransform: 'uppercase', letterSpacing: '0.5px', color: 'var(--text-muted)', marginBottom: '4px' }}>
+                      Full Name
+                    </label>
+                    <div style={{ position: 'relative' }}>
+                      <User width={15} height={15} style={{ position: 'absolute', left: '12px', top: '50%', transform: 'translateY(-50%)', color: 'var(--text-dim)' }} />
+                      <input
+                        type="text"
+                        required
+                        value={fullName}
+                        onChange={(e) => setFullName(e.target.value)}
+                        placeholder="e.g. Rahul Sharma"
+                        className="auth-input-field"
+                      />
+                    </div>
+                  </div>
+                )}
+
+                {/* Email Address Field */}
                 <div>
-                  <label style={{ display: 'block', fontSize: '11px', fontWeight: 600, color: 'var(--text-muted)', marginBottom: '4px' }}>
+                  <label style={{ display: 'block', fontSize: '11px', fontWeight: 700, textTransform: 'uppercase', letterSpacing: '0.5px', color: 'var(--text-muted)', marginBottom: '4px' }}>
                     Email Address
                   </label>
                   <div style={{ position: 'relative' }}>
-                    <Mail width={14} height={14} style={{ position: 'absolute', left: '12px', top: '50%', transform: 'translateY(-50%)', color: 'var(--text-muted)' }} />
+                    <Mail width={15} height={15} style={{ position: 'absolute', left: '12px', top: '50%', transform: 'translateY(-50%)', color: 'var(--text-dim)' }} />
                     <input
                       type="email"
                       required
                       value={email}
                       onChange={(e) => setEmail(e.target.value)}
                       placeholder="student@example.com"
-                      style={{
-                        width: '100%',
-                        padding: '10px 12px 10px 34px',
-                        borderRadius: 'var(--r-md)',
-                        background: 'var(--bg)',
-                        border: '1px solid var(--border)',
-                        color: 'var(--text)',
-                        fontSize: '13px',
-                        outline: 'none',
-                      }}
+                      className="auth-input-field"
                     />
                   </div>
                 </div>
 
+                {/* Password Field */}
                 <div>
-                  <label style={{ display: 'block', fontSize: '11px', fontWeight: 600, color: 'var(--text-muted)', marginBottom: '4px' }}>
+                  <label style={{ display: 'block', fontSize: '11px', fontWeight: 700, textTransform: 'uppercase', letterSpacing: '0.5px', color: 'var(--text-muted)', marginBottom: '4px' }}>
                     Password
                   </label>
                   <div style={{ position: 'relative' }}>
-                    <Lock width={14} height={14} style={{ position: 'absolute', left: '12px', top: '50%', transform: 'translateY(-50%)', color: 'var(--text-muted)' }} />
+                    <Lock width={15} height={15} style={{ position: 'absolute', left: '12px', top: '50%', transform: 'translateY(-50%)', color: 'var(--text-dim)' }} />
                     <input
-                      type="password"
+                      type={showPassword ? 'text' : 'password'}
                       required
                       value={password}
                       onChange={(e) => setPassword(e.target.value)}
-                      placeholder="••••••••"
-                      style={{
-                        width: '100%',
-                        padding: '10px 12px 10px 34px',
-                        borderRadius: 'var(--r-md)',
-                        background: 'var(--bg)',
-                        border: '1px solid var(--border)',
-                        color: 'var(--text)',
-                        fontSize: '13px',
-                        outline: 'none',
-                      }}
+                      placeholder={isSignUp ? 'Create a strong password' : 'Enter your password'}
+                      className="auth-input-field"
+                      style={{ paddingRight: '36px' }}
                     />
+                    <button
+                      type="button"
+                      onClick={() => setShowPassword(!showPassword)}
+                      style={{
+                        position: 'absolute',
+                        right: '10px',
+                        top: '50%',
+                        transform: 'translateY(-50%)',
+                        background: 'none',
+                        border: 'none',
+                        color: 'var(--text-dim)',
+                        cursor: 'pointer',
+                        padding: '4px',
+                      }}
+                      tabIndex={-1}
+                    >
+                      {showPassword ? <EyeOff width={15} height={15} /> : <Eye width={15} height={15} />}
+                    </button>
                   </div>
+
+                  {/* Password Strength Indicator (Sign Up Only) */}
+                  {isSignUp && password && (
+                    <div style={{ marginTop: '6px' }}>
+                      <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: '4px' }}>
+                        <span style={{ fontSize: '11px', color: 'var(--text-dim)' }}>Password Strength:</span>
+                        <span style={{ fontSize: '11px', fontWeight: 700, color: passwordStrength.color }}>
+                          {passwordStrength.label}
+                        </span>
+                      </div>
+                      <div style={{ height: '4px', background: 'var(--border)', borderRadius: 'var(--r-pill)', overflow: 'hidden' }}>
+                        <div
+                          style={{
+                            height: '100%',
+                            width: `${(passwordStrength.score / 3) * 100}%`,
+                            background: passwordStrength.color,
+                            transition: 'all 0.3s ease',
+                          }}
+                        />
+                      </div>
+                    </div>
+                  )}
                 </div>
 
+                {/* Confirm Password Field (Sign Up Only) */}
+                {isSignUp && (
+                  <div>
+                    <label style={{ display: 'block', fontSize: '11px', fontWeight: 700, textTransform: 'uppercase', letterSpacing: '0.5px', color: 'var(--text-muted)', marginBottom: '4px' }}>
+                      Confirm Password
+                    </label>
+                    <div style={{ position: 'relative' }}>
+                      <Lock width={15} height={15} style={{ position: 'absolute', left: '12px', top: '50%', transform: 'translateY(-50%)', color: 'var(--text-dim)' }} />
+                      <input
+                        type={showConfirmPassword ? 'text' : 'password'}
+                        required
+                        value={confirmPassword}
+                        onChange={(e) => setConfirmPassword(e.target.value)}
+                        placeholder="Re-enter your password"
+                        className="auth-input-field"
+                        style={{ paddingRight: '36px' }}
+                      />
+                      <button
+                        type="button"
+                        onClick={() => setShowConfirmPassword(!showConfirmPassword)}
+                        style={{
+                          position: 'absolute',
+                          right: '10px',
+                          top: '50%',
+                          transform: 'translateY(-50%)',
+                          background: 'none',
+                          border: 'none',
+                          color: 'var(--text-dim)',
+                          cursor: 'pointer',
+                          padding: '4px',
+                        }}
+                        tabIndex={-1}
+                      >
+                        {showConfirmPassword ? <EyeOff width={15} height={15} /> : <Eye width={15} height={15} />}
+                      </button>
+                    </div>
+                  </div>
+                )}
+
+                {/* Submit Action Button */}
                 <button
                   type="submit"
                   disabled={loading}
                   style={{
                     width: '100%',
-                    padding: '11px',
+                    padding: '12px',
                     borderRadius: 'var(--r-md)',
                     background: 'var(--accent)',
                     color: '#ffffff',
                     border: 'none',
-                    fontSize: '13px',
+                    fontSize: '14px',
                     fontWeight: 700,
                     cursor: 'pointer',
-                    marginTop: '2px',
+                    marginTop: '6px',
                     opacity: loading ? 0.7 : 1,
-                    boxShadow: '0 3px 12px rgba(204, 120, 92, 0.3)',
+                    boxShadow: '0 4px 16px var(--accent-glow)',
+                    transition: 'all 0.2s cubic-bezier(0.16, 1, 0.3, 1)',
                   }}
+                  className="auth-submit-btn"
                 >
-                  {loading ? 'Processing…' : isSignUp ? 'Create Account' : 'Sign In'}
+                  {loading ? 'Processing…' : isSignUp ? 'Create Free Account' : 'Sign In'}
                 </button>
               </form>
 
-              {/* Bottom Toggle & Guest Mode */}
+              {/* Bottom Toggle Between Sign In & Sign Up (Zero Guest Mode) */}
               <div
                 style={{
-                  display: 'flex',
-                  alignItems: 'center',
-                  justifyContent: 'space-between',
-                  paddingTop: '12px',
+                  textAlign: 'center',
+                  paddingTop: '14px',
                   borderTop: '1px solid var(--border)',
-                  fontSize: '12px',
+                  fontSize: '13px',
                 }}
               >
+                <span style={{ color: 'var(--text-muted)' }}>
+                  {isSignUp ? 'Already have an account? ' : 'New to stutosed? '}
+                </span>
                 <button
                   type="button"
-                  onClick={() => setIsSignUp(!isSignUp)}
-                  style={{ background: 'none', border: 'none', color: 'var(--accent)', fontWeight: 600, cursor: 'pointer', padding: 0 }}
-                >
-                  {isSignUp ? 'Already have account? Sign In' : 'New? Create Account'}
-                </button>
-
-                <button
-                  type="button"
-                  onClick={onClose}
+                  onClick={() => {
+                    setIsSignUp(!isSignUp);
+                    setMessage(null);
+                  }}
                   style={{
-                    display: 'flex',
-                    alignItems: 'center',
-                    gap: '4px',
                     background: 'none',
                     border: 'none',
-                    color: 'var(--text-muted)',
-                    fontWeight: 600,
+                    color: 'var(--accent)',
+                    fontWeight: 700,
                     cursor: 'pointer',
                     padding: 0,
+                    textDecoration: 'underline',
                   }}
                 >
-                  <UserCheck width={14} height={14} />
-                  Continue as Guest
+                  {isSignUp ? 'Sign In' : 'Create an Account'}
                 </button>
               </div>
             </div>
@@ -452,26 +576,48 @@ export const AuthModal: React.FC<AuthModalProps> = ({
       </div>
 
       <style>{`
+        @keyframes authFadeIn {
+          from {
+            opacity: 0;
+            transform: scale(0.96);
+          }
+          to {
+            opacity: 1;
+            transform: scale(1);
+          }
+        }
         @keyframes spinRays {
           from { transform: rotate(0deg); }
           to { transform: rotate(360deg); }
         }
-        @keyframes spinOrbit {
-          from { transform: rotate(0deg); }
-          to { transform: rotate(360deg); }
+        .auth-input-field {
+          width: 100%;
+          height: 42px;
+          padding: 10px 14px 10px 36px;
+          border-radius: var(--r-md);
+          background: var(--bg);
+          border: 1px solid var(--border);
+          color: var(--text);
+          font-size: 14px;
+          font-family: var(--font-sans);
+          outline: none;
+          transition: all 0.2s ease;
         }
-        @keyframes orbitPulse {
-          0% { transform: scale(0.93); opacity: 0.7; }
-          100% { transform: scale(1.07); opacity: 1; }
+        .auth-input-field:focus {
+          border-color: var(--accent);
+          box-shadow: 0 0 0 3px rgba(204, 120, 92, 0.15);
         }
-        @keyframes corePulse {
-          0% { transform: scale(0.88); filter: drop-shadow(0 0 3px var(--accent)); }
-          100% { transform: scale(1.15); filter: drop-shadow(0 0 10px var(--accent)); }
+        .google-signin-btn:hover {
+          background: var(--bg-card-hover);
+          border-color: var(--border-hover);
+          transform: translateY(-1px);
         }
-        @keyframes brandBadgeFloat {
-          0% { transform: translateY(0) scale(1); box-shadow: 0 0 16px rgba(204, 120, 92, 0.2); }
-          50% { transform: translateY(-4px) scale(1.03); box-shadow: 0 0 28px rgba(204, 120, 92, 0.45); }
-          100% { transform: translateY(0) scale(1); box-shadow: 0 0 16px rgba(204, 120, 92, 0.2); }
+        .auth-submit-btn:hover {
+          background: var(--accent-hover);
+          transform: translateY(-1px);
+        }
+        .auth-submit-btn:active {
+          transform: scale(0.98);
         }
       `}</style>
     </div>

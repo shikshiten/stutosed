@@ -1,5 +1,15 @@
 import { NextRequest, NextResponse } from 'next/server';
 
+export const dynamic = 'force-dynamic';
+
+// 2-hour TTL cache for resolved 302 redirect target URLs
+interface CacheEntry {
+  targetUrl: string;
+  expiresAt: number;
+}
+const urlCache = new Map<string, CacheEntry>();
+const CACHE_TTL_MS = 2 * 60 * 60 * 1000; // 2 hours
+
 function unpackDeanEdwards(packed: string): string | null {
   try {
     const match = packed.match(/eval\(function\(p,a,c,k,e,d\)[\s\S]*?return p\}\('([\s\S]*?)',(\d+),(\d+),'([\s\S]*?)'\.split\('\|'\)/);
@@ -34,15 +44,194 @@ function unpackDeanEdwards(packed: string): string | null {
   return null;
 }
 
-export const dynamic = 'force-dynamic';
+/**
+ * Normalizes input URL for ALBA and ESTE bot sources.
+ */
+function normalizeMediaUrl(rawUrl: string): string {
+  let url = rawUrl.trim();
+
+  // 1. ALBA (StreamVault): convert /0:/stream/ to /0:/dl/
+  if (url.includes('/0:/stream/')) {
+    url = url.replace('/0:/stream/', '/0:/dl/');
+  }
+
+  // 2. ESTE (Publico / FileStreamBot): extract ID and map to direct Heroku media endpoint
+  if (url.includes('publicbotshub.blogspot.com') || url.includes('file-stream-bot.html')) {
+    const idMatch = url.match(/[?&](?:dl|watch)=([a-zA-Z0-9]+)/);
+    if (idMatch) {
+      url = `https://fs1qydv17g1-161-162e5df28a45.herokuapp.com/dl/${idMatch[1]}`;
+    }
+  }
+
+  return url;
+}
+
+/**
+ * Follows HTTP 301/302/307/308 redirects using GET with Range: bytes=0-0.
+ * CRITICAL: NEVER uses HEAD request because Cloudflare edge workers
+ * (e.g. svcdn-dl*.workers.dev) hang indefinitely on HEAD requests!
+ */
+async function resolveFinalRedirectUrl(initialUrl: string): Promise<string> {
+  const cached = urlCache.get(initialUrl);
+  if (cached && cached.expiresAt > Date.now()) {
+    return cached.targetUrl;
+  }
+
+  let currentUrl = initialUrl;
+  let hops = 0;
+  const MAX_HOPS = 5;
+
+  while (hops < MAX_HOPS) {
+    // Only resolve redirects if it's a domain that issues redirects (e.g. streamvaultpro.cc)
+    const isRedirectDomain =
+      currentUrl.includes('streamvaultpro.cc') ||
+      currentUrl.includes('workers.dev') ||
+      currentUrl.includes('publicbotshub.blogspot.com');
+
+    if (!isRedirectDomain) {
+      break;
+    }
+
+    try {
+      const probeRes = await fetch(currentUrl, {
+        method: 'GET',
+        redirect: 'manual',
+        headers: {
+          'User-Agent':
+            'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36',
+          Range: 'bytes=0-0',
+        },
+      });
+
+      const location = probeRes.headers.get('location');
+      if (
+        (probeRes.status === 301 ||
+          probeRes.status === 302 ||
+          probeRes.status === 307 ||
+          probeRes.status === 308) &&
+        location
+      ) {
+        currentUrl = new URL(location, currentUrl).toString();
+        hops++;
+      } else {
+        break;
+      }
+    } catch {
+      break;
+    }
+  }
+
+  urlCache.set(initialUrl, {
+    targetUrl: currentUrl,
+    expiresAt: Date.now() + CACHE_TTL_MS,
+  });
+
+  return currentUrl;
+}
 
 export async function GET(request: NextRequest) {
   const { searchParams } = new URL(request.url);
+  const targetUrlParam = searchParams.get('url');
+
+  // =========================================================================
+  // MODE 1: Direct URL Proxy Streamer (ALBA, ESTE, direct MP4/PDF)
+  // =========================================================================
+  if (targetUrlParam) {
+    try {
+      const normalizedUrl = normalizeMediaUrl(targetUrlParam);
+      const finalTargetUrl = await resolveFinalRedirectUrl(normalizedUrl);
+
+      const clientRange = request.headers.get('range');
+      const upstreamHeaders: Record<string, string> = {
+        'User-Agent':
+          'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36',
+        Accept: '*/*',
+      };
+
+      if (clientRange) {
+        upstreamHeaders['Range'] = clientRange;
+      }
+
+      // Add appropriate referer for upstream servers
+      if (finalTargetUrl.includes('workers.dev') || finalTargetUrl.includes('streamvaultpro.cc')) {
+        upstreamHeaders['Referer'] = 'https://www.streamvaultpro.cc/';
+      } else if (finalTargetUrl.includes('herokuapp.com')) {
+        upstreamHeaders['Referer'] = 'https://publicbotshub.blogspot.com/';
+      }
+
+      const upstreamRes = await fetch(finalTargetUrl, {
+        method: 'GET',
+        headers: upstreamHeaders,
+        signal: request.signal,
+      });
+
+      if (!upstreamRes.ok && upstreamRes.status !== 206) {
+        return new NextResponse(`Upstream returned HTTP ${upstreamRes.status}`, {
+          status: upstreamRes.status,
+        });
+      }
+
+      const responseHeaders = new Headers();
+      const passThroughHeaders = [
+        'content-type',
+        'content-range',
+        'content-length',
+        'accept-ranges',
+      ];
+
+      passThroughHeaders.forEach((h) => {
+        const val = upstreamRes.headers.get(h);
+        if (val) {
+          responseHeaders.set(h, val);
+        }
+      });
+
+      // Crucial overrides:
+      // 1. Force inline display to prevent forced download dialogs (e.g. from Heroku ESTE)
+      responseHeaders.set('Content-Disposition', 'inline');
+
+      // 2. Accept byte ranges for video seeking
+      if (!responseHeaders.has('accept-ranges')) {
+        responseHeaders.set('Accept-Ranges', 'bytes');
+      }
+
+      // 3. Fallback content-type if missing
+      if (!responseHeaders.has('content-type')) {
+        responseHeaders.set('Content-Type', 'video/mp4');
+      }
+
+      // 4. Cache & CORS headers
+      responseHeaders.set('Cache-Control', 'public, max-age=3600');
+      responseHeaders.set('Access-Control-Allow-Origin', '*');
+      responseHeaders.set(
+        'Access-Control-Allow-Headers',
+        'Range, Accept, Content-Type'
+      );
+      responseHeaders.set(
+        'Access-Control-Expose-Headers',
+        'Content-Range, Content-Length, Accept-Ranges'
+      );
+
+      return new Response(upstreamRes.body, {
+        status: upstreamRes.status, // 206 for partial content, 200 otherwise
+        headers: responseHeaders,
+      });
+    } catch (err: any) {
+      if (err.name === 'AbortError') {
+        return new Response(null, { status: 499 });
+      }
+      return new NextResponse(err.message || 'Streaming proxy error', { status: 502 });
+    }
+  }
+
+  // =========================================================================
+  // MODE 2: Vidmoly / Earnvids Code Extractor (Legacy & other courses)
+  // =========================================================================
   const code = searchParams.get('code');
-  const provider = searchParams.get('provider') || 'vidmoly'; // 'vidmoly' | 'earnvids'
+  const provider = searchParams.get('provider') || 'vidmoly';
 
   if (!code) {
-    return NextResponse.json({ error: 'Missing file code' }, { status: 400 });
+    return NextResponse.json({ error: 'Missing url or code parameter' }, { status: 400 });
   }
 
   try {
@@ -59,16 +248,21 @@ export async function GET(request: NextRequest) {
 
     const res = await fetch(embedUrl, {
       headers: {
-        'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36',
-        'Referer': referer,
-        'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+        'User-Agent':
+          'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36',
+        Referer: referer,
+        Accept:
+          'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
         'Accept-Language': 'en-US,en;q=0.9',
       },
       cache: 'no-store',
     });
 
     if (!res.ok) {
-      return NextResponse.json({ error: `Provider returned HTTP ${res.status}`, status: res.status }, { status: 502 });
+      return NextResponse.json(
+        { error: `Provider returned HTTP ${res.status}`, status: res.status },
+        { status: 502 }
+      );
     }
 
     const html = await res.text();
@@ -84,8 +278,9 @@ export async function GET(request: NextRequest) {
       });
     }
 
-    // 2. Check for Dean Edwards packed JS (common in Earnvids/Vidmoly)
-    const packedMatches = html.match(/eval\(function\(p,a,c,k,e,d\)[\s\S]*?\.split\('\|'\)\)\)/g) || [];
+    // 2. Check for Dean Edwards packed JS
+    const packedMatches =
+      html.match(/eval\(function\(p,a,c,k,e,d\)[\s\S]*?\.split\('\|'\)\)\)/g) || [];
     for (const packed of packedMatches) {
       const unpacked = unpackDeanEdwards(packed);
       if (unpacked) {
@@ -112,9 +307,22 @@ export async function GET(request: NextRequest) {
       });
     }
 
-    return NextResponse.json({ error: 'Stream URL could not be resolved from provider.' }, { status: 404 });
-
+    return NextResponse.json(
+      { error: 'Stream URL could not be resolved from provider.' },
+      { status: 404 }
+    );
   } catch (err: any) {
     return NextResponse.json({ error: err.message || 'Internal Server Error' }, { status: 500 });
   }
+}
+
+export async function OPTIONS() {
+  return new Response(null, {
+    headers: {
+      'Access-Control-Allow-Origin': '*',
+      'Access-Control-Allow-Methods': 'GET, OPTIONS',
+      'Access-Control-Allow-Headers': 'Range, Accept, Content-Type',
+      'Access-Control-Expose-Headers': 'Content-Range, Content-Length, Accept-Ranges',
+    },
+  });
 }

@@ -3,14 +3,16 @@
 import React, { useState, useEffect, useRef, useMemo } from 'react';
 import { Course, LectureItem } from '@/types';
 import { countCourseStats } from '@/lib/coursesData';
-import { ArrowLeft, Folder, Search, LayoutGrid, List } from 'lucide-react';
+import { ArrowLeft, Folder, Search, LayoutGrid, List, Video, FileText, CheckCircle2, Play } from 'lucide-react';
 
 interface CourseModalProps {
   course: Course | null;
   onClose: () => void;
   onPlayVideo: (playlist: LectureItem[], index: number) => void;
-  onOpenPdf: (url: string) => void;
+  onOpenPdf: (itemOrUrl: LectureItem | string, playlist?: LectureItem[], index?: number) => void;
   watchedUrls: Set<string>;
+  initialFolderTabId?: string | null;
+  onFolderTabChange?: (tabId: string | null) => void;
 }
 
 export const CourseModal: React.FC<CourseModalProps> = ({
@@ -19,10 +21,13 @@ export const CourseModal: React.FC<CourseModalProps> = ({
   onPlayVideo,
   onOpenPdf,
   watchedUrls,
+  initialFolderTabId,
+  onFolderTabChange,
 }) => {
   const [activeTabId, setActiveTabId] = useState<string>('');
-  const [activeFolderTabId, setActiveFolderTabId] = useState<string | null>(null);
+  const [activeFolderTabId, setActiveFolderTabId] = useState<string | null>(initialFolderTabId || null);
   const [activeModuleFilter, setActiveModuleFilter] = useState<string>('All Modules');
+  const [activeMediaFilter, setActiveMediaFilter] = useState<'all' | 'videos' | 'pdfs'>('all');
   const [filterSearch, setFilterSearch] = useState<string>('');
   const [isSearchExpanded, setIsSearchExpanded] = useState<boolean>(false);
   const [expandedParmarIdx, setExpandedParmarIdx] = useState<number | null>(null);
@@ -54,9 +59,14 @@ export const CourseModal: React.FC<CourseModalProps> = ({
     setActiveModuleFilter('All Modules');
 
     if (course.isFolderMode) {
-      setActiveFolderTabId(null);
-      if (course.tabs && course.tabs.length > 0) {
-        setActiveTabId(course.tabs[0].id);
+      if (initialFolderTabId) {
+        setActiveFolderTabId(initialFolderTabId);
+        setActiveTabId(initialFolderTabId);
+      } else {
+        setActiveFolderTabId(null);
+        if (course.tabs && course.tabs.length > 0) {
+          setActiveTabId(course.tabs[0].id);
+        }
       }
     } else if (course.isParmar && course.parmarData) {
       const keys = Object.keys(course.parmarData);
@@ -157,6 +167,13 @@ export const CourseModal: React.FC<CourseModalProps> = ({
         items = items.filter((i) => i.subject === activeModuleFilter);
       }
 
+      // Filter by media type (Videos / Notes & PDFs)
+      if (activeMediaFilter === 'videos') {
+        items = items.filter((i) => i.type !== 'pdf');
+      } else if (activeMediaFilter === 'pdfs') {
+        items = items.filter((i) => i.type === 'pdf');
+      }
+
       return search
         ? items.filter(
             (i) =>
@@ -179,7 +196,7 @@ export const CourseModal: React.FC<CourseModalProps> = ({
     }
 
     return [];
-  }, [course, activeTabId, activeFolderTabId, activeModuleFilter, filterSearch]);
+  }, [course, activeTabId, activeFolderTabId, activeModuleFilter, activeMediaFilter, filterSearch]);
 
   if (!course) return null;
   const stats = countCourseStats(course);
@@ -210,6 +227,7 @@ export const CourseModal: React.FC<CourseModalProps> = ({
             if (course.isFolderMode && activeFolderTabId) {
               setActiveFolderTabId(null);
               setActiveModuleFilter('All Modules');
+              onFolderTabChange?.(null);
             } else {
               onClose();
             }
@@ -218,7 +236,7 @@ export const CourseModal: React.FC<CourseModalProps> = ({
           <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5">
             <path d="M19 12H5M12 19l-7-7 7-7" />
           </svg>
-          {course.isFolderMode && activeFolderTabId ? 'Subjects' : 'Back'}
+          {course.isFolderMode && activeFolderTabId ? 'Courses' : 'Back'}
         </button>
 
         <div
@@ -389,11 +407,22 @@ export const CourseModal: React.FC<CourseModalProps> = ({
             {selectedFolderTab ? selectedFolderTab.label : course.name}
           </div>
           <div className="overlay-course-teacher">
-            {course.teacher} · {selectedFolderTab ? selectedFolderTab.subname : course.subname}
+            {course.id === 'beu-1st-year'
+              ? 'Bihar Engineering University'
+              : [course.teacher, selectedFolderTab ? selectedFolderTab.subname : course.subname]
+                  .filter(Boolean)
+                  .filter((val, idx, arr) => arr.indexOf(val) === idx)
+                  .join(' · ')}
           </div>
           <div className="overlay-chips">
-            <div className="overlay-chip">🎬 {stats.videos} Videos</div>
-            <div className="overlay-chip">📄 {stats.resources} Resources</div>
+            <div className="overlay-chip">
+              <Video width={13} height={13} style={{ color: 'var(--accent)' }} />
+              <span>{stats.videos} Videos</span>
+            </div>
+            <div className="overlay-chip">
+              <FileText width={13} height={13} style={{ color: 'var(--accent)' }} />
+              <span>{stats.resources} Resources</span>
+            </div>
           </div>
         </div>
       </div>
@@ -448,7 +477,7 @@ export const CourseModal: React.FC<CourseModalProps> = ({
         </div>
       )}
 
-      {/* 2. Folder Mode: Module Tabs Bar inside Subject (e.g. Engineering Chemistry) */}
+      {/* 2. Folder Mode: Module Tabs Bar inside Subject */}
       {course.isFolderMode && activeFolderTabId && folderModules.length > 1 && (
         <div className="overlay-tabs" id="overlay-tabs">
           {folderModules.map((mod) => (
@@ -462,6 +491,54 @@ export const CourseModal: React.FC<CourseModalProps> = ({
           ))}
         </div>
       )}
+
+      {/* 3. Folder Mode: Videos / PDFs Media Type Filter (only when inside a folder tab) */}
+      {course.isFolderMode && activeFolderTabId && (() => {
+        const tab = course.tabs?.find((t) => t.id === activeFolderTabId);
+        const items = tab?.items || [];
+        const videoCount = items.filter((i) => i.type !== 'pdf').length;
+        const pdfCount = items.filter((i) => i.type === 'pdf').length;
+        if (pdfCount === 0) return null; // no PDFs = no filter needed
+        return (
+          <div
+            style={{
+              display: 'flex',
+              alignItems: 'center',
+              gap: '6px',
+              padding: '8px 20px',
+              borderBottom: '1px solid var(--border)',
+              background: 'var(--bg)',
+              overflowX: 'auto',
+            }}
+          >
+            {([
+              { key: 'all' as const, label: `All (${items.length})` },
+              { key: 'videos' as const, label: `▶ Videos (${videoCount})` },
+              { key: 'pdfs' as const, label: `📄 Notes & PDFs (${pdfCount})` },
+            ] as const).map(({ key, label }) => (
+              <button
+                key={key}
+                onClick={() => setActiveMediaFilter(key)}
+                style={{
+                  padding: '5px 14px',
+                  fontSize: '12px',
+                  fontWeight: 600,
+                  borderRadius: '100px',
+                  border: '1.5px solid',
+                  borderColor: activeMediaFilter === key ? 'var(--accent)' : 'var(--border)',
+                  background: activeMediaFilter === key ? 'var(--accent)' : 'transparent',
+                  color: activeMediaFilter === key ? '#fff' : 'var(--text-muted)',
+                  cursor: 'pointer',
+                  transition: 'all 0.15s ease',
+                  whiteSpace: 'nowrap',
+                }}
+              >
+                {label}
+              </button>
+            ))}
+          </div>
+        );
+      })()}
 
       {/* OVERLAY CONTENT */}
       <div className="overlay-content" id="overlay-content">
@@ -479,7 +556,7 @@ export const CourseModal: React.FC<CourseModalProps> = ({
                   margin: 0,
                 }}
               >
-                Subjects in this Semester
+                Courses
               </h3>
             </div>
 
@@ -496,8 +573,10 @@ export const CourseModal: React.FC<CourseModalProps> = ({
                   onClick={() => {
                     setActiveFolderTabId(tab.id);
                     setActiveTabId(tab.id);
+                    onFolderTabChange?.(tab.id);
                     const isModuleNaming = tab.items.some((it) => it.subject?.toLowerCase().startsWith('module'));
                     setActiveModuleFilter(isModuleNaming ? 'All Modules' : 'All Subjects');
+                    setActiveMediaFilter('all');
                   }}
                   style={{
                     background: 'var(--bg-card)',
@@ -536,9 +615,13 @@ export const CourseModal: React.FC<CourseModalProps> = ({
                         fontWeight: 700,
                         padding: '4px 10px',
                         borderRadius: 'var(--r-pill)',
+                        display: 'flex',
+                        alignItems: 'center',
+                        gap: '5px',
                       }}
                     >
-                      🎬 {tab.items.length} Lectures
+                      <Video width={12} height={12} />
+                      <span>{tab.items.length} Lectures</span>
                     </div>
                   </div>
 
@@ -606,7 +689,7 @@ export const CourseModal: React.FC<CourseModalProps> = ({
                             if (isVideo) {
                               onPlayVideo([{ label: lec.title, url, type: 'hls' }], 0);
                             } else {
-                              onOpenPdf(url);
+                              onOpenPdf({ label: lec.title + ' • Notes', url, type: 'pdf' });
                             }
                           }}
                         >
@@ -639,6 +722,7 @@ export const CourseModal: React.FC<CourseModalProps> = ({
                   onClick={() => {
                     setActiveFolderTabId(null);
                     setActiveModuleFilter('All Modules');
+                    onFolderTabChange?.(null);
                   }}
                   style={{
                     display: 'flex',
@@ -654,7 +738,7 @@ export const CourseModal: React.FC<CourseModalProps> = ({
                   }}
                 >
                   <ArrowLeft width={16} height={16} />
-                  <span>All Subjects</span>
+                  <span>Back to Courses</span>
                 </button>
 
                 <span style={{ fontSize: '12px', color: 'var(--text-muted)', fontWeight: 600 }}>
@@ -681,7 +765,7 @@ export const CourseModal: React.FC<CourseModalProps> = ({
                       onClick={() => {
                         saveMemory(item.url);
                         if (isPdf) {
-                          onOpenPdf(item.url);
+                          onOpenPdf(item, activeItems, idx);
                         } else {
                           onPlayVideo(activeItems, idx);
                         }
@@ -772,8 +856,25 @@ export const CourseModal: React.FC<CourseModalProps> = ({
                           </div>
                         )}
 
-                        {/* Center Play Button Overlay */}
-                        <div className="grid-play-hover-btn">{isPdf ? '📄' : '▶'}</div>
+                        {/* Subtle type badge on thumbnail */}
+                        <div
+                          style={{
+                            position: 'absolute',
+                            bottom: '8px',
+                            right: '10px',
+                            background: 'rgba(0,0,0,0.6)',
+                            backdropFilter: 'blur(4px)',
+                            color: isPdf ? '#ff9f7d' : '#85e0a3',
+                            fontSize: '10px',
+                            fontWeight: 700,
+                            padding: '2px 7px',
+                            borderRadius: '4px',
+                            textTransform: 'uppercase',
+                            letterSpacing: '0.4px',
+                          }}
+                        >
+                          {isPdf ? 'PDF' : 'Video'}
+                        </div>
                       </div>
 
                       {/* Card Content */}
@@ -792,7 +893,7 @@ export const CourseModal: React.FC<CourseModalProps> = ({
                             fontWeight: 600,
                             color: 'var(--text)',
                             lineHeight: 1.35,
-                            marginBottom: '12px',
+                            marginBottom: '8px',
                             display: '-webkit-box',
                             WebkitLineClamp: 2,
                             WebkitBoxOrient: 'vertical',
@@ -807,16 +908,13 @@ export const CourseModal: React.FC<CourseModalProps> = ({
                             display: 'flex',
                             alignItems: 'center',
                             justifyContent: 'space-between',
-                            paddingTop: '10px',
+                            paddingTop: '8px',
                             borderTop: '1px solid var(--border)',
                           }}
                         >
                           <span style={{ fontSize: '11px', color: 'var(--text-muted)', fontWeight: 500 }}>
-                            {isPdf ? 'Document' : 'Video Class'}
+                            {item.subject || (isPdf ? 'Lecture Notes' : 'Lecture Video')}
                           </span>
-                          <button className="video-play-btn" style={{ padding: '6px 14px', fontSize: '12px' }}>
-                            <span>{isPdf ? 'Open PDF' : 'Watch'}</span> ▶
-                          </button>
                         </div>
                       </div>
                     </div>
@@ -838,24 +936,24 @@ export const CourseModal: React.FC<CourseModalProps> = ({
                       onClick={() => {
                         saveMemory(item.url);
                         if (isPdf) {
-                          onOpenPdf(item.url);
+                          onOpenPdf(item, activeItems, idx);
                         } else {
                           onPlayVideo(activeItems, idx);
                         }
                       }}
                     >
                       <div className="video-num">{idx + 1}</div>
-                      <div className={`video-icon ${isPdf ? 'vicon-ext' : 'vicon-hls'}`}>
-                        {isPdf ? '📄' : '▶'}
+                      <div className={`video-icon ${isPdf ? 'vicon-ext' : 'vicon-hls'}`} style={{ display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
+                        {isPdf ? <FileText width={14} height={14} /> : <Play width={13} height={13} fill="currentColor" />}
                       </div>
                       <div className="video-body">
                         <div className="video-title">{item.label}</div>
                         <div className="video-sub">{item.subject || course.name}</div>
                       </div>
-                      <div className="watched-badge">✓ Watched</div>
-                      <button className="video-play-btn">
-                        <span>{isPdf ? 'Open PDF' : 'Play Video'}</span> ▶
-                      </button>
+                      <div className="watched-badge" style={{ display: 'inline-flex', alignItems: 'center', gap: '4px' }}>
+                        <CheckCircle2 width={12} height={12} />
+                        <span>Watched</span>
+                      </div>
                     </div>
                   );
                 })}

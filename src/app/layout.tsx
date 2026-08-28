@@ -1,24 +1,17 @@
 import type { Metadata } from 'next';
-import { Cormorant_Garamond, Inter } from 'next/font/google';
+import { Space_Grotesk } from 'next/font/google';
 import './globals.css';
 
-const cormorant = Cormorant_Garamond({
+const spaceGrotesk = Space_Grotesk({
   subsets: ['latin'],
-  weight: ['400', '600', '700'],
-  variable: '--font-cormorant',
-  display: 'swap',
-});
-
-const inter = Inter({
-  subsets: ['latin'],
-  weight: ['400', '500', '600', '700'],
-  variable: '--font-inter',
+  weight: ['600', '700'],
+  variable: '--font-brand',
   display: 'swap',
 });
 
 export const metadata: Metadata = {
-  title: 'stutosed | Free Education & Course Resources',
-  description: 'Your complete SSC & competitive examination preparation companion. High-quality lectures, notes, and resources.',
+  title: 'stutosed | Free SSC & BEU B.Tech Course Platform',
+  description: 'Your complete study portal for SSC, Competitive Exams and Bihar Engineering University (BEU) B.Tech courses, lectures, notes, and PDF resources.',
   icons: {
     icon: '/favicon.svg',
     shortcut: '/favicon.svg',
@@ -32,7 +25,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" data-theme="light" suppressHydrationWarning className={`${cormorant.variable} ${inter.variable}`}>
+    <html lang="en" data-theme="light" suppressHydrationWarning className={spaceGrotesk.variable}>
       <head>
         <script
           dangerouslySetInnerHTML={{
@@ -53,3 +46,4 @@ export default function RootLayout({
     </html>
   );
 }
+

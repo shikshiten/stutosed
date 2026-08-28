@@ -3,6 +3,7 @@
 import React, { useState, useMemo } from 'react';
 import { Course } from '@/types';
 import { countCourseStats } from '@/lib/coursesData';
+import { Search, Video, FileText, ArrowRight, Layers } from 'lucide-react';
 
 interface CourseGridProps {
   courses: Course[];
@@ -44,10 +45,7 @@ export const CourseGrid: React.FC<CourseGridProps> = ({
       {/* SEARCH BAR */}
       <div id="search-bar">
         <div className="search-wrap">
-          <svg className="search-icon-el" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
-            <circle cx="11" cy="11" r="8" />
-            <path d="m21 21-4.35-4.35" />
-          </svg>
+          <Search className="search-icon-el" width={17} height={17} />
           <input
             ref={searchInputRef}
             id="search-input"
@@ -63,7 +61,10 @@ export const CourseGrid: React.FC<CourseGridProps> = ({
       {/* COURSES GRID SECTION */}
       <section id="courses-section">
         <div className="section-head">
-          <div className="section-tag">All Courses</div>
+          <div className="section-tag">
+            <Layers width={13} height={13} />
+            <span>All Courses</span>
+          </div>
           <h2 className="section-title">Pick Your Subject</h2>
           <p className="section-sub">Curated batches from expert educators</p>
 
@@ -73,15 +74,18 @@ export const CourseGrid: React.FC<CourseGridProps> = ({
               <button
                 key={subj}
                 onClick={() => setSelectedSubject(subj)}
-                className={`tag ${selectedSubject === subj ? 'tag-vid' : 'tag-mix'}`}
+                className="tag"
                 style={{
                   cursor: 'pointer',
-                  padding: '6px 16px',
+                  padding: '7px 18px',
                   fontSize: '12px',
                   fontWeight: 600,
+                  borderRadius: 'var(--r-pill)',
                   border: selectedSubject === subj ? '1px solid var(--accent)' : '1px solid var(--border)',
                   background: selectedSubject === subj ? 'var(--accent)' : 'var(--bg-card)',
-                  color: selectedSubject === subj ? '#fff' : 'var(--text-muted)',
+                  color: selectedSubject === subj ? '#ffffff' : 'var(--text-muted)',
+                  boxShadow: selectedSubject === subj ? '0 2px 10px var(--accent-glow)' : 'none',
+                  transition: 'all 0.2s cubic-bezier(0.16, 1, 0.3, 1)',
                 }}
               >
                 {subj}
@@ -112,14 +116,23 @@ export const CourseGrid: React.FC<CourseGridProps> = ({
                   />
                   <div className="course-body">
                     <div className="course-tags">
-                      <span className="tag tag-vid">{stats.videos} VIDEOS</span>
-                      <span className="tag tag-pdf">{stats.resources} PDFS</span>
+                      <span className="tag tag-vid" style={{ display: 'inline-flex', alignItems: 'center', gap: '4px' }}>
+                        <Video width={11} height={11} />
+                        <span>{stats.videos} VIDEOS</span>
+                      </span>
+                      <span className="tag tag-pdf" style={{ display: 'inline-flex', alignItems: 'center', gap: '4px' }}>
+                        <FileText width={11} height={11} />
+                        <span>{stats.resources} PDFS</span>
+                      </span>
                     </div>
                     <h3 className="course-name">{course.name}</h3>
                     <div className="course-teacher">{course.teacher}</div>
-                    <div className="course-meta">{course.subname}</div>
+                    {course.subname && course.subname.trim().toLowerCase() !== course.teacher?.trim().toLowerCase() && (
+                      <div className="course-meta">{course.subname}</div>
+                    )}
                     <div className="course-open-hint">
-                      Open Course →
+                      <span>Open Course</span>
+                      <ArrowRight width={14} height={14} />
                     </div>
                   </div>
                 </div>

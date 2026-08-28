@@ -4,6 +4,7 @@ export interface ServerOption {
   name: string;
   url: string;
   downloadUrl?: string;
+  streamUrl?: string;
   type?: MediaURLType;
 }
 
