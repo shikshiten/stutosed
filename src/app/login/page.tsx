@@ -270,7 +270,7 @@ export default function LoginPage() {
                       required
                       value={fullName}
                       onChange={(e) => setFullName(e.target.value)}
-                      placeholder="e.g. Rahul Sharma"
+                      placeholder="e.g. Advik"
                       style={{ width: '100%', height: '42px', padding: '10px 14px 10px 36px', borderRadius: 'var(--r-md)', background: 'var(--bg)', border: '1px solid var(--border)', color: 'var(--text)', fontSize: '14px', outline: 'none' }}
                     />
                   </div>
@@ -288,7 +288,7 @@ export default function LoginPage() {
                     required
                     value={email}
                     onChange={(e) => setEmail(e.target.value)}
-                    placeholder="student@example.com"
+                    placeholder="advik@stutosed.com"
                     style={{ width: '100%', height: '42px', padding: '10px 14px 10px 36px', borderRadius: 'var(--r-md)', background: 'var(--bg)', border: '1px solid var(--border)', color: 'var(--text)', fontSize: '14px', outline: 'none' }}
                   />
                 </div>

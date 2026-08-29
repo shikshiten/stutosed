@@ -391,7 +391,7 @@ export const AuthModal: React.FC<AuthModalProps> = ({
                         required
                         value={fullName}
                         onChange={(e) => setFullName(e.target.value)}
-                        placeholder="e.g. Rahul Sharma"
+                        placeholder="e.g. Advik"
                         className="auth-input-field"
                       />
                     </div>
@@ -410,7 +410,7 @@ export const AuthModal: React.FC<AuthModalProps> = ({
                       required
                       value={email}
                       onChange={(e) => setEmail(e.target.value)}
-                      placeholder="student@example.com"
+                      placeholder="advik@stutosed.com"
                       className="auth-input-field"
                     />
                   </div>
