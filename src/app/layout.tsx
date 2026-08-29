@@ -11,7 +11,7 @@ const spaceGrotesk = Space_Grotesk({
 
 export const metadata: Metadata = {
   metadataBase: new URL('https://stutosed.vercel.app'),
-  title: 'stutosed — Engineering & Competitive Exam Courses',
+  title: 'stutosed',
   description: 'Your complete study portal for SSC, Competitive Exams and Bihar Engineering University (BEU) B.Tech courses, lectures, notes, and PDF resources.',
   icons: {
     icon: '/favicon.svg',
