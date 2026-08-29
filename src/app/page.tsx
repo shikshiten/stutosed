@@ -172,11 +172,12 @@ export default function HomePage() {
     }
   }, [userName]);
 
-  // Helper to sync URL search parameters and sessionStorage
+  // Helper to sync URL search parameters, sessionStorage, and browser history
   const syncNavigationState = (
     view: AppView,
     courseId: string | null = null,
-    folderId: string | null = null
+    folderId: string | null = null,
+    isPush: boolean = true
   ) => {
     if (typeof window === 'undefined') return;
     try {
@@ -204,7 +205,13 @@ export default function HomePage() {
 
       const queryString = params.toString();
       const nextUrl = queryString ? `/?${queryString}` : '/';
-      window.history.replaceState({ view, courseId, folderId }, '', nextUrl);
+      const historyState = { view, courseId, folderId };
+
+      if (isPush) {
+        window.history.pushState(historyState, '', nextUrl);
+      } else {
+        window.history.replaceState(historyState, '', nextUrl);
+      }
     } catch {}
   };
 
@@ -238,7 +245,7 @@ export default function HomePage() {
       // Restore view & course from URL query params or sessionStorage on refresh
       if (typeof window !== 'undefined') {
         const urlParams = new URLSearchParams(window.location.search);
-        const viewParam = (urlParams.get('view') as AppView) || (sessionStorage.getItem('stutosed_active_view') as AppView);
+        const viewParam = (urlParams.get('view') as AppView) || (sessionStorage.getItem('stutosed_active_view') as AppView) || 'home';
         const courseParam = urlParams.get('course') || sessionStorage.getItem('stutosed_open_course');
         const folderParam = urlParams.get('folder') || sessionStorage.getItem('stutosed_open_folder');
 
@@ -255,6 +262,14 @@ export default function HomePage() {
             }
           }
         }
+
+        // Seed initial history state
+        const currentSearch = window.location.search;
+        window.history.replaceState(
+          { view: viewParam, courseId: courseParam || null, folderId: folderParam || null },
+          '',
+          currentSearch || '/'
+        );
       }
     } catch {}
   }, []);
@@ -349,39 +364,72 @@ export default function HomePage() {
     } catch {}
   }, []);
 
-  // Mobile Back Button / Layered History Management
+  // Mobile & Desktop Layered Browser Back Button Management
   useEffect(() => {
     const handlePopState = () => {
-      // Layer 1: If PDF Viewer is open, close it first
+      // Layer 1: If Mobile Sidebar is open, close it
+      if (isSidebarOpen) {
+        setIsSidebarOpen(false);
+        return;
+      }
+
+      // Layer 2: If Changelog or Privacy modal is open, close it
+      if (isChangelogOpen) {
+        setIsChangelogOpen(false);
+        return;
+      }
+      if (privacyModalState.isOpen) {
+        setPrivacyModalState((prev) => ({ ...prev, isOpen: false }));
+        return;
+      }
+
+      // Layer 3: If PDF Viewer Modal is open, close it
       if (pdfModalData) {
         setPdfModalData(null);
         return;
       }
-      // Layer 2: If Video Player is open, close it
+
+      // Layer 4: If Video Player is open, close it (returns to lecture list)
       if (playerPlaylist) {
         setPlayerPlaylist(null);
         return;
       }
-      // Layer 3: If in a sub-folder inside Course Modal, go back to folder root
+
+      // Layer 5: If in a sub-folder inside Course Modal, go back to folder root
       if (openFolderId) {
         setOpenFolderId(null);
-        syncNavigationState(activeView, selectedCourse?.id || null, null);
+        syncNavigationState(activeView, selectedCourse?.id || null, null, false);
         return;
       }
-      // Layer 4: If Course Modal is open, close it next
+
+      // Layer 6: If Course Modal is open, close it (returns to Category / Home)
       if (selectedCourse) {
-        handleCloseCourse();
+        setSelectedCourse(null);
+        setOpenFolderId(null);
+        syncNavigationState(activeView, null, null, false);
         return;
       }
-      // Layer 5: If in a sub-view (courses, profile, help), return to home
+
+      // Layer 7: If in a sub-view (beu-engineering, gov-exams, courses, profile, help), return to home
       if (activeView !== 'home') {
-        handleViewChange('home');
+        setActiveView('home');
+        syncNavigationState('home', null, null, false);
+        return;
       }
     };
 
     window.addEventListener('popstate', handlePopState);
     return () => window.removeEventListener('popstate', handlePopState);
-  }, [pdfModalData, playerPlaylist, selectedCourse, openFolderId, activeView]);
+  }, [
+    isSidebarOpen,
+    isChangelogOpen,
+    privacyModalState.isOpen,
+    pdfModalData,
+    playerPlaylist,
+    openFolderId,
+    selectedCourse,
+    activeView,
+  ]);
 
   // Toggle Theme
   const handleToggleTheme = () => {
@@ -414,8 +462,14 @@ export default function HomePage() {
       setIsAuthOpen(true);
       return;
     }
+    if (newView === activeView && !selectedCourse && !openFolderId) return;
+
     setActiveView(newView);
-    syncNavigationState(newView, selectedCourse?.id || null, openFolderId);
+    setSelectedCourse(null);
+    setOpenFolderId(null);
+    setPlayerPlaylist(null);
+    setPdfModalData(null);
+    syncNavigationState(newView, null, null, true);
     if (typeof window !== 'undefined') {
       window.scrollTo({ top: 0, behavior: 'smooth' });
     }
@@ -430,18 +484,18 @@ export default function HomePage() {
     }
     setSelectedCourse(course);
     setOpenFolderId(null);
-    syncNavigationState(activeView, course.id, null);
+    syncNavigationState(activeView, course.id, null, true);
   };
 
   const handleCloseCourse = () => {
     setSelectedCourse(null);
     setOpenFolderId(null);
-    syncNavigationState(activeView, null, null);
+    syncNavigationState(activeView, null, null, false);
   };
 
   const handleFolderTabChange = (folderId: string | null) => {
     setOpenFolderId(folderId);
-    syncNavigationState(activeView, selectedCourse?.id || null, folderId);
+    syncNavigationState(activeView, selectedCourse?.id || null, folderId, folderId !== null);
   };
 
   // Open Video Player with history state push and record last played

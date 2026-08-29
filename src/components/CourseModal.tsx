@@ -99,6 +99,16 @@ export const CourseModal: React.FC<CourseModalProps> = ({
     }
   }, [course]);
 
+  // Sync folder tab when initialFolderTabId prop changes from back navigation / popstate
+  useEffect(() => {
+    if (course?.isFolderMode) {
+      setActiveFolderTabId(initialFolderTabId || null);
+      if (initialFolderTabId) {
+        setActiveTabId(initialFolderTabId);
+      }
+    }
+  }, [initialFolderTabId, course?.isFolderMode]);
+
   // Click outside to collapse search if empty
   useEffect(() => {
     const handleClickOutside = (e: MouseEvent) => {
