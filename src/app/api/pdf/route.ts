@@ -10,31 +10,7 @@ const SUPABASE_ANON_KEY =
   process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY ||
   'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImhvZmJ0YnV0dnVvbWVvZm1oa3l1Iiwicm9sZSI6ImFub24iLCJpYXQiOjE3ODcxNDQwNzEsImV4cCI6MjEwMjcyMDA3MX0.J5RU82Jn5VOZy_vyiSv9mX5QgKW6Ud23fVKMytXp7DA';
 
-// ── SSRF Allowlist ─────────────────────────────────────────────────────────────
-const ALLOWED_UPSTREAM_HOSTNAMES = new Set([
-  'streamvaultpro.cc',
-  'svcdn-dl.workers.dev',
-  'svcdn-dl2.workers.dev',
-  'svcdn-dl3.workers.dev',
-  'fs1qydv17g1-161-162e5df28a45.herokuapp.com',
-  'crwilladmin.com',
-  'storage.googleapis.com',
-  'workers.dev',
-]);
-
-function isAllowedUpstream(rawUrl: string): boolean {
-  try {
-    const parsed = new URL(rawUrl);
-    const hostname = parsed.hostname.toLowerCase();
-    if (ALLOWED_UPSTREAM_HOSTNAMES.has(hostname)) return true;
-    for (const allowed of ALLOWED_UPSTREAM_HOSTNAMES) {
-      if (hostname.endsWith('.' + allowed)) return true;
-    }
-    return false;
-  } catch {
-    return false;
-  }
-}
+import { isAllowedUpstream } from '@/lib/upstreamSecurity';
 
 async function getAuthenticatedUser(request: NextRequest) {
   const supabase = createServerClient(SUPABASE_URL, SUPABASE_ANON_KEY, {

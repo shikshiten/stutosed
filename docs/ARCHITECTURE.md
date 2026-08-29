@@ -32,13 +32,13 @@ Next.js Edge Runtime (proxy.ts)
 To ensure 100% lecture availability without third-party IP blocks or CORS restrictions, stutosed implements a dual-engine architecture:
 
 1. **ALBA Engine (Primary)**:
-   - Connects to high-throughput StreamVault CDN clusters (`svcdn-dl*.workers.dev`).
+   - Connects to high-throughput Edge CDN clusters.
    - Supports HTTP Range requests (`bytes=0-`) for instant video seeking.
-   - Converts download `/0:/dl/` endpoints to direct streaming pipelines seamlessly.
+   - Converts direct download endpoints to dynamic streaming pipelines seamlessly.
 
 2. **ESTE Engine (Failover)**:
-   - Connects to dedicated Heroku media streaming bots.
-   - Extracts unique video IDs from raw stream links and pipes directly with custom referer headers.
+   - Connects to dedicated failover media streaming gateways.
+   - Extracts unique video IDs from media streams and pipes directly with custom referer headers.
 
 3. **HLS Proxy (`/api/hls-proxy`)**:
    - Re-writes M3U8 playlist URLs on-the-fly so that TS media segments route through Vercel Edge IPs, bypassing mobile CDN token-binding locks.

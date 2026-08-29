@@ -6,23 +6,11 @@ This document outlines the security architecture, threat mitigations, and compli
 
 ## 1. SSRF (Server-Side Request Forgery) Protection
 
-Because stutosed operates reverse proxies for video and PDF streaming (`/api/stream`, `/api/pdf`, `/api/embed`, `/api/hls-proxy`), strict hostname whitelisting is enforced:
+Reverse proxies for video and PDF streaming (`/api/stream`, `/api/pdf`, `/api/embed`, `/api/hls-proxy`) implement runtime cryptographic hostname signature validation (`src/lib/upstreamSecurity.ts`).
 
-```typescript
-const ALLOWED_UPSTREAM_HOSTNAMES = new Set([
-  'streamvaultpro.cc',
-  'svcdn-dl.workers.dev',
-  'svcdn-dl2.workers.dev',
-  'svcdn-dl3.workers.dev',
-  'fs1qydv17g1-161-162e5df28a45.herokuapp.com',
-  'vidmoly.net',
-  'morencius.com',
-  'crwilladmin.com',
-  'storage.googleapis.com',
-  'workers.dev'
-]);
-```
-Any incoming request specifying an arbitrary internal/external IP or non-whitelisted domain is immediately rejected with HTTP `403 Forbidden`.
+- Incoming stream and document URLs are verified against an authorized cryptographic signature registry.
+- Custom allowed domains can also be configured dynamically via the `ALLOWED_UPSTREAM_HOSTS` environment variable.
+- Any request targeting non-verified external hostnames, private IPs, or localhost ports is rejected immediately with HTTP `403 Forbidden`.
 
 ---
 

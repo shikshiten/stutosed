@@ -10,32 +10,7 @@ import { NextRequest } from 'next/server';
 
 export const dynamic = 'force-dynamic';
 
-// ── SSRF Allowlist ─────────────────────────────────────────────────────────────
-// HLS segments are chained from already-authenticated playlists, so we
-// validate the upstream domain rather than re-checking auth on every TS segment.
-const ALLOWED_UPSTREAM_HOSTNAMES = new Set([
-  'vidmoly.net',
-  'morencius.com',
-  'earnvids.com',
-  'streamvaultpro.cc',
-  'workers.dev',
-  'cdn.jwplayer.com',
-  'content.jwplatform.com',
-]);
-
-function isAllowedUpstream(rawUrl: string): boolean {
-  try {
-    const parsed = new URL(rawUrl);
-    const hostname = parsed.hostname.toLowerCase();
-    if (ALLOWED_UPSTREAM_HOSTNAMES.has(hostname)) return true;
-    for (const allowed of ALLOWED_UPSTREAM_HOSTNAMES) {
-      if (hostname.endsWith('.' + allowed)) return true;
-    }
-    return false;
-  } catch {
-    return false;
-  }
-}
+import { isAllowedUpstream } from '@/lib/upstreamSecurity';
 
 export async function GET(request: NextRequest) {
   const targetUrl = request.nextUrl.searchParams.get('url');

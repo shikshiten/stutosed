@@ -39,7 +39,7 @@
 | | Feature | Description |
 |---|---|---|
 | 📊 | **Study Dashboard** | Dynamic greeting banner, cloud progress sync, and last-played lecture resume memory |
-| 🎬 | **Dual-Engine Video Player** | Stream HD lectures with instant toggle between **ALBA** (StreamVault CDN) and **ESTE** (Failover Media Engine) |
+| 🎬 | **Dual-Engine Video Player** | Stream HD lectures with instant toggle between **ALBA** (High-Speed Edge CDN) and **ESTE** (Failover Media Engine) |
 | ⚡ | **Speed Control Bridge** | Granular playback speed regulation from **0.5x to 3.0x** with cross-origin iframe synchronization |
 | 📑 | **Lossless PDF Reader** | Crystal-clear in-browser PDF notes previewer with native typography, full-screen mode & single-click downloads |
 | 📱 | **Layered Back Navigation** | Smart state-driven browser history stack — mobile back gesture steps smoothly: *Player ➔ Folder ➔ Course ➔ Home* |
@@ -77,7 +77,7 @@ stutosed
 ## ⚡ Core Engineering Breakdown
 
 ### 1. Dual-Engine Video Streaming Pipeline
-- **ALBA Engine (Primary)**: Direct, low-latency CDN streaming via StreamVault Edge proxies for high-bitrate video playback with HTTP Range request support (`bytes=0-`).
+- **ALBA Engine (Primary)**: Direct, low-latency CDN streaming via High-Speed Edge proxies for high-bitrate video playback with HTTP Range request support (`bytes=0-`).
 - **ESTE Engine (Failover)**: Fallback streaming bridge powered by distributed media servers to guarantee 100% video uptime.
 - **Granular Speed Bridge**: Custom speed regulation from `0.5x` to `3.0x` with cross-frame `postMessage` synchronization.
 
