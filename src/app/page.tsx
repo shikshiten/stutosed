@@ -36,6 +36,10 @@ import {
   FileText,
   Lock,
   Scale,
+  Sunrise,
+  Sun,
+  Sunset,
+  Moon,
 } from 'lucide-react';
 
 const WATCHED_KEY = 'onafbu_watched_v1';
@@ -148,26 +152,26 @@ export default function HomePage() {
     if (hour >= 5 && hour < 12) {
       return {
         greeting: `Good Morning, ${userName}`,
-        subtext: "Let's start strong today! Ready to conquer your study goals?",
-        emoji: '🌅',
+        subtext: "Let's start strong today. Ready to conquer your study goals?",
+        timeSlot: 'morning' as const,
       };
     } else if (hour >= 12 && hour < 17) {
       return {
         greeting: `Good Afternoon, ${userName}`,
-        subtext: 'Keep up the momentum! Every lecture completed is a step closer.',
-        emoji: '☀️',
+        subtext: 'Keep up the study momentum. Every lecture completed is a step forward.',
+        timeSlot: 'afternoon' as const,
       };
     } else if (hour >= 17 && hour < 22) {
       return {
         greeting: `Good Evening, ${userName}`,
-        subtext: "Finish today's study target before you call it a day.",
-        emoji: '🌇',
+        subtext: "Finish today's study target and review your notes before you wrap up.",
+        timeSlot: 'evening' as const,
       };
     } else {
       return {
         greeting: `Late Night Focus, ${userName}`,
         subtext: 'Quiet hours, sharp focus. Power through your study session.',
-        emoji: '🌙',
+        timeSlot: 'night' as const,
       };
     }
   }, [userName]);
@@ -754,7 +758,7 @@ export default function HomePage() {
                     background: 'var(--bg-card)',
                     border: '1px solid var(--border)',
                     borderRadius: 'var(--r-xl)',
-                    padding: '24px 28px',
+                    padding: '20px 24px',
                     boxShadow: 'var(--sh-card)',
                     display: 'flex',
                     alignItems: 'center',
@@ -765,21 +769,21 @@ export default function HomePage() {
                     overflow: 'hidden',
                   }}
                 >
-                  <div style={{ display: 'flex', alignItems: 'center', gap: '16px' }}>
+                  <div style={{ display: 'flex', alignItems: 'center', gap: '16px', flex: '1 1 300px', minWidth: 0 }}>
                     <div
                       style={{
-                        width: '48px',
-                        height: '48px',
+                        width: '46px',
+                        height: '46px',
                         borderRadius: '50%',
                         background: user?.avatar_url ? 'transparent' : avatarBg,
                         color: '#ffffff',
                         display: 'flex',
                         alignItems: 'center',
                         justifyContent: 'center',
-                        fontSize: '18px',
+                        fontSize: '17px',
                         fontWeight: 700,
                         flexShrink: 0,
-                        boxShadow: '0 4px 14px rgba(0,0,0,0.15)',
+                        boxShadow: '0 4px 14px rgba(0,0,0,0.12)',
                         overflow: 'hidden',
                         border: '2px solid var(--border)',
                       }}
@@ -795,16 +799,53 @@ export default function HomePage() {
                       )}
                     </div>
 
-                    <div>
-                      <div style={{ display: 'flex', alignItems: 'center', gap: '8px' }}>
-                        <span style={{ fontSize: '18px' }}>{greetingData.emoji}</span>
-                        <h2 style={{ fontFamily: 'var(--font-display)', fontSize: '20px', fontWeight: 700, color: 'var(--text)', margin: 0, display: 'flex', alignItems: 'center', gap: '8px' }}>
+                    <div style={{ minWidth: 0, flex: 1 }}>
+                      <div style={{ display: 'flex', alignItems: 'center', gap: '8px', flexWrap: 'wrap' }}>
+                        <div
+                          style={{
+                            display: 'inline-flex',
+                            alignItems: 'center',
+                            justifyContent: 'center',
+                            width: '26px',
+                            height: '26px',
+                            borderRadius: '6px',
+                            background: 'var(--bg-card-subtle)',
+                            border: '1px solid var(--border)',
+                            flexShrink: 0,
+                          }}
+                        >
+                          {greetingData.timeSlot === 'morning' && (
+                            <Sunrise width={14} height={14} style={{ color: '#f59e0b' }} />
+                          )}
+                          {greetingData.timeSlot === 'afternoon' && (
+                            <Sun width={14} height={14} style={{ color: '#eab308' }} />
+                          )}
+                          {greetingData.timeSlot === 'evening' && (
+                            <Sunset width={14} height={14} style={{ color: '#f97316' }} />
+                          )}
+                          {greetingData.timeSlot === 'night' && (
+                            <Moon width={14} height={14} style={{ color: '#818cf8' }} />
+                          )}
+                        </div>
+                        <h2
+                          style={{
+                            fontFamily: 'var(--font-display)',
+                            fontSize: '18px',
+                            fontWeight: 700,
+                            color: 'var(--text)',
+                            margin: 0,
+                            display: 'inline-flex',
+                            alignItems: 'center',
+                            gap: '8px',
+                            lineHeight: 1.3,
+                          }}
+                        >
                           <span>{greetingData.greeting}</span>
                           <svg
                             className="brand-spike"
                             viewBox="0 0 24 24"
-                            width="20"
-                            height="20"
+                            width="18"
+                            height="18"
                             fill="none"
                             stroke="currentColor"
                             strokeWidth="2"
@@ -819,7 +860,7 @@ export default function HomePage() {
                           </svg>
                         </h2>
                       </div>
-                      <p style={{ fontSize: '13px', color: 'var(--text-muted)', margin: '4px 0 0', lineHeight: 1.4 }}>
+                      <p style={{ fontSize: '13px', color: 'var(--text-muted)', margin: '3px 0 0', lineHeight: 1.45 }}>
                         {greetingData.subtext}
                       </p>
                     </div>
@@ -840,6 +881,8 @@ export default function HomePage() {
                       fontWeight: 600,
                       cursor: 'pointer',
                       transition: 'all 0.2s',
+                      whiteSpace: 'nowrap',
+                      flexShrink: 0,
                     }}
                   >
                     <span>View Progress</span>
