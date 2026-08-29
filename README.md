@@ -14,6 +14,7 @@
 <br/>
 
 [![Launch App](https://img.shields.io/badge/⚡%20Launch%20App-stutosed.vercel.app-ff6b4a?style=for-the-badge&logoColor=white)](https://stutosed.vercel.app/)
+[![GitHub Repo](https://img.shields.io/badge/Source-shikshiten%2Fstutosed-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/shikshiten/stutosed)
 
 <br/>
 
@@ -37,8 +38,8 @@
 
 | | Feature | Description |
 |---|---|---|
-| 📊 | **Study Dashboard** | Personalized dynamic greeting banner, study progress overview & last-played lecture resume memory |
-| 🎬 | **Dual-Engine Video Player** | Stream HD lectures with instant toggle between **ALBA** (High-Speed StreamVault CDN) and **ESTE** (Failover Media Engine) |
+| 📊 | **Study Dashboard** | Dynamic greeting banner, cloud progress sync, and last-played lecture resume memory |
+| 🎬 | **Dual-Engine Video Player** | Stream HD lectures with instant toggle between **ALBA** (StreamVault CDN) and **ESTE** (Failover Media Engine) |
 | ⚡ | **Speed Control Bridge** | Granular playback speed regulation from **0.5x to 3.0x** with cross-origin iframe synchronization |
 | 📑 | **Lossless PDF Reader** | Crystal-clear in-browser PDF notes previewer with native typography, full-screen mode & single-click downloads |
 | 📱 | **Layered Back Navigation** | Smart state-driven browser history stack — mobile back gesture steps smoothly: *Player ➔ Folder ➔ Course ➔ Home* |
@@ -50,18 +51,115 @@
 
 ---
 
-## 🛠 Tech Stack
+## 🎓 Academic Portals Tree View
+
+stutosed organizes course curriculum into dedicated, structured academic hubs:
 
 ```
-Frontend Framework   Next.js 15.1 (React 19, Turbopack, App Router)
-Language             TypeScript 5.0 (Strict Type Checking)
-Styling & Tokens     Tailwind CSS 4.0 · Custom CSS Variables · Atyp Font Family
-Authentication       Supabase Auth (@supabase/ssr, OAuth 2.0 PKCE, HttpOnly Cookies)
-Database             Supabase PostgreSQL (Row Level Security & Triggers)
-Media Streaming      HLS.js (Adaptive Bitrate) · Custom Reverse Proxies
-Icons                Lucide React
-Virtualization       @tanstack/react-virtual
-Edge & Hosting       Vercel Edge Network
+stutosed
+ ├── 🏛️ BEU B.Tech Engineering Portal
+ │    ├── 📘 1st Year All Branches (Engineering Physics, Chemistry, Math-II)
+ │    ├── 🏗️ Civil Engineering Batch (Umeed & Esteem Modules)
+ │    ├── 💻 Computer Science & Engineering (Core CS, Data Structures, Algorithms)
+ │    ├── ⚙️ Mechanical Engineering (Fluid Mechanics, Thermodynamics, Machine Design)
+ │    └── ⚡ EE / ECE / EEE Core Engineering Foundation
+ │
+ └── 🎯 Government Exams Portal
+      ├── 🧠 Parmar SSC GK 3.0 Complete Series (Topic-wise GK & PYQs)
+      ├── 📖 Pratham Foundation Complete Subject Batch
+      ├── 🔢 Quantitative Aptitude & Fast Arithmetic
+      ├── 🗣️ English Special & Practice Sessions
+      └── 🧩 Logical Reasoning & Analytical Thinking
+```
+
+---
+
+## ⚡ Core Engineering Breakdown
+
+### 1. Dual-Engine Video Streaming Pipeline
+- **ALBA Engine (Primary)**: Direct, low-latency CDN streaming via StreamVault Edge proxies for high-bitrate video playback with HTTP Range request support (`bytes=0-`).
+- **ESTE Engine (Failover)**: Fallback streaming bridge powered by distributed media servers to guarantee 100% video uptime.
+- **Granular Speed Bridge**: Custom speed regulation from `0.5x` to `3.0x` with cross-frame `postMessage` synchronization.
+
+### 2. Lossless Crystal-Clear PDF Reading
+- Direct in-browser viewing with native vector font rendering.
+- Integrated download triggers with fallback proxied caching.
+- Zero blurry canvas rendering or broken print stylesheets.
+
+### 3. Layered Hardware & Gesture Navigation
+Designed specifically for mobile ergonomics:
+$$\text{Player [Layer 4]} \xrightarrow{\text{Back}} \text{Subfolder [Layer 3]} \xrightarrow{\text{Back}} \text{Course [Layer 2]} \xrightarrow{\text{Back}} \text{Portal [Layer 1]} \xrightarrow{\text{Back}} \text{Home [Layer 0]}$$
+Pressing the Android back gesture or browser back arrow steps cleanly through each modal layer without exiting the application.
+
+### 4. Zero-Storage Client Auth (PKCE)
+- Supabase SSR authentication with **HttpOnly**, **Secure**, **SameSite=Lax** cookies.
+- Google OAuth with cryptographic code exchange (`/auth/callback`).
+- Serverless Session Proxy (`proxy.ts`) refreshes JWT sessions transparently on every request.
+
+---
+
+## 🏗️ System Architecture
+
+```
+                                 ┌────────────────────────┐
+                                 │   Student Browser /    │
+                                 │  Mobile PWA (Client)   │
+                                 └───────────┬────────────┘
+                                             │
+                                  HTTPS + HttpOnly Cookies
+                                             │
+                                             ▼
+                             ┌───────────────────────────────┐
+                             │  Next.js 15 App Router Edge   │
+                             │   (Vercel Serverless Infra)   │
+                             └───────────────┬───────────────┘
+                                             │
+               ┌─────────────────────────────┼─────────────────────────────┐
+               │                             │                             │
+               ▼                             ▼                             ▼
+   ┌───────────────────────┐   ┌───────────────────────────┐   ┌───────────────────────┐
+   │  Supabase Auth & DB   │   │  Streaming Reverse Proxy  │   │   PDF Document Proxy  │
+   │  - PKCE OAuth / JWT   │   │  - /api/stream            │   │  - /api/pdf           │
+   │  - Session Management │   │  - /api/hls-proxy         │   │  - SSRF Allowlist     │
+   │  - RLS Security       │   │  - SSRF Allowlist         │   │  - In-Memory Cache    │
+   └───────────────────────┘   └─────────────┬─────────────┘   └───────────┬───────────┘
+                                             │                             │
+                                             ▼                             ▼
+                                 ┌────────────────────────┐    ┌───────────────────────┐
+                                 │  CDN Video Hosts       │    │  Cloud Media Storage  │
+                                 │  (ALBA / ESTE Clusters)│    │  (Raw Course Notes)   │
+                                 └────────────────────────┘    └───────────────────────┘
+```
+
+---
+
+## ⌨️ Video Player Keyboard Shortcuts
+
+| Shortcut | Action | Scope |
+|---|---|---|
+| <kbd>Space</kbd> / <kbd>K</kbd> | Play / Pause video | Video Player |
+| <kbd>→</kbd> / <kbd>L</kbd> | Seek Forward 10 seconds | Video Player |
+| <kbd>←</kbd> / <kbd>J</kbd> | Seek Backward 10 seconds | Video Player |
+| <kbd>↑</kbd> / <kbd>↓</kbd> | Increase / Decrease volume | Video Player |
+| <kbd>F</kbd> | Toggle Fullscreen mode | Video Player |
+| <kbd>M</kbd> | Mute / Unmute audio | Video Player |
+| <kbd>0</kbd> – <kbd>9</kbd> | Jump to 0% – 90% timeline | Video Player |
+| <kbd>Esc</kbd> | Close active modal / step back | Global |
+
+---
+
+## 🛠 Tech Stack Spec
+
+```yaml
+Frontend Framework:  Next.js 15.1 (Turbopack, React 19, App Router)
+Language:            TypeScript 5.0 (Strict Type Checking)
+Styling & Design:    Tailwind CSS 4.0 · Custom CSS Properties · Atyp Font Family
+Authentication:      Supabase Auth (@supabase/ssr, OAuth 2.0 PKCE, HttpOnly Cookies)
+Database:            Supabase PostgreSQL (Row Level Security & Triggers)
+Media Streaming:     HLS.js (Adaptive Bitrate) · Custom Reverse Proxies
+Icons:               Lucide React
+Virtualization:      @tanstack/react-virtual
+Hosting & Edge:      Vercel Edge Network
 ```
 
 ---
@@ -121,36 +219,67 @@ stutosed/
 └── tsconfig.json                      # Strict TypeScript configuration
 ```
 
-> **Note on `database/schema.sql`**: These SQL statements define the PostgreSQL schema and Row Level Security (RLS) policies used in Supabase. Run them directly in the Supabase SQL Editor.
-
 ---
 
 ## ⚡ Quick Start
 
-### 1. Clone the repository
+### 1 · Clone the repository
 ```bash
 git clone https://github.com/shikshiten/stutosed.git
 cd stutosed
 ```
 
-### 2. Install dependencies
+### 2 · Set up Supabase
+1. Create a project at [supabase.com](https://supabase.com/).
+2. Open the **SQL Editor** and run [`database/schema.sql`](database/schema.sql) to create `profiles`, `user_progress`, `user_last_played` tables, RLS policies, and user triggers.
+3. Copy your **Project URL** and **anon key** from **Settings → API**.
+4. Go to **Authentication → URL Configuration**:
+   - Set **Site URL**: `https://stutosed.vercel.app` (or `http://localhost:3000` for local testing).
+   - Add to **Redirect URLs**:
+     ```
+     https://stutosed.vercel.app/**
+     https://stutosed.vercel.app/auth/callback
+     http://localhost:3000/**
+     http://localhost:3000/auth/callback
+     ```
+
+### 3 · Configure Environment Variables
+Credentials are never hardcoded in source code. Create a `.env.local` file in the root directory:
+
+| Variable | Value |
+|---|---|
+| `NEXT_PUBLIC_SUPABASE_URL` | `https://your-project.supabase.co` |
+| `NEXT_PUBLIC_SUPABASE_ANON_KEY` | `your-supabase-anon-key` |
+| `NEXT_PUBLIC_GOOGLE_CLIENT_ID` | `your-google-client-id.apps.googleusercontent.com` |
+
 ```bash
+# Install dependencies
 npm install
-```
 
-### 3. Environment Configuration
-Create a `.env.local` file in the root directory:
-```env
-NEXT_PUBLIC_SUPABASE_URL=https://your-project.supabase.co
-NEXT_PUBLIC_SUPABASE_ANON_KEY=your-supabase-anon-key
-NEXT_PUBLIC_GOOGLE_CLIENT_ID=your-google-client-id.apps.googleusercontent.com
-```
-
-### 4. Run Development Server
-```bash
+# Run local development server
 npm run dev
 ```
-Open [http://localhost:3000](http://localhost:3000) in your browser.
+Open [`http://localhost:3000`](http://localhost:3000) in your browser.
+
+### 4 · Deploy to Vercel
+1. Push your repository to GitHub:
+   ```bash
+   git push origin main
+   ```
+2. Go to [vercel.com](https://vercel.com/) → **Add New Project**.
+3. Import your `stutosed` repository.
+4. Add the Environment Variables in **Settings → Environment Variables**:
+   - `NEXT_PUBLIC_SUPABASE_URL`
+   - `NEXT_PUBLIC_SUPABASE_ANON_KEY`
+   - `NEXT_PUBLIC_GOOGLE_CLIENT_ID`
+5. Click **Deploy** ✅
+
+### 5 · Verify Edge Streaming & Proxies
+Once deployed, Vercel automatically deploys the serverless edge proxies:
+- `/api/stream` — Resolves and proxies ALBA/ESTE video streams with Range headers.
+- `/api/hls-proxy` — Rewrites and serves M3U8 indices and TS video segments.
+- `/api/pdf` — Proxies high-resolution PDF course notes.
+- `/api/embed` — Speed bridge iframe controller.
 
 ---
 
