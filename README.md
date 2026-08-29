@@ -13,7 +13,7 @@
 
 <br/>
 
-[![Launch App](https://img.shields.io/badge/⚡%20Launch%20App-coursesstutosed.vercel.app-ff6b4a?style=for-the-badge&logoColor=white)](https://coursesstutosed.vercel.app/)
+[![Launch App](https://img.shields.io/badge/⚡%20Launch%20App-stutosed.vercel.app-ff6b4a?style=for-the-badge&logoColor=white)](https://stutosed.vercel.app/)
 
 <br/>
 
