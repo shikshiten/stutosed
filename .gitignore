@@ -40,9 +40,13 @@ yarn-error.log*
 *.tsbuildinfo
 next-env.d.ts
 
-# raw bot link dumps & scratch files
+# raw bot link dumps, root assets & scratch files
 /Links of coures by bot/
+/assets/
 *.md.tmp
 Mechanical_Engineering_UMEED_Batch_Organized_Links.md
 PUBLICO_Mechanical_Engineering_UMEED_Batch_Organized.md
 *.zip
+*.pdf
+AGENTS.md
+CLAUDE.md
