@@ -30,12 +30,11 @@ export const AuthModal: React.FC<AuthModalProps> = ({
   const [loading, setLoading] = useState(false);
   const [message, setMessage] = useState<{ text: string; type: 'error' | 'success' } | null>(null);
 
-  // Password strength calculation
   const passwordStrength = useMemo(() => {
     if (!password) return { score: 0, label: '', color: 'transparent' };
     let score = 0;
-    if (password.length >= 6) score++;
     if (password.length >= 8) score++;
+    if (password.length >= 12) score++;
     if (/[A-Z]/.test(password) || /[0-9]/.test(password)) score++;
     if (/[^A-Za-z0-9]/.test(password)) score++;
 
@@ -77,8 +76,8 @@ export const AuthModal: React.FC<AuthModalProps> = ({
         setLoading(false);
         return;
       }
-      if (password.length < 6) {
-        setMessage({ text: 'Password must be at least 6 characters', type: 'error' });
+      if (password.length < 8) {
+        setMessage({ text: 'Password must be at least 8 characters', type: 'error' });
         setLoading(false);
         return;
       }

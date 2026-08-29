@@ -6,8 +6,54 @@
  * the embedded player. This gives us iframe embedding without X-Frame-Options blocks.
  */
 import { NextRequest, NextResponse } from 'next/server';
+import { createServerClient } from '@supabase/ssr';
 
 export const dynamic = 'force-dynamic';
+
+const SUPABASE_URL =
+  process.env.NEXT_PUBLIC_SUPABASE_URL ||
+  'https://hofbtbutvuomeofmhkyu.supabase.co';
+const SUPABASE_ANON_KEY =
+  process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY ||
+  'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImhvZmJ0YnV0dnVvbWVvZm1oa3l1Iiwicm9sZSI6ImFub24iLCJpYXQiOjE3ODcxNDQwNzEsImV4cCI6MjEwMjcyMDA3MX0.J5RU82Jn5VOZy_vyiSv9mX5QgKW6Ud23fVKMytXp7DA';
+
+// ── SSRF Allowlist ─────────────────────────────────────────────────────────────
+const ALLOWED_UPSTREAM_HOSTNAMES = new Set([
+  'streamvaultpro.cc',
+  'svcdn-dl.workers.dev',
+  'svcdn-dl2.workers.dev',
+  'svcdn-dl3.workers.dev',
+  'vidmoly.net',
+  'morencius.com',
+  'workers.dev',
+]);
+
+function isAllowedUpstream(rawUrl: string): boolean {
+  try {
+    const parsed = new URL(rawUrl);
+    const hostname = parsed.hostname.toLowerCase();
+    if (ALLOWED_UPSTREAM_HOSTNAMES.has(hostname)) return true;
+    for (const allowed of ALLOWED_UPSTREAM_HOSTNAMES) {
+      if (hostname.endsWith('.' + allowed)) return true;
+    }
+    return false;
+  } catch {
+    return false;
+  }
+}
+
+async function getAuthenticatedUser(request: NextRequest) {
+  const supabase = createServerClient(SUPABASE_URL, SUPABASE_ANON_KEY, {
+    cookies: {
+      getAll() {
+        return request.cookies.getAll();
+      },
+      setAll() {},
+    },
+  });
+  const { data } = await supabase.auth.getUser();
+  return data?.user ?? null;
+}
 
 const SPEED_BRIDGE_SCRIPT = `
 <script>
@@ -38,15 +84,23 @@ const SPEED_BRIDGE_SCRIPT = `
 `;
 
 export async function GET(request: NextRequest) {
+  // ── Auth check ────────────────────────────────────────────────────────────────
+  const user = await getAuthenticatedUser(request);
+  if (!user) {
+    return NextResponse.json({ error: 'Unauthorized' }, { status: 401 });
+  }
+
   const targetUrl = request.nextUrl.searchParams.get('url');
 
-  // =========================================================================
-  // MODE 1: Direct URL Embed Proxy (e.g. StreamVault /0:/stream/...)
-  // =========================================================================
+  // ── MODE 1: Direct URL Embed Proxy ────────────────────────────────────────────
   if (targetUrl) {
+    // SSRF Protection
+    if (!isAllowedUpstream(targetUrl)) {
+      return NextResponse.json({ error: 'Forbidden upstream domain' }, { status: 403 });
+    }
+
     try {
       let fetchUrl = targetUrl;
-      // If given a /0:/dl/ URL, convert to /0:/stream/ for embed mode
       if (fetchUrl.includes('streamvaultpro.cc') && fetchUrl.includes('/0:/dl/')) {
         fetchUrl = fetchUrl.replace('/0:/dl/', '/0:/stream/');
       }
@@ -55,8 +109,7 @@ export async function GET(request: NextRequest) {
         headers: {
           'User-Agent':
             'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36',
-          Accept:
-            'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+          Accept: 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
           Referer: 'https://www.streamvaultpro.cc/',
         },
       });
@@ -67,7 +120,6 @@ export async function GET(request: NextRequest) {
 
       let html = await res.text();
 
-      // Inject <base href="..."> so that all relative assets (JS, CSS, fonts, SVG) resolve to origin
       const origin = new URL(fetchUrl).origin + '/';
       if (html.includes('<head>')) {
         html = html.replace('<head>', `<head><base href="${origin}">`);
@@ -75,7 +127,6 @@ export async function GET(request: NextRequest) {
         html = `<base href="${origin}">` + html;
       }
 
-      // Inject speed bridge script before </body>
       if (html.includes('</body>')) {
         html = html.replace('</body>', SPEED_BRIDGE_SCRIPT + '</body>');
       } else {
@@ -89,15 +140,12 @@ export async function GET(request: NextRequest) {
           'Cache-Control': 'no-cache, no-store',
         },
       });
-    } catch (err: unknown) {
-      const message = err instanceof Error ? err.message : 'Embed proxy error';
-      return new NextResponse(message, { status: 502 });
+    } catch {
+      return new NextResponse('Embed proxy error', { status: 502 });
     }
   }
 
-  // =========================================================================
-  // MODE 2: Vidmoly / Earnvids Code Extractor
-  // =========================================================================
+  // ── MODE 2: Vidmoly / Earnvids Code Extractor ─────────────────────────────────
   const code = request.nextUrl.searchParams.get('code');
   const provider = request.nextUrl.searchParams.get('provider') || 'vidmoly';
 
@@ -122,8 +170,7 @@ export async function GET(request: NextRequest) {
         'User-Agent':
           'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36',
         Referer: referer,
-        Accept:
-          'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+        Accept: 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
         'Accept-Language': 'en-US,en;q=0.9',
       },
       cache: 'no-store',
@@ -134,8 +181,6 @@ export async function GET(request: NextRequest) {
     }
 
     let html = await res.text();
-
-    // Inject speed bridge script before </body>
     html = html.replace('</body>', SPEED_BRIDGE_SCRIPT + '</body>');
 
     return new NextResponse(html, {
@@ -145,8 +190,7 @@ export async function GET(request: NextRequest) {
         'Cache-Control': 'no-cache, no-store',
       },
     });
-  } catch (err: unknown) {
-    const message = err instanceof Error ? err.message : 'Embed proxy error';
-    return new NextResponse(message, { status: 502 });
+  } catch {
+    return new NextResponse('Embed proxy error', { status: 502 });
   }
 }

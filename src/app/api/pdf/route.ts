@@ -1,30 +1,72 @@
 import { NextRequest, NextResponse } from 'next/server';
+import { createServerClient } from '@supabase/ssr';
 
 export const dynamic = 'force-dynamic';
+
+const SUPABASE_URL =
+  process.env.NEXT_PUBLIC_SUPABASE_URL ||
+  'https://hofbtbutvuomeofmhkyu.supabase.co';
+const SUPABASE_ANON_KEY =
+  process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY ||
+  'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImhvZmJ0YnV0dnVvbWVvZm1oa3l1Iiwicm9sZSI6ImFub24iLCJpYXQiOjE3ODcxNDQwNzEsImV4cCI6MjEwMjcyMDA3MX0.J5RU82Jn5VOZy_vyiSv9mX5QgKW6Ud23fVKMytXp7DA';
+
+// ── SSRF Allowlist ─────────────────────────────────────────────────────────────
+const ALLOWED_UPSTREAM_HOSTNAMES = new Set([
+  'streamvaultpro.cc',
+  'svcdn-dl.workers.dev',
+  'svcdn-dl2.workers.dev',
+  'svcdn-dl3.workers.dev',
+  'fs1qydv17g1-161-162e5df28a45.herokuapp.com',
+  'crwilladmin.com',
+  'storage.googleapis.com',
+  'workers.dev',
+]);
+
+function isAllowedUpstream(rawUrl: string): boolean {
+  try {
+    const parsed = new URL(rawUrl);
+    const hostname = parsed.hostname.toLowerCase();
+    if (ALLOWED_UPSTREAM_HOSTNAMES.has(hostname)) return true;
+    for (const allowed of ALLOWED_UPSTREAM_HOSTNAMES) {
+      if (hostname.endsWith('.' + allowed)) return true;
+    }
+    return false;
+  } catch {
+    return false;
+  }
+}
+
+async function getAuthenticatedUser(request: NextRequest) {
+  const supabase = createServerClient(SUPABASE_URL, SUPABASE_ANON_KEY, {
+    cookies: {
+      getAll() {
+        return request.cookies.getAll();
+      },
+      setAll() {},
+    },
+  });
+  const { data } = await supabase.auth.getUser();
+  return data?.user ?? null;
+}
 
 interface CacheEntry {
   targetUrl: string;
   expiresAt: number;
 }
 const pdfUrlCache = new Map<string, CacheEntry>();
-const CACHE_TTL_MS = 2 * 60 * 60 * 1000; // 2 hours
+const CACHE_TTL_MS = 2 * 60 * 60 * 1000;
 
 function normalizePdfUrl(rawUrl: string): string {
   let url = rawUrl.trim();
-
-  // 1. ALBA: /0:/stream/ -> /0:/dl/
   if (url.includes('/0:/stream/')) {
     url = url.replace('/0:/stream/', '/0:/dl/');
   }
-
-  // 2. ESTE: extract ID -> direct Heroku media link
   if (url.includes('publicbotshub.blogspot.com') || url.includes('file-stream-bot.html')) {
     const idMatch = url.match(/[?&](?:dl|watch)=([a-zA-Z0-9]+)/);
     if (idMatch) {
       url = `https://fs1qydv17g1-161-162e5df28a45.herokuapp.com/dl/${idMatch[1]}`;
     }
   }
-
   return url;
 }
 
@@ -44,9 +86,7 @@ async function resolveFinalRedirectUrl(initialUrl: string): Promise<string> {
       currentUrl.includes('workers.dev') ||
       currentUrl.includes('publicbotshub.blogspot.com');
 
-    if (!isRedirectDomain) {
-      break;
-    }
+    if (!isRedirectDomain) break;
 
     try {
       const probeRes = await fetch(currentUrl, {
@@ -86,11 +126,24 @@ async function resolveFinalRedirectUrl(initialUrl: string): Promise<string> {
 }
 
 export async function GET(request: NextRequest) {
+  // ── Auth check ────────────────────────────────────────────────────────────────
+  const user = await getAuthenticatedUser(request);
+  if (!user) {
+    return NextResponse.json({ error: 'Unauthorized' }, { status: 401 });
+  }
+
   const { searchParams } = new URL(request.url);
   const rawUrl = searchParams.get('url');
 
   if (!rawUrl) {
     return new NextResponse('Missing url parameter', { status: 400 });
+  }
+
+  // ── SSRF Protection ────────────────────────────────────────────────────────────
+  // Allow crwilladmin.com (direct PDF links) without hostname check
+  const isCrwill = rawUrl.includes('crwilladmin.com') || rawUrl.endsWith('.pdf');
+  if (!isCrwill && !isAllowedUpstream(rawUrl)) {
+    return NextResponse.json({ error: 'Forbidden upstream domain' }, { status: 403 });
   }
 
   try {
@@ -123,11 +176,15 @@ export async function GET(request: NextRequest) {
 
     const responseHeaders = new Headers();
 
-    // Preserve upstream Content-Type or default to application/pdf
     const upstreamContentType = upstreamRes.headers.get('content-type');
-    const contentType = upstreamContentType && !upstreamContentType.includes('text/plain')
-      ? upstreamContentType
-      : (finalTargetUrl.endsWith('.png') ? 'image/png' : finalTargetUrl.endsWith('.jpg') ? 'image/jpeg' : 'application/pdf');
+    const contentType =
+      upstreamContentType && !upstreamContentType.includes('text/plain')
+        ? upstreamContentType
+        : finalTargetUrl.endsWith('.png')
+        ? 'image/png'
+        : finalTargetUrl.endsWith('.jpg')
+        ? 'image/jpeg'
+        : 'application/pdf';
 
     responseHeaders.set('Content-Type', contentType);
     responseHeaders.set('Content-Disposition', 'inline');
@@ -149,7 +206,7 @@ export async function GET(request: NextRequest) {
     if (err.name === 'AbortError') {
       return new Response(null, { status: 499 });
     }
-    return new NextResponse(err.message || 'PDF proxy error', { status: 502 });
+    return new NextResponse('PDF proxy error', { status: 502 });
   }
 }
 

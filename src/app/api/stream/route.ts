@@ -1,6 +1,57 @@
 import { NextRequest, NextResponse } from 'next/server';
+import { createServerClient } from '@supabase/ssr';
 
 export const dynamic = 'force-dynamic';
+
+const SUPABASE_URL =
+  process.env.NEXT_PUBLIC_SUPABASE_URL ||
+  'https://hofbtbutvuomeofmhkyu.supabase.co';
+const SUPABASE_ANON_KEY =
+  process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY ||
+  'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImhvZmJ0YnV0dnVvbWVvZm1oa3l1Iiwicm9sZSI6ImFub24iLCJpYXQiOjE3ODcxNDQwNzEsImV4cCI6MjEwMjcyMDA3MX0.J5RU82Jn5VOZy_vyiSv9mX5QgKW6Ud23fVKMytXp7DA';
+
+// ── SSRF Allowlist ─────────────────────────────────────────────────────────────
+// Only these domains are allowed as upstream proxy targets.
+const ALLOWED_UPSTREAM_HOSTNAMES = new Set([
+  'streamvaultpro.cc',
+  'svcdn-dl.workers.dev',
+  'svcdn-dl2.workers.dev',
+  'svcdn-dl3.workers.dev',
+  'fs1qydv17g1-161-162e5df28a45.herokuapp.com',
+  'vidmoly.net',
+  'morencius.com',
+  'publicbotshub.blogspot.com',
+  'crwilladmin.com',
+  'storage.googleapis.com',
+  'workers.dev',
+]);
+
+function isAllowedUpstream(rawUrl: string): boolean {
+  try {
+    const parsed = new URL(rawUrl);
+    const hostname = parsed.hostname.toLowerCase();
+    if (ALLOWED_UPSTREAM_HOSTNAMES.has(hostname)) return true;
+    for (const allowed of ALLOWED_UPSTREAM_HOSTNAMES) {
+      if (hostname.endsWith('.' + allowed)) return true;
+    }
+    return false;
+  } catch {
+    return false;
+  }
+}
+
+async function getAuthenticatedUser(request: NextRequest) {
+  const supabase = createServerClient(SUPABASE_URL, SUPABASE_ANON_KEY, {
+    cookies: {
+      getAll() {
+        return request.cookies.getAll();
+      },
+      setAll() {},
+    },
+  });
+  const { data } = await supabase.auth.getUser();
+  return data?.user ?? null;
+}
 
 // 2-hour TTL cache for resolved 302 redirect target URLs
 interface CacheEntry {
@@ -8,7 +59,7 @@ interface CacheEntry {
   expiresAt: number;
 }
 const urlCache = new Map<string, CacheEntry>();
-const CACHE_TTL_MS = 2 * 60 * 60 * 1000; // 2 hours
+const CACHE_TTL_MS = 2 * 60 * 60 * 1000;
 
 function unpackDeanEdwards(packed: string): string | null {
   try {
@@ -25,7 +76,7 @@ function unpackDeanEdwards(packed: string): string | null {
       }
       return p;
     }
-    const match2 = packed.match(/\}\('([\s\S]*?)',(\d+),(\d+),'([\s\S]*?)'\.split\('\|'\)/);
+    const match2 = packed.match(/\}\('([\s\S]*?)',(\d+),(\d+),'([\s\S]*?)'\.split\('\|'\)\)\)/);
     if (match2) {
       let [_, p, aStr, cStr, kStr] = match2;
       let a = parseInt(aStr, 10);
@@ -44,33 +95,20 @@ function unpackDeanEdwards(packed: string): string | null {
   return null;
 }
 
-/**
- * Normalizes input URL for ALBA and ESTE bot sources.
- */
 function normalizeMediaUrl(rawUrl: string): string {
   let url = rawUrl.trim();
-
-  // 1. ALBA (StreamVault): convert /0:/stream/ to /0:/dl/
   if (url.includes('/0:/stream/')) {
     url = url.replace('/0:/stream/', '/0:/dl/');
   }
-
-  // 2. ESTE (Publico / FileStreamBot): extract ID and map to direct Heroku media endpoint
   if (url.includes('publicbotshub.blogspot.com') || url.includes('file-stream-bot.html')) {
     const idMatch = url.match(/[?&](?:dl|watch)=([a-zA-Z0-9]+)/);
     if (idMatch) {
       url = `https://fs1qydv17g1-161-162e5df28a45.herokuapp.com/dl/${idMatch[1]}`;
     }
   }
-
   return url;
 }
 
-/**
- * Follows HTTP 301/302/307/308 redirects using GET with Range: bytes=0-0.
- * CRITICAL: NEVER uses HEAD request because Cloudflare edge workers
- * (e.g. svcdn-dl*.workers.dev) hang indefinitely on HEAD requests!
- */
 async function resolveFinalRedirectUrl(initialUrl: string): Promise<string> {
   const cached = urlCache.get(initialUrl);
   if (cached && cached.expiresAt > Date.now()) {
@@ -82,15 +120,12 @@ async function resolveFinalRedirectUrl(initialUrl: string): Promise<string> {
   const MAX_HOPS = 5;
 
   while (hops < MAX_HOPS) {
-    // Only resolve redirects if it's a domain that issues redirects (e.g. streamvaultpro.cc)
     const isRedirectDomain =
       currentUrl.includes('streamvaultpro.cc') ||
       currentUrl.includes('workers.dev') ||
       currentUrl.includes('publicbotshub.blogspot.com');
 
-    if (!isRedirectDomain) {
-      break;
-    }
+    if (!isRedirectDomain) break;
 
     try {
       const probeRes = await fetch(currentUrl, {
@@ -130,13 +165,22 @@ async function resolveFinalRedirectUrl(initialUrl: string): Promise<string> {
 }
 
 export async function GET(request: NextRequest) {
+  // ── Auth check ───────────────────────────────────────────────────────────────
+  const user = await getAuthenticatedUser(request);
+  if (!user) {
+    return NextResponse.json({ error: 'Unauthorized' }, { status: 401 });
+  }
+
   const { searchParams } = new URL(request.url);
   const targetUrlParam = searchParams.get('url');
 
-  // =========================================================================
-  // MODE 1: Direct URL Proxy Streamer (ALBA, ESTE, direct MP4/PDF)
-  // =========================================================================
+  // ── MODE 1: Direct URL Proxy Streamer ───────────────────────────────────────
   if (targetUrlParam) {
+    // SSRF Protection
+    if (!isAllowedUpstream(targetUrlParam)) {
+      return NextResponse.json({ error: 'Forbidden upstream domain' }, { status: 403 });
+    }
+
     try {
       const normalizedUrl = normalizeMediaUrl(targetUrlParam);
       const finalTargetUrl = await resolveFinalRedirectUrl(normalizedUrl);
@@ -152,7 +196,6 @@ export async function GET(request: NextRequest) {
         upstreamHeaders['Range'] = clientRange;
       }
 
-      // Add appropriate referer for upstream servers
       if (finalTargetUrl.includes('workers.dev') || finalTargetUrl.includes('streamvaultpro.cc')) {
         upstreamHeaders['Referer'] = 'https://www.streamvaultpro.cc/';
       } else if (finalTargetUrl.includes('herokuapp.com')) {
@@ -172,61 +215,37 @@ export async function GET(request: NextRequest) {
       }
 
       const responseHeaders = new Headers();
-      const passThroughHeaders = [
-        'content-type',
-        'content-range',
-        'content-length',
-        'accept-ranges',
-      ];
-
+      const passThroughHeaders = ['content-type', 'content-range', 'content-length', 'accept-ranges'];
       passThroughHeaders.forEach((h) => {
         const val = upstreamRes.headers.get(h);
-        if (val) {
-          responseHeaders.set(h, val);
-        }
+        if (val) responseHeaders.set(h, val);
       });
 
-      // Crucial overrides:
-      // 1. Force inline display to prevent forced download dialogs (e.g. from Heroku ESTE)
       responseHeaders.set('Content-Disposition', 'inline');
-
-      // 2. Accept byte ranges for video seeking
       if (!responseHeaders.has('accept-ranges')) {
         responseHeaders.set('Accept-Ranges', 'bytes');
       }
-
-      // 3. Fallback content-type if missing
       if (!responseHeaders.has('content-type')) {
         responseHeaders.set('Content-Type', 'video/mp4');
       }
-
-      // 4. Cache & CORS headers
       responseHeaders.set('Cache-Control', 'public, max-age=3600');
       responseHeaders.set('Access-Control-Allow-Origin', '*');
-      responseHeaders.set(
-        'Access-Control-Allow-Headers',
-        'Range, Accept, Content-Type'
-      );
-      responseHeaders.set(
-        'Access-Control-Expose-Headers',
-        'Content-Range, Content-Length, Accept-Ranges'
-      );
+      responseHeaders.set('Access-Control-Allow-Headers', 'Range, Accept, Content-Type');
+      responseHeaders.set('Access-Control-Expose-Headers', 'Content-Range, Content-Length, Accept-Ranges');
 
       return new Response(upstreamRes.body, {
-        status: upstreamRes.status, // 206 for partial content, 200 otherwise
+        status: upstreamRes.status,
         headers: responseHeaders,
       });
     } catch (err: any) {
       if (err.name === 'AbortError') {
         return new Response(null, { status: 499 });
       }
-      return new NextResponse(err.message || 'Streaming proxy error', { status: 502 });
+      return new NextResponse('Streaming proxy error', { status: 502 });
     }
   }
 
-  // =========================================================================
-  // MODE 2: Vidmoly / Earnvids Code Extractor (Legacy & other courses)
-  // =========================================================================
+  // ── MODE 2: Vidmoly / Earnvids Code Extractor ───────────────────────────────
   const code = searchParams.get('code');
   const provider = searchParams.get('provider') || 'vidmoly';
 
@@ -251,8 +270,7 @@ export async function GET(request: NextRequest) {
         'User-Agent':
           'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36',
         Referer: referer,
-        Accept:
-          'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+        Accept: 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
         'Accept-Language': 'en-US,en;q=0.9',
       },
       cache: 'no-store',
@@ -260,14 +278,13 @@ export async function GET(request: NextRequest) {
 
     if (!res.ok) {
       return NextResponse.json(
-        { error: `Provider returned HTTP ${res.status}`, status: res.status },
+        { error: `Provider returned HTTP ${res.status}` },
         { status: 502 }
       );
     }
 
     const html = await res.text();
 
-    // 1. Check direct .m3u8 match in HTML
     const directM3u8 = html.match(/https?:\/\/[^"'\s\\]+\.m3u8[^"'\s\\]*/);
     if (directM3u8) {
       return NextResponse.json({
@@ -278,7 +295,6 @@ export async function GET(request: NextRequest) {
       });
     }
 
-    // 2. Check for Dean Edwards packed JS
     const packedMatches =
       html.match(/eval\(function\(p,a,c,k,e,d\)[\s\S]*?\.split\('\|'\)\)\)/g) || [];
     for (const packed of packedMatches) {
@@ -296,7 +312,6 @@ export async function GET(request: NextRequest) {
       }
     }
 
-    // 3. Check for direct file/sources pattern
     const fileMatch = html.match(/["'](?:file|src)["']\s*:\s*["']([^"']+\.m3u8[^"']*)["']/);
     if (fileMatch) {
       return NextResponse.json({
@@ -311,8 +326,8 @@ export async function GET(request: NextRequest) {
       { error: 'Stream URL could not be resolved from provider.' },
       { status: 404 }
     );
-  } catch (err: any) {
-    return NextResponse.json({ error: err.message || 'Internal Server Error' }, { status: 500 });
+  } catch {
+    return NextResponse.json({ error: 'Internal Server Error' }, { status: 500 });
   }
 }
 

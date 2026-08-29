@@ -10,11 +10,43 @@ import { NextRequest } from 'next/server';
 
 export const dynamic = 'force-dynamic';
 
+// ── SSRF Allowlist ─────────────────────────────────────────────────────────────
+// HLS segments are chained from already-authenticated playlists, so we
+// validate the upstream domain rather than re-checking auth on every TS segment.
+const ALLOWED_UPSTREAM_HOSTNAMES = new Set([
+  'vidmoly.net',
+  'morencius.com',
+  'earnvids.com',
+  'streamvaultpro.cc',
+  'workers.dev',
+  'cdn.jwplayer.com',
+  'content.jwplatform.com',
+]);
+
+function isAllowedUpstream(rawUrl: string): boolean {
+  try {
+    const parsed = new URL(rawUrl);
+    const hostname = parsed.hostname.toLowerCase();
+    if (ALLOWED_UPSTREAM_HOSTNAMES.has(hostname)) return true;
+    for (const allowed of ALLOWED_UPSTREAM_HOSTNAMES) {
+      if (hostname.endsWith('.' + allowed)) return true;
+    }
+    return false;
+  } catch {
+    return false;
+  }
+}
+
 export async function GET(request: NextRequest) {
   const targetUrl = request.nextUrl.searchParams.get('url');
 
   if (!targetUrl) {
     return new Response('Missing url parameter', { status: 400 });
+  }
+
+  // ── SSRF Protection ────────────────────────────────────────────────────────────
+  if (!isAllowedUpstream(targetUrl)) {
+    return new Response('Forbidden upstream domain', { status: 403 });
   }
 
   try {
@@ -41,13 +73,11 @@ export async function GET(request: NextRequest) {
       const body = await upstreamRes.text();
       const baseUrl = new URL(decoded);
 
-      // Process line by line for HLS tags and segment URIs
       const lines = body.split('\n');
       const rewrittenLines = lines.map((line) => {
         const trimmed = line.trim();
         if (!trimmed) return line;
 
-        // Rewrite URI="..." attributes (e.g. #EXT-X-I-FRAME-STREAM-INF or #EXT-X-KEY)
         if (trimmed.startsWith('#')) {
           return trimmed.replace(/URI=["']([^"']+)["']/g, (_, uri) => {
             try {
@@ -59,7 +89,6 @@ export async function GET(request: NextRequest) {
           });
         }
 
-        // It's a segment or child playlist URI line
         try {
           const absoluteUrl = new URL(trimmed, baseUrl).toString();
           return `/api/hls-proxy?url=${encodeURIComponent(absoluteUrl)}`;
