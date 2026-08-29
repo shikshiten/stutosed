@@ -11,12 +11,23 @@ const SECURE_HOST_SIGNATURES = [
   'c3ZjZG4tZGwzLndvcmtlcnMuZGV2',
   'ZnMxcXlkdjE3ZzEtMTYxLTE2MmU1ZGYyOGE0NS5oZXJva3VhcHAuY29t',
   'dmlkbW9seS5uZXQ=',
+  'dmlkbW9seS5tZQ==',
+  'dmlkbW9seS50bw==',
+  'dm1ub3cub25saW5l',
+  'dm1ub3cubWU=',
+  'dm1ub3cudG8=',
+  'dm1ub3cuY2M=',
+  'dm1ub3cubmV0',
+  'cGxheW1vbHkubWU=',
+  'cGxheW1vbHkubmV0',
   'bW9yZW5jaXVzLmNvbQ==',
+  'ZWFybnZpZHMuY29t',
+  'ZWFybnZpZHMubmV0',
   'Y3J3aWxsYWRtaW4uY29t',
   'c3RvcmFnZS5nb29nbGVhcGlzLmNvbQ==',
   'd29ya2Vycy5kZXY=',
+  'aGVyb2t1YXBwLmNvbQ==',
   'cHVibGljYm90c2h1Yi5ibG9nc3BvdC5jb20=',
-  'ZWFybnZpZHMuY29t',
   'Y2RuLmp3cGxheWVyLmNvbQ==',
   'Y29udGVudC5qd3BsYXRmb3JtLmNvbQ==',
 ];
@@ -50,7 +61,7 @@ export function isAllowedUpstream(rawUrl: string): boolean {
     const hostname = parsed.hostname.toLowerCase();
     if (RESOLVED_ALLOWLIST.has(hostname)) return true;
     for (const allowed of RESOLVED_ALLOWLIST) {
-      if (hostname.endsWith('.' + allowed)) return true;
+      if (hostname.endsWith('.' + allowed) || hostname === allowed) return true;
     }
     return false;
   } catch {

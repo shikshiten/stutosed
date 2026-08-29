@@ -27,16 +27,33 @@ export async function GET(request: NextRequest) {
   try {
     const decoded = decodeURIComponent(targetUrl);
 
+    let referer = 'https://vidmoly.net/';
+    let origin = 'https://vidmoly.net';
+    if (decoded.includes('morencius.') || decoded.includes('earnvids.')) {
+      referer = 'https://morencius.com/';
+      origin = 'https://morencius.com';
+    } else if (decoded.includes('streamvault') || decoded.includes('workers.dev')) {
+      referer = 'https://www.streamvaultpro.cc/';
+      origin = 'https://www.streamvaultpro.cc';
+    }
+
+    const clientRange = request.headers.get('range');
+    const upstreamHeaders: Record<string, string> = {
+      'User-Agent':
+        'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36',
+      Referer: referer,
+      Origin: origin,
+      Accept: '*/*',
+    };
+    if (clientRange) {
+      upstreamHeaders['Range'] = clientRange;
+    }
+
     const upstreamRes = await fetch(decoded, {
-      headers: {
-        'User-Agent':
-          'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36',
-        Referer: 'https://vidmoly.net/',
-        Origin: 'https://vidmoly.net',
-      },
+      headers: upstreamHeaders,
     });
 
-    if (!upstreamRes.ok) {
+    if (!upstreamRes.ok && upstreamRes.status !== 206) {
       return new Response(`Upstream ${upstreamRes.status}`, {
         status: upstreamRes.status,
       });
