@@ -126,8 +126,8 @@ courses.stutosed/
 
 ### 1. Clone the repository
 ```bash
-git clone https://github.com/shikshiten/courses.stutosed.git
-cd courses.stutosed
+git clone https://github.com/shikshiten/stutosed.git
+cd stutosed
 ```
 
 ### 2. Install dependencies
