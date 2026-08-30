@@ -13,9 +13,21 @@ export interface ReleaseLog {
 
 export const CHANGELOG_DATA: ReleaseLog[] = [
   {
-    version: 'v1.4.0',
-    date: 'August 29, 2026',
+    version: 'v1.5.0',
+    date: 'August 30, 2026 • 12:15 PM IST',
     isLatest: true,
+    title: 'Unified Mechanical UMEED Batch, 1-Click PDF Downloads & YouTube Stream Direct Engine',
+    highlights: [
+      'Unified Mechanical Engineering: Consolidated into a comprehensive 217-lecture UMEED Batch with complete workshop and core engineering modules.',
+      'Direct YouTube Playback: Implemented instant 1-click redirection to YouTube for all YouTube lectures, eliminating iframe embed loops and player refresh issues.',
+      'Universal 1-Click PDF Downloads: Added dedicated download buttons directly on all lecture grid cards, list rows, and PDF viewer with native attachment streaming headers.',
+      '1st Year Subject Sequence Optimization: Reordered curriculum so branch-specific subjects appear first and common foundational subjects (Chemistry, Maths-II, Physics) appear at the end.',
+      'SEO & Discovery Engine: Successfully verified Google Search Console ownership with dynamic sitemap.xml, robots.txt, and PWA Web App manifest.',
+    ],
+  },
+  {
+    version: 'v1.4.0',
+    date: 'August 29, 2026 • 06:30 PM IST',
     title: 'BEU 1st Year UMEED Branches & Complete Engineering Curriculum',
     highlights: [
       'Added Civil Engineering (UMEED Batch — 201 lectures & notes) with ALBA + ESTE dual servers.',
@@ -29,7 +41,7 @@ export const CHANGELOG_DATA: ReleaseLog[] = [
   },
   {
     version: 'v1.3.0',
-    date: 'August 29, 2026',
+    date: 'August 29, 2026 • 02:00 PM IST',
     title: 'Account Authentication & Profile System Overhaul',
     highlights: [
       'Compulsory student login implemented across all course lectures and study materials.',
@@ -43,7 +55,7 @@ export const CHANGELOG_DATA: ReleaseLog[] = [
   },
   {
     version: 'v1.2.0',
-    date: 'August 28, 2026',
+    date: 'August 28, 2026 • 08:30 PM IST',
     title: 'Global Design System, Typography & Motion Pass',
     highlights: [
       'Configured Space Grotesk display headings paired with Inter UI typography.',
@@ -56,7 +68,7 @@ export const CHANGELOG_DATA: ReleaseLog[] = [
   },
   {
     version: 'v1.1.0',
-    date: 'August 24, 2026',
+    date: 'August 24, 2026 • 05:00 PM IST',
     title: 'BEU 1st Year Engineering & Dual Stream Proxy Engine',
     highlights: [
       'Integrated Bihar Engineering University (BEU) 1st Year curriculum (EE/ECE/EEE, Chemistry, Mechanical UMEED).',
@@ -67,7 +79,7 @@ export const CHANGELOG_DATA: ReleaseLog[] = [
   },
   {
     version: 'v1.0.0',
-    date: 'August 2026',
+    date: 'August 20, 2026 • 10:00 AM IST',
     title: 'Initial stutosed Portal Launch',
     highlights: [
       'Platform launched with 9 comprehensive Government Exam preparation batches.',

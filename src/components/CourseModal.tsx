@@ -222,9 +222,26 @@ export const CourseModal: React.FC<CourseModalProps> = ({
     );
   };
 
-  // Resolve thumbnail for a lecture (using uploaded stutosed thumbnail)
+  // Smart Subject Thumbnail Resolver
   const getLectureThumb = (item: LectureItem) => {
-    return item.thumb || '/thumbnails/all_lecture_thumbnail.jpg';
+    if (item.thumb) return item.thumb;
+    const subj = (item.subject || '').toLowerCase();
+    const lbl = (item.label || '').toLowerCase();
+    const tabLbl = (selectedFolderTab?.label || '').toLowerCase();
+
+    if (subj.includes('chemistry') || lbl.includes('chemistry') || tabLbl.includes('chemistry')) {
+      return '/thumbnails/subjects/engineering_chemistry.png';
+    }
+    if (subj.includes('physics') || lbl.includes('physics') || tabLbl.includes('physics')) {
+      return '/thumbnails/subjects/engineering_physics.png';
+    }
+    if (subj.includes('math') || lbl.includes('math') || tabLbl.includes('math')) {
+      return '/thumbnails/subjects/engineering_maths_2.png';
+    }
+    if (selectedFolderTab?.thumb) {
+      return selectedFolderTab.thumb;
+    }
+    return '/thumbnails/all_lecture_thumbnail.jpg';
   };
 
   // Detect YouTube video URLs
