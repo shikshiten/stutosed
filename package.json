@@ -12,6 +12,7 @@
     "@supabase/ssr": "^0.5.2",
     "@supabase/supabase-js": "^2.45.6",
     "@tanstack/react-virtual": "^3.11.2",
+    "@vercel/analytics": "^1.5.0",
     "hls.js": "^1.5.15",
     "lucide-react": "^0.454.0",
     "next": "^15.1.0",

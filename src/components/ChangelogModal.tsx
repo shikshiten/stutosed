@@ -13,9 +13,19 @@ export interface ReleaseLog {
 
 export const CHANGELOG_DATA: ReleaseLog[] = [
   {
+    version: 'v1.7.0',
+    date: 'August 30, 2026 • 02:50 PM IST',
+    isLatest: true,
+    title: 'Vercel Web Analytics & Real-Time Audience Insights Integration',
+    highlights: [
+      'Vercel Web Analytics: Fully integrated @vercel/analytics/next into root layout for live page views and visitor metrics.',
+      'Real-Time Audience Telemetry: Privacy-preserving student analytics to monitor active course engagement and device breakdown.',
+      'Production Edge Telemetry: Zero-impact lightweight client tracking script optimized for fast initial page load.',
+    ],
+  },
+  {
     version: 'v1.6.0',
     date: 'August 30, 2026 • 01:00 PM IST',
-    isLatest: true,
     title: 'Dual-Theme Adaptive Thumbnails, Fixed Desktop Sidebar & 76% Image Compression',
     highlights: [
       'Dual-Theme Adaptive Thumbnails: Real-time dynamic switching between crisp porcelain white (Light Mode) and deep obsidian dark (Dark Mode) on theme toggle.',
@@ -32,18 +42,6 @@ export const CHANGELOG_DATA: ReleaseLog[] = [
       'Unified Mechanical Engineering: Consolidated into a comprehensive 217-lecture UMEED Batch with complete workshop and core engineering modules.',
       'Direct YouTube Playback: Implemented instant 1-click redirection to YouTube for all YouTube lectures, eliminating iframe embed loops.',
       'Universal 1-Click PDF Downloads: Added dedicated download buttons directly on all lecture grid cards, list rows, and PDF viewer with native attachment headers.',
-    ],
-  },
-  {
-    version: 'v1.4.0',
-    date: 'August 29, 2026 • 06:30 PM IST',
-    title: 'BEU 1st Year UMEED Branches & Complete Engineering Curriculum',
-    highlights: [
-      'Added Civil Engineering (UMEED Batch — 201 lectures & notes) with ALBA + ESTE dual servers.',
-      'Added Computer Science Engineering (UMEED Batch — 143 lectures & notes) covering Chemistry, Maths & English.',
-      'Added Engineering Physics (UMEED Batch — 61 lectures & notes) across all 5 units.',
-      'Added Engineering Mathematics-II (UMEED Batch — 110 lectures & class notes) covering all 6 units.',
-      'Expanded Mechanical Engineering (UMEED Batch) to full 217-lecture catalog with workshop modules.',
     ],
   },
 ];
