@@ -10,12 +10,14 @@ interface CourseGridProps {
   courses: Course[];
   onSelectCourse: (course: Course) => void;
   searchInputRef: React.RefObject<HTMLInputElement | null>;
+  theme?: 'light' | 'dark';
 }
 
 export const CourseGrid: React.FC<CourseGridProps> = ({
   courses,
   onSelectCourse,
   searchInputRef,
+  theme,
 }) => {
   const [search, setSearch] = useState('');
   const [selectedSubject, setSelectedSubject] = useState<string>('All');
@@ -109,7 +111,7 @@ export const CourseGrid: React.FC<CourseGridProps> = ({
           ) : (
             filteredCourses.map((course) => {
               const stats = countCourseStats(course);
-              const thumbUrl = getSubjectThumbnail(course.subject || course.name, course.thumb, course.id);
+              const thumbUrl = getSubjectThumbnail(course.subject || course.name, course.thumb, course.id, theme);
               return (
                 <div
                   key={course.id}

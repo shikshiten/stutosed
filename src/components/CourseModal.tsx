@@ -14,6 +14,7 @@ interface CourseModalProps {
   watchedUrls: Set<string>;
   initialFolderTabId?: string | null;
   onFolderTabChange?: (tabId: string | null) => void;
+  theme?: 'light' | 'dark';
 }
 
 export const CourseModal: React.FC<CourseModalProps> = ({
@@ -24,6 +25,7 @@ export const CourseModal: React.FC<CourseModalProps> = ({
   watchedUrls,
   initialFolderTabId,
   onFolderTabChange,
+  theme,
 }) => {
   const [activeTabId, setActiveTabId] = useState<string>('');
   const [activeFolderTabId, setActiveFolderTabId] = useState<string | null>(initialFolderTabId || null);
@@ -228,7 +230,8 @@ export const CourseModal: React.FC<CourseModalProps> = ({
     return getSubjectThumbnail(
       item.subject || item.label,
       item.thumb || selectedFolderTab?.thumb || course.thumb,
-      selectedFolderTab?.label || selectedFolderTab?.id
+      selectedFolderTab?.label || selectedFolderTab?.id,
+      theme
     );
   };
 
@@ -444,7 +447,8 @@ export const CourseModal: React.FC<CourseModalProps> = ({
           src={getSubjectThumbnail(
             course.isParmar || course.isPratham ? activeTabId : (selectedFolderTab?.label || course.name),
             selectedFolderTab?.thumb || course.thumb,
-            selectedFolderTab?.id || course.id
+            selectedFolderTab?.id || course.id,
+            theme
           )}
           alt=""
           loading="lazy"
@@ -646,7 +650,7 @@ export const CourseModal: React.FC<CourseModalProps> = ({
                     }}
                   >
                     <img
-                      src={getSubjectThumbnail(tab.label, tab.thumb || course.thumb, tab.id)}
+                      src={getSubjectThumbnail(tab.label, tab.thumb || course.thumb, tab.id, theme)}
                       alt=""
                       style={{ width: '100%', height: '100%', objectFit: 'cover' }}
                     />

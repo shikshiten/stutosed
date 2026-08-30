@@ -21,36 +21,41 @@ export const PROTECTED_THUMBNAILS: Record<string, string> = {
   'parmar': '/thumbnails/parmar_gk_3.jpg',
 };
 
-// 24 Unified Subject Thumbnails (Adaptive Light / Dark SVGs)
-export const SUBJECT_THUMBNAILS = {
+// 24 Unified Subject Keys
+export const SUBJECT_KEYS = {
   // ── ENGINEERING (13) ──
-  ENGINEERING_PHYSICS: '/thumbnails/subjects/engineering_physics.svg',
-  ENGINEERING_CHEMISTRY: '/thumbnails/subjects/engineering_chemistry.svg',
-  ENGINEERING_MATHEMATICS_2: '/thumbnails/subjects/engineering_mathematics_2.svg',
-  COMMUNICATIVE_ENGLISH: '/thumbnails/subjects/communicative_english.svg',
-  ENGINEERING_GRAPHICS_DESIGN: '/thumbnails/subjects/engineering_graphics_design.svg',
-  ELEMENTS_OF_MECHANICAL_ENGINEERING: '/thumbnails/subjects/elements_of_mechanical_engineering.svg',
-  WORKSHOP_MANUFACTURING: '/thumbnails/subjects/workshop_manufacturing.svg',
-  PROGRAMMING_FOR_PROBLEM_SOLVING: '/thumbnails/subjects/programming_for_problem_solving.svg',
-  CIVIL_ENGINEERING_CORE: '/thumbnails/subjects/civil_engineering_core.svg',
-  BASIC_ELECTRICAL_WORKSHOP: '/thumbnails/subjects/basic_electrical_workshop.svg',
-  ENGINEERING_MATHEMATICS: '/thumbnails/subjects/engineering_mathematics.svg',
-  COMPUTER_SCIENCE_CORE: '/thumbnails/subjects/computer_science_core.svg',
-  ENGLISH_COMMUNICATION_SKILLS: '/thumbnails/subjects/english_communication_skills.svg',
+  ENGINEERING_PHYSICS: 'engineering_physics',
+  ENGINEERING_CHEMISTRY: 'engineering_chemistry',
+  ENGINEERING_MATHEMATICS_2: 'engineering_mathematics_2',
+  COMMUNICATIVE_ENGLISH: 'communicative_english',
+  ENGINEERING_GRAPHICS_DESIGN: 'engineering_graphics_design',
+  ELEMENTS_OF_MECHANICAL_ENGINEERING: 'elements_of_mechanical_engineering',
+  WORKSHOP_MANUFACTURING: 'workshop_manufacturing',
+  PROGRAMMING_FOR_PROBLEM_SOLVING: 'programming_for_problem_solving',
+  CIVIL_ENGINEERING_CORE: 'civil_engineering_core',
+  BASIC_ELECTRICAL_WORKSHOP: 'basic_electrical_workshop',
+  ENGINEERING_MATHEMATICS: 'engineering_mathematics',
+  COMPUTER_SCIENCE_CORE: 'computer_science_core',
+  ENGLISH_COMMUNICATION_SKILLS: 'english_communication_skills',
 
   // ── GK / COMPETITIVE EXAMS (11) ──
-  BIOLOGY: '/thumbnails/subjects/biology.svg',
-  ECONOMICS: '/thumbnails/subjects/economics.svg',
-  STATIC_GK: '/thumbnails/subjects/static_gk.svg',
-  CHEMISTRY: '/thumbnails/subjects/chemistry.svg',
-  PHYSICS: '/thumbnails/subjects/physics.svg',
-  POLITY: '/thumbnails/subjects/polity.svg',
-  ANCIENT_HISTORY: '/thumbnails/subjects/ancient_history.svg',
-  MEDIEVAL_HISTORY: '/thumbnails/subjects/medieval_history.svg',
-  MODERN_HISTORY: '/thumbnails/subjects/modern_history.svg',
-  GEOGRAPHY: '/thumbnails/subjects/geography.svg',
-  ENVIRONMENT_ECOLOGY: '/thumbnails/subjects/environment_ecology.svg',
+  BIOLOGY: 'biology',
+  ECONOMICS: 'economics',
+  STATIC_GK: 'static_gk',
+  CHEMISTRY: 'chemistry',
+  PHYSICS: 'physics',
+  POLITY: 'polity',
+  ANCIENT_HISTORY: 'ancient_history',
+  MEDIEVAL_HISTORY: 'medieval_history',
+  MODERN_HISTORY: 'modern_history',
+  GEOGRAPHY: 'geography',
+  ENVIRONMENT_ECOLOGY: 'environment_ecology',
 } as const;
+
+function resolveSvgPath(key: string, theme?: 'light' | 'dark'): string {
+  const mode = theme === 'dark' ? 'dark' : 'light';
+  return `/thumbnails/subjects/${key}_${mode}.svg`;
+}
 
 /**
  * Normalizes subject string and resolves the exact canonical thumbnail asset.
@@ -60,85 +65,86 @@ export const SUBJECT_THUMBNAILS = {
 export function getSubjectThumbnail(
   subjectName?: string | null,
   fallbackThumb?: string | null,
-  tabIdOrName?: string | null
+  tabIdOrName?: string | null,
+  theme?: 'light' | 'dark'
 ): string {
   const s = (subjectName || '').toLowerCase().trim();
 
   // ── 1. MATCH SPECIFIC ENGINEERING SUBJECTS FIRST ──
   if (s) {
     if (s.includes('graphics') || s.includes('engineering graphics')) {
-      return SUBJECT_THUMBNAILS.ENGINEERING_GRAPHICS_DESIGN;
+      return resolveSvgPath(SUBJECT_KEYS.ENGINEERING_GRAPHICS_DESIGN, theme);
     }
     if (s.includes('elements of mechanical') || s.includes('mechanical engg')) {
-      return SUBJECT_THUMBNAILS.ELEMENTS_OF_MECHANICAL_ENGINEERING;
+      return resolveSvgPath(SUBJECT_KEYS.ELEMENTS_OF_MECHANICAL_ENGINEERING, theme);
     }
     if (s.includes('workshop & manufacturing') || s.includes('workshop and manufacturing') || s.includes('manufacturing')) {
-      return SUBJECT_THUMBNAILS.WORKSHOP_MANUFACTURING;
+      return resolveSvgPath(SUBJECT_KEYS.WORKSHOP_MANUFACTURING, theme);
     }
     if (s.includes('programming for problem solving') || s.includes('problem solving') || s.includes('pps')) {
-      return SUBJECT_THUMBNAILS.PROGRAMMING_FOR_PROBLEM_SOLVING;
+      return resolveSvgPath(SUBJECT_KEYS.PROGRAMMING_FOR_PROBLEM_SOLVING, theme);
     }
     if (s.includes('civil engineering core') || s.includes('civil core')) {
-      return SUBJECT_THUMBNAILS.CIVIL_ENGINEERING_CORE;
+      return resolveSvgPath(SUBJECT_KEYS.CIVIL_ENGINEERING_CORE, theme);
     }
     if (s.includes('basic electrical & workshop') || s.includes('basic electrical and workshop') || s.includes('basic electrical')) {
-      return SUBJECT_THUMBNAILS.BASIC_ELECTRICAL_WORKSHOP;
+      return resolveSvgPath(SUBJECT_KEYS.BASIC_ELECTRICAL_WORKSHOP, theme);
     }
     if (s.includes('computer science core') || s.includes('cse core') || s.includes('computer science')) {
-      return SUBJECT_THUMBNAILS.COMPUTER_SCIENCE_CORE;
+      return resolveSvgPath(SUBJECT_KEYS.COMPUTER_SCIENCE_CORE, theme);
     }
     if (s.includes('communicative english')) {
-      return SUBJECT_THUMBNAILS.COMMUNICATIVE_ENGLISH;
+      return resolveSvgPath(SUBJECT_KEYS.COMMUNICATIVE_ENGLISH, theme);
     }
     if (s.includes('communication skills') || s.includes('english & communication') || s.includes('english and communication')) {
-      return SUBJECT_THUMBNAILS.ENGLISH_COMMUNICATION_SKILLS;
+      return resolveSvgPath(SUBJECT_KEYS.ENGLISH_COMMUNICATION_SKILLS, theme);
     }
     if (s.includes('mathematics-ii') || s.includes('mathematics 2') || s.includes('maths-ii') || s.includes('maths 2') || s.includes('math-ii') || s.includes('math 2') || s.includes('differential equations') || s.includes('fourier') || s.includes('numerical methods') || s.includes('complex numbers')) {
-      return SUBJECT_THUMBNAILS.ENGINEERING_MATHEMATICS_2;
+      return resolveSvgPath(SUBJECT_KEYS.ENGINEERING_MATHEMATICS_2, theme);
     }
     if (s.includes('engineering mathematics') || s.includes('engineering maths')) {
-      return SUBJECT_THUMBNAILS.ENGINEERING_MATHEMATICS;
+      return resolveSvgPath(SUBJECT_KEYS.ENGINEERING_MATHEMATICS, theme);
     }
     if (s.includes('engineering chemistry')) {
-      return SUBJECT_THUMBNAILS.ENGINEERING_CHEMISTRY;
+      return resolveSvgPath(SUBJECT_KEYS.ENGINEERING_CHEMISTRY, theme);
     }
     if (s.includes('engineering physics')) {
-      return SUBJECT_THUMBNAILS.ENGINEERING_PHYSICS;
+      return resolveSvgPath(SUBJECT_KEYS.ENGINEERING_PHYSICS, theme);
     }
 
     // ── 2. MATCH SPECIFIC GK / COMPETITIVE EXAMS SUBJECTS ──
     if (s.includes('environment') || s.includes('enviroment') || s.includes('ecology')) {
-      return SUBJECT_THUMBNAILS.ENVIRONMENT_ECOLOGY;
+      return resolveSvgPath(SUBJECT_KEYS.ENVIRONMENT_ECOLOGY, theme);
     }
     if (s.includes('ancient history') || s.includes('ancient')) {
-      return SUBJECT_THUMBNAILS.ANCIENT_HISTORY;
+      return resolveSvgPath(SUBJECT_KEYS.ANCIENT_HISTORY, theme);
     }
     if (s.includes('medieval history') || s.includes('medieval')) {
-      return SUBJECT_THUMBNAILS.MEDIEVAL_HISTORY;
+      return resolveSvgPath(SUBJECT_KEYS.MEDIEVAL_HISTORY, theme);
     }
     if (s.includes('modern history') || s.includes('modern')) {
-      return SUBJECT_THUMBNAILS.MODERN_HISTORY;
+      return resolveSvgPath(SUBJECT_KEYS.MODERN_HISTORY, theme);
     }
     if (s.includes('polity') || s.includes('constitution')) {
-      return SUBJECT_THUMBNAILS.POLITY;
+      return resolveSvgPath(SUBJECT_KEYS.POLITY, theme);
     }
     if (s.includes('geography')) {
-      return SUBJECT_THUMBNAILS.GEOGRAPHY;
+      return resolveSvgPath(SUBJECT_KEYS.GEOGRAPHY, theme);
     }
     if (s.includes('economics') || s.includes('economy')) {
-      return SUBJECT_THUMBNAILS.ECONOMICS;
+      return resolveSvgPath(SUBJECT_KEYS.ECONOMICS, theme);
     }
     if (s.includes('biology')) {
-      return SUBJECT_THUMBNAILS.BIOLOGY;
+      return resolveSvgPath(SUBJECT_KEYS.BIOLOGY, theme);
     }
     if (s.includes('static gk') || s.includes('static g.k') || s.includes('static')) {
-      return SUBJECT_THUMBNAILS.STATIC_GK;
+      return resolveSvgPath(SUBJECT_KEYS.STATIC_GK, theme);
     }
     if (s.includes('chemistry')) {
-      return SUBJECT_THUMBNAILS.CHEMISTRY;
+      return resolveSvgPath(SUBJECT_KEYS.CHEMISTRY, theme);
     }
     if (s.includes('physics')) {
-      return SUBJECT_THUMBNAILS.PHYSICS;
+      return resolveSvgPath(SUBJECT_KEYS.PHYSICS, theme);
     }
   }
 

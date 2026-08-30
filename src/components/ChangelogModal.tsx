@@ -13,16 +13,25 @@ export interface ReleaseLog {
 
 export const CHANGELOG_DATA: ReleaseLog[] = [
   {
+    version: 'v1.6.0',
+    date: 'August 30, 2026 • 01:00 PM IST',
+    isLatest: true,
+    title: 'Dual-Theme Adaptive Thumbnails, Fixed Desktop Sidebar & 76% Image Compression',
+    highlights: [
+      'Dual-Theme Adaptive Thumbnails: Real-time dynamic switching between crisp porcelain white (Light Mode) and deep obsidian dark (Dark Mode) on theme toggle.',
+      'Internal Batch Subject Resolution: Dedicated Mithila-accented thumbnails mapped across all subjects inside EE/ECE/EEE, Mech, Civil, CSE, and Parmar GK.',
+      'Permanent Desktop Sidebar: Fixed sticky left navigation on PC for instant 1-click view switching without repeatedly navigating back.',
+      'Image Optimization Engine: Compressed all heavy thumbnail assets by over 76%, reducing total media payload from 25MB down to lightweight fast-loading assets.',
+    ],
+  },
+  {
     version: 'v1.5.0',
     date: 'August 30, 2026 • 12:15 PM IST',
-    isLatest: true,
-    title: 'Unified Mechanical UMEED Batch, 1-Click PDF Downloads & YouTube Stream Direct Engine',
+    title: 'Unified Mechanical UMEED Batch, 1-Click PDF Downloads & Direct YouTube Engine',
     highlights: [
       'Unified Mechanical Engineering: Consolidated into a comprehensive 217-lecture UMEED Batch with complete workshop and core engineering modules.',
-      'Direct YouTube Playback: Implemented instant 1-click redirection to YouTube for all YouTube lectures, eliminating iframe embed loops and player refresh issues.',
-      'Universal 1-Click PDF Downloads: Added dedicated download buttons directly on all lecture grid cards, list rows, and PDF viewer with native attachment streaming headers.',
-      '1st Year Subject Sequence Optimization: Reordered curriculum so branch-specific subjects appear first and common foundational subjects (Chemistry, Maths-II, Physics) appear at the end.',
-      'SEO & Discovery Engine: Successfully verified Google Search Console ownership with dynamic sitemap.xml, robots.txt, and PWA Web App manifest.',
+      'Direct YouTube Playback: Implemented instant 1-click redirection to YouTube for all YouTube lectures, eliminating iframe embed loops.',
+      'Universal 1-Click PDF Downloads: Added dedicated download buttons directly on all lecture grid cards, list rows, and PDF viewer with native attachment headers.',
     ],
   },
   {
@@ -32,59 +41,9 @@ export const CHANGELOG_DATA: ReleaseLog[] = [
     highlights: [
       'Added Civil Engineering (UMEED Batch — 201 lectures & notes) with ALBA + ESTE dual servers.',
       'Added Computer Science Engineering (UMEED Batch — 143 lectures & notes) covering Chemistry, Maths & English.',
-      'Added Engineering Physics (UMEED Batch — 61 lectures & notes) across all 5 units (Frames, Oscillations, Optics, Laser, Quantum).',
+      'Added Engineering Physics (UMEED Batch — 61 lectures & notes) across all 5 units.',
       'Added Engineering Mathematics-II (UMEED Batch — 110 lectures & class notes) covering all 6 units.',
-      'Expanded Mechanical Engineering (UMEED Batch) to full 217-lecture catalog with workshop & welding modules.',
-      'Dual Bot Vault with Smart Proxy & Direct Embed toggles across all new branches.',
-      'Interactive Privacy Policy & Terms of Service modal integration.',
-    ],
-  },
-  {
-    version: 'v1.3.0',
-    date: 'August 29, 2026 • 02:00 PM IST',
-    title: 'Account Authentication & Profile System Overhaul',
-    highlights: [
-      'Compulsory student login implemented across all course lectures and study materials.',
-      'Enhanced Sign Up collecting Full Name, Email, Password with strength indicator & Show/Hide visibility toggle.',
-      'Google Sign-In integration with auto-populated profile picture and display name.',
-      'Personalized time-based greeting banner on dashboard (Good Morning / Afternoon / Evening).',
-      'Redesigned Top-Right Profile menu with instant theme switch, progress tracking, and account actions.',
-      'Mobile-optimized Profile View with 2×2 learning metric cards and cloud sync.',
-      'Interactive Changelog & Version Tracking system in footer.',
-    ],
-  },
-  {
-    version: 'v1.2.0',
-    date: 'August 28, 2026 • 08:30 PM IST',
-    title: 'Global Design System, Typography & Motion Pass',
-    highlights: [
-      'Configured Space Grotesk display headings paired with Inter UI typography.',
-      'Standardized Lucide icon library replacing all raw emojis across the portal.',
-      'Added floating ambient gradient mesh blobs & live viewport count-up stats on Hero.',
-      'Redesigned course domain cards with hover lift (-5px) and category badge tints.',
-      'Upgraded Multi-Column responsive footer with verified student channels.',
-      'Deep link URL query state synchronization for instant state restoration on refresh.',
-    ],
-  },
-  {
-    version: 'v1.1.0',
-    date: 'August 24, 2026 • 05:00 PM IST',
-    title: 'BEU 1st Year Engineering & Dual Stream Proxy Engine',
-    highlights: [
-      'Integrated Bihar Engineering University (BEU) 1st Year curriculum (EE/ECE/EEE, Chemistry, Mechanical UMEED).',
-      'Dual Bot video streaming proxy engine with Smart Proxy and Direct Embed capabilities.',
-      'Full-screen PDF notes viewer with quick navigation and download links.',
-      'Lecture history and progress tracking stored securely in local state.',
-    ],
-  },
-  {
-    version: 'v1.0.0',
-    date: 'August 20, 2026 • 10:00 AM IST',
-    title: 'Initial stutosed Portal Launch',
-    highlights: [
-      'Platform launched with 9 comprehensive Government Exam preparation batches.',
-      'Parmar GK 3.0, Static GK, English, Maths & Reasoning full course archives.',
-      'Clean ad-free video player and structured folder navigation.',
+      'Expanded Mechanical Engineering (UMEED Batch) to full 217-lecture catalog with workshop modules.',
     ],
   },
 ];

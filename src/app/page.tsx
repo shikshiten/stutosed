@@ -1359,6 +1359,7 @@ export default function HomePage() {
               courses={INITIAL_COURSES.filter((c) => c.id !== 'beu-1st-year')}
               onSelectCourse={(course) => handleOpenCourse(course)}
               searchInputRef={searchInputRef}
+              theme={theme}
             />
           </div>
         )}
@@ -1419,6 +1420,7 @@ export default function HomePage() {
               courses={INITIAL_COURSES.filter((c) => c.id === 'beu-1st-year')}
               onSelectCourse={(course) => handleOpenCourse(course)}
               searchInputRef={searchInputRef}
+              theme={theme}
             />
           </div>
         )}
@@ -1444,6 +1446,7 @@ export default function HomePage() {
               courses={INITIAL_COURSES}
               onSelectCourse={(course) => handleOpenCourse(course)}
               searchInputRef={searchInputRef}
+              theme={theme}
             />
           </div>
         )}
@@ -2072,6 +2075,7 @@ export default function HomePage() {
           watchedUrls={watchedUrls}
           initialFolderTabId={openFolderId}
           onFolderTabChange={handleFolderTabChange}
+          theme={theme}
         />
       )}
 

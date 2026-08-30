@@ -38,7 +38,9 @@ export const Sidebar: React.FC<SidebarProps> = ({
 
   const handleNav = (view: AppView) => {
     onSelectView(view);
-    onClose();
+    if (typeof window !== 'undefined' && window.innerWidth <= 768) {
+      onClose();
+    }
     window.scrollTo({ top: 0, behavior: 'smooth' });
   };
 

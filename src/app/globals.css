@@ -1031,7 +1031,20 @@ svg { flex-shrink: 0; }
 
 /* 11. RESPONSIVE DESIGN */
 @media (min-width: 769px) {
-  #sidebar-nav { transform: translateX(0) !important; }
+  #sidebar-nav {
+    position: fixed !important;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    width: var(--sidebar-w) !important;
+    z-index: 980 !important;
+    transform: translateX(0) !important;
+  }
+  #course-overlay {
+    left: var(--sidebar-w) !important;
+    width: calc(100vw - var(--sidebar-w)) !important;
+    z-index: 900 !important;
+  }
 }
 
 @media (max-width: 768px) {
