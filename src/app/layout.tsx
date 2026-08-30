@@ -18,6 +18,9 @@ export const metadata: Metadata = {
     shortcut: '/favicon.svg',
     apple: '/favicon.svg',
   },
+  verification: {
+    google: 'google32c778425d2b60c3',
+  },
   openGraph: {
     title: 'stutosed — Engineering & Competitive Exam Courses',
     description: 'Free high-speed video lectures, notes & study portal for BEU B.Tech and Government exams.',

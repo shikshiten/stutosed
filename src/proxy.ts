@@ -49,8 +49,8 @@ export const config = {
      * - _next/static (static files)
      * - _next/image (image optimization)
      * - favicon.ico, apple-icon, icon
-     * - public files (thumbnails, fonts, etc.)
+     * - public files (thumbnails, fonts, google*.html, etc.)
      */
-    '/((?!_next/static|_next/image|favicon.ico|favicon.svg|apple-icon|icon|thumbnails|fonts).*)',
+    '/((?!_next/static|_next/image|favicon.ico|favicon.svg|apple-icon|icon|thumbnails|fonts|google.*\\.html|robots\\.txt|sitemap\\.xml).*)',
   ],
 };
