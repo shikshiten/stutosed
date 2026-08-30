@@ -3,6 +3,7 @@
 import React, { useState, useMemo } from 'react';
 import { Course } from '@/types';
 import { countCourseStats } from '@/lib/coursesData';
+import { getSubjectThumbnail } from '@/lib/subjectThumbnails';
 import { Search, Video, FileText, ArrowRight, Layers } from 'lucide-react';
 
 interface CourseGridProps {
@@ -110,7 +111,7 @@ export const CourseGrid: React.FC<CourseGridProps> = ({
                 >
                   <img
                     className="course-thumb"
-                    src={course.thumb}
+                    src={getSubjectThumbnail(course.subject || course.name, course.thumb, course.id)}
                     alt={course.name}
                     loading="lazy"
                   />

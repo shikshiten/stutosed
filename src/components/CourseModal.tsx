@@ -3,6 +3,7 @@
 import React, { useState, useEffect, useRef, useMemo } from 'react';
 import { Course, LectureItem } from '@/types';
 import { countCourseStats } from '@/lib/coursesData';
+import { getSubjectThumbnail } from '@/lib/subjectThumbnails';
 import { ArrowLeft, Folder, Search, LayoutGrid, List, Video, FileText, CheckCircle2, Play, Download, ExternalLink } from 'lucide-react';
 
 interface CourseModalProps {
@@ -222,26 +223,13 @@ export const CourseModal: React.FC<CourseModalProps> = ({
     );
   };
 
-  // Smart Subject Thumbnail Resolver
+  // Centralized Canonical Subject Thumbnail Resolver
   const getLectureThumb = (item: LectureItem) => {
-    if (item.thumb) return item.thumb;
-    const subj = (item.subject || '').toLowerCase();
-    const lbl = (item.label || '').toLowerCase();
-    const tabLbl = (selectedFolderTab?.label || '').toLowerCase();
-
-    if (subj.includes('chemistry') || lbl.includes('chemistry') || tabLbl.includes('chemistry')) {
-      return '/thumbnails/subjects/engineering_chemistry.png';
-    }
-    if (subj.includes('physics') || lbl.includes('physics') || tabLbl.includes('physics')) {
-      return '/thumbnails/subjects/engineering_physics.png';
-    }
-    if (subj.includes('math') || lbl.includes('math') || tabLbl.includes('math')) {
-      return '/thumbnails/subjects/engineering_maths_2.png';
-    }
-    if (selectedFolderTab?.thumb) {
-      return selectedFolderTab.thumb;
-    }
-    return '/thumbnails/all_lecture_thumbnail.jpg';
+    return getSubjectThumbnail(
+      item.subject || item.label,
+      item.thumb || selectedFolderTab?.thumb || course.thumb,
+      selectedFolderTab?.label || selectedFolderTab?.id
+    );
   };
 
   // Detect YouTube video URLs
@@ -654,7 +642,7 @@ export const CourseModal: React.FC<CourseModalProps> = ({
                     }}
                   >
                     <img
-                      src={tab.thumb || course.thumb}
+                      src={getSubjectThumbnail(tab.label, tab.thumb || course.thumb, tab.id)}
                       alt=""
                       style={{ width: '100%', height: '100%', objectFit: 'cover' }}
                     />
