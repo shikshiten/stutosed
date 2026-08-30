@@ -75,7 +75,9 @@ export const PdfViewerModal: React.FC<PdfViewerModalProps> = ({
   };
 
   const handleDownload = () => {
-    window.open(downloadRedirectUrl, '_blank');
+    const filename = `${item.label.replace(/[^a-zA-Z0-9_\-\s]/g, '').trim().replace(/\s+/g, '_')}.pdf`;
+    const downloadApiUrl = `/api/pdf?url=${encodeURIComponent(viewUrl)}&download=1&filename=${encodeURIComponent(filename)}`;
+    window.open(downloadApiUrl, '_blank');
   };
 
   // Keyboard shortcut: Esc to close

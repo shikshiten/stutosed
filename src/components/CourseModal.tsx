@@ -3,7 +3,7 @@
 import React, { useState, useEffect, useRef, useMemo } from 'react';
 import { Course, LectureItem } from '@/types';
 import { countCourseStats } from '@/lib/coursesData';
-import { ArrowLeft, Folder, Search, LayoutGrid, List, Video, FileText, CheckCircle2, Play } from 'lucide-react';
+import { ArrowLeft, Folder, Search, LayoutGrid, List, Video, FileText, CheckCircle2, Play, Download, ExternalLink } from 'lucide-react';
 
 interface CourseModalProps {
   course: Course | null;
@@ -225,6 +225,34 @@ export const CourseModal: React.FC<CourseModalProps> = ({
   // Resolve thumbnail for a lecture (using uploaded stutosed thumbnail)
   const getLectureThumb = (item: LectureItem) => {
     return item.thumb || '/thumbnails/all_lecture_thumbnail.jpg';
+  };
+
+  // Detect YouTube video URLs
+  const isYouTubeItem = (item: LectureItem) => {
+    const u = item.url || '';
+    return item.type === 'youtube' || u.includes('youtube.com') || u.includes('youtu.be');
+  };
+
+  // Direct download PDF handler
+  const handleDownloadPdf = (e: React.MouseEvent, item: LectureItem) => {
+    e.stopPropagation();
+    const filename = `${item.label.replace(/[^a-zA-Z0-9_\-\s]/g, '').trim().replace(/\s+/g, '_')}.pdf`;
+    const downloadApiUrl = `/api/pdf?url=${encodeURIComponent(item.url)}&download=1&filename=${encodeURIComponent(filename)}`;
+    window.open(downloadApiUrl, '_blank');
+  };
+
+  // Centralized lecture item click handler (direct YouTube open, PDF modal, or video player)
+  const handleItemClick = (item: LectureItem, idx: number) => {
+    saveMemory(item.url);
+    if (isYouTubeItem(item)) {
+      window.open(item.url, '_blank', 'noopener,noreferrer');
+      return;
+    }
+    if (item.type === 'pdf') {
+      onOpenPdf(item, activeItems, idx);
+    } else {
+      onPlayVideo(activeItems, idx);
+    }
   };
 
   return (
@@ -684,6 +712,7 @@ export const CourseModal: React.FC<CourseModalProps> = ({
                   <div className="parmar-lec-links">
                     {Object.entries(lec.links).map(([k, url]) => {
                       const isVideo = k === 'url';
+                      const isYouTube = url.includes('youtube.com') || url.includes('youtu.be');
                       let btnClass = 'plk plk-watch';
                       if (k === 'en_pdf') btnClass = 'plk plk-en';
                       if (k === 'hi_pdf') btnClass = 'plk plk-hi';
@@ -696,14 +725,16 @@ export const CourseModal: React.FC<CourseModalProps> = ({
                           className={btnClass}
                           onClick={() => {
                             saveMemory(url);
-                            if (isVideo) {
+                            if (isYouTube) {
+                              window.open(url, '_blank', 'noopener,noreferrer');
+                            } else if (isVideo) {
                               onPlayVideo([{ label: lec.title, url, type: 'hls' }], 0);
                             } else {
                               onOpenPdf({ label: lec.title + ' • Notes', url, type: 'pdf' });
                             }
                           }}
                         >
-                          {isVideo ? '▶ Watch' : k.replace('_', ' ').toUpperCase()}
+                          {isYouTube ? '▶ Open YouTube' : isVideo ? '▶ Watch' : k.replace('_', ' ').toUpperCase()}
                         </button>
                       );
                     })}
@@ -765,6 +796,7 @@ export const CourseModal: React.FC<CourseModalProps> = ({
                 {activeItems.map((item, idx) => {
                   const isWatched = watchedUrls.has(item.url);
                   const isPdf = item.type === 'pdf';
+                  const isYt = isYouTubeItem(item);
                   const thumb = getLectureThumb(item);
 
                   return (
@@ -772,14 +804,7 @@ export const CourseModal: React.FC<CourseModalProps> = ({
                       key={idx}
                       data-lecture-url={item.url}
                       className={`lecture-card-grid ${isWatched ? 'watched' : ''}`}
-                      onClick={() => {
-                        saveMemory(item.url);
-                        if (isPdf) {
-                          onOpenPdf(item, activeItems, idx);
-                        } else {
-                          onPlayVideo(activeItems, idx);
-                        }
-                      }}
+                      onClick={() => handleItemClick(item, idx)}
                     >
                       {/* 16:9 Thumbnail Cover */}
                       <div
@@ -872,9 +897,9 @@ export const CourseModal: React.FC<CourseModalProps> = ({
                             position: 'absolute',
                             bottom: '8px',
                             right: '10px',
-                            background: 'rgba(0,0,0,0.6)',
+                            background: 'rgba(0,0,0,0.65)',
                             backdropFilter: 'blur(4px)',
-                            color: isPdf ? '#ff9f7d' : '#85e0a3',
+                            color: isPdf ? '#ff9f7d' : isYt ? '#ff6b6b' : '#85e0a3',
                             fontSize: '10px',
                             fontWeight: 700,
                             padding: '2px 7px',
@@ -883,7 +908,7 @@ export const CourseModal: React.FC<CourseModalProps> = ({
                             letterSpacing: '0.4px',
                           }}
                         >
-                          {isPdf ? 'PDF' : 'Video'}
+                          {isPdf ? 'PDF Notes' : isYt ? 'YouTube' : 'Video'}
                         </div>
                       </div>
 
@@ -923,8 +948,49 @@ export const CourseModal: React.FC<CourseModalProps> = ({
                           }}
                         >
                           <span style={{ fontSize: '11px', color: 'var(--text-muted)', fontWeight: 500 }}>
-                            {item.subject || (isPdf ? 'Lecture Notes' : 'Lecture Video')}
+                            {item.subject || (isPdf ? 'Document Notes' : isYt ? 'YouTube Lecture' : 'Video Lecture')}
                           </span>
+
+                          <div style={{ display: 'flex', alignItems: 'center', gap: '6px' }}>
+                            {isPdf && (
+                              <button
+                                onClick={(e) => handleDownloadPdf(e, item)}
+                                title="Download PDF directly"
+                                style={{
+                                  display: 'inline-flex',
+                                  alignItems: 'center',
+                                  gap: '4px',
+                                  padding: '4px 8px',
+                                  fontSize: '11px',
+                                  fontWeight: 700,
+                                  color: 'var(--accent)',
+                                  background: 'var(--bg)',
+                                  border: '1px solid var(--border)',
+                                  borderRadius: 'var(--r-sm)',
+                                  cursor: 'pointer',
+                                  transition: 'all 0.15s ease',
+                                }}
+                              >
+                                <Download width={12} height={12} />
+                                <span>Download</span>
+                              </button>
+                            )}
+
+                            {isYt && (
+                              <span
+                                style={{
+                                  display: 'inline-flex',
+                                  alignItems: 'center',
+                                  gap: '3px',
+                                  fontSize: '11px',
+                                  fontWeight: 700,
+                                  color: '#ff4b4b',
+                                }}
+                              >
+                                <ExternalLink width={11} height={11} /> Open
+                              </span>
+                            )}
+                          </div>
                         </div>
                       </div>
                     </div>
@@ -937,32 +1003,69 @@ export const CourseModal: React.FC<CourseModalProps> = ({
                 {activeItems.map((item, idx) => {
                   const isWatched = watchedUrls.has(item.url);
                   const isPdf = item.type === 'pdf';
+                  const isYt = isYouTubeItem(item);
 
                   return (
                     <div
                       key={idx}
                       data-lecture-url={item.url}
                       className={`video-row ${isWatched ? 'watched' : ''}`}
-                      onClick={() => {
-                        saveMemory(item.url);
-                        if (isPdf) {
-                          onOpenPdf(item, activeItems, idx);
-                        } else {
-                          onPlayVideo(activeItems, idx);
-                        }
-                      }}
+                      onClick={() => handleItemClick(item, idx)}
                     >
                       <div className="video-num">{idx + 1}</div>
-                      <div className={`video-icon ${isPdf ? 'vicon-ext' : 'vicon-hls'}`} style={{ display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
-                        {isPdf ? <FileText width={14} height={14} /> : <Play width={13} height={13} fill="currentColor" />}
+                      <div
+                        className={`video-icon ${isPdf ? 'vicon-ext' : 'vicon-hls'}`}
+                        style={{
+                          display: 'flex',
+                          alignItems: 'center',
+                          justifyContent: 'center',
+                          color: isYt ? '#ff4b4b' : undefined,
+                        }}
+                      >
+                        {isPdf ? (
+                          <FileText width={14} height={14} />
+                        ) : isYt ? (
+                          <ExternalLink width={13} height={13} />
+                        ) : (
+                          <Play width={13} height={13} fill="currentColor" />
+                        )}
                       </div>
                       <div className="video-body">
                         <div className="video-title">{item.label}</div>
-                        <div className="video-sub">{item.subject || course.name}</div>
+                        <div className="video-sub">
+                          {item.subject || course.name} {isYt && '• YouTube Direct'}
+                        </div>
                       </div>
-                      <div className="watched-badge" style={{ display: 'inline-flex', alignItems: 'center', gap: '4px' }}>
-                        <CheckCircle2 width={12} height={12} />
-                        <span>Watched</span>
+
+                      <div style={{ display: 'flex', alignItems: 'center', gap: '8px' }}>
+                        {isPdf && (
+                          <button
+                            onClick={(e) => handleDownloadPdf(e, item)}
+                            title="Download PDF"
+                            style={{
+                              display: 'inline-flex',
+                              alignItems: 'center',
+                              gap: '4px',
+                              padding: '5px 10px',
+                              borderRadius: 'var(--r-sm)',
+                              border: '1px solid var(--border)',
+                              background: 'var(--bg-card)',
+                              color: 'var(--accent)',
+                              fontSize: '11px',
+                              fontWeight: 700,
+                              cursor: 'pointer',
+                              transition: 'all 0.15s ease',
+                            }}
+                          >
+                            <Download width={12} height={12} />
+                            <span>Download</span>
+                          </button>
+                        )}
+
+                        <div className="watched-badge" style={{ display: 'inline-flex', alignItems: 'center', gap: '4px' }}>
+                          <CheckCircle2 width={12} height={12} />
+                          <span>Watched</span>
+                        </div>
                       </div>
                     </div>
                   );

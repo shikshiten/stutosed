@@ -509,9 +509,6 @@ export default function HomePage() {
       setIsAuthOpen(true);
       return;
     }
-    window.history.pushState({ modal: 'player', index }, '');
-    setPlayerPlaylist(playlist);
-    setPlayerIndex(index);
 
     const current = playlist[index];
     if (current?.url) {
@@ -530,7 +527,21 @@ export default function HomePage() {
           localStorage.setItem(LAST_PLAYED_KEY, JSON.stringify(memoryObj));
         } catch {}
       }
+
+      // If YouTube URL, open directly in YouTube in a new tab
+      if (
+        current.url.includes('youtube.com') ||
+        current.url.includes('youtu.be') ||
+        current.type === 'youtube'
+      ) {
+        window.open(current.url, '_blank', 'noopener,noreferrer');
+        return;
+      }
     }
+
+    window.history.pushState({ modal: 'player', index }, '');
+    setPlayerPlaylist(playlist);
+    setPlayerIndex(index);
   };
 
   // Resume last played lecture

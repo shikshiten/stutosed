@@ -162,8 +162,14 @@ export async function GET(request: NextRequest) {
         ? 'image/jpeg'
         : 'application/pdf';
 
-    responseHeaders.set('Content-Type', contentType);
-    responseHeaders.set('Content-Disposition', 'inline');
+    const isDownload = searchParams.get('download') === '1' || searchParams.get('download') === 'true';
+    const rawFilename = searchParams.get('filename') || 'document.pdf';
+    const cleanFilename = rawFilename.replace(/[/\\?%*:|"<>]/g, '_');
+
+    responseHeaders.set(
+      'Content-Disposition',
+      isDownload ? `attachment; filename="${cleanFilename}"` : 'inline'
+    );
 
     const contentLength = upstreamRes.headers.get('content-length');
     if (contentLength) {

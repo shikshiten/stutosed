@@ -2618,329 +2618,6 @@
         ]
       },
       {
-        "id": "engineering-chemistry",
-        "label": "Engineering Chemistry",
-        "subname": "Engineering Chemistry (BEU UMEED)",
-        "thumb": "/thumbnails/beu_eng_chemistry.jpg",
-        "items": [
-          {
-            "id": "beu-chem-1",
-            "label": "Lecture 01 • Electromagnetic Radiation",
-            "url": "https://vidmoly.net/embed-c2buih7b1kg2.html",
-            "type": "hls",
-            "subject": "Module 1"
-          },
-          {
-            "id": "beu-chem-2",
-            "label": "Lecture 02 • Dual Nature of Electron & Heisenberg Uncertainty Principle",
-            "url": "https://vidmoly.net/embed-k62w1gbedadt.html",
-            "type": "hls",
-            "subject": "Module 1"
-          },
-          {
-            "id": "beu-chem-3",
-            "label": "Lecture 03 • Photoelectric Effect",
-            "url": "https://vidmoly.net/embed-abkgcowtor0y.html",
-            "type": "hls",
-            "subject": "Module 1"
-          },
-          {
-            "id": "beu-chem-4",
-            "label": "Lecture 04 • Atomic & Molecular Orbitals",
-            "url": "https://vidmoly.net/embed-xadjze8shagc.html",
-            "type": "hls",
-            "subject": "Module 1"
-          },
-          {
-            "id": "beu-chem-5",
-            "label": "Lecture 05 • Molecular Orbital & Bent Theory",
-            "url": "https://vidmoly.net/embed-ghjhisjeplq8.html",
-            "type": "hls",
-            "subject": "Module 1"
-          },
-          {
-            "id": "beu-chem-6",
-            "label": "Lecture 06 • VSEPR Theory",
-            "url": "https://vidmoly.net/embed-biivz3rq9269.html",
-            "type": "hls",
-            "subject": "Module 1"
-          },
-          {
-            "id": "beu-chem-7",
-            "label": "Lecture 07 • VSEPR Theory — Part 2",
-            "url": "https://vidmoly.net/embed-833x2jec42ub.html",
-            "type": "hls",
-            "subject": "Module 1"
-          },
-          {
-            "id": "beu-chem-8",
-            "label": "Lecture 08 • Coordination Number & Geometry",
-            "url": "https://vidmoly.net/embed-09et4t8ce8mb.html",
-            "type": "hls",
-            "subject": "Module 1"
-          },
-          {
-            "id": "beu-chem-9",
-            "label": "Lecture 09 • Isomerism in Transition Metal Compounds",
-            "url": "https://vidmoly.net/embed-umevc53v7vwr.html",
-            "type": "hls",
-            "subject": "Module 1"
-          },
-          {
-            "id": "beu-chem-10",
-            "label": "Lecture 10 • Metal Carbonyls — Synthesis & Structure",
-            "url": "https://vidmoly.net/embed-uoevermf2269.html",
-            "type": "hls",
-            "subject": "Module 1"
-          },
-          {
-            "id": "beu-chem-11",
-            "label": "Lecture 01 • Principles of Rotational & Vibrational Spectroscopy",
-            "url": "https://vidmoly.net/embed-vo2xgvo24m6a.html",
-            "type": "hls",
-            "subject": "Module 2"
-          },
-          {
-            "id": "beu-chem-12",
-            "label": "Lecture 02 • Spectroscopy Applications",
-            "url": "https://vidmoly.net/embed-tuwbb21uzrq6.html",
-            "type": "hls",
-            "subject": "Module 2"
-          },
-          {
-            "id": "beu-chem-13",
-            "label": "Lecture 03 • NMR Spectroscopy Fundamentals",
-            "url": "https://vidmoly.net/embed-iiriw9w8wacg.html",
-            "type": "hls",
-            "subject": "Module 2"
-          },
-          {
-            "id": "beu-chem-14",
-            "label": "Lecture 04 • NMR Spectroscopy Analysis",
-            "url": "https://vidmoly.net/embed-i56owm6cfbji.html",
-            "type": "hls",
-            "subject": "Module 2"
-          },
-          {
-            "id": "beu-chem-15",
-            "label": "Lecture 01 • Electrochemical Cell",
-            "url": "https://vidmoly.net/embed-zligdcfd1nh4.html",
-            "type": "hls",
-            "subject": "Module 3"
-          },
-          {
-            "id": "beu-chem-16",
-            "label": "Lecture 02 • Electrochemical Cell — Part 2",
-            "url": "https://vidmoly.net/embed-urwg5a6fyfzk.html",
-            "type": "hls",
-            "subject": "Module 3"
-          },
-          {
-            "id": "beu-chem-17",
-            "label": "Lecture 03 • Electromotive Force (EMF)",
-            "url": "https://vidmoly.net/embed-5uxql2kjgxds.html",
-            "type": "hls",
-            "subject": "Module 3"
-          },
-          {
-            "id": "beu-chem-18",
-            "label": "Lecture 04 • Nernst Equation",
-            "url": "https://vidmoly.net/embed-cw3lwkhyvmsa.html",
-            "type": "hls",
-            "subject": "Module 3"
-          },
-          {
-            "id": "beu-chem-19",
-            "label": "Lecture 05 • Corrosion — Part 1",
-            "url": "https://vidmoly.net/embed-jf5mkvx89zxz.html",
-            "type": "hls",
-            "subject": "Module 3"
-          },
-          {
-            "id": "beu-chem-20",
-            "label": "Lecture 06 • Corrosion — Part 2",
-            "url": "https://vidmoly.net/embed-unldj85zhm0k.html",
-            "type": "hls",
-            "subject": "Module 3"
-          },
-          {
-            "id": "beu-chem-21",
-            "label": "Lecture 07 • Corrosion — Part 3",
-            "url": "https://vidmoly.net/embed-8ihi1yu72vtc.html",
-            "type": "hls",
-            "subject": "Module 3"
-          },
-          {
-            "id": "beu-chem-22",
-            "label": "Lecture 08 • Lead Storage Battery",
-            "url": "https://vidmoly.net/embed-x7kt8lbq9i3n.html",
-            "type": "hls",
-            "subject": "Module 3"
-          },
-          {
-            "id": "beu-chem-23",
-            "label": "Lecture 09 • Leclanché Cell & Dry Cell",
-            "url": "https://vidmoly.net/embed-fenvznyavcfu.html",
-            "type": "hls",
-            "subject": "Module 3"
-          },
-          {
-            "id": "beu-chem-24",
-            "label": "Lecture 01 • Hardness of Water",
-            "url": "https://vidmoly.net/embed-k7q68h2yai3a.html",
-            "type": "hls",
-            "subject": "Module 4"
-          },
-          {
-            "id": "beu-chem-25",
-            "label": "Lecture 02 • Hardness of Water — Part 2",
-            "url": "https://vidmoly.net/embed-gcw3h1rbyfjo.html",
-            "type": "hls",
-            "subject": "Module 4"
-          },
-          {
-            "id": "beu-chem-26",
-            "label": "Lecture 03 • Alkalinity Method & Estimation",
-            "url": "https://vidmoly.net/embed-ov5a1y6h0lqn.html",
-            "type": "hls",
-            "subject": "Module 4"
-          },
-          {
-            "id": "beu-chem-27",
-            "label": "Lecture 04 • Water Softening Methods",
-            "url": "https://vidmoly.net/embed-vwxuocprne9d.html",
-            "type": "hls",
-            "subject": "Module 4"
-          },
-          {
-            "id": "beu-chem-28",
-            "label": "Lecture 05 • Boiler Feed Water",
-            "url": "https://vidmoly.net/embed-jdt2c2bgb4yr.html",
-            "type": "hls",
-            "subject": "Module 4"
-          },
-          {
-            "id": "beu-chem-29",
-            "label": "Lecture 06 • Boiler Troubles: Sludge, Scale, Priming & Foaming",
-            "url": "https://vidmoly.net/embed-79o7cnnl5jil.html",
-            "type": "hls",
-            "subject": "Module 4"
-          },
-          {
-            "id": "beu-chem-30",
-            "label": "Lecture 07 • Caustic Embrittlement & Treatment",
-            "url": "https://vidmoly.net/embed-svoap3krewxl.html",
-            "type": "hls",
-            "subject": "Module 4"
-          },
-          {
-            "id": "beu-chem-31",
-            "label": "Lecture 01 • Free Radical Polymerization",
-            "url": "https://vidmoly.net/embed-tqu6eu3ui628.html",
-            "type": "hls",
-            "subject": "Module 5"
-          },
-          {
-            "id": "beu-chem-32",
-            "label": "Lecture 02 • Ionic & Coordination Mechanisms",
-            "url": "https://vidmoly.net/embed-f3ssaux2o3q2.html",
-            "type": "hls",
-            "subject": "Module 5"
-          },
-          {
-            "id": "beu-chem-33",
-            "label": "Lecture 03 • Applications of Phenol-Formaldehyde Resin",
-            "url": "https://vidmoly.net/embed-uprbrnwk2c56.html",
-            "type": "hls",
-            "subject": "Module 5"
-          },
-          {
-            "id": "beu-chem-34",
-            "label": "Lecture 04 • Elastomers & Natural Rubbers",
-            "url": "https://vidmoly.net/embed-iv4l1dunv03r.html",
-            "type": "hls",
-            "subject": "Module 5"
-          },
-          {
-            "id": "beu-chem-35",
-            "label": "Lecture 05 • Buna-S & Buna-N Polymers",
-            "url": "https://vidmoly.net/embed-67jxrue19qzb.html",
-            "type": "hls",
-            "subject": "Module 5"
-          },
-          {
-            "id": "beu-chem-36",
-            "label": "Lecture 06 • Inorganic Polymers, Silicones, Adhesives & Epoxy Resins",
-            "url": "https://vidmoly.net/embed-ijtn2ssgb7xt.html",
-            "type": "hls",
-            "subject": "Module 5"
-          },
-          {
-            "id": "beu-chem-37",
-            "label": "Lecture 07 • Thermoplastics vs Thermosetting Plastics & PVC",
-            "url": "https://vidmoly.net/embed-iy41ljk4s8j9.html",
-            "type": "hls",
-            "subject": "Module 5"
-          },
-          {
-            "id": "beu-chem-38",
-            "label": "Lecture 08 • Polythene & Polystyrene",
-            "url": "https://vidmoly.net/embed-q6bk0x18cc2y.html",
-            "type": "hls",
-            "subject": "Module 5"
-          },
-          {
-            "id": "beu-chem-39",
-            "label": "Lecture 01 • Organic Reactions & Mechanisms",
-            "url": "https://vidmoly.net/embed-x5lc4g9zpt7i.html",
-            "type": "hls",
-            "subject": "Module 6"
-          },
-          {
-            "id": "beu-chem-40",
-            "label": "Lecture 02 • Diels-Alder Reaction",
-            "url": "https://vidmoly.net/embed-b08uu3lsgqs1.html",
-            "type": "hls",
-            "subject": "Module 6"
-          },
-          {
-            "id": "beu-chem-41",
-            "label": "Lecture 03 • Epoxide Ring Reactions",
-            "url": "https://vidmoly.net/embed-wps7v8kngr66.html",
-            "type": "hls",
-            "subject": "Module 6"
-          },
-          {
-            "id": "beu-chem-42",
-            "label": "Lecture 01 • Previous Year Questions & Analysis",
-            "url": "https://vidmoly.net/embed-pe7oj703n9o8.html",
-            "type": "hls",
-            "subject": "Practice Session"
-          },
-          {
-            "id": "beu-chem-43",
-            "label": "Lecture 02 • Previous Year Questions & Solutions",
-            "url": "https://vidmoly.net/embed-frknyzzwu499.html",
-            "type": "hls",
-            "subject": "Practice Session"
-          },
-          {
-            "id": "beu-chem-44",
-            "label": "Lecture 03 • Model Paper Discussion",
-            "url": "https://vidmoly.net/embed-bf9lvfpcqx00.html",
-            "type": "hls",
-            "subject": "Practice Session"
-          },
-          {
-            "id": "beu-chem-45",
-            "label": "Lecture 04 • Exam Revision & Formula Sheet",
-            "url": "https://vidmoly.net/embed-xr8clxl5hlx6.html",
-            "type": "hls",
-            "subject": "Practice Session"
-          }
-        ]
-      },
-      {
         "id": "mechanical-umeed",
         "label": "Mechanical Engineering (UMEED)",
         "subname": "Mechanical Core & Maths-2",
@@ -17803,1468 +17480,325 @@
         ]
       },
       {
-        "id": "engineering-physics",
-        "label": "Engineering Physics (UMEED)",
-        "subname": "Applied Physics & Units",
-        "thumb": "/thumbnails/beu_engineering_physics.jpg",
+        "id": "engineering-chemistry",
+        "label": "Engineering Chemistry",
+        "subname": "Engineering Chemistry (BEU UMEED)",
+        "thumb": "/thumbnails/beu_eng_chemistry.jpg",
         "items": [
           {
-            "id": "phys-umeed-111",
-            "label": "111. Lecture 01 • Introduction to Syllabus",
-            "url": "https://www.streamvaultpro.cc/0:/dl/6a91613c1b4c2c74d772b675",
-            "downloadUrl": "https://www.streamvaultpro.cc/0:/dl/6a91613c1b4c2c74d772b675",
-            "type": "video",
-            "subject": "Programming for Problem Solving",
-            "category": "videos",
-            "servers": [
-              {
-                "name": "ALBA",
-                "url": "https://www.streamvaultpro.cc/0:/dl/6a91613c1b4c2c74d772b675",
-                "downloadUrl": "https://www.streamvaultpro.cc/0:/dl/6a91613c1b4c2c74d772b675",
-                "streamUrl": "https://www.streamvaultpro.cc/0:/stream/6a91613c1b4c2c74d772b675",
-                "type": "video"
-              }
-            ]
+            "id": "beu-chem-1",
+            "label": "Lecture 01 • Electromagnetic Radiation",
+            "url": "https://vidmoly.net/embed-c2buih7b1kg2.html",
+            "type": "hls",
+            "subject": "Module 1"
           },
           {
-            "id": "phys-umeed-195",
-            "label": "195. Lecture 01 • Frame of References",
-            "url": "https://www.streamvaultpro.cc/0:/dl/6a901327bb74a79b9e4a86f8",
-            "downloadUrl": "https://www.streamvaultpro.cc/0:/dl/6a901327bb74a79b9e4a86f8",
-            "type": "video",
-            "subject": "Engineering Physics",
-            "category": "videos",
-            "servers": [
-              {
-                "name": "ALBA",
-                "url": "https://www.streamvaultpro.cc/0:/dl/6a901327bb74a79b9e4a86f8",
-                "downloadUrl": "https://www.streamvaultpro.cc/0:/dl/6a901327bb74a79b9e4a86f8",
-                "streamUrl": "https://www.streamvaultpro.cc/0:/stream/6a901327bb74a79b9e4a86f8",
-                "type": "video"
-              },
-              {
-                "name": "ESTE",
-                "url": "https://fs1qydv17g1-161-162e5df28a45.herokuapp.com/dl/6a91600b95d01368e89291b3",
-                "downloadUrl": "https://publicbotshub.blogspot.com/p/file-stream-bot.html?dl=6a91600b95d01368e89291b3",
-                "type": "video"
-              }
-            ]
+            "id": "beu-chem-2",
+            "label": "Lecture 02 • Dual Nature of Electron & Heisenberg Uncertainty Principle",
+            "url": "https://vidmoly.net/embed-k62w1gbedadt.html",
+            "type": "hls",
+            "subject": "Module 1"
           },
           {
-            "id": "phys-umeed-196",
-            "label": "196. Lecture 01• Class Notes",
-            "url": "https://www.streamvaultpro.cc/0:/dl/6a9160ae1b4c2c74d772b65a",
-            "downloadUrl": "https://www.streamvaultpro.cc/0:/dl/6a9160ae1b4c2c74d772b65a",
-            "type": "pdf",
-            "subject": "Engineering Physics",
-            "category": "pdfs",
-            "servers": [
-              {
-                "name": "ALBA",
-                "url": "https://www.streamvaultpro.cc/0:/dl/6a9160ae1b4c2c74d772b65a",
-                "downloadUrl": "https://www.streamvaultpro.cc/0:/dl/6a9160ae1b4c2c74d772b65a",
-                "streamUrl": "https://www.streamvaultpro.cc/0:/stream/6a9160ae1b4c2c74d772b65a",
-                "type": "pdf"
-              },
-              {
-                "name": "ESTE",
-                "url": "https://fs1qydv17g1-161-162e5df28a45.herokuapp.com/dl/6a9160b095d01368e89291b5",
-                "downloadUrl": "https://publicbotshub.blogspot.com/p/file-stream-bot.html?dl=6a9160b095d01368e89291b5",
-                "type": "pdf"
-              }
-            ]
+            "id": "beu-chem-3",
+            "label": "Lecture 03 • Photoelectric Effect",
+            "url": "https://vidmoly.net/embed-abkgcowtor0y.html",
+            "type": "hls",
+            "subject": "Module 1"
           },
           {
-            "id": "phys-umeed-197",
-            "label": "197. Lecture 02 • Frame of Reference",
-            "url": "https://www.streamvaultpro.cc/0:/dl/6a9160b21b4c2c74d772b65b",
-            "downloadUrl": "https://www.streamvaultpro.cc/0:/dl/6a9160b21b4c2c74d772b65b",
-            "type": "video",
-            "subject": "Engineering Physics",
-            "category": "videos",
-            "servers": [
-              {
-                "name": "ALBA",
-                "url": "https://www.streamvaultpro.cc/0:/dl/6a9160b21b4c2c74d772b65b",
-                "downloadUrl": "https://www.streamvaultpro.cc/0:/dl/6a9160b21b4c2c74d772b65b",
-                "streamUrl": "https://www.streamvaultpro.cc/0:/stream/6a9160b21b4c2c74d772b65b",
-                "type": "video"
-              },
-              {
-                "name": "ESTE",
-                "url": "https://fs1qydv17g1-161-162e5df28a45.herokuapp.com/dl/6a9160b595d01368e89291b7",
-                "downloadUrl": "https://publicbotshub.blogspot.com/p/file-stream-bot.html?dl=6a9160b595d01368e89291b7",
-                "type": "video"
-              }
-            ]
+            "id": "beu-chem-4",
+            "label": "Lecture 04 • Atomic & Molecular Orbitals",
+            "url": "https://vidmoly.net/embed-xadjze8shagc.html",
+            "type": "hls",
+            "subject": "Module 1"
           },
           {
-            "id": "phys-umeed-198",
-            "label": "198. Lecture 02• Class Notes",
-            "url": "https://www.streamvaultpro.cc/0:/dl/6a9160b71b4c2c74d772b65c",
-            "downloadUrl": "https://www.streamvaultpro.cc/0:/dl/6a9160b71b4c2c74d772b65c",
-            "type": "pdf",
-            "subject": "Engineering Physics",
-            "category": "pdfs",
-            "servers": [
-              {
-                "name": "ALBA",
-                "url": "https://www.streamvaultpro.cc/0:/dl/6a9160b71b4c2c74d772b65c",
-                "downloadUrl": "https://www.streamvaultpro.cc/0:/dl/6a9160b71b4c2c74d772b65c",
-                "streamUrl": "https://www.streamvaultpro.cc/0:/stream/6a9160b71b4c2c74d772b65c",
-                "type": "pdf"
-              },
-              {
-                "name": "ESTE",
-                "url": "https://fs1qydv17g1-161-162e5df28a45.herokuapp.com/dl/6a9160b995d01368e89291b9",
-                "downloadUrl": "https://publicbotshub.blogspot.com/p/file-stream-bot.html?dl=6a9160b995d01368e89291b9",
-                "type": "pdf"
-              }
-            ]
+            "id": "beu-chem-5",
+            "label": "Lecture 05 • Molecular Orbital & Bent Theory",
+            "url": "https://vidmoly.net/embed-ghjhisjeplq8.html",
+            "type": "hls",
+            "subject": "Module 1"
           },
           {
-            "id": "phys-umeed-199",
-            "label": "199. Lecture 03 • Pseudo Forces",
-            "url": "https://www.streamvaultpro.cc/0:/dl/6a9160bb1b4c2c74d772b65d",
-            "downloadUrl": "https://www.streamvaultpro.cc/0:/dl/6a9160bb1b4c2c74d772b65d",
-            "type": "video",
-            "subject": "Engineering Physics",
-            "category": "videos",
-            "servers": [
-              {
-                "name": "ALBA",
-                "url": "https://www.streamvaultpro.cc/0:/dl/6a9160bb1b4c2c74d772b65d",
-                "downloadUrl": "https://www.streamvaultpro.cc/0:/dl/6a9160bb1b4c2c74d772b65d",
-                "streamUrl": "https://www.streamvaultpro.cc/0:/stream/6a9160bb1b4c2c74d772b65d",
-                "type": "video"
-              },
-              {
-                "name": "ESTE",
-                "url": "https://fs1qydv17g1-161-162e5df28a45.herokuapp.com/dl/6a9160be95d01368e89291bb",
-                "downloadUrl": "https://publicbotshub.blogspot.com/p/file-stream-bot.html?dl=6a9160be95d01368e89291bb",
-                "type": "video"
-              }
-            ]
+            "id": "beu-chem-6",
+            "label": "Lecture 06 • VSEPR Theory",
+            "url": "https://vidmoly.net/embed-biivz3rq9269.html",
+            "type": "hls",
+            "subject": "Module 1"
           },
           {
-            "id": "phys-umeed-200",
-            "label": "200. Lecture 03• Class Notes",
-            "url": "https://www.streamvaultpro.cc/0:/dl/6a9160c01b4c2c74d772b65e",
-            "downloadUrl": "https://www.streamvaultpro.cc/0:/dl/6a9160c01b4c2c74d772b65e",
-            "type": "pdf",
-            "subject": "Engineering Physics",
-            "category": "pdfs",
-            "servers": [
-              {
-                "name": "ALBA",
-                "url": "https://www.streamvaultpro.cc/0:/dl/6a9160c01b4c2c74d772b65e",
-                "downloadUrl": "https://www.streamvaultpro.cc/0:/dl/6a9160c01b4c2c74d772b65e",
-                "streamUrl": "https://www.streamvaultpro.cc/0:/stream/6a9160c01b4c2c74d772b65e",
-                "type": "pdf"
-              },
-              {
-                "name": "ESTE",
-                "url": "https://fs1qydv17g1-161-162e5df28a45.herokuapp.com/dl/6a9160c295d01368e89291bd",
-                "downloadUrl": "https://publicbotshub.blogspot.com/p/file-stream-bot.html?dl=6a9160c295d01368e89291bd",
-                "type": "pdf"
-              }
-            ]
+            "id": "beu-chem-7",
+            "label": "Lecture 07 • VSEPR Theory — Part 2",
+            "url": "https://vidmoly.net/embed-833x2jec42ub.html",
+            "type": "hls",
+            "subject": "Module 1"
           },
           {
-            "id": "phys-umeed-201",
-            "label": "201. Lecture 04 • CORIOLIS ACCELERATION",
-            "url": "https://www.streamvaultpro.cc/0:/dl/6a9160c51b4c2c74d772b65f",
-            "downloadUrl": "https://www.streamvaultpro.cc/0:/dl/6a9160c51b4c2c74d772b65f",
-            "type": "video",
-            "subject": "Engineering Physics",
-            "category": "videos",
-            "servers": [
-              {
-                "name": "ALBA",
-                "url": "https://www.streamvaultpro.cc/0:/dl/6a9160c51b4c2c74d772b65f",
-                "downloadUrl": "https://www.streamvaultpro.cc/0:/dl/6a9160c51b4c2c74d772b65f",
-                "streamUrl": "https://www.streamvaultpro.cc/0:/stream/6a9160c51b4c2c74d772b65f",
-                "type": "video"
-              },
-              {
-                "name": "ESTE",
-                "url": "https://fs1qydv17g1-161-162e5df28a45.herokuapp.com/dl/6a9160c795d01368e89291bf",
-                "downloadUrl": "https://publicbotshub.blogspot.com/p/file-stream-bot.html?dl=6a9160c795d01368e89291bf",
-                "type": "video"
-              }
-            ]
+            "id": "beu-chem-8",
+            "label": "Lecture 08 • Coordination Number & Geometry",
+            "url": "https://vidmoly.net/embed-09et4t8ce8mb.html",
+            "type": "hls",
+            "subject": "Module 1"
           },
           {
-            "id": "phys-umeed-202",
-            "label": "202. Lecture 04• Class Notes",
-            "url": "https://www.streamvaultpro.cc/0:/dl/6a9160ca1b4c2c74d772b660",
-            "downloadUrl": "https://www.streamvaultpro.cc/0:/dl/6a9160ca1b4c2c74d772b660",
-            "type": "pdf",
-            "subject": "Engineering Physics",
-            "category": "pdfs",
-            "servers": [
-              {
-                "name": "ALBA",
-                "url": "https://www.streamvaultpro.cc/0:/dl/6a9160ca1b4c2c74d772b660",
-                "downloadUrl": "https://www.streamvaultpro.cc/0:/dl/6a9160ca1b4c2c74d772b660",
-                "streamUrl": "https://www.streamvaultpro.cc/0:/stream/6a9160ca1b4c2c74d772b660",
-                "type": "pdf"
-              },
-              {
-                "name": "ESTE",
-                "url": "https://fs1qydv17g1-161-162e5df28a45.herokuapp.com/dl/6a9160cd95d01368e89291c1",
-                "downloadUrl": "https://publicbotshub.blogspot.com/p/file-stream-bot.html?dl=6a9160cd95d01368e89291c1",
-                "type": "pdf"
-              }
-            ]
+            "id": "beu-chem-9",
+            "label": "Lecture 09 • Isomerism in Transition Metal Compounds",
+            "url": "https://vidmoly.net/embed-umevc53v7vwr.html",
+            "type": "hls",
+            "subject": "Module 1"
           },
           {
-            "id": "phys-umeed-203",
-            "label": "203. Lecture 05 • Application of CORIOLIS ACCELERATION",
-            "url": "https://www.streamvaultpro.cc/0:/dl/6a9160cf1b4c2c74d772b661",
-            "downloadUrl": "https://www.streamvaultpro.cc/0:/dl/6a9160cf1b4c2c74d772b661",
-            "type": "video",
-            "subject": "Engineering Physics",
-            "category": "videos",
-            "servers": [
-              {
-                "name": "ALBA",
-                "url": "https://www.streamvaultpro.cc/0:/dl/6a9160cf1b4c2c74d772b661",
-                "downloadUrl": "https://www.streamvaultpro.cc/0:/dl/6a9160cf1b4c2c74d772b661",
-                "streamUrl": "https://www.streamvaultpro.cc/0:/stream/6a9160cf1b4c2c74d772b661",
-                "type": "video"
-              },
-              {
-                "name": "ESTE",
-                "url": "https://fs1qydv17g1-161-162e5df28a45.herokuapp.com/dl/6a9160d195d01368e89291c3",
-                "downloadUrl": "https://publicbotshub.blogspot.com/p/file-stream-bot.html?dl=6a9160d195d01368e89291c3",
-                "type": "video"
-              }
-            ]
+            "id": "beu-chem-10",
+            "label": "Lecture 10 • Metal Carbonyls — Synthesis & Structure",
+            "url": "https://vidmoly.net/embed-uoevermf2269.html",
+            "type": "hls",
+            "subject": "Module 1"
           },
           {
-            "id": "phys-umeed-204",
-            "label": "204. Lecture 05• Class Notes",
-            "url": "https://www.streamvaultpro.cc/0:/dl/6a9160d51b4c2c74d772b662",
-            "downloadUrl": "https://www.streamvaultpro.cc/0:/dl/6a9160d51b4c2c74d772b662",
-            "type": "pdf",
-            "subject": "Engineering Physics",
-            "category": "pdfs",
-            "servers": [
-              {
-                "name": "ALBA",
-                "url": "https://www.streamvaultpro.cc/0:/dl/6a9160d51b4c2c74d772b662",
-                "downloadUrl": "https://www.streamvaultpro.cc/0:/dl/6a9160d51b4c2c74d772b662",
-                "streamUrl": "https://www.streamvaultpro.cc/0:/stream/6a9160d51b4c2c74d772b662",
-                "type": "pdf"
-              },
-              {
-                "name": "ESTE",
-                "url": "https://fs1qydv17g1-161-162e5df28a45.herokuapp.com/dl/6a9160d795d01368e89291c5",
-                "downloadUrl": "https://publicbotshub.blogspot.com/p/file-stream-bot.html?dl=6a9160d795d01368e89291c5",
-                "type": "pdf"
-              }
-            ]
+            "id": "beu-chem-11",
+            "label": "Lecture 01 • Principles of Rotational & Vibrational Spectroscopy",
+            "url": "https://vidmoly.net/embed-vo2xgvo24m6a.html",
+            "type": "hls",
+            "subject": "Module 2"
           },
           {
-            "id": "phys-umeed-205",
-            "label": "205. Lecture 06 • Application of CORIOLIS ACCELERATION",
-            "url": "https://www.streamvaultpro.cc/0:/dl/6a9160de1b4c2c74d772b663",
-            "downloadUrl": "https://www.streamvaultpro.cc/0:/dl/6a9160de1b4c2c74d772b663",
-            "type": "video",
-            "subject": "Engineering Physics",
-            "category": "videos",
-            "servers": [
-              {
-                "name": "ALBA",
-                "url": "https://www.streamvaultpro.cc/0:/dl/6a9160de1b4c2c74d772b663",
-                "downloadUrl": "https://www.streamvaultpro.cc/0:/dl/6a9160de1b4c2c74d772b663",
-                "streamUrl": "https://www.streamvaultpro.cc/0:/stream/6a9160de1b4c2c74d772b663",
-                "type": "video"
-              },
-              {
-                "name": "ESTE",
-                "url": "https://fs1qydv17g1-161-162e5df28a45.herokuapp.com/dl/6a9160e195d01368e89291c7",
-                "downloadUrl": "https://publicbotshub.blogspot.com/p/file-stream-bot.html?dl=6a9160e195d01368e89291c7",
-                "type": "video"
-              }
-            ]
+            "id": "beu-chem-12",
+            "label": "Lecture 02 • Spectroscopy Applications",
+            "url": "https://vidmoly.net/embed-tuwbb21uzrq6.html",
+            "type": "hls",
+            "subject": "Module 2"
           },
           {
-            "id": "phys-umeed-206",
-            "label": "206. Lecture 06• Class Notes",
-            "url": "https://www.streamvaultpro.cc/0:/dl/6a9160e21b4c2c74d772b664",
-            "downloadUrl": "https://www.streamvaultpro.cc/0:/dl/6a9160e21b4c2c74d772b664",
-            "type": "pdf",
-            "subject": "Engineering Physics",
-            "category": "pdfs",
-            "servers": [
-              {
-                "name": "ALBA",
-                "url": "https://www.streamvaultpro.cc/0:/dl/6a9160e21b4c2c74d772b664",
-                "downloadUrl": "https://www.streamvaultpro.cc/0:/dl/6a9160e21b4c2c74d772b664",
-                "streamUrl": "https://www.streamvaultpro.cc/0:/stream/6a9160e21b4c2c74d772b664",
-                "type": "pdf"
-              },
-              {
-                "name": "ESTE",
-                "url": "https://fs1qydv17g1-161-162e5df28a45.herokuapp.com/dl/6a9160e495d01368e89291c9",
-                "downloadUrl": "https://publicbotshub.blogspot.com/p/file-stream-bot.html?dl=6a9160e495d01368e89291c9",
-                "type": "pdf"
-              }
-            ]
+            "id": "beu-chem-13",
+            "label": "Lecture 03 • NMR Spectroscopy Fundamentals",
+            "url": "https://vidmoly.net/embed-iiriw9w8wacg.html",
+            "type": "hls",
+            "subject": "Module 2"
           },
           {
-            "id": "phys-umeed-207",
-            "label": "207. Lecture 01 • Oscillation",
-            "url": "https://www.streamvaultpro.cc/0:/dl/6a9160e71b4c2c74d772b665",
-            "downloadUrl": "https://www.streamvaultpro.cc/0:/dl/6a9160e71b4c2c74d772b665",
-            "type": "video",
-            "subject": "Engineering Physics",
-            "category": "videos",
-            "servers": [
-              {
-                "name": "ALBA",
-                "url": "https://www.streamvaultpro.cc/0:/dl/6a9160e71b4c2c74d772b665",
-                "downloadUrl": "https://www.streamvaultpro.cc/0:/dl/6a9160e71b4c2c74d772b665",
-                "streamUrl": "https://www.streamvaultpro.cc/0:/stream/6a9160e71b4c2c74d772b665",
-                "type": "video"
-              },
-              {
-                "name": "ESTE",
-                "url": "https://fs1qydv17g1-161-162e5df28a45.herokuapp.com/dl/6a9160e995d01368e89291ca",
-                "downloadUrl": "https://publicbotshub.blogspot.com/p/file-stream-bot.html?dl=6a9160e995d01368e89291ca",
-                "type": "video"
-              }
-            ]
+            "id": "beu-chem-14",
+            "label": "Lecture 04 • NMR Spectroscopy Analysis",
+            "url": "https://vidmoly.net/embed-i56owm6cfbji.html",
+            "type": "hls",
+            "subject": "Module 2"
           },
           {
-            "id": "phys-umeed-208",
-            "label": "208. Lecture 01• Class Notes",
-            "url": "https://www.streamvaultpro.cc/0:/dl/6a9160eb1b4c2c74d772b666",
-            "downloadUrl": "https://www.streamvaultpro.cc/0:/dl/6a9160eb1b4c2c74d772b666",
-            "type": "pdf",
-            "subject": "Engineering Physics",
-            "category": "pdfs",
-            "servers": [
-              {
-                "name": "ALBA",
-                "url": "https://www.streamvaultpro.cc/0:/dl/6a9160eb1b4c2c74d772b666",
-                "downloadUrl": "https://www.streamvaultpro.cc/0:/dl/6a9160eb1b4c2c74d772b666",
-                "streamUrl": "https://www.streamvaultpro.cc/0:/stream/6a9160eb1b4c2c74d772b666",
-                "type": "pdf"
-              },
-              {
-                "name": "ESTE",
-                "url": "https://fs1qydv17g1-161-162e5df28a45.herokuapp.com/dl/6a9160ed95d01368e89291cd",
-                "downloadUrl": "https://publicbotshub.blogspot.com/p/file-stream-bot.html?dl=6a9160ed95d01368e89291cd",
-                "type": "pdf"
-              }
-            ]
+            "id": "beu-chem-15",
+            "label": "Lecture 01 • Electrochemical Cell",
+            "url": "https://vidmoly.net/embed-zligdcfd1nh4.html",
+            "type": "hls",
+            "subject": "Module 3"
           },
           {
-            "id": "phys-umeed-209",
-            "label": "209. Lecture 02 • Types of Oscillation",
-            "url": "https://www.streamvaultpro.cc/0:/dl/6a9160f01b4c2c74d772b667",
-            "downloadUrl": "https://www.streamvaultpro.cc/0:/dl/6a9160f01b4c2c74d772b667",
-            "type": "video",
-            "subject": "Engineering Physics",
-            "category": "videos",
-            "servers": [
-              {
-                "name": "ALBA",
-                "url": "https://www.streamvaultpro.cc/0:/dl/6a9160f01b4c2c74d772b667",
-                "downloadUrl": "https://www.streamvaultpro.cc/0:/dl/6a9160f01b4c2c74d772b667",
-                "streamUrl": "https://www.streamvaultpro.cc/0:/stream/6a9160f01b4c2c74d772b667",
-                "type": "video"
-              },
-              {
-                "name": "ESTE",
-                "url": "https://fs1qydv17g1-161-162e5df28a45.herokuapp.com/dl/6a9160f295d01368e89291cf",
-                "downloadUrl": "https://publicbotshub.blogspot.com/p/file-stream-bot.html?dl=6a9160f295d01368e89291cf",
-                "type": "video"
-              }
-            ]
+            "id": "beu-chem-16",
+            "label": "Lecture 02 • Electrochemical Cell — Part 2",
+            "url": "https://vidmoly.net/embed-urwg5a6fyfzk.html",
+            "type": "hls",
+            "subject": "Module 3"
           },
           {
-            "id": "phys-umeed-210",
-            "label": "210. Lecture 02• Class Notes",
-            "url": "https://www.streamvaultpro.cc/0:/dl/6a9160f71b4c2c74d772b668",
-            "downloadUrl": "https://www.streamvaultpro.cc/0:/dl/6a9160f71b4c2c74d772b668",
-            "type": "pdf",
-            "subject": "Engineering Physics",
-            "category": "pdfs",
-            "servers": [
-              {
-                "name": "ALBA",
-                "url": "https://www.streamvaultpro.cc/0:/dl/6a9160f71b4c2c74d772b668",
-                "downloadUrl": "https://www.streamvaultpro.cc/0:/dl/6a9160f71b4c2c74d772b668",
-                "streamUrl": "https://www.streamvaultpro.cc/0:/stream/6a9160f71b4c2c74d772b668",
-                "type": "pdf"
-              },
-              {
-                "name": "ESTE",
-                "url": "https://fs1qydv17g1-161-162e5df28a45.herokuapp.com/dl/6a9160f995d01368e89291d1",
-                "downloadUrl": "https://publicbotshub.blogspot.com/p/file-stream-bot.html?dl=6a9160f995d01368e89291d1",
-                "type": "pdf"
-              }
-            ]
+            "id": "beu-chem-17",
+            "label": "Lecture 03 • Electromotive Force (EMF)",
+            "url": "https://vidmoly.net/embed-5uxql2kjgxds.html",
+            "type": "hls",
+            "subject": "Module 3"
           },
           {
-            "id": "phys-umeed-211",
-            "label": "211. Lecture 03 • Damping Oscillation & Its Type",
-            "url": "https://www.streamvaultpro.cc/0:/dl/6a9160fc1b4c2c74d772b669",
-            "downloadUrl": "https://www.streamvaultpro.cc/0:/dl/6a9160fc1b4c2c74d772b669",
-            "type": "video",
-            "subject": "Engineering Physics",
-            "category": "videos",
-            "servers": [
-              {
-                "name": "ALBA",
-                "url": "https://www.streamvaultpro.cc/0:/dl/6a9160fc1b4c2c74d772b669",
-                "downloadUrl": "https://www.streamvaultpro.cc/0:/dl/6a9160fc1b4c2c74d772b669",
-                "streamUrl": "https://www.streamvaultpro.cc/0:/stream/6a9160fc1b4c2c74d772b669",
-                "type": "video"
-              },
-              {
-                "name": "ESTE",
-                "url": "https://fs1qydv17g1-161-162e5df28a45.herokuapp.com/dl/6a9160fd95d01368e89291d3",
-                "downloadUrl": "https://publicbotshub.blogspot.com/p/file-stream-bot.html?dl=6a9160fd95d01368e89291d3",
-                "type": "video"
-              }
-            ]
+            "id": "beu-chem-18",
+            "label": "Lecture 04 • Nernst Equation",
+            "url": "https://vidmoly.net/embed-cw3lwkhyvmsa.html",
+            "type": "hls",
+            "subject": "Module 3"
           },
           {
-            "id": "phys-umeed-212",
-            "label": "212. Lecture 03• Class Notes",
-            "url": "https://www.streamvaultpro.cc/0:/dl/6a9161001b4c2c74d772b66a",
-            "downloadUrl": "https://www.streamvaultpro.cc/0:/dl/6a9161001b4c2c74d772b66a",
-            "type": "pdf",
-            "subject": "Engineering Physics",
-            "category": "pdfs",
-            "servers": [
-              {
-                "name": "ALBA",
-                "url": "https://www.streamvaultpro.cc/0:/dl/6a9161001b4c2c74d772b66a",
-                "downloadUrl": "https://www.streamvaultpro.cc/0:/dl/6a9161001b4c2c74d772b66a",
-                "streamUrl": "https://www.streamvaultpro.cc/0:/stream/6a9161001b4c2c74d772b66a",
-                "type": "pdf"
-              },
-              {
-                "name": "ESTE",
-                "url": "https://fs1qydv17g1-161-162e5df28a45.herokuapp.com/dl/6a91610395d01368e89291d5",
-                "downloadUrl": "https://publicbotshub.blogspot.com/p/file-stream-bot.html?dl=6a91610395d01368e89291d5",
-                "type": "pdf"
-              }
-            ]
+            "id": "beu-chem-19",
+            "label": "Lecture 05 • Corrosion — Part 1",
+            "url": "https://vidmoly.net/embed-jf5mkvx89zxz.html",
+            "type": "hls",
+            "subject": "Module 3"
           },
           {
-            "id": "phys-umeed-213",
-            "label": "213. Lecture 04 • Damping Oscillation & Its Type",
-            "url": "https://www.streamvaultpro.cc/0:/dl/6a9161071b4c2c74d772b66b",
-            "downloadUrl": "https://www.streamvaultpro.cc/0:/dl/6a9161071b4c2c74d772b66b",
-            "type": "video",
-            "subject": "Engineering Physics",
-            "category": "videos",
-            "servers": [
-              {
-                "name": "ALBA",
-                "url": "https://www.streamvaultpro.cc/0:/dl/6a9161071b4c2c74d772b66b",
-                "downloadUrl": "https://www.streamvaultpro.cc/0:/dl/6a9161071b4c2c74d772b66b",
-                "streamUrl": "https://www.streamvaultpro.cc/0:/stream/6a9161071b4c2c74d772b66b",
-                "type": "video"
-              },
-              {
-                "name": "ESTE",
-                "url": "https://fs1qydv17g1-161-162e5df28a45.herokuapp.com/dl/6a91610995d01368e89291d7",
-                "downloadUrl": "https://publicbotshub.blogspot.com/p/file-stream-bot.html?dl=6a91610995d01368e89291d7",
-                "type": "video"
-              }
-            ]
+            "id": "beu-chem-20",
+            "label": "Lecture 06 • Corrosion — Part 2",
+            "url": "https://vidmoly.net/embed-unldj85zhm0k.html",
+            "type": "hls",
+            "subject": "Module 3"
           },
           {
-            "id": "phys-umeed-214",
-            "label": "214. Lecture 04• Class Notes",
-            "url": "https://www.streamvaultpro.cc/0:/dl/6a91610c1b4c2c74d772b66c",
-            "downloadUrl": "https://www.streamvaultpro.cc/0:/dl/6a91610c1b4c2c74d772b66c",
-            "type": "pdf",
-            "subject": "Engineering Physics",
-            "category": "pdfs",
-            "servers": [
-              {
-                "name": "ALBA",
-                "url": "https://www.streamvaultpro.cc/0:/dl/6a91610c1b4c2c74d772b66c",
-                "downloadUrl": "https://www.streamvaultpro.cc/0:/dl/6a91610c1b4c2c74d772b66c",
-                "streamUrl": "https://www.streamvaultpro.cc/0:/stream/6a91610c1b4c2c74d772b66c",
-                "type": "pdf"
-              },
-              {
-                "name": "ESTE",
-                "url": "https://fs1qydv17g1-161-162e5df28a45.herokuapp.com/dl/6a91610e95d01368e89291d9",
-                "downloadUrl": "https://publicbotshub.blogspot.com/p/file-stream-bot.html?dl=6a91610e95d01368e89291d9",
-                "type": "pdf"
-              }
-            ]
+            "id": "beu-chem-21",
+            "label": "Lecture 07 • Corrosion — Part 3",
+            "url": "https://vidmoly.net/embed-8ihi1yu72vtc.html",
+            "type": "hls",
+            "subject": "Module 3"
           },
           {
-            "id": "phys-umeed-215",
-            "label": "215. Lecture 05 • Forced Vibration & Resonant Condition",
-            "url": "https://www.streamvaultpro.cc/0:/dl/6a9161111b4c2c74d772b66d",
-            "downloadUrl": "https://www.streamvaultpro.cc/0:/dl/6a9161111b4c2c74d772b66d",
-            "type": "video",
-            "subject": "Engineering Physics",
-            "category": "videos",
-            "servers": [
-              {
-                "name": "ALBA",
-                "url": "https://www.streamvaultpro.cc/0:/dl/6a9161111b4c2c74d772b66d",
-                "downloadUrl": "https://www.streamvaultpro.cc/0:/dl/6a9161111b4c2c74d772b66d",
-                "streamUrl": "https://www.streamvaultpro.cc/0:/stream/6a9161111b4c2c74d772b66d",
-                "type": "video"
-              },
-              {
-                "name": "ESTE",
-                "url": "https://fs1qydv17g1-161-162e5df28a45.herokuapp.com/dl/6a91611395d01368e89291db",
-                "downloadUrl": "https://publicbotshub.blogspot.com/p/file-stream-bot.html?dl=6a91611395d01368e89291db",
-                "type": "video"
-              }
-            ]
+            "id": "beu-chem-22",
+            "label": "Lecture 08 • Lead Storage Battery",
+            "url": "https://vidmoly.net/embed-x7kt8lbq9i3n.html",
+            "type": "hls",
+            "subject": "Module 3"
           },
           {
-            "id": "phys-umeed-216",
-            "label": "216. Lecture 05• Class Notes",
-            "url": "https://www.streamvaultpro.cc/0:/dl/6a9161151b4c2c74d772b66e",
-            "downloadUrl": "https://www.streamvaultpro.cc/0:/dl/6a9161151b4c2c74d772b66e",
-            "type": "pdf",
-            "subject": "Engineering Physics",
-            "category": "pdfs",
-            "servers": [
-              {
-                "name": "ALBA",
-                "url": "https://www.streamvaultpro.cc/0:/dl/6a9161151b4c2c74d772b66e",
-                "downloadUrl": "https://www.streamvaultpro.cc/0:/dl/6a9161151b4c2c74d772b66e",
-                "streamUrl": "https://www.streamvaultpro.cc/0:/stream/6a9161151b4c2c74d772b66e",
-                "type": "pdf"
-              },
-              {
-                "name": "ESTE",
-                "url": "https://fs1qydv17g1-161-162e5df28a45.herokuapp.com/dl/6a91611895d01368e89291dd",
-                "downloadUrl": "https://publicbotshub.blogspot.com/p/file-stream-bot.html?dl=6a91611895d01368e89291dd",
-                "type": "pdf"
-              }
-            ]
+            "id": "beu-chem-23",
+            "label": "Lecture 09 • Leclanché Cell & Dry Cell",
+            "url": "https://vidmoly.net/embed-fenvznyavcfu.html",
+            "type": "hls",
+            "subject": "Module 3"
           },
           {
-            "id": "phys-umeed-217",
-            "label": "217. Lecture 06 • Forced Vibration & Resonant Condition - 02",
-            "url": "https://www.streamvaultpro.cc/0:/dl/6a91611a1b4c2c74d772b66f",
-            "downloadUrl": "https://www.streamvaultpro.cc/0:/dl/6a91611a1b4c2c74d772b66f",
-            "type": "video",
-            "subject": "Engineering Physics",
-            "category": "videos",
-            "servers": [
-              {
-                "name": "ALBA",
-                "url": "https://www.streamvaultpro.cc/0:/dl/6a91611a1b4c2c74d772b66f",
-                "downloadUrl": "https://www.streamvaultpro.cc/0:/dl/6a91611a1b4c2c74d772b66f",
-                "streamUrl": "https://www.streamvaultpro.cc/0:/stream/6a91611a1b4c2c74d772b66f",
-                "type": "video"
-              },
-              {
-                "name": "ESTE",
-                "url": "https://fs1qydv17g1-161-162e5df28a45.herokuapp.com/dl/6a91611c95d01368e89291de",
-                "downloadUrl": "https://publicbotshub.blogspot.com/p/file-stream-bot.html?dl=6a91611c95d01368e89291de",
-                "type": "video"
-              }
-            ]
+            "id": "beu-chem-24",
+            "label": "Lecture 01 • Hardness of Water",
+            "url": "https://vidmoly.net/embed-k7q68h2yai3a.html",
+            "type": "hls",
+            "subject": "Module 4"
           },
           {
-            "id": "phys-umeed-218",
-            "label": "218. Lecture 06• Class Notes",
-            "url": "https://www.streamvaultpro.cc/0:/dl/6a9161211b4c2c74d772b670",
-            "downloadUrl": "https://www.streamvaultpro.cc/0:/dl/6a9161211b4c2c74d772b670",
-            "type": "pdf",
-            "subject": "Engineering Physics",
-            "category": "pdfs",
-            "servers": [
-              {
-                "name": "ALBA",
-                "url": "https://www.streamvaultpro.cc/0:/dl/6a9161211b4c2c74d772b670",
-                "downloadUrl": "https://www.streamvaultpro.cc/0:/dl/6a9161211b4c2c74d772b670",
-                "streamUrl": "https://www.streamvaultpro.cc/0:/stream/6a9161211b4c2c74d772b670",
-                "type": "pdf"
-              },
-              {
-                "name": "ESTE",
-                "url": "https://fs1qydv17g1-161-162e5df28a45.herokuapp.com/dl/6a91612395d01368e89291df",
-                "downloadUrl": "https://publicbotshub.blogspot.com/p/file-stream-bot.html?dl=6a91612395d01368e89291df",
-                "type": "pdf"
-              }
-            ]
+            "id": "beu-chem-25",
+            "label": "Lecture 02 • Hardness of Water — Part 2",
+            "url": "https://vidmoly.net/embed-gcw3h1rbyfjo.html",
+            "type": "hls",
+            "subject": "Module 4"
           },
           {
-            "id": "phys-umeed-219",
-            "label": "219. Lecture 01 • Introduction of Optics",
-            "url": "https://www.streamvaultpro.cc/0:/dl/6a9161251b4c2c74d772b671",
-            "downloadUrl": "https://www.streamvaultpro.cc/0:/dl/6a9161251b4c2c74d772b671",
-            "type": "video",
-            "subject": "Engineering Physics",
-            "category": "videos",
-            "servers": [
-              {
-                "name": "ALBA",
-                "url": "https://www.streamvaultpro.cc/0:/dl/6a9161251b4c2c74d772b671",
-                "downloadUrl": "https://www.streamvaultpro.cc/0:/dl/6a9161251b4c2c74d772b671",
-                "streamUrl": "https://www.streamvaultpro.cc/0:/stream/6a9161251b4c2c74d772b671",
-                "type": "video"
-              },
-              {
-                "name": "ESTE",
-                "url": "https://fs1qydv17g1-161-162e5df28a45.herokuapp.com/dl/6a91612895d01368e89291e0",
-                "downloadUrl": "https://publicbotshub.blogspot.com/p/file-stream-bot.html?dl=6a91612895d01368e89291e0",
-                "type": "video"
-              }
-            ]
+            "id": "beu-chem-26",
+            "label": "Lecture 03 • Alkalinity Method & Estimation",
+            "url": "https://vidmoly.net/embed-ov5a1y6h0lqn.html",
+            "type": "hls",
+            "subject": "Module 4"
           },
           {
-            "id": "phys-umeed-220",
-            "label": "220. Lecture 01• Class Notes",
-            "url": "https://www.streamvaultpro.cc/0:/dl/6a9161291b4c2c74d772b672",
-            "downloadUrl": "https://www.streamvaultpro.cc/0:/dl/6a9161291b4c2c74d772b672",
-            "type": "pdf",
-            "subject": "Engineering Physics",
-            "category": "pdfs",
-            "servers": [
-              {
-                "name": "ALBA",
-                "url": "https://www.streamvaultpro.cc/0:/dl/6a9161291b4c2c74d772b672",
-                "downloadUrl": "https://www.streamvaultpro.cc/0:/dl/6a9161291b4c2c74d772b672",
-                "streamUrl": "https://www.streamvaultpro.cc/0:/stream/6a9161291b4c2c74d772b672",
-                "type": "pdf"
-              },
-              {
-                "name": "ESTE",
-                "url": "https://fs1qydv17g1-161-162e5df28a45.herokuapp.com/dl/6a91612c95d01368e89291e2",
-                "downloadUrl": "https://publicbotshub.blogspot.com/p/file-stream-bot.html?dl=6a91612c95d01368e89291e2",
-                "type": "pdf"
-              }
-            ]
+            "id": "beu-chem-27",
+            "label": "Lecture 04 • Water Softening Methods",
+            "url": "https://vidmoly.net/embed-vwxuocprne9d.html",
+            "type": "hls",
+            "subject": "Module 4"
           },
           {
-            "id": "phys-umeed-221",
-            "label": "221. Lecture 02 • Huygens's Principle",
-            "url": "https://www.streamvaultpro.cc/0:/dl/6a91612f1b4c2c74d772b673",
-            "downloadUrl": "https://www.streamvaultpro.cc/0:/dl/6a91612f1b4c2c74d772b673",
-            "type": "video",
-            "subject": "Engineering Physics",
-            "category": "videos",
-            "servers": [
-              {
-                "name": "ALBA",
-                "url": "https://www.streamvaultpro.cc/0:/dl/6a91612f1b4c2c74d772b673",
-                "downloadUrl": "https://www.streamvaultpro.cc/0:/dl/6a91612f1b4c2c74d772b673",
-                "streamUrl": "https://www.streamvaultpro.cc/0:/stream/6a91612f1b4c2c74d772b673",
-                "type": "video"
-              },
-              {
-                "name": "ESTE",
-                "url": "https://fs1qydv17g1-161-162e5df28a45.herokuapp.com/dl/6a91613195d01368e89291e6",
-                "downloadUrl": "https://publicbotshub.blogspot.com/p/file-stream-bot.html?dl=6a91613195d01368e89291e6",
-                "type": "video"
-              }
-            ]
+            "id": "beu-chem-28",
+            "label": "Lecture 05 • Boiler Feed Water",
+            "url": "https://vidmoly.net/embed-jdt2c2bgb4yr.html",
+            "type": "hls",
+            "subject": "Module 4"
           },
           {
-            "id": "phys-umeed-222",
-            "label": "222. Lecture 02• Class Notes",
-            "url": "https://www.streamvaultpro.cc/0:/dl/6a9161361b4c2c74d772b674",
-            "downloadUrl": "https://www.streamvaultpro.cc/0:/dl/6a9161361b4c2c74d772b674",
-            "type": "pdf",
-            "subject": "Engineering Physics",
-            "category": "pdfs",
-            "servers": [
-              {
-                "name": "ALBA",
-                "url": "https://www.streamvaultpro.cc/0:/dl/6a9161361b4c2c74d772b674",
-                "downloadUrl": "https://www.streamvaultpro.cc/0:/dl/6a9161361b4c2c74d772b674",
-                "streamUrl": "https://www.streamvaultpro.cc/0:/stream/6a9161361b4c2c74d772b674",
-                "type": "pdf"
-              },
-              {
-                "name": "ESTE",
-                "url": "https://fs1qydv17g1-161-162e5df28a45.herokuapp.com/dl/6a91613995d01368e89291e9",
-                "downloadUrl": "https://publicbotshub.blogspot.com/p/file-stream-bot.html?dl=6a91613995d01368e89291e9",
-                "type": "pdf"
-              }
-            ]
+            "id": "beu-chem-29",
+            "label": "Lecture 06 • Boiler Troubles: Sludge, Scale, Priming & Foaming",
+            "url": "https://vidmoly.net/embed-79o7cnnl5jil.html",
+            "type": "hls",
+            "subject": "Module 4"
           },
           {
-            "id": "phys-umeed-223",
-            "label": "223. Lecture 03 • Huygens's Principle",
-            "url": "https://www.streamvaultpro.cc/0:/dl/6a9161421b4c2c74d772b676",
-            "downloadUrl": "https://www.streamvaultpro.cc/0:/dl/6a9161421b4c2c74d772b676",
-            "type": "video",
-            "subject": "Engineering Physics",
-            "category": "videos",
-            "servers": [
-              {
-                "name": "ALBA",
-                "url": "https://www.streamvaultpro.cc/0:/dl/6a9161421b4c2c74d772b676",
-                "downloadUrl": "https://www.streamvaultpro.cc/0:/dl/6a9161421b4c2c74d772b676",
-                "streamUrl": "https://www.streamvaultpro.cc/0:/stream/6a9161421b4c2c74d772b676",
-                "type": "video"
-              },
-              {
-                "name": "ESTE",
-                "url": "https://fs1qydv17g1-161-162e5df28a45.herokuapp.com/dl/6a91614495d01368e89291ed",
-                "downloadUrl": "https://publicbotshub.blogspot.com/p/file-stream-bot.html?dl=6a91614495d01368e89291ed",
-                "type": "video"
-              }
-            ]
+            "id": "beu-chem-30",
+            "label": "Lecture 07 • Caustic Embrittlement & Treatment",
+            "url": "https://vidmoly.net/embed-svoap3krewxl.html",
+            "type": "hls",
+            "subject": "Module 4"
           },
           {
-            "id": "phys-umeed-224",
-            "label": "224. Lecture 03• Class Notes",
-            "url": "https://www.streamvaultpro.cc/0:/dl/6a9161461b4c2c74d772b677",
-            "downloadUrl": "https://www.streamvaultpro.cc/0:/dl/6a9161461b4c2c74d772b677",
-            "type": "pdf",
-            "subject": "Engineering Physics",
-            "category": "pdfs",
-            "servers": [
-              {
-                "name": "ALBA",
-                "url": "https://www.streamvaultpro.cc/0:/dl/6a9161461b4c2c74d772b677",
-                "downloadUrl": "https://www.streamvaultpro.cc/0:/dl/6a9161461b4c2c74d772b677",
-                "streamUrl": "https://www.streamvaultpro.cc/0:/stream/6a9161461b4c2c74d772b677",
-                "type": "pdf"
-              },
-              {
-                "name": "ESTE",
-                "url": "https://fs1qydv17g1-161-162e5df28a45.herokuapp.com/dl/6a91614995d01368e89291ef",
-                "downloadUrl": "https://publicbotshub.blogspot.com/p/file-stream-bot.html?dl=6a91614995d01368e89291ef",
-                "type": "pdf"
-              }
-            ]
+            "id": "beu-chem-31",
+            "label": "Lecture 01 • Free Radical Polymerization",
+            "url": "https://vidmoly.net/embed-tqu6eu3ui628.html",
+            "type": "hls",
+            "subject": "Module 5"
           },
           {
-            "id": "phys-umeed-225",
-            "label": "225. Lecture 04 • Young 's Double slit experiment",
-            "url": "https://www.streamvaultpro.cc/0:/dl/6a91614c1b4c2c74d772b678",
-            "downloadUrl": "https://www.streamvaultpro.cc/0:/dl/6a91614c1b4c2c74d772b678",
-            "type": "video",
-            "subject": "Engineering Physics",
-            "category": "videos",
-            "servers": [
-              {
-                "name": "ALBA",
-                "url": "https://www.streamvaultpro.cc/0:/dl/6a91614c1b4c2c74d772b678",
-                "downloadUrl": "https://www.streamvaultpro.cc/0:/dl/6a91614c1b4c2c74d772b678",
-                "streamUrl": "https://www.streamvaultpro.cc/0:/stream/6a91614c1b4c2c74d772b678",
-                "type": "video"
-              },
-              {
-                "name": "ESTE",
-                "url": "https://fs1qydv17g1-161-162e5df28a45.herokuapp.com/dl/6a91614e95d01368e89291f1",
-                "downloadUrl": "https://publicbotshub.blogspot.com/p/file-stream-bot.html?dl=6a91614e95d01368e89291f1",
-                "type": "video"
-              }
-            ]
+            "id": "beu-chem-32",
+            "label": "Lecture 02 • Ionic & Coordination Mechanisms",
+            "url": "https://vidmoly.net/embed-f3ssaux2o3q2.html",
+            "type": "hls",
+            "subject": "Module 5"
           },
           {
-            "id": "phys-umeed-226",
-            "label": "226. Lecture 04• Class Notes",
-            "url": "https://www.streamvaultpro.cc/0:/dl/6a9161501b4c2c74d772b679",
-            "downloadUrl": "https://www.streamvaultpro.cc/0:/dl/6a9161501b4c2c74d772b679",
-            "type": "pdf",
-            "subject": "Engineering Physics",
-            "category": "pdfs",
-            "servers": [
-              {
-                "name": "ALBA",
-                "url": "https://www.streamvaultpro.cc/0:/dl/6a9161501b4c2c74d772b679",
-                "downloadUrl": "https://www.streamvaultpro.cc/0:/dl/6a9161501b4c2c74d772b679",
-                "streamUrl": "https://www.streamvaultpro.cc/0:/stream/6a9161501b4c2c74d772b679",
-                "type": "pdf"
-              },
-              {
-                "name": "ESTE",
-                "url": "https://fs1qydv17g1-161-162e5df28a45.herokuapp.com/dl/6a91615295d01368e89291f2",
-                "downloadUrl": "https://publicbotshub.blogspot.com/p/file-stream-bot.html?dl=6a91615295d01368e89291f2",
-                "type": "pdf"
-              }
-            ]
+            "id": "beu-chem-33",
+            "label": "Lecture 03 • Applications of Phenol-Formaldehyde Resin",
+            "url": "https://vidmoly.net/embed-uprbrnwk2c56.html",
+            "type": "hls",
+            "subject": "Module 5"
           },
           {
-            "id": "phys-umeed-227",
-            "label": "227. Lecture 05 • Young 's Double slit experiment",
-            "url": "https://www.streamvaultpro.cc/0:/dl/6a9161551b4c2c74d772b67a",
-            "downloadUrl": "https://www.streamvaultpro.cc/0:/dl/6a9161551b4c2c74d772b67a",
-            "type": "video",
-            "subject": "Engineering Physics",
-            "category": "videos",
-            "servers": [
-              {
-                "name": "ALBA",
-                "url": "https://www.streamvaultpro.cc/0:/dl/6a9161551b4c2c74d772b67a",
-                "downloadUrl": "https://www.streamvaultpro.cc/0:/dl/6a9161551b4c2c74d772b67a",
-                "streamUrl": "https://www.streamvaultpro.cc/0:/stream/6a9161551b4c2c74d772b67a",
-                "type": "video"
-              },
-              {
-                "name": "ESTE",
-                "url": "https://fs1qydv17g1-161-162e5df28a45.herokuapp.com/dl/6a91615795d01368e89291f3",
-                "downloadUrl": "https://publicbotshub.blogspot.com/p/file-stream-bot.html?dl=6a91615795d01368e89291f3",
-                "type": "video"
-              }
-            ]
+            "id": "beu-chem-34",
+            "label": "Lecture 04 • Elastomers & Natural Rubbers",
+            "url": "https://vidmoly.net/embed-iv4l1dunv03r.html",
+            "type": "hls",
+            "subject": "Module 5"
           },
           {
-            "id": "phys-umeed-228",
-            "label": "228. Lecture 05• Class Notes",
-            "url": "https://www.streamvaultpro.cc/0:/dl/6a91615a1b4c2c74d772b67b",
-            "downloadUrl": "https://www.streamvaultpro.cc/0:/dl/6a91615a1b4c2c74d772b67b",
-            "type": "pdf",
-            "subject": "Engineering Physics",
-            "category": "pdfs",
-            "servers": [
-              {
-                "name": "ALBA",
-                "url": "https://www.streamvaultpro.cc/0:/dl/6a91615a1b4c2c74d772b67b",
-                "downloadUrl": "https://www.streamvaultpro.cc/0:/dl/6a91615a1b4c2c74d772b67b",
-                "streamUrl": "https://www.streamvaultpro.cc/0:/stream/6a91615a1b4c2c74d772b67b",
-                "type": "pdf"
-              },
-              {
-                "name": "ESTE",
-                "url": "https://fs1qydv17g1-161-162e5df28a45.herokuapp.com/dl/6a91615c95d01368e89291f4",
-                "downloadUrl": "https://publicbotshub.blogspot.com/p/file-stream-bot.html?dl=6a91615c95d01368e89291f4",
-                "type": "pdf"
-              }
-            ]
+            "id": "beu-chem-35",
+            "label": "Lecture 05 • Buna-S & Buna-N Polymers",
+            "url": "https://vidmoly.net/embed-67jxrue19qzb.html",
+            "type": "hls",
+            "subject": "Module 5"
           },
           {
-            "id": "phys-umeed-229",
-            "label": "229. Lecture 06 • Diffraction",
-            "url": "https://www.streamvaultpro.cc/0:/dl/6a9161601b4c2c74d772b67c",
-            "downloadUrl": "https://www.streamvaultpro.cc/0:/dl/6a9161601b4c2c74d772b67c",
-            "type": "video",
-            "subject": "Engineering Physics",
-            "category": "videos",
-            "servers": [
-              {
-                "name": "ALBA",
-                "url": "https://www.streamvaultpro.cc/0:/dl/6a9161601b4c2c74d772b67c",
-                "downloadUrl": "https://www.streamvaultpro.cc/0:/dl/6a9161601b4c2c74d772b67c",
-                "streamUrl": "https://www.streamvaultpro.cc/0:/stream/6a9161601b4c2c74d772b67c",
-                "type": "video"
-              },
-              {
-                "name": "ESTE",
-                "url": "https://fs1qydv17g1-161-162e5df28a45.herokuapp.com/dl/6a91616295d01368e89291f5",
-                "downloadUrl": "https://publicbotshub.blogspot.com/p/file-stream-bot.html?dl=6a91616295d01368e89291f5",
-                "type": "video"
-              }
-            ]
+            "id": "beu-chem-36",
+            "label": "Lecture 06 • Inorganic Polymers, Silicones, Adhesives & Epoxy Resins",
+            "url": "https://vidmoly.net/embed-ijtn2ssgb7xt.html",
+            "type": "hls",
+            "subject": "Module 5"
           },
           {
-            "id": "phys-umeed-230",
-            "label": "230. Lecture 06• Class Notes",
-            "url": "https://www.streamvaultpro.cc/0:/dl/6a9161651b4c2c74d772b67d",
-            "downloadUrl": "https://www.streamvaultpro.cc/0:/dl/6a9161651b4c2c74d772b67d",
-            "type": "pdf",
-            "subject": "Engineering Physics",
-            "category": "pdfs",
-            "servers": [
-              {
-                "name": "ALBA",
-                "url": "https://www.streamvaultpro.cc/0:/dl/6a9161651b4c2c74d772b67d",
-                "downloadUrl": "https://www.streamvaultpro.cc/0:/dl/6a9161651b4c2c74d772b67d",
-                "streamUrl": "https://www.streamvaultpro.cc/0:/stream/6a9161651b4c2c74d772b67d",
-                "type": "pdf"
-              },
-              {
-                "name": "ESTE",
-                "url": "https://fs1qydv17g1-161-162e5df28a45.herokuapp.com/dl/6a91616795d01368e89291fa",
-                "downloadUrl": "https://publicbotshub.blogspot.com/p/file-stream-bot.html?dl=6a91616795d01368e89291fa",
-                "type": "pdf"
-              }
-            ]
+            "id": "beu-chem-37",
+            "label": "Lecture 07 • Thermoplastics vs Thermosetting Plastics & PVC",
+            "url": "https://vidmoly.net/embed-iy41ljk4s8j9.html",
+            "type": "hls",
+            "subject": "Module 5"
           },
           {
-            "id": "phys-umeed-231",
-            "label": "231. Lecture 07 • FRAUNHOFFER DIFFRACTION TYROUGH A SINGLE SLIT",
-            "url": "https://www.streamvaultpro.cc/0:/dl/6a91616a1b4c2c74d772b67e",
-            "downloadUrl": "https://www.streamvaultpro.cc/0:/dl/6a91616a1b4c2c74d772b67e",
-            "type": "video",
-            "subject": "Engineering Physics",
-            "category": "videos",
-            "servers": [
-              {
-                "name": "ALBA",
-                "url": "https://www.streamvaultpro.cc/0:/dl/6a91616a1b4c2c74d772b67e",
-                "downloadUrl": "https://www.streamvaultpro.cc/0:/dl/6a91616a1b4c2c74d772b67e",
-                "streamUrl": "https://www.streamvaultpro.cc/0:/stream/6a91616a1b4c2c74d772b67e",
-                "type": "video"
-              },
-              {
-                "name": "ESTE",
-                "url": "https://fs1qydv17g1-161-162e5df28a45.herokuapp.com/dl/6a91616c95d01368e89291fd",
-                "downloadUrl": "https://publicbotshub.blogspot.com/p/file-stream-bot.html?dl=6a91616c95d01368e89291fd",
-                "type": "video"
-              }
-            ]
+            "id": "beu-chem-38",
+            "label": "Lecture 08 • Polythene & Polystyrene",
+            "url": "https://vidmoly.net/embed-q6bk0x18cc2y.html",
+            "type": "hls",
+            "subject": "Module 5"
           },
           {
-            "id": "phys-umeed-232",
-            "label": "232. Lecture 07• Class Notes",
-            "url": "https://www.streamvaultpro.cc/0:/dl/6a91616e1b4c2c74d772b67f",
-            "downloadUrl": "https://www.streamvaultpro.cc/0:/dl/6a91616e1b4c2c74d772b67f",
-            "type": "pdf",
-            "subject": "Engineering Physics",
-            "category": "pdfs",
-            "servers": [
-              {
-                "name": "ALBA",
-                "url": "https://www.streamvaultpro.cc/0:/dl/6a91616e1b4c2c74d772b67f",
-                "downloadUrl": "https://www.streamvaultpro.cc/0:/dl/6a91616e1b4c2c74d772b67f",
-                "streamUrl": "https://www.streamvaultpro.cc/0:/stream/6a91616e1b4c2c74d772b67f",
-                "type": "pdf"
-              },
-              {
-                "name": "ESTE",
-                "url": "https://fs1qydv17g1-161-162e5df28a45.herokuapp.com/dl/6a91617095d01368e89291ff",
-                "downloadUrl": "https://publicbotshub.blogspot.com/p/file-stream-bot.html?dl=6a91617095d01368e89291ff",
-                "type": "pdf"
-              }
-            ]
+            "id": "beu-chem-39",
+            "label": "Lecture 01 • Organic Reactions & Mechanisms",
+            "url": "https://vidmoly.net/embed-x5lc4g9zpt7i.html",
+            "type": "hls",
+            "subject": "Module 6"
           },
           {
-            "id": "phys-umeed-233",
-            "label": "233. Lecture 08 • Michelson Interferometer",
-            "url": "https://www.streamvaultpro.cc/0:/dl/6a9161731b4c2c74d772b680",
-            "downloadUrl": "https://www.streamvaultpro.cc/0:/dl/6a9161731b4c2c74d772b680",
-            "type": "video",
-            "subject": "Engineering Physics",
-            "category": "videos",
-            "servers": [
-              {
-                "name": "ALBA",
-                "url": "https://www.streamvaultpro.cc/0:/dl/6a9161731b4c2c74d772b680",
-                "downloadUrl": "https://www.streamvaultpro.cc/0:/dl/6a9161731b4c2c74d772b680",
-                "streamUrl": "https://www.streamvaultpro.cc/0:/stream/6a9161731b4c2c74d772b680",
-                "type": "video"
-              },
-              {
-                "name": "ESTE",
-                "url": "https://fs1qydv17g1-161-162e5df28a45.herokuapp.com/dl/6a91617695d01368e8929201",
-                "downloadUrl": "https://publicbotshub.blogspot.com/p/file-stream-bot.html?dl=6a91617695d01368e8929201",
-                "type": "video"
-              }
-            ]
+            "id": "beu-chem-40",
+            "label": "Lecture 02 • Diels-Alder Reaction",
+            "url": "https://vidmoly.net/embed-b08uu3lsgqs1.html",
+            "type": "hls",
+            "subject": "Module 6"
           },
           {
-            "id": "phys-umeed-234",
-            "label": "234. Lecture 08• Class Notes",
-            "url": "https://www.streamvaultpro.cc/0:/dl/6a9161781b4c2c74d772b681",
-            "downloadUrl": "https://www.streamvaultpro.cc/0:/dl/6a9161781b4c2c74d772b681",
-            "type": "pdf",
-            "subject": "Engineering Physics",
-            "category": "pdfs",
-            "servers": [
-              {
-                "name": "ALBA",
-                "url": "https://www.streamvaultpro.cc/0:/dl/6a9161781b4c2c74d772b681",
-                "downloadUrl": "https://www.streamvaultpro.cc/0:/dl/6a9161781b4c2c74d772b681",
-                "streamUrl": "https://www.streamvaultpro.cc/0:/stream/6a9161781b4c2c74d772b681",
-                "type": "pdf"
-              },
-              {
-                "name": "ESTE",
-                "url": "https://fs1qydv17g1-161-162e5df28a45.herokuapp.com/dl/6a91617a95d01368e8929203",
-                "downloadUrl": "https://publicbotshub.blogspot.com/p/file-stream-bot.html?dl=6a91617a95d01368e8929203",
-                "type": "pdf"
-              }
-            ]
+            "id": "beu-chem-41",
+            "label": "Lecture 03 • Epoxide Ring Reactions",
+            "url": "https://vidmoly.net/embed-wps7v8kngr66.html",
+            "type": "hls",
+            "subject": "Module 6"
           },
           {
-            "id": "phys-umeed-235",
-            "label": "235. Lecture 09 • WORKING & CONSTRUCTION",
-            "url": "https://www.streamvaultpro.cc/0:/dl/6a91617c1b4c2c74d772b682",
-            "downloadUrl": "https://www.streamvaultpro.cc/0:/dl/6a91617c1b4c2c74d772b682",
-            "type": "video",
-            "subject": "Engineering Physics",
-            "category": "videos",
-            "servers": [
-              {
-                "name": "ALBA",
-                "url": "https://www.streamvaultpro.cc/0:/dl/6a91617c1b4c2c74d772b682",
-                "downloadUrl": "https://www.streamvaultpro.cc/0:/dl/6a91617c1b4c2c74d772b682",
-                "streamUrl": "https://www.streamvaultpro.cc/0:/stream/6a91617c1b4c2c74d772b682",
-                "type": "video"
-              },
-              {
-                "name": "ESTE",
-                "url": "https://fs1qydv17g1-161-162e5df28a45.herokuapp.com/dl/6a91617e95d01368e8929205",
-                "downloadUrl": "https://publicbotshub.blogspot.com/p/file-stream-bot.html?dl=6a91617e95d01368e8929205",
-                "type": "video"
-              }
-            ]
+            "id": "beu-chem-42",
+            "label": "Lecture 01 • Previous Year Questions & Analysis",
+            "url": "https://vidmoly.net/embed-pe7oj703n9o8.html",
+            "type": "hls",
+            "subject": "Practice Session"
           },
           {
-            "id": "phys-umeed-236",
-            "label": "236. Lecture 09• Class Notes",
-            "url": "https://www.streamvaultpro.cc/0:/dl/6a9161811b4c2c74d772b683",
-            "downloadUrl": "https://www.streamvaultpro.cc/0:/dl/6a9161811b4c2c74d772b683",
-            "type": "pdf",
-            "subject": "Engineering Physics",
-            "category": "pdfs",
-            "servers": [
-              {
-                "name": "ALBA",
-                "url": "https://www.streamvaultpro.cc/0:/dl/6a9161811b4c2c74d772b683",
-                "downloadUrl": "https://www.streamvaultpro.cc/0:/dl/6a9161811b4c2c74d772b683",
-                "streamUrl": "https://www.streamvaultpro.cc/0:/stream/6a9161811b4c2c74d772b683",
-                "type": "pdf"
-              },
-              {
-                "name": "ESTE",
-                "url": "https://fs1qydv17g1-161-162e5df28a45.herokuapp.com/dl/6a91618395d01368e8929206",
-                "downloadUrl": "https://publicbotshub.blogspot.com/p/file-stream-bot.html?dl=6a91618395d01368e8929206",
-                "type": "pdf"
-              }
-            ]
+            "id": "beu-chem-43",
+            "label": "Lecture 02 • Previous Year Questions & Solutions",
+            "url": "https://vidmoly.net/embed-frknyzzwu499.html",
+            "type": "hls",
+            "subject": "Practice Session"
           },
           {
-            "id": "phys-umeed-237",
-            "label": "237. Lecture 01 • Introduction of Laser",
-            "url": "https://www.streamvaultpro.cc/0:/dl/6a9161871b4c2c74d772b684",
-            "downloadUrl": "https://www.streamvaultpro.cc/0:/dl/6a9161871b4c2c74d772b684",
-            "type": "video",
-            "subject": "Engineering Physics",
-            "category": "videos",
-            "servers": [
-              {
-                "name": "ALBA",
-                "url": "https://www.streamvaultpro.cc/0:/dl/6a9161871b4c2c74d772b684",
-                "downloadUrl": "https://www.streamvaultpro.cc/0:/dl/6a9161871b4c2c74d772b684",
-                "streamUrl": "https://www.streamvaultpro.cc/0:/stream/6a9161871b4c2c74d772b684",
-                "type": "video"
-              },
-              {
-                "name": "ESTE",
-                "url": "https://fs1qydv17g1-161-162e5df28a45.herokuapp.com/dl/6a91618995d01368e8929207",
-                "downloadUrl": "https://publicbotshub.blogspot.com/p/file-stream-bot.html?dl=6a91618995d01368e8929207",
-                "type": "video"
-              }
-            ]
+            "id": "beu-chem-44",
+            "label": "Lecture 03 • Model Paper Discussion",
+            "url": "https://vidmoly.net/embed-bf9lvfpcqx00.html",
+            "type": "hls",
+            "subject": "Practice Session"
           },
           {
-            "id": "phys-umeed-238",
-            "label": "238. Lecture 01• Class Notes",
-            "url": "https://www.streamvaultpro.cc/0:/dl/6a91618b1b4c2c74d772b685",
-            "downloadUrl": "https://www.streamvaultpro.cc/0:/dl/6a91618b1b4c2c74d772b685",
-            "type": "pdf",
-            "subject": "Engineering Physics",
-            "category": "pdfs",
-            "servers": [
-              {
-                "name": "ALBA",
-                "url": "https://www.streamvaultpro.cc/0:/dl/6a91618b1b4c2c74d772b685",
-                "downloadUrl": "https://www.streamvaultpro.cc/0:/dl/6a91618b1b4c2c74d772b685",
-                "streamUrl": "https://www.streamvaultpro.cc/0:/stream/6a91618b1b4c2c74d772b685",
-                "type": "pdf"
-              },
-              {
-                "name": "ESTE",
-                "url": "https://fs1qydv17g1-161-162e5df28a45.herokuapp.com/dl/6a91618e95d01368e8929208",
-                "downloadUrl": "https://publicbotshub.blogspot.com/p/file-stream-bot.html?dl=6a91618e95d01368e8929208",
-                "type": "pdf"
-              }
-            ]
-          },
-          {
-            "id": "phys-umeed-239",
-            "label": "239. Lecture 02 • Laser System",
-            "url": "https://www.streamvaultpro.cc/0:/dl/6a9161911b4c2c74d772b686",
-            "downloadUrl": "https://www.streamvaultpro.cc/0:/dl/6a9161911b4c2c74d772b686",
-            "type": "video",
-            "subject": "Engineering Physics",
-            "category": "videos",
-            "servers": [
-              {
-                "name": "ALBA",
-                "url": "https://www.streamvaultpro.cc/0:/dl/6a9161911b4c2c74d772b686",
-                "downloadUrl": "https://www.streamvaultpro.cc/0:/dl/6a9161911b4c2c74d772b686",
-                "streamUrl": "https://www.streamvaultpro.cc/0:/stream/6a9161911b4c2c74d772b686",
-                "type": "video"
-              },
-              {
-                "name": "ESTE",
-                "url": "https://fs1qydv17g1-161-162e5df28a45.herokuapp.com/dl/6a91619395d01368e8929209",
-                "downloadUrl": "https://publicbotshub.blogspot.com/p/file-stream-bot.html?dl=6a91619395d01368e8929209",
-                "type": "video"
-              }
-            ]
-          },
-          {
-            "id": "phys-umeed-240",
-            "label": "240. Lecture 02• Class Notes",
-            "url": "https://www.streamvaultpro.cc/0:/dl/6a9161951b4c2c74d772b687",
-            "downloadUrl": "https://www.streamvaultpro.cc/0:/dl/6a9161951b4c2c74d772b687",
-            "type": "pdf",
-            "subject": "Engineering Physics",
-            "category": "pdfs",
-            "servers": [
-              {
-                "name": "ALBA",
-                "url": "https://www.streamvaultpro.cc/0:/dl/6a9161951b4c2c74d772b687",
-                "downloadUrl": "https://www.streamvaultpro.cc/0:/dl/6a9161951b4c2c74d772b687",
-                "streamUrl": "https://www.streamvaultpro.cc/0:/stream/6a9161951b4c2c74d772b687",
-                "type": "pdf"
-              },
-              {
-                "name": "ESTE",
-                "url": "https://fs1qydv17g1-161-162e5df28a45.herokuapp.com/dl/6a91619895d01368e892920a",
-                "downloadUrl": "https://publicbotshub.blogspot.com/p/file-stream-bot.html?dl=6a91619895d01368e892920a",
-                "type": "pdf"
-              }
-            ]
-          },
-          {
-            "id": "phys-umeed-241",
-            "label": "241. Lecture 03 • Ruby Laser",
-            "url": "https://www.streamvaultpro.cc/0:/dl/6a91619d1b4c2c74d772b688",
-            "downloadUrl": "https://www.streamvaultpro.cc/0:/dl/6a91619d1b4c2c74d772b688",
-            "type": "video",
-            "subject": "Engineering Physics",
-            "category": "videos",
-            "servers": [
-              {
-                "name": "ALBA",
-                "url": "https://www.streamvaultpro.cc/0:/dl/6a91619d1b4c2c74d772b688",
-                "downloadUrl": "https://www.streamvaultpro.cc/0:/dl/6a91619d1b4c2c74d772b688",
-                "streamUrl": "https://www.streamvaultpro.cc/0:/stream/6a91619d1b4c2c74d772b688",
-                "type": "video"
-              },
-              {
-                "name": "ESTE",
-                "url": "https://fs1qydv17g1-161-162e5df28a45.herokuapp.com/dl/6a9161aa95d01368e8929211",
-                "downloadUrl": "https://publicbotshub.blogspot.com/p/file-stream-bot.html?dl=6a9161aa95d01368e8929211",
-                "type": "video"
-              }
-            ]
-          },
-          {
-            "id": "phys-umeed-242",
-            "label": "242. Lecture 03• Class Notes",
-            "url": "https://www.streamvaultpro.cc/0:/dl/6a9161a11b4c2c74d772b689",
-            "downloadUrl": "https://www.streamvaultpro.cc/0:/dl/6a9161a11b4c2c74d772b689",
-            "type": "pdf",
-            "subject": "Engineering Physics",
-            "category": "pdfs",
-            "servers": [
-              {
-                "name": "ALBA",
-                "url": "https://www.streamvaultpro.cc/0:/dl/6a9161a11b4c2c74d772b689",
-                "downloadUrl": "https://www.streamvaultpro.cc/0:/dl/6a9161a11b4c2c74d772b689",
-                "streamUrl": "https://www.streamvaultpro.cc/0:/stream/6a9161a11b4c2c74d772b689",
-                "type": "pdf"
-              },
-              {
-                "name": "ESTE",
-                "url": "https://fs1qydv17g1-161-162e5df28a45.herokuapp.com/dl/6a9161ad95d01368e8929214",
-                "downloadUrl": "https://publicbotshub.blogspot.com/p/file-stream-bot.html?dl=6a9161ad95d01368e8929214",
-                "type": "pdf"
-              }
-            ]
-          },
-          {
-            "id": "phys-umeed-243",
-            "label": "243. Lecture 04 • Helium - Neon Laser",
-            "url": "https://www.streamvaultpro.cc/0:/dl/6a9161a61b4c2c74d772b68a",
-            "downloadUrl": "https://www.streamvaultpro.cc/0:/dl/6a9161a61b4c2c74d772b68a",
-            "type": "video",
-            "subject": "Engineering Physics",
-            "category": "videos",
-            "servers": [
-              {
-                "name": "ALBA",
-                "url": "https://www.streamvaultpro.cc/0:/dl/6a9161a61b4c2c74d772b68a",
-                "downloadUrl": "https://www.streamvaultpro.cc/0:/dl/6a9161a61b4c2c74d772b68a",
-                "streamUrl": "https://www.streamvaultpro.cc/0:/stream/6a9161a61b4c2c74d772b68a",
-                "type": "video"
-              },
-              {
-                "name": "ESTE",
-                "url": "https://fs1qydv17g1-161-162e5df28a45.herokuapp.com/dl/6a9161ab95d01368e8929212",
-                "downloadUrl": "https://publicbotshub.blogspot.com/p/file-stream-bot.html?dl=6a9161ab95d01368e8929212",
-                "type": "video"
-              }
-            ]
-          },
-          {
-            "id": "phys-umeed-244",
-            "label": "244. Lecture 04• Class Notes",
-            "url": "https://www.streamvaultpro.cc/0:/dl/6a9161ab1b4c2c74d772b68b",
-            "downloadUrl": "https://www.streamvaultpro.cc/0:/dl/6a9161ab1b4c2c74d772b68b",
-            "type": "pdf",
-            "subject": "Engineering Physics",
-            "category": "pdfs",
-            "servers": [
-              {
-                "name": "ALBA",
-                "url": "https://www.streamvaultpro.cc/0:/dl/6a9161ab1b4c2c74d772b68b",
-                "downloadUrl": "https://www.streamvaultpro.cc/0:/dl/6a9161ab1b4c2c74d772b68b",
-                "streamUrl": "https://www.streamvaultpro.cc/0:/stream/6a9161ab1b4c2c74d772b68b",
-                "type": "pdf"
-              },
-              {
-                "name": "ESTE",
-                "url": "https://fs1qydv17g1-161-162e5df28a45.herokuapp.com/dl/6a9161ad95d01368e8929213",
-                "downloadUrl": "https://publicbotshub.blogspot.com/p/file-stream-bot.html?dl=6a9161ad95d01368e8929213",
-                "type": "pdf"
-              }
-            ]
-          },
-          {
-            "id": "phys-umeed-245",
-            "label": "245. Lecture 05 • Nd: YAG Laser",
-            "url": "https://www.streamvaultpro.cc/0:/dl/6a9161b01b4c2c74d772b68c",
-            "downloadUrl": "https://www.streamvaultpro.cc/0:/dl/6a9161b01b4c2c74d772b68c",
-            "type": "video",
-            "subject": "Engineering Physics",
-            "category": "videos",
-            "servers": [
-              {
-                "name": "ALBA",
-                "url": "https://www.streamvaultpro.cc/0:/dl/6a9161b01b4c2c74d772b68c",
-                "downloadUrl": "https://www.streamvaultpro.cc/0:/dl/6a9161b01b4c2c74d772b68c",
-                "streamUrl": "https://www.streamvaultpro.cc/0:/stream/6a9161b01b4c2c74d772b68c",
-                "type": "video"
-              },
-              {
-                "name": "ESTE",
-                "url": "https://fs1qydv17g1-161-162e5df28a45.herokuapp.com/dl/6a9161b295d01368e8929219",
-                "downloadUrl": "https://publicbotshub.blogspot.com/p/file-stream-bot.html?dl=6a9161b295d01368e8929219",
-                "type": "video"
-              }
-            ]
-          },
-          {
-            "id": "phys-umeed-246",
-            "label": "246. Lecture 05• Class Notes",
-            "url": "https://www.streamvaultpro.cc/0:/dl/6a9161b51b4c2c74d772b68d",
-            "downloadUrl": "https://www.streamvaultpro.cc/0:/dl/6a9161b51b4c2c74d772b68d",
-            "type": "pdf",
-            "subject": "Engineering Physics",
-            "category": "pdfs",
-            "servers": [
-              {
-                "name": "ALBA",
-                "url": "https://www.streamvaultpro.cc/0:/dl/6a9161b51b4c2c74d772b68d",
-                "downloadUrl": "https://www.streamvaultpro.cc/0:/dl/6a9161b51b4c2c74d772b68d",
-                "streamUrl": "https://www.streamvaultpro.cc/0:/stream/6a9161b51b4c2c74d772b68d",
-                "type": "pdf"
-              },
-              {
-                "name": "ESTE",
-                "url": "https://fs1qydv17g1-161-162e5df28a45.herokuapp.com/dl/6a9161b795d01368e892921b",
-                "downloadUrl": "https://publicbotshub.blogspot.com/p/file-stream-bot.html?dl=6a9161b795d01368e892921b",
-                "type": "pdf"
-              }
-            ]
-          },
-          {
-            "id": "phys-umeed-247",
-            "label": "247. Lecture 01 • Photoelectric Effect",
-            "url": "https://www.streamvaultpro.cc/0:/dl/6a9161ba1b4c2c74d772b68e",
-            "downloadUrl": "https://www.streamvaultpro.cc/0:/dl/6a9161ba1b4c2c74d772b68e",
-            "type": "video",
-            "subject": "Engineering Physics",
-            "category": "videos",
-            "servers": [
-              {
-                "name": "ALBA",
-                "url": "https://www.streamvaultpro.cc/0:/dl/6a9161ba1b4c2c74d772b68e",
-                "downloadUrl": "https://www.streamvaultpro.cc/0:/dl/6a9161ba1b4c2c74d772b68e",
-                "streamUrl": "https://www.streamvaultpro.cc/0:/stream/6a9161ba1b4c2c74d772b68e",
-                "type": "video"
-              },
-              {
-                "name": "ESTE",
-                "url": "https://fs1qydv17g1-161-162e5df28a45.herokuapp.com/dl/6a9161bc95d01368e892921c",
-                "downloadUrl": "https://publicbotshub.blogspot.com/p/file-stream-bot.html?dl=6a9161bc95d01368e892921c",
-                "type": "video"
-              }
-            ]
-          },
-          {
-            "id": "phys-umeed-248",
-            "label": "248. Lecture 01• Class Notes",
-            "url": "https://www.streamvaultpro.cc/0:/dl/6a9161be1b4c2c74d772b68f",
-            "downloadUrl": "https://www.streamvaultpro.cc/0:/dl/6a9161be1b4c2c74d772b68f",
-            "type": "pdf",
-            "subject": "Engineering Physics",
-            "category": "pdfs",
-            "servers": [
-              {
-                "name": "ALBA",
-                "url": "https://www.streamvaultpro.cc/0:/dl/6a9161be1b4c2c74d772b68f",
-                "downloadUrl": "https://www.streamvaultpro.cc/0:/dl/6a9161be1b4c2c74d772b68f",
-                "streamUrl": "https://www.streamvaultpro.cc/0:/stream/6a9161be1b4c2c74d772b68f",
-                "type": "pdf"
-              },
-              {
-                "name": "ESTE",
-                "url": "https://fs1qydv17g1-161-162e5df28a45.herokuapp.com/dl/6a9161c195d01368e892921d",
-                "downloadUrl": "https://publicbotshub.blogspot.com/p/file-stream-bot.html?dl=6a9161c195d01368e892921d",
-                "type": "pdf"
-              }
-            ]
-          },
-          {
-            "id": "phys-umeed-249",
-            "label": "249. Lecture 02 • Einstein's Photoelectric Equation",
-            "url": "https://www.streamvaultpro.cc/0:/dl/6a9161c41b4c2c74d772b690",
-            "downloadUrl": "https://www.streamvaultpro.cc/0:/dl/6a9161c41b4c2c74d772b690",
-            "type": "video",
-            "subject": "Engineering Physics",
-            "category": "videos",
-            "servers": [
-              {
-                "name": "ALBA",
-                "url": "https://www.streamvaultpro.cc/0:/dl/6a9161c41b4c2c74d772b690",
-                "downloadUrl": "https://www.streamvaultpro.cc/0:/dl/6a9161c41b4c2c74d772b690",
-                "streamUrl": "https://www.streamvaultpro.cc/0:/stream/6a9161c41b4c2c74d772b690",
-                "type": "video"
-              },
-              {
-                "name": "ESTE",
-                "url": "https://fs1qydv17g1-161-162e5df28a45.herokuapp.com/dl/6a9161c695d01368e892921e",
-                "downloadUrl": "https://publicbotshub.blogspot.com/p/file-stream-bot.html?dl=6a9161c695d01368e892921e",
-                "type": "video"
-              }
-            ]
-          },
-          {
-            "id": "phys-umeed-250",
-            "label": "250. Lecture 02• Class Notes",
-            "url": "https://www.streamvaultpro.cc/0:/dl/6a9161c81b4c2c74d772b691",
-            "downloadUrl": "https://www.streamvaultpro.cc/0:/dl/6a9161c81b4c2c74d772b691",
-            "type": "pdf",
-            "subject": "Engineering Physics",
-            "category": "pdfs",
-            "servers": [
-              {
-                "name": "ALBA",
-                "url": "https://www.streamvaultpro.cc/0:/dl/6a9161c81b4c2c74d772b691",
-                "downloadUrl": "https://www.streamvaultpro.cc/0:/dl/6a9161c81b4c2c74d772b691",
-                "streamUrl": "https://www.streamvaultpro.cc/0:/stream/6a9161c81b4c2c74d772b691",
-                "type": "pdf"
-              },
-              {
-                "name": "ESTE",
-                "url": "https://fs1qydv17g1-161-162e5df28a45.herokuapp.com/dl/6a9161e695d01368e8929225",
-                "downloadUrl": "https://publicbotshub.blogspot.com/p/file-stream-bot.html?dl=6a9161e695d01368e8929225",
-                "type": "pdf"
-              }
-            ]
-          },
-          {
-            "id": "phys-umeed-251",
-            "label": "251. Lecture 03 • De Broglie's theory",
-            "url": "https://www.streamvaultpro.cc/0:/dl/6a9161cd1b4c2c74d772b692",
-            "downloadUrl": "https://www.streamvaultpro.cc/0:/dl/6a9161cd1b4c2c74d772b692",
-            "type": "video",
-            "subject": "Engineering Physics",
-            "category": "videos",
-            "servers": [
-              {
-                "name": "ALBA",
-                "url": "https://www.streamvaultpro.cc/0:/dl/6a9161cd1b4c2c74d772b692",
-                "downloadUrl": "https://www.streamvaultpro.cc/0:/dl/6a9161cd1b4c2c74d772b692",
-                "streamUrl": "https://www.streamvaultpro.cc/0:/stream/6a9161cd1b4c2c74d772b692",
-                "type": "video"
-              },
-              {
-                "name": "ESTE",
-                "url": "https://fs1qydv17g1-161-162e5df28a45.herokuapp.com/dl/6a9161e695d01368e8929224",
-                "downloadUrl": "https://publicbotshub.blogspot.com/p/file-stream-bot.html?dl=6a9161e695d01368e8929224",
-                "type": "video"
-              }
-            ]
-          },
-          {
-            "id": "phys-umeed-252",
-            "label": "252. Lecture 03• Class Notes",
-            "url": "https://www.streamvaultpro.cc/0:/dl/6a9161d21b4c2c74d772b693",
-            "downloadUrl": "https://www.streamvaultpro.cc/0:/dl/6a9161d21b4c2c74d772b693",
-            "type": "pdf",
-            "subject": "Engineering Physics",
-            "category": "pdfs",
-            "servers": [
-              {
-                "name": "ALBA",
-                "url": "https://www.streamvaultpro.cc/0:/dl/6a9161d21b4c2c74d772b693",
-                "downloadUrl": "https://www.streamvaultpro.cc/0:/dl/6a9161d21b4c2c74d772b693",
-                "streamUrl": "https://www.streamvaultpro.cc/0:/stream/6a9161d21b4c2c74d772b693",
-                "type": "pdf"
-              },
-              {
-                "name": "ESTE",
-                "url": "https://fs1qydv17g1-161-162e5df28a45.herokuapp.com/dl/6a9161e695d01368e8929226",
-                "downloadUrl": "https://publicbotshub.blogspot.com/p/file-stream-bot.html?dl=6a9161e695d01368e8929226",
-                "type": "pdf"
-              }
-            ]
-          },
-          {
-            "id": "phys-umeed-253",
-            "label": "253. Lecture 04 • Davvison- Germer Experiment",
-            "url": "https://www.streamvaultpro.cc/0:/dl/6a9161d71b4c2c74d772b694",
-            "downloadUrl": "https://www.streamvaultpro.cc/0:/dl/6a9161d71b4c2c74d772b694",
-            "type": "video",
-            "subject": "Engineering Physics",
-            "category": "videos",
-            "servers": [
-              {
-                "name": "ALBA",
-                "url": "https://www.streamvaultpro.cc/0:/dl/6a9161d71b4c2c74d772b694",
-                "downloadUrl": "https://www.streamvaultpro.cc/0:/dl/6a9161d71b4c2c74d772b694",
-                "streamUrl": "https://www.streamvaultpro.cc/0:/stream/6a9161d71b4c2c74d772b694",
-                "type": "video"
-              },
-              {
-                "name": "ESTE",
-                "url": "https://fs1qydv17g1-161-162e5df28a45.herokuapp.com/dl/6a9161e695d01368e8929227",
-                "downloadUrl": "https://publicbotshub.blogspot.com/p/file-stream-bot.html?dl=6a9161e695d01368e8929227",
-                "type": "video"
-              }
-            ]
-          },
-          {
-            "id": "phys-umeed-254",
-            "label": "254. Lecture 04• Class Notes",
-            "url": "https://www.streamvaultpro.cc/0:/dl/6a9161dc1b4c2c74d772b695",
-            "downloadUrl": "https://www.streamvaultpro.cc/0:/dl/6a9161dc1b4c2c74d772b695",
-            "type": "pdf",
-            "subject": "Engineering Physics",
-            "category": "pdfs",
-            "servers": [
-              {
-                "name": "ALBA",
-                "url": "https://www.streamvaultpro.cc/0:/dl/6a9161dc1b4c2c74d772b695",
-                "downloadUrl": "https://www.streamvaultpro.cc/0:/dl/6a9161dc1b4c2c74d772b695",
-                "streamUrl": "https://www.streamvaultpro.cc/0:/stream/6a9161dc1b4c2c74d772b695",
-                "type": "pdf"
-              },
-              {
-                "name": "ESTE",
-                "url": "https://fs1qydv17g1-161-162e5df28a45.herokuapp.com/dl/6a9161e195d01368e8929222",
-                "downloadUrl": "https://publicbotshub.blogspot.com/p/file-stream-bot.html?dl=6a9161e195d01368e8929222",
-                "type": "pdf"
-              }
-            ]
+            "id": "beu-chem-45",
+            "label": "Lecture 04 • Exam Revision & Formula Sheet",
+            "url": "https://vidmoly.net/embed-xr8clxl5hlx6.html",
+            "type": "hls",
+            "subject": "Practice Session"
           }
         ]
       },
@@ -21910,6 +20444,1472 @@
                 "name": "ESTE",
                 "url": "https://fs1qydv17g1-161-162e5df28a45.herokuapp.com/dl/6a8ec5dcda6b8dcec94819a5",
                 "downloadUrl": "https://publicbotshub.blogspot.com/p/file-stream-bot.html?dl=6a8ec5dcda6b8dcec94819a5",
+                "type": "pdf"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "engineering-physics",
+        "label": "Engineering Physics (UMEED)",
+        "subname": "Applied Physics & Units",
+        "thumb": "/thumbnails/beu_engineering_physics.jpg",
+        "items": [
+          {
+            "id": "phys-umeed-111",
+            "label": "111. Lecture 01 • Introduction to Syllabus",
+            "url": "https://www.streamvaultpro.cc/0:/dl/6a91613c1b4c2c74d772b675",
+            "downloadUrl": "https://www.streamvaultpro.cc/0:/dl/6a91613c1b4c2c74d772b675",
+            "type": "video",
+            "subject": "Programming for Problem Solving",
+            "category": "videos",
+            "servers": [
+              {
+                "name": "ALBA",
+                "url": "https://www.streamvaultpro.cc/0:/dl/6a91613c1b4c2c74d772b675",
+                "downloadUrl": "https://www.streamvaultpro.cc/0:/dl/6a91613c1b4c2c74d772b675",
+                "streamUrl": "https://www.streamvaultpro.cc/0:/stream/6a91613c1b4c2c74d772b675",
+                "type": "video"
+              }
+            ]
+          },
+          {
+            "id": "phys-umeed-195",
+            "label": "195. Lecture 01 • Frame of References",
+            "url": "https://www.streamvaultpro.cc/0:/dl/6a901327bb74a79b9e4a86f8",
+            "downloadUrl": "https://www.streamvaultpro.cc/0:/dl/6a901327bb74a79b9e4a86f8",
+            "type": "video",
+            "subject": "Engineering Physics",
+            "category": "videos",
+            "servers": [
+              {
+                "name": "ALBA",
+                "url": "https://www.streamvaultpro.cc/0:/dl/6a901327bb74a79b9e4a86f8",
+                "downloadUrl": "https://www.streamvaultpro.cc/0:/dl/6a901327bb74a79b9e4a86f8",
+                "streamUrl": "https://www.streamvaultpro.cc/0:/stream/6a901327bb74a79b9e4a86f8",
+                "type": "video"
+              },
+              {
+                "name": "ESTE",
+                "url": "https://fs1qydv17g1-161-162e5df28a45.herokuapp.com/dl/6a91600b95d01368e89291b3",
+                "downloadUrl": "https://publicbotshub.blogspot.com/p/file-stream-bot.html?dl=6a91600b95d01368e89291b3",
+                "type": "video"
+              }
+            ]
+          },
+          {
+            "id": "phys-umeed-196",
+            "label": "196. Lecture 01• Class Notes",
+            "url": "https://www.streamvaultpro.cc/0:/dl/6a9160ae1b4c2c74d772b65a",
+            "downloadUrl": "https://www.streamvaultpro.cc/0:/dl/6a9160ae1b4c2c74d772b65a",
+            "type": "pdf",
+            "subject": "Engineering Physics",
+            "category": "pdfs",
+            "servers": [
+              {
+                "name": "ALBA",
+                "url": "https://www.streamvaultpro.cc/0:/dl/6a9160ae1b4c2c74d772b65a",
+                "downloadUrl": "https://www.streamvaultpro.cc/0:/dl/6a9160ae1b4c2c74d772b65a",
+                "streamUrl": "https://www.streamvaultpro.cc/0:/stream/6a9160ae1b4c2c74d772b65a",
+                "type": "pdf"
+              },
+              {
+                "name": "ESTE",
+                "url": "https://fs1qydv17g1-161-162e5df28a45.herokuapp.com/dl/6a9160b095d01368e89291b5",
+                "downloadUrl": "https://publicbotshub.blogspot.com/p/file-stream-bot.html?dl=6a9160b095d01368e89291b5",
+                "type": "pdf"
+              }
+            ]
+          },
+          {
+            "id": "phys-umeed-197",
+            "label": "197. Lecture 02 • Frame of Reference",
+            "url": "https://www.streamvaultpro.cc/0:/dl/6a9160b21b4c2c74d772b65b",
+            "downloadUrl": "https://www.streamvaultpro.cc/0:/dl/6a9160b21b4c2c74d772b65b",
+            "type": "video",
+            "subject": "Engineering Physics",
+            "category": "videos",
+            "servers": [
+              {
+                "name": "ALBA",
+                "url": "https://www.streamvaultpro.cc/0:/dl/6a9160b21b4c2c74d772b65b",
+                "downloadUrl": "https://www.streamvaultpro.cc/0:/dl/6a9160b21b4c2c74d772b65b",
+                "streamUrl": "https://www.streamvaultpro.cc/0:/stream/6a9160b21b4c2c74d772b65b",
+                "type": "video"
+              },
+              {
+                "name": "ESTE",
+                "url": "https://fs1qydv17g1-161-162e5df28a45.herokuapp.com/dl/6a9160b595d01368e89291b7",
+                "downloadUrl": "https://publicbotshub.blogspot.com/p/file-stream-bot.html?dl=6a9160b595d01368e89291b7",
+                "type": "video"
+              }
+            ]
+          },
+          {
+            "id": "phys-umeed-198",
+            "label": "198. Lecture 02• Class Notes",
+            "url": "https://www.streamvaultpro.cc/0:/dl/6a9160b71b4c2c74d772b65c",
+            "downloadUrl": "https://www.streamvaultpro.cc/0:/dl/6a9160b71b4c2c74d772b65c",
+            "type": "pdf",
+            "subject": "Engineering Physics",
+            "category": "pdfs",
+            "servers": [
+              {
+                "name": "ALBA",
+                "url": "https://www.streamvaultpro.cc/0:/dl/6a9160b71b4c2c74d772b65c",
+                "downloadUrl": "https://www.streamvaultpro.cc/0:/dl/6a9160b71b4c2c74d772b65c",
+                "streamUrl": "https://www.streamvaultpro.cc/0:/stream/6a9160b71b4c2c74d772b65c",
+                "type": "pdf"
+              },
+              {
+                "name": "ESTE",
+                "url": "https://fs1qydv17g1-161-162e5df28a45.herokuapp.com/dl/6a9160b995d01368e89291b9",
+                "downloadUrl": "https://publicbotshub.blogspot.com/p/file-stream-bot.html?dl=6a9160b995d01368e89291b9",
+                "type": "pdf"
+              }
+            ]
+          },
+          {
+            "id": "phys-umeed-199",
+            "label": "199. Lecture 03 • Pseudo Forces",
+            "url": "https://www.streamvaultpro.cc/0:/dl/6a9160bb1b4c2c74d772b65d",
+            "downloadUrl": "https://www.streamvaultpro.cc/0:/dl/6a9160bb1b4c2c74d772b65d",
+            "type": "video",
+            "subject": "Engineering Physics",
+            "category": "videos",
+            "servers": [
+              {
+                "name": "ALBA",
+                "url": "https://www.streamvaultpro.cc/0:/dl/6a9160bb1b4c2c74d772b65d",
+                "downloadUrl": "https://www.streamvaultpro.cc/0:/dl/6a9160bb1b4c2c74d772b65d",
+                "streamUrl": "https://www.streamvaultpro.cc/0:/stream/6a9160bb1b4c2c74d772b65d",
+                "type": "video"
+              },
+              {
+                "name": "ESTE",
+                "url": "https://fs1qydv17g1-161-162e5df28a45.herokuapp.com/dl/6a9160be95d01368e89291bb",
+                "downloadUrl": "https://publicbotshub.blogspot.com/p/file-stream-bot.html?dl=6a9160be95d01368e89291bb",
+                "type": "video"
+              }
+            ]
+          },
+          {
+            "id": "phys-umeed-200",
+            "label": "200. Lecture 03• Class Notes",
+            "url": "https://www.streamvaultpro.cc/0:/dl/6a9160c01b4c2c74d772b65e",
+            "downloadUrl": "https://www.streamvaultpro.cc/0:/dl/6a9160c01b4c2c74d772b65e",
+            "type": "pdf",
+            "subject": "Engineering Physics",
+            "category": "pdfs",
+            "servers": [
+              {
+                "name": "ALBA",
+                "url": "https://www.streamvaultpro.cc/0:/dl/6a9160c01b4c2c74d772b65e",
+                "downloadUrl": "https://www.streamvaultpro.cc/0:/dl/6a9160c01b4c2c74d772b65e",
+                "streamUrl": "https://www.streamvaultpro.cc/0:/stream/6a9160c01b4c2c74d772b65e",
+                "type": "pdf"
+              },
+              {
+                "name": "ESTE",
+                "url": "https://fs1qydv17g1-161-162e5df28a45.herokuapp.com/dl/6a9160c295d01368e89291bd",
+                "downloadUrl": "https://publicbotshub.blogspot.com/p/file-stream-bot.html?dl=6a9160c295d01368e89291bd",
+                "type": "pdf"
+              }
+            ]
+          },
+          {
+            "id": "phys-umeed-201",
+            "label": "201. Lecture 04 • CORIOLIS ACCELERATION",
+            "url": "https://www.streamvaultpro.cc/0:/dl/6a9160c51b4c2c74d772b65f",
+            "downloadUrl": "https://www.streamvaultpro.cc/0:/dl/6a9160c51b4c2c74d772b65f",
+            "type": "video",
+            "subject": "Engineering Physics",
+            "category": "videos",
+            "servers": [
+              {
+                "name": "ALBA",
+                "url": "https://www.streamvaultpro.cc/0:/dl/6a9160c51b4c2c74d772b65f",
+                "downloadUrl": "https://www.streamvaultpro.cc/0:/dl/6a9160c51b4c2c74d772b65f",
+                "streamUrl": "https://www.streamvaultpro.cc/0:/stream/6a9160c51b4c2c74d772b65f",
+                "type": "video"
+              },
+              {
+                "name": "ESTE",
+                "url": "https://fs1qydv17g1-161-162e5df28a45.herokuapp.com/dl/6a9160c795d01368e89291bf",
+                "downloadUrl": "https://publicbotshub.blogspot.com/p/file-stream-bot.html?dl=6a9160c795d01368e89291bf",
+                "type": "video"
+              }
+            ]
+          },
+          {
+            "id": "phys-umeed-202",
+            "label": "202. Lecture 04• Class Notes",
+            "url": "https://www.streamvaultpro.cc/0:/dl/6a9160ca1b4c2c74d772b660",
+            "downloadUrl": "https://www.streamvaultpro.cc/0:/dl/6a9160ca1b4c2c74d772b660",
+            "type": "pdf",
+            "subject": "Engineering Physics",
+            "category": "pdfs",
+            "servers": [
+              {
+                "name": "ALBA",
+                "url": "https://www.streamvaultpro.cc/0:/dl/6a9160ca1b4c2c74d772b660",
+                "downloadUrl": "https://www.streamvaultpro.cc/0:/dl/6a9160ca1b4c2c74d772b660",
+                "streamUrl": "https://www.streamvaultpro.cc/0:/stream/6a9160ca1b4c2c74d772b660",
+                "type": "pdf"
+              },
+              {
+                "name": "ESTE",
+                "url": "https://fs1qydv17g1-161-162e5df28a45.herokuapp.com/dl/6a9160cd95d01368e89291c1",
+                "downloadUrl": "https://publicbotshub.blogspot.com/p/file-stream-bot.html?dl=6a9160cd95d01368e89291c1",
+                "type": "pdf"
+              }
+            ]
+          },
+          {
+            "id": "phys-umeed-203",
+            "label": "203. Lecture 05 • Application of CORIOLIS ACCELERATION",
+            "url": "https://www.streamvaultpro.cc/0:/dl/6a9160cf1b4c2c74d772b661",
+            "downloadUrl": "https://www.streamvaultpro.cc/0:/dl/6a9160cf1b4c2c74d772b661",
+            "type": "video",
+            "subject": "Engineering Physics",
+            "category": "videos",
+            "servers": [
+              {
+                "name": "ALBA",
+                "url": "https://www.streamvaultpro.cc/0:/dl/6a9160cf1b4c2c74d772b661",
+                "downloadUrl": "https://www.streamvaultpro.cc/0:/dl/6a9160cf1b4c2c74d772b661",
+                "streamUrl": "https://www.streamvaultpro.cc/0:/stream/6a9160cf1b4c2c74d772b661",
+                "type": "video"
+              },
+              {
+                "name": "ESTE",
+                "url": "https://fs1qydv17g1-161-162e5df28a45.herokuapp.com/dl/6a9160d195d01368e89291c3",
+                "downloadUrl": "https://publicbotshub.blogspot.com/p/file-stream-bot.html?dl=6a9160d195d01368e89291c3",
+                "type": "video"
+              }
+            ]
+          },
+          {
+            "id": "phys-umeed-204",
+            "label": "204. Lecture 05• Class Notes",
+            "url": "https://www.streamvaultpro.cc/0:/dl/6a9160d51b4c2c74d772b662",
+            "downloadUrl": "https://www.streamvaultpro.cc/0:/dl/6a9160d51b4c2c74d772b662",
+            "type": "pdf",
+            "subject": "Engineering Physics",
+            "category": "pdfs",
+            "servers": [
+              {
+                "name": "ALBA",
+                "url": "https://www.streamvaultpro.cc/0:/dl/6a9160d51b4c2c74d772b662",
+                "downloadUrl": "https://www.streamvaultpro.cc/0:/dl/6a9160d51b4c2c74d772b662",
+                "streamUrl": "https://www.streamvaultpro.cc/0:/stream/6a9160d51b4c2c74d772b662",
+                "type": "pdf"
+              },
+              {
+                "name": "ESTE",
+                "url": "https://fs1qydv17g1-161-162e5df28a45.herokuapp.com/dl/6a9160d795d01368e89291c5",
+                "downloadUrl": "https://publicbotshub.blogspot.com/p/file-stream-bot.html?dl=6a9160d795d01368e89291c5",
+                "type": "pdf"
+              }
+            ]
+          },
+          {
+            "id": "phys-umeed-205",
+            "label": "205. Lecture 06 • Application of CORIOLIS ACCELERATION",
+            "url": "https://www.streamvaultpro.cc/0:/dl/6a9160de1b4c2c74d772b663",
+            "downloadUrl": "https://www.streamvaultpro.cc/0:/dl/6a9160de1b4c2c74d772b663",
+            "type": "video",
+            "subject": "Engineering Physics",
+            "category": "videos",
+            "servers": [
+              {
+                "name": "ALBA",
+                "url": "https://www.streamvaultpro.cc/0:/dl/6a9160de1b4c2c74d772b663",
+                "downloadUrl": "https://www.streamvaultpro.cc/0:/dl/6a9160de1b4c2c74d772b663",
+                "streamUrl": "https://www.streamvaultpro.cc/0:/stream/6a9160de1b4c2c74d772b663",
+                "type": "video"
+              },
+              {
+                "name": "ESTE",
+                "url": "https://fs1qydv17g1-161-162e5df28a45.herokuapp.com/dl/6a9160e195d01368e89291c7",
+                "downloadUrl": "https://publicbotshub.blogspot.com/p/file-stream-bot.html?dl=6a9160e195d01368e89291c7",
+                "type": "video"
+              }
+            ]
+          },
+          {
+            "id": "phys-umeed-206",
+            "label": "206. Lecture 06• Class Notes",
+            "url": "https://www.streamvaultpro.cc/0:/dl/6a9160e21b4c2c74d772b664",
+            "downloadUrl": "https://www.streamvaultpro.cc/0:/dl/6a9160e21b4c2c74d772b664",
+            "type": "pdf",
+            "subject": "Engineering Physics",
+            "category": "pdfs",
+            "servers": [
+              {
+                "name": "ALBA",
+                "url": "https://www.streamvaultpro.cc/0:/dl/6a9160e21b4c2c74d772b664",
+                "downloadUrl": "https://www.streamvaultpro.cc/0:/dl/6a9160e21b4c2c74d772b664",
+                "streamUrl": "https://www.streamvaultpro.cc/0:/stream/6a9160e21b4c2c74d772b664",
+                "type": "pdf"
+              },
+              {
+                "name": "ESTE",
+                "url": "https://fs1qydv17g1-161-162e5df28a45.herokuapp.com/dl/6a9160e495d01368e89291c9",
+                "downloadUrl": "https://publicbotshub.blogspot.com/p/file-stream-bot.html?dl=6a9160e495d01368e89291c9",
+                "type": "pdf"
+              }
+            ]
+          },
+          {
+            "id": "phys-umeed-207",
+            "label": "207. Lecture 01 • Oscillation",
+            "url": "https://www.streamvaultpro.cc/0:/dl/6a9160e71b4c2c74d772b665",
+            "downloadUrl": "https://www.streamvaultpro.cc/0:/dl/6a9160e71b4c2c74d772b665",
+            "type": "video",
+            "subject": "Engineering Physics",
+            "category": "videos",
+            "servers": [
+              {
+                "name": "ALBA",
+                "url": "https://www.streamvaultpro.cc/0:/dl/6a9160e71b4c2c74d772b665",
+                "downloadUrl": "https://www.streamvaultpro.cc/0:/dl/6a9160e71b4c2c74d772b665",
+                "streamUrl": "https://www.streamvaultpro.cc/0:/stream/6a9160e71b4c2c74d772b665",
+                "type": "video"
+              },
+              {
+                "name": "ESTE",
+                "url": "https://fs1qydv17g1-161-162e5df28a45.herokuapp.com/dl/6a9160e995d01368e89291ca",
+                "downloadUrl": "https://publicbotshub.blogspot.com/p/file-stream-bot.html?dl=6a9160e995d01368e89291ca",
+                "type": "video"
+              }
+            ]
+          },
+          {
+            "id": "phys-umeed-208",
+            "label": "208. Lecture 01• Class Notes",
+            "url": "https://www.streamvaultpro.cc/0:/dl/6a9160eb1b4c2c74d772b666",
+            "downloadUrl": "https://www.streamvaultpro.cc/0:/dl/6a9160eb1b4c2c74d772b666",
+            "type": "pdf",
+            "subject": "Engineering Physics",
+            "category": "pdfs",
+            "servers": [
+              {
+                "name": "ALBA",
+                "url": "https://www.streamvaultpro.cc/0:/dl/6a9160eb1b4c2c74d772b666",
+                "downloadUrl": "https://www.streamvaultpro.cc/0:/dl/6a9160eb1b4c2c74d772b666",
+                "streamUrl": "https://www.streamvaultpro.cc/0:/stream/6a9160eb1b4c2c74d772b666",
+                "type": "pdf"
+              },
+              {
+                "name": "ESTE",
+                "url": "https://fs1qydv17g1-161-162e5df28a45.herokuapp.com/dl/6a9160ed95d01368e89291cd",
+                "downloadUrl": "https://publicbotshub.blogspot.com/p/file-stream-bot.html?dl=6a9160ed95d01368e89291cd",
+                "type": "pdf"
+              }
+            ]
+          },
+          {
+            "id": "phys-umeed-209",
+            "label": "209. Lecture 02 • Types of Oscillation",
+            "url": "https://www.streamvaultpro.cc/0:/dl/6a9160f01b4c2c74d772b667",
+            "downloadUrl": "https://www.streamvaultpro.cc/0:/dl/6a9160f01b4c2c74d772b667",
+            "type": "video",
+            "subject": "Engineering Physics",
+            "category": "videos",
+            "servers": [
+              {
+                "name": "ALBA",
+                "url": "https://www.streamvaultpro.cc/0:/dl/6a9160f01b4c2c74d772b667",
+                "downloadUrl": "https://www.streamvaultpro.cc/0:/dl/6a9160f01b4c2c74d772b667",
+                "streamUrl": "https://www.streamvaultpro.cc/0:/stream/6a9160f01b4c2c74d772b667",
+                "type": "video"
+              },
+              {
+                "name": "ESTE",
+                "url": "https://fs1qydv17g1-161-162e5df28a45.herokuapp.com/dl/6a9160f295d01368e89291cf",
+                "downloadUrl": "https://publicbotshub.blogspot.com/p/file-stream-bot.html?dl=6a9160f295d01368e89291cf",
+                "type": "video"
+              }
+            ]
+          },
+          {
+            "id": "phys-umeed-210",
+            "label": "210. Lecture 02• Class Notes",
+            "url": "https://www.streamvaultpro.cc/0:/dl/6a9160f71b4c2c74d772b668",
+            "downloadUrl": "https://www.streamvaultpro.cc/0:/dl/6a9160f71b4c2c74d772b668",
+            "type": "pdf",
+            "subject": "Engineering Physics",
+            "category": "pdfs",
+            "servers": [
+              {
+                "name": "ALBA",
+                "url": "https://www.streamvaultpro.cc/0:/dl/6a9160f71b4c2c74d772b668",
+                "downloadUrl": "https://www.streamvaultpro.cc/0:/dl/6a9160f71b4c2c74d772b668",
+                "streamUrl": "https://www.streamvaultpro.cc/0:/stream/6a9160f71b4c2c74d772b668",
+                "type": "pdf"
+              },
+              {
+                "name": "ESTE",
+                "url": "https://fs1qydv17g1-161-162e5df28a45.herokuapp.com/dl/6a9160f995d01368e89291d1",
+                "downloadUrl": "https://publicbotshub.blogspot.com/p/file-stream-bot.html?dl=6a9160f995d01368e89291d1",
+                "type": "pdf"
+              }
+            ]
+          },
+          {
+            "id": "phys-umeed-211",
+            "label": "211. Lecture 03 • Damping Oscillation & Its Type",
+            "url": "https://www.streamvaultpro.cc/0:/dl/6a9160fc1b4c2c74d772b669",
+            "downloadUrl": "https://www.streamvaultpro.cc/0:/dl/6a9160fc1b4c2c74d772b669",
+            "type": "video",
+            "subject": "Engineering Physics",
+            "category": "videos",
+            "servers": [
+              {
+                "name": "ALBA",
+                "url": "https://www.streamvaultpro.cc/0:/dl/6a9160fc1b4c2c74d772b669",
+                "downloadUrl": "https://www.streamvaultpro.cc/0:/dl/6a9160fc1b4c2c74d772b669",
+                "streamUrl": "https://www.streamvaultpro.cc/0:/stream/6a9160fc1b4c2c74d772b669",
+                "type": "video"
+              },
+              {
+                "name": "ESTE",
+                "url": "https://fs1qydv17g1-161-162e5df28a45.herokuapp.com/dl/6a9160fd95d01368e89291d3",
+                "downloadUrl": "https://publicbotshub.blogspot.com/p/file-stream-bot.html?dl=6a9160fd95d01368e89291d3",
+                "type": "video"
+              }
+            ]
+          },
+          {
+            "id": "phys-umeed-212",
+            "label": "212. Lecture 03• Class Notes",
+            "url": "https://www.streamvaultpro.cc/0:/dl/6a9161001b4c2c74d772b66a",
+            "downloadUrl": "https://www.streamvaultpro.cc/0:/dl/6a9161001b4c2c74d772b66a",
+            "type": "pdf",
+            "subject": "Engineering Physics",
+            "category": "pdfs",
+            "servers": [
+              {
+                "name": "ALBA",
+                "url": "https://www.streamvaultpro.cc/0:/dl/6a9161001b4c2c74d772b66a",
+                "downloadUrl": "https://www.streamvaultpro.cc/0:/dl/6a9161001b4c2c74d772b66a",
+                "streamUrl": "https://www.streamvaultpro.cc/0:/stream/6a9161001b4c2c74d772b66a",
+                "type": "pdf"
+              },
+              {
+                "name": "ESTE",
+                "url": "https://fs1qydv17g1-161-162e5df28a45.herokuapp.com/dl/6a91610395d01368e89291d5",
+                "downloadUrl": "https://publicbotshub.blogspot.com/p/file-stream-bot.html?dl=6a91610395d01368e89291d5",
+                "type": "pdf"
+              }
+            ]
+          },
+          {
+            "id": "phys-umeed-213",
+            "label": "213. Lecture 04 • Damping Oscillation & Its Type",
+            "url": "https://www.streamvaultpro.cc/0:/dl/6a9161071b4c2c74d772b66b",
+            "downloadUrl": "https://www.streamvaultpro.cc/0:/dl/6a9161071b4c2c74d772b66b",
+            "type": "video",
+            "subject": "Engineering Physics",
+            "category": "videos",
+            "servers": [
+              {
+                "name": "ALBA",
+                "url": "https://www.streamvaultpro.cc/0:/dl/6a9161071b4c2c74d772b66b",
+                "downloadUrl": "https://www.streamvaultpro.cc/0:/dl/6a9161071b4c2c74d772b66b",
+                "streamUrl": "https://www.streamvaultpro.cc/0:/stream/6a9161071b4c2c74d772b66b",
+                "type": "video"
+              },
+              {
+                "name": "ESTE",
+                "url": "https://fs1qydv17g1-161-162e5df28a45.herokuapp.com/dl/6a91610995d01368e89291d7",
+                "downloadUrl": "https://publicbotshub.blogspot.com/p/file-stream-bot.html?dl=6a91610995d01368e89291d7",
+                "type": "video"
+              }
+            ]
+          },
+          {
+            "id": "phys-umeed-214",
+            "label": "214. Lecture 04• Class Notes",
+            "url": "https://www.streamvaultpro.cc/0:/dl/6a91610c1b4c2c74d772b66c",
+            "downloadUrl": "https://www.streamvaultpro.cc/0:/dl/6a91610c1b4c2c74d772b66c",
+            "type": "pdf",
+            "subject": "Engineering Physics",
+            "category": "pdfs",
+            "servers": [
+              {
+                "name": "ALBA",
+                "url": "https://www.streamvaultpro.cc/0:/dl/6a91610c1b4c2c74d772b66c",
+                "downloadUrl": "https://www.streamvaultpro.cc/0:/dl/6a91610c1b4c2c74d772b66c",
+                "streamUrl": "https://www.streamvaultpro.cc/0:/stream/6a91610c1b4c2c74d772b66c",
+                "type": "pdf"
+              },
+              {
+                "name": "ESTE",
+                "url": "https://fs1qydv17g1-161-162e5df28a45.herokuapp.com/dl/6a91610e95d01368e89291d9",
+                "downloadUrl": "https://publicbotshub.blogspot.com/p/file-stream-bot.html?dl=6a91610e95d01368e89291d9",
+                "type": "pdf"
+              }
+            ]
+          },
+          {
+            "id": "phys-umeed-215",
+            "label": "215. Lecture 05 • Forced Vibration & Resonant Condition",
+            "url": "https://www.streamvaultpro.cc/0:/dl/6a9161111b4c2c74d772b66d",
+            "downloadUrl": "https://www.streamvaultpro.cc/0:/dl/6a9161111b4c2c74d772b66d",
+            "type": "video",
+            "subject": "Engineering Physics",
+            "category": "videos",
+            "servers": [
+              {
+                "name": "ALBA",
+                "url": "https://www.streamvaultpro.cc/0:/dl/6a9161111b4c2c74d772b66d",
+                "downloadUrl": "https://www.streamvaultpro.cc/0:/dl/6a9161111b4c2c74d772b66d",
+                "streamUrl": "https://www.streamvaultpro.cc/0:/stream/6a9161111b4c2c74d772b66d",
+                "type": "video"
+              },
+              {
+                "name": "ESTE",
+                "url": "https://fs1qydv17g1-161-162e5df28a45.herokuapp.com/dl/6a91611395d01368e89291db",
+                "downloadUrl": "https://publicbotshub.blogspot.com/p/file-stream-bot.html?dl=6a91611395d01368e89291db",
+                "type": "video"
+              }
+            ]
+          },
+          {
+            "id": "phys-umeed-216",
+            "label": "216. Lecture 05• Class Notes",
+            "url": "https://www.streamvaultpro.cc/0:/dl/6a9161151b4c2c74d772b66e",
+            "downloadUrl": "https://www.streamvaultpro.cc/0:/dl/6a9161151b4c2c74d772b66e",
+            "type": "pdf",
+            "subject": "Engineering Physics",
+            "category": "pdfs",
+            "servers": [
+              {
+                "name": "ALBA",
+                "url": "https://www.streamvaultpro.cc/0:/dl/6a9161151b4c2c74d772b66e",
+                "downloadUrl": "https://www.streamvaultpro.cc/0:/dl/6a9161151b4c2c74d772b66e",
+                "streamUrl": "https://www.streamvaultpro.cc/0:/stream/6a9161151b4c2c74d772b66e",
+                "type": "pdf"
+              },
+              {
+                "name": "ESTE",
+                "url": "https://fs1qydv17g1-161-162e5df28a45.herokuapp.com/dl/6a91611895d01368e89291dd",
+                "downloadUrl": "https://publicbotshub.blogspot.com/p/file-stream-bot.html?dl=6a91611895d01368e89291dd",
+                "type": "pdf"
+              }
+            ]
+          },
+          {
+            "id": "phys-umeed-217",
+            "label": "217. Lecture 06 • Forced Vibration & Resonant Condition - 02",
+            "url": "https://www.streamvaultpro.cc/0:/dl/6a91611a1b4c2c74d772b66f",
+            "downloadUrl": "https://www.streamvaultpro.cc/0:/dl/6a91611a1b4c2c74d772b66f",
+            "type": "video",
+            "subject": "Engineering Physics",
+            "category": "videos",
+            "servers": [
+              {
+                "name": "ALBA",
+                "url": "https://www.streamvaultpro.cc/0:/dl/6a91611a1b4c2c74d772b66f",
+                "downloadUrl": "https://www.streamvaultpro.cc/0:/dl/6a91611a1b4c2c74d772b66f",
+                "streamUrl": "https://www.streamvaultpro.cc/0:/stream/6a91611a1b4c2c74d772b66f",
+                "type": "video"
+              },
+              {
+                "name": "ESTE",
+                "url": "https://fs1qydv17g1-161-162e5df28a45.herokuapp.com/dl/6a91611c95d01368e89291de",
+                "downloadUrl": "https://publicbotshub.blogspot.com/p/file-stream-bot.html?dl=6a91611c95d01368e89291de",
+                "type": "video"
+              }
+            ]
+          },
+          {
+            "id": "phys-umeed-218",
+            "label": "218. Lecture 06• Class Notes",
+            "url": "https://www.streamvaultpro.cc/0:/dl/6a9161211b4c2c74d772b670",
+            "downloadUrl": "https://www.streamvaultpro.cc/0:/dl/6a9161211b4c2c74d772b670",
+            "type": "pdf",
+            "subject": "Engineering Physics",
+            "category": "pdfs",
+            "servers": [
+              {
+                "name": "ALBA",
+                "url": "https://www.streamvaultpro.cc/0:/dl/6a9161211b4c2c74d772b670",
+                "downloadUrl": "https://www.streamvaultpro.cc/0:/dl/6a9161211b4c2c74d772b670",
+                "streamUrl": "https://www.streamvaultpro.cc/0:/stream/6a9161211b4c2c74d772b670",
+                "type": "pdf"
+              },
+              {
+                "name": "ESTE",
+                "url": "https://fs1qydv17g1-161-162e5df28a45.herokuapp.com/dl/6a91612395d01368e89291df",
+                "downloadUrl": "https://publicbotshub.blogspot.com/p/file-stream-bot.html?dl=6a91612395d01368e89291df",
+                "type": "pdf"
+              }
+            ]
+          },
+          {
+            "id": "phys-umeed-219",
+            "label": "219. Lecture 01 • Introduction of Optics",
+            "url": "https://www.streamvaultpro.cc/0:/dl/6a9161251b4c2c74d772b671",
+            "downloadUrl": "https://www.streamvaultpro.cc/0:/dl/6a9161251b4c2c74d772b671",
+            "type": "video",
+            "subject": "Engineering Physics",
+            "category": "videos",
+            "servers": [
+              {
+                "name": "ALBA",
+                "url": "https://www.streamvaultpro.cc/0:/dl/6a9161251b4c2c74d772b671",
+                "downloadUrl": "https://www.streamvaultpro.cc/0:/dl/6a9161251b4c2c74d772b671",
+                "streamUrl": "https://www.streamvaultpro.cc/0:/stream/6a9161251b4c2c74d772b671",
+                "type": "video"
+              },
+              {
+                "name": "ESTE",
+                "url": "https://fs1qydv17g1-161-162e5df28a45.herokuapp.com/dl/6a91612895d01368e89291e0",
+                "downloadUrl": "https://publicbotshub.blogspot.com/p/file-stream-bot.html?dl=6a91612895d01368e89291e0",
+                "type": "video"
+              }
+            ]
+          },
+          {
+            "id": "phys-umeed-220",
+            "label": "220. Lecture 01• Class Notes",
+            "url": "https://www.streamvaultpro.cc/0:/dl/6a9161291b4c2c74d772b672",
+            "downloadUrl": "https://www.streamvaultpro.cc/0:/dl/6a9161291b4c2c74d772b672",
+            "type": "pdf",
+            "subject": "Engineering Physics",
+            "category": "pdfs",
+            "servers": [
+              {
+                "name": "ALBA",
+                "url": "https://www.streamvaultpro.cc/0:/dl/6a9161291b4c2c74d772b672",
+                "downloadUrl": "https://www.streamvaultpro.cc/0:/dl/6a9161291b4c2c74d772b672",
+                "streamUrl": "https://www.streamvaultpro.cc/0:/stream/6a9161291b4c2c74d772b672",
+                "type": "pdf"
+              },
+              {
+                "name": "ESTE",
+                "url": "https://fs1qydv17g1-161-162e5df28a45.herokuapp.com/dl/6a91612c95d01368e89291e2",
+                "downloadUrl": "https://publicbotshub.blogspot.com/p/file-stream-bot.html?dl=6a91612c95d01368e89291e2",
+                "type": "pdf"
+              }
+            ]
+          },
+          {
+            "id": "phys-umeed-221",
+            "label": "221. Lecture 02 • Huygens's Principle",
+            "url": "https://www.streamvaultpro.cc/0:/dl/6a91612f1b4c2c74d772b673",
+            "downloadUrl": "https://www.streamvaultpro.cc/0:/dl/6a91612f1b4c2c74d772b673",
+            "type": "video",
+            "subject": "Engineering Physics",
+            "category": "videos",
+            "servers": [
+              {
+                "name": "ALBA",
+                "url": "https://www.streamvaultpro.cc/0:/dl/6a91612f1b4c2c74d772b673",
+                "downloadUrl": "https://www.streamvaultpro.cc/0:/dl/6a91612f1b4c2c74d772b673",
+                "streamUrl": "https://www.streamvaultpro.cc/0:/stream/6a91612f1b4c2c74d772b673",
+                "type": "video"
+              },
+              {
+                "name": "ESTE",
+                "url": "https://fs1qydv17g1-161-162e5df28a45.herokuapp.com/dl/6a91613195d01368e89291e6",
+                "downloadUrl": "https://publicbotshub.blogspot.com/p/file-stream-bot.html?dl=6a91613195d01368e89291e6",
+                "type": "video"
+              }
+            ]
+          },
+          {
+            "id": "phys-umeed-222",
+            "label": "222. Lecture 02• Class Notes",
+            "url": "https://www.streamvaultpro.cc/0:/dl/6a9161361b4c2c74d772b674",
+            "downloadUrl": "https://www.streamvaultpro.cc/0:/dl/6a9161361b4c2c74d772b674",
+            "type": "pdf",
+            "subject": "Engineering Physics",
+            "category": "pdfs",
+            "servers": [
+              {
+                "name": "ALBA",
+                "url": "https://www.streamvaultpro.cc/0:/dl/6a9161361b4c2c74d772b674",
+                "downloadUrl": "https://www.streamvaultpro.cc/0:/dl/6a9161361b4c2c74d772b674",
+                "streamUrl": "https://www.streamvaultpro.cc/0:/stream/6a9161361b4c2c74d772b674",
+                "type": "pdf"
+              },
+              {
+                "name": "ESTE",
+                "url": "https://fs1qydv17g1-161-162e5df28a45.herokuapp.com/dl/6a91613995d01368e89291e9",
+                "downloadUrl": "https://publicbotshub.blogspot.com/p/file-stream-bot.html?dl=6a91613995d01368e89291e9",
+                "type": "pdf"
+              }
+            ]
+          },
+          {
+            "id": "phys-umeed-223",
+            "label": "223. Lecture 03 • Huygens's Principle",
+            "url": "https://www.streamvaultpro.cc/0:/dl/6a9161421b4c2c74d772b676",
+            "downloadUrl": "https://www.streamvaultpro.cc/0:/dl/6a9161421b4c2c74d772b676",
+            "type": "video",
+            "subject": "Engineering Physics",
+            "category": "videos",
+            "servers": [
+              {
+                "name": "ALBA",
+                "url": "https://www.streamvaultpro.cc/0:/dl/6a9161421b4c2c74d772b676",
+                "downloadUrl": "https://www.streamvaultpro.cc/0:/dl/6a9161421b4c2c74d772b676",
+                "streamUrl": "https://www.streamvaultpro.cc/0:/stream/6a9161421b4c2c74d772b676",
+                "type": "video"
+              },
+              {
+                "name": "ESTE",
+                "url": "https://fs1qydv17g1-161-162e5df28a45.herokuapp.com/dl/6a91614495d01368e89291ed",
+                "downloadUrl": "https://publicbotshub.blogspot.com/p/file-stream-bot.html?dl=6a91614495d01368e89291ed",
+                "type": "video"
+              }
+            ]
+          },
+          {
+            "id": "phys-umeed-224",
+            "label": "224. Lecture 03• Class Notes",
+            "url": "https://www.streamvaultpro.cc/0:/dl/6a9161461b4c2c74d772b677",
+            "downloadUrl": "https://www.streamvaultpro.cc/0:/dl/6a9161461b4c2c74d772b677",
+            "type": "pdf",
+            "subject": "Engineering Physics",
+            "category": "pdfs",
+            "servers": [
+              {
+                "name": "ALBA",
+                "url": "https://www.streamvaultpro.cc/0:/dl/6a9161461b4c2c74d772b677",
+                "downloadUrl": "https://www.streamvaultpro.cc/0:/dl/6a9161461b4c2c74d772b677",
+                "streamUrl": "https://www.streamvaultpro.cc/0:/stream/6a9161461b4c2c74d772b677",
+                "type": "pdf"
+              },
+              {
+                "name": "ESTE",
+                "url": "https://fs1qydv17g1-161-162e5df28a45.herokuapp.com/dl/6a91614995d01368e89291ef",
+                "downloadUrl": "https://publicbotshub.blogspot.com/p/file-stream-bot.html?dl=6a91614995d01368e89291ef",
+                "type": "pdf"
+              }
+            ]
+          },
+          {
+            "id": "phys-umeed-225",
+            "label": "225. Lecture 04 • Young 's Double slit experiment",
+            "url": "https://www.streamvaultpro.cc/0:/dl/6a91614c1b4c2c74d772b678",
+            "downloadUrl": "https://www.streamvaultpro.cc/0:/dl/6a91614c1b4c2c74d772b678",
+            "type": "video",
+            "subject": "Engineering Physics",
+            "category": "videos",
+            "servers": [
+              {
+                "name": "ALBA",
+                "url": "https://www.streamvaultpro.cc/0:/dl/6a91614c1b4c2c74d772b678",
+                "downloadUrl": "https://www.streamvaultpro.cc/0:/dl/6a91614c1b4c2c74d772b678",
+                "streamUrl": "https://www.streamvaultpro.cc/0:/stream/6a91614c1b4c2c74d772b678",
+                "type": "video"
+              },
+              {
+                "name": "ESTE",
+                "url": "https://fs1qydv17g1-161-162e5df28a45.herokuapp.com/dl/6a91614e95d01368e89291f1",
+                "downloadUrl": "https://publicbotshub.blogspot.com/p/file-stream-bot.html?dl=6a91614e95d01368e89291f1",
+                "type": "video"
+              }
+            ]
+          },
+          {
+            "id": "phys-umeed-226",
+            "label": "226. Lecture 04• Class Notes",
+            "url": "https://www.streamvaultpro.cc/0:/dl/6a9161501b4c2c74d772b679",
+            "downloadUrl": "https://www.streamvaultpro.cc/0:/dl/6a9161501b4c2c74d772b679",
+            "type": "pdf",
+            "subject": "Engineering Physics",
+            "category": "pdfs",
+            "servers": [
+              {
+                "name": "ALBA",
+                "url": "https://www.streamvaultpro.cc/0:/dl/6a9161501b4c2c74d772b679",
+                "downloadUrl": "https://www.streamvaultpro.cc/0:/dl/6a9161501b4c2c74d772b679",
+                "streamUrl": "https://www.streamvaultpro.cc/0:/stream/6a9161501b4c2c74d772b679",
+                "type": "pdf"
+              },
+              {
+                "name": "ESTE",
+                "url": "https://fs1qydv17g1-161-162e5df28a45.herokuapp.com/dl/6a91615295d01368e89291f2",
+                "downloadUrl": "https://publicbotshub.blogspot.com/p/file-stream-bot.html?dl=6a91615295d01368e89291f2",
+                "type": "pdf"
+              }
+            ]
+          },
+          {
+            "id": "phys-umeed-227",
+            "label": "227. Lecture 05 • Young 's Double slit experiment",
+            "url": "https://www.streamvaultpro.cc/0:/dl/6a9161551b4c2c74d772b67a",
+            "downloadUrl": "https://www.streamvaultpro.cc/0:/dl/6a9161551b4c2c74d772b67a",
+            "type": "video",
+            "subject": "Engineering Physics",
+            "category": "videos",
+            "servers": [
+              {
+                "name": "ALBA",
+                "url": "https://www.streamvaultpro.cc/0:/dl/6a9161551b4c2c74d772b67a",
+                "downloadUrl": "https://www.streamvaultpro.cc/0:/dl/6a9161551b4c2c74d772b67a",
+                "streamUrl": "https://www.streamvaultpro.cc/0:/stream/6a9161551b4c2c74d772b67a",
+                "type": "video"
+              },
+              {
+                "name": "ESTE",
+                "url": "https://fs1qydv17g1-161-162e5df28a45.herokuapp.com/dl/6a91615795d01368e89291f3",
+                "downloadUrl": "https://publicbotshub.blogspot.com/p/file-stream-bot.html?dl=6a91615795d01368e89291f3",
+                "type": "video"
+              }
+            ]
+          },
+          {
+            "id": "phys-umeed-228",
+            "label": "228. Lecture 05• Class Notes",
+            "url": "https://www.streamvaultpro.cc/0:/dl/6a91615a1b4c2c74d772b67b",
+            "downloadUrl": "https://www.streamvaultpro.cc/0:/dl/6a91615a1b4c2c74d772b67b",
+            "type": "pdf",
+            "subject": "Engineering Physics",
+            "category": "pdfs",
+            "servers": [
+              {
+                "name": "ALBA",
+                "url": "https://www.streamvaultpro.cc/0:/dl/6a91615a1b4c2c74d772b67b",
+                "downloadUrl": "https://www.streamvaultpro.cc/0:/dl/6a91615a1b4c2c74d772b67b",
+                "streamUrl": "https://www.streamvaultpro.cc/0:/stream/6a91615a1b4c2c74d772b67b",
+                "type": "pdf"
+              },
+              {
+                "name": "ESTE",
+                "url": "https://fs1qydv17g1-161-162e5df28a45.herokuapp.com/dl/6a91615c95d01368e89291f4",
+                "downloadUrl": "https://publicbotshub.blogspot.com/p/file-stream-bot.html?dl=6a91615c95d01368e89291f4",
+                "type": "pdf"
+              }
+            ]
+          },
+          {
+            "id": "phys-umeed-229",
+            "label": "229. Lecture 06 • Diffraction",
+            "url": "https://www.streamvaultpro.cc/0:/dl/6a9161601b4c2c74d772b67c",
+            "downloadUrl": "https://www.streamvaultpro.cc/0:/dl/6a9161601b4c2c74d772b67c",
+            "type": "video",
+            "subject": "Engineering Physics",
+            "category": "videos",
+            "servers": [
+              {
+                "name": "ALBA",
+                "url": "https://www.streamvaultpro.cc/0:/dl/6a9161601b4c2c74d772b67c",
+                "downloadUrl": "https://www.streamvaultpro.cc/0:/dl/6a9161601b4c2c74d772b67c",
+                "streamUrl": "https://www.streamvaultpro.cc/0:/stream/6a9161601b4c2c74d772b67c",
+                "type": "video"
+              },
+              {
+                "name": "ESTE",
+                "url": "https://fs1qydv17g1-161-162e5df28a45.herokuapp.com/dl/6a91616295d01368e89291f5",
+                "downloadUrl": "https://publicbotshub.blogspot.com/p/file-stream-bot.html?dl=6a91616295d01368e89291f5",
+                "type": "video"
+              }
+            ]
+          },
+          {
+            "id": "phys-umeed-230",
+            "label": "230. Lecture 06• Class Notes",
+            "url": "https://www.streamvaultpro.cc/0:/dl/6a9161651b4c2c74d772b67d",
+            "downloadUrl": "https://www.streamvaultpro.cc/0:/dl/6a9161651b4c2c74d772b67d",
+            "type": "pdf",
+            "subject": "Engineering Physics",
+            "category": "pdfs",
+            "servers": [
+              {
+                "name": "ALBA",
+                "url": "https://www.streamvaultpro.cc/0:/dl/6a9161651b4c2c74d772b67d",
+                "downloadUrl": "https://www.streamvaultpro.cc/0:/dl/6a9161651b4c2c74d772b67d",
+                "streamUrl": "https://www.streamvaultpro.cc/0:/stream/6a9161651b4c2c74d772b67d",
+                "type": "pdf"
+              },
+              {
+                "name": "ESTE",
+                "url": "https://fs1qydv17g1-161-162e5df28a45.herokuapp.com/dl/6a91616795d01368e89291fa",
+                "downloadUrl": "https://publicbotshub.blogspot.com/p/file-stream-bot.html?dl=6a91616795d01368e89291fa",
+                "type": "pdf"
+              }
+            ]
+          },
+          {
+            "id": "phys-umeed-231",
+            "label": "231. Lecture 07 • FRAUNHOFFER DIFFRACTION TYROUGH A SINGLE SLIT",
+            "url": "https://www.streamvaultpro.cc/0:/dl/6a91616a1b4c2c74d772b67e",
+            "downloadUrl": "https://www.streamvaultpro.cc/0:/dl/6a91616a1b4c2c74d772b67e",
+            "type": "video",
+            "subject": "Engineering Physics",
+            "category": "videos",
+            "servers": [
+              {
+                "name": "ALBA",
+                "url": "https://www.streamvaultpro.cc/0:/dl/6a91616a1b4c2c74d772b67e",
+                "downloadUrl": "https://www.streamvaultpro.cc/0:/dl/6a91616a1b4c2c74d772b67e",
+                "streamUrl": "https://www.streamvaultpro.cc/0:/stream/6a91616a1b4c2c74d772b67e",
+                "type": "video"
+              },
+              {
+                "name": "ESTE",
+                "url": "https://fs1qydv17g1-161-162e5df28a45.herokuapp.com/dl/6a91616c95d01368e89291fd",
+                "downloadUrl": "https://publicbotshub.blogspot.com/p/file-stream-bot.html?dl=6a91616c95d01368e89291fd",
+                "type": "video"
+              }
+            ]
+          },
+          {
+            "id": "phys-umeed-232",
+            "label": "232. Lecture 07• Class Notes",
+            "url": "https://www.streamvaultpro.cc/0:/dl/6a91616e1b4c2c74d772b67f",
+            "downloadUrl": "https://www.streamvaultpro.cc/0:/dl/6a91616e1b4c2c74d772b67f",
+            "type": "pdf",
+            "subject": "Engineering Physics",
+            "category": "pdfs",
+            "servers": [
+              {
+                "name": "ALBA",
+                "url": "https://www.streamvaultpro.cc/0:/dl/6a91616e1b4c2c74d772b67f",
+                "downloadUrl": "https://www.streamvaultpro.cc/0:/dl/6a91616e1b4c2c74d772b67f",
+                "streamUrl": "https://www.streamvaultpro.cc/0:/stream/6a91616e1b4c2c74d772b67f",
+                "type": "pdf"
+              },
+              {
+                "name": "ESTE",
+                "url": "https://fs1qydv17g1-161-162e5df28a45.herokuapp.com/dl/6a91617095d01368e89291ff",
+                "downloadUrl": "https://publicbotshub.blogspot.com/p/file-stream-bot.html?dl=6a91617095d01368e89291ff",
+                "type": "pdf"
+              }
+            ]
+          },
+          {
+            "id": "phys-umeed-233",
+            "label": "233. Lecture 08 • Michelson Interferometer",
+            "url": "https://www.streamvaultpro.cc/0:/dl/6a9161731b4c2c74d772b680",
+            "downloadUrl": "https://www.streamvaultpro.cc/0:/dl/6a9161731b4c2c74d772b680",
+            "type": "video",
+            "subject": "Engineering Physics",
+            "category": "videos",
+            "servers": [
+              {
+                "name": "ALBA",
+                "url": "https://www.streamvaultpro.cc/0:/dl/6a9161731b4c2c74d772b680",
+                "downloadUrl": "https://www.streamvaultpro.cc/0:/dl/6a9161731b4c2c74d772b680",
+                "streamUrl": "https://www.streamvaultpro.cc/0:/stream/6a9161731b4c2c74d772b680",
+                "type": "video"
+              },
+              {
+                "name": "ESTE",
+                "url": "https://fs1qydv17g1-161-162e5df28a45.herokuapp.com/dl/6a91617695d01368e8929201",
+                "downloadUrl": "https://publicbotshub.blogspot.com/p/file-stream-bot.html?dl=6a91617695d01368e8929201",
+                "type": "video"
+              }
+            ]
+          },
+          {
+            "id": "phys-umeed-234",
+            "label": "234. Lecture 08• Class Notes",
+            "url": "https://www.streamvaultpro.cc/0:/dl/6a9161781b4c2c74d772b681",
+            "downloadUrl": "https://www.streamvaultpro.cc/0:/dl/6a9161781b4c2c74d772b681",
+            "type": "pdf",
+            "subject": "Engineering Physics",
+            "category": "pdfs",
+            "servers": [
+              {
+                "name": "ALBA",
+                "url": "https://www.streamvaultpro.cc/0:/dl/6a9161781b4c2c74d772b681",
+                "downloadUrl": "https://www.streamvaultpro.cc/0:/dl/6a9161781b4c2c74d772b681",
+                "streamUrl": "https://www.streamvaultpro.cc/0:/stream/6a9161781b4c2c74d772b681",
+                "type": "pdf"
+              },
+              {
+                "name": "ESTE",
+                "url": "https://fs1qydv17g1-161-162e5df28a45.herokuapp.com/dl/6a91617a95d01368e8929203",
+                "downloadUrl": "https://publicbotshub.blogspot.com/p/file-stream-bot.html?dl=6a91617a95d01368e8929203",
+                "type": "pdf"
+              }
+            ]
+          },
+          {
+            "id": "phys-umeed-235",
+            "label": "235. Lecture 09 • WORKING & CONSTRUCTION",
+            "url": "https://www.streamvaultpro.cc/0:/dl/6a91617c1b4c2c74d772b682",
+            "downloadUrl": "https://www.streamvaultpro.cc/0:/dl/6a91617c1b4c2c74d772b682",
+            "type": "video",
+            "subject": "Engineering Physics",
+            "category": "videos",
+            "servers": [
+              {
+                "name": "ALBA",
+                "url": "https://www.streamvaultpro.cc/0:/dl/6a91617c1b4c2c74d772b682",
+                "downloadUrl": "https://www.streamvaultpro.cc/0:/dl/6a91617c1b4c2c74d772b682",
+                "streamUrl": "https://www.streamvaultpro.cc/0:/stream/6a91617c1b4c2c74d772b682",
+                "type": "video"
+              },
+              {
+                "name": "ESTE",
+                "url": "https://fs1qydv17g1-161-162e5df28a45.herokuapp.com/dl/6a91617e95d01368e8929205",
+                "downloadUrl": "https://publicbotshub.blogspot.com/p/file-stream-bot.html?dl=6a91617e95d01368e8929205",
+                "type": "video"
+              }
+            ]
+          },
+          {
+            "id": "phys-umeed-236",
+            "label": "236. Lecture 09• Class Notes",
+            "url": "https://www.streamvaultpro.cc/0:/dl/6a9161811b4c2c74d772b683",
+            "downloadUrl": "https://www.streamvaultpro.cc/0:/dl/6a9161811b4c2c74d772b683",
+            "type": "pdf",
+            "subject": "Engineering Physics",
+            "category": "pdfs",
+            "servers": [
+              {
+                "name": "ALBA",
+                "url": "https://www.streamvaultpro.cc/0:/dl/6a9161811b4c2c74d772b683",
+                "downloadUrl": "https://www.streamvaultpro.cc/0:/dl/6a9161811b4c2c74d772b683",
+                "streamUrl": "https://www.streamvaultpro.cc/0:/stream/6a9161811b4c2c74d772b683",
+                "type": "pdf"
+              },
+              {
+                "name": "ESTE",
+                "url": "https://fs1qydv17g1-161-162e5df28a45.herokuapp.com/dl/6a91618395d01368e8929206",
+                "downloadUrl": "https://publicbotshub.blogspot.com/p/file-stream-bot.html?dl=6a91618395d01368e8929206",
+                "type": "pdf"
+              }
+            ]
+          },
+          {
+            "id": "phys-umeed-237",
+            "label": "237. Lecture 01 • Introduction of Laser",
+            "url": "https://www.streamvaultpro.cc/0:/dl/6a9161871b4c2c74d772b684",
+            "downloadUrl": "https://www.streamvaultpro.cc/0:/dl/6a9161871b4c2c74d772b684",
+            "type": "video",
+            "subject": "Engineering Physics",
+            "category": "videos",
+            "servers": [
+              {
+                "name": "ALBA",
+                "url": "https://www.streamvaultpro.cc/0:/dl/6a9161871b4c2c74d772b684",
+                "downloadUrl": "https://www.streamvaultpro.cc/0:/dl/6a9161871b4c2c74d772b684",
+                "streamUrl": "https://www.streamvaultpro.cc/0:/stream/6a9161871b4c2c74d772b684",
+                "type": "video"
+              },
+              {
+                "name": "ESTE",
+                "url": "https://fs1qydv17g1-161-162e5df28a45.herokuapp.com/dl/6a91618995d01368e8929207",
+                "downloadUrl": "https://publicbotshub.blogspot.com/p/file-stream-bot.html?dl=6a91618995d01368e8929207",
+                "type": "video"
+              }
+            ]
+          },
+          {
+            "id": "phys-umeed-238",
+            "label": "238. Lecture 01• Class Notes",
+            "url": "https://www.streamvaultpro.cc/0:/dl/6a91618b1b4c2c74d772b685",
+            "downloadUrl": "https://www.streamvaultpro.cc/0:/dl/6a91618b1b4c2c74d772b685",
+            "type": "pdf",
+            "subject": "Engineering Physics",
+            "category": "pdfs",
+            "servers": [
+              {
+                "name": "ALBA",
+                "url": "https://www.streamvaultpro.cc/0:/dl/6a91618b1b4c2c74d772b685",
+                "downloadUrl": "https://www.streamvaultpro.cc/0:/dl/6a91618b1b4c2c74d772b685",
+                "streamUrl": "https://www.streamvaultpro.cc/0:/stream/6a91618b1b4c2c74d772b685",
+                "type": "pdf"
+              },
+              {
+                "name": "ESTE",
+                "url": "https://fs1qydv17g1-161-162e5df28a45.herokuapp.com/dl/6a91618e95d01368e8929208",
+                "downloadUrl": "https://publicbotshub.blogspot.com/p/file-stream-bot.html?dl=6a91618e95d01368e8929208",
+                "type": "pdf"
+              }
+            ]
+          },
+          {
+            "id": "phys-umeed-239",
+            "label": "239. Lecture 02 • Laser System",
+            "url": "https://www.streamvaultpro.cc/0:/dl/6a9161911b4c2c74d772b686",
+            "downloadUrl": "https://www.streamvaultpro.cc/0:/dl/6a9161911b4c2c74d772b686",
+            "type": "video",
+            "subject": "Engineering Physics",
+            "category": "videos",
+            "servers": [
+              {
+                "name": "ALBA",
+                "url": "https://www.streamvaultpro.cc/0:/dl/6a9161911b4c2c74d772b686",
+                "downloadUrl": "https://www.streamvaultpro.cc/0:/dl/6a9161911b4c2c74d772b686",
+                "streamUrl": "https://www.streamvaultpro.cc/0:/stream/6a9161911b4c2c74d772b686",
+                "type": "video"
+              },
+              {
+                "name": "ESTE",
+                "url": "https://fs1qydv17g1-161-162e5df28a45.herokuapp.com/dl/6a91619395d01368e8929209",
+                "downloadUrl": "https://publicbotshub.blogspot.com/p/file-stream-bot.html?dl=6a91619395d01368e8929209",
+                "type": "video"
+              }
+            ]
+          },
+          {
+            "id": "phys-umeed-240",
+            "label": "240. Lecture 02• Class Notes",
+            "url": "https://www.streamvaultpro.cc/0:/dl/6a9161951b4c2c74d772b687",
+            "downloadUrl": "https://www.streamvaultpro.cc/0:/dl/6a9161951b4c2c74d772b687",
+            "type": "pdf",
+            "subject": "Engineering Physics",
+            "category": "pdfs",
+            "servers": [
+              {
+                "name": "ALBA",
+                "url": "https://www.streamvaultpro.cc/0:/dl/6a9161951b4c2c74d772b687",
+                "downloadUrl": "https://www.streamvaultpro.cc/0:/dl/6a9161951b4c2c74d772b687",
+                "streamUrl": "https://www.streamvaultpro.cc/0:/stream/6a9161951b4c2c74d772b687",
+                "type": "pdf"
+              },
+              {
+                "name": "ESTE",
+                "url": "https://fs1qydv17g1-161-162e5df28a45.herokuapp.com/dl/6a91619895d01368e892920a",
+                "downloadUrl": "https://publicbotshub.blogspot.com/p/file-stream-bot.html?dl=6a91619895d01368e892920a",
+                "type": "pdf"
+              }
+            ]
+          },
+          {
+            "id": "phys-umeed-241",
+            "label": "241. Lecture 03 • Ruby Laser",
+            "url": "https://www.streamvaultpro.cc/0:/dl/6a91619d1b4c2c74d772b688",
+            "downloadUrl": "https://www.streamvaultpro.cc/0:/dl/6a91619d1b4c2c74d772b688",
+            "type": "video",
+            "subject": "Engineering Physics",
+            "category": "videos",
+            "servers": [
+              {
+                "name": "ALBA",
+                "url": "https://www.streamvaultpro.cc/0:/dl/6a91619d1b4c2c74d772b688",
+                "downloadUrl": "https://www.streamvaultpro.cc/0:/dl/6a91619d1b4c2c74d772b688",
+                "streamUrl": "https://www.streamvaultpro.cc/0:/stream/6a91619d1b4c2c74d772b688",
+                "type": "video"
+              },
+              {
+                "name": "ESTE",
+                "url": "https://fs1qydv17g1-161-162e5df28a45.herokuapp.com/dl/6a9161aa95d01368e8929211",
+                "downloadUrl": "https://publicbotshub.blogspot.com/p/file-stream-bot.html?dl=6a9161aa95d01368e8929211",
+                "type": "video"
+              }
+            ]
+          },
+          {
+            "id": "phys-umeed-242",
+            "label": "242. Lecture 03• Class Notes",
+            "url": "https://www.streamvaultpro.cc/0:/dl/6a9161a11b4c2c74d772b689",
+            "downloadUrl": "https://www.streamvaultpro.cc/0:/dl/6a9161a11b4c2c74d772b689",
+            "type": "pdf",
+            "subject": "Engineering Physics",
+            "category": "pdfs",
+            "servers": [
+              {
+                "name": "ALBA",
+                "url": "https://www.streamvaultpro.cc/0:/dl/6a9161a11b4c2c74d772b689",
+                "downloadUrl": "https://www.streamvaultpro.cc/0:/dl/6a9161a11b4c2c74d772b689",
+                "streamUrl": "https://www.streamvaultpro.cc/0:/stream/6a9161a11b4c2c74d772b689",
+                "type": "pdf"
+              },
+              {
+                "name": "ESTE",
+                "url": "https://fs1qydv17g1-161-162e5df28a45.herokuapp.com/dl/6a9161ad95d01368e8929214",
+                "downloadUrl": "https://publicbotshub.blogspot.com/p/file-stream-bot.html?dl=6a9161ad95d01368e8929214",
+                "type": "pdf"
+              }
+            ]
+          },
+          {
+            "id": "phys-umeed-243",
+            "label": "243. Lecture 04 • Helium - Neon Laser",
+            "url": "https://www.streamvaultpro.cc/0:/dl/6a9161a61b4c2c74d772b68a",
+            "downloadUrl": "https://www.streamvaultpro.cc/0:/dl/6a9161a61b4c2c74d772b68a",
+            "type": "video",
+            "subject": "Engineering Physics",
+            "category": "videos",
+            "servers": [
+              {
+                "name": "ALBA",
+                "url": "https://www.streamvaultpro.cc/0:/dl/6a9161a61b4c2c74d772b68a",
+                "downloadUrl": "https://www.streamvaultpro.cc/0:/dl/6a9161a61b4c2c74d772b68a",
+                "streamUrl": "https://www.streamvaultpro.cc/0:/stream/6a9161a61b4c2c74d772b68a",
+                "type": "video"
+              },
+              {
+                "name": "ESTE",
+                "url": "https://fs1qydv17g1-161-162e5df28a45.herokuapp.com/dl/6a9161ab95d01368e8929212",
+                "downloadUrl": "https://publicbotshub.blogspot.com/p/file-stream-bot.html?dl=6a9161ab95d01368e8929212",
+                "type": "video"
+              }
+            ]
+          },
+          {
+            "id": "phys-umeed-244",
+            "label": "244. Lecture 04• Class Notes",
+            "url": "https://www.streamvaultpro.cc/0:/dl/6a9161ab1b4c2c74d772b68b",
+            "downloadUrl": "https://www.streamvaultpro.cc/0:/dl/6a9161ab1b4c2c74d772b68b",
+            "type": "pdf",
+            "subject": "Engineering Physics",
+            "category": "pdfs",
+            "servers": [
+              {
+                "name": "ALBA",
+                "url": "https://www.streamvaultpro.cc/0:/dl/6a9161ab1b4c2c74d772b68b",
+                "downloadUrl": "https://www.streamvaultpro.cc/0:/dl/6a9161ab1b4c2c74d772b68b",
+                "streamUrl": "https://www.streamvaultpro.cc/0:/stream/6a9161ab1b4c2c74d772b68b",
+                "type": "pdf"
+              },
+              {
+                "name": "ESTE",
+                "url": "https://fs1qydv17g1-161-162e5df28a45.herokuapp.com/dl/6a9161ad95d01368e8929213",
+                "downloadUrl": "https://publicbotshub.blogspot.com/p/file-stream-bot.html?dl=6a9161ad95d01368e8929213",
+                "type": "pdf"
+              }
+            ]
+          },
+          {
+            "id": "phys-umeed-245",
+            "label": "245. Lecture 05 • Nd: YAG Laser",
+            "url": "https://www.streamvaultpro.cc/0:/dl/6a9161b01b4c2c74d772b68c",
+            "downloadUrl": "https://www.streamvaultpro.cc/0:/dl/6a9161b01b4c2c74d772b68c",
+            "type": "video",
+            "subject": "Engineering Physics",
+            "category": "videos",
+            "servers": [
+              {
+                "name": "ALBA",
+                "url": "https://www.streamvaultpro.cc/0:/dl/6a9161b01b4c2c74d772b68c",
+                "downloadUrl": "https://www.streamvaultpro.cc/0:/dl/6a9161b01b4c2c74d772b68c",
+                "streamUrl": "https://www.streamvaultpro.cc/0:/stream/6a9161b01b4c2c74d772b68c",
+                "type": "video"
+              },
+              {
+                "name": "ESTE",
+                "url": "https://fs1qydv17g1-161-162e5df28a45.herokuapp.com/dl/6a9161b295d01368e8929219",
+                "downloadUrl": "https://publicbotshub.blogspot.com/p/file-stream-bot.html?dl=6a9161b295d01368e8929219",
+                "type": "video"
+              }
+            ]
+          },
+          {
+            "id": "phys-umeed-246",
+            "label": "246. Lecture 05• Class Notes",
+            "url": "https://www.streamvaultpro.cc/0:/dl/6a9161b51b4c2c74d772b68d",
+            "downloadUrl": "https://www.streamvaultpro.cc/0:/dl/6a9161b51b4c2c74d772b68d",
+            "type": "pdf",
+            "subject": "Engineering Physics",
+            "category": "pdfs",
+            "servers": [
+              {
+                "name": "ALBA",
+                "url": "https://www.streamvaultpro.cc/0:/dl/6a9161b51b4c2c74d772b68d",
+                "downloadUrl": "https://www.streamvaultpro.cc/0:/dl/6a9161b51b4c2c74d772b68d",
+                "streamUrl": "https://www.streamvaultpro.cc/0:/stream/6a9161b51b4c2c74d772b68d",
+                "type": "pdf"
+              },
+              {
+                "name": "ESTE",
+                "url": "https://fs1qydv17g1-161-162e5df28a45.herokuapp.com/dl/6a9161b795d01368e892921b",
+                "downloadUrl": "https://publicbotshub.blogspot.com/p/file-stream-bot.html?dl=6a9161b795d01368e892921b",
+                "type": "pdf"
+              }
+            ]
+          },
+          {
+            "id": "phys-umeed-247",
+            "label": "247. Lecture 01 • Photoelectric Effect",
+            "url": "https://www.streamvaultpro.cc/0:/dl/6a9161ba1b4c2c74d772b68e",
+            "downloadUrl": "https://www.streamvaultpro.cc/0:/dl/6a9161ba1b4c2c74d772b68e",
+            "type": "video",
+            "subject": "Engineering Physics",
+            "category": "videos",
+            "servers": [
+              {
+                "name": "ALBA",
+                "url": "https://www.streamvaultpro.cc/0:/dl/6a9161ba1b4c2c74d772b68e",
+                "downloadUrl": "https://www.streamvaultpro.cc/0:/dl/6a9161ba1b4c2c74d772b68e",
+                "streamUrl": "https://www.streamvaultpro.cc/0:/stream/6a9161ba1b4c2c74d772b68e",
+                "type": "video"
+              },
+              {
+                "name": "ESTE",
+                "url": "https://fs1qydv17g1-161-162e5df28a45.herokuapp.com/dl/6a9161bc95d01368e892921c",
+                "downloadUrl": "https://publicbotshub.blogspot.com/p/file-stream-bot.html?dl=6a9161bc95d01368e892921c",
+                "type": "video"
+              }
+            ]
+          },
+          {
+            "id": "phys-umeed-248",
+            "label": "248. Lecture 01• Class Notes",
+            "url": "https://www.streamvaultpro.cc/0:/dl/6a9161be1b4c2c74d772b68f",
+            "downloadUrl": "https://www.streamvaultpro.cc/0:/dl/6a9161be1b4c2c74d772b68f",
+            "type": "pdf",
+            "subject": "Engineering Physics",
+            "category": "pdfs",
+            "servers": [
+              {
+                "name": "ALBA",
+                "url": "https://www.streamvaultpro.cc/0:/dl/6a9161be1b4c2c74d772b68f",
+                "downloadUrl": "https://www.streamvaultpro.cc/0:/dl/6a9161be1b4c2c74d772b68f",
+                "streamUrl": "https://www.streamvaultpro.cc/0:/stream/6a9161be1b4c2c74d772b68f",
+                "type": "pdf"
+              },
+              {
+                "name": "ESTE",
+                "url": "https://fs1qydv17g1-161-162e5df28a45.herokuapp.com/dl/6a9161c195d01368e892921d",
+                "downloadUrl": "https://publicbotshub.blogspot.com/p/file-stream-bot.html?dl=6a9161c195d01368e892921d",
+                "type": "pdf"
+              }
+            ]
+          },
+          {
+            "id": "phys-umeed-249",
+            "label": "249. Lecture 02 • Einstein's Photoelectric Equation",
+            "url": "https://www.streamvaultpro.cc/0:/dl/6a9161c41b4c2c74d772b690",
+            "downloadUrl": "https://www.streamvaultpro.cc/0:/dl/6a9161c41b4c2c74d772b690",
+            "type": "video",
+            "subject": "Engineering Physics",
+            "category": "videos",
+            "servers": [
+              {
+                "name": "ALBA",
+                "url": "https://www.streamvaultpro.cc/0:/dl/6a9161c41b4c2c74d772b690",
+                "downloadUrl": "https://www.streamvaultpro.cc/0:/dl/6a9161c41b4c2c74d772b690",
+                "streamUrl": "https://www.streamvaultpro.cc/0:/stream/6a9161c41b4c2c74d772b690",
+                "type": "video"
+              },
+              {
+                "name": "ESTE",
+                "url": "https://fs1qydv17g1-161-162e5df28a45.herokuapp.com/dl/6a9161c695d01368e892921e",
+                "downloadUrl": "https://publicbotshub.blogspot.com/p/file-stream-bot.html?dl=6a9161c695d01368e892921e",
+                "type": "video"
+              }
+            ]
+          },
+          {
+            "id": "phys-umeed-250",
+            "label": "250. Lecture 02• Class Notes",
+            "url": "https://www.streamvaultpro.cc/0:/dl/6a9161c81b4c2c74d772b691",
+            "downloadUrl": "https://www.streamvaultpro.cc/0:/dl/6a9161c81b4c2c74d772b691",
+            "type": "pdf",
+            "subject": "Engineering Physics",
+            "category": "pdfs",
+            "servers": [
+              {
+                "name": "ALBA",
+                "url": "https://www.streamvaultpro.cc/0:/dl/6a9161c81b4c2c74d772b691",
+                "downloadUrl": "https://www.streamvaultpro.cc/0:/dl/6a9161c81b4c2c74d772b691",
+                "streamUrl": "https://www.streamvaultpro.cc/0:/stream/6a9161c81b4c2c74d772b691",
+                "type": "pdf"
+              },
+              {
+                "name": "ESTE",
+                "url": "https://fs1qydv17g1-161-162e5df28a45.herokuapp.com/dl/6a9161e695d01368e8929225",
+                "downloadUrl": "https://publicbotshub.blogspot.com/p/file-stream-bot.html?dl=6a9161e695d01368e8929225",
+                "type": "pdf"
+              }
+            ]
+          },
+          {
+            "id": "phys-umeed-251",
+            "label": "251. Lecture 03 • De Broglie's theory",
+            "url": "https://www.streamvaultpro.cc/0:/dl/6a9161cd1b4c2c74d772b692",
+            "downloadUrl": "https://www.streamvaultpro.cc/0:/dl/6a9161cd1b4c2c74d772b692",
+            "type": "video",
+            "subject": "Engineering Physics",
+            "category": "videos",
+            "servers": [
+              {
+                "name": "ALBA",
+                "url": "https://www.streamvaultpro.cc/0:/dl/6a9161cd1b4c2c74d772b692",
+                "downloadUrl": "https://www.streamvaultpro.cc/0:/dl/6a9161cd1b4c2c74d772b692",
+                "streamUrl": "https://www.streamvaultpro.cc/0:/stream/6a9161cd1b4c2c74d772b692",
+                "type": "video"
+              },
+              {
+                "name": "ESTE",
+                "url": "https://fs1qydv17g1-161-162e5df28a45.herokuapp.com/dl/6a9161e695d01368e8929224",
+                "downloadUrl": "https://publicbotshub.blogspot.com/p/file-stream-bot.html?dl=6a9161e695d01368e8929224",
+                "type": "video"
+              }
+            ]
+          },
+          {
+            "id": "phys-umeed-252",
+            "label": "252. Lecture 03• Class Notes",
+            "url": "https://www.streamvaultpro.cc/0:/dl/6a9161d21b4c2c74d772b693",
+            "downloadUrl": "https://www.streamvaultpro.cc/0:/dl/6a9161d21b4c2c74d772b693",
+            "type": "pdf",
+            "subject": "Engineering Physics",
+            "category": "pdfs",
+            "servers": [
+              {
+                "name": "ALBA",
+                "url": "https://www.streamvaultpro.cc/0:/dl/6a9161d21b4c2c74d772b693",
+                "downloadUrl": "https://www.streamvaultpro.cc/0:/dl/6a9161d21b4c2c74d772b693",
+                "streamUrl": "https://www.streamvaultpro.cc/0:/stream/6a9161d21b4c2c74d772b693",
+                "type": "pdf"
+              },
+              {
+                "name": "ESTE",
+                "url": "https://fs1qydv17g1-161-162e5df28a45.herokuapp.com/dl/6a9161e695d01368e8929226",
+                "downloadUrl": "https://publicbotshub.blogspot.com/p/file-stream-bot.html?dl=6a9161e695d01368e8929226",
+                "type": "pdf"
+              }
+            ]
+          },
+          {
+            "id": "phys-umeed-253",
+            "label": "253. Lecture 04 • Davvison- Germer Experiment",
+            "url": "https://www.streamvaultpro.cc/0:/dl/6a9161d71b4c2c74d772b694",
+            "downloadUrl": "https://www.streamvaultpro.cc/0:/dl/6a9161d71b4c2c74d772b694",
+            "type": "video",
+            "subject": "Engineering Physics",
+            "category": "videos",
+            "servers": [
+              {
+                "name": "ALBA",
+                "url": "https://www.streamvaultpro.cc/0:/dl/6a9161d71b4c2c74d772b694",
+                "downloadUrl": "https://www.streamvaultpro.cc/0:/dl/6a9161d71b4c2c74d772b694",
+                "streamUrl": "https://www.streamvaultpro.cc/0:/stream/6a9161d71b4c2c74d772b694",
+                "type": "video"
+              },
+              {
+                "name": "ESTE",
+                "url": "https://fs1qydv17g1-161-162e5df28a45.herokuapp.com/dl/6a9161e695d01368e8929227",
+                "downloadUrl": "https://publicbotshub.blogspot.com/p/file-stream-bot.html?dl=6a9161e695d01368e8929227",
+                "type": "video"
+              }
+            ]
+          },
+          {
+            "id": "phys-umeed-254",
+            "label": "254. Lecture 04• Class Notes",
+            "url": "https://www.streamvaultpro.cc/0:/dl/6a9161dc1b4c2c74d772b695",
+            "downloadUrl": "https://www.streamvaultpro.cc/0:/dl/6a9161dc1b4c2c74d772b695",
+            "type": "pdf",
+            "subject": "Engineering Physics",
+            "category": "pdfs",
+            "servers": [
+              {
+                "name": "ALBA",
+                "url": "https://www.streamvaultpro.cc/0:/dl/6a9161dc1b4c2c74d772b695",
+                "downloadUrl": "https://www.streamvaultpro.cc/0:/dl/6a9161dc1b4c2c74d772b695",
+                "streamUrl": "https://www.streamvaultpro.cc/0:/stream/6a9161dc1b4c2c74d772b695",
+                "type": "pdf"
+              },
+              {
+                "name": "ESTE",
+                "url": "https://fs1qydv17g1-161-162e5df28a45.herokuapp.com/dl/6a9161e195d01368e8929222",
+                "downloadUrl": "https://publicbotshub.blogspot.com/p/file-stream-bot.html?dl=6a9161e195d01368e8929222",
                 "type": "pdf"
               }
             ]

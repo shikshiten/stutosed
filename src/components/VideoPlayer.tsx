@@ -839,28 +839,82 @@ export const VideoPlayer: React.FC<VideoPlayerProps> = ({
             </>
           )}
 
-          {/* MODE 2: EMBEDDED (YouTube iframe or ALBA direct MP4) */}
+          {/* MODE 2: EMBEDDED (YouTube direct card or ALBA direct MP4) */}
           {playerMode === 'embedded' && (() => {
-            // YouTube: use iframe embed
-            if (isYouTubeUrl && ytId) {
+            // YouTube: direct YouTube player action card to prevent iframe refresh/embedding bugs
+            if (isYouTubeUrl) {
+              const youtubeWatchUrl = activeUrl.startsWith('http')
+                ? activeUrl
+                : ytId
+                ? `https://www.youtube.com/watch?v=${ytId}`
+                : activeUrl;
               return (
-                <iframe
-                  key={ytId}
-                  ref={iframeRef}
-                  src={`https://www.youtube.com/embed/${ytId}?autoplay=1&rel=0&modestbranding=1`}
-                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                  allowFullScreen
-                  onLoad={() => setIsEmbedLoading(false)}
+                <div
                   style={{
                     position: 'absolute',
                     inset: 0,
                     width: '100%',
                     height: '100%',
-                    border: 'none',
-                    background: '#000',
+                    background: '#0d0d11',
+                    display: 'flex',
+                    flexDirection: 'column',
+                    alignItems: 'center',
+                    justifyContent: 'center',
+                    padding: '24px',
+                    textAlign: 'center',
+                    gap: '14px',
+                    zIndex: 4,
                   }}
-                  title={currentItem.label}
-                />
+                >
+                  <div
+                    style={{
+                      width: '60px',
+                      height: '60px',
+                      borderRadius: '50%',
+                      background: 'rgba(255, 0, 0, 0.15)',
+                      color: '#ff4444',
+                      display: 'flex',
+                      alignItems: 'center',
+                      justifyContent: 'center',
+                    }}
+                  >
+                    <svg width="34" height="34" viewBox="0 0 24 24" fill="currentColor">
+                      <path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/>
+                    </svg>
+                  </div>
+                  <div>
+                    <h3 style={{ fontSize: '17px', fontWeight: 700, color: '#fff', margin: '0 0 4px' }}>
+                      YouTube Video Lecture
+                    </h3>
+                    <p style={{ fontSize: '13px', color: 'rgba(255,255,255,0.7)', margin: 0, maxWidth: '400px' }}>
+                      This video is hosted on YouTube. Tap below to watch directly with zero buffering or embed restrictions.
+                    </p>
+                  </div>
+                  <a
+                    href={youtubeWatchUrl}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    style={{
+                      display: 'inline-flex',
+                      alignItems: 'center',
+                      gap: '8px',
+                      padding: '10px 22px',
+                      background: '#ff0000',
+                      color: '#ffffff',
+                      borderRadius: '100px',
+                      fontSize: '13px',
+                      fontWeight: 700,
+                      textDecoration: 'none',
+                      boxShadow: '0 4px 15px rgba(255,0,0,0.35)',
+                      marginTop: '4px',
+                    }}
+                  >
+                    <span>Open on YouTube</span>
+                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5">
+                      <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6M15 3h6v6M10 14L21 3" />
+                    </svg>
+                  </a>
+                </div>
               );
             }
             // ALBA / Direct video: pick best download URL
