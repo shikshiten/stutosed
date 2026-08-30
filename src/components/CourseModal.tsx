@@ -441,7 +441,11 @@ export const CourseModal: React.FC<CourseModalProps> = ({
       <div className="overlay-hero-strip" id="overlay-hero-strip">
         <img
           className="overlay-thumb"
-          src={selectedFolderTab?.thumb || course.thumb}
+          src={getSubjectThumbnail(
+            course.isParmar || course.isPratham ? activeTabId : (selectedFolderTab?.label || course.name),
+            selectedFolderTab?.thumb || course.thumb,
+            selectedFolderTab?.id || course.id
+          )}
           alt=""
           loading="lazy"
         />

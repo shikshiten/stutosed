@@ -1,128 +1,170 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 720" width="1280" height="720">
+  <style>
+    /* Default: Clean High-Contrast Light Mode (Crisp White Background) */
+    :root {
+      --bg-color-1: #FFFFFF;
+      --bg-color-2: #F8F9FA;
+      --bg-color-3: #F1F3F5;
+      --grid-stroke: rgba(0, 0, 0, 0.035);
+      --border-outer: rgba(0, 0, 0, 0.1);
+      --border-dashed: #0891b2;
+      --text-main: #111827;
+      --text-sub: #1F2937;
+      --text-footer: rgba(0, 0, 0, 0.45);
+      --accent-color: #0891b2;
+      --accent-glow-opacity: 0.12;
+      --divider-center: rgba(0, 0, 0, 0.15);
+      --center-glow-bg: #FFFFFF;
+    }
+
+    .bg-main { fill: url(#bg-grad); }
+    .bg-grid { fill: url(#grid-pattern); }
+    .accent-glow { fill: url(#accent-glow-rad); }
+    .border-outer { stroke: var(--border-outer); }
+    .border-dashed { stroke: var(--border-dashed); opacity: 0.55; }
+    .accent-fill { fill: var(--accent-color); }
+    .accent-stroke { stroke: var(--accent-color); }
+    .text-category { fill: var(--accent-color); }
+    .text-primary { fill: var(--text-main); }
+    .text-secondary { fill: var(--text-sub); }
+    .text-footer { fill: var(--text-footer); }
+    .divider-line { stroke: var(--divider-center); }
+
+    /* Dark Mode (When OS / User prefers Dark Theme) */
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --bg-color-1: #1f1d1a;
+        --bg-color-2: #131211;
+        --bg-color-3: #0b0a0a;
+        --grid-stroke: rgba(255, 255, 255, 0.025);
+        --border-outer: rgba(255, 255, 255, 0.09);
+        --border-dashed: #06b6d4;
+        --text-main: #FFFFFF;
+        --text-sub: #F3F4F6;
+        --text-footer: rgba(255, 255, 255, 0.42);
+        --accent-color: #06b6d4;
+        --accent-glow-opacity: 0.18;
+        --divider-center: rgba(255, 255, 255, 0.15);
+        --center-glow-bg: #131211;
+      }
+    }
+  </style>
+
   <defs>
-    <!-- Dark Radial Gradient Background -->
+    <!-- Adaptive Radial Gradient Background -->
     <radialGradient id="bg-grad" cx="50%" cy="45%" r="75%">
-      <stop offset="0%" stop-color="#1f1d1a" />
-      <stop offset="60%" stop-color="#131211" />
-      <stop offset="100%" stop-color="#0b0a0a" />
+      <stop offset="0%" stop-color="var(--bg-color-1)" />
+      <stop offset="60%" stop-color="var(--bg-color-2)" />
+      <stop offset="100%" stop-color="var(--bg-color-3)" />
     </radialGradient>
 
-    <!-- Accent Radial Glow -->
-    <radialGradient id="accent-glow" cx="50%" cy="50%" r="50%">
-      <stop offset="0%" stop-color="#06b6d4" stop-opacity="0.16" />
-      <stop offset="50%" stop-color="#06b6d4" stop-opacity="0.04" />
-      <stop offset="100%" stop-color="#06b6d4" stop-opacity="0" />
+    <!-- Accent Glow -->
+    <radialGradient id="accent-glow-rad" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="var(--accent-color)" stop-opacity="var(--accent-glow-opacity)" />
+      <stop offset="60%" stop-color="var(--accent-color)" stop-opacity="0.03" />
+      <stop offset="100%" stop-color="var(--accent-color)" stop-opacity="0" />
     </radialGradient>
-
-    <!-- Drop Shadow Filter for Typography -->
-    <filter id="shadow" x="-10%" y="-10%" width="120%" height="120%">
-      <feDropShadow dx="0" dy="6" stdDeviation="12" flood-color="#000000" flood-opacity="0.75" />
-    </filter>
 
     <!-- Fine Geometric Micro-Grid Pattern -->
     <pattern id="grid-pattern" width="40" height="40" patternUnits="userSpaceOnUse">
-      <path d="M 40 0 L 0 0 0 40" fill="none" stroke="rgba(255,255,255,0.02)" stroke-width="1" />
-      <circle cx="40" cy="40" r="1" fill="rgba(255,255,255,0.035)" />
+      <path d="M 40 0 L 0 0 0 40" fill="none" stroke="var(--grid-stroke)" stroke-width="1" />
+      <circle cx="40" cy="40" r="1" fill="var(--grid-stroke)" />
     </pattern>
   </defs>
 
   <!-- Background Layer -->
-  <rect width="1280" height="720" fill="url(#bg-grad)" />
-  <rect width="1280" height="720" fill="url(#grid-pattern)" />
+  <rect width="1280" height="720" class="bg-main" />
+  <rect width="1280" height="720" class="bg-grid" />
 
   <!-- Center Ambient Accent Glow -->
-  <circle cx="640" cy="380" r="440" fill="url(#accent-glow)" />
+  <circle cx="640" cy="380" r="440" class="accent-glow" />
 
   <!-- ── 10% MITHILA GEOMETRIC BORDERS ── -->
   <!-- Outer Clean Hairline Border -->
-  <rect x="36" y="36" width="1208" height="648" rx="20" fill="none" stroke="rgba(255,255,255,0.09)" stroke-width="1.5" />
+  <rect x="36" y="36" width="1208" height="648" rx="20" fill="none" class="border-outer" stroke-width="1.5" />
 
   <!-- Inner Mithila Dashed Geometric Frame -->
-  <rect x="52" y="52" width="1176" height="616" rx="14" fill="none" stroke="rgba(6, 182, 212, 0.4)" stroke-width="1.4" stroke-dasharray="10 6" />
+  <rect x="52" y="52" width="1176" height="616" rx="14" fill="none" class="border-dashed" stroke-width="1.4" stroke-dasharray="10 6" />
 
   <!-- 4 Corner Mithila Folk Geometric Ornaments -->
   
     <g transform="translate(68, 68) rotate(0)">
       <!-- Mithila Symmetrical Diamond & Petal Line Ornament -->
-      <path d="M 0 0 L 32 0 L 32 4 L 4 4 L 4 32 L 0 32 Z" fill="#06b6d4" opacity="0.9" />
-      <polygon points="14,14 26,14 26,26 14,26" fill="none" stroke="#06b6d4" stroke-width="1.4" opacity="0.8" />
-      <polygon points="20,8 26,14 20,20 14,14" fill="#06b6d4" opacity="0.95" />
-      <circle cx="40" cy="14" r="2.8" fill="#06b6d4" opacity="0.75" />
-      <circle cx="14" cy="40" r="2.8" fill="#06b6d4" opacity="0.75" />
-      <!-- Subtle Mithila line hatch -->
-      <line x1="8" y1="8" x2="32" y2="32" stroke="#06b6d4" stroke-width="1.2" opacity="0.45" stroke-dasharray="3,3" />
+      <path d="M 0 0 L 32 0 L 32 4 L 4 4 L 4 32 L 0 32 Z" class="accent-fill" opacity="0.9" />
+      <polygon points="14,14 26,14 26,26 14,26" fill="none" class="accent-fill-stroke" stroke-width="1.4" opacity="0.85" />
+      <polygon points="20,8 26,14 20,20 14,14" class="accent-fill" opacity="0.95" />
+      <circle cx="40" cy="14" r="2.8" class="accent-fill" opacity="0.75" />
+      <circle cx="14" cy="40" r="2.8" class="accent-fill" opacity="0.75" />
+      <line x1="8" y1="8" x2="32" y2="32" class="accent-fill-stroke" stroke-width="1.2" opacity="0.5" stroke-dasharray="3,3" />
     </g>
   
   
     <g transform="translate(1212, 68) rotate(90)">
       <!-- Mithila Symmetrical Diamond & Petal Line Ornament -->
-      <path d="M 0 0 L 32 0 L 32 4 L 4 4 L 4 32 L 0 32 Z" fill="#06b6d4" opacity="0.9" />
-      <polygon points="14,14 26,14 26,26 14,26" fill="none" stroke="#06b6d4" stroke-width="1.4" opacity="0.8" />
-      <polygon points="20,8 26,14 20,20 14,14" fill="#06b6d4" opacity="0.95" />
-      <circle cx="40" cy="14" r="2.8" fill="#06b6d4" opacity="0.75" />
-      <circle cx="14" cy="40" r="2.8" fill="#06b6d4" opacity="0.75" />
-      <!-- Subtle Mithila line hatch -->
-      <line x1="8" y1="8" x2="32" y2="32" stroke="#06b6d4" stroke-width="1.2" opacity="0.45" stroke-dasharray="3,3" />
+      <path d="M 0 0 L 32 0 L 32 4 L 4 4 L 4 32 L 0 32 Z" class="accent-fill" opacity="0.9" />
+      <polygon points="14,14 26,14 26,26 14,26" fill="none" class="accent-fill-stroke" stroke-width="1.4" opacity="0.85" />
+      <polygon points="20,8 26,14 20,20 14,14" class="accent-fill" opacity="0.95" />
+      <circle cx="40" cy="14" r="2.8" class="accent-fill" opacity="0.75" />
+      <circle cx="14" cy="40" r="2.8" class="accent-fill" opacity="0.75" />
+      <line x1="8" y1="8" x2="32" y2="32" class="accent-fill-stroke" stroke-width="1.2" opacity="0.5" stroke-dasharray="3,3" />
     </g>
   
   
     <g transform="translate(1212, 652) rotate(180)">
       <!-- Mithila Symmetrical Diamond & Petal Line Ornament -->
-      <path d="M 0 0 L 32 0 L 32 4 L 4 4 L 4 32 L 0 32 Z" fill="#06b6d4" opacity="0.9" />
-      <polygon points="14,14 26,14 26,26 14,26" fill="none" stroke="#06b6d4" stroke-width="1.4" opacity="0.8" />
-      <polygon points="20,8 26,14 20,20 14,14" fill="#06b6d4" opacity="0.95" />
-      <circle cx="40" cy="14" r="2.8" fill="#06b6d4" opacity="0.75" />
-      <circle cx="14" cy="40" r="2.8" fill="#06b6d4" opacity="0.75" />
-      <!-- Subtle Mithila line hatch -->
-      <line x1="8" y1="8" x2="32" y2="32" stroke="#06b6d4" stroke-width="1.2" opacity="0.45" stroke-dasharray="3,3" />
+      <path d="M 0 0 L 32 0 L 32 4 L 4 4 L 4 32 L 0 32 Z" class="accent-fill" opacity="0.9" />
+      <polygon points="14,14 26,14 26,26 14,26" fill="none" class="accent-fill-stroke" stroke-width="1.4" opacity="0.85" />
+      <polygon points="20,8 26,14 20,20 14,14" class="accent-fill" opacity="0.95" />
+      <circle cx="40" cy="14" r="2.8" class="accent-fill" opacity="0.75" />
+      <circle cx="14" cy="40" r="2.8" class="accent-fill" opacity="0.75" />
+      <line x1="8" y1="8" x2="32" y2="32" class="accent-fill-stroke" stroke-width="1.2" opacity="0.5" stroke-dasharray="3,3" />
     </g>
   
   
     <g transform="translate(68, 652) rotate(270)">
       <!-- Mithila Symmetrical Diamond & Petal Line Ornament -->
-      <path d="M 0 0 L 32 0 L 32 4 L 4 4 L 4 32 L 0 32 Z" fill="#06b6d4" opacity="0.9" />
-      <polygon points="14,14 26,14 26,26 14,26" fill="none" stroke="#06b6d4" stroke-width="1.4" opacity="0.8" />
-      <polygon points="20,8 26,14 20,20 14,14" fill="#06b6d4" opacity="0.95" />
-      <circle cx="40" cy="14" r="2.8" fill="#06b6d4" opacity="0.75" />
-      <circle cx="14" cy="40" r="2.8" fill="#06b6d4" opacity="0.75" />
-      <!-- Subtle Mithila line hatch -->
-      <line x1="8" y1="8" x2="32" y2="32" stroke="#06b6d4" stroke-width="1.2" opacity="0.45" stroke-dasharray="3,3" />
+      <path d="M 0 0 L 32 0 L 32 4 L 4 4 L 4 32 L 0 32 Z" class="accent-fill" opacity="0.9" />
+      <polygon points="14,14 26,14 26,26 14,26" fill="none" class="accent-fill-stroke" stroke-width="1.4" opacity="0.85" />
+      <polygon points="20,8 26,14 20,20 14,14" class="accent-fill" opacity="0.95" />
+      <circle cx="40" cy="14" r="2.8" class="accent-fill" opacity="0.75" />
+      <circle cx="14" cy="40" r="2.8" class="accent-fill" opacity="0.75" />
+      <line x1="8" y1="8" x2="32" y2="32" class="accent-fill-stroke" stroke-width="1.2" opacity="0.5" stroke-dasharray="3,3" />
     </g>
   
 
   <!-- Top Geometric Header Divider with Mithila Sun/Star Motif -->
   <g transform="translate(640, 145)">
-    <line x1="-240" y1="0" x2="-40" y2="0" stroke="rgba(6, 182, 212, 0.4)" stroke-width="1.2" stroke-dasharray="6 4" />
+    <line x1="-240" y1="0" x2="-40" y2="0" class="border-dashed" stroke-width="1.2" stroke-dasharray="6 4" />
     <!-- Mithila Surya / 8-pointed geometric motif -->
-    <polygon points="0,-12 3,-3 12,0 3,3 0,12 -3,3 -12,0 -3,-3" fill="#06b6d4" opacity="0.95" />
-    <circle cx="0" cy="0" r="3" fill="#131211" />
-    <circle cx="0" cy="0" r="1.5" fill="#06b6d4" />
-    <line x1="40" y1="0" x2="240" y2="0" stroke="rgba(6, 182, 212, 0.4)" stroke-width="1.2" stroke-dasharray="6 4" />
+    <polygon points="0,-12 3,-3 12,0 3,3 0,12 -3,3 -12,0 -3,-3" class="accent-fill" opacity="0.95" />
+    <circle cx="0" cy="0" r="3" fill="var(--center-glow-bg)" />
+    <circle cx="0" cy="0" r="1.5" class="accent-fill" />
+    <line x1="40" y1="0" x2="240" y2="0" class="border-dashed" stroke-width="1.2" stroke-dasharray="6 4" />
   </g>
 
   <!-- Category Eyebrow Pill -->
   <g transform="translate(640, 200)">
-    <text x="0" y="0" text-anchor="middle" font-family="'Space Grotesk', Inter, system-ui, sans-serif" font-size="17" font-weight="700" letter-spacing="4.5" fill="#06b6d4" text-transform="uppercase">
+    <text x="0" y="0" text-anchor="middle" font-family="'Space Grotesk', -apple-system, system-ui, sans-serif" font-size="17" font-weight="700" letter-spacing="4.5" class="text-category" text-transform="uppercase">
       BEU B.TECH ENGINEERING
     </text>
   </g>
 
   <!-- ── DOMINANT SUBJECT TYPOGRAPHY ── -->
   <g>
-    <text x="640" y="350" text-anchor="middle" font-family="'Space Grotesk', system-ui, -apple-system, sans-serif" font-size="68" font-weight="800" letter-spacing="-0.5" fill="#FFFFFF" filter="url(#shadow)">PROGRAMMING FOR</text>
-      <text x="640" y="428.2" text-anchor="middle" font-family="'Space Grotesk', system-ui, -apple-system, sans-serif" font-size="68" font-weight="800" letter-spacing="-0.5" fill="#F3F4F6" filter="url(#shadow)">PROBLEM SOLVING</text>
+    <text x="640" y="350" text-anchor="middle" font-family="'Space Grotesk', -apple-system, system-ui, sans-serif" font-size="68" font-weight="800" letter-spacing="-0.5" class="text-primary">PROGRAMMING FOR</text>
+      <text x="640" y="428.2" text-anchor="middle" font-family="'Space Grotesk', -apple-system, system-ui, sans-serif" font-size="68" font-weight="800" letter-spacing="-0.5" class="text-secondary">PROBLEM SOLVING</text>
   </g>
 
   <!-- Bottom Mithila Divider & Stutosed Wordmark Anchor -->
   <g transform="translate(640, 565)">
-    <line x1="-160" y1="0" x2="-25" y2="0" stroke="rgba(255,255,255,0.12)" stroke-width="1" stroke-dasharray="4 4" />
+    <line x1="-160" y1="0" x2="-25" y2="0" class="divider-line" stroke-width="1" stroke-dasharray="4 4" />
     <!-- Tiny central diamond -->
-    <polygon points="0,-5 5,0 0,5 -5,0" fill="#06b6d4" opacity="0.85" />
-    <line x1="25" y1="0" x2="160" y2="0" stroke="rgba(255,255,255,0.12)" stroke-width="1" stroke-dasharray="4 4" />
+    <polygon points="0,-5 5,0 0,5 -5,0" class="accent-fill" opacity="0.85" />
+    <line x1="25" y1="0" x2="160" y2="0" class="divider-line" stroke-width="1" stroke-dasharray="4 4" />
   </g>
 
   <g transform="translate(640, 610)">
-    <text x="0" y="0" text-anchor="middle" font-family="'Space Grotesk', Inter, system-ui, sans-serif" font-size="14.5" font-weight="600" letter-spacing="3" fill="rgba(255,255,255,0.42)">
+    <text x="0" y="0" text-anchor="middle" font-family="'Space Grotesk', -apple-system, system-ui, sans-serif" font-size="14.5" font-weight="600" letter-spacing="3" class="text-footer">
       STUTOSED • STUDY VAULT
     </text>
   </g>
