@@ -543,100 +543,159 @@ svg { flex-shrink: 0; }
 }
 .overlay-bar {
   position: sticky; top: 0; z-index: 10;
-  height: var(--nav-h);
-  background: rgba(250,249,245,0.9);
+  height: 56px;
+  background: rgba(250,249,245,0.92);
   backdrop-filter: saturate(180%) blur(20px);
   -webkit-backdrop-filter: saturate(180%) blur(20px);
   border-bottom: 1px solid var(--border);
-  display: flex; align-items: center; gap: 16px;
-  padding: 0 24px;
+  display: flex; align-items: center; justify-content: space-between;
+  padding: 0 16px;
 }
 [data-theme="dark"] .overlay-bar {
-  background: rgba(24,23,21,0.9);
+  background: rgba(18,17,16,0.92);
 }
-.btn-back {
-  display: flex; align-items: center; gap: 6px;
-  color: var(--text); font-size: 14px; font-weight: 500;
-  background: var(--bg-card);
-  border: 1px solid var(--border);
-  padding: 8px 16px; border-radius: var(--r-md);
-  white-space: nowrap;
-  transition: all 0.2s;
-}
-.btn-back:hover { background: var(--bg-card-hover); border-color: var(--border-hover); }
-.overlay-bar-title {
-  flex: 1; font-family: var(--font-serif); font-size: 18px; font-weight: 500;
-  white-space: nowrap; overflow: hidden; text-overflow: ellipsis;
-}
-.overlay-bar-search-wrap {
-  position: relative; width: 240px; flex-shrink: 0;
-  display: flex; align-items: center;
-}
-.overlay-bar-search-wrap svg {
-  position: absolute; left: 12px; color: var(--text-dim); pointer-events: none;
-}
-#overlay-search {
-  width: 100%; height: 36px;
-  padding: 0 14px 0 32px;
-  border: 1px solid var(--border);
-  border-radius: var(--r-md);
-  background: var(--bg-input);
-  color: var(--text); font-size: 13px;
-  outline: none; transition: border-color 0.2s;
-}
-#overlay-search:focus { border-color: var(--accent); }
-#overlay-search::placeholder { color: var(--text-muted); }
 
-/* OVERLAY HERO STRIP */
-.overlay-hero-strip {
+.overlay-icon-btn {
+  width: 38px; height: 38px;
+  border-radius: var(--r-md);
   background: var(--bg-card);
-  border-bottom: 1px solid var(--border);
-  padding: 48px 48px;
-  display: flex; gap: 32px; align-items: center;
-}
-.overlay-thumb {
-  width: 160px; height: 100px;
-  border-radius: var(--r-lg); object-fit: cover;
   border: 1px solid var(--border);
-  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  display: flex; align-items: center; justify-content: center;
+  color: var(--text); cursor: pointer;
+  box-shadow: var(--sh-card);
+  transition: all 0.2s cubic-bezier(0.16, 1, 0.3, 1);
   flex-shrink: 0;
 }
-.overlay-info { flex: 1; min-width: 180px; }
-.overlay-course-name {
-  font-family: var(--font-serif);
-  font-size: clamp(24px, 4vw, 36px); font-weight: 400;
-  color: var(--text); line-height: 1.2; margin-bottom: 8px;
+.overlay-icon-btn:hover {
+  background: var(--bg-card-hover);
+  border-color: var(--border-hover);
 }
-.overlay-course-teacher { font-size: 14px; color: var(--accent); font-weight: 600; margin-bottom: 16px; }
-.overlay-chips { display: flex; gap: 8px; flex-wrap: wrap; }
-.overlay-chip {
-  display: flex; align-items: center; gap: 6px;
-  background: var(--bg);
-  border: 1px solid var(--border);
-  border-radius: var(--r-pill);
-  padding: 6px 14px; font-size: 12px; color: var(--text-muted);
-  font-weight: 500;
+.overlay-icon-btn:active {
+  transform: scale(0.96);
 }
 
-/* OVERLAY TABS */
-.overlay-tabs {
-  display: flex; gap: 8px;
-  border-bottom: 1px solid var(--border);
-  background: var(--bg-overlay);
-  overflow-x: auto;
-  position: sticky; top: var(--nav-h); z-index: 5;
-  padding: 12px 24px;
+/* 2. OVERLAY COURSE IDENTITY HEADER */
+.overlay-course-header {
+  padding: 16px 16px 12px;
+  display: flex; align-items: center; gap: 14px;
+  background: var(--bg);
 }
-.overlay-tabs::-webkit-scrollbar { height: 0; }
-.overlay-tab {
-  padding: 8px 16px;
-  font-size: 14px; font-weight: 500; color: var(--text-muted);
+.overlay-header-back-btn {
+  width: 40px; height: 40px;
   border-radius: var(--r-md);
-  white-space: nowrap; cursor: pointer;
-  transition: all 0.2s;
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  display: flex; align-items: center; justify-content: center;
+  cursor: pointer; color: var(--text);
+  flex-shrink: 0;
+  box-shadow: var(--sh-card);
+  transition: all 0.2s cubic-bezier(0.16, 1, 0.3, 1);
 }
-.overlay-tab:hover { color: var(--text); background: var(--bg-card); }
-.overlay-tab.active { color: var(--text); background: var(--bg-card-hover); font-weight: 600; }
+.overlay-header-back-btn:hover {
+  background: var(--bg-card-hover);
+  border-color: var(--border-hover);
+  transform: translateX(-2px);
+}
+.overlay-header-back-btn:active {
+  transform: scale(0.96);
+}
+.overlay-header-titles {
+  flex: 1; min-width: 0;
+}
+.overlay-header-title {
+  font-family: var(--font-display) !important;
+  font-size: 20px; font-weight: 700;
+  color: var(--text); line-height: 1.25; margin: 0;
+  white-space: nowrap; overflow: hidden; text-overflow: ellipsis;
+}
+.overlay-header-sub {
+  font-size: 12.5px; color: var(--text-muted);
+  font-weight: 500; margin-top: 3px;
+  white-space: nowrap; overflow: hidden; text-overflow: ellipsis;
+}
+
+/* 3. OVERLAY PILL TABS (NO SCROLLBAR SLIDER) */
+.overlay-tabs,
+.overlay-pill-tabs,
+.no-scrollbar {
+  display: flex; gap: 8px;
+  overflow-x: auto;
+  padding: 4px 16px 14px;
+  background: var(--bg);
+  -ms-overflow-style: none !important;
+  scrollbar-width: none !important;
+  -webkit-overflow-scrolling: touch;
+}
+.overlay-tabs::-webkit-scrollbar,
+.overlay-pill-tabs::-webkit-scrollbar,
+.no-scrollbar::-webkit-scrollbar {
+  display: none !important;
+  width: 0 !important;
+  height: 0 !important;
+}
+
+.pill-tab-item {
+  padding: 7px 18px;
+  font-size: 13.5px; font-weight: 500;
+  border-radius: var(--r-pill);
+  white-space: nowrap; cursor: pointer;
+  transition: all 0.2s cubic-bezier(0.16, 1, 0.3, 1);
+  border: 1px solid var(--border);
+  background: var(--bg-card);
+  color: var(--text-muted);
+  user-select: none;
+  flex-shrink: 0;
+}
+.pill-tab-item:hover {
+  color: var(--text);
+  border-color: var(--border-hover);
+  background: var(--bg-card-hover);
+}
+.pill-tab-item.active {
+  background: var(--accent);
+  color: #ffffff;
+  font-weight: 600;
+  border-color: var(--accent);
+  box-shadow: 0 2px 10px rgba(204, 120, 92, 0.3);
+}
+
+/* 4. OVERLAY CONTROLS STRIP */
+.overlay-controls-strip {
+  display: flex; align-items: center; justify-content: space-between;
+  padding: 12px 16px;
+  border-top: 1px solid var(--border);
+  border-bottom: 1px solid var(--border);
+  background: var(--bg);
+  gap: 12px;
+}
+.controls-left-group {
+  display: flex; align-items: center; gap: 12px;
+}
+.view-mode-segmented {
+  display: inline-flex;
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: var(--r-md);
+  padding: 3px; gap: 2px;
+}
+.view-mode-btn {
+  width: 32px; height: 32px;
+  border-radius: var(--r-sm);
+  border: none;
+  background: transparent;
+  color: var(--text-muted);
+  display: flex; align-items: center; justify-content: center;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+.view-mode-btn.active {
+  background: var(--accent);
+  color: #ffffff;
+}
+.lecture-count-badge {
+  font-size: 13.5px; font-weight: 500;
+  color: var(--text-muted);
+}
 
 /* OVERLAY CONTENT AREA */
 .overlay-content { padding: 48px 48px 100px; max-width: 1000px; margin: 0 auto; }

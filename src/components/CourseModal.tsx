@@ -267,357 +267,272 @@ export const CourseModal: React.FC<CourseModalProps> = ({
 
   return (
     <div id="course-overlay" className="open" role="dialog" aria-modal="true">
-      {/* OVERLAY TOP BAR */}
+      {/* 1. TOP STICKY APP BAR */}
       <div className="overlay-bar">
-        <div style={{ display: 'flex', alignItems: 'center', gap: '8px', flexShrink: 0 }}>
-          {/* Mobile Hamburger Drawer Menu Button */}
-          <button
-            className="menu-btn course-mobile-menu-btn"
-            onClick={onOpenSidebar}
-            aria-label="Open navigation sidebar"
-            title="Open Menu"
-            style={{
-              display: 'flex',
-              alignItems: 'center',
-              justifyContent: 'center',
-              width: '36px',
-              height: '36px',
-              borderRadius: 'var(--r-md)',
-              background: 'var(--bg-card)',
-              border: '1px solid var(--border)',
-              color: 'var(--text)',
-              cursor: 'pointer',
-              transition: 'all 0.2s ease',
-              flexShrink: 0,
-            }}
-          >
-            <Menu width={18} height={18} strokeWidth={2.2} />
-          </button>
+        {/* Left: Hamburger Drawer Menu Button */}
+        <button
+          className="overlay-icon-btn"
+          onClick={onOpenSidebar}
+          aria-label="Open navigation sidebar"
+          title="Open Menu"
+        >
+          <Menu width={20} height={20} strokeWidth={2.2} />
+        </button>
 
-          {/* Back Button */}
-          <button
-            className="btn-back"
-            onClick={() => {
-              if (course.isFolderMode && activeFolderTabId) {
-                setActiveFolderTabId(null);
-                setActiveModuleFilter('All Modules');
-                onFolderTabChange?.(null);
-              } else {
-                onClose();
-              }
-            }}
-            title={course.isFolderMode && activeFolderTabId ? 'Back to Subject Folders' : 'Close Course'}
-          >
-            <ArrowLeft width={14} height={14} strokeWidth={2.5} />
-            <span>{course.isFolderMode && activeFolderTabId ? 'Courses' : 'Back'}</span>
-          </button>
-        </div>
-
+        {/* Right: Expandable Search Bar */}
         <div
-          className="overlay-bar-title"
+          ref={searchContainerRef}
           style={{
-            display: isSearchExpanded && window.innerWidth <= 600 ? 'none' : 'block',
+            display: 'flex',
+            alignItems: 'center',
+            position: 'relative',
+            marginLeft: 'auto',
+            width: isSearchExpanded ? 'min(320px, calc(100vw - 80px))' : 'auto',
+            transition: 'width 0.25s cubic-bezier(0.4, 0, 0.2, 1)',
           }}
         >
-          {course.isFolderMode && selectedFolderTab
-            ? `${course.name} • ${selectedFolderTab.label}`
-            : course.name}
-        </div>
-
-        {/* RIGHT CONTROLS: SEARCH & VIEW MODE SWITCHER */}
-        {(!course.isFolderMode || activeFolderTabId) && (
-          <div style={{ marginLeft: 'auto', display: 'flex', alignItems: 'center', gap: '8px' }}>
-            {/* VIEW MODE TOGGLE (LIST / GRID) */}
+          {isSearchExpanded || filterSearch.trim() ? (
             <div
               style={{
-                display: 'flex',
-                alignItems: 'center',
-                background: 'var(--bg-card)',
-                border: '1px solid var(--border)',
-                borderRadius: 'var(--r-md)',
-                padding: '2px',
-                gap: '2px',
-              }}
-            >
-              <button
-                onClick={() => handleViewModeChange('list')}
-                title="List View"
-                style={{
-                  display: 'flex',
-                  alignItems: 'center',
-                  justifyContent: 'center',
-                  width: '30px',
-                  height: '30px',
-                  borderRadius: 'var(--r-sm)',
-                  border: 'none',
-                  background: viewMode === 'list' ? 'var(--accent)' : 'transparent',
-                  color: viewMode === 'list' ? '#ffffff' : 'var(--text-muted)',
-                  cursor: 'pointer',
-                  transition: 'all 0.2s ease',
-                }}
-              >
-                <List width={15} height={15} />
-              </button>
-              <button
-                onClick={() => handleViewModeChange('grid')}
-                title="Grid View"
-                style={{
-                  display: 'flex',
-                  alignItems: 'center',
-                  justifyContent: 'center',
-                  width: '30px',
-                  height: '30px',
-                  borderRadius: 'var(--r-sm)',
-                  border: 'none',
-                  background: viewMode === 'grid' ? 'var(--accent)' : 'transparent',
-                  color: viewMode === 'grid' ? '#ffffff' : 'var(--text-muted)',
-                  cursor: 'pointer',
-                  transition: 'all 0.2s ease',
-                }}
-              >
-                <LayoutGrid width={15} height={15} />
-              </button>
-            </div>
-
-            {/* EXPANDABLE SEARCH ICON & BAR */}
-            <div
-              ref={searchContainerRef}
-              style={{
-                display: 'flex',
-                alignItems: 'center',
                 position: 'relative',
-                flex: isSearchExpanded && window.innerWidth <= 600 ? 1 : 'initial',
+                display: 'flex',
+                alignItems: 'center',
+                width: '100%',
               }}
             >
-              {isSearchExpanded || filterSearch.trim() ? (
-                <div
-                  style={{
-                    position: 'relative',
-                    display: 'flex',
-                    alignItems: 'center',
-                    width: window.innerWidth <= 600 ? '100%' : 'clamp(180px, 30vw, 260px)',
-                    transition: 'all 0.25s cubic-bezier(0.4, 0, 0.2, 1)',
-                    animation: 'fadeIn 0.2s ease-out',
-                  }}
-                >
-                  <Search
-                    width={14}
-                    height={14}
-                    style={{
-                      position: 'absolute',
-                      left: '12px',
-                      color: 'var(--accent)',
-                      pointerEvents: 'none',
-                    }}
-                  />
-                  <input
-                    ref={searchInputRef}
-                    id="overlay-search"
-                    type="search"
-                    placeholder="Search topics, lectures…"
-                    value={filterSearch}
-                    onChange={(e) => setFilterSearch(e.target.value)}
-                    onBlur={() => {
-                      if (!filterSearch.trim()) {
-                        setIsSearchExpanded(false);
-                      }
-                    }}
-                    autoFocus
-                    style={{
-                      width: '100%',
-                      height: '36px',
-                      padding: '0 12px 0 34px',
-                      borderRadius: 'var(--r-md)',
-                      background: 'var(--bg-input)',
-                      border: '1px solid var(--accent)',
-                      color: 'var(--text)',
-                      fontSize: '13px',
-                      outline: 'none',
-                      boxShadow: '0 2px 8px rgba(204, 120, 92, 0.15)',
-                    }}
-                  />
-                </div>
-              ) : (
+              <Search
+                width={15}
+                height={15}
+                style={{
+                  position: 'absolute',
+                  left: '12px',
+                  color: 'var(--accent)',
+                  pointerEvents: 'none',
+                }}
+              />
+              <input
+                ref={searchInputRef}
+                id="overlay-search"
+                type="search"
+                placeholder="Search topics, lectures…"
+                value={filterSearch}
+                onChange={(e) => setFilterSearch(e.target.value)}
+                onBlur={() => {
+                  if (!filterSearch.trim()) {
+                    setIsSearchExpanded(false);
+                  }
+                }}
+                autoFocus
+                style={{
+                  width: '100%',
+                  height: '38px',
+                  padding: '0 34px 0 36px',
+                  borderRadius: 'var(--r-md)',
+                  background: 'var(--bg-input)',
+                  border: '1px solid var(--accent)',
+                  color: 'var(--text)',
+                  fontSize: '13.5px',
+                  outline: 'none',
+                  boxShadow: '0 2px 8px rgba(204, 120, 92, 0.15)',
+                }}
+              />
+              {filterSearch && (
                 <button
-                  onClick={() => {
-                    setIsSearchExpanded(true);
-                    setTimeout(() => searchInputRef.current?.focus(), 50);
-                  }}
-                  aria-label="Search"
+                  onClick={() => setFilterSearch('')}
                   style={{
-                    display: 'flex',
-                    alignItems: 'center',
-                    justifyContent: 'center',
-                    width: '36px',
-                    height: '36px',
-                    borderRadius: 'var(--r-md)',
-                    background: 'var(--bg-card)',
-                    border: '1px solid var(--border)',
-                    color: 'var(--text)',
+                    position: 'absolute',
+                    right: '10px',
+                    background: 'none',
+                    border: 'none',
+                    color: 'var(--text-muted)',
                     cursor: 'pointer',
-                    transition: 'all 0.2s ease',
-                    flexShrink: 0,
+                    fontSize: '14px',
+                    padding: '2px',
                   }}
-                  className="search-icon-btn"
                 >
-                  <Search width={16} height={16} />
+                  ✕
                 </button>
               )}
             </div>
-          </div>
-        )}
+          ) : (
+            <button
+              onClick={() => {
+                setIsSearchExpanded(true);
+                setTimeout(() => searchInputRef.current?.focus(), 50);
+              }}
+              aria-label="Search"
+              title="Search lectures"
+              className="overlay-icon-btn"
+            >
+              <Search width={18} height={18} strokeWidth={2.2} />
+            </button>
+          )}
+        </div>
       </div>
 
-      {/* OVERLAY HERO STRIP */}
-      <div className="overlay-hero-strip" id="overlay-hero-strip">
-        <img
-          className="overlay-thumb"
-          src={getSubjectThumbnail(
-            course.isParmar || course.isPratham ? activeTabId : (selectedFolderTab?.label || course.name),
-            selectedFolderTab?.thumb || course.thumb,
-            selectedFolderTab?.id || course.id,
-            theme
-          )}
-          alt=""
-          loading="lazy"
-        />
-        <div className="overlay-info">
-          <div className="overlay-course-name">
-            {selectedFolderTab ? selectedFolderTab.label : course.name}
-          </div>
-          <div className="overlay-course-teacher">
+      {/* 2. COURSE IDENTITY & BACK BUTTON */}
+      <div className="overlay-course-header">
+        <button
+          className="overlay-header-back-btn"
+          onClick={() => {
+            if (course.isFolderMode && activeFolderTabId) {
+              setActiveFolderTabId(null);
+              setActiveModuleFilter('All Modules');
+              onFolderTabChange?.(null);
+            } else {
+              onClose();
+            }
+          }}
+          title={course.isFolderMode && activeFolderTabId ? 'Back to Subject Folders' : 'Close Course'}
+          aria-label="Back"
+        >
+          <ArrowLeft width={18} height={18} strokeWidth={2.4} />
+        </button>
+
+        <div className="overlay-header-titles">
+          <h2 className="overlay-header-title">
+            {course.id === 'beu-1st-year' ? '1st year' : course.name}
+          </h2>
+          <div className="overlay-header-sub">
             {course.id === 'beu-1st-year'
-              ? 'Bihar Engineering University'
+              ? `${selectedFolderTab ? selectedFolderTab.label + ' · ' : ''}Bihar Engineering University`
               : [course.teacher, selectedFolderTab ? selectedFolderTab.subname : course.subname]
                   .filter(Boolean)
                   .filter((val, idx, arr) => arr.indexOf(val) === idx)
                   .join(' · ')}
           </div>
-          <div className="overlay-chips">
-            <div className="overlay-chip">
-              <Video width={13} height={13} style={{ color: 'var(--accent)' }} />
-              <span>{stats.videos} Videos</span>
-            </div>
-            <div className="overlay-chip">
-              <FileText width={13} height={13} style={{ color: 'var(--accent)' }} />
-              <span>{stats.resources} Resources</span>
-            </div>
-          </div>
         </div>
       </div>
 
-      {/* OVERLAY TABS */}
-      {/* 1. Normal Course Tabs (Parmar GK, Pratham, Maths, etc.) */}
+      {/* 3. HORIZONTAL PILL TABS (NO SCROLLBAR SLIDER) */}
+      {/* Normal course tabs */}
       {!course.isFolderMode && (
-        <div className="overlay-tabs" id="overlay-tabs">
+        <div className="overlay-pill-tabs no-scrollbar" id="overlay-tabs">
           {course.isParmar && course.parmarData && (
             Object.keys(course.parmarData).map((subj) => (
-              <div
+              <button
                 key={subj}
                 onClick={() => setActiveTabId(subj)}
-                className={`overlay-tab ${activeTabId === subj ? 'active' : ''}`}
+                className={`pill-tab-item ${activeTabId === subj ? 'active' : ''}`}
               >
                 {subj}
-              </div>
+              </button>
             ))
           )}
 
           {course.isPratham && course.prathamBySubject && (
             <>
-              <div
+              <button
                 onClick={() => setActiveTabId('__all__')}
-                className={`overlay-tab ${activeTabId === '__all__' ? 'active' : ''}`}
+                className={`pill-tab-item ${activeTabId === '__all__' ? 'active' : ''}`}
               >
-                All Subjects
-              </div>
+                All subjects
+              </button>
               {Object.keys(course.prathamBySubject).map((subj) => (
-                <div
+                <button
                   key={subj}
                   onClick={() => setActiveTabId(subj)}
-                  className={`overlay-tab ${activeTabId === subj ? 'active' : ''}`}
+                  className={`pill-tab-item ${activeTabId === subj ? 'active' : ''}`}
                 >
                   {subj}
-                </div>
+                </button>
               ))}
             </>
           )}
 
           {!course.isParmar && !course.isPratham && course.tabs && (
             course.tabs.map((tab) => (
-              <div
+              <button
                 key={tab.id}
                 onClick={() => setActiveTabId(tab.id)}
-                className={`overlay-tab ${activeTabId === tab.id ? 'active' : ''}`}
+                className={`pill-tab-item ${activeTabId === tab.id ? 'active' : ''}`}
               >
                 {tab.label}
-              </div>
+              </button>
             ))
           )}
         </div>
       )}
 
-      {/* 2. Folder Mode: Module Tabs Bar inside Subject */}
+      {/* Folder mode subject module tabs */}
       {course.isFolderMode && activeFolderTabId && folderModules.length > 1 && (
-        <div className="overlay-tabs" id="overlay-tabs">
+        <div className="overlay-pill-tabs no-scrollbar" id="overlay-tabs">
           {folderModules.map((mod) => (
-            <div
+            <button
               key={mod}
               onClick={() => setActiveModuleFilter(mod)}
-              className={`overlay-tab ${activeModuleFilter === mod ? 'active' : ''}`}
+              className={`pill-tab-item ${activeModuleFilter === mod ? 'active' : ''}`}
             >
               {mod}
-            </div>
+            </button>
           ))}
         </div>
       )}
 
-      {/* 3. Folder Mode: Videos / PDFs Media Type Filter (only when inside a folder tab) */}
-      {course.isFolderMode && activeFolderTabId && (() => {
-        const tab = course.tabs?.find((t) => t.id === activeFolderTabId);
-        const items = tab?.items || [];
-        const videoCount = items.filter((i) => i.type !== 'pdf').length;
-        const pdfCount = items.filter((i) => i.type === 'pdf').length;
-        if (pdfCount === 0) return null; // no PDFs = no filter needed
-        return (
-          <div
-            style={{
-              display: 'flex',
-              alignItems: 'center',
-              gap: '6px',
-              padding: '8px 20px',
-              borderBottom: '1px solid var(--border)',
-              background: 'var(--bg)',
-              overflowX: 'auto',
-            }}
-          >
-            {([
-              { key: 'all' as const, label: `All (${items.length})` },
-              { key: 'videos' as const, label: `▶ Videos (${videoCount})` },
-              { key: 'pdfs' as const, label: `📄 Notes & PDFs (${pdfCount})` },
-            ] as const).map(({ key, label }) => (
+      {/* 4. CONTROLS STRIP (VIEW TOGGLE & LECTURE COUNT) */}
+      {(!course.isFolderMode || activeFolderTabId) && (
+        <div className="overlay-controls-strip">
+          <div className="controls-left-group">
+            <div className="view-mode-segmented">
               <button
-                key={key}
-                onClick={() => setActiveMediaFilter(key)}
-                style={{
-                  padding: '5px 14px',
-                  fontSize: '12px',
-                  fontWeight: 600,
-                  borderRadius: '100px',
-                  border: '1.5px solid',
-                  borderColor: activeMediaFilter === key ? 'var(--accent)' : 'var(--border)',
-                  background: activeMediaFilter === key ? 'var(--accent)' : 'transparent',
-                  color: activeMediaFilter === key ? '#fff' : 'var(--text-muted)',
-                  cursor: 'pointer',
-                  transition: 'all 0.15s ease',
-                  whiteSpace: 'nowrap',
-                }}
+                onClick={() => handleViewModeChange('list')}
+                title="List View"
+                aria-label="List View"
+                className={`view-mode-btn ${viewMode === 'list' ? 'active' : ''}`}
               >
-                {label}
+                <List width={16} height={16} strokeWidth={2.2} />
               </button>
-            ))}
+              <button
+                onClick={() => handleViewModeChange('grid')}
+                title="Grid View"
+                aria-label="Grid View"
+                className={`view-mode-btn ${viewMode === 'grid' ? 'active' : ''}`}
+              >
+                <LayoutGrid width={16} height={16} strokeWidth={2.2} />
+              </button>
+            </div>
+            <span className="lecture-count-badge">
+              {activeItems.length} {activeItems.length === 1 ? 'lecture' : 'lectures'}
+            </span>
           </div>
-        );
-      })()}
+
+          {/* Media Type Filter (All / Videos / Notes & PDFs) */}
+          {course.isFolderMode && activeFolderTabId && (() => {
+            const tab = course.tabs?.find((t) => t.id === activeFolderTabId);
+            const items = tab?.items || [];
+            const pdfCount = items.filter((i) => i.type === 'pdf').length;
+            if (pdfCount === 0) return null;
+            return (
+              <div style={{ display: 'flex', alignItems: 'center', gap: '4px' }}>
+                {([
+                  { key: 'all' as const, label: 'All' },
+                  { key: 'videos' as const, label: 'Videos' },
+                  { key: 'pdfs' as const, label: 'PDFs' },
+                ] as const).map(({ key, label }) => (
+                  <button
+                    key={key}
+                    onClick={() => setActiveMediaFilter(key)}
+                    style={{
+                      padding: '4px 10px',
+                      fontSize: '11.5px',
+                      fontWeight: 600,
+                      borderRadius: 'var(--r-pill)',
+                      border: '1px solid',
+                      borderColor: activeMediaFilter === key ? 'var(--accent)' : 'var(--border)',
+                      background: activeMediaFilter === key ? 'var(--accent)' : 'transparent',
+                      color: activeMediaFilter === key ? '#fff' : 'var(--text-muted)',
+                      cursor: 'pointer',
+                      transition: 'all 0.15s ease',
+                    }}
+                  >
+                    {label}
+                  </button>
+                ))}
+              </div>
+            );
+          })()}
+        </div>
+      )}
 
       {/* OVERLAY CONTENT */}
       <div className="overlay-content" id="overlay-content">

@@ -13,9 +13,19 @@ export interface ReleaseLog {
 
 export const CHANGELOG_DATA: ReleaseLog[] = [
   {
+    version: 'v1.9.0',
+    date: 'August 31, 2026 • 10:45 PM IST',
+    isLatest: true,
+    title: '4-Row Organized Header Hierarchy & Zero-Scrollbar Touch Pills',
+    highlights: [
+      'Organized 4-Row Header: Structured course modal top into: 1) Top Bar with Hamburger & Search, 2) Course Identity with Square Back Button, 3) Pill Filter Tabs, and 4) View Mode Switcher with Lecture Count.',
+      'Zero-Scrollbar Horizontal Tabs: Completely removed native scrollbar sliders across all subject/module tabs for clean swipeable touch navigation.',
+      'Refined Modal Geometry: Polished rounded square icon buttons, high-contrast active tab pills, and seamless view mode toggles.',
+    ],
+  },
+  {
     version: 'v1.8.0',
     date: 'August 31, 2026 • 10:25 PM IST',
-    isLatest: true,
     title: 'Universal Mobile Hamburger Navigation & Course Drawer Access',
     highlights: [
       'Universal Mobile Sidebar Access: Added a dedicated top-left Hamburger Menu button directly inside course modals, enabling instant 1-tap sidebar navigation from anywhere.',
@@ -30,16 +40,6 @@ export const CHANGELOG_DATA: ReleaseLog[] = [
     highlights: [
       'Vercel Web Analytics: Fully integrated @vercel/analytics/next into root layout for live page views and visitor metrics.',
       'Real-Time Audience Telemetry: Privacy-preserving student analytics to monitor active course engagement and device breakdown.',
-    ],
-  },
-  {
-    version: 'v1.6.0',
-    date: 'August 30, 2026 • 01:00 PM IST',
-    title: 'Dual-Theme Adaptive Thumbnails, Fixed Desktop Sidebar & 76% Image Compression',
-    highlights: [
-      'Dual-Theme Adaptive Thumbnails: Real-time dynamic switching between crisp porcelain white (Light Mode) and deep obsidian dark (Dark Mode) on theme toggle.',
-      'Internal Batch Subject Resolution: Dedicated Mithila-accented thumbnails mapped across all subjects inside EE/ECE/EEE, Mech, Civil, CSE, and Parmar GK.',
-      'Permanent Desktop Sidebar: Fixed sticky left navigation on PC for instant 1-click view switching without repeatedly navigating back.',
     ],
   },
 ];
