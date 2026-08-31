@@ -1045,18 +1045,39 @@ svg { flex-shrink: 0; }
     width: calc(100vw - var(--sidebar-w)) !important;
     z-index: 900 !important;
   }
+  .course-mobile-menu-btn {
+    display: none !important;
+  }
 }
 
 @media (max-width: 768px) {
   #sidebar-nav {
+    position: fixed !important;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    width: min(290px, 82vw) !important;
+    z-index: 1100 !important;
     transform: translateX(-100%);
-    box-shadow: 10px 0 30px rgba(0,0,0,0.15);
+    box-shadow: 10px 0 35px rgba(0,0,0,0.3);
   }
   #sidebar-nav.active {
-    transform: translateX(0);
+    transform: translateX(0) !important;
+  }
+  #sidebar-backdrop {
+    display: none;
+    position: fixed;
+    inset: 0;
+    background: rgba(18, 17, 16, 0.65);
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+    z-index: 1090 !important;
   }
   #sidebar-backdrop.active {
-    display: block;
+    display: block !important;
+  }
+  .course-mobile-menu-btn {
+    display: flex !important;
   }
   
   #main-content-layout {

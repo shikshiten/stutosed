@@ -13,14 +13,23 @@ export interface ReleaseLog {
 
 export const CHANGELOG_DATA: ReleaseLog[] = [
   {
+    version: 'v1.8.0',
+    date: 'August 31, 2026 • 10:25 PM IST',
+    isLatest: true,
+    title: 'Universal Mobile Hamburger Navigation & Course Drawer Access',
+    highlights: [
+      'Universal Mobile Sidebar Access: Added a dedicated top-left Hamburger Menu button directly inside course modals, enabling instant 1-tap sidebar navigation from anywhere.',
+      'Mobile Drawer Layering Engine: Upgraded mobile backdrop and drawer z-indexes (1100) so the sidebar slides smoothly above open course views.',
+      'Dual Navigation Flow: Students can seamlessly jump between categories via the burger menu or step back layer-by-layer using the back button or native swipe gestures.',
+    ],
+  },
+  {
     version: 'v1.7.0',
     date: 'August 30, 2026 • 02:50 PM IST',
-    isLatest: true,
     title: 'Vercel Web Analytics & Real-Time Audience Insights Integration',
     highlights: [
       'Vercel Web Analytics: Fully integrated @vercel/analytics/next into root layout for live page views and visitor metrics.',
       'Real-Time Audience Telemetry: Privacy-preserving student analytics to monitor active course engagement and device breakdown.',
-      'Production Edge Telemetry: Zero-impact lightweight client tracking script optimized for fast initial page load.',
     ],
   },
   {
@@ -31,17 +40,6 @@ export const CHANGELOG_DATA: ReleaseLog[] = [
       'Dual-Theme Adaptive Thumbnails: Real-time dynamic switching between crisp porcelain white (Light Mode) and deep obsidian dark (Dark Mode) on theme toggle.',
       'Internal Batch Subject Resolution: Dedicated Mithila-accented thumbnails mapped across all subjects inside EE/ECE/EEE, Mech, Civil, CSE, and Parmar GK.',
       'Permanent Desktop Sidebar: Fixed sticky left navigation on PC for instant 1-click view switching without repeatedly navigating back.',
-      'Image Optimization Engine: Compressed all heavy thumbnail assets by over 76%, reducing total media payload from 25MB down to lightweight fast-loading assets.',
-    ],
-  },
-  {
-    version: 'v1.5.0',
-    date: 'August 30, 2026 • 12:15 PM IST',
-    title: 'Unified Mechanical UMEED Batch, 1-Click PDF Downloads & Direct YouTube Engine',
-    highlights: [
-      'Unified Mechanical Engineering: Consolidated into a comprehensive 217-lecture UMEED Batch with complete workshop and core engineering modules.',
-      'Direct YouTube Playback: Implemented instant 1-click redirection to YouTube for all YouTube lectures, eliminating iframe embed loops.',
-      'Universal 1-Click PDF Downloads: Added dedicated download buttons directly on all lecture grid cards, list rows, and PDF viewer with native attachment headers.',
     ],
   },
 ];

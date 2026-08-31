@@ -4,7 +4,7 @@ import React, { useState, useEffect, useRef, useMemo } from 'react';
 import { Course, LectureItem } from '@/types';
 import { countCourseStats } from '@/lib/coursesData';
 import { getSubjectThumbnail } from '@/lib/subjectThumbnails';
-import { ArrowLeft, Folder, Search, LayoutGrid, List, Video, FileText, CheckCircle2, Play, Download, ExternalLink } from 'lucide-react';
+import { ArrowLeft, Folder, Search, LayoutGrid, List, Video, FileText, CheckCircle2, Play, Download, ExternalLink, Menu } from 'lucide-react';
 
 interface CourseModalProps {
   course: Course | null;
@@ -15,6 +15,7 @@ interface CourseModalProps {
   initialFolderTabId?: string | null;
   onFolderTabChange?: (tabId: string | null) => void;
   theme?: 'light' | 'dark';
+  onOpenSidebar?: () => void;
 }
 
 export const CourseModal: React.FC<CourseModalProps> = ({
@@ -26,6 +27,7 @@ export const CourseModal: React.FC<CourseModalProps> = ({
   initialFolderTabId,
   onFolderTabChange,
   theme,
+  onOpenSidebar,
 }) => {
   const [activeTabId, setActiveTabId] = useState<string>('');
   const [activeFolderTabId, setActiveFolderTabId] = useState<string | null>(initialFolderTabId || null);
@@ -267,23 +269,49 @@ export const CourseModal: React.FC<CourseModalProps> = ({
     <div id="course-overlay" className="open" role="dialog" aria-modal="true">
       {/* OVERLAY TOP BAR */}
       <div className="overlay-bar">
-        <button
-          className="btn-back"
-          onClick={() => {
-            if (course.isFolderMode && activeFolderTabId) {
-              setActiveFolderTabId(null);
-              setActiveModuleFilter('All Modules');
-              onFolderTabChange?.(null);
-            } else {
-              onClose();
-            }
-          }}
-        >
-          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5">
-            <path d="M19 12H5M12 19l-7-7 7-7" />
-          </svg>
-          {course.isFolderMode && activeFolderTabId ? 'Courses' : 'Back'}
-        </button>
+        <div style={{ display: 'flex', alignItems: 'center', gap: '8px', flexShrink: 0 }}>
+          {/* Mobile Hamburger Drawer Menu Button */}
+          <button
+            className="menu-btn course-mobile-menu-btn"
+            onClick={onOpenSidebar}
+            aria-label="Open navigation sidebar"
+            title="Open Menu"
+            style={{
+              display: 'flex',
+              alignItems: 'center',
+              justifyContent: 'center',
+              width: '36px',
+              height: '36px',
+              borderRadius: 'var(--r-md)',
+              background: 'var(--bg-card)',
+              border: '1px solid var(--border)',
+              color: 'var(--text)',
+              cursor: 'pointer',
+              transition: 'all 0.2s ease',
+              flexShrink: 0,
+            }}
+          >
+            <Menu width={18} height={18} strokeWidth={2.2} />
+          </button>
+
+          {/* Back Button */}
+          <button
+            className="btn-back"
+            onClick={() => {
+              if (course.isFolderMode && activeFolderTabId) {
+                setActiveFolderTabId(null);
+                setActiveModuleFilter('All Modules');
+                onFolderTabChange?.(null);
+              } else {
+                onClose();
+              }
+            }}
+            title={course.isFolderMode && activeFolderTabId ? 'Back to Subject Folders' : 'Close Course'}
+          >
+            <ArrowLeft width={14} height={14} strokeWidth={2.5} />
+            <span>{course.isFolderMode && activeFolderTabId ? 'Courses' : 'Back'}</span>
+          </button>
+        </div>
 
         <div
           className="overlay-bar-title"
