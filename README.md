@@ -39,12 +39,16 @@
 | | Feature | Description |
 |---|---|---|
 | 📊 | **Study Dashboard** | Dynamic greeting banner, cloud progress sync, and last-played lecture resume memory |
+| 📢 | **News & Announcements Desk** | Dedicated updates board featuring upcoming batches, platform roadmap, and direct Telegram course request desk |
 | 🎬 | **Dual-Engine Video Player** | Stream HD lectures with instant toggle between **ALBA** (High-Speed Edge CDN) and **ESTE** (Failover Media Engine) |
 | ⚡ | **Speed Control Bridge** | Granular playback speed regulation from **0.5x to 3.0x** with cross-origin iframe synchronization |
 | 📑 | **Lossless PDF Reader** | Crystal-clear in-browser PDF notes previewer with native typography, full-screen mode & single-click downloads |
+| 🌐 | **Zero-Egress Cloudflare Proxy** | Offloads video and high-volume PDF bandwidth to Cloudflare Workers for 100% free, unlimited streaming |
+| 🤖 | **Smart Bot Link Resolver** | Runtime and static conversion of Telegram FileStream bots to direct, high-speed download endpoints |
 | 📱 | **Layered Back Navigation** | Smart state-driven browser history stack — mobile back gesture steps smoothly: *Player ➔ Folder ➔ Course ➔ Home* |
 | 🏛️ | **BEU Engineering Hub** | Organized semester modules for Civil, CSE, Mech, EEE/ECE, 1st Year (Math-II, Physics, Chemistry) |
-| 🎯 | **Govt Exams Archive** | Complete structured batches for SSC CGL/CHSL (Parmar GK 3.0, Pratham Foundation, Math, English, Reasoning) |
+| 🎯 | **Govt Exams Archive** | Complete structured batches for SSC CGL/CHSL (Parmar GK 3.0 & 4.0, Pratham Foundation, Math, English, Reasoning) |
+| 👤 | **Open Guest Access** | Frictionless instant guest access without forced login walls, with optional Google/Email cloud sync |
 | 🔐 | **Zero-Storage PKCE Auth** | Google OAuth & Email authentication using secure HttpOnly, SameSite=Lax cookies with automatic session refresh |
 | 🌓 | **Adaptive Theme System** | Instant dark/light mode toggle with CSS variable transitions and zero page flicker |
 | 🛡️ | **Edge SSRF Security Layer** | Serverless proxy routes with strict upstream hostname whitelisting to block unauthorized proxying |
@@ -66,10 +70,11 @@ stutosed
  │
  └── 🎯 Government Exams Portal
       ├── 🧠 Parmar SSC GK 3.0 Complete Series (Topic-wise GK & PYQs)
+      ├── 🔬 Parmar Academy GK 4.0 (Biology, Economics, Static GK, History, Geography, Polity)
       ├── 📖 Pratham Foundation Complete Subject Batch
-      ├── 🔢 Quantitative Aptitude & Fast Arithmetic
-      ├── 🗣️ English Special & Practice Sessions
-      └── 🧩 Logical Reasoning & Analytical Thinking
+      ├── 🔢 Quantitative Aptitude (Gagan Pratap, Abhinay Sharma, Loki Special Batches)
+      ├── 🗣️ English Practice & Vocab Mastery (Turbo Practice & VOD Batches)
+      └── 🧩 Logical Reasoning Special (Piyush Varshney & Selection Batches)
 ```
 
 ---
@@ -95,6 +100,14 @@ Pressing the Android back gesture or browser back arrow steps cleanly through ea
 - Supabase SSR authentication with **HttpOnly**, **Secure**, **SameSite=Lax** cookies.
 - Google OAuth with cryptographic code exchange (`/auth/callback`).
 - Serverless Session Proxy (`proxy.ts`) refreshes JWT sessions transparently on every request.
+
+### 5. Cloudflare Worker Smart Proxy & Zero-Egress Architecture
+- Offloads heavy video streams and high-resolution PDF bandwidth from Vercel to Cloudflare Workers (`seiryu.stutosed.workers.dev`).
+- Preserves 0 Egress Bandwidth costs and ensures 100% free, unmetered streaming across the platform.
+
+### 6. Smart Telegram Bot Link Resolution
+- Automatically resolves third-party Blogger redirect wrappers (`publicbotshub.blogspot.com?dl=...`) and legacy Heroku dynos to live, active high-speed endpoints.
+- Direct `attachment; filename="*.pdf"` header support guarantees immediate, one-click PDF downloads and seamless MKV/MP4 lecture streaming.
 
 ---
 
@@ -190,7 +203,8 @@ stutosed/
 │   │   │   ├── embed/                 # Player embed speed bridge proxy
 │   │   │   ├── hls-proxy/             # M3U8 index & TS segment proxy
 │   │   │   ├── pdf/                   # Lossless PDF document proxy
-│   │   │   └── stream/                # Video stream URL resolver
+│   │   │   ├── stream/                # Video stream URL resolver
+│   │   │   └── thumbnail/             # Dynamic SVG & subject artwork proxy
 │   │   ├── auth/callback/             # OAuth PKCE session code exchange
 │   │   ├── login/                     # Standalone dedicated login page
 │   │   ├── globals.css                # Design tokens, typography & animations
@@ -198,17 +212,24 @@ stutosed/
 │   │   └── page.tsx                   # Main dashboard, portals & modal orchestration
 │   ├── components/
 │   │   ├── AuthModal.tsx              # Google & Email sign-in / sign-up modal
+│   │   ├── ChangelogModal.tsx         # What's New release log modal
 │   │   ├── CourseGrid.tsx             # Interactive course card grid
 │   │   ├── CourseModal.tsx            # Folder/lecture explorer & search filter
 │   │   ├── MobileHeader.tsx           # Mobile navigation & account drawer
+│   │   ├── NewsAnnouncements.tsx      # Dedicated platform roadmap & student request desk
 │   │   ├── PdfViewerModal.tsx         # In-browser PDF reader
+│   │   ├── PrivacyTermsModal.tsx      # Terms of Service & Privacy Policy modal
 │   │   ├── ProfileMenu.tsx            # User profile dropdown & theme toggle
 │   │   ├── Sidebar.tsx                # Collapsible navigation drawer
 │   │   └── VideoPlayer.tsx            # Custom video player & speed controls
 │   ├── lib/
 │   │   ├── supabase/                  # Supabase SSR browser & server clients
+│   │   ├── announcementsData.ts       # Platform announcements & student desk data
 │   │   ├── coursesData.ts             # Course querying & progress helpers
-│   │   └── coursesData.json           # Comprehensive course catalog data
+│   │   ├── coursesData.json           # Comprehensive course catalog data
+│   │   ├── proxyConfig.ts             # Cloudflare Worker & bot link resolver
+│   │   ├── subjectThumbnails.ts       # Dynamic subject SVG & vector artwork generator
+│   │   └── upstreamSecurity.ts        # SSRF domain protection allowlist
 │   ├── proxy.ts                       # Edge session refresh proxy
 │   └── types/                         # TypeScript interfaces
 ├── .env.local.example                 # Sample environment variables
@@ -246,11 +267,13 @@ cd stutosed
 ### 3 · Configure Environment Variables
 Credentials are never hardcoded in source code. Create a `.env.local` file in the root directory:
 
-| Variable | Value |
-|---|---|
-| `NEXT_PUBLIC_SUPABASE_URL` | `https://your-project.supabase.co` |
-| `NEXT_PUBLIC_SUPABASE_ANON_KEY` | `your-supabase-anon-key` |
-| `NEXT_PUBLIC_GOOGLE_CLIENT_ID` | `your-google-client-id.apps.googleusercontent.com` |
+| Variable | Value | Description |
+|---|---|---|
+| `NEXT_PUBLIC_SUPABASE_URL` | `https://your-project.supabase.co` | Supabase project API URL |
+| `NEXT_PUBLIC_SUPABASE_ANON_KEY` | `your-supabase-anon-key` | Supabase public anonymous key |
+| `NEXT_PUBLIC_GOOGLE_CLIENT_ID` | `your-google-client-id.apps.googleusercontent.com` | Google OAuth Client ID |
+| `NEXT_PUBLIC_STREAM_PROXY_URL` | `https://seiryu.stutosed.workers.dev` | Cloudflare Worker smart stream proxy |
+| `RESEND_API_KEY` | `re_...` | Resend API key for admin email announcements |
 
 ```bash
 # Install dependencies
