@@ -13,6 +13,7 @@ import { ChangelogModal, CURRENT_APP_VERSION } from '@/components/ChangelogModal
 import { PrivacyTermsModal } from '@/components/PrivacyTermsModal';
 import { INITIAL_COURSES, getTotalStats, getCourseById } from '@/lib/coursesData';
 import { Course, LectureItem, UserProfile } from '@/types';
+import { getWorkerProxyUrl } from '@/lib/proxyConfig';
 import { createClient } from '@/lib/supabase/client';
 import {
   BookOpen,
@@ -611,7 +612,7 @@ export default function HomePage() {
     if (viewUrl.includes('crwilladmin.com') || viewUrl.endsWith('.pdf')) {
       window.open(viewUrl, '_blank', 'noopener,noreferrer');
     } else if (viewUrl) {
-      const proxiedUrl = `/api/pdf?url=${encodeURIComponent(viewUrl)}`;
+      const proxiedUrl = getWorkerProxyUrl(viewUrl, 'pdf');
       window.open(proxiedUrl, '_blank', 'noopener,noreferrer');
     }
   };

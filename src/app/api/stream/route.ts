@@ -11,6 +11,7 @@ const SUPABASE_ANON_KEY =
   'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImhvZmJ0YnV0dnVvbWVvZm1oa3l1Iiwicm9sZSI6ImFub24iLCJpYXQiOjE3ODcxNDQwNzEsImV4cCI6MjEwMjcyMDA3MX0.J5RU82Jn5VOZy_vyiSv9mX5QgKW6Ud23fVKMytXp7DA';
 
 import { isAllowedUpstream } from '@/lib/upstreamSecurity';
+import { getWorkerProxyUrl } from '@/lib/proxyConfig';
 
 async function getAuthenticatedUser(request: NextRequest) {
   const supabase = createServerClient(SUPABASE_URL, SUPABASE_ANON_KEY, {
@@ -146,7 +147,7 @@ export async function GET(request: NextRequest) {
   const { searchParams } = new URL(request.url);
   const targetUrlParam = searchParams.get('url');
 
-  // ── MODE 1: Direct URL Proxy Streamer ───────────────────────────────────────
+  // ── MODE 1: Direct URL Proxy Streamer (Offloaded to Cloudflare Worker) ──────
   if (targetUrlParam) {
     // SSRF Protection
     if (!isAllowedUpstream(targetUrlParam)) {
@@ -156,59 +157,10 @@ export async function GET(request: NextRequest) {
     try {
       const normalizedUrl = normalizeMediaUrl(targetUrlParam);
       const finalTargetUrl = await resolveFinalRedirectUrl(normalizedUrl);
+      const workerUrl = getWorkerProxyUrl(finalTargetUrl, 'stream');
 
-      const clientRange = request.headers.get('range');
-      const upstreamHeaders: Record<string, string> = {
-        'User-Agent':
-          'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36',
-        Accept: '*/*',
-      };
-
-      if (clientRange) {
-        upstreamHeaders['Range'] = clientRange;
-      }
-
-      if (finalTargetUrl.includes('workers.dev') || finalTargetUrl.includes('streamvaultpro.cc')) {
-        upstreamHeaders['Referer'] = 'https://www.streamvaultpro.cc/';
-      } else if (finalTargetUrl.includes('herokuapp.com')) {
-        upstreamHeaders['Referer'] = 'https://publicbotshub.blogspot.com/';
-      }
-
-      const upstreamRes = await fetch(finalTargetUrl, {
-        method: 'GET',
-        headers: upstreamHeaders,
-        signal: request.signal,
-      });
-
-      if (!upstreamRes.ok && upstreamRes.status !== 206) {
-        return new NextResponse(`Upstream returned HTTP ${upstreamRes.status}`, {
-          status: upstreamRes.status,
-        });
-      }
-
-      const responseHeaders = new Headers();
-      const passThroughHeaders = ['content-type', 'content-range', 'content-length', 'accept-ranges'];
-      passThroughHeaders.forEach((h) => {
-        const val = upstreamRes.headers.get(h);
-        if (val) responseHeaders.set(h, val);
-      });
-
-      responseHeaders.set('Content-Disposition', 'inline');
-      if (!responseHeaders.has('accept-ranges')) {
-        responseHeaders.set('Accept-Ranges', 'bytes');
-      }
-      if (!responseHeaders.has('content-type')) {
-        responseHeaders.set('Content-Type', 'video/mp4');
-      }
-      responseHeaders.set('Cache-Control', 'public, max-age=3600');
-      responseHeaders.set('Access-Control-Allow-Origin', '*');
-      responseHeaders.set('Access-Control-Allow-Headers', 'Range, Accept, Content-Type');
-      responseHeaders.set('Access-Control-Expose-Headers', 'Content-Range, Content-Length, Accept-Ranges');
-
-      return new Response(upstreamRes.body, {
-        status: upstreamRes.status,
-        headers: responseHeaders,
-      });
+      // 302 Redirect to Cloudflare Worker (0 Vercel Fast Origin Transfer bandwidth used)
+      return NextResponse.redirect(workerUrl, 302);
     } catch (err: any) {
       if (err.name === 'AbortError') {
         return new Response(null, { status: 499 });
@@ -260,7 +212,7 @@ export async function GET(request: NextRequest) {
     const directM3u8 = html.match(/https?:\/\/[^"'\s\\]+\.m3u8[^"'\s\\]*/);
     if (directM3u8) {
       return NextResponse.json({
-        streamUrl: `/api/hls-proxy?url=${encodeURIComponent(directM3u8[0])}`,
+        streamUrl: getWorkerProxyUrl(directM3u8[0], 'hls'),
         type: 'hls',
         provider,
         code,
@@ -275,7 +227,7 @@ export async function GET(request: NextRequest) {
         const unpackedM3u8 = unpacked.match(/https?:\/\/[^"'\s\\]+\.m3u8[^"'\s\\]*/);
         if (unpackedM3u8) {
           return NextResponse.json({
-            streamUrl: `/api/hls-proxy?url=${encodeURIComponent(unpackedM3u8[0])}`,
+            streamUrl: getWorkerProxyUrl(unpackedM3u8[0], 'hls'),
             type: 'hls',
             provider,
             code,
@@ -287,7 +239,7 @@ export async function GET(request: NextRequest) {
     const fileMatch = html.match(/["'](?:file|src)["']\s*:\s*["']([^"']+\.m3u8[^"']*)["']/);
     if (fileMatch) {
       return NextResponse.json({
-        streamUrl: `/api/hls-proxy?url=${encodeURIComponent(fileMatch[1])}`,
+        streamUrl: getWorkerProxyUrl(fileMatch[1], 'hls'),
         type: 'hls',
         provider,
         code,

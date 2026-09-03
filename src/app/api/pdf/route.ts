@@ -11,6 +11,7 @@ const SUPABASE_ANON_KEY =
   'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImhvZmJ0YnV0dnVvbWVvZm1oa3l1Iiwicm9sZSI6ImFub24iLCJpYXQiOjE3ODcxNDQwNzEsImV4cCI6MjEwMjcyMDA3MX0.J5RU82Jn5VOZy_vyiSv9mX5QgKW6Ud23fVKMytXp7DA';
 
 import { isAllowedUpstream } from '@/lib/upstreamSecurity';
+import { getWorkerProxyUrl } from '@/lib/proxyConfig';
 
 async function getAuthenticatedUser(request: NextRequest) {
   const supabase = createServerClient(SUPABASE_URL, SUPABASE_ANON_KEY, {
@@ -126,64 +127,9 @@ export async function GET(request: NextRequest) {
     const normalizedUrl = normalizePdfUrl(rawUrl);
     const finalTargetUrl = await resolveFinalRedirectUrl(normalizedUrl);
 
-    const upstreamHeaders: Record<string, string> = {
-      'User-Agent':
-        'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36',
-      Accept: 'application/pdf,*/*',
-    };
-
-    if (finalTargetUrl.includes('workers.dev') || finalTargetUrl.includes('streamvaultpro.cc')) {
-      upstreamHeaders['Referer'] = 'https://www.streamvaultpro.cc/';
-    } else if (finalTargetUrl.includes('herokuapp.com')) {
-      upstreamHeaders['Referer'] = 'https://publicbotshub.blogspot.com/';
-    }
-
-    const upstreamRes = await fetch(finalTargetUrl, {
-      method: 'GET',
-      headers: upstreamHeaders,
-      signal: request.signal,
-    });
-
-    if (!upstreamRes.ok && upstreamRes.status !== 206) {
-      return new NextResponse(`Upstream returned HTTP ${upstreamRes.status}`, {
-        status: upstreamRes.status,
-      });
-    }
-
-    const responseHeaders = new Headers();
-
-    const upstreamContentType = upstreamRes.headers.get('content-type');
-    const contentType =
-      upstreamContentType && !upstreamContentType.includes('text/plain')
-        ? upstreamContentType
-        : finalTargetUrl.endsWith('.png')
-        ? 'image/png'
-        : finalTargetUrl.endsWith('.jpg')
-        ? 'image/jpeg'
-        : 'application/pdf';
-
-    const isDownload = searchParams.get('download') === '1' || searchParams.get('download') === 'true';
-    const rawFilename = searchParams.get('filename') || 'document.pdf';
-    const cleanFilename = rawFilename.replace(/[/\\?%*:|"<>]/g, '_');
-
-    responseHeaders.set(
-      'Content-Disposition',
-      isDownload ? `attachment; filename="${cleanFilename}"` : 'inline'
-    );
-
-    const contentLength = upstreamRes.headers.get('content-length');
-    if (contentLength) {
-      responseHeaders.set('Content-Length', contentLength);
-    }
-
-    responseHeaders.set('Cache-Control', 'public, max-age=3600');
-    responseHeaders.set('Access-Control-Allow-Origin', '*');
-    responseHeaders.set('Access-Control-Allow-Methods', 'GET, OPTIONS');
-
-    return new Response(upstreamRes.body, {
-      status: upstreamRes.status,
-      headers: responseHeaders,
-    });
+    // 302 Redirect to Cloudflare Worker to avoid Vercel 10GB origin transfer bandwidth!
+    const workerUrl = getWorkerProxyUrl(finalTargetUrl, 'pdf');
+    return NextResponse.redirect(workerUrl, 302);
   } catch (err: any) {
     if (err.name === 'AbortError') {
       return new Response(null, { status: 499 });

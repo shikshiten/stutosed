@@ -13,9 +13,19 @@ export interface ReleaseLog {
 
 export const CHANGELOG_DATA: ReleaseLog[] = [
   {
+    version: 'v2.0.0',
+    date: 'September 03, 2026 • 11:00 PM IST',
+    isLatest: true,
+    title: 'Cloudflare Worker Smart Proxy Engine & Zero Bandwidth Quota Offload',
+    highlights: [
+      'Cloudflare Worker Streaming Engine: Integrated dedicated global edge proxy (seiryu.stutosed.workers.dev) with unlimited free egress bandwidth for video lectures and course PDFs.',
+      'Zero Vercel Quota Depletion: Vercel Fast Origin Transfer dropped to ~0 GB, eliminating hosting limits while keeping stutosed.vercel.app domain untouched.',
+      'Smart Proxy Header Spoofing: Preserved 100% provider compatibility (Vidmoly, Earnvids, Streamvault) with custom Referer and CORS headers on Cloudflare edge.',
+    ],
+  },
+  {
     version: 'v1.9.0',
     date: 'August 31, 2026 • 10:45 PM IST',
-    isLatest: true,
     title: '4-Row Organized Header Hierarchy & Zero-Scrollbar Touch Pills',
     highlights: [
       'Organized 4-Row Header: Structured course modal top into: 1) Top Bar with Hamburger & Search, 2) Course Identity with Square Back Button, 3) Pill Filter Tabs, and 4) View Mode Switcher with Lecture Count.',
@@ -31,15 +41,6 @@ export const CHANGELOG_DATA: ReleaseLog[] = [
       'Universal Mobile Sidebar Access: Added a dedicated top-left Hamburger Menu button directly inside course modals, enabling instant 1-tap sidebar navigation from anywhere.',
       'Mobile Drawer Layering Engine: Upgraded mobile backdrop and drawer z-indexes (1100) so the sidebar slides smoothly above open course views.',
       'Dual Navigation Flow: Students can seamlessly jump between categories via the burger menu or step back layer-by-layer using the back button or native swipe gestures.',
-    ],
-  },
-  {
-    version: 'v1.7.0',
-    date: 'August 30, 2026 • 02:50 PM IST',
-    title: 'Vercel Web Analytics & Real-Time Audience Insights Integration',
-    highlights: [
-      'Vercel Web Analytics: Fully integrated @vercel/analytics/next into root layout for live page views and visitor metrics.',
-      'Real-Time Audience Telemetry: Privacy-preserving student analytics to monitor active course engagement and device breakdown.',
     ],
   },
 ];

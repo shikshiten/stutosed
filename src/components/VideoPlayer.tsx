@@ -3,6 +3,7 @@
 import React, { useEffect, useRef, useState, useCallback } from 'react';
 import Hls from 'hls.js';
 import { LectureItem, ServerOption } from '@/types';
+import { getWorkerProxyUrl } from '@/lib/proxyConfig';
 
 interface VideoPlayerProps {
   playlist: LectureItem[];
@@ -214,7 +215,7 @@ export const VideoPlayer: React.FC<VideoPlayerProps> = ({
 
   // Determine media source for <video> element
   const videoSourceUrl = isProxyStreamUrl
-    ? `/api/stream?url=${encodeURIComponent(activeUrl)}`
+    ? getWorkerProxyUrl(activeUrl, 'stream')
     : isHlsUrl
     ? activeUrl
     : resolvedStreamUrl;

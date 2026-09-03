@@ -3,6 +3,7 @@
 import React, { useState, useEffect, useRef } from 'react';
 import { LectureItem, ServerOption } from '@/types';
 import { ExternalLink, Download, X, ChevronLeft, ChevronRight, FileText, RefreshCw, Eye } from 'lucide-react';
+import { getWorkerProxyUrl } from '@/lib/proxyConfig';
 
 interface PdfViewerModalProps {
   item: LectureItem;
@@ -44,7 +45,7 @@ export const PdfViewerModal: React.FC<PdfViewerModalProps> = ({
     viewUrl.toLowerCase().includes('.png') ||
     viewUrl.toLowerCase().includes('.jpg');
 
-  const proxiedPdfUrl = `/api/pdf?url=${encodeURIComponent(viewUrl)}`;
+  const proxiedPdfUrl = getWorkerProxyUrl(viewUrl, 'pdf');
   const googleDocsViewerUrl = `https://docs.google.com/viewer?url=${encodeURIComponent(viewUrl)}&embedded=true`;
 
   // Download redirects to Publico (ESTE) link or direct URL
@@ -76,7 +77,7 @@ export const PdfViewerModal: React.FC<PdfViewerModalProps> = ({
 
   const handleDownload = () => {
     const filename = `${item.label.replace(/[^a-zA-Z0-9_\-\s]/g, '').trim().replace(/\s+/g, '_')}.pdf`;
-    const downloadApiUrl = `/api/pdf?url=${encodeURIComponent(viewUrl)}&download=1&filename=${encodeURIComponent(filename)}`;
+    const downloadApiUrl = getWorkerProxyUrl(viewUrl, 'pdf');
     window.open(downloadApiUrl, '_blank');
   };
 

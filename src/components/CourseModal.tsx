@@ -4,6 +4,7 @@ import React, { useState, useEffect, useRef, useMemo } from 'react';
 import { Course, LectureItem } from '@/types';
 import { countCourseStats } from '@/lib/coursesData';
 import { getSubjectThumbnail } from '@/lib/subjectThumbnails';
+import { getWorkerProxyUrl } from '@/lib/proxyConfig';
 import { ArrowLeft, Folder, Search, LayoutGrid, List, Video, FileText, CheckCircle2, Play, Download, ExternalLink, Menu } from 'lucide-react';
 
 interface CourseModalProps {
@@ -246,8 +247,7 @@ export const CourseModal: React.FC<CourseModalProps> = ({
   // Direct download PDF handler
   const handleDownloadPdf = (e: React.MouseEvent, item: LectureItem) => {
     e.stopPropagation();
-    const filename = `${item.label.replace(/[^a-zA-Z0-9_\-\s]/g, '').trim().replace(/\s+/g, '_')}.pdf`;
-    const downloadApiUrl = `/api/pdf?url=${encodeURIComponent(item.url)}&download=1&filename=${encodeURIComponent(filename)}`;
+    const downloadApiUrl = getWorkerProxyUrl(item.url, 'pdf');
     window.open(downloadApiUrl, '_blank');
   };
 
