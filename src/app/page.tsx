@@ -11,6 +11,7 @@ import { PdfViewerModal } from '@/components/PdfViewerModal';
 import { getAvatarGradient, getInitials } from '@/components/ProfileMenu';
 import { ChangelogModal, CURRENT_APP_VERSION } from '@/components/ChangelogModal';
 import { PrivacyTermsModal } from '@/components/PrivacyTermsModal';
+import NewsAnnouncements from '@/components/NewsAnnouncements';
 import { INITIAL_COURSES, getTotalStats, getCourseById } from '@/lib/coursesData';
 import { Course, LectureItem, UserProfile } from '@/types';
 import { getWorkerProxyUrl } from '@/lib/proxyConfig';
@@ -41,6 +42,7 @@ import {
   Sun,
   Sunset,
   Moon,
+  Megaphone,
 } from 'lucide-react';
 
 const WATCHED_KEY = 'onafbu_watched_v1';
@@ -711,25 +713,19 @@ export default function HomePage() {
 
                   <button
                     className="btn-ghost"
+                    onClick={() => handleViewChange('announcements')}
+                  >
+                    <Megaphone width={16} height={16} style={{ color: 'var(--accent)' }} />
+                    News &amp; Updates
+                  </button>
+
+                  <button
+                    className="btn-ghost"
                     onClick={() => handleViewChange('help')}
                   >
                     <HelpCircle width={16} height={16} />
-                    Help & Community
+                    Help &amp; Community
                   </button>
-                </div>
-
-                {/* Animated Count-Up Stats */}
-                <div className="hero-stats" id="hero-stats">
-                  <StatCounter value={stats.totalVideos} label="Video Lectures" />
-                  <div className="hero-stat-divider"></div>
-                  <StatCounter value={stats.totalPDFs} label="PDF Notes" />
-                  <div className="hero-stat-divider"></div>
-                  <StatCounter value={stats.totalCourses} label="Full Batches" suffix="" />
-                  <div className="hero-stat-divider"></div>
-                  <div className="hero-stat">
-                    <div className="stat-num" style={{ color: 'var(--green)' }}>100%</div>
-                    <div className="stat-label">Free & Ad-Free</div>
-                  </div>
                 </div>
               </div>
             </section>
@@ -1175,6 +1171,63 @@ export default function HomePage() {
               </div>
             </div>
 
+            {/* SNEAK PEEK ANNOUNCEMENT TEASER BANNER */}
+            <div style={{ maxWidth: '1100px', margin: '0 auto 36px', padding: '0 24px' }}>
+              <div
+                onClick={() => handleViewChange('announcements')}
+                style={{
+                  background: 'linear-gradient(135deg, var(--bg-card) 0%, rgba(204, 120, 92, 0.08) 100%)',
+                  border: '1px solid rgba(204, 120, 92, 0.3)',
+                  borderRadius: 'var(--r-xl)',
+                  padding: '18px 24px',
+                  display: 'flex',
+                  alignItems: 'center',
+                  justifyContent: 'space-between',
+                  flexWrap: 'wrap',
+                  gap: '14px',
+                  cursor: 'pointer',
+                  boxShadow: 'var(--sh-card)',
+                  transition: 'all 0.2s ease',
+                }}
+              >
+                <div style={{ display: 'flex', alignItems: 'center', gap: '14px' }}>
+                  <div
+                    style={{
+                      width: '42px',
+                      height: '42px',
+                      borderRadius: 'var(--r-md)',
+                      background: 'rgba(204, 120, 92, 0.14)',
+                      color: 'var(--accent)',
+                      display: 'flex',
+                      alignItems: 'center',
+                      justifyContent: 'center',
+                      flexShrink: 0,
+                    }}
+                  >
+                    <Megaphone width={20} height={20} />
+                  </div>
+                  <div>
+                    <div style={{ display: 'flex', alignItems: 'center', gap: '8px' }}>
+                      <span style={{ fontSize: '11px', fontWeight: 700, padding: '2px 8px', borderRadius: 'var(--r-pill)', background: 'rgba(204, 120, 92, 0.15)', color: 'var(--accent)', textTransform: 'uppercase' }}>
+                        Live Updates
+                      </span>
+                      <span style={{ fontSize: '14px', fontWeight: 700, color: 'var(--text)' }}>
+                        News, Upcoming Batches &amp; Request Desk
+                      </span>
+                    </div>
+                    <p style={{ fontSize: '12.5px', color: 'var(--text-muted)', margin: '3px 0 0' }}>
+                      Naye courses ki jaankari dekhein ya apna manpasand course Telegram par request karein
+                    </p>
+                  </div>
+                </div>
+
+                <div style={{ display: 'inline-flex', alignItems: 'center', gap: '6px', fontSize: '13px', fontWeight: 700, color: 'var(--accent)' }}>
+                  <span>Open Section</span>
+                  <ArrowRight width={14} height={14} />
+                </div>
+              </div>
+            </div>
+
             {/* HELP & COMMUNITY BOX */}
             <div style={{ maxWidth: '1100px', margin: '0 auto', padding: '0 24px 60px' }}>
               <div
@@ -1420,6 +1473,16 @@ export default function HomePage() {
         )}
 
         {/* ============================================================
+            VIEW 2D: NEWS & ANNOUNCEMENTS VIEW (Dedicated Section)
+            ============================================================ */}
+        {activeView === 'announcements' && (
+          <NewsAnnouncements
+            onBackHome={() => handleViewChange('home')}
+            onExploreCourses={() => handleViewChange('courses')}
+          />
+        )}
+
+        {/* ============================================================
             VIEW 3: REDESIGNED USER PROFILE & LEARNING HISTORY
             ============================================================ */}
         {activeView === 'profile' && (
@@ -1611,7 +1674,7 @@ export default function HomePage() {
                   {watchedUrls.size}
                 </div>
                 <div className="stat-sub-label" style={{ fontSize: '11.5px', color: 'var(--text-muted)' }}>
-                  out of {stats.totalVideos} videos
+                  lectures completed
                 </div>
               </div>
 

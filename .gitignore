@@ -42,6 +42,7 @@ next-env.d.ts
 
 # raw bot link dumps, root assets & scratch files
 /Links of coures by bot/
+/new government section batch link/
 /assets/
 *.md.tmp
 Mechanical_Engineering_UMEED_Batch_Organized_Links.md

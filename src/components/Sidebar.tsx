@@ -1,11 +1,11 @@
 'use client';
 
 import React from 'react';
-import { Home, BookOpen, Moon, Sun, User, HelpCircle, GraduationCap, Landmark, Sparkles, CheckCircle2, ShieldCheck } from 'lucide-react';
+import { Home, BookOpen, Moon, Sun, User, HelpCircle, GraduationCap, Landmark, Sparkles, CheckCircle2, ShieldCheck, Megaphone } from 'lucide-react';
 import { UserProfile } from '@/types';
 import { getInitials, getAvatarGradient } from '@/components/ProfileMenu';
 
-export type AppView = 'home' | 'courses' | 'gov-exams' | 'beu-engineering' | 'profile' | 'help';
+export type AppView = 'home' | 'courses' | 'gov-exams' | 'beu-engineering' | 'announcements' | 'profile' | 'help';
 
 interface SidebarProps {
   isOpen: boolean;
@@ -135,7 +135,15 @@ export const Sidebar: React.FC<SidebarProps> = ({
             className={`nav-link ${activeView === 'help' ? 'active' : ''}`}
           >
             <HelpCircle width={18} height={18} strokeWidth={2} />
-            <span>Help & Community</span>
+            <span>Help &amp; Community</span>
+          </button>
+
+          <button
+            onClick={() => handleNav('announcements')}
+            className={`nav-link ${activeView === 'announcements' ? 'active' : ''}`}
+          >
+            <Megaphone width={18} height={18} strokeWidth={2} style={{ color: activeView === 'announcements' ? 'var(--accent)' : 'inherit' }} />
+            <span>News &amp; Updates</span>
           </button>
         </nav>
 
