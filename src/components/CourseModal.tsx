@@ -4,7 +4,7 @@ import React, { useState, useEffect, useRef, useMemo } from 'react';
 import { Course, LectureItem } from '@/types';
 import { countCourseStats } from '@/lib/coursesData';
 import { getSubjectThumbnail, getDynamicThumbnailUrl } from '@/lib/subjectThumbnails';
-import { getWorkerProxyUrl } from '@/lib/proxyConfig';
+import { getWorkerProxyUrl, resolveDirectMediaUrl } from '@/lib/proxyConfig';
 import { ArrowLeft, Folder, Search, LayoutGrid, List, Video, FileText, CheckCircle2, Play, Download, ExternalLink, Menu } from 'lucide-react';
 
 interface CourseModalProps {
@@ -684,14 +684,23 @@ export const CourseModal: React.FC<CourseModalProps> = ({
                     <div className="parmar-lec-toggle">▼</div>
                   </div>
                   <div className="parmar-lec-links">
-                    {Object.entries(lec.links).map(([k, url]) => {
+                    {Object.entries(lec.links).map(([k, rawUrl]) => {
+                      const url = resolveDirectMediaUrl(rawUrl);
                       const isVideo = k === 'url';
                       const isYouTube = url.includes('youtube.com') || url.includes('youtu.be');
                       let btnClass = 'plk plk-watch';
-                      if (k === 'en_pdf') btnClass = 'plk plk-en';
-                      if (k === 'hi_pdf') btnClass = 'plk plk-hi';
+                      if (k === 'en_pdf' || k === 'notes_en') btnClass = 'plk plk-en';
+                      if (k === 'hi_pdf' || k === 'notes_hi') btnClass = 'plk plk-hi';
                       if (k === 'quiz') btnClass = 'plk plk-quiz';
-                      if (k === 'notes') btnClass = 'plk plk-dl';
+                      if (k === 'notes' || k === 'handwritten') btnClass = 'plk plk-dl';
+
+                      let btnLabel = k.replace('_', ' ').toUpperCase();
+                      if (isYouTube) btnLabel = '▶ Open YouTube';
+                      else if (isVideo) btnLabel = '▶ Watch';
+                      else if (k === 'notes_en' || k === 'en_pdf') btnLabel = 'Notes (EN)';
+                      else if (k === 'notes_hi' || k === 'hi_pdf') btnLabel = 'Notes (HI)';
+                      else if (k === 'handwritten') btnLabel = 'Handwritten PDF';
+                      else if (k === 'quiz') btnLabel = 'Quiz (HTML)';
 
                       return (
                         <button
@@ -704,11 +713,11 @@ export const CourseModal: React.FC<CourseModalProps> = ({
                             } else if (isVideo) {
                               onPlayVideo([{ label: lec.title, url, type: 'hls' }], 0);
                             } else {
-                              onOpenPdf({ label: lec.title + ' • Notes', url, type: 'pdf' });
+                              onOpenPdf({ label: `${lec.title} • ${btnLabel}`, url, downloadUrl: url, type: 'pdf' });
                             }
                           }}
                         >
-                          {isYouTube ? '▶ Open YouTube' : isVideo ? '▶ Watch' : k.replace('_', ' ').toUpperCase()}
+                          {btnLabel}
                         </button>
                       );
                     })}

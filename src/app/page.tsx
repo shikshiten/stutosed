@@ -14,7 +14,7 @@ import { PrivacyTermsModal } from '@/components/PrivacyTermsModal';
 import NewsAnnouncements from '@/components/NewsAnnouncements';
 import { INITIAL_COURSES, getTotalStats, getCourseById } from '@/lib/coursesData';
 import { Course, LectureItem, UserProfile } from '@/types';
-import { getWorkerProxyUrl } from '@/lib/proxyConfig';
+import { getWorkerProxyUrl, resolveDirectMediaUrl } from '@/lib/proxyConfig';
 import { createClient } from '@/lib/supabase/client';
 import {
   BookOpen,
@@ -583,11 +583,11 @@ export default function HomePage() {
       (s) => s.name?.toUpperCase().includes('ALBA') || s.url?.includes('streamvaultpro.cc')
     );
     let viewUrl = albaServer?.downloadUrl || albaServer?.url || item.downloadUrl || item.url || '';
-    if (viewUrl.includes('/0:/stream/')) {
-      viewUrl = viewUrl.replace('/0:/stream/', '/0:/dl/');
-    }
+    
+    // Auto-resolve any bot wrappers or redirect links
+    viewUrl = resolveDirectMediaUrl(viewUrl);
 
-    if (viewUrl.includes('crwilladmin.com') || viewUrl.endsWith('.pdf')) {
+    if (viewUrl.includes('crwilladmin.com') || viewUrl.includes('herokuapp.com') || viewUrl.endsWith('.pdf')) {
       window.open(viewUrl, '_blank', 'noopener,noreferrer');
     } else if (viewUrl) {
       const proxiedUrl = getWorkerProxyUrl(viewUrl, 'pdf');

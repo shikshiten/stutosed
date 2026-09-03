@@ -3,7 +3,7 @@
 import React, { useState, useEffect, useRef } from 'react';
 import { LectureItem, ServerOption } from '@/types';
 import { ExternalLink, Download, X, ChevronLeft, ChevronRight, FileText, RefreshCw, Eye } from 'lucide-react';
-import { getWorkerProxyUrl } from '@/lib/proxyConfig';
+import { getWorkerProxyUrl, resolveDirectMediaUrl } from '@/lib/proxyConfig';
 
 interface PdfViewerModalProps {
   item: LectureItem;
@@ -32,7 +32,7 @@ export const PdfViewerModal: React.FC<PdfViewerModalProps> = ({
   const albaServer = servers.find(
     (s) => s.name?.toUpperCase().includes('ALBA') || s.url?.includes('streamvaultpro.cc')
   );
-  let viewUrl = albaServer?.downloadUrl || albaServer?.url || item.url || '';
+  let viewUrl = resolveDirectMediaUrl(albaServer?.downloadUrl || albaServer?.url || item.url || '');
   if (viewUrl.includes('/0:/stream/')) {
     viewUrl = viewUrl.replace('/0:/stream/', '/0:/dl/');
   }
@@ -55,8 +55,9 @@ export const PdfViewerModal: React.FC<PdfViewerModalProps> = ({
       s.downloadUrl?.includes('publicbotshub') ||
       s.url?.includes('herokuapp.com')
   );
-  const downloadRedirectUrl =
-    esteServer?.downloadUrl || esteServer?.url || item.downloadUrl || viewUrl;
+  const downloadRedirectUrl = resolveDirectMediaUrl(
+    esteServer?.downloadUrl || esteServer?.url || item.downloadUrl || viewUrl
+  );
 
   // Auto-dismiss loading spinner after 1.5s max so it never covers the iframe
   useEffect(() => {
