@@ -75,10 +75,24 @@ export const PdfViewerModal: React.FC<PdfViewerModalProps> = ({
     window.open(proxiedPdfUrl, '_blank');
   };
 
-  const handleDownload = () => {
-    const filename = `${item.label.replace(/[^a-zA-Z0-9_\-\s]/g, '').trim().replace(/\s+/g, '_')}.pdf`;
+  const handleDownload = async () => {
+    const filename = `${item.label.replace(/[^a-zA-Z0-9_\-\s]/g, '').trim().replace(/\s+/g, '_') || 'document'}.pdf`;
     const downloadApiUrl = getWorkerProxyUrl(viewUrl, 'pdf');
-    window.open(downloadApiUrl, '_blank');
+    try {
+      const res = await fetch(downloadApiUrl);
+      if (!res.ok) throw new Error('Download error');
+      const blob = await res.blob();
+      const blobUrl = window.URL.createObjectURL(blob);
+      const a = document.createElement('a');
+      a.href = blobUrl;
+      a.download = filename;
+      document.body.appendChild(a);
+      a.click();
+      document.body.removeChild(a);
+      window.URL.revokeObjectURL(blobUrl);
+    } catch {
+      window.open(downloadApiUrl, '_blank');
+    }
   };
 
   // Keyboard shortcut: Esc to close

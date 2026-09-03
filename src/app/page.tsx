@@ -120,7 +120,7 @@ export default function HomePage() {
   const [isAuthOpen, setIsAuthOpen] = useState(false);
   const [isAuthCompulsory, setIsAuthCompulsory] = useState(false);
   const [user, setUser] = useState<UserProfile | null>(null);
-  const [userName, setUserName] = useState<string>('Student');
+  const [userName, setUserName] = useState<string>('Advik');
   const [memberSince, setMemberSince] = useState<string>('August 2026');
   const [isEditingName, setIsEditingName] = useState<boolean>(false);
   const [nameInput, setNameInput] = useState<string>('');
@@ -301,7 +301,7 @@ export default function HomePage() {
       supabase.auth.getUser().then(({ data }: any) => {
         if (data?.user) {
           const metaName = data.user.user_metadata?.full_name || data.user.user_metadata?.display_name || data.user.user_metadata?.name;
-          const fallbackName = localStorage.getItem('stutosed_user_name') || 'Student';
+          const fallbackName = localStorage.getItem('stutosed_user_name') || 'Advik';
           const resolvedName = metaName || fallbackName;
           setUserName(resolvedName);
 
@@ -327,7 +327,7 @@ export default function HomePage() {
         } else {
           // If not logged in, maintain guest session without forcing auth modal
           setUser(null);
-          setUserName('Guest');
+          setUserName('Advik');
           setIsAuthCompulsory(false);
           setIsAuthOpen(false);
         }
@@ -336,7 +336,7 @@ export default function HomePage() {
       const { data: authListener } = supabase.auth.onAuthStateChange((_: any, session: any) => {
         if (session?.user) {
           const metaName = session.user.user_metadata?.full_name || session.user.user_metadata?.display_name || session.user.user_metadata?.name;
-          const fallbackName = localStorage.getItem('stutosed_user_name') || 'Student';
+          const fallbackName = localStorage.getItem('stutosed_user_name') || 'Advik';
           const resolvedName = metaName || fallbackName;
           setUserName(resolvedName);
 
@@ -635,7 +635,7 @@ export default function HomePage() {
             const supabase = createClient();
             await supabase.auth.signOut();
             setUser(null);
-            setUserName('Guest');
+            setUserName('Advik');
             setIsAuthCompulsory(false);
             setIsAuthOpen(false);
           }}
@@ -1477,7 +1477,7 @@ export default function HomePage() {
                       />
                       <button
                         onClick={async () => {
-                          const clean = nameInput.trim() || 'Student';
+                          const clean = nameInput.trim() || 'Advik';
                           setUserName(clean);
                           try {
                             localStorage.setItem('stutosed_user_name', clean);
@@ -2097,7 +2097,7 @@ export default function HomePage() {
             const supabase = createClient();
             await supabase.auth.signOut();
             setUser(null);
-            setUserName('Guest');
+            setUserName('Advik');
             setIsAuthCompulsory(false);
             setIsAuthOpen(false);
           } catch {}

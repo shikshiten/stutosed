@@ -230,10 +230,11 @@ export const CourseModal: React.FC<CourseModalProps> = ({
 
   // Centralized Canonical Subject Thumbnail Resolver
   const getLectureThumb = (item: LectureItem) => {
+    const currentTab = course.tabs?.find((t) => t.id === activeTabId) || selectedFolderTab;
     return getSubjectThumbnail(
       item.subject || item.label,
-      item.thumb || selectedFolderTab?.thumb || course.thumb,
-      selectedFolderTab?.label || selectedFolderTab?.id,
+      item.thumb || currentTab?.thumb || course.thumb,
+      currentTab?.label || currentTab?.id || course.subject || course.name,
       theme
     );
   };
@@ -245,10 +246,25 @@ export const CourseModal: React.FC<CourseModalProps> = ({
   };
 
   // Direct download PDF handler
-  const handleDownloadPdf = (e: React.MouseEvent, item: LectureItem) => {
+  const handleDownloadPdf = async (e: React.MouseEvent, item: LectureItem) => {
     e.stopPropagation();
+    const filename = `${item.label.replace(/[^a-zA-Z0-9_\-\s]/g, '').trim().replace(/\s+/g, '_') || 'document'}.pdf`;
     const downloadApiUrl = getWorkerProxyUrl(item.url, 'pdf');
-    window.open(downloadApiUrl, '_blank');
+    try {
+      const res = await fetch(downloadApiUrl);
+      if (!res.ok) throw new Error('Download error');
+      const blob = await res.blob();
+      const blobUrl = window.URL.createObjectURL(blob);
+      const a = document.createElement('a');
+      a.href = blobUrl;
+      a.download = filename;
+      document.body.appendChild(a);
+      a.click();
+      document.body.removeChild(a);
+      window.URL.revokeObjectURL(blobUrl);
+    } catch {
+      window.open(downloadApiUrl, '_blank');
+    }
   };
 
   // Centralized lecture item click handler (direct YouTube open, PDF modal, or video player)
@@ -595,6 +611,12 @@ export const CourseModal: React.FC<CourseModalProps> = ({
                     <img
                       src={getSubjectThumbnail(tab.label, tab.thumb || course.thumb, tab.id, theme)}
                       alt=""
+                      onError={(e) => {
+                        const target = e.currentTarget;
+                        if (!target.src.includes('all_course_thumbnail.jpg')) {
+                          target.src = '/thumbnails/all_course_thumbnail.jpg';
+                        }
+                      }}
                       style={{ width: '100%', height: '100%', objectFit: 'cover' }}
                     />
                     <div
@@ -776,6 +798,12 @@ export const CourseModal: React.FC<CourseModalProps> = ({
                           src={thumb}
                           alt=""
                           className="grid-thumb-img"
+                          onError={(e) => {
+                            const target = e.currentTarget;
+                            if (!target.src.includes('all_lecture_thumbnail.jpg')) {
+                              target.src = '/thumbnails/all_lecture_thumbnail.jpg';
+                            }
+                          }}
                           style={{
                             width: '100%',
                             height: '100%',

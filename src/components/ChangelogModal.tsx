@@ -13,9 +13,20 @@ export interface ReleaseLog {
 
 export const CHANGELOG_DATA: ReleaseLog[] = [
   {
+    version: 'v2.2.0',
+    date: 'September 04, 2026 • 01:35 AM IST',
+    isLatest: true,
+    title: 'Advik Identity, Instant Vidmoly Playback & Direct PDF Downloads',
+    highlights: [
+      'Personalized Advik Guest Profile: Replaced generic "Guest/Student" with "Advik" across the homepage greeting, sidebar, profile stats, and session fallbacks.',
+      'Instant Vidmoly Video Playback: Resolved 403 Forbidden on vmnow.online upstream CDN with automated Referer injection and direct HLS playlist rewriting.',
+      'Native Device PDF File Downloads: Verified 100% of all 1,745 course PDF attachments are online, and upgraded download buttons to trigger native file downloads with clean filenames.',
+      'Expanded Subject SVG Thumbnails: Broadened SVG thumbnail resolution coverage across 2,700+ lectures with seamless dark/light theme switching and fail-safe image error fallbacks.',
+    ],
+  },
+  {
     version: 'v2.1.0',
     date: 'September 04, 2026 • 01:15 AM IST',
-    isLatest: true,
     title: 'Open Guest Mode & Optional Student Sign-In',
     highlights: [
       'Zero Forced Login: Removed compulsory login restrictions across the website. Students can now freely browse courses, watch lectures, and download PDFs as a guest.',

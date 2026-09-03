@@ -39,7 +39,7 @@ export default function LoginPage() {
     const supabase = createClient();
     supabase.auth.getUser().then(({ data }: any) => {
       if (data?.user) {
-        const name = data.user.user_metadata?.full_name || localStorage.getItem('stutosed_user_name') || 'Student';
+        const name = data.user.user_metadata?.full_name || localStorage.getItem('stutosed_user_name') || 'Advik';
         setUser({
           id: data.user.id,
           email: data.user.email || '',
@@ -139,7 +139,7 @@ export default function LoginPage() {
     setMessage({ text: 'Signed out successfully.', type: 'success' });
   };
 
-  const userName = user?.full_name || 'Student';
+  const userName = user?.full_name || 'Advik';
   const initials = getInitials(userName);
   const avatarBg = getAvatarGradient(userName);
 

@@ -206,7 +206,7 @@ export async function GET(request: NextRequest) {
     const directM3u8 = html.match(/https?:\/\/[^"'\s\\]+\.m3u8[^"'\s\\]*/);
     if (directM3u8) {
       return NextResponse.json({
-        streamUrl: getWorkerProxyUrl(directM3u8[0], 'hls'),
+        streamUrl: `/api/hls-proxy?url=${encodeURIComponent(directM3u8[0])}&provider=${provider}`,
         type: 'hls',
         provider,
         code,
@@ -221,7 +221,7 @@ export async function GET(request: NextRequest) {
         const unpackedM3u8 = unpacked.match(/https?:\/\/[^"'\s\\]+\.m3u8[^"'\s\\]*/);
         if (unpackedM3u8) {
           return NextResponse.json({
-            streamUrl: getWorkerProxyUrl(unpackedM3u8[0], 'hls'),
+            streamUrl: `/api/hls-proxy?url=${encodeURIComponent(unpackedM3u8[0])}&provider=${provider}`,
             type: 'hls',
             provider,
             code,
@@ -233,7 +233,7 @@ export async function GET(request: NextRequest) {
     const fileMatch = html.match(/["'](?:file|src)["']\s*:\s*["']([^"']+\.m3u8[^"']*)["']/);
     if (fileMatch) {
       return NextResponse.json({
-        streamUrl: getWorkerProxyUrl(fileMatch[1], 'hls'),
+        streamUrl: `/api/hls-proxy?url=${encodeURIComponent(fileMatch[1])}&provider=${provider}`,
         type: 'hls',
         provider,
         code,

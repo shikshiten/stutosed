@@ -123,6 +123,12 @@ export const CourseGrid: React.FC<CourseGridProps> = ({
                     src={thumbUrl}
                     alt={course.name || 'Course'}
                     loading="lazy"
+                    onError={(e) => {
+                      const target = e.currentTarget;
+                      if (!target.src.includes('all_course_thumbnail.jpg')) {
+                        target.src = '/thumbnails/all_course_thumbnail.jpg';
+                      }
+                    }}
                   />
                   <div className="course-body">
                     <div className="course-tags">
