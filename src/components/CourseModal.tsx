@@ -3,7 +3,7 @@
 import React, { useState, useEffect, useRef, useMemo } from 'react';
 import { Course, LectureItem } from '@/types';
 import { countCourseStats } from '@/lib/coursesData';
-import { getSubjectThumbnail } from '@/lib/subjectThumbnails';
+import { getSubjectThumbnail, getDynamicThumbnailUrl } from '@/lib/subjectThumbnails';
 import { getWorkerProxyUrl } from '@/lib/proxyConfig';
 import { ArrowLeft, Folder, Search, LayoutGrid, List, Video, FileText, CheckCircle2, Play, Download, ExternalLink, Menu } from 'lucide-react';
 
@@ -228,15 +228,11 @@ export const CourseModal: React.FC<CourseModalProps> = ({
     );
   };
 
-  // Centralized Canonical Subject Thumbnail Resolver
+  // Centralized Canonical Dynamic Title-Based SVG Thumbnail Resolver
   const getLectureThumb = (item: LectureItem) => {
     const currentTab = course.tabs?.find((t) => t.id === activeTabId) || selectedFolderTab;
-    return getSubjectThumbnail(
-      item.subject || item.label,
-      item.thumb || currentTab?.thumb || course.thumb,
-      currentTab?.label || currentTab?.id || course.subject || course.name,
-      theme
-    );
+    const category = item.subject || currentTab?.label || course.name;
+    return getDynamicThumbnailUrl(item.label, category, theme);
   };
 
   // Detect YouTube video URLs
@@ -609,7 +605,7 @@ export const CourseModal: React.FC<CourseModalProps> = ({
                     }}
                   >
                     <img
-                      src={getSubjectThumbnail(tab.label, tab.thumb || course.thumb, tab.id, theme)}
+                      src={getDynamicThumbnailUrl(tab.label, course.name, theme)}
                       alt=""
                       onError={(e) => {
                         const target = e.currentTarget;

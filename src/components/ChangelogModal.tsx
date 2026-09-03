@@ -13,9 +13,20 @@ export interface ReleaseLog {
 
 export const CHANGELOG_DATA: ReleaseLog[] = [
   {
+    version: 'v2.3.0',
+    date: 'September 04, 2026 • 01:55 AM IST',
+    isLatest: true,
+    title: 'Dynamic Title-Based Mithila SVG Thumbnails Across All Courses & Lectures',
+    highlights: [
+      'Personalized Lecture SVGs: Every single lecture thumbnail (all 4,492+) now dynamically displays its exact topic title and lecture number in authentic Mithila geometric aesthetic.',
+      'Folder & Course Dynamic Covers: All course folder categories and homepage course cards now render custom SVG vector artwork generated from their titles.',
+      'Edge-Rendered High Performance: Powered by a dedicated dynamic thumbnail generator route (/api/thumbnail) with permanent browser caching and 0 disk overhead.',
+      'Adaptive Theme & Color Accents: Automatically tailors accent glows and typography to subject domains (Mathematics, Physics, Chemistry, Mechanical, English, GK/GS) with full dark and light mode synergy.',
+    ],
+  },
+  {
     version: 'v2.2.0',
     date: 'September 04, 2026 • 01:35 AM IST',
-    isLatest: true,
     title: 'Advik Identity, Instant Vidmoly Playback & Direct PDF Downloads',
     highlights: [
       'Personalized Advik Guest Profile: Replaced generic "Guest/Student" with "Advik" across the homepage greeting, sidebar, profile stats, and session fallbacks.',

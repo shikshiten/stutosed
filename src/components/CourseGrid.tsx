@@ -3,7 +3,7 @@
 import React, { useState, useMemo } from 'react';
 import { Course } from '@/types';
 import { countCourseStats } from '@/lib/coursesData';
-import { getSubjectThumbnail } from '@/lib/subjectThumbnails';
+import { getSubjectThumbnail, getDynamicThumbnailUrl } from '@/lib/subjectThumbnails';
 import { Search, Video, FileText, ArrowRight, Layers } from 'lucide-react';
 
 interface CourseGridProps {
@@ -111,7 +111,7 @@ export const CourseGrid: React.FC<CourseGridProps> = ({
           ) : (
             filteredCourses.map((course) => {
               const stats = countCourseStats(course);
-              const thumbUrl = getSubjectThumbnail(course.subject || course.name, course.thumb, course.id, theme);
+              const thumbUrl = getDynamicThumbnailUrl(course.name, course.subject || 'Comprehensive Course', theme);
               return (
                 <div
                   key={course.id}
