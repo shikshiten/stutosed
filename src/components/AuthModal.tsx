@@ -144,8 +144,7 @@ export const AuthModal: React.FC<AuthModalProps> = ({
         animation: 'authFadeIn 0.25s cubic-bezier(0.16, 1, 0.3, 1) forwards',
       }}
       onClick={(e) => {
-        // If not compulsory, allow clicking outside to close
-        if (!isCompulsory && e.target === e.currentTarget) {
+        if (e.target === e.currentTarget) {
           onClose();
         }
       }}
@@ -165,30 +164,28 @@ export const AuthModal: React.FC<AuthModalProps> = ({
         {/* Top Decorative Brand Gradient Bar */}
         <div style={{ height: '4px', background: 'linear-gradient(90deg, var(--accent), var(--beu-blue), var(--govt-indigo))' }} />
 
-        {/* Close Button (only if not strictly compulsory login) */}
-        {!isCompulsory && (
-          <button
-            onClick={onClose}
-            style={{
-              position: 'absolute',
-              top: '16px',
-              right: '16px',
-              background: 'var(--bg-card-subtle)',
-              border: '1px solid var(--border)',
-              color: 'var(--text-muted)',
-              cursor: 'pointer',
-              padding: '6px',
-              borderRadius: '50%',
-              display: 'flex',
-              alignItems: 'center',
-              justifyContent: 'center',
-              transition: 'all 0.2s',
-            }}
-            aria-label="Close"
-          >
-            <X width={16} height={16} />
-          </button>
-        )}
+        {/* Close Button */}
+        <button
+          onClick={onClose}
+          style={{
+            position: 'absolute',
+            top: '16px',
+            right: '16px',
+            background: 'var(--bg-card-subtle)',
+            border: '1px solid var(--border)',
+            color: 'var(--text-muted)',
+            cursor: 'pointer',
+            padding: '6px',
+            borderRadius: '50%',
+            display: 'flex',
+            alignItems: 'center',
+            justifyContent: 'center',
+            transition: 'all 0.2s',
+          }}
+          aria-label="Close"
+        >
+          <X width={16} height={16} />
+        </button>
 
         <div style={{ padding: '32px 28px 24px' }}>
           {/* Brand Header */}
@@ -539,7 +536,7 @@ export const AuthModal: React.FC<AuthModalProps> = ({
                 </button>
               </form>
 
-              {/* Bottom Toggle Between Sign In & Sign Up (Zero Guest Mode) */}
+              {/* Bottom Toggle Between Sign In & Sign Up */}
               <div
                 style={{
                   textAlign: 'center',
@@ -570,6 +567,33 @@ export const AuthModal: React.FC<AuthModalProps> = ({
                   {isSignUp ? 'Sign In' : 'Create an Account'}
                 </button>
               </div>
+
+              {/* Continue as Guest Button */}
+              <button
+                type="button"
+                onClick={onClose}
+                style={{
+                  width: '100%',
+                  padding: '11px 16px',
+                  borderRadius: 'var(--r-md)',
+                  background: 'var(--bg-card-subtle)',
+                  border: '1px solid var(--border)',
+                  color: 'var(--text)',
+                  fontSize: '13.5px',
+                  fontWeight: 600,
+                  cursor: 'pointer',
+                  display: 'flex',
+                  alignItems: 'center',
+                  justifyContent: 'center',
+                  gap: '8px',
+                  transition: 'all 0.2s cubic-bezier(0.16, 1, 0.3, 1)',
+                  marginTop: '4px',
+                }}
+                className="guest-continue-btn"
+              >
+                <span>Continue as Guest</span>
+                <ArrowRight width={14} height={14} />
+              </button>
             </div>
           )}
         </div>
@@ -617,6 +641,15 @@ export const AuthModal: React.FC<AuthModalProps> = ({
           transform: translateY(-1px);
         }
         .auth-submit-btn:active {
+          transform: scale(0.98);
+        }
+        .guest-continue-btn:hover {
+          background: var(--bg-card-hover);
+          border-color: var(--border-hover);
+          color: var(--accent);
+          transform: translateY(-1px);
+        }
+        .guest-continue-btn:active {
           transform: scale(0.98);
         }
       `}</style>

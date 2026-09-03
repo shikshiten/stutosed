@@ -61,12 +61,6 @@ const SPEED_BRIDGE_SCRIPT = `
 `;
 
 export async function GET(request: NextRequest) {
-  // ── Auth check ────────────────────────────────────────────────────────────────
-  const user = await getAuthenticatedUser(request);
-  if (!user) {
-    return NextResponse.json({ error: 'Unauthorized' }, { status: 401 });
-  }
-
   const targetUrl = request.nextUrl.searchParams.get('url');
 
   // ── MODE 1: Direct URL Embed Proxy ────────────────────────────────────────────

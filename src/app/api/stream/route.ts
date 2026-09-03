@@ -138,12 +138,6 @@ async function resolveFinalRedirectUrl(initialUrl: string): Promise<string> {
 }
 
 export async function GET(request: NextRequest) {
-  // ── Auth check ───────────────────────────────────────────────────────────────
-  const user = await getAuthenticatedUser(request);
-  if (!user) {
-    return NextResponse.json({ error: 'Unauthorized' }, { status: 401 });
-  }
-
   const { searchParams } = new URL(request.url);
   const targetUrlParam = searchParams.get('url');
 

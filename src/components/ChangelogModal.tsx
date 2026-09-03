@@ -13,9 +13,19 @@ export interface ReleaseLog {
 
 export const CHANGELOG_DATA: ReleaseLog[] = [
   {
+    version: 'v2.1.0',
+    date: 'September 04, 2026 • 01:15 AM IST',
+    isLatest: true,
+    title: 'Open Guest Mode & Optional Student Sign-In',
+    highlights: [
+      'Zero Forced Login: Removed compulsory login restrictions across the website. Students can now freely browse courses, watch lectures, and download PDFs as a guest.',
+      'Continue as Guest Action: Added a prominent "Continue as Guest" button and close icon inside the Auth Modal for instant, unblocked access.',
+      'Optional Cloud Sync: Students who choose to sign in can still sync their watched progress and account across devices, while guests enjoy full unrestricted learning.',
+    ],
+  },
+  {
     version: 'v2.0.0',
     date: 'September 03, 2026 • 11:00 PM IST',
-    isLatest: true,
     title: 'Cloudflare Worker Smart Proxy Engine & Zero Bandwidth Quota Offload',
     highlights: [
       'Cloudflare Worker Streaming Engine: Integrated dedicated global edge proxy (seiryu.stutosed.workers.dev) with unlimited free egress bandwidth for video lectures and course PDFs.',
@@ -31,16 +41,6 @@ export const CHANGELOG_DATA: ReleaseLog[] = [
       'Organized 4-Row Header: Structured course modal top into: 1) Top Bar with Hamburger & Search, 2) Course Identity with Square Back Button, 3) Pill Filter Tabs, and 4) View Mode Switcher with Lecture Count.',
       'Zero-Scrollbar Horizontal Tabs: Completely removed native scrollbar sliders across all subject/module tabs for clean swipeable touch navigation.',
       'Refined Modal Geometry: Polished rounded square icon buttons, high-contrast active tab pills, and seamless view mode toggles.',
-    ],
-  },
-  {
-    version: 'v1.8.0',
-    date: 'August 31, 2026 • 10:25 PM IST',
-    title: 'Universal Mobile Hamburger Navigation & Course Drawer Access',
-    highlights: [
-      'Universal Mobile Sidebar Access: Added a dedicated top-left Hamburger Menu button directly inside course modals, enabling instant 1-tap sidebar navigation from anywhere.',
-      'Mobile Drawer Layering Engine: Upgraded mobile backdrop and drawer z-indexes (1100) so the sidebar slides smoothly above open course views.',
-      'Dual Navigation Flow: Students can seamlessly jump between categories via the burger menu or step back layer-by-layer using the back button or native swipe gestures.',
     ],
   },
 ];

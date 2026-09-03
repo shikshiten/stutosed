@@ -325,9 +325,11 @@ export default function HomePage() {
           });
           setIsAuthOpen(false);
         } else {
-          // If not logged in, prompt compulsory auth
-          setIsAuthCompulsory(true);
-          setIsAuthOpen(true);
+          // If not logged in, maintain guest session without forcing auth modal
+          setUser(null);
+          setUserName('Guest');
+          setIsAuthCompulsory(false);
+          setIsAuthOpen(false);
         }
       });
 
@@ -460,13 +462,8 @@ export default function HomePage() {
     });
   };
 
-  // Navigation handlers with compulsory login check
+  // Navigation handlers
   const handleViewChange = (newView: AppView) => {
-    if (!user && newView !== 'home' && newView !== 'help') {
-      setIsAuthCompulsory(true);
-      setIsAuthOpen(true);
-      return;
-    }
     if (newView === activeView && !selectedCourse && !openFolderId) return;
 
     setActiveView(newView);
@@ -480,13 +477,8 @@ export default function HomePage() {
     }
   };
 
-  // Open Course Modal with compulsory auth check
+  // Open Course Modal
   const handleOpenCourse = (course: Course) => {
-    if (!user) {
-      setIsAuthCompulsory(true);
-      setIsAuthOpen(true);
-      return;
-    }
     setSelectedCourse(course);
     setOpenFolderId(null);
     syncNavigationState(activeView, course.id, null, true);
@@ -505,12 +497,6 @@ export default function HomePage() {
 
   // Open Video Player with history state push and record last played
   const handlePlayVideo = (playlist: LectureItem[], index: number) => {
-    if (!user) {
-      setIsAuthCompulsory(true);
-      setIsAuthOpen(true);
-      return;
-    }
-
     const current = playlist[index];
     if (current?.url) {
       handleMarkWatched(current.url);
@@ -547,11 +533,6 @@ export default function HomePage() {
 
   // Resume last played lecture
   const handleResumeLastPlayed = () => {
-    if (!user) {
-      setIsAuthCompulsory(true);
-      setIsAuthOpen(true);
-      return;
-    }
     if (!lastPlayed) return;
     const course = getCourseById(lastPlayed.courseId);
     if (!course) return;
@@ -585,11 +566,6 @@ export default function HomePage() {
     playlist?: LectureItem[],
     index?: number
   ) => {
-    if (!user) {
-      setIsAuthCompulsory(true);
-      setIsAuthOpen(true);
-      return;
-    }
     let item: LectureItem;
     if (typeof itemOrUrl === 'string') {
       item = { label: 'Document', url: itemOrUrl, type: 'pdf' };
@@ -659,8 +635,9 @@ export default function HomePage() {
             const supabase = createClient();
             await supabase.auth.signOut();
             setUser(null);
-            setIsAuthCompulsory(true);
-            setIsAuthOpen(true);
+            setUserName('Guest');
+            setIsAuthCompulsory(false);
+            setIsAuthOpen(false);
           }}
           watchedCount={watchedUrls.size}
         />
@@ -720,11 +697,6 @@ export default function HomePage() {
                   <button
                     className="btn-primary"
                     onClick={() => {
-                      if (!user) {
-                        setIsAuthCompulsory(true);
-                        setIsAuthOpen(true);
-                        return;
-                      }
                       const el = document.getElementById('explore-categories');
                       if (el) {
                         el.scrollIntoView({ behavior: 'smooth' });
@@ -1024,11 +996,6 @@ export default function HomePage() {
                   <button
                     className="btn-primary"
                     onClick={() => {
-                      if (!user) {
-                        setIsAuthCompulsory(true);
-                        setIsAuthOpen(true);
-                        return;
-                      }
                       const el = document.getElementById('explore-categories');
                       if (el) el.scrollIntoView({ behavior: 'smooth' });
                       else handleViewChange('courses');
@@ -1620,7 +1587,7 @@ export default function HomePage() {
                 ) : (
                   <button
                     onClick={() => {
-                      setIsAuthCompulsory(true);
+                      setIsAuthCompulsory(false);
                       setIsAuthOpen(true);
                     }}
                     className="btn-primary"
@@ -2123,19 +2090,16 @@ export default function HomePage() {
       <AuthModal
         isOpen={isAuthOpen}
         isCompulsory={isAuthCompulsory}
-        onClose={() => {
-          if (user) {
-            setIsAuthOpen(false);
-          }
-        }}
+        onClose={() => setIsAuthOpen(false)}
         user={user}
         onSignOut={async () => {
           try {
             const supabase = createClient();
             await supabase.auth.signOut();
             setUser(null);
-            setIsAuthCompulsory(true);
-            setIsAuthOpen(true);
+            setUserName('Guest');
+            setIsAuthCompulsory(false);
+            setIsAuthOpen(false);
           } catch {}
         }}
       />
