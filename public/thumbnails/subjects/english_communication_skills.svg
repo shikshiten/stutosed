@@ -95,11 +95,11 @@
 
   <!-- ── DOMINANT SUBJECT TYPOGRAPHY ── -->
   <g>
-    <text x="640" y="350" text-anchor="middle" font-family="'Space Grotesk', -apple-system, system-ui, sans-serif" font-size="66" font-weight="800" letter-spacing="-0.5" fill="#111827">ENGLISH &</text>
+    <text x="640" y="350" text-anchor="middle" font-family="'Space Grotesk', -apple-system, system-ui, sans-serif" font-size="66" font-weight="800" letter-spacing="-0.5" fill="#111827">ENGLISH &amp;</text>
       <text x="640" y="425.9" text-anchor="middle" font-family="'Space Grotesk', -apple-system, system-ui, sans-serif" font-size="66" font-weight="800" letter-spacing="-0.5" fill="#1F2937">COMMUNICATION SKILLS</text>
   </g>
 
-  <!-- Bottom Mithila Divider & Stutosed Wordmark Anchor -->
+  <!-- Bottom Mithila Divider &amp; Stutosed Wordmark Anchor -->
   <g transform="translate(640, 565)">
     <line x1="-160" y1="0" x2="-25" y2="0" stroke="rgba(0,0,0,0.15)" stroke-width="1" stroke-dasharray="4 4" />
     <polygon points="0,-5 5,0 0,5 -5,0" fill="#0284c7" opacity="0.85" />

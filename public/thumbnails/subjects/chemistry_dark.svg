@@ -98,7 +98,7 @@
     <text x="640" y="390" text-anchor="middle" font-family="'Space Grotesk', -apple-system, system-ui, sans-serif" font-size="92" font-weight="800" letter-spacing="-0.5" fill="#FFFFFF">CHEMISTRY</text>
   </g>
 
-  <!-- Bottom Mithila Divider & Stutosed Wordmark Anchor -->
+  <!-- Bottom Mithila Divider &amp; Stutosed Wordmark Anchor -->
   <g transform="translate(640, 565)">
     <line x1="-160" y1="0" x2="-25" y2="0" stroke="rgba(255,255,255,0.15)" stroke-width="1" stroke-dasharray="4 4" />
     <polygon points="0,-5 5,0 0,5 -5,0" fill="#10b981" opacity="0.85" />
