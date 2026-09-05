@@ -1,7 +1,9 @@
 import { Course } from '@/types';
 import rawData from './coursesData.json';
 
-export const INITIAL_COURSES: Course[] = rawData as unknown as Course[];
+export const INITIAL_COURSES: Course[] = (rawData as unknown as Course[]).sort((a, b) =>
+  a.name.localeCompare(b.name, undefined, { numeric: true, sensitivity: 'base' })
+);
 
 export function getCourseById(id: string): Course | undefined {
   return INITIAL_COURSES.find((c) => c.id === id);

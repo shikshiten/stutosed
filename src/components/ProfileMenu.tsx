@@ -1,7 +1,7 @@
 'use client';
 
 import React, { useState, useRef, useEffect } from 'react';
-import { User, LogOut, BookOpen, CheckCircle2, HelpCircle, Moon, Sun, ChevronDown, Sparkles, ShieldCheck } from 'lucide-react';
+import { User, LogOut, BookOpen, CheckCircle2, HelpCircle, Moon, Sun, ChevronDown, Sparkles, ShieldCheck, BookmarkCheck } from 'lucide-react';
 import { UserProfile } from '@/types';
 import { AppView } from '@/components/Sidebar';
 
@@ -265,6 +265,30 @@ export const ProfileMenu: React.FC<ProfileMenuProps> = ({
             >
               <User width={15} height={15} style={{ color: 'var(--accent)' }} />
               <span>My Profile</span>
+            </button>
+
+            <button
+              onClick={() => {
+                onSelectView('library');
+                setIsOpen(false);
+              }}
+              style={{
+                display: 'flex',
+                alignItems: 'center',
+                gap: '10px',
+                padding: '8px 12px',
+                borderRadius: 'var(--r-md)',
+                fontSize: '13px',
+                fontWeight: 500,
+                color: 'var(--text)',
+                width: '100%',
+                textAlign: 'left',
+                transition: 'background 0.15s ease',
+              }}
+              className="dropdown-menu-item"
+            >
+              <BookmarkCheck width={15} height={15} style={{ color: 'var(--accent)' }} />
+              <span>My Library</span>
             </button>
 
             <button

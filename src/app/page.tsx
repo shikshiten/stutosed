@@ -1,17 +1,18 @@
 'use client';
 
 import React, { useState, useEffect, useRef, useMemo } from 'react';
+import { useRouter } from 'next/navigation';
 import { Sidebar, AppView } from '@/components/Sidebar';
 import { MobileHeader } from '@/components/MobileHeader';
 import { CourseGrid } from '@/components/CourseGrid';
 import { CourseModal } from '@/components/CourseModal';
-import { VideoPlayer } from '@/components/VideoPlayer';
 import { AuthModal } from '@/components/AuthModal';
 import { PdfViewerModal } from '@/components/PdfViewerModal';
 import { getAvatarGradient, getInitials } from '@/components/ProfileMenu';
 import { ChangelogModal, CURRENT_APP_VERSION } from '@/components/ChangelogModal';
 import { PrivacyTermsModal } from '@/components/PrivacyTermsModal';
 import NewsAnnouncements from '@/components/NewsAnnouncements';
+import { LibraryView } from '@/components/LibraryView';
 import { INITIAL_COURSES, getTotalStats, getCourseById } from '@/lib/coursesData';
 import { Course, LectureItem, UserProfile } from '@/types';
 import { getWorkerProxyUrl, resolveDirectMediaUrl } from '@/lib/proxyConfig';
@@ -101,6 +102,7 @@ const StatCounter: React.FC<{ value: number; label: string; suffix?: string }> =
 };
 
 export default function HomePage() {
+  const router = useRouter();
   const [activeView, setActiveView] = useState<AppView>('home');
   const [isSidebarOpen, setIsSidebarOpen] = useState(false);
   const [theme, setTheme] = useState<'light' | 'dark'>('light');
@@ -110,6 +112,7 @@ export default function HomePage() {
   // Video Player state
   const [playerPlaylist, setPlayerPlaylist] = useState<LectureItem[] | null>(null);
   const [playerIndex, setPlayerIndex] = useState<number>(0);
+  const [playerCourseInfo, setPlayerCourseInfo] = useState<{ id?: string; name?: string; category?: string; thumb?: string } | null>(null);
 
   // PDF Viewer Modal state
   const [pdfModalData, setPdfModalData] = useState<{
@@ -256,7 +259,7 @@ export default function HomePage() {
         const courseParam = urlParams.get('course') || sessionStorage.getItem('stutosed_open_course');
         const folderParam = urlParams.get('folder') || sessionStorage.getItem('stutosed_open_folder');
 
-        if (viewParam && ['beu-engineering', 'gov-exams', 'courses', 'profile', 'help', 'home'].includes(viewParam)) {
+        if (viewParam && ['beu-engineering', 'gov-exams', 'courses', 'library', 'announcements', 'profile', 'help', 'home'].includes(viewParam)) {
           setActiveView(viewParam);
         }
 
@@ -498,15 +501,32 @@ export default function HomePage() {
   };
 
   // Open Video Player with history state push and record last played
-  const handlePlayVideo = (playlist: LectureItem[], index: number) => {
+  const handlePlayVideo = (
+    playlist: LectureItem[],
+    index: number,
+    overrideCourseName?: string,
+    courseContext?: { id?: string; name?: string; category?: string; thumb?: string }
+  ) => {
     const current = playlist[index];
+    const activeCourseName = overrideCourseName || courseContext?.name || selectedCourse?.name || 'Lecture';
+    const activeCourseId = courseContext?.id || selectedCourse?.id || '';
+    const activeCategory = courseContext?.category || selectedCourse?.category || 'all';
+    const activeThumb = courseContext?.thumb || selectedCourse?.thumb || '';
+
+    setPlayerCourseInfo({
+      id: activeCourseId,
+      name: activeCourseName,
+      category: activeCategory,
+      thumb: activeThumb,
+    });
+
     if (current?.url) {
       handleMarkWatched(current.url);
-      if (selectedCourse) {
+      if (selectedCourse || activeCourseName) {
         const memoryObj = {
-          courseId: selectedCourse.id,
-          courseName: selectedCourse.name,
-          courseThumb: selectedCourse.thumb,
+          courseId: activeCourseId,
+          courseName: activeCourseName,
+          courseThumb: activeThumb,
           lectureTitle: current.label,
           url: current.url,
           timestamp: Date.now(),
@@ -528,9 +548,25 @@ export default function HomePage() {
       }
     }
 
-    window.history.pushState({ modal: 'player', index }, '');
-    setPlayerPlaylist(playlist);
-    setPlayerIndex(index);
+    const activeSubject = playlist[index]?.folderName || playlist[index]?.subject || selectedCourse?.name || '';
+
+    // Persist full session data for the dedicated /watch page
+    try {
+      sessionStorage.setItem(
+        'stutosed_watch_data',
+        JSON.stringify({
+          playlist,
+          index,
+          courseName: activeCourseName,
+          courseId: activeCourseId,
+          courseCategory: activeCategory,
+          subjectName: activeSubject,
+        })
+      );
+    } catch {}
+
+    // Navigate cleanly to the dedicated /watch page (full standalone page, zero modal)
+    window.location.href = `/watch?course=${encodeURIComponent(activeCourseId)}&index=${index}`;
   };
 
   // Resume last played lecture
@@ -1483,6 +1519,33 @@ export default function HomePage() {
         )}
 
         {/* ============================================================
+            VIEW 2E: MY LIBRARY VIEW (Bookmarked Batches & Batch Folders)
+            ============================================================ */}
+        {activeView === 'library' && (
+          <LibraryView
+            onSelectCourse={handleOpenCourse}
+            onPlayVideo={(playlist, index, courseName) => {
+              const matchedCourse = INITIAL_COURSES.find((c) => c.name === courseName);
+              if (matchedCourse) {
+                setSelectedCourse(matchedCourse);
+                handlePlayVideo(playlist, index, courseName, {
+                  id: matchedCourse.id,
+                  name: matchedCourse.name,
+                  category: matchedCourse.category,
+                  thumb: matchedCourse.thumb,
+                });
+              } else {
+                handlePlayVideo(playlist, index, courseName, {
+                  name: courseName,
+                });
+              }
+            }}
+            onBackHome={() => handleViewChange('home')}
+            onExploreCourses={() => handleViewChange('courses')}
+          />
+        )}
+
+        {/* ============================================================
             VIEW 3: REDESIGNED USER PROFILE & LEARNING HISTORY
             ============================================================ */}
         {activeView === 'profile' && (
@@ -2111,21 +2174,6 @@ export default function HomePage() {
         />
       )}
 
-      {/* Video Player Modal */}
-      {playerPlaylist && (
-        <VideoPlayer
-          playlist={playerPlaylist}
-          currentIndex={playerIndex}
-          courseName={selectedCourse?.name || 'Lecture'}
-          onClose={() => setPlayerPlaylist(null)}
-          onNavigate={(newIdx) => {
-            setPlayerIndex(newIdx);
-            if (playerPlaylist[newIdx]?.url) {
-              handleMarkWatched(playerPlaylist[newIdx].url);
-            }
-          }}
-        />
-      )}
 
       {/* PDF Viewer Modal */}
       {pdfModalData && (

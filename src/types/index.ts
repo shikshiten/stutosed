@@ -17,8 +17,10 @@ export interface LectureItem {
   thumb?: string;
   subject?: string;
   topic?: string;
+  folderName?: string;
   category?: 'videos' | 'pdfs';
   attachmentLinks?: Record<string, string>;
+  links?: Record<string, string>;
   servers?: ServerOption[];
 }
 
@@ -46,6 +48,8 @@ export interface Course {
   teacher: string;
   subject: string;
   thumb: string;
+  category?: 'beu' | 'government' | 'all';
+  desc?: string;
   isFolderMode?: boolean;
   tabs?: CourseTab[];
   isParmar?: boolean;

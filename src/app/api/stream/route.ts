@@ -34,6 +34,17 @@ interface CacheEntry {
 const urlCache = new Map<string, CacheEntry>();
 const CACHE_TTL_MS = 2 * 60 * 60 * 1000;
 
+// In-memory cache for resolved Vidmoly & Earnvids M3U8 streams (prevents re-scraping delays)
+interface StreamCacheEntry {
+  streamUrl: string;
+  type: string;
+  provider: string;
+  code: string;
+  expiresAt: number;
+}
+const streamCache = new Map<string, StreamCacheEntry>();
+const STREAM_CACHE_TTL_MS = 2 * 60 * 60 * 1000;
+
 function unpackDeanEdwards(packed: string): string | null {
   try {
     const match = packed.match(/eval\(function\(p,a,c,k,e,d\)[\s\S]*?return p\}\('([\s\S]*?)',(\d+),(\d+),'([\s\S]*?)'\.split\('\|'\)/);
@@ -171,6 +182,19 @@ export async function GET(request: NextRequest) {
     return NextResponse.json({ error: 'Missing url or code parameter' }, { status: 400 });
   }
 
+  // Check in-memory stream cache first (sub-millisecond instant load for repeat requests)
+  const cacheKey = `${provider}:${code}`;
+  const cachedStream = streamCache.get(cacheKey);
+  if (cachedStream && cachedStream.expiresAt > Date.now()) {
+    return NextResponse.json({
+      streamUrl: cachedStream.streamUrl,
+      type: cachedStream.type,
+      provider: cachedStream.provider,
+      code: cachedStream.code,
+      cached: true,
+    });
+  }
+
   try {
     let embedUrl = '';
     let referer = '';
@@ -192,6 +216,7 @@ export async function GET(request: NextRequest) {
         'Accept-Language': 'en-US,en;q=0.9',
       },
       cache: 'no-store',
+      signal: AbortSignal.timeout(6000),
     });
 
     if (!res.ok) {
@@ -203,37 +228,47 @@ export async function GET(request: NextRequest) {
 
     const html = await res.text();
 
+    let resolvedStreamUrl: string | null = null;
+
     const directM3u8 = html.match(/https?:\/\/[^"'\s\\]+\.m3u8[^"'\s\\]*/);
     if (directM3u8) {
-      return NextResponse.json({
-        streamUrl: `/api/hls-proxy?url=${encodeURIComponent(directM3u8[0])}&provider=${provider}`,
-        type: 'hls',
-        provider,
-        code,
-      });
+      resolvedStreamUrl = `/api/hls-proxy?url=${encodeURIComponent(directM3u8[0])}&provider=${provider}`;
     }
 
-    const packedMatches =
-      html.match(/eval\(function\(p,a,c,k,e,d\)[\s\S]*?\.split\('\|'\)\)\)/g) || [];
-    for (const packed of packedMatches) {
-      const unpacked = unpackDeanEdwards(packed);
-      if (unpacked) {
-        const unpackedM3u8 = unpacked.match(/https?:\/\/[^"'\s\\]+\.m3u8[^"'\s\\]*/);
-        if (unpackedM3u8) {
-          return NextResponse.json({
-            streamUrl: `/api/hls-proxy?url=${encodeURIComponent(unpackedM3u8[0])}&provider=${provider}`,
-            type: 'hls',
-            provider,
-            code,
-          });
+    if (!resolvedStreamUrl) {
+      const packedMatches =
+        html.match(/eval\(function\(p,a,c,k,e,d\)[\s\S]*?\.split\('\|'\)\)\)/g) || [];
+      for (const packed of packedMatches) {
+        const unpacked = unpackDeanEdwards(packed);
+        if (unpacked) {
+          const unpackedM3u8 = unpacked.match(/https?:\/\/[^"'\s\\]+\.m3u8[^"'\s\\]*/);
+          if (unpackedM3u8) {
+            resolvedStreamUrl = `/api/hls-proxy?url=${encodeURIComponent(unpackedM3u8[0])}&provider=${provider}`;
+            break;
+          }
         }
       }
     }
 
-    const fileMatch = html.match(/["'](?:file|src)["']\s*:\s*["']([^"']+\.m3u8[^"']*)["']/);
-    if (fileMatch) {
+    if (!resolvedStreamUrl) {
+      const fileMatch = html.match(/["'](?:file|src)["']\s*:\s*["']([^"']+\.m3u8[^"']*)["']/);
+      if (fileMatch) {
+        resolvedStreamUrl = `/api/hls-proxy?url=${encodeURIComponent(fileMatch[1])}&provider=${provider}`;
+      }
+    }
+
+    if (resolvedStreamUrl) {
+      const entry: StreamCacheEntry = {
+        streamUrl: resolvedStreamUrl,
+        type: 'hls',
+        provider,
+        code,
+        expiresAt: Date.now() + STREAM_CACHE_TTL_MS,
+      };
+      streamCache.set(cacheKey, entry);
+
       return NextResponse.json({
-        streamUrl: `/api/hls-proxy?url=${encodeURIComponent(fileMatch[1])}&provider=${provider}`,
+        streamUrl: resolvedStreamUrl,
         type: 'hls',
         provider,
         code,
@@ -244,7 +279,10 @@ export async function GET(request: NextRequest) {
       { error: 'Stream URL could not be resolved from provider.' },
       { status: 404 }
     );
-  } catch {
+  } catch (err: any) {
+    if (err?.name === 'TimeoutError' || err?.name === 'AbortError') {
+      return NextResponse.json({ error: 'Video provider connection timed out' }, { status: 504 });
+    }
     return NextResponse.json({ error: 'Internal Server Error' }, { status: 500 });
   }
 }

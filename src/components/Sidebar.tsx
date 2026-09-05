@@ -1,11 +1,11 @@
 'use client';
 
 import React from 'react';
-import { Home, BookOpen, Moon, Sun, User, HelpCircle, GraduationCap, Landmark, Sparkles, CheckCircle2, ShieldCheck, Megaphone } from 'lucide-react';
+import { Home, BookOpen, Moon, Sun, User, HelpCircle, GraduationCap, Landmark, Sparkles, CheckCircle2, ShieldCheck, Megaphone, BookmarkCheck } from 'lucide-react';
 import { UserProfile } from '@/types';
 import { getInitials, getAvatarGradient } from '@/components/ProfileMenu';
 
-export type AppView = 'home' | 'courses' | 'gov-exams' | 'beu-engineering' | 'announcements' | 'profile' | 'help';
+export type AppView = 'home' | 'courses' | 'gov-exams' | 'beu-engineering' | 'announcements' | 'library' | 'profile' | 'help';
 
 interface SidebarProps {
   isOpen: boolean;
@@ -120,6 +120,14 @@ export const Sidebar: React.FC<SidebarProps> = ({
           >
             <BookOpen width={18} height={18} strokeWidth={2} />
             <span>All Courses</span>
+          </button>
+
+          <button
+            onClick={() => handleNav('library')}
+            className={`nav-link ${activeView === 'library' ? 'active' : ''}`}
+          >
+            <BookmarkCheck width={18} height={18} strokeWidth={2} style={{ color: activeView === 'library' ? 'var(--accent)' : 'inherit' }} />
+            <span>My Library</span>
           </button>
 
           <button

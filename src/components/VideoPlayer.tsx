@@ -4,13 +4,44 @@ import React, { useEffect, useRef, useState, useCallback } from 'react';
 import Hls from 'hls.js';
 import { LectureItem, ServerOption } from '@/types';
 import { getWorkerProxyUrl } from '@/lib/proxyConfig';
+import { getLectureTopicDescription } from '@/lib/topicDescriptions';
+import {
+  isCourseBookmarked,
+  toggleCourseBookmark,
+  isVideoSaved,
+  toggleSaveVideo,
+} from '@/lib/libraryStorage';
+import {
+  Bookmark,
+  BookmarkCheck,
+  FolderPlus,
+  FolderHeart,
+  CheckCircle2,
+  Share2,
+  Sparkles,
+  ChevronDown,
+  ChevronUp,
+  Play,
+  ListVideo,
+  ArrowLeft,
+  Volume2,
+  VolumeX,
+  Maximize,
+  Minimize,
+  Eye,
+  BookOpen,
+} from 'lucide-react';
 
 interface VideoPlayerProps {
   playlist: LectureItem[];
   currentIndex: number;
   courseName: string;
+  courseId?: string;
+  courseCategory?: string;
+  subjectName?: string;
   onClose: () => void;
   onNavigate: (index: number) => void;
+  onOpenCourse?: () => void;
 }
 
 // Extract Vidmoly file code from embed URL
@@ -25,36 +56,93 @@ function extractEarnvidsCode(url: string): string | null {
   return m ? m[1] : null;
 }
 
+function formatTime(seconds: number): string {
+  if (isNaN(seconds) || seconds < 0) return '0:00';
+  const h = Math.floor(seconds / 3600);
+  const m = Math.floor((seconds % 3600) / 60);
+  const s = Math.floor(seconds % 60);
+  if (h > 0) {
+    return `${h}:${m < 10 ? '0' : ''}${m}:${s < 10 ? '0' : ''}${s}`;
+  }
+  return `${m}:${s < 10 ? '0' : ''}${s}`;
+}
+
 export const VideoPlayer: React.FC<VideoPlayerProps> = ({
   playlist,
   currentIndex,
   courseName,
+  courseId = '',
+  courseCategory = 'all',
+  subjectName,
   onClose,
   onNavigate,
+  onOpenCourse,
 }) => {
   const currentItem = playlist[currentIndex];
   const videoRef = useRef<HTMLVideoElement | null>(null);
   const iframeRef = useRef<HTMLIFrameElement | null>(null);
   const containerRef = useRef<HTMLDivElement | null>(null);
+  const progressBarRef = useRef<HTMLDivElement | null>(null);
   const hlsRef = useRef<Hls | null>(null);
+  const controlsTimeoutRef = useRef<NodeJS.Timeout | null>(null);
+  const clickTimeoutRef = useRef<NodeJS.Timeout | null>(null);
 
   const [playerMode, setPlayerMode] = useState<'proxy' | 'embedded'>('proxy');
   const [isPlaying, setIsPlaying] = useState<boolean>(false);
   const [isBuffering, setIsBuffering] = useState<boolean>(false);
+  const [currentTime, setCurrentTime] = useState<number>(0);
+  const [duration, setDuration] = useState<number>(0);
+  const [bufferedTime, setBufferedTime] = useState<number>(0);
+  const [isDraggingSeek, setIsDraggingSeek] = useState<boolean>(false);
+  const [seekHoverTime, setSeekHoverTime] = useState<number | null>(null);
+  const [seekHoverPos, setSeekHoverPos] = useState<number>(0);
+
+  const [volume, setVolume] = useState<number>(1);
+  const [isMuted, setIsMuted] = useState<boolean>(false);
+  const [showVolumeSlider, setShowVolumeSlider] = useState<boolean>(false);
+
   const [qualities, setQualities] = useState<{ height: number; index: number }[]>([]);
   const [currentQuality, setCurrentQuality] = useState<number>(-1);
   const [showQualityMenu, setShowQualityMenu] = useState<boolean>(false);
+
   const [playbackSpeed, setPlaybackSpeed] = useState<number>(1);
   const [showSpeedMenu, setShowSpeedMenu] = useState<boolean>(false);
+
+  const [showControls, setShowControls] = useState<boolean>(true);
+  const [isFullscreen, setIsFullscreen] = useState<boolean>(false);
+  const [skipFeedback, setSkipFeedback] = useState<'forward' | 'backward' | null>(null);
+
   const [resolvedStreamUrl, setResolvedStreamUrl] = useState<string | null>(null);
   const [streamLoading, setStreamLoading] = useState<boolean>(false);
   const [streamError, setStreamError] = useState<string | null>(null);
   const [selectedServerIndex, setSelectedServerIndex] = useState<number>(0);
   const [isEmbedLoading, setIsEmbedLoading] = useState<boolean>(true);
-  const [isItemChanging, setIsItemChanging] = useState<boolean>(false);
 
+  // Library & Bookmark States
+  const [isBookmarked, setIsBookmarked] = useState<boolean>(false);
+  const [isSaved, setIsSaved] = useState<boolean>(false);
+  const [isWatched, setIsWatched] = useState<boolean>(false);
+  const [isDescExpanded, setIsDescExpanded] = useState<boolean>(true);
+  const [copiedToast, setCopiedToast] = useState<boolean>(false);
 
-  const speedOptions = [0.75, 1, 1.25, 1.5, 1.75, 2, 2.5, 3];
+  const speedOptions = [0.5, 0.75, 1, 1.25, 1.5, 1.75, 2, 2.5, 3];
+
+  // Dynamic educational topic description
+  const topicDesc = getLectureTopicDescription(currentItem?.label || '', courseName, subjectName);
+
+  // Sync Library states
+  useEffect(() => {
+    if (courseId) {
+      setIsBookmarked(isCourseBookmarked(courseId));
+    }
+    if (currentItem?.url) {
+      setIsSaved(isVideoSaved(currentItem.url));
+      try {
+        const watched = JSON.parse(localStorage.getItem('stutosed_watched_lectures') || '[]');
+        setIsWatched(watched.includes(currentItem.url));
+      } catch {}
+    }
+  }, [courseId, currentItem]);
 
   // Load preferred mode on mount
   useEffect(() => {
@@ -66,31 +154,61 @@ export const VideoPlayer: React.FC<VideoPlayerProps> = ({
     } catch {}
   }, []);
 
-  // Reset server selection when lecture index changes
+  // Reset states when lecture index changes
   useEffect(() => {
     setSelectedServerIndex(0);
-    setResolvedStreamUrl(null);
     setStreamError(null);
-    setIsBuffering(false);
     setIsEmbedLoading(true);
-    // Flash "changing" indicator for 120ms to give immediate visual feedback
-    setIsItemChanging(true);
-    const t = setTimeout(() => setIsItemChanging(false), 120);
-    return () => clearTimeout(t);
+    setCurrentTime(0);
+    setDuration(0);
+    setBufferedTime(0);
   }, [currentIndex]);
+
+  // Track Fullscreen status
+  useEffect(() => {
+    const handleFsChange = () => {
+      setIsFullscreen(Boolean(document.fullscreenElement));
+    };
+    document.addEventListener('fullscreenchange', handleFsChange);
+    document.addEventListener('webkitfullscreenchange', handleFsChange);
+    return () => {
+      document.removeEventListener('fullscreenchange', handleFsChange);
+      document.removeEventListener('webkitfullscreenchange', handleFsChange);
+    };
+  }, []);
+
+  // Auto-hide controls timer
+  const resetControlsTimer = useCallback(() => {
+    setShowControls(true);
+    if (controlsTimeoutRef.current) {
+      clearTimeout(controlsTimeoutRef.current);
+    }
+    if (isPlaying && !showSpeedMenu && !showQualityMenu) {
+      controlsTimeoutRef.current = setTimeout(() => {
+        setShowControls(false);
+      }, 2800);
+    }
+  }, [isPlaying, showSpeedMenu, showQualityMenu]);
+
+  useEffect(() => {
+    resetControlsTimer();
+    return () => {
+      if (controlsTimeoutRef.current) clearTimeout(controlsTimeoutRef.current);
+    };
+  }, [isPlaying, showSpeedMenu, showQualityMenu, resetControlsTimer]);
 
   const handleSpeedChange = (spd: number) => {
     setPlaybackSpeed(spd);
     if (videoRef.current) {
       videoRef.current.playbackRate = spd;
     }
-    // Cross-origin speed bridge for embedded iframe
     if (iframeRef.current?.contentWindow) {
       try {
         iframeRef.current.contentWindow.postMessage({ type: 'setPlaybackRate', rate: spd }, '*');
       } catch {}
     }
     setShowSpeedMenu(false);
+    resetControlsTimer();
   };
 
   // Determine active URL from servers array or fallback
@@ -107,7 +225,7 @@ export const VideoPlayer: React.FC<VideoPlayerProps> = ({
   const isYouTubeUrl = activeUrl.includes('youtube.') || activeUrl.includes('youtu.be');
   const isHlsUrl = activeUrl.includes('.m3u8');
 
-  // Proxy streaming for ALBA, ESTE, direct mp4 files
+  // Proxy streaming for ALBA, ESTE, direct mp4 files, Heroku streams
   const isProxyStreamUrl =
     activeUrl.includes('streamvaultpro.cc') ||
     activeUrl.includes('workers.dev') ||
@@ -117,20 +235,17 @@ export const VideoPlayer: React.FC<VideoPlayerProps> = ({
     activeServer?.name?.toUpperCase().includes('ALBA') ||
     activeServer?.name?.toUpperCase().includes('ESTE');
 
-  // ALBA = has streamUrl, or is StreamVault URL. Used for Smart Proxy/Embedded toggle display
   const isAlbaActive =
     activeServer?.name?.toUpperCase().includes('ALBA') ||
     (!activeServer && activeUrl.includes('streamvaultpro.cc')) ||
     Boolean(activeServer?.streamUrl);
 
-  // For YouTube — auto-switch to embedded if currently in proxy (can't proxy YouTube)
   useEffect(() => {
     if (isYouTubeUrl && playerMode === 'proxy') {
       setPlayerMode('embedded');
     }
   }, [isYouTubeUrl, playerMode]);
 
-  // If user switches to ESTE (Publico) or non-ALBA server, force mode to proxy
   useEffect(() => {
     if (!isAlbaActive && !isYouTubeUrl && playerMode === 'embedded') {
       setPlayerMode('proxy');
@@ -139,29 +254,7 @@ export const VideoPlayer: React.FC<VideoPlayerProps> = ({
 
   const needsApiResolution = (isVidmolyUrl || isEarnvidsUrl) && !isHlsUrl;
 
-  // Embedded URL builder
-  const getEmbeddedUrl = (): string => {
-    if (isYouTubeUrl) {
-      const id = activeUrl.match(/(?:v=|youtu\.be\/|live\/)([a-zA-Z0-9_-]{11})/)?.[1];
-      return id ? `https://www.youtube.com/embed/${id}?autoplay=1&rel=0&modestbranding=1` : activeUrl;
-    }
-    if (isVidmolyUrl) {
-      const code = extractVidmolyCode(activeUrl);
-      return code ? `/api/embed?code=${code}&provider=vidmoly` : activeUrl;
-    }
-    if (isEarnvidsUrl) {
-      const code = extractEarnvidsCode(activeUrl);
-      return code ? `/api/embed?code=${code}&provider=earnvids` : activeUrl;
-    }
-    // StreamVault (ALBA): use official embedded stream page via /api/embed proxy
-    if (activeUrl.includes('streamvaultpro.cc') || activeServer?.streamUrl) {
-      const streamUrl = activeServer?.streamUrl || activeUrl.replace('/0:/dl/', '/0:/stream/');
-      return `/api/embed?url=${encodeURIComponent(streamUrl)}`;
-    }
-    return `/api/embed?url=${encodeURIComponent(activeUrl)}`;
-  };
-
-  // Resolve stream URL for Vidmoly/Earnvids via server-side API (for proxy mode)
+  // Resolve stream URL for Vidmoly/Earnvids via cached server-side API
   useEffect(() => {
     if (playerMode !== 'proxy' || !needsApiResolution || !activeUrl) {
       setResolvedStreamUrl(null);
@@ -197,13 +290,15 @@ export const VideoPlayer: React.FC<VideoPlayerProps> = ({
         if (data.streamUrl) {
           setResolvedStreamUrl(data.streamUrl);
         } else {
-          setStreamError(data.error || 'Unable to load video stream');
+          // Seamlessly fallback to direct embed if scraping fails
+          setPlayerMode('embedded');
         }
         setStreamLoading(false);
       })
       .catch((err) => {
         if (err.name !== 'AbortError') {
-          setStreamError('Connection to video stream timed out');
+          // Fallback to embedded if timeout occurs
+          setPlayerMode('embedded');
           setStreamLoading(false);
         }
       });
@@ -230,7 +325,6 @@ export const VideoPlayer: React.FC<VideoPlayerProps> = ({
     setIsPlaying(false);
     setIsBuffering(true);
 
-    // If proxy MP4 stream (ALBA or ESTE), play natively via <video>
     if (isProxyStreamUrl) {
       if (hlsRef.current) {
         hlsRef.current.destroy();
@@ -242,7 +336,6 @@ export const VideoPlayer: React.FC<VideoPlayerProps> = ({
       return;
     }
 
-    // HLS Stream (.m3u8) handling
     const isSafari = typeof navigator !== 'undefined' && /^((?!chrome|android).)*safari/i.test(navigator.userAgent);
 
     if (video.canPlayType('application/vnd.apple.mpegurl') && (isSafari || !Hls.isSupported())) {
@@ -308,12 +401,14 @@ export const VideoPlayer: React.FC<VideoPlayerProps> = ({
     const progressKey = `stutosed_progress_${currentItem.id || currentItem.url}`;
 
     const handleLoadedMetadata = () => {
+      setDuration(video.duration || 0);
       try {
         const saved = localStorage.getItem(progressKey);
         if (saved) {
           const savedTime = parseFloat(saved);
           if (savedTime > 5 && video.duration && savedTime < video.duration - 15) {
             video.currentTime = savedTime;
+            setCurrentTime(savedTime);
           }
         }
       } catch {}
@@ -321,6 +416,14 @@ export const VideoPlayer: React.FC<VideoPlayerProps> = ({
 
     let lastSave = 0;
     const handleTimeUpdate = () => {
+      if (!isDraggingSeek) {
+        setCurrentTime(video.currentTime);
+      }
+      if (video.buffered && video.buffered.length > 0) {
+        try {
+          setBufferedTime(video.buffered.end(video.buffered.length - 1));
+        } catch {}
+      }
       const now = Date.now();
       if (now - lastSave > 2500) {
         lastSave = now;
@@ -339,7 +442,7 @@ export const VideoPlayer: React.FC<VideoPlayerProps> = ({
       video.removeEventListener('loadedmetadata', handleLoadedMetadata);
       video.removeEventListener('timeupdate', handleTimeUpdate);
     };
-  }, [currentItem, videoSourceUrl, playerMode]);
+  }, [currentItem, videoSourceUrl, playerMode, isDraggingSeek]);
 
   // Buffering & Play/Pause listeners
   useEffect(() => {
@@ -350,7 +453,10 @@ export const VideoPlayer: React.FC<VideoPlayerProps> = ({
       setIsPlaying(true);
       setIsBuffering(false);
     };
-    const onPause = () => setIsPlaying(false);
+    const onPause = () => {
+      setIsPlaying(false);
+      setIsBuffering(false);
+    };
     const onWaiting = () => setIsBuffering(true);
     const onLoadStart = () => setIsBuffering(true);
     const onCanPlay = () => setIsBuffering(false);
@@ -379,800 +485,788 @@ export const VideoPlayer: React.FC<VideoPlayerProps> = ({
     };
   }, [videoSourceUrl, playerMode]);
 
-  // Play/pause/skip handlers
+  // Handlers
   const togglePlayPause = useCallback(() => {
-    if (!videoRef.current) return;
-    if (videoRef.current.paused) videoRef.current.play().catch(() => {});
-    else videoRef.current.pause();
-  }, []);
+    const video = videoRef.current;
+    if (!video) return;
+    if (video.paused) {
+      setIsBuffering(true);
+      video.play().then(() => {
+        setIsPlaying(true);
+        setIsBuffering(false);
+      }).catch(() => {
+        setIsPlaying(false);
+        setIsBuffering(false);
+      });
+    } else {
+      video.pause();
+      setIsPlaying(false);
+      setIsBuffering(false);
+    }
+    resetControlsTimer();
+  }, [resetControlsTimer]);
+
+  const triggerSkipFeedback = (direction: 'forward' | 'backward') => {
+    setSkipFeedback(direction);
+    setTimeout(() => setSkipFeedback(null), 600);
+  };
 
   const skipVideo = useCallback((seconds: number) => {
     if (!videoRef.current) return;
     const dur = videoRef.current.duration || 0;
-    videoRef.current.currentTime = Math.max(0, Math.min(dur, videoRef.current.currentTime + seconds));
-  }, []);
+    const newTime = Math.max(0, Math.min(dur, videoRef.current.currentTime + seconds));
+    videoRef.current.currentTime = newTime;
+    setCurrentTime(newTime);
+    triggerSkipFeedback(seconds > 0 ? 'forward' : 'backward');
+    resetControlsTimer();
+  }, [resetControlsTimer]);
 
   const toggleFullscreen = useCallback(() => {
-    const target = containerRef.current || videoRef.current;
+    const target = containerRef.current;
     if (!target) return;
-    if (!document.fullscreenElement) target.requestFullscreen?.();
-    else document.exitFullscreen?.();
-  }, []);
-
-  const togglePiP = useCallback(async () => {
-    if (!videoRef.current) return;
-    try {
-      if (document.pictureInPictureElement) {
-        await document.exitPictureInPicture();
-      } else if (document.pictureInPictureEnabled) {
-        await videoRef.current.requestPictureInPicture();
+    if (!document.fullscreenElement) {
+      if (target.requestFullscreen) {
+        target.requestFullscreen().catch(() => {});
+      } else if ((target as any).webkitRequestFullscreen) {
+        (target as any).webkitRequestFullscreen();
       }
-    } catch {}
+    } else {
+      if (document.exitFullscreen) {
+        document.exitFullscreen().catch(() => {});
+      } else if ((target as any).webkitExitFullscreen) {
+        (target as any).webkitExitFullscreen();
+      }
+    }
   }, []);
 
-  // Keyboard shortcuts (Space, F, Left, Right, Esc)
+  const handleVolumeChange = (newVol: number) => {
+    const clamped = Math.max(0, Math.min(1, newVol));
+    setVolume(clamped);
+    setIsMuted(clamped === 0);
+    if (videoRef.current) {
+      videoRef.current.volume = clamped;
+      videoRef.current.muted = clamped === 0;
+    }
+  };
+
+  const toggleMute = () => {
+    if (!videoRef.current) return;
+    const nextMuted = !isMuted;
+    setIsMuted(nextMuted);
+    videoRef.current.muted = nextMuted;
+    if (!nextMuted && volume === 0) {
+      setVolume(0.8);
+      videoRef.current.volume = 0.8;
+    }
+  };
+
+  // Seekbar scrubbing
+  const handleSeekCommit = (e: React.MouseEvent<HTMLDivElement> | React.TouchEvent<HTMLDivElement>) => {
+    if (!progressBarRef.current || !videoRef.current || !duration) return;
+    const rect = progressBarRef.current.getBoundingClientRect();
+    const clientX = 'touches' in e ? e.touches[0].clientX : e.clientX;
+    const pos = Math.max(0, Math.min(1, (clientX - rect.left) / rect.width));
+    const newTime = pos * duration;
+    setCurrentTime(newTime);
+    videoRef.current.currentTime = newTime;
+    setIsDraggingSeek(false);
+    resetControlsTimer();
+  };
+
+  const handleProgressMouseMove = (e: React.MouseEvent<HTMLDivElement>) => {
+    if (!progressBarRef.current || !duration) return;
+    const rect = progressBarRef.current.getBoundingClientRect();
+    const pos = Math.max(0, Math.min(1, (e.clientX - rect.left) / rect.width));
+    setSeekHoverPos(pos * 100);
+    setSeekHoverTime(pos * duration);
+  };
+
+  // Toggle Bookmark Batch
+  const handleToggleBookmark = () => {
+    if (!courseId) return;
+    const next = toggleCourseBookmark(courseId);
+    setIsBookmarked(next);
+  };
+
+  // Toggle Save Video to Batch Folder
+  const handleToggleSaveVideo = () => {
+    if (!currentItem) return;
+    const next = toggleSaveVideo({
+      id: currentItem.id || currentItem.url,
+      label: currentItem.label,
+      url: currentItem.url,
+      courseId,
+      courseName,
+      courseCategory,
+      subject: subjectName,
+      type: currentItem.type,
+      servers: currentItem.servers,
+      links: currentItem.links,
+    });
+    setIsSaved(next);
+  };
+
+  // Share lecture link
+  const handleShare = () => {
+    if (typeof navigator !== 'undefined' && navigator.clipboard) {
+      navigator.clipboard.writeText(`${window.location.origin}/?course=${courseId}&play=${encodeURIComponent(currentItem.url)}`);
+      setCopiedToast(true);
+      setTimeout(() => setCopiedToast(false), 2000);
+    }
+  };
+
+  // Global keyboard shortcuts
   useEffect(() => {
     const handleKeyDown = (e: KeyboardEvent) => {
-      if ((e.ctrlKey || e.metaKey) && (e.key === 's' || e.key === 'S' || e.key === 'u' || e.key === 'U')) {
-        e.preventDefault();
+      if (['input', 'textarea', 'select'].includes((e.target as HTMLElement)?.tagName?.toLowerCase())) {
         return;
       }
-
-      const tag = (e.target as HTMLElement)?.tagName?.toLowerCase();
-      if (['input', 'textarea', 'select', 'button'].includes(tag)) return;
-      switch (e.key) {
-        case ' ':
-          if (playerMode === 'proxy') {
-            e.preventDefault();
-            togglePlayPause();
-          }
-          break;
-        case 'f':
-        case 'F':
-          e.preventDefault();
-          toggleFullscreen();
-          break;
-        case 'ArrowLeft':
-          if (playerMode === 'proxy') {
-            e.preventDefault();
-            skipVideo(-10);
-          }
-          break;
-        case 'ArrowRight':
-          if (playerMode === 'proxy') {
-            e.preventDefault();
-            skipVideo(10);
-          }
-          break;
-        case 'Escape':
+      if (e.key === ' ' || e.key === 'k' || e.key === 'K') {
+        e.preventDefault();
+        togglePlayPause();
+      } else if (e.key === 'ArrowRight' || e.key === 'l' || e.key === 'L') {
+        e.preventDefault();
+        skipVideo(10);
+      } else if (e.key === 'ArrowLeft' || e.key === 'j' || e.key === 'J') {
+        e.preventDefault();
+        skipVideo(-10);
+      } else if (e.key === 'ArrowUp') {
+        e.preventDefault();
+        handleVolumeChange(volume + 0.1);
+      } else if (e.key === 'ArrowDown') {
+        e.preventDefault();
+        handleVolumeChange(volume - 0.1);
+      } else if (e.key === 'm' || e.key === 'M') {
+        e.preventDefault();
+        toggleMute();
+      } else if (e.key === 'f' || e.key === 'F') {
+        e.preventDefault();
+        toggleFullscreen();
+      } else if (e.key === 'Escape') {
+        if (document.fullscreenElement) {
+          document.exitFullscreen?.();
+        } else {
           onClose();
-          break;
+        }
       }
     };
+
     window.addEventListener('keydown', handleKeyDown);
     return () => window.removeEventListener('keydown', handleKeyDown);
-  }, [togglePlayPause, skipVideo, toggleFullscreen, onClose, playerMode]);
+  }, [togglePlayPause, skipVideo, toggleFullscreen, onClose, volume, isMuted]);
 
-  if (!currentItem) return null;
-
-  const ytId = isYouTubeUrl
-    ? activeUrl.match(/(?:v=|youtu\.be\/|live\/)([a-zA-Z0-9_-]{11})/)?.[1] ?? null
-    : null;
-
-  const showVideo = playerMode === 'proxy' && Boolean(videoSourceUrl);
   const showLoading =
-    isItemChanging ||
-    (playerMode === 'proxy' && (streamLoading || (isBuffering && !isPlaying && !streamError))) ||
+    (playerMode === 'proxy' && (streamLoading || (isBuffering && isPlaying))) ||
     (playerMode === 'embedded' && isEmbedLoading && !isYouTubeUrl);
+
+  const playedPercent = duration > 0 ? (currentTime / duration) * 100 : 0;
+  const bufferedPercent = duration > 0 ? (bufferedTime / duration) * 100 : 0;
 
   return (
     <div
       id="player-modal"
-      className="open"
+      className="open yt-watch-modal-container"
       role="dialog"
       aria-modal="true"
       aria-label="Video Player"
     >
       <div className="player-backdrop" onClick={onClose} />
-      <div className="player-box" ref={containerRef}>
-        {/* TOP BAR */}
-        <div
-          className="player-top-bar"
-          style={{
-            display: 'flex',
-            flexDirection: 'column',
-            gap: '8px',
-            padding: '12px 18px',
-            borderBottom: '1px solid rgba(255,255,255,0.08)',
-            background: 'rgba(0,0,0,0.65)',
-            backdropFilter: 'blur(8px)',
-          }}
-        >
-          {/* ROW 1: Course & Lecture Title + Fixed Close Button (Top-Right) */}
-          <div
-            style={{
-              display: 'flex',
-              alignItems: 'flex-start',
-              justifyContent: 'space-between',
-              gap: '12px',
-              width: '100%',
-            }}
-          >
-            <div style={{ flex: 1, minWidth: 0 }}>
-              <div
-                style={{
-                  fontSize: '11px',
-                  textTransform: 'uppercase',
-                  letterSpacing: '0.6px',
-                  color: 'var(--accent)',
-                  fontWeight: 600,
-                  marginBottom: '2px',
-                }}
-              >
-                {courseName}
-              </div>
-              <div
-                style={{
-                  fontSize: '14px',
-                  fontWeight: 600,
-                  color: '#fff',
-                  lineHeight: '1.35',
-                  wordBreak: 'break-word',
-                }}
-              >
-                {currentItem.label}
-              </div>
-            </div>
 
-            {/* Close Button: Permanently anchored at top-right */}
-            <button
-              onClick={onClose}
-              style={{
-                background: 'rgba(255,255,255,0.08)',
-                border: 'none',
-                color: 'rgba(255,255,255,0.8)',
-                cursor: 'pointer',
-                padding: '6px',
-                borderRadius: '50%',
-                display: 'flex',
-                alignItems: 'center',
-                justifyContent: 'center',
-                width: '32px',
-                height: '32px',
-                minWidth: '32px',
-                minHeight: '32px',
-                flexShrink: 0,
-                transition: 'all 0.2s ease',
-              }}
-              title="Close (Esc)"
-            >
-              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5">
-                <path d="M18 6 6 18M6 6l12 12" />
-              </svg>
-            </button>
+      {/* Main Watch Page Container */}
+      <div className="yt-watch-viewport-wrap">
+        {/* Top Header Navigation Bar */}
+        <header className="yt-watch-top-header">
+          <button className="yt-watch-back-btn" onClick={onClose}>
+            <ArrowLeft width={18} height={18} />
+            <span>Back to Course</span>
+          </button>
+
+          <div className="yt-header-course-info">
+            <span className="yt-header-badge">{courseCategory === 'beu' ? 'BEU Engineering' : 'Govt Exams'}</span>
+            <span className="yt-header-title">{courseName}</span>
           </div>
 
-          {/* ROW 2: Toggles & Bot Switchers Row */}
-          {(servers.length > 1 || isAlbaActive || isYouTubeUrl) && (
+          <div style={{ width: '80px' }} />
+        </header>
+
+        {/* 2-Column YouTube Layout */}
+        <div className="yt-watch-main-layout">
+          {/* ==================== LEFT COLUMN: VIDEO + DETAILS ==================== */}
+          <main className="yt-watch-left-col">
+            {/* The Video Box with Fullscreen & Overlay Controls */}
             <div
-              style={{
-                display: 'flex',
-                alignItems: 'center',
-                gap: '8px',
-                flexWrap: 'wrap',
-                marginTop: '2px',
-              }}
+              className={`player-box ${isFullscreen ? 'is-fullscreen' : ''} ${showControls ? 'controls-visible' : 'controls-hidden'}`}
+              ref={containerRef}
+              onMouseMove={resetControlsTimer}
+              onTouchStart={resetControlsTimer}
+              onMouseEnter={resetControlsTimer}
             >
-              {/* DUAL BOT SWITCHER: ALBA / ESTE */}
-              {servers.length > 0 && (
+              <div className="player-viewport">
+                {/* 1. TOP OVERLAY (Fullscreen & In-Video) */}
                 <div
-                  style={{
-                    display: 'inline-flex',
-                    alignItems: 'center',
-                    gap: '3px',
-                    background: 'rgba(255,255,255,0.08)',
-                    padding: '3px 4px',
-                    borderRadius: '100px',
-                    border: '1px solid rgba(255,255,255,0.12)',
-                  }}
+                  className="player-top-overlay"
+                  onClick={(e) => e.stopPropagation()}
                 >
-                  {servers.length > 1 ? (
-                    servers.map((srv, idx) => {
-                      const cleanName = srv.name.replace(/^[^\w]+/, '').trim();
-                      const isSelected = selectedServerIndex === idx;
-                      return (
+                  <div className="player-title-block">
+                    <div className="player-course-chip">{courseName}</div>
+                    <h2 className="player-lecture-heading" title={currentItem.label}>
+                      {currentItem.label}
+                    </h2>
+                  </div>
+
+                  <div className="player-top-actions">
+                    {/* Server switchers */}
+                    {servers.length > 1 && (
+                      <div className="player-server-group">
+                        {servers.map((srv, idx) => (
+                          <button
+                            key={idx}
+                            className={`server-pill-btn ${idx === selectedServerIndex ? 'active' : ''}`}
+                            onClick={() => {
+                              setSelectedServerIndex(idx);
+                              setStreamError(null);
+                              resetControlsTimer();
+                            }}
+                          >
+                            {srv.name?.replace(/^[^\w]+/, '').trim() || `Server ${idx + 1}`}
+                          </button>
+                        ))}
+                      </div>
+                    )}
+
+                    {/* Mode Toggle */}
+                    {(isAlbaActive || isVidmolyUrl || isEarnvidsUrl || isProxyStreamUrl) && !isYouTubeUrl && (
+                      <div className="player-mode-group">
                         <button
-                          key={idx}
+                          className={`mode-toggle-btn ${playerMode === 'proxy' ? 'active' : ''}`}
                           onClick={() => {
-                            setSelectedServerIndex(idx);
-                            setResolvedStreamUrl(null);
-                            setStreamError(null);
-                          }}
-                          style={{
-                            padding: '4px 12px',
-                            fontSize: '11px',
-                            fontWeight: 700,
-                            borderRadius: '100px',
-                            border: 'none',
-                            background: isSelected ? 'var(--accent)' : 'transparent',
-                            color: isSelected ? '#fff' : 'rgba(255,255,255,0.7)',
-                            cursor: 'pointer',
-                            transition: 'all 0.2s ease',
-                            minHeight: '26px',
+                            setPlayerMode('proxy');
+                            resetControlsTimer();
                           }}
                         >
-                          {cleanName}
+                          Smart Proxy
                         </button>
-                      );
-                    })
-                  ) : (
-                    <span
-                      style={{
-                        padding: '4px 12px',
-                        fontSize: '11px',
-                        fontWeight: 700,
-                        borderRadius: '100px',
-                        background: 'var(--accent)',
-                        color: '#fff',
-                        minHeight: '26px',
-                        display: 'inline-flex',
-                        alignItems: 'center',
-                      }}
-                    >
-                      {servers[0]?.name?.replace(/^[^\w]+/, '').trim() || 'ALBA'}
-                    </span>
-                  )}
-                </div>
-              )}
+                        <button
+                          className={`mode-toggle-btn ${playerMode === 'embedded' ? 'active' : ''}`}
+                          onClick={() => {
+                            setPlayerMode('embedded');
+                            resetControlsTimer();
+                          }}
+                        >
+                          Embedded
+                        </button>
+                      </div>
+                    )}
 
-              {/* PLAYER MODE TOGGLE: Smart Proxy / Embedded */}
-              {(isAlbaActive || isYouTubeUrl) && (
-                <div
-                  style={{
-                    display: 'inline-flex',
-                    alignItems: 'center',
-                    gap: '3px',
-                    background: 'rgba(255,255,255,0.08)',
-                    padding: '3px 4px',
-                    borderRadius: '100px',
-                    border: '1px solid rgba(255,255,255,0.12)',
-                  }}
-                >
-                  {!isYouTubeUrl && (
+                    {/* Close / Exit Fullscreen Button */}
                     <button
+                      className="player-overlay-close-btn"
                       onClick={() => {
-                        setPlayerMode('proxy');
-                        try {
-                          localStorage.setItem('stutosed_preferred_player_mode', 'proxy');
-                        } catch {}
+                        if (document.fullscreenElement) {
+                          document.exitFullscreen?.();
+                        } else {
+                          onClose();
+                        }
                       }}
-                      style={{
-                        padding: '4px 11px',
-                        fontSize: '11px',
-                        fontWeight: 700,
-                        borderRadius: '100px',
-                        border: 'none',
-                        background: playerMode === 'proxy' ? 'var(--accent)' : 'transparent',
-                        color: playerMode === 'proxy' ? '#fff' : 'rgba(255,255,255,0.7)',
-                        cursor: 'pointer',
-                        transition: 'all 0.2s ease',
-                        minHeight: '26px',
-                      }}
-                      title="Smart Proxy streaming mode"
+                      title="Close"
                     >
-                      Smart Proxy
+                      ✕
                     </button>
+                  </div>
+                </div>
+
+                {/* 2. CENTER OVERLAY (Frosted Glass Play + Static Skip Arrows) */}
+                <div className="player-center-overlay">
+                  {playerMode === 'proxy' && (
+                    <>
+                      <button
+                        className="player-center-skip-arrow backward"
+                        onClick={(e) => {
+                          e.stopPropagation();
+                          skipVideo(-10);
+                        }}
+                        style={{ opacity: showLoading ? 0 : 1, pointerEvents: showLoading ? 'none' : 'auto' }}
+                        title="Backward 10s"
+                      >
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
+                          <polyline points="11 17 6 12 11 7" />
+                          <polyline points="18 17 13 12 18 7" />
+                        </svg>
+                        <span className="skip-hint">10s</span>
+                      </button>
+
+                      {/* Glass Play/Pause button — becomes a spinner when buffering */}
+                      <button
+                        className={`player-center-glass-play${showLoading ? ' is-loading' : ''}`}
+                        onClick={(e) => {
+                          e.stopPropagation();
+                          togglePlayPause();
+                        }}
+                        title={showLoading ? 'Loading stream…' : 'Play / Pause (Space)'}
+                        style={{ cursor: 'pointer' }}
+                      >
+                        {showLoading ? (
+                          <svg className="center-spinner-svg" width="28" height="28" viewBox="0 0 28 28" fill="none">
+                            <circle cx="14" cy="14" r="11" stroke="rgba(255,255,255,0.2)" strokeWidth="2.5" />
+                            <circle
+                              cx="14" cy="14" r="11"
+                              stroke="currentColor"
+                              strokeWidth="2.5"
+                              strokeLinecap="round"
+                              strokeDasharray="20 50"
+                              style={{ transformOrigin: 'center', animation: 'centerSpinnerRotate 0.85s linear infinite' }}
+                            />
+                          </svg>
+                        ) : isPlaying ? (
+                          <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                            <rect x="6" y="4" width="4" height="16" rx="1.5" />
+                            <rect x="14" y="4" width="4" height="16" rx="1.5" />
+                          </svg>
+                        ) : (
+                          <svg width="26" height="26" viewBox="0 0 24 24" fill="currentColor" style={{ transform: 'translateX(2px)' }}>
+                            <polygon points="6,4 20,12 6,20" />
+                          </svg>
+                        )}
+                      </button>
+
+                      <button
+                        className="player-center-skip-arrow forward"
+                        onClick={(e) => {
+                          e.stopPropagation();
+                          skipVideo(10);
+                        }}
+                        style={{ opacity: showLoading ? 0 : 1, pointerEvents: showLoading ? 'none' : 'auto' }}
+                        title="Forward 10s"
+                      >
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
+                          <polyline points="13 17 18 12 13 7" />
+                          <polyline points="6 17 11 12 6 7" />
+                        </svg>
+                        <span className="skip-hint">10s</span>
+                      </button>
+                    </>
                   )}
-                  <button
-                    onClick={() => {
-                      setPlayerMode('embedded');
-                      try {
-                        localStorage.setItem('stutosed_preferred_player_mode', 'embedded');
-                      } catch {}
-                    }}
-                    style={{
-                      padding: '4px 11px',
-                      fontSize: '11px',
-                      fontWeight: 700,
-                      borderRadius: '100px',
-                      border: 'none',
-                      background: playerMode === 'embedded' ? 'var(--accent)' : 'transparent',
-                      color: playerMode === 'embedded' ? '#fff' : 'rgba(255,255,255,0.7)',
-                      cursor: 'pointer',
-                      transition: 'all 0.2s ease',
-                      minHeight: '26px',
-                    }}
-                    title="Direct video stream mode"
-                  >
-                    {isYouTubeUrl ? 'YouTube' : 'Embedded'}
-                  </button>
                 </div>
-              )}
-            </div>
-          )}
-        </div>
 
-        {/* PLAYER SCREEN */}
-        <div
-          style={{
-            width: '100%',
-            aspectRatio: '16/9',
-            background: '#000',
-            position: 'relative',
-            display: 'flex',
-            alignItems: 'center',
-            justifyContent: 'center',
-            overflow: 'hidden',
-          }}
-        >
-          {/* Buffering overlay for Smart Proxy */}
-          {showLoading && (
-            <div
-              style={{
-                position: 'absolute',
-                zIndex: 8,
-                display: 'flex',
-                flexDirection: 'column',
-                alignItems: 'center',
-                gap: '12px',
-                color: '#fff',
-                background: 'rgba(0,0,0,0.4)',
-                padding: '16px 24px',
-                borderRadius: '12px',
-                backdropFilter: 'blur(4px)',
-              }}
-            >
-              <div
-                style={{
-                  width: '38px',
-                  height: '38px',
-                  border: '3px solid rgba(255,255,255,0.2)',
-                  borderTopColor: 'var(--accent)',
-                  borderRadius: '50%',
-                  animation: 'spin 0.8s linear infinite',
-                }}
-              />
-              <span style={{ fontSize: '12px', color: 'rgba(255,255,255,0.9)', fontWeight: 500 }}>
-                Buffering media…
-              </span>
-            </div>
-          )}
-
-          {/* Stream Error View */}
-          {streamError && !showLoading && playerMode === 'proxy' && (
-            <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', gap: '10px', color: '#ff6b6b', padding: '20px', textAlign: 'center', zIndex: 9 }}>
-              <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
-                <circle cx="12" cy="12" r="10" />
-                <line x1="12" y1="8" x2="12" y2="12" />
-                <line x1="12" y1="16" x2="12.01" y2="16" />
-              </svg>
-              <span style={{ fontSize: '14px', fontWeight: 600 }}>{streamError}</span>
-              <div style={{ display: 'flex', gap: '8px', marginTop: '8px' }}>
-                <button
-                  onClick={() => setPlayerMode('embedded')}
-                  style={{
-                    padding: '8px 16px',
-                    background: 'var(--accent)',
-                    color: '#fff',
-                    border: 'none',
-                    borderRadius: '20px',
-                    fontSize: '12px',
-                    fontWeight: 700,
-                    cursor: 'pointer',
-                  }}
-                >
-                  Try Embedded Mode
-                </button>
-                {servers.length > 1 && (
-                  <button
-                    onClick={() => setSelectedServerIndex((prev) => (prev === 0 ? 1 : 0))}
-                    style={{
-                      padding: '8px 16px',
-                      background: 'rgba(255,255,255,0.15)',
-                      color: '#fff',
-                      border: 'none',
-                      borderRadius: '20px',
-                      fontSize: '12px',
-                      fontWeight: 700,
-                      cursor: 'pointer',
-                    }}
-                  >
-                    Switch to {servers[selectedServerIndex === 0 ? 1 : 0]?.name.replace(/^[^\w]+/, '').trim()}
-                  </button>
+                {/* Double-tap indicator */}
+                {skipFeedback && (
+                  <div className={`player-skip-indicator ${skipFeedback}`}>
+                    {skipFeedback === 'backward' ? '-10s' : '+10s'}
+                  </div>
                 )}
-              </div>
-            </div>
-          )}
 
-          {/* MODE 1: SMART PROXY (HTML5 Custom Video) */}
-          {playerMode === 'proxy' && showVideo && (
-            <>
-              <video
-                ref={videoRef}
-                controls
-                controlsList="nodownload"
-                disablePictureInPicture={false}
-                playsInline
-                preload="metadata"
-                style={{ position: 'absolute', inset: 0, width: '100%', height: '100%', background: '#000' }}
-              />
-
-              {/* Tap to Play overlay for mobile */}
-              {!isPlaying && !showLoading && !streamError && (
-                <div
-                  onClick={togglePlayPause}
-                  style={{
-                    position: 'absolute',
-                    inset: 0,
-                    display: 'flex',
-                    flexDirection: 'column',
-                    alignItems: 'center',
-                    justifyContent: 'center',
-                    background: 'rgba(0, 0, 0, 0.45)',
-                    cursor: 'pointer',
-                    zIndex: 10,
-                    gap: '10px',
-                  }}
-                >
-                  <div
-                    style={{
-                      width: '62px',
-                      height: '62px',
-                      borderRadius: '50%',
-                      background: 'var(--accent)',
-                      color: '#ffffff',
-                      display: 'flex',
-                      alignItems: 'center',
-                      justifyContent: 'center',
-                      boxShadow: '0 0 30px rgba(204, 120, 92, 0.65)',
-                      transition: 'transform 0.2s ease',
-                    }}
-                  >
-                    <svg width="26" height="26" viewBox="0 0 24 24" fill="currentColor" style={{ marginLeft: '3px' }}>
-                      <polygon points="5,3 19,12 5,21" />
-                    </svg>
-                  </div>
-                  <span style={{ color: '#fff', fontSize: '13px', fontWeight: 600, textShadow: '0 2px 4px rgba(0,0,0,0.8)' }}>
-                    Tap to Play
-                  </span>
-                </div>
-              )}
-            </>
-          )}
-
-          {/* MODE 2: EMBEDDED (YouTube direct card or ALBA direct MP4) */}
-          {playerMode === 'embedded' && (() => {
-            // YouTube: direct YouTube player action card to prevent iframe refresh/embedding bugs
-            if (isYouTubeUrl) {
-              const youtubeWatchUrl = activeUrl.startsWith('http')
-                ? activeUrl
-                : ytId
-                ? `https://www.youtube.com/watch?v=${ytId}`
-                : activeUrl;
-              return (
-                <div
-                  style={{
-                    position: 'absolute',
-                    inset: 0,
-                    width: '100%',
-                    height: '100%',
-                    background: '#0d0d11',
-                    display: 'flex',
-                    flexDirection: 'column',
-                    alignItems: 'center',
-                    justifyContent: 'center',
-                    padding: '24px',
-                    textAlign: 'center',
-                    gap: '14px',
-                    zIndex: 4,
-                  }}
-                >
-                  <div
-                    style={{
-                      width: '60px',
-                      height: '60px',
-                      borderRadius: '50%',
-                      background: 'rgba(255, 0, 0, 0.15)',
-                      color: '#ff4444',
-                      display: 'flex',
-                      alignItems: 'center',
-                      justifyContent: 'center',
-                    }}
-                  >
-                    <svg width="34" height="34" viewBox="0 0 24 24" fill="currentColor">
-                      <path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/>
-                    </svg>
-                  </div>
-                  <div>
-                    <h3 style={{ fontSize: '17px', fontWeight: 700, color: '#fff', margin: '0 0 4px' }}>
-                      YouTube Video Lecture
-                    </h3>
-                    <p style={{ fontSize: '13px', color: 'rgba(255,255,255,0.7)', margin: 0, maxWidth: '400px' }}>
-                      This video is hosted on YouTube. Tap below to watch directly with zero buffering or embed restrictions.
-                    </p>
-                  </div>
-                  <a
-                    href={youtubeWatchUrl}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    style={{
-                      display: 'inline-flex',
-                      alignItems: 'center',
-                      gap: '8px',
-                      padding: '10px 22px',
-                      background: '#ff0000',
-                      color: '#ffffff',
-                      borderRadius: '100px',
-                      fontSize: '13px',
-                      fontWeight: 700,
-                      textDecoration: 'none',
-                      boxShadow: '0 4px 15px rgba(255,0,0,0.35)',
-                      marginTop: '4px',
-                    }}
-                  >
-                    <span>Open on YouTube</span>
-                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5">
-                      <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6M15 3h6v6M10 14L21 3" />
-                    </svg>
-                  </a>
-                </div>
-              );
-            }
-            // ALBA / Direct video: pick best download URL
-            const directUrl =
-              activeServer?.downloadUrl ||
-              (activeUrl.includes('/0:/stream/')
-                ? activeUrl.replace('/0:/stream/', '/0:/dl/')
-                : activeUrl);
-            return (
-              <video
-                controls
-                controlsList="nodownload"
-                playsInline
-                preload="metadata"
-                src={directUrl}
-                onLoadedMetadata={() => setIsEmbedLoading(false)}
-                onCanPlay={() => setIsEmbedLoading(false)}
-                onError={() => {
-                  // Auto-fallback to Smart Proxy if direct embed fails
-                  setPlayerMode('proxy');
-                  setStreamError('Direct embed failed — switched to Smart Proxy');
-                }}
-                style={{
-                  position: 'absolute',
-                  inset: 0,
-                  width: '100%',
-                  height: '100%',
-                  border: 'none',
-                  background: '#000',
-                }}
-                title={currentItem.label}
-              />
-            );
-          })()}
-        </div>
-
-        {/* CONTROLS BAR */}
-        <div className="player-controls" style={{ minHeight: '52px' }}>
-          <button
-            className="player-nav-btn"
-            disabled={currentIndex === 0}
-            onClick={() => onNavigate(currentIndex - 1)}
-            title="Previous (←)"
-          >
-            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5">
-              <path d="M19 12H5M12 19l-7-7 7-7" />
-            </svg>
-            <span className="ctrl-label">Prev</span>
-          </button>
-
-          {playerMode === 'proxy' && (
-            <>
-              <button className="player-nav-btn player-skip-btn" onClick={() => skipVideo(-10)} title="-10s">
-                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
-                  <path d="M11 17l-5-5 5-5" />
-                  <path d="M18 17l-5-5 5-5" />
-                </svg>
-                <span className="ctrl-label">10s</span>
-              </button>
-
-              <button className="player-nav-btn player-play-btn" onClick={togglePlayPause} title="Play/Pause (Space)">
-                {isPlaying ? (
-                  <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
-                    <rect x="6" y="4" width="4" height="16" />
-                    <rect x="14" y="4" width="4" height="16" />
-                  </svg>
+                {/* Video Media Canvas */}
+                {playerMode === 'proxy' ? (
+                  <video
+                    ref={videoRef}
+                    playsInline
+                    preload="metadata"
+                    className="player-native-video"
+                    title={currentItem.label}
+                    onClick={togglePlayPause}
+                  />
                 ) : (
-                  <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
-                    <polygon points="5,3 19,12 5,21" />
-                  </svg>
+                  (() => {
+                    if (isYouTubeUrl) {
+                      const ytId = activeUrl.match(/(?:v=|youtu\.be\/|live\/)([a-zA-Z0-9_-]{11})/)?.[1];
+                      const youtubeWatchUrl = ytId
+                        ? `https://www.youtube.com/watch?v=${ytId}`
+                        : activeUrl;
+                      return (
+                        <div className="player-youtube-card">
+                          <div className="yt-icon-wrapper">
+                            <Play width={28} height={28} fill="currentColor" />
+                          </div>
+                          <h3>YouTube Video Lecture</h3>
+                          <p>This video is hosted on YouTube. Watch directly for 100% native quality & zero buffering.</p>
+                          <a href={youtubeWatchUrl} target="_blank" rel="noopener noreferrer" className="yt-open-link">
+                            <span>Open on YouTube</span>
+                          </a>
+                        </div>
+                      );
+                    }
+
+                    const directUrl =
+                      activeServer?.downloadUrl ||
+                      (activeUrl.includes('/0:/stream/')
+                        ? activeUrl.replace('/0:/stream/', '/0:/dl/')
+                        : activeUrl);
+
+                    return (
+                      <video
+                        controls
+                        controlsList="nodownload"
+                        playsInline
+                        preload="metadata"
+                        src={directUrl}
+                        className="player-native-video"
+                        title={currentItem.label}
+                      />
+                    );
+                  })()
                 )}
-              </button>
 
-              <button className="player-nav-btn player-skip-btn" onClick={() => skipVideo(10)} title="+10s">
-                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
-                  <path d="M13 17l5-5-5-5" />
-                  <path d="M6 17l5-5-5-5" />
-                </svg>
-                <span className="ctrl-label">10s</span>
-              </button>
-            </>
-          )}
-
-          {qualities.length > 0 && playerMode === 'proxy' && (
-            <div style={{ position: 'relative' }}>
-              <button className="player-nav-btn" onClick={() => setShowQualityMenu((q) => !q)}>
-                {currentQuality === -1 ? 'Auto' : `${qualities[currentQuality]?.height}p`}
-              </button>
-              {showQualityMenu && (
+                {/* 3. BOTTOM FLOATING OVERLAY (Seekbar, Controls & In-Fullscreen Speed Menu) */}
                 <div
-                  style={{
-                    position: 'absolute',
-                    bottom: '100%',
-                    left: '50%',
-                    transform: 'translateX(-50%)',
-                    background: 'var(--bg-card)',
-                    border: '1px solid var(--border)',
-                    borderRadius: 'var(--r-md)',
-                    padding: '8px',
-                    marginBottom: '8px',
-                    zIndex: 100,
-                    minWidth: '90px',
-                  }}
+                  className="player-bottom-overlay"
+                  onClick={(e) => e.stopPropagation()}
                 >
-                  <button
-                    className="quality-opt"
-                    style={{
-                      display: 'block',
-                      width: '100%',
-                      padding: '5px 10px',
-                      textAlign: 'left',
-                      fontSize: '12px',
-                    }}
-                    onClick={() => {
-                      if (hlsRef.current) hlsRef.current.currentLevel = -1;
-                      setCurrentQuality(-1);
-                      setShowQualityMenu(false);
-                    }}
-                  >
-                    Auto
-                  </button>
-                  {qualities.map((q) => (
-                    <button
-                      key={q.index}
-                      className="quality-opt"
-                      style={{
-                        display: 'block',
-                        width: '100%',
-                        padding: '5px 10px',
-                        textAlign: 'left',
-                        fontSize: '12px',
-                      }}
-                      onClick={() => {
-                        if (hlsRef.current) hlsRef.current.currentLevel = q.index;
-                        setCurrentQuality(q.index);
-                        setShowQualityMenu(false);
-                      }}
+                  {/* Seekbar */}
+                  {playerMode === 'proxy' && (
+                    <div
+                      className="player-seekbar-container"
+                      ref={progressBarRef}
+                      onClick={handleSeekCommit}
+                      onMouseMove={handleProgressMouseMove}
+                      onMouseLeave={() => setSeekHoverTime(null)}
                     >
-                      {q.height}p
-                    </button>
-                  ))}
-                </div>
-              )}
-            </div>
-          )}
+                      {seekHoverTime !== null && (
+                        <div
+                          className="player-seekbar-tooltip"
+                          style={{ left: `${seekHoverPos}%` }}
+                        >
+                          {formatTime(seekHoverTime)}
+                        </div>
+                      )}
+                      <div className="player-seekbar-track">
+                        <div className="player-seekbar-buffered" style={{ width: `${Math.min(100, bufferedPercent)}%` }} />
+                        <div className="player-seekbar-played" style={{ width: `${Math.min(100, playedPercent)}%` }} />
+                        <div className="player-seekbar-thumb" style={{ left: `${Math.min(100, playedPercent)}%` }} />
+                      </div>
+                    </div>
+                  )}
 
-          {/* SPEED CONTROLLER (Works in both Smart Proxy & Embedded) */}
-          <div style={{ position: 'relative' }}>
-            <button
-              className="player-nav-btn"
-              onClick={() => {
-                setShowSpeedMenu((s) => !s);
-                setShowQualityMenu(false);
-              }}
-              title="Playback Speed"
-              style={{ fontWeight: 700, minWidth: '44px' }}
-            >
-              {playbackSpeed === 1 ? '1x' : `${playbackSpeed}x`}
-            </button>
-            {showSpeedMenu && (
-              <div
-                style={{
-                  position: 'absolute',
-                  bottom: '100%',
-                  left: '50%',
-                  transform: 'translateX(-50%)',
-                  background: 'var(--bg-card)',
-                  border: '1px solid var(--border)',
-                  borderRadius: 'var(--r-md)',
-                  padding: '6px',
-                  marginBottom: '8px',
-                  zIndex: 100,
-                  minWidth: '96px',
-                  maxHeight: '220px',
-                  overflowY: 'auto',
-                  boxShadow: '0 8px 24px rgba(0,0,0,0.35)',
-                }}
-              >
-                <div
-                  style={{
-                    fontSize: '10px',
-                    textTransform: 'uppercase',
-                    color: 'var(--text-muted)',
-                    fontWeight: 700,
-                    padding: '4px 8px',
-                    letterSpacing: '0.5px',
-                  }}
-                >
-                  Speed
+                  {/* Dock */}
+                  <div className="player-controls-dock">
+                    <div className="dock-group-left">
+                      <button
+                        className="dock-ctrl-btn"
+                        disabled={currentIndex === 0}
+                        onClick={() => onNavigate(currentIndex - 1)}
+                        title="Previous Lecture"
+                      >
+                        <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5">
+                          <polygon points="19 20 9 12 19 4 19 20" />
+                          <line x1="5" y1="19" x2="5" y2="5" />
+                        </svg>
+                      </button>
+
+                      {playerMode === 'proxy' && (
+                        <button
+                          className="dock-ctrl-btn dock-play-btn"
+                          onClick={togglePlayPause}
+                          title="Play / Pause"
+                        >
+                          {isPlaying ? (
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+                              <rect x="6" y="4" width="4" height="16" rx="1" />
+                              <rect x="14" y="4" width="4" height="16" rx="1" />
+                            </svg>
+                          ) : (
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" style={{ transform: 'translateX(1px)' }}>
+                              <polygon points="5,3 19,12 5,21" />
+                            </svg>
+                          )}
+                        </button>
+                      )}
+
+                      <button
+                        className="dock-ctrl-btn"
+                        disabled={currentIndex >= playlist.length - 1}
+                        onClick={() => onNavigate(currentIndex + 1)}
+                        title="Next Lecture"
+                      >
+                        <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5">
+                          <polygon points="5 4 15 12 5 20 5 4" />
+                          <line x1="19" y1="5" x2="19" y2="19" />
+                        </svg>
+                      </button>
+
+                      {/* Volume Slider */}
+                      {playerMode === 'proxy' && (
+                        <div
+                          className="dock-volume-box"
+                          onMouseEnter={() => setShowVolumeSlider(true)}
+                          onMouseLeave={() => setShowVolumeSlider(false)}
+                        >
+                          <button className="dock-ctrl-btn" onClick={toggleMute} title="Mute/Unmute">
+                            {isMuted || volume === 0 ? <VolumeX width={16} height={16} /> : <Volume2 width={16} height={16} />}
+                          </button>
+                          <div className={`dock-volume-slider-wrap ${showVolumeSlider ? 'visible' : ''}`}>
+                            <input
+                              type="range"
+                              min="0"
+                              max="1"
+                              step="0.05"
+                              value={isMuted ? 0 : volume}
+                              onChange={(e) => handleVolumeChange(parseFloat(e.target.value))}
+                              className="dock-volume-slider"
+                            />
+                          </div>
+                        </div>
+                      )}
+
+                      {/* Time */}
+                      {playerMode === 'proxy' && (
+                        <div className="dock-time-display">
+                          <span className="current-time">{formatTime(currentTime)}</span>
+                          <span className="divider">/</span>
+                          <span className="total-time">{formatTime(duration)}</span>
+                        </div>
+                      )}
+                    </div>
+
+                    <div className="dock-group-right">
+                      {/* Quality */}
+                      {qualities.length > 0 && playerMode === 'proxy' && (
+                        <div style={{ position: 'relative' }}>
+                          <button
+                            className="dock-ctrl-btn quality-chip-btn"
+                            onClick={() => {
+                              setShowQualityMenu((q) => !q);
+                              setShowSpeedMenu(false);
+                            }}
+                          >
+                            <span>{currentQuality === -1 ? 'Auto' : `${qualities[currentQuality]?.height}p`}</span>
+                          </button>
+                          {showQualityMenu && (
+                            <div className="player-floating-menu">
+                              <div className="menu-header">Quality</div>
+                              <button
+                                className={`menu-item ${currentQuality === -1 ? 'active' : ''}`}
+                                onClick={() => {
+                                  if (hlsRef.current) hlsRef.current.currentLevel = -1;
+                                  setCurrentQuality(-1);
+                                  setShowQualityMenu(false);
+                                }}
+                              >
+                                <span>Auto</span>
+                                {currentQuality === -1 && <span>✓</span>}
+                              </button>
+                              {qualities.map((q) => (
+                                <button
+                                  key={q.index}
+                                  className={`menu-item ${currentQuality === q.index ? 'active' : ''}`}
+                                  onClick={() => {
+                                    if (hlsRef.current) hlsRef.current.currentLevel = q.index;
+                                    setCurrentQuality(q.index);
+                                    setShowQualityMenu(false);
+                                  }}
+                                >
+                                  <span>{q.height}p</span>
+                                  {currentQuality === q.index && <span>✓</span>}
+                                </button>
+                              ))}
+                            </div>
+                          )}
+                        </div>
+                      )}
+
+                      {/* Speed Chip & Menu (Works seamlessly inside Fullscreen) */}
+                      <div style={{ position: 'relative' }}>
+                        <button
+                          className="dock-ctrl-btn speed-chip-btn"
+                          onClick={() => {
+                            setShowSpeedMenu((s) => !s);
+                            setShowQualityMenu(false);
+                          }}
+                        >
+                          <span>{playbackSpeed === 1 ? '1x' : `${playbackSpeed}x`}</span>
+                        </button>
+                        {showSpeedMenu && (
+                          <div className="player-floating-menu">
+                            <div className="menu-header">Playback Speed</div>
+                            {speedOptions.map((spd) => (
+                              <button
+                                key={spd}
+                                className={`menu-item ${playbackSpeed === spd ? 'active' : ''}`}
+                                onClick={() => handleSpeedChange(spd)}
+                              >
+                                <span>{spd === 1 ? '1x Normal' : `${spd}x`}</span>
+                                {playbackSpeed === spd && <span style={{ color: 'var(--accent)' }}>✓</span>}
+                              </button>
+                            ))}
+                          </div>
+                        )}
+                      </div>
+
+                      {/* Fullscreen Toggle */}
+                      <button
+                        className="dock-ctrl-btn fullscreen-toggle-btn"
+                        onClick={toggleFullscreen}
+                        title={isFullscreen ? 'Exit Fullscreen (F)' : 'Fullscreen (F)'}
+                      >
+                        {isFullscreen ? <Minimize width={16} height={16} /> : <Maximize width={16} height={16} />}
+                      </button>
+                    </div>
+                  </div>
                 </div>
-                {speedOptions.map((spd) => (
-                  <button
-                    key={spd}
-                    className="quality-opt"
-                    style={{
-                      display: 'block',
-                      width: '100%',
-                      padding: '6px 10px',
-                      textAlign: 'left',
-                      fontSize: '12px',
-                      fontWeight: playbackSpeed === spd ? 700 : 500,
-                      color: playbackSpeed === spd ? 'var(--accent)' : 'var(--text)',
-                      background: playbackSpeed === spd ? 'rgba(204,120,92,0.12)' : 'transparent',
-                      borderRadius: 'var(--r-sm)',
-                      border: 'none',
-                      cursor: 'pointer',
-                    }}
-                    onClick={() => handleSpeedChange(spd)}
-                  >
-                    {spd === 1 ? '1x Normal' : `${spd}x`}
-                  </button>
-                ))}
               </div>
-            )}
-          </div>
+            </div>
 
-          {/* Fullscreen */}
-          <button className="player-nav-btn" onClick={toggleFullscreen} title="Fullscreen (F)">
-            <svg
-              width="14"
-              height="14"
-              viewBox="0 0 24 24"
-              fill="none"
-              stroke="currentColor"
-              strokeWidth="2.5"
-              strokeLinecap="round"
-              strokeLinejoin="round"
-            >
-              <polyline points="15 3 21 3 21 9" />
-              <polyline points="9 21 3 21 3 15" />
-              <line x1="21" y1="3" x2="14" y2="10" />
-              <line x1="3" y1="21" x2="10" y2="14" />
-            </svg>
-            <span className="ctrl-label">Fullscreen</span>
-          </button>
+            {/* ==================== YOUTUBE-STYLE INFO BAR & ACTION ROW ==================== */}
+            <div className="yt-watch-info-bar">
+              {/* Lecture Title & Index */}
+              <div className="yt-watch-title-row">
+                <div className="yt-title-meta-left">
+                  <div className="yt-meta-chips">
+                    <span className="yt-chip yt-chip-batch">{courseName}</span>
+                    {subjectName && <span className="yt-chip yt-chip-subject">{subjectName}</span>}
+                    <span className="yt-chip yt-chip-counter">
+                      Lecture {currentIndex + 1} of {playlist.length}
+                    </span>
+                  </div>
+                  <h1 className="yt-lecture-main-title">{currentItem.label}</h1>
+                </div>
+              </div>
 
-          <button
-            className="player-nav-btn"
-            disabled={currentIndex >= playlist.length - 1}
-            onClick={() => onNavigate(currentIndex + 1)}
-            title="Next"
-          >
-            <span className="ctrl-label">Next</span>
-            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5">
-              <path d="M5 12h14M12 5l7 7-7 7" />
-            </svg>
-          </button>
-        </div>
+              {/* YouTube Action Dock: Bookmark Batch, Save Video, Watched, Share */}
+              <div className="yt-action-buttons-dock">
+                {/* 1. Bookmark Full Batch */}
+                {courseId && (
+                  <button
+                    className={`yt-action-pill ${isBookmarked ? 'active' : ''}`}
+                    onClick={handleToggleBookmark}
+                    title="Bookmark Full Course Batch in My Library"
+                  >
+                    {isBookmarked ? (
+                      <BookmarkCheck width={17} height={17} color="var(--accent)" />
+                    ) : (
+                      <Bookmark width={17} height={17} />
+                    )}
+                    <span>{isBookmarked ? 'Batch Bookmarked' : 'Bookmark Batch'}</span>
+                  </button>
+                )}
 
-        <div className="player-progress-bar">
-          <div className="player-progress-track" style={{ width: '100%' }} />
+                {/* 2. Save Video to Batch Folder */}
+                <button
+                  className={`yt-action-pill ${isSaved ? 'active' : ''}`}
+                  onClick={handleToggleSaveVideo}
+                  title="Save this video into its Batch Folder in My Library"
+                >
+                  {isSaved ? (
+                    <FolderHeart width={17} height={17} color="var(--accent)" />
+                  ) : (
+                    <FolderPlus width={17} height={17} />
+                  )}
+                  <span>{isSaved ? 'Saved in Folder' : 'Save Video'}</span>
+                </button>
+
+                {/* 3. Watched Status Indicator */}
+                <div className="yt-action-pill static">
+                  <CheckCircle2 width={17} height={17} color={isWatched ? 'var(--green)' : 'rgba(255,255,255,0.4)'} />
+                  <span>{isWatched ? 'Watched' : 'In Progress'}</span>
+                </div>
+
+                {/* 4. Share Lecture */}
+                <button className="yt-action-pill" onClick={handleShare} title="Share lecture">
+                  <Share2 width={17} height={17} />
+                  <span>{copiedToast ? 'Copied Link!' : 'Share'}</span>
+                </button>
+              </div>
+
+              {/* ==================== EDUCATIONAL TOPIC DESCRIPTION CARD ==================== */}
+              <section className="yt-topic-description-card">
+                <div
+                  className="yt-desc-header"
+                  onClick={() => setIsDescExpanded((prev) => !prev)}
+                >
+                  <div className="yt-desc-header-left">
+                    <div className="yt-desc-icon-circle">
+                      <Sparkles width={16} height={16} color="var(--accent)" />
+                    </div>
+                    <div>
+                      <span className="yt-desc-category-tag">{topicDesc.categoryTag}</span>
+                      <h3 className="yt-desc-title">Topic Overview &amp; Key Concepts</h3>
+                    </div>
+                  </div>
+
+                  <button className="yt-desc-toggle-btn">
+                    <span>{isDescExpanded ? 'Hide Details' : 'Show Details'}</span>
+                    {isDescExpanded ? <ChevronUp width={16} height={16} /> : <ChevronDown width={16} height={16} />}
+                  </button>
+                </div>
+
+                {isDescExpanded && (
+                  <div className="yt-desc-content animate-fade-in">
+                    <p className="yt-desc-overview-p">{topicDesc.overview}</p>
+
+                    <div className="yt-desc-key-points">
+                      <div className="yt-key-points-heading">Core Concepts Covered in this Lecture:</div>
+                      <ul>
+                        {topicDesc.keyPoints.map((pt, i) => (
+                          <li key={i}>{pt}</li>
+                        ))}
+                      </ul>
+                    </div>
+
+                    <div className="yt-desc-exam-tip-box">
+                      <span className="exam-tip-badge">Exam High-Yield Insight</span>
+                      <p className="exam-tip-text">{topicDesc.examTip}</p>
+                    </div>
+                  </div>
+                )}
+              </section>
+            </div>
+          </main>
+
+          {/* ==================== RIGHT COLUMN: PLAYLIST & UP NEXT ==================== */}
+          <aside className="yt-watch-right-col">
+            <div className="yt-playlist-card">
+              <div className="yt-playlist-header">
+                <div className="yt-playlist-header-left">
+                  <ListVideo width={18} height={18} color="var(--accent)" />
+                  <div>
+                    <h3 className="yt-playlist-title">Batch Lecture Queue</h3>
+                    <span className="yt-playlist-sub">
+                      {playlist.length} Lectures • {courseName}
+                    </span>
+                  </div>
+                </div>
+              </div>
+
+              <div className="yt-playlist-items-scroll">
+                {playlist.map((lec, idx) => {
+                  const isCurrent = idx === currentIndex;
+                  return (
+                    <div
+                      key={lec.id || idx}
+                      className={`yt-playlist-item-card ${isCurrent ? 'active' : ''}`}
+                      onClick={() => onNavigate(idx)}
+                    >
+                      <div className="yt-item-idx-wrap">
+                        {isCurrent ? (
+                          <div className="yt-now-playing-wave">
+                            <span />
+                            <span />
+                            <span />
+                          </div>
+                        ) : (
+                          <span className="yt-item-number">{idx + 1}</span>
+                        )}
+                      </div>
+
+                      <div className="yt-item-info">
+                        <div className="yt-item-title">{lec.label}</div>
+                        <div className="yt-item-badge-row">
+                          {isCurrent && <span className="now-playing-tag">NOW PLAYING</span>}
+                          {lec.servers && lec.servers.length > 1 && (
+                            <span className="server-count-tag">{lec.servers.length} Servers</span>
+                          )}
+                        </div>
+                      </div>
+
+                      <button className="yt-item-play-action" title="Play Lecture">
+                        <Play width={13} height={13} fill="currentColor" />
+                      </button>
+                    </div>
+                  );
+                })}
+              </div>
+            </div>
+          </aside>
         </div>
       </div>
-
-      <style>{`
-        @keyframes spin { to { transform: rotate(360deg); } }
-      `}</style>
     </div>
   );
 };

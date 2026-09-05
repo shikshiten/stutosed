@@ -711,7 +711,18 @@ export const CourseModal: React.FC<CourseModalProps> = ({
                             if (isYouTube) {
                               window.open(url, '_blank', 'noopener,noreferrer');
                             } else if (isVideo) {
-                              onPlayVideo([{ label: lec.title, url, type: 'hls' }], 0);
+                              const parmarLectures = course.parmarData?.[activeTabId]?.lectures || [];
+                              const subjectVideoPlaylist: LectureItem[] = parmarLectures
+                                .filter((l) => Boolean(l.links?.url))
+                                .map((l) => ({
+                                  label: l.title,
+                                  url: resolveDirectMediaUrl(l.links.url),
+                                  type: 'hls' as const,
+                                  folderName: activeTabId,
+                                  subject: activeTabId,
+                                }));
+                              const targetIdx = subjectVideoPlaylist.findIndex((item) => item.label === lec.title || item.url === url);
+                              onPlayVideo(subjectVideoPlaylist.length > 0 ? subjectVideoPlaylist : [{ label: lec.title, url, type: 'hls' }], targetIdx !== -1 ? targetIdx : 0);
                             } else {
                               onOpenPdf({ label: `${lec.title} • ${btnLabel}`, url, downloadUrl: url, type: 'pdf' });
                             }
