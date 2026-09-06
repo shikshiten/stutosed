@@ -1523,6 +1523,7 @@ export default function HomePage() {
             ============================================================ */}
         {activeView === 'library' && (
           <LibraryView
+            theme={theme}
             onSelectCourse={handleOpenCourse}
             onPlayVideo={(playlist, index, courseName) => {
               const matchedCourse = INITIAL_COURSES.find((c) => c.name === courseName);

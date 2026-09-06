@@ -639,6 +639,133 @@ export default function WatchClient() {
     setSeekHoverTime(pos * duration);
   };
 
+  // Synchronized state refs for keyboard shortcuts (prevents stale closures)
+  const volumeRef = useRef(volume);
+  volumeRef.current = volume;
+
+  const isMutedRef = useRef(isMuted);
+  isMutedRef.current = isMuted;
+
+  const playbackSpeedRef = useRef(playbackSpeed);
+  playbackSpeedRef.current = playbackSpeed;
+
+  const durationRef = useRef(duration);
+  durationRef.current = duration;
+
+  // Global Keyboard Shortcuts (Space, K, J/L, Arrows, M, F, 0-9, Home/End, </>)
+  useEffect(() => {
+    const handleKeyDown = (e: KeyboardEvent) => {
+      const target = e.target as HTMLElement | null;
+      const activeTag = (target?.tagName || document.activeElement?.tagName)?.toLowerCase();
+      if (
+        activeTag === 'input' ||
+        activeTag === 'textarea' ||
+        activeTag === 'select' ||
+        target?.isContentEditable ||
+        (document.activeElement as HTMLElement)?.isContentEditable
+      ) {
+        return;
+      }
+
+      const key = e.key;
+
+      // 1. Play / Pause: Space or k / K
+      if (key === ' ' || key === 'k' || key === 'K') {
+        e.preventDefault();
+        togglePlayPause();
+        return;
+      }
+
+      // 2. Seeking: Left/Right Arrow or j/l (10s seek)
+      if (key === 'ArrowRight' || key === 'l' || key === 'L') {
+        e.preventDefault();
+        skipVideo(10);
+        return;
+      }
+      if (key === 'ArrowLeft' || key === 'j' || key === 'J') {
+        e.preventDefault();
+        skipVideo(-10);
+        return;
+      }
+
+      // 3. Volume: ArrowUp / ArrowDown (+-5%)
+      if (key === 'ArrowUp') {
+        e.preventDefault();
+        const next = Math.min(1, Math.round((volumeRef.current + 0.05) * 100) / 100);
+        handleVolumeChange(next);
+        return;
+      }
+      if (key === 'ArrowDown') {
+        e.preventDefault();
+        const next = Math.max(0, Math.round((volumeRef.current - 0.05) * 100) / 100);
+        handleVolumeChange(next);
+        return;
+      }
+
+      // 4. Mute / Unmute: m / M
+      if (key === 'm' || key === 'M') {
+        e.preventDefault();
+        toggleMute();
+        return;
+      }
+
+      // 5. Fullscreen: f / F
+      if (key === 'f' || key === 'F') {
+        e.preventDefault();
+        toggleFullscreen();
+        return;
+      }
+
+      // 6. Percent Seek: 0 to 9 (0%, 10%, 20% ... 90%)
+      if (/^[0-9]$/.test(key) && videoRef.current && durationRef.current > 0) {
+        e.preventDefault();
+        const pct = parseInt(key, 10) / 10;
+        const targetTime = durationRef.current * pct;
+        videoRef.current.currentTime = targetTime;
+        setCurrentTime(targetTime);
+        resetControlsTimer();
+        return;
+      }
+
+      // 7. Jump to Beginning / End: Home / End
+      if (key === 'Home' && videoRef.current) {
+        e.preventDefault();
+        videoRef.current.currentTime = 0;
+        setCurrentTime(0);
+        resetControlsTimer();
+        return;
+      }
+      if (key === 'End' && videoRef.current && durationRef.current > 0) {
+        e.preventDefault();
+        videoRef.current.currentTime = durationRef.current;
+        setCurrentTime(durationRef.current);
+        resetControlsTimer();
+        return;
+      }
+
+      // 8. Speed Control: < / > (Shift + , / .)
+      const SPEEDS = [0.5, 0.75, 1, 1.25, 1.5, 1.75, 2];
+      if (key === '>' || (e.shiftKey && key === '.')) {
+        e.preventDefault();
+        const curr = playbackSpeedRef.current;
+        const next = SPEEDS.find((s) => s > curr) ?? SPEEDS[SPEEDS.length - 1];
+        handleSpeedChange(next);
+        return;
+      }
+      if (key === '<' || (e.shiftKey && key === ',')) {
+        e.preventDefault();
+        const curr = playbackSpeedRef.current;
+        const reversed = [...SPEEDS].reverse();
+        const next = reversed.find((s) => s < curr) ?? SPEEDS[0];
+        handleSpeedChange(next);
+        return;
+      }
+    };
+
+    window.addEventListener('keydown', handleKeyDown);
+    return () => window.removeEventListener('keydown', handleKeyDown);
+  }, [togglePlayPause, skipVideo, toggleFullscreen, resetControlsTimer]);
+
   // Switch to another lecture
   const handleSelectLecture = (newIdx: number) => {
     setCurrentIndex(newIdx);

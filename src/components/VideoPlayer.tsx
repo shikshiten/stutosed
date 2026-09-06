@@ -615,34 +615,111 @@ export const VideoPlayer: React.FC<VideoPlayerProps> = ({
     }
   };
 
+  // Synchronized state refs for keyboard shortcuts (prevents stale closures)
+  const volumeRef = useRef(volume);
+  volumeRef.current = volume;
+
+  const isMutedRef = useRef(isMuted);
+  isMutedRef.current = isMuted;
+
+  const playbackSpeedRef = useRef(playbackSpeed);
+  playbackSpeedRef.current = playbackSpeed;
+
+  const durationRef = useRef(duration);
+  durationRef.current = duration;
+
   // Global keyboard shortcuts
   useEffect(() => {
     const handleKeyDown = (e: KeyboardEvent) => {
-      if (['input', 'textarea', 'select'].includes((e.target as HTMLElement)?.tagName?.toLowerCase())) {
+      const target = e.target as HTMLElement | null;
+      const activeTag = (target?.tagName || document.activeElement?.tagName)?.toLowerCase();
+      if (
+        activeTag === 'input' ||
+        activeTag === 'textarea' ||
+        activeTag === 'select' ||
+        target?.isContentEditable ||
+        (document.activeElement as HTMLElement)?.isContentEditable
+      ) {
         return;
       }
-      if (e.key === ' ' || e.key === 'k' || e.key === 'K') {
+
+      const key = e.key;
+
+      if (key === ' ' || key === 'k' || key === 'K') {
         e.preventDefault();
         togglePlayPause();
-      } else if (e.key === 'ArrowRight' || e.key === 'l' || e.key === 'L') {
+        return;
+      }
+      if (key === 'ArrowRight' || key === 'l' || key === 'L') {
         e.preventDefault();
         skipVideo(10);
-      } else if (e.key === 'ArrowLeft' || e.key === 'j' || e.key === 'J') {
+        return;
+      }
+      if (key === 'ArrowLeft' || key === 'j' || key === 'J') {
         e.preventDefault();
         skipVideo(-10);
-      } else if (e.key === 'ArrowUp') {
+        return;
+      }
+      if (key === 'ArrowUp') {
         e.preventDefault();
-        handleVolumeChange(volume + 0.1);
-      } else if (e.key === 'ArrowDown') {
+        handleVolumeChange(Math.min(1, Math.round((volumeRef.current + 0.05) * 100) / 100));
+        return;
+      }
+      if (key === 'ArrowDown') {
         e.preventDefault();
-        handleVolumeChange(volume - 0.1);
-      } else if (e.key === 'm' || e.key === 'M') {
+        handleVolumeChange(Math.max(0, Math.round((volumeRef.current - 0.05) * 100) / 100));
+        return;
+      }
+      if (key === 'm' || key === 'M') {
         e.preventDefault();
         toggleMute();
-      } else if (e.key === 'f' || e.key === 'F') {
+        return;
+      }
+      if (key === 'f' || key === 'F') {
         e.preventDefault();
         toggleFullscreen();
-      } else if (e.key === 'Escape') {
+        return;
+      }
+      if (/^[0-9]$/.test(key) && videoRef.current && durationRef.current > 0) {
+        e.preventDefault();
+        const pct = parseInt(key, 10) / 10;
+        const targetTime = durationRef.current * pct;
+        videoRef.current.currentTime = targetTime;
+        setCurrentTime(targetTime);
+        resetControlsTimer();
+        return;
+      }
+      if (key === 'Home' && videoRef.current) {
+        e.preventDefault();
+        videoRef.current.currentTime = 0;
+        setCurrentTime(0);
+        resetControlsTimer();
+        return;
+      }
+      if (key === 'End' && videoRef.current && durationRef.current > 0) {
+        e.preventDefault();
+        videoRef.current.currentTime = durationRef.current;
+        setCurrentTime(durationRef.current);
+        resetControlsTimer();
+        return;
+      }
+      const SPEEDS = [0.5, 0.75, 1, 1.25, 1.5, 1.75, 2];
+      if (key === '>' || (e.shiftKey && key === '.')) {
+        e.preventDefault();
+        const curr = playbackSpeedRef.current;
+        const next = SPEEDS.find((s) => s > curr) ?? SPEEDS[SPEEDS.length - 1];
+        handleSpeedChange(next);
+        return;
+      }
+      if (key === '<' || (e.shiftKey && key === ',')) {
+        e.preventDefault();
+        const curr = playbackSpeedRef.current;
+        const reversed = [...SPEEDS].reverse();
+        const next = reversed.find((s) => s < curr) ?? SPEEDS[0];
+        handleSpeedChange(next);
+        return;
+      }
+      if (key === 'Escape') {
         if (document.fullscreenElement) {
           document.exitFullscreen?.();
         } else {
@@ -653,7 +730,7 @@ export const VideoPlayer: React.FC<VideoPlayerProps> = ({
 
     window.addEventListener('keydown', handleKeyDown);
     return () => window.removeEventListener('keydown', handleKeyDown);
-  }, [togglePlayPause, skipVideo, toggleFullscreen, onClose, volume, isMuted]);
+  }, [togglePlayPause, skipVideo, toggleFullscreen, onClose, resetControlsTimer]);
 
   const showLoading =
     (playerMode === 'proxy' && (streamLoading || (isBuffering && isPlaying))) ||

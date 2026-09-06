@@ -3,6 +3,7 @@
 import React, { useState, useEffect } from 'react';
 import { Course, LectureItem } from '@/types';
 import { INITIAL_COURSES } from '@/lib/coursesData';
+import { getSubjectThumbnail } from '@/lib/subjectThumbnails';
 import {
   getBookmarkedCourseIds,
   toggleCourseBookmark,
@@ -30,6 +31,7 @@ interface LibraryViewProps {
   onPlayVideo: (playlist: LectureItem[], index: number, courseName: string) => void;
   onBackHome: () => void;
   onExploreCourses: () => void;
+  theme?: 'light' | 'dark';
 }
 
 export const LibraryView: React.FC<LibraryViewProps> = ({
@@ -37,6 +39,7 @@ export const LibraryView: React.FC<LibraryViewProps> = ({
   onPlayVideo,
   onBackHome,
   onExploreCourses,
+  theme,
 }) => {
   const [activeTab, setActiveTab] = useState<'bookmarks' | 'saved-videos'>('saved-videos');
   const [bookmarkedIds, setBookmarkedIds] = useState<string[]>([]);
@@ -263,7 +266,7 @@ export const LibraryView: React.FC<LibraryViewProps> = ({
                   >
                     <div className="bookmarked-card-thumb">
                       <img
-                        src={course.thumb || '/thumbnails/all_course_thumbnail.jpg'}
+                        src={getSubjectThumbnail(course.subject || course.name, course.thumb, course.id, theme)}
                         alt={course.name}
                         className="bookmarked-thumb-img"
                       />

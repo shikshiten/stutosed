@@ -111,7 +111,7 @@ export const CourseGrid: React.FC<CourseGridProps> = ({
           ) : (
             filteredCourses.map((course) => {
               const stats = countCourseStats(course);
-              const thumbUrl = getDynamicThumbnailUrl(course.name, course.subject || 'Comprehensive Course', theme);
+              const thumbUrl = getSubjectThumbnail(course.subject || course.name, course.thumb, course.id, theme);
               return (
                 <div
                   key={course.id}
