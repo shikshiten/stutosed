@@ -36,8 +36,13 @@ export const CourseModal: React.FC<CourseModalProps> = ({
   const [activeMediaFilter, setActiveMediaFilter] = useState<'all' | 'videos' | 'pdfs'>('all');
   const [filterSearch, setFilterSearch] = useState<string>('');
   const [isSearchExpanded, setIsSearchExpanded] = useState<boolean>(false);
-  const [expandedParmarIdx, setExpandedParmarIdx] = useState<number | null>(null);
   const [viewMode, setViewMode] = useState<'list' | 'grid'>('grid');
+  const [visibleLimit, setVisibleLimit] = useState<number>(40);
+
+  // Reset pagination limit when switching filters, tabs, or searching
+  useEffect(() => {
+    setVisibleLimit(40);
+  }, [activeTabId, activeFolderTabId, activeModuleFilter, activeMediaFilter, filterSearch]);
 
   // Load saved view mode preference (defaults to grid)
   useEffect(() => {
@@ -61,7 +66,6 @@ export const CourseModal: React.FC<CourseModalProps> = ({
     if (!course) return;
     setFilterSearch('');
     setIsSearchExpanded(false);
-    setExpandedParmarIdx(null);
     setActiveModuleFilter('All Modules');
 
     if (course.isFolderMode) {
@@ -199,6 +203,28 @@ export const CourseModal: React.FC<CourseModalProps> = ({
         : items;
     }
 
+    if (course.isParmar && course.parmarData) {
+      const parmarLectures = course.parmarData[activeTabId]?.lectures || [];
+      const items: LectureItem[] = parmarLectures.map((lec) => {
+        const videoUrl = lec.links?.url ? resolveDirectMediaUrl(lec.links.url) : '';
+        return {
+          label: lec.title,
+          url: videoUrl,
+          type: 'hls' as const,
+          folderName: activeTabId,
+          subject: activeTabId,
+          links: lec.links,
+        };
+      });
+      return search
+        ? items.filter(
+            (i) =>
+              (i.label || '').toLowerCase().includes(search) ||
+              (i.subject || '').toLowerCase().includes(search)
+          )
+        : items;
+    }
+
     if (course.tabs) {
       const tab = course.tabs.find((t) => t.id === activeTabId);
       const items = tab ? tab.items : [];
@@ -213,6 +239,11 @@ export const CourseModal: React.FC<CourseModalProps> = ({
 
     return [];
   }, [course, activeTabId, activeFolderTabId, activeModuleFilter, activeMediaFilter, filterSearch]);
+
+  // Progressive rendering slice to eliminate DOM freezing on large batches
+  const renderedItems = useMemo(() => {
+    return activeItems.slice(0, visibleLimit);
+  }, [activeItems, visibleLimit]);
 
   if (!course) return null;
   const stats = countCourseStats(course);
@@ -265,16 +296,26 @@ export const CourseModal: React.FC<CourseModalProps> = ({
 
   // Centralized lecture item click handler (direct YouTube open, PDF modal, or video player)
   const handleItemClick = (item: LectureItem, idx: number) => {
-    saveMemory(item.url);
+    if (item.url) {
+      saveMemory(item.url);
+    }
     if (isYouTubeItem(item)) {
       window.open(item.url, '_blank', 'noopener,noreferrer');
       return;
     }
     if (item.type === 'pdf') {
       onOpenPdf(item, activeItems, idx);
-    } else {
-      onPlayVideo(activeItems, idx);
+      return;
     }
+    if (!item.url && item.links) {
+      const firstPdf = item.links.notes_en || item.links.en_pdf || item.links.notes_hi || item.links.hi_pdf || item.links.handwritten;
+      if (firstPdf) {
+        const target = resolveDirectMediaUrl(firstPdf);
+        onOpenPdf({ label: `${item.label} • Notes`, url: target, downloadUrl: target, type: 'pdf' });
+        return;
+      }
+    }
+    onPlayVideo(activeItems, idx);
   };
 
   return (
@@ -669,76 +710,8 @@ export const CourseModal: React.FC<CourseModalProps> = ({
               ))}
             </div>
           </div>
-        ) : course.isParmar && course.parmarData ? (
-          /* CASE 2: PARMAR ACCORDION */
-          <div className="parmar-subj-block">
-            {((course.parmarData[activeTabId] || { lectures: [] }).lectures).map((lec, idx) => {
-              const isOpen = expandedParmarIdx === idx;
-              return (
-                <div key={idx} className={`parmar-lec ${isOpen ? 'open' : ''}`}>
-                  <div
-                    className="parmar-lec-header"
-                    onClick={() => setExpandedParmarIdx(isOpen ? null : idx)}
-                  >
-                    <div className="parmar-lec-name">{lec.title}</div>
-                    <div className="parmar-lec-toggle">▼</div>
-                  </div>
-                  <div className="parmar-lec-links">
-                    {Object.entries(lec.links).map(([k, rawUrl]) => {
-                      const url = resolveDirectMediaUrl(rawUrl);
-                      const isVideo = k === 'url';
-                      const isYouTube = url.includes('youtube.com') || url.includes('youtu.be');
-                      let btnClass = 'plk plk-watch';
-                      if (k === 'en_pdf' || k === 'notes_en') btnClass = 'plk plk-en';
-                      if (k === 'hi_pdf' || k === 'notes_hi') btnClass = 'plk plk-hi';
-                      if (k === 'quiz') btnClass = 'plk plk-quiz';
-                      if (k === 'notes' || k === 'handwritten') btnClass = 'plk plk-dl';
-
-                      let btnLabel = k.replace('_', ' ').toUpperCase();
-                      if (isYouTube) btnLabel = '▶ Open YouTube';
-                      else if (isVideo) btnLabel = '▶ Watch';
-                      else if (k === 'notes_en' || k === 'en_pdf') btnLabel = 'Notes (EN)';
-                      else if (k === 'notes_hi' || k === 'hi_pdf') btnLabel = 'Notes (HI)';
-                      else if (k === 'handwritten') btnLabel = 'Handwritten PDF';
-                      else if (k === 'quiz') btnLabel = 'Quiz (HTML)';
-
-                      return (
-                        <button
-                          key={k}
-                          className={btnClass}
-                          onClick={() => {
-                            saveMemory(url);
-                            if (isYouTube) {
-                              window.open(url, '_blank', 'noopener,noreferrer');
-                            } else if (isVideo) {
-                              const parmarLectures = course.parmarData?.[activeTabId]?.lectures || [];
-                              const subjectVideoPlaylist: LectureItem[] = parmarLectures
-                                .filter((l) => Boolean(l.links?.url))
-                                .map((l) => ({
-                                  label: l.title,
-                                  url: resolveDirectMediaUrl(l.links.url),
-                                  type: 'hls' as const,
-                                  folderName: activeTabId,
-                                  subject: activeTabId,
-                                }));
-                              const targetIdx = subjectVideoPlaylist.findIndex((item) => item.label === lec.title || item.url === url);
-                              onPlayVideo(subjectVideoPlaylist.length > 0 ? subjectVideoPlaylist : [{ label: lec.title, url, type: 'hls' }], targetIdx !== -1 ? targetIdx : 0);
-                            } else {
-                              onOpenPdf({ label: `${lec.title} • ${btnLabel}`, url, downloadUrl: url, type: 'pdf' });
-                            }
-                          }}
-                        >
-                          {btnLabel}
-                        </button>
-                      );
-                    })}
-                  </div>
-                </div>
-              );
-            })}
-          </div>
         ) : (
-          /* CASE 3: VIDEO & RESOURCE LIST / GRID */
+          /* CASE 2: VIDEO & RESOURCE LIST / GRID (UNIVERSAL YT-STYLE FOR ALL COURSES) */
           <div>
             {course.isFolderMode && activeFolderTabId && (
               <div
@@ -787,7 +760,7 @@ export const CourseModal: React.FC<CourseModalProps> = ({
             ) : viewMode === 'grid' ? (
               /* GRID VIEW */
               <div className="lecture-grid-container">
-                {activeItems.map((item, idx) => {
+                {renderedItems.map((item, idx) => {
                   const isWatched = watchedUrls.has(item.url);
                   const isPdf = item.type === 'pdf';
                   const isYt = isYouTubeItem(item);
@@ -928,7 +901,7 @@ export const CourseModal: React.FC<CourseModalProps> = ({
                             fontWeight: 600,
                             color: 'var(--text)',
                             lineHeight: 1.35,
-                            marginBottom: '8px',
+                            marginBottom: '6px',
                             display: '-webkit-box',
                             WebkitLineClamp: 2,
                             WebkitBoxOrient: 'vertical',
@@ -937,6 +910,111 @@ export const CourseModal: React.FC<CourseModalProps> = ({
                         >
                           {item.label}
                         </div>
+
+                        {/* Bot/Parmar Attachment links (Notes EN, Notes HI, Handwritten, Quiz) */}
+                        {item.links && Object.keys(item.links).some((k) => k !== 'url') && (
+                          <div style={{ display: 'flex', flexWrap: 'wrap', gap: '5px', margin: '4px 0 8px' }}>
+                            {(item.links.notes_en || item.links.en_pdf) && (
+                              <button
+                                onClick={(e) => {
+                                  e.stopPropagation();
+                                  const target = resolveDirectMediaUrl(item.links!.notes_en || item.links!.en_pdf);
+                                  onOpenPdf({ label: `${item.label} • Notes (EN)`, url: target, downloadUrl: target, type: 'pdf' });
+                                }}
+                                title="Open English Notes"
+                                style={{
+                                  display: 'inline-flex',
+                                  alignItems: 'center',
+                                  gap: '3px',
+                                  padding: '3px 7px',
+                                  fontSize: '10.5px',
+                                  fontWeight: 600,
+                                  borderRadius: 'var(--r-sm)',
+                                  border: '1px solid var(--border)',
+                                  background: 'var(--bg-card-hover)',
+                                  color: 'var(--accent)',
+                                  cursor: 'pointer',
+                                }}
+                              >
+                                <FileText width={11} height={11} /> Notes EN
+                              </button>
+                            )}
+                            {(item.links.notes_hi || item.links.hi_pdf) && (
+                              <button
+                                onClick={(e) => {
+                                  e.stopPropagation();
+                                  const target = resolveDirectMediaUrl(item.links!.notes_hi || item.links!.hi_pdf);
+                                  onOpenPdf({ label: `${item.label} • Notes (HI)`, url: target, downloadUrl: target, type: 'pdf' });
+                                }}
+                                title="Open Hindi Notes"
+                                style={{
+                                  display: 'inline-flex',
+                                  alignItems: 'center',
+                                  gap: '3px',
+                                  padding: '3px 7px',
+                                  fontSize: '10.5px',
+                                  fontWeight: 600,
+                                  borderRadius: 'var(--r-sm)',
+                                  border: '1px solid var(--border)',
+                                  background: 'var(--bg-card-hover)',
+                                  color: '#e67e22',
+                                  cursor: 'pointer',
+                                }}
+                              >
+                                <FileText width={11} height={11} /> Notes HI
+                              </button>
+                            )}
+                            {item.links.handwritten && (
+                              <button
+                                onClick={(e) => {
+                                  e.stopPropagation();
+                                  const target = resolveDirectMediaUrl(item.links!.handwritten);
+                                  onOpenPdf({ label: `${item.label} • Handwritten`, url: target, downloadUrl: target, type: 'pdf' });
+                                }}
+                                title="Open Handwritten PDF"
+                                style={{
+                                  display: 'inline-flex',
+                                  alignItems: 'center',
+                                  gap: '3px',
+                                  padding: '3px 7px',
+                                  fontSize: '10.5px',
+                                  fontWeight: 600,
+                                  borderRadius: 'var(--r-sm)',
+                                  border: '1px solid var(--border)',
+                                  background: 'var(--bg-card-hover)',
+                                  color: '#27ae60',
+                                  cursor: 'pointer',
+                                }}
+                              >
+                                <FileText width={11} height={11} /> Handwritten
+                              </button>
+                            )}
+                            {item.links.quiz && (
+                              <button
+                                onClick={(e) => {
+                                  e.stopPropagation();
+                                  window.open(resolveDirectMediaUrl(item.links!.quiz), '_blank', 'noopener,noreferrer');
+                                }}
+                                title="Open Quiz"
+                                style={{
+                                  display: 'inline-flex',
+                                  alignItems: 'center',
+                                  gap: '3px',
+                                  padding: '3px 7px',
+                                  fontSize: '10.5px',
+                                  fontWeight: 600,
+                                  borderRadius: 'var(--r-sm)',
+                                  border: '1px solid var(--border)',
+                                  background: 'var(--bg-card-hover)',
+                                  color: '#8e44ad',
+                                  cursor: 'pointer',
+                                }}
+                              >
+                                <ExternalLink width={11} height={11} /> Quiz
+                              </button>
+                            )}
+                          </div>
+                        )}
 
                         <div
                           style={{
@@ -998,9 +1076,9 @@ export const CourseModal: React.FC<CourseModalProps> = ({
                 })}
               </div>
             ) : (
-              /* LIST VIEW (Clean rows as originally designed) */
+              /* LIST VIEW */
               <div className="video-list">
-                {activeItems.map((item, idx) => {
+                {renderedItems.map((item, idx) => {
                   const isWatched = watchedUrls.has(item.url);
                   const isPdf = item.type === 'pdf';
                   const isYt = isYouTubeItem(item);
@@ -1035,6 +1113,106 @@ export const CourseModal: React.FC<CourseModalProps> = ({
                         <div className="video-sub">
                           {item.subject || course.name} {isYt && '• YouTube Direct'}
                         </div>
+                        {/* Bot/Parmar Attachment links in list row */}
+                        {item.links && Object.keys(item.links).some((k) => k !== 'url') && (
+                          <div style={{ display: 'flex', flexWrap: 'wrap', gap: '4px', marginTop: '4px' }}>
+                            {(item.links.notes_en || item.links.en_pdf) && (
+                              <button
+                                onClick={(e) => {
+                                  e.stopPropagation();
+                                  const target = resolveDirectMediaUrl(item.links!.notes_en || item.links!.en_pdf);
+                                  onOpenPdf({ label: `${item.label} • Notes (EN)`, url: target, downloadUrl: target, type: 'pdf' });
+                                }}
+                                style={{
+                                  display: 'inline-flex',
+                                  alignItems: 'center',
+                                  gap: '2px',
+                                  padding: '2px 6px',
+                                  fontSize: '10px',
+                                  fontWeight: 600,
+                                  borderRadius: 'var(--r-sm)',
+                                  border: '1px solid var(--border)',
+                                  background: 'var(--bg-card-hover)',
+                                  color: 'var(--accent)',
+                                  cursor: 'pointer',
+                                }}
+                              >
+                                Notes EN
+                              </button>
+                            )}
+                            {(item.links.notes_hi || item.links.hi_pdf) && (
+                              <button
+                                onClick={(e) => {
+                                  e.stopPropagation();
+                                  const target = resolveDirectMediaUrl(item.links!.notes_hi || item.links!.hi_pdf);
+                                  onOpenPdf({ label: `${item.label} • Notes (HI)`, url: target, downloadUrl: target, type: 'pdf' });
+                                }}
+                                style={{
+                                  display: 'inline-flex',
+                                  alignItems: 'center',
+                                  gap: '2px',
+                                  padding: '2px 6px',
+                                  fontSize: '10px',
+                                  fontWeight: 600,
+                                  borderRadius: 'var(--r-sm)',
+                                  border: '1px solid var(--border)',
+                                  background: 'var(--bg-card-hover)',
+                                  color: '#e67e22',
+                                  cursor: 'pointer',
+                                }}
+                              >
+                                Notes HI
+                              </button>
+                            )}
+                            {item.links.handwritten && (
+                              <button
+                                onClick={(e) => {
+                                  e.stopPropagation();
+                                  const target = resolveDirectMediaUrl(item.links!.handwritten);
+                                  onOpenPdf({ label: `${item.label} • Handwritten`, url: target, downloadUrl: target, type: 'pdf' });
+                                }}
+                                style={{
+                                  display: 'inline-flex',
+                                  alignItems: 'center',
+                                  gap: '2px',
+                                  padding: '2px 6px',
+                                  fontSize: '10px',
+                                  fontWeight: 600,
+                                  borderRadius: 'var(--r-sm)',
+                                  border: '1px solid var(--border)',
+                                  background: 'var(--bg-card-hover)',
+                                  color: '#27ae60',
+                                  cursor: 'pointer',
+                                }}
+                              >
+                                Handwritten
+                              </button>
+                            )}
+                            {item.links.quiz && (
+                              <button
+                                onClick={(e) => {
+                                  e.stopPropagation();
+                                  window.open(resolveDirectMediaUrl(item.links!.quiz), '_blank', 'noopener,noreferrer');
+                                }}
+                                style={{
+                                  display: 'inline-flex',
+                                  alignItems: 'center',
+                                  gap: '2px',
+                                  padding: '2px 6px',
+                                  fontSize: '10px',
+                                  fontWeight: 600,
+                                  borderRadius: 'var(--r-sm)',
+                                  border: '1px solid var(--border)',
+                                  background: 'var(--bg-card-hover)',
+                                  color: '#8e44ad',
+                                  cursor: 'pointer',
+                                }}
+                              >
+                                Quiz
+                              </button>
+                            )}
+                          </div>
+                        )}
                       </div>
 
                       <div style={{ display: 'flex', alignItems: 'center', gap: '8px' }}>
@@ -1070,6 +1248,30 @@ export const CourseModal: React.FC<CourseModalProps> = ({
                     </div>
                   );
                 })}
+              </div>
+            )}
+
+            {/* Load More Button for Progressive Chunked Rendering */}
+            {visibleLimit < activeItems.length && (
+              <div style={{ display: 'flex', justifyContent: 'center', padding: '24px 0 32px' }}>
+                <button
+                  onClick={() => setVisibleLimit((prev) => prev + 40)}
+                  className="load-more-lectures-btn"
+                  style={{
+                    padding: '10px 24px',
+                    fontSize: '13px',
+                    fontWeight: 700,
+                    borderRadius: 'var(--r-pill)',
+                    background: 'var(--bg-card)',
+                    border: '1px solid var(--border)',
+                    color: 'var(--accent)',
+                    cursor: 'pointer',
+                    boxShadow: 'var(--sh-card)',
+                    transition: 'all 0.2s ease',
+                  }}
+                >
+                  Load More Lectures ({renderedItems.length} of {activeItems.length})
+                </button>
               </div>
             )}
           </div>

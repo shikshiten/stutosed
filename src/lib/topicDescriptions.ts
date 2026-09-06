@@ -1,7 +1,7 @@
 /**
  * Dynamic Educational Topic Description Engine
  * Automatically generates syllabus-aligned topic summaries, core concepts,
- * and exam tips for any lecture title across B.Tech and Competitive Exam courses.
+ * and high-yield exam tips in professional English for any lecture title.
  */
 
 export interface TopicDescription {
@@ -12,7 +12,7 @@ export interface TopicDescription {
   estimatedReadTime: string;
 }
 
-// Knowledge rules mapped to common exam keywords
+// Knowledge rules mapped to common exam and syllabus keywords
 const TOPIC_PATTERNS: {
   keywords: string[];
   category: string;
@@ -24,179 +24,209 @@ const TOPIC_PATTERNS: {
   {
     keywords: ['cell', 'koshika', 'mitochondria', 'nucleus'],
     category: 'Cell Biology',
-    getOverview: () => 'Is lecture me Cell (Koshika) ke structure, discovery aur organelles (Mitochondria, Nucleus, Ribosome, Golgi body) ko detail me cover kiya gaya hai jo har competitive exam ka foundational core hai.',
+    getOverview: () =>
+      'This lecture provides a comprehensive study of cell structure, historical discovery milestones, and cell organelles (Mitochondria, Nucleus, Ribosomes, and Golgi apparatus) essential for competitive and academic examinations.',
     keyPoints: [
-      'Prokaryotic vs Eukaryotic cells ke key structural differences.',
-      'Powerhouse of the Cell (Mitochondria) aur ATP production mechanism.',
-      'Cell Wall vs Cell Membrane aur transport functions.',
-      'Endoplasmic reticulum aur Protein synthesis overview.'
+      'Key structural and functional differences between Prokaryotic and Eukaryotic cells.',
+      'The Powerhouse of the Cell (Mitochondria) and cellular ATP generation mechanisms.',
+      'Cell wall vs. cell membrane permeability, lipid bilayers, and transport pathways.',
+      'Endoplasmic reticulum, Golgi complex, and protein synthesis workflows.',
     ],
-    examTip: 'SSC CGL/CHSL aur CDS me Organelles ke discovery scientist aur specific nicknames (e.g. Suicidal Bags of Cell - Lysosomes) par direct questions aate hain.'
+    examTip:
+      'Frequently tested items in SSC CGL, CHSL, and CDS include organelle discovery scientists and nomenclature (e.g., Lysosomes as the "Suicidal Bags of the Cell").',
   },
   {
     keywords: ['tissue', 'utak', 'xylem', 'phloem', 'epithelial'],
     category: 'Histology & Tissues',
-    getOverview: () => 'Plant aur Animal Tissues ka comprehensive analysis — Meristematic vs Permanent tissues aur muscular/connective tissues ka role.',
+    getOverview: () =>
+      'Detailed breakdown of Plant and Animal Tissues — distinguishing Meristematic from Permanent tissues, alongside epithelial, muscular, and connective organ systems.',
     keyPoints: [
-      'Xylem aur Phloem: Plant water aur food conduction network.',
-      'Meristematic Tissues: Apical, Lateral aur Intercalary growth.',
-      'Animal Tissues: Epithelial, Connective (Blood & Bone) functions.'
+      'Xylem and Phloem: Vascular transport networks for water and organic nutrients.',
+      'Meristematic tissues: Apical, lateral, and intercalary cellular division mechanisms.',
+      'Animal tissue taxonomy: Epithelial barriers, muscle fibers, and connective matrix (blood and bone).',
     ],
-    examTip: 'Complex Permanent Tissues (Xylem vs Phloem) ke components par matching question aksar pooche jate hain.'
+    examTip:
+      'Matching and assertion-reason questions frequently test the functional distinction between simple and complex permanent plant tissues.',
   },
   {
     keywords: ['vitamin', 'nutrition', 'poshan', 'disease', 'rog'],
     category: 'Human Health & Nutrition',
-    getOverview: () => 'Vitamins, Nutrients, deficiency diseases aur bacterial/viral pathogens ka complete high-yield exam breakdown.',
+    getOverview: () =>
+      'Comprehensive review of essential vitamins, macronutrients, nutritional deficiencies, and major bacterial, viral, and protozoan pathogens.',
     keyPoints: [
-      'Fat Soluble (A, D, E, K) vs Water Soluble (B, C) vitamins.',
-      'Chemical names aur unki deficiency se hone wale rog (Scurvy, Rickets, Beriberi).',
-      'Communicable vs Non-communicable diseases classification.'
+      'Fat-soluble (A, D, E, K) vs. Water-soluble (B-complex, C) vitamin classifications.',
+      'Chemical nomenclatures and hallmark deficiency syndromes (Scurvy, Rickets, Beriberi).',
+      'Pathogenic disease taxonomy: Transmission vectors, incubation periods, and preventive immunization.',
     ],
-    examTip: 'Har saal SSC CGL me Vitamins ke scientific/chemical names aur unke deficiency syndromes se 1 question pakka rehta hai.'
+    examTip:
+      'Always memorize the scientific chemical names of vitamins and their corresponding clinical deficiency disorders for guaranteed exam scoring.',
   },
 
   // ── POLITY ──
   {
     keywords: ['article', 'anuchhed', 'preamble', 'prastavana', 'constitution', 'samvidhan'],
     category: 'Indian Polity',
-    getOverview: () => 'Indian Constitution ke basic structure, Preamble (Prastavana) aur key constitutional provisions ka in-depth legal aur conceptual analysis.',
+    getOverview: () =>
+      'An in-depth legal and conceptual analysis of the Indian Constitution, the basic structure doctrine, the Preamble, and foundational constitutional provisions.',
     keyPoints: [
-      'Preamble: Sovereign, Socialist, Secular, Democratic, Republic keywords ka significance.',
-      '42nd Amendment Act 1976 aur added words ki timeline.',
-      'Drafting Committee, Constituent Assembly sessions aur adoption dates.'
+      'Preamble terminology: Sovereign, Socialist, Secular, Democratic, and Republic keywords.',
+      'The 42nd Constitutional Amendment Act of 1976 and landmark Supreme Court rulings.',
+      'Constituent Assembly drafting timeline, major committees, and constitutional adoption milestones.',
     ],
-    examTip: 'Preamble me diye gaye Words ka sequence (Sovereign, Socialist, Secular...) aur Articles 1 to 4 ki territory boundaries directly exam me aati hain.'
+    examTip:
+      'Memorize the exact sequence of philosophical terms in the Preamble and the territorial boundaries codified under Articles 1 through 4.',
   },
   {
     keywords: ['fundamental right', 'mool adhikar', 'fr ', 'dpsp', 'fundamental duty'],
     category: 'Constitutional Rights',
-    getOverview: () => 'Articles 12 se 35 tak ke Fundamental Rights (Part III) aur Directive Principles of State Policy (Part IV) ka exhaustive exam-oriented session.',
+    getOverview: () =>
+      'Exhaustive exam-oriented breakdown of Fundamental Rights (Articles 12–35, Part III), Directive Principles of State Policy (Part IV), and Fundamental Duties (Part IV-A).',
     keyPoints: [
-      '6 Fundamental Rights: Equality, Freedom, Exploitation, Religion, Culture, Constitutional Remedies.',
-      'Article 32: Dr. B.R. Ambedkar ka "Heart & Soul of Constitution" aur 5 Writs.',
-      'Article 21 (Right to Life) aur expanded dimensions.'
+      'The 6 core Fundamental Rights: Equality, Freedom, Protection, Religion, Culture, and Remedies.',
+      'Article 32: Constitutional remedies and the five prerogative high court / supreme court writs.',
+      'Article 21: Right to Life and Personal Liberty and its evolving judicial scope.',
     ],
-    examTip: 'Article 32 aur Article 226 ke Writs (Habeas Corpus, Mandamus, Quo-Warranto) ke meanings aur differences ko achhe se revise karein.'
+    examTip:
+      'Master the definitions and scope of the 5 constitutional writs (Habeas Corpus, Mandamus, Prohibition, Certiorari, Quo-Warranto) under Articles 32 and 226.',
   },
   {
     keywords: ['parliament', 'sansad', 'president', 'rashtrapati', 'prime minister', 'lok sabha', 'rajya sabha'],
     category: 'Union Executive & Legislature',
-    getOverview: () => 'Union Executive — President, Prime Minister, Council of Ministers aur Parliament ke dono Houses ki legislative powers aur passing of bills.',
+    getOverview: () =>
+      'Detailed study of the Union Executive — the President, Prime Minister, Council of Ministers, and the bicameral Parliament’s legislative functions.',
     keyPoints: [
-      'President election, impeachment process (Article 61) aur ordinance power (Article 123).',
-      'Lok Sabha vs Rajya Sabha: Special powers, tenure aur money bills (Article 110).',
-      'Joint Sitting of Parliament (Article 108) aur presiding officer rules.'
+      'Presidential elections, ordinance promulgation powers (Article 123), and impeachment (Article 61).',
+      'Lok Sabha vs. Rajya Sabha: Jurisdiction, tenure, money bills (Article 110), and financial bills.',
+      'Joint sitting provisions (Article 108) and presiding authority rules.',
     ],
-    examTip: 'President ki Pardoning powers (Article 72) aur Money Bill certify karne ka Speaker ka special right sabse frequent repeat topics hain.'
+    examTip:
+      'Focus closely on the President’s pardoning powers under Article 72 and the Lok Sabha Speaker’s exclusive certification authority over Money Bills.',
   },
 
   // ── HISTORY ──
   {
     keywords: ['indus', 'harappa', 'mohenjo', 'vedic', 'sindhu'],
     category: 'Ancient Indian History',
-    getOverview: () => 'Indus Valley Civilization (IVC) ke town planning, drainage systems, archaeological excavations aur Vedic Age literature ka analysis.',
+    getOverview: () =>
+      'Systematic examination of the Indus Valley Civilization (IVC) town planning, drainage networks, archaeological excavations, and Early/Later Vedic literature.',
     keyPoints: [
-      'Great Bath (Mohenjodaro), Dockyard (Lothal) aur major excavated sites.',
-      'IVC trade routes, seal scripts, metallurgy aur society.',
-      'Early Vedic vs Later Vedic society aur 4 Vedas.'
+      'Major excavated urban centers: The Great Bath (Mohenjodaro), Dockyard (Lothal), and Kalibangan.',
+      'IVC trade routes, bronze metallurgy, pictographic seals, and socioeconomic hierarchy.',
+      'Vedic literature: The four Vedas, Brahmanas, Upanishads, and early socio-religious structures.',
     ],
-    examTip: 'Harappan sites ki geographical river locations (e.g. Harappa on Ravi, Mohenjodaro on Indus) aur excavator names ko note karein.'
+    examTip:
+      'Pay close attention to Harappan site locations alongside their respective riverbanks (e.g., Harappa on the Ravi, Mohenjodaro on the Indus) and archaeological excavators.',
   },
   {
     keywords: ['maurya', 'ashoka', 'gupta', 'buddhism', 'jainism'],
     category: 'Empire & Religious Movements',
-    getOverview: () => 'Buddhism, Jainism, Mauryan Empire under Chandragupta & Ashoka, aur Gupta Golden Age ke art, architecture aur edicts.',
+    getOverview: () =>
+      'Historical survey of Buddhism, Jainism, the Mauryan Empire under Chandragupta and Ashoka, and the Golden Age of the Gupta Dynasty.',
     keyPoints: [
-      'Four Buddhist Councils: Locations, kings aur presiding monks.',
-      'Ashokan Rock Edicts: Dhamma policy aur Kalinga war timeline.',
-      'Gupta Dynasty: Coins, temples aur literary achievements (Kalidasa, Aryabhata).'
+      'The Four Buddhist Councils: Venues, patron rulers, and presiding Buddhist scholars.',
+      'Ashokan Major and Minor Rock Edicts: The Dhamma policy and Kalinga campaign timeline.',
+      'Gupta administrative governance, classical literature (Kalidasa), and scientific treatises (Aryabhata).',
     ],
-    examTip: 'Buddhist Councils ke pairs (Council - Venue - Ruler) SSC aur State PSCs me sabse common multiple-choice questions hote hain.'
+    examTip:
+      'The Four Buddhist Councils (Venue, Ruler, Presiding Monk) are among the most frequently recurring multiple-choice questions in competitive examinations.',
   },
   {
     keywords: ['1857', 'gandhi', 'congress', 'inc', 'freedom', 'movement', 'viceroy'],
     category: 'Modern Indian History',
-    getOverview: () => 'Indian National Movement — 1857 Revolt, Indian National Congress sessions, Gandhian Mass Movements aur Independence struggle.',
+    getOverview: () =>
+      'Comprehensive walkthrough of the Indian National Movement — the 1857 Revolt, Indian National Congress sessions, Gandhian mass satyagrahas, and the road to independence.',
     keyPoints: [
-      '1857 Revolt ke key leaders (Kunwar Singh, Rani Lakshmibai, Nana Saheb) aur centres.',
-      'Non-Cooperation (1920), Civil Disobedience (1930) aur Quit India Movement (1942).',
-      'Important INC sessions (Surat Split 1907, Lucknow Pact 1916, Lahore 1929).'
+      'Outbreak of the 1857 Revolt: Key leadership hubs (Kunwar Singh, Rani Lakshmibai, Nana Saheb).',
+      'Non-Cooperation (1920), Civil Disobedience (1930), and the Quit India Movement (1942).',
+      'Landmark Congress sessions: Surat Split (1907), Lucknow Pact (1916), and Lahore Session (1929).',
     ],
-    examTip: 'Poorna Swaraj resolution (1929 Lahore Session) aur Dandi March dates ko chronology questions ke liye yaad rakhein.'
+    examTip:
+      'Memorize the chronology of British viceroys, legislative reforms, and significant freedom struggle resolutions like Poorna Swaraj (1929).',
   },
 
   // ── GEOGRAPHY ──
   {
     keywords: ['river', 'nadi', 'drainage', 'himalaya', 'mountain', 'dam', 'lake'],
     category: 'Indian Geography',
-    getOverview: () => 'Indian Drainage System (Himalayan vs Peninsular rivers), River tributaries, origin glaciers, multipurpose dams aur physical physiography.',
+    getOverview: () =>
+      'Complete geographic analysis of Indian drainage basins (Himalayan vs. Peninsular systems), major river tributaries, glaciers, and multipurpose river valley projects.',
     keyPoints: [
-      'Indus, Ganga, Brahmaputra drainage basins aur left/right bank tributaries.',
-      'West flowing rivers (Narmada, Tapti) aur East flowing rivers (Godavari, Krishna, Cauvery).',
-      'Major Multipurpose River Valley Projects (Dams & Reservoirs).'
+      'Indus, Ganga, and Brahmaputra river networks with left-bank and right-bank tributary mapping.',
+      'East-flowing (Godavari, Krishna, Cauvery) vs. West-flowing (Narmada, Tapti) rift valley rivers.',
+      'Key national dams, reservoirs, and mountain passes across the Himalayan arc.',
     ],
-    examTip: 'Tributaries classification (Left bank vs Right bank) aur rivers origin points par frequently questions aate hain.'
+    examTip:
+      'Tributary classification (Left Bank vs. Right Bank) and river origins are tested year after year in state and central examinations.',
   },
 
   // ── ENGINEERING & MATHEMATICS ──
   {
     keywords: ['integration', 'calculus', 'differential', 'derivative', 'matrix', 'matrices'],
     category: 'Engineering Mathematics',
-    getOverview: () => 'Higher Engineering Mathematics — foundational calculus, integral transformations, matrix eigenspaces aur boundary value solving methods.',
+    getOverview: () =>
+      'Advanced engineering mathematical methods — differential and integral calculus, multivariable transformations, linear algebra, and boundary value solutions.',
     keyPoints: [
-      'Standard integral techniques, partial fractions aur substitution laws.',
-      'Eigenvalues, Eigenvectors aur Cayley-Hamilton theorem applications.',
-      'Differential equations of higher order with constant coefficients.'
+      'Standard integration techniques, substitutions, and definite integral properties.',
+      'Eigenvalues, eigenvectors, and Cayley-Hamilton theorem matrix applications.',
+      'Higher-order linear differential equations with constant and variable coefficients.',
     ],
-    examTip: 'BEU University exams me Cayley-Hamilton theorem verification aur inverse matrix finding 14 marks ke compulsory question me aate hain.'
+    examTip:
+      'Verify Cayley-Hamilton steps carefully to score full marks in high-weightage semester and competitive engineering exams.',
   },
   {
     keywords: ['physics', 'optics', 'laser', 'quantum', 'fiber', 'wave'],
     category: 'Engineering Physics',
-    getOverview: () => 'Technical Engineering Physics — Wave optics, interference, diffraction, quantum tunneling aur laser propagation in optical fibers.',
+    getOverview: () =>
+      'Applied engineering physics covering wave optics, thin-film interference, diffraction, quantum tunneling, and laser propagation in optical waveguides.',
     keyPoints: [
-      'Interference in thin films aur Newton’s rings experiment.',
-      'He-Ne Laser working principle, population inversion aur optical pumping.',
-      'Numerical aperture aur acceptance angle in fiber optics.'
+      'Interference by division of amplitude and the Newton’s rings experimental derivation.',
+      'Laser principles: Stimulated emission, population inversion, and optical pumping mechanisms.',
+      'Optical fibers: Total internal reflection, numerical aperture, and fractional index calculations.',
     ],
-    examTip: 'Newton’s Rings diameter derivation aur Laser 3-level vs 4-level energy diagram BEU semester questions ke core hot-topics hain.'
+    examTip:
+      'Newton’s ring diameter derivations and comparative energy diagrams of 3-level vs. 4-level laser systems are essential semester exam topics.',
   },
   {
     keywords: ['thermo', 'entropy', 'heat', 'engine', 'carnot', 'cycle'],
     category: 'Thermal Engineering',
-    getOverview: () => 'Thermodynamics core laws, Carnot heat engine efficiency, Entropy generation, steady flow energy equations (SFEE) aur gas power cycles.',
+    getOverview: () =>
+      'Foundational laws of thermodynamics, Carnot engine efficiency, entropy generation, steady-flow energy equations (SFEE), and power gas cycles.',
     keyPoints: [
-      'Zeroth, First, Second & Third Laws of Thermodynamics.',
-      'Carnot theorem aur reversible vs irreversible process entropy changes.',
-      'Rankine Cycle aur Otto / Diesel power cycles comparisons.'
+      'Zeroth, First, Second, and Third Laws of Thermodynamics.',
+      'Reversible vs. irreversible processes, Carnot theorem, and Clausius inequality.',
+      'Vapor and gas power cycles: Rankine, Otto, Diesel, and Dual cycles.',
     ],
-    examTip: 'Clausius inequality aur Carnot efficiency formula par numericals engineering exams me har saal aate hain.'
+    examTip:
+      'Numerical calculations on Carnot heat pump COP and Clausius entropy integrals are frequent scoring areas.',
   },
 
   // ── QUANT & REASONING ──
   {
     keywords: ['percentage', 'profit', 'loss', 'discount', 'ratio', 'proportion'],
     category: 'Commercial Arithmetic',
-    getOverview: () => 'Fast Arithmetic Shortcuts — Percentages, Cost Price vs Selling Price, successive discounts aur weighted ratios for 30-second solving speed.',
+    getOverview: () =>
+      'High-speed quantitative arithmetic methods — percentages, cost vs. selling price relationships, successive discounts, and proportional ratios for rapid solving.',
     keyPoints: [
-      'Fraction-to-percentage conversion chart (1/2 to 1/20).',
-      'Net percentage change formula: a + b + (ab/100).',
-      'Marked price, Discount % aur Profit % connecting equations.'
+      'Fraction-to-percentage conversion fundamentals (1/2 through 1/20 equivalents).',
+      'Net percentage variation formula: a + b + (ab/100).',
+      'Interlinking marked price, discount rates, and net profit margins.',
     ],
-    examTip: 'Calculation speed boost karne ke liye fraction table ko daily 2 minute revise karein.'
+    examTip:
+      'Daily mental revision of fraction-to-percentage tables significantly boosts calculation speed and reduces rough work time.',
   },
   {
     keywords: ['syllogism', 'reasoning', 'coding', 'series', 'blood relation', 'direction'],
     category: 'Logical Reasoning',
-    getOverview: () => 'Analytical Reasoning techniques — Venn diagram method for syllogisms, alphabet coding, direction sense maps aur family tree diagrams.',
+    getOverview: () =>
+      'Systematic analytical reasoning strategies — Venn diagram containment for syllogisms, alphanumeric coding, compass direction sense, and family tree mapping.',
     keyPoints: [
-      '100-50 / Venn Diagram rules for "All", "Some", "No", "Some Not" syllogisms.',
-      'Positional alphabet values (EJOTY rule) aur reverse letter pairs.',
-      'Family Tree standard symbols: (+) Male, (-) Female, (=) Couple.'
+      'Deductive logic rules for universal ("All", "No") and particular ("Some", "Some Not") statements.',
+      'Alphabet positional rank mappings (EJOTY rule) and reverse letter pairings.',
+      'Standard genealogical notation for rapid family tree deduction.',
     ],
-    examTip: 'Syllogism me "Possibility" cases ko Venn diagram ke universal containment rule se test karein.'
-  }
+    examTip:
+      'Always test "Possibility" cases in syllogisms using universal Venn diagram inclusion rules to avoid false negatives.',
+  },
 ];
 
 /**
@@ -210,7 +240,7 @@ function cleanLectureTitle(rawTitle: string): string {
 }
 
 /**
- * Generate syllabus-aligned topic description dynamically
+ * Generate syllabus-aligned topic description dynamically in professional English
  */
 export function getLectureTopicDescription(
   lectureTitle: string,
@@ -235,21 +265,23 @@ export function getLectureTopicDescription(
   }
 
   // Dynamic Intelligent Context Generator if no specific pattern matched
-  const isEngineering = searchStr.includes('beu') || searchStr.includes('b.tech') || searchStr.includes('engineering');
-  const isGovt = searchStr.includes('ssc') || searchStr.includes('parmar') || searchStr.includes('gk') || searchStr.includes('cgl');
+  const isEngineering =
+    searchStr.includes('beu') || searchStr.includes('b.tech') || searchStr.includes('engineering');
+  const isGovt =
+    searchStr.includes('ssc') || searchStr.includes('parmar') || searchStr.includes('gk') || searchStr.includes('cgl');
 
-  let defaultCategory = subjectName || (isEngineering ? 'Engineering Sciences' : 'Comprehensive Syllabus');
-  let defaultOverview = `Is class me "${cleanTitle || lectureTitle}" topic ko bilkul basic foundation se exam standard tak complete explain kiya gaya hai. Concept clarity aur application orientation is lecture ka main objective hai.`;
-  
-  let defaultPoints = [
-    `"${cleanTitle || 'Current Topic'}" ke theoretical foundations aur core principles.`,
-    'Step-by-step concept illustration aur exam point-of-view important facts.',
-    'Class notes ke sath previous year questions (PYQs) solve karne ka smart approach.'
+  const defaultCategory = subjectName || (isEngineering ? 'Engineering Sciences' : 'Comprehensive Syllabus');
+  const defaultOverview = `This lecture provides a structured, syllabus-aligned conceptual breakdown of "${cleanTitle || lectureTitle}". It systematically covers foundational principles through advanced examination standards to ensure concept clarity and problem-solving readiness.`;
+
+  const defaultPoints = [
+    `Core theoretical frameworks, fundamental definitions, and guiding principles of "${cleanTitle || 'Current Topic'}".`,
+    'Step-by-step concept illustrations with emphasis on high-yield exam takeaways.',
+    'Effective techniques for solving previous years’ exam questions (PYQs) alongside lecture notes.',
   ];
 
-  let defaultExamTip = isGovt
-    ? 'Is lecture ke main keywords aur dates/formulas ko apne short revision notes me highlight karein — direct factual questions ke liye yeh section high-weightage hai.'
-    : 'Semester aur internal examination me numerical clarity aur diagrammatic representation se full marks secure kiye ja sakte hain.';
+  const defaultExamTip = isGovt
+    ? 'Highlight critical keywords, factual dates, and key formulas in your short revision notes — this section carries high weightage in objective questions.'
+    : 'In university semester exams, focus on clear step-by-step numerical working and well-labeled diagrams to secure full marks.';
 
   return {
     overview: defaultOverview,

@@ -322,6 +322,21 @@ export default function WatchClient() {
       return;
     }
 
+    // Check prefetched stream from preloader navigation
+    try {
+      const prefetchedRaw = sessionStorage.getItem('stutosed_prefetched_stream');
+      if (prefetchedRaw) {
+        const prefetched = JSON.parse(prefetchedRaw);
+        if (prefetched?.url === activeUrl && prefetched?.streamUrl) {
+          setResolvedStreamUrl(prefetched.streamUrl);
+          setPlayerMode('proxy');
+          setStreamLoading(false);
+          sessionStorage.removeItem('stutosed_prefetched_stream');
+          return;
+        }
+      }
+    } catch {}
+
     const abortController = new AbortController();
     const vidmolyCode = isVidmolyUrl ? extractVidmolyCode(activeUrl) : null;
     const earnvidsCode = isEarnvidsUrl ? extractEarnvidsCode(activeUrl) : null;
@@ -438,8 +453,12 @@ export default function WatchClient() {
               hls.recoverMediaError();
               break;
             default:
-              // Fatal HLS error fallback to embedded iframe
-              setPlayerMode('embedded');
+              // Fatal HLS error fallback to alternate server or embedded iframe
+              if (servers.length > 1 && selectedServerIndex < servers.length - 1) {
+                setSelectedServerIndex((prev) => prev + 1);
+              } else {
+                setPlayerMode('embedded');
+              }
               hls.destroy();
               hlsRef.current = null;
               break;
@@ -466,7 +485,7 @@ export default function WatchClient() {
     }
   }, [videoSourceUrl, playbackSpeed, playerMode]);
 
-  // Video listeners
+  // Video listeners with comprehensive network error handling & auto-failover
   useEffect(() => {
     const video = videoRef.current;
     if (!video || playerMode !== 'proxy') return;
@@ -492,6 +511,17 @@ export default function WatchClient() {
       setIsBuffering(false);
       setIsPlaying(true);
     };
+    const handleError = () => {
+      setIsBuffering(false);
+      // Auto failover on network/stream errors (e.g. HTTP 429 capacity limit or dropped upstream)
+      if (servers.length > 1 && selectedServerIndex < servers.length - 1) {
+        setSelectedServerIndex((prev) => prev + 1);
+      } else if (canToggleMode) {
+        setPlayerMode('embedded');
+      } else {
+        setStreamError('Playback failed. Please try switching servers or refresh.');
+      }
+    };
 
     video.addEventListener('play', handlePlay);
     video.addEventListener('pause', handlePause);
@@ -499,6 +529,7 @@ export default function WatchClient() {
     video.addEventListener('canplay', handleCanPlay);
     video.addEventListener('loadeddata', handleLoadedData);
     video.addEventListener('playing', handlePlaying);
+    video.addEventListener('error', handleError);
 
     return () => {
       video.removeEventListener('play', handlePlay);
@@ -507,8 +538,9 @@ export default function WatchClient() {
       video.removeEventListener('canplay', handleCanPlay);
       video.removeEventListener('loadeddata', handleLoadedData);
       video.removeEventListener('playing', handlePlaying);
+      video.removeEventListener('error', handleError);
     };
-  }, [playerMode]);
+  }, [playerMode, servers, selectedServerIndex, canToggleMode]);
 
   // Progress update & seek
   useEffect(() => {
