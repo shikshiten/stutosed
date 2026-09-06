@@ -19277,7 +19277,7 @@
     "subname": "Computer SPL 29",
     "teacher": "Yatendra Sir",
     "subject": "Computer",
-    "thumb": "/assets/computer_thumbnail_1782650750820.png",
+    "thumb": "/thumbnails/computer_thumbnail_1782650750820.png",
     "tabs": [
       {
         "id": "videos",
@@ -20089,7 +20089,7 @@
     "subname": "English SPL-26",
     "teacher": "English Faculty",
     "subject": "English",
-    "thumb": "/assets/english_spl26_thumbnail.png",
+    "thumb": "/thumbnails/english_spl26_thumbnail.png",
     "tabs": [
       {
         "id": "videos",
@@ -23426,7 +23426,7 @@
     "subname": "English Practice 26",
     "teacher": "English Faculty",
     "subject": "English",
-    "thumb": "/assets/english_practice_thumbnail.png",
+    "thumb": "/thumbnails/english_practice_thumbnail.png",
     "tabs": [
       {
         "id": "videos",
@@ -24900,7 +24900,7 @@
     "subname": "Maths Batch 39",
     "teacher": "Maths Faculty",
     "subject": "Maths",
-    "thumb": "/assets/maths_b39_thumbnail.png",
+    "thumb": "/thumbnails/maths_b39_thumbnail.png",
     "tabs": [
       {
         "id": "videos",
@@ -27892,7 +27892,7 @@
     "subname": "Maths Special 38",
     "teacher": "Maths Faculty",
     "subject": "Maths",
-    "thumb": "/assets/maths_spl38_thumbnail.png",
+    "thumb": "/thumbnails/maths_spl38_thumbnail.png",
     "tabs": [
       {
         "id": "videos",
@@ -33659,7 +33659,7 @@
     "subname": "Reasoning SPL 60",
     "teacher": "Reasoning Faculty",
     "subject": "Reasoning",
-    "thumb": "/assets/reasoning_thumbnail_1782650787244.png",
+    "thumb": "/thumbnails/reasoning_thumbnail_1782650787244.png",
     "tabs": [
       {
         "id": "videos",
@@ -37187,7 +37187,7 @@
     "subname": "Parmar 4.0 GK",
     "teacher": "Parmar Sir",
     "subject": "General Knowledge",
-    "thumb": "/assets/general_thumbnail_1782650802166.png",
+    "thumb": "/thumbnails/general_thumbnail_1782650802166.png",
     "isParmar": true,
     "parmarData": {
       "BIOLOGY": {
@@ -38645,7 +38645,7 @@
     "subname": "Pratham Batch 2",
     "teacher": "Multiple Teachers",
     "subject": "SSC Complete",
-    "thumb": "/assets/pratham_thumbnail.png",
+    "thumb": "/thumbnails/pratham_thumbnail.png",
     "isPratham": true,
     "prathamBySubject": {
       "Advance": [

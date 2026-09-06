@@ -263,7 +263,7 @@ export const LibraryView: React.FC<LibraryViewProps> = ({
                   >
                     <div className="bookmarked-card-thumb">
                       <img
-                        src={course.thumb || '/assets/courses/placeholder.jpg'}
+                        src={course.thumb || '/thumbnails/all_course_thumbnail.jpg'}
                         alt={course.name}
                         className="bookmarked-thumb-img"
                       />
