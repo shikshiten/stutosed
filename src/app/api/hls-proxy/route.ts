@@ -10,10 +10,18 @@ import { NextRequest, NextResponse } from 'next/server';
 
 export const dynamic = 'force-dynamic';
 
-import { isAllowedUpstream } from '@/lib/upstreamSecurity';
+import { isAllowedUpstream, isAllowedOrigin, getSecureCorsHeaders } from '@/lib/upstreamSecurity';
 import { getWorkerProxyUrl } from '@/lib/proxyConfig';
 
 export async function GET(request: NextRequest) {
+  const origin = request.headers.get('origin');
+  const referer = request.headers.get('referer');
+
+  // Anti-hotlinking: reject external cross-origin scrapers
+  if ((origin && !isAllowedOrigin(origin)) || (referer && !isAllowedOrigin(referer))) {
+    return new Response('Unauthorized origin', { status: 403 });
+  }
+
   const targetUrl = request.nextUrl.searchParams.get('url');
 
   if (!targetUrl) {
@@ -106,8 +114,7 @@ export async function GET(request: NextRequest) {
       return new Response(rewrittenLines.join('\n'), {
         headers: {
           'Content-Type': 'application/vnd.apple.mpegurl',
-          'Access-Control-Allow-Origin': '*',
-          'Access-Control-Allow-Methods': 'GET, OPTIONS',
+          ...getSecureCorsHeaders(origin),
           'Cache-Control': 'no-cache, no-store',
         },
       });
@@ -120,8 +127,7 @@ export async function GET(request: NextRequest) {
 
     const headers: Record<string, string> = {
       'Content-Type': contentType,
-      'Access-Control-Allow-Origin': '*',
-      'Access-Control-Allow-Methods': 'GET, OPTIONS',
+      ...getSecureCorsHeaders(origin),
       'Cache-Control': 'public, max-age=86400, immutable',
     };
     if (contentLength) headers['Content-Length'] = contentLength;
@@ -137,12 +143,9 @@ export async function GET(request: NextRequest) {
   }
 }
 
-export async function OPTIONS() {
+export async function OPTIONS(request: NextRequest) {
+  const origin = request.headers.get('origin');
   return new Response(null, {
-    headers: {
-      'Access-Control-Allow-Origin': '*',
-      'Access-Control-Allow-Methods': 'GET, OPTIONS',
-      'Access-Control-Allow-Headers': '*',
-    },
+    headers: getSecureCorsHeaders(origin),
   });
 }

@@ -10,7 +10,7 @@ const SUPABASE_ANON_KEY =
   process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY ||
   'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImhvZmJ0YnV0dnVvbWVvZm1oa3l1Iiwicm9sZSI6ImFub24iLCJpYXQiOjE3ODcxNDQwNzEsImV4cCI6MjEwMjcyMDA3MX0.J5RU82Jn5VOZy_vyiSv9mX5QgKW6Ud23fVKMytXp7DA';
 
-import { isAllowedUpstream } from '@/lib/upstreamSecurity';
+import { isAllowedUpstream, isAllowedOrigin, getSecureCorsHeaders } from '@/lib/upstreamSecurity';
 import { getWorkerProxyUrl } from '@/lib/proxyConfig';
 
 async function getAuthenticatedUser(request: NextRequest) {
@@ -149,6 +149,14 @@ async function resolveFinalRedirectUrl(initialUrl: string): Promise<string> {
 }
 
 export async function GET(request: NextRequest) {
+  const origin = request.headers.get('origin');
+  const referer = request.headers.get('referer');
+
+  // Anti-hotlinking: reject external cross-origin scrapers
+  if ((origin && !isAllowedOrigin(origin)) || (referer && !isAllowedOrigin(referer))) {
+    return NextResponse.json({ error: 'Unauthorized origin' }, { status: 403 });
+  }
+
   const { searchParams } = new URL(request.url);
   const targetUrlParam = searchParams.get('url');
 
@@ -287,12 +295,11 @@ export async function GET(request: NextRequest) {
   }
 }
 
-export async function OPTIONS() {
+export async function OPTIONS(request: NextRequest) {
+  const origin = request.headers.get('origin');
   return new Response(null, {
     headers: {
-      'Access-Control-Allow-Origin': '*',
-      'Access-Control-Allow-Methods': 'GET, OPTIONS',
-      'Access-Control-Allow-Headers': 'Range, Accept, Content-Type',
+      ...getSecureCorsHeaders(origin),
       'Access-Control-Expose-Headers': 'Content-Range, Content-Length, Accept-Ranges',
     },
   });

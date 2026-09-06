@@ -17,7 +17,7 @@ const SUPABASE_ANON_KEY =
   process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY ||
   'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImhvZmJ0YnV0dnVvbWVvZm1oa3l1Iiwicm9sZSI6ImFub24iLCJpYXQiOjE3ODcxNDQwNzEsImV4cCI6MjEwMjcyMDA3MX0.J5RU82Jn5VOZy_vyiSv9mX5QgKW6Ud23fVKMytXp7DA';
 
-import { isAllowedUpstream } from '@/lib/upstreamSecurity';
+import { isAllowedUpstream, isAllowedOrigin, getSecureCorsHeaders } from '@/lib/upstreamSecurity';
 
 async function getAuthenticatedUser(request: NextRequest) {
   const supabase = createServerClient(SUPABASE_URL, SUPABASE_ANON_KEY, {
@@ -61,6 +61,14 @@ const SPEED_BRIDGE_SCRIPT = `
 `;
 
 export async function GET(request: NextRequest) {
+  const origin = request.headers.get('origin');
+  const referer = request.headers.get('referer');
+
+  // Anti-hotlinking: reject external cross-origin scrapers
+  if ((origin && !isAllowedOrigin(origin)) || (referer && !isAllowedOrigin(referer))) {
+    return NextResponse.json({ error: 'Unauthorized origin' }, { status: 403 });
+  }
+
   const targetUrl = request.nextUrl.searchParams.get('url');
 
   // ── MODE 1: Direct URL Embed Proxy ────────────────────────────────────────────
@@ -91,11 +99,11 @@ export async function GET(request: NextRequest) {
 
       let html = await res.text();
 
-      const origin = new URL(fetchUrl).origin + '/';
+      const baseOrigin = new URL(fetchUrl).origin + '/';
       if (html.includes('<head>')) {
-        html = html.replace('<head>', `<head><base href="${origin}">`);
+        html = html.replace('<head>', `<head><base href="${baseOrigin}">`);
       } else {
-        html = `<base href="${origin}">` + html;
+        html = `<base href="${baseOrigin}">` + html;
       }
 
       if (html.includes('</body>')) {
@@ -107,7 +115,7 @@ export async function GET(request: NextRequest) {
       return new NextResponse(html, {
         headers: {
           'Content-Type': 'text/html; charset=utf-8',
-          'Access-Control-Allow-Origin': '*',
+          ...getSecureCorsHeaders(origin),
           'Cache-Control': 'no-cache, no-store',
         },
       });
@@ -157,7 +165,7 @@ export async function GET(request: NextRequest) {
     return new NextResponse(html, {
       headers: {
         'Content-Type': 'text/html; charset=utf-8',
-        'Access-Control-Allow-Origin': '*',
+        ...getSecureCorsHeaders(origin),
         'Cache-Control': 'no-cache, no-store',
       },
     });

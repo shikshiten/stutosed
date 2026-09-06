@@ -770,6 +770,7 @@ export default function WatchClient() {
             onMouseMove={resetControlsTimer}
             onTouchStart={resetControlsTimer}
             onMouseEnter={resetControlsTimer}
+            onContextMenu={(e) => e.preventDefault()}
           >
             <div className="player-viewport">
               {/* TOP OVERLAY */}

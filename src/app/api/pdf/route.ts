@@ -10,7 +10,7 @@ const SUPABASE_ANON_KEY =
   process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY ||
   'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImhvZmJ0YnV0dnVvbWVvZm1oa3l1Iiwicm9sZSI6ImFub24iLCJpYXQiOjE3ODcxNDQwNzEsImV4cCI6MjEwMjcyMDA3MX0.J5RU82Jn5VOZy_vyiSv9mX5QgKW6Ud23fVKMytXp7DA';
 
-import { isAllowedUpstream } from '@/lib/upstreamSecurity';
+import { isAllowedUpstream, isAllowedOrigin, getSecureCorsHeaders } from '@/lib/upstreamSecurity';
 import { getWorkerProxyUrl } from '@/lib/proxyConfig';
 
 async function getAuthenticatedUser(request: NextRequest) {
@@ -103,6 +103,14 @@ async function resolveFinalRedirectUrl(initialUrl: string): Promise<string> {
 }
 
 export async function GET(request: NextRequest) {
+  const origin = request.headers.get('origin');
+  const referer = request.headers.get('referer');
+
+  // Anti-hotlinking: reject external cross-origin scrapers
+  if ((origin && !isAllowedOrigin(origin)) || (referer && !isAllowedOrigin(referer))) {
+    return NextResponse.json({ error: 'Unauthorized origin' }, { status: 403 });
+  }
+
   const { searchParams } = new URL(request.url);
   const rawUrl = searchParams.get('url');
 
@@ -110,10 +118,8 @@ export async function GET(request: NextRequest) {
     return new NextResponse('Missing url parameter', { status: 400 });
   }
 
-  // ── SSRF Protection ────────────────────────────────────────────────────────────
-  // Allow crwilladmin.com (direct PDF links) without hostname check
-  const isCrwill = rawUrl.includes('crwilladmin.com') || rawUrl.endsWith('.pdf');
-  if (!isCrwill && !isAllowedUpstream(rawUrl)) {
+  // ── Strict SSRF & Upstream Domain Validation ──────────────────────────────────
+  if (!isAllowedUpstream(rawUrl)) {
     return NextResponse.json({ error: 'Forbidden upstream domain' }, { status: 403 });
   }
 
@@ -123,7 +129,12 @@ export async function GET(request: NextRequest) {
 
     // 302 Redirect to Cloudflare Worker to avoid Vercel 10GB origin transfer bandwidth!
     const workerUrl = getWorkerProxyUrl(finalTargetUrl, 'pdf');
-    return NextResponse.redirect(workerUrl, 302);
+    const corsHeaders = getSecureCorsHeaders(origin);
+
+    return NextResponse.redirect(workerUrl, {
+      status: 302,
+      headers: corsHeaders,
+    });
   } catch (err: any) {
     if (err.name === 'AbortError') {
       return new Response(null, { status: 499 });
@@ -132,12 +143,9 @@ export async function GET(request: NextRequest) {
   }
 }
 
-export async function OPTIONS() {
+export async function OPTIONS(request: NextRequest) {
+  const origin = request.headers.get('origin');
   return new Response(null, {
-    headers: {
-      'Access-Control-Allow-Origin': '*',
-      'Access-Control-Allow-Methods': 'GET, OPTIONS',
-      'Access-Control-Allow-Headers': '*',
-    },
+    headers: getSecureCorsHeaders(origin),
   });
 }

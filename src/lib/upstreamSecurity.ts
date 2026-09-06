@@ -30,6 +30,8 @@ const SECURE_HOST_SIGNATURES = [
   'cHVibGljYm90c2h1Yi5ibG9nc3BvdC5jb20=',
   'Y2RuLmp3cGxheWVyLmNvbQ==',
   'Y29udGVudC5qd3BsYXRmb3JtLmNvbQ==',
+  'ZWRnZW9uZS5hcHA=', // edgeone.app
+  'Y2xvdWRmcm9udC5uZXQ=', // cloudfront.net
 ];
 
 function decodeSignature(b64: string): string {
@@ -67,4 +69,36 @@ export function isAllowedUpstream(rawUrl: string): boolean {
   } catch {
     return false;
   }
+}
+
+// ── Origin & Anti-Hotlinking Protection ──────────────────────────────────────────
+const ALLOWED_APP_DOMAINS = [
+  'course.stutosed.in',
+  'stutosed.in',
+  'stutosed.vercel.app',
+  'localhost',
+  '127.0.0.1',
+];
+
+export function isAllowedOrigin(originOrReferer: string | null): boolean {
+  if (!originOrReferer) return true; // Browser direct or same-origin non-cross requests
+  try {
+    const parsed = new URL(originOrReferer);
+    const host = parsed.hostname.toLowerCase();
+    return ALLOWED_APP_DOMAINS.some(
+      (allowed) => host === allowed || host.endsWith('.' + allowed)
+    );
+  } catch {
+    return false;
+  }
+}
+
+export function getSecureCorsHeaders(origin: string | null): Record<string, string> {
+  const safeOrigin = origin && isAllowedOrigin(origin) ? origin : 'https://course.stutosed.in';
+  return {
+    'Access-Control-Allow-Origin': safeOrigin,
+    'Access-Control-Allow-Methods': 'GET, HEAD, OPTIONS',
+    'Access-Control-Allow-Headers': 'Range, Content-Type, Accept',
+    'Vary': 'Origin',
+  };
 }

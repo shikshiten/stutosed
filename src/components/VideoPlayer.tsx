@@ -700,6 +700,7 @@ export const VideoPlayer: React.FC<VideoPlayerProps> = ({
               onMouseMove={resetControlsTimer}
               onTouchStart={resetControlsTimer}
               onMouseEnter={resetControlsTimer}
+              onContextMenu={(e) => e.preventDefault()}
             >
               <div className="player-viewport">
                 {/* 1. TOP OVERLAY (Fullscreen & In-Video) */}
