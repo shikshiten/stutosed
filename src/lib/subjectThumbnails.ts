@@ -34,10 +34,19 @@ export const SUBJECT_KEYS = {
   GEOGRAPHY: 'geography',
   ENVIRONMENT_ECOLOGY: 'environment_ecology',
   PARMAR_GK_3_0: 'parmar_gk_3_0',
+  PARMAR_GK_4_0: 'parmar_gk_4_0',
+  SSC_PRATHAM_BATCH_2: 'ssc_pratham_batch_2',
+  LOGICAL_REASONING: 'logical_reasoning',
+  MATHS_B39: 'maths_b39',
+  MATHS_SPL38: 'maths_spl38',
+  COMPUTER_AWARENESS: 'computer_awareness',
+  ENGLISH_GRAMMAR: 'english_grammar',
+  ENGLISH_PRACTICE: 'english_practice',
   BEU_1ST_YEAR: 'beu_1st_year',
 } as const;
 
 export const BATCH_SUBJECT_MAP: Record<string, string> = {
+  // ── BEU B.Tech 1st Year Engineering Branches ──
   'ee-ece-eee': SUBJECT_KEYS.BASIC_ELECTRICAL_WORKSHOP,
   'ece-ee-eee': SUBJECT_KEYS.BASIC_ELECTRICAL_WORKSHOP,
   'mechanical-umeed': SUBJECT_KEYS.ELEMENTS_OF_MECHANICAL_ENGINEERING,
@@ -46,9 +55,24 @@ export const BATCH_SUBJECT_MAP: Record<string, string> = {
   'engineering-chemistry': SUBJECT_KEYS.ENGINEERING_CHEMISTRY,
   'engineering-mathematics-2': SUBJECT_KEYS.ENGINEERING_MATHEMATICS_2,
   'engineering-physics': SUBJECT_KEYS.ENGINEERING_PHYSICS,
-  'parmar-gk-3-0': SUBJECT_KEYS.PARMAR_GK_3_0,
-  'parmar': SUBJECT_KEYS.STATIC_GK,
   'beu-1st-year': SUBJECT_KEYS.BEU_1ST_YEAR,
+
+  // ── Govt & Competitive Exam Dedicated Batches ──
+  'parmar-gk-3-0': SUBJECT_KEYS.PARMAR_GK_3_0,
+  'parmar': SUBJECT_KEYS.PARMAR_GK_4_0,
+  'parmar-4-0': SUBJECT_KEYS.PARMAR_GK_4_0,
+  'pratham': SUBJECT_KEYS.SSC_PRATHAM_BATCH_2,
+  'ssc-pratham-batch-2': SUBJECT_KEYS.SSC_PRATHAM_BATCH_2,
+  'reasoning': SUBJECT_KEYS.LOGICAL_REASONING,
+  'logical-reasoning': SUBJECT_KEYS.LOGICAL_REASONING,
+  'maths-b39': SUBJECT_KEYS.MATHS_B39,
+  'maths-spl38': SUBJECT_KEYS.MATHS_SPL38,
+  'computer': SUBJECT_KEYS.COMPUTER_AWARENESS,
+  'computer-science': SUBJECT_KEYS.COMPUTER_AWARENESS,
+  'computer-special': SUBJECT_KEYS.COMPUTER_AWARENESS,
+  'english-spl': SUBJECT_KEYS.ENGLISH_GRAMMAR,
+  'english-grammar': SUBJECT_KEYS.ENGLISH_GRAMMAR,
+  'english-practice': SUBJECT_KEYS.ENGLISH_PRACTICE,
 };
 
 function resolveSvgPath(key: string, theme?: 'light' | 'dark'): string {
@@ -73,7 +97,64 @@ export function getDynamicThumbnailUrl(
 function matchTopicToSubjectKey(raw: string): string | null {
   const t = raw.toLowerCase();
 
-  // 1. Mathematics & Higher Calculus
+  // ── 0. COMPETITIVE EXAM DEDICATED TOPIC & BATCH MATCHING ──
+  if (t.includes('maths-b39') || t.includes('maths b39') || t.includes('batch 39')) {
+    return SUBJECT_KEYS.MATHS_B39;
+  }
+  if (t.includes('special 38') || t.includes('spl 38') || t.includes('spl38') || t.includes('maths-spl38')) {
+    return SUBJECT_KEYS.MATHS_SPL38;
+  }
+  if (
+    t.includes('logical reasoning') ||
+    t.includes('reasoning') ||
+    t.includes('syllogism') ||
+    t.includes('blood relation') ||
+    t.includes('coding decoding') ||
+    t.includes('seating arrangement') ||
+    t.includes('analogy') ||
+    t.includes('classification') ||
+    t.includes('dice') ||
+    t.includes('cube') ||
+    t.includes('direction sense')
+  ) {
+    return SUBJECT_KEYS.LOGICAL_REASONING;
+  }
+  if (
+    t.includes('computer awareness') ||
+    t.includes('computer special') ||
+    t.includes('yatendra') ||
+    t.includes('computer spl') ||
+    t.includes('spl 29') ||
+    t.includes('spl29')
+  ) {
+    return SUBJECT_KEYS.COMPUTER_AWARENESS;
+  }
+  if (
+    t.includes('english grammar') ||
+    t.includes('english spl') ||
+    t.includes('spl-26') ||
+    t.includes('spl 26')
+  ) {
+    return SUBJECT_KEYS.ENGLISH_GRAMMAR;
+  }
+  if (
+    t.includes('english practice') ||
+    t.includes('practice 26') ||
+    t.includes('practice drill')
+  ) {
+    return SUBJECT_KEYS.ENGLISH_PRACTICE;
+  }
+  if (t.includes('pratham') || t.includes('ssc complete')) {
+    return SUBJECT_KEYS.SSC_PRATHAM_BATCH_2;
+  }
+  if (t.includes('parmar 4') || t.includes('parmar 4.0') || t.includes('parmar academy')) {
+    return SUBJECT_KEYS.PARMAR_GK_4_0;
+  }
+  if (t.includes('parmar 3') || t.includes('parmar gk 3') || t.includes('parmar-gk-3-0')) {
+    return SUBJECT_KEYS.PARMAR_GK_3_0;
+  }
+
+  // 1. Engineering Mathematics & Higher Calculus
   if (
     t.includes('mathematics-ii') ||
     t.includes('maths-ii') ||
@@ -88,10 +169,7 @@ function matchTopicToSubjectKey(raw: string): string | null {
     t.includes('residue') ||
     t.includes('taylor') ||
     t.includes('laurent') ||
-    t.includes('conformal') ||
-    t.includes('special 38') ||
-    t.includes('spl 38') ||
-    t.includes('spl38')
+    t.includes('conformal')
   ) {
     return SUBJECT_KEYS.ENGINEERING_MATHEMATICS_2;
   }
@@ -110,20 +188,7 @@ function matchTopicToSubjectKey(raw: string): string | null {
     t.includes('algebra') ||
     t.includes('trigonometry') ||
     t.includes('geometry') ||
-    t.includes('arithmetic') ||
-    t.includes('percentage') ||
-    t.includes('ratio and proportion') ||
-    t.includes('profit and loss') ||
-    t.includes('simple interest') ||
-    t.includes('compound interest') ||
-    t.includes('time and work') ||
-    t.includes('speed and distance') ||
-    t.includes('number system') ||
-    t.includes('simplification') ||
-    t.includes('maths b39') ||
-    t.includes('maths-b39') ||
-    t.includes('mathematics b39') ||
-    t.includes('math')
+    t.includes('engineering math')
   ) {
     return SUBJECT_KEYS.ENGINEERING_MATHEMATICS;
   }
@@ -194,13 +259,7 @@ function matchTopicToSubjectKey(raw: string): string | null {
     t.includes('dynamic memory') ||
     t.includes('algorithm') ||
     t.includes('data structure') ||
-    t.includes('pps') ||
-    t.includes('logical reasoning') ||
-    t.includes('syllogism') ||
-    t.includes('blood relation') ||
-    t.includes('coding decoding') ||
-    t.includes('seating arrangement') ||
-    t.includes('reasoning')
+    t.includes('pps')
   ) {
     return SUBJECT_KEYS.PROGRAMMING_FOR_PROBLEM_SOLVING;
   }

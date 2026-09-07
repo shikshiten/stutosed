@@ -591,7 +591,7 @@ export const CourseModal: React.FC<CourseModalProps> = ({
                   margin: 0,
                 }}
               >
-                Courses
+                {course.name} — Subjects
               </h3>
             </div>
 
@@ -735,7 +735,7 @@ export const CourseModal: React.FC<CourseModalProps> = ({
                   }}
                 >
                   <ArrowLeft width={16} height={16} />
-                  <span>Back to Courses</span>
+                  <span>Back to Subjects</span>
                 </button>
 
                 <span style={{ fontSize: '12px', color: 'var(--text-muted)', fontWeight: 600 }}>

@@ -37,17 +37,17 @@
 
   <!-- Category / Eyebrow Modern Capsule Pill -->
   <g transform="translate(640, 165)">
-    <rect x="-180" y="-18" width="360" height="36" rx="18" fill="#7c3aed" fill-opacity="0.1" stroke="#7c3aed" stroke-opacity="0.35" stroke-width="1" />
-    <circle cx="-150" cy="0" r="4" fill="#7c3aed" />
-    <text x="0" y="5" text-anchor="middle" font-family="'Space Grotesk', -apple-system, system-ui, sans-serif" font-size="14.5" font-weight="700" letter-spacing="2.5" fill="#7c3aed" text-transform="uppercase">
+    <rect x="-190" y="-18" width="380" height="36" rx="18" fill="#7c3aed" fill-opacity="0.1" stroke="#7c3aed" stroke-opacity="0.35" stroke-width="1" />
+    <circle cx="-160" cy="0" r="4" fill="#7c3aed" />
+    <text x="0" y="5" text-anchor="middle" font-family="'Space Grotesk', -apple-system, system-ui, sans-serif" font-size="14" font-weight="700" letter-spacing="2.5" fill="#7c3aed" text-transform="uppercase">
       SSC & GOVT EXAMS
     </text>
   </g>
 
   <!-- Dominant High-Impact Typography -->
   <g>
-    <text x="640" y="350" text-anchor="middle" font-family="'Space Grotesk', -apple-system, system-ui, sans-serif" font-size="72" font-weight="800" letter-spacing="-0.5" fill="#111827" filter="url(#shadow)">PARMAR GK 3.0</text>
-    <text x="640" y="432.8" text-anchor="middle" font-family="'Space Grotesk', -apple-system, system-ui, sans-serif" font-size="72" font-weight="800" letter-spacing="-0.5" fill="#1F2937" filter="url(#shadow)">COMPLETE GS BATCH</text>
+    <text x="640" y="350" text-anchor="middle" font-family="'Space Grotesk', -apple-system, system-ui, sans-serif" font-size="70" font-weight="800" letter-spacing="-0.5" fill="#111827" filter="url(#shadow)">PARMAR GK 3.0</text>
+    <text x="640" y="432" text-anchor="middle" font-family="'Space Grotesk', -apple-system, system-ui, sans-serif" font-size="64" font-weight="800" letter-spacing="-0.5" fill="#1F2937" filter="url(#shadow)">COMPLETE GS BATCH</text>
   </g>
 
   <!-- Clean Minimalist Footer Accent -->

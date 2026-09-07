@@ -1151,8 +1151,8 @@
   },
   {
     "id": "beu-1st-year",
-    "name": "1st Year",
-    "subname": "Bihar Engineering University",
+    "name": "BEU B.Tech 1st Year",
+    "subname": "Bihar Engineering University • 7 Core Branches",
     "teacher": "Bihar Engineering University",
     "subject": "B.Tech Engineering",
     "tabs": [
@@ -18858,11 +18858,11 @@
   },
   {
     "id": "computer",
-    "name": "Computer Science",
-    "subname": "Computer SPL 29",
+    "name": "Computer Special",
+    "subname": "Computer SPL 29 • Yatendra Sir",
     "teacher": "Yatendra Sir",
     "subject": "Computer",
-    "thumb": "/thumbnails/subjects/computer_science_core.svg",
+    "thumb": "/thumbnails/subjects/computer_awareness.svg",
     "tabs": [
       {
         "id": "videos",
@@ -19671,10 +19671,10 @@
   {
     "id": "english-spl",
     "name": "English Grammar",
-    "subname": "English SPL-26",
+    "subname": "English SPL-26 • Foundation & Rules",
     "teacher": "English Faculty",
     "subject": "English",
-    "thumb": "/thumbnails/subjects/english_communication_skills.svg",
+    "thumb": "/thumbnails/subjects/english_grammar.svg",
     "tabs": [
       {
         "id": "videos",
@@ -23008,10 +23008,10 @@
   {
     "id": "english-practice",
     "name": "English Practice",
-    "subname": "English Practice 26",
+    "subname": "English Practice 26 • Mock & PYQ Drill",
     "teacher": "English Faculty",
     "subject": "English",
-    "thumb": "/thumbnails/subjects/communicative_english.svg",
+    "thumb": "/thumbnails/subjects/english_practice.svg",
     "tabs": [
       {
         "id": "videos",
@@ -24482,10 +24482,10 @@
   {
     "id": "maths-b39",
     "name": "Mathematics B39",
-    "subname": "Maths Batch 39",
+    "subname": "Maths Batch 39 • Complete Arithmetic & Advanced",
     "teacher": "Maths Faculty",
     "subject": "Maths",
-    "thumb": "/thumbnails/subjects/engineering_mathematics.svg",
+    "thumb": "/thumbnails/subjects/maths_b39.svg",
     "tabs": [
       {
         "id": "videos",
@@ -27474,10 +27474,10 @@
   {
     "id": "maths-spl38",
     "name": "Mathematics SPL 38",
-    "subname": "Maths Special 38",
+    "subname": "Maths Special 38 • Foundation to Advanced",
     "teacher": "Maths Faculty",
     "subject": "Maths",
-    "thumb": "/thumbnails/subjects/engineering_mathematics_2.svg",
+    "thumb": "/thumbnails/subjects/maths_spl38.svg",
     "tabs": [
       {
         "id": "videos",
@@ -33241,10 +33241,10 @@
   {
     "id": "reasoning",
     "name": "Logical Reasoning",
-    "subname": "Reasoning SPL 60",
+    "subname": "Reasoning SPL 60 • Verbal & Non-Verbal",
     "teacher": "Reasoning Faculty",
     "subject": "Reasoning",
-    "thumb": "/thumbnails/subjects/programming_for_problem_solving.svg",
+    "thumb": "/thumbnails/subjects/logical_reasoning.svg",
     "tabs": [
       {
         "id": "videos",
@@ -36769,10 +36769,10 @@
   {
     "id": "parmar",
     "name": "Parmar Academy GK",
-    "subname": "Parmar 4.0 GK",
+    "subname": "Parmar 4.0 GK • General Awareness & GS",
     "teacher": "Parmar Sir",
     "subject": "General Knowledge",
-    "thumb": "/thumbnails/subjects/static_gk.svg",
+    "thumb": "/thumbnails/subjects/parmar_gk_4_0.svg",
     "isParmar": true,
     "parmarData": {
       "BIOLOGY": {
@@ -38227,10 +38227,10 @@
   {
     "id": "pratham",
     "name": "SSC Pratham Batch 2",
-    "subname": "Pratham Batch 2",
+    "subname": "Complete Foundation (Maths, English, Reasoning, GS)",
     "teacher": "Multiple Teachers",
     "subject": "SSC Complete",
-    "thumb": "/thumbnails/subjects/static_gk.svg",
+    "thumb": "/thumbnails/subjects/ssc_pratham_batch_2.svg",
     "isPratham": true,
     "prathamBySubject": {
       "Advance": [
