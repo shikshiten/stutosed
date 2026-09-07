@@ -391,6 +391,17 @@ export default function LoginPage() {
                 {isSignUp ? 'Sign In' : 'Create an Account'}
               </button>
             </div>
+
+            <p style={{ textAlign: 'center', fontSize: '11px', color: 'var(--text-dim)', margin: '14px 0 0 0', lineHeight: 1.5 }}>
+              By continuing, you agree to our{' '}
+              <Link href="/terms" target="_blank" style={{ color: 'var(--text-muted)', textDecoration: 'underline' }}>
+                Terms of Service
+              </Link>{' '}
+              and{' '}
+              <Link href="/privacy" target="_blank" style={{ color: 'var(--text-muted)', textDecoration: 'underline' }}>
+                Privacy Policy
+              </Link>.
+            </p>
           </div>
         )}
       </div>

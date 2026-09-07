@@ -12,6 +12,11 @@ import {
   toggleSaveVideo,
 } from '@/lib/libraryStorage';
 import {
+  syncLectureWatched,
+  syncCourseMemory,
+  syncVideoProgress,
+} from '@/lib/supabaseSync';
+import {
   Bookmark,
   BookmarkCheck,
   FolderPlus,
@@ -417,11 +422,9 @@ export const VideoPlayer: React.FC<VideoPlayerProps> = ({
       const now = Date.now();
       if (now - lastSave > 2500) {
         lastSave = now;
-        try {
-          if (video.currentTime > 5) {
-            localStorage.setItem(progressKey, String(Math.floor(video.currentTime)));
-          }
-        } catch {}
+        if (video.currentTime > 5) {
+          syncVideoProgress(currentItem.id || currentItem.url, video.currentTime, video.duration);
+        }
       }
     };
 
@@ -442,6 +445,14 @@ export const VideoPlayer: React.FC<VideoPlayerProps> = ({
     const onPlay = () => {
       setIsPlaying(true);
       setIsBuffering(false);
+      if (currentItem?.url) {
+        setIsWatched(true);
+        syncLectureWatched(courseId || '', currentItem.url, currentItem.label);
+        syncCourseMemory(courseId || '', 'videos', currentItem.url, {
+          courseName,
+          lectureTitle: currentItem.label,
+        });
+      }
     };
     const onPause = () => {
       setIsPlaying(false);

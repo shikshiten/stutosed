@@ -17,6 +17,7 @@ import { INITIAL_COURSES, getTotalStats, getCourseById } from '@/lib/coursesData
 import { Course, LectureItem, UserProfile } from '@/types';
 import { getWorkerProxyUrl, resolveDirectMediaUrl } from '@/lib/proxyConfig';
 import { createClient } from '@/lib/supabase/client';
+import { pullCloudUserData } from '@/lib/supabaseSync';
 import {
   BookOpen,
   Send,
@@ -331,6 +332,7 @@ export default function HomePage() {
             avatar_url: photoUrl,
           });
           setIsAuthOpen(false);
+          pullCloudUserData().catch(() => {});
         } else {
           // If not logged in, maintain guest session without forcing auth modal
           setUser(null);
@@ -366,6 +368,7 @@ export default function HomePage() {
             avatar_url: photoUrl,
           });
           setIsAuthOpen(false);
+          pullCloudUserData().catch(() => {});
         } else {
           setUser(null);
           setIsAuthCompulsory(true);

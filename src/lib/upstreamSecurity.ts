@@ -25,8 +25,7 @@ const SECURE_HOST_SIGNATURES = [
   'ZWFybnZpZHMubmV0',
   'Y3J3aWxsYWRtaW4uY29t',
   'c3RvcmFnZS5nb29nbGVhcGlzLmNvbQ==',
-  'd29ya2Vycy5kZXY=',
-  'aGVyb2t1YXBwLmNvbQ==',
+  'c2Vpcnl1LnN0dXRvc2VkLndvcmtlcnMuZGV2', // seiryu.stutosed.workers.dev (Stutosed official streaming worker)
   'cHVibGljYm90c2h1Yi5ibG9nc3BvdC5jb20=',
   'Y2RuLmp3cGxheWVyLmNvbQ==',
   'Y29udGVudC5qd3BsYXRmb3JtLmNvbQ==',
@@ -56,14 +55,43 @@ function getResolvedAllowlist(): Set<string> {
 
 const RESOLVED_ALLOWLIST = getResolvedAllowlist();
 
+// Multi-tenant public hosting platforms where suffix wildcard matching MUST NEVER be allowed
+const NO_WILDCARD_PLATFORMS = [
+  'workers.dev',
+  'herokuapp.com',
+  'blogspot.com',
+  'appspot.com',
+  'vercel.app',
+  'github.io',
+  'pages.dev',
+  'netlify.app',
+  'render.com',
+];
+
 export function isAllowedUpstream(rawUrl: string): boolean {
   if (!rawUrl) return false;
   try {
     const parsed = new URL(rawUrl);
     const hostname = parsed.hostname.toLowerCase();
+
+    // 1. Direct exact match in allowlist
     if (RESOLVED_ALLOWLIST.has(hostname)) return true;
+
+    // 2. Subdomain check with strict public platform protection
     for (const allowed of RESOLVED_ALLOWLIST) {
-      if (hostname.endsWith('.' + allowed) || hostname === allowed) return true;
+      const isPublicPlatform = NO_WILDCARD_PLATFORMS.some(
+        (p) => allowed === p || allowed.endsWith('.' + p)
+      );
+
+      // Never permit wildcard subdomains on shared multi-tenant platforms (e.g. *.workers.dev)
+      if (isPublicPlatform) {
+        if (hostname === allowed) return true;
+        continue;
+      }
+
+      if (hostname === allowed || hostname.endsWith('.' + allowed)) {
+        return true;
+      }
     }
     return false;
   } catch {

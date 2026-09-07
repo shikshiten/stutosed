@@ -46,6 +46,8 @@ export function isCourseBookmarked(courseId: string): boolean {
   return getBookmarkedCourseIds().includes(courseId);
 }
 
+import { syncBookmark, syncSavedVideo } from '@/lib/supabaseSync';
+
 export function toggleCourseBookmark(courseId: string): boolean {
   if (typeof window === 'undefined') return false;
   const current = getBookmarkedCourseIds();
@@ -55,6 +57,7 @@ export function toggleCourseBookmark(courseId: string): boolean {
     localStorage.setItem(BOOKMARK_KEY, JSON.stringify(next));
     window.dispatchEvent(new Event('stutosed_library_updated'));
   } catch {}
+  syncBookmark(courseId, !exists).catch(() => {});
   return !exists;
 }
 
@@ -82,10 +85,11 @@ export function toggleSaveVideo(video: Omit<SavedVideoItem, 'savedAt'>): boolean
   const exists = current.some((v) => v.id === video.id || v.url === video.url);
 
   let next: SavedVideoItem[];
+  const fullItem: SavedVideoItem = { ...video, savedAt: Date.now() };
   if (exists) {
     next = current.filter((v) => v.id !== video.id && v.url !== video.url);
   } else {
-    next = [{ ...video, savedAt: Date.now() }, ...current];
+    next = [fullItem, ...current];
   }
 
   try {
@@ -93,17 +97,22 @@ export function toggleSaveVideo(video: Omit<SavedVideoItem, 'savedAt'>): boolean
     window.dispatchEvent(new Event('stutosed_library_updated'));
   } catch {}
 
+  syncSavedVideo(fullItem, !exists).catch(() => {});
   return !exists;
 }
 
 export function removeSavedVideo(idOrUrl: string): void {
   if (typeof window === 'undefined') return;
   const current = getSavedVideos();
+  const removed = current.find((v) => v.id === idOrUrl || v.url === idOrUrl);
   const next = current.filter((v) => v.id !== idOrUrl && v.url !== idOrUrl);
   try {
     localStorage.setItem(SAVED_VIDEOS_KEY, JSON.stringify(next));
     window.dispatchEvent(new Event('stutosed_library_updated'));
   } catch {}
+  if (removed) {
+    syncSavedVideo(removed, false).catch(() => {});
+  }
 }
 
 /**

@@ -14,6 +14,11 @@ import {
   toggleSaveVideo,
 } from '@/lib/libraryStorage';
 import {
+  syncLectureWatched,
+  syncCourseMemory,
+  syncVideoProgress,
+} from '@/lib/supabaseSync';
+import {
   Bookmark,
   BookmarkCheck,
   FolderPlus,
@@ -247,27 +252,18 @@ export default function WatchClient() {
     }
   }, [currentItem]);
 
-  // Mark watched & remember last played
+  // Mark watched & remember last played (Local + Supabase Cloud)
   useEffect(() => {
     if (!currentItem?.url) return;
 
-    try {
-      const savedWatched = JSON.parse(localStorage.getItem(WATCHED_KEY) || '{}');
-      savedWatched[currentItem.url] = Date.now();
-      localStorage.setItem(WATCHED_KEY, JSON.stringify(savedWatched));
-      setIsWatched(true);
-
-      const mem = {
-        courseId: courseInfo.id,
-        courseName: courseInfo.name,
-        courseThumb: courseInfo.thumb || '',
-        lectureTitle: currentItem.label,
-        url: currentItem.url,
-        timestamp: Date.now(),
-      };
-      localStorage.setItem(LAST_PLAYED_KEY, JSON.stringify(mem));
-    } catch {}
-  }, [currentItem, courseInfo]);
+    setIsWatched(true);
+    syncLectureWatched(courseInfo.id, currentItem.url, currentItem.label);
+    syncCourseMemory(courseInfo.id, subjectParam || folderParam || 'videos', currentItem.url, {
+      courseName: courseInfo.name,
+      courseThumb: courseInfo.thumb || '',
+      lectureTitle: currentItem.label,
+    });
+  }, [currentItem, courseInfo, subjectParam, folderParam]);
 
   // Active Server & URL resolution (prioritizing ESTE over ALBA, deduplicating identical URLs)
   const servers: ServerOption[] = useMemo(() => {
@@ -582,12 +578,9 @@ export default function WatchClient() {
       const now = Date.now();
       if (now - lastSave > 2500) {
         lastSave = now;
-        try {
-          if (video.currentTime > 5) {
-            const progressKey = `stutosed_progress_${currentItem.id || currentItem.url}`;
-            localStorage.setItem(progressKey, String(Math.floor(video.currentTime)));
-          }
-        } catch {}
+        if (video.currentTime > 5) {
+          syncVideoProgress(currentItem.id || currentItem.url, video.currentTime, video.duration);
+        }
       }
     };
 

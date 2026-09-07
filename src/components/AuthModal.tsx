@@ -594,6 +594,36 @@ export const AuthModal: React.FC<AuthModalProps> = ({
                 <span>Continue as Guest</span>
                 <ArrowRight width={14} height={14} />
               </button>
+
+              {/* Compliance & Legal Links for Google OAuth & Search Console */}
+              <p
+                style={{
+                  textAlign: 'center',
+                  fontSize: '11px',
+                  color: 'var(--text-dim)',
+                  margin: '12px 0 0 0',
+                  lineHeight: 1.5,
+                }}
+              >
+                By continuing, you agree to our{' '}
+                <a
+                  href="/terms"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  style={{ color: 'var(--text-muted)', textDecoration: 'underline' }}
+                >
+                  Terms of Service
+                </a>{' '}
+                and{' '}
+                <a
+                  href="/privacy"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  style={{ color: 'var(--text-muted)', textDecoration: 'underline' }}
+                >
+                  Privacy Policy
+                </a>.
+              </p>
             </div>
           )}
         </div>
