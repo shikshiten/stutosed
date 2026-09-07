@@ -5,7 +5,7 @@ import { Course, LectureItem } from '@/types';
 import { countCourseStats } from '@/lib/coursesData';
 import { getSubjectThumbnail, getDynamicThumbnailUrl } from '@/lib/subjectThumbnails';
 import { getWorkerProxyUrl, resolveDirectMediaUrl } from '@/lib/proxyConfig';
-import { ArrowLeft, Folder, Search, LayoutGrid, List, Video, FileText, CheckCircle2, Play, Download, ExternalLink, Menu } from 'lucide-react';
+import { ArrowLeft, Folder, Search, LayoutGrid, List, Video, FileText, CheckCircle2, Play, Download, ExternalLink } from 'lucide-react';
 
 interface CourseModalProps {
   course: Course | null;
@@ -16,7 +16,6 @@ interface CourseModalProps {
   initialFolderTabId?: string | null;
   onFolderTabChange?: (tabId: string | null) => void;
   theme?: 'light' | 'dark';
-  onOpenSidebar?: () => void;
 }
 
 export const CourseModal: React.FC<CourseModalProps> = ({
@@ -28,7 +27,6 @@ export const CourseModal: React.FC<CourseModalProps> = ({
   initialFolderTabId,
   onFolderTabChange,
   theme,
-  onOpenSidebar,
 }) => {
   const [activeTabId, setActiveTabId] = useState<string>('');
   const [activeFolderTabId, setActiveFolderTabId] = useState<string | null>(initialFolderTabId || null);
@@ -322,16 +320,6 @@ export const CourseModal: React.FC<CourseModalProps> = ({
     <div id="course-overlay" className="open" role="dialog" aria-modal="true">
       {/* 1. TOP STICKY APP BAR */}
       <div className="overlay-bar">
-        {/* Left: Hamburger Drawer Menu Button */}
-        <button
-          className="overlay-icon-btn"
-          onClick={onOpenSidebar}
-          aria-label="Open navigation sidebar"
-          title="Open Menu"
-        >
-          <Menu width={20} height={20} strokeWidth={2.2} />
-        </button>
-
         {/* Right: Expandable Search Bar */}
         <div
           ref={searchContainerRef}
@@ -646,7 +634,7 @@ export const CourseModal: React.FC<CourseModalProps> = ({
                     }}
                   >
                     <img
-                      src={getSubjectThumbnail(tab.label, tab.thumb, tab.id, theme)}
+                      src={tab.thumb || getSubjectThumbnail(tab.label, tab.thumb, tab.id, theme)}
                       alt=""
                       onError={(e) => {
                         const target = e.currentTarget;

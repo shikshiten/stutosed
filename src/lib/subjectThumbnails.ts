@@ -1,7 +1,8 @@
 /**
  * Stutosed Centralized Subject Thumbnail Architecture
  * Resolves high-aesthetic vector SVGs for all academic subjects and batches.
- * Automatically falls back to dynamic Mithila SVG thumbnails for custom topics.
+ * Features Title-First topic matching to accurately identify subject context
+ * from lecture titles even inside multi-disciplinary engineering batches.
  */
 
 export const PROTECTED_THUMBNAILS: Record<string, string> = {
@@ -10,8 +11,13 @@ export const PROTECTED_THUMBNAILS: Record<string, string> = {
   'mechanical-umeed': '/thumbnails/beu_mech_umeed.jpg',
   'civil-umeed': '/thumbnails/beu_civil_umeed.jpg',
   'cse-umeed': '/thumbnails/beu_cse_umeed.jpg',
+  'engineering-chemistry': '/thumbnails/beu_eng_chemistry.jpg',
+  'engineering-mathematics-2': '/thumbnails/beu_engineering_mathematics_2.jpg',
+  'engineering-physics': '/thumbnails/beu_engineering_physics.jpg',
   'parmar-gk-3-0': '/thumbnails/parmar_gk_3.jpg',
   'parmar': '/thumbnails/parmar_gk_3.jpg',
+  'beu-1st-year': '/thumbnails/beu_1st_year_course.jpg',
+  'beu-1st-sem': '/thumbnails/beu_1st_sem_course.jpg',
 };
 
 export const SUBJECT_KEYS = {
@@ -61,9 +67,488 @@ export function getDynamicThumbnailUrl(
 }
 
 /**
- * Normalizes subject string and resolves the exact canonical thumbnail asset.
- * Always prioritizes handcrafted vector SVGs matching the subject,
- * then checks if fallback is an SVG, and finally falls back to dynamic Mithila generator.
+ * Evaluates a string for specific academic subject topics using keyword matching.
+ */
+function matchTopicToSubjectKey(raw: string): string | null {
+  const t = raw.toLowerCase();
+
+  // 1. Mathematics & Higher Calculus
+  if (
+    t.includes('mathematics-ii') ||
+    t.includes('maths-ii') ||
+    t.includes('mathematics 2') ||
+    t.includes('maths 2') ||
+    t.includes('complex variable') ||
+    t.includes('complex number') ||
+    t.includes('analytic function') ||
+    t.includes('analytic information') ||
+    t.includes('cauchy') ||
+    t.includes('contour') ||
+    t.includes('residue') ||
+    t.includes('taylor') ||
+    t.includes('laurent') ||
+    t.includes('conformal') ||
+    t.includes('special 38') ||
+    t.includes('spl 38') ||
+    t.includes('spl38')
+  ) {
+    return SUBJECT_KEYS.ENGINEERING_MATHEMATICS_2;
+  }
+
+  if (
+    t.includes('calculus') ||
+    t.includes('matrix') ||
+    t.includes('matrices') ||
+    t.includes('differential') ||
+    t.includes('integration') ||
+    t.includes('integral') ||
+    t.includes('derivative') ||
+    t.includes('probability') ||
+    t.includes('statistics') ||
+    t.includes('vector algebra') ||
+    t.includes('algebra') ||
+    t.includes('trigonometry') ||
+    t.includes('geometry') ||
+    t.includes('arithmetic') ||
+    t.includes('percentage') ||
+    t.includes('ratio and proportion') ||
+    t.includes('profit and loss') ||
+    t.includes('simple interest') ||
+    t.includes('compound interest') ||
+    t.includes('time and work') ||
+    t.includes('speed and distance') ||
+    t.includes('number system') ||
+    t.includes('simplification') ||
+    t.includes('maths b39') ||
+    t.includes('maths-b39') ||
+    t.includes('mathematics b39') ||
+    t.includes('math')
+  ) {
+    return SUBJECT_KEYS.ENGINEERING_MATHEMATICS;
+  }
+
+  // 2. Chemistry
+  if (
+    t.includes('electromagnetic radiation') ||
+    t.includes('spectroscopy') ||
+    t.includes('polymer') ||
+    t.includes('corrosion') ||
+    t.includes('water treatment') ||
+    t.includes('photoelectric') ||
+    (t.includes('atomic') && t.includes('orbital')) ||
+    t.includes('molecular orbital') ||
+    t.includes('vsepr') ||
+    t.includes('bent theory') ||
+    t.includes('heisenberg') ||
+    t.includes('chemical bonding') ||
+    (t.includes('thermodynamics') && t.includes('chemical')) ||
+    t.includes('periodic table') ||
+    t.includes('states of matter') ||
+    t.includes('acid') && t.includes('base') ||
+    t.includes('organic chemistry') ||
+    t.includes('inorganic chemistry') ||
+    t.includes('chemistry')
+  ) {
+    return SUBJECT_KEYS.ENGINEERING_CHEMISTRY;
+  }
+
+  // 3. Physics
+  if (
+    t.includes('quantum mechanics') ||
+    t.includes('wave optics') ||
+    t.includes('interference') ||
+    t.includes('diffraction') ||
+    t.includes('polarization') ||
+    t.includes('laser') ||
+    t.includes('fiber optics') ||
+    t.includes('optical fiber') ||
+    t.includes('semiconductor') ||
+    t.includes('dielectric') ||
+    t.includes('magnetic properties') ||
+    t.includes('superconductivity') ||
+    t.includes('nanotechnology') ||
+    t.includes('maxwell') ||
+    t.includes('frame of reference') ||
+    t.includes('laws of motion') ||
+    t.includes('gravitation') ||
+    t.includes('work energy') ||
+    t.includes('rotational motion') ||
+    t.includes('physics')
+  ) {
+    return SUBJECT_KEYS.ENGINEERING_PHYSICS;
+  }
+
+  // 4. Programming & Problem Solving
+  if (
+    t.includes('programming') ||
+    t.includes('c language') ||
+    t.includes('c programming') ||
+    t.includes('pointer') ||
+    t.includes('array') ||
+    t.includes('loop') ||
+    t.includes('recursion') ||
+    t.includes('function in c') ||
+    (t.includes('structure') && t.includes('union')) ||
+    t.includes('file handling') ||
+    t.includes('dynamic memory') ||
+    t.includes('algorithm') ||
+    t.includes('data structure') ||
+    t.includes('pps') ||
+    t.includes('logical reasoning') ||
+    t.includes('syllogism') ||
+    t.includes('blood relation') ||
+    t.includes('coding decoding') ||
+    t.includes('seating arrangement') ||
+    t.includes('reasoning')
+  ) {
+    return SUBJECT_KEYS.PROGRAMMING_FOR_PROBLEM_SOLVING;
+  }
+
+  // 5. Computer Science Core
+  if (
+    t.includes('operating system') ||
+    t.includes('dbms') ||
+    t.includes('database') ||
+    t.includes('compiler') ||
+    t.includes('computer network') ||
+    t.includes('software engineering') ||
+    t.includes('computer science') ||
+    t.includes('cse')
+  ) {
+    return SUBJECT_KEYS.COMPUTER_SCIENCE_CORE;
+  }
+
+  // 6. Engineering Graphics & Design
+  if (
+    t.includes('graphics') ||
+    t.includes('drawing') ||
+    t.includes('projection of line') ||
+    t.includes('projection of plane') ||
+    t.includes('projection of solid') ||
+    t.includes('isometric') ||
+    t.includes('perspective') ||
+    (t.includes('scale') && t.includes('plane')) ||
+    t.includes('autocad') ||
+    t.includes('cad software') ||
+    t.includes('conic section')
+  ) {
+    return SUBJECT_KEYS.ENGINEERING_GRAPHICS_DESIGN;
+  }
+
+  // 7. Workshop & Manufacturing
+  if (
+    t.includes('workshop') ||
+    t.includes('manufacturing') ||
+    t.includes('welding') ||
+    t.includes('carpentry') ||
+    t.includes('fitting') ||
+    t.includes('smithy') ||
+    t.includes('foundry') ||
+    t.includes('sheet metal') ||
+    t.includes('lathe') ||
+    t.includes('machining') ||
+    t.includes('machine tool')
+  ) {
+    return SUBJECT_KEYS.WORKSHOP_MANUFACTURING;
+  }
+
+  // 8. Basic Electrical & Workshop
+  if (
+    t.includes('basic electrical') ||
+    t.includes('electric circuit') ||
+    t.includes('kvl') ||
+    t.includes('kcl') ||
+    t.includes('thevenin') ||
+    t.includes('norton') ||
+    t.includes('superposition') ||
+    t.includes('ac circuit') ||
+    t.includes('three phase') ||
+    t.includes('single phase') ||
+    t.includes('transformer') ||
+    t.includes('dc motor') ||
+    t.includes('induction motor') ||
+    t.includes('alternator') ||
+    t.includes('electronics') ||
+    t.includes('diode') ||
+    t.includes('transistor')
+  ) {
+    return SUBJECT_KEYS.BASIC_ELECTRICAL_WORKSHOP;
+  }
+
+  // 9. Civil Engineering Core
+  if (
+    t.includes('surveying') ||
+    t.includes('fluid mechanics') ||
+    t.includes('building material') ||
+    t.includes('concrete technology') ||
+    t.includes('soil mechanics') ||
+    t.includes('strength of material') ||
+    t.includes('structural analysis') ||
+    t.includes('highway engineering') ||
+    t.includes('civil engineering') ||
+    t.includes('civil')
+  ) {
+    return SUBJECT_KEYS.CIVIL_ENGINEERING_CORE;
+  }
+
+  // 10. Elements of Mechanical Engineering
+  if (
+    t.includes('ic engine') ||
+    t.includes('steam boiler') ||
+    t.includes('refrigeration') ||
+    t.includes('air conditioning') ||
+    t.includes('power transmission') ||
+    t.includes('belt drive') ||
+    t.includes('gear drive') ||
+    t.includes('mechanical engineering') ||
+    t.includes('mechanical engg') ||
+    t.includes('mechanics')
+  ) {
+    return SUBJECT_KEYS.ELEMENTS_OF_MECHANICAL_ENGINEERING;
+  }
+
+  // 11. Biology
+  if (
+    t.includes('cell') ||
+    t.includes('tissue') ||
+    t.includes('plant kingdom') ||
+    t.includes('animal kingdom') ||
+    t.includes('genetics') ||
+    t.includes('dna') ||
+    t.includes('rna') ||
+    t.includes('biomolecules') ||
+    t.includes('photosynthesis') ||
+    t.includes('respiration') ||
+    t.includes('digestive system') ||
+    t.includes('circulatory system') ||
+    t.includes('nervous system') ||
+    t.includes('endocrine system') ||
+    t.includes('disease') ||
+    t.includes('vitamin') ||
+    t.includes('taxonomy') ||
+    t.includes('biology') ||
+    t.includes('botany') ||
+    t.includes('zoology')
+  ) {
+    return SUBJECT_KEYS.BIOLOGY;
+  }
+
+  // 12. History (Ancient, Medieval, Modern)
+  if (
+    t.includes('ancient') ||
+    t.includes('stone age') ||
+    t.includes('indus valley') ||
+    t.includes('harappa') ||
+    t.includes('vedic') ||
+    t.includes('buddhism') ||
+    t.includes('jainism') ||
+    t.includes('maurya') ||
+    t.includes('gupta') ||
+    t.includes('sangam') ||
+    t.includes('mahajanapada')
+  ) {
+    return SUBJECT_KEYS.ANCIENT_HISTORY;
+  }
+
+  if (
+    t.includes('medieval') ||
+    t.includes('delhi sultanate') ||
+    t.includes('mughal') ||
+    t.includes('maratha') ||
+    t.includes('vijayanagar') ||
+    t.includes('bhakti') ||
+    t.includes('sufi') ||
+    t.includes('islam') ||
+    t.includes('slave dynasty') ||
+    t.includes('khilji') ||
+    t.includes('tughlaq') ||
+    t.includes('akbar')
+  ) {
+    return SUBJECT_KEYS.MEDIEVAL_HISTORY;
+  }
+
+  if (
+    t.includes('modern') ||
+    t.includes('advent of european') ||
+    t.includes('east india') ||
+    t.includes('revolt of 1857') ||
+    t.includes('governor general') ||
+    t.includes('viceroy') ||
+    t.includes('reform movement') ||
+    t.includes('national congress') ||
+    t.includes('gandhi') ||
+    t.includes('non cooperation') ||
+    t.includes('civil disobedience') ||
+    t.includes('quit india') ||
+    t.includes('partition') ||
+    t.includes('british') ||
+    t.includes('history')
+  ) {
+    return SUBJECT_KEYS.MODERN_HISTORY;
+  }
+
+  // 13. Polity
+  if (
+    t.includes('polity') ||
+    t.includes('constitution') ||
+    t.includes('preamble') ||
+    t.includes('fundamental right') ||
+    t.includes('fundamental dut') ||
+    t.includes('dpsp') ||
+    t.includes('president') ||
+    t.includes('parliament') ||
+    t.includes('supreme court') ||
+    t.includes('high court') ||
+    t.includes('governor') ||
+    t.includes('panchayat') ||
+    t.includes('article') ||
+    t.includes('amendment') ||
+    t.includes('election commission') ||
+    t.includes('upsc') ||
+    t.includes('judiciary')
+  ) {
+    return SUBJECT_KEYS.POLITY;
+  }
+
+  // 14. Geography
+  if (
+    t.includes('geography') ||
+    t.includes('solar system') ||
+    t.includes('latitude') ||
+    t.includes('longitude') ||
+    (t.includes('earth') && t.includes('interior')) ||
+    t.includes('plate techtonic') ||
+    t.includes('volcano') ||
+    t.includes('earthquake') ||
+    t.includes('rock') ||
+    t.includes('atmosphere') ||
+    t.includes('pressure belt') ||
+    t.includes('wind') ||
+    t.includes('cyclone') ||
+    t.includes('ocean') ||
+    t.includes('tide') ||
+    t.includes('current') ||
+    t.includes('river') ||
+    t.includes('mountain') ||
+    t.includes('monsoon') ||
+    t.includes('soil of india') ||
+    t.includes('mineral')
+  ) {
+    return SUBJECT_KEYS.GEOGRAPHY;
+  }
+
+  // 15. Economics
+  if (
+    t.includes('economics') ||
+    t.includes('economy') ||
+    t.includes('inflation') ||
+    t.includes('gdp') ||
+    t.includes('national income') ||
+    t.includes('monetary policy') ||
+    t.includes('fiscal policy') ||
+    t.includes('rbi') ||
+    t.includes('banking') ||
+    t.includes('budget') ||
+    t.includes('taxation') ||
+    t.includes('five year plan') ||
+    t.includes('unemployment') ||
+    t.includes('poverty') ||
+    t.includes('microeconomics') ||
+    t.includes('macroeconomics')
+  ) {
+    return SUBJECT_KEYS.ECONOMICS;
+  }
+
+  // 16. Environment & Ecology
+  if (
+    t.includes('environment') ||
+    t.includes('ecology') ||
+    t.includes('biodiversity') ||
+    t.includes('pollution') ||
+    t.includes('climate change') ||
+    t.includes('global warming') ||
+    t.includes('national park') ||
+    t.includes('wildlife sanctuary') ||
+    t.includes('wetland') ||
+    t.includes('ramsar') ||
+    t.includes('ecosystem') ||
+    t.includes('greenhouse')
+  ) {
+    return SUBJECT_KEYS.ENVIRONMENT_ECOLOGY;
+  }
+
+  // 17. Static GK
+  if (
+    t.includes('classical dance') ||
+    t.includes('folk dance') ||
+    t.includes('dance') ||
+    t.includes('festival') ||
+    t.includes('temple') ||
+    t.includes('monument') ||
+    t.includes('award') ||
+    t.includes('sport') ||
+    t.includes('stadium') ||
+    (t.includes('book') && t.includes('author')) ||
+    t.includes('first in india') ||
+    t.includes('national symbol') ||
+    t.includes('headquarters') ||
+    t.includes('unesco') ||
+    t.includes('census') ||
+    t.includes('fair') ||
+    t.includes('static gk') ||
+    t.includes('static g.k') ||
+    t.includes('general awareness') ||
+    t.includes('general knowledge')
+  ) {
+    return SUBJECT_KEYS.STATIC_GK;
+  }
+
+  // 18. English
+  if (
+    t.includes('communicative english') ||
+    t.includes('practice 26') ||
+    t.includes('english practice')
+  ) {
+    return SUBJECT_KEYS.COMMUNICATIVE_ENGLISH;
+  }
+
+  if (
+    t.includes('english') ||
+    t.includes('communication') ||
+    t.includes('grammar') ||
+    t.includes('vocabulary') ||
+    t.includes('vocab') ||
+    t.includes('narration') ||
+    t.includes('voice') ||
+    t.includes('tense') ||
+    t.includes('noun') ||
+    t.includes('pronoun') ||
+    t.includes('verb') ||
+    t.includes('adjective') ||
+    t.includes('preposition') ||
+    t.includes('conjunction') ||
+    t.includes('idiom') ||
+    t.includes('one word') ||
+    t.includes('synonym') ||
+    t.includes('antonym') ||
+    t.includes('spelling') ||
+    t.includes('comprehension') ||
+    t.includes('cloze test')
+  ) {
+    return SUBJECT_KEYS.ENGLISH_COMMUNICATION_SKILLS;
+  }
+
+  return null;
+}
+
+/**
+ * Normalizes subject/title string and resolves the exact canonical thumbnail asset.
+ * Features Title-First resolution:
+ * 1. Checks PROTECTED_THUMBNAILS (e.g. batch cover banners)
+ * 2. Checks explicit valid image fallbacks (.jpg, .png, etc.)
+ * 3. Evaluates lecture title (subjectName) FIRST for academic topic keywords
+ * 4. Falls back to evaluating category/tab (tabIdOrName)
+ * 5. Falls back to clean dynamic SVG generator
  */
 export function getSubjectThumbnail(
   subjectName?: string | null,
@@ -71,11 +556,42 @@ export function getSubjectThumbnail(
   tabIdOrName?: string | null,
   theme?: 'light' | 'dark'
 ): string {
-  const s = (subjectName || '').toLowerCase().trim();
-  const t = (tabIdOrName || '').toLowerCase().trim();
-  const text = `${s} ${t}`.trim();
+  const s = (subjectName || '').trim();
+  const t = (tabIdOrName || '').trim();
 
-  // 1. If explicit SVG fallback provided, theme it appropriately
+  // 1. Protected Batch Banners (check tab ID, tab Name, or subjectName)
+  const normTabId = t.toLowerCase().replace(/[^a-z0-9_-]/g, '-').replace(/-+/g, '-');
+  if (normTabId && PROTECTED_THUMBNAILS[normTabId]) {
+    return PROTECTED_THUMBNAILS[normTabId];
+  }
+  const normSubj = s.toLowerCase().replace(/[^a-z0-9_-]/g, '-').replace(/-+/g, '-');
+  if (normSubj && PROTECTED_THUMBNAILS[normSubj]) {
+    return PROTECTED_THUMBNAILS[normSubj];
+  }
+
+  // 2. Explicit raster cover banner provided and no distinct lecture title provided
+  // (e.g. course card, folder root card)
+  if (fallbackThumb && !fallbackThumb.endsWith('.svg') && (!s || s === t)) {
+    return fallbackThumb;
+  }
+
+  // 3. TITLE-FIRST TOPIC MATCHING: Check lecture title (s) first!
+  if (s) {
+    const titleMatch = matchTopicToSubjectKey(s);
+    if (titleMatch) {
+      return resolveSvgPath(titleMatch, theme);
+    }
+  }
+
+  // 4. If title didn't match an academic topic, check tab / category name (t)
+  if (t) {
+    const tabMatch = matchTopicToSubjectKey(t);
+    if (tabMatch) {
+      return resolveSvgPath(tabMatch, theme);
+    }
+  }
+
+  // 5. Themed SVG fallback if provided
   if (fallbackThumb && fallbackThumb.endsWith('.svg')) {
     if (theme && !fallbackThumb.includes('_light.svg') && !fallbackThumb.includes('_dark.svg')) {
       return fallbackThumb.replace('.svg', `_${theme}.svg`);
@@ -83,90 +599,16 @@ export function getSubjectThumbnail(
     return fallbackThumb;
   }
 
-  // 2. Check protected batch thumbnails (if no explicit subject match needed)
-  if (!subjectName && tabIdOrName) {
-    const rawId = tabIdOrName.toLowerCase().trim();
-    if (PROTECTED_THUMBNAILS[rawId]) return PROTECTED_THUMBNAILS[rawId];
+  // 6. If fallbackThumb is a valid image, use it
+  if (fallbackThumb && !fallbackThumb.endsWith('.svg')) {
+    return fallbackThumb;
   }
 
-  // 3. Match Specific Subject Names to Handcrafted Vector SVGs
-  if (text) {
-    if (text.includes('graphics') || text.includes('drawing')) {
-      return resolveSvgPath(SUBJECT_KEYS.ENGINEERING_GRAPHICS_DESIGN, theme);
-    }
-    if (text.includes('elements of mechanical') || text.includes('mechanical engg') || text.includes('mechanics')) {
-      return resolveSvgPath(SUBJECT_KEYS.ELEMENTS_OF_MECHANICAL_ENGINEERING, theme);
-    }
-    if (text.includes('workshop') || text.includes('manufacturing')) {
-      return resolveSvgPath(SUBJECT_KEYS.WORKSHOP_MANUFACTURING, theme);
-    }
-    if (text.includes('programming') || text.includes('pps') || text.includes('reasoning') || text.includes('logical')) {
-      return resolveSvgPath(SUBJECT_KEYS.PROGRAMMING_FOR_PROBLEM_SOLVING, theme);
-    }
-    if (text.includes('civil')) {
-      return resolveSvgPath(SUBJECT_KEYS.CIVIL_ENGINEERING_CORE, theme);
-    }
-    if (text.includes('electrical') || text.includes('electronics') || text.includes('eee') || text.includes('ece')) {
-      return resolveSvgPath(SUBJECT_KEYS.BASIC_ELECTRICAL_WORKSHOP, theme);
-    }
-    if (text.includes('computer') || text.includes('cse') || text.includes('software')) {
-      return resolveSvgPath(SUBJECT_KEYS.COMPUTER_SCIENCE_CORE, theme);
-    }
-    if (text.includes('communicative english') || text.includes('practice 26') || text.includes('english practice')) {
-      return resolveSvgPath(SUBJECT_KEYS.COMMUNICATIVE_ENGLISH, theme);
-    }
-    if (text.includes('english') || text.includes('communication') || text.includes('grammar') || text.includes('vocab')) {
-      return resolveSvgPath(SUBJECT_KEYS.ENGLISH_COMMUNICATION_SKILLS, theme);
-    }
-    if (text.includes('mathematics-ii') || text.includes('mathematics 2') || text.includes('maths-ii') || text.includes('maths 2') || text.includes('special 38') || text.includes('spl 38') || text.includes('spl38')) {
-      return resolveSvgPath(SUBJECT_KEYS.ENGINEERING_MATHEMATICS_2, theme);
-    }
-    if (text.includes('math') || text.includes('arithmetic') || text.includes('algebra') || text.includes('geometry') || text.includes('trigonometry') || text.includes('quant')) {
-      return resolveSvgPath(SUBJECT_KEYS.ENGINEERING_MATHEMATICS, theme);
-    }
-    if (text.includes('chemistry')) {
-      return resolveSvgPath(SUBJECT_KEYS.ENGINEERING_CHEMISTRY, theme);
-    }
-    if (text.includes('physics')) {
-      return resolveSvgPath(SUBJECT_KEYS.ENGINEERING_PHYSICS, theme);
-    }
-    if (text.includes('environment') || text.includes('ecology')) {
-      return resolveSvgPath(SUBJECT_KEYS.ENVIRONMENT_ECOLOGY, theme);
-    }
-    if (text.includes('ancient')) {
-      return resolveSvgPath(SUBJECT_KEYS.ANCIENT_HISTORY, theme);
-    }
-    if (text.includes('medieval')) {
-      return resolveSvgPath(SUBJECT_KEYS.MEDIEVAL_HISTORY, theme);
-    }
-    if (text.includes('modern')) {
-      return resolveSvgPath(SUBJECT_KEYS.MODERN_HISTORY, theme);
-    }
-    if (text.includes('history')) {
-      return resolveSvgPath(SUBJECT_KEYS.MODERN_HISTORY, theme);
-    }
-    if (text.includes('polity') || text.includes('constitution')) {
-      return resolveSvgPath(SUBJECT_KEYS.POLITY, theme);
-    }
-    if (text.includes('geography')) {
-      return resolveSvgPath(SUBJECT_KEYS.GEOGRAPHY, theme);
-    }
-    if (text.includes('economics') || text.includes('economy')) {
-      return resolveSvgPath(SUBJECT_KEYS.ECONOMICS, theme);
-    }
-    if (text.includes('biology') || text.includes('botany') || text.includes('zoology')) {
-      return resolveSvgPath(SUBJECT_KEYS.BIOLOGY, theme);
-    }
-    if (text.includes('static') || text.includes('gk') || text.includes('gs') || text.includes('pratham') || text.includes('general awareness') || text.includes('general knowledge')) {
-      return resolveSvgPath(SUBJECT_KEYS.STATIC_GK, theme);
-    }
-  }
-
-  // 4. Dynamic Title-based Mithila SVG fallback
-  const cleanTitle = (subjectName || tabIdOrName || '').trim();
+  // 7. Dynamic Title-based Minimalist SVG generator
+  const cleanTitle = (s || t || 'Study Lecture').trim();
   if (cleanTitle) {
-    return getDynamicThumbnailUrl(cleanTitle, text, theme);
+    return getDynamicThumbnailUrl(cleanTitle, t, theme);
   }
 
-  return fallbackThumb || '/thumbnails/all_lecture_thumbnail.jpg';
+  return '/thumbnails/all_lecture_thumbnail.jpg';
 }

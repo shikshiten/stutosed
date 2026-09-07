@@ -112,7 +112,6 @@ export default function WatchClient() {
   const [seekHoverTime, setSeekHoverTime] = useState<number | null>(null);
   const [seekHoverPos, setSeekHoverPos] = useState<number>(0);
   const [skipFeedback, setSkipFeedback] = useState<'backward' | 'forward' | null>(null);
-  const [playerMode, setPlayerMode] = useState<'proxy' | 'embedded'>('proxy');
   const [resolvedStreamUrl, setResolvedStreamUrl] = useState<string | null>(null);
   const [selectedServerIndex, setSelectedServerIndex] = useState(0);
 
@@ -270,9 +269,15 @@ export default function WatchClient() {
     } catch {}
   }, [currentItem, courseInfo]);
 
-  // Active Server & URL resolution
+  // Active Server & URL resolution (prioritizing ESTE over ALBA)
   const servers: ServerOption[] = useMemo(() => {
-    if (currentItem?.servers && currentItem.servers.length > 0) return currentItem.servers;
+    if (currentItem?.servers && currentItem.servers.length > 0) {
+      return [...currentItem.servers].sort((a, b) => {
+        const aIsEste = a.name?.toUpperCase().includes('ESTE') ? 1 : 0;
+        const bIsEste = b.name?.toUpperCase().includes('ESTE') ? 1 : 0;
+        return bIsEste - aIsEste;
+      });
+    }
     if (currentItem?.url) return [{ name: 'Server 1', url: currentItem.url, type: currentItem.type }];
     return [];
   }, [currentItem]);
@@ -300,7 +305,6 @@ export default function WatchClient() {
     activeServer?.name?.toUpperCase().includes('ESTE') ||
     (!activeServer && (activeUrl.includes('streamvaultpro.cc') || activeUrl.includes('/0:/stream/') || activeUrl.includes('/0:/dl/'))) ||
     Boolean(activeServer?.streamUrl);
-  const canToggleMode = (isVidmolyUrl || isEarnvidsUrl || isAlbaActive || isProxyStreamUrl) && !isYouTubeUrl;
   const needsApiResolution = isVidmolyUrl || isEarnvidsUrl;
 
   // Stream Resolution with fast in-memory cache
@@ -311,13 +315,11 @@ export default function WatchClient() {
     setStreamError(null);
 
     if (isYouTubeUrl) {
-      setPlayerMode('embedded');
       setStreamLoading(false);
       return;
     }
 
     if (!needsApiResolution) {
-      setPlayerMode('proxy');
       setStreamLoading(false);
       return;
     }
@@ -329,7 +331,6 @@ export default function WatchClient() {
         const prefetched = JSON.parse(prefetchedRaw);
         if (prefetched?.url === activeUrl && prefetched?.streamUrl) {
           setResolvedStreamUrl(prefetched.streamUrl);
-          setPlayerMode('proxy');
           setStreamLoading(false);
           sessionStorage.removeItem('stutosed_prefetched_stream');
           return;
@@ -344,13 +345,12 @@ export default function WatchClient() {
     const code = earnvidsCode || vidmolyCode;
 
     if (!code) {
-      setPlayerMode('embedded');
       setStreamLoading(false);
+      setStreamError('Invalid video code');
       return;
     }
 
     setStreamLoading(true);
-    setPlayerMode('proxy');
 
     fetch(`/api/stream?code=${encodeURIComponent(code)}&provider=${provider}`, {
       signal: abortController.signal,
@@ -363,12 +363,12 @@ export default function WatchClient() {
         if (data?.streamUrl) {
           setResolvedStreamUrl(data.streamUrl);
         } else {
-          setPlayerMode('embedded');
+          setStreamError('Failed to load stream. Try selecting another server.');
         }
       })
       .catch((err) => {
         if (err.name !== 'AbortError') {
-          setPlayerMode('embedded');
+          setStreamError('Stream request timed out. Please retry.');
         }
       })
       .finally(() => {
@@ -389,7 +389,7 @@ export default function WatchClient() {
 
   // Video & HLS Setup
   useEffect(() => {
-    if (playerMode !== 'proxy' || !videoSourceUrl || !videoRef.current) return;
+    if (!videoSourceUrl || !videoRef.current) return;
 
     const video = videoRef.current;
     setQualities([]);
@@ -453,11 +453,11 @@ export default function WatchClient() {
               hls.recoverMediaError();
               break;
             default:
-              // Fatal HLS error fallback to alternate server or embedded iframe
+              // Fatal HLS error fallback to alternate server
               if (servers.length > 1 && selectedServerIndex < servers.length - 1) {
                 setSelectedServerIndex((prev) => prev + 1);
               } else {
-                setPlayerMode('embedded');
+                setStreamError('Playback failed. Please try switching servers or refresh.');
               }
               hls.destroy();
               hlsRef.current = null;
@@ -476,19 +476,19 @@ export default function WatchClient() {
         setIsBuffering(false);
       });
     }
-  }, [videoSourceUrl, isProxyStreamUrl, playerMode]);
+  }, [videoSourceUrl, isProxyStreamUrl]);
 
   // Sync playback speed
   useEffect(() => {
-    if (videoRef.current && playerMode === 'proxy') {
+    if (videoRef.current) {
       videoRef.current.playbackRate = playbackSpeed;
     }
-  }, [videoSourceUrl, playbackSpeed, playerMode]);
+  }, [videoSourceUrl, playbackSpeed]);
 
   // Video listeners with comprehensive network error handling & auto-failover
   useEffect(() => {
     const video = videoRef.current;
-    if (!video || playerMode !== 'proxy') return;
+    if (!video) return;
 
     const handlePlay = () => {
       setIsPlaying(true);
@@ -516,8 +516,6 @@ export default function WatchClient() {
       // Auto failover on network/stream errors (e.g. HTTP 429 capacity limit or dropped upstream)
       if (servers.length > 1 && selectedServerIndex < servers.length - 1) {
         setSelectedServerIndex((prev) => prev + 1);
-      } else if (canToggleMode) {
-        setPlayerMode('embedded');
       } else {
         setStreamError('Playback failed. Please try switching servers or refresh.');
       }
@@ -540,17 +538,29 @@ export default function WatchClient() {
       video.removeEventListener('playing', handlePlaying);
       video.removeEventListener('error', handleError);
     };
-  }, [playerMode, servers, selectedServerIndex, canToggleMode]);
+  }, [servers, selectedServerIndex]);
 
   // Progress update & seek
   useEffect(() => {
     const video = videoRef.current;
-    if (!video || !currentItem || playerMode !== 'proxy') return;
+    if (!video || !currentItem) return;
 
     const handleLoadedMetadata = () => {
       setDuration(video.duration || 0);
+      try {
+        const progressKey = `stutosed_progress_${currentItem.id || currentItem.url}`;
+        const saved = localStorage.getItem(progressKey);
+        if (saved) {
+          const savedTime = parseFloat(saved);
+          if (savedTime > 5 && video.duration && savedTime < video.duration - 15) {
+            video.currentTime = savedTime;
+            setCurrentTime(savedTime);
+          }
+        }
+      } catch {}
     };
 
+    let lastSave = 0;
     const handleTimeUpdate = () => {
       if (!isDraggingSeek) {
         setCurrentTime(video.currentTime);
@@ -558,6 +568,16 @@ export default function WatchClient() {
       if (video.buffered && video.buffered.length > 0) {
         try {
           setBufferedTime(video.buffered.end(video.buffered.length - 1));
+        } catch {}
+      }
+      const now = Date.now();
+      if (now - lastSave > 2500) {
+        lastSave = now;
+        try {
+          if (video.currentTime > 5) {
+            const progressKey = `stutosed_progress_${currentItem.id || currentItem.url}`;
+            localStorage.setItem(progressKey, String(Math.floor(video.currentTime)));
+          }
         } catch {}
       }
     };
@@ -569,7 +589,7 @@ export default function WatchClient() {
       video.removeEventListener('loadedmetadata', handleLoadedMetadata);
       video.removeEventListener('timeupdate', handleTimeUpdate);
     };
-  }, [currentItem, videoSourceUrl, playerMode, isDraggingSeek]);
+  }, [currentItem, videoSourceUrl, isDraggingSeek]);
 
   // Controls reset timer
   const resetControlsTimer = useCallback(() => {
@@ -869,7 +889,7 @@ export default function WatchClient() {
     return getLectureTopicDescription(currentItem?.label || courseInfo.name);
   }, [currentItem, courseInfo]);
 
-  const showLoading = playerMode === 'proxy' && (streamLoading || (isBuffering && isPlaying));
+  const showLoading = streamLoading || (isBuffering && isPlaying);
   const playedPercent = duration > 0 ? (currentTime / duration) * 100 : 0;
   const bufferedPercent = duration > 0 ? (bufferedTime / duration) * 100 : 0;
 
@@ -882,50 +902,53 @@ export default function WatchClient() {
     );
   }
 
-  if (playlist.length === 0 || !currentItem) {
+  if (!currentItem) {
     return (
-      <div className="watch-empty-screen">
-        <ArrowLeft width={20} height={20} />
-        <h2>No lecture found</h2>
-        <p>This lecture playlist is not available or has expired.</p>
-        <button onClick={handleBackToCourse} className="watch-back-link">
-          ← Return to Courses
+      <div className="watch-error-screen">
+        <h2>Lecture Not Found</h2>
+        <p>The requested video lecture could not be resolved from this course.</p>
+        <button className="watch-return-btn" onClick={() => router.push('/')}>
+          Return to Vault
         </button>
       </div>
     );
   }
 
   return (
-    <div className="watch-page-root">
-      {/* 1. TOP NAVIGATION HEADER */}
-      <header className="watch-page-header">
-        <button onClick={handleBackToCourse} className="watch-back-link">
-          <ArrowLeft width={18} height={18} />
-          <span>Back to Course</span>
-        </button>
-
-        <div className="watch-header-course-info">
-          <span className="watch-category-badge">
-            {courseInfo.category === 'beu' ? 'BEU Engineering' : 'Govt Exams'}
-          </span>
-          <span className="watch-course-title-text" title={courseInfo.name}>
-            {courseInfo.name}
-          </span>
+    <div className="watch-page-container">
+      {/* 1. TOP RESPONSIVE HEADER BAR */}
+      <header className="watch-top-nav">
+        <div className="nav-left-cell">
+          <button className="watch-nav-btn" onClick={handleBackToCourse} title="Back to Course">
+            <ArrowLeft width={18} height={18} />
+            <span className="btn-label-desktop">Back</span>
+          </button>
         </div>
 
-        <button onClick={handleToggleTheme} className="watch-theme-toggle-btn" title="Toggle Theme">
-          {theme === 'light' ? <Moon width={18} height={18} /> : <Sun width={18} height={18} />}
-        </button>
+        <div className="nav-center-cell">
+          <span className="nav-course-brand">{courseInfo.name}</span>
+        </div>
+
+        <div className="nav-right-cell">
+          <button
+            className="watch-nav-btn theme-btn"
+            onClick={handleToggleTheme}
+            title={theme === 'light' ? 'Switch to Dark Mode' : 'Switch to Light Mode'}
+          >
+            {theme === 'light' ? <Moon width={17} height={17} /> : <Sun width={17} height={17} />}
+          </button>
+        </div>
       </header>
 
-      {/* 2. MAIN 2-COLUMN WATCH LAYOUT */}
-      <div className="watch-content-layout">
-        {/* ==================== LEFT COLUMN: VIDEO + DETAILS + SYLLABUS ==================== */}
-        <main className="watch-left-col">
-          {/* VIDEO BOX WITH ON-SCREEN OVERLAY CONTROLS */}
+      {/* 2. MAIN SPLIT DESKTOP WORKSPACE */}
+      <div className="watch-main-layout">
+        {/* LEFT COLUMN: THE MASTER VIDEO THEATER + YT INFO BAR */}
+        <div className="watch-theater-col">
           <div
-            className={`watch-player-box ${isFullscreen ? 'is-fullscreen' : ''} ${showControls ? 'controls-visible' : 'controls-hidden'}`}
             ref={containerRef}
+            className={`player-canvas-container ${isFullscreen ? 'is-fullscreen' : ''} ${
+              !showControls && isPlaying ? 'hide-controls' : ''
+            }`}
             onMouseMove={resetControlsTimer}
             onTouchStart={resetControlsTimer}
             onMouseEnter={resetControlsTimer}
@@ -961,30 +984,6 @@ export default function WatchClient() {
                     </div>
                   )}
 
-                  {/* Mode Toggle: Smart Proxy / Embedded */}
-                  {canToggleMode && (
-                    <div className="player-mode-group">
-                      <button
-                        className={`mode-toggle-btn ${playerMode === 'proxy' ? 'active' : ''}`}
-                        onClick={() => {
-                          setPlayerMode('proxy');
-                          resetControlsTimer();
-                        }}
-                      >
-                        Smart Proxy
-                      </button>
-                      <button
-                        className={`mode-toggle-btn ${playerMode === 'embedded' ? 'active' : ''}`}
-                        onClick={() => {
-                          setPlayerMode('embedded');
-                          resetControlsTimer();
-                        }}
-                      >
-                        Embedded
-                      </button>
-                    </div>
-                  )}
-
                   {/* Fullscreen / Close Button */}
                   <button
                     className="player-overlay-close-btn"
@@ -998,77 +997,73 @@ export default function WatchClient() {
 
               {/* CENTER OVERLAY: Frosted Glass Button that transforms to Spinning Ring on loading */}
               <div className="player-center-overlay">
-                {playerMode === 'proxy' && (
-                  <>
-                    <button
-                      className="player-center-skip-arrow backward"
-                      onClick={(e) => {
-                        e.stopPropagation();
-                        skipVideo(-10);
-                      }}
-                      style={{ opacity: showLoading ? 0 : 1, pointerEvents: showLoading ? 'none' : 'auto' }}
-                      title="Backward 10s"
-                    >
-                      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
-                        <polyline points="11 17 6 12 11 7" />
-                        <polyline points="18 17 13 12 18 7" />
-                      </svg>
-                      <span className="skip-hint">10s</span>
-                    </button>
+                <button
+                  className="player-center-skip-arrow backward"
+                  onClick={(e) => {
+                    e.stopPropagation();
+                    skipVideo(-10);
+                  }}
+                  style={{ opacity: showLoading ? 0 : 1, pointerEvents: showLoading ? 'none' : 'auto' }}
+                  title="Backward 10s"
+                >
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
+                    <polyline points="11 17 6 12 11 7" />
+                    <polyline points="18 17 13 12 18 7" />
+                  </svg>
+                  <span className="skip-hint">10s</span>
+                </button>
 
-                    {/* The Center Glass Play button becomes a rotating spinner during loading */}
-                    <button
-                      className={`player-center-glass-play ${showLoading ? 'is-loading' : ''}`}
-                      onClick={(e) => {
-                        e.stopPropagation();
-                        togglePlayPause();
-                      }}
-                      title={showLoading ? 'Loading high-speed stream…' : 'Play / Pause (Space)'}
-                      style={{ cursor: 'pointer' }}
-                    >
-                      {showLoading ? (
-                        <svg className="center-spinner-svg" width="28" height="28" viewBox="0 0 28 28" fill="none">
-                          <circle cx="14" cy="14" r="11" stroke="rgba(255,255,255,0.2)" strokeWidth="2.5" />
-                          <circle
-                            cx="14"
-                            cy="14"
-                            r="11"
-                            stroke="currentColor"
-                            strokeWidth="2.5"
-                            strokeLinecap="round"
-                            strokeDasharray="20 50"
-                            style={{ transformOrigin: 'center', animation: 'centerSpinnerRotate 0.85s linear infinite' }}
-                          />
-                        </svg>
-                      ) : isPlaying ? (
-                        <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
-                          <rect x="6" y="4" width="4" height="16" rx="1.5" />
-                          <rect x="14" y="4" width="4" height="16" rx="1.5" />
-                        </svg>
-                      ) : (
-                        <svg width="26" height="26" viewBox="0 0 24 24" fill="currentColor" style={{ transform: 'translateX(2px)' }}>
-                          <polygon points="6,4 20,12 6,20" />
-                        </svg>
-                      )}
-                    </button>
+                {/* The Center Glass Play button becomes a rotating spinner during loading */}
+                <button
+                  className={`player-center-glass-play ${showLoading ? 'is-loading' : ''}`}
+                  onClick={(e) => {
+                    e.stopPropagation();
+                    togglePlayPause();
+                  }}
+                  title={showLoading ? 'Loading high-speed stream…' : 'Play / Pause (Space)'}
+                  style={{ cursor: 'pointer' }}
+                >
+                  {showLoading ? (
+                    <svg className="center-spinner-svg" width="28" height="28" viewBox="0 0 28 28" fill="none">
+                      <circle cx="14" cy="14" r="11" stroke="rgba(255,255,255,0.2)" strokeWidth="2.5" />
+                      <circle
+                        cx="14"
+                        cy="14"
+                        r="11"
+                        stroke="currentColor"
+                        strokeWidth="2.5"
+                        strokeLinecap="round"
+                        strokeDasharray="20 50"
+                        style={{ transformOrigin: 'center', animation: 'centerSpinnerRotate 0.85s linear infinite' }}
+                      />
+                    </svg>
+                  ) : isPlaying ? (
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                      <rect x="6" y="4" width="4" height="16" rx="1.5" />
+                      <rect x="14" y="4" width="4" height="16" rx="1.5" />
+                    </svg>
+                  ) : (
+                    <svg width="26" height="26" viewBox="0 0 24 24" fill="currentColor" style={{ transform: 'translateX(2px)' }}>
+                      <polygon points="6,4 20,12 6,20" />
+                    </svg>
+                  )}
+                </button>
 
-                    <button
-                      className="player-center-skip-arrow forward"
-                      onClick={(e) => {
-                        e.stopPropagation();
-                        skipVideo(10);
-                      }}
-                      style={{ opacity: showLoading ? 0 : 1, pointerEvents: showLoading ? 'none' : 'auto' }}
-                      title="Forward 10s"
-                    >
-                      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
-                        <polyline points="13 17 18 12 13 7" />
-                        <polyline points="6 17 11 12 6 7" />
-                      </svg>
-                      <span className="skip-hint">10s</span>
-                    </button>
-                  </>
-                )}
+                <button
+                  className="player-center-skip-arrow forward"
+                  onClick={(e) => {
+                    e.stopPropagation();
+                    skipVideo(10);
+                  }}
+                  style={{ opacity: showLoading ? 0 : 1, pointerEvents: showLoading ? 'none' : 'auto' }}
+                  title="Forward 10s"
+                >
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
+                    <polyline points="13 17 18 12 13 7" />
+                    <polyline points="6 17 11 12 6 7" />
+                  </svg>
+                  <span className="skip-hint">10s</span>
+                </button>
               </div>
 
               {/* Double-tap indicator */}
@@ -1079,7 +1074,26 @@ export default function WatchClient() {
               )}
 
               {/* Media Element */}
-              {playerMode === 'proxy' ? (
+              {isYouTubeUrl ? (
+                (() => {
+                  const ytId = activeUrl.match(/(?:v=|youtu\.be\/|live\/)([a-zA-Z0-9_-]{11})/)?.[1];
+                  const youtubeWatchUrl = ytId
+                    ? `https://www.youtube.com/watch?v=${ytId}`
+                    : activeUrl;
+                  return (
+                    <div className="player-youtube-card">
+                      <div className="yt-icon-wrapper">
+                        <Play width={28} height={28} fill="currentColor" />
+                      </div>
+                      <h3>YouTube Video Lecture</h3>
+                      <p>This video is hosted on YouTube. Watch directly for 100% native quality & zero buffering.</p>
+                      <a href={youtubeWatchUrl} target="_blank" rel="noopener noreferrer" className="yt-open-link">
+                        <span>Open on YouTube</span>
+                      </a>
+                    </div>
+                  );
+                })()
+              ) : (
                 <video
                   ref={videoRef}
                   playsInline
@@ -1088,55 +1102,29 @@ export default function WatchClient() {
                   title={currentItem.label}
                   onClick={togglePlayPause}
                 />
-              ) : isVidmolyUrl || isEarnvidsUrl ? (
-                <iframe
-                  src={activeUrl}
-                  className="player-native-video"
-                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; fullscreen"
-                  allowFullScreen
-                  title={currentItem.label}
-                  style={{ border: 'none' }}
-                />
-              ) : (
-                <video
-                  controls
-                  controlsList="nodownload"
-                  playsInline
-                  preload="metadata"
-                  src={
-                    activeServer?.downloadUrl ||
-                    (activeUrl.includes('/0:/stream/')
-                      ? activeUrl.replace('/0:/stream/', '/0:/dl/')
-                      : activeUrl)
-                  }
-                  className="player-native-video"
-                  title={currentItem.label}
-                />
               )}
 
               {/* BOTTOM FLOATING OVERLAY */}
               <div className="player-bottom-overlay" onClick={(e) => e.stopPropagation()}>
                 {/* Seekbar */}
-                {playerMode === 'proxy' && (
-                  <div
-                    className="player-seekbar-container"
-                    ref={progressBarRef}
-                    onClick={handleSeekCommit}
-                    onMouseMove={handleProgressMouseMove}
-                    onMouseLeave={() => setSeekHoverTime(null)}
-                  >
-                    {seekHoverTime !== null && (
-                      <div className="player-seekbar-tooltip" style={{ left: `${seekHoverPos}%` }}>
-                        {formatTime(seekHoverTime)}
-                      </div>
-                    )}
-                    <div className="player-seekbar-track">
-                      <div className="player-seekbar-buffered" style={{ width: `${Math.min(100, bufferedPercent)}%` }} />
-                      <div className="player-seekbar-played" style={{ width: `${Math.min(100, playedPercent)}%` }} />
-                      <div className="player-seekbar-thumb" style={{ left: `${Math.min(100, playedPercent)}%` }} />
+                <div
+                  className="player-seekbar-container"
+                  ref={progressBarRef}
+                  onClick={handleSeekCommit}
+                  onMouseMove={handleProgressMouseMove}
+                  onMouseLeave={() => setSeekHoverTime(null)}
+                >
+                  {seekHoverTime !== null && (
+                    <div className="player-seekbar-tooltip" style={{ left: `${seekHoverPos}%` }}>
+                      {formatTime(seekHoverTime)}
                     </div>
+                  )}
+                  <div className="player-seekbar-track">
+                    <div className="player-seekbar-buffered" style={{ width: `${Math.min(100, bufferedPercent)}%` }} />
+                    <div className="player-seekbar-played" style={{ width: `${Math.min(100, playedPercent)}%` }} />
+                    <div className="player-seekbar-thumb" style={{ left: `${Math.min(100, playedPercent)}%` }} />
                   </div>
-                )}
+                </div>
 
                 {/* Controls Dock */}
                 <div className="player-controls-dock">
@@ -1153,20 +1141,18 @@ export default function WatchClient() {
                       </svg>
                     </button>
 
-                    {playerMode === 'proxy' && (
-                      <button className="dock-ctrl-btn dock-play-btn" onClick={togglePlayPause} title="Play / Pause">
-                        {isPlaying ? (
-                          <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
-                            <rect x="6" y="4" width="4" height="16" rx="1" />
-                            <rect x="14" y="4" width="4" height="16" rx="1" />
-                          </svg>
-                        ) : (
-                          <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" style={{ transform: 'translateX(1px)' }}>
-                            <polygon points="5,3 19,12 5,21" />
-                          </svg>
-                        )}
-                      </button>
-                    )}
+                    <button className="dock-ctrl-btn dock-play-btn" onClick={togglePlayPause} title="Play / Pause">
+                      {isPlaying ? (
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+                          <rect x="6" y="4" width="4" height="16" rx="1" />
+                          <rect x="14" y="4" width="4" height="16" rx="1" />
+                        </svg>
+                      ) : (
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" style={{ transform: 'translateX(1px)' }}>
+                          <polygon points="5,3 19,12 5,21" />
+                        </svg>
+                      )}
+                    </button>
 
                     <button
                       className="dock-ctrl-btn"
@@ -1181,42 +1167,38 @@ export default function WatchClient() {
                     </button>
 
                     {/* Volume Slider */}
-                    {playerMode === 'proxy' && (
-                      <div
-                        className="dock-volume-box"
-                        onMouseEnter={() => setShowVolumeSlider(true)}
-                        onMouseLeave={() => setShowVolumeSlider(false)}
-                      >
-                        <button className="dock-ctrl-btn" onClick={toggleMute} title="Mute/Unmute">
-                          {isMuted || volume === 0 ? <VolumeX width={16} height={16} /> : <Volume2 width={16} height={16} />}
-                        </button>
-                        <div className={`dock-volume-slider-wrap ${showVolumeSlider ? 'visible' : ''}`}>
-                          <input
-                            type="range"
-                            min="0"
-                            max="1"
-                            step="0.05"
-                            value={isMuted ? 0 : volume}
-                            onChange={(e) => handleVolumeChange(parseFloat(e.target.value))}
-                            className="dock-volume-slider"
-                          />
-                        </div>
+                    <div
+                      className="dock-volume-box"
+                      onMouseEnter={() => setShowVolumeSlider(true)}
+                      onMouseLeave={() => setShowVolumeSlider(false)}
+                    >
+                      <button className="dock-ctrl-btn" onClick={toggleMute} title="Mute/Unmute">
+                        {isMuted || volume === 0 ? <VolumeX width={16} height={16} /> : <Volume2 width={16} height={16} />}
+                      </button>
+                      <div className={`dock-volume-slider-wrap ${showVolumeSlider ? 'visible' : ''}`}>
+                        <input
+                          type="range"
+                          min="0"
+                          max="1"
+                          step="0.05"
+                          value={isMuted ? 0 : volume}
+                          onChange={(e) => handleVolumeChange(parseFloat(e.target.value))}
+                          className="dock-volume-slider"
+                        />
                       </div>
-                    )}
+                    </div>
 
                     {/* Time Display */}
-                    {playerMode === 'proxy' && (
-                      <div className="dock-time-display">
-                        <span className="current-time">{formatTime(currentTime)}</span>
-                        <span className="divider">/</span>
-                        <span className="total-time">{formatTime(duration)}</span>
-                      </div>
-                    )}
+                    <div className="dock-time-display">
+                      <span className="current-time">{formatTime(currentTime)}</span>
+                      <span className="divider">/</span>
+                      <span className="total-time">{formatTime(duration)}</span>
+                    </div>
                   </div>
 
                   <div className="dock-group-right">
                     {/* Quality Selector */}
-                    {qualities.length > 0 && playerMode === 'proxy' && (
+                    {qualities.length > 0 && (
                       <div style={{ position: 'relative' }}>
                         <button
                           className="dock-ctrl-btn quality-chip-btn"
@@ -1387,7 +1369,7 @@ export default function WatchClient() {
               )}
             </section>
           </div>
-        </main>
+        </div>
 
         {/* ==================== RIGHT COLUMN: BATCH PLAYLIST QUEUE ==================== */}
         <aside className="watch-right-col">

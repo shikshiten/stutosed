@@ -1,6 +1,6 @@
 'use client';
 
-import React, { useEffect, useRef, useState, useCallback } from 'react';
+import React, { useEffect, useRef, useState, useCallback, useMemo } from 'react';
 import Hls from 'hls.js';
 import { LectureItem, ServerOption } from '@/types';
 import { getWorkerProxyUrl } from '@/lib/proxyConfig';
@@ -87,7 +87,6 @@ export const VideoPlayer: React.FC<VideoPlayerProps> = ({
   const controlsTimeoutRef = useRef<NodeJS.Timeout | null>(null);
   const clickTimeoutRef = useRef<NodeJS.Timeout | null>(null);
 
-  const [playerMode, setPlayerMode] = useState<'proxy' | 'embedded'>('proxy');
   const [isPlaying, setIsPlaying] = useState<boolean>(false);
   const [isBuffering, setIsBuffering] = useState<boolean>(false);
   const [currentTime, setCurrentTime] = useState<number>(0);
@@ -116,7 +115,6 @@ export const VideoPlayer: React.FC<VideoPlayerProps> = ({
   const [streamLoading, setStreamLoading] = useState<boolean>(false);
   const [streamError, setStreamError] = useState<string | null>(null);
   const [selectedServerIndex, setSelectedServerIndex] = useState<number>(0);
-  const [isEmbedLoading, setIsEmbedLoading] = useState<boolean>(true);
 
   // Library & Bookmark States
   const [isBookmarked, setIsBookmarked] = useState<boolean>(false);
@@ -144,21 +142,10 @@ export const VideoPlayer: React.FC<VideoPlayerProps> = ({
     }
   }, [courseId, currentItem]);
 
-  // Load preferred mode on mount
-  useEffect(() => {
-    try {
-      const savedMode = localStorage.getItem('stutosed_preferred_player_mode');
-      if (savedMode === 'embedded' || savedMode === 'proxy') {
-        setPlayerMode(savedMode);
-      }
-    } catch {}
-  }, []);
-
   // Reset states when lecture index changes
   useEffect(() => {
     setSelectedServerIndex(0);
     setStreamError(null);
-    setIsEmbedLoading(true);
     setCurrentTime(0);
     setDuration(0);
     setBufferedTime(0);
@@ -211,12 +198,19 @@ export const VideoPlayer: React.FC<VideoPlayerProps> = ({
     resetControlsTimer();
   };
 
-  // Determine active URL from servers array or fallback
-  const servers: ServerOption[] = currentItem?.servers && currentItem.servers.length > 0
-    ? currentItem.servers
-    : [];
+  // Determine active URL from servers array or fallback (prioritizing ESTE over ALBA)
+  const servers: ServerOption[] = useMemo(() => {
+    if (currentItem?.servers && currentItem.servers.length > 0) {
+      return [...currentItem.servers].sort((a, b) => {
+        const aIsEste = a.name?.toUpperCase().includes('ESTE') ? 1 : 0;
+        const bIsEste = b.name?.toUpperCase().includes('ESTE') ? 1 : 0;
+        return bIsEste - aIsEste;
+      });
+    }
+    return [];
+  }, [currentItem]);
 
-  const activeServer = servers[selectedServerIndex] || null;
+  const activeServer = servers[selectedServerIndex] || servers[0] || null;
   const activeUrl = activeServer?.url || currentItem?.url || '';
 
   // Determine URL types
@@ -232,6 +226,7 @@ export const VideoPlayer: React.FC<VideoPlayerProps> = ({
     activeUrl.includes('publicbotshub') ||
     activeUrl.includes('herokuapp.com') ||
     activeUrl.endsWith('.mp4') ||
+    activeUrl.endsWith('.mkv') ||
     activeServer?.name?.toUpperCase().includes('ALBA') ||
     activeServer?.name?.toUpperCase().includes('ESTE');
 
@@ -240,23 +235,11 @@ export const VideoPlayer: React.FC<VideoPlayerProps> = ({
     (!activeServer && activeUrl.includes('streamvaultpro.cc')) ||
     Boolean(activeServer?.streamUrl);
 
-  useEffect(() => {
-    if (isYouTubeUrl && playerMode === 'proxy') {
-      setPlayerMode('embedded');
-    }
-  }, [isYouTubeUrl, playerMode]);
-
-  useEffect(() => {
-    if (!isAlbaActive && !isYouTubeUrl && playerMode === 'embedded') {
-      setPlayerMode('proxy');
-    }
-  }, [isAlbaActive, isYouTubeUrl, playerMode]);
-
   const needsApiResolution = (isVidmolyUrl || isEarnvidsUrl) && !isHlsUrl;
 
   // Resolve stream URL for Vidmoly/Earnvids via cached server-side API
   useEffect(() => {
-    if (playerMode !== 'proxy' || !needsApiResolution || !activeUrl) {
+    if (!needsApiResolution || !activeUrl) {
       setResolvedStreamUrl(null);
       setStreamLoading(false);
       return;
@@ -290,15 +273,13 @@ export const VideoPlayer: React.FC<VideoPlayerProps> = ({
         if (data.streamUrl) {
           setResolvedStreamUrl(data.streamUrl);
         } else {
-          // Seamlessly fallback to direct embed if scraping fails
-          setPlayerMode('embedded');
+          setStreamError('Failed to load stream. Try selecting another server.');
         }
         setStreamLoading(false);
       })
       .catch((err) => {
         if (err.name !== 'AbortError') {
-          // Fallback to embedded if timeout occurs
-          setPlayerMode('embedded');
+          setStreamError('Stream request timed out. Please retry.');
           setStreamLoading(false);
         }
       });
@@ -306,7 +287,7 @@ export const VideoPlayer: React.FC<VideoPlayerProps> = ({
     return () => {
       abortController.abort();
     };
-  }, [activeUrl, needsApiResolution, isVidmolyUrl, isEarnvidsUrl, playerMode]);
+  }, [activeUrl, needsApiResolution, isVidmolyUrl, isEarnvidsUrl]);
 
   // Determine media source for <video> element
   const videoSourceUrl = isProxyStreamUrl
@@ -317,7 +298,7 @@ export const VideoPlayer: React.FC<VideoPlayerProps> = ({
 
   // Video element attachment and HLS / MP4 engine setup
   useEffect(() => {
-    if (playerMode !== 'proxy' || !videoSourceUrl || !videoRef.current) return;
+    if (!videoSourceUrl || !videoRef.current) return;
 
     const video = videoRef.current;
     setQualities([]);
@@ -384,19 +365,19 @@ export const VideoPlayer: React.FC<VideoPlayerProps> = ({
       video.load();
       video.play().catch(() => {});
     }
-  }, [videoSourceUrl, isProxyStreamUrl, playerMode]);
+  }, [videoSourceUrl, isProxyStreamUrl]);
 
   // Sync playback rate when speed changes
   useEffect(() => {
-    if (videoRef.current && playerMode === 'proxy') {
+    if (videoRef.current) {
       videoRef.current.playbackRate = playbackSpeed;
     }
-  }, [videoSourceUrl, playbackSpeed, playerMode]);
+  }, [videoSourceUrl, playbackSpeed]);
 
   // Progress Memory: Resume where left off & record watch progress
   useEffect(() => {
     const video = videoRef.current;
-    if (!video || !currentItem || playerMode !== 'proxy') return;
+    if (!video || !currentItem) return;
 
     const progressKey = `stutosed_progress_${currentItem.id || currentItem.url}`;
 
@@ -442,12 +423,12 @@ export const VideoPlayer: React.FC<VideoPlayerProps> = ({
       video.removeEventListener('loadedmetadata', handleLoadedMetadata);
       video.removeEventListener('timeupdate', handleTimeUpdate);
     };
-  }, [currentItem, videoSourceUrl, playerMode, isDraggingSeek]);
+  }, [currentItem, videoSourceUrl, isDraggingSeek]);
 
   // Buffering & Play/Pause listeners
   useEffect(() => {
     const video = videoRef.current;
-    if (!video || playerMode !== 'proxy') return;
+    if (!video) return;
 
     const onPlay = () => {
       setIsPlaying(true);
@@ -483,7 +464,7 @@ export const VideoPlayer: React.FC<VideoPlayerProps> = ({
       video.removeEventListener('seeking', onSeeking);
       video.removeEventListener('seeked', onSeeked);
     };
-  }, [videoSourceUrl, playerMode]);
+  }, [videoSourceUrl]);
 
   // Handlers
   const togglePlayPause = useCallback(() => {
@@ -732,9 +713,7 @@ export const VideoPlayer: React.FC<VideoPlayerProps> = ({
     return () => window.removeEventListener('keydown', handleKeyDown);
   }, [togglePlayPause, skipVideo, toggleFullscreen, onClose, resetControlsTimer]);
 
-  const showLoading =
-    (playerMode === 'proxy' && (streamLoading || (isBuffering && isPlaying))) ||
-    (playerMode === 'embedded' && isEmbedLoading && !isYouTubeUrl);
+  const showLoading = streamLoading || (isBuffering && isPlaying);
 
   const playedPercent = duration > 0 ? (currentTime / duration) * 100 : 0;
   const bufferedPercent = duration > 0 ? (bufferedTime / duration) * 100 : 0;
@@ -812,30 +791,6 @@ export const VideoPlayer: React.FC<VideoPlayerProps> = ({
                       </div>
                     )}
 
-                    {/* Mode Toggle */}
-                    {(isAlbaActive || isVidmolyUrl || isEarnvidsUrl || isProxyStreamUrl) && !isYouTubeUrl && (
-                      <div className="player-mode-group">
-                        <button
-                          className={`mode-toggle-btn ${playerMode === 'proxy' ? 'active' : ''}`}
-                          onClick={() => {
-                            setPlayerMode('proxy');
-                            resetControlsTimer();
-                          }}
-                        >
-                          Smart Proxy
-                        </button>
-                        <button
-                          className={`mode-toggle-btn ${playerMode === 'embedded' ? 'active' : ''}`}
-                          onClick={() => {
-                            setPlayerMode('embedded');
-                            resetControlsTimer();
-                          }}
-                        >
-                          Embedded
-                        </button>
-                      </div>
-                    )}
-
                     {/* Close / Exit Fullscreen Button */}
                     <button
                       className="player-overlay-close-btn"
@@ -855,75 +810,71 @@ export const VideoPlayer: React.FC<VideoPlayerProps> = ({
 
                 {/* 2. CENTER OVERLAY (Frosted Glass Play + Static Skip Arrows) */}
                 <div className="player-center-overlay">
-                  {playerMode === 'proxy' && (
-                    <>
-                      <button
-                        className="player-center-skip-arrow backward"
-                        onClick={(e) => {
-                          e.stopPropagation();
-                          skipVideo(-10);
-                        }}
-                        style={{ opacity: showLoading ? 0 : 1, pointerEvents: showLoading ? 'none' : 'auto' }}
-                        title="Backward 10s"
-                      >
-                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
-                          <polyline points="11 17 6 12 11 7" />
-                          <polyline points="18 17 13 12 18 7" />
-                        </svg>
-                        <span className="skip-hint">10s</span>
-                      </button>
+                  <button
+                    className="player-center-skip-arrow backward"
+                    onClick={(e) => {
+                      e.stopPropagation();
+                      skipVideo(-10);
+                    }}
+                    style={{ opacity: showLoading ? 0 : 1, pointerEvents: showLoading ? 'none' : 'auto' }}
+                    title="Backward 10s"
+                  >
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
+                      <polyline points="11 17 6 12 11 7" />
+                      <polyline points="18 17 13 12 18 7" />
+                    </svg>
+                    <span className="skip-hint">10s</span>
+                  </button>
 
-                      {/* Glass Play/Pause button — becomes a spinner when buffering */}
-                      <button
-                        className={`player-center-glass-play${showLoading ? ' is-loading' : ''}`}
-                        onClick={(e) => {
-                          e.stopPropagation();
-                          togglePlayPause();
-                        }}
-                        title={showLoading ? 'Loading stream…' : 'Play / Pause (Space)'}
-                        style={{ cursor: 'pointer' }}
-                      >
-                        {showLoading ? (
-                          <svg className="center-spinner-svg" width="28" height="28" viewBox="0 0 28 28" fill="none">
-                            <circle cx="14" cy="14" r="11" stroke="rgba(255,255,255,0.2)" strokeWidth="2.5" />
-                            <circle
-                              cx="14" cy="14" r="11"
-                              stroke="currentColor"
-                              strokeWidth="2.5"
-                              strokeLinecap="round"
-                              strokeDasharray="20 50"
-                              style={{ transformOrigin: 'center', animation: 'centerSpinnerRotate 0.85s linear infinite' }}
-                            />
-                          </svg>
-                        ) : isPlaying ? (
-                          <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
-                            <rect x="6" y="4" width="4" height="16" rx="1.5" />
-                            <rect x="14" y="4" width="4" height="16" rx="1.5" />
-                          </svg>
-                        ) : (
-                          <svg width="26" height="26" viewBox="0 0 24 24" fill="currentColor" style={{ transform: 'translateX(2px)' }}>
-                            <polygon points="6,4 20,12 6,20" />
-                          </svg>
-                        )}
-                      </button>
+                  {/* Glass Play/Pause button — becomes a spinner when buffering */}
+                  <button
+                    className={`player-center-glass-play${showLoading ? ' is-loading' : ''}`}
+                    onClick={(e) => {
+                      e.stopPropagation();
+                      togglePlayPause();
+                    }}
+                    title={showLoading ? 'Loading stream…' : 'Play / Pause (Space)'}
+                    style={{ cursor: 'pointer' }}
+                  >
+                    {showLoading ? (
+                      <svg className="center-spinner-svg" width="28" height="28" viewBox="0 0 28 28" fill="none">
+                        <circle cx="14" cy="14" r="11" stroke="rgba(255,255,255,0.2)" strokeWidth="2.5" />
+                        <circle
+                          cx="14" cy="14" r="11"
+                          stroke="currentColor"
+                          strokeWidth="2.5"
+                          strokeLinecap="round"
+                          strokeDasharray="20 50"
+                          style={{ transformOrigin: 'center', animation: 'centerSpinnerRotate 0.85s linear infinite' }}
+                        />
+                      </svg>
+                    ) : isPlaying ? (
+                      <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                        <rect x="6" y="4" width="4" height="16" rx="1.5" />
+                        <rect x="14" y="4" width="4" height="16" rx="1.5" />
+                      </svg>
+                    ) : (
+                      <svg width="26" height="26" viewBox="0 0 24 24" fill="currentColor" style={{ transform: 'translateX(2px)' }}>
+                        <polygon points="6,4 20,12 6,20" />
+                      </svg>
+                    )}
+                  </button>
 
-                      <button
-                        className="player-center-skip-arrow forward"
-                        onClick={(e) => {
-                          e.stopPropagation();
-                          skipVideo(10);
-                        }}
-                        style={{ opacity: showLoading ? 0 : 1, pointerEvents: showLoading ? 'none' : 'auto' }}
-                        title="Forward 10s"
-                      >
-                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
-                          <polyline points="13 17 18 12 13 7" />
-                          <polyline points="6 17 11 12 6 7" />
-                        </svg>
-                        <span className="skip-hint">10s</span>
-                      </button>
-                    </>
-                  )}
+                  <button
+                    className="player-center-skip-arrow forward"
+                    onClick={(e) => {
+                      e.stopPropagation();
+                      skipVideo(10);
+                    }}
+                    style={{ opacity: showLoading ? 0 : 1, pointerEvents: showLoading ? 'none' : 'auto' }}
+                    title="Forward 10s"
+                  >
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
+                      <polyline points="13 17 18 12 13 7" />
+                      <polyline points="6 17 11 12 6 7" />
+                    </svg>
+                    <span className="skip-hint">10s</span>
+                  </button>
                 </div>
 
                 {/* Double-tap indicator */}
@@ -934,7 +885,26 @@ export const VideoPlayer: React.FC<VideoPlayerProps> = ({
                 )}
 
                 {/* Video Media Canvas */}
-                {playerMode === 'proxy' ? (
+                {isYouTubeUrl ? (
+                  (() => {
+                    const ytId = activeUrl.match(/(?:v=|youtu\.be\/|live\/)([a-zA-Z0-9_-]{11})/)?.[1];
+                    const youtubeWatchUrl = ytId
+                      ? `https://www.youtube.com/watch?v=${ytId}`
+                      : activeUrl;
+                    return (
+                      <div className="player-youtube-card">
+                        <div className="yt-icon-wrapper">
+                          <Play width={28} height={28} fill="currentColor" />
+                        </div>
+                        <h3>YouTube Video Lecture</h3>
+                        <p>This video is hosted on YouTube. Watch directly for 100% native quality & zero buffering.</p>
+                        <a href={youtubeWatchUrl} target="_blank" rel="noopener noreferrer" className="yt-open-link">
+                          <span>Open on YouTube</span>
+                        </a>
+                      </div>
+                    );
+                  })()
+                ) : (
                   <video
                     ref={videoRef}
                     playsInline
@@ -943,45 +913,6 @@ export const VideoPlayer: React.FC<VideoPlayerProps> = ({
                     title={currentItem.label}
                     onClick={togglePlayPause}
                   />
-                ) : (
-                  (() => {
-                    if (isYouTubeUrl) {
-                      const ytId = activeUrl.match(/(?:v=|youtu\.be\/|live\/)([a-zA-Z0-9_-]{11})/)?.[1];
-                      const youtubeWatchUrl = ytId
-                        ? `https://www.youtube.com/watch?v=${ytId}`
-                        : activeUrl;
-                      return (
-                        <div className="player-youtube-card">
-                          <div className="yt-icon-wrapper">
-                            <Play width={28} height={28} fill="currentColor" />
-                          </div>
-                          <h3>YouTube Video Lecture</h3>
-                          <p>This video is hosted on YouTube. Watch directly for 100% native quality & zero buffering.</p>
-                          <a href={youtubeWatchUrl} target="_blank" rel="noopener noreferrer" className="yt-open-link">
-                            <span>Open on YouTube</span>
-                          </a>
-                        </div>
-                      );
-                    }
-
-                    const directUrl =
-                      activeServer?.downloadUrl ||
-                      (activeUrl.includes('/0:/stream/')
-                        ? activeUrl.replace('/0:/stream/', '/0:/dl/')
-                        : activeUrl);
-
-                    return (
-                      <video
-                        controls
-                        controlsList="nodownload"
-                        playsInline
-                        preload="metadata"
-                        src={directUrl}
-                        className="player-native-video"
-                        title={currentItem.label}
-                      />
-                    );
-                  })()
                 )}
 
                 {/* 3. BOTTOM FLOATING OVERLAY (Seekbar, Controls & In-Fullscreen Speed Menu) */}
@@ -990,29 +921,27 @@ export const VideoPlayer: React.FC<VideoPlayerProps> = ({
                   onClick={(e) => e.stopPropagation()}
                 >
                   {/* Seekbar */}
-                  {playerMode === 'proxy' && (
-                    <div
-                      className="player-seekbar-container"
-                      ref={progressBarRef}
-                      onClick={handleSeekCommit}
-                      onMouseMove={handleProgressMouseMove}
-                      onMouseLeave={() => setSeekHoverTime(null)}
-                    >
-                      {seekHoverTime !== null && (
-                        <div
-                          className="player-seekbar-tooltip"
-                          style={{ left: `${seekHoverPos}%` }}
-                        >
-                          {formatTime(seekHoverTime)}
-                        </div>
-                      )}
-                      <div className="player-seekbar-track">
-                        <div className="player-seekbar-buffered" style={{ width: `${Math.min(100, bufferedPercent)}%` }} />
-                        <div className="player-seekbar-played" style={{ width: `${Math.min(100, playedPercent)}%` }} />
-                        <div className="player-seekbar-thumb" style={{ left: `${Math.min(100, playedPercent)}%` }} />
+                  <div
+                    className="player-seekbar-container"
+                    ref={progressBarRef}
+                    onClick={handleSeekCommit}
+                    onMouseMove={handleProgressMouseMove}
+                    onMouseLeave={() => setSeekHoverTime(null)}
+                  >
+                    {seekHoverTime !== null && (
+                      <div
+                        className="player-seekbar-tooltip"
+                        style={{ left: `${seekHoverPos}%` }}
+                      >
+                        {formatTime(seekHoverTime)}
                       </div>
+                    )}
+                    <div className="player-seekbar-track">
+                      <div className="player-seekbar-buffered" style={{ width: `${Math.min(100, bufferedPercent)}%` }} />
+                      <div className="player-seekbar-played" style={{ width: `${Math.min(100, playedPercent)}%` }} />
+                      <div className="player-seekbar-thumb" style={{ left: `${Math.min(100, playedPercent)}%` }} />
                     </div>
-                  )}
+                  </div>
 
                   {/* Dock */}
                   <div className="player-controls-dock">
@@ -1029,24 +958,22 @@ export const VideoPlayer: React.FC<VideoPlayerProps> = ({
                         </svg>
                       </button>
 
-                      {playerMode === 'proxy' && (
-                        <button
-                          className="dock-ctrl-btn dock-play-btn"
-                          onClick={togglePlayPause}
-                          title="Play / Pause"
-                        >
-                          {isPlaying ? (
-                            <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
-                              <rect x="6" y="4" width="4" height="16" rx="1" />
-                              <rect x="14" y="4" width="4" height="16" rx="1" />
-                            </svg>
-                          ) : (
-                            <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" style={{ transform: 'translateX(1px)' }}>
-                              <polygon points="5,3 19,12 5,21" />
-                            </svg>
-                          )}
-                        </button>
-                      )}
+                      <button
+                        className="dock-ctrl-btn dock-play-btn"
+                        onClick={togglePlayPause}
+                        title="Play / Pause"
+                      >
+                        {isPlaying ? (
+                          <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+                            <rect x="6" y="4" width="4" height="16" rx="1" />
+                            <rect x="14" y="4" width="4" height="16" rx="1" />
+                          </svg>
+                        ) : (
+                          <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" style={{ transform: 'translateX(1px)' }}>
+                            <polygon points="5,3 19,12 5,21" />
+                          </svg>
+                        )}
+                      </button>
 
                       <button
                         className="dock-ctrl-btn"
@@ -1061,42 +988,38 @@ export const VideoPlayer: React.FC<VideoPlayerProps> = ({
                       </button>
 
                       {/* Volume Slider */}
-                      {playerMode === 'proxy' && (
-                        <div
-                          className="dock-volume-box"
-                          onMouseEnter={() => setShowVolumeSlider(true)}
-                          onMouseLeave={() => setShowVolumeSlider(false)}
-                        >
-                          <button className="dock-ctrl-btn" onClick={toggleMute} title="Mute/Unmute">
-                            {isMuted || volume === 0 ? <VolumeX width={16} height={16} /> : <Volume2 width={16} height={16} />}
-                          </button>
-                          <div className={`dock-volume-slider-wrap ${showVolumeSlider ? 'visible' : ''}`}>
-                            <input
-                              type="range"
-                              min="0"
-                              max="1"
-                              step="0.05"
-                              value={isMuted ? 0 : volume}
-                              onChange={(e) => handleVolumeChange(parseFloat(e.target.value))}
-                              className="dock-volume-slider"
-                            />
-                          </div>
+                      <div
+                        className="dock-volume-box"
+                        onMouseEnter={() => setShowVolumeSlider(true)}
+                        onMouseLeave={() => setShowVolumeSlider(false)}
+                      >
+                        <button className="dock-ctrl-btn" onClick={toggleMute} title="Mute/Unmute">
+                          {isMuted || volume === 0 ? <VolumeX width={16} height={16} /> : <Volume2 width={16} height={16} />}
+                        </button>
+                        <div className={`dock-volume-slider-wrap ${showVolumeSlider ? 'visible' : ''}`}>
+                          <input
+                            type="range"
+                            min="0"
+                            max="1"
+                            step="0.05"
+                            value={isMuted ? 0 : volume}
+                            onChange={(e) => handleVolumeChange(parseFloat(e.target.value))}
+                            className="dock-volume-slider"
+                          />
                         </div>
-                      )}
+                      </div>
 
                       {/* Time */}
-                      {playerMode === 'proxy' && (
-                        <div className="dock-time-display">
-                          <span className="current-time">{formatTime(currentTime)}</span>
-                          <span className="divider">/</span>
-                          <span className="total-time">{formatTime(duration)}</span>
-                        </div>
-                      )}
+                      <div className="dock-time-display">
+                        <span className="current-time">{formatTime(currentTime)}</span>
+                        <span className="divider">/</span>
+                        <span className="total-time">{formatTime(duration)}</span>
+                      </div>
                     </div>
 
                     <div className="dock-group-right">
                       {/* Quality */}
-                      {qualities.length > 0 && playerMode === 'proxy' && (
+                      {qualities.length > 0 && (
                         <div style={{ position: 'relative' }}>
                           <button
                             className="dock-ctrl-btn quality-chip-btn"

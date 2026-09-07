@@ -14835,7 +14835,7 @@
         "id": "engineering-chemistry",
         "label": "Engineering Chemistry",
         "subname": "Engineering Chemistry (BEU UMEED)",
-        "thumb": "/thumbnails/subjects/engineering_chemistry.svg",
+        "thumb": "/thumbnails/beu_eng_chemistry.jpg",
         "items": [
           {
             "id": "beu-chem-1",
@@ -15158,7 +15158,7 @@
         "id": "engineering-mathematics-2",
         "label": "Engineering Mathematics-II (UMEED)",
         "subname": "Maths-II (All Units & Notes)",
-        "thumb": "/thumbnails/subjects/engineering_mathematics_2.svg",
+        "thumb": "/thumbnails/beu_engineering_mathematics_2.jpg",
         "items": [
           {
             "id": "math2-umeed-001",
@@ -17806,7 +17806,7 @@
         "id": "engineering-physics",
         "label": "Engineering Physics (UMEED)",
         "subname": "Applied Physics & Units",
-        "thumb": "/thumbnails/subjects/engineering_physics.svg",
+        "thumb": "/thumbnails/beu_engineering_physics.jpg",
         "items": [
           {
             "id": "phys-umeed-111",

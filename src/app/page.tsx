@@ -2208,7 +2208,6 @@ export default function HomePage() {
           initialFolderTabId={openFolderId}
           onFolderTabChange={handleFolderTabChange}
           theme={theme}
-          onOpenSidebar={() => setIsSidebarOpen(true)}
         />
       )}
 

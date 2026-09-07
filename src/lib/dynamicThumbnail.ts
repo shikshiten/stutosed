@@ -167,61 +167,24 @@ export function generateDynamicSvgThumbnail(options: ThumbnailOptions): string {
 
   <rect width="1280" height="720" fill="url(#bg-grad)" />
   <rect width="1280" height="720" fill="url(#grid-pattern)" />
-  <circle cx="640" cy="380" r="440" fill="url(#accent-glow-rad)" />
+  <circle cx="640" cy="360" r="460" fill="url(#accent-glow-rad)" />
 
-  <!-- Outer Hairline Border -->
-  <rect x="36" y="36" width="1208" height="648" rx="20" fill="none" stroke="${hairlineBorder}" stroke-width="1.5" />
+  <!-- Modern Hairline Card Border -->
+  <rect x="40" y="40" width="1200" height="640" rx="24" fill="none" stroke="${hairlineBorder}" stroke-width="1.5" />
 
-  <!-- Inner Mithila Dashed Geometric Frame -->
-  <rect x="52" y="52" width="1176" height="616" rx="14" fill="none" stroke="${accent}" stroke-width="1.4" stroke-dasharray="10 6" opacity="0.55" />
+  <!-- Modern Top Accent Energy Bar -->
+  <rect x="520" y="40" width="240" height="3" rx="1.5" fill="${accent}" opacity="0.85" />
 
-  <!-- 4 Corner Mithila Folk Geometric Ornaments -->
-  <g transform="translate(68, 68) rotate(0)">
-    <path d="M 0 0 L 32 0 L 32 4 L 4 4 L 4 32 L 0 32 Z" fill="${accent}" opacity="0.9" />
-    <polygon points="14,14 26,14 26,26 14,26" fill="none" stroke="${accent}" stroke-width="1.4" opacity="0.85" />
-    <polygon points="20,8 26,14 20,20 14,14" fill="${accent}" opacity="0.95" />
-    <circle cx="40" cy="14" r="2.8" fill="${accent}" opacity="0.75" />
-    <circle cx="14" cy="40" r="2.8" fill="${accent}" opacity="0.75" />
-  </g>
-  <g transform="translate(1212, 68) rotate(90)">
-    <path d="M 0 0 L 32 0 L 32 4 L 4 4 L 4 32 L 0 32 Z" fill="${accent}" opacity="0.9" />
-    <polygon points="14,14 26,14 26,26 14,26" fill="none" stroke="${accent}" stroke-width="1.4" opacity="0.85" />
-    <polygon points="20,8 26,14 20,20 14,14" fill="${accent}" opacity="0.95" />
-    <circle cx="40" cy="14" r="2.8" fill="${accent}" opacity="0.75" />
-    <circle cx="14" cy="40" r="2.8" fill="${accent}" opacity="0.75" />
-  </g>
-  <g transform="translate(1212, 652) rotate(180)">
-    <path d="M 0 0 L 32 0 L 32 4 L 4 4 L 4 32 L 0 32 Z" fill="${accent}" opacity="0.9" />
-    <polygon points="14,14 26,14 26,26 14,26" fill="none" stroke="${accent}" stroke-width="1.4" opacity="0.85" />
-    <polygon points="20,8 26,14 20,20 14,14" fill="${accent}" opacity="0.95" />
-    <circle cx="40" cy="14" r="2.8" fill="${accent}" opacity="0.75" />
-    <circle cx="14" cy="40" r="2.8" fill="${accent}" opacity="0.75" />
-  </g>
-  <g transform="translate(68, 652) rotate(270)">
-    <path d="M 0 0 L 32 0 L 32 4 L 4 4 L 4 32 L 0 32 Z" fill="${accent}" opacity="0.9" />
-    <polygon points="14,14 26,14 26,26 14,26" fill="none" stroke="${accent}" stroke-width="1.4" opacity="0.85" />
-    <polygon points="20,8 26,14 20,20 14,14" fill="${accent}" opacity="0.95" />
-    <circle cx="40" cy="14" r="2.8" fill="${accent}" opacity="0.75" />
-    <circle cx="14" cy="40" r="2.8" fill="${accent}" opacity="0.75" />
-  </g>
-
-  <!-- Top Geometric Header Divider with Mithila Motif -->
-  <g transform="translate(640, 140)">
-    <line x1="-240" y1="0" x2="-40" y2="0" stroke="${accent}" stroke-width="1.2" stroke-dasharray="6 4" opacity="0.55" />
-    <polygon points="0,-12 3,-3 12,0 3,3 0,12 -3,3 -12,0 -3,-3" fill="${accent}" opacity="0.95" />
-    <circle cx="0" cy="0" r="3" fill="${isDark ? '#1c1a17' : '#FFFFFF'}" />
-    <circle cx="0" cy="0" r="1.5" fill="${accent}" />
-    <line x1="40" y1="0" x2="240" y2="0" stroke="${accent}" stroke-width="1.2" stroke-dasharray="6 4" opacity="0.55" />
-  </g>
-
-  <!-- Category / Eyebrow Pill -->
-  <g transform="translate(640, 195)">
-    <text x="0" y="0" text-anchor="middle" font-family="'Space Grotesk', -apple-system, system-ui, sans-serif" font-size="16" font-weight="700" letter-spacing="4" fill="${accent}" text-transform="uppercase">
+  <!-- Category / Eyebrow Modern Capsule Pill -->
+  <g transform="translate(640, 165)">
+    <rect x="-180" y="-18" width="360" height="36" rx="18" fill="${accent}" fill-opacity="${isDark ? '0.15' : '0.1'}" stroke="${accent}" stroke-opacity="0.35" stroke-width="1" />
+    <circle cx="-150" cy="0" r="4" fill="${accent}" />
+    <text x="0" y="5" text-anchor="middle" font-family="'Space Grotesk', -apple-system, system-ui, sans-serif" font-size="14.5" font-weight="700" letter-spacing="2.5" fill="${accent}" text-transform="uppercase">
       ${escapeXml(eyebrow)}
     </text>
   </g>
 
-  <!-- Dominant Typography -->
+  <!-- Dominant High-Impact Typography -->
   <g>
     ${lines
       .map(
@@ -233,16 +196,15 @@ export function generateDynamicSvgThumbnail(options: ThumbnailOptions): string {
       .join('\n    ')}
   </g>
 
-  <!-- Bottom Mithila Divider & Stutosed Wordmark -->
-  <g transform="translate(640, 570)">
-    <line x1="-160" y1="0" x2="-25" y2="0" stroke="${accent}" stroke-width="1" stroke-dasharray="4 4" opacity="0.6" />
-    <polygon points="0,-5 5,0 0,5 -5,0" fill="${accent}" opacity="0.85" />
-    <line x1="25" y1="0" x2="160" y2="0" stroke="${accent}" stroke-width="1" stroke-dasharray="4 4" opacity="0.6" />
+  <!-- Clean Minimalist Footer Accent -->
+  <g transform="translate(640, 595)">
+    <line x1="-120" y1="0" x2="120" y2="0" stroke="${accent}" stroke-opacity="0.3" stroke-width="1" />
+    <circle cx="0" cy="0" r="3" fill="${accent}" opacity="0.7" />
   </g>
 
-  <g transform="translate(640, 615)">
-    <text x="0" y="0" text-anchor="middle" font-family="'Space Grotesk', -apple-system, system-ui, sans-serif" font-size="14.5" font-weight="600" letter-spacing="3" fill="${footerText}">
-      STUTOSED • STUDY VAULT
+  <g transform="translate(640, 630)">
+    <text x="0" y="0" text-anchor="middle" font-family="'Space Grotesk', -apple-system, system-ui, sans-serif" font-size="13" font-weight="600" letter-spacing="3" fill="${footerText}">
+      STUTOSED • VERIFIED STUDY RESOURCE
     </text>
   </g>
 </svg>`;
