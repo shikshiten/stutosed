@@ -125,8 +125,9 @@ export const CourseGrid: React.FC<CourseGridProps> = ({
                     loading="lazy"
                     onError={(e) => {
                       const target = e.currentTarget;
-                      if (!target.src.includes('all_course_thumbnail.jpg')) {
-                        target.src = '/thumbnails/all_course_thumbnail.jpg';
+                      const fallback = `/thumbnails/default_course_${theme === 'dark' ? 'dark' : 'light'}.svg`;
+                      if (!target.src.includes('default_course')) {
+                        target.src = fallback;
                       }
                     }}
                   />

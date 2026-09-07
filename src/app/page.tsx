@@ -114,8 +114,6 @@ export default function HomePage() {
   const [playerPlaylist, setPlayerPlaylist] = useState<LectureItem[] | null>(null);
   const [playerIndex, setPlayerIndex] = useState<number>(0);
   const [playerCourseInfo, setPlayerCourseInfo] = useState<{ id?: string; name?: string; category?: string; thumb?: string } | null>(null);
-  const [isPreparingStream, setIsPreparingStream] = useState<boolean>(false);
-  const [preparingTitle, setPreparingTitle] = useState<string>('');
 
   // PDF Viewer Modal state
   const [pdfModalData, setPdfModalData] = useState<{
@@ -553,10 +551,6 @@ export default function HomePage() {
       }
     }
 
-    // Show stream preparation overlay
-    setPreparingTitle(current?.label || 'Lecture');
-    setIsPreparingStream(true);
-
     const activeSubject = playlist[index]?.folderName || playlist[index]?.subject || selectedCourse?.name || '';
 
     // Persist full session data for the dedicated /watch page
@@ -574,38 +568,7 @@ export default function HomePage() {
       );
     } catch {}
 
-    // Pre-resolve stream URL in background for Vidmoly / Earnvids
-    if (current?.url) {
-      const isVidmolyUrl = current.url.includes('vidmoly.') || current.url.includes('/w/');
-      const isEarnvidsUrl = current.url.includes('morencius.com');
-      if (isVidmolyUrl || isEarnvidsUrl) {
-        const vidmolyMatch = current.url.match(/(?:embed-|w\/|vidmoly\.(?:net|me)\/)([a-zA-Z0-9]{10,16})/);
-        const earnvidsMatch = current.url.match(/morencius\.com\/v\/([a-zA-Z0-9]{10,16})/);
-        const provider = isEarnvidsUrl ? 'earnvids' : 'vidmoly';
-        const code = earnvidsMatch?.[1] || vidmolyMatch?.[1];
-        if (code) {
-          try {
-            const controller = new AbortController();
-            const timeoutId = setTimeout(() => controller.abort(), 3500);
-            const res = await fetch(`/api/stream?code=${encodeURIComponent(code)}&provider=${provider}`, {
-              signal: controller.signal,
-            });
-            clearTimeout(timeoutId);
-            if (res.ok) {
-              const data = await res.json();
-              if (data?.streamUrl) {
-                sessionStorage.setItem(
-                  'stutosed_prefetched_stream',
-                  JSON.stringify({ url: current.url, streamUrl: data.streamUrl })
-                );
-              }
-            }
-          } catch {}
-        }
-      }
-    }
-
-    // Seamless instant navigation using Next.js router
+    // Instant navigation — /watch page displays a smooth skeleton screen while stream resolves
     router.push(`/watch?course=${encodeURIComponent(activeCourseId)}&index=${index}`);
   };
 
@@ -2268,18 +2231,6 @@ export default function HomePage() {
         onClose={() => setPrivacyModalState((prev) => ({ ...prev, isOpen: false }))}
       />
 
-      {/* Stream Preparing Preloader Overlay */}
-      {isPreparingStream && (
-        <div className="stream-preloader-backdrop">
-          <div className="stream-preloader-box">
-            <div className="stream-preloader-spinner" />
-            <div className="stream-preloader-title">{preparingTitle}</div>
-            <div className="stream-preloader-sub">
-              Connecting stream engine &amp; resolving CDN…
-            </div>
-          </div>
-        </div>
-      )}
     </div>
   );
 }

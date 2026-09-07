@@ -61,6 +61,87 @@ function formatTime(seconds: number): string {
   return `${m}:${s < 10 ? '0' : ''}${s}`;
 }
 
+function WatchPageSkeleton() {
+  return (
+    <div className="watch-page-container">
+      {/* 1. Top Header Skeleton */}
+      <header className="watch-top-nav">
+        <div className="nav-left-cell">
+          <div className="skeleton-box skeleton-btn" />
+        </div>
+        <div className="nav-center-cell">
+          <div className="skeleton-box skeleton-title-pill" />
+        </div>
+        <div className="nav-right-cell">
+          <div className="skeleton-box skeleton-icon-btn" />
+        </div>
+      </header>
+
+      {/* 2. Main 2-Column Desktop Layout Skeleton */}
+      <div className="watch-main-layout">
+        {/* Left Column: Player Theater & Info Skeletons */}
+        <div className="watch-theater-col">
+          {/* 16:9 Video Canvas Skeleton */}
+          <div className="skeleton-player-box">
+            <div className="skeleton-center-play-pulse">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="currentColor" opacity="0.6">
+                <polygon points="6,4 20,12 6,20" />
+              </svg>
+            </div>
+            <div className="skeleton-player-bottom-bar" />
+          </div>
+
+          {/* Info Section Skeleton */}
+          <div className="watch-info-section">
+            <div className="watch-meta-chips">
+              <div className="skeleton-box skeleton-chip" style={{ width: '130px' }} />
+              <div className="skeleton-box skeleton-chip" style={{ width: '100px' }} />
+              <div className="skeleton-box skeleton-chip" style={{ width: '120px' }} />
+            </div>
+
+            <div className="skeleton-box skeleton-text" style={{ width: '80%', height: '26px', borderRadius: '6px' }} />
+            <div className="skeleton-box skeleton-text" style={{ width: '50%', height: '20px', borderRadius: '6px' }} />
+
+            <div className="watch-action-bar">
+              <div className="skeleton-box skeleton-action-btn" style={{ width: '140px' }} />
+              <div className="skeleton-box skeleton-action-btn" style={{ width: '120px' }} />
+              <div className="skeleton-box skeleton-action-btn" style={{ width: '100px' }} />
+              <div className="skeleton-box skeleton-action-btn" style={{ width: '90px' }} />
+            </div>
+
+            <div className="skeleton-box skeleton-desc-card">
+              <div className="skeleton-box skeleton-text" style={{ width: '35%', height: '18px', marginBottom: '12px' }} />
+              <div className="skeleton-box skeleton-text" style={{ width: '95%', height: '13px', marginBottom: '8px' }} />
+              <div className="skeleton-box skeleton-text" style={{ width: '75%', height: '13px' }} />
+            </div>
+          </div>
+        </div>
+
+        {/* Right Column: Playlist Queue Skeleton */}
+        <aside className="watch-right-col">
+          <div className="watch-playlist-panel">
+            <div className="watch-playlist-header">
+              <div className="skeleton-box skeleton-text" style={{ width: '160px', height: '18px' }} />
+            </div>
+            <div className="watch-playlist-items-scroll" style={{ gap: '8px', padding: '10px' }}>
+              {[1, 2, 3, 4, 5, 6, 7].map((i) => (
+                <div key={i} className="skeleton-playlist-row">
+                  <div className="skeleton-box" style={{ width: '22px', height: '16px', borderRadius: '4px' }} />
+                  <div style={{ flex: 1, display: 'flex', flexDirection: 'column', gap: '6px' }}>
+                    <div className="skeleton-box" style={{ width: `${85 - (i % 3) * 15}%`, height: '14px', borderRadius: '4px' }} />
+                    <div className="skeleton-box" style={{ width: '40%', height: '10px', borderRadius: '3px' }} />
+                  </div>
+                  <div className="skeleton-box" style={{ width: '26px', height: '26px', borderRadius: '50%' }} />
+                </div>
+              ))}
+            </div>
+          </div>
+        </aside>
+      </div>
+    </div>
+  );
+}
+
 export default function WatchClient() {
   const router = useRouter();
   const searchParams = useSearchParams();
@@ -896,12 +977,7 @@ export default function WatchClient() {
   const bufferedPercent = duration > 0 ? (bufferedTime / duration) * 100 : 0;
 
   if (!isLoaded) {
-    return (
-      <div className="watch-loading-screen">
-        <div className="player-spinner" style={{ width: '32px', height: '32px' }} />
-        <span>Loading lecture…</span>
-      </div>
-    );
+    return <WatchPageSkeleton />;
   }
 
   if (!currentItem) {
@@ -948,8 +1024,8 @@ export default function WatchClient() {
         <div className="watch-theater-col">
           <div
             ref={containerRef}
-            className={`player-canvas-container ${isFullscreen ? 'is-fullscreen' : ''} ${
-              !showControls && isPlaying ? 'hide-controls' : ''
+            className={`player-box ${isFullscreen ? 'is-fullscreen' : ''} ${
+              !showControls && isPlaying ? 'controls-hidden' : ''
             }`}
             onMouseMove={resetControlsTimer}
             onTouchStart={resetControlsTimer}

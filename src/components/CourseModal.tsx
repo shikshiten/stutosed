@@ -261,7 +261,7 @@ export const CourseModal: React.FC<CourseModalProps> = ({
   const getLectureThumb = (item: LectureItem) => {
     const currentTab = course.tabs?.find((t) => t.id === activeTabId) || selectedFolderTab;
     const category = item.subject || currentTab?.label || course.name;
-    return getSubjectThumbnail(item.label || item.subject, item.thumb || currentTab?.thumb, category, theme);
+    return getSubjectThumbnail(item.label || item.subject, null, category, theme);
   };
 
   // Detect YouTube video URLs
@@ -634,12 +634,13 @@ export const CourseModal: React.FC<CourseModalProps> = ({
                     }}
                   >
                     <img
-                      src={tab.thumb || getSubjectThumbnail(tab.label, tab.thumb, tab.id, theme)}
+                      src={getSubjectThumbnail(tab.label, null, tab.id, theme)}
                       alt=""
                       onError={(e) => {
                         const target = e.currentTarget;
-                        if (!target.src.includes('all_course_thumbnail.jpg')) {
-                          target.src = '/thumbnails/all_course_thumbnail.jpg';
+                        const fallback = `/thumbnails/default_course_${theme === 'dark' ? 'dark' : 'light'}.svg`;
+                        if (!target.src.includes('default_course')) {
+                          target.src = fallback;
                         }
                       }}
                       style={{ width: '100%', height: '100%', objectFit: 'cover' }}
@@ -777,8 +778,9 @@ export const CourseModal: React.FC<CourseModalProps> = ({
                           className="grid-thumb-img"
                           onError={(e) => {
                             const target = e.currentTarget;
-                            if (!target.src.includes('all_lecture_thumbnail.jpg')) {
-                              target.src = '/thumbnails/all_lecture_thumbnail.jpg';
+                            const fallback = `/thumbnails/default_lecture_${theme === 'dark' ? 'dark' : 'light'}.svg`;
+                            if (!target.src.includes('default_lecture')) {
+                              target.src = fallback;
                             }
                           }}
                           style={{

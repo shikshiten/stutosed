@@ -5,21 +5,6 @@
  * from lecture titles even inside multi-disciplinary engineering batches.
  */
 
-export const PROTECTED_THUMBNAILS: Record<string, string> = {
-  'ee-ece-eee': '/thumbnails/beu_ece_ee_eee.jpg',
-  'ece-ee-eee': '/thumbnails/beu_ece_ee_eee.jpg',
-  'mechanical-umeed': '/thumbnails/beu_mech_umeed.jpg',
-  'civil-umeed': '/thumbnails/beu_civil_umeed.jpg',
-  'cse-umeed': '/thumbnails/beu_cse_umeed.jpg',
-  'engineering-chemistry': '/thumbnails/beu_eng_chemistry.jpg',
-  'engineering-mathematics-2': '/thumbnails/beu_engineering_mathematics_2.jpg',
-  'engineering-physics': '/thumbnails/beu_engineering_physics.jpg',
-  'parmar-gk-3-0': '/thumbnails/parmar_gk_3.jpg',
-  'parmar': '/thumbnails/parmar_gk_3.jpg',
-  'beu-1st-year': '/thumbnails/beu_1st_year_course.jpg',
-  'beu-1st-sem': '/thumbnails/beu_1st_sem_course.jpg',
-};
-
 export const SUBJECT_KEYS = {
   // ── ENGINEERING CORE ──
   ENGINEERING_GRAPHICS_DESIGN: 'engineering_graphics_design',
@@ -49,6 +34,20 @@ export const SUBJECT_KEYS = {
   GEOGRAPHY: 'geography',
   ENVIRONMENT_ECOLOGY: 'environment_ecology',
 } as const;
+
+export const BATCH_SUBJECT_MAP: Record<string, string> = {
+  'ee-ece-eee': SUBJECT_KEYS.BASIC_ELECTRICAL_WORKSHOP,
+  'ece-ee-eee': SUBJECT_KEYS.BASIC_ELECTRICAL_WORKSHOP,
+  'mechanical-umeed': SUBJECT_KEYS.ELEMENTS_OF_MECHANICAL_ENGINEERING,
+  'civil-umeed': SUBJECT_KEYS.CIVIL_ENGINEERING_CORE,
+  'cse-umeed': SUBJECT_KEYS.COMPUTER_SCIENCE_CORE,
+  'engineering-chemistry': SUBJECT_KEYS.ENGINEERING_CHEMISTRY,
+  'engineering-mathematics-2': SUBJECT_KEYS.ENGINEERING_MATHEMATICS_2,
+  'engineering-physics': SUBJECT_KEYS.ENGINEERING_PHYSICS,
+  'parmar-gk-3-0': SUBJECT_KEYS.STATIC_GK,
+  'parmar': SUBJECT_KEYS.STATIC_GK,
+  'beu-1st-year': SUBJECT_KEYS.ENGINEERING_MATHEMATICS,
+};
 
 function resolveSvgPath(key: string, theme?: 'light' | 'dark'): string {
   const mode = theme === 'dark' ? 'dark' : 'light';
@@ -559,23 +558,17 @@ export function getSubjectThumbnail(
   const s = (subjectName || '').trim();
   const t = (tabIdOrName || '').trim();
 
-  // 1. Protected Batch Banners (check tab ID, tab Name, or subjectName)
+  // 1. Canonical Batch Subject Mapping (theme-aware)
   const normTabId = t.toLowerCase().replace(/[^a-z0-9_-]/g, '-').replace(/-+/g, '-');
-  if (normTabId && PROTECTED_THUMBNAILS[normTabId]) {
-    return PROTECTED_THUMBNAILS[normTabId];
+  if (normTabId && BATCH_SUBJECT_MAP[normTabId]) {
+    return resolveSvgPath(BATCH_SUBJECT_MAP[normTabId], theme);
   }
   const normSubj = s.toLowerCase().replace(/[^a-z0-9_-]/g, '-').replace(/-+/g, '-');
-  if (normSubj && PROTECTED_THUMBNAILS[normSubj]) {
-    return PROTECTED_THUMBNAILS[normSubj];
+  if (normSubj && BATCH_SUBJECT_MAP[normSubj]) {
+    return resolveSvgPath(BATCH_SUBJECT_MAP[normSubj], theme);
   }
 
-  // 2. Explicit raster cover banner provided and no distinct lecture title provided
-  // (e.g. course card, folder root card)
-  if (fallbackThumb && !fallbackThumb.endsWith('.svg') && (!s || s === t)) {
-    return fallbackThumb;
-  }
-
-  // 3. TITLE-FIRST TOPIC MATCHING: Check lecture title (s) first!
+  // 2. TITLE-FIRST TOPIC MATCHING: Check lecture title (s) first!
   if (s) {
     const titleMatch = matchTopicToSubjectKey(s);
     if (titleMatch) {
@@ -583,7 +576,7 @@ export function getSubjectThumbnail(
     }
   }
 
-  // 4. If title didn't match an academic topic, check tab / category name (t)
+  // 3. If title didn't match an academic topic, check tab / category name (t)
   if (t) {
     const tabMatch = matchTopicToSubjectKey(t);
     if (tabMatch) {
@@ -591,7 +584,7 @@ export function getSubjectThumbnail(
     }
   }
 
-  // 5. Themed SVG fallback if provided
+  // 4. Themed SVG fallback if provided
   if (fallbackThumb && fallbackThumb.endsWith('.svg')) {
     if (theme && !fallbackThumb.includes('_light.svg') && !fallbackThumb.includes('_dark.svg')) {
       return fallbackThumb.replace('.svg', `_${theme}.svg`);
@@ -599,16 +592,12 @@ export function getSubjectThumbnail(
     return fallbackThumb;
   }
 
-  // 6. If fallbackThumb is a valid image, use it
-  if (fallbackThumb && !fallbackThumb.endsWith('.svg')) {
-    return fallbackThumb;
-  }
-
-  // 7. Dynamic Title-based Minimalist SVG generator
+  // 5. Dynamic Title-based Minimalist SVG generator
   const cleanTitle = (s || t || 'Study Lecture').trim();
   if (cleanTitle) {
     return getDynamicThumbnailUrl(cleanTitle, t, theme);
   }
 
-  return '/thumbnails/all_lecture_thumbnail.jpg';
+  const mode = theme === 'dark' ? 'dark' : 'light';
+  return `/thumbnails/default_lecture_${mode}.svg`;
 }

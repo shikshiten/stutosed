@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 720" width="1280" height="720">
+  <defs>
+    <radialGradient id="bg-grad" cx="50%" cy="45%" r="75%"><stop offset="0%" stop-color="#FFFFFF" /><stop offset="60%" stop-color="#F8F9FA" /><stop offset="100%" stop-color="#F1F3F5" /></radialGradient>
+    <radialGradient id="accent-glow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#ea580c" stop-opacity="0.12" />
+      <stop offset="60%" stop-color="#ea580c" stop-opacity="0.03" />
+      <stop offset="100%" stop-color="#ea580c" stop-opacity="0" />
+    </radialGradient>
+    <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M 40 0 L 0 0 0 40" fill="none" stroke="rgba(0,0,0,0.035)" stroke-width="1" />
+    </pattern>
+  </defs>
+  <rect width="1280" height="720" fill="url(#bg-grad)" />
+  <rect width="1280" height="720" fill="url(#grid)" />
+  <circle cx="640" cy="360" r="460" fill="url(#accent-glow)" />
+  <rect x="40" y="40" width="1200" height="640" rx="24" fill="none" stroke="rgba(0,0,0,0.08)" stroke-width="1.5" />
+  <rect x="520" y="40" width="240" height="3" rx="1.5" fill="#ea580c" opacity="0.85" />
+  <g transform="translate(640, 165)">
+    <rect x="-180" y="-18" width="360" height="36" rx="18" fill="#ea580c" fill-opacity="0.1" stroke="#ea580c" stroke-opacity="0.35" stroke-width="1" />
+    <circle cx="-150" cy="0" r="4" fill="#ea580c" />
+    <text x="0" y="5" text-anchor="middle" font-family="'Space Grotesk', -apple-system, sans-serif" font-size="14.5" font-weight="700" letter-spacing="2.5" fill="#ea580c">VIDEO LESSON</text>
+  </g>
+  <g>
+    <text x="640" y="370" text-anchor="middle" font-family="'Space Grotesk', -apple-system, sans-serif" font-size="64" font-weight="800" letter-spacing="-0.5" fill="#111827">STUDY LECTURE</text>
+  </g>
+  <g transform="translate(640, 595)">
+    <line x1="-120" y1="0" x2="120" y2="0" stroke="#ea580c" stroke-opacity="0.3" stroke-width="1" />
+    <circle cx="0" cy="0" r="3" fill="#ea580c" opacity="0.7" />
+  </g>
+  <g transform="translate(640, 630)">
+    <text x="0" y="0" text-anchor="middle" font-family="'Space Grotesk', -apple-system, sans-serif" font-size="13" font-weight="600" letter-spacing="3" fill="rgba(0,0,0,0.45)">STUTOSED • VERIFIED STUDY RESOURCE</text>
+  </g>
+</svg>

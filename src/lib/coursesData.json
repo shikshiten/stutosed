@@ -5,8 +5,7 @@
     "subname": "Complete General Knowledge & Static GK",
     "teacher": "Parmar Sir",
     "subject": "General Knowledge",
-    "thumb": "/thumbnails/parmar_gk_3.jpg",
-    "tabs": [
+        "tabs": [
       {
         "id": "static-gk",
         "label": "▶ Static GK",
@@ -1155,14 +1154,12 @@
     "subname": "Bihar Engineering University",
     "teacher": "Bihar Engineering University",
     "subject": "B.Tech Engineering",
-    "thumb": "/thumbnails/beu_1st_year_course.jpg",
-    "tabs": [
+        "tabs": [
       {
         "id": "ece-ee-eee",
         "label": "EE / ECE / EEE",
         "subname": "Electronics & Electrical",
-        "thumb": "/thumbnails/beu_ece_ee_eee.jpg",
-        "items": [
+                "items": [
           {
             "label": "Lecture 01 • Electromagnetic Radiation",
             "url": "https://vidmoly.net/embed-jwm50200cizn.html",
@@ -2213,8 +2210,7 @@
         "id": "mechanical-umeed",
         "label": "Mechanical Engineering (UMEED)",
         "subname": "Mechanical Engineering — Full Batch",
-        "thumb": "/thumbnails/beu_mech_umeed.jpg",
-        "items": [
+                "items": [
           {
             "id": "mech-full-001",
             "label": "001. Lecture 01 • Function of Complex Variable",
@@ -7357,8 +7353,7 @@
         "id": "civil-umeed",
         "label": "Civil Engineering (UMEED)",
         "subname": "Civil Engineering (BEU UMEED)",
-        "thumb": "/thumbnails/beu_civil_umeed.jpg",
-        "items": [
+                "items": [
           {
             "id": "civil-umeed-001",
             "label": "001. Lecture 01 • Function of Complex Variable",
@@ -11001,8 +10996,7 @@
         "id": "cse-umeed",
         "label": "CSE (UMEED)",
         "subname": "Computer Science (BEU UMEED)",
-        "thumb": "/thumbnails/beu_cse_umeed.jpg",
-        "items": [
+                "items": [
           {
             "id": "cse-umeed-001",
             "label": "001. Lecture 01 • Chemistry Electromagnetic Radiation",
@@ -14427,8 +14421,7 @@
         "id": "engineering-chemistry",
         "label": "Engineering Chemistry",
         "subname": "Engineering Chemistry (BEU UMEED)",
-        "thumb": "/thumbnails/beu_eng_chemistry.jpg",
-        "items": [
+                "items": [
           {
             "id": "beu-chem-1",
             "label": "Lecture 01 • Electromagnetic Radiation",
@@ -14750,8 +14743,7 @@
         "id": "engineering-mathematics-2",
         "label": "Engineering Mathematics-II (UMEED)",
         "subname": "Maths-II (All Units & Notes)",
-        "thumb": "/thumbnails/beu_engineering_mathematics_2.jpg",
-        "items": [
+                "items": [
           {
             "id": "math2-umeed-001",
             "label": "001. Live Class Schedule",
@@ -17398,8 +17390,7 @@
         "id": "engineering-physics",
         "label": "Engineering Physics (UMEED)",
         "subname": "Applied Physics & Units",
-        "thumb": "/thumbnails/beu_engineering_physics.jpg",
-        "items": [
+                "items": [
           {
             "id": "phys-umeed-111",
             "label": "111. Lecture 01 • Introduction to Syllabus",

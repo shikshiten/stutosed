@@ -269,6 +269,13 @@ export const LibraryView: React.FC<LibraryViewProps> = ({
                         src={getSubjectThumbnail(course.subject || course.name, course.thumb, course.id, theme)}
                         alt={course.name}
                         className="bookmarked-thumb-img"
+                        onError={(e) => {
+                          const target = e.currentTarget;
+                          const fallback = `/thumbnails/default_course_${theme === 'dark' ? 'dark' : 'light'}.svg`;
+                          if (!target.src.includes('default_course')) {
+                            target.src = fallback;
+                          }
+                        }}
                       />
                       <span className="bookmarked-category-chip">
                         {(course.category === 'beu' || course.id.startsWith('beu')) ? 'BEU Engineering' : 'Govt Exams'}
