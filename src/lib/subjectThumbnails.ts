@@ -33,6 +33,8 @@ export const SUBJECT_KEYS = {
   MODERN_HISTORY: 'modern_history',
   GEOGRAPHY: 'geography',
   ENVIRONMENT_ECOLOGY: 'environment_ecology',
+  PARMAR_GK_3_0: 'parmar_gk_3_0',
+  BEU_1ST_YEAR: 'beu_1st_year',
 } as const;
 
 export const BATCH_SUBJECT_MAP: Record<string, string> = {
@@ -44,9 +46,9 @@ export const BATCH_SUBJECT_MAP: Record<string, string> = {
   'engineering-chemistry': SUBJECT_KEYS.ENGINEERING_CHEMISTRY,
   'engineering-mathematics-2': SUBJECT_KEYS.ENGINEERING_MATHEMATICS_2,
   'engineering-physics': SUBJECT_KEYS.ENGINEERING_PHYSICS,
-  'parmar-gk-3-0': SUBJECT_KEYS.STATIC_GK,
+  'parmar-gk-3-0': SUBJECT_KEYS.PARMAR_GK_3_0,
   'parmar': SUBJECT_KEYS.STATIC_GK,
-  'beu-1st-year': SUBJECT_KEYS.ENGINEERING_MATHEMATICS,
+  'beu-1st-year': SUBJECT_KEYS.BEU_1ST_YEAR,
 };
 
 function resolveSvgPath(key: string, theme?: 'light' | 'dark'): string {

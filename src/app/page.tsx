@@ -14,6 +14,7 @@ import { PrivacyTermsModal } from '@/components/PrivacyTermsModal';
 import NewsAnnouncements from '@/components/NewsAnnouncements';
 import { LibraryView } from '@/components/LibraryView';
 import { INITIAL_COURSES, getTotalStats, getCourseById } from '@/lib/coursesData';
+import { getSubjectThumbnail } from '@/lib/subjectThumbnails';
 import { Course, LectureItem, UserProfile } from '@/types';
 import { getWorkerProxyUrl, resolveDirectMediaUrl } from '@/lib/proxyConfig';
 import { createClient } from '@/lib/supabase/client';
@@ -99,6 +100,65 @@ const StatCounter: React.FC<{ value: number; label: string; suffix?: string }> =
       </div>
       <div className="stat-label">{label}</div>
     </div>
+  );
+};
+
+// Resilient Thumbnail for Last Played / Resume Section with Dark Fallback
+const ResumeThumbnail: React.FC<{
+  thumb?: string;
+  courseName?: string;
+  lectureTitle?: string;
+  theme?: 'light' | 'dark';
+}> = ({ thumb, courseName, lectureTitle, theme }) => {
+  const [hasError, setHasError] = useState(false);
+
+  const resolvedSrc = useMemo(() => {
+    let src = thumb || '';
+    if (!src && (courseName || lectureTitle)) {
+      src = getSubjectThumbnail(lectureTitle, null, courseName, theme);
+    } else if (src && src.endsWith('.svg') && theme) {
+      if (src.includes('_dark.svg') || src.includes('_light.svg')) {
+        src = src.replace(/_(light|dark)\.svg$/, `_${theme}.svg`);
+      }
+    }
+    return src;
+  }, [thumb, courseName, lectureTitle, theme]);
+
+  if (hasError || !resolvedSrc) {
+    return (
+      <div
+        style={{
+          width: '84px',
+          height: '56px',
+          borderRadius: 'var(--r-md)',
+          background: 'linear-gradient(135deg, rgba(204,120,92,0.18), rgba(204,120,92,0.06))',
+          border: '1px solid rgba(204,120,92,0.25)',
+          display: 'flex',
+          alignItems: 'center',
+          justifyContent: 'center',
+          color: 'var(--accent)',
+          flexShrink: 0,
+        }}
+      >
+        <Play width={20} height={20} fill="currentColor" />
+      </div>
+    );
+  }
+
+  return (
+    <img
+      src={resolvedSrc}
+      alt=""
+      onError={() => setHasError(true)}
+      style={{
+        width: '84px',
+        height: '56px',
+        borderRadius: 'var(--r-md)',
+        objectFit: 'cover',
+        border: '1px solid var(--border)',
+        flexShrink: 0,
+      }}
+    />
   );
 };
 
@@ -956,10 +1016,11 @@ export default function HomePage() {
                   }}
                 >
                   <div style={{ display: 'flex', alignItems: 'center', gap: '16px', flex: 1, minWidth: '260px' }}>
-                    <img
-                      src={lastPlayed.courseThumb}
-                      alt=""
-                      style={{ width: '84px', height: '56px', borderRadius: 'var(--r-md)', objectFit: 'cover', border: '1px solid var(--border)' }}
+                    <ResumeThumbnail
+                      thumb={lastPlayed.courseThumb}
+                      courseName={lastPlayed.courseName}
+                      lectureTitle={lastPlayed.lectureTitle}
+                      theme={theme}
                     />
                     <div>
                       <div style={{ fontSize: '11px', textTransform: 'uppercase', color: 'var(--accent)', fontWeight: 700, letterSpacing: '0.5px' }}>
@@ -1367,9 +1428,9 @@ export default function HomePage() {
             VIEW 2A: GOVERNMENT EXAM PREP VIEW (Dedicated Domain)
             ============================================================ */}
         {activeView === 'gov-exams' && (
-          <div className="animate-fade-in" style={{ padding: '24px 0 60px' }}>
-            <div style={{ maxWidth: '1200px', margin: '0 auto', padding: '0 24px 20px' }}>
-              <div style={{ display: 'flex', alignItems: 'center', gap: '8px', marginBottom: '8px' }}>
+          <div className="animate-fade-in" style={{ padding: '12px 0 36px' }}>
+            <div style={{ maxWidth: '1200px', margin: '0 auto', padding: '0 24px 8px' }}>
+              <div style={{ display: 'flex', alignItems: 'center', gap: '8px', marginBottom: '4px' }}>
                 <button
                   onClick={() => handleViewChange('home')}
                   style={{
@@ -1391,26 +1452,27 @@ export default function HomePage() {
                 <span style={{ fontSize: '13px', color: 'var(--text-muted)', fontWeight: 600 }}>Government Exams</span>
               </div>
 
-              <div style={{ display: 'flex', alignItems: 'center', gap: '12px', marginBottom: '6px' }}>
+              <div style={{ display: 'flex', alignItems: 'center', gap: '10px', marginBottom: '4px' }}>
                 <div
                   style={{
-                    width: '44px',
-                    height: '44px',
-                    borderRadius: 'var(--r-lg)',
+                    width: '36px',
+                    height: '36px',
+                    borderRadius: 'var(--r-md)',
                     background: 'var(--govt-dim)',
                     color: 'var(--govt-indigo)',
                     display: 'flex',
                     alignItems: 'center',
                     justifyContent: 'center',
+                    flexShrink: 0,
                   }}
                 >
-                  <Landmark width={24} height={24} strokeWidth={2} />
+                  <Landmark width={20} height={20} strokeWidth={2} />
                 </div>
-                <h1 style={{ fontFamily: 'var(--font-display)', fontSize: '28px', fontWeight: 700, color: 'var(--text)', margin: 0 }}>
+                <h1 style={{ fontFamily: 'var(--font-display)', fontSize: '22px', fontWeight: 700, color: 'var(--text)', margin: 0 }}>
                   Government Exam Prep
                 </h1>
               </div>
-              <p style={{ fontSize: '14px', color: 'var(--text-muted)', margin: 0 }}>
+              <p style={{ fontSize: '13px', color: 'var(--text-muted)', margin: 0 }}>
                 Comprehensive syllabus courses for SSC CGL, CHSL, MTS, Railway, and State Government examinations.
               </p>
             </div>
@@ -1428,9 +1490,9 @@ export default function HomePage() {
             VIEW 2B: BIHAR ENGINEERING UNIVERSITY (BEU) VIEW (Dedicated Domain)
             ============================================================ */}
         {activeView === 'beu-engineering' && (
-          <div className="animate-fade-in" style={{ padding: '24px 0 60px' }}>
-            <div style={{ maxWidth: '1200px', margin: '0 auto', padding: '0 24px 20px' }}>
-              <div style={{ display: 'flex', alignItems: 'center', gap: '8px', marginBottom: '8px' }}>
+          <div className="animate-fade-in" style={{ padding: '12px 0 36px' }}>
+            <div style={{ maxWidth: '1200px', margin: '0 auto', padding: '0 24px 8px' }}>
+              <div style={{ display: 'flex', alignItems: 'center', gap: '8px', marginBottom: '4px' }}>
                 <button
                   onClick={() => handleViewChange('home')}
                   style={{
@@ -1452,26 +1514,27 @@ export default function HomePage() {
                 <span style={{ fontSize: '13px', color: 'var(--text-muted)', fontWeight: 600 }}>BEU Engineering</span>
               </div>
 
-              <div style={{ display: 'flex', alignItems: 'center', gap: '12px', marginBottom: '6px' }}>
+              <div style={{ display: 'flex', alignItems: 'center', gap: '10px', marginBottom: '4px' }}>
                 <div
                   style={{
-                    width: '44px',
-                    height: '44px',
-                    borderRadius: 'var(--r-lg)',
+                    width: '36px',
+                    height: '36px',
+                    borderRadius: 'var(--r-md)',
                     background: 'var(--beu-dim)',
                     color: 'var(--beu-blue)',
                     display: 'flex',
                     alignItems: 'center',
                     justifyContent: 'center',
+                    flexShrink: 0,
                   }}
                 >
-                  <GraduationCap width={24} height={24} strokeWidth={2} />
+                  <GraduationCap width={20} height={20} strokeWidth={2} />
                 </div>
-                <h1 style={{ fontFamily: 'var(--font-display)', fontSize: '28px', fontWeight: 700, color: 'var(--text)', margin: 0 }}>
+                <h1 style={{ fontFamily: 'var(--font-display)', fontSize: '22px', fontWeight: 700, color: 'var(--text)', margin: 0 }}>
                   Bihar Engineering University (BEU)
                 </h1>
               </div>
-              <p style={{ fontSize: '14px', color: 'var(--text-muted)', margin: 0 }}>
+              <p style={{ fontSize: '13px', color: 'var(--text-muted)', margin: 0 }}>
                 Syllabus-aligned B.Tech engineering semester courses, subject folders, and technical science lectures.
               </p>
             </div>
@@ -1489,15 +1552,15 @@ export default function HomePage() {
             VIEW 2C: ALL COURSES CATALOG VIEW (Dedicated full-page courses)
             ============================================================ */}
         {activeView === 'courses' && (
-          <div className="animate-fade-in" style={{ padding: '24px 0 60px' }}>
-            <div style={{ maxWidth: '1200px', margin: '0 auto', padding: '0 24px 20px' }}>
-              <div style={{ display: 'flex', alignItems: 'center', gap: '10px', marginBottom: '6px' }}>
-                <BookOpen width={24} height={24} color="var(--accent)" />
-                <h1 style={{ fontFamily: 'var(--font-display)', fontSize: '28px', fontWeight: 700, color: 'var(--text)', margin: 0 }}>
+          <div className="animate-fade-in" style={{ padding: '12px 0 36px' }}>
+            <div style={{ maxWidth: '1200px', margin: '0 auto', padding: '0 24px 8px' }}>
+              <div style={{ display: 'flex', alignItems: 'center', gap: '10px', marginBottom: '4px' }}>
+                <BookOpen width={20} height={20} color="var(--accent)" />
+                <h1 style={{ fontFamily: 'var(--font-display)', fontSize: '22px', fontWeight: 700, color: 'var(--text)', margin: 0 }}>
                   All Course Catalog
                 </h1>
               </div>
-              <p style={{ fontSize: '14px', color: 'var(--text-muted)', margin: 0 }}>
+              <p style={{ fontSize: '13px', color: 'var(--text-muted)', margin: 0 }}>
                 Explore all courses across Government Exam preparation and Bihar Engineering University.
               </p>
             </div>

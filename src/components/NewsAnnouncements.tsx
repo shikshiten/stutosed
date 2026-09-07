@@ -32,10 +32,10 @@ export default function NewsAnnouncements({ onBackHome, onExploreCourses }: News
   }, [activeFilter]);
 
   return (
-    <div className="animate-fade-in" style={{ maxWidth: '1200px', margin: '0 auto', padding: '24px 24px 80px' }}>
+    <div className="animate-fade-in" style={{ maxWidth: '1200px', margin: '0 auto', padding: '16px 24px 60px' }}>
       {/* Top Back Navigation */}
       {onBackHome && (
-        <div style={{ marginBottom: '20px' }}>
+        <div style={{ marginBottom: '12px' }}>
           <button
             onClick={onBackHome}
             style={{
@@ -66,9 +66,9 @@ export default function NewsAnnouncements({ onBackHome, onExploreCourses }: News
           background: 'linear-gradient(135deg, var(--bg-card) 0%, rgba(204, 120, 92, 0.08) 100%)',
           border: '1px solid var(--border)',
           borderRadius: 'var(--r-2xl)',
-          padding: '36px 32px',
+          padding: '24px 28px',
           boxShadow: 'var(--sh-card)',
-          marginBottom: '36px',
+          marginBottom: '20px',
           position: 'relative',
           overflow: 'hidden',
         }}
