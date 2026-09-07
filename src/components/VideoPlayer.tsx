@@ -198,10 +198,19 @@ export const VideoPlayer: React.FC<VideoPlayerProps> = ({
     resetControlsTimer();
   };
 
-  // Determine active URL from servers array or fallback (prioritizing ESTE over ALBA)
+  // Determine active URL from servers array or fallback (prioritizing ESTE over ALBA, deduplicating identical URLs)
   const servers: ServerOption[] = useMemo(() => {
     if (currentItem?.servers && currentItem.servers.length > 0) {
-      return [...currentItem.servers].sort((a, b) => {
+      const seen = new Set<string>();
+      const distinct: ServerOption[] = [];
+      for (const s of currentItem.servers) {
+        const key = s.url?.trim().toLowerCase();
+        if (key && !seen.has(key)) {
+          seen.add(key);
+          distinct.push(s);
+        }
+      }
+      return distinct.sort((a, b) => {
         const aIsEste = a.name?.toUpperCase().includes('ESTE') ? 1 : 0;
         const bIsEste = b.name?.toUpperCase().includes('ESTE') ? 1 : 0;
         return bIsEste - aIsEste;

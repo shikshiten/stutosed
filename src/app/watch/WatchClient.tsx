@@ -269,10 +269,19 @@ export default function WatchClient() {
     } catch {}
   }, [currentItem, courseInfo]);
 
-  // Active Server & URL resolution (prioritizing ESTE over ALBA)
+  // Active Server & URL resolution (prioritizing ESTE over ALBA, deduplicating identical URLs)
   const servers: ServerOption[] = useMemo(() => {
     if (currentItem?.servers && currentItem.servers.length > 0) {
-      return [...currentItem.servers].sort((a, b) => {
+      const seen = new Set<string>();
+      const distinct: ServerOption[] = [];
+      for (const s of currentItem.servers) {
+        const key = s.url?.trim().toLowerCase();
+        if (key && !seen.has(key)) {
+          seen.add(key);
+          distinct.push(s);
+        }
+      }
+      return distinct.sort((a, b) => {
         const aIsEste = a.name?.toUpperCase().includes('ESTE') ? 1 : 0;
         const bIsEste = b.name?.toUpperCase().includes('ESTE') ? 1 : 0;
         return bIsEste - aIsEste;
@@ -1410,10 +1419,14 @@ export default function WatchClient() {
                     <div className="watch-row-info">
                       <div className="watch-row-title">{lec.label}</div>
                       <div className="watch-row-tags">
-                        {isCurrent && <span className="watch-playing-tag">NOW PLAYING</span>}
-                        {lec.servers && lec.servers.length > 1 && (
-                          <span className="watch-server-tag">{lec.servers.length} Servers</span>
-                        )}
+                        {(() => {
+                          const uniqueCount = lec.servers
+                            ? new Set(lec.servers.map((s) => s.url?.trim().toLowerCase())).size
+                            : 0;
+                          return uniqueCount > 1 ? (
+                            <span className="watch-server-tag">{uniqueCount} Servers</span>
+                          ) : null;
+                        })()}
                       </div>
                     </div>
 

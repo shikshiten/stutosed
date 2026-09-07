@@ -1261,36 +1261,6 @@ svg { flex-shrink: 0; }
   box-shadow: 0 2px 8px rgba(204, 120, 92, 0.4);
 }
 
-/* Mode Switcher Pills */
-.player-mode-group {
-  display: inline-flex;
-  align-items: center;
-  gap: 3px;
-  background: rgba(255, 255, 255, 0.1);
-  padding: 3px;
-  border-radius: 100px;
-  backdrop-filter: blur(10px);
-  -webkit-backdrop-filter: blur(10px);
-  border: 1px solid rgba(255, 255, 255, 0.12);
-}
-.mode-toggle-btn {
-  padding: 4px 10px;
-  font-size: 11px;
-  font-weight: 700;
-  border-radius: 100px;
-  border: none;
-  background: transparent;
-  color: rgba(255, 255, 255, 0.7);
-  cursor: pointer;
-  transition: all 0.2s ease;
-}
-.mode-toggle-btn:hover {
-  color: #ffffff;
-}
-.mode-toggle-btn.active {
-  background: rgba(255, 255, 255, 0.22);
-  color: #ffffff;
-}
 
 /* Close Button */
 .player-overlay-close-btn {
