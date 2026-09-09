@@ -1065,64 +1065,84 @@ export default function HomePage() {
                 </div>
               </div>
 
-              {lastPlayed ? (
-                /* Last Played Course Card */
-                <div
-                  style={{
-                    background: 'var(--bg-card)',
-                    border: '1px solid var(--border)',
-                    borderRadius: 'var(--r-lg)',
-                    padding: '20px',
-                    display: 'flex',
-                    flexWrap: 'wrap',
-                    alignItems: 'center',
-                    justifyContent: 'space-between',
-                    gap: '20px',
-                    boxShadow: 'var(--sh-card)',
-                  }}
-                >
-                  <div style={{ display: 'flex', alignItems: 'center', gap: '16px', flex: 1, minWidth: '260px' }}>
-                    <ResumeThumbnail
-                      thumb={lastPlayed.courseThumb}
-                      courseName={lastPlayed.courseName}
-                      lectureTitle={lastPlayed.lectureTitle}
-                      theme={theme}
-                    />
-                    <div>
-                      <div style={{ fontSize: '11px', textTransform: 'uppercase', color: 'var(--accent)', fontWeight: 700, letterSpacing: '0.5px' }}>
-                        {lastPlayed.courseName.replace(/PARMAR GK 3\.0/g, 'Parmar GK 3.0').replace(/\s*RATNA\s*/gi, ' ').trim()}
-                      </div>
-                      <div style={{ fontSize: '15px', fontWeight: 600, color: 'var(--text)', margin: '2px 0' }}>
-                        {lastPlayed.lectureTitle.replace(/\s*RATNA\s*/gi, ' ').trim()}
-                      </div>
-                      <div style={{ fontSize: '12px', color: 'var(--text-muted)' }}>
-                        Last studied recently • Click to resume
-                      </div>
-                    </div>
-                  </div>
+              {lastPlayed ? (() => {
+                const fallbackCourse = lastPlayed.courseId ? getCourseById(lastPlayed.courseId) : undefined;
+                const rawCourseName = lastPlayed.courseName || fallbackCourse?.name || 'Enrolled Course';
+                const safeCourseName = rawCourseName.replace(/PARMAR GK 3\.0/g, 'Parmar GK 3.0').replace(/\s*RATNA\s*/gi, ' ').trim();
 
-                  <button
-                    onClick={handleResumeLastPlayed}
+                let fallbackLectureTitle = '';
+                if (fallbackCourse?.tabs && lastPlayed.url) {
+                  for (const tab of fallbackCourse.tabs) {
+                    const item = tab.items.find((i) => i.url === lastPlayed.url);
+                    if (item) {
+                      fallbackLectureTitle = item.label;
+                      break;
+                    }
+                  }
+                }
+                const rawLectureTitle = lastPlayed.lectureTitle || fallbackLectureTitle || 'Continue Lecture';
+                const safeLectureTitle = rawLectureTitle.replace(/\s*RATNA\s*/gi, ' ').trim();
+                const safeThumb = lastPlayed.courseThumb || fallbackCourse?.thumb || '';
+
+                return (
+                  /* Last Played Course Card */
+                  <div
                     style={{
-                      display: 'inline-flex',
+                      background: 'var(--bg-card)',
+                      border: '1px solid var(--border)',
+                      borderRadius: 'var(--r-lg)',
+                      padding: '20px',
+                      display: 'flex',
+                      flexWrap: 'wrap',
                       alignItems: 'center',
-                      gap: '8px',
-                      padding: '10px 20px',
-                      background: 'var(--accent)',
-                      color: '#ffffff',
-                      borderRadius: 'var(--r-pill)',
-                      border: 'none',
-                      fontWeight: 700,
-                      fontSize: '13px',
-                      cursor: 'pointer',
-                      boxShadow: '0 4px 14px rgba(204,120,92,0.3)',
+                      justifyContent: 'space-between',
+                      gap: '20px',
+                      boxShadow: 'var(--sh-card)',
                     }}
                   >
-                    <Play width={14} height={14} fill="#fff" />
-                    Resume Lecture
-                  </button>
-                </div>
-              ) : (
+                    <div style={{ display: 'flex', alignItems: 'center', gap: '16px', flex: 1, minWidth: '260px' }}>
+                      <ResumeThumbnail
+                        thumb={safeThumb}
+                        courseName={safeCourseName}
+                        lectureTitle={safeLectureTitle}
+                        theme={theme}
+                      />
+                      <div>
+                        <div style={{ fontSize: '11px', textTransform: 'uppercase', color: 'var(--accent)', fontWeight: 700, letterSpacing: '0.5px' }}>
+                          {safeCourseName}
+                        </div>
+                        <div style={{ fontSize: '15px', fontWeight: 600, color: 'var(--text)', margin: '2px 0' }}>
+                          {safeLectureTitle}
+                        </div>
+                        <div style={{ fontSize: '12px', color: 'var(--text-muted)' }}>
+                          Last studied recently • Click to resume
+                        </div>
+                      </div>
+                    </div>
+
+                    <button
+                      onClick={handleResumeLastPlayed}
+                      style={{
+                        display: 'inline-flex',
+                        alignItems: 'center',
+                        gap: '8px',
+                        padding: '10px 20px',
+                        background: 'var(--accent)',
+                        color: '#ffffff',
+                        borderRadius: 'var(--r-pill)',
+                        border: 'none',
+                        fontWeight: 700,
+                        fontSize: '13px',
+                        cursor: 'pointer',
+                        boxShadow: '0 4px 14px rgba(204,120,92,0.3)',
+                      }}
+                    >
+                      <Play width={14} height={14} fill="#fff" />
+                      Resume Lecture
+                    </button>
+                  </div>
+                );
+              })() : (
                 /* Illustrated Empty State Component */
                 <div
                   style={{

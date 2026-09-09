@@ -9,6 +9,7 @@
 
 import { createClient } from '@/lib/supabase/client';
 import { SavedVideoItem } from '@/lib/libraryStorage';
+import { getCourseById } from '@/lib/coursesData';
 
 const WATCHED_KEY_V1 = 'onafbu_watched_v1';
 const WATCHED_KEY_LEGACY = 'stutosed_watched_lectures';
@@ -345,8 +346,23 @@ export async function pullCloudUserData(): Promise<void> {
             } catch {}
           }
           if (shouldUpdateLocal) {
+            const course = getCourseById(latestCloudMemory.course_id);
+            let lectureTitle = '';
+            const courseThumb = course?.thumb || '';
+            if (course?.tabs) {
+              for (const tab of course.tabs) {
+                const item = tab.items.find((i) => i.url === latestCloudMemory.last_lecture_url);
+                if (item) {
+                  lectureTitle = item.label;
+                  break;
+                }
+              }
+            }
             const memoryObj = {
               courseId: latestCloudMemory.course_id,
+              courseName: course?.name || 'Course',
+              courseThumb: courseThumb,
+              lectureTitle: lectureTitle || 'Continue Lecture',
               url: latestCloudMemory.last_lecture_url,
               timestamp: new Date(latestCloudMemory.updated_at).getTime(),
             };
