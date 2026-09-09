@@ -1,5 +1,6 @@
 'use client';
 
+import React from 'react';
 import { Home, Landmark, GraduationCap, BookOpen, User } from 'lucide-react';
 import { AppView } from '@/components/Sidebar';
 import { UserProfile } from '@/types';

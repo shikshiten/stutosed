@@ -317,23 +317,25 @@ export default function HomePage() {
       // Restore view & course from URL query params or sessionStorage on refresh
       if (typeof window !== 'undefined') {
         const urlParams = new URLSearchParams(window.location.search);
-        const viewParam = (urlParams.get('view') as AppView) || (sessionStorage.getItem('stutosed_active_view') as AppView) || 'home';
+        const storedSessionView = sessionStorage.getItem('stutosed_active_view') as AppView | null;
+        const validViews = ['beu-engineering', 'gov-exams', 'library', 'profile', 'help', 'home'];
+
+        let viewParam = (urlParams.get('view') as AppView) || storedSessionView || 'home';
+
+        // Purge legacy/deleted views from storage (e.g. 'announcements', 'updates', 'pdf-notes')
+        if (storedSessionView && !validViews.includes(storedSessionView) && !storedSessionView.startsWith('cat-')) {
+          sessionStorage.removeItem('stutosed_active_view');
+          viewParam = 'home';
+        }
+
         const courseParam = urlParams.get('course') || sessionStorage.getItem('stutosed_open_course');
         const folderParam = urlParams.get('folder') || sessionStorage.getItem('stutosed_open_folder');
 
-        if (
-          viewParam &&
-          ([
-            'beu-engineering',
-            'gov-exams',
-            'library',
-            'profile',
-            'help',
-            'home',
-          ].includes(viewParam) ||
-            viewParam.startsWith('cat-'))
-        ) {
+        if (viewParam && (validViews.includes(viewParam) || (typeof viewParam === 'string' && viewParam.startsWith('cat-')))) {
           setActiveView(viewParam);
+        } else {
+          setActiveView('home');
+          viewParam = 'home';
         }
 
         if (courseParam) {
@@ -343,6 +345,8 @@ export default function HomePage() {
             if (folderParam) {
               setOpenFolderId(folderParam);
             }
+          } else {
+            sessionStorage.removeItem('stutosed_open_course');
           }
         }
 
@@ -499,6 +503,33 @@ export default function HomePage() {
       window.removeEventListener('storage', handleProgressUpdate);
       window.removeEventListener('focus', handleFocus);
       document.removeEventListener('visibilitychange', handleFocus);
+    };
+  }, []);
+
+  // Gracefully handle Next.js deployment desync (stale chunks cached in browser after deployment)
+  useEffect(() => {
+    const handleChunkError = (event: ErrorEvent | PromiseRejectionEvent) => {
+      const errorMsg = (event as any)?.message || (event as any)?.reason?.message || '';
+      if (
+        typeof errorMsg === 'string' &&
+        (errorMsg.includes('Loading chunk') ||
+          errorMsg.includes('Failed to fetch dynamically imported module') ||
+          errorMsg.includes('ChunkLoadError'))
+      ) {
+        const lastReload = sessionStorage.getItem('stutosed_chunk_reload');
+        const now = Date.now();
+        if (!lastReload || now - Number(lastReload) > 10000) {
+          sessionStorage.setItem('stutosed_chunk_reload', String(now));
+          window.location.reload();
+        }
+      }
+    };
+
+    window.addEventListener('error', handleChunkError);
+    window.addEventListener('unhandledrejection', handleChunkError);
+    return () => {
+      window.removeEventListener('error', handleChunkError);
+      window.removeEventListener('unhandledrejection', handleChunkError);
     };
   }, []);
 
@@ -1575,8 +1606,8 @@ export default function HomePage() {
         {/* ============================================================
             VIEW 2D: DYNAMIC COURSE CATEGORY VIEW (JEE, GATE, ETC.)
             ============================================================ */}
-        {activeView.startsWith('cat-') && (() => {
-          const catId = activeView.replace('cat-', '');
+        {Boolean(typeof activeView === 'string' && activeView.startsWith('cat-')) && (() => {
+          const catId = (activeView || '').replace('cat-', '');
           const categoryConfig = getCategoryById(catId);
           const categoryCourses = getCoursesByCategory(catId);
           const catLabel = categoryConfig?.label || catId.toUpperCase();
