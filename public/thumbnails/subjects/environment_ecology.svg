@@ -46,7 +46,7 @@
 
   <!-- Dominant High-Impact Typography -->
   <g>
-    <text x="640" y="350" text-anchor="middle" font-family="'Space Grotesk', -apple-system, system-ui, sans-serif" font-size="66" font-weight="800" letter-spacing="-0.5" fill="#FFFFFF" filter="url(#shadow)">ENVIRONMENT &</text>
+    <text x="640" y="350" text-anchor="middle" font-family="'Space Grotesk', -apple-system, system-ui, sans-serif" font-size="66" font-weight="800" letter-spacing="-0.5" fill="#FFFFFF" filter="url(#shadow)">ENVIRONMENT &amp;</text>
     <text x="640" y="440" text-anchor="middle" font-family="'Space Grotesk', -apple-system, system-ui, sans-serif" font-size="78" font-weight="800" letter-spacing="-0.5" fill="#F3F4F6" filter="url(#shadow)">ECOLOGY</text>
   </g>
 
