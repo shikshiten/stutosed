@@ -465,10 +465,13 @@ export default function WatchClient() {
   }, [activeUrl, needsApiResolution, isVidmolyUrl, isEarnvidsUrl, isYouTubeUrl]);
 
   // If URL needs resolution (Vidmoly / Earnvids), NEVER use raw activeUrl as stream source!
+  const isHrankerHls = isDirectHlsUrl && activeUrl.includes('hranker.com');
   const videoSourceUrl = needsApiResolution
     ? resolvedStreamUrl
     : isProxyStreamUrl
     ? getWorkerProxyUrl(activeUrl, 'stream')
+    : isHrankerHls
+    ? `/api/hls-proxy?url=${encodeURIComponent(activeUrl)}&provider=hranker`
     : isDirectHlsUrl
     ? activeUrl
     : activeUrl;

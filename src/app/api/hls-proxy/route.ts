@@ -45,9 +45,12 @@ export async function GET(request: NextRequest) {
       providerParam === 'earnvids' ||
       decoded.includes('morencius.') ||
       decoded.includes('earnvids.');
+    const isHranker =
+      providerParam === 'hranker' ||
+      decoded.includes('hranker.com');
 
-    // If NOT Vidmoly or Earnvids, offload directly to Cloudflare Worker (0 Vercel bandwidth!)
-    if (!isVidmoly && !isEarnvids) {
+    // If NOT Vidmoly, Earnvids, or Hranker, offload directly to Cloudflare Worker (0 Vercel bandwidth!)
+    if (!isVidmoly && !isEarnvids && !isHranker) {
       const workerUrl = getWorkerProxyUrl(targetUrl, 'hls');
       return NextResponse.redirect(workerUrl, 302);
     }
@@ -57,6 +60,9 @@ export async function GET(request: NextRequest) {
     if (isEarnvids) {
       referer = 'https://morencius.com/';
       origin = 'https://morencius.com';
+    } else if (isHranker) {
+      referer = 'https://selectionway.com/';
+      origin = 'https://selectionway.com';
     }
 
     const clientRange = request.headers.get('range');
@@ -92,11 +98,13 @@ export async function GET(request: NextRequest) {
         const trimmed = line.trim();
         if (!trimmed) return line;
 
+        const currentProvider = providerParam || (isVidmoly ? 'vidmoly' : isEarnvids ? 'earnvids' : isHranker ? 'hranker' : '');
+
         if (trimmed.startsWith('#')) {
           return trimmed.replace(/URI=["']([^"']+)["']/g, (_, uri) => {
             try {
               const absoluteUri = new URL(uri, baseUrl).toString();
-              return `URI="/api/hls-proxy?url=${encodeURIComponent(absoluteUri)}&provider=${providerParam || (isVidmoly ? 'vidmoly' : 'earnvids')}"`;
+              return `URI="/api/hls-proxy?url=${encodeURIComponent(absoluteUri)}&provider=${currentProvider}"`;
             } catch {
               return `URI="${uri}"`;
             }
@@ -105,7 +113,7 @@ export async function GET(request: NextRequest) {
 
         try {
           const absoluteUrl = new URL(trimmed, baseUrl).toString();
-          return `/api/hls-proxy?url=${encodeURIComponent(absoluteUrl)}&provider=${providerParam || (isVidmoly ? 'vidmoly' : 'earnvids')}`;
+          return `/api/hls-proxy?url=${encodeURIComponent(absoluteUrl)}&provider=${currentProvider}`;
         } catch {
           return line;
         }
@@ -123,14 +131,17 @@ export async function GET(request: NextRequest) {
     // ── Binary segment (.ts, thumbnails, etc.) → stream through ──
     const contentType = upstreamRes.headers.get('Content-Type') || 'video/MP2T';
     const contentLength = upstreamRes.headers.get('Content-Length');
+    const contentRange = upstreamRes.headers.get('Content-Range');
     const acceptRanges = upstreamRes.headers.get('Accept-Ranges');
 
     const headers: Record<string, string> = {
       'Content-Type': contentType,
       ...getSecureCorsHeaders(origin),
+      'Access-Control-Expose-Headers': 'Content-Range, Content-Length, Accept-Ranges',
       'Cache-Control': 'public, max-age=86400, immutable',
     };
     if (contentLength) headers['Content-Length'] = contentLength;
+    if (contentRange) headers['Content-Range'] = contentRange;
     if (acceptRanges) headers['Accept-Ranges'] = acceptRanges;
 
     return new Response(upstreamRes.body, {

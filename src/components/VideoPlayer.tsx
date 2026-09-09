@@ -304,8 +304,11 @@ export const VideoPlayer: React.FC<VideoPlayerProps> = ({
   }, [activeUrl, needsApiResolution, isVidmolyUrl, isEarnvidsUrl]);
 
   // Determine media source for <video> element
+  const isHrankerHls = isHlsUrl && activeUrl.includes('hranker.com');
   const videoSourceUrl = isProxyStreamUrl
     ? getWorkerProxyUrl(activeUrl, 'stream')
+    : isHrankerHls
+    ? `/api/hls-proxy?url=${encodeURIComponent(activeUrl)}&provider=hranker`
     : isHlsUrl
     ? activeUrl
     : resolvedStreamUrl;
