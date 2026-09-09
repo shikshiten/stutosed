@@ -47,7 +47,7 @@
   <!-- Dominant High-Impact Typography -->
   <g>
     <text x="640" y="360" text-anchor="middle" font-family="'Space Grotesk', -apple-system, system-ui, sans-serif" font-size="64" font-weight="800" letter-spacing="-0.5" fill="#FFFFFF" filter="url(#shadow)">ENGLISH PRACTICE</text>
-    <text x="640" y="440" text-anchor="middle" font-family="'Space Grotesk', -apple-system, system-ui, sans-serif" font-size="64" font-weight="800" letter-spacing="-0.5" fill="#F3F4F6" filter="url(#shadow)">31 TURBO</text>
+    <text x="640" y="440" text-anchor="middle" font-family="'Space Grotesk', -apple-system, system-ui, sans-serif" font-size="64" font-weight="800" letter-spacing="-0.5" fill="#F3F4F6" filter="url(#shadow)">31</text>
   </g>
 
   <!-- Clean Minimalist Footer Accent -->

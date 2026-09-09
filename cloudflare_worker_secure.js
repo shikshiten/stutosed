@@ -30,6 +30,9 @@ const ALLOWED_UPSTREAMS = [
   'storage.googleapis.com',
   'edgeone.app',
   'cloudfront.net',
+  'hranker.com',
+  'amazonaws.com',
+  'catbox.moe',
 ];
 
 const ALLOWED_ORIGINS = [

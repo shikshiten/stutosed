@@ -5,7 +5,7 @@ import { Home, BookOpen, Moon, Sun, User, HelpCircle, GraduationCap, Landmark, S
 import { UserProfile } from '@/types';
 import { getInitials, getAvatarGradient } from '@/components/ProfileMenu';
 
-export type AppView = 'home' | 'courses' | 'gov-exams' | 'beu-engineering' | 'announcements' | 'library' | 'profile' | 'help';
+export type AppView = 'home' | 'gov-exams' | 'beu-engineering' | 'announcements' | 'library' | 'profile' | 'help';
 
 interface SidebarProps {
   isOpen: boolean;
@@ -112,14 +112,6 @@ export const Sidebar: React.FC<SidebarProps> = ({
           >
             <GraduationCap width={18} height={18} strokeWidth={2} style={{ color: activeView === 'beu-engineering' ? 'var(--accent)' : 'var(--beu-blue)' }} />
             <span>BEU Engineering</span>
-          </button>
-
-          <button
-            onClick={() => handleNav('courses')}
-            className={`nav-link ${activeView === 'courses' ? 'active' : ''}`}
-          >
-            <BookOpen width={18} height={18} strokeWidth={2} />
-            <span>All Courses</span>
           </button>
 
           <button

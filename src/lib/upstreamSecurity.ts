@@ -31,6 +31,9 @@ const SECURE_HOST_SIGNATURES = [
   'Y29udGVudC5qd3BsYXRmb3JtLmNvbQ==',
   'ZWRnZW9uZS5hcHA=', // edgeone.app
   'Y2xvdWRmcm9udC5uZXQ=', // cloudfront.net
+  'aHJhbmtlci5jb20=', // hranker.com
+  'YW1hem9uYXdzLmNvbQ==', // amazonaws.com
+  'Y2F0Ym94Lm1vZQ==', // catbox.moe
 ];
 
 function decodeSignature(b64: string): string {

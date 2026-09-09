@@ -322,7 +322,7 @@ export const ProfileMenu: React.FC<ProfileMenuProps> = ({
 
             <button
               onClick={() => {
-                onSelectView('courses');
+                onSelectView('gov-exams');
                 setIsOpen(false);
               }}
               style={{
@@ -341,7 +341,7 @@ export const ProfileMenu: React.FC<ProfileMenuProps> = ({
               className="dropdown-menu-item"
             >
               <BookOpen width={15} height={15} style={{ color: 'var(--beu-blue)' }} />
-              <span>Explore Courses</span>
+              <span>Govt Exams</span>
             </button>
 
             <button

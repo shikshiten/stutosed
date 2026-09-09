@@ -322,7 +322,7 @@ export default function HomePage() {
         const courseParam = urlParams.get('course') || sessionStorage.getItem('stutosed_open_course');
         const folderParam = urlParams.get('folder') || sessionStorage.getItem('stutosed_open_folder');
 
-        if (viewParam && ['beu-engineering', 'gov-exams', 'courses', 'library', 'announcements', 'profile', 'help', 'home'].includes(viewParam)) {
+        if (viewParam && ['beu-engineering', 'gov-exams', 'library', 'announcements', 'profile', 'help', 'home'].includes(viewParam)) {
           setActiveView(viewParam);
         }
 
@@ -487,7 +487,7 @@ export default function HomePage() {
         return;
       }
 
-      // Layer 7: If in a sub-view (beu-engineering, gov-exams, courses, profile, help), return to home
+      // Layer 7: If in a sub-view (beu-engineering, gov-exams, profile, help), return to home
       if (activeView !== 'home') {
         setActiveView('home');
         syncNavigationState('home', null, null, false);
@@ -804,7 +804,7 @@ export default function HomePage() {
                       if (el) {
                         el.scrollIntoView({ behavior: 'smooth' });
                       } else {
-                        handleViewChange('courses');
+                        handleViewChange('gov-exams');
                       }
                     }}
                   >
@@ -982,23 +982,6 @@ export default function HomePage() {
                     Continue Learning
                   </h2>
                 </div>
-
-                <button
-                  onClick={() => handleViewChange('courses')}
-                  style={{
-                    background: 'none',
-                    border: 'none',
-                    color: 'var(--accent)',
-                    fontSize: '13px',
-                    fontWeight: 600,
-                    cursor: 'pointer',
-                    display: 'flex',
-                    alignItems: 'center',
-                    gap: '4px',
-                  }}
-                >
-                  All Courses <ArrowRight width={14} height={14} />
-                </button>
               </div>
 
               {lastPlayed ? (
@@ -1096,7 +1079,7 @@ export default function HomePage() {
                     onClick={() => {
                       const el = document.getElementById('explore-categories');
                       if (el) el.scrollIntoView({ behavior: 'smooth' });
-                      else handleViewChange('courses');
+                      else handleViewChange('gov-exams');
                     }}
                     style={{ padding: '10px 22px', fontSize: '13px' }}
                   >
@@ -1551,43 +1534,17 @@ export default function HomePage() {
         )}
 
         {/* ============================================================
-            VIEW 2C: ALL COURSES CATALOG VIEW (Dedicated full-page courses)
-            ============================================================ */}
-        {activeView === 'courses' && (
-          <div className="animate-fade-in" style={{ padding: '12px 0 36px' }}>
-            <div style={{ maxWidth: '1200px', margin: '0 auto', padding: '0 24px 8px' }}>
-              <div style={{ display: 'flex', alignItems: 'center', gap: '10px', marginBottom: '4px' }}>
-                <BookOpen width={20} height={20} color="var(--accent)" />
-                <h1 style={{ fontFamily: 'var(--font-display)', fontSize: '22px', fontWeight: 700, color: 'var(--text)', margin: 0 }}>
-                  All Course Catalog
-                </h1>
-              </div>
-              <p style={{ fontSize: '13px', color: 'var(--text-muted)', margin: 0 }}>
-                Explore all courses across Government Exam preparation and Bihar Engineering University.
-              </p>
-            </div>
-
-            <CourseGrid
-              courses={INITIAL_COURSES}
-              onSelectCourse={(course) => handleOpenCourse(course)}
-              searchInputRef={searchInputRef}
-              theme={theme}
-            />
-          </div>
-        )}
-
-        {/* ============================================================
-            VIEW 2D: NEWS & ANNOUNCEMENTS VIEW (Dedicated Section)
+            VIEW 2C: NEWS & ANNOUNCEMENTS VIEW (Dedicated Section)
             ============================================================ */}
         {activeView === 'announcements' && (
           <NewsAnnouncements
             onBackHome={() => handleViewChange('home')}
-            onExploreCourses={() => handleViewChange('courses')}
+            onExploreCourses={() => handleViewChange('gov-exams')}
           />
         )}
 
         {/* ============================================================
-            VIEW 2E: MY LIBRARY VIEW (Bookmarked Batches & Batch Folders)
+            VIEW 2D: MY LIBRARY VIEW (Bookmarked Batches & Batch Folders)
             ============================================================ */}
         {activeView === 'library' && (
           <LibraryView
@@ -1610,7 +1567,7 @@ export default function HomePage() {
               }
             }}
             onBackHome={() => handleViewChange('home')}
-            onExploreCourses={() => handleViewChange('courses')}
+            onExploreCourses={() => handleViewChange('gov-exams')}
           />
         )}
 
@@ -2118,12 +2075,6 @@ export default function HomePage() {
                     <button onClick={() => handleViewChange('beu-engineering')} className="footer-link-btn">
                       <GraduationCap width={14} height={14} style={{ color: 'var(--beu-blue)', flexShrink: 0 }} />
                       <span>BEU B.Tech 1st Year Courses</span>
-                    </button>
-                  </li>
-                  <li>
-                    <button onClick={() => handleViewChange('courses')} className="footer-link-btn">
-                      <BookOpen width={14} height={14} style={{ color: 'var(--accent)', flexShrink: 0 }} />
-                      <span>Complete Course Catalog</span>
                     </button>
                   </li>
                   <li>
