@@ -18,7 +18,7 @@ import { getSubjectThumbnail, getDynamicThumbnailUrl } from '@/lib/subjectThumbn
 import { Course, LectureItem, UserProfile } from '@/types';
 import { getWorkerProxyUrl, resolveDirectMediaUrl } from '@/lib/proxyConfig';
 import { createClient } from '@/lib/supabase/client';
-import { pullCloudUserData } from '@/lib/supabaseSync';
+import { pullCloudUserData, syncLectureWatched } from '@/lib/supabaseSync';
 import {
   BookOpen,
   Send,
@@ -392,7 +392,16 @@ export default function HomePage() {
             avatar_url: photoUrl,
           });
           setIsAuthOpen(false);
-          pullCloudUserData().catch(() => {});
+          pullCloudUserData()
+            .then(() => {
+              try {
+                const savedWatched = JSON.parse(localStorage.getItem(WATCHED_KEY) || '{}');
+                setWatchedUrls(new Set(Object.keys(savedWatched)));
+                const savedLast = localStorage.getItem(LAST_PLAYED_KEY);
+                if (savedLast) setLastPlayed(JSON.parse(savedLast));
+              } catch {}
+            })
+            .catch(() => {});
         } else {
           // If not logged in, maintain guest session without forcing auth modal
           setUser(null);
@@ -428,7 +437,16 @@ export default function HomePage() {
             avatar_url: photoUrl,
           });
           setIsAuthOpen(false);
-          pullCloudUserData().catch(() => {});
+          pullCloudUserData()
+            .then(() => {
+              try {
+                const savedWatched = JSON.parse(localStorage.getItem(WATCHED_KEY) || '{}');
+                setWatchedUrls(new Set(Object.keys(savedWatched)));
+                const savedLast = localStorage.getItem(LAST_PLAYED_KEY);
+                if (savedLast) setLastPlayed(JSON.parse(savedLast));
+              } catch {}
+            })
+            .catch(() => {});
         } else {
           setUser(null);
           setIsAuthCompulsory(true);
@@ -439,6 +457,39 @@ export default function HomePage() {
         authListener?.subscription?.unsubscribe?.();
       };
     } catch {}
+  }, []);
+
+  // Synchronize watched progress from background cloud sync, other tabs, and window/app focus
+  useEffect(() => {
+    const handleProgressUpdate = () => {
+      try {
+        const savedWatched = JSON.parse(localStorage.getItem(WATCHED_KEY) || '{}');
+        setWatchedUrls(new Set(Object.keys(savedWatched)));
+        const savedLast = localStorage.getItem(LAST_PLAYED_KEY);
+        if (savedLast) setLastPlayed(JSON.parse(savedLast));
+      } catch {}
+    };
+
+    window.addEventListener('stutosed_progress_updated', handleProgressUpdate);
+    window.addEventListener('storage', handleProgressUpdate);
+
+    // Auto-sync when tab becomes visible or focused (e.g. user switching between mobile & PC)
+    const handleFocus = () => {
+      if (document.visibilityState === 'visible') {
+        pullCloudUserData()
+          .then(handleProgressUpdate)
+          .catch(() => {});
+      }
+    };
+    window.addEventListener('focus', handleFocus);
+    document.addEventListener('visibilitychange', handleFocus);
+
+    return () => {
+      window.removeEventListener('stutosed_progress_updated', handleProgressUpdate);
+      window.removeEventListener('storage', handleProgressUpdate);
+      window.removeEventListener('focus', handleFocus);
+      document.removeEventListener('visibilitychange', handleFocus);
+    };
   }, []);
 
   // Mobile & Desktop Layered Browser Back Button Management
@@ -516,8 +567,8 @@ export default function HomePage() {
     document.documentElement.setAttribute('data-theme', nextTheme);
   };
 
-  // Mark URL as watched
-  const handleMarkWatched = (url: string) => {
+  // Mark URL as watched (Local + Supabase Cloud)
+  const handleMarkWatched = (url: string, courseId?: string, label?: string) => {
     setWatchedUrls((prev) => {
       const next = new Set(prev);
       next.add(url);
@@ -530,6 +581,8 @@ export default function HomePage() {
 
       return next;
     });
+
+    syncLectureWatched(courseId || selectedCourse?.id || 'unknown', url, label).catch(() => {});
   };
 
   // Navigation handlers
@@ -586,7 +639,7 @@ export default function HomePage() {
     });
 
     if (current?.url) {
-      handleMarkWatched(current.url);
+      handleMarkWatched(current.url, activeCourseId, current.label);
       if (selectedCourse || activeCourseName) {
         const memoryObj = {
           courseId: activeCourseId,
@@ -672,10 +725,10 @@ export default function HomePage() {
     let item: LectureItem;
     if (typeof itemOrUrl === 'string') {
       item = { label: 'Document', url: itemOrUrl, type: 'pdf' };
-      handleMarkWatched(itemOrUrl);
+      handleMarkWatched(itemOrUrl, selectedCourse?.id);
     } else {
       item = itemOrUrl;
-      handleMarkWatched(item.url);
+      handleMarkWatched(item.url, selectedCourse?.id, item.label);
     }
 
     // Determine cleanest target URL
@@ -2205,7 +2258,7 @@ export default function HomePage() {
           onNavigate={(newIdx) => {
             if (pdfModalData.playlist && pdfModalData.playlist[newIdx]) {
               const nextItem = pdfModalData.playlist[newIdx];
-              handleMarkWatched(nextItem.url);
+              handleMarkWatched(nextItem.url, selectedCourse?.id, nextItem.label);
               setPdfModalData({
                 ...pdfModalData,
                 item: nextItem,

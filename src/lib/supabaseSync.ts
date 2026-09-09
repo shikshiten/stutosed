@@ -27,6 +27,10 @@ async function getCurrentUserId(): Promise<string | null> {
   if (typeof window === 'undefined') return null;
   try {
     const supabase = createClient();
+    const { data: sessionData } = await supabase.auth.getSession();
+    if (sessionData?.session?.user?.id) {
+      return sessionData.session.user.id;
+    }
     const { data } = await supabase.auth.getUser();
     return data?.user?.id ?? null;
   } catch {
@@ -255,24 +259,105 @@ export async function pullCloudUserData(): Promise<void> {
       supabase.from('user_saved_videos').select('video_data').eq('user_id', userId),
     ]);
 
-    // 1. Merge Watch History
+    // 1. Two-Way Bidirectional Merge for Watch History
     if (watchRes.status === 'fulfilled' && watchRes.value.data) {
       const cloudWatched = watchRes.value.data;
-      const localMap = JSON.parse(localStorage.getItem(WATCHED_KEY_V1) || '{}');
-      const legacyList = JSON.parse(localStorage.getItem(WATCHED_KEY_LEGACY) || '[]');
-      const legacySet = new Set(legacyList);
+      const cloudUrls = new Set(cloudWatched.map((r: any) => r.lecture_url));
 
-      for (const row of cloudWatched) {
-        if (!localMap[row.lecture_url]) {
-          localMap[row.lecture_url] = new Date(row.watched_at).getTime();
+      let localMap: Record<string, number> = {};
+      try {
+        localMap = JSON.parse(localStorage.getItem(WATCHED_KEY_V1) || '{}');
+      } catch {}
+
+      let legacyList: string[] = [];
+      try {
+        legacyList = JSON.parse(localStorage.getItem(WATCHED_KEY_LEGACY) || '[]');
+      } catch {}
+
+      // A. PUSH: Upload local lectures that are missing from Cloud up to Supabase
+      const missingInCloud: { user_id: string; course_id: string; lecture_url: string; watched_at: string }[] = [];
+
+      for (const [url, timestamp] of Object.entries(localMap)) {
+        if (url && !cloudUrls.has(url)) {
+          missingInCloud.push({
+            user_id: userId,
+            course_id: 'synced',
+            lecture_url: url,
+            watched_at: new Date(typeof timestamp === 'number' ? timestamp : Date.now()).toISOString(),
+          });
         }
-        legacySet.add(row.lecture_url);
       }
+
+      for (const url of legacyList) {
+        if (url && !cloudUrls.has(url) && !localMap[url]) {
+          localMap[url] = Date.now();
+          missingInCloud.push({
+            user_id: userId,
+            course_id: 'synced',
+            lecture_url: url,
+            watched_at: new Date().toISOString(),
+          });
+        }
+      }
+
+      if (missingInCloud.length > 0) {
+        try {
+          for (let i = 0; i < missingInCloud.length; i += 50) {
+            const chunk = missingInCloud.slice(i, i + 50);
+            await supabase.from('user_watch_history').upsert(chunk, { onConflict: 'user_id,lecture_url' });
+          }
+        } catch (err) {
+          console.warn('[Sync] Watch history upload error:', err);
+        }
+      }
+
+      // B. PULL: Merge Cloud lectures down into local storage
+      const legacySet = new Set(legacyList);
+      for (const row of cloudWatched) {
+        if (row.lecture_url) {
+          if (!localMap[row.lecture_url]) {
+            localMap[row.lecture_url] = new Date(row.watched_at).getTime();
+          }
+          legacySet.add(row.lecture_url);
+        }
+      }
+
       localStorage.setItem(WATCHED_KEY_V1, JSON.stringify(localMap));
       localStorage.setItem(WATCHED_KEY_LEGACY, JSON.stringify(Array.from(legacySet)));
     }
 
-    // 2. Merge Video Playback Progress
+    // 2. Merge Course Memory / Last Played
+    if (memoryRes.status === 'fulfilled' && memoryRes.value.data && memoryRes.value.data.length > 0) {
+      try {
+        const rows = [...memoryRes.value.data].sort(
+          (a: any, b: any) => new Date(b.updated_at).getTime() - new Date(a.updated_at).getTime()
+        );
+        const latestCloudMemory = rows[0];
+        if (latestCloudMemory?.last_lecture_url) {
+          const currentLocalRaw = localStorage.getItem(LAST_PLAYED_KEY_V1);
+          let shouldUpdateLocal = true;
+          if (currentLocalRaw) {
+            try {
+              const currentLocal = JSON.parse(currentLocalRaw);
+              if (currentLocal.timestamp && currentLocal.timestamp > new Date(latestCloudMemory.updated_at).getTime()) {
+                shouldUpdateLocal = false;
+              }
+            } catch {}
+          }
+          if (shouldUpdateLocal) {
+            const memoryObj = {
+              courseId: latestCloudMemory.course_id,
+              url: latestCloudMemory.last_lecture_url,
+              timestamp: new Date(latestCloudMemory.updated_at).getTime(),
+            };
+            localStorage.setItem(LAST_PLAYED_KEY_V1, JSON.stringify(memoryObj));
+            localStorage.setItem(LAST_PLAYED_KEY_LEGACY, JSON.stringify(memoryObj));
+          }
+        }
+      } catch {}
+    }
+
+    // 3. Merge Video Playback Progress
     if (progressRes.status === 'fulfilled' && progressRes.value.data) {
       for (const row of progressRes.value.data) {
         if (row.lecture_id && row.seconds) {
@@ -285,17 +370,37 @@ export async function pullCloudUserData(): Promise<void> {
       }
     }
 
-    // 3. Merge Bookmarks
+    // 4. Two-Way Merge Bookmarks
     if (bookmarkRes.status === 'fulfilled' && bookmarkRes.value.data) {
       const localBookmarks: string[] = JSON.parse(localStorage.getItem(BOOKMARK_KEY) || '[]');
       const bmSet = new Set(localBookmarks);
+      const cloudBmSet = new Set(bookmarkRes.value.data.map((r: any) => r.course_id));
+
+      // Push local bookmarks to cloud if missing
+      const missingBmInCloud: { user_id: string; course_id: string; created_at: string }[] = [];
+      for (const id of bmSet) {
+        if (!cloudBmSet.has(id)) {
+          missingBmInCloud.push({
+            user_id: userId,
+            course_id: id,
+            created_at: new Date().toISOString(),
+          });
+        }
+      }
+      if (missingBmInCloud.length > 0) {
+        try {
+          await supabase.from('user_bookmarks').upsert(missingBmInCloud, { onConflict: 'user_id,course_id' });
+        } catch {}
+      }
+
+      // Merge Cloud into local
       for (const row of bookmarkRes.value.data) {
         if (row.course_id) bmSet.add(row.course_id);
       }
       localStorage.setItem(BOOKMARK_KEY, JSON.stringify(Array.from(bmSet)));
     }
 
-    // 4. Merge Saved Videos
+    // 5. Merge Saved Videos
     if (savedRes.status === 'fulfilled' && savedRes.value.data) {
       const localSaved: SavedVideoItem[] = JSON.parse(localStorage.getItem(SAVED_VIDEOS_KEY) || '[]');
       const seenIds = new Set(localSaved.map((v) => v.id || v.url));
@@ -309,7 +414,7 @@ export async function pullCloudUserData(): Promise<void> {
       localStorage.setItem(SAVED_VIDEOS_KEY, JSON.stringify(localSaved));
     }
 
-    // Notify listeners to update active views
+    // Notify listeners across the application to instantly update state
     window.dispatchEvent(new Event('stutosed_library_updated'));
     window.dispatchEvent(new Event('stutosed_progress_updated'));
   } catch (e) {
