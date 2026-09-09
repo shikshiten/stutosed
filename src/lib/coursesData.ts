@@ -1,12 +1,23 @@
 import { Course } from '@/types';
 import rawData from './coursesData.json';
 
-export const INITIAL_COURSES: Course[] = (rawData as unknown as Course[]).sort((a, b) =>
-  a.name.localeCompare(b.name, undefined, { numeric: true, sensitivity: 'base' })
-);
+// Normalize course categories (default to 'beu' for BEU, 'government' for govt exams)
+export const INITIAL_COURSES: Course[] = ((rawData as unknown as Course[]) || [])
+  .map((c) => ({
+    ...c,
+    category: c.category || (c.id === 'beu-1st-year' ? 'beu' : 'government'),
+  }))
+  .sort((a, b) =>
+    a.name.localeCompare(b.name, undefined, { numeric: true, sensitivity: 'base' })
+  );
 
 export function getCourseById(id: string): Course | undefined {
   return INITIAL_COURSES.find((c) => c.id === id);
+}
+
+export function getCoursesByCategory(categoryId: string): Course[] {
+  if (!categoryId || categoryId === 'all') return INITIAL_COURSES;
+  return INITIAL_COURSES.filter((c) => (c.category || '').toLowerCase() === categoryId.toLowerCase());
 }
 
 export function countCourseStats(course: Course): { videos: number; resources: number } {
@@ -61,3 +72,4 @@ export function getTotalStats(): { totalVideos: number; totalPDFs: number; total
     totalCourses: INITIAL_COURSES.length,
   };
 }
+

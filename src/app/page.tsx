@@ -4,16 +4,16 @@ import React, { useState, useEffect, useRef, useMemo } from 'react';
 import { useRouter } from 'next/navigation';
 import { Sidebar, AppView } from '@/components/Sidebar';
 import { MobileHeader } from '@/components/MobileHeader';
+import { MobileBottomNav } from '@/components/MobileBottomNav';
 import { CourseGrid } from '@/components/CourseGrid';
 import { CourseModal } from '@/components/CourseModal';
 import { AuthModal } from '@/components/AuthModal';
 import { PdfViewerModal } from '@/components/PdfViewerModal';
 import { getAvatarGradient, getInitials } from '@/components/ProfileMenu';
-import { ChangelogModal, CURRENT_APP_VERSION } from '@/components/ChangelogModal';
 import { PrivacyTermsModal } from '@/components/PrivacyTermsModal';
-import NewsAnnouncements from '@/components/NewsAnnouncements';
 import { LibraryView } from '@/components/LibraryView';
-import { INITIAL_COURSES, getTotalStats, getCourseById } from '@/lib/coursesData';
+import { COURSE_CATEGORIES, getCategoryById } from '@/config/categories';
+import { INITIAL_COURSES, getTotalStats, getCourseById, getCoursesByCategory } from '@/lib/coursesData';
 import { getSubjectThumbnail, getDynamicThumbnailUrl } from '@/lib/subjectThumbnails';
 import { Course, LectureItem, UserProfile } from '@/types';
 import { getWorkerProxyUrl, resolveDirectMediaUrl } from '@/lib/proxyConfig';
@@ -46,6 +46,8 @@ import {
   Sunset,
   Moon,
   Megaphone,
+  Atom,
+  Cpu,
 } from 'lucide-react';
 
 const WATCHED_KEY = 'onafbu_watched_v1';
@@ -194,9 +196,6 @@ export default function HomePage() {
   const [nameInput, setNameInput] = useState<string>('');
   const [watchedUrls, setWatchedUrls] = useState<Set<string>>(new Set());
 
-  // Changelog Modal state
-  const [isChangelogOpen, setIsChangelogOpen] = useState(false);
-
   // Privacy & Terms Modal state
   const [privacyModalState, setPrivacyModalState] = useState<{
     isOpen: boolean;
@@ -322,7 +321,18 @@ export default function HomePage() {
         const courseParam = urlParams.get('course') || sessionStorage.getItem('stutosed_open_course');
         const folderParam = urlParams.get('folder') || sessionStorage.getItem('stutosed_open_folder');
 
-        if (viewParam && ['beu-engineering', 'gov-exams', 'library', 'announcements', 'profile', 'help', 'home'].includes(viewParam)) {
+        if (
+          viewParam &&
+          ([
+            'beu-engineering',
+            'gov-exams',
+            'library',
+            'profile',
+            'help',
+            'home',
+          ].includes(viewParam) ||
+            viewParam.startsWith('cat-'))
+        ) {
           setActiveView(viewParam);
         }
 
@@ -501,11 +511,7 @@ export default function HomePage() {
         return;
       }
 
-      // Layer 2: If Changelog or Privacy modal is open, close it
-      if (isChangelogOpen) {
-        setIsChangelogOpen(false);
-        return;
-      }
+      // Layer 2: If Privacy modal is open, close it
       if (privacyModalState.isOpen) {
         setPrivacyModalState((prev) => ({ ...prev, isOpen: false }));
         return;
@@ -550,7 +556,6 @@ export default function HomePage() {
     return () => window.removeEventListener('popstate', handlePopState);
   }, [
     isSidebarOpen,
-    isChangelogOpen,
     privacyModalState.isOpen,
     pdfModalData,
     playerPlaylist,
@@ -863,14 +868,6 @@ export default function HomePage() {
                   >
                     <BookOpen width={16} height={16} />
                     Explore Courses
-                  </button>
-
-                  <button
-                    className="btn-ghost"
-                    onClick={() => handleViewChange('announcements')}
-                  >
-                    <Megaphone width={16} height={16} style={{ color: 'var(--accent)' }} />
-                    News &amp; Updates
                   </button>
 
                   <button
@@ -1307,62 +1304,49 @@ export default function HomePage() {
                   </div>
                 </div>
               </div>
-            </div>
 
-            {/* SNEAK PEEK ANNOUNCEMENT TEASER BANNER */}
-            <div style={{ maxWidth: '1100px', margin: '0 auto 36px', padding: '0 24px' }}>
-              <div
-                onClick={() => handleViewChange('announcements')}
-                style={{
-                  background: 'linear-gradient(135deg, var(--bg-card) 0%, rgba(204, 120, 92, 0.08) 100%)',
-                  border: '1px solid rgba(204, 120, 92, 0.3)',
-                  borderRadius: 'var(--r-xl)',
-                  padding: '18px 24px',
-                  display: 'flex',
-                  alignItems: 'center',
-                  justifyContent: 'space-between',
-                  flexWrap: 'wrap',
-                  gap: '14px',
-                  cursor: 'pointer',
-                  boxShadow: 'var(--sh-card)',
-                  transition: 'all 0.2s ease',
-                }}
-              >
-                <div style={{ display: 'flex', alignItems: 'center', gap: '14px' }}>
-                  <div
+              {/* Dynamic Categories Quick Strip (e.g. JEE, GATE) */}
+              <div style={{ marginTop: '20px', display: 'flex', alignItems: 'center', gap: '12px', flexWrap: 'wrap' }}>
+                <span style={{ fontSize: '12px', fontWeight: 700, color: 'var(--text-muted)', textTransform: 'uppercase', letterSpacing: '0.6px' }}>
+                  Future Tracks:
+                </span>
+                {COURSE_CATEGORIES.filter((c) => c.id !== 'government' && c.id !== 'beu').map((cat) => (
+                  <button
+                    key={cat.id}
+                    onClick={() => handleViewChange(`cat-${cat.id}` as AppView)}
                     style={{
-                      width: '42px',
-                      height: '42px',
-                      borderRadius: 'var(--r-md)',
-                      background: 'rgba(204, 120, 92, 0.14)',
-                      color: 'var(--accent)',
-                      display: 'flex',
+                      display: 'inline-flex',
                       alignItems: 'center',
-                      justifyContent: 'center',
-                      flexShrink: 0,
+                      gap: '8px',
+                      padding: '7px 14px',
+                      borderRadius: 'var(--r-pill)',
+                      background: 'var(--bg-card)',
+                      border: '1px solid var(--border)',
+                      color: 'var(--text)',
+                      fontSize: '12px',
+                      fontWeight: 600,
+                      cursor: 'pointer',
+                      transition: 'all 0.2s ease',
                     }}
                   >
-                    <Megaphone width={20} height={20} />
-                  </div>
-                  <div>
-                    <div style={{ display: 'flex', alignItems: 'center', gap: '8px' }}>
-                      <span style={{ fontSize: '11px', fontWeight: 700, padding: '2px 8px', borderRadius: 'var(--r-pill)', background: 'rgba(204, 120, 92, 0.15)', color: 'var(--accent)', textTransform: 'uppercase' }}>
-                        Live Updates
+                    <span style={{ width: '8px', height: '8px', borderRadius: '50%', background: cat.accentColor }} />
+                    <span>{cat.label}</span>
+                    {cat.badge && (
+                      <span
+                        style={{
+                          fontSize: '10px',
+                          fontWeight: 700,
+                          padding: '1px 6px',
+                          borderRadius: 'var(--r-pill)',
+                          background: cat.accentDim,
+                          color: cat.accentColor,
+                        }}
+                      >
+                        {cat.badge}
                       </span>
-                      <span style={{ fontSize: '14px', fontWeight: 700, color: 'var(--text)' }}>
-                        News, Upcoming Batches &amp; Request Desk
-                      </span>
-                    </div>
-                    <p style={{ fontSize: '12.5px', color: 'var(--text-muted)', margin: '3px 0 0' }}>
-                      Naye courses ki jaankari dekhein ya apna manpasand course Telegram par request karein
-                    </p>
-                  </div>
-                </div>
-
-                <div style={{ display: 'inline-flex', alignItems: 'center', gap: '6px', fontSize: '13px', fontWeight: 700, color: 'var(--accent)' }}>
-                  <span>Open Section</span>
-                  <ArrowRight width={14} height={14} />
-                </div>
+                    )}
+                  </button>
+                ))}
               </div>
             </div>
 
@@ -1586,15 +1570,136 @@ export default function HomePage() {
           </div>
         )}
 
+
+
         {/* ============================================================
-            VIEW 2C: NEWS & ANNOUNCEMENTS VIEW (Dedicated Section)
+            VIEW 2D: DYNAMIC COURSE CATEGORY VIEW (JEE, GATE, ETC.)
             ============================================================ */}
-        {activeView === 'announcements' && (
-          <NewsAnnouncements
-            onBackHome={() => handleViewChange('home')}
-            onExploreCourses={() => handleViewChange('gov-exams')}
-          />
-        )}
+        {activeView.startsWith('cat-') && (() => {
+          const catId = activeView.replace('cat-', '');
+          const categoryConfig = getCategoryById(catId);
+          const categoryCourses = getCoursesByCategory(catId);
+          const catLabel = categoryConfig?.label || catId.toUpperCase();
+
+          return (
+            <div className="animate-fade-in" style={{ padding: '12px 0 36px' }}>
+              <div style={{ maxWidth: '1200px', margin: '0 auto', padding: '0 24px 8px' }}>
+                <div style={{ display: 'flex', alignItems: 'center', gap: '8px', marginBottom: '4px' }}>
+                  <button
+                    onClick={() => handleViewChange('home')}
+                    style={{
+                      background: 'none',
+                      border: 'none',
+                      color: 'var(--accent)',
+                      fontWeight: 700,
+                      fontSize: '13px',
+                      cursor: 'pointer',
+                      padding: 0,
+                      display: 'inline-flex',
+                      alignItems: 'center',
+                      gap: '4px',
+                    }}
+                  >
+                    ← Home
+                  </button>
+                  <span style={{ color: 'var(--text-muted)' }}>/</span>
+                  <span style={{ fontSize: '13px', color: 'var(--text-muted)', fontWeight: 600 }}>{catLabel}</span>
+                </div>
+
+                <div style={{ display: 'flex', alignItems: 'center', gap: '10px', marginBottom: '4px' }}>
+                  <div
+                    style={{
+                      width: '36px',
+                      height: '36px',
+                      borderRadius: 'var(--r-md)',
+                      background: categoryConfig?.accentDim || 'rgba(204,120,92,0.12)',
+                      color: categoryConfig?.accentColor || 'var(--accent)',
+                      display: 'flex',
+                      alignItems: 'center',
+                      justifyContent: 'center',
+                      flexShrink: 0,
+                    }}
+                  >
+                    {categoryConfig?.iconName === 'Atom' && <Atom width={20} height={20} strokeWidth={2} />}
+                    {categoryConfig?.iconName === 'Cpu' && <Cpu width={20} height={20} strokeWidth={2} />}
+                    {categoryConfig?.iconName !== 'Atom' && categoryConfig?.iconName !== 'Cpu' && (
+                      <BookOpen width={20} height={20} strokeWidth={2} />
+                    )}
+                  </div>
+                  <h1 style={{ fontFamily: 'var(--font-display)', fontSize: '22px', fontWeight: 700, color: 'var(--text)', margin: 0 }}>
+                    {catLabel}
+                  </h1>
+                </div>
+                <p style={{ fontSize: '13px', color: 'var(--text-muted)', margin: 0 }}>
+                  {categoryConfig?.description || `Curated batches and lectures for ${catLabel}.`}
+                </p>
+              </div>
+
+              {categoryCourses.length > 0 ? (
+                <CourseGrid
+                  courses={categoryCourses}
+                  onSelectCourse={(course) => handleOpenCourse(course)}
+                  searchInputRef={searchInputRef}
+                  theme={theme}
+                />
+              ) : (
+                <div style={{ maxWidth: '800px', margin: '36px auto', padding: '0 24px' }}>
+                  <div
+                    style={{
+                      background: 'var(--bg-card)',
+                      border: '1px dashed var(--border)',
+                      borderRadius: 'var(--r-xl)',
+                      padding: '48px 24px',
+                      textAlign: 'center',
+                      boxShadow: 'var(--sh-card)',
+                    }}
+                  >
+                    <div
+                      style={{
+                        width: '56px',
+                        height: '56px',
+                        borderRadius: '50%',
+                        background: categoryConfig?.accentDim || 'rgba(204,120,92,0.12)',
+                        color: categoryConfig?.accentColor || 'var(--accent)',
+                        display: 'inline-flex',
+                        alignItems: 'center',
+                        justifyContent: 'center',
+                        marginBottom: '14px',
+                      }}
+                    >
+                      <Sparkles width={26} height={26} />
+                    </div>
+                    <h3 style={{ fontFamily: 'var(--font-display)', fontSize: '20px', fontWeight: 700, color: 'var(--text)', margin: '0 0 8px' }}>
+                      {catLabel} Batches Coming Soon!
+                    </h3>
+                    <p style={{ fontSize: '14px', color: 'var(--text-muted)', maxWidth: '480px', margin: '0 auto 24px', lineHeight: 1.55 }}>
+                      Hum jald hi {catLabel} ke comprehensive video batches aur study materials add kar rahe hain. Agar aapko koi specific course chahiye to hume Telegram par batayein!
+                    </p>
+                    <div style={{ display: 'flex', gap: '12px', justifyContent: 'center', flexWrap: 'wrap' }}>
+                      <a
+                        href="https://t.me/bookwormislie"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="btn-primary"
+                        style={{ padding: '10px 22px', fontSize: '13px' }}
+                      >
+                        <Send width={15} height={15} />
+                        Request Batch on Telegram
+                      </a>
+                      <button
+                        onClick={() => handleViewChange('home')}
+                        className="btn-ghost"
+                        style={{ padding: '10px 20px', fontSize: '13px' }}
+                      >
+                        Explore Other Batches
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              )}
+            </div>
+          );
+        })()}
 
         {/* ============================================================
             VIEW 2D: MY LIBRARY VIEW (Bookmarked Batches & Batch Folders)
@@ -2079,29 +2184,6 @@ export default function HomePage() {
                     </svg>
                     <span>stutosed</span>
                   </div>
-
-                  <button
-                    onClick={() => setIsChangelogOpen(true)}
-                    title="Click to view release notes & changelog"
-                    style={{
-                      fontSize: '11px',
-                      fontWeight: 700,
-                      padding: '3px 10px',
-                      borderRadius: 'var(--r-pill)',
-                      background: 'var(--bg-card-subtle)',
-                      border: '1px solid var(--border)',
-                      color: 'var(--accent)',
-                      cursor: 'pointer',
-                      display: 'inline-flex',
-                      alignItems: 'center',
-                      gap: '4px',
-                      transition: 'all 0.2s',
-                    }}
-                    className="footer-version-btn"
-                  >
-                    <span>{CURRENT_APP_VERSION}</span>
-                    <span style={{ fontSize: '9.5px', opacity: 0.7 }}>Changelog</span>
-                  </button>
                 </div>
                 <p style={{ fontSize: '13px', color: 'var(--text-muted)', lineHeight: 1.6, margin: '0 0 16px', maxWidth: '300px', textAlign: 'left' }}>
                   Free, ad-free study portal providing structured lectures, curated video series, and verified PDF notes for competitive exams & B.Tech curricula.
@@ -2232,6 +2314,18 @@ export default function HomePage() {
         </footer>
       </div>
 
+      {/* Mobile Bottom Navigation Bar */}
+      <MobileBottomNav
+        activeView={activeView}
+        onSelectView={(v) => handleViewChange(v)}
+        onOpenAuth={() => {
+          setIsAuthCompulsory(false);
+          setIsAuthOpen(true);
+        }}
+        user={user}
+        isHidden={Boolean(selectedCourse || pdfModalData)}
+      />
+
       {/* Course View Modal */}
       {selectedCourse && (
         <CourseModal
@@ -2285,12 +2379,6 @@ export default function HomePage() {
             setIsAuthOpen(false);
           } catch {}
         }}
-      />
-
-      {/* Changelog & Version History Modal */}
-      <ChangelogModal
-        isOpen={isChangelogOpen}
-        onClose={() => setIsChangelogOpen(false)}
       />
 
       {/* Privacy Policy & Terms of Service Modal */}

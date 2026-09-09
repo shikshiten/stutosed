@@ -48,7 +48,7 @@ export interface Course {
   teacher: string;
   subject: string;
   thumb: string;
-  category?: 'beu' | 'government' | 'all';
+  category?: string;
   desc?: string;
   isFolderMode?: boolean;
   tabs?: CourseTab[];

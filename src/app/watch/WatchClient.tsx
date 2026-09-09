@@ -198,8 +198,14 @@ export default function WatchClient() {
   const [seekHoverTime, setSeekHoverTime] = useState<number | null>(null);
   const [seekHoverPos, setSeekHoverPos] = useState<number>(0);
   const [skipFeedback, setSkipFeedback] = useState<'backward' | 'forward' | null>(null);
+  const [accumulatedSkip, setAccumulatedSkip] = useState<number>(0);
+  const lastTapTimeRef = useRef<number>(0);
+  const lastTapSideRef = useRef<'left' | 'right' | 'center' | null>(null);
+  const singleTapTimerRef = useRef<NodeJS.Timeout | null>(null);
+  const skipTimeoutRef = useRef<NodeJS.Timeout | null>(null);
   const [resolvedStreamUrl, setResolvedStreamUrl] = useState<string | null>(null);
-  const [selectedServerIndex, setSelectedServerIndex] = useState(0);
+  const selectedServerIndexState = useState(0);
+  const [selectedServerIndex, setSelectedServerIndex] = selectedServerIndexState;
 
   // Action states
   const [isBookmarked, setIsBookmarked] = useState(false);
@@ -719,15 +725,168 @@ export default function WatchClient() {
     resetControlsTimer();
   }, [resetControlsTimer]);
 
-  const toggleFullscreen = useCallback(() => {
+  const toggleFullscreen = useCallback(async () => {
     const el = containerRef.current;
+    const video = videoRef.current;
     if (!el) return;
-    if (!document.fullscreenElement) {
-      el.requestFullscreen?.().then(() => setIsFullscreen(true)).catch(() => {});
+
+    const isCurrentlyFs = Boolean(
+      document.fullscreenElement ||
+      (document as any).webkitFullscreenElement ||
+      isFullscreen
+    );
+
+    if (!isCurrentlyFs) {
+      // 1. iOS Safari native video fullscreen if container fullscreen is not supported
+      if (!el.requestFullscreen && video && (video as any).webkitEnterFullscreen) {
+        try {
+          (video as any).webkitEnterFullscreen();
+          setIsFullscreen(true);
+          return;
+        } catch {}
+      }
+
+      // 2. Standard HTML5 fullscreen
+      try {
+        if (el.requestFullscreen) {
+          await el.requestFullscreen();
+        } else if ((el as any).webkitRequestFullscreen) {
+          await (el as any).webkitRequestFullscreen();
+        }
+        setIsFullscreen(true);
+
+        // Auto-lock to landscape on mobile if supported
+        try {
+          if (screen.orientation && (screen.orientation as any).lock) {
+            await (screen.orientation as any).lock('landscape').catch(() => {});
+          }
+        } catch {}
+      } catch {
+        // 3. Fallback: activate fixed CSS fullscreen
+        setIsFullscreen(true);
+      }
     } else {
-      document.exitFullscreen?.().then(() => setIsFullscreen(false)).catch(() => {});
+      try {
+        if (document.fullscreenElement || (document as any).webkitFullscreenElement) {
+          if (document.exitFullscreen) {
+            await document.exitFullscreen().catch(() => {});
+          } else if ((document as any).webkitExitFullscreen) {
+            await (document as any).webkitExitFullscreen().catch(() => {});
+          }
+        }
+      } catch {}
+
+      try {
+        if (screen.orientation && (screen.orientation as any).unlock) {
+          (screen.orientation as any).unlock();
+        }
+      } catch {}
+
+      setIsFullscreen(false);
     }
+  }, [isFullscreen]);
+
+  // Fullscreen change listener to sync state with escape key or browser gestures
+  useEffect(() => {
+    const handleFsChange = () => {
+      const isFs = Boolean(
+        document.fullscreenElement ||
+        (document as any).webkitFullscreenElement
+      );
+      setIsFullscreen(isFs);
+      if (!isFs) {
+        try {
+          if (screen.orientation && (screen.orientation as any).unlock) {
+            (screen.orientation as any).unlock();
+          }
+        } catch {}
+      }
+    };
+
+    document.addEventListener('fullscreenchange', handleFsChange);
+    document.addEventListener('webkitfullscreenchange', handleFsChange);
+
+    return () => {
+      document.removeEventListener('fullscreenchange', handleFsChange);
+      document.removeEventListener('webkitfullscreenchange', handleFsChange);
+    };
   }, []);
+
+  // Lock body scroll in fullscreen mode
+  useEffect(() => {
+    if (isFullscreen) {
+      document.body.style.overflow = 'hidden';
+    } else {
+      document.body.style.overflow = '';
+    }
+    return () => {
+      document.body.style.overflow = '';
+    };
+  }, [isFullscreen]);
+
+  // Mobile Touch Double-Tap to Seek (-10s / +10s) with gesture detection
+  const handleViewportTouchEnd = (e: React.TouchEvent<HTMLDivElement>) => {
+    const target = e.target as HTMLElement;
+    if (
+      target.closest('button') ||
+      target.closest('input') ||
+      target.closest('.player-seekbar-container') ||
+      target.closest('.player-server-group') ||
+      target.closest('.yt-open-link')
+    ) {
+      return;
+    }
+
+    const touch = e.changedTouches[0];
+    if (!touch) return;
+
+    const rect = e.currentTarget.getBoundingClientRect();
+    const x = touch.clientX - rect.left;
+    const ratio = x / rect.width;
+
+    const side: 'left' | 'right' | 'center' =
+      ratio < 0.40 ? 'left' : ratio > 0.60 ? 'right' : 'center';
+
+    const now = Date.now();
+    const timeSinceLastTap = now - lastTapTimeRef.current;
+
+    // Double-tap or rapid multi-tap on left or right!
+    if (timeSinceLastTap < 320 && (side === 'left' || side === 'right')) {
+      if (singleTapTimerRef.current) {
+        clearTimeout(singleTapTimerRef.current);
+        singleTapTimerRef.current = null;
+      }
+
+      const delta = side === 'left' ? -10 : 10;
+      skipVideo(delta);
+
+      setAccumulatedSkip((prev) => {
+        if ((delta < 0 && prev > 0) || (delta > 0 && prev < 0)) return delta;
+        return prev + delta;
+      });
+      setSkipFeedback(side === 'left' ? 'backward' : 'forward');
+
+      if (skipTimeoutRef.current) clearTimeout(skipTimeoutRef.current);
+      skipTimeoutRef.current = setTimeout(() => {
+        setSkipFeedback(null);
+        setAccumulatedSkip(0);
+      }, 700);
+
+      lastTapTimeRef.current = now;
+      lastTapSideRef.current = side;
+      return;
+    }
+
+    // Register as potential single tap
+    lastTapTimeRef.current = now;
+    lastTapSideRef.current = side;
+
+    if (singleTapTimerRef.current) clearTimeout(singleTapTimerRef.current);
+    singleTapTimerRef.current = setTimeout(() => {
+      setShowControls((prev) => !prev);
+      resetControlsTimer();
+    }, 280);
+  };
 
   const handleVolumeChange = (newVol: number) => {
     const clamped = Math.max(0, Math.min(1, newVol));
@@ -1035,7 +1194,24 @@ export default function WatchClient() {
             onMouseEnter={resetControlsTimer}
             onContextMenu={(e) => e.preventDefault()}
           >
-            <div className="player-viewport">
+            <div
+              className="player-viewport"
+              onTouchEnd={handleViewportTouchEnd}
+              onClick={(e) => {
+                const target = e.target as HTMLElement;
+                if (
+                  target.closest('button') ||
+                  target.closest('input') ||
+                  target.closest('.player-seekbar-container') ||
+                  target.closest('.player-server-group') ||
+                  target.closest('.yt-open-link')
+                ) {
+                  return;
+                }
+                setShowControls((prev) => !prev);
+                resetControlsTimer();
+              }}
+            >
               {/* TOP OVERLAY */}
               <div className="player-top-overlay" onClick={(e) => e.stopPropagation()}>
                 <div className="player-title-block">
@@ -1150,7 +1326,12 @@ export default function WatchClient() {
               {/* Double-tap indicator */}
               {skipFeedback && (
                 <div className={`player-skip-indicator ${skipFeedback}`}>
-                  {skipFeedback === 'backward' ? '-10s' : '+10s'}
+                  <span style={{ fontSize: '18px', fontWeight: 800, letterSpacing: '-1px' }}>
+                    {skipFeedback === 'backward' ? '««' : '»»'}
+                  </span>
+                  <span>
+                    {accumulatedSkip !== 0 ? `${Math.abs(accumulatedSkip)}s` : '10s'}
+                  </span>
                 </div>
               )}
 

@@ -2,7 +2,7 @@
 
 <br/>
 
-<img src="public/favicon.svg" alt="stutosed logo" width="100" height="100" />
+<img src="public/logo.svg" alt="stutosed logo" width="110" height="110" />
 
 <br/>
 <br/>
@@ -39,7 +39,8 @@
 | | Feature | Description |
 |---|---|---|
 | 📊 | **Study Dashboard** | Dynamic greeting banner, cloud progress sync, and last-played lecture resume memory |
-| 📢 | **News & Announcements Desk** | Dedicated updates board featuring upcoming batches, platform roadmap, and direct Telegram course request desk |
+| 🚀 | **Dynamic Course Categories** | Centralized category architecture supporting Government Exams, BEU B.Tech & GATE engineering tracks |
+| 📱 | **Mobile Bottom Nav & Touch Player** | Pinned glassmorphism bottom navigation bar, native true fullscreen & double-tap seek (-10s / +10s) |
 | 🎬 | **Dual-Engine Video Player** | Stream HD lectures with instant toggle between **ALBA** (High-Speed Edge CDN) and **ESTE** (Failover Media Engine) |
 | ⚡ | **Speed Control Bridge** | Granular playback speed regulation from **0.5x to 3.0x** with cross-origin iframe synchronization |
 | 📑 | **Lossless PDF Reader** | Crystal-clear in-browser PDF notes previewer with native typography, full-screen mode & single-click downloads |

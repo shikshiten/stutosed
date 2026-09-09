@@ -1,11 +1,12 @@
 'use client';
 
 import React from 'react';
-import { Home, BookOpen, Moon, Sun, User, HelpCircle, GraduationCap, Landmark, Sparkles, CheckCircle2, ShieldCheck, Megaphone, BookmarkCheck } from 'lucide-react';
+import { Home, BookOpen, Moon, Sun, User, HelpCircle, GraduationCap, Landmark, Sparkles, CheckCircle2, ShieldCheck, BookmarkCheck, Atom, Cpu } from 'lucide-react';
 import { UserProfile } from '@/types';
 import { getInitials, getAvatarGradient } from '@/components/ProfileMenu';
+import { COURSE_CATEGORIES } from '@/config/categories';
 
-export type AppView = 'home' | 'gov-exams' | 'beu-engineering' | 'announcements' | 'library' | 'profile' | 'help';
+export type AppView = 'home' | 'gov-exams' | 'beu-engineering' | 'library' | 'profile' | 'help' | `cat-${string}`;
 
 interface SidebarProps {
   isOpen: boolean;
@@ -42,6 +43,21 @@ export const Sidebar: React.FC<SidebarProps> = ({
       onClose();
     }
     window.scrollTo({ top: 0, behavior: 'smooth' });
+  };
+
+  const getCategoryIcon = (iconName: string, color: string) => {
+    switch (iconName) {
+      case 'Atom':
+        return <Atom width={18} height={18} strokeWidth={2} style={{ color }} />;
+      case 'Cpu':
+        return <Cpu width={18} height={18} strokeWidth={2} style={{ color }} />;
+      case 'GraduationCap':
+        return <GraduationCap width={18} height={18} strokeWidth={2} style={{ color }} />;
+      case 'Landmark':
+        return <Landmark width={18} height={18} strokeWidth={2} style={{ color }} />;
+      default:
+        return <BookOpen width={18} height={18} strokeWidth={2} style={{ color }} />;
+    }
   };
 
   const initials = getInitials(userName);
@@ -114,6 +130,34 @@ export const Sidebar: React.FC<SidebarProps> = ({
             <span>BEU Engineering</span>
           </button>
 
+          {/* Dynamic Categories (e.g. JEE, GATE, UPSC) */}
+          {COURSE_CATEGORIES.filter((c) => c.id !== 'government' && c.id !== 'beu').map((cat) => (
+            <button
+              key={cat.id}
+              onClick={() => handleNav(`cat-${cat.id}` as AppView)}
+              className={`nav-link ${activeView === `cat-${cat.id}` ? 'active' : ''}`}
+            >
+              {getCategoryIcon(cat.iconName, activeView === `cat-${cat.id}` ? 'var(--accent)' : cat.accentColor)}
+              <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', width: '100%' }}>
+                <span>{cat.shortLabel}</span>
+                {cat.badge && (
+                  <span
+                    style={{
+                      fontSize: '10px',
+                      fontWeight: 700,
+                      padding: '1px 6px',
+                      borderRadius: 'var(--r-pill)',
+                      background: cat.accentDim,
+                      color: cat.accentColor,
+                    }}
+                  >
+                    {cat.badge}
+                  </span>
+                )}
+              </div>
+            </button>
+          ))}
+
           <button
             onClick={() => handleNav('library')}
             className={`nav-link ${activeView === 'library' ? 'active' : ''}`}
@@ -136,14 +180,6 @@ export const Sidebar: React.FC<SidebarProps> = ({
           >
             <HelpCircle width={18} height={18} strokeWidth={2} />
             <span>Help &amp; Community</span>
-          </button>
-
-          <button
-            onClick={() => handleNav('announcements')}
-            className={`nav-link ${activeView === 'announcements' ? 'active' : ''}`}
-          >
-            <Megaphone width={18} height={18} strokeWidth={2} style={{ color: activeView === 'announcements' ? 'var(--accent)' : 'inherit' }} />
-            <span>News &amp; Updates</span>
           </button>
         </nav>
 
