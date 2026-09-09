@@ -14,7 +14,7 @@ import { PrivacyTermsModal } from '@/components/PrivacyTermsModal';
 import NewsAnnouncements from '@/components/NewsAnnouncements';
 import { LibraryView } from '@/components/LibraryView';
 import { INITIAL_COURSES, getTotalStats, getCourseById } from '@/lib/coursesData';
-import { getSubjectThumbnail } from '@/lib/subjectThumbnails';
+import { getSubjectThumbnail, getDynamicThumbnailUrl } from '@/lib/subjectThumbnails';
 import { Course, LectureItem, UserProfile } from '@/types';
 import { getWorkerProxyUrl, resolveDirectMediaUrl } from '@/lib/proxyConfig';
 import { createClient } from '@/lib/supabase/client';
@@ -114,8 +114,10 @@ const ResumeThumbnail: React.FC<{
 
   const resolvedSrc = useMemo(() => {
     let src = thumb || '';
-    if (!src && (courseName || lectureTitle)) {
-      src = getSubjectThumbnail(lectureTitle, null, courseName, theme);
+    if (!src && lectureTitle) {
+      src = getDynamicThumbnailUrl(lectureTitle, courseName, theme);
+    } else if (!src && courseName) {
+      src = getSubjectThumbnail(courseName, null, courseName, theme);
     } else if (src && src.endsWith('.svg') && theme) {
       if (src.includes('_dark.svg') || src.includes('_light.svg')) {
         src = src.replace(/_(light|dark)\.svg$/, `_${theme}.svg`);

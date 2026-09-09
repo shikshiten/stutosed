@@ -135,9 +135,9 @@ export function generateDynamicSvgThumbnail(options: ThumbnailOptions): string {
 
   const bgGradient = isDark
     ? `<radialGradient id="bg-grad" cx="50%" cy="45%" r="75%">
-         <stop offset="0%" stop-color="#1c1a17" />
-         <stop offset="60%" stop-color="#121110" />
-         <stop offset="100%" stop-color="#0a0908" />
+         <stop offset="0%" stop-color="#1f1d1a" />
+         <stop offset="60%" stop-color="#131211" />
+         <stop offset="100%" stop-color="#0b0a0a" />
        </radialGradient>`
     : `<radialGradient id="bg-grad" cx="50%" cy="45%" r="75%">
          <stop offset="0%" stop-color="#FFFFFF" />
@@ -146,19 +146,22 @@ export function generateDynamicSvgThumbnail(options: ThumbnailOptions): string {
        </radialGradient>`;
 
   const textColor = isDark ? '#FFFFFF' : '#111827';
-  const textColorSecondary = isDark ? 'rgba(255,255,255,0.85)' : '#1F2937';
+  const textColorSecondary = isDark ? '#F3F4F6' : '#1F2937';
   const gridStroke = isDark ? 'rgba(255,255,255,0.025)' : 'rgba(0,0,0,0.035)';
-  const hairlineBorder = isDark ? 'rgba(255,255,255,0.08)' : 'rgba(0,0,0,0.08)';
-  const footerText = isDark ? 'rgba(255,255,255,0.45)' : 'rgba(0,0,0,0.45)';
+  const hairlineBorder = isDark ? 'rgba(255,255,255,0.09)' : 'rgba(0,0,0,0.09)';
+  const footerText = isDark ? 'rgba(255,255,255,0.42)' : 'rgba(0,0,0,0.42)';
 
   return `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 720" width="1280" height="720">
   <defs>
     ${bgGradient}
     <radialGradient id="accent-glow-rad" cx="50%" cy="50%" r="50%">
-      <stop offset="0%" stop-color="${accent}" stop-opacity="${isDark ? '0.2' : '0.12'}" />
-      <stop offset="60%" stop-color="${accent}" stop-opacity="0.03" />
+      <stop offset="0%" stop-color="${accent}" stop-opacity="${isDark ? '0.18' : '0.12'}" />
+      <stop offset="60%" stop-color="${accent}" stop-opacity="${isDark ? '0.03' : '0.02'}" />
       <stop offset="100%" stop-color="${accent}" stop-opacity="0" />
     </radialGradient>
+    <filter id="shadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="6" stdDeviation="12" flood-color="#000000" flood-opacity="${isDark ? '0.75' : '0.12'}" />
+    </filter>
     <pattern id="grid-pattern" width="40" height="40" patternUnits="userSpaceOnUse">
       <path d="M 40 0 L 0 0 0 40" fill="none" stroke="${gridStroke}" stroke-width="1" />
       <circle cx="40" cy="40" r="1" fill="${gridStroke}" />
@@ -191,7 +194,7 @@ export function generateDynamicSvgThumbnail(options: ThumbnailOptions): string {
         (line, idx) =>
           `<text x="640" y="${startY + idx * lineHeight}" text-anchor="middle" font-family="'Space Grotesk', -apple-system, system-ui, sans-serif" font-size="${fontSize}" font-weight="800" letter-spacing="-0.5" fill="${
             idx === 0 ? textColor : textColorSecondary
-          }">${escapeXml(line.toUpperCase())}</text>`
+          }" filter="url(#shadow)">${escapeXml(line.toUpperCase())}</text>`
       )
       .join('\n    ')}
   </g>

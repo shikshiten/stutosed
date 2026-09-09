@@ -261,7 +261,7 @@ export const CourseModal: React.FC<CourseModalProps> = ({
   const getLectureThumb = (item: LectureItem) => {
     const currentTab = course.tabs?.find((t) => t.id === activeTabId) || selectedFolderTab;
     const category = item.subject || currentTab?.label || course.name;
-    return getSubjectThumbnail(item.label || item.subject, null, category, theme);
+    return getDynamicThumbnailUrl(item.label || item.subject, category, theme);
   };
 
   // Detect YouTube video URLs
