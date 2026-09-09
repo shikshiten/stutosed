@@ -21,6 +21,23 @@ export const SUBJECT_KEYS = {
   SSC_PRATHAM_BATCH_2: 'ssc_pratham_batch_2',
   BEU_1ST_YEAR: 'beu_1st_year',
 
+  // ── 15 NEW GOVERNMENT EXAM BATCHES ──
+  REASONING_SPL_38: 'reasoning_spl_38',
+  MATHS_SPL_B43: 'maths_spl_b43',
+  MATHS_SPECIAL_VOD: 'maths_special_vod',
+  VOCAB_MASTERY_VOD: 'vocab_mastery_vod',
+  MATHS_SPL_B42: 'maths_spl_b42',
+  SSC_AARAMBH_BATCH_02: 'ssc_aarambh_batch_02',
+  MATHS_SPL_B47: 'maths_spl_b47',
+  ENG_PRACTICE_31_TURBO: 'eng_practice_31_turbo',
+  REASONING_SPL_58: 'reasoning_spl_58',
+  MATHS_SPECIAL_1_LOKI: 'maths_special_1_loki',
+  SELECTION_BATCH_1_LOKI: 'selection_batch_1_loki',
+  AARAMBH_BATCH_100HR_SW: 'aarambh_batch_100hr_sw',
+  LOKI_MATHS_SPECIAL_VOD_2: 'loki_maths_special_vod_2',
+  SELECTION_BATCH_1: 'selection_batch_1',
+  LOKI_SSC_COMPLETE_VOD: 'loki_ssc_complete_vod',
+
   // ── BEU 1ST YEAR SUBJECT FOLDERS ──
   EE_ECE_EEE: 'ee_ece_eee',
   MECHANICAL_ENGINEERING: 'mechanical_engineering',
@@ -72,6 +89,23 @@ export const BATCH_SUBJECT_MAP: Record<string, string> = {
   'beu-1st-year': SUBJECT_KEYS.BEU_1ST_YEAR,
   '1st-year': SUBJECT_KEYS.BEU_1ST_YEAR,
   'beu-b-tech-1st-year': SUBJECT_KEYS.BEU_1ST_YEAR,
+
+  // ── 15 NEW GOVERNMENT EXAM BATCHES ──
+  'reasoning-spl-38': SUBJECT_KEYS.REASONING_SPL_38,
+  'maths-spl-b43': SUBJECT_KEYS.MATHS_SPL_B43,
+  'maths-special-vod': SUBJECT_KEYS.MATHS_SPECIAL_VOD,
+  'vocab-mastery-vod': SUBJECT_KEYS.VOCAB_MASTERY_VOD,
+  'maths-spl-b42': SUBJECT_KEYS.MATHS_SPL_B42,
+  'ssc-aarambh-batch-02': SUBJECT_KEYS.SSC_AARAMBH_BATCH_02,
+  'maths-spl-b47': SUBJECT_KEYS.MATHS_SPL_B47,
+  'eng-practice-31-turbo': SUBJECT_KEYS.ENG_PRACTICE_31_TURBO,
+  'reasoning-spl-58': SUBJECT_KEYS.REASONING_SPL_58,
+  'maths-special-1-loki': SUBJECT_KEYS.MATHS_SPECIAL_1_LOKI,
+  'selection-batch-1-loki': SUBJECT_KEYS.SELECTION_BATCH_1_LOKI,
+  'aarambh-batch-100hr-sw': SUBJECT_KEYS.AARAMBH_BATCH_100HR_SW,
+  'loki-maths-special-vod-2': SUBJECT_KEYS.LOKI_MATHS_SPECIAL_VOD_2,
+  'selection-batch-1': SUBJECT_KEYS.SELECTION_BATCH_1,
+  'loki-ssc-complete-vod': SUBJECT_KEYS.LOKI_SSC_COMPLETE_VOD,
 
   // ── BEU 1ST YEAR SUBJECT FOLDERS ──
   'ece-ee-eee': SUBJECT_KEYS.EE_ECE_EEE,

@@ -1,0 +1,65 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 720" width="1280" height="720">
+  <defs>
+    <!-- Modern Radial Background -->
+    <radialGradient id="bg-grad" cx="50%" cy="45%" r="75%">
+      <stop offset="0%" stop-color="#1f1d1a" /><stop offset="60%" stop-color="#131211" /><stop offset="100%" stop-color="#0b0a0a" />
+    </radialGradient>
+
+    <!-- Ambient Center Accent Glow -->
+    <radialGradient id="accent-glow-rad" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#10b981" stop-opacity="0.18" />
+      <stop offset="60%" stop-color="#10b981" stop-opacity="0.03" />
+      <stop offset="100%" stop-color="#10b981" stop-opacity="0" />
+    </radialGradient>
+
+    <!-- Drop Shadow Filter for Typography -->
+    <filter id="shadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="6" stdDeviation="12" flood-color="#000000" flood-opacity="0.75" />
+    </filter>
+
+    <!-- Micro-Grid Architectural Pattern -->
+    <pattern id="grid-pattern" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M 40 0 L 0 0 0 40" fill="none" stroke="rgba(255,255,255,0.025)" stroke-width="1" />
+      <circle cx="40" cy="40" r="1" fill="rgba(255,255,255,0.025)" />
+    </pattern>
+  </defs>
+
+  <!-- Background Base -->
+  <rect width="1280" height="720" fill="url(#bg-grad)" />
+  <rect width="1280" height="720" fill="url(#grid-pattern)" />
+  <circle cx="640" cy="360" r="460" fill="url(#accent-glow-rad)" />
+
+  <!-- Modern Hairline Card Border -->
+  <rect x="40" y="40" width="1200" height="640" rx="24" fill="none" stroke="rgba(255,255,255,0.09)" stroke-width="1.5" />
+
+  <!-- Modern Top Accent Energy Bar -->
+  <rect x="520" y="40" width="240" height="3" rx="1.5" fill="#10b981" opacity="0.85" />
+
+  <!-- Category / Eyebrow Modern Capsule Pill -->
+  <g transform="translate(640, 165)">
+    <rect x="-170" y="-18" width="340" height="36" rx="18" fill="#10b981" fill-opacity="0.15" stroke="#10b981" stroke-opacity="0.35" stroke-width="1" />
+    <circle cx="-140" cy="0" r="4" fill="#10b981" />
+    <text x="0" y="5" text-anchor="middle" font-family="'Space Grotesk', -apple-system, system-ui, sans-serif" font-size="14" font-weight="700" letter-spacing="2.5" fill="#10b981" text-transform="uppercase">
+      ABHINAY SHARMA SIR
+    </text>
+  </g>
+
+  <!-- Dominant High-Impact Typography -->
+  <g>
+    <text x="640" y="350" text-anchor="middle" font-family="'Space Grotesk', -apple-system, system-ui, sans-serif" font-size="76" font-weight="800" letter-spacing="-0.5" fill="#FFFFFF" filter="url(#shadow)">MATHEMATICS</text>
+    <text x="640" y="440" text-anchor="middle" font-family="'Space Grotesk', -apple-system, system-ui, sans-serif" font-size="76" font-weight="800" letter-spacing="-0.5" fill="#F3F4F6" filter="url(#shadow)">SPL B42</text>
+  </g>
+
+  <!-- Clean Minimalist Footer Accent -->
+  <g transform="translate(640, 595)">
+    <line x1="-120" y1="0" x2="120" y2="0" stroke="#10b981" stroke-opacity="0.3" stroke-width="1" />
+    <circle cx="0" cy="0" r="3" fill="#10b981" opacity="0.7" />
+  </g>
+
+  <!-- Wordmark -->
+  <g transform="translate(640, 630)">
+    <text x="0" y="0" text-anchor="middle" font-family="'Space Grotesk', -apple-system, system-ui, sans-serif" font-size="13" font-weight="600" letter-spacing="3" fill="rgba(255,255,255,0.42)">
+      STUTOSED • VERIFIED STUDY RESOURCE
+    </text>
+  </g>
+</svg>
