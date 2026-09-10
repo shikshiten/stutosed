@@ -719,6 +719,28 @@ export default function HomePage() {
       );
     } catch {}
 
+    // Eagerly prefetch stream resolution in the background so it arrives instantly
+    const targetItem = playlist[index];
+    if (targetItem?.url) {
+      const vidmolyMatch = targetItem.url.match(/(?:embed-|w\/|vidmoly\.(?:net|me)\/)([a-zA-Z0-9]{10,16})/);
+      const earnvidsMatch = targetItem.url.match(/morencius\.com\/v\/([a-zA-Z0-9]{10,16})/);
+      const code = vidmolyMatch?.[1] || earnvidsMatch?.[1];
+      const provider = earnvidsMatch ? 'earnvids' : 'vidmoly';
+      if (code) {
+        fetch(`/api/stream?code=${encodeURIComponent(code)}&provider=${provider}`)
+          .then((r) => r.json())
+          .then((d) => {
+            if (d?.streamUrl) {
+              sessionStorage.setItem(
+                'stutosed_prefetched_stream',
+                JSON.stringify({ url: targetItem.url, streamUrl: d.streamUrl })
+              );
+            }
+          })
+          .catch(() => {});
+      }
+    }
+
     // Instant navigation — /watch page displays a smooth skeleton screen while stream resolves
     router.push(`/watch?course=${encodeURIComponent(activeCourseId)}&index=${index}`);
   };

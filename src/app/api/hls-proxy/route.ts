@@ -123,7 +123,7 @@ export async function GET(request: NextRequest) {
         headers: {
           'Content-Type': 'application/vnd.apple.mpegurl',
           ...getSecureCorsHeaders(origin),
-          'Cache-Control': 'no-cache, no-store',
+          'Cache-Control': 'public, s-maxage=120, stale-while-revalidate=600',
         },
       });
     }

@@ -194,13 +194,20 @@ export async function GET(request: NextRequest) {
   const cacheKey = `${provider}:${code}`;
   const cachedStream = streamCache.get(cacheKey);
   if (cachedStream && cachedStream.expiresAt > Date.now()) {
-    return NextResponse.json({
-      streamUrl: cachedStream.streamUrl,
-      type: cachedStream.type,
-      provider: cachedStream.provider,
-      code: cachedStream.code,
-      cached: true,
-    });
+    return NextResponse.json(
+      {
+        streamUrl: cachedStream.streamUrl,
+        type: cachedStream.type,
+        provider: cachedStream.provider,
+        code: cachedStream.code,
+        cached: true,
+      },
+      {
+        headers: {
+          'Cache-Control': 'public, s-maxage=3600, stale-while-revalidate=86400',
+        },
+      }
+    );
   }
 
   try {
@@ -275,12 +282,19 @@ export async function GET(request: NextRequest) {
       };
       streamCache.set(cacheKey, entry);
 
-      return NextResponse.json({
-        streamUrl: resolvedStreamUrl,
-        type: 'hls',
-        provider,
-        code,
-      });
+      return NextResponse.json(
+        {
+          streamUrl: resolvedStreamUrl,
+          type: 'hls',
+          provider,
+          code,
+        },
+        {
+          headers: {
+            'Cache-Control': 'public, s-maxage=3600, stale-while-revalidate=86400',
+          },
+        }
+      );
     }
 
     return NextResponse.json(

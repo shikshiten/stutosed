@@ -203,9 +203,14 @@ export default function WatchClient() {
   const lastTapSideRef = useRef<'left' | 'right' | 'center' | null>(null);
   const singleTapTimerRef = useRef<NodeJS.Timeout | null>(null);
   const skipTimeoutRef = useRef<NodeJS.Timeout | null>(null);
+  const lastTouchTimeRef = useRef<number>(0);
   const [resolvedStreamUrl, setResolvedStreamUrl] = useState<string | null>(null);
   const selectedServerIndexState = useState(0);
   const [selectedServerIndex, setSelectedServerIndex] = selectedServerIndexState;
+
+  // Video Server Loading Notice state
+  const [loadingNoticeVisible, setLoadingNoticeVisible] = useState(false);
+  const [loadingSeconds, setLoadingSeconds] = useState(0);
 
   // Action states
   const [isBookmarked, setIsBookmarked] = useState(false);
@@ -351,6 +356,27 @@ export default function WatchClient() {
       lectureTitle: currentItem.label,
     });
   }, [currentItem, courseInfo, subjectParam, folderParam]);
+
+  // Trigger server loading notice whenever lecture or server changes
+  useEffect(() => {
+    setLoadingNoticeVisible(true);
+    setLoadingSeconds(0);
+  }, [currentIndex, selectedServerIndex]);
+
+  // Handle auto-dismissal when video begins playing, or advance elapsed loading seconds
+  useEffect(() => {
+    if (!loadingNoticeVisible) return;
+    if (isPlaying && !streamLoading && !isBuffering) {
+      const timer = setTimeout(() => {
+        setLoadingNoticeVisible(false);
+      }, 700);
+      return () => clearTimeout(timer);
+    }
+    const interval = setInterval(() => {
+      setLoadingSeconds((prev) => prev + 1);
+    }, 1000);
+    return () => clearInterval(interval);
+  }, [loadingNoticeVisible, isPlaying, streamLoading, isBuffering]);
 
   // Active Server & URL resolution (prioritizing ESTE over ALBA, deduplicating identical URLs)
   const servers: ServerOption[] = useMemo(() => {
@@ -521,8 +547,14 @@ export default function WatchClient() {
       if (hlsRef.current) hlsRef.current.destroy();
       const hls = new Hls({
         enableWorker: true,
-        maxBufferLength: 20,
-        maxMaxBufferLength: 40,
+        progressive: true,
+        maxBufferLength: 30,
+        maxMaxBufferLength: 60,
+        maxBufferSize: 60 * 1000 * 1000,
+        maxBufferHole: 0.5,
+        backBufferLength: 30,
+        manifestLoadingTimeOut: 15000,
+        fragLoadingTimeOut: 20000,
         startLevel: -1,
         capLevelToPlayerSize: true,
       });
@@ -683,18 +715,25 @@ export default function WatchClient() {
     };
   }, [currentItem, videoSourceUrl, isDraggingSeek]);
 
-  // Controls reset timer
-  const resetControlsTimer = useCallback(() => {
-    setShowControls(true);
-    if (controlsTimeoutRef.current) clearTimeout(controlsTimeoutRef.current);
-    if (isPlaying) {
+  // Controls auto-hide scheduler
+  const scheduleAutoHide = useCallback(() => {
+    if (controlsTimeoutRef.current) {
+      clearTimeout(controlsTimeoutRef.current);
+      controlsTimeoutRef.current = null;
+    }
+    if (isPlaying && !showSpeedMenu && !showQualityMenu) {
       controlsTimeoutRef.current = setTimeout(() => {
         setShowControls(false);
         setShowSpeedMenu(false);
         setShowQualityMenu(false);
       }, 3500);
     }
-  }, [isPlaying]);
+  }, [isPlaying, showSpeedMenu, showQualityMenu]);
+
+  const resetControlsTimer = useCallback(() => {
+    setShowControls(true);
+    scheduleAutoHide();
+  }, [scheduleAutoHide]);
 
   const togglePlayPause = useCallback(() => {
     const video = videoRef.current;
@@ -832,7 +871,9 @@ export default function WatchClient() {
       target.closest('input') ||
       target.closest('.player-seekbar-container') ||
       target.closest('.player-server-group') ||
-      target.closest('.yt-open-link')
+      target.closest('.yt-open-link') ||
+      target.closest('.loading-notice-close') ||
+      target.closest('.player-floating-menu')
     ) {
       return;
     }
@@ -840,6 +881,7 @@ export default function WatchClient() {
     const touch = e.changedTouches[0];
     if (!touch) return;
 
+    lastTouchTimeRef.current = Date.now();
     const rect = e.currentTarget.getBoundingClientRect();
     const x = touch.clientX - rect.left;
     const ratio = x / rect.width;
@@ -851,7 +893,7 @@ export default function WatchClient() {
     const timeSinceLastTap = now - lastTapTimeRef.current;
 
     // Double-tap or rapid multi-tap on left or right!
-    if (timeSinceLastTap < 320 && (side === 'left' || side === 'right')) {
+    if (timeSinceLastTap < 300 && (side === 'left' || side === 'right')) {
       if (singleTapTimerRef.current) {
         clearTimeout(singleTapTimerRef.current);
         singleTapTimerRef.current = null;
@@ -877,15 +919,23 @@ export default function WatchClient() {
       return;
     }
 
-    // Register as potential single tap
+    // Register as potential single tap to hide/show controls
     lastTapTimeRef.current = now;
     lastTapSideRef.current = side;
 
     if (singleTapTimerRef.current) clearTimeout(singleTapTimerRef.current);
     singleTapTimerRef.current = setTimeout(() => {
-      setShowControls((prev) => !prev);
-      resetControlsTimer();
-    }, 280);
+      setShowControls((prev) => {
+        const next = !prev;
+        if (next) {
+          scheduleAutoHide();
+        } else if (controlsTimeoutRef.current) {
+          clearTimeout(controlsTimeoutRef.current);
+          controlsTimeoutRef.current = null;
+        }
+        return next;
+      });
+    }, 220);
   };
 
   const handleVolumeChange = (newVol: number) => {
@@ -1134,7 +1184,7 @@ export default function WatchClient() {
     return getLectureTopicDescription(currentItem?.label || courseInfo.name);
   }, [currentItem, courseInfo]);
 
-  const showLoading = streamLoading || (isBuffering && isPlaying);
+  const showLoading = streamLoading || isBuffering;
   const playedPercent = duration > 0 ? (currentTime / duration) * 100 : 0;
   const bufferedPercent = duration > 0 ? (bufferedTime / duration) * 100 : 0;
 
@@ -1187,11 +1237,14 @@ export default function WatchClient() {
           <div
             ref={containerRef}
             className={`player-box ${isFullscreen ? 'is-fullscreen' : ''} ${
-              !showControls && isPlaying ? 'controls-hidden' : ''
+              !showControls ? 'controls-hidden' : 'controls-visible'
             }`}
-            onMouseMove={resetControlsTimer}
-            onTouchStart={resetControlsTimer}
-            onMouseEnter={resetControlsTimer}
+            onMouseMove={() => {
+              if (showControls) scheduleAutoHide();
+            }}
+            onMouseEnter={() => {
+              if (showControls) scheduleAutoHide();
+            }}
             onContextMenu={(e) => e.preventDefault()}
           >
             <div
@@ -1204,14 +1257,59 @@ export default function WatchClient() {
                   target.closest('input') ||
                   target.closest('.player-seekbar-container') ||
                   target.closest('.player-server-group') ||
-                  target.closest('.yt-open-link')
+                  target.closest('.yt-open-link') ||
+                  target.closest('.loading-notice-close') ||
+                  target.closest('.player-floating-menu')
                 ) {
                   return;
                 }
-                setShowControls((prev) => !prev);
-                resetControlsTimer();
+                // Ignore synthetic mouse click following a touch event on mobile
+                if (Date.now() - lastTouchTimeRef.current < 450) {
+                  return;
+                }
+                setShowControls((prev) => {
+                  const next = !prev;
+                  if (next) {
+                    scheduleAutoHide();
+                  } else if (controlsTimeoutRef.current) {
+                    clearTimeout(controlsTimeoutRef.current);
+                    controlsTimeoutRef.current = null;
+                  }
+                  return next;
+                });
               }}
             >
+              {/* Busy Server Loading Notice Overlay */}
+              {loadingNoticeVisible && (
+                <div className="player-loading-notice-card" role="status" aria-live="polite">
+                  <div className="loading-notice-spinner">
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round" className="spin-icon">
+                      <path d="M21 12a9 9 0 1 1-6.219-8.56" />
+                    </svg>
+                  </div>
+                  <div className="loading-notice-content">
+                    <div className="loading-notice-title">
+                      <span>Connecting to Video Server</span>
+                      <span className="loading-notice-badge">Server Busy</span>
+                    </div>
+                    <p className="loading-notice-desc">
+                      {loadingSeconds > 4
+                        ? "Upstream server is taking longer than usual. Please wait a moment, or switch to Server 2 / ALBA / ESTE above."
+                        : "Please wait, video may take 3–5 seconds to load due to high server traffic."}
+                    </p>
+                  </div>
+                  <button
+                    className="loading-notice-close"
+                    onClick={(e) => {
+                      e.stopPropagation();
+                      setLoadingNoticeVisible(false);
+                    }}
+                    title="Dismiss notice"
+                  >
+                    ✕
+                  </button>
+                </div>
+              )}
               {/* TOP OVERLAY */}
               <div className="player-top-overlay" onClick={(e) => e.stopPropagation()}>
                 <div className="player-title-block">
@@ -1359,10 +1457,9 @@ export default function WatchClient() {
                 <video
                   ref={videoRef}
                   playsInline
-                  preload="metadata"
+                  preload="auto"
                   className="player-native-video"
                   title={currentItem.label}
-                  onClick={togglePlayPause}
                 />
               )}
 

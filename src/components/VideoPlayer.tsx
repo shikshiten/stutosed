@@ -120,11 +120,16 @@ export const VideoPlayer: React.FC<VideoPlayerProps> = ({
   const lastTapSideRef = useRef<'left' | 'right' | 'center' | null>(null);
   const singleTapTimerRef = useRef<NodeJS.Timeout | null>(null);
   const skipTimeoutRef = useRef<NodeJS.Timeout | null>(null);
+  const lastTouchTimeRef = useRef<number>(0);
 
   const [resolvedStreamUrl, setResolvedStreamUrl] = useState<string | null>(null);
   const [streamLoading, setStreamLoading] = useState<boolean>(false);
   const [streamError, setStreamError] = useState<string | null>(null);
   const [selectedServerIndex, setSelectedServerIndex] = useState<number>(0);
+
+  // Video Server Loading Notice state
+  const [loadingNoticeVisible, setLoadingNoticeVisible] = useState<boolean>(false);
+  const [loadingSeconds, setLoadingSeconds] = useState<number>(0);
 
   // Library & Bookmark States
   const [isBookmarked, setIsBookmarked] = useState<boolean>(false);
@@ -152,14 +157,36 @@ export const VideoPlayer: React.FC<VideoPlayerProps> = ({
     }
   }, [courseId, currentItem]);
 
-  // Reset states when lecture index changes
+  // Reset states & trigger loading notice when lecture index or server changes
   useEffect(() => {
     setSelectedServerIndex(0);
     setStreamError(null);
     setCurrentTime(0);
     setDuration(0);
     setBufferedTime(0);
+    setLoadingNoticeVisible(true);
+    setLoadingSeconds(0);
   }, [currentIndex]);
+
+  useEffect(() => {
+    setLoadingNoticeVisible(true);
+    setLoadingSeconds(0);
+  }, [selectedServerIndex]);
+
+  // Handle auto-dismissal when video begins playing, or advance elapsed loading seconds
+  useEffect(() => {
+    if (!loadingNoticeVisible) return;
+    if (isPlaying && !streamLoading && !isBuffering) {
+      const timer = setTimeout(() => {
+        setLoadingNoticeVisible(false);
+      }, 700);
+      return () => clearTimeout(timer);
+    }
+    const interval = setInterval(() => {
+      setLoadingSeconds((prev) => prev + 1);
+    }, 1000);
+    return () => clearInterval(interval);
+  }, [loadingNoticeVisible, isPlaying, streamLoading, isBuffering]);
 
   // Track Fullscreen status
   useEffect(() => {
@@ -174,25 +201,30 @@ export const VideoPlayer: React.FC<VideoPlayerProps> = ({
     };
   }, []);
 
-  // Auto-hide controls timer
-  const resetControlsTimer = useCallback(() => {
-    setShowControls(true);
+  // Auto-hide controls scheduler
+  const scheduleAutoHide = useCallback(() => {
     if (controlsTimeoutRef.current) {
       clearTimeout(controlsTimeoutRef.current);
+      controlsTimeoutRef.current = null;
     }
     if (isPlaying && !showSpeedMenu && !showQualityMenu) {
       controlsTimeoutRef.current = setTimeout(() => {
         setShowControls(false);
-      }, 2800);
+      }, 3500);
     }
   }, [isPlaying, showSpeedMenu, showQualityMenu]);
 
+  const resetControlsTimer = useCallback(() => {
+    setShowControls(true);
+    scheduleAutoHide();
+  }, [scheduleAutoHide]);
+
   useEffect(() => {
-    resetControlsTimer();
+    scheduleAutoHide();
     return () => {
       if (controlsTimeoutRef.current) clearTimeout(controlsTimeoutRef.current);
     };
-  }, [isPlaying, showSpeedMenu, showQualityMenu, resetControlsTimer]);
+  }, [isPlaying, showSpeedMenu, showQualityMenu, scheduleAutoHide]);
 
   const handleSpeedChange = (spd: number) => {
     setPlaybackSpeed(spd);
@@ -349,8 +381,14 @@ export const VideoPlayer: React.FC<VideoPlayerProps> = ({
       if (hlsRef.current) hlsRef.current.destroy();
       const hls = new Hls({
         enableWorker: true,
-        maxBufferLength: 20,
-        maxMaxBufferLength: 40,
+        progressive: true,
+        maxBufferLength: 30,
+        maxMaxBufferLength: 60,
+        maxBufferSize: 60 * 1000 * 1000,
+        maxBufferHole: 0.5,
+        backBufferLength: 30,
+        manifestLoadingTimeOut: 15000,
+        fragLoadingTimeOut: 20000,
         startLevel: -1,
         capLevelToPlayerSize: true,
       });
@@ -636,7 +674,9 @@ export const VideoPlayer: React.FC<VideoPlayerProps> = ({
       target.closest('input') ||
       target.closest('.player-seekbar-container') ||
       target.closest('.player-server-group') ||
-      target.closest('.yt-open-link')
+      target.closest('.yt-open-link') ||
+      target.closest('.loading-notice-close') ||
+      target.closest('.player-floating-menu')
     ) {
       return;
     }
@@ -644,6 +684,7 @@ export const VideoPlayer: React.FC<VideoPlayerProps> = ({
     const touch = e.changedTouches[0];
     if (!touch) return;
 
+    lastTouchTimeRef.current = Date.now();
     const rect = e.currentTarget.getBoundingClientRect();
     const x = touch.clientX - rect.left;
     const ratio = x / rect.width;
@@ -655,7 +696,7 @@ export const VideoPlayer: React.FC<VideoPlayerProps> = ({
     const timeSinceLastTap = now - lastTapTimeRef.current;
 
     // Double-tap or rapid multi-tap on left or right!
-    if (timeSinceLastTap < 320 && (side === 'left' || side === 'right')) {
+    if (timeSinceLastTap < 300 && (side === 'left' || side === 'right')) {
       if (singleTapTimerRef.current) {
         clearTimeout(singleTapTimerRef.current);
         singleTapTimerRef.current = null;
@@ -681,15 +722,23 @@ export const VideoPlayer: React.FC<VideoPlayerProps> = ({
       return;
     }
 
-    // Register as potential single tap
+    // Register as potential single tap to hide/show controls
     lastTapTimeRef.current = now;
     lastTapSideRef.current = side;
 
     if (singleTapTimerRef.current) clearTimeout(singleTapTimerRef.current);
     singleTapTimerRef.current = setTimeout(() => {
-      setShowControls((prev) => !prev);
-      resetControlsTimer();
-    }, 280);
+      setShowControls((prev) => {
+        const next = !prev;
+        if (next) {
+          scheduleAutoHide();
+        } else if (controlsTimeoutRef.current) {
+          clearTimeout(controlsTimeoutRef.current);
+          controlsTimeoutRef.current = null;
+        }
+        return next;
+      });
+    }, 220);
   };
 
   const handleVolumeChange = (newVol: number) => {
@@ -885,7 +934,7 @@ export const VideoPlayer: React.FC<VideoPlayerProps> = ({
     return () => window.removeEventListener('keydown', handleKeyDown);
   }, [togglePlayPause, skipVideo, toggleFullscreen, onClose, resetControlsTimer]);
 
-  const showLoading = streamLoading || (isBuffering && isPlaying);
+  const showLoading = streamLoading || isBuffering;
 
   const playedPercent = duration > 0 ? (currentTime / duration) * 100 : 0;
   const bufferedPercent = duration > 0 ? (bufferedTime / duration) * 100 : 0;
@@ -923,11 +972,14 @@ export const VideoPlayer: React.FC<VideoPlayerProps> = ({
           <main className="yt-watch-left-col">
             {/* The Video Box with Fullscreen & Overlay Controls */}
             <div
-              className={`player-box ${isFullscreen ? 'is-fullscreen' : ''} ${showControls ? 'controls-visible' : 'controls-hidden'}`}
+              className={`player-box ${isFullscreen ? 'is-fullscreen' : ''} ${!showControls ? 'controls-hidden' : 'controls-visible'}`}
               ref={containerRef}
-              onMouseMove={resetControlsTimer}
-              onTouchStart={resetControlsTimer}
-              onMouseEnter={resetControlsTimer}
+              onMouseMove={() => {
+                if (showControls) scheduleAutoHide();
+              }}
+              onMouseEnter={() => {
+                if (showControls) scheduleAutoHide();
+              }}
               onContextMenu={(e) => e.preventDefault()}
             >
               <div
@@ -940,14 +992,58 @@ export const VideoPlayer: React.FC<VideoPlayerProps> = ({
                     target.closest('input') ||
                     target.closest('.player-seekbar-container') ||
                     target.closest('.player-server-group') ||
-                    target.closest('.yt-open-link')
+                    target.closest('.yt-open-link') ||
+                    target.closest('.loading-notice-close') ||
+                    target.closest('.player-floating-menu')
                   ) {
                     return;
                   }
-                  setShowControls((prev) => !prev);
-                  resetControlsTimer();
+                  if (Date.now() - lastTouchTimeRef.current < 450) {
+                    return;
+                  }
+                  setShowControls((prev) => {
+                    const next = !prev;
+                    if (next) {
+                      scheduleAutoHide();
+                    } else if (controlsTimeoutRef.current) {
+                      clearTimeout(controlsTimeoutRef.current);
+                      controlsTimeoutRef.current = null;
+                    }
+                    return next;
+                  });
                 }}
               >
+                {/* Busy Server Loading Notice Overlay */}
+                {loadingNoticeVisible && (
+                  <div className="player-loading-notice-card" role="status" aria-live="polite">
+                    <div className="loading-notice-spinner">
+                      <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round" className="spin-icon">
+                        <path d="M21 12a9 9 0 1 1-6.219-8.56" />
+                      </svg>
+                    </div>
+                    <div className="loading-notice-content">
+                      <div className="loading-notice-title">
+                        <span>Connecting to Video Server</span>
+                        <span className="loading-notice-badge">Server Busy</span>
+                      </div>
+                      <p className="loading-notice-desc">
+                        {loadingSeconds > 4
+                          ? "Upstream server is taking longer than usual. Please wait a moment, or switch to Server 2 / ALBA / ESTE above."
+                          : "Please wait, video may take 3–5 seconds to load due to high server traffic."}
+                      </p>
+                    </div>
+                    <button
+                      className="loading-notice-close"
+                      onClick={(e) => {
+                        e.stopPropagation();
+                        setLoadingNoticeVisible(false);
+                      }}
+                      title="Dismiss notice"
+                    >
+                      ✕
+                    </button>
+                  </div>
+                )}
                 {/* 1. TOP OVERLAY (Fullscreen & In-Video) */}
                 <div
                   className="player-top-overlay"
@@ -1102,10 +1198,9 @@ export const VideoPlayer: React.FC<VideoPlayerProps> = ({
                   <video
                     ref={videoRef}
                     playsInline
-                    preload="metadata"
+                    preload="auto"
                     className="player-native-video"
                     title={currentItem.label}
-                    onClick={togglePlayPause}
                   />
                 )}
 
