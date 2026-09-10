@@ -16,13 +16,13 @@ export const metadata: Metadata = {
   description: 'Your complete study portal for SSC, Competitive Exams and Bihar Engineering University (BEU) B.Tech courses, lectures, notes, and PDF resources.',
   icons: {
     icon: [
-      { url: '/favicon.svg?v=stutosed-red', type: 'image/svg+xml' },
-      { url: '/favicon-32x32.png?v=stutosed-red', sizes: '32x32', type: 'image/png' },
-      { url: '/favicon.ico?v=stutosed-red' },
-      { url: '/icons/icon-192.png?v=stutosed-red', sizes: '192x192', type: 'image/png' },
+      { url: '/favicon.svg?v=stutosed-white', type: 'image/svg+xml' },
+      { url: '/favicon-32x32.png?v=stutosed-white', sizes: '32x32', type: 'image/png' },
+      { url: '/favicon.ico?v=stutosed-white' },
+      { url: '/icons/icon-192.png?v=stutosed-white', sizes: '192x192', type: 'image/png' },
     ],
-    shortcut: '/favicon.ico?v=stutosed-red',
-    apple: '/apple-touch-icon.png?v=stutosed-red',
+    shortcut: '/favicon.ico?v=stutosed-white',
+    apple: '/apple-touch-icon.png?v=stutosed-white',
   },
   verification: {
     google: 'google32c778425d2b60c3',
@@ -58,11 +58,11 @@ export default function RootLayout({
   return (
     <html lang="en" data-theme="light" suppressHydrationWarning className={spaceGrotesk.variable}>
       <head>
-        <link rel="icon" type="image/svg+xml" href="/favicon.svg?v=stutosed-red" />
-        <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png?v=stutosed-red" />
-        <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png?v=stutosed-red" />
-        <link rel="shortcut icon" href="/favicon.ico?v=stutosed-red" />
-        <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png?v=stutosed-red" />
+        <link rel="icon" type="image/svg+xml" href="/favicon.svg?v=stutosed-white" />
+        <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png?v=stutosed-white" />
+        <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png?v=stutosed-white" />
+        <link rel="shortcut icon" href="/favicon.ico?v=stutosed-white" />
+        <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png?v=stutosed-white" />
         <script
           dangerouslySetInnerHTML={{
             __html: `
