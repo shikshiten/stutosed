@@ -16,6 +16,14 @@ const ALLOWED_UPSTREAMS = [
   'vidmoly.net',
   'vidmoly.me',
   'vidmoly.to',
+  'vidmoly.biz',
+  'vidmoly.pro',
+  'vidmoly.com',
+  'vmeas.cloud',
+  'vmeas.net',
+  'vmeas.online',
+  'vmstorage.net',
+  'vmstorage.cloud',
   'vmnow.online',
   'vmnow.me',
   'vmnow.to',
@@ -24,9 +32,12 @@ const ALLOWED_UPSTREAMS = [
   'playmoly.me',
   'playmoly.net',
   'morencius.com',
+  'morencius.net',
   'earnvids.com',
   'earnvids.net',
+  'earnvids.xyz',
   'crwilladmin.com',
+  'selectionway.com',
   'storage.googleapis.com',
   'edgeone.app',
   'cloudfront.net',
@@ -111,7 +122,7 @@ export default {
       upstreamHeaders.set('Accept', '*/*');
 
       // Spoof Referers for CDNs
-      if (decodedUrl.includes('vidmoly') || decodedUrl.includes('vmnow')) {
+      if (decodedUrl.includes('vidmoly') || decodedUrl.includes('vmnow') || decodedUrl.includes('vmeas') || decodedUrl.includes('vmstorage') || decodedUrl.includes('playmoly')) {
         upstreamHeaders.set('Referer', 'https://vidmoly.net/');
         upstreamHeaders.set('Origin', 'https://vidmoly.net');
       } else if (decodedUrl.includes('morencius') || decodedUrl.includes('earnvids')) {
