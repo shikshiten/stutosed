@@ -13,6 +13,14 @@ const SECURE_HOST_SIGNATURES = [
   'dmlkbW9seS5uZXQ=',
   'dmlkbW9seS5tZQ==',
   'dmlkbW9seS50bw==',
+  'dmlkbW9seS5iaXo=', // vidmoly.biz
+  'dmlkbW9seS5wcm8=', // vidmoly.pro
+  'dmlkbW9seS5jb20=', // vidmoly.com
+  'dm1lYXMuY2xvdWQ=', // vmeas.cloud (Vidmoly primary CDN cluster)
+  'dm1lYXMubmV0', // vmeas.net
+  'dm1lYXMub25saW5l', // vmeas.online
+  'dm1zdG9yYWdlLm5ldA==', // vmstorage.net
+  'dm1zdG9yYWdlLmNsb3Vk', // vmstorage.cloud
   'dm1ub3cub25saW5l',
   'dm1ub3cubWU=',
   'dm1ub3cudG8=',
@@ -21,9 +29,12 @@ const SECURE_HOST_SIGNATURES = [
   'cGxheW1vbHkubWU=',
   'cGxheW1vbHkubmV0',
   'bW9yZW5jaXVzLmNvbQ==',
+  'bW9yZW5jaXVzLm5ldA==', // morencius.net
   'ZWFybnZpZHMuY29t',
   'ZWFybnZpZHMubmV0',
+  'ZWFybnZpZHMueHl6', // earnvids.xyz
   'Y3J3aWxsYWRtaW4uY29t',
+  'c2VsZWN0aW9ud2F5LmNvbQ==', // selectionway.com
   'c3RvcmFnZS5nb29nbGVhcGlzLmNvbQ==',
   'c2Vpcnl1LnN0dXRvc2VkLndvcmtlcnMuZGV2', // seiryu.stutosed.workers.dev (Stutosed official streaming worker)
   'cHVibGljYm90c2h1Yi5ibG9nc3BvdC5jb20=',

@@ -40,7 +40,10 @@ export async function GET(request: NextRequest) {
     const isVidmoly =
       providerParam === 'vidmoly' ||
       decoded.includes('vidmoly') ||
-      decoded.includes('vmnow.online');
+      decoded.includes('vmnow.') ||
+      decoded.includes('vmeas.') ||
+      decoded.includes('vmstorage.') ||
+      decoded.includes('playmoly.');
     const isEarnvids =
       providerParam === 'earnvids' ||
       decoded.includes('morencius.') ||
