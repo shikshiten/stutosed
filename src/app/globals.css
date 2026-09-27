@@ -1222,6 +1222,34 @@ svg { flex-shrink: 0; }
   pointer-events: none;
 }
 
+.player-iframe-container {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 2;
+  background: #000000;
+  overflow: hidden;
+}
+
+.player-iframe-container iframe {
+  width: 100%;
+  height: 100%;
+  border: none;
+  display: block;
+}
+
+.player-box.is-embed-mode .player-top-overlay {
+  pointer-events: none;
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.75) 0%, rgba(0, 0, 0, 0.2) 60%, transparent 100%);
+}
+
+.player-box.is-embed-mode .player-top-overlay .player-title-block,
+.player-box.is-embed-mode .player-top-overlay .player-top-actions,
+.player-box.is-embed-mode .player-top-overlay button {
+  pointer-events: auto;
+}
+
 /* ==================== LOADING / BUSY SERVER NOTICE ==================== */
 .player-loading-notice-card {
   position: absolute;

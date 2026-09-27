@@ -44,13 +44,13 @@ const LAST_PLAYED_KEY = 'stutosed_last_played_v1';
 
 // Helper to extract Vidmoly code
 function extractVidmolyCode(url: string): string | null {
-  const m = url.match(/(?:embed-|w\/|vidmoly\.(?:net|me)\/)([a-zA-Z0-9]{10,16})/);
+  const m = url.match(/(?:embed-|w\/|vidmoly\.[a-z]+\/)([a-zA-Z0-9]{10,16})/);
   return m ? m[1] : null;
 }
 
 // Helper to extract Earnvids code
 function extractEarnvidsCode(url: string): string | null {
-  const m = url.match(/morencius\.com\/v\/([a-zA-Z0-9]{10,16})/);
+  const m = url.match(/(?:morencius|earnvids)\.[a-z]+\/v\/([a-zA-Z0-9]{10,16})/);
   return m ? m[1] : null;
 }
 
@@ -366,6 +366,12 @@ export default function WatchClient() {
   // Handle auto-dismissal when video begins playing, or advance elapsed loading seconds
   useEffect(() => {
     if (!loadingNoticeVisible) return;
+    if (isEmbedMode) {
+      const timer = setTimeout(() => {
+        setLoadingNoticeVisible(false);
+      }, 1800);
+      return () => clearTimeout(timer);
+    }
     if (isPlaying && !streamLoading && !isBuffering) {
       const timer = setTimeout(() => {
         setLoadingNoticeVisible(false);
@@ -404,7 +410,7 @@ export default function WatchClient() {
   const activeUrl = activeServer?.url || currentItem?.url || '';
 
   const isVidmolyUrl = activeUrl.includes('vidmoly.') || activeUrl.includes('/w/');
-  const isEarnvidsUrl = activeUrl.includes('morencius.com');
+  const isEarnvidsUrl = activeUrl.includes('morencius.com') || activeUrl.includes('earnvids.');
   const isYouTubeUrl = activeUrl.includes('youtube.com') || activeUrl.includes('youtu.be') || currentItem?.type === 'youtube';
   const isDirectHlsUrl = activeUrl.includes('.m3u8');
   const isProxyStreamUrl =
@@ -423,7 +429,30 @@ export default function WatchClient() {
     activeServer?.name?.toUpperCase().includes('ESTE') ||
     (!activeServer && (activeUrl.includes('streamvaultpro.cc') || activeUrl.includes('/0:/stream/') || activeUrl.includes('/0:/dl/'))) ||
     Boolean(activeServer?.streamUrl);
-  const needsApiResolution = isVidmolyUrl || isEarnvidsUrl;
+
+  const vidmolyCode = isVidmolyUrl ? extractVidmolyCode(activeUrl) : null;
+  const earnvidsCode = isEarnvidsUrl ? extractEarnvidsCode(activeUrl) : null;
+  const ytId = isYouTubeUrl ? activeUrl.match(/(?:v=|youtu\.be\/|live\/)([a-zA-Z0-9_-]{11})/)?.[1] : null;
+
+  // Embedded Lecture Mode (Official Vidmoly / Earnvids / YouTube embed player)
+  const embedUrl = useMemo(() => {
+    if (isVidmolyUrl && vidmolyCode) {
+      return `https://vidmoly.net/embed-${vidmolyCode}.html`;
+    }
+    if (isEarnvidsUrl && earnvidsCode) {
+      return `https://morencius.com/v/${earnvidsCode}`;
+    }
+    if (isYouTubeUrl && ytId) {
+      return `https://www.youtube-nocookie.com/embed/${ytId}?autoplay=1&rel=0`;
+    }
+    if (activeUrl.includes('/embed-') || activeUrl.includes('/embed/')) {
+      return activeUrl;
+    }
+    return null;
+  }, [isVidmolyUrl, vidmolyCode, isEarnvidsUrl, earnvidsCode, isYouTubeUrl, ytId, activeUrl]);
+
+  const isEmbedMode = Boolean(embedUrl);
+  const needsApiResolution = !isEmbedMode && (isVidmolyUrl || isEarnvidsUrl);
 
   // Stream Resolution with fast in-memory cache
   useEffect(() => {
@@ -432,7 +461,7 @@ export default function WatchClient() {
     setResolvedStreamUrl(null);
     setStreamError(null);
 
-    if (isYouTubeUrl) {
+    if (isEmbedMode || isYouTubeUrl) {
       setStreamLoading(false);
       return;
     }
@@ -496,9 +525,11 @@ export default function WatchClient() {
     return () => abortController.abort();
   }, [activeUrl, needsApiResolution, isVidmolyUrl, isEarnvidsUrl, isYouTubeUrl]);
 
-  // If URL needs resolution (Vidmoly / Earnvids), NEVER use raw activeUrl as stream source!
+  // If in embed mode, videoSourceUrl is null because iframe is used
   const isHrankerHls = isDirectHlsUrl && activeUrl.includes('hranker.com');
-  const videoSourceUrl = needsApiResolution
+  const videoSourceUrl = isEmbedMode
+    ? null
+    : needsApiResolution
     ? resolvedStreamUrl
     : isProxyStreamUrl
     ? getWorkerProxyUrl(activeUrl, 'stream')
@@ -510,6 +541,22 @@ export default function WatchClient() {
 
   // Video & HLS Setup
   useEffect(() => {
+    if (isEmbedMode) {
+      if (hlsRef.current) {
+        hlsRef.current.destroy();
+        hlsRef.current = null;
+      }
+      if (videoRef.current) {
+        videoRef.current.pause();
+        videoRef.current.removeAttribute('src');
+        videoRef.current.load();
+      }
+      setIsPlaying(false);
+      setIsBuffering(false);
+      setStreamLoading(false);
+      return;
+    }
+
     if (!videoSourceUrl || !videoRef.current) return;
 
     const video = videoRef.current;
@@ -1237,6 +1284,8 @@ export default function WatchClient() {
           <div
             ref={containerRef}
             className={`player-box ${isFullscreen ? 'is-fullscreen' : ''} ${
+              isEmbedMode ? 'is-embed-mode' : ''
+            } ${
               !showControls ? 'controls-hidden' : 'controls-visible'
             }`}
             onMouseMove={() => {
@@ -1249,8 +1298,12 @@ export default function WatchClient() {
           >
             <div
               className="player-viewport"
-              onTouchEnd={handleViewportTouchEnd}
+              onTouchEnd={(e) => {
+                if (isEmbedMode) return;
+                handleViewportTouchEnd(e);
+              }}
               onClick={(e) => {
+                if (isEmbedMode) return;
                 const target = e.target as HTMLElement;
                 if (
                   target.closest('button') ||
@@ -1350,79 +1403,81 @@ export default function WatchClient() {
                 </div>
               </div>
 
-              {/* CENTER OVERLAY: Frosted Glass Button that transforms to Spinning Ring on loading */}
-              <div className="player-center-overlay">
-                <button
-                  className="player-center-skip-arrow backward"
-                  onClick={(e) => {
-                    e.stopPropagation();
-                    skipVideo(-10);
-                  }}
-                  style={{ opacity: showLoading ? 0 : 1, pointerEvents: showLoading ? 'none' : 'auto' }}
-                  title="Backward 10s"
-                >
-                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
-                    <polyline points="11 17 6 12 11 7" />
-                    <polyline points="18 17 13 12 18 7" />
-                  </svg>
-                  <span className="skip-hint">10s</span>
-                </button>
+              {/* CENTER OVERLAY: Only in native video mode */}
+              {!isEmbedMode && (
+                <div className="player-center-overlay">
+                  <button
+                    className="player-center-skip-arrow backward"
+                    onClick={(e) => {
+                      e.stopPropagation();
+                      skipVideo(-10);
+                    }}
+                    style={{ opacity: showLoading ? 0 : 1, pointerEvents: showLoading ? 'none' : 'auto' }}
+                    title="Backward 10s"
+                  >
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
+                      <polyline points="11 17 6 12 11 7" />
+                      <polyline points="18 17 13 12 18 7" />
+                    </svg>
+                    <span className="skip-hint">10s</span>
+                  </button>
 
-                {/* The Center Glass Play button becomes a rotating spinner during loading */}
-                <button
-                  className={`player-center-glass-play ${showLoading ? 'is-loading' : ''}`}
-                  onClick={(e) => {
-                    e.stopPropagation();
-                    togglePlayPause();
-                  }}
-                  title={showLoading ? 'Loading high-speed stream…' : 'Play / Pause (Space)'}
-                  style={{ cursor: 'pointer' }}
-                >
-                  {showLoading ? (
-                    <svg className="center-spinner-svg" width="28" height="28" viewBox="0 0 28 28" fill="none">
-                      <circle cx="14" cy="14" r="11" stroke="rgba(255,255,255,0.2)" strokeWidth="2.5" />
-                      <circle
-                        cx="14"
-                        cy="14"
-                        r="11"
-                        stroke="currentColor"
-                        strokeWidth="2.5"
-                        strokeLinecap="round"
-                        strokeDasharray="20 50"
-                        style={{ transformOrigin: 'center', animation: 'centerSpinnerRotate 0.85s linear infinite' }}
-                      />
-                    </svg>
-                  ) : isPlaying ? (
-                    <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
-                      <rect x="6" y="4" width="4" height="16" rx="1.5" />
-                      <rect x="14" y="4" width="4" height="16" rx="1.5" />
-                    </svg>
-                  ) : (
-                    <svg width="26" height="26" viewBox="0 0 24 24" fill="currentColor" style={{ transform: 'translateX(2px)' }}>
-                      <polygon points="6,4 20,12 6,20" />
-                    </svg>
-                  )}
-                </button>
+                  {/* The Center Glass Play button becomes a rotating spinner during loading */}
+                  <button
+                    className={`player-center-glass-play ${showLoading ? 'is-loading' : ''}`}
+                    onClick={(e) => {
+                      e.stopPropagation();
+                      togglePlayPause();
+                    }}
+                    title={showLoading ? 'Loading high-speed stream…' : 'Play / Pause (Space)'}
+                    style={{ cursor: 'pointer' }}
+                  >
+                    {showLoading ? (
+                      <svg className="center-spinner-svg" width="28" height="28" viewBox="0 0 28 28" fill="none">
+                        <circle cx="14" cy="14" r="11" stroke="rgba(255,255,255,0.2)" strokeWidth="2.5" />
+                        <circle
+                          cx="14"
+                          cy="14"
+                          r="11"
+                          stroke="currentColor"
+                          strokeWidth="2.5"
+                          strokeLinecap="round"
+                          strokeDasharray="20 50"
+                          style={{ transformOrigin: 'center', animation: 'centerSpinnerRotate 0.85s linear infinite' }}
+                        />
+                      </svg>
+                    ) : isPlaying ? (
+                      <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                        <rect x="6" y="4" width="4" height="16" rx="1.5" />
+                        <rect x="14" y="4" width="4" height="16" rx="1.5" />
+                      </svg>
+                    ) : (
+                      <svg width="26" height="26" viewBox="0 0 24 24" fill="currentColor" style={{ transform: 'translateX(2px)' }}>
+                        <polygon points="6,4 20,12 6,20" />
+                      </svg>
+                    )}
+                  </button>
 
-                <button
-                  className="player-center-skip-arrow forward"
-                  onClick={(e) => {
-                    e.stopPropagation();
-                    skipVideo(10);
-                  }}
-                  style={{ opacity: showLoading ? 0 : 1, pointerEvents: showLoading ? 'none' : 'auto' }}
-                  title="Forward 10s"
-                >
-                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
-                    <polyline points="13 17 18 12 13 7" />
-                    <polyline points="6 17 11 12 6 7" />
-                  </svg>
-                  <span className="skip-hint">10s</span>
-                </button>
-              </div>
+                  <button
+                    className="player-center-skip-arrow forward"
+                    onClick={(e) => {
+                      e.stopPropagation();
+                      skipVideo(10);
+                    }}
+                    style={{ opacity: showLoading ? 0 : 1, pointerEvents: showLoading ? 'none' : 'auto' }}
+                    title="Forward 10s"
+                  >
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
+                      <polyline points="13 17 18 12 13 7" />
+                      <polyline points="6 17 11 12 6 7" />
+                    </svg>
+                    <span className="skip-hint">10s</span>
+                  </button>
+                </div>
+              )}
 
               {/* Double-tap indicator */}
-              {skipFeedback && (
+              {!isEmbedMode && skipFeedback && (
                 <div className={`player-skip-indicator ${skipFeedback}`}>
                   <span style={{ fontSize: '18px', fontWeight: 800, letterSpacing: '-1px' }}>
                     {skipFeedback === 'backward' ? '««' : '»»'}
@@ -1433,26 +1488,37 @@ export default function WatchClient() {
                 </div>
               )}
 
-              {/* Media Element */}
-              {isYouTubeUrl ? (
-                (() => {
-                  const ytId = activeUrl.match(/(?:v=|youtu\.be\/|live\/)([a-zA-Z0-9_-]{11})/)?.[1];
-                  const youtubeWatchUrl = ytId
-                    ? `https://www.youtube.com/watch?v=${ytId}`
-                    : activeUrl;
-                  return (
-                    <div className="player-youtube-card">
-                      <div className="yt-icon-wrapper">
-                        <Play width={28} height={28} fill="currentColor" />
-                      </div>
-                      <h3>YouTube Video Lecture</h3>
-                      <p>This video is hosted on YouTube. Watch directly for 100% native quality & zero buffering.</p>
-                      <a href={youtubeWatchUrl} target="_blank" rel="noopener noreferrer" className="yt-open-link">
-                        <span>Open on YouTube</span>
-                      </a>
-                    </div>
-                  );
-                })()
+              {/* Media Element: Embedded iframe or Native Video */}
+              {isEmbedMode ? (
+                <div
+                  className="player-iframe-container"
+                  style={{
+                    position: 'absolute',
+                    inset: 0,
+                    width: '100%',
+                    height: '100%',
+                    zIndex: 2,
+                    background: '#000000',
+                  }}
+                >
+                  <iframe
+                    key={embedUrl}
+                    src={embedUrl!}
+                    title={currentItem.label}
+                    style={{
+                      width: '100%',
+                      height: '100%',
+                      border: 'none',
+                      display: 'block',
+                    }}
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share; fullscreen"
+                    allowFullScreen
+                    onLoad={() => {
+                      setStreamLoading(false);
+                      setLoadingNoticeVisible(false);
+                    }}
+                  />
+                </div>
               ) : (
                 <video
                   ref={videoRef}
@@ -1463,8 +1529,9 @@ export default function WatchClient() {
                 />
               )}
 
-              {/* BOTTOM FLOATING OVERLAY */}
-              <div className="player-bottom-overlay" onClick={(e) => e.stopPropagation()}>
+              {/* BOTTOM FLOATING OVERLAY: Only in native video mode */}
+              {!isEmbedMode && (
+                <div className="player-bottom-overlay" onClick={(e) => e.stopPropagation()}>
                 {/* Seekbar */}
                 <div
                   className="player-seekbar-container"
@@ -1636,6 +1703,7 @@ export default function WatchClient() {
                   </div>
                 </div>
               </div>
+              )}
             </div>
           </div>
 
