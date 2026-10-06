@@ -20,7 +20,7 @@ export default function TermsOfServicePage() {
           </div>
           <h1 style={{ fontSize: '32px', fontWeight: 800, margin: '0 0 10px 0', letterSpacing: '-0.02em' }}>Terms of Service</h1>
           <p style={{ color: 'var(--text-secondary, #94a3b8)', margin: 0, fontSize: '14px' }}>
-            Effective Date: September 2026 • Platform: <strong>stutosed (courses.stutosed.in)</strong>
+            Effective Date: September 2026 • Platform: <strong>stutosed (stutosed.vercel.app)</strong>
           </p>
         </header>
 
@@ -31,7 +31,7 @@ export default function TermsOfServicePage() {
               1. Acceptance of Terms
             </h2>
             <p style={{ margin: 0 }}>
-              By accessing or using the stutosed platform (courses.stutosed.in), you agree to be bound by these Terms of Service. If you do not agree to these terms, please do not use the platform.
+              By accessing or using the stutosed platform (stutosed.vercel.app), you agree to be bound by these Terms of Service. If you do not agree to these terms, please do not use the platform.
             </p>
           </section>
 

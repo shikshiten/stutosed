@@ -7,7 +7,7 @@
 export const CLOUDFLARE_WORKER_URL =
   process.env.NEXT_PUBLIC_STREAM_PROXY_URL || 'https://seiryu.stutosed.workers.dev';
 
-export const CURRENT_HEROKU_BOT_HOST = 'fs1qydv17g1-161-162e5df28a45.herokuapp.com';
+export const CURRENT_HEROKU_BOT_HOST = 'fs1enchanted-flower-68930222-873172716e82.herokuapp.com';
 
 /**
  * Resolves any bot redirect, blogspot wrapper, or legacy Heroku stream bot URL
@@ -29,7 +29,10 @@ export function resolveDirectMediaUrl(rawUrl: string): string {
     }
   }
 
-  // 2. Fix dead legacy Heroku bot instances (e.g. hell-fs1-oot-c9eb9b92ba45 -> live bot)
+  // 2. Fix dead legacy Heroku bot instances (e.g. fs1qydv17g1..., hell-fs1-oot...) -> live bot
+  if (url.includes('fs1qydv17g1-161-162e5df28a45.herokuapp.com')) {
+    url = url.replace('fs1qydv17g1-161-162e5df28a45.herokuapp.com', CURRENT_HEROKU_BOT_HOST);
+  }
   if (url.includes('hell-fs1-oot-c9eb9b92ba45.herokuapp.com')) {
     url = url.replace('hell-fs1-oot-c9eb9b92ba45.herokuapp.com', CURRENT_HEROKU_BOT_HOST);
   }

@@ -20,7 +20,7 @@ export default function PrivacyPolicyPage() {
           </div>
           <h1 style={{ fontSize: '32px', fontWeight: 800, margin: '0 0 10px 0', letterSpacing: '-0.02em' }}>Privacy Policy</h1>
           <p style={{ color: 'var(--text-secondary, #94a3b8)', margin: 0, fontSize: '14px' }}>
-            Effective Date: September 2026 • Platform: <strong>stutosed (courses.stutosed.in)</strong>
+            Effective Date: September 2026 • Platform: <strong>stutosed (stutosed.vercel.app)</strong>
           </p>
         </header>
 
@@ -73,7 +73,7 @@ export default function PrivacyPolicyPage() {
               You retain full control over your learning data. You can clear your local progress anytime via your browser settings or request complete deletion of your Supabase cloud profile and watch history by contacting our administration.
             </p>
             <p style={{ margin: 0, color: 'var(--text-secondary, #94a3b8)', fontSize: '13px' }}>
-              For privacy inquiries, contact support at: <strong>support@stutosed.in</strong> or <strong>courses.stutosed.in</strong>
+              For privacy inquiries, contact support at: <strong>support@stutosed.vercel.app</strong> or <strong>stutosed.vercel.app</strong>
             </p>
           </section>
         </main>

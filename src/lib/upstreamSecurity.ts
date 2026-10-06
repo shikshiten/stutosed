@@ -10,6 +10,7 @@ const SECURE_HOST_SIGNATURES = [
   'c3ZjZG4tZGwyLndvcmtlcnMuZGV2',
   'c3ZjZG4tZGwzLndvcmtlcnMuZGV2',
   'ZnMxcXlkdjE3ZzEtMTYxLTE2MmU1ZGYyOGE0NS5oZXJva3VhcHAuY29t',
+  'ZnMxZW5jaGFudGVkLWZsb3dlci02ODkzMDIyMi04NzMxNzI3MTZlODIuaGVyb2t1YXBwLmNvbQ==', // fs1enchanted-flower-68930222-873172716e82.herokuapp.com
   'dmlkbW9seS5uZXQ=',
   'dmlkbW9seS5tZQ==',
   'dmlkbW9seS50bw==',
@@ -21,6 +22,12 @@ const SECURE_HOST_SIGNATURES = [
   'dm1lYXMub25saW5l', // vmeas.online
   'dm1zdG9yYWdlLm5ldA==', // vmstorage.net
   'dm1zdG9yYWdlLmNsb3Vk', // vmstorage.cloud
+  'dm1weC5vbmxpbmU=', // vmpx.online
+  'dm1weC5uZXQ=', // vmpx.net
+  'dm1weC5jbG91ZA==', // vmpx.cloud
+  'dm1jbGQuc3BhY2U=', // vmcld.space
+  'dm1jbGQubmV0', // vmcld.net
+  'dm1jbGQuY2xvdWQ=', // vmcld.cloud
   'dm1ub3cub25saW5l',
   'dm1ub3cubWU=',
   'dm1ub3cudG8=',
@@ -136,7 +143,7 @@ export function isAllowedOrigin(originOrReferer: string | null): boolean {
 }
 
 export function getSecureCorsHeaders(origin: string | null): Record<string, string> {
-  const safeOrigin = origin && isAllowedOrigin(origin) ? origin : 'https://course.stutosed.in';
+  const safeOrigin = origin && isAllowedOrigin(origin) ? origin : 'https://stutosed.vercel.app';
   return {
     'Access-Control-Allow-Origin': safeOrigin,
     'Access-Control-Allow-Methods': 'GET, HEAD, OPTIONS',

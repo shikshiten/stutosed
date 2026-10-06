@@ -5,7 +5,7 @@ import { useRouter, useSearchParams } from 'next/navigation';
 import Hls from 'hls.js';
 import { Course, LectureItem, ServerOption } from '@/types';
 import { INITIAL_COURSES, getCourseById } from '@/lib/coursesData';
-import { getWorkerProxyUrl } from '@/lib/proxyConfig';
+import { getWorkerProxyUrl, resolveDirectMediaUrl } from '@/lib/proxyConfig';
 import { getLectureTopicDescription } from '@/lib/topicDescriptions';
 import {
   isCourseBookmarked,
@@ -390,10 +390,11 @@ export default function WatchClient() {
       const seen = new Set<string>();
       const distinct: ServerOption[] = [];
       for (const s of currentItem.servers) {
-        const key = s.url?.trim().toLowerCase();
+        const resolvedUrl = resolveDirectMediaUrl(s.url || '');
+        const key = resolvedUrl?.trim().toLowerCase();
         if (key && !seen.has(key)) {
           seen.add(key);
-          distinct.push(s);
+          distinct.push({ ...s, url: resolvedUrl });
         }
       }
       return distinct.sort((a, b) => {
@@ -402,7 +403,7 @@ export default function WatchClient() {
         return bIsEste - aIsEste;
       });
     }
-    if (currentItem?.url) return [{ name: 'Server 1', url: currentItem.url, type: currentItem.type }];
+    if (currentItem?.url) return [{ name: 'Server 1', url: resolveDirectMediaUrl(currentItem.url), type: currentItem.type }];
     return [];
   }, [currentItem]);
 
@@ -434,22 +435,16 @@ export default function WatchClient() {
   const earnvidsCode = isEarnvidsUrl ? extractEarnvidsCode(activeUrl) : null;
   const ytId = isYouTubeUrl ? activeUrl.match(/(?:v=|youtu\.be\/|live\/)([a-zA-Z0-9_-]{11})/)?.[1] : null;
 
-  // Embedded Lecture Mode (Official Vidmoly / Earnvids / YouTube embed player)
+  // Embedded Lecture Mode (Official YouTube embed player)
   const embedUrl = useMemo(() => {
-    if (isVidmolyUrl && vidmolyCode) {
-      return `https://vidmoly.net/embed-${vidmolyCode}.html`;
-    }
-    if (isEarnvidsUrl && earnvidsCode) {
-      return `https://morencius.com/v/${earnvidsCode}`;
-    }
     if (isYouTubeUrl && ytId) {
       return `https://www.youtube-nocookie.com/embed/${ytId}?autoplay=1&rel=0`;
     }
-    if (activeUrl.includes('/embed-') || activeUrl.includes('/embed/')) {
+    if (activeUrl.includes('/embed-') && activeUrl.includes('youtube')) {
       return activeUrl;
     }
     return null;
-  }, [isVidmolyUrl, vidmolyCode, isEarnvidsUrl, earnvidsCode, isYouTubeUrl, ytId, activeUrl]);
+  }, [isYouTubeUrl, ytId, activeUrl]);
 
   const isEmbedMode = Boolean(embedUrl);
   const needsApiResolution = !isEmbedMode && (isVidmolyUrl || isEarnvidsUrl);

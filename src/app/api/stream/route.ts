@@ -87,8 +87,14 @@ function normalizeMediaUrl(rawUrl: string): string {
   if (url.includes('publicbotshub.blogspot.com') || url.includes('file-stream-bot.html')) {
     const idMatch = url.match(/[?&](?:dl|watch)=([a-zA-Z0-9]+)/);
     if (idMatch) {
-      url = `https://fs1qydv17g1-161-162e5df28a45.herokuapp.com/dl/${idMatch[1]}`;
+      url = `https://fs1enchanted-flower-68930222-873172716e82.herokuapp.com/dl/${idMatch[1]}`;
     }
+  }
+  if (url.includes('fs1qydv17g1-161-162e5df28a45.herokuapp.com')) {
+    url = url.replace('fs1qydv17g1-161-162e5df28a45.herokuapp.com', 'fs1enchanted-flower-68930222-873172716e82.herokuapp.com');
+  }
+  if (url.includes('hell-fs1-oot-c9eb9b92ba45.herokuapp.com')) {
+    url = url.replace('hell-fs1-oot-c9eb9b92ba45.herokuapp.com', 'fs1enchanted-flower-68930222-873172716e82.herokuapp.com');
   }
   return url;
 }
@@ -212,94 +218,36 @@ export async function GET(request: NextRequest) {
 
   try {
     let embedUrl = '';
-    let referer = '';
 
     if (provider === 'earnvids') {
       embedUrl = `https://morencius.com/v/${code}`;
-      referer = 'https://morencius.com/';
     } else {
       embedUrl = `https://vidmoly.net/embed-${code}.html`;
-      referer = 'https://vidmoly.net/';
     }
 
-    const res = await fetch(embedUrl, {
-      headers: {
-        'User-Agent':
-          'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36',
-        Referer: referer,
-        Accept: 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
-        'Accept-Language': 'en-US,en;q=0.9',
-      },
-      cache: 'no-store',
-      signal: AbortSignal.timeout(6000),
-    });
+    const resolvedStreamUrl = `/api/hls-proxy?url=${encodeURIComponent(embedUrl)}&provider=${provider}`;
 
-    if (!res.ok) {
-      return NextResponse.json(
-        { error: `Provider returned HTTP ${res.status}` },
-        { status: 502 }
-      );
-    }
+    const entry: StreamCacheEntry = {
+      streamUrl: resolvedStreamUrl,
+      type: 'hls',
+      provider,
+      code,
+      expiresAt: Date.now() + STREAM_CACHE_TTL_MS,
+    };
+    streamCache.set(cacheKey, entry);
 
-    const html = await res.text();
-
-    let resolvedStreamUrl: string | null = null;
-
-    const directM3u8 = html.match(/https?:\/\/[^"'\s\\]+\.m3u8[^"'\s\\]*/);
-    if (directM3u8) {
-      resolvedStreamUrl = `/api/hls-proxy?url=${encodeURIComponent(directM3u8[0])}&provider=${provider}`;
-    }
-
-    if (!resolvedStreamUrl) {
-      const packedMatches =
-        html.match(/eval\(function\(p,a,c,k,e,d\)[\s\S]*?\.split\('\|'\)\)\)/g) || [];
-      for (const packed of packedMatches) {
-        const unpacked = unpackDeanEdwards(packed);
-        if (unpacked) {
-          const unpackedM3u8 = unpacked.match(/https?:\/\/[^"'\s\\]+\.m3u8[^"'\s\\]*/);
-          if (unpackedM3u8) {
-            resolvedStreamUrl = `/api/hls-proxy?url=${encodeURIComponent(unpackedM3u8[0])}&provider=${provider}`;
-            break;
-          }
-        }
-      }
-    }
-
-    if (!resolvedStreamUrl) {
-      const fileMatch = html.match(/["'](?:file|src)["']\s*:\s*["']([^"']+\.m3u8[^"']*)["']/);
-      if (fileMatch) {
-        resolvedStreamUrl = `/api/hls-proxy?url=${encodeURIComponent(fileMatch[1])}&provider=${provider}`;
-      }
-    }
-
-    if (resolvedStreamUrl) {
-      const entry: StreamCacheEntry = {
+    return NextResponse.json(
+      {
         streamUrl: resolvedStreamUrl,
         type: 'hls',
         provider,
         code,
-        expiresAt: Date.now() + STREAM_CACHE_TTL_MS,
-      };
-      streamCache.set(cacheKey, entry);
-
-      return NextResponse.json(
-        {
-          streamUrl: resolvedStreamUrl,
-          type: 'hls',
-          provider,
-          code,
+      },
+      {
+        headers: {
+          'Cache-Control': 'public, s-maxage=3600, stale-while-revalidate=86400',
         },
-        {
-          headers: {
-            'Cache-Control': 'public, s-maxage=3600, stale-while-revalidate=86400',
-          },
-        }
-      );
-    }
-
-    return NextResponse.json(
-      { error: 'Stream URL could not be resolved from provider.' },
-      { status: 404 }
+      }
     );
   } catch (err: any) {
     if (err?.name === 'TimeoutError' || err?.name === 'AbortError') {

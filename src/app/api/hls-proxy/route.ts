@@ -13,6 +13,40 @@ export const dynamic = 'force-dynamic';
 import { isAllowedUpstream, isAllowedOrigin, getSecureCorsHeaders } from '@/lib/upstreamSecurity';
 import { getWorkerProxyUrl } from '@/lib/proxyConfig';
 
+function unpackDeanEdwards(packed: string): string | null {
+  try {
+    const match = packed.match(/eval\(function\(p,a,c,k,e,d\)[\s\S]*?return p\}\('([\s\S]*?)',(\d+),(\d+),'([\s\S]*?)'\.split\('\|'\)/);
+    if (match) {
+      let [_, p, aStr, cStr, kStr] = match;
+      let a = parseInt(aStr, 10);
+      let c = parseInt(cStr, 10);
+      let k = kStr.split('|');
+      while (c--) {
+        if (k[c]) {
+          p = p.replace(new RegExp('\\b' + c.toString(a) + '\\b', 'g'), k[c]);
+        }
+      }
+      return p;
+    }
+    const match2 = packed.match(/\}\('([\s\S]*?)',(\d+),(\d+),'([\s\S]*?)'\.split\('\|'\)\)\)/);
+    if (match2) {
+      let [_, p, aStr, cStr, kStr] = match2;
+      let a = parseInt(aStr, 10);
+      let c = parseInt(cStr, 10);
+      let k = kStr.split('|');
+      while (c--) {
+        if (k[c]) {
+          p = p.replace(new RegExp('\\b' + c.toString(a) + '\\b', 'g'), k[c]);
+        }
+      }
+      return p;
+    }
+  } catch {
+    return null;
+  }
+  return null;
+}
+
 export async function GET(request: NextRequest) {
   const origin = request.headers.get('origin');
   const referer = request.headers.get('referer');
@@ -43,6 +77,8 @@ export async function GET(request: NextRequest) {
       decoded.includes('vmnow.') ||
       decoded.includes('vmeas.') ||
       decoded.includes('vmstorage.') ||
+      decoded.includes('vmpx.') ||
+      decoded.includes('vmcld.') ||
       decoded.includes('playmoly.');
     const isEarnvids =
       providerParam === 'earnvids' ||
@@ -58,8 +94,8 @@ export async function GET(request: NextRequest) {
       return NextResponse.redirect(workerUrl, 302);
     }
 
-    let referer = 'https://vidmoly.net/';
-    let origin = 'https://vidmoly.net';
+    let referer = decoded.includes('vidmoly.me') ? 'https://vidmoly.me/' : 'https://vidmoly.net/';
+    let origin = decoded.includes('vidmoly.me') ? 'https://vidmoly.me' : 'https://vidmoly.net';
     if (isEarnvids) {
       referer = 'https://morencius.com/';
       origin = 'https://morencius.com';
@@ -75,6 +111,9 @@ export async function GET(request: NextRequest) {
       Referer: referer,
       Origin: origin,
       Accept: '*/*',
+      'Sec-Fetch-Dest': decoded.includes('.m3u8') ? 'empty' : 'video',
+      'Sec-Fetch-Mode': 'cors',
+      'Sec-Fetch-Site': 'cross-site',
     };
     if (clientRange) {
       upstreamHeaders['Range'] = clientRange;
@@ -90,11 +129,52 @@ export async function GET(request: NextRequest) {
       });
     }
 
-    const isPlaylist = decoded.includes('.m3u8');
+    const isPlaylist = decoded.includes('.m3u8') || decoded.includes('.html');
 
     if (isPlaylist) {
-      const body = await upstreamRes.text();
-      const baseUrl = new URL(decoded);
+      let body = await upstreamRes.text();
+      let baseUrl = new URL(decoded);
+      let isHtml = false;
+
+      // Extract M3U8 from HTML if needed
+      if (decoded.includes('.html')) {
+        isHtml = true;
+        let m3u8Url = null;
+        
+        const directM3u8 = body.match(/https?:\/\/[^"'\s\\]+\.m3u8[^"'\s\\]*/);
+        if (directM3u8) {
+          m3u8Url = directM3u8[0];
+        }
+
+        if (!m3u8Url) {
+          const packedMatches = body.match(/eval\(function\(p,a,c,k,e,d\)[\s\S]*?\.split\('\|'\)\)\)/g) || [];
+          for (const packed of packedMatches) {
+            const unpacked = unpackDeanEdwards(packed);
+            if (unpacked) {
+              const unpackedM3u8 = unpacked.match(/https?:\/\/[^"'\s\\]+\.m3u8[^"'\s\\]*/);
+              if (unpackedM3u8) {
+                m3u8Url = unpackedM3u8[0];
+                break;
+              }
+            }
+          }
+        }
+
+        if (!m3u8Url) {
+          const fileMatch = body.match(/["'](?:file|src)["']\s*:\s*["']([^"']+\.m3u8[^"']*)["']/);
+          if (fileMatch) m3u8Url = fileMatch[1];
+        }
+
+        if (m3u8Url) {
+          // Fetch the actual M3U8 now that we have the tokenized URL
+          const m3u8Res = await fetch(m3u8Url, { headers: upstreamHeaders });
+          if (!m3u8Res.ok) return new Response(`M3U8 Upstream ${m3u8Res.status}`, { status: m3u8Res.status });
+          body = await m3u8Res.text();
+          baseUrl = new URL(m3u8Url);
+        } else {
+          return new Response('M3U8 not found in HTML', { status: 404 });
+        }
+      }
 
       const lines = body.split('\n');
       const rewrittenLines = lines.map((line) => {

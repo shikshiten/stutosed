@@ -1,5 +1,5 @@
 /**
- * Hardened Cloudflare Worker Proxy for stutosed (courses.stutosed.in)
+ * Hardened Cloudflare Worker Proxy for stutosed (stutosed.vercel.app)
  *
  * Features & Security:
  * 1. Closes Open Proxy Abuse: Only proxies requests to allowlisted upstream domains.
@@ -12,6 +12,7 @@
 const ALLOWED_UPSTREAMS = [
   'streamvaultpro.cc',
   'fs1qydv17g1-161-162e5df28a45.herokuapp.com',
+  'fs1enchanted-flower-68930222-873172716e82.herokuapp.com',
   'herokuapp.com',
   'vidmoly.net',
   'vidmoly.me',
@@ -24,6 +25,12 @@ const ALLOWED_UPSTREAMS = [
   'vmeas.online',
   'vmstorage.net',
   'vmstorage.cloud',
+  'vmpx.online',
+  'vmpx.net',
+  'vmpx.cloud',
+  'vmcld.space',
+  'vmcld.net',
+  'vmcld.cloud',
   'vmnow.online',
   'vmnow.me',
   'vmnow.to',
@@ -47,9 +54,6 @@ const ALLOWED_UPSTREAMS = [
 ];
 
 const ALLOWED_ORIGINS = [
-  'course.stutosed.in',
-  'courses.stutosed.in',
-  'stutosed.in',
   'stutosed.vercel.app',
   'localhost',
   '127.0.0.1',
@@ -122,9 +126,14 @@ export default {
       upstreamHeaders.set('Accept', '*/*');
 
       // Spoof Referers for CDNs
-      if (decodedUrl.includes('vidmoly') || decodedUrl.includes('vmnow') || decodedUrl.includes('vmeas') || decodedUrl.includes('vmstorage') || decodedUrl.includes('playmoly')) {
-        upstreamHeaders.set('Referer', 'https://vidmoly.net/');
-        upstreamHeaders.set('Origin', 'https://vidmoly.net');
+      if (decodedUrl.includes('vidmoly') || decodedUrl.includes('vmnow') || decodedUrl.includes('vmeas') || decodedUrl.includes('vmstorage') || decodedUrl.includes('vmpx') || decodedUrl.includes('vmcld') || decodedUrl.includes('playmoly')) {
+        const vidRef = decodedUrl.includes('vidmoly.me') ? 'https://vidmoly.me/' : 'https://vidmoly.net/';
+        const vidOrig = decodedUrl.includes('vidmoly.me') ? 'https://vidmoly.me' : 'https://vidmoly.net';
+        upstreamHeaders.set('Referer', vidRef);
+        upstreamHeaders.set('Origin', vidOrig);
+        upstreamHeaders.set('Sec-Fetch-Dest', decodedUrl.includes('.m3u8') ? 'empty' : 'video');
+        upstreamHeaders.set('Sec-Fetch-Mode', 'cors');
+        upstreamHeaders.set('Sec-Fetch-Site', 'cross-site');
       } else if (decodedUrl.includes('morencius') || decodedUrl.includes('earnvids')) {
         upstreamHeaders.set('Referer', 'https://morencius.com/');
         upstreamHeaders.set('Origin', 'https://morencius.com');
@@ -146,10 +155,60 @@ export default {
         redirect: 'follow',
       });
 
-      // 4. HLS M3U8 Playlist Rewriting
-      if (decodedUrl.includes('.m3u8')) {
-        const body = await upstreamRes.text();
-        const baseUrl = new URL(decodedUrl);
+      // HLS M3U8 Playlist or HTML Embed Rewriting
+      if (decodedUrl.includes('.m3u8') || decodedUrl.includes('.html')) {
+        let body = await upstreamRes.text();
+        let baseUrl = new URL(decodedUrl);
+        let isHtml = false;
+
+        // Extract M3U8 from HTML if needed
+        if (decodedUrl.includes('.html')) {
+          isHtml = true;
+          let m3u8Url = null;
+          
+          const directM3u8 = body.match(/https?:\/\/[^"'\s\\]+\.m3u8[^"'\s\\]*/);
+          if (directM3u8) m3u8Url = directM3u8[0];
+
+          if (!m3u8Url) {
+            const packedMatches = body.match(/eval\(function\(p,a,c,k,e,d\)[\s\S]*?\.split\('\|'\)\)\)/g) || [];
+            for (const packed of packedMatches) {
+              let unpacked = null;
+              try {
+                const match = packed.match(/eval\(function\(p,a,c,k,e,d\)[\s\S]*?return p\}\('([\s\S]*?)',(\d+),(\d+),'([\s\S]*?)'\.split\('\|'\)/);
+                if (match) {
+                  let [_, p, aStr, cStr, kStr] = match;
+                  let a = parseInt(aStr, 10);
+                  let c = parseInt(cStr, 10);
+                  let k = kStr.split('|');
+                  while (c--) { if (k[c]) p = p.replace(new RegExp('\\b' + c.toString(a) + '\\b', 'g'), k[c]); }
+                  unpacked = p;
+                }
+              } catch (e) {}
+              if (unpacked) {
+                const unpackedM3u8 = unpacked.match(/https?:\/\/[^"'\s\\]+\.m3u8[^"'\s\\]*/);
+                if (unpackedM3u8) {
+                  m3u8Url = unpackedM3u8[0];
+                  break;
+                }
+              }
+            }
+          }
+
+          if (!m3u8Url) {
+            const fileMatch = body.match(/["'](?:file|src)["']\s*:\s*["']([^"']+\.m3u8[^"']*)["']/);
+            if (fileMatch) m3u8Url = fileMatch[1];
+          }
+
+          if (m3u8Url) {
+            const m3u8Res = await fetch(m3u8Url, { headers: upstreamHeaders });
+            if (!m3u8Res.ok) return new Response(`M3U8 Upstream ${m3u8Res.status}`, { status: m3u8Res.status });
+            body = await m3u8Res.text();
+            baseUrl = new URL(m3u8Url);
+          } else {
+            return new Response('M3U8 not found in HTML', { status: 404 });
+          }
+        }
+
         const lines = body.split('\n');
 
         const rewrittenLines = lines.map((line) => {
