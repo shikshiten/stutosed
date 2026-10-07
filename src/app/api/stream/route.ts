@@ -1,268 +1,41 @@
+/**
+ * Backward-compatible delegate route for /api/stream -> /api/v1/stream
+ */
 import { NextRequest, NextResponse } from 'next/server';
-import { createServerClient } from '@supabase/ssr';
+import { GET as v1GET, OPTIONS as v1OPTIONS } from '@/app/api/v1/stream/route';
 
 export const dynamic = 'force-dynamic';
 
-const SUPABASE_URL =
-  process.env.NEXT_PUBLIC_SUPABASE_URL ||
-  'https://hofbtbutvuomeofmhkyu.supabase.co';
-const SUPABASE_ANON_KEY =
-  process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY ||
-  'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImhvZmJ0YnV0dnVvbWVvZm1oa3l1Iiwicm9sZSI6ImFub24iLCJpYXQiOjE3ODcxNDQwNzEsImV4cCI6MjEwMjcyMDA3MX0.J5RU82Jn5VOZy_vyiSv9mX5QgKW6Ud23fVKMytXp7DA';
+export async function GET(
+  request: NextRequest,
+  context: { params: Promise<Record<string, string | string[] | undefined>> }
+) {
+  const res = await v1GET(request, context);
+  const contentType = res.headers.get('content-type') || '';
 
-import { isAllowedUpstream, isAllowedOrigin, getSecureCorsHeaders } from '@/lib/upstreamSecurity';
-import { getWorkerProxyUrl } from '@/lib/proxyConfig';
-
-async function getAuthenticatedUser(request: NextRequest) {
-  const supabase = createServerClient(SUPABASE_URL, SUPABASE_ANON_KEY, {
-    cookies: {
-      getAll() {
-        return request.cookies.getAll();
-      },
-      setAll() {},
-    },
-  });
-  const { data } = await supabase.auth.getUser();
-  return data?.user ?? null;
-}
-
-// 2-hour TTL cache for resolved 302 redirect target URLs
-interface CacheEntry {
-  targetUrl: string;
-  expiresAt: number;
-}
-const urlCache = new Map<string, CacheEntry>();
-const CACHE_TTL_MS = 2 * 60 * 60 * 1000;
-
-// In-memory cache for resolved Vidmoly & Earnvids M3U8 streams (prevents re-scraping delays)
-interface StreamCacheEntry {
-  streamUrl: string;
-  type: string;
-  provider: string;
-  code: string;
-  expiresAt: number;
-}
-const streamCache = new Map<string, StreamCacheEntry>();
-const STREAM_CACHE_TTL_MS = 2 * 60 * 60 * 1000;
-
-function unpackDeanEdwards(packed: string): string | null {
-  try {
-    const match = packed.match(/eval\(function\(p,a,c,k,e,d\)[\s\S]*?return p\}\('([\s\S]*?)',(\d+),(\d+),'([\s\S]*?)'\.split\('\|'\)/);
-    if (match) {
-      let [_, p, aStr, cStr, kStr] = match;
-      let a = parseInt(aStr, 10);
-      let c = parseInt(cStr, 10);
-      let k = kStr.split('|');
-      while (c--) {
-        if (k[c]) {
-          p = p.replace(new RegExp('\\b' + c.toString(a) + '\\b', 'g'), k[c]);
-        }
-      }
-      return p;
-    }
-    const match2 = packed.match(/\}\('([\s\S]*?)',(\d+),(\d+),'([\s\S]*?)'\.split\('\|'\)\)\)/);
-    if (match2) {
-      let [_, p, aStr, cStr, kStr] = match2;
-      let a = parseInt(aStr, 10);
-      let c = parseInt(cStr, 10);
-      let k = kStr.split('|');
-      while (c--) {
-        if (k[c]) {
-          p = p.replace(new RegExp('\\b' + c.toString(a) + '\\b', 'g'), k[c]);
-        }
-      }
-      return p;
-    }
-  } catch {
-    return null;
-  }
-  return null;
-}
-
-function normalizeMediaUrl(rawUrl: string): string {
-  let url = rawUrl.trim();
-  if (url.includes('/0:/stream/')) {
-    url = url.replace('/0:/stream/', '/0:/dl/');
-  }
-  if (url.includes('publicbotshub.blogspot.com') || url.includes('file-stream-bot.html')) {
-    const idMatch = url.match(/[?&](?:dl|watch)=([a-zA-Z0-9]+)/);
-    if (idMatch) {
-      url = `https://fs1enchanted-flower-68930222-873172716e82.herokuapp.com/dl/${idMatch[1]}`;
-    }
-  }
-  if (url.includes('fs1qydv17g1-161-162e5df28a45.herokuapp.com')) {
-    url = url.replace('fs1qydv17g1-161-162e5df28a45.herokuapp.com', 'fs1enchanted-flower-68930222-873172716e82.herokuapp.com');
-  }
-  if (url.includes('hell-fs1-oot-c9eb9b92ba45.herokuapp.com')) {
-    url = url.replace('hell-fs1-oot-c9eb9b92ba45.herokuapp.com', 'fs1enchanted-flower-68930222-873172716e82.herokuapp.com');
-  }
-  return url;
-}
-
-async function resolveFinalRedirectUrl(initialUrl: string): Promise<string> {
-  const cached = urlCache.get(initialUrl);
-  if (cached && cached.expiresAt > Date.now()) {
-    return cached.targetUrl;
-  }
-
-  let currentUrl = initialUrl;
-  let hops = 0;
-  const MAX_HOPS = 5;
-
-  while (hops < MAX_HOPS) {
-    const isRedirectDomain =
-      currentUrl.includes('streamvaultpro.cc') ||
-      currentUrl.includes('workers.dev') ||
-      currentUrl.includes('publicbotshub.blogspot.com');
-
-    if (!isRedirectDomain) break;
-
+  if (contentType.includes('application/json')) {
     try {
-      const probeRes = await fetch(currentUrl, {
-        method: 'GET',
-        redirect: 'manual',
-        headers: {
-          'User-Agent':
-            'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36',
-          Range: 'bytes=0-0',
-        },
-      });
-
-      const location = probeRes.headers.get('location');
-      if (
-        (probeRes.status === 301 ||
-          probeRes.status === 302 ||
-          probeRes.status === 307 ||
-          probeRes.status === 308) &&
-        location
-      ) {
-        currentUrl = new URL(location, currentUrl).toString();
-        hops++;
-      } else {
-        break;
+      const cloned = res.clone();
+      const body = await cloned.json();
+      if (body && typeof body === 'object' && 'data' in body && body.data) {
+        // Spread data properties at top level for legacy frontend callers, while preserving { data }
+        return NextResponse.json(
+          {
+            ...body.data,
+            data: body.data,
+          },
+          {
+            status: res.status,
+            headers: res.headers,
+          }
+        );
       }
     } catch {
-      break;
+      return res;
     }
   }
 
-  urlCache.set(initialUrl, {
-    targetUrl: currentUrl,
-    expiresAt: Date.now() + CACHE_TTL_MS,
-  });
-
-  return currentUrl;
+  return res;
 }
 
-export async function GET(request: NextRequest) {
-  const origin = request.headers.get('origin');
-  const referer = request.headers.get('referer');
-
-  // Anti-hotlinking: reject external cross-origin scrapers
-  if ((origin && !isAllowedOrigin(origin)) || (referer && !isAllowedOrigin(referer))) {
-    return NextResponse.json({ error: 'Unauthorized origin' }, { status: 403 });
-  }
-
-  const { searchParams } = new URL(request.url);
-  const targetUrlParam = searchParams.get('url');
-
-  // ── MODE 1: Direct URL Proxy Streamer (Offloaded to Cloudflare Worker) ──────
-  if (targetUrlParam) {
-    // SSRF Protection
-    if (!isAllowedUpstream(targetUrlParam)) {
-      return NextResponse.json({ error: 'Forbidden upstream domain' }, { status: 403 });
-    }
-
-    try {
-      const normalizedUrl = normalizeMediaUrl(targetUrlParam);
-      const finalTargetUrl = await resolveFinalRedirectUrl(normalizedUrl);
-      const workerUrl = getWorkerProxyUrl(finalTargetUrl, 'stream');
-
-      // 302 Redirect to Cloudflare Worker (0 Vercel Fast Origin Transfer bandwidth used)
-      return NextResponse.redirect(workerUrl, 302);
-    } catch (err: any) {
-      if (err.name === 'AbortError') {
-        return new Response(null, { status: 499 });
-      }
-      return new NextResponse('Streaming proxy error', { status: 502 });
-    }
-  }
-
-  // ── MODE 2: Vidmoly / Earnvids Code Extractor ───────────────────────────────
-  const code = searchParams.get('code');
-  const provider = searchParams.get('provider') || 'vidmoly';
-
-  if (!code) {
-    return NextResponse.json({ error: 'Missing url or code parameter' }, { status: 400 });
-  }
-
-  // Check in-memory stream cache first (sub-millisecond instant load for repeat requests)
-  const cacheKey = `${provider}:${code}`;
-  const cachedStream = streamCache.get(cacheKey);
-  if (cachedStream && cachedStream.expiresAt > Date.now()) {
-    return NextResponse.json(
-      {
-        streamUrl: cachedStream.streamUrl,
-        type: cachedStream.type,
-        provider: cachedStream.provider,
-        code: cachedStream.code,
-        cached: true,
-      },
-      {
-        headers: {
-          'Cache-Control': 'public, s-maxage=3600, stale-while-revalidate=86400',
-        },
-      }
-    );
-  }
-
-  try {
-    let embedUrl = '';
-
-    if (provider === 'earnvids') {
-      embedUrl = `https://morencius.com/v/${code}`;
-    } else {
-      embedUrl = `https://vidmoly.net/embed-${code}.html`;
-    }
-
-    const resolvedStreamUrl = `/api/hls-proxy?url=${encodeURIComponent(embedUrl)}&provider=${provider}`;
-
-    const entry: StreamCacheEntry = {
-      streamUrl: resolvedStreamUrl,
-      type: 'hls',
-      provider,
-      code,
-      expiresAt: Date.now() + STREAM_CACHE_TTL_MS,
-    };
-    streamCache.set(cacheKey, entry);
-
-    return NextResponse.json(
-      {
-        streamUrl: resolvedStreamUrl,
-        type: 'hls',
-        provider,
-        code,
-      },
-      {
-        headers: {
-          'Cache-Control': 'public, s-maxage=3600, stale-while-revalidate=86400',
-        },
-      }
-    );
-  } catch (err: any) {
-    if (err?.name === 'TimeoutError' || err?.name === 'AbortError') {
-      return NextResponse.json({ error: 'Video provider connection timed out' }, { status: 504 });
-    }
-    return NextResponse.json({ error: 'Internal Server Error' }, { status: 500 });
-  }
-}
-
-export async function OPTIONS(request: NextRequest) {
-  const origin = request.headers.get('origin');
-  return new Response(null, {
-    headers: {
-      ...getSecureCorsHeaders(origin),
-      'Access-Control-Expose-Headers': 'Content-Range, Content-Length, Accept-Ranges',
-    },
-  });
-}
+export const OPTIONS = v1OPTIONS;

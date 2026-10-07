@@ -128,21 +128,24 @@ Pressing the Android back gesture or browser back arrow steps cleanly through ea
                              │   (Vercel Serverless Infra)   │
                              └───────────────┬───────────────┘
                                              │
-               ┌─────────────────────────────┼─────────────────────────────┐
-               │                             │                             │
-               ▼                             ▼                             ▼
-   ┌───────────────────────┐   ┌───────────────────────────┐   ┌───────────────────────┐
-   │  Supabase Auth & DB   │   │  Streaming Reverse Proxy  │   │   PDF Document Proxy  │
-   │  - PKCE OAuth / JWT   │   │  - /api/stream            │   │  - /api/pdf           │
-   │  - Session Management │   │  - /api/hls-proxy         │   │  - SSRF Allowlist     │
-   │  - RLS Security       │   │  - SSRF Allowlist         │   │  - In-Memory Cache    │
-   └───────────────────────┘   └─────────────┬─────────────┘   └───────────┬───────────┘
-                                             │                             │
-                                             ▼                             ▼
-                                 ┌────────────────────────┐    ┌───────────────────────┐
-                                 │  CDN Video Hosts       │    │  Cloud Media Storage  │
-                                 │  (ALBA / ESTE Clusters)│    │  (Raw Course Notes)   │
-                                 └────────────────────────┘    └───────────────────────┘
+                ┌────────────────────────────┼────────────────────────────┐
+                │                            │                            │
+                ▼                            ▼                            ▼
+    ┌───────────────────────┐   ┌───────────────────────────┐   ┌───────────────────────┐
+    │  Layered REST API     │   │  Security & Protection    │   │  Streaming & Worker   │
+    │  - /api/v1/stream     │   │  - SSRF Domain Allowlist  │   │  - Cloudflare Worker  │
+    │  - /api/v1/pdf        │   │  - In-Memory Rate Limiter │   │  - HLS Segment Bridge │
+    │  - /api/v1/thumbnail  │   │  - Zod Request Validation │   │  - Edge Range Offload │
+    │  - /api/health        │   │  - Server-Only Isolation  │   │  - 0 Egress Bandwidth │
+    └───────────┬───────────┘   └─────────────┬─────────────┘   └───────────┬───────────┘
+                │                             │                             │
+                ▼                             ▼                             ▼
+    ┌───────────────────────┐   ┌───────────────────────────┐   ┌───────────────────────┐
+    │  Server Repositories  │   │  Server Services Logic    │   │  External Media CDNs  │
+    │  - user-progress.repo │   │  - stream.service         │   │  - ALBA / ESTE Clust. │
+    │  - course.repo        │   │  - pdf.service            │   │  - Cloud Storage      │
+    │  - Supabase DB & Auth │   │  - hls-proxy.service      │   │  - Dynamic Thumbnails │
+    └───────────────────────┘   └───────────────────────────┘   └───────────────────────┘
 ```
 
 ---
@@ -192,6 +195,8 @@ stutosed/
 │   └── SECURITY.md                    # Threat model, SSRF protection & cookie security
 ├── database/
 │   └── schema.sql                     # Reference PostgreSQL schema, RLS policies & triggers
+├── workers/
+│   └── cloudflare_worker_secure.js    # Edge streaming proxy worker code
 ├── public/
 │   ├── assets/                        # Portal banners and course graphics
 │   ├── fonts/atyp/                    # Complete Atyp typography family
@@ -200,43 +205,53 @@ stutosed/
 │   └── favicon.ico                    # Browser favicon
 ├── src/
 │   ├── app/
-│   │   ├── api/                       # Serverless proxy endpoints
-│   │   │   ├── embed/                 # Player embed speed bridge proxy
-│   │   │   ├── hls-proxy/             # M3U8 index & TS segment proxy
-│   │   │   ├── pdf/                   # Lossless PDF document proxy
-│   │   │   ├── stream/                # Video stream URL resolver
-│   │   │   └── thumbnail/             # Dynamic SVG & subject artwork proxy
+│   │   ├── api/
+│   │   │   ├── health/                # GET /api/health
+│   │   │   ├── v1/                    # Layered REST API endpoints
+│   │   │   │   ├── stream/            # GET /api/v1/stream
+│   │   │   │   ├── pdf/               # GET /api/v1/pdf
+│   │   │   │   ├── thumbnail/         # GET /api/v1/thumbnail
+│   │   │   │   ├── hls-proxy/         # GET /api/v1/hls-proxy
+│   │   │   │   └── embed/             # GET /api/v1/embed (410 Gone)
+│   │   │   ├── stream/                # Backward-compatible delegate -> v1/stream
+│   │   │   ├── pdf/                   # Backward-compatible delegate -> v1/pdf
+│   │   │   ├── thumbnail/             # Backward-compatible delegate -> v1/thumbnail
+│   │   │   ├── hls-proxy/             # Backward-compatible delegate -> v1/hls-proxy
+│   │   │   └── embed/                 # Backward-compatible delegate -> v1/embed
 │   │   ├── auth/callback/             # OAuth PKCE session code exchange
 │   │   ├── login/                     # Standalone dedicated login page
+│   │   ├── watch/                     # Dedicated lecture watch portal
 │   │   ├── globals.css                # Design tokens, typography & animations
 │   │   ├── layout.tsx                 # Root layout & OpenGraph metadata
 │   │   └── page.tsx                   # Main dashboard, portals & modal orchestration
+│   ├── schemas/                       # Zod request validation schemas
+│   │   ├── stream.schema.ts
+│   │   ├── pdf.schema.ts
+│   │   ├── thumbnail.schema.ts
+│   │   ├── hls-proxy.schema.ts
+│   │   └── embed.schema.ts
+│   ├── server/                        # Server-only backend layer (import 'server-only')
+│   │   ├── auth/                      # Server authentication (getUser via cookies)
+│   │   ├── http/                      # withApi wrapper, response envelopes, error classes
+│   │   ├── security/                  # SSRF allowlists and in-memory rate limiting
+│   │   ├── services/                  # Pure business logic (stream, pdf, hls-proxy)
+│   │   └── repositories/              # Supabase DB & course data repositories
 │   ├── components/
 │   │   ├── AuthModal.tsx              # Google & Email sign-in / sign-up modal
-│   │   ├── ChangelogModal.tsx         # What's New release log modal
 │   │   ├── CourseGrid.tsx             # Interactive course card grid
 │   │   ├── CourseModal.tsx            # Folder/lecture explorer & search filter
 │   │   ├── MobileHeader.tsx           # Mobile navigation & account drawer
-│   │   ├── NewsAnnouncements.tsx      # Dedicated platform roadmap & student request desk
 │   │   ├── PdfViewerModal.tsx         # In-browser PDF reader
-│   │   ├── PrivacyTermsModal.tsx      # Terms of Service & Privacy Policy modal
 │   │   ├── ProfileMenu.tsx            # User profile dropdown & theme toggle
-│   │   ├── Sidebar.tsx                # Collapsible navigation drawer
 │   │   └── VideoPlayer.tsx            # Custom video player & speed controls
 │   ├── lib/
-│   │   ├── supabase/                  # Supabase SSR browser & server clients
-│   │   ├── announcementsData.ts       # Platform announcements & student desk data
+│   │   ├── api-client.ts              # Typed client wrapper for frontend components
+│   │   ├── env.ts                     # Zod-validated environment variables
 │   │   ├── coursesData.ts             # Course querying & progress helpers
 │   │   ├── coursesData.json           # Comprehensive course catalog data
-│   │   ├── proxyConfig.ts             # Cloudflare Worker & bot link resolver
-│   │   ├── subjectThumbnails.ts       # Dynamic subject SVG & vector artwork generator
-│   │   └── upstreamSecurity.ts        # SSRF domain protection allowlist
-│   ├── proxy.ts                       # Edge session refresh proxy
+│   │   └── proxyConfig.ts             # Cloudflare Worker configuration
 │   └── types/                         # TypeScript interfaces
-├── .env.local.example                 # Sample environment variables
-├── CONTRIBUTING.md                    # Contribution & IP guidelines
-├── LICENSE                            # All Rights Reserved Proprietary License
-├── next.config.ts                     # Next.js optimization configuration
+├── AGENTS.md                          # Architecture contract & LLM developer guide
 ├── package.json                       # Dependencies & scripts
 └── tsconfig.json                      # Strict TypeScript configuration
 ```
