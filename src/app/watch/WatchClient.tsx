@@ -356,30 +356,6 @@ export default function WatchClient() {
     });
   }, [currentItem, courseInfo, subjectParam, folderParam]);
 
-  // Trigger server loading notice whenever lecture or server changes
-  useEffect(() => {
-    setLoadingNoticeVisible(true);
-    setLoadingSeconds(0);
-  }, [currentIndex, selectedServerIndex]);
-
-  // Handle auto-dismissal when video begins playing, or advance elapsed loading seconds
-  useEffect(() => {
-    if (!loadingNoticeVisible) return;
-    if (isEmbedMode || isStreamP2PUrl || isPendingLecture) {
-      setLoadingNoticeVisible(false);
-      return;
-    }
-    if (isPlaying && !streamLoading && !isBuffering) {
-      const timer = setTimeout(() => {
-        setLoadingNoticeVisible(false);
-      }, 700);
-      return () => clearTimeout(timer);
-    }
-    const interval = setInterval(() => {
-      setLoadingSeconds((prev) => prev + 1);
-    }, 1000);
-    return () => clearInterval(interval);
-  }, [loadingNoticeVisible, isPlaying, streamLoading, isBuffering]);
 
   // Active Server & URL resolution (prioritizing ESTE over ALBA, deduplicating identical URLs)
   const servers: ServerOption[] = useMemo(() => {
@@ -466,6 +442,35 @@ export default function WatchClient() {
 
   const isEmbedMode = Boolean(embedUrl);
   const needsApiResolution = !isEmbedMode && !isPendingLecture && (isVidmolyUrl || isEarnvidsUrl);
+
+  // Trigger server loading notice whenever lecture or server changes (native video only)
+  useEffect(() => {
+    if (isEmbedMode || isStreamP2PUrl || isPendingLecture) {
+      setLoadingNoticeVisible(false);
+      return;
+    }
+    setLoadingNoticeVisible(true);
+    setLoadingSeconds(0);
+  }, [currentIndex, selectedServerIndex, isEmbedMode, isStreamP2PUrl, isPendingLecture]);
+
+  // Handle auto-dismissal when video begins playing, or advance elapsed loading seconds
+  useEffect(() => {
+    if (!loadingNoticeVisible) return;
+    if (isEmbedMode || isStreamP2PUrl || isPendingLecture) {
+      setLoadingNoticeVisible(false);
+      return;
+    }
+    if (isPlaying && !streamLoading && !isBuffering) {
+      const timer = setTimeout(() => {
+        setLoadingNoticeVisible(false);
+      }, 700);
+      return () => clearTimeout(timer);
+    }
+    const interval = setInterval(() => {
+      setLoadingSeconds((prev) => prev + 1);
+    }, 1000);
+    return () => clearInterval(interval);
+  }, [loadingNoticeVisible, isPlaying, streamLoading, isBuffering, isEmbedMode, isStreamP2PUrl, isPendingLecture]);
 
   // Stream Resolution with fast in-memory cache
   useEffect(() => {
@@ -1313,7 +1318,10 @@ export default function WatchClient() {
             onMouseEnter={() => {
               if (showControls) scheduleAutoHide();
             }}
-            onContextMenu={(e) => e.preventDefault()}
+            onContextMenu={(e) => {
+              if (isEmbedMode) return;
+              e.preventDefault();
+            }}
           >
             <div
               className="player-viewport"
@@ -1603,8 +1611,11 @@ export default function WatchClient() {
                     inset: 0,
                     width: '100%',
                     height: '100%',
-                    zIndex: 2,
+                    zIndex: 10,
                     background: '#000000',
+                    pointerEvents: 'auto',
+                    touchAction: 'auto',
+                    cursor: 'default',
                   }}
                 >
                   <iframe
@@ -1616,6 +1627,9 @@ export default function WatchClient() {
                       height: '100%',
                       border: 'none',
                       display: 'block',
+                      pointerEvents: 'auto',
+                      touchAction: 'auto',
+                      cursor: 'default',
                     }}
                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share; fullscreen"
                     onLoad={() => {
