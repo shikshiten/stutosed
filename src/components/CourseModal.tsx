@@ -269,6 +269,7 @@ export const CourseModal: React.FC<CourseModalProps> = ({
 
   // Centralized Canonical Dynamic Title-Based SVG Thumbnail Resolver
   const getLectureThumb = (item: LectureItem) => {
+    if (item.type === 'pdf') return '';
     if (item.thumb) return item.thumb;
     const currentTab = course.tabs?.find((t) => t.id === activeTabId) || selectedFolderTab;
     const category = item.subject || currentTab?.label || course.name;
@@ -285,7 +286,32 @@ export const CourseModal: React.FC<CourseModalProps> = ({
   const handleDownloadPdf = async (e: React.MouseEvent, item: LectureItem) => {
     e.stopPropagation();
     const filename = `${item.label.replace(/[^a-zA-Z0-9_\-\s]/g, '').trim().replace(/\s+/g, '_') || 'document'}.pdf`;
-    const downloadApiUrl = getWorkerProxyUrl(item.url, 'pdf');
+    const targetUrl = item.downloadUrl || item.url;
+
+    // For direct Catbox or .pdf URLs, fetch and save directly without worker proxy
+    if (targetUrl.includes('catbox.moe') || targetUrl.toLowerCase().includes('.pdf')) {
+      try {
+        const res = await fetch(targetUrl);
+        if (res.ok) {
+          const blob = await res.blob();
+          const blobUrl = window.URL.createObjectURL(blob);
+          const a = document.createElement('a');
+          a.href = blobUrl;
+          a.download = filename;
+          document.body.appendChild(a);
+          a.click();
+          document.body.removeChild(a);
+          window.URL.revokeObjectURL(blobUrl);
+          return;
+        }
+      } catch {
+        // Fallback to direct window open if fetch has CORS restriction
+      }
+      window.open(targetUrl, '_blank', 'noopener,noreferrer');
+      return;
+    }
+
+    const downloadApiUrl = getWorkerProxyUrl(targetUrl, 'pdf');
     try {
       const res = await fetch(downloadApiUrl);
       if (!res.ok) throw new Error('Download error');
@@ -328,6 +354,11 @@ export const CourseModal: React.FC<CourseModalProps> = ({
       return;
     }
     if (item.type === 'pdf') {
+      const directUrl = item.downloadUrl || item.url;
+      if (directUrl.includes('catbox.moe') || directUrl.toLowerCase().includes('.pdf')) {
+        window.open(directUrl, '_blank', 'noopener,noreferrer');
+        return;
+      }
       onOpenPdf(item, activeItems, idx);
       return;
     }
@@ -335,7 +366,7 @@ export const CourseModal: React.FC<CourseModalProps> = ({
       const firstPdf = item.links.notes_en || item.links.en_pdf || item.links.notes_hi || item.links.hi_pdf || item.links.handwritten;
       if (firstPdf) {
         const target = resolveDirectMediaUrl(firstPdf);
-        onOpenPdf({ label: `${item.label} • Notes`, url: target, downloadUrl: target, type: 'pdf' });
+        window.open(target, '_blank', 'noopener,noreferrer');
         return;
       }
     }
@@ -559,7 +590,13 @@ export const CourseModal: React.FC<CourseModalProps> = ({
               </button>
             </div>
             <span className="lecture-count-badge">
-              {activeItems.length} {activeItems.length === 1 ? 'lecture' : 'lectures'}
+              {(() => {
+                const v = activeItems.filter((i) => i.type !== 'pdf').length;
+                const p = activeItems.filter((i) => i.type === 'pdf').length;
+                if (v > 0 && p > 0) return `${v} Lec • ${p} PDF`;
+                if (p > 0) return `${p} ${p === 1 ? 'PDF' : 'PDFs'}`;
+                return `${v} ${v === 1 ? 'lecture' : 'lectures'}`;
+              })()}
             </span>
           </div>
 
@@ -671,26 +708,41 @@ export const CourseModal: React.FC<CourseModalProps> = ({
                       }}
                       style={{ width: '100%', height: '100%', objectFit: 'cover' }}
                     />
-                    <div
-                      style={{
-                        position: 'absolute',
-                        bottom: '10px',
-                        right: '10px',
-                        background: 'rgba(0,0,0,0.75)',
-                        backdropFilter: 'blur(4px)',
-                        color: '#ffffff',
-                        fontSize: '11px',
-                        fontWeight: 700,
-                        padding: '4px 10px',
-                        borderRadius: 'var(--r-pill)',
-                        display: 'flex',
-                        alignItems: 'center',
-                        gap: '5px',
-                      }}
-                    >
-                      <Video width={12} height={12} />
-                      <span>{tab.items.length} Lectures</span>
-                    </div>
+                    {(() => {
+                      const vids = tab.items.filter((i) => i.type !== 'pdf').length;
+                      const pdfs = tab.items.filter((i) => i.type === 'pdf').length;
+                      return (
+                        <div
+                          style={{
+                            position: 'absolute',
+                            bottom: '10px',
+                            right: '10px',
+                            background: 'rgba(0,0,0,0.8)',
+                            backdropFilter: 'blur(4px)',
+                            color: '#ffffff',
+                            fontSize: '11px',
+                            fontWeight: 700,
+                            padding: '4px 10px',
+                            borderRadius: 'var(--r-pill)',
+                            display: 'flex',
+                            alignItems: 'center',
+                            gap: '6px',
+                          }}
+                        >
+                          {vids > 0 && (
+                            <span style={{ display: 'inline-flex', alignItems: 'center', gap: '3px' }}>
+                              <Video width={12} height={12} /> {vids} {vids === 1 ? 'Lecture' : 'Lectures'}
+                            </span>
+                          )}
+                          {vids > 0 && pdfs > 0 && <span style={{ opacity: 0.6 }}>•</span>}
+                          {pdfs > 0 && (
+                            <span style={{ display: 'inline-flex', alignItems: 'center', gap: '3px', color: '#ffb299' }}>
+                              <FileText width={11} height={11} /> {pdfs} {pdfs === 1 ? 'PDF' : 'PDFs'}
+                            </span>
+                          )}
+                        </div>
+                      );
+                    })()}
                   </div>
 
                   <div style={{ padding: '18px 20px' }}>
@@ -705,9 +757,22 @@ export const CourseModal: React.FC<CourseModalProps> = ({
                     >
                       {tab.label}
                     </div>
-                    <div style={{ fontSize: '13px', color: 'var(--text-muted)', marginBottom: '14px' }}>
-                      {tab.subname || `${tab.items.length} Lectures Available`}
-                    </div>
+                    {(() => {
+                      const vids = tab.items.filter((i) => i.type !== 'pdf').length;
+                      const pdfs = tab.items.filter((i) => i.type === 'pdf').length;
+                      const desc =
+                        tab.subname ||
+                        (vids > 0 && pdfs > 0
+                          ? `${vids} Video Lectures • ${pdfs} Practice Sheets & Notes`
+                          : vids > 0
+                          ? `${vids} Video Lectures Available`
+                          : `${pdfs} Practice Sheets & Notes Available`);
+                      return (
+                        <div style={{ fontSize: '13px', color: 'var(--text-muted)', marginBottom: '14px' }}>
+                          {desc}
+                        </div>
+                      );
+                    })()}
                     <div
                       style={{
                         display: 'inline-flex',
@@ -764,550 +829,861 @@ export const CourseModal: React.FC<CourseModalProps> = ({
                   <span>Back to Subjects</span>
                 </button>
 
-                <span style={{ fontSize: '12px', color: 'var(--text-muted)', fontWeight: 600 }}>
-                  Showing {activeItems.length} lectures
-                </span>
+                {(() => {
+                  const vCount = activeItems.filter((i) => i.type !== 'pdf').length;
+                  const pCount = activeItems.filter((i) => i.type === 'pdf').length;
+                  if (vCount > 0 && pCount > 0) {
+                    return (
+                      <span style={{ fontSize: '12px', color: 'var(--text-muted)', fontWeight: 600 }}>
+                        {vCount} {vCount === 1 ? 'lecture' : 'lectures'} • {pCount} {pCount === 1 ? 'PDF' : 'PDFs'}
+                      </span>
+                    );
+                  }
+                  if (pCount > 0) {
+                    return (
+                      <span style={{ fontSize: '12px', color: 'var(--text-muted)', fontWeight: 600 }}>
+                        {pCount} {pCount === 1 ? 'study PDF' : 'study PDFs'}
+                      </span>
+                    );
+                  }
+                  return (
+                    <span style={{ fontSize: '12px', color: 'var(--text-muted)', fontWeight: 600 }}>
+                      {vCount} {vCount === 1 ? 'lecture' : 'lectures'}
+                    </span>
+                  );
+                })()}
               </div>
             )}
 
             {activeItems.length === 0 ? (
               <div className="no-results">No resources found in this category.</div>
-            ) : viewMode === 'grid' ? (
-              /* GRID VIEW */
-              <div className="lecture-grid-container">
-                {renderedItems.map((item, idx) => {
-                  const isWatched = watchedUrls.has(item.url);
-                  const isPdf = item.type === 'pdf';
-                  const isYt = isYouTubeItem(item);
-                  const thumb = getLectureThumb(item);
+            ) : (() => {
+              const videoItems = renderedItems.filter((i) => i.type !== 'pdf');
+              const pdfItems = renderedItems.filter((i) => i.type === 'pdf');
+              const hasBoth = videoItems.length > 0 && pdfItems.length > 0;
 
-                  return (
+              const renderVideoCard = (item: LectureItem, idx: number) => {
+                const isWatched = watchedUrls.has(item.url);
+                const isYt = isYouTubeItem(item);
+                const thumb = getLectureThumb(item);
+
+                return (
+                  <div
+                    key={item.id || idx}
+                    data-lecture-url={item.url}
+                    className={`lecture-card-grid ${isWatched ? 'watched' : ''}`}
+                    onClick={() => handleItemClick(item, idx)}
+                    onMouseEnter={() => setHoveredIdx(idx)}
+                    onMouseLeave={() => setHoveredIdx(null)}
+                  >
+                    {/* 16:9 Thumbnail Cover */}
                     <div
-                      key={idx}
-                      data-lecture-url={item.url}
-                      className={`lecture-card-grid ${isWatched ? 'watched' : ''}`}
-                      onClick={() => handleItemClick(item, idx)}
-                      onMouseEnter={() => setHoveredIdx(idx)}
-                      onMouseLeave={() => setHoveredIdx(null)}
+                      style={{
+                        position: 'relative',
+                        width: '100%',
+                        aspectRatio: '16/9',
+                        overflow: 'hidden',
+                        background: 'var(--bg-card-hover)',
+                      }}
                     >
-                      {/* 16:9 Thumbnail Cover */}
+                      <img
+                        src={hoveredIdx === idx && item.preview ? item.preview : thumb}
+                        alt=""
+                        className="grid-thumb-img"
+                        onError={(e) => {
+                          const target = e.currentTarget;
+                          const fallback = `/thumbnails/default_lecture_${theme === 'dark' ? 'dark' : 'light'}.svg`;
+                          if (!target.src.includes('default_lecture')) {
+                            target.src = fallback;
+                          }
+                        }}
+                        style={{
+                          width: '100%',
+                          height: '100%',
+                          objectFit: 'cover',
+                          transition: 'transform 0.3s ease',
+                        }}
+                      />
                       <div
                         style={{
-                          position: 'relative',
-                          width: '100%',
-                          aspectRatio: '16/9',
-                          overflow: 'hidden',
-                          background: 'var(--bg-card-hover)',
+                          position: 'absolute',
+                          inset: 0,
+                          background:
+                            'linear-gradient(to top, rgba(0,0,0,0.8) 0%, rgba(0,0,0,0.2) 50%, transparent 80%)',
+                        }}
+                      />
+
+                      {/* Lecture Index Badge */}
+                      <div
+                        style={{
+                          position: 'absolute',
+                          top: '10px',
+                          left: '10px',
+                          background: 'rgba(0,0,0,0.7)',
+                          backdropFilter: 'blur(4px)',
+                          color: '#ffffff',
+                          fontSize: '11px',
+                          fontWeight: 700,
+                          padding: '3px 8px',
+                          borderRadius: 'var(--r-pill)',
+                          border: '1px solid rgba(255,255,255,0.15)',
                         }}
                       >
-                        <img
-                          src={hoveredIdx === idx && item.preview ? item.preview : thumb}
-                          alt=""
-                          className="grid-thumb-img"
-                          onError={(e) => {
-                            const target = e.currentTarget;
-                            const fallback = `/thumbnails/default_lecture_${theme === 'dark' ? 'dark' : 'light'}.svg`;
-                            if (!target.src.includes('default_lecture')) {
-                              target.src = fallback;
-                            }
-                          }}
-                          style={{
-                            width: '100%',
-                            height: '100%',
-                            objectFit: 'cover',
-                            transition: 'transform 0.3s ease',
-                          }}
-                        />
-                        <div
-                          style={{
-                            position: 'absolute',
-                            inset: 0,
-                            background:
-                              'linear-gradient(to top, rgba(0,0,0,0.8) 0%, rgba(0,0,0,0.2) 50%, transparent 80%)',
-                          }}
-                        />
+                        #{idx + 1}
+                      </div>
 
-                        {/* Lecture Index Badge */}
+                      {/* Watched Badge */}
+                      {isWatched && (
                         <div
                           style={{
                             position: 'absolute',
                             top: '10px',
-                            left: '10px',
-                            background: 'rgba(0,0,0,0.7)',
-                            backdropFilter: 'blur(4px)',
+                            right: '10px',
+                            background: 'rgba(93,184,114,0.95)',
                             color: '#ffffff',
                             fontSize: '11px',
                             fontWeight: 700,
                             padding: '3px 8px',
                             borderRadius: 'var(--r-pill)',
-                            border: '1px solid rgba(255,255,255,0.15)',
                           }}
                         >
-                          #{idx + 1}
+                          ✓ Watched
                         </div>
+                      )}
 
-                        {/* Watched Badge */}
-                        {isWatched && (
-                          <div
-                            style={{
-                              position: 'absolute',
-                              top: '10px',
-                              right: '10px',
-                              background: 'rgba(93,184,114,0.95)',
-                              color: '#ffffff',
-                              fontSize: '11px',
-                              fontWeight: 700,
-                              padding: '3px 8px',
-                              borderRadius: 'var(--r-pill)',
-                            }}
-                          >
-                            ✓ Watched
-                          </div>
-                        )}
-
-                        {/* Subject Tag on bottom of thumbnail */}
-                        {item.subject && (
-                          <div
-                            style={{
-                              position: 'absolute',
-                              bottom: '8px',
-                              left: '10px',
-                              color: 'rgba(255,255,255,0.9)',
-                              fontSize: '11px',
-                              fontWeight: 600,
-                              textShadow: '0 1px 3px rgba(0,0,0,0.9)',
-                            }}
-                          >
-                            {item.subject}
-                          </div>
-                        )}
-
-                        {/* Subtle type badge and duration on thumbnail */}
+                      {/* Subject Tag on bottom of thumbnail */}
+                      {item.subject && (
                         <div
                           style={{
                             position: 'absolute',
                             bottom: '8px',
-                            right: '10px',
-                            display: 'flex',
-                            alignItems: 'center',
-                            gap: '4px',
+                            left: '10px',
+                            color: 'rgba(255,255,255,0.9)',
+                            fontSize: '11px',
+                            fontWeight: 600,
+                            textShadow: '0 1px 3px rgba(0,0,0,0.9)',
                           }}
                         >
-                          {item.duration ? (
-                            <div
-                              style={{
-                                background: 'rgba(0,0,0,0.75)',
-                                backdropFilter: 'blur(4px)',
-                                color: '#ffffff',
-                                fontSize: '10px',
-                                fontWeight: 700,
-                                padding: '2px 6px',
-                                borderRadius: '4px',
-                                fontVariantNumeric: 'tabular-nums',
-                              }}
-                            >
-                              {formatItemDuration(item.duration)}
-                            </div>
-                          ) : null}
-                          <div
-                            style={{
-                              background: 'rgba(0,0,0,0.7)',
-                              backdropFilter: 'blur(4px)',
-                              color: isPdf
-                                ? '#ff9f7d'
-                                : isYt
-                                ? '#ff6b6b'
-                                : item.id?.startsWith('pending-')
-                                ? '#f59e0b'
-                                : item.type === 'streamp2p'
-                                ? '#38bdf8'
-                                : '#85e0a3',
-                              fontSize: '10px',
-                              fontWeight: 700,
-                              padding: '2px 7px',
-                              borderRadius: '4px',
-                              textTransform: 'uppercase',
-                              letterSpacing: '0.4px',
-                            }}
-                          >
-                            {isPdf
-                              ? 'PDF Notes'
-                              : isYt
-                              ? 'YouTube'
-                              : item.id?.startsWith('pending-')
-                              ? '⏳ In Queue'
-                              : item.type === 'streamp2p'
-                              ? '● Stream Ready'
-                              : 'Video'}
-                          </div>
+                          {item.subject}
                         </div>
-                      </div>
+                      )}
 
-                      {/* Card Content */}
+                      {/* Subtle type badge and duration on thumbnail */}
                       <div
                         style={{
-                          padding: '14px 16px',
+                          position: 'absolute',
+                          bottom: '8px',
+                          right: '10px',
                           display: 'flex',
-                          flexDirection: 'column',
-                          flex: 1,
-                          justifyContent: 'space-between',
+                          alignItems: 'center',
+                          gap: '4px',
                         }}
                       >
+                        {item.duration ? (
+                          <div
+                            style={{
+                              background: 'rgba(0,0,0,0.75)',
+                              backdropFilter: 'blur(4px)',
+                              color: '#ffffff',
+                              fontSize: '10px',
+                              fontWeight: 700,
+                              padding: '2px 6px',
+                              borderRadius: '4px',
+                              fontVariantNumeric: 'tabular-nums',
+                            }}
+                          >
+                            {formatItemDuration(item.duration)}
+                          </div>
+                        ) : null}
                         <div
                           style={{
-                            fontSize: '14px',
-                            fontWeight: 600,
-                            color: 'var(--text)',
-                            lineHeight: 1.35,
-                            marginBottom: '6px',
-                            display: '-webkit-box',
-                            WebkitLineClamp: 2,
-                            WebkitBoxOrient: 'vertical',
-                            overflow: 'hidden',
+                            background: 'rgba(0,0,0,0.7)',
+                            backdropFilter: 'blur(4px)',
+                            color: isYt
+                              ? '#ff6b6b'
+                              : item.id?.startsWith('pending-')
+                              ? '#f59e0b'
+                              : item.type === 'streamp2p'
+                              ? '#38bdf8'
+                              : '#85e0a3',
+                            fontSize: '10px',
+                            fontWeight: 700,
+                            padding: '2px 7px',
+                            borderRadius: '4px',
+                            textTransform: 'uppercase',
+                            letterSpacing: '0.4px',
                           }}
                         >
-                          {item.label}
-                        </div>
-
-                        {/* Bot/Parmar Attachment links (Notes EN, Notes HI, Handwritten, Quiz) */}
-                        {item.links && Object.keys(item.links).some((k) => k !== 'url') && (
-                          <div style={{ display: 'flex', flexWrap: 'wrap', gap: '5px', margin: '4px 0 8px' }}>
-                            {(item.links.notes_en || item.links.en_pdf) && (
-                              <button
-                                onClick={(e) => {
-                                  e.stopPropagation();
-                                  const target = resolveDirectMediaUrl(item.links!.notes_en || item.links!.en_pdf);
-                                  onOpenPdf({ label: `${item.label} • Notes (EN)`, url: target, downloadUrl: target, type: 'pdf' });
-                                }}
-                                title="Open English Notes"
-                                style={{
-                                  display: 'inline-flex',
-                                  alignItems: 'center',
-                                  gap: '3px',
-                                  padding: '3px 7px',
-                                  fontSize: '10.5px',
-                                  fontWeight: 600,
-                                  borderRadius: 'var(--r-sm)',
-                                  border: '1px solid var(--border)',
-                                  background: 'var(--bg-card-hover)',
-                                  color: 'var(--accent)',
-                                  cursor: 'pointer',
-                                }}
-                              >
-                                <FileText width={11} height={11} /> Notes EN
-                              </button>
-                            )}
-                            {(item.links.notes_hi || item.links.hi_pdf) && (
-                              <button
-                                onClick={(e) => {
-                                  e.stopPropagation();
-                                  const target = resolveDirectMediaUrl(item.links!.notes_hi || item.links!.hi_pdf);
-                                  onOpenPdf({ label: `${item.label} • Notes (HI)`, url: target, downloadUrl: target, type: 'pdf' });
-                                }}
-                                title="Open Hindi Notes"
-                                style={{
-                                  display: 'inline-flex',
-                                  alignItems: 'center',
-                                  gap: '3px',
-                                  padding: '3px 7px',
-                                  fontSize: '10.5px',
-                                  fontWeight: 600,
-                                  borderRadius: 'var(--r-sm)',
-                                  border: '1px solid var(--border)',
-                                  background: 'var(--bg-card-hover)',
-                                  color: '#e67e22',
-                                  cursor: 'pointer',
-                                }}
-                              >
-                                <FileText width={11} height={11} /> Notes HI
-                              </button>
-                            )}
-                            {item.links.handwritten && (
-                              <button
-                                onClick={(e) => {
-                                  e.stopPropagation();
-                                  const target = resolveDirectMediaUrl(item.links!.handwritten);
-                                  onOpenPdf({ label: `${item.label} • Handwritten`, url: target, downloadUrl: target, type: 'pdf' });
-                                }}
-                                title="Open Handwritten PDF"
-                                style={{
-                                  display: 'inline-flex',
-                                  alignItems: 'center',
-                                  gap: '3px',
-                                  padding: '3px 7px',
-                                  fontSize: '10.5px',
-                                  fontWeight: 600,
-                                  borderRadius: 'var(--r-sm)',
-                                  border: '1px solid var(--border)',
-                                  background: 'var(--bg-card-hover)',
-                                  color: '#27ae60',
-                                  cursor: 'pointer',
-                                }}
-                              >
-                                <FileText width={11} height={11} /> Handwritten
-                              </button>
-                            )}
-                            {item.links.quiz && (
-                              <button
-                                onClick={(e) => {
-                                  e.stopPropagation();
-                                  window.open(resolveDirectMediaUrl(item.links!.quiz), '_blank', 'noopener,noreferrer');
-                                }}
-                                title="Open Quiz"
-                                style={{
-                                  display: 'inline-flex',
-                                  alignItems: 'center',
-                                  gap: '3px',
-                                  padding: '3px 7px',
-                                  fontSize: '10.5px',
-                                  fontWeight: 600,
-                                  borderRadius: 'var(--r-sm)',
-                                  border: '1px solid var(--border)',
-                                  background: 'var(--bg-card-hover)',
-                                  color: '#8e44ad',
-                                  cursor: 'pointer',
-                                }}
-                              >
-                                <ExternalLink width={11} height={11} /> Quiz
-                              </button>
-                            )}
-                          </div>
-                        )}
-
-                        <div
-                          style={{
-                            display: 'flex',
-                            alignItems: 'center',
-                            justifyContent: 'space-between',
-                            paddingTop: '8px',
-                            borderTop: '1px solid var(--border)',
-                          }}
-                        >
-                          <span style={{ fontSize: '11px', color: 'var(--text-muted)', fontWeight: 500 }}>
-                            {item.subject || (isPdf ? 'Document Notes' : isYt ? 'YouTube Lecture' : 'Video Lecture')}
-                          </span>
-
-                          <div style={{ display: 'flex', alignItems: 'center', gap: '6px' }}>
-                            {isPdf && (
-                              <button
-                                onClick={(e) => handleDownloadPdf(e, item)}
-                                title="Download PDF directly"
-                                style={{
-                                  display: 'inline-flex',
-                                  alignItems: 'center',
-                                  gap: '4px',
-                                  padding: '4px 8px',
-                                  fontSize: '11px',
-                                  fontWeight: 700,
-                                  color: 'var(--accent)',
-                                  background: 'var(--bg)',
-                                  border: '1px solid var(--border)',
-                                  borderRadius: 'var(--r-sm)',
-                                  cursor: 'pointer',
-                                  transition: 'all 0.15s ease',
-                                }}
-                              >
-                                <Download width={12} height={12} />
-                                <span>Download</span>
-                              </button>
-                            )}
-
-                            {isYt && (
-                              <span
-                                style={{
-                                  display: 'inline-flex',
-                                  alignItems: 'center',
-                                  gap: '3px',
-                                  fontSize: '11px',
-                                  fontWeight: 700,
-                                  color: '#ff4b4b',
-                                }}
-                              >
-                                <ExternalLink width={11} height={11} /> Open
-                              </span>
-                            )}
-                          </div>
+                          {isYt
+                            ? 'YouTube'
+                            : item.id?.startsWith('pending-')
+                            ? '⏳ In Queue'
+                            : item.type === 'streamp2p'
+                            ? '● Stream Ready'
+                            : 'Video'}
                         </div>
                       </div>
                     </div>
-                  );
-                })}
-              </div>
-            ) : (
-              /* LIST VIEW */
-              <div className="video-list">
-                {renderedItems.map((item, idx) => {
-                  const isWatched = watchedUrls.has(item.url);
-                  const isPdf = item.type === 'pdf';
-                  const isYt = isYouTubeItem(item);
 
-                  return (
+                    {/* Card Content */}
                     <div
-                      key={idx}
-                      data-lecture-url={item.url}
-                      className={`video-row ${isWatched ? 'watched' : ''}`}
-                      onClick={() => handleItemClick(item, idx)}
+                      style={{
+                        padding: '14px 16px',
+                        display: 'flex',
+                        flexDirection: 'column',
+                        flex: 1,
+                        justifyContent: 'space-between',
+                      }}
                     >
-                      <div className="video-num">{idx + 1}</div>
                       <div
-                        className={`video-icon ${isPdf ? 'vicon-ext' : 'vicon-hls'}`}
+                        style={{
+                          fontSize: '14px',
+                          fontWeight: 600,
+                          color: 'var(--text)',
+                          lineHeight: 1.35,
+                          marginBottom: '6px',
+                          display: '-webkit-box',
+                          WebkitLineClamp: 2,
+                          WebkitBoxOrient: 'vertical',
+                          overflow: 'hidden',
+                        }}
+                      >
+                        {item.label}
+                      </div>
+
+                      {/* Bot/Parmar Attachment links */}
+                      {item.links && Object.keys(item.links).some((k) => k !== 'url') && (
+                        <div style={{ display: 'flex', flexWrap: 'wrap', gap: '5px', margin: '4px 0 8px' }}>
+                          {(item.links.notes_en || item.links.en_pdf) && (
+                            <button
+                              onClick={(e) => {
+                                e.stopPropagation();
+                                const target = resolveDirectMediaUrl(item.links!.notes_en || item.links!.en_pdf);
+                                window.open(target, '_blank', 'noopener,noreferrer');
+                              }}
+                              title="Open English Notes"
+                              style={{
+                                display: 'inline-flex',
+                                alignItems: 'center',
+                                gap: '3px',
+                                padding: '3px 7px',
+                                fontSize: '10.5px',
+                                fontWeight: 600,
+                                borderRadius: 'var(--r-sm)',
+                                border: '1px solid var(--border)',
+                                background: 'var(--bg-card-hover)',
+                                color: 'var(--accent)',
+                                cursor: 'pointer',
+                              }}
+                            >
+                              <FileText width={11} height={11} /> Notes EN
+                            </button>
+                          )}
+                          {(item.links.notes_hi || item.links.hi_pdf) && (
+                            <button
+                              onClick={(e) => {
+                                e.stopPropagation();
+                                const target = resolveDirectMediaUrl(item.links!.notes_hi || item.links!.hi_pdf);
+                                window.open(target, '_blank', 'noopener,noreferrer');
+                              }}
+                              title="Open Hindi Notes"
+                              style={{
+                                display: 'inline-flex',
+                                alignItems: 'center',
+                                gap: '3px',
+                                padding: '3px 7px',
+                                fontSize: '10.5px',
+                                fontWeight: 600,
+                                borderRadius: 'var(--r-sm)',
+                                border: '1px solid var(--border)',
+                                background: 'var(--bg-card-hover)',
+                                color: '#e67e22',
+                                cursor: 'pointer',
+                              }}
+                            >
+                              <FileText width={11} height={11} /> Notes HI
+                            </button>
+                          )}
+                          {item.links.handwritten && (
+                            <button
+                              onClick={(e) => {
+                                e.stopPropagation();
+                                const target = resolveDirectMediaUrl(item.links!.handwritten);
+                                window.open(target, '_blank', 'noopener,noreferrer');
+                              }}
+                              title="Open Handwritten Notes"
+                              style={{
+                                display: 'inline-flex',
+                                alignItems: 'center',
+                                gap: '3px',
+                                padding: '3px 7px',
+                                fontSize: '10.5px',
+                                fontWeight: 600,
+                                borderRadius: 'var(--r-sm)',
+                                border: '1px solid var(--border)',
+                                background: 'var(--bg-card-hover)',
+                                color: '#27ae60',
+                                cursor: 'pointer',
+                              }}
+                            >
+                              <FileText width={11} height={11} /> Handwritten
+                            </button>
+                          )}
+                          {item.links.quiz && (
+                            <button
+                              onClick={(e) => {
+                                e.stopPropagation();
+                                window.open(resolveDirectMediaUrl(item.links!.quiz), '_blank', 'noopener,noreferrer');
+                              }}
+                              title="Open Quiz"
+                              style={{
+                                display: 'inline-flex',
+                                alignItems: 'center',
+                                gap: '3px',
+                                padding: '3px 7px',
+                                fontSize: '10.5px',
+                                fontWeight: 600,
+                                borderRadius: 'var(--r-sm)',
+                                border: '1px solid var(--border)',
+                                background: 'var(--bg-card-hover)',
+                                color: '#8e44ad',
+                                cursor: 'pointer',
+                              }}
+                            >
+                              <ExternalLink width={11} height={11} /> Quiz
+                            </button>
+                          )}
+                        </div>
+                      )}
+
+                      <div
                         style={{
                           display: 'flex',
                           alignItems: 'center',
-                          justifyContent: 'center',
-                          color: isYt ? '#ff4b4b' : undefined,
+                          justifyContent: 'space-between',
+                          paddingTop: '8px',
+                          borderTop: '1px solid var(--border)',
                         }}
                       >
-                        {isPdf ? (
-                          <FileText width={14} height={14} />
-                        ) : isYt ? (
-                          <ExternalLink width={13} height={13} />
-                        ) : (
-                          <Play width={13} height={13} fill="currentColor" />
-                        )}
-                      </div>
-                      <div className="video-body">
-                        <div className="video-title">{item.label}</div>
-                        <div className="video-sub">
-                          {item.subject || course.name} {isYt && '• YouTube Direct'}
-                        </div>
-                        {/* Bot/Parmar Attachment links in list row */}
-                        {item.links && Object.keys(item.links).some((k) => k !== 'url') && (
-                          <div style={{ display: 'flex', flexWrap: 'wrap', gap: '4px', marginTop: '4px' }}>
-                            {(item.links.notes_en || item.links.en_pdf) && (
-                              <button
-                                onClick={(e) => {
-                                  e.stopPropagation();
-                                  const target = resolveDirectMediaUrl(item.links!.notes_en || item.links!.en_pdf);
-                                  onOpenPdf({ label: `${item.label} • Notes (EN)`, url: target, downloadUrl: target, type: 'pdf' });
-                                }}
-                                style={{
-                                  display: 'inline-flex',
-                                  alignItems: 'center',
-                                  gap: '2px',
-                                  padding: '2px 6px',
-                                  fontSize: '10px',
-                                  fontWeight: 600,
-                                  borderRadius: 'var(--r-sm)',
-                                  border: '1px solid var(--border)',
-                                  background: 'var(--bg-card-hover)',
-                                  color: 'var(--accent)',
-                                  cursor: 'pointer',
-                                }}
-                              >
-                                Notes EN
-                              </button>
-                            )}
-                            {(item.links.notes_hi || item.links.hi_pdf) && (
-                              <button
-                                onClick={(e) => {
-                                  e.stopPropagation();
-                                  const target = resolveDirectMediaUrl(item.links!.notes_hi || item.links!.hi_pdf);
-                                  onOpenPdf({ label: `${item.label} • Notes (HI)`, url: target, downloadUrl: target, type: 'pdf' });
-                                }}
-                                style={{
-                                  display: 'inline-flex',
-                                  alignItems: 'center',
-                                  gap: '2px',
-                                  padding: '2px 6px',
-                                  fontSize: '10px',
-                                  fontWeight: 600,
-                                  borderRadius: 'var(--r-sm)',
-                                  border: '1px solid var(--border)',
-                                  background: 'var(--bg-card-hover)',
-                                  color: '#e67e22',
-                                  cursor: 'pointer',
-                                }}
-                              >
-                                Notes HI
-                              </button>
-                            )}
-                            {item.links.handwritten && (
-                              <button
-                                onClick={(e) => {
-                                  e.stopPropagation();
-                                  const target = resolveDirectMediaUrl(item.links!.handwritten);
-                                  onOpenPdf({ label: `${item.label} • Handwritten`, url: target, downloadUrl: target, type: 'pdf' });
-                                }}
-                                style={{
-                                  display: 'inline-flex',
-                                  alignItems: 'center',
-                                  gap: '2px',
-                                  padding: '2px 6px',
-                                  fontSize: '10px',
-                                  fontWeight: 600,
-                                  borderRadius: 'var(--r-sm)',
-                                  border: '1px solid var(--border)',
-                                  background: 'var(--bg-card-hover)',
-                                  color: '#27ae60',
-                                  cursor: 'pointer',
-                                }}
-                              >
-                                Handwritten
-                              </button>
-                            )}
-                            {item.links.quiz && (
-                              <button
-                                onClick={(e) => {
-                                  e.stopPropagation();
-                                  window.open(resolveDirectMediaUrl(item.links!.quiz), '_blank', 'noopener,noreferrer');
-                                }}
-                                style={{
-                                  display: 'inline-flex',
-                                  alignItems: 'center',
-                                  gap: '2px',
-                                  padding: '2px 6px',
-                                  fontSize: '10px',
-                                  fontWeight: 600,
-                                  borderRadius: 'var(--r-sm)',
-                                  border: '1px solid var(--border)',
-                                  background: 'var(--bg-card-hover)',
-                                  color: '#8e44ad',
-                                  cursor: 'pointer',
-                                }}
-                              >
-                                Quiz
-                              </button>
-                            )}
-                          </div>
-                        )}
-                      </div>
+                        <span style={{ fontSize: '11px', color: 'var(--text-muted)', fontWeight: 500 }}>
+                          {item.subject || (isYt ? 'YouTube Lecture' : 'Video Lecture')}
+                        </span>
 
-                      <div style={{ display: 'flex', alignItems: 'center', gap: '8px' }}>
-                        {isPdf && (
-                          <button
-                            onClick={(e) => handleDownloadPdf(e, item)}
-                            title="Download PDF"
-                            style={{
-                              display: 'inline-flex',
-                              alignItems: 'center',
-                              gap: '4px',
-                              padding: '5px 10px',
-                              borderRadius: 'var(--r-sm)',
-                              border: '1px solid var(--border)',
-                              background: 'var(--bg-card)',
-                              color: 'var(--accent)',
-                              fontSize: '11px',
-                              fontWeight: 700,
-                              cursor: 'pointer',
-                              transition: 'all 0.15s ease',
-                            }}
-                          >
-                            <Download width={12} height={12} />
-                            <span>Download</span>
-                          </button>
-                        )}
-
-                        <div className="watched-badge" style={{ display: 'inline-flex', alignItems: 'center', gap: '4px' }}>
-                          <CheckCircle2 width={12} height={12} />
-                          <span>Watched</span>
+                        <div style={{ display: 'flex', alignItems: 'center', gap: '6px' }}>
+                          {isYt && (
+                            <span
+                              style={{
+                                display: 'inline-flex',
+                                alignItems: 'center',
+                                gap: '3px',
+                                fontSize: '11px',
+                                fontWeight: 700,
+                                color: '#ff4b4b',
+                              }}
+                            >
+                              <ExternalLink width={11} height={11} /> Open
+                            </span>
+                          )}
                         </div>
                       </div>
                     </div>
-                  );
-                })}
-              </div>
-            )}
+                  </div>
+                );
+              };
+
+              const renderPdfCard = (item: LectureItem, idx: number) => {
+                const isWatched = watchedUrls.has(item.url);
+                const directUrl = item.downloadUrl || item.url;
+
+                return (
+                  <div
+                    key={item.id || idx}
+                    data-lecture-url={item.url}
+                    className={`pdf-card-grid ${isWatched ? 'watched' : ''}`}
+                    onClick={() => handleItemClick(item, idx)}
+                    style={{
+                      background: 'var(--bg-card)',
+                      border: '1px solid var(--border)',
+                      borderRadius: 'var(--r-lg)',
+                      overflow: 'hidden',
+                      cursor: 'pointer',
+                      display: 'flex',
+                      flexDirection: 'column',
+                      transition: 'all 0.2s cubic-bezier(0.4, 0, 0.2, 1)',
+                      position: 'relative',
+                    }}
+                  >
+                    <div
+                      style={{
+                        padding: '16px 16px 12px',
+                        background: 'linear-gradient(135deg, rgba(239, 68, 68, 0.1) 0%, rgba(249, 115, 22, 0.04) 100%)',
+                        borderBottom: '1px solid var(--border)',
+                        display: 'flex',
+                        alignItems: 'center',
+                        justifyContent: 'space-between',
+                      }}
+                    >
+                      <div style={{ display: 'flex', alignItems: 'center', gap: '10px' }}>
+                        <div
+                          style={{
+                            width: '36px',
+                            height: '36px',
+                            borderRadius: 'var(--r-md)',
+                            background: 'rgba(239, 68, 68, 0.15)',
+                            display: 'flex',
+                            alignItems: 'center',
+                            justifyContent: 'center',
+                            color: '#ef4444',
+                            flexShrink: 0,
+                          }}
+                        >
+                          <FileText width={20} height={20} />
+                        </div>
+                        <div>
+                          <span
+                            style={{
+                              fontSize: '10.5px',
+                              fontWeight: 700,
+                              textTransform: 'uppercase',
+                              letterSpacing: '0.04em',
+                              color: '#ef4444',
+                            }}
+                          >
+                            PDF Document
+                          </span>
+                          <div style={{ fontSize: '11px', color: 'var(--text-muted)', fontWeight: 500 }}>
+                            {item.subject || 'Practice & Notes'}
+                          </div>
+                        </div>
+                      </div>
+                      <span
+                        style={{
+                          fontSize: '11px',
+                          fontWeight: 700,
+                          padding: '2px 8px',
+                          borderRadius: 'var(--r-pill)',
+                          background: 'var(--bg-card)',
+                          border: '1px solid var(--border)',
+                          color: 'var(--text-muted)',
+                        }}
+                      >
+                        #{idx + 1}
+                      </span>
+                    </div>
+
+                    <div style={{ padding: '14px 16px', display: 'flex', flexDirection: 'column', flex: 1, justifyContent: 'space-between' }}>
+                      <div
+                        style={{
+                          fontFamily: 'var(--font-sans)',
+                          fontSize: '13.5px',
+                          fontWeight: 600,
+                          color: 'var(--text)',
+                          lineHeight: 1.4,
+                          marginBottom: '14px',
+                          display: '-webkit-box',
+                          WebkitLineClamp: 2,
+                          WebkitBoxOrient: 'vertical',
+                          overflow: 'hidden',
+                        }}
+                        title={item.label}
+                      >
+                        {item.label}
+                      </div>
+
+                      <div style={{ display: 'flex', alignItems: 'center', gap: '8px', marginTop: 'auto' }}>
+                        <button
+                          onClick={(e) => {
+                            e.stopPropagation();
+                            window.open(directUrl, '_blank', 'noopener,noreferrer');
+                          }}
+                          style={{
+                            flex: 1,
+                            display: 'flex',
+                            alignItems: 'center',
+                            justifyContent: 'center',
+                            gap: '5px',
+                            padding: '6px 12px',
+                            fontSize: '11.5px',
+                            fontWeight: 700,
+                            borderRadius: 'var(--r-sm)',
+                            border: '1px solid var(--border)',
+                            background: 'var(--bg)',
+                            color: 'var(--accent)',
+                            cursor: 'pointer',
+                          }}
+                        >
+                          <ExternalLink width={12} height={12} />
+                          <span>Open PDF</span>
+                        </button>
+                        <button
+                          onClick={(e) => handleDownloadPdf(e, item)}
+                          title="Download PDF"
+                          style={{
+                            display: 'flex',
+                            alignItems: 'center',
+                            justifyContent: 'center',
+                            padding: '6px 10px',
+                            borderRadius: 'var(--r-sm)',
+                            border: '1px solid var(--border)',
+                            background: 'var(--bg)',
+                            color: 'var(--text-muted)',
+                            cursor: 'pointer',
+                          }}
+                        >
+                          <Download width={13} height={13} />
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                );
+              };
+
+              const renderVideoRow = (item: LectureItem, idx: number) => {
+                const isWatched = watchedUrls.has(item.url);
+                const isYt = isYouTubeItem(item);
+
+                return (
+                  <div
+                    key={item.id || idx}
+                    data-lecture-url={item.url}
+                    className={`video-row ${isWatched ? 'watched' : ''}`}
+                    onClick={() => handleItemClick(item, idx)}
+                  >
+                    <div className="video-num">{idx + 1}</div>
+                    <div
+                      className="video-icon vicon-hls"
+                      style={{
+                        display: 'flex',
+                        alignItems: 'center',
+                        justifyContent: 'center',
+                        color: isYt ? '#ff4b4b' : undefined,
+                      }}
+                    >
+                      {isYt ? (
+                        <ExternalLink width={13} height={13} />
+                      ) : (
+                        <Play width={13} height={13} fill="currentColor" />
+                      )}
+                    </div>
+                    <div className="video-body">
+                      <div className="video-title">{item.label}</div>
+                      <div className="video-sub">
+                        {item.subject || course.name} {isYt && '• YouTube Direct'}
+                      </div>
+                      {item.links && Object.keys(item.links).some((k) => k !== 'url') && (
+                        <div style={{ display: 'flex', flexWrap: 'wrap', gap: '4px', marginTop: '4px' }}>
+                          {(item.links.notes_en || item.links.en_pdf) && (
+                            <button
+                              onClick={(e) => {
+                                e.stopPropagation();
+                                const target = resolveDirectMediaUrl(item.links!.notes_en || item.links!.en_pdf);
+                                window.open(target, '_blank', 'noopener,noreferrer');
+                              }}
+                              style={{
+                                display: 'inline-flex',
+                                alignItems: 'center',
+                                gap: '2px',
+                                padding: '2px 6px',
+                                fontSize: '10px',
+                                fontWeight: 600,
+                                borderRadius: 'var(--r-sm)',
+                                border: '1px solid var(--border)',
+                                background: 'var(--bg-card-hover)',
+                                color: 'var(--accent)',
+                                cursor: 'pointer',
+                              }}
+                            >
+                              Notes EN
+                            </button>
+                          )}
+                          {(item.links.notes_hi || item.links.hi_pdf) && (
+                            <button
+                              onClick={(e) => {
+                                e.stopPropagation();
+                                const target = resolveDirectMediaUrl(item.links!.notes_hi || item.links!.hi_pdf);
+                                window.open(target, '_blank', 'noopener,noreferrer');
+                              }}
+                              style={{
+                                display: 'inline-flex',
+                                alignItems: 'center',
+                                gap: '2px',
+                                padding: '2px 6px',
+                                fontSize: '10px',
+                                fontWeight: 600,
+                                borderRadius: 'var(--r-sm)',
+                                border: '1px solid var(--border)',
+                                background: 'var(--bg-card-hover)',
+                                color: '#e67e22',
+                                cursor: 'pointer',
+                              }}
+                            >
+                              Notes HI
+                            </button>
+                          )}
+                          {item.links.handwritten && (
+                            <button
+                              onClick={(e) => {
+                                e.stopPropagation();
+                                const target = resolveDirectMediaUrl(item.links!.handwritten);
+                                window.open(target, '_blank', 'noopener,noreferrer');
+                              }}
+                              style={{
+                                display: 'inline-flex',
+                                alignItems: 'center',
+                                gap: '2px',
+                                padding: '2px 6px',
+                                fontSize: '10px',
+                                fontWeight: 600,
+                                borderRadius: 'var(--r-sm)',
+                                border: '1px solid var(--border)',
+                                background: 'var(--bg-card-hover)',
+                                color: '#27ae60',
+                                cursor: 'pointer',
+                              }}
+                            >
+                              Handwritten
+                            </button>
+                          )}
+                          {item.links.quiz && (
+                            <button
+                              onClick={(e) => {
+                                e.stopPropagation();
+                                window.open(resolveDirectMediaUrl(item.links!.quiz), '_blank', 'noopener,noreferrer');
+                              }}
+                              style={{
+                                display: 'inline-flex',
+                                alignItems: 'center',
+                                gap: '2px',
+                                padding: '2px 6px',
+                                fontSize: '10px',
+                                fontWeight: 600,
+                                borderRadius: 'var(--r-sm)',
+                                border: '1px solid var(--border)',
+                                background: 'var(--bg-card-hover)',
+                                color: '#8e44ad',
+                                cursor: 'pointer',
+                              }}
+                            >
+                              Quiz
+                            </button>
+                          )}
+                        </div>
+                      )}
+                    </div>
+
+                    <div style={{ display: 'flex', alignItems: 'center', gap: '8px' }}>
+                      {item.duration && (
+                        <span style={{ fontSize: '11px', color: 'var(--text-muted)', fontWeight: 600 }}>
+                          {formatItemDuration(item.duration)}
+                        </span>
+                      )}
+                      <div className="watched-badge" style={{ display: 'inline-flex', alignItems: 'center', gap: '4px' }}>
+                        <CheckCircle2 width={12} height={12} />
+                        <span>Watched</span>
+                      </div>
+                    </div>
+                  </div>
+                );
+              };
+
+              const renderPdfRow = (item: LectureItem, idx: number) => {
+                const isWatched = watchedUrls.has(item.url);
+                const directUrl = item.downloadUrl || item.url;
+
+                return (
+                  <div
+                    key={item.id || idx}
+                    data-lecture-url={item.url}
+                    className={`video-row ${isWatched ? 'watched' : ''}`}
+                    onClick={() => handleItemClick(item, idx)}
+                  >
+                    <div className="video-num">{idx + 1}</div>
+                    <div
+                      className="video-icon vicon-ext"
+                      style={{
+                        display: 'flex',
+                        alignItems: 'center',
+                        justifyContent: 'center',
+                        color: '#ef4444',
+                      }}
+                    >
+                      <FileText width={14} height={14} />
+                    </div>
+                    <div className="video-body">
+                      <div className="video-title">{item.label}</div>
+                      <div className="video-sub">
+                        {item.subject || course.name} • PDF Document
+                      </div>
+                    </div>
+                    <div style={{ display: 'flex', alignItems: 'center', gap: '8px' }}>
+                      <button
+                        onClick={(e) => {
+                          e.stopPropagation();
+                          window.open(directUrl, '_blank', 'noopener,noreferrer');
+                        }}
+                        title="Open PDF"
+                        style={{
+                          display: 'inline-flex',
+                          alignItems: 'center',
+                          gap: '4px',
+                          padding: '5px 10px',
+                          borderRadius: 'var(--r-sm)',
+                          border: '1px solid var(--border)',
+                          background: 'var(--bg-card)',
+                          color: 'var(--accent)',
+                          fontSize: '11px',
+                          fontWeight: 700,
+                          cursor: 'pointer',
+                        }}
+                      >
+                        <ExternalLink width={12} height={12} />
+                        <span>Open</span>
+                      </button>
+                      <button
+                        onClick={(e) => handleDownloadPdf(e, item)}
+                        title="Download PDF"
+                        style={{
+                          display: 'inline-flex',
+                          alignItems: 'center',
+                          gap: '4px',
+                          padding: '5px 10px',
+                          borderRadius: 'var(--r-sm)',
+                          border: '1px solid var(--border)',
+                          background: 'var(--bg-card)',
+                          color: 'var(--text-muted)',
+                          fontSize: '11px',
+                          fontWeight: 700,
+                          cursor: 'pointer',
+                        }}
+                      >
+                        <Download width={12} height={12} />
+                        <span>Download</span>
+                      </button>
+                    </div>
+                  </div>
+                );
+              };
+
+              return (
+                <div>
+                  {/* VIDEO LECTURES SECTION */}
+                  {videoItems.length > 0 && (
+                    <div style={{ marginBottom: hasBoth ? '32px' : '0' }}>
+                      {hasBoth && (
+                        <div
+                          style={{
+                            display: 'flex',
+                            alignItems: 'center',
+                            gap: '8px',
+                            margin: '8px 0 16px',
+                            paddingBottom: '8px',
+                            borderBottom: '1px solid var(--border)',
+                          }}
+                        >
+                          <div
+                            style={{
+                              width: '26px',
+                              height: '26px',
+                              borderRadius: 'var(--r-sm)',
+                              background: 'rgba(59, 130, 246, 0.15)',
+                              display: 'flex',
+                              alignItems: 'center',
+                              justifyContent: 'center',
+                              color: 'var(--accent)',
+                            }}
+                          >
+                            <Video width={15} height={15} />
+                          </div>
+                          <h3 style={{ margin: 0, fontSize: '15.5px', fontWeight: 700, color: 'var(--text)' }}>
+                            Video Lectures
+                          </h3>
+                          <span
+                            style={{
+                              fontSize: '11px',
+                              background: 'var(--bg-card-hover)',
+                              padding: '2px 8px',
+                              borderRadius: 'var(--r-pill)',
+                              color: 'var(--text-muted)',
+                              fontWeight: 600,
+                            }}
+                          >
+                            {videoItems.length}
+                          </span>
+                        </div>
+                      )}
+
+                      {viewMode === 'grid' ? (
+                        <div className="lecture-grid-container">
+                          {videoItems.map((item, idx) => renderVideoCard(item, idx))}
+                        </div>
+                      ) : (
+                        <div className="video-list">
+                          {videoItems.map((item, idx) => renderVideoRow(item, idx))}
+                        </div>
+                      )}
+                    </div>
+                  )}
+
+                  {/* PRACTICE SHEETS & STUDY NOTES SECTION */}
+                  {pdfItems.length > 0 && (
+                    <div style={{ marginTop: hasBoth ? '28px' : '0' }}>
+                      {hasBoth && (
+                        <div
+                          style={{
+                            display: 'flex',
+                            alignItems: 'center',
+                            gap: '8px',
+                            margin: '8px 0 16px',
+                            paddingBottom: '8px',
+                            borderBottom: '1px solid var(--border)',
+                          }}
+                        >
+                          <div
+                            style={{
+                              width: '26px',
+                              height: '26px',
+                              borderRadius: 'var(--r-sm)',
+                              background: 'rgba(239, 68, 68, 0.15)',
+                              display: 'flex',
+                              alignItems: 'center',
+                              justifyContent: 'center',
+                              color: '#ef4444',
+                            }}
+                          >
+                            <FileText width={15} height={15} />
+                          </div>
+                          <h3 style={{ margin: 0, fontSize: '15.5px', fontWeight: 700, color: 'var(--text)' }}>
+                            Practice Sheets & Study Notes
+                          </h3>
+                          <span
+                            style={{
+                              fontSize: '11px',
+                              background: 'var(--bg-card-hover)',
+                              padding: '2px 8px',
+                              borderRadius: 'var(--r-pill)',
+                              color: 'var(--text-muted)',
+                              fontWeight: 600,
+                            }}
+                          >
+                            {pdfItems.length}
+                          </span>
+                        </div>
+                      )}
+
+                      {viewMode === 'grid' ? (
+                        <div className="lecture-grid-container">
+                          {pdfItems.map((item, idx) => renderPdfCard(item, idx))}
+                        </div>
+                      ) : (
+                        <div className="video-list">
+                          {pdfItems.map((item, idx) => renderPdfRow(item, idx))}
+                        </div>
+                      )}
+                    </div>
+                  )}
+                </div>
+              );
+            })()}
 
             {/* Load More Button for Progressive Chunked Rendering */}
             {visibleLimit < activeItems.length && (

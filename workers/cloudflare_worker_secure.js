@@ -54,6 +54,8 @@ const ALLOWED_UPSTREAMS = [
 ];
 
 const ALLOWED_ORIGINS = [
+  'course.stutosed.in',
+  'stutosed.in',
   'stutosed.vercel.app',
   'localhost',
   '127.0.0.1',

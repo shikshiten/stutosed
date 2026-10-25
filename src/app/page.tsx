@@ -1048,7 +1048,8 @@ export default function HomePage() {
       viewUrl.includes('file-stream-bot') ||
       viewUrl.includes('crwilladmin.com') ||
       viewUrl.includes('herokuapp.com') ||
-      viewUrl.endsWith('.pdf')
+      viewUrl.includes('catbox.moe') ||
+      viewUrl.toLowerCase().includes('.pdf')
     ) {
       window.open(viewUrl, '_blank', 'noopener,noreferrer');
     } else if (viewUrl) {
