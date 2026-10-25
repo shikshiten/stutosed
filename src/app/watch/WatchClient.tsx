@@ -217,7 +217,6 @@ export default function WatchClient() {
   const [isSaved, setIsSaved] = useState(false);
   const [isWatched, setIsWatched] = useState(false);
   const [copiedToast, setCopiedToast] = useState(false);
-  const [isDescExpanded, setIsDescExpanded] = useState(true);
 
   // 1. Initial Load: Sync Theme & Resolve Playlist from SessionStorage or Course Data
   useEffect(() => {
@@ -308,7 +307,7 @@ export default function WatchClient() {
           setCourseInfo({
             id: course.id,
             name: course.name,
-            category: course.id.startsWith('beu') ? 'beu' : 'government',
+            category: (course.category as any) || (course.id.startsWith('beu') ? 'beu' : 'government'),
             subject: extractedSubject,
             thumb: course.thumb,
           });
@@ -366,11 +365,9 @@ export default function WatchClient() {
   // Handle auto-dismissal when video begins playing, or advance elapsed loading seconds
   useEffect(() => {
     if (!loadingNoticeVisible) return;
-    if (isEmbedMode) {
-      const timer = setTimeout(() => {
-        setLoadingNoticeVisible(false);
-      }, 1800);
-      return () => clearTimeout(timer);
+    if (isEmbedMode || isStreamP2PUrl || isPendingLecture) {
+      setLoadingNoticeVisible(false);
+      return;
     }
     if (isPlaying && !streamLoading && !isBuffering) {
       const timer = setTimeout(() => {
@@ -415,28 +412,49 @@ export default function WatchClient() {
   const isYouTubeUrl = activeUrl.includes('youtube.com') || activeUrl.includes('youtu.be') || currentItem?.type === 'youtube';
   const isDirectHlsUrl = activeUrl.includes('.m3u8');
   const isProxyStreamUrl =
-    activeUrl.includes('streamvaultpro.cc') ||
     activeUrl.includes('workers.dev') ||
     activeUrl.includes('publicbotshub') ||
     activeUrl.includes('herokuapp.com') ||
-    activeUrl.includes('/0:/stream/') ||
-    activeUrl.includes('/0:/dl/') ||
     activeUrl.endsWith('.mp4') ||
     activeUrl.endsWith('.mkv') ||
-    activeServer?.name?.toUpperCase().includes('ALBA') ||
     activeServer?.name?.toUpperCase().includes('ESTE');
-  const isAlbaActive =
-    activeServer?.name?.toUpperCase().includes('ALBA') ||
-    activeServer?.name?.toUpperCase().includes('ESTE') ||
-    (!activeServer && (activeUrl.includes('streamvaultpro.cc') || activeUrl.includes('/0:/stream/') || activeUrl.includes('/0:/dl/'))) ||
-    Boolean(activeServer?.streamUrl);
+  const isAlbaActive = false;
 
   const vidmolyCode = isVidmolyUrl ? extractVidmolyCode(activeUrl) : null;
   const earnvidsCode = isEarnvidsUrl ? extractEarnvidsCode(activeUrl) : null;
   const ytId = isYouTubeUrl ? activeUrl.match(/(?:v=|youtu\.be\/|live\/)([a-zA-Z0-9_-]{11})/)?.[1] : null;
 
-  // Embedded Lecture Mode (Official YouTube embed player)
+  const isPendingLecture =
+    Boolean(activeUrl.startsWith('pending://')) ||
+    Boolean(currentItem?.id?.startsWith('pending-')) ||
+    activeUrl.includes('pending-');
+
+  const isStreamP2PUrl =
+    !isPendingLecture &&
+    (activeUrl.includes('streamp2p.com') ||
+      activeUrl.includes('strp2p.site') ||
+      currentItem?.type === 'streamp2p' ||
+      activeServer?.type === 'streamp2p');
+
+  const streamP2PId = useMemo(() => {
+    if (!isStreamP2PUrl || isPendingLecture) return null;
+    const m = activeUrl.match(/(?:streamp2p\.com\/e\/|strp2p\.site\/#|strp2p\.site\/|streamp2p\.com\/api\/v1\/video\/manage\/|id=)([a-zA-Z0-9]+)/);
+    if (m && !m[1].startsWith('pending')) return m[1];
+    const hashMatch = activeUrl.match(/#([a-zA-Z0-9]+)/);
+    if (hashMatch && !hashMatch[1].startsWith('pending')) return hashMatch[1];
+    if (currentItem?.id && /^[a-zA-Z0-9]{5,10}$/.test(currentItem.id) && !currentItem.id.startsWith('pending')) return currentItem.id;
+    return null;
+  }, [isStreamP2PUrl, isPendingLecture, activeUrl, currentItem]);
+
+  // Embedded Lecture Mode (Official YouTube & StreamP2P custom embed player on stutosed.strp2p.site)
   const embedUrl = useMemo(() => {
+    if (isPendingLecture) return null;
+    if (isStreamP2PUrl) {
+      if (streamP2PId) {
+        return `https://stutosed.strp2p.site/#${streamP2PId}`;
+      }
+      return activeUrl;
+    }
     if (isYouTubeUrl && ytId) {
       return `https://www.youtube-nocookie.com/embed/${ytId}?autoplay=1&rel=0`;
     }
@@ -444,10 +462,10 @@ export default function WatchClient() {
       return activeUrl;
     }
     return null;
-  }, [isYouTubeUrl, ytId, activeUrl]);
+  }, [isPendingLecture, isStreamP2PUrl, streamP2PId, isYouTubeUrl, ytId, activeUrl]);
 
   const isEmbedMode = Boolean(embedUrl);
-  const needsApiResolution = !isEmbedMode && (isVidmolyUrl || isEarnvidsUrl);
+  const needsApiResolution = !isEmbedMode && !isPendingLecture && (isVidmolyUrl || isEarnvidsUrl);
 
   // Stream Resolution with fast in-memory cache
   useEffect(() => {
@@ -456,8 +474,9 @@ export default function WatchClient() {
     setResolvedStreamUrl(null);
     setStreamError(null);
 
-    if (isEmbedMode || isYouTubeUrl) {
+    if (isPendingLecture || isEmbedMode || isYouTubeUrl || isStreamP2PUrl) {
       setStreamLoading(false);
+      setLoadingNoticeVisible(false);
       return;
     }
 
@@ -590,11 +609,11 @@ export default function WatchClient() {
       const hls = new Hls({
         enableWorker: true,
         progressive: true,
-        maxBufferLength: 30,
-        maxMaxBufferLength: 60,
+        maxBufferLength: 60,
+        maxMaxBufferLength: 120,
         maxBufferSize: 60 * 1000 * 1000,
         maxBufferHole: 0.5,
-        backBufferLength: 30,
+        backBufferLength: 90,
         manifestLoadingTimeOut: 15000,
         fragLoadingTimeOut: 20000,
         startLevel: -1,
@@ -616,6 +635,14 @@ export default function WatchClient() {
         if (data.fatal) {
           switch (data.type) {
             case Hls.ErrorTypes.NETWORK_ERROR:
+              if (data.response?.code === 404) {
+                setStreamError(
+                  '⏳ This lecture is currently being processed by Vidmoly servers. Newly uploaded videos take a few minutes to encode. Please check back shortly or select one of the ready lectures (e.g. Lecture 2 A, 5 C, 7, 8 A).'
+                );
+                hls.destroy();
+                hlsRef.current = null;
+                break;
+              }
               hls.startLoad();
               break;
             case Hls.ErrorTypes.MEDIA_ERROR:
@@ -1221,10 +1248,7 @@ export default function WatchClient() {
     } catch {}
   };
 
-  // Dynamic Syllabus Description
-  const topicDesc = useMemo(() => {
-    return getLectureTopicDescription(currentItem?.label || courseInfo.name);
-  }, [currentItem, courseInfo]);
+
 
   const showLoading = streamLoading || isBuffering;
   const playedPercent = duration > 0 ? (currentTime / duration) * 100 : 0;
@@ -1399,7 +1423,7 @@ export default function WatchClient() {
               </div>
 
               {/* CENTER OVERLAY: Only in native video mode */}
-              {!isEmbedMode && (
+              {!isEmbedMode && !isPendingLecture && (
                 <div className="player-center-overlay">
                   <button
                     className="player-center-skip-arrow backward"
@@ -1483,8 +1507,95 @@ export default function WatchClient() {
                 </div>
               )}
 
-              {/* Media Element: Embedded iframe or Native Video */}
-              {isEmbedMode ? (
+              {/* Media Element: Pending Queue Screen, Embedded iframe or Native Video */}
+              {isPendingLecture ? (
+                <div
+                  className="player-pending-queue-card"
+                  style={{
+                    position: 'absolute',
+                    inset: 0,
+                    zIndex: 2,
+                    display: 'flex',
+                    flexDirection: 'column',
+                    alignItems: 'center',
+                    justifyContent: 'center',
+                    background: 'radial-gradient(circle at 50% 40%, rgba(30, 41, 59, 0.95) 0%, rgba(15, 23, 42, 0.98) 100%)',
+                    padding: '32px 24px',
+                    textAlign: 'center',
+                    color: '#ffffff',
+                  }}
+                >
+                  <div
+                    style={{
+                      width: '64px',
+                      height: '64px',
+                      borderRadius: '50%',
+                      background: 'rgba(245, 158, 11, 0.15)',
+                      border: '1px solid rgba(245, 158, 11, 0.35)',
+                      display: 'flex',
+                      alignItems: 'center',
+                      justifyContent: 'center',
+                      color: '#f59e0b',
+                      marginBottom: '18px',
+                      boxShadow: '0 0 24px rgba(245, 158, 11, 0.2)',
+                    }}
+                  >
+                    <Sparkles width={28} height={28} />
+                  </div>
+                  <div
+                    style={{
+                      fontSize: '11px',
+                      textTransform: 'uppercase',
+                      letterSpacing: '1px',
+                      fontWeight: 800,
+                      color: '#f59e0b',
+                      marginBottom: '8px',
+                      background: 'rgba(245, 158, 11, 0.12)',
+                      padding: '4px 12px',
+                      borderRadius: 'var(--r-pill)',
+                      border: '1px solid rgba(245, 158, 11, 0.25)',
+                    }}
+                  >
+                    Lecture In Processing / Upload Queue
+                  </div>
+                  <h3 style={{ fontSize: '20px', fontWeight: 700, margin: '0 0 10px', color: '#ffffff', maxWidth: '520px', lineHeight: 1.35 }}>
+                    {currentItem.label}
+                  </h3>
+                  <p style={{ fontSize: '13.5px', color: 'rgba(255, 255, 255, 0.72)', maxWidth: '480px', lineHeight: 1.55, margin: '0 0 24px' }}>
+                    This lecture is queued for upload to StreamP2P. Active video playback with StreamP2P embedded player is ready for <strong>Number Series</strong>, <strong>Quadratic Equations</strong>, and <strong>Percentage</strong>.
+                  </p>
+                  {(() => {
+                    const firstReadyIndex = playlist.findIndex((item) => item.type === 'streamp2p' && item.id && !item.id.startsWith('pending'));
+                    if (firstReadyIndex >= 0) {
+                      const readyItem = playlist[firstReadyIndex];
+                      return (
+                        <button
+                          onClick={() => setCurrentIndex(firstReadyIndex)}
+                          style={{
+                            display: 'inline-flex',
+                            alignItems: 'center',
+                            gap: '8px',
+                            padding: '12px 24px',
+                            borderRadius: 'var(--r-pill)',
+                            background: 'linear-gradient(135deg, #0ea5e9 0%, #0284c7 100%)',
+                            color: '#ffffff',
+                            border: 'none',
+                            fontWeight: 700,
+                            fontSize: '13.5px',
+                            cursor: 'pointer',
+                            boxShadow: '0 4px 18px rgba(14, 165, 233, 0.45)',
+                            transition: 'all 0.2s ease',
+                          }}
+                        >
+                          <Play width={16} height={16} fill="currentColor" />
+                          <span>Watch First Ready Stream: {readyItem.label}</span>
+                        </button>
+                      );
+                    }
+                    return null;
+                  })()}
+                </div>
+              ) : isEmbedMode ? (
                 <div
                   className="player-iframe-container"
                   style={{
@@ -1507,7 +1618,6 @@ export default function WatchClient() {
                       display: 'block',
                     }}
                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share; fullscreen"
-                    allowFullScreen
                     onLoad={() => {
                       setStreamLoading(false);
                       setLoadingNoticeVisible(false);
@@ -1525,7 +1635,7 @@ export default function WatchClient() {
               )}
 
               {/* BOTTOM FLOATING OVERLAY: Only in native video mode */}
-              {!isEmbedMode && (
+              {!isEmbedMode && !isPendingLecture && (
                 <div className="player-bottom-overlay" onClick={(e) => e.stopPropagation()}>
                 {/* Seekbar */}
                 <div
@@ -1751,45 +1861,7 @@ export default function WatchClient() {
               </button>
             </div>
 
-            {/* ==================== EDUCATIONAL TOPIC DESCRIPTION CARD ==================== */}
-            <section className="watch-topic-card">
-              <div className="watch-topic-card-header" onClick={() => setIsDescExpanded((p) => !p)}>
-                <div className="watch-topic-header-left">
-                  <div className="watch-topic-icon-box">
-                    <Sparkles width={18} height={18} color="var(--accent)" />
-                  </div>
-                  <div>
-                    <span className="watch-topic-tag">{topicDesc.categoryTag}</span>
-                    <h3 className="watch-topic-title">Topic Overview &amp; Key Concepts</h3>
-                  </div>
-                </div>
 
-                <button className="watch-topic-toggle-btn">
-                  <span>{isDescExpanded ? 'Hide Details' : 'Show Details'}</span>
-                  {isDescExpanded ? <ChevronUp width={16} height={16} /> : <ChevronDown width={16} height={16} />}
-                </button>
-              </div>
-
-              {isDescExpanded && (
-                <div className="watch-topic-body animate-fade-in">
-                  <p className="watch-topic-overview">{topicDesc.overview}</p>
-
-                  <div className="watch-topic-points-box">
-                    <div className="watch-topic-points-title">Core Concepts Covered in this Lecture:</div>
-                    <ul className="watch-topic-points-list">
-                      {topicDesc.keyPoints.map((pt, i) => (
-                        <li key={i}>{pt}</li>
-                      ))}
-                    </ul>
-                  </div>
-
-                  <div className="watch-exam-tip-card">
-                    <span className="watch-exam-badge">Exam High-Yield Insight</span>
-                    <p className="watch-exam-text">{topicDesc.examTip}</p>
-                  </div>
-                </div>
-              )}
-            </section>
           </div>
         </div>
 

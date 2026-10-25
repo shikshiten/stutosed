@@ -4697,10 +4697,54 @@ button[class*="nextjs"] {
   }
 }
 
+/* ================================================================
+   GOVERNMENT EXAMS HIERARCHICAL REDESIGN STYLES
+   ================================================================ */
+.subject-discipline-card {
+  transition: transform 0.25s cubic-bezier(0.16, 1, 0.3, 1),
+              box-shadow 0.25s cubic-bezier(0.16, 1, 0.3, 1),
+              border-color 0.2s ease;
+}
 
+.subject-discipline-card:hover {
+  transform: translateY(-3px);
+  border-color: rgba(99, 102, 241, 0.35) !important;
+  box-shadow: 0 14px 30px -4px rgba(0, 0, 0, 0.08), 0 4px 12px rgba(0, 0, 0, 0.04) !important;
+}
 
+[data-theme="dark"] .subject-discipline-card:hover {
+  box-shadow: 0 14px 32px -4px rgba(0, 0, 0, 0.45), 0 0 20px rgba(99, 102, 241, 0.12) !important;
+}
 
+.course-card-enhanced {
+  transition: transform 0.25s cubic-bezier(0.16, 1, 0.3, 1),
+              box-shadow 0.25s cubic-bezier(0.16, 1, 0.3, 1),
+              border-color 0.2s ease;
+}
 
+.course-card-enhanced:hover {
+  transform: translateY(-3px);
+  border-color: var(--border-hover) !important;
+  box-shadow: var(--sh-card-hover) !important;
+}
 
+.course-card-enhanced:hover img {
+  transform: scale(1.04);
+}
 
+.course-list-item-hover {
+  transition: all 0.2s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.course-list-item-hover:hover {
+  background: var(--bg-card-hover) !important;
+  border-color: var(--border-hover) !important;
+  transform: translateX(2px);
+}
+
+@media (max-width: 768px) {
+  .gov-exams-container {
+    padding-top: 4px !important;
+  }
+}
 

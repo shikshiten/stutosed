@@ -1,11 +1,13 @@
 'use client';
 
-import React, { useState, useEffect, useRef, useMemo } from 'react';
+import React, { useState, useEffect, useRef, useMemo, useCallback } from 'react';
 import { useRouter } from 'next/navigation';
 import { Sidebar, AppView } from '@/components/Sidebar';
 import { MobileHeader } from '@/components/MobileHeader';
 import { MobileBottomNav } from '@/components/MobileBottomNav';
 import { CourseGrid } from '@/components/CourseGrid';
+import { GovernmentExamsView, GovtDisciplineId, GOVT_DISCIPLINES } from '@/components/GovernmentExamsView';
+import { GateEngineeringView, GateViewStep } from '@/components/GateEngineeringView';
 import { CourseModal } from '@/components/CourseModal';
 import { AuthModal } from '@/components/AuthModal';
 import { PdfViewerModal } from '@/components/PdfViewerModal';
@@ -173,6 +175,51 @@ export default function HomePage() {
   const [theme, setTheme] = useState<'light' | 'dark'>('light');
   const [selectedCourse, setSelectedCourse] = useState<Course | null>(null);
   const [openFolderId, setOpenFolderId] = useState<string | null>(null);
+  const [selectedGovtDiscipline, setSelectedGovtDiscipline] = useState<GovtDisciplineId | null>(null);
+
+  // GATE Engineering hierarchical navigation state
+  const [gateStep, setGateStep] = useState<GateViewStep>('branches');
+  const [gateBranch, setGateBranch] = useState<string | null>('ECE');
+  const [gateInstitute, setGateInstitute] = useState<string | null>('Made Easy');
+  const [gateSubject, setGateSubject] = useState<string | null>('Signal and System');
+
+  const syncGateNavigation = (
+    step: GateViewStep,
+    branch: string | null = null,
+    institute: string | null = null,
+    subject: string | null = null,
+    urlPath?: string
+  ) => {
+    setGateStep(step);
+    if (branch !== undefined) setGateBranch(branch);
+    if (institute !== undefined) setGateInstitute(institute);
+    if (subject !== undefined) setGateSubject(subject);
+    setActiveView('cat-gate');
+    setSelectedCourse(null);
+    setOpenFolderId(null);
+    setPlayerPlaylist(null);
+    setPdfModalData(null);
+
+    if (typeof window !== 'undefined') {
+      let targetPath = urlPath;
+      if (!targetPath) {
+        if (step === 'branches') targetPath = '/gate';
+        else if (step === 'institutes') targetPath = '/ece';
+        else if (step === 'subjects') targetPath = '/ece/madeeasy';
+        else if (step === 'lectures') targetPath = '/ece/madeeasy/signal-system';
+        else targetPath = '/gate';
+      }
+      try {
+        sessionStorage.setItem('stutosed_active_view', 'cat-gate');
+        sessionStorage.setItem('stutosed_gate_step', step);
+        window.history.pushState(
+          { view: 'cat-gate', gateStep: step, gateBranch: branch, gateInstitute: institute, gateSubject: subject },
+          '',
+          targetPath
+        );
+      } catch {}
+    }
+  };
 
   // Video Player state
   const [playerPlaylist, setPlayerPlaylist] = useState<LectureItem[] | null>(null);
@@ -249,7 +296,8 @@ export default function HomePage() {
     view: AppView,
     courseId: string | null = null,
     folderId: string | null = null,
-    isPush: boolean = true
+    isPush: boolean = true,
+    subjId?: string | null
   ) => {
     if (typeof window === 'undefined') return;
     try {
@@ -275,9 +323,32 @@ export default function HomePage() {
         sessionStorage.removeItem('stutosed_open_folder');
       }
 
-      const queryString = params.toString();
-      const nextUrl = queryString ? `/?${queryString}` : '/';
-      const historyState = { view, courseId, folderId };
+      const activeSubj = subjId !== undefined ? subjId : selectedGovtDiscipline;
+      let nextUrl = '/';
+
+      if (view === 'gov-exams') {
+        if (activeSubj) {
+          sessionStorage.setItem('stutosed_govt_subj', activeSubj);
+          if (courseId) {
+            const courseSlug = courseId === 'banking-quant-hero' ? 'quant' : courseId;
+            if (folderId) {
+              nextUrl = `/gov-exams/${activeSubj}/${courseSlug}/${folderId}`;
+            } else {
+              nextUrl = `/gov-exams/${activeSubj}/${courseSlug}`;
+            }
+          } else {
+            nextUrl = `/gov-exams/${activeSubj}`;
+          }
+        } else {
+          sessionStorage.removeItem('stutosed_govt_subj');
+          nextUrl = '/gov-exams';
+        }
+      } else {
+        const queryString = params.toString();
+        nextUrl = queryString ? `/?${queryString}` : '/';
+      }
+
+      const historyState = { view, courseId, folderId, subjId: activeSubj };
 
       if (isPush) {
         window.history.pushState(historyState, '', nextUrl);
@@ -331,6 +402,87 @@ export default function HomePage() {
         const courseParam = urlParams.get('course') || sessionStorage.getItem('stutosed_open_course');
         const folderParam = urlParams.get('folder') || sessionStorage.getItem('stutosed_open_folder');
 
+        // Detect direct path-based navigation for /gov-exams, /ece, /ece/madeeasy, /gate
+        const currentPath = window.location.pathname.toLowerCase().replace(/\/+$/, '') || '/';
+        if (currentPath === '/gov-exams' || currentPath === '/gov-exams/') {
+          viewParam = 'gov-exams';
+          setSelectedGovtDiscipline(null);
+        } else if (currentPath === '/gov-exams/banking') {
+          viewParam = 'gov-exams';
+          setSelectedGovtDiscipline('banking');
+        } else if (
+          currentPath === '/gov-exams/banking/quant' ||
+          currentPath.startsWith('/gov-exams/banking/quant/')
+        ) {
+          viewParam = 'gov-exams';
+          setSelectedGovtDiscipline('banking');
+          const quantCourse = getCourseById('banking-quant-hero');
+          if (quantCourse) {
+            setSelectedCourse(quantCourse);
+            const pathParts = currentPath.split('/');
+            if (pathParts[4]) {
+              setOpenFolderId(pathParts[4]);
+            }
+          }
+        } else if (currentPath.startsWith('/gov-exams/')) {
+          viewParam = 'gov-exams';
+          const parts = currentPath.split('/').filter(Boolean);
+          if (parts[1]) {
+            const matchedDiscipline = GOVT_DISCIPLINES.find((d) => d.id === parts[1]);
+            if (matchedDiscipline) {
+              setSelectedGovtDiscipline(matchedDiscipline.id as any);
+            }
+            if (parts[2]) {
+              const matchedCourse = INITIAL_COURSES.find(
+                (c) => c.id === parts[2] || (c.id === 'banking-quant-hero' && parts[2] === 'quant')
+              );
+              if (matchedCourse) {
+                setSelectedCourse(matchedCourse);
+                if (parts[3]) {
+                  setOpenFolderId(parts[3]);
+                }
+              }
+            }
+          }
+        } else if (currentPath === '/ece') {
+          viewParam = 'cat-gate';
+          setGateStep('institutes');
+          setGateBranch('ECE');
+        } else if (currentPath === '/ece/madeeasy' || currentPath === '/ece/made-easy') {
+          viewParam = 'cat-gate';
+          setGateStep('subjects');
+          setGateBranch('ECE');
+          setGateInstitute('Made Easy');
+        } else if (
+          currentPath === '/ece/madeeasy/signal-system' ||
+          currentPath === '/ece/madeeasy/signals-and-systems' ||
+          currentPath.startsWith('/ece/madeeasy/')
+        ) {
+          viewParam = 'cat-gate';
+          setGateStep('lectures');
+          setGateBranch('ECE');
+          setGateInstitute('Made Easy');
+          setGateSubject('Signal and System');
+        } else if (currentPath === '/gate' || currentPath === '/gate/') {
+          viewParam = 'cat-gate';
+          setGateStep('branches');
+        } else if (currentPath === '/gate/ece') {
+          viewParam = 'cat-gate';
+          setGateStep('institutes');
+          setGateBranch('ECE');
+        } else if (currentPath === '/gate/ece/madeeasy') {
+          viewParam = 'cat-gate';
+          setGateStep('subjects');
+          setGateBranch('ECE');
+          setGateInstitute('Made Easy');
+        } else if (currentPath.startsWith('/gate/ece/madeeasy/')) {
+          viewParam = 'cat-gate';
+          setGateStep('lectures');
+          setGateBranch('ECE');
+          setGateInstitute('Made Easy');
+          setGateSubject('Signal and System');
+        }
+
         if (viewParam && (validViews.includes(viewParam) || (typeof viewParam === 'string' && viewParam.startsWith('cat-')))) {
           setActiveView(viewParam);
         } else {
@@ -350,10 +502,15 @@ export default function HomePage() {
           }
         }
 
+        const subjParam = urlParams.get('subj') || sessionStorage.getItem('stutosed_govt_subj');
+        if (subjParam && ['maths', 'english', 'reasoning', 'gk', 'computer', 'complete-ssc'].includes(subjParam)) {
+          setSelectedGovtDiscipline(subjParam as GovtDisciplineId);
+        }
+
         // Seed initial history state
         const currentSearch = window.location.search;
         window.history.replaceState(
-          { view: viewParam, courseId: courseParam || null, folderId: folderParam || null },
+          { view: viewParam, courseId: courseParam || null, folderId: folderParam || null, subjId: subjParam || null },
           '',
           currentSearch || '/'
         );
@@ -575,9 +732,77 @@ export default function HomePage() {
         return;
       }
 
+      // Layer 6.5: If in Government Exams discipline sub-folder, go back to discipline hub
+      if (activeView === 'gov-exams' && selectedGovtDiscipline) {
+        setSelectedGovtDiscipline(null);
+        syncNavigationState('gov-exams', null, null, false, null);
+        return;
+      }
+
+      // Layer 6.6: Government Exams hierarchical path layer popstate
+      const currentPath = window.location.pathname.toLowerCase().replace(/\/+$/, '') || '/';
+      if (currentPath === '/gov-exams/banking/quant' || currentPath.startsWith('/gov-exams/banking/quant/')) {
+        setActiveView('gov-exams');
+        setSelectedGovtDiscipline('banking');
+        const quantCourse = getCourseById('banking-quant-hero');
+        if (quantCourse) setSelectedCourse(quantCourse);
+        return;
+      }
+      if (currentPath === '/gov-exams/banking') {
+        setActiveView('gov-exams');
+        setSelectedGovtDiscipline('banking');
+        setSelectedCourse(null);
+        setOpenFolderId(null);
+        return;
+      }
+      if (currentPath === '/gov-exams') {
+        setActiveView('gov-exams');
+        setSelectedGovtDiscipline(null);
+        setSelectedCourse(null);
+        setOpenFolderId(null);
+        return;
+      }
+
+      // Layer 6.7: GATE Engineering hierarchical path layer popstate
+      if (currentPath === '/ece') {
+        setActiveView('cat-gate');
+        setGateStep('institutes');
+        setGateBranch('ECE');
+        setSelectedCourse(null);
+        return;
+      }
+      if (currentPath === '/ece/madeeasy' || currentPath === '/ece/made-easy') {
+        setActiveView('cat-gate');
+        setGateStep('subjects');
+        setGateBranch('ECE');
+        setGateInstitute('Made Easy');
+        setSelectedCourse(null);
+        return;
+      }
+      if (
+        currentPath === '/ece/madeeasy/signal-system' ||
+        currentPath === '/ece/madeeasy/signals-and-systems' ||
+        currentPath.startsWith('/ece/madeeasy/')
+      ) {
+        setActiveView('cat-gate');
+        setGateStep('lectures');
+        setGateBranch('ECE');
+        setGateInstitute('Made Easy');
+        setGateSubject('Signal and System');
+        setSelectedCourse(null);
+        return;
+      }
+      if (currentPath === '/gate') {
+        setActiveView('cat-gate');
+        setGateStep('branches');
+        setSelectedCourse(null);
+        return;
+      }
+
       // Layer 7: If in a sub-view (beu-engineering, gov-exams, profile, help), return to home
       if (activeView !== 'home') {
         setActiveView('home');
+        setSelectedGovtDiscipline(null);
         syncNavigationState('home', null, null, false);
         return;
       }
@@ -592,6 +817,7 @@ export default function HomePage() {
     playerPlaylist,
     openFolderId,
     selectedCourse,
+    selectedGovtDiscipline,
     activeView,
   ]);
 
@@ -603,9 +829,14 @@ export default function HomePage() {
     document.documentElement.setAttribute('data-theme', nextTheme);
   };
 
-  // Mark URL as watched (Local + Supabase Cloud)
-  const handleMarkWatched = (url: string, courseId?: string, label?: string) => {
+  const selectedCourseRef = useRef(selectedCourse);
+  selectedCourseRef.current = selectedCourse;
+
+  // Mark URL as watched (Local + Supabase Cloud) - Memoized with guard against redundant renders
+  const handleMarkWatched = useCallback((url: string, courseId?: string, label?: string) => {
+    if (!url) return;
     setWatchedUrls((prev) => {
+      if (prev.has(url)) return prev;
       const next = new Set(prev);
       next.add(url);
 
@@ -618,19 +849,29 @@ export default function HomePage() {
       return next;
     });
 
-    syncLectureWatched(courseId || selectedCourse?.id || 'unknown', url, label).catch(() => {});
-  };
+    syncLectureWatched(courseId || selectedCourseRef.current?.id || 'unknown', url, label).catch(() => {});
+  }, []);
 
   // Navigation handlers
   const handleViewChange = (newView: AppView) => {
-    if (newView === activeView && !selectedCourse && !openFolderId) return;
+    if (newView === activeView && !selectedCourse && !openFolderId && (newView !== 'cat-gate' || gateStep === 'branches')) return;
+
+    if (newView !== 'gov-exams') {
+      setSelectedGovtDiscipline(null);
+    }
+
+    if (newView === 'cat-gate') {
+      setGateStep('branches');
+      syncGateNavigation('branches', null, null, null, '/gate');
+      return;
+    }
 
     setActiveView(newView);
     setSelectedCourse(null);
     setOpenFolderId(null);
     setPlayerPlaylist(null);
     setPdfModalData(null);
-    syncNavigationState(newView, null, null, true);
+    syncNavigationState(newView, null, null, true, newView === 'gov-exams' ? selectedGovtDiscipline : null);
     if (typeof window !== 'undefined') {
       window.scrollTo({ top: 0, behavior: 'smooth' });
     }
@@ -791,15 +1032,24 @@ export default function HomePage() {
 
     // Determine cleanest target URL
     const servers = item.servers && item.servers.length > 0 ? item.servers : [];
-    const albaServer = servers.find(
-      (s) => s.name?.toUpperCase().includes('ALBA') || s.url?.includes('streamvaultpro.cc')
+    const botServer = servers.find(
+      (s) =>
+        s.name?.toUpperCase().includes('PUBLICBOTSHUB') ||
+        s.name?.toUpperCase().includes('ESTE') ||
+        s.url?.includes('publicbotshub')
     );
-    let viewUrl = albaServer?.downloadUrl || albaServer?.url || item.downloadUrl || item.url || '';
-    
+    let viewUrl = botServer?.downloadUrl || botServer?.url || item.downloadUrl || item.url || '';
+
     // Auto-resolve any bot wrappers or redirect links
     viewUrl = resolveDirectMediaUrl(viewUrl);
 
-    if (viewUrl.includes('crwilladmin.com') || viewUrl.includes('herokuapp.com') || viewUrl.endsWith('.pdf')) {
+    if (
+      viewUrl.includes('publicbotshub') ||
+      viewUrl.includes('file-stream-bot') ||
+      viewUrl.includes('crwilladmin.com') ||
+      viewUrl.includes('herokuapp.com') ||
+      viewUrl.endsWith('.pdf')
+    ) {
       window.open(viewUrl, '_blank', 'noopener,noreferrer');
     } else if (viewUrl) {
       const proxiedUrl = getWorkerProxyUrl(viewUrl, 'pdf');
@@ -810,6 +1060,30 @@ export default function HomePage() {
   const stats = getTotalStats();
   const initials = getInitials(userName);
   const avatarBg = getAvatarGradient(userName);
+
+  // Dedicated full-width Watch format for GATE Signal & System (matching screenshot & /watch)
+  const isGateWatchMode = activeView === 'cat-gate' && gateStep === 'lectures';
+  if (isGateWatchMode) {
+    const gateCourse =
+      INITIAL_COURSES.find((c) => c.id === 'gate-ece-made-easy-signal-system') ||
+      null;
+
+    return (
+      <GateEngineeringView
+        course={gateCourse}
+        theme={theme}
+        watchedUrls={watchedUrls}
+        step={gateStep}
+        branch={gateBranch}
+        institute={gateInstitute}
+        subject={gateSubject}
+        onStepChange={(step, br, inst, subj, path) => {
+          syncGateNavigation(step, br, inst, subj, path);
+        }}
+        onMarkWatched={handleMarkWatched}
+      />
+    );
+  }
 
   return (
     <div>
@@ -1471,7 +1745,7 @@ export default function HomePage() {
 
                   {/* Developer DM Pill */}
                   <a
-                    href="https://t.me/bookwormislie"
+                    href="https://t.me/chatstubot"
                     target="_blank"
                     rel="noopener noreferrer"
                     style={{
@@ -1520,63 +1794,39 @@ export default function HomePage() {
         )}
 
         {/* ============================================================
-            VIEW 2A: GOVERNMENT EXAM PREP VIEW (Dedicated Domain)
+            VIEW 2A: GOVERNMENT EXAM PREP VIEW (Hierarchical Redesign)
             ============================================================ */}
         {activeView === 'gov-exams' && (
-          <div className="animate-fade-in" style={{ padding: '12px 0 36px' }}>
-            <div style={{ maxWidth: '1200px', margin: '0 auto', padding: '0 24px 8px' }}>
-              <div style={{ display: 'flex', alignItems: 'center', gap: '8px', marginBottom: '4px' }}>
-                <button
-                  onClick={() => handleViewChange('home')}
-                  style={{
-                    background: 'none',
-                    border: 'none',
-                    color: 'var(--accent)',
-                    fontWeight: 700,
-                    fontSize: '13px',
-                    cursor: 'pointer',
-                    padding: 0,
-                    display: 'inline-flex',
-                    alignItems: 'center',
-                    gap: '4px',
-                  }}
-                >
-                  ← Home
-                </button>
-                <span style={{ color: 'var(--text-muted)' }}>/</span>
-                <span style={{ fontSize: '13px', color: 'var(--text-muted)', fontWeight: 600 }}>Government Exams</span>
-              </div>
-
-              <div style={{ display: 'flex', alignItems: 'center', gap: '10px', marginBottom: '4px' }}>
-                <div
-                  style={{
-                    width: '36px',
-                    height: '36px',
-                    borderRadius: 'var(--r-md)',
-                    background: 'var(--govt-dim)',
-                    color: 'var(--govt-indigo)',
-                    display: 'flex',
-                    alignItems: 'center',
-                    justifyContent: 'center',
-                    flexShrink: 0,
-                  }}
-                >
-                  <Landmark width={20} height={20} strokeWidth={2} />
-                </div>
-                <h1 style={{ fontFamily: 'var(--font-display)', fontSize: '22px', fontWeight: 700, color: 'var(--text)', margin: 0 }}>
-                  Government Exam Prep
-                </h1>
-              </div>
-              <p style={{ fontSize: '13px', color: 'var(--text-muted)', margin: 0 }}>
-                Comprehensive syllabus courses for SSC CGL, CHSL, MTS, Railway, and State Government examinations.
-              </p>
+          <div className="animate-fade-in" style={{ padding: '20px 0 40px' }}>
+            <div style={{ maxWidth: '1200px', margin: '0 auto', padding: '0 24px 12px' }}>
+              <button
+                onClick={() => handleViewChange('home')}
+                style={{
+                  background: 'none',
+                  border: 'none',
+                  color: 'var(--accent)',
+                  fontWeight: 700,
+                  fontSize: '13px',
+                  cursor: 'pointer',
+                  padding: 0,
+                  display: 'inline-flex',
+                  alignItems: 'center',
+                  gap: '4px',
+                }}
+              >
+                ← Return to Home Dashboard
+              </button>
             </div>
 
-            <CourseGrid
+            <GovernmentExamsView
               courses={INITIAL_COURSES.filter((c) => c.id !== 'beu-1st-year')}
               onSelectCourse={(course) => handleOpenCourse(course)}
-              searchInputRef={searchInputRef}
               theme={theme}
+              initialDiscipline={selectedGovtDiscipline}
+              onDisciplineChange={(disc) => {
+                setSelectedGovtDiscipline(disc);
+                syncNavigationState('gov-exams', null, null, true, disc);
+              }}
             />
           </div>
         )}
@@ -1653,6 +1903,30 @@ export default function HomePage() {
           const categoryConfig = getCategoryById(catId);
           const categoryCourses = getCoursesByCategory(catId);
           const catLabel = categoryConfig?.label || catId.toUpperCase();
+
+          // Dedicated GATE Engineering hierarchical hub (ECE > Made Easy > Signal and System)
+          if (catId === 'gate') {
+            const gateCourse =
+              INITIAL_COURSES.find((c) => c.id === 'gate-ece-made-easy-signal-system') ||
+              categoryCourses[0] ||
+              null;
+
+            return (
+              <GateEngineeringView
+                course={gateCourse}
+                theme={theme}
+                watchedUrls={watchedUrls}
+                step={gateStep}
+                branch={gateBranch}
+                institute={gateInstitute}
+                subject={gateSubject}
+                onStepChange={(step, br, inst, subj, path) => {
+                  syncGateNavigation(step, br, inst, subj, path);
+                }}
+                onMarkWatched={handleMarkWatched}
+              />
+            );
+          }
 
           return (
             <div className="animate-fade-in" style={{ padding: '12px 0 36px' }}>
@@ -1750,7 +2024,7 @@ export default function HomePage() {
                     </p>
                     <div style={{ display: 'flex', gap: '12px', justifyContent: 'center', flexWrap: 'wrap' }}>
                       <a
-                        href="https://t.me/bookwormislie"
+                        href="https://t.me/chatstubot"
                         target="_blank"
                         rel="noopener noreferrer"
                         className="btn-primary"
@@ -2107,7 +2381,7 @@ export default function HomePage() {
                     3. How do I report a broken video link or missing notes?
                   </h3>
                   <p className="faq-answer">
-                    You can directly report any broken link to the developer via Telegram @bookwormislie or post in our official discussion channel for quick resolution.
+                    You can directly report any broken link to the developer via Telegram @chatstubot or post in our official discussion channel for quick resolution.
                   </p>
                 </div>
               </div>
@@ -2141,7 +2415,7 @@ export default function HomePage() {
 
                 {/* Contact Developer DM */}
                 <a
-                  href="https://t.me/bookwormislie"
+                  href="https://t.me/chatstubot"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="help-channel-btn"
@@ -2153,7 +2427,7 @@ export default function HomePage() {
                 >
                   <div style={{ display: 'flex', alignItems: 'center', gap: '9px' }}>
                     <MessageSquare width={16} height={16} />
-                    <span>Contact Developer (@bookwormislie)</span>
+                    <span>Contact Developer (@chatstubot)</span>
                   </div>
                   <ArrowRight width={15} height={15} />
                 </a>
@@ -2327,7 +2601,7 @@ export default function HomePage() {
                   </a>
 
                   <a
-                    href="https://t.me/bookwormislie"
+                    href="https://t.me/chatstubot"
                     target="_blank"
                     rel="noopener noreferrer"
                     style={{

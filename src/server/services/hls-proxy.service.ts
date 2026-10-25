@@ -5,6 +5,13 @@ import { getWorkerProxyUrl } from '@/lib/proxyConfig';
 import { ForbiddenError, ValidationError, NotFoundError } from '@/server/http/errors';
 import { HlsProxyQueryInput } from '@/schemas/hls-proxy.schema';
 
+interface PlaylistCacheEntry {
+  body: string;
+  expiresAt: number;
+}
+const playlistCache = new Map<string, PlaylistCacheEntry>();
+const PLAYLIST_CACHE_TTL_MS = 60 * 60 * 1000; // 1-hour cache
+
 function unpackDeanEdwards(packed: string): string | null {
   try {
     const match = packed.match(
@@ -59,8 +66,21 @@ export async function proxyHlsRequest(
     throw new ForbiddenError('Forbidden upstream domain');
   }
 
-  const decoded = decodeURIComponent(targetUrl);
+  let decoded = decodeURIComponent(targetUrl);
   const providerParam = input.provider || '';
+
+  // Return cached playlist immediately if valid
+  const cacheKey = `${baseProxyEndpoint}:${decoded}:${providerParam}`;
+  const cachedPlaylist = playlistCache.get(cacheKey);
+  if (cachedPlaylist && cachedPlaylist.expiresAt > Date.now()) {
+    return new Response(cachedPlaylist.body, {
+      headers: {
+        'Content-Type': 'application/vnd.apple.mpegurl',
+        ...getSecureCorsHeaders(origin),
+        'Cache-Control': 'public, s-maxage=300, stale-while-revalidate=1200',
+      },
+    });
+  }
 
   const isVidmoly =
     providerParam === 'vidmoly' ||
@@ -109,9 +129,21 @@ export async function proxyHlsRequest(
     upstreamHeaders['Range'] = clientRange;
   }
 
-  const upstreamRes = await fetch(decoded, {
+  let upstreamRes = await fetch(decoded, {
     headers: upstreamHeaders,
   });
+
+  // Automatic transcode fallback: when upstream returns 404 for original (_o), test if normal transcode (_n) is available
+  if (!upstreamRes.ok && upstreamRes.status === 404 && decoded.includes('_o/')) {
+    const alternateNUrl = decoded.replace('_o/', '_n/');
+    try {
+      const altRes = await fetch(alternateNUrl, { headers: upstreamHeaders });
+      if (altRes.ok || altRes.status === 206) {
+        upstreamRes = altRes;
+        decoded = alternateNUrl;
+      }
+    } catch {}
+  }
 
   if (!upstreamRes.ok && upstreamRes.status !== 206) {
     return new Response(`Upstream ${upstreamRes.status}`, {
@@ -155,9 +187,33 @@ export async function proxyHlsRequest(
 
       if (m3u8Url) {
         // Fetch actual M3U8
-        const m3u8Res = await fetch(m3u8Url, { headers: upstreamHeaders });
+        let m3u8Res = await fetch(m3u8Url, { headers: upstreamHeaders });
+
+        // Auto-fallback: if upstream returned 404 for original (_o), test if normal transcode (_n) is already ready
+        if (!m3u8Res.ok && m3u8Url.includes('_o/')) {
+          const alternateNUrl = m3u8Url.replace('_o/', '_n/');
+          try {
+            const altRes = await fetch(alternateNUrl, { headers: upstreamHeaders });
+            if (altRes.ok) {
+              m3u8Res = altRes;
+              m3u8Url = alternateNUrl;
+            }
+          } catch {}
+        }
+
         if (!m3u8Res.ok) {
-          return new Response(`M3U8 Upstream ${m3u8Res.status}`, { status: m3u8Res.status });
+          const isPending = m3u8Res.status === 404;
+          const msg = isPending
+            ? 'Video is currently being encoded by Vidmoly. Please allow a few minutes for conversion to complete.'
+            : `M3U8 Upstream ${m3u8Res.status}`;
+          return new Response(msg, {
+            status: m3u8Res.status,
+            headers: {
+              ...getSecureCorsHeaders(origin),
+              'Content-Type': 'text/plain',
+              'X-Vidmoly-Status': isPending ? 'encoding_in_progress' : 'upstream_error',
+            },
+          });
         }
         body = await m3u8Res.text();
         baseUrl = new URL(m3u8Url);
@@ -192,11 +248,17 @@ export async function proxyHlsRequest(
       }
     });
 
-    return new Response(rewrittenLines.join('\n'), {
+    const outputPlaylist = rewrittenLines.join('\n');
+    playlistCache.set(cacheKey, {
+      body: outputPlaylist,
+      expiresAt: Date.now() + PLAYLIST_CACHE_TTL_MS,
+    });
+
+    return new Response(outputPlaylist, {
       headers: {
         'Content-Type': 'application/vnd.apple.mpegurl',
         ...getSecureCorsHeaders(origin),
-        'Cache-Control': 'public, s-maxage=120, stale-while-revalidate=600',
+        'Cache-Control': 'public, s-maxage=300, stale-while-revalidate=1200',
       },
     });
   }

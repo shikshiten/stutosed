@@ -28,14 +28,14 @@ export const PdfViewerModal: React.FC<PdfViewerModalProps> = ({
 
   const servers: ServerOption[] = item.servers && item.servers.length > 0 ? item.servers : [];
 
-  // View link: prefer ALBA download link or item url
-  const albaServer = servers.find(
-    (s) => s.name?.toUpperCase().includes('ALBA') || s.url?.includes('streamvaultpro.cc')
+  // View link: prefer publicbotshub or item url
+  const botServer = servers.find(
+    (s) =>
+      s.name?.toUpperCase().includes('PUBLICBOTSHUB') ||
+      s.name?.toUpperCase().includes('ESTE') ||
+      s.url?.includes('publicbotshub')
   );
-  let viewUrl = resolveDirectMediaUrl(albaServer?.downloadUrl || albaServer?.url || item.url || '');
-  if (viewUrl.includes('/0:/stream/')) {
-    viewUrl = viewUrl.replace('/0:/stream/', '/0:/dl/');
-  }
+  let viewUrl = resolveDirectMediaUrl(botServer?.downloadUrl || botServer?.url || item.url || '');
 
   // Check if it's an image resource
   const isImageResource =
@@ -48,15 +48,9 @@ export const PdfViewerModal: React.FC<PdfViewerModalProps> = ({
   const proxiedPdfUrl = getWorkerProxyUrl(viewUrl, 'pdf');
   const googleDocsViewerUrl = `https://docs.google.com/viewer?url=${encodeURIComponent(viewUrl)}&embedded=true`;
 
-  // Download redirects to Publico (ESTE) link or direct URL
-  const esteServer = servers.find(
-    (s) =>
-      s.name?.toUpperCase().includes('ESTE') ||
-      s.downloadUrl?.includes('publicbotshub') ||
-      s.url?.includes('herokuapp.com')
-  );
+  // Download redirects to publicbotshub link or direct URL
   const downloadRedirectUrl = resolveDirectMediaUrl(
-    esteServer?.downloadUrl || esteServer?.url || item.downloadUrl || viewUrl
+    botServer?.downloadUrl || botServer?.url || item.downloadUrl || viewUrl
   );
 
   // Auto-dismiss loading spinner after 1.5s max so it never covers the iframe

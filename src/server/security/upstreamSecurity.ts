@@ -7,7 +7,6 @@ import 'server-only';
 
 // Encoded upstream media gateway signatures
 const SECURE_HOST_SIGNATURES = [
-  'c3RyZWFtdmF1bHRwcm8uY2M=',
   'c3ZjZG4tZGwud29ya2Vycy5kZXY=',
   'c3ZjZG4tZGwyLndvcmtlcnMuZGV2',
   'c3ZjZG4tZGwzLndvcmtlcnMuZGV2',
@@ -54,6 +53,10 @@ const SECURE_HOST_SIGNATURES = [
   'aHJhbmtlci5jb20=', // hranker.com
   'YW1hem9uYXdzLmNvbQ==', // amazonaws.com
   'Y2F0Ym94Lm1vZQ==', // catbox.moe
+  'c3RycDJwLnNpdGU=', // strp2p.site
+  'c3R1dG9zZWQuc3RycDJwLnNpdGU=', // stutosed.strp2p.site
+  'c3luY3AycC5jb20=', // syncp2p.com
+  'c3RyZWFtcDJwLmNvbQ==', // streamp2p.com
 ];
 
 function decodeSignature(b64: string): string {

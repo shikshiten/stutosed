@@ -1,4 +1,4 @@
-export type MediaURLType = 'hls' | 'youtube' | 'pdf' | 'external' | 'unknown';
+export type MediaURLType = 'hls' | 'youtube' | 'pdf' | 'external' | 'streamp2p' | 'unknown';
 
 export interface ServerOption {
   name: string;
@@ -15,6 +15,8 @@ export interface LectureItem {
   downloadUrl?: string;
   type: MediaURLType;
   thumb?: string;
+  preview?: string;
+  duration?: number;
   subject?: string;
   topic?: string;
   folderName?: string;

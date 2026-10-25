@@ -200,6 +200,23 @@ const TOPIC_PATTERNS: {
       'Numerical calculations on Carnot heat pump COP and Clausius entropy integrals are frequent scoring areas.',
   },
 
+  // ── GATE ECE / SIGNALS & SYSTEMS ──
+  {
+    keywords: ['signal', 'system', 'fourier', 'laplace', 'z-transform', 'lti', 'convolution', 'sampling', 's&s'],
+    category: 'Signals & Systems (GATE ECE)',
+    getOverview: () =>
+      'Comprehensive Signals and Systems curriculum covering Continuous & Discrete-Time signals, elementary transformations, LTI system properties, Convolution, Continuous/Discrete Fourier Transforms, Laplace Transform, and Z-Transform.',
+    keyPoints: [
+      'Classification of signals: Energy vs. Power signals, periodic/aperiodic, even/odd, and causal/non-causal waveforms.',
+      'LTI System fundamentals: Linearity, Time-Invariance, Causality, Stability (BIBO), and impulse response convolution integral/sum.',
+      'Fourier Analysis: Dirichlet conditions, Continuous-Time Fourier Series (CTFS), Fourier Transform (CTFT/DTFT), and Duality theorem.',
+      'Transform Domain analysis: Laplace Transform ROC properties, pole-zero stability mapping, and unilateral/bilateral Z-Transforms.',
+      'Nyquist Sampling Theorem: Minimum sampling rate, aliasing phenomena, and ideal low-pass anti-aliasing reconstruction filters.',
+    ],
+    examTip:
+      'High-yield GATE questions regularly focus on finding the Region of Convergence (ROC) for stable/causal Laplace and Z-Transforms, along with Graphical Convolution and Nyquist Rate calculations.',
+  },
+
   // ── QUANT & REASONING ──
   {
     keywords: ['percentage', 'profit', 'loss', 'discount', 'ratio', 'proportion'],

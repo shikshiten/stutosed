@@ -55,7 +55,6 @@ export async function resolveFinalRedirectUrl(initialUrl: string): Promise<strin
 
   while (hops < MAX_HOPS) {
     const isRedirectDomain =
-      currentUrl.includes('streamvaultpro.cc') ||
       currentUrl.includes('workers.dev') ||
       currentUrl.includes('publicbotshub.blogspot.com');
 

@@ -231,7 +231,7 @@ export const PrivacyTermsModal: React.FC<PrivacyTermsModalProps> = ({
                     4. Takedown & Copyright Queries
                   </h4>
                   <p style={{ fontSize: '12.5px', color: 'var(--text-muted)', lineHeight: 1.5, margin: 0 }}>
-                    If you are an educator or rights holder wishing to update, modify, or request the removal of any listed course material, please reach out directly via Telegram @bookwormislie for immediate assistance.
+                    If you are an educator or rights holder wishing to update, modify, or request the removal of any listed course material, please reach out directly via Telegram @chatstubot for immediate assistance.
                   </p>
                 </div>
               </div>

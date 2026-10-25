@@ -36,6 +36,16 @@ export const CourseModal: React.FC<CourseModalProps> = ({
   const [isSearchExpanded, setIsSearchExpanded] = useState<boolean>(false);
   const [viewMode, setViewMode] = useState<'list' | 'grid'>('grid');
   const [visibleLimit, setVisibleLimit] = useState<number>(40);
+  const [hoveredIdx, setHoveredIdx] = useState<number | null>(null);
+
+  const formatItemDuration = (secs?: number): string | null => {
+    if (!secs || isNaN(secs) || secs <= 0) return null;
+    const h = Math.floor(secs / 3600);
+    const m = Math.floor((secs % 3600) / 60);
+    const s = Math.floor(secs % 60);
+    if (h > 0) return `${h}h ${m}m`;
+    return `${m}:${s < 10 ? '0' : ''}${s}`;
+  };
 
   // Reset pagination limit when switching filters, tabs, or searching
   useEffect(() => {
@@ -259,6 +269,7 @@ export const CourseModal: React.FC<CourseModalProps> = ({
 
   // Centralized Canonical Dynamic Title-Based SVG Thumbnail Resolver
   const getLectureThumb = (item: LectureItem) => {
+    if (item.thumb) return item.thumb;
     const currentTab = course.tabs?.find((t) => t.id === activeTabId) || selectedFolderTab;
     const category = item.subject || currentTab?.label || course.name;
     return getDynamicThumbnailUrl(item.label || item.subject, category, theme);
@@ -292,12 +303,27 @@ export const CourseModal: React.FC<CourseModalProps> = ({
     }
   };
 
-  // Centralized lecture item click handler (direct YouTube open, PDF modal, or video player)
+  // Centralized lecture item click handler (direct YouTube open, bot link open, PDF modal, or video player)
   const handleItemClick = (item: LectureItem, idx: number) => {
     if (item.url) {
       saveMemory(item.url);
     }
     if (isYouTubeItem(item)) {
+      window.open(item.url, '_blank', 'noopener,noreferrer');
+      return;
+    }
+    const targetUrl = (item.url || '').toLowerCase();
+    const isBot =
+      targetUrl.includes('publicbotshub') ||
+      targetUrl.includes('file-stream-bot') ||
+      targetUrl.includes('herokuapp.com') ||
+      targetUrl.includes('t.me') ||
+      item.servers?.some(
+        (s) =>
+          s.url?.toLowerCase().includes('publicbotshub') ||
+          s.url?.toLowerCase().includes('herokuapp.com')
+      );
+    if (isBot) {
       window.open(item.url, '_blank', 'noopener,noreferrer');
       return;
     }
@@ -761,6 +787,8 @@ export const CourseModal: React.FC<CourseModalProps> = ({
                       data-lecture-url={item.url}
                       className={`lecture-card-grid ${isWatched ? 'watched' : ''}`}
                       onClick={() => handleItemClick(item, idx)}
+                      onMouseEnter={() => setHoveredIdx(idx)}
+                      onMouseLeave={() => setHoveredIdx(null)}
                     >
                       {/* 16:9 Thumbnail Cover */}
                       <div
@@ -773,7 +801,7 @@ export const CourseModal: React.FC<CourseModalProps> = ({
                         }}
                       >
                         <img
-                          src={thumb}
+                          src={hoveredIdx === idx && item.preview ? item.preview : thumb}
                           alt=""
                           className="grid-thumb-img"
                           onError={(e) => {
@@ -854,24 +882,64 @@ export const CourseModal: React.FC<CourseModalProps> = ({
                           </div>
                         )}
 
-                        {/* Subtle type badge on thumbnail */}
+                        {/* Subtle type badge and duration on thumbnail */}
                         <div
                           style={{
                             position: 'absolute',
                             bottom: '8px',
                             right: '10px',
-                            background: 'rgba(0,0,0,0.65)',
-                            backdropFilter: 'blur(4px)',
-                            color: isPdf ? '#ff9f7d' : isYt ? '#ff6b6b' : '#85e0a3',
-                            fontSize: '10px',
-                            fontWeight: 700,
-                            padding: '2px 7px',
-                            borderRadius: '4px',
-                            textTransform: 'uppercase',
-                            letterSpacing: '0.4px',
+                            display: 'flex',
+                            alignItems: 'center',
+                            gap: '4px',
                           }}
                         >
-                          {isPdf ? 'PDF Notes' : isYt ? 'YouTube' : 'Video'}
+                          {item.duration ? (
+                            <div
+                              style={{
+                                background: 'rgba(0,0,0,0.75)',
+                                backdropFilter: 'blur(4px)',
+                                color: '#ffffff',
+                                fontSize: '10px',
+                                fontWeight: 700,
+                                padding: '2px 6px',
+                                borderRadius: '4px',
+                                fontVariantNumeric: 'tabular-nums',
+                              }}
+                            >
+                              {formatItemDuration(item.duration)}
+                            </div>
+                          ) : null}
+                          <div
+                            style={{
+                              background: 'rgba(0,0,0,0.7)',
+                              backdropFilter: 'blur(4px)',
+                              color: isPdf
+                                ? '#ff9f7d'
+                                : isYt
+                                ? '#ff6b6b'
+                                : item.id?.startsWith('pending-')
+                                ? '#f59e0b'
+                                : item.type === 'streamp2p'
+                                ? '#38bdf8'
+                                : '#85e0a3',
+                              fontSize: '10px',
+                              fontWeight: 700,
+                              padding: '2px 7px',
+                              borderRadius: '4px',
+                              textTransform: 'uppercase',
+                              letterSpacing: '0.4px',
+                            }}
+                          >
+                            {isPdf
+                              ? 'PDF Notes'
+                              : isYt
+                              ? 'YouTube'
+                              : item.id?.startsWith('pending-')
+                              ? '⏳ In Queue'
+                              : item.type === 'streamp2p'
+                              ? '● Stream Ready'
+                              : 'Video'}
+                          </div>
                         </div>
                       </div>
 

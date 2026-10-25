@@ -135,13 +135,9 @@ export const VideoPlayer: React.FC<VideoPlayerProps> = ({
   const [isBookmarked, setIsBookmarked] = useState<boolean>(false);
   const [isSaved, setIsSaved] = useState<boolean>(false);
   const [isWatched, setIsWatched] = useState<boolean>(false);
-  const [isDescExpanded, setIsDescExpanded] = useState<boolean>(true);
   const [copiedToast, setCopiedToast] = useState<boolean>(false);
 
   const speedOptions = [0.5, 0.75, 1, 1.25, 1.5, 1.75, 2, 2.5, 3];
-
-  // Dynamic educational topic description
-  const topicDesc = getLectureTopicDescription(currentItem?.label || '', courseName, subjectName);
 
   // Sync Library states
   useEffect(() => {
@@ -270,21 +266,16 @@ export const VideoPlayer: React.FC<VideoPlayerProps> = ({
   const isYouTubeUrl = activeUrl.includes('youtube.') || activeUrl.includes('youtu.be');
   const isHlsUrl = activeUrl.includes('.m3u8');
 
-  // Proxy streaming for ALBA, ESTE, direct mp4 files, Heroku streams
+  // Direct media streams, mp4 files, Heroku streams
   const isProxyStreamUrl =
-    activeUrl.includes('streamvaultpro.cc') ||
     activeUrl.includes('workers.dev') ||
     activeUrl.includes('publicbotshub') ||
     activeUrl.includes('herokuapp.com') ||
     activeUrl.endsWith('.mp4') ||
     activeUrl.endsWith('.mkv') ||
-    activeServer?.name?.toUpperCase().includes('ALBA') ||
     activeServer?.name?.toUpperCase().includes('ESTE');
 
-  const isAlbaActive =
-    activeServer?.name?.toUpperCase().includes('ALBA') ||
-    (!activeServer && activeUrl.includes('streamvaultpro.cc')) ||
-    Boolean(activeServer?.streamUrl);
+  const isAlbaActive = false;
 
   const needsApiResolution = (isVidmolyUrl || isEarnvidsUrl) && !isHlsUrl;
 
@@ -382,11 +373,11 @@ export const VideoPlayer: React.FC<VideoPlayerProps> = ({
       const hls = new Hls({
         enableWorker: true,
         progressive: true,
-        maxBufferLength: 30,
-        maxMaxBufferLength: 60,
+        maxBufferLength: 60,
+        maxMaxBufferLength: 120,
         maxBufferSize: 60 * 1000 * 1000,
         maxBufferHole: 0.5,
-        backBufferLength: 30,
+        backBufferLength: 90,
         manifestLoadingTimeOut: 15000,
         fragLoadingTimeOut: 20000,
         startLevel: -1,
@@ -404,6 +395,14 @@ export const VideoPlayer: React.FC<VideoPlayerProps> = ({
         if (data.fatal) {
           switch (data.type) {
             case Hls.ErrorTypes.NETWORK_ERROR:
+              if (data.response?.code === 404) {
+                setStreamError(
+                  '⏳ This lecture is currently being processed by Vidmoly servers. Newly uploaded videos take a few minutes to encode. Please check back shortly or select one of the ready lectures (e.g. Lecture 2 A, 5 C, 7, 8 A).'
+                );
+                hls.destroy();
+                hlsRef.current = null;
+                break;
+              }
               hls.startLoad();
               break;
             case Hls.ErrorTypes.MEDIA_ERROR:
@@ -1455,48 +1454,7 @@ export const VideoPlayer: React.FC<VideoPlayerProps> = ({
                 </button>
               </div>
 
-              {/* ==================== EDUCATIONAL TOPIC DESCRIPTION CARD ==================== */}
-              <section className="yt-topic-description-card">
-                <div
-                  className="yt-desc-header"
-                  onClick={() => setIsDescExpanded((prev) => !prev)}
-                >
-                  <div className="yt-desc-header-left">
-                    <div className="yt-desc-icon-circle">
-                      <Sparkles width={16} height={16} color="var(--accent)" />
-                    </div>
-                    <div>
-                      <span className="yt-desc-category-tag">{topicDesc.categoryTag}</span>
-                      <h3 className="yt-desc-title">Topic Overview &amp; Key Concepts</h3>
-                    </div>
-                  </div>
 
-                  <button className="yt-desc-toggle-btn">
-                    <span>{isDescExpanded ? 'Hide Details' : 'Show Details'}</span>
-                    {isDescExpanded ? <ChevronUp width={16} height={16} /> : <ChevronDown width={16} height={16} />}
-                  </button>
-                </div>
-
-                {isDescExpanded && (
-                  <div className="yt-desc-content animate-fade-in">
-                    <p className="yt-desc-overview-p">{topicDesc.overview}</p>
-
-                    <div className="yt-desc-key-points">
-                      <div className="yt-key-points-heading">Core Concepts Covered in this Lecture:</div>
-                      <ul>
-                        {topicDesc.keyPoints.map((pt, i) => (
-                          <li key={i}>{pt}</li>
-                        ))}
-                      </ul>
-                    </div>
-
-                    <div className="yt-desc-exam-tip-box">
-                      <span className="exam-tip-badge">Exam High-Yield Insight</span>
-                      <p className="exam-tip-text">{topicDesc.examTip}</p>
-                    </div>
-                  </div>
-                )}
-              </section>
             </div>
           </main>
 
