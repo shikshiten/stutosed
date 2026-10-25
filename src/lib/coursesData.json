@@ -124816,15 +124816,34 @@
       {
         "id": "speed-maths",
         "label": "01. Speed Maths & Vedic Maths",
-        "subname": "9 Practice Sheets & Notes",
+        "subname": "10 items (1 Videos & 9 Practice Sheets)",
         "thumb": "https://files.catbox.moe/97ydfl.jpg",
         "items": [
+          {
+            "id": "paxide",
+            "label": "Speed Math-Vedic Math - Part I",
+            "url": "https://stutosed.strp2p.site/#pending-paxide",
+            "type": "streamp2p",
+            "thumb": "https://files.catbox.moe/97ydfl.jpg",
+            "duration": 8369,
+            "category": "videos",
+            "subject": "Speed Maths",
+            "folderName": "Speed Maths",
+            "servers": [
+              {
+                "name": "StreamP2P Player",
+                "url": "https://stutosed.strp2p.site/#pending-paxide",
+                "type": "streamp2p"
+              }
+            ]
+          },
           {
             "id": "pdf-003",
             "label": "Speed Math-Vedic Math - Part I (Notes 1)",
             "url": "https://files.catbox.moe/zodex3.pdf",
             "downloadUrl": "https://files.catbox.moe/zodex3.pdf",
             "type": "pdf",
+            "thumb": "https://files.catbox.moe/97ydfl.jpg",
             "category": "pdfs",
             "subject": "Speed Maths",
             "folderName": "Speed Maths"
@@ -124835,6 +124854,7 @@
             "url": "https://files.catbox.moe/ctbqtp.pdf",
             "downloadUrl": "https://files.catbox.moe/ctbqtp.pdf",
             "type": "pdf",
+            "thumb": "https://files.catbox.moe/97ydfl.jpg",
             "category": "pdfs",
             "subject": "Speed Maths",
             "folderName": "Speed Maths"
@@ -124845,6 +124865,7 @@
             "url": "https://files.catbox.moe/1snl83.pdf",
             "downloadUrl": "https://files.catbox.moe/1snl83.pdf",
             "type": "pdf",
+            "thumb": "https://files.catbox.moe/97ydfl.jpg",
             "category": "pdfs",
             "subject": "Speed Maths",
             "folderName": "Speed Maths"
@@ -124855,6 +124876,7 @@
             "url": "https://files.catbox.moe/y41rvn.pdf",
             "downloadUrl": "https://files.catbox.moe/y41rvn.pdf",
             "type": "pdf",
+            "thumb": "https://files.catbox.moe/97ydfl.jpg",
             "category": "pdfs",
             "subject": "Speed Maths",
             "folderName": "Speed Maths"
@@ -124865,6 +124887,7 @@
             "url": "https://files.catbox.moe/1t32ey.pdf",
             "downloadUrl": "https://files.catbox.moe/1t32ey.pdf",
             "type": "pdf",
+            "thumb": "https://files.catbox.moe/97ydfl.jpg",
             "category": "pdfs",
             "subject": "Speed Maths",
             "folderName": "Speed Maths"
@@ -124875,6 +124898,7 @@
             "url": "https://files.catbox.moe/brplnp.pdf",
             "downloadUrl": "https://files.catbox.moe/brplnp.pdf",
             "type": "pdf",
+            "thumb": "https://files.catbox.moe/97ydfl.jpg",
             "category": "pdfs",
             "subject": "Speed Maths",
             "folderName": "Speed Maths"
@@ -124885,6 +124909,7 @@
             "url": "https://files.catbox.moe/fvmnxy.pdf",
             "downloadUrl": "https://files.catbox.moe/fvmnxy.pdf",
             "type": "pdf",
+            "thumb": "https://files.catbox.moe/97ydfl.jpg",
             "category": "pdfs",
             "subject": "Speed Maths",
             "folderName": "Speed Maths"
@@ -124895,6 +124920,7 @@
             "url": "https://files.catbox.moe/9nlra9.pdf",
             "downloadUrl": "https://files.catbox.moe/9nlra9.pdf",
             "type": "pdf",
+            "thumb": "https://files.catbox.moe/97ydfl.jpg",
             "category": "pdfs",
             "subject": "Speed Maths",
             "folderName": "Speed Maths"
@@ -124905,6 +124931,7 @@
             "url": "https://files.catbox.moe/lpsuf0.pdf",
             "downloadUrl": "https://files.catbox.moe/lpsuf0.pdf",
             "type": "pdf",
+            "thumb": "https://files.catbox.moe/97ydfl.jpg",
             "category": "pdfs",
             "subject": "Speed Maths",
             "folderName": "Speed Maths"
@@ -124914,7 +124941,7 @@
       {
         "id": "simplification",
         "label": "02. Simplification & Approximation",
-        "subname": "21 items (Videos & Practice Sheets)",
+        "subname": "27 items (7 Videos & 20 Practice Sheets)",
         "thumb": "https://asset.syncp2p.com/7OaeboLAYtfDhZ7DC5aX6g/qtd/krnvuoui/l1knbz/poster.png",
         "items": [
           {
@@ -124923,6 +124950,7 @@
             "url": "https://files.catbox.moe/gn42rj.pdf",
             "downloadUrl": "https://files.catbox.moe/gn42rj.pdf",
             "type": "pdf",
+            "thumb": "https://files.catbox.moe/97ydfl.jpg",
             "category": "pdfs",
             "subject": "Simplification",
             "folderName": "Simplification"
@@ -124933,6 +124961,7 @@
             "url": "https://files.catbox.moe/zyw1xq.pdf",
             "downloadUrl": "https://files.catbox.moe/zyw1xq.pdf",
             "type": "pdf",
+            "thumb": "https://files.catbox.moe/97ydfl.jpg",
             "category": "pdfs",
             "subject": "Simplification",
             "folderName": "Simplification"
@@ -124943,6 +124972,7 @@
             "url": "https://files.catbox.moe/ou6osj.pdf",
             "downloadUrl": "https://files.catbox.moe/ou6osj.pdf",
             "type": "pdf",
+            "thumb": "https://files.catbox.moe/97ydfl.jpg",
             "category": "pdfs",
             "subject": "Simplification",
             "folderName": "Simplification"
@@ -124972,6 +125002,7 @@
             "url": "https://files.catbox.moe/ajpp8s.pdf",
             "downloadUrl": "https://files.catbox.moe/ajpp8s.pdf",
             "type": "pdf",
+            "thumb": "https://files.catbox.moe/97ydfl.jpg",
             "category": "pdfs",
             "subject": "Simplification",
             "folderName": "Simplification"
@@ -124982,6 +125013,7 @@
             "url": "https://files.catbox.moe/rt33y2.pdf",
             "downloadUrl": "https://files.catbox.moe/rt33y2.pdf",
             "type": "pdf",
+            "thumb": "https://files.catbox.moe/97ydfl.jpg",
             "category": "pdfs",
             "subject": "Simplification",
             "folderName": "Simplification"
@@ -124992,9 +125024,29 @@
             "url": "https://files.catbox.moe/0c29mt.pdf",
             "downloadUrl": "https://files.catbox.moe/0c29mt.pdf",
             "type": "pdf",
+            "thumb": "https://files.catbox.moe/97ydfl.jpg",
             "category": "pdfs",
             "subject": "Simplification",
             "folderName": "Simplification"
+          },
+          {
+            "id": "asqeun",
+            "label": "Simplification Approximation Part - 3",
+            "url": "https://stutosed.strp2p.site/#asqeun",
+            "type": "streamp2p",
+            "thumb": "https://asset.syncp2p.com/SwHWj2-mvcZZat-n4mzj_A/unl/krnvuoui/x8gpjt/poster.png",
+            "preview": "https://asset.syncp2p.com/Xwo5Spm_zLpqQc4AszYcRg/unl/krnvuoui/x8gpjt/preview.webp",
+            "duration": 7012,
+            "category": "videos",
+            "subject": "Simplification",
+            "folderName": "Simplification",
+            "servers": [
+              {
+                "name": "StreamP2P Player",
+                "url": "https://stutosed.strp2p.site/#asqeun",
+                "type": "streamp2p"
+              }
+            ]
           },
           {
             "id": "pdf-023",
@@ -125002,6 +125054,7 @@
             "url": "https://files.catbox.moe/j1k0n3.pdf",
             "downloadUrl": "https://files.catbox.moe/j1k0n3.pdf",
             "type": "pdf",
+            "thumb": "https://files.catbox.moe/97ydfl.jpg",
             "category": "pdfs",
             "subject": "Simplification",
             "folderName": "Simplification"
@@ -125012,6 +125065,7 @@
             "url": "https://files.catbox.moe/hw8pf4.pdf",
             "downloadUrl": "https://files.catbox.moe/hw8pf4.pdf",
             "type": "pdf",
+            "thumb": "https://files.catbox.moe/97ydfl.jpg",
             "category": "pdfs",
             "subject": "Simplification",
             "folderName": "Simplification"
@@ -125022,9 +125076,29 @@
             "url": "https://files.catbox.moe/331h8p.pdf",
             "downloadUrl": "https://files.catbox.moe/331h8p.pdf",
             "type": "pdf",
+            "thumb": "https://files.catbox.moe/97ydfl.jpg",
             "category": "pdfs",
             "subject": "Simplification",
             "folderName": "Simplification"
+          },
+          {
+            "id": "3pmsgc",
+            "label": "Simplification Approximation Part - 4",
+            "url": "https://stutosed.strp2p.site/#3pmsgc",
+            "type": "streamp2p",
+            "thumb": "https://asset.syncp2p.com/5ynMxh77KQj4iEeUzpJ9-A/unl/krnvuoui/hapdwp/poster.png",
+            "preview": "https://asset.syncp2p.com/DFaj8ebOeP8-tiXDvZxJbg/unl/krnvuoui/hapdwp/preview.webp",
+            "duration": 6079,
+            "category": "videos",
+            "subject": "Simplification",
+            "folderName": "Simplification",
+            "servers": [
+              {
+                "name": "StreamP2P Player",
+                "url": "https://stutosed.strp2p.site/#3pmsgc",
+                "type": "streamp2p"
+              }
+            ]
           },
           {
             "id": "pdf-027",
@@ -125032,6 +125106,7 @@
             "url": "https://files.catbox.moe/ecmxav.pdf",
             "downloadUrl": "https://files.catbox.moe/ecmxav.pdf",
             "type": "pdf",
+            "thumb": "https://files.catbox.moe/97ydfl.jpg",
             "category": "pdfs",
             "subject": "Simplification",
             "folderName": "Simplification"
@@ -125042,9 +125117,29 @@
             "url": "https://files.catbox.moe/9ut7ms.pdf",
             "downloadUrl": "https://files.catbox.moe/9ut7ms.pdf",
             "type": "pdf",
+            "thumb": "https://files.catbox.moe/97ydfl.jpg",
             "category": "pdfs",
             "subject": "Simplification",
             "folderName": "Simplification"
+          },
+          {
+            "id": "8ckudr",
+            "label": "Simplification Approximation Part - 5",
+            "url": "https://stutosed.strp2p.site/#8ckudr",
+            "type": "streamp2p",
+            "thumb": "https://asset.syncp2p.com/hkPfp9i-mHLjROrAItpIhA/unl/krnvuoui/x8gp5n/poster.png",
+            "preview": "https://asset.syncp2p.com/8R4MaoCGzC9h5Or_uaneAw/unl/krnvuoui/x8gp5n/preview.webp",
+            "duration": 6486,
+            "category": "videos",
+            "subject": "Simplification",
+            "folderName": "Simplification",
+            "servers": [
+              {
+                "name": "StreamP2P Player",
+                "url": "https://stutosed.strp2p.site/#8ckudr",
+                "type": "streamp2p"
+              }
+            ]
           },
           {
             "id": "pdf-030",
@@ -125052,6 +125147,7 @@
             "url": "https://files.catbox.moe/gtam6m.pdf",
             "downloadUrl": "https://files.catbox.moe/gtam6m.pdf",
             "type": "pdf",
+            "thumb": "https://files.catbox.moe/97ydfl.jpg",
             "category": "pdfs",
             "subject": "Simplification",
             "folderName": "Simplification"
@@ -125062,9 +125158,29 @@
             "url": "https://files.catbox.moe/uzxzuh.pdf",
             "downloadUrl": "https://files.catbox.moe/uzxzuh.pdf",
             "type": "pdf",
+            "thumb": "https://files.catbox.moe/97ydfl.jpg",
             "category": "pdfs",
             "subject": "Simplification",
             "folderName": "Simplification"
+          },
+          {
+            "id": "5o9haw",
+            "label": "Simplification Approximation Part - 6",
+            "url": "https://stutosed.strp2p.site/#5o9haw",
+            "type": "streamp2p",
+            "thumb": "https://asset.syncp2p.com/w2oHNMOuVQ6Obbacf4NaaQ/qtd/krnvuoui/59ab5z/poster.png",
+            "preview": "https://asset.syncp2p.com/93su0dMDEPwoazeVKO5pQA/qtd/krnvuoui/59ab5z/preview.webp",
+            "duration": 4700,
+            "category": "videos",
+            "subject": "Simplification",
+            "folderName": "Simplification",
+            "servers": [
+              {
+                "name": "StreamP2P Player",
+                "url": "https://stutosed.strp2p.site/#5o9haw",
+                "type": "streamp2p"
+              }
+            ]
           },
           {
             "id": "pdf-033",
@@ -125072,6 +125188,7 @@
             "url": "https://files.catbox.moe/4ovyuu.pdf",
             "downloadUrl": "https://files.catbox.moe/4ovyuu.pdf",
             "type": "pdf",
+            "thumb": "https://files.catbox.moe/97ydfl.jpg",
             "category": "pdfs",
             "subject": "Simplification",
             "folderName": "Simplification"
@@ -125082,9 +125199,29 @@
             "url": "https://files.catbox.moe/bn8kff.pdf",
             "downloadUrl": "https://files.catbox.moe/bn8kff.pdf",
             "type": "pdf",
+            "thumb": "https://files.catbox.moe/97ydfl.jpg",
             "category": "pdfs",
             "subject": "Simplification",
             "folderName": "Simplification"
+          },
+          {
+            "id": "sk5mkc",
+            "label": "Simplification Approximation Part - 7",
+            "url": "https://stutosed.strp2p.site/#sk5mkc",
+            "type": "streamp2p",
+            "thumb": "https://asset.syncp2p.com/c4StMXXU2c-Uf_SgUF3jFw/qtd/krnvuoui/evsdl3/poster.png",
+            "preview": "https://asset.syncp2p.com/2wNXK3Y0yHikJGUZBkHzsg/qtd/krnvuoui/evsdl3/preview.webp",
+            "duration": 6483,
+            "category": "videos",
+            "subject": "Simplification",
+            "folderName": "Simplification",
+            "servers": [
+              {
+                "name": "StreamP2P Player",
+                "url": "https://stutosed.strp2p.site/#sk5mkc",
+                "type": "streamp2p"
+              }
+            ]
           },
           {
             "id": "pdf-036",
@@ -125092,6 +125229,7 @@
             "url": "https://files.catbox.moe/aaz42c.pdf",
             "downloadUrl": "https://files.catbox.moe/aaz42c.pdf",
             "type": "pdf",
+            "thumb": "https://files.catbox.moe/97ydfl.jpg",
             "category": "pdfs",
             "subject": "Simplification",
             "folderName": "Simplification"
@@ -125102,9 +125240,29 @@
             "url": "https://files.catbox.moe/4y1jdq.pdf",
             "downloadUrl": "https://files.catbox.moe/4y1jdq.pdf",
             "type": "pdf",
+            "thumb": "https://files.catbox.moe/97ydfl.jpg",
             "category": "pdfs",
             "subject": "Simplification",
             "folderName": "Simplification"
+          },
+          {
+            "id": "f1pbkw",
+            "label": "Simplification Approximation Part - 8",
+            "url": "https://stutosed.strp2p.site/#f1pbkw",
+            "type": "streamp2p",
+            "thumb": "https://asset.syncp2p.com/tqRUxoAAcXJi79K-bDs3Xg/unl/krnvuoui/mc69sl/poster.png",
+            "preview": "https://asset.syncp2p.com/gb7lIBhLft5jHsM00RN24Q/unl/krnvuoui/mc69sl/preview.webp",
+            "duration": 3857,
+            "category": "videos",
+            "subject": "Simplification",
+            "folderName": "Simplification",
+            "servers": [
+              {
+                "name": "StreamP2P Player",
+                "url": "https://stutosed.strp2p.site/#f1pbkw",
+                "type": "streamp2p"
+              }
+            ]
           },
           {
             "id": "pdf-039",
@@ -125112,6 +125270,7 @@
             "url": "https://files.catbox.moe/4yg71h.pdf",
             "downloadUrl": "https://files.catbox.moe/4yg71h.pdf",
             "type": "pdf",
+            "thumb": "https://files.catbox.moe/97ydfl.jpg",
             "category": "pdfs",
             "subject": "Simplification",
             "folderName": "Simplification"
@@ -125122,6 +125281,7 @@
             "url": "https://files.catbox.moe/q8n3yg.pdf",
             "downloadUrl": "https://files.catbox.moe/q8n3yg.pdf",
             "type": "pdf",
+            "thumb": "https://files.catbox.moe/97ydfl.jpg",
             "category": "pdfs",
             "subject": "Simplification",
             "folderName": "Simplification"
@@ -125132,6 +125292,7 @@
             "url": "https://files.catbox.moe/jt1i8s.pdf",
             "downloadUrl": "https://files.catbox.moe/jt1i8s.pdf",
             "type": "pdf",
+            "thumb": "https://files.catbox.moe/97ydfl.jpg",
             "category": "pdfs",
             "subject": "Simplification",
             "folderName": "Simplification"
@@ -125141,8 +125302,8 @@
       {
         "id": "number-series",
         "label": "03. Number Series (Missing & Wrong)",
-        "subname": "23 items (Videos & Practice Sheets)",
-        "thumb": "https://asset.syncp2p.com/3IgM9GOXedkyTTkXsZM3Tw/nc9/krnvuoui/i5hlwc/poster.png",
+        "subname": "23 items (7 Videos & 16 Practice Sheets)",
+        "thumb": "https://asset.syncp2p.com/4aO74BovVqWvD3e8G_V-tw/qtd/krnvuoui/lq452z/poster.png",
         "items": [
           {
             "id": "vhnziy",
@@ -125169,6 +125330,7 @@
             "url": "https://files.catbox.moe/19i148.pdf",
             "downloadUrl": "https://files.catbox.moe/19i148.pdf",
             "type": "pdf",
+            "thumb": "https://files.catbox.moe/97ydfl.jpg",
             "category": "pdfs",
             "subject": "Number Series",
             "folderName": "Number Series"
@@ -125198,6 +125360,7 @@
             "url": "https://files.catbox.moe/0g0i85.pdf",
             "downloadUrl": "https://files.catbox.moe/0g0i85.pdf",
             "type": "pdf",
+            "thumb": "https://files.catbox.moe/97ydfl.jpg",
             "category": "pdfs",
             "subject": "Number Series",
             "folderName": "Number Series"
@@ -125227,6 +125390,7 @@
             "url": "https://files.catbox.moe/5vobx6.pdf",
             "downloadUrl": "https://files.catbox.moe/5vobx6.pdf",
             "type": "pdf",
+            "thumb": "https://files.catbox.moe/97ydfl.jpg",
             "category": "pdfs",
             "subject": "Number Series",
             "folderName": "Number Series"
@@ -125237,6 +125401,7 @@
             "url": "https://files.catbox.moe/jprvoz.pdf",
             "downloadUrl": "https://files.catbox.moe/jprvoz.pdf",
             "type": "pdf",
+            "thumb": "https://files.catbox.moe/97ydfl.jpg",
             "category": "pdfs",
             "subject": "Number Series",
             "folderName": "Number Series"
@@ -125266,6 +125431,7 @@
             "url": "https://files.catbox.moe/ksl7zv.pdf",
             "downloadUrl": "https://files.catbox.moe/ksl7zv.pdf",
             "type": "pdf",
+            "thumb": "https://files.catbox.moe/97ydfl.jpg",
             "category": "pdfs",
             "subject": "Number Series",
             "folderName": "Number Series"
@@ -125276,6 +125442,7 @@
             "url": "https://files.catbox.moe/a4khvq.pdf",
             "downloadUrl": "https://files.catbox.moe/a4khvq.pdf",
             "type": "pdf",
+            "thumb": "https://files.catbox.moe/97ydfl.jpg",
             "category": "pdfs",
             "subject": "Number Series",
             "folderName": "Number Series"
@@ -125305,6 +125472,7 @@
             "url": "https://files.catbox.moe/gul74q.pdf",
             "downloadUrl": "https://files.catbox.moe/gul74q.pdf",
             "type": "pdf",
+            "thumb": "https://files.catbox.moe/97ydfl.jpg",
             "category": "pdfs",
             "subject": "Number Series",
             "folderName": "Number Series"
@@ -125315,6 +125483,7 @@
             "url": "https://files.catbox.moe/7hjj3c.pdf",
             "downloadUrl": "https://files.catbox.moe/7hjj3c.pdf",
             "type": "pdf",
+            "thumb": "https://files.catbox.moe/97ydfl.jpg",
             "category": "pdfs",
             "subject": "Number Series",
             "folderName": "Number Series"
@@ -125344,6 +125513,7 @@
             "url": "https://files.catbox.moe/ibbny3.pdf",
             "downloadUrl": "https://files.catbox.moe/ibbny3.pdf",
             "type": "pdf",
+            "thumb": "https://files.catbox.moe/97ydfl.jpg",
             "category": "pdfs",
             "subject": "Number Series",
             "folderName": "Number Series"
@@ -125373,6 +125543,7 @@
             "url": "https://files.catbox.moe/ugkfxy.pdf",
             "downloadUrl": "https://files.catbox.moe/ugkfxy.pdf",
             "type": "pdf",
+            "thumb": "https://files.catbox.moe/97ydfl.jpg",
             "category": "pdfs",
             "subject": "Number Series",
             "folderName": "Number Series"
@@ -125383,6 +125554,7 @@
             "url": "https://files.catbox.moe/67bim2.pdf",
             "downloadUrl": "https://files.catbox.moe/67bim2.pdf",
             "type": "pdf",
+            "thumb": "https://files.catbox.moe/97ydfl.jpg",
             "category": "pdfs",
             "subject": "Number Series",
             "folderName": "Number Series"
@@ -125393,6 +125565,7 @@
             "url": "https://files.catbox.moe/3yzz0u.pdf",
             "downloadUrl": "https://files.catbox.moe/3yzz0u.pdf",
             "type": "pdf",
+            "thumb": "https://files.catbox.moe/97ydfl.jpg",
             "category": "pdfs",
             "subject": "Number Series",
             "folderName": "Number Series"
@@ -125403,6 +125576,7 @@
             "url": "https://files.catbox.moe/kpkw66.pdf",
             "downloadUrl": "https://files.catbox.moe/kpkw66.pdf",
             "type": "pdf",
+            "thumb": "https://files.catbox.moe/97ydfl.jpg",
             "category": "pdfs",
             "subject": "Number Series",
             "folderName": "Number Series"
@@ -125413,6 +125587,7 @@
             "url": "https://files.catbox.moe/srb8et.pdf",
             "downloadUrl": "https://files.catbox.moe/srb8et.pdf",
             "type": "pdf",
+            "thumb": "https://files.catbox.moe/97ydfl.jpg",
             "category": "pdfs",
             "subject": "Number Series",
             "folderName": "Number Series"
@@ -125423,6 +125598,7 @@
             "url": "https://files.catbox.moe/7y3mcw.pdf",
             "downloadUrl": "https://files.catbox.moe/7y3mcw.pdf",
             "type": "pdf",
+            "thumb": "https://files.catbox.moe/97ydfl.jpg",
             "category": "pdfs",
             "subject": "Number Series",
             "folderName": "Number Series"
@@ -125433,6 +125609,7 @@
             "url": "https://files.catbox.moe/ilry90.pdf",
             "downloadUrl": "https://files.catbox.moe/ilry90.pdf",
             "type": "pdf",
+            "thumb": "https://files.catbox.moe/97ydfl.jpg",
             "category": "pdfs",
             "subject": "Number Series",
             "folderName": "Number Series"
@@ -125442,8 +125619,8 @@
       {
         "id": "quadratic-equations",
         "label": "04. Quadratic & Cubic Equations",
-        "subname": "22 items (Videos & Practice Sheets)",
-        "thumb": "https://asset.syncp2p.com/-4m7NG3OAEpFfsS5wauJHw/qtd/krnvuoui/ubd85w/poster.png",
+        "subname": "22 items (8 Videos & 14 Practice Sheets)",
+        "thumb": "https://asset.syncp2p.com/lM5tE4qR4rN5k12yBvR33w/qtd/krnvuoui/1p3zvd/poster.png",
         "items": [
           {
             "id": "yjthdz",
@@ -125470,6 +125647,7 @@
             "url": "https://files.catbox.moe/6ah3b4.pdf",
             "downloadUrl": "https://files.catbox.moe/6ah3b4.pdf",
             "type": "pdf",
+            "thumb": "https://files.catbox.moe/97ydfl.jpg",
             "category": "pdfs",
             "subject": "Quadratic Equations",
             "folderName": "Quadratic Equations"
@@ -125499,6 +125677,7 @@
             "url": "https://files.catbox.moe/g1ngzz.pdf",
             "downloadUrl": "https://files.catbox.moe/g1ngzz.pdf",
             "type": "pdf",
+            "thumb": "https://files.catbox.moe/97ydfl.jpg",
             "category": "pdfs",
             "subject": "Quadratic Equations",
             "folderName": "Quadratic Equations"
@@ -125528,6 +125707,7 @@
             "url": "https://files.catbox.moe/uj87i7.pdf",
             "downloadUrl": "https://files.catbox.moe/uj87i7.pdf",
             "type": "pdf",
+            "thumb": "https://files.catbox.moe/97ydfl.jpg",
             "category": "pdfs",
             "subject": "Quadratic Equations",
             "folderName": "Quadratic Equations"
@@ -125557,6 +125737,7 @@
             "url": "https://files.catbox.moe/3x4xg7.pdf",
             "downloadUrl": "https://files.catbox.moe/3x4xg7.pdf",
             "type": "pdf",
+            "thumb": "https://files.catbox.moe/97ydfl.jpg",
             "category": "pdfs",
             "subject": "Quadratic Equations",
             "folderName": "Quadratic Equations"
@@ -125586,6 +125767,7 @@
             "url": "https://files.catbox.moe/w7j6ld.pdf",
             "downloadUrl": "https://files.catbox.moe/w7j6ld.pdf",
             "type": "pdf",
+            "thumb": "https://files.catbox.moe/97ydfl.jpg",
             "category": "pdfs",
             "subject": "Quadratic Equations",
             "folderName": "Quadratic Equations"
@@ -125615,6 +125797,7 @@
             "url": "https://files.catbox.moe/5n7w1n.pdf",
             "downloadUrl": "https://files.catbox.moe/5n7w1n.pdf",
             "type": "pdf",
+            "thumb": "https://files.catbox.moe/97ydfl.jpg",
             "category": "pdfs",
             "subject": "Quadratic Equations",
             "folderName": "Quadratic Equations"
@@ -125644,6 +125827,7 @@
             "url": "https://files.catbox.moe/ef1tub.pdf",
             "downloadUrl": "https://files.catbox.moe/ef1tub.pdf",
             "type": "pdf",
+            "thumb": "https://files.catbox.moe/97ydfl.jpg",
             "category": "pdfs",
             "subject": "Quadratic Equations",
             "folderName": "Quadratic Equations"
@@ -125673,6 +125857,7 @@
             "url": "https://files.catbox.moe/qwupoy.pdf",
             "downloadUrl": "https://files.catbox.moe/qwupoy.pdf",
             "type": "pdf",
+            "thumb": "https://files.catbox.moe/97ydfl.jpg",
             "category": "pdfs",
             "subject": "Quadratic Equations",
             "folderName": "Quadratic Equations"
@@ -125683,6 +125868,7 @@
             "url": "https://files.catbox.moe/e6hcm6.pdf",
             "downloadUrl": "https://files.catbox.moe/e6hcm6.pdf",
             "type": "pdf",
+            "thumb": "https://files.catbox.moe/97ydfl.jpg",
             "category": "pdfs",
             "subject": "Quadratic Equations",
             "folderName": "Quadratic Equations"
@@ -125693,6 +125879,7 @@
             "url": "https://files.catbox.moe/74fip1.pdf",
             "downloadUrl": "https://files.catbox.moe/74fip1.pdf",
             "type": "pdf",
+            "thumb": "https://files.catbox.moe/97ydfl.jpg",
             "category": "pdfs",
             "subject": "Quadratic Equations",
             "folderName": "Quadratic Equations"
@@ -125703,6 +125890,7 @@
             "url": "https://files.catbox.moe/8u1q7m.pdf",
             "downloadUrl": "https://files.catbox.moe/8u1q7m.pdf",
             "type": "pdf",
+            "thumb": "https://files.catbox.moe/97ydfl.jpg",
             "category": "pdfs",
             "subject": "Quadratic Equations",
             "folderName": "Quadratic Equations"
@@ -125713,6 +125901,7 @@
             "url": "https://files.catbox.moe/44s87f.pdf",
             "downloadUrl": "https://files.catbox.moe/44s87f.pdf",
             "type": "pdf",
+            "thumb": "https://files.catbox.moe/97ydfl.jpg",
             "category": "pdfs",
             "subject": "Quadratic Equations",
             "folderName": "Quadratic Equations"
@@ -125723,6 +125912,7 @@
             "url": "https://files.catbox.moe/v0p670.pdf",
             "downloadUrl": "https://files.catbox.moe/v0p670.pdf",
             "type": "pdf",
+            "thumb": "https://files.catbox.moe/97ydfl.jpg",
             "category": "pdfs",
             "subject": "Quadratic Equations",
             "folderName": "Quadratic Equations"
@@ -125733,6 +125923,7 @@
             "url": "https://files.catbox.moe/y3a1j3.pdf",
             "downloadUrl": "https://files.catbox.moe/y3a1j3.pdf",
             "type": "pdf",
+            "thumb": "https://files.catbox.moe/97ydfl.jpg",
             "category": "pdfs",
             "subject": "Quadratic Equations",
             "folderName": "Quadratic Equations"
@@ -125742,8 +125933,8 @@
       {
         "id": "percentage",
         "label": "05. Percentage & Successive Change",
-        "subname": "7 items (Videos & Practice Sheets)",
-        "thumb": "https://asset.syncp2p.com/zzl5shBdqYeYNO5Rrynktg/meb/krnvuoui/hapuqg/poster.png",
+        "subname": "7 items (4 Videos & 3 Practice Sheets)",
+        "thumb": "https://asset.syncp2p.com/tqRUxoAAcXJi79K-bDs3Xg/unl/krnvuoui/mc69sl/poster.png",
         "items": [
           {
             "id": "ebw3cs",
@@ -125770,6 +125961,7 @@
             "url": "https://files.catbox.moe/4n9c7b.pdf",
             "downloadUrl": "https://files.catbox.moe/4n9c7b.pdf",
             "type": "pdf",
+            "thumb": "https://files.catbox.moe/97ydfl.jpg",
             "category": "pdfs",
             "subject": "Percentage",
             "folderName": "Percentage"
@@ -125818,6 +126010,7 @@
             "url": "https://files.catbox.moe/g244d5.pdf",
             "downloadUrl": "https://files.catbox.moe/g244d5.pdf",
             "type": "pdf",
+            "thumb": "https://files.catbox.moe/97ydfl.jpg",
             "category": "pdfs",
             "subject": "Percentage",
             "folderName": "Percentage"
@@ -125828,6 +126021,7 @@
             "url": "https://files.catbox.moe/0v210i.pdf",
             "downloadUrl": "https://files.catbox.moe/0v210i.pdf",
             "type": "pdf",
+            "thumb": "https://files.catbox.moe/97ydfl.jpg",
             "category": "pdfs",
             "subject": "Percentage",
             "folderName": "Percentage"

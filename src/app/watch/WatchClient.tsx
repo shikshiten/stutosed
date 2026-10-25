@@ -172,6 +172,7 @@ export default function WatchClient() {
 
   // Video playback state
   const videoRef = useRef<HTMLVideoElement | null>(null);
+  const iframeRef = useRef<HTMLIFrameElement | null>(null);
   const containerRef = useRef<HTMLDivElement | null>(null);
   const progressBarRef = useRef<HTMLDivElement | null>(null);
   const hlsRef = useRef<Hls | null>(null);
@@ -207,6 +208,77 @@ export default function WatchClient() {
   const [resolvedStreamUrl, setResolvedStreamUrl] = useState<string | null>(null);
   const selectedServerIndexState = useState(0);
   const [selectedServerIndex, setSelectedServerIndex] = selectedServerIndexState;
+
+  // StreamP2P iframe postMessage time tracker & double-tap controller
+  const [embedCurrentTime, setEmbedCurrentTime] = useState(0);
+  const embedTimeRef = useRef(0);
+  embedTimeRef.current = embedCurrentTime;
+
+  useEffect(() => {
+    const handleMessage = (e: MessageEvent) => {
+      if (!e.data) return;
+      if (e.data.type === 'time' && typeof e.data.currentTime === 'number') {
+        setEmbedCurrentTime(e.data.currentTime);
+      } else if (typeof e.data.currentTime === 'number') {
+        setEmbedCurrentTime(e.data.currentTime);
+      }
+      if (typeof e.data.duration === 'number' && e.data.duration > 0) {
+        setDuration(e.data.duration);
+      }
+    };
+    window.addEventListener('message', handleMessage);
+    return () => window.removeEventListener('message', handleMessage);
+  }, []);
+
+  const handleEmbedSkip = (delta: number) => {
+    const win = iframeRef.current?.contentWindow;
+    if (!win) return;
+    const baseTime = embedTimeRef.current || currentTime || 0;
+    const target = Math.max(0, baseTime + delta);
+    win.postMessage({ command: 'seek', value: target }, '*');
+    embedTimeRef.current = target;
+    setEmbedCurrentTime(target);
+    setCurrentTime(target);
+
+    setAccumulatedSkip((prev) => {
+      if ((delta < 0 && prev > 0) || (delta > 0 && prev < 0)) return delta;
+      return prev + delta;
+    });
+    setSkipFeedback(delta < 0 ? 'backward' : 'forward');
+
+    if (skipTimeoutRef.current) clearTimeout(skipTimeoutRef.current);
+    skipTimeoutRef.current = setTimeout(() => {
+      setSkipFeedback(null);
+      setAccumulatedSkip(0);
+    }, 700);
+  };
+
+  const embedTapTimerRef = useRef<NodeJS.Timeout | null>(null);
+  const lastEmbedTapTimeRef = useRef<number>(0);
+  const lastEmbedTapDeltaRef = useRef<number>(0);
+
+  const handleEmbedZoneTouch = (e: React.TouchEvent<HTMLDivElement>, delta: number) => {
+    const now = Date.now();
+    const timeSinceLast = now - lastEmbedTapTimeRef.current;
+
+    if (timeSinceLast < 320 && lastEmbedTapDeltaRef.current === delta) {
+      if (embedTapTimerRef.current) {
+        clearTimeout(embedTapTimerRef.current);
+        embedTapTimerRef.current = null;
+      }
+      lastEmbedTapTimeRef.current = 0;
+      handleEmbedSkip(delta);
+      return;
+    }
+
+    lastEmbedTapTimeRef.current = now;
+    lastEmbedTapDeltaRef.current = delta;
+
+    if (embedTapTimerRef.current) clearTimeout(embedTapTimerRef.current);
+    embedTapTimerRef.current = setTimeout(() => {
+      lastEmbedTapTimeRef.current = 0;
+    }, 320);
+  };
 
   // Video Server Loading Notice state
   const [loadingNoticeVisible, setLoadingNoticeVisible] = useState(false);
@@ -427,9 +499,9 @@ export default function WatchClient() {
     if (isPendingLecture) return null;
     if (isStreamP2PUrl) {
       if (streamP2PId) {
-        return `https://stutosed.strp2p.site/#${streamP2PId}`;
+        return `https://stutosed.strp2p.site/#${streamP2PId}&api=all`;
       }
-      return activeUrl;
+      return activeUrl.includes('&api=') ? activeUrl : `${activeUrl}&api=all`;
     }
     if (isYouTubeUrl && ytId) {
       return `https://www.youtube-nocookie.com/embed/${ytId}?autoplay=1&rel=0`;
@@ -1093,19 +1165,32 @@ export default function WatchClient() {
       // 1. Play / Pause: Space or k / K
       if (key === ' ' || key === 'k' || key === 'K') {
         e.preventDefault();
-        togglePlayPause();
+        if (isStreamP2PUrl && iframeRef.current?.contentWindow) {
+          iframeRef.current.contentWindow.postMessage({ command: isPlaying ? 'pause' : 'play' }, '*');
+          setIsPlaying((prev) => !prev);
+        } else {
+          togglePlayPause();
+        }
         return;
       }
 
       // 2. Seeking: Left/Right Arrow or j/l (10s seek)
       if (key === 'ArrowRight' || key === 'l' || key === 'L') {
         e.preventDefault();
-        skipVideo(10);
+        if (isStreamP2PUrl) {
+          handleEmbedSkip(10);
+        } else {
+          skipVideo(10);
+        }
         return;
       }
       if (key === 'ArrowLeft' || key === 'j' || key === 'J') {
         e.preventDefault();
-        skipVideo(-10);
+        if (isStreamP2PUrl) {
+          handleEmbedSkip(-10);
+        } else {
+          skipVideo(-10);
+        }
         return;
       }
 
@@ -1325,6 +1410,17 @@ export default function WatchClient() {
           >
             <div
               className="player-viewport"
+              onDoubleClick={(e) => {
+                if (isEmbedMode) return;
+                const rect = e.currentTarget.getBoundingClientRect();
+                const x = e.clientX - rect.left;
+                const ratio = x / rect.width;
+                if (ratio < 0.35) {
+                  skipVideo(-10);
+                } else if (ratio > 0.65) {
+                  skipVideo(10);
+                }
+              }}
               onTouchEnd={(e) => {
                 if (isEmbedMode) return;
                 handleViewportTouchEnd(e);
@@ -1504,8 +1600,8 @@ export default function WatchClient() {
               )}
 
               {/* Double-tap indicator */}
-              {!isEmbedMode && skipFeedback && (
-                <div className={`player-skip-indicator ${skipFeedback}`}>
+              {skipFeedback && (
+                <div className={`player-skip-indicator ${skipFeedback}`} style={{ zIndex: 45 }}>
                   <span style={{ fontSize: '18px', fontWeight: 800, letterSpacing: '-1px' }}>
                     {skipFeedback === 'backward' ? '««' : '»»'}
                   </span>
@@ -1619,6 +1715,7 @@ export default function WatchClient() {
                   }}
                 >
                   <iframe
+                    ref={iframeRef}
                     key={embedUrl}
                     src={embedUrl!}
                     title={currentItem.label}
@@ -1637,6 +1734,53 @@ export default function WatchClient() {
                       setLoadingNoticeVisible(false);
                     }}
                   />
+                  {/* Transparent Double-Tap / Double-Click Seek Zones for StreamP2P */}
+                  {isStreamP2PUrl && (
+                    <>
+                      <div
+                        className="player-doubletap-zone left"
+                        title="Double-click or double-tap to skip backward 10s"
+                        onDoubleClick={(e) => {
+                          e.stopPropagation();
+                          handleEmbedSkip(-10);
+                        }}
+                        onTouchEnd={(e) => {
+                          handleEmbedZoneTouch(e, -10);
+                        }}
+                        style={{
+                          position: 'absolute',
+                          top: '12%',
+                          bottom: '18%',
+                          left: 0,
+                          width: '28%',
+                          zIndex: 20,
+                          cursor: 'pointer',
+                          WebkitTapHighlightColor: 'transparent',
+                        }}
+                      />
+                      <div
+                        className="player-doubletap-zone right"
+                        title="Double-click or double-tap to skip forward 10s"
+                        onDoubleClick={(e) => {
+                          e.stopPropagation();
+                          handleEmbedSkip(10);
+                        }}
+                        onTouchEnd={(e) => {
+                          handleEmbedZoneTouch(e, 10);
+                        }}
+                        style={{
+                          position: 'absolute',
+                          top: '12%',
+                          bottom: '18%',
+                          right: 0,
+                          width: '28%',
+                          zIndex: 20,
+                          cursor: 'pointer',
+                          WebkitTapHighlightColor: 'transparent',
+                        }}
+                      />
+                    </>
+                  )}
                 </div>
               ) : (
                 <video

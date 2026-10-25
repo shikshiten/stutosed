@@ -69,6 +69,20 @@ export const CourseModal: React.FC<CourseModalProps> = ({
 
   const searchInputRef = useRef<HTMLInputElement | null>(null);
   const searchContainerRef = useRef<HTMLDivElement | null>(null);
+  const overlayRef = useRef<HTMLDivElement | null>(null);
+
+  const resetOverlayScroll = () => {
+    if (overlayRef.current) {
+      overlayRef.current.scrollTop = 0;
+    }
+    const el = document.getElementById('course-overlay');
+    if (el) {
+      el.scrollTop = 0;
+    }
+    if (typeof window !== 'undefined') {
+      window.scrollTo(0, 0);
+    }
+  };
 
   useEffect(() => {
     if (!course) return;
@@ -94,28 +108,13 @@ export const CourseModal: React.FC<CourseModalProps> = ({
     } else if (course.tabs && course.tabs.length > 0) {
       setActiveTabId(course.tabs[0].id);
     }
-
-    // Auto-resume memory setup for non-folder courses
-    if (!course.isFolderMode) {
-      const memoryRaw = localStorage.getItem(`stutosed-last-lec-${course.id}`);
-      if (memoryRaw) {
-        try {
-          const mem = JSON.parse(memoryRaw);
-          if (mem.tabId) {
-            setActiveTabId(mem.tabId);
-          }
-          setTimeout(() => {
-            if (mem.url) {
-              const el = document.querySelector(`[data-lecture-url="${CSS.escape(mem.url)}"]`);
-              if (el) {
-                el.scrollIntoView({ behavior: 'smooth', block: 'center' });
-              }
-            }
-          }, 300);
-        } catch {}
-      }
-    }
+    resetOverlayScroll();
   }, [course]);
+
+  // Ensure view is pinned at the top whenever folder tab, tab, or module filter changes
+  useEffect(() => {
+    resetOverlayScroll();
+  }, [activeFolderTabId, activeTabId, activeModuleFilter]);
 
   // Sync folder tab when initialFolderTabId prop changes from back navigation / popstate
   useEffect(() => {
@@ -124,6 +123,7 @@ export const CourseModal: React.FC<CourseModalProps> = ({
       if (initialFolderTabId) {
         setActiveTabId(initialFolderTabId);
       }
+      resetOverlayScroll();
     }
   }, [initialFolderTabId, course?.isFolderMode]);
 
@@ -331,7 +331,7 @@ export const CourseModal: React.FC<CourseModalProps> = ({
 
   // Centralized lecture item click handler (direct YouTube open, bot link open, PDF modal, or video player)
   const handleItemClick = (item: LectureItem, idx: number) => {
-    if (item.url) {
+    if (item.url && item.type !== 'pdf') {
       saveMemory(item.url);
     }
     if (isYouTubeItem(item)) {
@@ -374,7 +374,7 @@ export const CourseModal: React.FC<CourseModalProps> = ({
   };
 
   return (
-    <div id="course-overlay" className="open" role="dialog" aria-modal="true">
+    <div ref={overlayRef} id="course-overlay" className="open" role="dialog" aria-modal="true">
       {/* 1. TOP STICKY APP BAR */}
       <div className="overlay-bar">
         {/* Right: Expandable Search Bar */}
@@ -477,6 +477,7 @@ export const CourseModal: React.FC<CourseModalProps> = ({
               setActiveFolderTabId(null);
               setActiveModuleFilter('All Modules');
               onFolderTabChange?.(null);
+              resetOverlayScroll();
             } else {
               onClose();
             }
@@ -675,6 +676,7 @@ export const CourseModal: React.FC<CourseModalProps> = ({
                     const isModuleNaming = tab.items.some((it) => it.subject?.toLowerCase().startsWith('module'));
                     setActiveModuleFilter(isModuleNaming ? 'All Modules' : 'All Subjects');
                     setActiveMediaFilter('all');
+                    resetOverlayScroll();
                   }}
                   style={{
                     background: 'var(--bg-card)',
@@ -886,8 +888,28 @@ export const CourseModal: React.FC<CourseModalProps> = ({
                         background: 'var(--bg-card-hover)',
                       }}
                     >
+                      {/* Hover Video Preview (StreamP2P MP4 preview) */}
+                      {hoveredIdx === idx && item.preview ? (
+                        <video
+                          src={item.preview}
+                          autoPlay
+                          loop
+                          muted
+                          playsInline
+                          style={{
+                            position: 'absolute',
+                            inset: 0,
+                            width: '100%',
+                            height: '100%',
+                            objectFit: 'cover',
+                            zIndex: 2,
+                            pointerEvents: 'none',
+                          }}
+                        />
+                      ) : null}
+
                       <img
-                        src={hoveredIdx === idx && item.preview ? item.preview : thumb}
+                        src={thumb}
                         alt=""
                         className="grid-thumb-img"
                         onError={(e) => {
@@ -908,6 +930,8 @@ export const CourseModal: React.FC<CourseModalProps> = ({
                         style={{
                           position: 'absolute',
                           inset: 0,
+                          zIndex: 3,
+                          pointerEvents: 'none',
                           background:
                             'linear-gradient(to top, rgba(0,0,0,0.8) 0%, rgba(0,0,0,0.2) 50%, transparent 80%)',
                         }}
@@ -919,6 +943,7 @@ export const CourseModal: React.FC<CourseModalProps> = ({
                           position: 'absolute',
                           top: '10px',
                           left: '10px',
+                          zIndex: 4,
                           background: 'rgba(0,0,0,0.7)',
                           backdropFilter: 'blur(4px)',
                           color: '#ffffff',
@@ -939,6 +964,7 @@ export const CourseModal: React.FC<CourseModalProps> = ({
                             position: 'absolute',
                             top: '10px',
                             right: '10px',
+                            zIndex: 4,
                             background: 'rgba(93,184,114,0.95)',
                             color: '#ffffff',
                             fontSize: '11px',
@@ -958,6 +984,7 @@ export const CourseModal: React.FC<CourseModalProps> = ({
                             position: 'absolute',
                             bottom: '8px',
                             left: '10px',
+                            zIndex: 4,
                             color: 'rgba(255,255,255,0.9)',
                             fontSize: '11px',
                             fontWeight: 600,
@@ -974,6 +1001,7 @@ export const CourseModal: React.FC<CourseModalProps> = ({
                           position: 'absolute',
                           bottom: '8px',
                           right: '10px',
+                          zIndex: 4,
                           display: 'flex',
                           alignItems: 'center',
                           gap: '4px',
@@ -995,33 +1023,23 @@ export const CourseModal: React.FC<CourseModalProps> = ({
                             {formatItemDuration(item.duration)}
                           </div>
                         ) : null}
-                        <div
-                          style={{
-                            background: 'rgba(0,0,0,0.7)',
-                            backdropFilter: 'blur(4px)',
-                            color: isYt
-                              ? '#ff6b6b'
-                              : item.id?.startsWith('pending-')
-                              ? '#f59e0b'
-                              : item.type === 'streamp2p'
-                              ? '#38bdf8'
-                              : '#85e0a3',
-                            fontSize: '10px',
-                            fontWeight: 700,
-                            padding: '2px 7px',
-                            borderRadius: '4px',
-                            textTransform: 'uppercase',
-                            letterSpacing: '0.4px',
-                          }}
-                        >
-                          {isYt
-                            ? 'YouTube'
-                            : item.id?.startsWith('pending-')
-                            ? '⏳ In Queue'
-                            : item.type === 'streamp2p'
-                            ? '● Stream Ready'
-                            : 'Video'}
-                        </div>
+                        {item.id?.startsWith('pending-') && (
+                          <div
+                            style={{
+                              background: 'rgba(0,0,0,0.7)',
+                              backdropFilter: 'blur(4px)',
+                              color: '#f59e0b',
+                              fontSize: '10px',
+                              fontWeight: 700,
+                              padding: '2px 7px',
+                              borderRadius: '4px',
+                              textTransform: 'uppercase',
+                              letterSpacing: '0.4px',
+                            }}
+                          >
+                            ⏳ In Queue
+                          </div>
+                        )}
                       </div>
                     </div>
 
@@ -1216,7 +1234,7 @@ export const CourseModal: React.FC<CourseModalProps> = ({
                     <div
                       style={{
                         padding: '16px 16px 12px',
-                        background: 'linear-gradient(135deg, rgba(239, 68, 68, 0.1) 0%, rgba(249, 115, 22, 0.04) 100%)',
+                        background: 'linear-gradient(135deg, rgba(204, 120, 92, 0.12) 0%, rgba(204, 120, 92, 0.03) 100%)',
                         borderBottom: '1px solid var(--border)',
                         display: 'flex',
                         alignItems: 'center',
@@ -1229,11 +1247,11 @@ export const CourseModal: React.FC<CourseModalProps> = ({
                             width: '36px',
                             height: '36px',
                             borderRadius: 'var(--r-md)',
-                            background: 'rgba(239, 68, 68, 0.15)',
+                            background: 'rgba(204, 120, 92, 0.15)',
                             display: 'flex',
                             alignItems: 'center',
                             justifyContent: 'center',
-                            color: '#ef4444',
+                            color: 'var(--accent)',
                             flexShrink: 0,
                           }}
                         >
@@ -1246,7 +1264,7 @@ export const CourseModal: React.FC<CourseModalProps> = ({
                               fontWeight: 700,
                               textTransform: 'uppercase',
                               letterSpacing: '0.04em',
-                              color: '#ef4444',
+                              color: 'var(--accent)',
                             }}
                           >
                             PDF Document
@@ -1504,7 +1522,7 @@ export const CourseModal: React.FC<CourseModalProps> = ({
                         display: 'flex',
                         alignItems: 'center',
                         justifyContent: 'center',
-                        color: '#ef4444',
+                        color: 'var(--accent)',
                       }}
                     >
                       <FileText width={14} height={14} />
@@ -1643,11 +1661,11 @@ export const CourseModal: React.FC<CourseModalProps> = ({
                               width: '26px',
                               height: '26px',
                               borderRadius: 'var(--r-sm)',
-                              background: 'rgba(239, 68, 68, 0.15)',
+                              background: 'rgba(204, 120, 92, 0.15)',
                               display: 'flex',
                               alignItems: 'center',
                               justifyContent: 'center',
-                              color: '#ef4444',
+                              color: 'var(--accent)',
                             }}
                           >
                             <FileText width={15} height={15} />
