@@ -58,6 +58,10 @@ export interface Course {
   parmarData?: Record<string, ParmarSubjectData>;
   isPratham?: boolean;
   prathamBySubject?: Record<string, LectureItem[]>;
+  stats?: {
+    videos: number;
+    resources: number;
+  };
 }
 
 export interface UserProfile {

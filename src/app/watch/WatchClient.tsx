@@ -4,7 +4,7 @@ import React, { useEffect, useRef, useState, useCallback, useMemo } from 'react'
 import { useRouter, useSearchParams } from 'next/navigation';
 import Hls from 'hls.js';
 import { Course, LectureItem, ServerOption } from '@/types';
-import { INITIAL_COURSES, getCourseById } from '@/lib/coursesData';
+import { INITIAL_COURSES, getCourseById, loadCourseDetails } from '@/lib/coursesData';
 import { getWorkerProxyUrl, resolveDirectMediaUrl } from '@/lib/proxyConfig';
 import { getLectureTopicDescription } from '@/lib/topicDescriptions';
 import {
@@ -321,10 +321,18 @@ export default function WatchClient() {
       return;
     }
 
-    // Fallback: Resolve directly from coursesData
+    // Fallback: Resolve directly from coursesData on demand
     if (courseParam) {
-      const course = getCourseById(courseParam) || INITIAL_COURSES.find((c) => c.name.toLowerCase() === courseParam.toLowerCase());
-      if (course) {
+      const summary = getCourseById(courseParam) || INITIAL_COURSES.find((c) => c.name.toLowerCase() === courseParam.toLowerCase());
+      const targetId = summary?.id || courseParam;
+
+      let isCancelled = false;
+      loadCourseDetails(targetId).then((course) => {
+        if (isCancelled || !course) {
+          setIsLoaded(true);
+          return;
+        }
+
         let extractedItems: LectureItem[] = [];
         let extractedSubject = course.name;
 
@@ -383,10 +391,13 @@ export default function WatchClient() {
             subject: extractedSubject,
             thumb: course.thumb,
           });
-          setIsLoaded(true);
-          return;
         }
-      }
+        setIsLoaded(true);
+      });
+
+      return () => {
+        isCancelled = true;
+      };
     }
 
     setIsLoaded(true);

@@ -2,7 +2,7 @@
 
 import React, { useState, useEffect, useRef, useMemo } from 'react';
 import { Course, LectureItem } from '@/types';
-import { countCourseStats } from '@/lib/coursesData';
+import { countCourseStats, loadCourseDetails } from '@/lib/coursesData';
 import { getSubjectThumbnail, getDynamicThumbnailUrl } from '@/lib/subjectThumbnails';
 import { getWorkerProxyUrl, resolveDirectMediaUrl } from '@/lib/proxyConfig';
 import { ArrowLeft, Folder, Search, LayoutGrid, List, Video, FileText, CheckCircle2, Play, Download, ExternalLink } from 'lucide-react';
@@ -19,7 +19,7 @@ interface CourseModalProps {
 }
 
 export const CourseModal: React.FC<CourseModalProps> = ({
-  course,
+  course: initialCourse,
   onClose,
   onPlayVideo,
   onOpenPdf,
@@ -28,6 +28,34 @@ export const CourseModal: React.FC<CourseModalProps> = ({
   onFolderTabChange,
   theme,
 }) => {
+  const [loadedCourse, setLoadedCourse] = useState<Course | null>(initialCourse);
+  const [loadingDetails, setLoadingDetails] = useState<boolean>(false);
+
+  useEffect(() => {
+    if (!initialCourse) {
+      setLoadedCourse(null);
+      return;
+    }
+    if (initialCourse.tabs || initialCourse.parmarData || initialCourse.prathamBySubject) {
+      setLoadedCourse(initialCourse);
+      return;
+    }
+    setLoadingDetails(true);
+    let isCancelled = false;
+    loadCourseDetails(initialCourse.id).then((detailed) => {
+      if (!isCancelled && detailed) {
+        setLoadedCourse(detailed);
+      }
+      if (!isCancelled) {
+        setLoadingDetails(false);
+      }
+    });
+    return () => {
+      isCancelled = true;
+    };
+  }, [initialCourse]);
+
+  const course = loadedCourse || initialCourse;
   const [activeTabId, setActiveTabId] = useState<string>('');
   const [activeFolderTabId, setActiveFolderTabId] = useState<string | null>(initialFolderTabId || null);
   const [activeModuleFilter, setActiveModuleFilter] = useState<string>('All Modules');

@@ -1,0 +1,3338 @@
+{
+  "id": "english-spl",
+  "name": "English Grammar",
+  "subname": "English SPL-26 • Foundation & Rules",
+  "teacher": "English Faculty",
+  "subject": "English",
+  "thumb": "/thumbnails/subjects/english_grammar.svg",
+  "tabs": [
+    {
+      "id": "videos",
+      "label": "▶ Videos",
+      "items": [
+        {
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6353356906112/6353356906112.m3u8",
+          "label": "Class-01 | Noun:",
+          "type": "hls"
+        },
+        {
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6353427352112/6353427352112.m3u8",
+          "label": "Class-02 | Noun:",
+          "type": "hls"
+        },
+        {
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6353499582112/6353499582112.m3u8",
+          "label": "Class-03 | Noun:",
+          "type": "hls"
+        },
+        {
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6353578463112/6353578463112.m3u8",
+          "label": "Class-04 | Noun:",
+          "type": "hls"
+        },
+        {
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6353753049112/6353753049112.m3u8",
+          "label": "Class-05 | Noun:",
+          "type": "hls"
+        },
+        {
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6353801688112/6353801688112.m3u8",
+          "label": "Class-06 | Noun:",
+          "type": "hls"
+        },
+        {
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6353865215112/6353865215112.m3u8",
+          "label": "Class-07 | Noun:",
+          "type": "hls"
+        },
+        {
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6353932287112/6353932287112.m3u8",
+          "label": "Class-08 | Noun:",
+          "type": "hls"
+        },
+        {
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6354098823112/6354098823112.m3u8",
+          "label": "Class-09 | Noun:",
+          "type": "hls"
+        },
+        {
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6354204529112/6354204529112.m3u8",
+          "label": "Class-10 | Noun:",
+          "type": "hls"
+        },
+        {
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6354285632112/6354285632112.m3u8",
+          "label": "Class-11 | Noun:",
+          "type": "hls"
+        },
+        {
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6354355337112/6354355337112.m3u8",
+          "label": "Class-12 | Pronoun:",
+          "type": "hls"
+        },
+        {
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6354425103112/6354425103112.m3u8",
+          "label": "Class-13 | Pronoun:",
+          "type": "hls"
+        },
+        {
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6354504007112/6354504007112.m3u8",
+          "label": "Class-14 | Pronoun:",
+          "type": "hls"
+        },
+        {
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6354727990112/6354727990112.m3u8",
+          "label": "Class-15 | Pronoun:",
+          "type": "hls"
+        },
+        {
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6354796231112/6354796231112.m3u8",
+          "label": "Class-16 | Pronoun:",
+          "type": "hls"
+        },
+        {
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6354854025112/6354854025112.m3u8",
+          "label": "Class-17 | Pronoun:",
+          "type": "hls"
+        },
+        {
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6354925628112/6354925628112.m3u8",
+          "label": "Class-18 | Pronoun:",
+          "type": "hls"
+        },
+        {
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6354999338112/6354999338112.m3u8",
+          "label": "Class-19 | Adjective:",
+          "type": "hls"
+        },
+        {
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6355167998112/6355167998112.m3u8",
+          "label": "Class-20 | Adjective:",
+          "type": "hls"
+        },
+        {
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6355220913112/6355220913112.m3u8",
+          "label": "Class-21 | Adjective:",
+          "type": "hls"
+        },
+        {
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6355281868112/6355281868112.m3u8",
+          "label": "Class-22 | Adjective:",
+          "type": "hls"
+        },
+        {
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6355347727112/6355347727112.m3u8",
+          "label": "Class-23 | Adjective:",
+          "type": "hls"
+        },
+        {
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6355413974112/6355413974112.m3u8",
+          "label": "Class-24 | Adjective:",
+          "type": "hls"
+        },
+        {
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6355590352112/6355590352112.m3u8",
+          "label": "Class-25 | Adjective:",
+          "type": "hls"
+        },
+        {
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6355649355112/6355649355112.m3u8",
+          "label": "Class-26 | Adverb:",
+          "type": "hls"
+        },
+        {
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6355701474112/6355701474112.m3u8",
+          "label": "Class-27 | Adverb:",
+          "type": "hls"
+        },
+        {
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6355755160112/6355755160112.m3u8",
+          "label": "Class-28 | Adverb:",
+          "type": "hls"
+        },
+        {
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6355822440112/6355822440112.m3u8",
+          "label": "Class-29 | Adverb:",
+          "type": "hls"
+        },
+        {
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6355941983112/6355941983112.m3u8",
+          "label": "Class-30 | Adverb:",
+          "type": "hls"
+        },
+        {
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6356147964112/6356147964112.m3u8",
+          "label": "Class-31 | Adverb:",
+          "type": "hls"
+        },
+        {
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6356413209112/6356413209112.m3u8",
+          "label": "Class-32 | Adverb:",
+          "type": "hls"
+        },
+        {
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6356407518112/6356407518112.m3u8",
+          "label": "Class-33 | Conjunction:",
+          "type": "hls"
+        },
+        {
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6356540681112/6356540681112.m3u8",
+          "label": "Class-34 | Conjunction:",
+          "type": "hls"
+        },
+        {
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6356699115112/6356699115112.m3u8",
+          "label": "Class-35 | Conjunction:",
+          "type": "hls"
+        },
+        {
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6356826071112/6356826071112.m3u8",
+          "label": "Class-36 | Conjunction:",
+          "type": "hls"
+        },
+        {
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6357060998112/6357060998112.m3u8",
+          "label": "Class-37 | Article:",
+          "type": "hls"
+        },
+        {
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6357195292112/6357195292112.m3u8",
+          "label": "Class-38 | Article:",
+          "type": "hls"
+        },
+        {
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6357350035112/6357350035112.m3u8",
+          "label": "Class-39 | Article:",
+          "type": "hls"
+        },
+        {
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6357558417112/6357558417112.m3u8",
+          "label": "Class-40 | Article:",
+          "type": "hls"
+        },
+        {
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6357710362112/6357710362112.m3u8",
+          "label": "Class-41 | Article:",
+          "type": "hls"
+        },
+        {
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6357822954112/6357822954112.m3u8",
+          "label": "Class-42 | Subject Verb Agreement:",
+          "type": "hls"
+        },
+        {
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6358034580112/6358034580112.m3u8",
+          "label": "Class-43 . | Subject Verb Agreement:",
+          "type": "hls"
+        },
+        {
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6358148573112/6358148573112.m3u8",
+          "label": "Class-44 . | Subject Verb Agreement:",
+          "type": "hls"
+        },
+        {
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6358265168112/6358265168112.m3u8",
+          "label": "Class-45 | Determiners:",
+          "type": "hls"
+        },
+        {
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6359054511112/6359054511112.m3u8",
+          "label": "Class-46  | Tense:",
+          "type": "hls"
+        },
+        {
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6359189732112/6359189732112.m3u8",
+          "label": "Class - 47 | Tense:",
+          "type": "hls"
+        },
+        {
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6359312913112/6359312913112.m3u8",
+          "label": "Class - 48 | Tense:",
+          "type": "hls"
+        },
+        {
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6359539099112/6359539099112.m3u8",
+          "label": "Class - 49 | Verb Basic:",
+          "type": "hls"
+        },
+        {
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6359552035112/6359552035112.m3u8",
+          "label": "Class - 50 | Tense:",
+          "type": "hls"
+        },
+        {
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6359594729112/6359594729112.m3u8",
+          "label": "Class - 51 | Verb Basic:",
+          "type": "hls"
+        },
+        {
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6359600418112/6359600418112.m3u8",
+          "label": "Class - 52 | Tense:",
+          "type": "hls"
+        },
+        {
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6359655482112/6359655482112.m3u8",
+          "label": "Class - 53 | Verb Basic:",
+          "type": "hls"
+        },
+        {
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6359718751112/6359718751112.m3u8",
+          "label": "Class - 55 | Verb Basic:",
+          "type": "hls"
+        },
+        {
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6359735699112/6359735699112.m3u8",
+          "label": "Class - 56 | Tense:",
+          "type": "hls"
+        },
+        {
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6359776032112/6359776032112.m3u8",
+          "label": "Class - 57 | Verb  Advance:",
+          "type": "hls"
+        },
+        {
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6359793379112/6359793379112.m3u8",
+          "label": "Class - 58 | Tense:",
+          "type": "hls"
+        },
+        {
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6359912366112/6359912366112.m3u8",
+          "label": "Class - 60 | Verb Advance:",
+          "type": "hls"
+        },
+        {
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6359925087112/6359925087112.m3u8",
+          "label": "Class - 61 | Tense:",
+          "type": "hls"
+        },
+        {
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6359960355112/6359960355112.m3u8",
+          "label": "Class - 62 | Verb Advance:",
+          "type": "hls"
+        },
+        {
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6359975667112/6359975667112.m3u8",
+          "label": "Class - 63 | Tense:",
+          "type": "hls"
+        },
+        {
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6360014791112/6360014791112.m3u8",
+          "label": "Class - 64 | Verb Advance:",
+          "type": "hls"
+        },
+        {
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6360029134112/6360029134112.m3u8",
+          "label": "Class - 65 | Tense:",
+          "type": "hls"
+        },
+        {
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6360069927112/6360069927112.m3u8",
+          "label": "Class - 66 | Verb Advance:",
+          "type": "hls"
+        },
+        {
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6360084356112/6360084356112.m3u8",
+          "label": "Class - 67 | Tense:",
+          "type": "hls"
+        },
+        {
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6360125212112/6360125212112.m3u8",
+          "label": "Class - 68 | Verb Advance:",
+          "type": "hls"
+        },
+        {
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6360142020112/6360142020112.m3u8",
+          "label": "Class - 69 | Tense:",
+          "type": "hls"
+        },
+        {
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6360184540112/6360184540112.m3u8",
+          "label": "Class - 70 | Verb Advance:",
+          "type": "hls"
+        },
+        {
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6360285643112/6360285643112.m3u8",
+          "label": "Class - 71 |Preposition:",
+          "type": "hls"
+        },
+        {
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6360294803112/6360294803112.m3u8",
+          "label": "Class - 72 | Tense:",
+          "type": "hls"
+        },
+        {
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6360333425112/6360333425112.m3u8",
+          "label": "Class - 73 |Preposition:",
+          "type": "hls"
+        },
+        {
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6360348766112/6360348766112.m3u8",
+          "label": "Class - 74 | Conditional Sentences:",
+          "type": "hls"
+        },
+        {
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6360388633112/6360388633112.m3u8",
+          "label": "Class - 75 | Preposition:",
+          "type": "hls"
+        },
+        {
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6360406039112/6360406039112.m3u8",
+          "label": "Class - 76 | Conditional Sentences:",
+          "type": "hls"
+        },
+        {
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6360487206112/6360487206112.m3u8",
+          "label": "Class - 77 | Preposition:",
+          "type": "hls"
+        },
+        {
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6360498142112/6360498142112.m3u8",
+          "label": "Class - 78 | Conditional Sentences:",
+          "type": "hls"
+        },
+        {
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6360540741112/6360540741112.m3u8",
+          "label": "Class - 79 | Preposition:",
+          "type": "hls"
+        },
+        {
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6360561883112/6360561883112.m3u8",
+          "label": "Class - 80 | Conditional Sentences:",
+          "type": "hls"
+        },
+        {
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6360591277112/6360591277112.m3u8",
+          "label": "Class-81 | Preposition:",
+          "type": "hls"
+        },
+        {
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6360603503112/6360603503112.m3u8",
+          "label": "Class - 82 | Conditional Sentences:",
+          "type": "hls"
+        },
+        {
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6360679642112/6360679642112.m3u8",
+          "label": "Class-83 | Preposition:",
+          "type": "hls"
+        },
+        {
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6360692664112/6360692664112.m3u8",
+          "label": "Class - 84 | Mood (Intention Of The Speaker):",
+          "type": "hls"
+        },
+        {
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6360730541112/6360730541112.m3u8",
+          "label": "Class-85 | Preposition:",
+          "type": "hls"
+        },
+        {
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6360748517112/6360748517112.m3u8",
+          "label": "Class - 86 | Mood (Intention Of The Speaker):",
+          "type": "hls"
+        },
+        {
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6360876076112/6360876076112.m3u8",
+          "label": "Class - 87 | Modal Auxiliary:",
+          "type": "hls"
+        },
+        {
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6361027762112/6361027762112.m3u8",
+          "label": "Class - 88 | Modal Auxiliary:",
+          "type": "hls"
+        },
+        {
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6361082217112/6361082217112.m3u8",
+          "label": "Class-89 | Modal Auxiliary:",
+          "type": "hls"
+        },
+        {
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6361188799112/6361188799112.m3u8",
+          "label": "Class-90 | Modal Auxiliary:",
+          "type": "hls"
+        },
+        {
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6361312421112/6361312421112.m3u8",
+          "label": "Class-91 | Modal Auxiliary:",
+          "type": "hls"
+        },
+        {
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6361434538112/6361434538112.m3u8",
+          "label": "Class-92 | Modal Auxiliary:",
+          "type": "hls"
+        },
+        {
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6361386089112/6361386089112.m3u8",
+          "label": "Class-93 | Question Tags:",
+          "type": "hls"
+        },
+        {
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6361488170112/6361488170112.m3u8",
+          "label": "Class-94 | Question Tags:",
+          "type": "hls"
+        },
+        {
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6361544539112/6361544539112.m3u8",
+          "label": "Class-95 | Question Tags:",
+          "type": "hls"
+        },
+        {
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6361594488112/6361594488112.m3u8",
+          "label": "Class-96 | Question Tags:",
+          "type": "hls"
+        },
+        {
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6361728321112/6361728321112.m3u8",
+          "label": "Class-97 | Voice:",
+          "type": "hls"
+        },
+        {
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6361779928112/6361779928112.m3u8",
+          "label": "Class-98 | Voice:",
+          "type": "hls"
+        },
+        {
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6361825225112/6361825225112.m3u8",
+          "label": "Class-99 | Voice:",
+          "type": "hls"
+        },
+        {
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6361865626112/6361865626112.m3u8",
+          "label": "Class-100 | Voice:",
+          "type": "hls"
+        },
+        {
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6362011546112/6362011546112.m3u8",
+          "label": "Class-101 | Voice:",
+          "type": "hls"
+        },
+        {
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6362048371112/6362048371112.m3u8",
+          "label": "Class-102 | Voice:",
+          "type": "hls"
+        },
+        {
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6362098820112/6362098820112.m3u8",
+          "label": "Class-103 | Voice:",
+          "type": "hls"
+        },
+        {
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6362142900112/6362142900112.m3u8",
+          "label": "Class-104 | Voice:",
+          "type": "hls"
+        },
+        {
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6362198416112/6362198416112.m3u8",
+          "label": "Class-105 | Voice:",
+          "type": "hls"
+        },
+        {
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6362332176112/6362332176112.m3u8",
+          "label": "Class-106 | Narration:",
+          "type": "hls"
+        },
+        {
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6362427571112/6362427571112.m3u8",
+          "label": "Class-107 | Narration:",
+          "type": "hls"
+        },
+        {
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6362530541112/6362530541112.m3u8",
+          "label": "Class-108 | Narration:",
+          "type": "hls"
+        },
+        {
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6362662380112/6362662380112.m3u8",
+          "label": "Class-109 | Narration:",
+          "type": "hls"
+        },
+        {
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6362786942112/6362786942112.m3u8",
+          "label": "Class-110 | Narration:",
+          "type": "hls"
+        },
+        {
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6362828571112/6362828571112.m3u8",
+          "label": "Class-111 | Narration:",
+          "type": "hls"
+        },
+        {
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6362933176112/6362933176112.m3u8",
+          "label": "Class-112 | Narration:",
+          "type": "hls"
+        },
+        {
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6362972938112/6362972938112.m3u8",
+          "label": "Class-113 | Narration:",
+          "type": "hls"
+        },
+        {
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6363017962112/6363017962112.m3u8",
+          "label": "Class-114 | Narration:",
+          "type": "hls"
+        },
+        {
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6363064847112/6363064847112.m3u8",
+          "label": "Class-115 | Narration:",
+          "type": "hls"
+        },
+        {
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6363064807112/6363064807112.m3u8",
+          "label": "Ferewell Announcement:",
+          "type": "hls"
+        },
+        {
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6333970515112/6333970515112.m3u8",
+          "label": "Class-01 | Introduction:",
+          "type": "hls"
+        },
+        {
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6334178930112/6334178930112.m3u8",
+          "label": "Class-02 | Tense:",
+          "type": "hls"
+        },
+        {
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6334976123112/6334976123112.m3u8",
+          "label": "Class - 03 | Tense:",
+          "type": "hls"
+        },
+        {
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6335149639112/6335149639112.m3u8",
+          "label": "Class - 04 | Tense:",
+          "type": "hls"
+        },
+        {
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6335392235112/6335392235112.m3u8",
+          "label": "Class - 05 | Tense:",
+          "type": "hls"
+        },
+        {
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6335465568112/6335465568112.m3u8",
+          "label": "Class - 06 | Tense:",
+          "type": "hls"
+        },
+        {
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6335529928112/6335529928112.m3u8",
+          "label": "Class - 07 | Tense:",
+          "type": "hls"
+        },
+        {
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6335693332112/6335693332112.m3u8",
+          "label": "Class - 08  | Tense:",
+          "type": "hls"
+        },
+        {
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6335809270112/6335809270112.m3u8",
+          "label": "Class - 09 | Tense:",
+          "type": "hls"
+        },
+        {
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6336263911112/6336263911112.m3u8",
+          "label": "Class - 10 | Tense:",
+          "type": "hls"
+        },
+        {
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6336396119112/6336396119112.m3u8",
+          "label": "Class - 11 | Tense:",
+          "type": "hls"
+        },
+        {
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6336547348112/6336547348112.m3u8",
+          "label": "Class - 12 | Tense:",
+          "type": "hls"
+        },
+        {
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6336595371112/6336595371112.m3u8",
+          "label": "Class - 13 | Tense:",
+          "type": "hls"
+        },
+        {
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6336648188112/6336648188112.m3u8",
+          "label": "Class - 14 | Tense:",
+          "type": "hls"
+        },
+        {
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6336711624112/6336711624112.m3u8",
+          "label": "Class - 15 | Tense:",
+          "type": "hls"
+        },
+        {
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6327064970112/6327064970112.m3u8",
+          "label": "Class - 16 | Modal Auxiliary:",
+          "type": "hls"
+        },
+        {
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6336945565112/6336945565112.m3u8",
+          "label": "Class - 17 | Modal Auxiliary:",
+          "type": "hls"
+        },
+        {
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6336997771112/6336997771112.m3u8",
+          "label": "Class - 18 | Modal Auxiliary:",
+          "type": "hls"
+        },
+        {
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6337057645112/6337057645112.m3u8",
+          "label": "Class - 19 | Modal Auxiliary:",
+          "type": "hls"
+        },
+        {
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6337116400112/6337116400112.m3u8",
+          "label": "Class - 20 | Question Tags:",
+          "type": "hls"
+        },
+        {
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6337183118112/6337183118112.m3u8",
+          "label": "Class - 21 | Question Tags:",
+          "type": "hls"
+        },
+        {
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6337250571112/6337250571112.m3u8",
+          "label": "Class - 22 | Question Tags:",
+          "type": "hls"
+        },
+        {
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6337358000112/6337358000112.m3u8",
+          "label": "Announcement Regarding Class:",
+          "type": "hls"
+        },
+        {
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6337397815112/6337397815112.m3u8",
+          "label": "Class - 24 | Voices:",
+          "type": "hls"
+        },
+        {
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6337413370112/6337413370112.m3u8",
+          "label": "Class - 25 | Reading Comprehension Passage:",
+          "type": "hls"
+        },
+        {
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6337459303112/6337459303112.m3u8",
+          "label": "Class - 26 | Voices:",
+          "type": "hls"
+        },
+        {
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6337474900112/6337474900112.m3u8",
+          "label": "Class - 27 | Reading Comprehension Passage:",
+          "type": "hls"
+        },
+        {
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6337530544112/6337530544112.m3u8",
+          "label": "Class - 28 | Voices:",
+          "type": "hls"
+        },
+        {
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6337544080112/6337544080112.m3u8",
+          "label": "Class - 29 | Reading Comprehension Passage:",
+          "type": "hls"
+        },
+        {
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6337593141112/6337593141112.m3u8",
+          "label": "Class - 30 | Voices:",
+          "type": "hls"
+        },
+        {
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6337598673112/6337598673112.m3u8",
+          "label": "Class - 31 | Reading Comprehension Passage:",
+          "type": "hls"
+        },
+        {
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6337774081112/6337774081112.m3u8",
+          "label": "Class - 32 | Voices:",
+          "type": "hls"
+        },
+        {
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6337784126112/6337784126112.m3u8",
+          "label": "Class - 33 | Cloze Test:",
+          "type": "hls"
+        },
+        {
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6337835531112/6337835531112.m3u8",
+          "label": "Class - 34 |  Voices:",
+          "type": "hls"
+        },
+        {
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6337851404112/6337851404112.m3u8",
+          "label": "Class - 35 | Cloze Test:",
+          "type": "hls"
+        },
+        {
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6337895883112/6337895883112.m3u8",
+          "label": "Class - 36 | Voices:",
+          "type": "hls"
+        },
+        {
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6337911803112/6337911803112.m3u8",
+          "label": "Class - 37 | Cloze Test:",
+          "type": "hls"
+        },
+        {
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6337964625112/6337964625112.m3u8",
+          "label": "Class - 38 | Voices:",
+          "type": "hls"
+        },
+        {
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6337978762112/6337978762112.m3u8",
+          "label": "Class - 39 | Parajumbled:",
+          "type": "hls"
+        },
+        {
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6338043367112/6338043367112.m3u8",
+          "label": "Class - 40 | Narration:",
+          "type": "hls"
+        },
+        {
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6338287222112/6338287222112.m3u8",
+          "label": "Class - 41 | Narration:",
+          "type": "hls"
+        },
+        {
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6338348371112/6338348371112.m3u8",
+          "label": "Class - 42 | Narration:",
+          "type": "hls"
+        },
+        {
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6338362911112/6338362911112.m3u8",
+          "label": "Class - 43 | Parajumbled:",
+          "type": "hls"
+        },
+        {
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6338419917112/6338419917112.m3u8",
+          "label": "Class - 44 | Narration:",
+          "type": "hls"
+        },
+        {
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6338435786112/6338435786112.m3u8",
+          "label": "Class - 45 | Comprehension Question Practice:",
+          "type": "hls"
+        },
+        {
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6338487896112/6338487896112.m3u8",
+          "label": "Class - 46 | Narration:",
+          "type": "hls"
+        },
+        {
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6338587944112/6338587944112.m3u8",
+          "label": "Class - 47 | Narration:",
+          "type": "hls"
+        },
+        {
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6338704896112/6338704896112.m3u8",
+          "label": "Class - 48 | Narration:",
+          "type": "hls"
+        },
+        {
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6338757199112/6338757199112.m3u8",
+          "label": "Class - 49 | Narration:",
+          "type": "hls"
+        },
+        {
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6338818304112/6338818304112.m3u8",
+          "label": "Class - 50 | Narration:",
+          "type": "hls"
+        },
+        {
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6338878979112/6338878979112.m3u8",
+          "label": "Class - 51 | Narration:",
+          "type": "hls"
+        },
+        {
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6338885846112/6338885846112.m3u8",
+          "label": "Announcement Regarding Class:",
+          "type": "hls"
+        },
+        {
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6339304505112/6339304505112.m3u8",
+          "label": "Class - 52 | Noun:",
+          "type": "hls"
+        },
+        {
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6339363661112/6339363661112.m3u8",
+          "label": "Class - 53 | Noun:",
+          "type": "hls"
+        },
+        {
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6339423021112/6339423021112.m3u8",
+          "label": "Class - 54 | Noun:",
+          "type": "hls"
+        },
+        {
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6339688720112/6339688720112.m3u8",
+          "label": "Class - 56 | Noun:",
+          "type": "hls"
+        },
+        {
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6339814365112/6339814365112.m3u8",
+          "label": "Class - 57 | Noun:",
+          "type": "hls"
+        },
+        {
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6339878646112/6339878646112.m3u8",
+          "label": "Class - 58 | Noun:",
+          "type": "hls"
+        },
+        {
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6340025967112/6340025967112.m3u8",
+          "label": "Class - 59 | Noun:",
+          "type": "hls"
+        },
+        {
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6340120975112/6340120975112.m3u8",
+          "label": "Class - 60 | Noun:",
+          "type": "hls"
+        },
+        {
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6340198612112/6340198612112.m3u8",
+          "label": "Class - 61 | Pronoun:",
+          "type": "hls"
+        },
+        {
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6340264022112/6340264022112.m3u8",
+          "label": "Class - 62 | Pronoun:",
+          "type": "hls"
+        },
+        {
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6340334906112/6340334906112.m3u8",
+          "label": "Class - 63 | Pronoun:",
+          "type": "hls"
+        },
+        {
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6340405148112/6340405148112.m3u8",
+          "label": "Class - 64 | Pronoun:",
+          "type": "hls"
+        },
+        {
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6340468211112/6340468211112.m3u8",
+          "label": "Class - 65 | Pronoun:",
+          "type": "hls"
+        },
+        {
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6340584229112/6340584229112.m3u8",
+          "label": "Class - 66 | Pronoun:",
+          "type": "hls"
+        },
+        {
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6340645023112/6340645023112.m3u8",
+          "label": "Class - 67 | Pronoun:",
+          "type": "hls"
+        },
+        {
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6338826746112/6338826746112.m3u8",
+          "label": "Class - 68 | Adjective:",
+          "type": "hls"
+        },
+        {
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6341591628112/6341591628112.m3u8",
+          "label": "Class - 69 | Adjective:",
+          "type": "hls"
+        },
+        {
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6341479809112/6341479809112.m3u8",
+          "label": "Class - 70 | Adjective:",
+          "type": "hls"
+        },
+        {
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6341278499112/6341278499112.m3u8",
+          "label": "Class - 71 | Adjective:",
+          "type": "hls"
+        },
+        {
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6341354903112/6341354903112.m3u8",
+          "label": "Class - 72 | Adjective:",
+          "type": "hls"
+        },
+        {
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6341461030112/6341461030112.m3u8",
+          "label": "Class - 73 | Adjective:",
+          "type": "hls"
+        },
+        {
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6341518161112/6341518161112.m3u8",
+          "label": "Class - 74 | Adjective:",
+          "type": "hls"
+        },
+        {
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6341577011112/6341577011112.m3u8",
+          "label": "Class - 75 | Adverb:",
+          "type": "hls"
+        },
+        {
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6341637573112/6341637573112.m3u8",
+          "label": "Class - 76 | Adverb:",
+          "type": "hls"
+        },
+        {
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6341684794112/6341684794112.m3u8",
+          "label": "Class - 77 | Adverb:",
+          "type": "hls"
+        },
+        {
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6341737826112/6341737826112.m3u8",
+          "label": "Class - 78 | Adverb:",
+          "type": "hls"
+        },
+        {
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6341813918112/6341813918112.m3u8",
+          "label": "Class - 79 | Adverb:",
+          "type": "hls"
+        },
+        {
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6341874769112/6341874769112.m3u8",
+          "label": "Class - 80 | Adverb:",
+          "type": "hls"
+        },
+        {
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6341945691112/6341945691112.m3u8",
+          "label": "Class - 81 | Verb Basic:",
+          "type": "hls"
+        },
+        {
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6342034787112/6342034787112.m3u8",
+          "label": "Class - 82  | Verb Basic:",
+          "type": "hls"
+        },
+        {
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6342132640112/6342132640112.m3u8",
+          "label": "Class - 83 | Verb Basic:",
+          "type": "hls"
+        },
+        {
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6342312456112/6342312456112.m3u8",
+          "label": "Class - 84 | Verb Advance:",
+          "type": "hls"
+        },
+        {
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6342369884112/6342369884112.m3u8",
+          "label": "Class - 85 | Verb Advance:",
+          "type": "hls"
+        },
+        {
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6342432756112/6342432756112.m3u8",
+          "label": "Class - 86 | Verb Advance:",
+          "type": "hls"
+        },
+        {
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6342496348112/6342496348112.m3u8",
+          "label": "Class - 87| Verb Advance:",
+          "type": "hls"
+        },
+        {
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6342668403112/6342668403112.m3u8",
+          "label": "Class - 88 | Verb Advance:",
+          "type": "hls"
+        },
+        {
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6342751794112/6342751794112.m3u8",
+          "label": "Class - 89 | Verb Advance:",
+          "type": "hls"
+        },
+        {
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6342945738112/6342945738112.m3u8",
+          "label": "Class - 90 | Preposition:",
+          "type": "hls"
+        },
+        {
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6343042361112/6343042361112.m3u8",
+          "label": "Class - 91 | Preposition:",
+          "type": "hls"
+        },
+        {
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6343041088112/6343041088112.m3u8",
+          "label": "Class - 92 | Preposition:",
+          "type": "hls"
+        },
+        {
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6343148461112/6343148461112.m3u8",
+          "label": "Class - 93 | Preposition:",
+          "type": "hls"
+        },
+        {
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6343261649112/6343261649112.m3u8",
+          "label": "Class - 94 | Preposition:",
+          "type": "hls"
+        },
+        {
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6343497721112/6343497721112.m3u8",
+          "label": "Class - 95 | Preposition:",
+          "type": "hls"
+        },
+        {
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6343493293112/6343493293112.m3u8",
+          "label": "Class - 96 | Preposition:",
+          "type": "hls"
+        },
+        {
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6343571172112/6343571172112.m3u8",
+          "label": "Class - 97 | Preposition:",
+          "type": "hls"
+        },
+        {
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6343584719112/6343584719112.m3u8",
+          "label": "Announcement Regarding Class:",
+          "type": "hls"
+        },
+        {
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6340353530112/6340353530112.m3u8",
+          "label": "Class - 98 | Conjunction:",
+          "type": "hls"
+        },
+        {
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6343707656112/6343707656112.m3u8",
+          "label": "Class - 99  | Conjunction:",
+          "type": "hls"
+        },
+        {
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6343777749112/6343777749112.m3u8",
+          "label": "Class - 100 | Conjunction:",
+          "type": "hls"
+        },
+        {
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6343846170112/6343846170112.m3u8",
+          "label": "Class - 101 | Conjunction:",
+          "type": "hls"
+        },
+        {
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6340599867112/6340599867112.m3u8",
+          "label": "Class - 102 | Article:",
+          "type": "hls"
+        },
+        {
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6343906481112/6343906481112.m3u8",
+          "label": "Class - 103 | Article:",
+          "type": "hls"
+        },
+        {
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6343954781112/6343954781112.m3u8",
+          "label": "Class - 104 | Article:",
+          "type": "hls"
+        },
+        {
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6344004164112/6344004164112.m3u8",
+          "label": "Class - 105 | Article:",
+          "type": "hls"
+        },
+        {
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6344153652112/6344153652112.m3u8",
+          "label": "Class - 106 | Subject Verb Agreement:",
+          "type": "hls"
+        },
+        {
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6344202081112/6344202081112.m3u8",
+          "label": "Class - 107 | Subject Verb Agreement:",
+          "type": "hls"
+        },
+        {
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6344253993112/6344253993112.m3u8",
+          "label": "Class - 108 | Subject Verb Agreement:",
+          "type": "hls"
+        },
+        {
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6344257367112/6344257367112.m3u8",
+          "label": "Batch End Announcement Video:",
+          "type": "hls"
+        },
+        {
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6354013440112/6354013440112.m3u8",
+          "label": "Comp- CT &amp; Rc -84:",
+          "type": "hls"
+        },
+        {
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6354203712112/6354203712112.m3u8",
+          "label": "Comp- CT &amp; Rc -85:",
+          "type": "hls"
+        },
+        {
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6354354885112/6354354885112.m3u8",
+          "label": "Comp- CT, Rc &amp; Parajumble -86:",
+          "type": "hls"
+        },
+        {
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6354503579112/6354503579112.m3u8",
+          "label": "Comp- CT, Rc &amp; Parajumble -87:",
+          "type": "hls"
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=cGMqvKHPABw",
+          "label": "Class - 54 | Tense:",
+          "type": "youtube"
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=toryr5jRoF8",
+          "label": "Class - 59 | Verb Advance:",
+          "type": "youtube"
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=meW2nI_G7b8",
+          "label": "Best Approach To Solve PQRS:",
+          "type": "youtube"
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=ytA5Z3t7vZ0",
+          "label": "Best Tips to Solve Cloze Test:",
+          "type": "youtube"
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=suABPyV3n-M",
+          "label": "Reading Comprehension Theory and Details:",
+          "type": "youtube"
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=Aq3pl3a4mcc",
+          "label": "Important Announcement | Daily Shots | By Gopal Verma Sir:",
+          "type": "youtube"
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=eGYgNGGsq4A",
+          "label": "Comp- CT, Rc &amp; Parajumble -01:",
+          "type": "youtube"
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=vjdPIDafZpE",
+          "label": "Comp- CT, Rc &amp; Parajumble -02:",
+          "type": "youtube"
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=TRcUyiOdVhg",
+          "label": "Comp- CT, Rc &amp; Parajumble -03:",
+          "type": "youtube"
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=R330TX9yulc",
+          "label": "Comp- CT, Rc &amp; Parajumble -04:",
+          "type": "youtube"
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=Upkox-CaA1U",
+          "label": "Comp- CT, Rc &amp; Parajumble -05:",
+          "type": "youtube"
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=9zuMsoV-pJk",
+          "label": "Comp- CT, Rc &amp; Parajumble -06:",
+          "type": "youtube"
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=2sbSJNBjCxM",
+          "label": "Comp- CT, Rc &amp; Parajumble -07:",
+          "type": "youtube"
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=NYgFIAc6q_Y",
+          "label": "Comp- CT, Rc &amp; Parajumble -08:",
+          "type": "youtube"
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=1kEVMK3pUxE",
+          "label": "Comp- CT, Rc &amp; Parajumble -09:",
+          "type": "youtube"
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=ED0DjnQXZOw",
+          "label": "Comp- CT, Rc &amp; Parajumble -10:",
+          "type": "youtube"
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=FpUsveVRlDo",
+          "label": "Comp- CT, Rc &amp; Parajumble -11:",
+          "type": "youtube"
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=S-dP0b5iMmo",
+          "label": "Comp- CT, Rc &amp; Parajumble -12:",
+          "type": "youtube"
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=W9buQWZDDco",
+          "label": "Comp- CT, Rc &amp; Parajumble -13:",
+          "type": "youtube"
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=Y5SCxHGHmds",
+          "label": "Comp- CT, Rc &amp; Parajumble -14:",
+          "type": "youtube"
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=VELGDlTUlOg",
+          "label": "Comp- CT, Rc &amp; Parajumble -15:",
+          "type": "youtube"
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=uspuKUd0-1I",
+          "label": "Comp- CT, Rc &amp; Parajumble -16:",
+          "type": "youtube"
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=SY_Wqnl78jc",
+          "label": "Comp- CT, Rc &amp; Parajumble -17:",
+          "type": "youtube"
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=wxnU7KDwEqU",
+          "label": "Comp- CT, Rc &amp; Parajumble -18:",
+          "type": "youtube"
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=mr9D_aL9iyM",
+          "label": "Comp- CT, Rc &amp; Parajumble -19:",
+          "type": "youtube"
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=KGP66naDdRw",
+          "label": "Comp- CT, Rc &amp; Parajumble -20:",
+          "type": "youtube"
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=F3J4ajUGqhY",
+          "label": "Important Announcement:",
+          "type": "youtube"
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=XCN3BzNRDg0",
+          "label": "Comp- CT, Rc &amp; Parajumble -21:",
+          "type": "youtube"
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=2WDDp4KJmC0",
+          "label": "Comp- CT, Rc &amp; Parajumble -22:",
+          "type": "youtube"
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=v0CUKAKKOso",
+          "label": "Comp- CT, Rc &amp; Parajumble -23:",
+          "type": "youtube"
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=fLwt-YQMVCs",
+          "label": "Comp- CT, Rc &amp; Parajumble -24:",
+          "type": "youtube"
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=Afjtr2gZbBs",
+          "label": "Comp- CT, Rc &amp; Parajumble -25:",
+          "type": "youtube"
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=V8tON2zEnaA",
+          "label": "Comp- CT, Rc &amp; Parajumble -26:",
+          "type": "youtube"
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=JqWxe-Nr5tA",
+          "label": "Comp- CT, Rc &amp; Parajumble -27:",
+          "type": "youtube"
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=GeHpVigDvaw",
+          "label": "Comp- CT, Rc &amp; Parajumble -28:",
+          "type": "youtube"
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=vfViK7bUTyI",
+          "label": "Comp- CT, Rc &amp; Parajumble -29:",
+          "type": "youtube"
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=S9PRxPto7XY",
+          "label": "Comp- CT, Rc &amp; Parajumble -30:",
+          "type": "youtube"
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=NjMeen_Ud6c",
+          "label": "Comp- CT, Rc &amp; Parajumble -31:",
+          "type": "youtube"
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=w7gTRstDF60",
+          "label": "Comp- CT, Rc &amp; Parajumble -32:",
+          "type": "youtube"
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=znKCluak_ms",
+          "label": "Comp- CT, Rc &amp; Parajumble -33:",
+          "type": "youtube"
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=mPV5PDQioIk",
+          "label": "Comp- CT, Rc &amp; Parajumble -34:",
+          "type": "youtube"
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=Fy_HA-vT3-k",
+          "label": "Comp- CT, Rc &amp; Parajumble -35:",
+          "type": "youtube"
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=flGOLGLpnEY",
+          "label": "Comp- CT, Rc &amp; Parajumble -36:",
+          "type": "youtube"
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=SU9Kx6pa6eE",
+          "label": "Comp- CT, Rc &amp; Parajumble -37:",
+          "type": "youtube"
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=IiIKc5Iu5Bo",
+          "label": "Comp- CT, Rc &amp; Parajumble -38:",
+          "type": "youtube"
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=82cQ-hNCA6I",
+          "label": "Comp- CT, Rc &amp; Parajumble -39:",
+          "type": "youtube"
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=R4UcIH8x2Ck",
+          "label": "Comp- CT, Rc &amp; Parajumble -40:",
+          "type": "youtube"
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=bOxJ1cwGSoE",
+          "label": "Comp- CT, Rc &amp; Parajumble -41:",
+          "type": "youtube"
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=iuecXxLsP2E",
+          "label": "Comp- CT, Rc &amp; Parajumble -42:",
+          "type": "youtube"
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=M_45nOKYGZA",
+          "label": "Comp- CT, Rc &amp; Parajumble -43:",
+          "type": "youtube"
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=bDmxJmxSG5A",
+          "label": "Comp- CT, Rc &amp; Parajumble -44:",
+          "type": "youtube"
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=DXF0L7SmvXw",
+          "label": "Comp- CT, Rc &amp; Parajumble -45:",
+          "type": "youtube"
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=nRXYGoD6xNg",
+          "label": "Comp- CT, Rc &amp; Parajumble -46:",
+          "type": "youtube"
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=6GrV7SOtRHM",
+          "label": "Comp- CT, Rc &amp; Parajumble -47:",
+          "type": "youtube"
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=nRCYPUxw3p0",
+          "label": "Comp- CT, Rc &amp; Parajumble -48:",
+          "type": "youtube"
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=kfdqy35P948",
+          "label": "Comp- CT, Rc &amp; Parajumble -49:",
+          "type": "youtube"
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=s8S3ngE9QTs",
+          "label": "Comp- CT, Rc &amp; Parajumble -50:",
+          "type": "youtube"
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=gAB9KD7zdZc",
+          "label": "Comp- CT, Rc &amp; Parajumble -51:",
+          "type": "youtube"
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=qhp1el7l0ow",
+          "label": "Comp- CT, Rc &amp; Parajumble -52:",
+          "type": "youtube"
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=ODEaBn7r_Q8",
+          "label": "Comp- CT, Rc &amp; Parajumble -53:",
+          "type": "youtube"
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=YYkiEw-vUtU",
+          "label": "Comp- CT, Rc &amp; Parajumble -54:",
+          "type": "youtube"
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=Bo-H6yoQvmk",
+          "label": "Comp- CT, Rc &amp; Parajumble -55:",
+          "type": "youtube"
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=lIb6ACiLFAc",
+          "label": "Comp- CT, Rc &amp; Parajumble -56:",
+          "type": "youtube"
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=Ew5Yg4KE2j0",
+          "label": "Lecture-01:",
+          "type": "youtube"
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=yG71bPXDWOw",
+          "label": "Lecture-02:",
+          "type": "youtube"
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=kjWLv8_jKUU",
+          "label": "Lecture-03:",
+          "type": "youtube"
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=8iPlVJCj1sw",
+          "label": "Lecture-04:",
+          "type": "youtube"
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=MKwwjuT4iag",
+          "label": "Lecture-05:",
+          "type": "youtube"
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=qH95dE0e-C0",
+          "label": "Lecture-06:",
+          "type": "youtube"
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=tBwb0qQMXx4",
+          "label": "&quot;One Hour, Vocab Power&quot; : Day-01 By Gopal Verma Sir:",
+          "type": "youtube"
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=vX-jbnRA4lc",
+          "label": "&quot;One Hour, Vocab Power&quot; : Day-02 By Gopal Verma Sir:",
+          "type": "youtube"
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=Zzn5SE_sBQ0",
+          "label": "&quot;One Hour, Vocab Power&quot; : Day-04 By Gopal Verma Sir:",
+          "type": "youtube"
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=9HLcrPREmJ0",
+          "label": "&quot;One Hour, Vocab Power&quot; : Day-05 By Gopal Verma Sir:",
+          "type": "youtube"
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=tR3QbasxI5A",
+          "label": "&quot;One Hour, Vocab Power&quot; : Day-06 By Gopal Verma Sir:",
+          "type": "youtube"
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=ZTzp6AYLYgc",
+          "label": "&quot;One Hour, Vocab Power&quot; : Day-07 By Gopal Verma Sir:",
+          "type": "youtube"
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=pWyfzoty-E4",
+          "label": "&quot;One Hour, Vocab Power&quot; : Day-08 By Gopal Verma Sir:",
+          "type": "youtube"
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=_v8jyC0G47Q",
+          "label": "&quot;One Hour, Vocab Power&quot; : Day-09 By Gopal Verma Sir:",
+          "type": "youtube"
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=wQoUMb8GH94",
+          "label": "&quot;One Hour, Vocab Power&quot; : Day-10 By Gopal Verma Sir:",
+          "type": "youtube"
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=l4k7HOUFvpo",
+          "label": "&quot;One Hour, Vocab Power&quot; : Day-11 By Gopal Verma Sir:",
+          "type": "youtube"
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=iqd_kBvD_C0",
+          "label": "&quot;One Hour, Vocab Power&quot; : Day-12 By Gopal Verma Sir:",
+          "type": "youtube"
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=cx3w9cMDrJo",
+          "label": "&quot;One Hour, Vocab Power&quot; : Day-13 By Gopal Verma Sir:",
+          "type": "youtube"
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=6xQDgUyfsI4",
+          "label": "&quot;One Hour, Vocab Power&quot; : Day-14 By Gopal Verma Sir:",
+          "type": "youtube"
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=7UflPvYheVc",
+          "label": "&quot;One Hour, Vocab Power&quot; : Day-15 By Gopal Verma Sir:",
+          "type": "youtube"
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=1-lRO0Do-os",
+          "label": "&quot;One Hour, Vocab Power&quot; : Day-16 By Gopal Verma Sir:",
+          "type": "youtube"
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=kGLf6hOwICE",
+          "label": "&quot;One Hour, Vocab Power&quot; : Day-18 By Gopal Verma Sir:",
+          "type": "youtube"
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=s9hMwINxEU8",
+          "label": "&quot;One Hour, Vocab Power&quot; : Day-19 By Gopal Verma Sir:",
+          "type": "youtube"
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=_dZ6JiiUFfU",
+          "label": "&quot;One Hour, Vocab Power&quot; : Day-20 By Gopal Verma Sir:",
+          "type": "youtube"
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=3K2IPmXyVHs",
+          "label": "&quot;One Hour, Vocab Power&quot; : Day-21 By Gopal Verma Sir:",
+          "type": "youtube"
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=mqbA2jErmaQ",
+          "label": "&quot;One Hour, Vocab Power&quot; : Day-22 By Gopal Verma Sir:",
+          "type": "youtube"
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=PK6j1uJsOu8",
+          "label": "&quot;One Hour, Vocab Power&quot; : Day-23 By Gopal Verma Sir:",
+          "type": "youtube"
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=PZEYNMc59JM",
+          "label": "&quot;One Hour, Vocab Power&quot; : Day-24 By Gopal Verma Sir:",
+          "type": "youtube"
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=wf7hQKqvdVA",
+          "label": "&quot;One Hour, Vocab Power&quot; : Day-25 By Gopal Verma Sir:",
+          "type": "youtube"
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=habwJsp2iNM",
+          "label": "&quot;One Hour, Vocab Power&quot; : Day-26 By Gopal Verma Sir:",
+          "type": "youtube"
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=IIWNywBnSKI",
+          "label": "&quot;One Hour, Vocab Power&quot; : Day-27 By Gopal Verma Sir:",
+          "type": "youtube"
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=peU-iiLQ-hs",
+          "label": "The Vocab-Wits Series &quot;Day-01&quot; [Ch- Root Words]:",
+          "type": "youtube"
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=4DsrcsyUM4A",
+          "label": "The Vocab-Wits Series &quot;Day-02&quot; [Ch- Root Words]:",
+          "type": "youtube"
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=ruj8WNyE8xw",
+          "label": "The Vocab-Wits Series &quot;Day-03&quot; [Ch- Root Words]:",
+          "type": "youtube"
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=4oR4El0hosM",
+          "label": "The Vocab-Wits Series &quot;Day-04&quot; [Ch- Root Words]:",
+          "type": "youtube"
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=XtaPhT0TwfM",
+          "label": "The Vocab-Wits Series &quot;Day-05&quot; [Ch- Root Words]:",
+          "type": "youtube"
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=8M0RZ8moVgw",
+          "label": "The Vocab-Wits Series &quot;Day-06&quot; [Ch- Phrasal Verb]:",
+          "type": "youtube"
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=bR3-9Eh4wC0",
+          "label": "The Vocab-Wits Series &quot;Day-07&quot; [Ch- Phrasal Verb]:",
+          "type": "youtube"
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=Dy6FwlEhNFk",
+          "label": "The Vocab-Wits Series &quot;Day-08&quot; [Ch- Phrasal Verb]:",
+          "type": "youtube"
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=eSoAOqwpAho",
+          "label": "The Vocab-Wits Series &quot;Day-09&quot; [Ch- Phrasal Verb]:",
+          "type": "youtube"
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=gXiQTX7BdD4",
+          "label": "The Vocab-Wits Series &quot;Day-10&quot; [Ch- Phrasal Verb]:",
+          "type": "youtube"
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=SFMauQr6suE",
+          "label": "The Vocab-Wits Series &quot;Day-11&quot; [Ch- Phrasal Verb]:",
+          "type": "youtube"
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=6ySaurQv2T0",
+          "label": "The Vocab-Wits Series &quot;Day-12&quot; [Ch- Phrasal Verb]:",
+          "type": "youtube"
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=8v7fDh9DCmA",
+          "label": "The Vocab-Wits Series &quot;Day-13&quot; [Ch- Phrasal Verb]:",
+          "type": "youtube"
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=ll5uMMs0_4c",
+          "label": "The Vocab-Wits Series &quot;Day-14&quot; [Ch- Phrasal Verb]:",
+          "type": "youtube"
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=Em9C7RfC3HE",
+          "label": "The Vocab-Wits Series &quot;Day-15&quot; [Ch- Phrasal Verb]:",
+          "type": "youtube"
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=V-7kLdlCuE8",
+          "label": "The Vocab-Wits Series &quot;Day-16&quot; [Ch- Phrasal Verb]:",
+          "type": "youtube"
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=-ct6jDLB0CM",
+          "label": "The Vocab-Wits Series &quot;Day-17&quot; [Ch- Phrasal Verb]:",
+          "type": "youtube"
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=bxN2uav4eQo",
+          "label": "The Vocab-Wits Series &quot;Day-18&quot; [Ch- Phrasal Verb]:",
+          "type": "youtube"
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=2KCEyzgVis8",
+          "label": "The Vocab-Wits Series &quot;Day-19&quot; [Ch- Phrasal Verb]:",
+          "type": "youtube"
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=XfqvwhqSeaI",
+          "label": "The Vocab-Wits Series &quot;Day-20&quot; [Ch- Confusing Pair of Words]:",
+          "type": "youtube"
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=q8ckSljLr-w",
+          "label": "The Vocab-Wits Series &quot;Day-21&quot; [Ch- Confusing Pair of Words]:",
+          "type": "youtube"
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=7f3vIqyJdgI",
+          "label": "The Vocab-Wits Series &quot;Day-22&quot; [Ch- Confusing Pair of Words]:",
+          "type": "youtube"
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=UuBQIpUNn54",
+          "label": "The Vocab-Wits Series &quot;Day-23&quot; [Ch- Confusing Pair of Words]:",
+          "type": "youtube"
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=I_-bvnoq_jE",
+          "label": "The Vocab-Wits Series &quot;Day-24&quot; [Ch- Confusing Pair of Words]:",
+          "type": "youtube"
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=woiO6xxe7wM",
+          "label": "The Vocab-Wits Series &quot;Day-25&quot; [Ch- Confusing Pair of Words]:",
+          "type": "youtube"
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=N0hFinq39XM",
+          "label": "The Vocab-Wits Series &quot;Day-26&quot; [Ch- Idioms and Phrases]:",
+          "type": "youtube"
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=Y1ellsDKKs0",
+          "label": "The Vocab-Wits Series &quot;Day-27&quot; [Ch- Idioms and Phrases]:",
+          "type": "youtube"
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=0o_x0uydxbg",
+          "label": "The Vocab-Wits Series &quot;Day-28&quot; [Ch- Idioms and Phrases]:",
+          "type": "youtube"
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=6WQUnQEfoAA",
+          "label": "The Vocab-Wits Series &quot;Day-29&quot; [Ch- Idioms and Phrases]:",
+          "type": "youtube"
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=Y0syxgyJiVk",
+          "label": "The Vocab-Wits Series &quot;Day-30&quot; [Ch- Idioms and Phrases]:",
+          "type": "youtube"
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=ZKdabCaBZgk",
+          "label": "The Vocab-Wits Series &quot;Day-31&quot; [Ch- Idioms and Phrases]:",
+          "type": "youtube"
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=OKYqE5TgWLk",
+          "label": "The Vocab-Wits Series &quot;Day-32&quot; [Ch- Idioms and Phrases]:",
+          "type": "youtube"
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=XR-vRToMhXM",
+          "label": "The Vocab-Wits Series &quot;Day-33&quot; [Ch- Idioms and Phrases]:",
+          "type": "youtube"
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=nV7eJwkGk_E",
+          "label": "The Vocab-Wits Series &quot;Day-34&quot; [Ch- Phrasal Verb]:",
+          "type": "youtube"
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=p6yD8TNqCNA",
+          "label": "The Vocab-Wits Series &quot;Day-35&quot; [Ch- Phrasal Verb]:",
+          "type": "youtube"
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=Kc1LkjdzkWA",
+          "label": "The Vocab-Wits Series &quot;Day-36&quot; [Ch- Phrasal Verb]:",
+          "type": "youtube"
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=QQRYRFDa4Kg",
+          "label": "The Vocab-Wits Series &quot;Day-37&quot; [Ch- Phrasal Verb]:",
+          "type": "youtube"
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=iPpLF8cJJu8",
+          "label": "The Vocab-Wits Series &quot;Day-38&quot; [Ch- Phrasal Verb]:",
+          "type": "youtube"
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=BQKtyuzx_d8",
+          "label": "The Vocab-Wits Series &quot;Day-39&quot; [Ch- One Word Substitution]:",
+          "type": "youtube"
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=qtAfC5lq7x8",
+          "label": "The Vocab-Wits Series &quot;Day-40&quot; [Ch- One Word Substitution]:",
+          "type": "youtube"
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=5MBEi8L2H8U",
+          "label": "The Vocab-Wits Series &quot;Day-41&quot; [Ch- One Word Substitution]:",
+          "type": "youtube"
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=jq4I76GXw6I",
+          "label": "The Vocab-Wits Series &quot;Day-42&quot; [Ch- One Word Substitution]:",
+          "type": "youtube"
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=SvhmnWR3MUQ",
+          "label": "The Vocab-Wits Series &quot;Day-43&quot; [Ch- One Word Substitution]:",
+          "type": "youtube"
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=Dqm23jkGVk8",
+          "label": "The Vocab-Wits Series &quot;Day-44&quot; [Ch- Idioms and Phrases]:",
+          "type": "youtube"
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=RMJB09jslPg",
+          "label": "The Vocab-Wits Series &quot;Day-45&quot; [Ch- Root Words]:",
+          "type": "youtube"
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=k6ARwW3jf6g",
+          "label": "The Vocab-Wits Series &quot;Day-46&quot; [Ch- Root Words]:",
+          "type": "youtube"
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=Q1ilahDdfBY",
+          "label": "The Vocab-Wits Series &quot;Day-47&quot; [Ch- Root Words]:",
+          "type": "youtube"
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=kE9rt9OUInA",
+          "label": "The Vocab-Wits Series &quot;Day-48&quot; [Ch- Root Words]:",
+          "type": "youtube"
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=Qm13KhPNlM8",
+          "label": "The Vocab-Wits Series &quot;Day-50&quot; [Ch- Synonym]:",
+          "type": "youtube"
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=iUBWFdgf94U",
+          "label": "The Vocab-Wits Series &quot;Day-51&quot; [Ch- Synonym]:",
+          "type": "youtube"
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=bXMUUv6zpQk",
+          "label": "The Vocab-Wits Series &quot;Day-52&quot; [Ch- Synonym]:",
+          "type": "youtube"
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=sjQPb7B7c5c",
+          "label": "The Vocab-Wits Series &quot;Day-53&quot; [Ch- One Word Substitution]:",
+          "type": "youtube"
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=xd5pr_IJtkg",
+          "label": "The Vocab-Wits Series &quot;Day-54&quot; [Ch- One Word Substitution]:",
+          "type": "youtube"
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=uDD8Lw0-LUQ",
+          "label": "The Vocab-Wits Series &quot;Day-55&quot; [Ch- Idioms and Phrases]:",
+          "type": "youtube"
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=a-bjWC1UTkY",
+          "label": "The Vocab-Wits Series &quot;Day-56&quot; [Ch- Antonyms]:",
+          "type": "youtube"
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=tUMp5DePLpU",
+          "label": "The Vocab-Wits Series &quot;Day-57&quot; [Ch- Idioms and Phrases]:",
+          "type": "youtube"
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=15qSRcs53OE",
+          "label": "The Vocab-Wits Series &quot;Day-58&quot; [Ch- Idioms and Phrases]:",
+          "type": "youtube"
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=_jCERVQxvCA",
+          "label": "The Vocab-Wits Series &quot;Day-59&quot; [Ch- Synonym]:",
+          "type": "youtube"
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=COG0sgKszNc",
+          "label": "The Vocab-Wits Series &quot;Day-60&quot; [Ch- Synonym]:",
+          "type": "youtube"
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=sjs_GMyVnMQ",
+          "label": "The Vocab-Wits Series &quot;Day-61&quot; [Ch- Idioms and Phrases]:",
+          "type": "youtube"
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=cX7n2Y2-tnU",
+          "label": "The Vocab-Wits Series &quot;Day-62&quot; [Ch- Idioms and Phrases]:",
+          "type": "youtube"
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=hsTtpDRoHvY",
+          "label": "The Vocab-Wits Series &quot;Day-63&quot; [Ch- Confusing Pairs]:",
+          "type": "youtube"
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=cW4vcBiRPD8",
+          "label": "Class - 23 | Question Tags:",
+          "type": "youtube"
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=ztMgz-pdk4g",
+          "label": "Class - 55 | Noun:",
+          "type": "youtube"
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=GP6MyB8cfL0",
+          "label": "Introduction:",
+          "type": "youtube"
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=db0Ygvt2Syo",
+          "label": "Vc-OWS-01:",
+          "type": "youtube"
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=xfJwen20Ln4",
+          "label": "Comp-Rc-02:",
+          "type": "youtube"
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=AbhgNCKJEKs",
+          "label": "Vc-Id/Ph-03:",
+          "type": "youtube"
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=YoOYAq6L8jw",
+          "label": "Vc-OWS-04:",
+          "type": "youtube"
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=t53emHL-ID0",
+          "label": "Comp-Rc-05:",
+          "type": "youtube"
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=jmHiaQlOOJg",
+          "label": "Vc-Id/Ph-06:",
+          "type": "youtube"
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=0NNtO8M6kYc",
+          "label": "Comp-Rc-07:",
+          "type": "youtube"
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=ytsWEfta6nA",
+          "label": "Vc-OWS-08:",
+          "type": "youtube"
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=I6ED0Mrg1yc",
+          "label": "Vc-Id/Ph-09:",
+          "type": "youtube"
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=Mq27qYwx9VM",
+          "label": "Comp-Rc-10:",
+          "type": "youtube"
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=IgS3Z17cb0w",
+          "label": "Vc-Id/Ph-11:",
+          "type": "youtube"
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=Ki7lVpetg7k",
+          "label": "Comp-Rc-12:",
+          "type": "youtube"
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=3u694QDsD5o",
+          "label": "Vc-OWS -13:",
+          "type": "youtube"
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=21EqgfFwM4o",
+          "label": "Vc-Id/Ph-14:",
+          "type": "youtube"
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=uPEkeF3qnfQ",
+          "label": "Comp-Rc-15:",
+          "type": "youtube"
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=Wa1jvfVXfqs",
+          "label": "Comp-Parajumble-16:",
+          "type": "youtube"
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=MZEnNX2kcts",
+          "label": "Vc-Id/Ph-17:",
+          "type": "youtube"
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=Z8zcaDSOzpw",
+          "label": "Vc-OWS -18:",
+          "type": "youtube"
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=CoRzmvOHVnI",
+          "label": "Comp-Parajumble-19:",
+          "type": "youtube"
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=uko-mZdGGVM",
+          "label": "Comp-Rc-20:",
+          "type": "youtube"
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=YE83YUGrb8I",
+          "label": "Vc-Id/Ph-21:",
+          "type": "youtube"
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=uJraFO5ta4s",
+          "label": "Vc-OWS -22:",
+          "type": "youtube"
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=xYMCANv_FeQ",
+          "label": "Comp-Parajumble-23:",
+          "type": "youtube"
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=3cvNS8fjdgA",
+          "label": "Vc-Id/Ph-24:",
+          "type": "youtube"
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=Q8wuD9UpY4I",
+          "label": "Comp-Rc-25:",
+          "type": "youtube"
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=tYGqEMDevWA",
+          "label": "Vc-OWS -26:",
+          "type": "youtube"
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=qJEtClnE3b8",
+          "label": "Comp-Close Test-27:",
+          "type": "youtube"
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=rtuayOYmX_s",
+          "label": "Vc-Id/Ph-28:",
+          "type": "youtube"
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=qZ_SqkyVChU",
+          "label": "Comp-Parajumble-29:",
+          "type": "youtube"
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=qBGsMcP3XBw",
+          "label": "Comp-Close Test-30:",
+          "type": "youtube"
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=qOsVARDlEec",
+          "label": "Vc-OWS -31:",
+          "type": "youtube"
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=vPTke_jiza4",
+          "label": "Comp-Rc-32:",
+          "type": "youtube"
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=ar2rGYnEqgs",
+          "label": "Vc-Id/Ph-33:",
+          "type": "youtube"
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=ECyypDlSr-w",
+          "label": "Comp-Parajumble-34:",
+          "type": "youtube"
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=QY4_-s2FlkA",
+          "label": "Comp-Close Test-35:",
+          "type": "youtube"
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=NvVnawD_KRI",
+          "label": "Vc-Syn-36:",
+          "type": "youtube"
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=KUYFyatOPqw",
+          "label": "Vc-OWS -37:",
+          "type": "youtube"
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=fj3swalYh_Q",
+          "label": "Vc-Id/Ph-38:",
+          "type": "youtube"
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=X-L6hYMn1W4",
+          "label": "Comp-Rc-39:",
+          "type": "youtube"
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=Uh9huEu4QaU",
+          "label": "Comp-Parajumble-40:",
+          "type": "youtube"
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=-rzD_rMqDL8",
+          "label": "Vc-Anto-41:",
+          "type": "youtube"
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=MXKkrG5ro1o",
+          "label": "Vc-Phrasal-Verb-42:",
+          "type": "youtube"
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=YJAouvZb0vg",
+          "label": "Comp-Close-Test-43:",
+          "type": "youtube"
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=MhzJNHcLhJo",
+          "label": "Vc-Syn-44:",
+          "type": "youtube"
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=nmiJJeUkD6U",
+          "label": "Vc-OWS-45:",
+          "type": "youtube"
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=Mf0vMRYRCtY",
+          "label": "Comp-Rc-46:",
+          "type": "youtube"
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=DEmXrkzSZms",
+          "label": "Vc-Id/Ph-47:",
+          "type": "youtube"
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=ekMbN6lrlbo",
+          "label": "Comp-Parajumble-48:",
+          "type": "youtube"
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=G0iK5GWR_nI",
+          "label": "Vc-Fixed-Pre-49:",
+          "type": "youtube"
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=vxF5GBR7Bbc",
+          "label": "Comp-Rc-50:",
+          "type": "youtube"
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=AYvfvWclvvk",
+          "label": "Comp-Rc-51:",
+          "type": "youtube"
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=sdU6dbyNkyk",
+          "label": "Announcement:",
+          "type": "youtube"
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=Fl1kGU6LcyA",
+          "label": "Comp-Parajumble-52:",
+          "type": "youtube"
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=mzHxu7cANEA",
+          "label": "Comp-Rc-53:",
+          "type": "youtube"
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=MeGmgRg4OVk",
+          "label": "Announcement:",
+          "type": "youtube"
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=4h_oGGpQ6L4",
+          "label": "Comp-Parajumble-54:",
+          "type": "youtube"
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=yOs5UYWu15o",
+          "label": "Comp-Cloze-Test-55:",
+          "type": "youtube"
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=zdgSEfeWGIs",
+          "label": "Comp-Rc-56:",
+          "type": "youtube"
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=wkyWxcmMSWE",
+          "label": "Comp-Parajumble-57:",
+          "type": "youtube"
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=8TLC6jfQiUM",
+          "label": "Comp-Cloze-Test-58:",
+          "type": "youtube"
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=m_On42A_FxM",
+          "label": "Comp-Rc-59:",
+          "type": "youtube"
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=JR4jQ6hXReM",
+          "label": "Comp-Parajumble-60:",
+          "type": "youtube"
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=EXXhAZzFhnc",
+          "label": "Comp-Cloze-Test-61:",
+          "type": "youtube"
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=k4jarld0Hfo",
+          "label": "Comp-Rc &amp; Parajumble-62:",
+          "type": "youtube"
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=PcEYeWCfEPI",
+          "label": "Comp-CT&amp;PQRS-63:",
+          "type": "youtube"
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=eGEW-4w-Twk",
+          "label": "Comp-Rc &amp; Parajumble-64:",
+          "type": "youtube"
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=54nLnzo9FPc",
+          "label": "Comp-Rc &amp; Parajumble-65:",
+          "type": "youtube"
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=zo22CACi5hs",
+          "label": "Comp-CT&amp; PQRS-66:",
+          "type": "youtube"
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=e3d37QYeKIM",
+          "label": "Comp-Rc&amp;Parajumble-67:",
+          "type": "youtube"
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=uRy_ckoPFkc",
+          "label": "Comp-CT&amp;Parajumble-68:",
+          "type": "youtube"
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=AjGHfYbjsac",
+          "label": "Comp-Rc &amp; Parajumble-69:",
+          "type": "youtube"
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=VbD56FxR7YI",
+          "label": "Comp-CT&amp;Parajumble-70:",
+          "type": "youtube"
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=NgYtC8nP_So",
+          "label": "Comp-Rc &amp; Parajumble-71:",
+          "type": "youtube"
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=hIGZ9P8PHHQ",
+          "label": "Comp-Rc &amp; Parajumble-72:",
+          "type": "youtube"
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=hM6ku23SVOk",
+          "label": "Comp-CT &amp; Parajumble-73:",
+          "type": "youtube"
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=o2OlSX9XTVc",
+          "label": "Comp-Rc &amp; Parajumble-74:",
+          "type": "youtube"
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=uQTwAD3A8SM",
+          "label": "Comp-CT &amp; Parajumble-75:",
+          "type": "youtube"
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=LLRQ8i9IJ7g",
+          "label": "Comp-CT &amp; Parajumble-76:",
+          "type": "youtube"
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=jpjnPrXd7n0",
+          "label": "Comp-CT &amp; Parajumble-77:",
+          "type": "youtube"
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=hWfcCAWZ9vw",
+          "label": "Comp-Rc &amp; Parajumble-78:",
+          "type": "youtube"
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=zqPAET2-QUI",
+          "label": "Comp-Rc &amp; Parajumble-79:",
+          "type": "youtube"
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=r0stZp6ynRI",
+          "label": "Comp-Rc &amp; CT-80:",
+          "type": "youtube"
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=-9fSeJDVcUY",
+          "label": "Comp-CT &amp; RC -81:",
+          "type": "youtube"
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=nObMRd4Z9mk",
+          "label": "Comp-Rc &amp; CT-82:",
+          "type": "youtube"
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=-NMNbua7wz4",
+          "label": "Comp-CT &amp; Parajumble-83:",
+          "type": "youtube"
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=89K1tTwR3fI",
+          "label": "Comp- RC-88:",
+          "type": "youtube"
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=54hnVPQ9p2E",
+          "label": "Comp- CT, Rc &amp; Parajumble -89:",
+          "type": "youtube"
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=Qfg30SxNpo8",
+          "label": "Comp-Parajumble-90:",
+          "type": "youtube"
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=wfECWp_3j1k",
+          "label": "Comp-Cloze Test -91:",
+          "type": "youtube"
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=jZb0rxXzi8A",
+          "label": "Comp- CT, Rc &amp; Parajumble -92:",
+          "type": "youtube"
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=fYnJEKact0A",
+          "label": "Comp- CT, Rc &amp; Parajumble -93:",
+          "type": "youtube"
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=yEhgUCKT_ko",
+          "label": "Comp- CT, Rc &amp; Parajumble -94:",
+          "type": "youtube"
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=7sMiEgu1Qnk",
+          "label": "Comp- CT, Rc &amp; Parajumble -95:",
+          "type": "youtube"
+        }
+      ]
+    },
+    {
+      "id": "pdfs",
+      "label": "📄 PDFs",
+      "items": [
+        {
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/670cdb1e83ce3_Daily_Shots_21.pdf",
+          "label": "Comp- CT, Rc &amp; Parajumble -21 PDF:",
+          "type": "pdf"
+        },
+        {
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/670f6f7de2318_Daily_Shots.....pdf",
+          "label": "Comp- CT, Rc &amp; Parajumble -22 PDF:",
+          "type": "pdf"
+        },
+        {
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/6711ff77b4e0c_DAILY_SHOTS_26.pdf",
+          "label": "Comp- CT, Rc &amp; Parajumble -23 PDF:",
+          "type": "pdf"
+        },
+        {
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/67160bcc121f9_DAILY_SHOTS_27.pdf",
+          "label": "Comp- CT, Rc &amp; Parajumble -24 PDF:",
+          "type": "pdf"
+        },
+        {
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/6718b580de56e_DAILY_SHOTS_28...pdf",
+          "label": "Comp- CT, Rc &amp; Parajumble -25 PDF:",
+          "type": "pdf"
+        },
+        {
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/671b0b5bdf724_DAILY_SHOTS_29..pdf",
+          "label": "Comp- CT, Rc &amp; Parajumble -26 PDF:",
+          "type": "pdf"
+        },
+        {
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/672ada6c3d946_DAILY_SHOTS_30.pdf",
+          "label": "Comp- CT, Rc &amp; Parajumble -27 PDF:",
+          "type": "pdf"
+        },
+        {
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/672d8eb81e62e_DAILY_SHOTS_31.pdf",
+          "label": "Comp- CT, Rc &amp; Parajumble -28 PDF:",
+          "type": "pdf"
+        },
+        {
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/67319106b90e4_DAILY_SHOTS_35.pdf",
+          "label": "Comp- CT, Rc &amp; Parajumble -29 PDF:",
+          "type": "pdf"
+        },
+        {
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/67344c0d505ad_DAILY_SHOTS_37.pdf",
+          "label": "Comp- CT, Rc &amp; Parajumble -30 PDF:",
+          "type": "pdf"
+        },
+        {
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/673707e908574_DAILY_SHOTS_32.pdf",
+          "label": "RC + Cloze Test + PQRS Set - 31 PDF:",
+          "type": "pdf"
+        },
+        {
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/673b10f05f74e_DAILY_SHOTS_34.pdf",
+          "label": "RC + Cloze Test + PQRS Set - 32 PDF:",
+          "type": "pdf"
+        },
+        {
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/673da59bea34c_DAILY_SHOTS_39.pdf",
+          "label": "RC + Cloze Test + PQRS Set - 33 PDF:",
+          "type": "pdf"
+        },
+        {
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/6740533963e65_DAILY_SHOTS_33.pdf",
+          "label": "RC + Cloze Test + PQRS Set - 34 PDF:",
+          "type": "pdf"
+        },
+        {
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/6745a6ac5efa8_DAILY_SHOTS_40_1.pdf",
+          "label": "RC + Cloze Test + PQRS Set - 35 PDF:",
+          "type": "pdf"
+        },
+        {
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/6746e895cf866_DAILY_SHOTS_41.pdf",
+          "label": "RC + Cloze Test + PQRS Set - 36 PDF:",
+          "type": "pdf"
+        },
+        {
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/67499bd997126_DAILY_SHOTS_43.pdf",
+          "label": "RC + Cloze Test + PQRS Set - 37 PDF:",
+          "type": "pdf"
+        },
+        {
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/674d96abe49dd_DAILY_SHOTS_48.pdf",
+          "label": "RC + Cloze Test + PQRS Set - 38 PDF:",
+          "type": "pdf"
+        },
+        {
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/6750265ae7e07_DAILY_SHOTS_45.pdf",
+          "label": "RC + Cloze Test + PQRS Set - 39 PDF:",
+          "type": "pdf"
+        },
+        {
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/6752bfefedbe1_DAILY_SHOTS_40_Number_Infinite.pdf",
+          "label": "RC + Cloze Test + PQRS Set - 40 PDF:",
+          "type": "pdf"
+        },
+        {
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/6756d05d74793_DAILY_SHOTS_41.pdf",
+          "label": "RC + Cloze Test + PQRS Set - 41 PDF:",
+          "type": "pdf"
+        },
+        {
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/67597b0ce30d2_DAILY_SHOTS_42.pdf",
+          "label": "RC + Cloze Test + PQRS Set - 42 PDF:",
+          "type": "pdf"
+        },
+        {
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/675c1ed40a0ee_Daily_shots_43_pdf.pdf",
+          "label": "RC + Cloze Test + PQRS Set - 43 PDF:",
+          "type": "pdf"
+        },
+        {
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/67626d0e01e7e_Daily_shots_44.pdf",
+          "label": "RC + Cloze Test + PQRS Set - 44 PDF:",
+          "type": "pdf"
+        },
+        {
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/6764ea97acfc7_Daily_shots_45.pdf",
+          "label": "RC + Cloze Test + PQRS Set - 45 PDF:",
+          "type": "pdf"
+        },
+        {
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/676561474e205_Daily_shots_46.pdf",
+          "label": "RC + Cloze Test + PQRS Set - 46 PDF:",
+          "type": "pdf"
+        },
+        {
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/6769406252de0_Daily_shots_47_PNG.pdf",
+          "label": "RC + Cloze Test + PQRS Set - 47 PDF:",
+          "type": "pdf"
+        },
+        {
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/676bda0fc9601_daily_shot_48.pdf",
+          "label": "RC + Cloze Test + PQRS Set - 48 PDF:",
+          "type": "pdf"
+        },
+        {
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/676e95c1aaa20_daily_shot_49_PDF.pdf",
+          "label": "RC + Cloze Test + PQRS Set - 49 PDF:",
+          "type": "pdf"
+        },
+        {
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/677253d7cc9ef_DAILY_SHOTS_50.pdf",
+          "label": "RC + Cloze Test + PQRS Set - 50 PDF:",
+          "type": "pdf"
+        },
+        {
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/6777b5bc7c0e0_Daily_Shots_51_PDF.pdf",
+          "label": "RC + Cloze Test + PQRS Set - 51 PDF:",
+          "type": "pdf"
+        },
+        {
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/6777b6069f54c_Daily_shots_52_PDF.pdf",
+          "label": "RC + Cloze Test + PQRS Set - 52 PDF:",
+          "type": "pdf"
+        },
+        {
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/677bbf74037b7_DAILY_SHOTS_53.pdf",
+          "label": "RC + Cloze Test + PQRS Set - 53 PDF:",
+          "type": "pdf"
+        },
+        {
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/677e656869b2a_Daily_Shots_54.pdf",
+          "label": "RC + Cloze Test + PQRS Set - 54 PDF:",
+          "type": "pdf"
+        },
+        {
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/6781044c4f199_DAILY_SHOTS_55.pdf",
+          "label": "RC + Cloze Test + PQRS Set - 55 PDF:",
+          "type": "pdf"
+        },
+        {
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/6785076b5d88e_DAILY_SHOTS_56.pdf",
+          "label": "RC + Cloze Test + PQRS Set - 56 PDF:",
+          "type": "pdf"
+        },
+        {
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/1645165073-1625547805-VOCAB_SESSION_SET_-_1_(DIGITAL).pdf",
+          "label": "VOCAB Session Set - 1 :",
+          "type": "pdf"
+        },
+        {
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/1645165073-1625547805-VOCAB_SESSION_SET_-_2.pdf",
+          "label": "VOCAB Session Set - 2:",
+          "type": "pdf"
+        },
+        {
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/1645165073-1625547805-VOCAB_SESSION_SET_-_3.pdf",
+          "label": "VOCAB Session Set - 3:",
+          "type": "pdf"
+        },
+        {
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/1645165073-1625547805-VOCAB_SESSION_SET_-_4.pdf",
+          "label": "VOCAB Session Set - 4:",
+          "type": "pdf"
+        },
+        {
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/1645165073-1625547805-VOCAB_SESSION_SET_-_5.pdf",
+          "label": "VOCAB Session Set - 5:",
+          "type": "pdf"
+        },
+        {
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/1645165073-1625547805-VOCAB_SESSION_SET_-_6.pdf",
+          "label": "VOCAB Session Set - 6:",
+          "type": "pdf"
+        },
+        {
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/1645165073-1625547805-VOCAB_SESSION_SET_-_7.pdf",
+          "label": "VOCAB Session Set - 7:",
+          "type": "pdf"
+        },
+        {
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/1645165073-1625547805-VOCAB_SESSION_SET_-_8.pdf",
+          "label": "VOCAB Session Set - 8:",
+          "type": "pdf"
+        },
+        {
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/1645165073-1625547805-VOCAB_SESSION_SET_-_9.pdf",
+          "label": "VOCAB Session Set - 9:",
+          "type": "pdf"
+        },
+        {
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/1645165073-1625547805-VOCAB_SESSION_SET_-10.pdf",
+          "label": "VOCAB Session Set - 10:",
+          "type": "pdf"
+        },
+        {
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/1645165073-1625547805-VOCAB_SESSION_SET_-11.pdf",
+          "label": "VOCAB Session Set - 11:",
+          "type": "pdf"
+        },
+        {
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/1645165628-1625547805-VOCAB_SESSION_SET_-12.pdf",
+          "label": "VOCAB Session Set - 12:",
+          "type": "pdf"
+        },
+        {
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/1645165628-1625547805-VOCAB_SESSION_SET_-13.pdf",
+          "label": "VOCAB Session Set - 13:",
+          "type": "pdf"
+        },
+        {
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/1645165628-1625547805-VOCAB_SESSION_SET_-14.pdf",
+          "label": "VOCAB Session Set - 14:",
+          "type": "pdf"
+        },
+        {
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/1645165628-1625547805-VOCAB_SESSION_SET_-15.pdf",
+          "label": "VOCAB Session Set - 15:",
+          "type": "pdf"
+        },
+        {
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/1645165628-1625547805-VOCAB_SESSION_SET_-16.pdf",
+          "label": "VOCAB Session Set - 16:",
+          "type": "pdf"
+        },
+        {
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/1645165628-1625547805-VOCAB_SESSION_SET_-17.pdf",
+          "label": "VOCAB Session Set - 17:",
+          "type": "pdf"
+        },
+        {
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/1645165628-1625547805-VOCAB_SESSION_SET_-18.pdf",
+          "label": "VOCAB Session Set - 18:",
+          "type": "pdf"
+        },
+        {
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/1645165628-1625547805-VOCAB_SESSION_SET_-19.pdf",
+          "label": "VOCAB Session Set - 19:",
+          "type": "pdf"
+        },
+        {
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/1645165628-1625547805-VOCAB_SESSION_SET_-20.pdf",
+          "label": "VOCAB Session Set - 20:",
+          "type": "pdf"
+        },
+        {
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/1645165628-1625552533-VOCAB_SESSION_SET_-21.pdf",
+          "label": "VOCAB Session Set - 21:",
+          "type": "pdf"
+        },
+        {
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/1645165628-1625552533-VOCAB_SESSION_SET_-22.pdf",
+          "label": "VOCAB Session Set - 22:",
+          "type": "pdf"
+        },
+        {
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/1645165628-1625552533-VOCAB_SESSION_SET_-23.pdf",
+          "label": "VOCAB Session Set - 23:",
+          "type": "pdf"
+        },
+        {
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/1645165628-1625552533-VOCAB_SESSION_SET_-24.pdf",
+          "label": "VOCAB Session Set - 24:",
+          "type": "pdf"
+        },
+        {
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/1645165628-1625552533-VOCAB_SESSION_SET_-25.pdf",
+          "label": "VOCAB Session Set - 25:",
+          "type": "pdf"
+        },
+        {
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/1645165628-1627536923-VOCAB_SESSION_SET_-26.pdf",
+          "label": "VOCAB Session Set - 26:",
+          "type": "pdf"
+        },
+        {
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/1645165628-1627536923-VOCAB_SESSION_SET_-27.pdf",
+          "label": "VOCAB Session Set - 27:",
+          "type": "pdf"
+        },
+        {
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/1645165628-1627536929-VOCAB_SESSION_SET_-28.pdf",
+          "label": "VOCAB Session Set - 28:",
+          "type": "pdf"
+        },
+        {
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/1645165628-1627536938-VOCAB_SESSION_SET_-29.pdf",
+          "label": "VOCAB Session Set - 29:",
+          "type": "pdf"
+        },
+        {
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/1645166452-_-30.pdf",
+          "label": "VOCAB Session Set - 30:",
+          "type": "pdf"
+        },
+        {
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/1645166452-31.pdf",
+          "label": "VOCAB Session Set - 31:",
+          "type": "pdf"
+        },
+        {
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/1645166452--32.pdf",
+          "label": "VOCAB Session Set - 32:",
+          "type": "pdf"
+        },
+        {
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/1645166452--33.pdf",
+          "label": "VOCAB Session Set - 33:",
+          "type": "pdf"
+        },
+        {
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/1645166452--34.pdf",
+          "label": "VOCAB Session Set - 34:",
+          "type": "pdf"
+        },
+        {
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/1645166452-35.pdf",
+          "label": "VOCAB Session Set - 35:",
+          "type": "pdf"
+        },
+        {
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/1645166452-36.pdf",
+          "label": "VOCAB Session Set - 36:",
+          "type": "pdf"
+        },
+        {
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/1645166452-37___.pdf",
+          "label": "VOCAB Session Set - 37:",
+          "type": "pdf"
+        },
+        {
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/1645166452-1627565045-VOCAB_SESSION_SET_-38_-(ii).pdf",
+          "label": "VOCAB Session Set - 38:",
+          "type": "pdf"
+        },
+        {
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/1645166452-39.pdf",
+          "label": "VOCAB Session Set - 39:",
+          "type": "pdf"
+        },
+        {
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/1645166452-40.pdf",
+          "label": "VOCAB Session Set - 40:",
+          "type": "pdf"
+        },
+        {
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/1645166452-41.pdf",
+          "label": "VOCAB Session Set - 41:",
+          "type": "pdf"
+        },
+        {
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/1645166452-1628510551-VOCAB_SESSION_SET_-42_(II).pdf",
+          "label": "VOCAB Session Set - 42:",
+          "type": "pdf"
+        },
+        {
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/1645166452-1628601718-VOCAB_SESSION_SET_-43_(II).pdf",
+          "label": "VOCAB Session Set - 43:",
+          "type": "pdf"
+        },
+        {
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/1645166452-1628739915-VOCAB_SESSION_SET_-44_(II).pdf",
+          "label": "VOCAB Session Set - 44:",
+          "type": "pdf"
+        },
+        {
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/1645166452-1628859806-VOCAB_SESSION_SET_-45_(II).pdf",
+          "label": "VOCAB Session Set - 45:",
+          "type": "pdf"
+        },
+        {
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/1645166452-1629047505-VOCAB_SESSION_SET_-46_(II).pdf",
+          "label": "VOCAB Session Set - 46:",
+          "type": "pdf"
+        },
+        {
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/1645166452-1629093806-VOCAB_SESSION_SET_-_47_(II).pdf",
+          "label": "VOCAB Session Set - 47:",
+          "type": "pdf"
+        },
+        {
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/1645166452-1629307995-VOCAB_SESSION_SET_-_48_(II).pdf",
+          "label": "VOCAB Session Set - 48:",
+          "type": "pdf"
+        },
+        {
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/1645166452-1629461490-VOCAB_SESSION_SET_-_49_(II).pdf",
+          "label": "VOCAB Session Set - 49:",
+          "type": "pdf"
+        },
+        {
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/1645167097-1629559923-VOCAB_Session_Set_-_50.pdf",
+          "label": "VOCAB Session Set - 50:",
+          "type": "pdf"
+        },
+        {
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/1645167097-1629721595-VOCAB_SESSION_SET_-_51_(II).pdf",
+          "label": "VOCAB Session Set - 51:",
+          "type": "pdf"
+        },
+        {
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/1645167097-1629807873-VOCAB_SESSION_SET_-_52_(II).pdf",
+          "label": "VOCAB Session Set - 52:",
+          "type": "pdf"
+        },
+        {
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/1645167097-1630152902-VOCAB_SESSION_SET_-_53_(II).pdf",
+          "label": "VOCAB Session Set - 53:",
+          "type": "pdf"
+        },
+        {
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/1645167097-1630152902-VOCAB_SESSION_SET_-_54_(II).pdf",
+          "label": "VOCAB Session Set - 54:",
+          "type": "pdf"
+        },
+        {
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/1645167097-1630475848-VOCAB_SESSION_SET_-_55_(II).pdf",
+          "label": "VOCAB Session Set - 55:",
+          "type": "pdf"
+        },
+        {
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/1645167097-1630485975-VOCAB_SESSION_SET_-_56_(II).pdf",
+          "label": "VOCAB Session Set - 56:",
+          "type": "pdf"
+        },
+        {
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/1645167097-1630589139-VOCAB_SESSION_SET_-_57_(II).pdf",
+          "label": "VOCAB Session Set - 57:",
+          "type": "pdf"
+        },
+        {
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/1645167097-1630670259-VOCAB_Session_Set_-_58.pdf",
+          "label": "VOCAB Session Set - 58:",
+          "type": "pdf"
+        },
+        {
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/1645167097-1630759367-VOCAB_SESSION_SET_-_59_(II).pdf",
+          "label": "VOCAB Session Set - 59:",
+          "type": "pdf"
+        },
+        {
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/1645167097-1630992638-VOCAB_SESSION_SET_-_60_(II).pdf",
+          "label": "VOCAB Session Set - 60:",
+          "type": "pdf"
+        },
+        {
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/1645167097-1631014177-VOCAB_SESSION_SET_-_61_(II).pdf",
+          "label": "VOCAB Session Set - 61:",
+          "type": "pdf"
+        },
+        {
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/1645167097-1631175356-VOCAB_SESSION_SET_-_62_(II).pdf",
+          "label": "VOCAB Session Set - 62:",
+          "type": "pdf"
+        },
+        {
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/1645167097-1631200651-VOCAB_SESSION_SET_-_63_(II).pdf",
+          "label": "VOCAB Session Set - 63:",
+          "type": "pdf"
+        },
+        {
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/1645167097-1631338136-VOCAB_SESSION_SET_-_64_(II).pdf",
+          "label": "VOCAB Session Set - 64:",
+          "type": "pdf"
+        },
+        {
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/1645167097-1631417051-VOCAB_SESSION_SET_-_65_(II).pdf",
+          "label": "VOCAB Session Set - 65:",
+          "type": "pdf"
+        },
+        {
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/1645167097-1631617503-VOCAB_SESSION_SET_-_66_(II).pdf",
+          "label": "VOCAB Session Set - 66:",
+          "type": "pdf"
+        },
+        {
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/1645167097-1631942189-VOCAB_SESSION_SET_-_67_(II).pdf",
+          "label": "VOCAB Session Set - 67:",
+          "type": "pdf"
+        },
+        {
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/1645167097-1632284689-VOCAB_SESSION_SET_-68_(II).pdf",
+          "label": "VOCAB Session Set - 68:",
+          "type": "pdf"
+        },
+        {
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/1645167097-1632308557-VOCAB_SESSION_SET_-_69_(II).pdf",
+          "label": "VOCAB Session Set - 69:",
+          "type": "pdf"
+        },
+        {
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/1645167415-1632395467-VOCAB_SESSION_SET_-70_(ii).pdf",
+          "label": "VOCAB Session Set - 70:",
+          "type": "pdf"
+        },
+        {
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/1645167415-1632543811-VOCAB_SESSION_SET_-71_(II).pdf",
+          "label": "VOCAB Session Set - 71:",
+          "type": "pdf"
+        },
+        {
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/1645167415-1632912874-VOCAB_SESSION_SET_-7(II)_(1).pdf",
+          "label": "VOCAB Session Set - 72:",
+          "type": "pdf"
+        },
+        {
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/1645167415-1633115246-VOCAB_SESSION_SET_-73_(II).pdf",
+          "label": "VOCAB Session Set - 73:",
+          "type": "pdf"
+        },
+        {
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/1645167415-1633503302-VOCAB_SESSION_SET_-74_(II).pdf",
+          "label": "VOCAB Session Set - 74:",
+          "type": "pdf"
+        },
+        {
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/1645167415-1633792122-VOCAB_SESSION_SET_-75_(ii).pdf",
+          "label": "VOCAB Session Set - 75:",
+          "type": "pdf"
+        },
+        {
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/1645167415-1633950185-VOCAB_SESSION_SET_-76_(II).pdf",
+          "label": "VOCAB Session Set - 76:",
+          "type": "pdf"
+        },
+        {
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/1645167415-1634026869-VOCAB_SESSION_SET_-77_(II).pdf",
+          "label": "VOCAB Session Set - 77:",
+          "type": "pdf"
+        },
+        {
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/1645167415-1634117543-VOCAB_SESSION_SET_-78_(II).pdf",
+          "label": "VOCAB Session Set - 78:",
+          "type": "pdf"
+        },
+        {
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/1645167415-1634562364-VOCAB_SESSION_SET_-_79_(II).pdf",
+          "label": "VOCAB Session Set - 79:",
+          "type": "pdf"
+        },
+        {
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/1645167415-1634703620-VOCAB_SESSION_SET_-_80_(ii).pdf",
+          "label": "VOCAB Session Set - 80:",
+          "type": "pdf"
+        },
+        {
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/1645167415-1634790919-VOCAB_SESSION_SET_-_81_(II).pdf",
+          "label": "VOCAB Session Set - 81:",
+          "type": "pdf"
+        },
+        {
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/1645167415-1634874590-VOCAB_SESSION_SET_-82_(ii).pdf",
+          "label": "VOCAB Session Set - 82:",
+          "type": "pdf"
+        },
+        {
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/1645167415-1634961064-VOCAB_SESSION_SET-_83_(ii).pdf",
+          "label": "VOCAB Session Set - 83:",
+          "type": "pdf"
+        },
+        {
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/1645167415-1635133606-VOCAB_SESSION_SET-_84_(II).pdf",
+          "label": "VOCAB Session Set - 84:",
+          "type": "pdf"
+        },
+        {
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/1645167906-1630048534-VOCAB_Acuity_-_1.pdf",
+          "label": "VOCAB Acuity - 1:",
+          "type": "pdf"
+        },
+        {
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/1645167906-1630048534-VOCAB_Acuity_-_2.pdf",
+          "label": "VOCAB Acuity - 2:",
+          "type": "pdf"
+        },
+        {
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/1645167906-1630048534-VOCAB_Acuity_-_3.pdf",
+          "label": "VOCAB Acuity - 3:",
+          "type": "pdf"
+        },
+        {
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/1645167906-1630048534-VOCAB_Acuity_-_4.pdf",
+          "label": "VOCAB Acuity - 4:",
+          "type": "pdf"
+        },
+        {
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/1645167906-1630048534-VOCAB_Acuity_-_5.pdf",
+          "label": "VOCAB Acuity - 5:",
+          "type": "pdf"
+        },
+        {
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/1645167906-1630048534-VOCAB_Acuity_-_6.pdf",
+          "label": "VOCAB Acuity - 6:",
+          "type": "pdf"
+        },
+        {
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/1645167906-1630048534-VOCAB_Acuity_-_7.pdf",
+          "label": "VOCAB Acuity - 7:",
+          "type": "pdf"
+        },
+        {
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/1645167906-1630048534-VOCAB_Acuity_-_8.pdf",
+          "label": "VOCAB Acuity - 8:",
+          "type": "pdf"
+        },
+        {
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/1645167906-1630048534-VOCAB_Acuity_-_9.pdf",
+          "label": "VOCAB Acuity - 9:",
+          "type": "pdf"
+        },
+        {
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/1645167906-1630048534-VOCAB_Acuity_-_10.pdf",
+          "label": "VOCAB Acuity - 10:",
+          "type": "pdf"
+        },
+        {
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/1645167906-1630048667-VOCAB_Acuity_-_11.pdf",
+          "label": "VOCAB Acuity - 11:",
+          "type": "pdf"
+        },
+        {
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/1645167906-1630048667-VOCAB_Acuity_-_12.pdf",
+          "label": "VOCAB Acuity - 12:",
+          "type": "pdf"
+        },
+        {
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/1645167906-1630048667-VOCAB_Acuity_-_13.pdf",
+          "label": "VOCAB Acuity - 13:",
+          "type": "pdf"
+        },
+        {
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/1645167906-1630048667-VOCAB_Acuity_-_14.pdf",
+          "label": "VOCAB Acuity - 14:",
+          "type": "pdf"
+        },
+        {
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/1645167906-1630048667-VOCAB_Acuity_-_15.pdf",
+          "label": "VOCAB Acuity - 15:",
+          "type": "pdf"
+        },
+        {
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/1645167906-1630048667-VOCAB_Acuity_-_16.pdf",
+          "label": "VOCAB Acuity - 16:",
+          "type": "pdf"
+        },
+        {
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/1645167906-1630048667-VOCAB_Acuity_-_17.pdf",
+          "label": "VOCAB Acuity - 17:",
+          "type": "pdf"
+        },
+        {
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/1645167906-1630048667-VOCAB_Acuity_-_18.pdf",
+          "label": "VOCAB Acuity - 18:",
+          "type": "pdf"
+        },
+        {
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/1645167906-1631022602-VOCAB_ACUITY_(19).pdf",
+          "label": "VOCAB Acuity - 19:",
+          "type": "pdf"
+        },
+        {
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/1645167906-1631022602-VOCAB_ACUITY_(20).pdf",
+          "label": "VOCAB Acuity - 20:",
+          "type": "pdf"
+        },
+        {
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/1645168705-1631022602-VOCAB_ACUITY_(21).pdf",
+          "label": "VOCAB Acuity - 21:",
+          "type": "pdf"
+        },
+        {
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/1645168705-1631022602-VOCAB_ACUITY_(22).pdf",
+          "label": "VOCAB Acuity - 22:",
+          "type": "pdf"
+        },
+        {
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/65fc15ab208ec_Noun.pdf",
+          "label": "Noun:",
+          "type": "pdf"
+        },
+        {
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/65fc15b9a960e_Pronoun.pdf",
+          "label": "Pronoun:",
+          "type": "pdf"
+        },
+        {
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/65fc1a2a84fe1_ADJECTIVE.pdf",
+          "label": "Adjective:",
+          "type": "pdf"
+        },
+        {
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/65fc15e7b48bf_VERB.pdf",
+          "label": "Verb:",
+          "type": "pdf"
+        },
+        {
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/65fc15ff35a00_ADVERB.pdf",
+          "label": "Adverb:",
+          "type": "pdf"
+        },
+        {
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/65fc1612e1271_CONJUNCTION.pdf",
+          "label": "Conjunction:",
+          "type": "pdf"
+        },
+        {
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/65fc16294ed72_PREPOSITION.pdf",
+          "label": "Preposition:",
+          "type": "pdf"
+        },
+        {
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/65fc163fcdab7_ARTICLES.pdf",
+          "label": "Articles:",
+          "type": "pdf"
+        },
+        {
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/65fc166ab0622_TENSES.pdf",
+          "label": "Tense:",
+          "type": "pdf"
+        },
+        {
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/65fc16887737e_VOICE.pdf",
+          "label": "Voice:",
+          "type": "pdf"
+        },
+        {
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/65fc16a34ecfa_NARRATION.pdf",
+          "label": "Narration:",
+          "type": "pdf"
+        },
+        {
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/65fc17655f40e_Homonyms.pdf",
+          "label": "Homonyms:",
+          "type": "pdf"
+        },
+        {
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/65fc17a2639e9_Spelling.pdf",
+          "label": "Spelling:",
+          "type": "pdf"
+        },
+        {
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/65fc180514bc4_Modals.pdf",
+          "label": "Modal auxiliary:",
+          "type": "pdf"
+        },
+        {
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/65fc21478541f_SYNONYMS.pdf",
+          "label": "Synonym ‍:",
+          "type": "pdf"
+        },
+        {
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/1632114875-Question_Tag.pdf",
+          "label": "Question Tag:",
+          "type": "pdf"
+        },
+        {
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/1627451827-Conjunction.pdf",
+          "label": "Conjunction:",
+          "type": "pdf"
+        },
+        {
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/1627451827-Presposition.pdf",
+          "label": "Presposition:",
+          "type": "pdf"
+        },
+        {
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/1627452249-Subject_Verb_Agreement.pdf",
+          "label": "Subject Verb Agreement:",
+          "type": "pdf"
+        },
+        {
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/1627452249-Verb_Advance.pdf",
+          "label": "Verb Advance:",
+          "type": "pdf"
+        },
+        {
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/1627452249-Spelling_Test.pdf",
+          "label": "Miss Spelt:",
+          "type": "pdf"
+        },
+        {
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/1627452249-Confusing_Pair_Words.pdf",
+          "label": "Confusing Pair Words:",
+          "type": "pdf"
+        },
+        {
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/649c104301ccb_Parajumble.pdf",
+          "label": "PQRS Composite Class PDF:",
+          "type": "pdf"
+        },
+        {
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/6515067c64117_Para-Jumbles.pdf",
+          "label": "Parajumbles PDF:",
+          "type": "pdf"
+        },
+        {
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/651e626ba56c9_Comprehension.pdf",
+          "label": "Comprehension Practice Pdf:",
+          "type": "pdf"
+        },
+        {
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/65891604c9173_bOOKL.pdf",
+          "label": "Books Links PDF:",
+          "type": "pdf"
+        },
+        {
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/65a75377eff1a_1627451827-Narration.pdf",
+          "label": "Narration Traditional Pdf:",
+          "type": "pdf"
+        },
+        {
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/66190dab5c8c4_Conditional.pdf",
+          "label": "Conditional Sentences PDF:",
+          "type": "pdf"
+        },
+        {
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/661d169bee2da_Determiner.pdf",
+          "label": "Determiner:",
+          "type": "pdf"
+        },
+        {
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/6691e887228f9_Determiner.pdf",
+          "label": "Determiner PDF:",
+          "type": "pdf"
+        },
+        {
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/66ed43b054ba6_Voices_Spotting_Error.pdf",
+          "label": "Voices (Spotting Error):",
+          "type": "pdf"
+        },
+        {
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/67075a5a4de6e_SSC_CGL_TIER1_2024_ALL_SETS_BY_GOPAL_VERMA_SIR.pdf",
+          "label": "SSC CGL TIER-1 2024 ALL SETS PDF:",
+          "type": "pdf"
+        },
+        {
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/671c9ef4427f7_Top_100_SSC_CGL_Mains_English_With_Gopal_Verma_with_cover_pagecompressed.pdf",
+          "label": "Top 100 English Practice Book PDF:",
+          "type": "pdf"
+        },
+        {
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/674b001b5981c_SSC_CHSL_TIER2_2024_ANSWER_KEY_BY_GOPAL_VERMA_SIR.pdf",
+          "label": "SSC CHSL TIER-2 2024 ANSWER KEY BY GOPAL VERMA SIR:",
+          "type": "pdf"
+        },
+        {
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/65fc106836adb_Syllabus.pdf",
+          "label": "Syllabus:",
+          "type": "pdf"
+        },
+        {
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/659d11ae06e10_Para-Jumbles.pdf",
+          "label": "Comp-Parajumble-34 PDF:",
+          "type": "pdf"
+        },
+        {
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/65a4f7dc34264_Synonym.pdf",
+          "label": "Vc-Syn-36 PDF:",
+          "type": "pdf"
+        },
+        {
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/65ae3ad9a97ef_Antonym.pdf",
+          "label": "Vc-Anto-41 PDF:",
+          "type": "pdf"
+        },
+        {
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/65b20c5971670_Synonym-2.pdf",
+          "label": "Vc-Syn-44 PDF:",
+          "type": "pdf"
+        },
+        {
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/65bb6fa61c8df_PARAJUMBLES.pdf",
+          "label": "Comp-Parajumble-48 PDF:",
+          "type": "pdf"
+        },
+        {
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/666bb5a621c4b_Para-Jumbles.pdf",
+          "label": "Comp-Parajumble-90 PDF:",
+          "type": "pdf"
+        }
+      ]
+    }
+  ],
+  "category": "government"
+}

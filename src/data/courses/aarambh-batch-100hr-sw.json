@@ -1,0 +1,671 @@
+{
+  "id": "aarambh-batch-100hr-sw",
+  "name": "Aarambh Batch 100hr SW",
+  "subname": "100 Hours Fast Track Revision & Problem Solving",
+  "teacher": "Gagan Sir",
+  "subject": "Maths",
+  "thumb": "/thumbnails/subjects/aarambh_batch_100hr_sw.svg",
+  "tabs": [
+    {
+      "id": "videos",
+      "label": "▶ Videos",
+      "items": [
+        {
+          "id": "aarambh-batch-100hr-sw-v-1",
+          "label": "[ADVANCE] आरम्भ Batch –– Class - 01 –– Classification of Numbers (संख्याओं का वर्गीकरण) – by Gagan sir",
+          "url": "https://selectionwayrecordedmp4.hranker.com/561/69ad4882a2b1ae043369156d/hls/master.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "aarambh-batch-100hr-sw-v-3",
+          "label": "[ADVANCE] आरम्भ Batch –– Class - 02 –– Classification of Numbers (संख्याओं का वर्गीकरण) – by Gagan sir",
+          "url": "https://selectionwayrecordedmp4.hranker.com/561/6936e2ef6385517afa9a1bfd/hls/master.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "aarambh-batch-100hr-sw-v-5",
+          "label": "[ADVANCE] आरम्भ Batch –– Class - 03 –– Classification of Numbers (संख्याओं का वर्गीकरण) – by Gagan sir",
+          "url": "https://selectionwayrecordedmp4.hranker.com/561/69390e7bd3220ee0f5093d7c/hls/master.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "aarambh-batch-100hr-sw-v-7",
+          "label": "[ADVANCE] आरम्भ Batch –– Class - 01 –– Sequence and Series ( अनुक्रम और श्रेणी ) by Gagan sir",
+          "url": "https://selectionwayrecordedmp4.hranker.com/561/693fc2376385517afa40ebcc/hls/master.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "aarambh-batch-100hr-sw-v-9",
+          "label": "[ADVANCE] आरम्भ Batch –– Class - 02 –– Sequence and Series ( अनुक्रम और श्रेणी ) by Gagan sir",
+          "url": "https://selectionwaylive.hranker.com/561/6939403c6385517afa1fb07c/playlist-mpl-vod.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "aarambh-batch-100hr-sw-v-11",
+          "label": "[ADVANCE] आरम्भ Batch –– Class - 03 –– Sequence and Series ( अनुक्रम और श्रेणी ) by Gagan sir",
+          "url": "https://selectionwaylive.hranker.com/561/693d11856385517afac4032b/playlist-mpl-vod.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "aarambh-batch-100hr-sw-v-13",
+          "label": "[ADVANCE] आरम्भ Batch –– Class - 01 –– Remainder Theorem (शेषफल प्रमेय –– by Gagan sir",
+          "url": "https://selectionwaylive.hranker.com/561/693fefa26385517afab5e474/playlist-mpl-vod.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "aarambh-batch-100hr-sw-v-15",
+          "label": "[ADVANCE] आरम्भ Batch –– Class - 02 –– Divisibility Rule (विभाज्यता नियम) –– by Gagan sir",
+          "url": "https://selectionwaylive.hranker.com/561/694121566385517afa02ec0b/playlist-mpl-vod.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "aarambh-batch-100hr-sw-v-17",
+          "label": "[ADVANCE] आरम्भ Batch –– Class - 03 –– Divisibility Rule (विभाज्यता नियम) –– by Gagan sir",
+          "url": "https://selectionwaylive.hranker.com/561/694283496385517afab8e952/playlist-mpl-vod.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "aarambh-batch-100hr-sw-v-19",
+          "label": "[ADVANCE] आरम्भ Batch –– Class - 04 –– Divisibility Rule (विभाज्यता नियम) –– by Gagan sir",
+          "url": "https://selectionwaylive.hranker.com/561/6943ebf26385517afa96c0f6/playlist-mpl-vod.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "aarambh-batch-100hr-sw-v-21",
+          "label": "[ADVANCE] आरम्भ Batch –– Class - 01 –– LCM and HCF (ल.स.प.और म.स.प.) –– by Gagan sir",
+          "url": "https://selectionwaylive.hranker.com/561/6946667fdf16ce64638a96f1/playlist-mpl-vod.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "aarambh-batch-100hr-sw-v-23",
+          "label": "[ADVANCE] आरम्भ Batch –– Class - 02 –– LCM and HCF (ल.स.प.और म.स.प.) –– by Gagan sir",
+          "url": "https://selectionwaylive.hranker.com/561/694a9100b38db8674bbc788e/playlist-mpl-vod.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "aarambh-batch-100hr-sw-v-25",
+          "label": "[ADVANCE] आरम्भ Batch –– Class - 03 –– LCM and HCF (ल.स.प.और म.स.प.) –– by Gagan sir",
+          "url": "https://selectionwaylive.hranker.com/561/694bc3fa2feca20f817f2dfa/playlist-mpl-vod.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "aarambh-batch-100hr-sw-v-27",
+          "label": "[ADVANCE] आरम्भ Batch –– Class - 04 –– LCM and HCF (ल.स.प.और म.स.प.) –– by Gagan sir",
+          "url": "https://selectionwaylive.hranker.com/561/694d0790b54cadeb61a1697e/playlist-mpl-vod.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "aarambh-batch-100hr-sw-v-29",
+          "label": "[ADVANCE] आरम्भ Batch –– Class - 01 –– Simplification (सरलीकरण) –– by Gagan sir",
+          "url": "https://selectionwaylive.hranker.com/561/69517475b54cadeb6163d7df/playlist-mpl-vod.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "aarambh-batch-100hr-sw-v-31",
+          "label": "[ADVANCE] आरम्भ Batch –– Class - 02 –– Simplification (सरलीकरण) –– by Gagan sir",
+          "url": "https://selectionwaylive.hranker.com/561/6953a37db54cadeb61512b29/playlist-mpl-vod.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "aarambh-batch-100hr-sw-v-33",
+          "label": "[ADVANCE] आरम्भ Batch –– Class - 03 –– Simplification (सरलीकरण) –– by Gagan sir",
+          "url": "https://selectionwaylive.hranker.com/561/6955625bc1e281b4645fc87b/playlist-mpl-vod.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "aarambh-batch-100hr-sw-v-35",
+          "label": "[ADVANCE] आरम्भ Batch –– Class - 01 –– 2D Mensuration by Gagan sir",
+          "url": "https://selectionwaylive.hranker.com/561/697afa50c566674bff9a26b4/playlist-mpl-vod.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "aarambh-batch-100hr-sw-v-37",
+          "label": "[ADVANCE] आरम्भ Batch –– Class - 02 –– 2D Mensuration by Gagan sir",
+          "url": "https://selectionwaylive.hranker.com/561/697c3dac4d8dc840697db7d4/playlist-mpl-vod.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "aarambh-batch-100hr-sw-v-39",
+          "label": "[ADVANCE] आरम्भ Batch –– Class - 03 –– 2D Mensuration by Gagan sir",
+          "url": "https://selectionwaylive.hranker.com/561/6981cc3f4ca8c7fbe811b1ef/playlist-mpl-vod.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "aarambh-batch-100hr-sw-v-41",
+          "label": "[ADVANCE] आरम्भ Batch –– Class - 04 –– 2D Mensuration by Gagan sir",
+          "url": "https://selectionwaylive.hranker.com/561/698460a9fdd21a8a2d15e3f9/playlist-mpl-vod.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "aarambh-batch-100hr-sw-v-43",
+          "label": "[ADVANCE] आरम्भ Batch –– Class - 05 –– 2D Mensuration by Gagan sir",
+          "url": "https://selectionwaylive.hranker.com/561/698981975b61b5fe00058d80/playlist-mpl-vod.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "aarambh-batch-100hr-sw-v-44",
+          "label": "[ADVANCE] आरम्भ Batch –– Class - 06 –– 2D Mensuration by Gagan sir",
+          "url": "https://selectionwaylive.hranker.com/561/698af1384167f565027aa029/playlist-mpl-vod.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "aarambh-batch-100hr-sw-v-45",
+          "label": "[ADVANCE] आरम्भ Batch –– Class - 07 –– 2D Mensuration by Gagan sir",
+          "url": "https://selectionwaylive.hranker.com/561/698c1d5ca003679fb8b5fe9b/playlist-mpl-vod.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "aarambh-batch-100hr-sw-v-46",
+          "label": "[ADVANCE] आरम्भ Batch –– Class - 08 –– 2D Mensuration by Gagan sir",
+          "url": "https://selectionwaylive.hranker.com/561/698da39d8f7f447d5623375d/playlist-mpl-vod.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "aarambh-batch-100hr-sw-v-47",
+          "label": "[ADVANCE] आरम्भ Batch –– Class - 09 –– 2D Mensuration by Gagan sir",
+          "url": "https://selectionwaylive.hranker.com/561/69944f8c399756d4923fbd68/playlist-mpl-vod.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "aarambh-batch-100hr-sw-v-48",
+          "label": "[ADVANCE] आरम्भ Batch –– Class - 10 –– 2D Mensuration by Gagan sir",
+          "url": "https://selectionwaylive.hranker.com/561/698ef29f466e8361a4e88708/playlist-mpl-vod.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "aarambh-batch-100hr-sw-v-49",
+          "label": "[ADVANCE] आरम्भ Batch –– Class - 11 –– 2D Mensuration by Gagan sir",
+          "url": "https://selectionwaylive.hranker.com/561/69983bd5399756d4926b3228/playlist-mpl-vod.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "aarambh-batch-100hr-sw-v-50",
+          "label": "[ADVANCE] आरम्भ Batch –– Class - 12 –– 2D Mensuration by Gagan sir",
+          "url": "https://selectionwayrecordedmp4.hranker.com/561/699d48ef399756d4929906ab/hls/master.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "aarambh-batch-100hr-sw-v-51",
+          "label": "[ADVANCE] आरम्भ Batch –– 3D Mensuration All Concept and Tricks in single video",
+          "url": "https://selectionwayrecordedmp4.hranker.com/561/698d5eaf58d5b773dec341cc/hls/master.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "aarambh-batch-100hr-sw-v-52",
+          "label": "[ARITHMETIC] आरम्भ Batch – Class - 01 –– Percentage (प्रतिशत) – by Gagan sir",
+          "url": "https://selectionwayrecordedmp4.hranker.com/561/69ad4a17795a3ab1161a4cb0/hls/master.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "aarambh-batch-100hr-sw-v-53",
+          "label": "[ARITHMETIC] आरम्भ Batch – Class - 02 –– Percentage (प्रतिशत) – by Gagan sir",
+          "url": "https://selectionwaylive.hranker.com/561/6958cf869ed6d5d242badab5/playlist-mpl-vod.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "aarambh-batch-100hr-sw-v-54",
+          "label": "[ARITHMETIC] आरम्भ Batch – Class - 03 –– Percentage (प्रतिशत) – by Gagan sir",
+          "url": "https://selectionwaylive.hranker.com/561/695b77389ed6d5d242ec5e6f/playlist-mpl-vod.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "aarambh-batch-100hr-sw-v-55",
+          "label": "[ARITHMETIC] आरम्भ Batch – Class - 04 –– Percentage (प्रतिशत) – by Gagan sir",
+          "url": "https://selectionwaylive.hranker.com/561/695cbb502feca20f81cfc95c/playlist-mpl-vod.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "aarambh-batch-100hr-sw-v-56",
+          "label": "[ARITHMETIC] आरम्भ Batch – Class - 05 –– Percentage (प्रतिशत) – by Gagan sir",
+          "url": "https://selectionwaylive.hranker.com/561/695e45cc027f25d29e58bd9f/playlist-mpl-vod.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "aarambh-batch-100hr-sw-v-57",
+          "label": "[ARITHMETIC] आरम्भ Batch – Class - 06 –– Percentage (प्रतिशत) – by Gagan sir",
+          "url": "https://selectionwaylive.hranker.com/561/695f7af3027f25d29e8c4f29/playlist-mpl-vod.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "aarambh-batch-100hr-sw-v-58",
+          "label": "[ARITHMETIC] आरम्भ Batch – Class - 07 –– Percentage (प्रतिशत) – by Gagan sir",
+          "url": "https://selectionwaylive.hranker.com/561/696b30f3719de161eee99233/playlist-mpl-vod.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "aarambh-batch-100hr-sw-v-59",
+          "label": "[ARITHMETIC] आरम्भ Batch – Class - 08 –– Percentage (प्रतिशत) – by Gagan sir",
+          "url": "https://selectionwaylive.hranker.com/561/696dfe25719de161eef4ffc4/playlist-mpl-vod.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "aarambh-batch-100hr-sw-v-60",
+          "label": "[ARITHMETIC] आरम्भ Batch – Class - 09 –– Percentage (प्रतिशत) – by Gagan sir",
+          "url": "https://selectionwaylive.hranker.com/561/696fcf73719de161ee085fe5/playlist-mpl-vod.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "aarambh-batch-100hr-sw-v-61",
+          "label": "[ARITHMETIC] आरम्भ Batch – Class - 10 –– Percentage (प्रतिशत) – by Gagan sir",
+          "url": "https://selectionwaylive.hranker.com/561/6971a26e719de161ee159588/playlist-mpl-vod.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "aarambh-batch-100hr-sw-v-62",
+          "label": "[ARITHMETIC] आरम्भ Batch –– Class - 01 –– Problem on AGES by Gagan sir",
+          "url": "https://selectionwayrecordedmp4.hranker.com/561/697202905914a96ddfe105dd/hls/master.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "aarambh-batch-100hr-sw-v-63",
+          "label": "[ARITHMETIC] आरम्भ Batch –– Class - 02 –– Problem on AGES by Gagan sir",
+          "url": "https://selectionwayrecordedmp4.hranker.com/561/697202cb57df4eebc5465b6e/hls/master.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "aarambh-batch-100hr-sw-v-64",
+          "label": "[ARITHMETIC] आरम्भ Batch –– Class - 03 –– Problem on AGES by Gagan sir",
+          "url": "https://selectionwayrecordedmp4.hranker.com/561/697203140f472d5393e609a3/hls/master.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "aarambh-batch-100hr-sw-v-65",
+          "label": "[ARITHMETIC] आरम्भ Batch –– Class -01 –– Ratio (अनुपात) – by Gagan sir",
+          "url": "https://selectionwaylive.hranker.com/561/6971fa7c719de161ee29b6b8/playlist-mpl-vod.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "aarambh-batch-100hr-sw-v-66",
+          "label": "[ARITHMETIC] आरम्भ Batch –– Class -02 –– Ratio (अनुपात) – by Gagan sir",
+          "url": "https://selectionwaylive.hranker.com/561/69734f8ccc325625a60563f5/playlist-mpl-vod.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "aarambh-batch-100hr-sw-v-67",
+          "label": "[ARITHMETIC] आरम्भ Batch –– Class -03 –– Ratio (अनुपात) – by Gagan sir",
+          "url": "https://selectionwaylive.hranker.com/561/69779fb6c566674bff854279/playlist-mpl-vod.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "aarambh-batch-100hr-sw-v-68",
+          "label": "[ARITHMETIC] आरम्भ Batch –– Class -04 –– Ratio (अनुपात) – by Gagan sir",
+          "url": "https://selectionwaylive.hranker.com/561/6978deddc566674bff8d3db6/playlist-mpl-vod.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "aarambh-batch-100hr-sw-v-69",
+          "label": "[ARITHMETIC] आरम्भ Batch –– Class -01 –– Profit and loss (लाभ और हानि) – by Gagan sir",
+          "url": "https://selectionwaylive.hranker.com/561/6979cbcfc566674bff94b470/playlist-mpl-vod.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "aarambh-batch-100hr-sw-v-70",
+          "label": "[ARITHMETIC] आरम्भ Batch –– Class -02 –– Profit and loss (लाभ और हानि) – by Gagan sir",
+          "url": "https://selectionwaylive.hranker.com/561/697bacdb4d8dc840697bf825/playlist-mpl-vod.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "aarambh-batch-100hr-sw-v-71",
+          "label": "[ARITHMETIC] आरम्भ Batch –– Class -03 –– Profit and loss (लाभ और हानि) – by Gagan sir",
+          "url": "https://selectionwaylive.hranker.com/561/697d788f4ca8c7fbe8eff97a/playlist-mpl-vod.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "aarambh-batch-100hr-sw-v-72",
+          "label": "[ARITHMETIC] आरम्भ Batch –– Class -01 –– Discount छूट – by Gagan sir",
+          "url": "https://selectionwayrecordedmp4.hranker.com/561/69817f2d4ca8c7fbe809c6f8/hls/master.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "aarambh-batch-100hr-sw-v-73",
+          "label": "[ARITHMETIC] आरम्भ Batch –– Class -02 –– Discount छूट – by Gagan sir",
+          "url": "https://selectionwaylive.hranker.com/561/698072134ca8c7fbe8018b27/playlist-mpl-vod.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "aarambh-batch-100hr-sw-v-74",
+          "label": "[ARITHMETIC] आरम्भ Batch –– Class -03 –– Discount छूट – by Gagan sir",
+          "url": "https://selectionwaylive.hranker.com/561/6981a23e4ca8c7fbe80d9b3b/playlist-mpl-vod.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "aarambh-batch-100hr-sw-v-75",
+          "label": "[ARITHMETIC] आरम्भ Batch –– Class - 01 –– Time and Work (समय और कार्य) – By Gagan Sir",
+          "url": "https://selectionwaylive.hranker.com/561/69831d8efc5097091c0765bc/playlist-mpl-vod.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "aarambh-batch-100hr-sw-v-76",
+          "label": "[ARITHMETIC] आरम्भ Batch –– Class - 02 –– Time and Work (समय और कार्य) – By Gagan Sir",
+          "url": "https://selectionwaylive.hranker.com/561/698458e1fdd21a8a2d14f0a1/playlist-mpl-vod.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "aarambh-batch-100hr-sw-v-77",
+          "label": "[ARITHMETIC] आरम्भ Batch –– Class - 03 –– Time and Work (समय और कार्य) – By Gagan Sir",
+          "url": "https://selectionwaylive.hranker.com/561/6985cb1b0df4ffd2b9b08b65/playlist-mpl-vod.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "aarambh-batch-100hr-sw-v-78",
+          "label": "[ARITHMETIC] आरम्भ Batch –– Class - 04 –– Time and Work (समय और कार्य) – By Gagan Sir",
+          "url": "https://selectionwaylive.hranker.com/561/6989ab5e5b61b5fe0009786d/playlist-mpl-vod.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "aarambh-batch-100hr-sw-v-79",
+          "label": "[ARITHMETIC] आरम्भ Batch –– Class - 05 –– Time and Work (समय और कार्य) – By Gagan Sir",
+          "url": "https://selectionwaylive.hranker.com/561/698b7484a003679fb8ade331/playlist-mpl-vod.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "aarambh-batch-100hr-sw-v-80",
+          "label": "[ARITHMETIC] आरम्भ Batch –– Class - 01 –– Pipe and cistern (नल और टंकी) – By Gagan Sir",
+          "url": "https://selectionwaylive.hranker.com/561/698c72d3a003679fb8c13639/playlist-mpl-vod.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "aarambh-batch-100hr-sw-v-81",
+          "label": "[ARITHMETIC] आरम्भ Batch –– Class-01 –– Partnership by Gagan sir",
+          "url": "https://selectionwaylive.hranker.com/561/698ebb958f7f447d563143c5/playlist-mpl-vod.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "aarambh-batch-100hr-sw-v-82",
+          "label": "[ARITHMETIC] आरम्भ Batch –– Class-02 –– Partnership by Gagan sir",
+          "url": "https://selectionwaylive.hranker.com/561/699209bae23f1dc0e52da70e/playlist-mpl-vod.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "aarambh-batch-100hr-sw-v-83",
+          "label": "[ARITHMETIC] आरम्भ Batch –– Class-03 –– Partnership by Gagan sir",
+          "url": "https://selectionwaylive.hranker.com/561/699557f4399756d49246c610/playlist-mpl-vod.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "aarambh-batch-100hr-sw-v-84",
+          "label": "[ARITHMETIC] आरम्भ Batch –– Time_Speed_Distance_Class_1",
+          "url": "https://selectionwayrecordedmp4.hranker.com/561/6922929e8b0d4f251f7f7efc/hls/master.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "aarambh-batch-100hr-sw-v-85",
+          "label": "[ARITHMETIC] आरम्भ Batch –– Time_Speed_Distance_Class_2",
+          "url": "https://selectionwayrecordedmp4.hranker.com/561/6922929e8b0d4f251f7f7efd/hls/master.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "aarambh-batch-100hr-sw-v-86",
+          "label": "[ARITHMETIC] आरम्भ Batch –– Time_Speed_Distance_Class_3",
+          "url": "https://selectionwayrecordedmp4.hranker.com/561/6922929e8b0d4f251f7f7efe/hls/master.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "aarambh-batch-100hr-sw-v-87",
+          "label": "[ARITHMETIC] आरम्भ Batch –– Time_Speed_Distance_Class_4",
+          "url": "https://selectionwayrecordedmp4.hranker.com/561/6922929e8b0d4f251f7f7eff/hls/master.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "aarambh-batch-100hr-sw-v-88",
+          "label": "[ARITHMETIC] आरम्भ Batch –– Time_Speed_Distance_Class_5",
+          "url": "https://selectionwayrecordedmp4.hranker.com/561/6922929e8b0d4f251f7f7f00/hls/master.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "aarambh-batch-100hr-sw-v-89",
+          "label": "[ARITHMETIC] आरम्भ Batch –– Time_Speed_Distance_Class_6",
+          "url": "https://selectionwayrecordedmp4.hranker.com/561/6922929e8b0d4f251f7f7f01/hls/master.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "aarambh-batch-100hr-sw-v-90",
+          "label": "[ARITHMETIC] आरम्भ Batch –– Time_Speed_Distance_Class_7",
+          "url": "https://selectionwayrecordedmp4.hranker.com/561/6922929e8b0d4f251f7f7f02/hls/master.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "aarambh-batch-100hr-sw-v-91",
+          "label": "[ARITHMETIC] आरम्भ Batch –– COMPLETE –– BOAT AND STREAM",
+          "url": "https://selectionwayrecordedmp4.hranker.com/561/695bb9729ed6d5d2423b789d/hls/master.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "aarambh-batch-100hr-sw-v-92",
+          "label": "[ARITHMETIC] आरम्भ Batch –– Complete –– TRAIN",
+          "url": "https://selectionwayrecordedmp4.hranker.com/561/695bc4f89ed6d5d242fd71a2/hls/master.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "aarambh-batch-100hr-sw-v-93",
+          "label": "[ARITHMETIC] आरम्भ Batch –– Class -01 –– Compound Interest (चक्रवृद्धि ब्याज) – By Gagan Sir",
+          "url": "https://selectionwaylive.hranker.com/561/69951223399756d49243f0d3/playlist-mpl-vod.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "aarambh-batch-100hr-sw-v-94",
+          "label": "[ARITHMETIC] आरम्भ Batch –– Class -02 –– Compound Interest (चक्रवृद्धि ब्याज) – By Gagan Sir",
+          "url": "https://selectionwaylive.hranker.com/561/69958a4a399756d4924b51fb/playlist-mpl-vod.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "aarambh-batch-100hr-sw-v-95",
+          "label": "[ARITHMETIC] आरम्भ Batch –– Class -03 –– Compound Interest (चक्रवृद्धि ब्याज) – By Gagan Sir",
+          "url": "https://selectionwaylive.hranker.com/561/6996db54399756d492589cee/playlist-mpl-vod.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "aarambh-batch-100hr-sw-v-96",
+          "label": "[ARITHMETIC] आरम्भ Batch –– Class -04 –– Compound Interest (चक्रवृद्धि ब्याज) – By Gagan Sir",
+          "url": "https://selectionwaylive.hranker.com/561/699953e8399756d49272c10f/playlist-mpl-vod.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "aarambh-batch-100hr-sw-v-97",
+          "label": "[ARITHMETIC] आरम्भ Batch –– Class -05 –– Compound Interest (चक्रवृद्धि ब्याज) – By Gagan Sir",
+          "url": "https://selectionwaylive.hranker.com/561/699c2372399756d492879bb1/playlist-mpl-vod.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "aarambh-batch-100hr-sw-v-98",
+          "label": "[ARITHMETIC] आरम्भ Batch –– Class -06 –– Compound Interest (चक्रवृद्धि ब्याज) – By Gagan Sir",
+          "url": "https://selectionwaylive.hranker.com/561/699d8aea399756d492a06d42/playlist-mpl-vod.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "aarambh-batch-100hr-sw-v-99",
+          "label": "[ARITHMETIC] आरम्भ Batch –– Class - 01 –– Simple Interest (साधारण ब्याज) – By Gagan Sir",
+          "url": "https://selectionwaylive.hranker.com/561/698db8648f7f447d56267f3e/playlist-mpl-vod.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "aarambh-batch-100hr-sw-v-100",
+          "label": "[ARITHMETIC] आरम्भ Batch –– Class - 02 –– Simple Interest (साधारण ब्याज) – By Gagan Sir",
+          "url": "https://selectionwaylive.hranker.com/561/699208a7e23f1dc0e52d24e6/playlist-mpl-vod.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "aarambh-batch-100hr-sw-v-101",
+          "label": "[ARITHMETIC] आरम्भ Batch –– Class - 03 –– Simple Interest (साधारण ब्याज) – By Gagan Sir",
+          "url": "https://selectionwaylive.hranker.com/561/699344dae23f1dc0e53b742a/playlist-mpl-vod.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "aarambh-batch-100hr-sw-v-102",
+          "label": "[ARITHMETIC] आरम्भ Batch –– Class-01 – Mixture and Alligation by Gagan sir",
+          "url": "https://selectionwayrecordedmp4.hranker.com/561/69980542399756d49264cb59/hls/master.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "aarambh-batch-100hr-sw-v-103",
+          "label": "[ARITHMETIC] आरम्भ Batch –– Class-02 – Mixture and Alligation by Gagan sir",
+          "url": "https://selectionwaylive.hranker.com/561/699804e1399756d492648555/playlist-mpl-vod.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "aarambh-batch-100hr-sw-v-104",
+          "label": "[ARITHMETIC] आरम्भ Batch –– Class-03 – Mixture and Alligation by Gagan sir",
+          "url": "https://selectionwaylive.hranker.com/561/699954a4399756d492734da2/playlist-mpl-vod.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "aarambh-batch-100hr-sw-v-105",
+          "label": "[ARITHMETIC] आरम्भ Batch –– Class-04 – Mixture and Alligation by Gagan sir",
+          "url": "https://selectionwaylive.hranker.com/561/699d345d399756d49294eead/playlist-mpl-vod.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "aarambh-batch-100hr-sw-v-106",
+          "label": "[ARITHMETIC] आरम्भ Batch –– Class-05 – Mixture and Alligation by Gagan sir",
+          "url": "https://selectionwaylive.hranker.com/561/699e82a0399756d492a485f9/playlist-mpl-vod.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "aarambh-batch-100hr-sw-v-107",
+          "label": "[ARITHMETIC] आरम्भ Batch –– Class-06 – Mixture and Alligation by Gagan sir",
+          "url": "https://selectionwayrecordedmp4.hranker.com/561/69a0ff72a2b1ae043320d7d3/hls/master.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "aarambh-batch-100hr-sw-v-108",
+          "label": "[ARITHMETIC] आरम्भ Batch –– Class-07 – Mixture and Alligation by Gagan sir",
+          "url": "https://selectionwaylive.hranker.com/561/69a13c0da2b1ae04332589e9/playlist-mpl-vod.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "aarambh-batch-100hr-sw-v-109",
+          "label": "[ARITHMETIC] आरम्भ Batch –– Class -01 –– Average (औसत) – By Gagan Sir",
+          "url": "https://selectionwaylive.hranker.com/561/699eba73a2b1ae04330c851e/playlist-mpl-vod.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "aarambh-batch-100hr-sw-v-110",
+          "label": "[ARITHMETIC] आरम्भ Batch –– Class -02 –– Average (औसत) – By Gagan Sir",
+          "url": "https://selectionwaylive.hranker.com/561/6999512b399756d49271834d/playlist-mpl-vod.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "aarambh-batch-100hr-sw-v-111",
+          "label": "[ARITHMETIC] आरम्भ Batch –– Class -03 –– Average (औसत) – By Gagan Sir",
+          "url": "https://selectionwaylive.hranker.com/561/69abb6fa0cd8b6c0dd1894aa/playlist-mpl-vod.m3u8",
+          "type": "hls"
+        }
+      ]
+    },
+    {
+      "id": "pdfs",
+      "label": "📄 PDFs",
+      "items": [
+        {
+          "id": "aarambh-batch-100hr-sw-p-2",
+          "label": "[ADVANCE] आरम्भ Batch –– Class - 01 –– Classification of Numbers (संख्याओं का वर्गीकरण) – by Gagan sir",
+          "url": "https://selectionwayserver.hranker.com/pdfs/files/class%201%20simplification.pdf",
+          "type": "pdf"
+        },
+        {
+          "id": "aarambh-batch-100hr-sw-p-4",
+          "label": "[ADVANCE] आरम्भ Batch –– Class - 02 –– Classification of Numbers (संख्याओं का वर्गीकरण) – by Gagan sir",
+          "url": "https://selectionwayserver.hranker.com/pdfs/files/class%202%20simplification.pdf",
+          "type": "pdf"
+        },
+        {
+          "id": "aarambh-batch-100hr-sw-p-6",
+          "label": "[ADVANCE] आरम्भ Batch –– Class - 03 –– Classification of Numbers (संख्याओं का वर्गीकरण) – by Gagan sir",
+          "url": "https://selectionwayserver.hranker.com/pdfs/files/class%203%20simplification.pdf",
+          "type": "pdf"
+        },
+        {
+          "id": "aarambh-batch-100hr-sw-p-8",
+          "label": "[ADVANCE] आरम्भ Batch –– Class - 01 –– Sequence and Series ( अनुक्रम और श्रेणी ) by Gagan sir",
+          "url": "https://selectionwayserver.hranker.com/pdfs/files/ap%20gp%20board%20pdf.pdf",
+          "type": "pdf"
+        },
+        {
+          "id": "aarambh-batch-100hr-sw-p-10",
+          "label": "[ADVANCE] आरम्भ Batch –– Class - 02 –– Sequence and Series ( अनुक्रम और श्रेणी ) by Gagan sir",
+          "url": "https://selectionwayserver.hranker.com/pdfs/files/upsi%20gd%20class%202%20board%20pdf.pdf",
+          "type": "pdf"
+        },
+        {
+          "id": "aarambh-batch-100hr-sw-p-12",
+          "label": "[ADVANCE] आरम्भ Batch –– Class - 03 –– Sequence and Series ( अनुक्रम और श्रेणी ) by Gagan sir",
+          "url": "https://selectionwayserver.hranker.com/pdfs/files/sequence%20and%20series%20class%203%20board%20pdf.pdf",
+          "type": "pdf"
+        },
+        {
+          "id": "aarambh-batch-100hr-sw-p-14",
+          "label": "[ADVANCE] आरम्भ Batch –– Class - 01 –– Remainder Theorem (शेषफल प्रमेय –– by Gagan sir",
+          "url": "https://selectionwayserver.hranker.com/pdfs/files/sequence%20series%20class%204%20board%20pdf.pdf",
+          "type": "pdf"
+        },
+        {
+          "id": "aarambh-batch-100hr-sw-p-16",
+          "label": "[ADVANCE] आरम्भ Batch –– Class - 02 –– Divisibility Rule (विभाज्यता नियम) –– by Gagan sir",
+          "url": "https://selectionwayserver.hranker.com/pdfs/files/ap%20gp%20class%205.pdf",
+          "type": "pdf"
+        },
+        {
+          "id": "aarambh-batch-100hr-sw-p-18",
+          "label": "[ADVANCE] आरम्भ Batch –– Class - 03 –– Divisibility Rule (विभाज्यता नियम) –– by Gagan sir",
+          "url": "https://selectionwayserver.hranker.com/pdfs/files/number%20system%20class%206%20board.pdf",
+          "type": "pdf"
+        },
+        {
+          "id": "aarambh-batch-100hr-sw-p-20",
+          "label": "[ADVANCE] आरम्भ Batch –– Class - 04 –– Divisibility Rule (विभाज्यता नियम) –– by Gagan sir",
+          "url": "https://selectionwayserver.hranker.com/pdfs/files/number%20system%20board%20pdf.pdf",
+          "type": "pdf"
+        },
+        {
+          "id": "aarambh-batch-100hr-sw-p-22",
+          "label": "[ADVANCE] आरम्भ Batch –– Class - 01 –– LCM and HCF (ल.स.प.और म.स.प.) –– by Gagan sir",
+          "url": "https://selectionwayserver.hranker.com/pdfs/files/gd%20and%20upsi%20lcm%20hcf%20class%201%20board%20pdf.pdf",
+          "type": "pdf"
+        },
+        {
+          "id": "aarambh-batch-100hr-sw-p-24",
+          "label": "[ADVANCE] आरम्भ Batch –– Class - 02 –– LCM and HCF (ल.स.प.और म.स.प.) –– by Gagan sir",
+          "url": "https://selectionwayserver.hranker.com/pdfs/files/class%209%20lcm%20hcf%20pdf.pdf",
+          "type": "pdf"
+        },
+        {
+          "id": "aarambh-batch-100hr-sw-p-26",
+          "label": "[ADVANCE] आरम्भ Batch –– Class - 03 –– LCM and HCF (ल.स.प.और म.स.प.) –– by Gagan sir",
+          "url": "https://selectionwayserver.hranker.com/pdfs/files/class%2010%20cm%20hcf%20%20board%20pdf%20.pdf",
+          "type": "pdf"
+        },
+        {
+          "id": "aarambh-batch-100hr-sw-p-28",
+          "label": "[ADVANCE] आरम्भ Batch –– Class - 04 –– LCM and HCF (ल.स.प.और म.स.प.) –– by Gagan sir",
+          "url": "https://selectionwayserver.hranker.com/pdfs/files/class%2011%20lcm%20hcf%20board%20pdf%20.pdf",
+          "type": "pdf"
+        },
+        {
+          "id": "aarambh-batch-100hr-sw-p-36",
+          "label": "[ADVANCE] आरम्भ Batch –– Class - 01 –– 2D Mensuration by Gagan sir",
+          "url": "https://selectionwayserver.hranker.com/pdfs/files/2d%20mensuration%20class%201%20board%20pdf.pdf",
+          "type": "pdf"
+        },
+        {
+          "id": "aarambh-batch-100hr-sw-p-38",
+          "label": "[ADVANCE] आरम्भ Batch –– Class - 02 –– 2D Mensuration by Gagan sir",
+          "url": "https://selectionwayserver.hranker.com/pdfs/files/mensuration%202d%20class%2002%20board%20pdf.pdf",
+          "type": "pdf"
+        },
+        {
+          "id": "aarambh-batch-100hr-sw-p-40",
+          "label": "[ADVANCE] आरम्भ Batch –– Class - 03 –– 2D Mensuration by Gagan sir",
+          "url": "https://selectionwayserver.hranker.com/pdfs/files/2d%20mensuration%20class%2003%20board.pdf",
+          "type": "pdf"
+        },
+        {
+          "id": "aarambh-batch-100hr-sw-p-42",
+          "label": "[ADVANCE] आरम्भ Batch –– Class - 04 –– 2D Mensuration by Gagan sir",
+          "url": "https://selectionwayserver.hranker.com/pdfs/files/2d%20mensuration%20class%204%20board.pdf",
+          "type": "pdf"
+        }
+      ]
+    }
+  ],
+  "category": "government"
+}

@@ -1,0 +1,1475 @@
+{
+  "id": "english-practice",
+  "name": "English Practice",
+  "subname": "English Practice 26 • Mock & PYQ Drill",
+  "teacher": "English Faculty",
+  "subject": "English",
+  "thumb": "/thumbnails/subjects/english_practice.svg",
+  "tabs": [
+    {
+      "id": "videos",
+      "label": "▶ Videos",
+      "items": [
+        {
+          "label": "Class -01 | Introduction | Noun",
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6339378701112/6339378701112.m3u8",
+          "type": "hls",
+          "subject": "Eng (VOD)"
+        },
+        {
+          "label": "Class -02 | Vocab & Noun",
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6339441351112/6339441351112.m3u8",
+          "type": "hls",
+          "subject": "Eng (VOD)"
+        },
+        {
+          "label": "Class -03 | Noun",
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6339515987112/6339515987112.m3u8",
+          "type": "hls",
+          "subject": "Eng (VOD)"
+        },
+        {
+          "label": "Class -04 | Noun",
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6339701918112/6339701918112.m3u8",
+          "type": "hls",
+          "subject": "Eng (VOD)"
+        },
+        {
+          "label": "Class -05 | Pronoun Practice",
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6339828342112/6339828342112.m3u8",
+          "type": "hls",
+          "subject": "Eng (VOD)"
+        },
+        {
+          "label": "Class -06 | Pronoun Practice",
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6339894001112/6339894001112.m3u8",
+          "type": "hls",
+          "subject": "Eng (VOD)"
+        },
+        {
+          "label": "Class -07 | Pronoun Practice",
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6339963404112/6339963404112.m3u8",
+          "type": "hls",
+          "subject": "Eng (VOD)"
+        },
+        {
+          "label": "Class-08 | Phrasal Verbs",
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6340198020112/6340198020112.m3u8",
+          "type": "hls",
+          "subject": "Eng (VOD)"
+        },
+        {
+          "label": "Class-09 | Phrasal Verbs",
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6340263151112/6340263151112.m3u8",
+          "type": "hls",
+          "subject": "Eng (VOD)"
+        },
+        {
+          "label": "Class-10 | Para jumbles",
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6340597721112/6340597721112.m3u8",
+          "type": "hls",
+          "subject": "Eng (VOD)"
+        },
+        {
+          "label": "Class-11 | Para jumbles",
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6340597046112/6340597046112.m3u8",
+          "type": "hls",
+          "subject": "Eng (VOD)"
+        },
+        {
+          "label": "Class-12  | Para jumbles",
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6340583028112/6340583028112.m3u8",
+          "type": "hls",
+          "subject": "Eng (VOD)"
+        },
+        {
+          "label": "Class-13 | Para jumbles",
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6340643932112/6340643932112.m3u8",
+          "type": "hls",
+          "subject": "Eng (VOD)"
+        },
+        {
+          "label": "Class-14 | Para jumbles",
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6340709181112/6340709181112.m3u8",
+          "type": "hls",
+          "subject": "Eng (VOD)"
+        },
+        {
+          "label": "Class-15 | Para jumbles",
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6340776772112/6340776772112.m3u8",
+          "type": "hls",
+          "subject": "Eng (VOD)"
+        },
+        {
+          "label": "Class-16 | Para jumbles",
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6340841669112/6340841669112.m3u8",
+          "type": "hls",
+          "subject": "Eng (VOD)"
+        },
+        {
+          "label": "Class-17 | Cloze Test",
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6341209688112/6341209688112.m3u8",
+          "type": "hls",
+          "subject": "Eng (VOD)"
+        },
+        {
+          "label": "Class-18 | Comprehension class",
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6341280391112/6341280391112.m3u8",
+          "type": "hls",
+          "subject": "Eng (VOD)"
+        },
+        {
+          "label": "Class-19 | Comprehension class",
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6341462775112/6341462775112.m3u8",
+          "type": "hls",
+          "subject": "Eng (VOD)"
+        },
+        {
+          "label": "Class-20 | Comprehension Class",
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6341532026112/6341532026112.m3u8",
+          "type": "hls",
+          "subject": "Eng (VOD)"
+        },
+        {
+          "label": "Class-21 | Comprehension class",
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6341593368112/6341593368112.m3u8",
+          "type": "hls",
+          "subject": "Eng (VOD)"
+        },
+        {
+          "label": "Class-22 | Comprehension class",
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6341702559112/6341702559112.m3u8",
+          "type": "hls",
+          "subject": "Eng (VOD)"
+        },
+        {
+          "label": "Class-23 | Comprehension class",
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6341815769112/6341815769112.m3u8",
+          "type": "hls",
+          "subject": "Eng (VOD)"
+        },
+        {
+          "label": "Class-24 | Comprehension class",
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6341889960112/6341889960112.m3u8",
+          "type": "hls",
+          "subject": "Eng (VOD)"
+        },
+        {
+          "label": "Class-25 | Comprehension class",
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6341966189112/6341966189112.m3u8",
+          "type": "hls",
+          "subject": "Eng (VOD)"
+        },
+        {
+          "label": "Class-26 | Comprehension class",
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6342035948112/6342035948112.m3u8",
+          "type": "hls",
+          "subject": "Eng (VOD)"
+        },
+        {
+          "label": "Class-27 | Comprehension class",
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6342312161112/6342312161112.m3u8",
+          "type": "hls",
+          "subject": "Eng (VOD)"
+        },
+        {
+          "label": "Class-28 | Comprehension class",
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6342369498112/6342369498112.m3u8",
+          "type": "hls",
+          "subject": "Eng (VOD)"
+        },
+        {
+          "label": "Class-29 | Comprehension class",
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6342434302112/6342434302112.m3u8",
+          "type": "hls",
+          "subject": "Eng (VOD)"
+        },
+        {
+          "label": "Class-30 | Voice Practice",
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6342495456112/6342495456112.m3u8",
+          "type": "hls",
+          "subject": "Eng (VOD)"
+        },
+        {
+          "label": "Class-31 | Voice Practice",
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6342563186112/6342563186112.m3u8",
+          "type": "hls",
+          "subject": "Eng (VOD)"
+        },
+        {
+          "label": "Class-32 |  Practice Class",
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6342753157112/6342753157112.m3u8",
+          "type": "hls",
+          "subject": "Eng (VOD)"
+        },
+        {
+          "label": "Class-33 | Tense Practice",
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6342944797112/6342944797112.m3u8",
+          "type": "hls",
+          "subject": "Eng (VOD)"
+        },
+        {
+          "label": "Class-34 | Tense Practice",
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6342925631112/6342925631112.m3u8",
+          "type": "hls",
+          "subject": "Eng (VOD)"
+        },
+        {
+          "label": "Class-35 | Tense Practice",
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6343435283112/6343435283112.m3u8",
+          "type": "hls",
+          "subject": "Eng (VOD)"
+        },
+        {
+          "label": "Class-36 | Tense Practice",
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6343435962112/6343435962112.m3u8",
+          "type": "hls",
+          "subject": "Eng (VOD)"
+        },
+        {
+          "label": "Class-37 | Narration Practice",
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6343423943112/6343423943112.m3u8",
+          "type": "hls",
+          "subject": "Eng (VOD)"
+        },
+        {
+          "label": "Class-38  | Subject verb Agreement Practice",
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6343492215112/6343492215112.m3u8",
+          "type": "hls",
+          "subject": "Eng (VOD)"
+        },
+        {
+          "label": "Class-39 | Subject verb Agreement Practice",
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6343571173112/6343571173112.m3u8",
+          "type": "hls",
+          "subject": "Eng (VOD)"
+        },
+        {
+          "label": "Class-40 |  Q.Tag & Slang & Superfluous",
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6343636298112/6343636298112.m3u8",
+          "type": "hls",
+          "subject": "Eng (VOD)"
+        },
+        {
+          "label": "Class-41 | Q.Tag & Slang & Superfluous",
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6343697840112/6343697840112.m3u8",
+          "type": "hls",
+          "subject": "Eng (VOD)"
+        },
+        {
+          "label": "Class-42 | Conjunction Practice",
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6344161631112/6344161631112.m3u8",
+          "type": "hls",
+          "subject": "Eng (VOD)"
+        },
+        {
+          "label": "Class-43 | Conjunction Practice",
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/vod_non_drm_ios/4476191/1751950824_3787164128058696/1751950769097_542377096441885300_video_VOD.m3u8",
+          "type": "hls",
+          "subject": "Eng (VOD)"
+        },
+        {
+          "label": "Class-44 | Modal Verbs",
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6343938864112/6343938864112.m3u8",
+          "type": "hls",
+          "subject": "Eng (VOD)"
+        },
+        {
+          "label": "Class-45 | Modal Verbs",
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/vod_non_drm_ios/4476193/1751950825_8338809124977705/1751950777429_448381482619941500_video_VOD.m3u8",
+          "type": "hls",
+          "subject": "Eng (VOD)"
+        },
+        {
+          "label": "Class-46 | Adverb Practice",
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6344144625112/6344144625112.m3u8",
+          "type": "hls",
+          "subject": "Eng (VOD)"
+        },
+        {
+          "label": "Class-47 | Adverb Practice",
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6344190106112/6344190106112.m3u8",
+          "type": "hls",
+          "subject": "Eng (VOD)"
+        },
+        {
+          "label": "Class-48 | Verb Practice",
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6344238637112/6344238637112.m3u8",
+          "type": "hls",
+          "subject": "Eng (VOD)"
+        },
+        {
+          "label": "Class-49 |  Verb Advance",
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6344295141112/6344295141112.m3u8",
+          "type": "hls",
+          "subject": "Eng (VOD)"
+        },
+        {
+          "label": "Class-50 | Verb Advance",
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6344518586112/6344518586112.m3u8",
+          "type": "hls",
+          "subject": "Eng (VOD)"
+        },
+        {
+          "label": "Class-52 | Articles",
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6344588095112/6344588095112.m3u8",
+          "type": "hls",
+          "subject": "Eng (VOD)"
+        },
+        {
+          "label": "Class-53 | Preposition",
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6344654436112/6344654436112.m3u8",
+          "type": "hls",
+          "subject": "Eng (VOD)"
+        },
+        {
+          "label": "Class-54 | Preposition",
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6344719822112/6344719822112.m3u8",
+          "type": "hls",
+          "subject": "Eng (VOD)"
+        },
+        {
+          "label": "Class-55 | Preposition",
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6344906218112/6344906218112.m3u8",
+          "type": "hls",
+          "subject": "Eng (VOD)"
+        },
+        {
+          "label": "Class-56 | Mixed Practice Sessions",
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6345328953112/6345328953112.m3u8",
+          "type": "hls",
+          "subject": "Eng (VOD)"
+        },
+        {
+          "label": "Class-57 | Mixed Practice Sessions",
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/vod_non_drm_ios/4476195/1751950848_7784852209587777/1751950819975_807555686507743100_video_VOD.m3u8",
+          "type": "hls",
+          "subject": "Eng (VOD)"
+        },
+        {
+          "label": "Class-58 | Mixed Practice Sessions",
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6345449076112/6345449076112.m3u8",
+          "type": "hls",
+          "subject": "Eng (VOD)"
+        },
+        {
+          "label": "Class-59 | Mixed Practice Sessions",
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6345522735112/6345522735112.m3u8",
+          "type": "hls",
+          "subject": "Eng (VOD)"
+        },
+        {
+          "label": "Class-60 | Mixed Practice Sessions",
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6345792618112/6345792618112.m3u8",
+          "type": "hls",
+          "subject": "Eng (VOD)"
+        },
+        {
+          "label": "Class-61 | Mixed Practice Sessions",
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6345847472112/6345847472112.m3u8",
+          "type": "hls",
+          "subject": "Eng (VOD)"
+        },
+        {
+          "label": "Class-62 | Mixed Practice Sessions",
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6345907123112/6345907123112.m3u8",
+          "type": "hls",
+          "subject": "Eng (VOD)"
+        },
+        {
+          "label": "Class-63 | Mixed Practice Sessions",
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6345972851112/6345972851112.m3u8",
+          "type": "hls",
+          "subject": "Eng (VOD)"
+        },
+        {
+          "label": "Class-64 | Mixed Practice Sessions",
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6346037883112/6346037883112.m3u8",
+          "type": "hls",
+          "subject": "Eng (VOD)"
+        },
+        {
+          "label": "Class-65 | Mixed Practice Sessions",
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6346255488112/6346255488112.m3u8",
+          "type": "hls",
+          "subject": "Eng (VOD)"
+        },
+        {
+          "label": "Class-66 | Mixed Practice Sessions",
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6346323687112/6346323687112.m3u8",
+          "type": "hls",
+          "subject": "Eng (VOD)"
+        },
+        {
+          "label": "Class-67 | Mixed Practice Sessions",
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6346382698112/6346382698112.m3u8",
+          "type": "hls",
+          "subject": "Eng (VOD)"
+        },
+        {
+          "label": "Class-68 | Mixed Practice Sessions",
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6346456296112/6346456296112.m3u8",
+          "type": "hls",
+          "subject": "Eng (VOD)"
+        },
+        {
+          "label": "Class-69 | Mixed Practice Sessions",
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6346522405112/6346522405112.m3u8",
+          "type": "hls",
+          "subject": "Eng (VOD)"
+        },
+        {
+          "label": "Class-70 | Mixed Practice Sessions",
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6346707957112/6346707957112.m3u8",
+          "type": "hls",
+          "subject": "Eng (VOD)"
+        },
+        {
+          "label": "Class-71 | Mixed Practice Sessions",
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6346768569112/6346768569112.m3u8",
+          "type": "hls",
+          "subject": "Eng (VOD)"
+        },
+        {
+          "label": "Class-72 | Mixed Practice Sessions",
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6346841369112/6346841369112.m3u8",
+          "type": "hls",
+          "subject": "Eng (VOD)"
+        },
+        {
+          "label": "Class-73 | Mixed Practice Sessions",
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6346978267112/6346978267112.m3u8",
+          "type": "hls",
+          "subject": "Eng (VOD)"
+        },
+        {
+          "label": "Class -01 | Introduction |",
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6347718074112/6347718074112.m3u8",
+          "type": "hls",
+          "subject": "English"
+        },
+        {
+          "label": "Class -02 | Tense and Mixed Practice |",
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6347797950112/6347797950112.m3u8",
+          "type": "hls",
+          "subject": "English"
+        },
+        {
+          "label": "Class -03 | Tense and Mixed Practice |",
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6347892067112/6347892067112.m3u8",
+          "type": "hls",
+          "subject": "English"
+        },
+        {
+          "label": "Class -04 | Comprehension Practice |",
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6347974142112/6347974142112.m3u8",
+          "type": "hls",
+          "subject": "English"
+        },
+        {
+          "label": "Class -05 | Comprehension Practice |",
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6348180860112/6348180860112.m3u8",
+          "type": "hls",
+          "subject": "English"
+        },
+        {
+          "label": "Class -06 | Comprehension /Tense Mixed Practice |",
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6348244870112/6348244870112.m3u8",
+          "type": "hls",
+          "subject": "English"
+        },
+        {
+          "label": "Class -07 | Tense & Mixed Practice |",
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6348304141112/6348304141112.m3u8",
+          "type": "hls",
+          "subject": "English"
+        },
+        {
+          "label": "Class -08 | Comprehension & Tense/Mixed Practice",
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6348363639112/6348363639112.m3u8",
+          "type": "hls",
+          "subject": "English"
+        },
+        {
+          "label": "Class -09 | Comprehension And Tense/Mixed Practice",
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6348441537112/6348441537112.m3u8",
+          "type": "hls",
+          "subject": "English"
+        },
+        {
+          "label": "Class- 22 | Practice Verb Advance/Non Finite Verbs",
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6349910696112/6349910696112.m3u8",
+          "type": "hls",
+          "subject": "English"
+        },
+        {
+          "label": "Class- 23 | Practice Verb Advance/Non Finite Verbs",
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6350056203112/6350056203112.m3u8",
+          "type": "hls",
+          "subject": "English"
+        },
+        {
+          "label": "Class- 24 | Comprehension Practice",
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6350116453112/6350116453112.m3u8",
+          "type": "hls",
+          "subject": "English"
+        },
+        {
+          "label": "Class- 25 | Comprehension Practice",
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6350175169112/6350175169112.m3u8",
+          "type": "hls",
+          "subject": "English"
+        },
+        {
+          "label": "Class- 26 | Comprehension Practice",
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6350295409112/6350295409112.m3u8",
+          "type": "hls",
+          "subject": "English"
+        },
+        {
+          "label": "Class- 27 | Voice Practice",
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6350490708112/6350490708112.m3u8",
+          "type": "hls",
+          "subject": "English"
+        },
+        {
+          "label": "Class- 28 | Voice Practice",
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6350543027112/6350543027112.m3u8",
+          "type": "hls",
+          "subject": "English"
+        },
+        {
+          "label": "Class- 29 | Voice Practice",
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6350604623112/6350604623112.m3u8",
+          "type": "hls",
+          "subject": "English"
+        },
+        {
+          "label": "Class- 30 | Voice Practice",
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6350666117112/6350666117112.m3u8",
+          "type": "hls",
+          "subject": "English"
+        },
+        {
+          "label": "Class- 31 | Comprehension Practice",
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6350737581112/6350737581112.m3u8",
+          "type": "hls",
+          "subject": "English"
+        },
+        {
+          "label": "Class- 32 | Comprehension Practice",
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6350942192112/6350942192112.m3u8",
+          "type": "hls",
+          "subject": "English"
+        },
+        {
+          "label": "Class- 33 | Comprehension Practice",
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6350999253112/6350999253112.m3u8",
+          "type": "hls",
+          "subject": "English"
+        },
+        {
+          "label": "Class- 34 | Comprehension Practice",
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6351069437112/6351069437112.m3u8",
+          "type": "hls",
+          "subject": "English"
+        },
+        {
+          "label": "Class- 35 | Comprehension Practice",
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6351140715112/6351140715112.m3u8",
+          "type": "hls",
+          "subject": "English"
+        },
+        {
+          "label": "Class- 36 | Comprehension Practice",
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6351206920112/6351206920112.m3u8",
+          "type": "hls",
+          "subject": "English"
+        },
+        {
+          "label": "Class- 37 | Comprehension Practice",
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6351386831112/6351386831112.m3u8",
+          "type": "hls",
+          "subject": "English"
+        },
+        {
+          "label": "Class- 38 | Comprehension Practice",
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6351563117112/6351563117112.m3u8",
+          "type": "hls",
+          "subject": "English"
+        },
+        {
+          "label": "Class- 39 | Comprehension Practice",
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6351724556112/6351724556112.m3u8",
+          "type": "hls",
+          "subject": "English"
+        },
+        {
+          "label": "Class- 40 | Comprehension Practice",
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6351796596112/6351796596112.m3u8",
+          "type": "hls",
+          "subject": "English"
+        },
+        {
+          "label": "Class- 41 | Comprehension Practice",
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6351964532112/6351964532112.m3u8",
+          "type": "hls",
+          "subject": "English"
+        },
+        {
+          "label": "Class- 42 | Narration Practice Class",
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6352026481112/6352026481112.m3u8",
+          "type": "hls",
+          "subject": "English"
+        },
+        {
+          "label": "Class- 43 | Narration Practice Class",
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6352118149112/6352118149112.m3u8",
+          "type": "hls",
+          "subject": "English"
+        },
+        {
+          "label": "Class- 44 | Conjunction Practice Class",
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6352175568112/6352175568112.m3u8",
+          "type": "hls",
+          "subject": "English"
+        },
+        {
+          "label": "Class- 45 | Conjunction Practice Class",
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6352235321112/6352235321112.m3u8",
+          "type": "hls",
+          "subject": "English"
+        },
+        {
+          "label": "Class- 46 | Comprehension Practice Class",
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6352404757112/6352404757112.m3u8",
+          "type": "hls",
+          "subject": "English"
+        },
+        {
+          "label": "Class- 47 | Comprehension Practice Class",
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6352457155112/6352457155112.m3u8",
+          "type": "hls",
+          "subject": "English"
+        },
+        {
+          "label": "Class- 48 | Comprehension Practice Class",
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6352585645112/6352585645112.m3u8",
+          "type": "hls",
+          "subject": "English"
+        },
+        {
+          "label": "Class- 49 | Comprehension Practice Class",
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6352650241112/6352650241112.m3u8",
+          "type": "hls",
+          "subject": "English"
+        },
+        {
+          "label": "Class- 50 | Slang And Superfluous",
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6352829347112/6352829347112.m3u8",
+          "type": "hls",
+          "subject": "English"
+        },
+        {
+          "label": "Class- 51 | Adverb Practice",
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6352891322112/6352891322112.m3u8",
+          "type": "hls",
+          "subject": "English"
+        },
+        {
+          "label": "Class- 52 | Special Announcement",
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6352946294112/6352946294112.m3u8",
+          "type": "hls",
+          "subject": "English"
+        },
+        {
+          "label": "Class- 53 | Common Errors",
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6353004416112/6353004416112.m3u8",
+          "type": "hls",
+          "subject": "English"
+        },
+        {
+          "label": "Class- 54 | Common Errors",
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6353081059112/6353081059112.m3u8",
+          "type": "hls",
+          "subject": "English"
+        },
+        {
+          "label": "Class- 55 | Common Errors",
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6358418239112/6358418239112.m3u8",
+          "type": "hls",
+          "subject": "English"
+        },
+        {
+          "label": "Class- 56 | Common Errors Mixed Practice",
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6353357682112/6353357682112.m3u8",
+          "type": "hls",
+          "subject": "English"
+        },
+        {
+          "label": "Class- 57 | Common Errors Mixed Practice",
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6353551098112/6353551098112.m3u8",
+          "type": "hls",
+          "subject": "English"
+        },
+        {
+          "label": "Class- 58 | Common Errors Mixed Practice",
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6353498610112/6353498610112.m3u8",
+          "type": "hls",
+          "subject": "English"
+        },
+        {
+          "label": "Class- 59 | Common Errors Mixed Practice",
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6353751388112/6353751388112.m3u8",
+          "type": "hls",
+          "subject": "English"
+        },
+        {
+          "label": "Class- 60 | Fill In The Blanks Practice",
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6353802066112/6353802066112.m3u8",
+          "type": "hls",
+          "subject": "English"
+        },
+        {
+          "label": "Class- 61 | Fill In The Blanks Practice",
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6353865606112/6353865606112.m3u8",
+          "type": "hls",
+          "subject": "English"
+        },
+        {
+          "label": "Class- 62 | Fill In The Blanks Practice",
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6354204623112/6354204623112.m3u8",
+          "type": "hls",
+          "subject": "English"
+        },
+        {
+          "label": "Class- 63 | Fill In The Blanks Practice",
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6354285440112/6354285440112.m3u8",
+          "type": "hls",
+          "subject": "English"
+        },
+        {
+          "label": "Class- 64 | Sentence Improvement Practice",
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6354423229112/6354423229112.m3u8",
+          "type": "hls",
+          "subject": "English"
+        },
+        {
+          "label": "Class- 65 | Sentence Improvement Practice",
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6354501740112/6354501740112.m3u8",
+          "type": "hls",
+          "subject": "English"
+        },
+        {
+          "label": "Class- 66 | Mock Test",
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6354728197112/6354728197112.m3u8",
+          "type": "hls",
+          "subject": "English"
+        },
+        {
+          "label": "Class- 67 | Mock Test",
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6354856587112/6354856587112.m3u8",
+          "type": "hls",
+          "subject": "English"
+        },
+        {
+          "label": "Class- 68 | Mock Test",
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6354925034112/6354925034112.m3u8",
+          "type": "hls",
+          "subject": "English"
+        },
+        {
+          "label": "Class- 69 | Mock Test",
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6355219360112/6355219360112.m3u8",
+          "type": "hls",
+          "subject": "English"
+        },
+        {
+          "label": "Class- 70 | Mock Test",
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6355281946112/6355281946112.m3u8",
+          "type": "hls",
+          "subject": "English"
+        },
+        {
+          "label": "Class- 71 | Mock Test",
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6355349199112/6355349199112.m3u8",
+          "type": "hls",
+          "subject": "English"
+        },
+        {
+          "label": "Class- 72 | Preposition Practice",
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6355590944112/6355590944112.m3u8",
+          "type": "hls",
+          "subject": "English"
+        },
+        {
+          "label": "Class- 73 | Preposition Practice",
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6355650958112/6355650958112.m3u8",
+          "type": "hls",
+          "subject": "English"
+        },
+        {
+          "label": "Class- 74 | Preposition Practice",
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6355701971112/6355701971112.m3u8",
+          "type": "hls",
+          "subject": "English"
+        },
+        {
+          "label": "Class- 75 | Preposition Practice",
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6355758357112/6355758357112.m3u8",
+          "type": "hls",
+          "subject": "English"
+        },
+        {
+          "label": "Class- 76 | Preposition Practice",
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6355821548112/6355821548112.m3u8",
+          "type": "hls",
+          "subject": "English"
+        },
+        {
+          "label": "Class- 77 | Preposition Practice",
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6356135654112/6356135654112.m3u8",
+          "type": "hls",
+          "subject": "English"
+        },
+        {
+          "label": "Class-10 | Comprehension And Tense/Mixed Practice",
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6348645552112/6348645552112.m3u8",
+          "type": "hls",
+          "subject": "English"
+        },
+        {
+          "label": "Class-11 | Comprehension Practice",
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6348714706112/6348714706112.m3u8",
+          "type": "hls",
+          "subject": "English"
+        },
+        {
+          "label": "Class-12 | Comprehension Practice",
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6348871793112/6348871793112.m3u8",
+          "type": "hls",
+          "subject": "English"
+        },
+        {
+          "label": "Class-13 | Modals/Conditionals Practice",
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6348953836112/6348953836112.m3u8",
+          "type": "hls",
+          "subject": "English"
+        },
+        {
+          "label": "Class-14 | Modals/Conditionals Practice",
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6349158052112/6349158052112.m3u8",
+          "type": "hls",
+          "subject": "English"
+        },
+        {
+          "label": "Class-15 | Comprehension & Modals/Conditionals Practice",
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6349214836112/6349214836112.m3u8",
+          "type": "hls",
+          "subject": "English"
+        },
+        {
+          "label": "Class-16 | Comprehension Practice",
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6349285512112/6349285512112.m3u8",
+          "type": "hls",
+          "subject": "English"
+        },
+        {
+          "label": "Class-17 | Verb Practice",
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6349356261112/6349356261112.m3u8",
+          "type": "hls",
+          "subject": "English"
+        },
+        {
+          "label": "Class-18 | Verb Practice",
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6349436324112/6349436324112.m3u8",
+          "type": "hls",
+          "subject": "English"
+        },
+        {
+          "label": "Class-19 | Verb Practice",
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6349709705112/6349709705112.m3u8",
+          "type": "hls",
+          "subject": "English"
+        },
+        {
+          "label": "Class-20 | Verb Practice",
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6349782613112/6349782613112.m3u8",
+          "type": "hls",
+          "subject": "English"
+        },
+        {
+          "label": "Class-21 | Practice Verb Advance/Non Finite Verbs",
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6349839225112/6349839225112.m3u8",
+          "type": "hls",
+          "subject": "English"
+        },
+        {
+          "label": "Class-78 | Preposition Practice",
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6356271917112/6356271917112.m3u8",
+          "type": "hls",
+          "subject": "English"
+        },
+        {
+          "label": "Vocab Class-01",
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6343173424112/6343173424112.m3u8",
+          "type": "hls",
+          "subject": "Vocab Class"
+        },
+        {
+          "label": "Vocab Class-02",
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6343956342112/6343956342112.m3u8",
+          "type": "hls",
+          "subject": "Vocab Class"
+        },
+        {
+          "label": "Vocab Class-03",
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6345019157112/6345019157112.m3u8",
+          "type": "hls",
+          "subject": "Vocab Class"
+        },
+        {
+          "label": "Vocab Class-04",
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6345085759112/6345085759112.m3u8",
+          "type": "hls",
+          "subject": "Vocab Class"
+        },
+        {
+          "label": "Vocab Class-05",
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6345153871112/6345153871112.m3u8",
+          "type": "hls",
+          "subject": "Vocab Class"
+        },
+        {
+          "label": "Vocab Class-06",
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6345328915112/6345328915112.m3u8",
+          "type": "hls",
+          "subject": "Vocab Class"
+        },
+        {
+          "label": "Vocab Class-07",
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6345393477112/6345393477112.m3u8",
+          "type": "hls",
+          "subject": "Vocab Class"
+        },
+        {
+          "label": "Vocab Class-08",
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6345458784112/6345458784112.m3u8",
+          "type": "hls",
+          "subject": "Vocab Class"
+        },
+        {
+          "label": "Vocab Class-09",
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6345536537112/6345536537112.m3u8",
+          "type": "hls",
+          "subject": "Vocab Class"
+        },
+        {
+          "label": "Vocab Class-10",
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6345803781112/6345803781112.m3u8",
+          "type": "hls",
+          "subject": "Vocab Class"
+        },
+        {
+          "label": "Vocab Class-11",
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6345858299112/6345858299112.m3u8",
+          "type": "hls",
+          "subject": "Vocab Class"
+        },
+        {
+          "label": "Vocab Class-12",
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6345916199112/6345916199112.m3u8",
+          "type": "hls",
+          "subject": "Vocab Class"
+        },
+        {
+          "label": "Vocab Class-13",
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6346263983112/6346263983112.m3u8",
+          "type": "hls",
+          "subject": "Vocab Class"
+        },
+        {
+          "label": "Vocab Class-14",
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6346333731112/6346333731112.m3u8",
+          "type": "hls",
+          "subject": "Vocab Class"
+        },
+        {
+          "label": "Vocab Class-15",
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6348189295112/6348189295112.m3u8",
+          "type": "hls",
+          "subject": "Vocab Class"
+        },
+        {
+          "label": "Vocab Class-16",
+          "url": "https://www.youtube.com/watch?v=_1JTJYUQ6U8",
+          "type": "youtube",
+          "subject": "Vocab Class"
+        },
+        {
+          "label": "Vocab Class-17",
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6348315949112/6348315949112.m3u8",
+          "type": "hls",
+          "subject": "Vocab Class"
+        }
+      ]
+    },
+    {
+      "id": "pdfs",
+      "label": "📄 PDFs",
+      "items": [
+        {
+          "label": "19 Dec 2023 Subject verb Agreement Error Practice Sheet",
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/65d73b0770231_Subject verb Agreement Error.pdf",
+          "type": "pdf"
+        },
+        {
+          "label": "2024 Adverb Detecting Errors",
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/66459186d7bb3_2024 ADVERB DETECTING ERRORS.pdf",
+          "type": "pdf"
+        },
+        {
+          "label": "2024 Conjuction detecting errors",
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/663c5e4975c4a_2024 CONJUCTION DETECTING ERRORS_compressed.pdf",
+          "type": "pdf"
+        },
+        {
+          "label": "2024 Narration Change Class Work",
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/66335b4814489_2024 NARRATION CHANGE Class Work Jaideep Sir.pdf",
+          "type": "pdf"
+        },
+        {
+          "label": "2024 Narration Change PYQ",
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/6633637ee7745_2024 NARRATION Change PYQ Jaideep Sir (1).pdf",
+          "type": "pdf"
+        },
+        {
+          "label": "2024 Narration Errors",
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/66336353b6a77_2024 NARRATION ERRORS Jaideep Sir.pdf",
+          "type": "pdf"
+        },
+        {
+          "label": "2024 Non- Finite Verbs Errors",
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/6604fad410095_2024 Non- Finite Verbs Errors Jaideep Sir_compressed.pdf",
+          "type": "pdf"
+        },
+        {
+          "label": "2024 Non- Finite Verbs Fillups",
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/6604fb2505e14_2024 Non- Finite Verbs Fillups_compressed.pdf",
+          "type": "pdf"
+        },
+        {
+          "label": "2024 Non- Finite Verbs Improvements",
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/6604fb592d392_2024 Non- Finite Verbs Improvements_compressed.pdf",
+          "type": "pdf"
+        },
+        {
+          "label": "2024 Preposition Errors",
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/66826c80bf0f3_2024 Preposition Errors Jaideep Sir.pdf",
+          "type": "pdf"
+        },
+        {
+          "label": "2024 Voice Change Class Work",
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/66263e52d61df_2024 VOICE CHANGE Class Work Jaideep Sir (1).pdf",
+          "type": "pdf"
+        },
+        {
+          "label": "2024 Voice Change PYQ",
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/66263e6cea9f4_2024 VOICE Change PYQ Jaideep Sir (1).pdf",
+          "type": "pdf"
+        },
+        {
+          "label": "2024 Voice Errors",
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/66263e2926d4c_2024 VOICE ERRORS Jaideep Sir (1).pdf",
+          "type": "pdf"
+        },
+        {
+          "label": "Adverb Fill in the blanks",
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/65967f73ee74e_Adverb Fill In The Blanks.pdf",
+          "type": "pdf"
+        },
+        {
+          "label": "Adverb Sentence Improvement",
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/65967f3dc55ad_Adverb Sentence Improvements.pdf",
+          "type": "pdf"
+        },
+        {
+          "label": "Adverb detecting Error",
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/65967e1679b05_Adverb Detecting Errors.pdf",
+          "type": "pdf"
+        },
+        {
+          "label": "Article Error Practice",
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/659e1eb15b9bd_Articles Error Practice pdf.pdf",
+          "type": "pdf"
+        },
+        {
+          "label": "Articles In Set Expression",
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/659e1e34c9c58_Articles in Set Expressions.pdf",
+          "type": "pdf"
+        },
+        {
+          "label": "Comprehension Class -1",
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/65e6683377c14_Comprehension Class 01 Jaideep Sir.pdf",
+          "type": "pdf"
+        },
+        {
+          "label": "Comprehension Class-05",
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/65ef42635c798_Comprehension Class 05 Jaideep Sir.pdf",
+          "type": "pdf"
+        },
+        {
+          "label": "Comprehension Class-06",
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/65efdb045340a_Comprehension Class 06 Jaideep Sir.pdf",
+          "type": "pdf"
+        },
+        {
+          "label": "Comprehension Class-07",
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/65f280ae55bbb_Comprehension Class 07 Jaideep Sir.pdf",
+          "type": "pdf"
+        },
+        {
+          "label": "Comprehension Class-08",
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/65f9489b831a2_Comprehension Class 08 Jaideep Sir.pdf",
+          "type": "pdf"
+        },
+        {
+          "label": "Comprehension Class-09",
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/65fabaea176da_Comprehension Class 09 Jaideep Sir.pdf",
+          "type": "pdf"
+        },
+        {
+          "label": "Comprehension Class-10",
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/660f81dabedce_Comprehension Class 10 Jaideep Sir.pdf",
+          "type": "pdf"
+        },
+        {
+          "label": "Comprehension Class-11",
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/660f81efa80bb_Comprehension Class 11 Jaideep Sir.pdf",
+          "type": "pdf"
+        },
+        {
+          "label": "Comprehension Class-12",
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/660f820138a18_Comprehension Class 12 Jaideep Sir-1.pdf",
+          "type": "pdf"
+        },
+        {
+          "label": "Comprehension Class-13",
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/661cbbace5397_Comprehension Class 13 Jaideep Sir_compressed.pdf",
+          "type": "pdf"
+        },
+        {
+          "label": "Comprehension Class-14",
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/661cbbccb0c66_Comprehension Class 14 Jaideep Sir_compressed.pdf",
+          "type": "pdf"
+        },
+        {
+          "label": "Comprehension Class-15",
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/661e03f4c0b97_Comprehension Class 15 Jaideep Sir.pdf",
+          "type": "pdf"
+        },
+        {
+          "label": "Comprehension Class-16",
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/66220b1107ac4_Comprehension Class 16 Jaideep Sir (1).pdf",
+          "type": "pdf"
+        },
+        {
+          "label": "Comprehension Class-17",
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/66220b23e67f0_Comprehension Class 17 Jaideep Sir (1).pdf",
+          "type": "pdf"
+        },
+        {
+          "label": "Comprehension Class-18",
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/66220aa3d4d62_Comprehension Class 18 Jaideep Sir.pdf",
+          "type": "pdf"
+        },
+        {
+          "label": "Comprehension Class-19",
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/66263e178b419_Comprehension Class 19 Jaideep Sir.pdf",
+          "type": "pdf"
+        },
+        {
+          "label": "Comprehension Class-2",
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/65e7ecdb50d35_Comprehension Class 02 Jaideep Sir.pdf",
+          "type": "pdf"
+        },
+        {
+          "label": "Comprehension Class-20",
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/6628c74d9ed32_Comprehension Class 20 Jaideep Sir.pdf",
+          "type": "pdf"
+        },
+        {
+          "label": "Comprehension Class-21",
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/663a038fc3db7_Comprehension Class 21 Jaideep Sir...pdf",
+          "type": "pdf"
+        },
+        {
+          "label": "Comprehension Class-22",
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/663a03a699cd9_Comprehension Class 22 Jaideep Sir.pdf",
+          "type": "pdf"
+        },
+        {
+          "label": "Comprehension Class-4",
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/65ea9b07e8c8c_Comprehension Class 04 Jaideep Sir.pdf",
+          "type": "pdf"
+        },
+        {
+          "label": "Conjuction Practice",
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/658c14961013c_CONJUCTION PRACTICE BATCH.pdf",
+          "type": "pdf"
+        },
+        {
+          "label": "Fixed Prepositions",
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/66826c615c70c_Fixed Prepositions Jaideep Sir.pdf",
+          "type": "pdf"
+        },
+        {
+          "label": "Form of Verb",
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/65967dce8d86c_Form of verbs......pdf",
+          "type": "pdf"
+        },
+        {
+          "label": "Modals",
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/658c14ccd3501_MODALS PRACTICE BATCH.pdf",
+          "type": "pdf"
+        },
+        {
+          "label": "Modals & Conditionals Practice",
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/65f948c0177a0_Modals & conditionals Practice Batch 2024 Jaideep Sir.pdf",
+          "type": "pdf"
+        },
+        {
+          "label": "Narration Change Practice",
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/658c1506df4e2_NARRATION CHANGE PRACTICE BATCH.pdf",
+          "type": "pdf"
+        },
+        {
+          "label": "Narration Practice",
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/658c153174dbc_NARRATION PRACTICE BATCH.pdf",
+          "type": "pdf"
+        },
+        {
+          "label": "Non - Finite Verbs Detecting Error",
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/659e1f32ad6c6_The Non- Finite Verbs detecting errors.pdf",
+          "type": "pdf"
+        },
+        {
+          "label": "Non - Finite Verbs Fill in the blanks",
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/659e1e761d3d2_The Non-Finite Verbs Fill In The Blanks.pdf",
+          "type": "pdf"
+        },
+        {
+          "label": "Non - Finite Verbs Improvement",
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/659e1ded3ce9b_The Non- Finite Verbs Improvements.pdf",
+          "type": "pdf"
+        },
+        {
+          "label": "Para Jumble Level-1",
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/65d436bb89be6_Para Jumbles Level-01.pdf",
+          "type": "pdf"
+        },
+        {
+          "label": "Para Jumble Level-2",
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/65d436d8bbf30_Para Jumbles Level-02.pdf",
+          "type": "pdf"
+        },
+        {
+          "label": "Para Jumble Level-3",
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/65d436ff63ead_Para Jumbles Level-03.pdf",
+          "type": "pdf"
+        },
+        {
+          "label": "Para Jumble Level-4",
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/65d43722150d0_Para Jumbles Level-04.pdf",
+          "type": "pdf"
+        },
+        {
+          "label": "Preparation (Self Study)",
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/659f7920c2723_Preposition (Self Study) (1).pdf",
+          "type": "pdf"
+        },
+        {
+          "label": "Proposition detecting Error",
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/659f79d622bf8_Preposition Detecting Errors.pdf",
+          "type": "pdf"
+        },
+        {
+          "label": "Question Tag Practice",
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/658c157d85093_Q.TAG PRACTICE BATCH.pdf",
+          "type": "pdf"
+        },
+        {
+          "label": "SSC CGL MAINS 2023",
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/66697892a86ca_SSC CGL MAINS 2023.pdf",
+          "type": "pdf"
+        },
+        {
+          "label": "SSC CGL PRE 2023",
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/6669787973adc_SSC CGL PRE 2023.pdf",
+          "type": "pdf"
+        },
+        {
+          "label": "SSC Cgl Mains 2023",
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/65c207fb0fc81_SSC CGL MAINS 2023.pdf",
+          "type": "pdf"
+        },
+        {
+          "label": "SSC Cgl Pre 2023",
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/65c2079f3f028_SSC CGL PRE 2023.pdf",
+          "type": "pdf"
+        },
+        {
+          "label": "SSC Chal Pre 2023",
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/65bc90a20ab3a_SSC CHSL PRE - 2023.pdf",
+          "type": "pdf"
+        },
+        {
+          "label": "SSC Chal Pre 2023",
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/65c207d0dfbe2_SSC CHSL PRE - 2023.pdf",
+          "type": "pdf"
+        },
+        {
+          "label": "Slang and Superfluous Practice",
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/658c15a5a2a4a_Slang and Superfluous PRACTICE BATCH.pdf",
+          "type": "pdf"
+        },
+        {
+          "label": "Subject Verb Agreement",
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/658c13cf43510_Subject Verb Agreement PRACTICE BATCH.pdf",
+          "type": "pdf"
+        },
+        {
+          "label": "TIPS to solve a Passage",
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/662a4bbc44b53_TIPS to solve a Passage.pdf",
+          "type": "pdf"
+        },
+        {
+          "label": "Tense 2024 Practice",
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/657aa702a00c1_TENSE 2024 PRACTICE BATCH.pdf",
+          "type": "pdf"
+        },
+        {
+          "label": "Tense Practice",
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/65e7ed0d572aa_Tense Practice Batch 2024 Jaideep Sir.pdf",
+          "type": "pdf"
+        },
+        {
+          "label": "Unseen Passage",
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/662a4bc93199b_Unseen Passage.pdf",
+          "type": "pdf"
+        },
+        {
+          "label": "Verb 2024 Practice Batch",
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/66067f66045e9_Verb 2024 Practice Batch.pdf",
+          "type": "pdf"
+        },
+        {
+          "label": "Verb Detecting Error",
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/65967fc67cb8e_Verb Detecting Errors.pdf",
+          "type": "pdf"
+        },
+        {
+          "label": "Voice Change",
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/658c1408dcbf4_VOICE CHANGE PRACTICE BATCH.pdf",
+          "type": "pdf"
+        },
+        {
+          "label": "Voice Practice",
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/658c14629b208_VOICE PRACTICE BATCH.pdf",
+          "type": "pdf"
+        },
+        {
+          "label": "Comprehension Class-3",
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/65e9b3df7384e_Comprehension Class 03 Jaideep Sir.pdf",
+          "type": "pdf"
+        },
+        {
+          "label": "VOCAB CLASS 1 ON APP",
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/65e86779c3fa8_VOCAB CLASS 1 ON APP.pdf",
+          "type": "pdf"
+        },
+        {
+          "label": "VOCAB CLASS 10 ON APP",
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/65e8c319b4829_VOCAB CLASS 10.pdf",
+          "type": "pdf"
+        },
+        {
+          "label": "VOCAB CLASS 11 ON APP",
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/65e8c394b3018_VOCAB CLASS 11.pdf",
+          "type": "pdf"
+        },
+        {
+          "label": "VOCAB CLASS 12 ON APP",
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/65e8c41bc90ed_ONE WORD SUBSTITUTION TEST.pdf",
+          "type": "pdf"
+        },
+        {
+          "label": "VOCAB CLASS 13 ON APP",
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/65e8c49abc7de_VOCAB CLASS 13 ON APP.pdf",
+          "type": "pdf"
+        },
+        {
+          "label": "VOCAB CLASS 14 ON APP",
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/65e8c97c5f971_VOCAB CLASS 14 ON APP.pdf",
+          "type": "pdf"
+        },
+        {
+          "label": "VOCAB CLASS 15 ON APP",
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/65e8ca0a9107f_VOCAB CLASS 15 ON APP.pdf",
+          "type": "pdf"
+        },
+        {
+          "label": "VOCAB CLASS 16 ON APP",
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/65e8caa7f2a40_VOCAB CLASS 16 ON APP.pdf",
+          "type": "pdf"
+        },
+        {
+          "label": "VOCAB CLASS 17 ON APP",
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/65e8cb27ded50_VOCAB CLASS 17 ON APP.pdf",
+          "type": "pdf"
+        },
+        {
+          "label": "VOCAB CLASS 2 ON APP",
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/65e867b6796c7_VOCAB CLASS 2 ON APP.pdf",
+          "type": "pdf"
+        },
+        {
+          "label": "VOCAB CLASS 3 ON APP",
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/65e86820c3cec_VOCAB CLASS 3 ON APP.pdf",
+          "type": "pdf"
+        },
+        {
+          "label": "VOCAB CLASS 4 ON APP",
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/65e8c049a32b1_VOCAB CLASS 4_compressed.pdf",
+          "type": "pdf"
+        },
+        {
+          "label": "VOCAB CLASS 5 ON APP",
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/65e8c0e24a2cb_VOCAB CLASS 5.pdf",
+          "type": "pdf"
+        },
+        {
+          "label": "VOCAB CLASS 6 ON APP",
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/65e8c1603e067_VOCAB CLASS 6.pdf",
+          "type": "pdf"
+        },
+        {
+          "label": "VOCAB CLASS 7 ON APP",
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/65e8c1cd9427e_VOCAB CLASS 7.pdf",
+          "type": "pdf"
+        },
+        {
+          "label": "VOCAB CLASS 8 ON APP",
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/65e8c2394889c_VOCAB CLASS -8.pdf",
+          "type": "pdf"
+        },
+        {
+          "label": "VOCAB CLASS 9 ON APP",
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/65e8c29ad360e_VOCAB CLASS -9.pdf",
+          "type": "pdf"
+        }
+      ]
+    }
+  ],
+  "category": "government"
+}

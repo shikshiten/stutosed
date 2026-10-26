@@ -1,0 +1,1733 @@
+{
+  "id": "maths-special-1",
+  "name": "Mathematics Special 1",
+  "subname": "Maths Special 1 • Gagan Pratap Sir",
+  "teacher": "Gagan Pratap Sir",
+  "subject": "Maths",
+  "thumb": "/thumbnails/subjects/maths_special_1.svg",
+  "tabs": [
+    {
+      "id": "videos",
+      "label": "▶ Videos",
+      "items": [
+        {
+          "id": "maths-special-1-loki-v-1",
+          "label": "[Number System] Class-01 –– Number System – Gagan sir",
+          "url": "https://selectionwayrecordedmp4.hranker.com/561/68e3669f10c7d671132e56ab/hls/master.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-special-1-loki-v-3",
+          "label": "[Number System] Class-02 –– Number System – Gagan sir",
+          "url": "https://selectionwayrecordedmp4.hranker.com/561/68e3f88210c7d6711353db5c/hls/master.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-special-1-loki-v-5",
+          "label": "[Number System] Class-03 –– Number System – Gagan sir",
+          "url": "https://selectionwayrecordedmp4.hranker.com/561/68e4f80e290f277f35542716/hls/master.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-special-1-loki-v-7",
+          "label": "[Number System] Class-04 –– Number System – Gagan sir",
+          "url": "https://selectionwayrecordedmp4.hranker.com/561/68e683b8c181958fac2d7f09/hls/master.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-special-1-loki-v-9",
+          "label": "[Number System] Class -05 –– Number System – Gagan sir",
+          "url": "https://selectionwayrecordedmp4.hranker.com/561/68e7d4a12201cbe84e9e7e16/hls/master.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-special-1-loki-v-11",
+          "label": "[Number System] Class -06 –– Number System – Gagan sir",
+          "url": "https://selectionwayrecordedmp4.hranker.com/561/68ebe7d420bd4a562fa9214f/hls/master.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-special-1-loki-v-13",
+          "label": "[Number System] Class -07 –– Number System – Gagan sir",
+          "url": "https://selectionwayrecordedmp4.hranker.com/561/68ed076b20bd4a562fdb07e8/hls/master.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-special-1-loki-v-15",
+          "label": "[Number System] Class -08 –– Number System – Gagan sir",
+          "url": "https://selectionwayrecordedmp4.hranker.com/561/68ee65735f33a20cd5cd250a/hls/master.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-special-1-loki-v-17",
+          "label": "[Number System] Class -09 –– Number System – Gagan sir",
+          "url": "https://selectionwayrecordedmp4.hranker.com/561/68efcce6d3d74585a62560fe/hls/master.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-special-1-loki-v-19",
+          "label": "[Number System] Class -10 –– Number System – Gagan sir",
+          "url": "https://selectionwayrecordedmp4.hranker.com/561/68f1086835a531ec8d549cbd/hls/master.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-special-1-loki-v-21",
+          "label": "[Number System] Class -11 –– Number System – Gagan sir",
+          "url": "https://selectionwaylive.hranker.com/561/68f2e75acadb3e241f9939c4/playlist-mpl-vod.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-special-1-loki-v-23",
+          "label": "[Number System] Class -12 –– Number System – Gagan sir",
+          "url": "https://selectionwaylive.hranker.com/561/68ff951bbed68c50dde07441/playlist-mpl-vod.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-special-1-loki-v-25",
+          "label": "[Number System] Class -13 –– Number System – Gagan sir",
+          "url": "https://selectionwaylive.hranker.com/561/6900dd895085387730e0231c/playlist-mpl-vod.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-special-1-loki-v-27",
+          "label": "[Number System] Class -14 –– Number System – Gagan sir",
+          "url": "https://selectionwaylive.hranker.com/561/6902291df48d1caffd7ae5c5/playlist-mpl-vod.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-special-1-loki-v-29",
+          "label": "[Number System] Class -15 –– Number System – Gagan sir",
+          "url": "https://selectionwaylive.hranker.com/561/690371caf48d1caffd134684/playlist-mpl-vod.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-special-1-loki-v-31",
+          "label": "[Number System] Class -16 –– Number System – Gagan sir",
+          "url": "https://selectionwaylive.hranker.com/561/6907549a6aeca24e9318d8d6/playlist-mpl-vod.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-special-1-loki-v-33",
+          "label": "[Number System] Class -17 –– Number System – Gagan sir",
+          "url": "https://selectionwaylive.hranker.com/561/6909927b6aeca24e93e86fb8/playlist-mpl-vod.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-special-1-loki-v-35",
+          "label": "[Number System] Class -18 –– Number System – Gagan sir",
+          "url": "https://selectionwaylive.hranker.com/561/690b77cf563adc39b9ae8cc9/playlist-mpl-vod.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-special-1-loki-v-37",
+          "label": "[Number System] Class -19 –– Number System – Gagan sir",
+          "url": "https://selectionwaylive.hranker.com/561/690ce0716aeca24e93727190/playlist-mpl-vod.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-special-1-loki-v-39",
+          "label": "[Number System] Class -20 –– Number System – Gagan sir",
+          "url": "https://selectionwaylive.hranker.com/561/690eea2f6aeca24e933c184f/playlist-mpl-vod.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-special-1-loki-v-41",
+          "label": "[Number System] Class -21 –– Number System – Gagan sir",
+          "url": "https://selectionwaylive.hranker.com/561/6911478b932c0deb70248815/playlist-mpl-vod.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-special-1-loki-v-43",
+          "label": "[Calculation and Simplification] Class -01  –– Calculation and Simplification – Gagan sir",
+          "url": "https://selectionwayrecordedmp4.hranker.com/561/6912d529932c0deb70be72fc/hls/master.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-special-1-loki-v-45",
+          "label": "[Calculation and Simplification] Class -02  –– Calculation and Simplification – Gagan sir",
+          "url": "https://selectionwaylive.hranker.com/561/691339a2932c0deb70b2641c/playlist-mpl-vod.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-special-1-loki-v-47",
+          "label": "[Calculation and Simplification] Class -03  –– Calculation and Simplification – Gagan sir",
+          "url": "https://selectionwaylive.hranker.com/561/6914a37080d6461558e84c5b/playlist-mpl-vod.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-special-1-loki-v-49",
+          "label": "[Calculation and Simplification] Class -04  –– Calculation and Simplification – Gagan sir",
+          "url": "https://selectionwaylive.hranker.com/561/691a0d12932c0deb70f1c2c3/playlist-mpl-vod.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-special-1-loki-v-51",
+          "label": "[Calculation and Simplification] Class -05  –– Calculation and Simplification – Gagan sir",
+          "url": "https://selectionwaylive.hranker.com/561/691b433b39642e91889fb7ed/playlist-mpl-vod.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-special-1-loki-v-53",
+          "label": "[Calculation and Simplification] Class -06  –– Calculation and Simplification – Gagan sir",
+          "url": "https://selectionwaylive.hranker.com/561/691c8e7239642e9188a11ab7/playlist-mpl-vod.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-special-1-loki-v-55",
+          "label": "[Calculation and Simplification] Class -07  –– Calculation and Simplification – Gagan sir",
+          "url": "https://selectionwaylive.hranker.com/561/691df26a39642e9188a2d146/playlist-mpl-vod.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-special-1-loki-v-57",
+          "label": "[Calculation and Simplification] Class -08  –– Calculation and Simplification – Gagan sir",
+          "url": "https://selectionwaylive.hranker.com/561/691f48d739642e9188a44674/playlist-mpl-vod.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-special-1-loki-v-59",
+          "label": "[Calculation and Simplification] Class -09  –– Calculation and Simplification – Gagan sir",
+          "url": "https://selectionwaylive.hranker.com/561/69219fd6dd258fd32398d51a/playlist-mpl-vod.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-special-1-loki-v-61",
+          "label": "[Calculation and Simplification] Class -10  –– Calculation and Simplification – Gagan sir",
+          "url": "https://selectionwaylive.hranker.com/561/69260081dd258fd323fe6f95/playlist-mpl-vod.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-special-1-loki-v-63",
+          "label": "[Calculation and Simplification] Class -11  –– Calculation and Simplification – Gagan sir",
+          "url": "https://selectionwaylive.hranker.com/561/69273407dd258fd323fa54d7/playlist-mpl-vod.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-special-1-loki-v-65",
+          "label": "[Calculation and Simplification] Class -12  –– Calculation and Simplification – Gagan sir",
+          "url": "https://selectionwaylive.hranker.com/561/6928311edd258fd323beb3b1/playlist-mpl-vod.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-special-1-loki-v-67",
+          "label": "[Surds and Indices By Gagan sir] Class - 01 –– Surds and Indices By Gagan sir",
+          "url": "https://selectionwaylive.hranker.com/561/692c91a0dd258fd323ff134d/playlist-mpl-vod.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-special-1-loki-v-69",
+          "label": "[Surds and Indices By Gagan sir] Class - 02 –– Surds and Indices By Gagan sir",
+          "url": "https://selectionwaylive.hranker.com/561/692d806edd258fd323303ab7/playlist-mpl-vod.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-special-1-loki-v-71",
+          "label": "[Surds and Indices By Gagan sir] Class - 03 –– Surds and Indices By Gagan sir",
+          "url": "https://selectionwaylive.hranker.com/561/692eb31bdd258fd3239453ab/playlist-mpl-vod.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-special-1-loki-v-73",
+          "label": "[Surds and Indices By Gagan sir] Class - 04 –– Surds and Indices By Gagan sir",
+          "url": "https://selectionwaylive.hranker.com/561/69301151dd258fd323433108/playlist-mpl-vod.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-special-1-loki-v-75",
+          "label": "[Surds and Indices By Gagan sir] Class - 05 –– Surds and Indices By Gagan sir",
+          "url": "https://selectionwaylive.hranker.com/561/69314cdedd258fd323fc8522/playlist-mpl-vod.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-special-1-loki-v-77",
+          "label": "[Surds and Indices By Gagan sir] Class - 06 –– Surds and Indices By Gagan sir",
+          "url": "https://selectionwaylive.hranker.com/561/69340034dd258fd32364d2bf/playlist-mpl-vod.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-special-1-loki-v-79",
+          "label": "[Surds and Indices By Gagan sir] Class - 07 –– Surds and Indices By Gagan sir",
+          "url": "https://selectionwayrecordedmp4.hranker.com/561/6936df1f6385517afa826069/hls/master.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-special-1-loki-v-81",
+          "label": "[Surds and Indices By Gagan sir] Class - 08 –– Surds and Indices By Gagan sir",
+          "url": "https://selectionwaylive.hranker.com/561/6937eb926385517afa5894ad/playlist-mpl-vod.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-special-1-loki-v-83",
+          "label": "[Surds and Indices By Gagan sir] Class - 09 –– Surds and Indices By Gagan sir",
+          "url": "https://selectionwaylive.hranker.com/561/69393b716385517afaf33949/playlist-mpl-vod.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-special-1-loki-v-85",
+          "label": "[Surds and Indices By Gagan sir] Class - 10 –– Surds and Indices By Gagan sir",
+          "url": "https://selectionwaylive.hranker.com/561/693aad2d6385517afaa506be/playlist-mpl-vod.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-special-1-loki-v-87",
+          "label": "[LCM and HCF By Gagan sir] Class - 01 –– LCM and HCF By Gagan sir",
+          "url": "https://selectionwaylive.hranker.com/561/693d347c6385517afaa0852e/playlist-mpl-vod.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-special-1-loki-v-89",
+          "label": "[LCM and HCF By Gagan sir] Class - 02 –– LCM and HCF By Gagan sir",
+          "url": "https://selectionwaylive.hranker.com/561/693ff04e6385517afabb26bc/playlist-mpl-vod.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-special-1-loki-v-91",
+          "label": "[LCM and HCF By Gagan sir] Class - 03 –– LCM and HCF By Gagan sir",
+          "url": "https://selectionwaylive.hranker.com/561/694122f96385517afa145cd3/playlist-mpl-vod.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-special-1-loki-v-93",
+          "label": "[LCM and HCF By Gagan sir] Class - 04 –– LCM and HCF By Gagan sir",
+          "url": "https://selectionwaylive.hranker.com/561/694284006385517afabe2fc9/playlist-mpl-vod.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-special-1-loki-v-95",
+          "label": "[LCM and HCF By Gagan sir] Class - 05 –– LCM and HCF By Gagan sir",
+          "url": "https://selectionwaylive.hranker.com/561/69466779df16ce646391de3c/playlist-mpl-vod.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-special-1-loki-v-97",
+          "label": "[LCM and HCF By Gagan sir] Class - 06 –– LCM and HCF By Gagan sir",
+          "url": "https://selectionwaylive.hranker.com/561/694a9189b38db8674bc22cb1/playlist-mpl-vod.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-special-1-loki-v-99",
+          "label": "[LCM and HCF By Gagan sir] Class - 07 –– LCM and HCF By Gagan sir",
+          "url": "https://selectionwaylive.hranker.com/561/694bc5282feca20f817f3ffc/playlist-mpl-vod.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-special-1-loki-v-101",
+          "label": "[LCM and HCF By Gagan sir] Class - 08 –– LCM and HCF By Gagan sir",
+          "url": "https://selectionwaylive.hranker.com/561/694d0825b54cadeb61a82f45/playlist-mpl-vod.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-special-1-loki-v-103",
+          "label": "[LCM and HCF By Gagan sir] Class - 09 –– LCM and HCF By Gagan sir",
+          "url": "https://selectionwaylive.hranker.com/561/69517592b54cadeb61687a7b/playlist-mpl-vod.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-special-1-loki-v-105",
+          "label": "[LCM and HCF By Gagan sir] Class - 10 –– LCM and HCF By Gagan sir",
+          "url": "https://selectionwaylive.hranker.com/561/6953a402b54cadeb6158a5f1/playlist-mpl-vod.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-special-1-loki-v-107",
+          "label": "[LCM and HCF By Gagan sir] Class - 11 –– LCM and HCF By Gagan sir",
+          "url": "https://selectionwaylive.hranker.com/561/6956b948c1e281b464da9f92/playlist-mpl-vod.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-special-1-loki-v-109",
+          "label": "[2D Mensuration by Gagan sir] Class - 01 –– 2D Mensuration by Gagan sir",
+          "url": "https://selectionwaylive.hranker.com/561/697afa50c566674bff9a26b4/playlist-mpl-vod.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-special-1-loki-v-111",
+          "label": "[2D Mensuration by Gagan sir] Class - 02 –– 2D Mensuration by Gagan sir",
+          "url": "https://selectionwaylive.hranker.com/561/697c3dac4d8dc840697db7d4/playlist-mpl-vod.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-special-1-loki-v-113",
+          "label": "[2D Mensuration by Gagan sir] Class - 03 –– 2D Mensuration by Gagan sir",
+          "url": "https://selectionwaylive.hranker.com/561/6981cc3f4ca8c7fbe811b1ef/playlist-mpl-vod.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-special-1-loki-v-115",
+          "label": "[2D Mensuration by Gagan sir] Class - 04 –– 2D Mensuration by Gagan sir",
+          "url": "https://selectionwaylive.hranker.com/561/698460a9fdd21a8a2d15e3f9/playlist-mpl-vod.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-special-1-loki-v-117",
+          "label": "[2D Mensuration by Gagan sir] Class - 05 –– 2D Mensuration by Gagan sir",
+          "url": "https://selectionwaylive.hranker.com/561/698981975b61b5fe00058d80/playlist-mpl-vod.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-special-1-loki-v-119",
+          "label": "[2D Mensuration by Gagan sir] Class - 06 –– 2D Mensuration by Gagan sir",
+          "url": "https://selectionwaylive.hranker.com/561/698af1384167f565027aa029/playlist-mpl-vod.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-special-1-loki-v-121",
+          "label": "[2D Mensuration by Gagan sir] Class - 07 –– 2D Mensuration by Gagan sir",
+          "url": "https://selectionwaylive.hranker.com/561/698c1d5ca003679fb8b5fe9b/playlist-mpl-vod.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-special-1-loki-v-123",
+          "label": "[2D Mensuration by Gagan sir] Class - 08 –– 2D Mensuration by Gagan sir",
+          "url": "https://selectionwaylive.hranker.com/561/698da39d8f7f447d5623375d/playlist-mpl-vod.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-special-1-loki-v-125",
+          "label": "[2D Mensuration by Gagan sir] Class - 09 –– 2D Mensuration by Gagan sir",
+          "url": "https://selectionwaylive.hranker.com/561/69944f8c399756d4923fbd68/playlist-mpl-vod.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-special-1-loki-v-127",
+          "label": "[2D Mensuration by Gagan sir] Class - 10 –– 2D Mensuration by Gagan sir",
+          "url": "https://selectionwaylive.hranker.com/561/698ef29f466e8361a4e88708/playlist-mpl-vod.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-special-1-loki-v-129",
+          "label": "[2D Mensuration by Gagan sir] Class - 11 –– 2D Mensuration by Gagan sir",
+          "url": "https://selectionwaylive.hranker.com/561/69983bd5399756d4926b3228/playlist-mpl-vod.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-special-1-loki-v-131",
+          "label": "[2D Mensuration by Gagan sir] Class - 12 –– 2D Mensuration by Gagan sir",
+          "url": "https://selectionwayrecordedmp4.hranker.com/561/699d48ef399756d4929906ab/hls/master.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-special-1-loki-v-133",
+          "label": "[2D Mensuration by Gagan sir] Class - 13 –– 2D Mensuration by Gagan sir",
+          "url": "https://selectionwaylive.hranker.com/561/699d65da399756d4929bbb6b/playlist-mpl-vod.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-special-1-loki-v-135",
+          "label": "[2D Mensuration by Gagan sir] Class - 14 –– 2D Mensuration by Gagan sir",
+          "url": "https://selectionwayrecordedmp4.hranker.com/561/69a12690a2b1ae043322a161/hls/master.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-special-1-loki-v-137",
+          "label": "[2D Mensuration by Gagan sir] Class - 15 –– 2D Mensuration by Gagan sir",
+          "url": "https://selectionwaylive.hranker.com/561/69a16048a2b1ae043327bec4/playlist-mpl-vod.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-special-1-loki-v-139",
+          "label": "[3D Mensuration by Gagan sir] Class-01 –– 3D Mensuration by Gagan sir",
+          "url": "https://selectionwaylive.hranker.com/561/69aa6bffa2b1ae043344c35d/playlist-mpl-vod.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-special-1-loki-v-141",
+          "label": "[Problem on Ages By Gagan sir] Class - 01 –– Problem on Ages By Gagan sir",
+          "url": "https://selectionwaylive.hranker.com/561/695ced642feca20f81d0c4b0/playlist-mpl-vod.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-special-1-loki-v-143",
+          "label": "[Problem on Ages By Gagan sir] Class - 02 –– Problem on Ages By Gagan sir",
+          "url": "https://selectionwaylive.hranker.com/561/695e4623027f25d29e5f4e1b/playlist-mpl-vod.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-special-1-loki-v-145",
+          "label": "[Problem on Ages By Gagan sir] Class - 03 –– Problem on Ages By Gagan sir",
+          "url": "https://selectionwaylive.hranker.com/561/695f7b43027f25d29e91cb81/playlist-mpl-vod.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-special-1-loki-v-147",
+          "label": "[Percentage by Gagan sir] Class - 01 –– Percentage by Gagan sir",
+          "url": "https://selectionwaylive.hranker.com/561/696cc469719de161eeed8120/playlist-mpl-vod.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-special-1-loki-v-149",
+          "label": "[Percentage by Gagan sir] Class - 02 –– Percentage by Gagan sir",
+          "url": "https://selectionwaylive.hranker.com/561/696f1889719de161eefc9b13/playlist-mpl-vod.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-special-1-loki-v-151",
+          "label": "[Percentage by Gagan sir] Class - 03 –– Percentage by Gagan sir",
+          "url": "https://selectionwaylive.hranker.com/561/696fd036719de161ee087a9b/playlist-mpl-vod.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-special-1-loki-v-153",
+          "label": "[Percentage by Gagan sir] Class - 04 –– Percentage by Gagan sir",
+          "url": "https://selectionwaylive.hranker.com/561/6971a609719de161ee16baff/playlist-mpl-vod.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-special-1-loki-v-155",
+          "label": "[Percentage by Gagan sir] Class - 05 –– Percentage by Gagan sir",
+          "url": "https://selectionwaylive.hranker.com/561/6971faf2719de161ee29ec60/playlist-mpl-vod.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-special-1-loki-v-157",
+          "label": "[Percentage by Gagan sir] Class - 06 –– Percentage by Gagan sir",
+          "url": "https://selectionwaylive.hranker.com/561/69780e53c566674bff87e31c/playlist-mpl-vod.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-special-1-loki-v-159",
+          "label": "[Percentage by Gagan sir] Class - 07 –– Percentage by Gagan sir",
+          "url": "https://selectionwaylive.hranker.com/561/6978e673c566674bff8e73b4/playlist-mpl-vod.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-special-1-loki-v-161",
+          "label": "[Percentage by Gagan sir] Class - 08 –– Percentage by Gagan sir",
+          "url": "https://selectionwaylive.hranker.com/561/6979cc50c566674bff94d04e/playlist-mpl-vod.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-special-1-loki-v-163",
+          "label": "[Percentage by Gagan sir] Class - 09 –– Percentage by Gagan sir",
+          "url": "https://selectionwaylive.hranker.com/561/697bad944d8dc840697c1521/playlist-mpl-vod.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-special-1-loki-v-165",
+          "label": "[Percentage by Gagan sir] Class - 10 –– Percentage by Gagan sir",
+          "url": "https://selectionwaylive.hranker.com/561/697fab344ca8c7fbe8fc3fd4/playlist-mpl-vod.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-special-1-loki-v-167",
+          "label": "[Percentage by Gagan sir] Class - 11 –– Percentage by Gagan sir",
+          "url": "https://selectionwaylive.hranker.com/561/6980754c4ca8c7fbe80200f5/playlist-mpl-vod.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-special-1-loki-v-169",
+          "label": "[Percentage by Gagan sir] Class - 12 –– Percentage by Gagan sir",
+          "url": "https://selectionwaylive.hranker.com/561/6981b8674ca8c7fbe80fb84f/playlist-mpl-vod.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-special-1-loki-v-171",
+          "label": "[Percentage by Gagan sir] Class - 13 –– Percentage by Gagan sir",
+          "url": "https://selectionwaylive.hranker.com/561/69831e0bfc5097091c0783c6/playlist-mpl-vod.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-special-1-loki-v-173",
+          "label": "[Percentage by Gagan sir] Class - 14 –– Percentage by Gagan sir",
+          "url": "https://selectionwaylive.hranker.com/561/69845955fdd21a8a2d150ecd/playlist-mpl-vod.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-special-1-loki-v-175",
+          "label": "[Percentage by Gagan sir] Class - 15 –– Percentage by Gagan sir",
+          "url": "https://selectionwaylive.hranker.com/561/6985cb820df4ffd2b9b0aa04/playlist-mpl-vod.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-special-1-loki-v-177",
+          "label": "[Percentage by Gagan sir] Class - 16 –– Percentage by Gagan sir",
+          "url": "https://selectionwaylive.hranker.com/561/6989aba15b61b5fe0009979a/playlist-mpl-vod.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-special-1-loki-v-179",
+          "label": "[Percentage by Gagan sir] Class - 17 –– Percentage by Gagan sir",
+          "url": "https://selectionwaylive.hranker.com/561/698b74e4a003679fb8ae21ba/playlist-mpl-vod.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-special-1-loki-v-181",
+          "label": "[Percentage by Gagan sir] Class - 18 –– Percentage by Gagan sir",
+          "url": "https://selectionwaylive.hranker.com/561/698c7341a003679fb8c17581/playlist-mpl-vod.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-special-1-loki-v-183",
+          "label": "[Percentage by Gagan sir] Class - 19 –– Percentage by Gagan sir",
+          "url": "https://selectionwaylive.hranker.com/561/698db8bd8f7f447d5626bf65/playlist-mpl-vod.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-special-1-loki-v-185",
+          "label": "[Ratio and proportion] Class -1 –– Ratio and proportion – By Gagan Pratap",
+          "url": "https://selectionwaylive.hranker.com/561/69920949e23f1dc0e52d6607/playlist-mpl-vod.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-special-1-loki-v-187",
+          "label": "[Ratio and proportion] Class -2 –– Ratio and proportion – By Gagan Pratap sir",
+          "url": "https://selectionwaylive.hranker.com/561/69934554e23f1dc0e53bb612/playlist-mpl-vod.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-special-1-loki-v-189",
+          "label": "[Ratio and proportion] Class -3 –– Ratio and proportion – By Gagan Pratap sir",
+          "url": "https://selectionwaylive.hranker.com/561/699512c0399756d4924412c2/playlist-mpl-vod.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-special-1-loki-v-191",
+          "label": "[Ratio and proportion] Class -4 –– Ratio and proportion – By Gagan Pratap sir",
+          "url": "https://selectionwaylive.hranker.com/561/69958a98399756d4924b9563/playlist-mpl-vod.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-special-1-loki-v-193",
+          "label": "[Ratio and proportion] Class -5 –– Ratio and proportion – By Gagan Pratap sir",
+          "url": "https://selectionwaylive.hranker.com/561/69995441399756d492730746/playlist-mpl-vod.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-special-1-loki-v-195",
+          "label": "[Ratio and proportion] Class -6 –– Ratio and proportion – By Gagan Pratap sir",
+          "url": "https://selectionwaylive.hranker.com/561/699d0d02399756d49290f7a6/playlist-mpl-vod.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-special-1-loki-v-197",
+          "label": "[Ratio and proportion] Class -7 –– Ratio and proportion – By Gagan Pratap",
+          "url": "https://selectionwaylive.hranker.com/561/699ebd63a2b1ae04330d16dd/playlist-mpl-vod.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-special-1-loki-v-199",
+          "label": "[Ratio and proportion] Class -8 –– Ratio and proportion – By Gagan Pratap",
+          "url": "https://selectionwaylive.hranker.com/561/69a02be4a2b1ae04331d5717/playlist-mpl-vod.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-special-1-loki-v-201",
+          "label": "[Ratio and proportion] Class -9 –– Ratio and proportion – By Gagan Pratap sir",
+          "url": "https://selectionwaylive.hranker.com/561/69a9c84ba2b1ae0433411d94/playlist-mpl-vod.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-special-1-loki-v-203",
+          "label": "[Ratio and proportion] Class -10 –– Ratio and proportion – By Gagan Pratap sir",
+          "url": "https://selectionwaylive.hranker.com/561/69abb09ea2b1ae04334fd7a9/playlist-mpl-vod.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-special-1-loki-v-205",
+          "label": "[Ratio and proportion] Class -11 –– Ratio and proportion – By Gagan Pratap Sir",
+          "url": "https://selectionwaylive.hranker.com/561/69af6cc2a2b1ae0433a8db25/playlist-mpl-vod.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-special-1-loki-v-207",
+          "label": "[Class - 01] आरम्भ Batch –– Class - 01 –– Classification of Numbers (संख्याओं का वर्गीकरण) – by Gagan sir",
+          "url": "https://selectionwayrecordedmp4.hranker.com/561/69ad4882a2b1ae043369156d/hls/master.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-special-1-loki-v-208",
+          "label": "[Class - 02] आरम्भ Batch –– Class - 02 –– Classification of Numbers (संख्याओं का वर्गीकरण) – by Gagan sir",
+          "url": "https://selectionwayrecordedmp4.hranker.com/561/6936e2ef6385517afa9a1bfd/hls/master.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-special-1-loki-v-209",
+          "label": "[Class - 03] आरम्भ Batch –– Class - 03 –– Classification of Numbers (संख्याओं का वर्गीकरण) – by Gagan sir",
+          "url": "https://selectionwayrecordedmp4.hranker.com/561/69390e7bd3220ee0f5093d7c/hls/master.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-special-1-loki-v-210",
+          "label": "[Class - 01] आरम्भ Batch –– Class - 01 –– Sequence and Series ( अनुक्रम और श्रेणी ) by Gagan sir",
+          "url": "https://selectionwayrecordedmp4.hranker.com/561/693fc2376385517afa40ebcc/hls/master.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-special-1-loki-v-211",
+          "label": "[Class - 02] आरम्भ Batch –– Class - 02 –– Sequence and Series ( अनुक्रम और श्रेणी ) by Gagan sir",
+          "url": "https://selectionwaylive.hranker.com/561/6939403c6385517afa1fb07c/playlist-mpl-vod.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-special-1-loki-v-212",
+          "label": "[Class - 03] आरम्भ Batch –– Class - 03 –– Sequence and Series ( अनुक्रम और श्रेणी ) by Gagan sir",
+          "url": "https://selectionwaylive.hranker.com/561/693d11856385517afac4032b/playlist-mpl-vod.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-special-1-loki-v-213",
+          "label": "[Class - 01] आरम्भ Batch –– Class - 01 –– Remainder Theorem (शेषफल प्रमेय –– by Gagan sir",
+          "url": "https://selectionwaylive.hranker.com/561/693fefa26385517afab5e474/playlist-mpl-vod.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-special-1-loki-v-214",
+          "label": "[Class - 02] आरम्भ Batch –– Class - 02 –– Divisibility Rule (विभाज्यता नियम) –– by Gagan sir",
+          "url": "https://selectionwaylive.hranker.com/561/694121566385517afa02ec0b/playlist-mpl-vod.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-special-1-loki-v-215",
+          "label": "[Class - 03] आरम्भ Batch –– Class - 03 –– Divisibility Rule (विभाज्यता नियम) –– by Gagan sir",
+          "url": "https://selectionwaylive.hranker.com/561/694283496385517afab8e952/playlist-mpl-vod.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-special-1-loki-v-216",
+          "label": "[Class - 04] आरम्भ Batch –– Class - 04 –– Divisibility Rule (विभाज्यता नियम) –– by Gagan sir",
+          "url": "https://selectionwaylive.hranker.com/561/6943ebf26385517afa96c0f6/playlist-mpl-vod.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-special-1-loki-v-217",
+          "label": "[Class - 01] आरम्भ Batch –– Class - 01 –– LCM and HCF (ल.स.प.और म.स.प.) –– by Gagan sir",
+          "url": "https://selectionwaylive.hranker.com/561/6946667fdf16ce64638a96f1/playlist-mpl-vod.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-special-1-loki-v-218",
+          "label": "[Class - 02] आरम्भ Batch –– Class - 02 –– LCM and HCF (ल.स.प.और म.स.प.) –– by Gagan sir",
+          "url": "https://selectionwaylive.hranker.com/561/694a9100b38db8674bbc788e/playlist-mpl-vod.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-special-1-loki-v-219",
+          "label": "[Class - 03] आरम्भ Batch –– Class - 03 –– LCM and HCF (ल.स.प.और म.स.प.) –– by Gagan sir",
+          "url": "https://selectionwaylive.hranker.com/561/694bc3fa2feca20f817f2dfa/playlist-mpl-vod.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-special-1-loki-v-220",
+          "label": "[Class - 04] आरम्भ Batch –– Class - 04 –– LCM and HCF (ल.स.प.और म.स.प.) –– by Gagan sir",
+          "url": "https://selectionwaylive.hranker.com/561/694d0790b54cadeb61a1697e/playlist-mpl-vod.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-special-1-loki-v-221",
+          "label": "[Class - 01] आरम्भ Batch –– Class - 01 –– Simplification (सरलीकरण) –– by Gagan sir",
+          "url": "https://selectionwaylive.hranker.com/561/69517475b54cadeb6163d7df/playlist-mpl-vod.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-special-1-loki-v-222",
+          "label": "[Class - 02] आरम्भ Batch –– Class - 02 –– Simplification (सरलीकरण) –– by Gagan sir",
+          "url": "https://selectionwaylive.hranker.com/561/6953a37db54cadeb61512b29/playlist-mpl-vod.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-special-1-loki-v-223",
+          "label": "[Class - 03] आरम्भ Batch –– Class - 03 –– Simplification (सरलीकरण) –– by Gagan sir",
+          "url": "https://selectionwaylive.hranker.com/561/6955625bc1e281b4645fc87b/playlist-mpl-vod.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-special-1-loki-v-236",
+          "label": "[3D Mensuration All Concept and Tricks in single video] आरम्भ Batch –– 3D Mensuration All Concept and Tricks in single video",
+          "url": "https://selectionwayrecordedmp4.hranker.com/561/698d5eaf58d5b773dec341cc/hls/master.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-special-1-loki-v-237",
+          "label": "[Percentage (प्रतिशत)] आरम्भ Batch – Class - 01 –– Percentage (प्रतिशत) – by Gagan sir",
+          "url": "https://selectionwayrecordedmp4.hranker.com/561/69ad4a17795a3ab1161a4cb0/hls/master.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-special-1-loki-v-238",
+          "label": "[Percentage (प्रतिशत)] आरम्भ Batch – Class - 02 –– Percentage (प्रतिशत) – by Gagan sir",
+          "url": "https://selectionwaylive.hranker.com/561/6958cf869ed6d5d242badab5/playlist-mpl-vod.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-special-1-loki-v-239",
+          "label": "[Percentage (प्रतिशत)] आरम्भ Batch – Class - 03 –– Percentage (प्रतिशत) – by Gagan sir",
+          "url": "https://selectionwaylive.hranker.com/561/695b77389ed6d5d242ec5e6f/playlist-mpl-vod.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-special-1-loki-v-240",
+          "label": "[Percentage (प्रतिशत)] आरम्भ Batch – Class - 04 –– Percentage (प्रतिशत) – by Gagan sir",
+          "url": "https://selectionwaylive.hranker.com/561/695cbb502feca20f81cfc95c/playlist-mpl-vod.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-special-1-loki-v-241",
+          "label": "[Percentage (प्रतिशत)] आरम्भ Batch – Class - 05 –– Percentage (प्रतिशत) – by Gagan sir",
+          "url": "https://selectionwaylive.hranker.com/561/695e45cc027f25d29e58bd9f/playlist-mpl-vod.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-special-1-loki-v-242",
+          "label": "[Percentage (प्रतिशत)] आरम्भ Batch – Class - 06 –– Percentage (प्रतिशत) – by Gagan sir",
+          "url": "https://selectionwaylive.hranker.com/561/695f7af3027f25d29e8c4f29/playlist-mpl-vod.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-special-1-loki-v-243",
+          "label": "[Percentage (प्रतिशत)] आरम्भ Batch – Class - 07 –– Percentage (प्रतिशत) – by Gagan sir",
+          "url": "https://selectionwaylive.hranker.com/561/696b30f3719de161eee99233/playlist-mpl-vod.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-special-1-loki-v-244",
+          "label": "[Percentage (प्रतिशत)] आरम्भ Batch – Class - 08 –– Percentage (प्रतिशत) – by Gagan sir",
+          "url": "https://selectionwaylive.hranker.com/561/696dfe25719de161eef4ffc4/playlist-mpl-vod.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-special-1-loki-v-245",
+          "label": "[Percentage (प्रतिशत)] आरम्भ Batch – Class - 09 –– Percentage (प्रतिशत) – by Gagan sir",
+          "url": "https://selectionwaylive.hranker.com/561/696fcf73719de161ee085fe5/playlist-mpl-vod.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-special-1-loki-v-246",
+          "label": "[Percentage (प्रतिशत)] आरम्भ Batch – Class - 10 –– Percentage (प्रतिशत) – by Gagan sir",
+          "url": "https://selectionwaylive.hranker.com/561/6971a26e719de161ee159588/playlist-mpl-vod.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-special-1-loki-v-247",
+          "label": "[Class - 01] आरम्भ Batch –– Class - 01 –– Problem on AGES by Gagan sir",
+          "url": "https://selectionwayrecordedmp4.hranker.com/561/697202905914a96ddfe105dd/hls/master.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-special-1-loki-v-248",
+          "label": "[Class - 02] आरम्भ Batch –– Class - 02 –– Problem on AGES by Gagan sir",
+          "url": "https://selectionwayrecordedmp4.hranker.com/561/697202cb57df4eebc5465b6e/hls/master.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-special-1-loki-v-249",
+          "label": "[Class - 03] आरम्भ Batch –– Class - 03 –– Problem on AGES by Gagan sir",
+          "url": "https://selectionwayrecordedmp4.hranker.com/561/697203140f472d5393e609a3/hls/master.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-special-1-loki-v-250",
+          "label": "[Class -01] आरम्भ Batch –– Class -01 –– Ratio (अनुपात) – by Gagan sir",
+          "url": "https://selectionwaylive.hranker.com/561/6971fa7c719de161ee29b6b8/playlist-mpl-vod.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-special-1-loki-v-251",
+          "label": "[Class -02] आरम्भ Batch –– Class -02 –– Ratio (अनुपात) – by Gagan sir",
+          "url": "https://selectionwaylive.hranker.com/561/69734f8ccc325625a60563f5/playlist-mpl-vod.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-special-1-loki-v-252",
+          "label": "[Class -03] आरम्भ Batch –– Class -03 –– Ratio (अनुपात) – by Gagan sir",
+          "url": "https://selectionwaylive.hranker.com/561/69779fb6c566674bff854279/playlist-mpl-vod.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-special-1-loki-v-253",
+          "label": "[Class -04] आरम्भ Batch –– Class -04 –– Ratio (अनुपात) – by Gagan sir",
+          "url": "https://selectionwaylive.hranker.com/561/6978deddc566674bff8d3db6/playlist-mpl-vod.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-special-1-loki-v-254",
+          "label": "[Class -01] आरम्भ Batch –– Class -01 –– Profit and loss (लाभ और हानि) – by Gagan sir",
+          "url": "https://selectionwaylive.hranker.com/561/6979cbcfc566674bff94b470/playlist-mpl-vod.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-special-1-loki-v-255",
+          "label": "[Class -02] आरम्भ Batch –– Class -02 –– Profit and loss (लाभ और हानि) – by Gagan sir",
+          "url": "https://selectionwaylive.hranker.com/561/697bacdb4d8dc840697bf825/playlist-mpl-vod.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-special-1-loki-v-256",
+          "label": "[Class -03] आरम्भ Batch –– Class -03 –– Profit and loss (लाभ और हानि) – by Gagan sir",
+          "url": "https://selectionwaylive.hranker.com/561/697d788f4ca8c7fbe8eff97a/playlist-mpl-vod.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-special-1-loki-v-257",
+          "label": "[Class -01] आरम्भ Batch –– Class -01 –– Discount छूट – by Gagan sir",
+          "url": "https://selectionwayrecordedmp4.hranker.com/561/69817f2d4ca8c7fbe809c6f8/hls/master.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-special-1-loki-v-258",
+          "label": "[Class -02] आरम्भ Batch –– Class -02 –– Discount छूट – by Gagan sir",
+          "url": "https://selectionwaylive.hranker.com/561/698072134ca8c7fbe8018b27/playlist-mpl-vod.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-special-1-loki-v-259",
+          "label": "[Class -03] आरम्भ Batch –– Class -03 –– Discount छूट – by Gagan sir",
+          "url": "https://selectionwaylive.hranker.com/561/6981a23e4ca8c7fbe80d9b3b/playlist-mpl-vod.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-special-1-loki-v-260",
+          "label": "[Class - 01] आरम्भ Batch –– Class - 01 –– Time and Work (समय और कार्य) – By Gagan Sir",
+          "url": "https://selectionwaylive.hranker.com/561/69831d8efc5097091c0765bc/playlist-mpl-vod.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-special-1-loki-v-261",
+          "label": "[Class - 02] आरम्भ Batch –– Class - 02 –– Time and Work (समय और कार्य) – By Gagan Sir",
+          "url": "https://selectionwaylive.hranker.com/561/698458e1fdd21a8a2d14f0a1/playlist-mpl-vod.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-special-1-loki-v-262",
+          "label": "[Class - 03] आरम्भ Batch –– Class - 03 –– Time and Work (समय और कार्य) – By Gagan Sir",
+          "url": "https://selectionwaylive.hranker.com/561/6985cb1b0df4ffd2b9b08b65/playlist-mpl-vod.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-special-1-loki-v-263",
+          "label": "[Class - 04] आरम्भ Batch –– Class - 04 –– Time and Work (समय और कार्य) – By Gagan Sir",
+          "url": "https://selectionwaylive.hranker.com/561/6989ab5e5b61b5fe0009786d/playlist-mpl-vod.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-special-1-loki-v-264",
+          "label": "[Class - 05] आरम्भ Batch –– Class - 05 –– Time and Work (समय और कार्य) – By Gagan Sir",
+          "url": "https://selectionwaylive.hranker.com/561/698b7484a003679fb8ade331/playlist-mpl-vod.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-special-1-loki-v-265",
+          "label": "[Class - 01] आरम्भ Batch –– Class - 01 –– Pipe and cistern (नल और टंकी) – By Gagan Sir",
+          "url": "https://selectionwaylive.hranker.com/561/698c72d3a003679fb8c13639/playlist-mpl-vod.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-special-1-loki-v-266",
+          "label": "[Class-01] आरम्भ Batch –– Class-01 –– Partnership by Gagan sir",
+          "url": "https://selectionwaylive.hranker.com/561/698ebb958f7f447d563143c5/playlist-mpl-vod.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-special-1-loki-v-267",
+          "label": "[Class-02] आरम्भ Batch –– Class-02 –– Partnership by Gagan sir",
+          "url": "https://selectionwaylive.hranker.com/561/699209bae23f1dc0e52da70e/playlist-mpl-vod.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-special-1-loki-v-268",
+          "label": "[Class-03] आरम्भ Batch –– Class-03 –– Partnership by Gagan sir",
+          "url": "https://selectionwaylive.hranker.com/561/699557f4399756d49246c610/playlist-mpl-vod.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-special-1-loki-v-269",
+          "label": "[Time_Speed_Distance_Class_1] आरम्भ Batch –– Time_Speed_Distance_Class_1",
+          "url": "https://selectionwayrecordedmp4.hranker.com/561/6922929e8b0d4f251f7f7efc/hls/master.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-special-1-loki-v-270",
+          "label": "[Time_Speed_Distance_Class_2] आरम्भ Batch –– Time_Speed_Distance_Class_2",
+          "url": "https://selectionwayrecordedmp4.hranker.com/561/6922929e8b0d4f251f7f7efd/hls/master.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-special-1-loki-v-271",
+          "label": "[Time_Speed_Distance_Class_3] आरम्भ Batch –– Time_Speed_Distance_Class_3",
+          "url": "https://selectionwayrecordedmp4.hranker.com/561/6922929e8b0d4f251f7f7efe/hls/master.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-special-1-loki-v-272",
+          "label": "[Time_Speed_Distance_Class_4] आरम्भ Batch –– Time_Speed_Distance_Class_4",
+          "url": "https://selectionwayrecordedmp4.hranker.com/561/6922929e8b0d4f251f7f7eff/hls/master.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-special-1-loki-v-273",
+          "label": "[Time_Speed_Distance_Class_5] आरम्भ Batch –– Time_Speed_Distance_Class_5",
+          "url": "https://selectionwayrecordedmp4.hranker.com/561/6922929e8b0d4f251f7f7f00/hls/master.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-special-1-loki-v-274",
+          "label": "[Time_Speed_Distance_Class_6] आरम्भ Batch –– Time_Speed_Distance_Class_6",
+          "url": "https://selectionwayrecordedmp4.hranker.com/561/6922929e8b0d4f251f7f7f01/hls/master.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-special-1-loki-v-275",
+          "label": "[Time_Speed_Distance_Class_7] आरम्भ Batch –– Time_Speed_Distance_Class_7",
+          "url": "https://selectionwayrecordedmp4.hranker.com/561/6922929e8b0d4f251f7f7f02/hls/master.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-special-1-loki-v-276",
+          "label": "[COMPLETE] आरम्भ Batch –– COMPLETE –– BOAT AND STREAM",
+          "url": "https://selectionwayrecordedmp4.hranker.com/561/695bb9729ed6d5d2423b789d/hls/master.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-special-1-loki-v-277",
+          "label": "[Complete] आरम्भ Batch –– Complete –– TRAIN",
+          "url": "https://selectionwayrecordedmp4.hranker.com/561/695bc4f89ed6d5d242fd71a2/hls/master.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-special-1-loki-v-278",
+          "label": "[Class -01] आरम्भ Batch –– Class -01 –– Compound Interest (चक्रवृद्धि ब्याज) – By Gagan Sir",
+          "url": "https://selectionwaylive.hranker.com/561/69951223399756d49243f0d3/playlist-mpl-vod.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-special-1-loki-v-279",
+          "label": "[Class -02] आरम्भ Batch –– Class -02 –– Compound Interest (चक्रवृद्धि ब्याज) – By Gagan Sir",
+          "url": "https://selectionwaylive.hranker.com/561/69958a4a399756d4924b51fb/playlist-mpl-vod.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-special-1-loki-v-280",
+          "label": "[Class -03] आरम्भ Batch –– Class -03 –– Compound Interest (चक्रवृद्धि ब्याज) – By Gagan Sir",
+          "url": "https://selectionwaylive.hranker.com/561/6996db54399756d492589cee/playlist-mpl-vod.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-special-1-loki-v-281",
+          "label": "[Class -04] आरम्भ Batch –– Class -04 –– Compound Interest (चक्रवृद्धि ब्याज) – By Gagan Sir",
+          "url": "https://selectionwaylive.hranker.com/561/699953e8399756d49272c10f/playlist-mpl-vod.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-special-1-loki-v-282",
+          "label": "[Class -05] आरम्भ Batch –– Class -05 –– Compound Interest (चक्रवृद्धि ब्याज) – By Gagan Sir",
+          "url": "https://selectionwaylive.hranker.com/561/699c2372399756d492879bb1/playlist-mpl-vod.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-special-1-loki-v-283",
+          "label": "[Class -06] आरम्भ Batch –– Class -06 –– Compound Interest (चक्रवृद्धि ब्याज) – By Gagan Sir",
+          "url": "https://selectionwaylive.hranker.com/561/699d8aea399756d492a06d42/playlist-mpl-vod.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-special-1-loki-v-284",
+          "label": "[Class - 01] आरम्भ Batch –– Class - 01 –– Simple Interest (साधारण ब्याज) – By Gagan Sir",
+          "url": "https://selectionwaylive.hranker.com/561/698db8648f7f447d56267f3e/playlist-mpl-vod.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-special-1-loki-v-285",
+          "label": "[Class - 02] आरम्भ Batch –– Class - 02 –– Simple Interest (साधारण ब्याज) – By Gagan Sir",
+          "url": "https://selectionwaylive.hranker.com/561/699208a7e23f1dc0e52d24e6/playlist-mpl-vod.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-special-1-loki-v-286",
+          "label": "[Class - 03] आरम्भ Batch –– Class - 03 –– Simple Interest (साधारण ब्याज) – By Gagan Sir",
+          "url": "https://selectionwaylive.hranker.com/561/699344dae23f1dc0e53b742a/playlist-mpl-vod.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-special-1-loki-v-287",
+          "label": "[Class-01] आरम्भ Batch –– Class-01 – Mixture and Alligation by Gagan sir",
+          "url": "https://selectionwayrecordedmp4.hranker.com/561/69980542399756d49264cb59/hls/master.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-special-1-loki-v-288",
+          "label": "[Class-02] आरम्भ Batch –– Class-02 – Mixture and Alligation by Gagan sir",
+          "url": "https://selectionwaylive.hranker.com/561/699804e1399756d492648555/playlist-mpl-vod.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-special-1-loki-v-289",
+          "label": "[Class-03] आरम्भ Batch –– Class-03 – Mixture and Alligation by Gagan sir",
+          "url": "https://selectionwaylive.hranker.com/561/699954a4399756d492734da2/playlist-mpl-vod.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-special-1-loki-v-290",
+          "label": "[Class-04] आरम्भ Batch –– Class-04 – Mixture and Alligation by Gagan sir",
+          "url": "https://selectionwaylive.hranker.com/561/699d345d399756d49294eead/playlist-mpl-vod.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-special-1-loki-v-291",
+          "label": "[Class-05] आरम्भ Batch –– Class-05 – Mixture and Alligation by Gagan sir",
+          "url": "https://selectionwaylive.hranker.com/561/699e82a0399756d492a485f9/playlist-mpl-vod.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-special-1-loki-v-292",
+          "label": "[Class-06] आरम्भ Batch –– Class-06 – Mixture and Alligation by Gagan sir",
+          "url": "https://selectionwayrecordedmp4.hranker.com/561/69a0ff72a2b1ae043320d7d3/hls/master.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-special-1-loki-v-293",
+          "label": "[Class-07] आरम्भ Batch –– Class-07 – Mixture and Alligation by Gagan sir",
+          "url": "https://selectionwaylive.hranker.com/561/69a13c0da2b1ae04332589e9/playlist-mpl-vod.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-special-1-loki-v-294",
+          "label": "[Class -01] आरम्भ Batch –– Class -01 –– Average (औसत) – By Gagan Sir",
+          "url": "https://selectionwaylive.hranker.com/561/699eba73a2b1ae04330c851e/playlist-mpl-vod.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-special-1-loki-v-295",
+          "label": "[Class -02] आरम्भ Batch –– Class -02 –– Average (औसत) – By Gagan Sir",
+          "url": "https://selectionwaylive.hranker.com/561/6999512b399756d49271834d/playlist-mpl-vod.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-special-1-loki-v-296",
+          "label": "[Class -03] आरम्भ Batch –– Class -03 –– Average (औसत) – By Gagan Sir",
+          "url": "https://selectionwaylive.hranker.com/561/69abb6fa0cd8b6c0dd1894aa/playlist-mpl-vod.m3u8",
+          "type": "hls"
+        }
+      ]
+    },
+    {
+      "id": "pdfs",
+      "label": "📄 PDFs",
+      "items": [
+        {
+          "id": "maths-special-1-loki-p-2",
+          "label": "[Number System] Class-01 –– Number System – Gagan sir",
+          "url": "https://selectionwayserver.hranker.com/pdfs/files/1760480325844-1759813735845-Number_System_Class-1___Board_pdf__.pdf",
+          "type": "pdf"
+        },
+        {
+          "id": "maths-special-1-loki-p-4",
+          "label": "[Number System] Class-02 –– Number System – Gagan sir",
+          "url": "https://selectionwayserver.hranker.com/pdfs/files/1760480038092-1759826889367-NUMBER_SYSTEM_CLASS_-2_BOARD__PDF_.pdf",
+          "type": "pdf"
+        },
+        {
+          "id": "maths-special-1-loki-p-6",
+          "label": "[Number System] Class-03 –– Number System – Gagan sir",
+          "url": "https://selectionwayserver.hranker.com/pdfs/files/1760479373162-1760010540863-Number_System_Class_3_bord_pdf_(1).pdf",
+          "type": "pdf"
+        },
+        {
+          "id": "maths-special-1-loki-p-8",
+          "label": "[Number System] Class-04 –– Number System – Gagan sir",
+          "url": "https://selectionwayserver.hranker.com/pdfs/files/1760479134660-1760010607951-Number_system_class-4_board_pdf_compress.pdf",
+          "type": "pdf"
+        },
+        {
+          "id": "maths-special-1-loki-p-10",
+          "label": "[Number System] Class -05 –– Number System – Gagan sir",
+          "url": "https://selectionwayserver.hranker.com/pdfs/files/1760478811472-1760088755536-Number_System_class-5_Board.pdf",
+          "type": "pdf"
+        },
+        {
+          "id": "maths-special-1-loki-p-12",
+          "label": "[Number System] Class -06 –– Number System – Gagan sir",
+          "url": "https://selectionwayserver.hranker.com/pdfs/files/1760478426685-1760347162583-Number_system_class_-6_Board.pdf",
+          "type": "pdf"
+        },
+        {
+          "id": "maths-special-1-loki-p-14",
+          "label": "[Number System] Class -07 –– Number System – Gagan sir",
+          "url": "https://selectionwayserver.hranker.com/pdfs/files/1760477859560-1760433853480-Number_System_Class-7_Board.pdf",
+          "type": "pdf"
+        },
+        {
+          "id": "maths-special-1-loki-p-16",
+          "label": "[Number System] Class -08 –– Number System – Gagan sir",
+          "url": "https://selectionwayserver.hranker.com/pdfs/files/1760528552883-number_System_class_-8_compressed__1_.pdf",
+          "type": "pdf"
+        },
+        {
+          "id": "maths-special-1-loki-p-18",
+          "label": "[Number System] Class -09 –– Number System – Gagan sir",
+          "url": "https://selectionwayserver.hranker.com/pdfs/files/1760604361882-Number_system__class_-9_compressed.pdf",
+          "type": "pdf"
+        },
+        {
+          "id": "maths-special-1-loki-p-20",
+          "label": "[Number System] Class -10 –– Number System – Gagan sir",
+          "url": "https://selectionwayserver.hranker.com/pdfs/files/1760789006446-Number_System_Class_-10_BOARD_PDF.pdf",
+          "type": "pdf"
+        },
+        {
+          "id": "maths-special-1-loki-p-22",
+          "label": "[Number System] Class -11 –– Number System – Gagan sir",
+          "url": "https://selectionwayserver.hranker.com/pdfs/files/1761563938617-number_system_class11_board__REDUCEpdf.pdf",
+          "type": "pdf"
+        },
+        {
+          "id": "maths-special-1-loki-p-24",
+          "label": "[Number System] Class -12 –– Number System – Gagan sir",
+          "url": "https://selectionwayserver.hranker.com/pdfs/files/1761652274871-number_system_class_12_pdf.pdf",
+          "type": "pdf"
+        },
+        {
+          "id": "maths-special-1-loki-p-26",
+          "label": "[Number System] Class -13 –– Number System – Gagan sir",
+          "url": "https://selectionwayserver.hranker.com/pdfs/files/1761731632503-Number_System_class_13_Board_pdf.pdf",
+          "type": "pdf"
+        },
+        {
+          "id": "maths-special-1-loki-p-28",
+          "label": "[Number System] Class -14 –– Number System – Gagan sir",
+          "url": "https://selectionwayserver.hranker.com/pdfs/files/1761819154789-Number_System_classs_14_Board_pdf_RE.pdf",
+          "type": "pdf"
+        },
+        {
+          "id": "maths-special-1-loki-p-30",
+          "label": "[Number System] Class -15 –– Number System – Gagan sir",
+          "url": "https://selectionwayserver.hranker.com/pdfs/files/1761903091879-Number_SyStem_Class_15_board_pdf.pdf",
+          "type": "pdf"
+        },
+        {
+          "id": "maths-special-1-loki-p-32",
+          "label": "[Number System] Class -16 –– Number System – Gagan sir",
+          "url": "https://selectionwayserver.hranker.com/pdfs/files/1762168013806-Number_system_class_16_board_pdf.pdf",
+          "type": "pdf"
+        },
+        {
+          "id": "maths-special-1-loki-p-34",
+          "label": "[Number System] Class -17 –– Number System – Gagan sir",
+          "url": "https://selectionwayserver.hranker.com/pdfs/files/1762340256041-class_17_number_system.pdf",
+          "type": "pdf"
+        },
+        {
+          "id": "maths-special-1-loki-p-36",
+          "label": "[Number System] Class -18 –– Number System – Gagan sir",
+          "url": "https://selectionwayserver.hranker.com/pdfs/files/1762428963206-Number_system_class_18_board_pdf_RE.pdf",
+          "type": "pdf"
+        },
+        {
+          "id": "maths-special-1-loki-p-38",
+          "label": "[Number System] Class -19 –– Number System – Gagan sir",
+          "url": "https://selectionwayserver.hranker.com/pdfs/files/1762508197845-Number_System_Class-19_Board_pdf.pdf",
+          "type": "pdf"
+        },
+        {
+          "id": "maths-special-1-loki-p-40",
+          "label": "[Number System] Class -20 –– Number System – Gagan sir",
+          "url": "https://selectionwayserver.hranker.com/pdfs/files/1762594386791-Number_System_Class_-20_board_pdf.pdf",
+          "type": "pdf"
+        },
+        {
+          "id": "maths-special-1-loki-p-42",
+          "label": "[Number System] Class -21 –– Number System – Gagan sir",
+          "url": "https://selectionwayserver.hranker.com/pdfs/files/number system class 21.pdf",
+          "type": "pdf"
+        },
+        {
+          "id": "maths-special-1-loki-p-44",
+          "label": "[Calculation and Simplification] Class -01  –– Calculation and Simplification – Gagan sir",
+          "url": "https://selectionwayserver.hranker.com/pdfs/files/calculation 1.pdf",
+          "type": "pdf"
+        },
+        {
+          "id": "maths-special-1-loki-p-46",
+          "label": "[Calculation and Simplification] Class -02  –– Calculation and Simplification – Gagan sir",
+          "url": "https://selectionwayserver.hranker.com/pdfs/files/calculation and simplification class 2 pdf.pdf",
+          "type": "pdf"
+        },
+        {
+          "id": "maths-special-1-loki-p-48",
+          "label": "[Calculation and Simplification] Class -03  –– Calculation and Simplification – Gagan sir",
+          "url": "https://selectionwayserver.hranker.com/pdfs/files/SIMPLIFICATION CLASS 03 BOARD PDF.pdf",
+          "type": "pdf"
+        },
+        {
+          "id": "maths-special-1-loki-p-50",
+          "label": "[Calculation and Simplification] Class -04  –– Calculation and Simplification – Gagan sir",
+          "url": "https://selectionwayserver.hranker.com/pdfs/files/SIMPLIFICATION CLASS 4 PDF.pdf",
+          "type": "pdf"
+        },
+        {
+          "id": "maths-special-1-loki-p-52",
+          "label": "[Calculation and Simplification] Class -05  –– Calculation and Simplification – Gagan sir",
+          "url": "https://selectionwayserver.hranker.com/pdfs/files/Simplification Class 5 Board pdf.pdf",
+          "type": "pdf"
+        },
+        {
+          "id": "maths-special-1-loki-p-54",
+          "label": "[Calculation and Simplification] Class -06  –– Calculation and Simplification – Gagan sir",
+          "url": "https://selectionwayserver.hranker.com/pdfs/files/simplification class 6 board pdf.pdf",
+          "type": "pdf"
+        },
+        {
+          "id": "maths-special-1-loki-p-56",
+          "label": "[Calculation and Simplification] Class -07  –– Calculation and Simplification – Gagan sir",
+          "url": "https://selectionwayserver.hranker.com/pdfs/files/simplification class 7 board pdf.pdf",
+          "type": "pdf"
+        },
+        {
+          "id": "maths-special-1-loki-p-58",
+          "label": "[Calculation and Simplification] Class -08  –– Calculation and Simplification – Gagan sir",
+          "url": "https://selectionwayserver.hranker.com/pdfs/files/simplification class 8 board pdf.pdf",
+          "type": "pdf"
+        },
+        {
+          "id": "maths-special-1-loki-p-60",
+          "label": "[Calculation and Simplification] Class -09  –– Calculation and Simplification – Gagan sir",
+          "url": "https://selectionwayserver.hranker.com/pdfs/files/simplification class 9 pdf.pdf",
+          "type": "pdf"
+        },
+        {
+          "id": "maths-special-1-loki-p-62",
+          "label": "[Calculation and Simplification] Class -10  –– Calculation and Simplification – Gagan sir",
+          "url": "https://selectionwayserver.hranker.com/pdfs/files/simplification class 10 board pdf.pdf",
+          "type": "pdf"
+        },
+        {
+          "id": "maths-special-1-loki-p-64",
+          "label": "[Calculation and Simplification] Class -11  –– Calculation and Simplification – Gagan sir",
+          "url": "https://selectionwayserver.hranker.com/pdfs/files/simplification class 11 board pdf.pdf",
+          "type": "pdf"
+        },
+        {
+          "id": "maths-special-1-loki-p-66",
+          "label": "[Calculation and Simplification] Class -12  –– Calculation and Simplification – Gagan sir",
+          "url": "https://selectionwayserver.hranker.com/pdfs/files/simplification class 12 board pdf new.pdf",
+          "type": "pdf"
+        },
+        {
+          "id": "maths-special-1-loki-p-68",
+          "label": "[Surds and Indices By Gagan sir] Class - 01 –– Surds and Indices By Gagan sir",
+          "url": "https://selectionwayserver.hranker.com/pdfs/files/surds class 1 board pdf.pdf",
+          "type": "pdf"
+        },
+        {
+          "id": "maths-special-1-loki-p-70",
+          "label": "[Surds and Indices By Gagan sir] Class - 02 –– Surds and Indices By Gagan sir",
+          "url": "https://selectionwayserver.hranker.com/pdfs/files/surds class 2.pdf",
+          "type": "pdf"
+        },
+        {
+          "id": "maths-special-1-loki-p-72",
+          "label": "[Surds and Indices By Gagan sir] Class - 03 –– Surds and Indices By Gagan sir",
+          "url": "https://selectionwayserver.hranker.com/pdfs/files/surds class 3 board pdf.pdf",
+          "type": "pdf"
+        },
+        {
+          "id": "maths-special-1-loki-p-74",
+          "label": "[Surds and Indices By Gagan sir] Class - 04 –– Surds and Indices By Gagan sir",
+          "url": "https://selectionwayserver.hranker.com/pdfs/files/surds class 4 board pdf.pdf",
+          "type": "pdf"
+        },
+        {
+          "id": "maths-special-1-loki-p-76",
+          "label": "[Surds and Indices By Gagan sir] Class - 05 –– Surds and Indices By Gagan sir",
+          "url": "https://selectionwayserver.hranker.com/pdfs/files/surds class 5 board pdf.pdf",
+          "type": "pdf"
+        },
+        {
+          "id": "maths-special-1-loki-p-78",
+          "label": "[Surds and Indices By Gagan sir] Class - 06 –– Surds and Indices By Gagan sir",
+          "url": "https://selectionwayserver.hranker.com/pdfs/files/surds and indices class 06 board pdf.pdf",
+          "type": "pdf"
+        },
+        {
+          "id": "maths-special-1-loki-p-80",
+          "label": "[Surds and Indices By Gagan sir] Class - 07 –– Surds and Indices By Gagan sir",
+          "url": "https://selectionwayserver.hranker.com/pdfs/files/surds class 7 board pdf.pdf",
+          "type": "pdf"
+        },
+        {
+          "id": "maths-special-1-loki-p-82",
+          "label": "[Surds and Indices By Gagan sir] Class - 08 –– Surds and Indices By Gagan sir",
+          "url": "https://selectionwayserver.hranker.com/pdfs/files/SURDS CLASS 8 BOARD PDF.pdf",
+          "type": "pdf"
+        },
+        {
+          "id": "maths-special-1-loki-p-84",
+          "label": "[Surds and Indices By Gagan sir] Class - 09 –– Surds and Indices By Gagan sir",
+          "url": "https://selectionwayserver.hranker.com/pdfs/files/surds class 9 board pdf.pdf",
+          "type": "pdf"
+        },
+        {
+          "id": "maths-special-1-loki-p-86",
+          "label": "[Surds and Indices By Gagan sir] Class - 10 –– Surds and Indices By Gagan sir",
+          "url": "https://selectionwayserver.hranker.com/pdfs/files/surds class 10.pdf",
+          "type": "pdf"
+        },
+        {
+          "id": "maths-special-1-loki-p-88",
+          "label": "[LCM and HCF By Gagan sir] Class - 01 –– LCM and HCF By Gagan sir",
+          "url": "https://selectionwayserver.hranker.com/pdfs/files/LCM and HCF Class  01.pdf",
+          "type": "pdf"
+        },
+        {
+          "id": "maths-special-1-loki-p-90",
+          "label": "[LCM and HCF By Gagan sir] Class - 02 –– LCM and HCF By Gagan sir",
+          "url": "https://selectionwayserver.hranker.com/pdfs/files/lcm hcf class 2 board pdf.pdf",
+          "type": "pdf"
+        },
+        {
+          "id": "maths-special-1-loki-p-92",
+          "label": "[LCM and HCF By Gagan sir] Class - 03 –– LCM and HCF By Gagan sir",
+          "url": "https://selectionwayserver.hranker.com/pdfs/files/class 3 lcm hcf.pdf",
+          "type": "pdf"
+        },
+        {
+          "id": "maths-special-1-loki-p-94",
+          "label": "[LCM and HCF By Gagan sir] Class - 04 –– LCM and HCF By Gagan sir",
+          "url": "https://selectionwayserver.hranker.com/pdfs/files/lcm hcf class 4.pdf",
+          "type": "pdf"
+        },
+        {
+          "id": "maths-special-1-loki-p-96",
+          "label": "[LCM and HCF By Gagan sir] Class - 05 –– LCM and HCF By Gagan sir",
+          "url": "https://selectionwayserver.hranker.com/pdfs/files/class 5 lcm hcf pdf.pdf",
+          "type": "pdf"
+        },
+        {
+          "id": "maths-special-1-loki-p-98",
+          "label": "[LCM and HCF By Gagan sir] Class - 06 –– LCM and HCF By Gagan sir",
+          "url": "https://selectionwayserver.hranker.com/pdfs/files/class 6 lcm hcf.pdf",
+          "type": "pdf"
+        },
+        {
+          "id": "maths-special-1-loki-p-100",
+          "label": "[LCM and HCF By Gagan sir] Class - 07 –– LCM and HCF By Gagan sir",
+          "url": "https://selectionwayserver.hranker.com/pdfs/files/class 7 lcm hcf board pdf.pdf",
+          "type": "pdf"
+        },
+        {
+          "id": "maths-special-1-loki-p-102",
+          "label": "[LCM and HCF By Gagan sir] Class - 08 –– LCM and HCF By Gagan sir",
+          "url": "https://selectionwayserver.hranker.com/pdfs/files/class 8 lcm hcf .pdf",
+          "type": "pdf"
+        },
+        {
+          "id": "maths-special-1-loki-p-104",
+          "label": "[LCM and HCF By Gagan sir] Class - 09 –– LCM and HCF By Gagan sir",
+          "url": "https://selectionwayserver.hranker.com/pdfs/files/class 9 lcm hcf board.pdf",
+          "type": "pdf"
+        },
+        {
+          "id": "maths-special-1-loki-p-106",
+          "label": "[LCM and HCF By Gagan sir] Class - 10 –– LCM and HCF By Gagan sir",
+          "url": "https://selectionwayserver.hranker.com/pdfs/files/class 10 lcm hcf.pdf",
+          "type": "pdf"
+        },
+        {
+          "id": "maths-special-1-loki-p-108",
+          "label": "[LCM and HCF By Gagan sir] Class - 11 –– LCM and HCF By Gagan sir",
+          "url": "https://selectionwayserver.hranker.com/pdfs/files/lcm hcf class 11 board pdf.pdf",
+          "type": "pdf"
+        },
+        {
+          "id": "maths-special-1-loki-p-110",
+          "label": "[2D Mensuration by Gagan sir] Class - 01 –– 2D Mensuration by Gagan sir",
+          "url": "https://selectionwayserver.hranker.com/pdfs/files/2d mensuration class 1 board pdf.pdf",
+          "type": "pdf"
+        },
+        {
+          "id": "maths-special-1-loki-p-112",
+          "label": "[2D Mensuration by Gagan sir] Class - 02 –– 2D Mensuration by Gagan sir",
+          "url": "https://selectionwayserver.hranker.com/pdfs/files/mensuration 2d class 02 board pdf.pdf",
+          "type": "pdf"
+        },
+        {
+          "id": "maths-special-1-loki-p-114",
+          "label": "[2D Mensuration by Gagan sir] Class - 03 –– 2D Mensuration by Gagan sir",
+          "url": "https://selectionwayserver.hranker.com/pdfs/files/2d mensuration class 03 board.pdf",
+          "type": "pdf"
+        },
+        {
+          "id": "maths-special-1-loki-p-116",
+          "label": "[2D Mensuration by Gagan sir] Class - 04 –– 2D Mensuration by Gagan sir",
+          "url": "https://selectionwayserver.hranker.com/pdfs/files/2d mensuration class 4 board.pdf",
+          "type": "pdf"
+        },
+        {
+          "id": "maths-special-1-loki-p-118",
+          "label": "[2D Mensuration by Gagan sir] Class - 05 –– 2D Mensuration by Gagan sir",
+          "url": "https://selectionwayserver.hranker.com/pdfs/files/2d mensuration class 5 pdf.pdf",
+          "type": "pdf"
+        },
+        {
+          "id": "maths-special-1-loki-p-120",
+          "label": "[2D Mensuration by Gagan sir] Class - 06 –– 2D Mensuration by Gagan sir",
+          "url": "https://selectionwayserver.hranker.com/pdfs/files/mensuration 2d class 6 board pdf.pdf",
+          "type": "pdf"
+        },
+        {
+          "id": "maths-special-1-loki-p-122",
+          "label": "[2D Mensuration by Gagan sir] Class - 07 –– 2D Mensuration by Gagan sir",
+          "url": "https://selectionwayserver.hranker.com/pdfs/files/class 7 mensuration 2d board pdf.pdf",
+          "type": "pdf"
+        },
+        {
+          "id": "maths-special-1-loki-p-124",
+          "label": "[2D Mensuration by Gagan sir] Class - 08 –– 2D Mensuration by Gagan sir",
+          "url": "https://selectionwayserver.hranker.com/pdfs/files/mensuration 2d class 8.pdf",
+          "type": "pdf"
+        },
+        {
+          "id": "maths-special-1-loki-p-126",
+          "label": "[2D Mensuration by Gagan sir] Class - 09 –– 2D Mensuration by Gagan sir",
+          "url": "https://selectionwayserver.hranker.com/pdfs/files/2d mensuration class 9.pdf",
+          "type": "pdf"
+        },
+        {
+          "id": "maths-special-1-loki-p-128",
+          "label": "[2D Mensuration by Gagan sir] Class - 10 –– 2D Mensuration by Gagan sir",
+          "url": "https://selectionwayserver.hranker.com/pdfs/files/class 9 2d Mensuration board.pdf",
+          "type": "pdf"
+        },
+        {
+          "id": "maths-special-1-loki-p-130",
+          "label": "[2D Mensuration by Gagan sir] Class - 11 –– 2D Mensuration by Gagan sir",
+          "url": "https://selectionwayserver.hranker.com/pdfs/files/class -11  2d mensuration board.pdf",
+          "type": "pdf"
+        },
+        {
+          "id": "maths-special-1-loki-p-132",
+          "label": "[2D Mensuration by Gagan sir] Class - 12 –– 2D Mensuration by Gagan sir",
+          "url": "https://selectionwayserver.hranker.com/pdfs/files/mensuration 2d class 12.pdf",
+          "type": "pdf"
+        },
+        {
+          "id": "maths-special-1-loki-p-134",
+          "label": "[2D Mensuration by Gagan sir] Class - 13 –– 2D Mensuration by Gagan sir",
+          "url": "https://selectionwayserver.hranker.com/pdfs/files/MENSURURATION 2D CLASS 13.pdf",
+          "type": "pdf"
+        },
+        {
+          "id": "maths-special-1-loki-p-136",
+          "label": "[2D Mensuration by Gagan sir] Class - 14 –– 2D Mensuration by Gagan sir",
+          "url": "https://selectionwayserver.hranker.com/pdfs/files/class 14 Mensuration 2D board.pdf",
+          "type": "pdf"
+        },
+        {
+          "id": "maths-special-1-loki-p-138",
+          "label": "[2D Mensuration by Gagan sir] Class - 15 –– 2D Mensuration by Gagan sir",
+          "url": "https://selectionwayserver.hranker.com/pdfs/files/mensuration 2d class 15 board.pdf",
+          "type": "pdf"
+        },
+        {
+          "id": "maths-special-1-loki-p-140",
+          "label": "[3D Mensuration by Gagan sir] Class-01 –– 3D Mensuration by Gagan sir",
+          "url": "https://selectionwayserver.hranker.com/pdfs/files/class 01 mensuration 3d board.pdf",
+          "type": "pdf"
+        },
+        {
+          "id": "maths-special-1-loki-p-142",
+          "label": "[Problem on Ages By Gagan sir] Class - 01 –– Problem on Ages By Gagan sir",
+          "url": "https://selectionwayserver.hranker.com/pdfs/files/1768991970833-Problem_on_ages_class_01.pdf",
+          "type": "pdf"
+        },
+        {
+          "id": "maths-special-1-loki-p-144",
+          "label": "[Problem on Ages By Gagan sir] Class - 02 –– Problem on Ages By Gagan sir",
+          "url": "https://selectionwayserver.hranker.com/pdfs/files/1768285320234-problem_on_ages_class_02_board_pdf.pdf",
+          "type": "pdf"
+        },
+        {
+          "id": "maths-special-1-loki-p-146",
+          "label": "[Problem on Ages By Gagan sir] Class - 03 –– Problem on Ages By Gagan sir",
+          "url": "https://selectionwayserver.hranker.com/pdfs/files/problem on ages class 3 pdf.pdf",
+          "type": "pdf"
+        },
+        {
+          "id": "maths-special-1-loki-p-148",
+          "label": "[Percentage by Gagan sir] Class - 01 –– Percentage by Gagan sir",
+          "url": "https://selectionwayserver.hranker.com/pdfs/files/percentage 01.pdf",
+          "type": "pdf"
+        },
+        {
+          "id": "maths-special-1-loki-p-150",
+          "label": "[Percentage by Gagan sir] Class - 02 –– Percentage by Gagan sir",
+          "url": "https://selectionwayserver.hranker.com/pdfs/files/percentage class 02 board.pdf",
+          "type": "pdf"
+        },
+        {
+          "id": "maths-special-1-loki-p-152",
+          "label": "[Percentage by Gagan sir] Class - 03 –– Percentage by Gagan sir",
+          "url": "https://selectionwayserver.hranker.com/pdfs/files/percentage class 003 board pdf.pdf",
+          "type": "pdf"
+        },
+        {
+          "id": "maths-special-1-loki-p-154",
+          "label": "[Percentage by Gagan sir] Class - 04 –– Percentage by Gagan sir",
+          "url": "https://selectionwayserver.hranker.com/pdfs/files/percentage class pdf .pdf",
+          "type": "pdf"
+        },
+        {
+          "id": "maths-special-1-loki-p-156",
+          "label": "[Percentage by Gagan sir] Class - 05 –– Percentage by Gagan sir",
+          "url": "https://selectionwayserver.hranker.com/pdfs/files/percentage class pdf.pdf",
+          "type": "pdf"
+        },
+        {
+          "id": "maths-special-1-loki-p-158",
+          "label": "[Percentage by Gagan sir] Class - 06 –– Percentage by Gagan sir",
+          "url": "https://selectionwayserver.hranker.com/pdfs/files/selection batch 27 jan board pdf.pdf",
+          "type": "pdf"
+        },
+        {
+          "id": "maths-special-1-loki-p-160",
+          "label": "[Percentage by Gagan sir] Class - 07 –– Percentage by Gagan sir",
+          "url": "https://selectionwayserver.hranker.com/pdfs/files/percentage class 07.pdf",
+          "type": "pdf"
+        },
+        {
+          "id": "maths-special-1-loki-p-162",
+          "label": "[Percentage by Gagan sir] Class - 08 –– Percentage by Gagan sir",
+          "url": "https://selectionwayserver.hranker.com/pdfs/files/percentage class 08.pdf",
+          "type": "pdf"
+        },
+        {
+          "id": "maths-special-1-loki-p-164",
+          "label": "[Percentage by Gagan sir] Class - 09 –– Percentage by Gagan sir",
+          "url": "https://selectionwayserver.hranker.com/pdfs/files/percentage class 09.pdf",
+          "type": "pdf"
+        },
+        {
+          "id": "maths-special-1-loki-p-166",
+          "label": "[Percentage by Gagan sir] Class - 10 –– Percentage by Gagan sir",
+          "url": "https://selectionwayserver.hranker.com/pdfs/files/percentage class 10.pdf",
+          "type": "pdf"
+        },
+        {
+          "id": "maths-special-1-loki-p-168",
+          "label": "[Percentage by Gagan sir] Class - 11 –– Percentage by Gagan sir",
+          "url": "https://selectionwayserver.hranker.com/pdfs/files/percentage class 11.pdf",
+          "type": "pdf"
+        },
+        {
+          "id": "maths-special-1-loki-p-170",
+          "label": "[Percentage by Gagan sir] Class - 12 –– Percentage by Gagan sir",
+          "url": "https://selectionwayserver.hranker.com/pdfs/files/percentage class 12 board pdf.pdf",
+          "type": "pdf"
+        },
+        {
+          "id": "maths-special-1-loki-p-172",
+          "label": "[Percentage by Gagan sir] Class - 13 –– Percentage by Gagan sir",
+          "url": "https://selectionwayserver.hranker.com/pdfs/files/percentage class 13.pdf",
+          "type": "pdf"
+        },
+        {
+          "id": "maths-special-1-loki-p-174",
+          "label": "[Percentage by Gagan sir] Class - 14 –– Percentage by Gagan sir",
+          "url": "https://selectionwayserver.hranker.com/pdfs/files/percentage class 14.pdf",
+          "type": "pdf"
+        },
+        {
+          "id": "maths-special-1-loki-p-176",
+          "label": "[Percentage by Gagan sir] Class - 15 –– Percentage by Gagan sir",
+          "url": "https://selectionwayserver.hranker.com/pdfs/files/selection batch 9 feb board pdf.pdf",
+          "type": "pdf"
+        },
+        {
+          "id": "maths-special-1-loki-p-178",
+          "label": "[Percentage by Gagan sir] Class - 16 –– Percentage by Gagan sir",
+          "url": "https://selectionwayserver.hranker.com/pdfs/files/percentage class 16 pdf.pdf",
+          "type": "pdf"
+        },
+        {
+          "id": "maths-special-1-loki-p-180",
+          "label": "[Percentage by Gagan sir] Class - 17 –– Percentage by Gagan sir",
+          "url": "https://selectionwayserver.hranker.com/pdfs/files/percentage class 17.pdf",
+          "type": "pdf"
+        },
+        {
+          "id": "maths-special-1-loki-p-182",
+          "label": "[Percentage by Gagan sir] Class - 18 –– Percentage by Gagan sir",
+          "url": "https://selectionwayserver.hranker.com/pdfs/files/percentage class 18.pdf",
+          "type": "pdf"
+        },
+        {
+          "id": "maths-special-1-loki-p-184",
+          "label": "[Percentage by Gagan sir] Class - 19 –– Percentage by Gagan sir",
+          "url": "https://selectionwayserver.hranker.com/pdfs/files/percentage class 19.pdf",
+          "type": "pdf"
+        },
+        {
+          "id": "maths-special-1-loki-p-186",
+          "label": "[Ratio and proportion] Class -1 –– Ratio and proportion – By Gagan Pratap",
+          "url": "https://selectionwayserver.hranker.com/pdfs/files/ratio and proportion class 01.pdf",
+          "type": "pdf"
+        },
+        {
+          "id": "maths-special-1-loki-p-188",
+          "label": "[Ratio and proportion] Class -2 –– Ratio and proportion – By Gagan Pratap sir",
+          "url": "https://selectionwayserver.hranker.com/pdfs/files/ratio and proportion class 02.pdf",
+          "type": "pdf"
+        },
+        {
+          "id": "maths-special-1-loki-p-190",
+          "label": "[Ratio and proportion] Class -3 –– Ratio and proportion – By Gagan Pratap sir",
+          "url": "https://selectionwayserver.hranker.com/pdfs/files/ratio and proportion class 03.pdf",
+          "type": "pdf"
+        },
+        {
+          "id": "maths-special-1-loki-p-192",
+          "label": "[Ratio and proportion] Class -4 –– Ratio and proportion – By Gagan Pratap sir",
+          "url": "https://selectionwayserver.hranker.com/pdfs/files/SB 20 FEB BOARD PDF.pdf",
+          "type": "pdf"
+        },
+        {
+          "id": "maths-special-1-loki-p-194",
+          "label": "[Ratio and proportion] Class -5 –– Ratio and proportion – By Gagan Pratap sir",
+          "url": "https://selectionwayserver.hranker.com/pdfs/files/1771860320988-Ratio_and_proportion_class_05_compressed.pdf",
+          "type": "pdf"
+        },
+        {
+          "id": "maths-special-1-loki-p-196",
+          "label": "[Ratio and proportion] Class -6 –– Ratio and proportion – By Gagan Pratap sir",
+          "url": "https://selectionwayserver.hranker.com/pdfs/files/ratio and proportion class 6.pdf",
+          "type": "pdf"
+        },
+        {
+          "id": "maths-special-1-loki-p-198",
+          "label": "[Ratio and proportion] Class -7 –– Ratio and proportion – By Gagan Pratap",
+          "url": "https://selectionwayserver.hranker.com/pdfs/files/ratio and proportion class 07.pdf",
+          "type": "pdf"
+        },
+        {
+          "id": "maths-special-1-loki-p-200",
+          "label": "[Ratio and proportion] Class -8 –– Ratio and proportion – By Gagan Pratap",
+          "url": "https://selectionwayserver.hranker.com/pdfs/files/Ratio and Proportion class 08.pdf",
+          "type": "pdf"
+        },
+        {
+          "id": "maths-special-1-loki-p-202",
+          "label": "[Ratio and proportion] Class -9 –– Ratio and proportion – By Gagan Pratap sir",
+          "url": "https://selectionwayserver.hranker.com/pdfs/files/Class 09 Ratio and proportion board.pdf",
+          "type": "pdf"
+        },
+        {
+          "id": "maths-special-1-loki-p-204",
+          "label": "[Ratio and proportion] Class -10 –– Ratio and proportion – By Gagan Pratap sir",
+          "url": "https://selectionwayserver.hranker.com/pdfs/files/sb 9 march board pdf.pdf",
+          "type": "pdf"
+        },
+        {
+          "id": "maths-special-1-loki-p-206",
+          "label": "[Ratio and proportion] Class -11 –– Ratio and proportion – By Gagan Pratap Sir",
+          "url": "https://selectionwayserver.hranker.com/pdfs/files/ratio and proportion class 11.pdf",
+          "type": "pdf"
+        },
+        {
+          "id": "maths-special-1-loki-p-297",
+          "label": "[Maths Special-1] Maths Special-1",
+          "url": "https://selectionwayserver.hranker.com/pdfs/files/maths batch structure.pdf",
+          "type": "pdf"
+        }
+      ]
+    }
+  ],
+  "category": "government"
+}

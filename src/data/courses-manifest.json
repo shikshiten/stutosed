@@ -1,0 +1,410 @@
+[
+  {
+    "id": "aarambh-batch-100hr-sw",
+    "name": "Aarambh Batch 100hr SW",
+    "subname": "100 Hours Fast Track Revision & Problem Solving",
+    "teacher": "Gagan Sir",
+    "subject": "Maths",
+    "thumb": "/thumbnails/subjects/aarambh_batch_100hr_sw.svg",
+    "category": "government",
+    "desc": "",
+    "isParmar": false,
+    "isPratham": false,
+    "isFolderMode": false,
+    "stats": {
+      "videos": 90,
+      "resources": 18
+    }
+  },
+  {
+    "id": "banking-quant-hero",
+    "name": "Banking Quantitative Aptitude (Quant)",
+    "subname": "The Maths Hero Complete Quant for SBI PO, IBPS PO, RRB & RBI",
+    "teacher": "Aashish Arora Sir",
+    "subject": "Banking",
+    "thumb": "https://files.catbox.moe/97ydfl.jpg",
+    "category": "gov-exams",
+    "desc": "Complete Banking Quantitative Aptitude curriculum by Aashish Arora Sir. Video lectures streamed via custom StreamP2P player on stutosed.strp2p.site with high-yield PDF notes & practice sheets directly accessible without login.",
+    "isParmar": false,
+    "isPratham": false,
+    "isFolderMode": true,
+    "stats": {
+      "videos": 27,
+      "resources": 62
+    }
+  },
+  {
+    "id": "beu-1st-year",
+    "name": "BEU B.Tech 1st Year",
+    "subname": "Bihar Engineering University • 7 Core Branches",
+    "teacher": "Bihar Engineering University",
+    "subject": "B.Tech Engineering",
+    "thumb": "/thumbnails/subjects/beu_1st_year.svg",
+    "category": "beu",
+    "desc": "",
+    "isParmar": false,
+    "isPratham": false,
+    "isFolderMode": true,
+    "stats": {
+      "videos": 865,
+      "resources": 86
+    }
+  },
+  {
+    "id": "computer",
+    "name": "Computer Special",
+    "subname": "Computer SPL 29 • Yatendra Sir",
+    "teacher": "Yatendra Sir",
+    "subject": "Computer",
+    "thumb": "/thumbnails/subjects/computer_special.svg",
+    "category": "government",
+    "desc": "",
+    "isParmar": false,
+    "isPratham": false,
+    "isFolderMode": false,
+    "stats": {
+      "videos": 135,
+      "resources": 23
+    }
+  },
+  {
+    "id": "english-spl",
+    "name": "English Grammar",
+    "subname": "English SPL-26 • Foundation & Rules",
+    "teacher": "English Faculty",
+    "subject": "English",
+    "thumb": "/thumbnails/subjects/english_grammar.svg",
+    "category": "government",
+    "desc": "",
+    "isParmar": false,
+    "isPratham": false,
+    "isFolderMode": false,
+    "stats": {
+      "videos": 480,
+      "resources": 183
+    }
+  },
+  {
+    "id": "english-practice",
+    "name": "English Practice",
+    "subname": "English Practice 26 • Mock & PYQ Drill",
+    "teacher": "English Faculty",
+    "subject": "English",
+    "thumb": "/thumbnails/subjects/english_practice.svg",
+    "category": "government",
+    "desc": "",
+    "isParmar": false,
+    "isPratham": false,
+    "isFolderMode": false,
+    "stats": {
+      "videos": 167,
+      "resources": 90
+    }
+  },
+  {
+    "id": "eng-practice-31",
+    "name": "English Practice 31",
+    "subname": "Practice Batch 31 • Gopal Verma Sir",
+    "teacher": "Gopal Verma Sir",
+    "subject": "English",
+    "thumb": "/thumbnails/subjects/english_practice_31.svg",
+    "category": "government",
+    "desc": "",
+    "isParmar": false,
+    "isPratham": false,
+    "isFolderMode": false,
+    "stats": {
+      "videos": 192,
+      "resources": 175
+    }
+  },
+  {
+    "id": "reasoning",
+    "name": "Logical Reasoning",
+    "subname": "Reasoning SPL 60 • Verbal & Non-Verbal",
+    "teacher": "Reasoning Faculty",
+    "subject": "Reasoning",
+    "thumb": "/thumbnails/subjects/logical_reasoning.svg",
+    "category": "government",
+    "desc": "",
+    "isParmar": false,
+    "isPratham": false,
+    "isFolderMode": false,
+    "stats": {
+      "videos": 251,
+      "resources": 394
+    }
+  },
+  {
+    "id": "maths-b39",
+    "name": "Mathematics B39",
+    "subname": "Maths Batch 39 • Complete Arithmetic & Advanced",
+    "teacher": "Maths Faculty",
+    "subject": "Maths",
+    "thumb": "/thumbnails/subjects/maths_b39.svg",
+    "category": "government",
+    "desc": "",
+    "isParmar": false,
+    "isPratham": false,
+    "isFolderMode": false,
+    "stats": {
+      "videos": 488,
+      "resources": 106
+    }
+  },
+  {
+    "id": "maths-spl-b42",
+    "name": "Mathematics B42",
+    "subname": "Maths Special Recorded B-42 • Concept & Practice",
+    "teacher": "Abhinay Sharma Sir",
+    "subject": "Maths",
+    "thumb": "/thumbnails/subjects/maths_spl_b42.svg",
+    "category": "government",
+    "desc": "",
+    "isParmar": false,
+    "isPratham": false,
+    "isFolderMode": false,
+    "stats": {
+      "videos": 240,
+      "resources": 155
+    }
+  },
+  {
+    "id": "maths-spl-b43",
+    "name": "Mathematics B43",
+    "subname": "Maths Special B-43 • Complete Arithmetic & Advanced",
+    "teacher": "Gagan Pratap Sir",
+    "subject": "Maths",
+    "thumb": "/thumbnails/subjects/maths_spl_b43.svg",
+    "category": "government",
+    "desc": "",
+    "isParmar": false,
+    "isPratham": false,
+    "isFolderMode": false,
+    "stats": {
+      "videos": 464,
+      "resources": 97
+    }
+  },
+  {
+    "id": "maths-special-1",
+    "name": "Mathematics Special 1",
+    "subname": "Maths Special 1 • Gagan Pratap Sir",
+    "teacher": "Gagan Pratap Sir",
+    "subject": "Maths",
+    "thumb": "/thumbnails/subjects/maths_special_1.svg",
+    "category": "government",
+    "desc": "",
+    "isParmar": false,
+    "isPratham": false,
+    "isFolderMode": false,
+    "stats": {
+      "videos": 181,
+      "resources": 104
+    }
+  },
+  {
+    "id": "maths-special-vod",
+    "name": "Mathematics Special VOD",
+    "subname": "Complete Foundation to Advanced VOD Batch",
+    "teacher": "Maths Faculty",
+    "subject": "Maths",
+    "thumb": "/thumbnails/subjects/maths_special_vod.svg",
+    "category": "government",
+    "desc": "",
+    "isParmar": false,
+    "isPratham": false,
+    "isFolderMode": false,
+    "stats": {
+      "videos": 382,
+      "resources": 51
+    }
+  },
+  {
+    "id": "maths-special-vod-2",
+    "name": "Mathematics Special VOD 2",
+    "subname": "Maths VOD 2 • Complete Foundation",
+    "teacher": "Maths Faculty",
+    "subject": "Maths",
+    "thumb": "/thumbnails/subjects/maths_special_vod_2.svg",
+    "category": "government",
+    "desc": "",
+    "isParmar": false,
+    "isPratham": false,
+    "isFolderMode": false,
+    "stats": {
+      "videos": 411,
+      "resources": 81
+    }
+  },
+  {
+    "id": "maths-spl38",
+    "name": "Mathematics SPL 38",
+    "subname": "Maths Special 38 • Foundation to Advanced",
+    "teacher": "Maths Faculty",
+    "subject": "Maths",
+    "thumb": "/thumbnails/subjects/maths_spl38.svg",
+    "category": "government",
+    "desc": "",
+    "isParmar": false,
+    "isPratham": false,
+    "isFolderMode": false,
+    "stats": {
+      "videos": 292,
+      "resources": 857
+    }
+  },
+  {
+    "id": "parmar",
+    "name": "Parmar Academy GK",
+    "subname": "Parmar 4.0 GK • General Awareness & GS",
+    "teacher": "Parmar Sir",
+    "subject": "General Knowledge",
+    "thumb": "/thumbnails/subjects/parmar_academy_gk.svg",
+    "category": "government",
+    "desc": "",
+    "isParmar": true,
+    "isPratham": false,
+    "isFolderMode": false,
+    "stats": {
+      "videos": 126,
+      "resources": 634
+    }
+  },
+  {
+    "id": "parmar-gk-3-0",
+    "name": "Parmar GK 3.0",
+    "subname": "Complete General Knowledge & Static GK",
+    "teacher": "Parmar Sir",
+    "subject": "General Knowledge",
+    "thumb": "/thumbnails/subjects/parmar_gk_3_0.svg",
+    "category": "government",
+    "desc": "",
+    "isParmar": false,
+    "isPratham": false,
+    "isFolderMode": false,
+    "stats": {
+      "videos": 69,
+      "resources": 0
+    }
+  },
+  {
+    "id": "reasoning-spl-38",
+    "name": "Reasoning Special 38",
+    "subname": "Reasoning SPL 38 • Complete Verbal & Non-Verbal",
+    "teacher": "Piyush Varshney Sir",
+    "subject": "Reasoning",
+    "thumb": "/thumbnails/subjects/reasoning_spl_38.svg",
+    "category": "government",
+    "desc": "",
+    "isParmar": false,
+    "isPratham": false,
+    "isFolderMode": false,
+    "stats": {
+      "videos": 128,
+      "resources": 248
+    }
+  },
+  {
+    "id": "reasoning-spl-58",
+    "name": "Reasoning Special 58",
+    "subname": "Comprehensive Logical & Analytical Reasoning",
+    "teacher": "Reasoning Faculty",
+    "subject": "Reasoning",
+    "thumb": "/thumbnails/subjects/reasoning_spl_58.svg",
+    "category": "government",
+    "desc": "",
+    "isParmar": false,
+    "isPratham": false,
+    "isFolderMode": false,
+    "stats": {
+      "videos": 293,
+      "resources": 493
+    }
+  },
+  {
+    "id": "selection-batch-1",
+    "name": "Selection Batch 1",
+    "subname": "Selection Batch 1 • Complete Live & VOD",
+    "teacher": "Selection Faculty",
+    "subject": "SSC Complete",
+    "thumb": "/thumbnails/subjects/selection_batch_1.svg",
+    "category": "government",
+    "desc": "",
+    "isParmar": false,
+    "isPratham": false,
+    "isFolderMode": false,
+    "stats": {
+      "videos": 716,
+      "resources": 1833
+    }
+  },
+  {
+    "id": "gate-ece-made-easy-signal-system",
+    "name": "Signal and System — Made Easy",
+    "subname": "ECE • Made Easy Complete GATE Course",
+    "teacher": "Made Easy Faculty",
+    "subject": "ECE",
+    "thumb": "",
+    "category": "gate",
+    "desc": "",
+    "isParmar": false,
+    "isPratham": false,
+    "isFolderMode": false,
+    "stats": {
+      "videos": 36,
+      "resources": 0
+    }
+  },
+  {
+    "id": "ssc-complete-vod",
+    "name": "SSC Complete VOD",
+    "subname": "SSC VOD • Complete Preparation",
+    "teacher": "SSC Faculty",
+    "subject": "SSC Complete",
+    "thumb": "/thumbnails/subjects/ssc_complete_vod.svg",
+    "category": "government",
+    "desc": "",
+    "isParmar": false,
+    "isPratham": false,
+    "isFolderMode": false,
+    "stats": {
+      "videos": 880,
+      "resources": 854
+    }
+  },
+  {
+    "id": "pratham",
+    "name": "SSC Pratham Batch 2",
+    "subname": "Complete Foundation (Maths, English, Reasoning, GS)",
+    "teacher": "Multiple Teachers",
+    "subject": "SSC Complete",
+    "thumb": "/thumbnails/subjects/ssc_pratham_batch_2.svg",
+    "category": "government",
+    "desc": "",
+    "isParmar": false,
+    "isPratham": true,
+    "isFolderMode": false,
+    "stats": {
+      "videos": 3627,
+      "resources": 0
+    }
+  },
+  {
+    "id": "vocab-mastery-vod",
+    "name": "Vocab Mastery VOD",
+    "subname": "Complete English Vocabulary & Root Words Batch",
+    "teacher": "English Faculty",
+    "subject": "English",
+    "thumb": "/thumbnails/subjects/vocab_mastery_vod.svg",
+    "category": "government",
+    "desc": "",
+    "isParmar": false,
+    "isPratham": false,
+    "isFolderMode": false,
+    "stats": {
+      "videos": 56,
+      "resources": 116
+    }
+  }
+]

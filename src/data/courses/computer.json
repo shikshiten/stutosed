@@ -1,0 +1,813 @@
+{
+  "id": "computer",
+  "name": "Computer Special",
+  "subname": "Computer SPL 29 • Yatendra Sir",
+  "teacher": "Yatendra Sir",
+  "subject": "Computer",
+  "thumb": "/thumbnails/subjects/computer_special.svg",
+  "tabs": [
+    {
+      "id": "videos",
+      "label": "▶ Videos",
+      "items": [
+        {
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6360350028112/6360350028112.m3u8",
+          "label": "Class-01 | Intro",
+          "type": "hls"
+        },
+        {
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6360404672112/6360404672112.m3u8",
+          "label": "Class-02 | Computer Architecture",
+          "type": "hls"
+        },
+        {
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6360692814112/6360692814112.m3u8",
+          "label": "Class-03 | Computer Architecture",
+          "type": "hls"
+        },
+        {
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6360748665112/6360748665112.m3u8",
+          "label": "Class-04 | Computer Architecture",
+          "type": "hls"
+        },
+        {
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6360804783112/6360804783112.m3u8",
+          "label": "Class-05 | Computer Architecture",
+          "type": "hls"
+        },
+        {
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6361082641112/6361082641112.m3u8",
+          "label": "Class-06 | Computer Architecture",
+          "type": "hls"
+        },
+        {
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6361135927112/6361135927112.m3u8",
+          "label": "Class-07 | Computer Architecture",
+          "type": "hls"
+        },
+        {
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6361249797112/6361249797112.m3u8",
+          "label": "Class-08 | Computer Architecture",
+          "type": "hls"
+        },
+        {
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6361487699112/6361487699112.m3u8",
+          "label": "Class-09 | MEMORY UNITS",
+          "type": "hls"
+        },
+        {
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6361547021112/6361547021112.m3u8",
+          "label": "Class-10 | HIS, GEN & CLASSIFICATION OF COMPUTER",
+          "type": "hls"
+        },
+        {
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6361604103112/6361604103112.m3u8",
+          "label": "Class-11 | HIS, GEN & CLASSIFICATION OF COMPUTER",
+          "type": "hls"
+        },
+        {
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6361727967112/6361727967112.m3u8",
+          "label": "Class-12 | COMPUTER HARDWARE",
+          "type": "hls"
+        },
+        {
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6361779083112/6361779083112.m3u8",
+          "label": "Class-13 | COMPUTER HARDWARE",
+          "type": "hls"
+        },
+        {
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6361826740112/6361826740112.m3u8",
+          "label": "Class-14 | COMPUTER HARDWARE",
+          "type": "hls"
+        },
+        {
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6361865163112/6361865163112.m3u8",
+          "label": "Class-15 | COMPUTER HARDWARE",
+          "type": "hls"
+        },
+        {
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6361911527112/6361911527112.m3u8",
+          "label": "Class-16 | COMPUTER HARDWARE",
+          "type": "hls"
+        },
+        {
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6362011487112/6362011487112.m3u8",
+          "label": "Class-17 | COMPUTER HARDWARE",
+          "type": "hls"
+        },
+        {
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6362052621112/6362052621112.m3u8",
+          "label": "Class-18 | COMPUTER HARDWARE",
+          "type": "hls"
+        },
+        {
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6362101165112/6362101165112.m3u8",
+          "label": "Class-19 | COMPUTER HARDWARE",
+          "type": "hls"
+        },
+        {
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6362145131112/6362145131112.m3u8",
+          "label": "Class-20 | COMPUTER HARDWARE",
+          "type": "hls"
+        },
+        {
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6362197971112/6362197971112.m3u8",
+          "label": "Class-21 | COMPUTER MEMORY",
+          "type": "hls"
+        },
+        {
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6362380929112/6362380929112.m3u8",
+          "label": "Class-22 | Computer Software",
+          "type": "hls"
+        },
+        {
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6362428454112/6362428454112.m3u8",
+          "label": "Class-23 | Computer Software",
+          "type": "hls"
+        },
+        {
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6362482794112/6362482794112.m3u8",
+          "label": "Class-24 | Computer Software",
+          "type": "hls"
+        },
+        {
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/vod_non_drm_hls/migration/xcXkvqym14M/xcXkvqym14M.m3u8",
+          "label": "Class-25 | Computer Software",
+          "type": "hls"
+        },
+        {
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/vod_non_drm_hls/migration/yU2kEDkAcuc/yU2kEDkAcuc.m3u8",
+          "label": "Class-26 | MICROSOFT WINDOWS",
+          "type": "hls"
+        },
+        {
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/vod_non_drm_hls/migration/6362937310112/6362937310112.m3u8",
+          "label": "Class-27 | MICROSOFT WINDOWS",
+          "type": "hls"
+        },
+        {
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6362787572112/6362787572112.m3u8",
+          "label": "Class-28 | MICROSOFT WINDOWS",
+          "type": "hls"
+        },
+        {
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/vod_non_drm_hls/migration/6362936223112/6362936223112.m3u8",
+          "label": "Class-29 | MICROSOFT WINDOWS",
+          "type": "hls"
+        },
+        {
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6362932618112/6362932618112.m3u8",
+          "label": "Class-30 | MS-OFFICE",
+          "type": "hls"
+        },
+        {
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6362972411112/6362972411112.m3u8",
+          "label": "Class-31 | MS-OFFICE",
+          "type": "hls"
+        },
+        {
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6363065866112/6363065866112.m3u8",
+          "label": "Class-32 | MS-OFFICE",
+          "type": "hls"
+        },
+        {
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6363113123112/6363113123112.m3u8",
+          "label": "Class-33 | MS-OFFICE",
+          "type": "hls"
+        },
+        {
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6363231115112/6363231115112.m3u8",
+          "label": "Class-34 | MS-OFFICE",
+          "type": "hls"
+        },
+        {
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6363323933112/6363323933112.m3u8",
+          "label": "Class-35 | MS-OFFICE",
+          "type": "hls"
+        },
+        {
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6363366320112/6363366320112.m3u8",
+          "label": "Class-36 | MS-OFFICE",
+          "type": "hls"
+        },
+        {
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/vod_non_drm_hls/migration/d3XteE2M47g/d3XteE2M47g.m3u8",
+          "label": "Class-37 | MS-OFFICE",
+          "type": "hls"
+        },
+        {
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6363541443112/6363541443112.m3u8",
+          "label": "Class-38 | MS-OFFICE",
+          "type": "hls"
+        },
+        {
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6363582358112/6363582358112.m3u8",
+          "label": "Class-39 | MS-OFFICE",
+          "type": "hls"
+        },
+        {
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6363630277112/6363630277112.m3u8",
+          "label": "Class-40 | MS-OFFICE",
+          "type": "hls"
+        },
+        {
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6363679064112/6363679064112.m3u8",
+          "label": "Class-41 | MS-OFFICE",
+          "type": "hls"
+        },
+        {
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6363732556112/6363732556112.m3u8",
+          "label": "Class-42 | MS-OFFICE",
+          "type": "hls"
+        },
+        {
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/vod_non_drm_hls/migration/jlGqP8tmEwA/jlGqP8tmEwA.m3u8",
+          "label": "Class-43 | MS-OFFICE",
+          "type": "hls"
+        },
+        {
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6364217220112/6364217220112.m3u8",
+          "label": "Class-44 | MS-OFFICE",
+          "type": "hls"
+        },
+        {
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6364280773112/6364280773112.m3u8",
+          "label": "Class-45 | MS-OFFICE",
+          "type": "hls"
+        },
+        {
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6364332815112/6364332815112.m3u8",
+          "label": "Class-46 | MS-OFFICE",
+          "type": "hls"
+        },
+        {
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6364390680112/6364390680112.m3u8",
+          "label": "Class-47 | MS-OFFICE",
+          "type": "hls"
+        },
+        {
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6364538463112/6364538463112.m3u8",
+          "label": "Class-48 | MS-OFFICE",
+          "type": "hls"
+        },
+        {
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6364581721112/6364581721112.m3u8",
+          "label": "Class-49 | MS-OFFICE",
+          "type": "hls"
+        },
+        {
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6364637995112/6364637995112.m3u8",
+          "label": "Class-50 | MS-OFFICE",
+          "type": "hls"
+        },
+        {
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6364689803112/6364689803112.m3u8",
+          "label": "Class-51 | INTERNET",
+          "type": "hls"
+        },
+        {
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6364740644112/6364740644112.m3u8",
+          "label": "Class-52 | INTERNET",
+          "type": "hls"
+        },
+        {
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6364893008112/6364893008112.m3u8",
+          "label": "Class-53 | INTERNET",
+          "type": "hls"
+        },
+        {
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6364940254112/6364940254112.m3u8",
+          "label": "Class-54 | INTERNET",
+          "type": "hls"
+        },
+        {
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6364983185112/6364983185112.m3u8",
+          "label": "Class-55 | Networking",
+          "type": "hls"
+        },
+        {
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6365035345112/6365035345112.m3u8",
+          "label": "Class-56 | Networking",
+          "type": "hls"
+        },
+        {
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6365150358112/6365150358112.m3u8",
+          "label": "Class-57 | Networking",
+          "type": "hls"
+        },
+        {
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6365199118112/6365199118112.m3u8",
+          "label": "Class-58 | Networking",
+          "type": "hls"
+        },
+        {
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6365284377112/6365284377112.m3u8",
+          "label": "Class-59 | Computer Security",
+          "type": "hls"
+        },
+        {
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6365317715112/6365317715112.m3u8",
+          "label": "Class-60 | Computer Security",
+          "type": "hls"
+        },
+        {
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6365407623112/6365407623112.m3u8",
+          "label": "Class-61 | DATABASE",
+          "type": "hls"
+        },
+        {
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/vod_non_drm_hls/migration/6365891947112/6365891947112.m3u8",
+          "label": "Class-62 | DATABASE",
+          "type": "hls"
+        },
+        {
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6365794480112/6365794480112.m3u8",
+          "label": "Class-63 | DATABASE",
+          "type": "hls"
+        },
+        {
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6365838275112/6365838275112.m3u8",
+          "label": "Class-64 | DATABASE",
+          "type": "hls"
+        },
+        {
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6365892631112/6365892631112.m3u8",
+          "label": "Class-65 | Programming Language",
+          "type": "hls"
+        },
+        {
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6368587890112/6368587890112.m3u8",
+          "label": "Computer. - Class-01 | Intro",
+          "type": "hls"
+        },
+        {
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6368637956112/6368637956112.m3u8",
+          "label": "Computer. - Class-02 | Computer Architecture",
+          "type": "hls"
+        },
+        {
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6368692674112/6368692674112.m3u8",
+          "label": "Computer. - Class-03 | Computer Architecture",
+          "type": "hls"
+        },
+        {
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6368747938112/6368747938112.m3u8",
+          "label": "Computer. - Class-04 | Computer Architecture",
+          "type": "hls"
+        },
+        {
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6368945018112/6368945018112.m3u8",
+          "label": "Computer. - Class-05 | Computer Architecture",
+          "type": "hls"
+        },
+        {
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6369081591112/6369081591112.m3u8",
+          "label": "Computer. - Class-06 | Computer Architecture",
+          "type": "hls"
+        },
+        {
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6369137886112/6369137886112.m3u8",
+          "label": "Computer. - Class-07 | Computer Architecture",
+          "type": "hls"
+        },
+        {
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6369288555112/6369288555112.m3u8",
+          "label": "Computer. - Class-08 | Computer Architecture",
+          "type": "hls"
+        },
+        {
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6369334972112/6369334972112.m3u8",
+          "label": "Computer. - Class-09 | His & Gen of Computer",
+          "type": "hls"
+        },
+        {
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6369384038112/6369384038112.m3u8",
+          "label": "Computer. - Class-10 | Computer Hardware",
+          "type": "hls"
+        },
+        {
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6369432102112/6369432102112.m3u8",
+          "label": "Computer. - Class-11 | Computer Hardware",
+          "type": "hls"
+        },
+        {
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6369544734112/6369544734112.m3u8",
+          "label": "Computer. - Class-12 | Computer Hardware",
+          "type": "hls"
+        },
+        {
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6369581342112/6369581342112.m3u8",
+          "label": "Computer. - Class-13 | Computer Hardware",
+          "type": "hls"
+        },
+        {
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6369668155112/6369668155112.m3u8",
+          "label": "Computer. - Class-14 | Computer Hardware",
+          "type": "hls"
+        },
+        {
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/vod_non_drm_hls/migration/6zTNAOQSgpM/6zTNAOQSgpM.m3u8",
+          "label": "Computer. - Class-15 | Computer Hardware",
+          "type": "hls"
+        },
+        {
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6369874281112/6369874281112.m3u8",
+          "label": "Computer. - Class-16 | Computer Hardware",
+          "type": "hls"
+        },
+        {
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6369916791112/6369916791112.m3u8",
+          "label": "Computer. - Class-17 | Computer Hardware",
+          "type": "hls"
+        },
+        {
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6370133603112/6370133603112.m3u8",
+          "label": "Computer. - Class-18 | Computer Memory",
+          "type": "hls"
+        },
+        {
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6370180010112/6370180010112.m3u8",
+          "label": "Computer. - Class-19 | Computer Memory",
+          "type": "hls"
+        },
+        {
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6370220961112/6370220961112.m3u8",
+          "label": "Computer. - Class-20 | Computer Memory",
+          "type": "hls"
+        },
+        {
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6370262253112/6370262253112.m3u8",
+          "label": "Computer. - Class-21 | Computer Software",
+          "type": "hls"
+        },
+        {
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6370313900112/6370313900112.m3u8",
+          "label": "Computer. - Class-22 | Computer Software",
+          "type": "hls"
+        },
+        {
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6370454596112/6370454596112.m3u8",
+          "label": "Computer. - Class-23 | Computer Software",
+          "type": "hls"
+        },
+        {
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6370510732112/6370510732112.m3u8",
+          "label": "Computer. - Class-24 | Computer Software",
+          "type": "hls"
+        },
+        {
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6370570332112/6370570332112.m3u8",
+          "label": "Computer. - Class-25 | Computer Software",
+          "type": "hls"
+        },
+        {
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6370622683112/6370622683112.m3u8",
+          "label": "Computer. - Class-26 | Microsoft Windows",
+          "type": "hls"
+        },
+        {
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6370816690112/6370816690112.m3u8",
+          "label": "Computer. - Class-27 | Microsoft Windows",
+          "type": "hls"
+        },
+        {
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6370863698112/6370863698112.m3u8",
+          "label": "Computer. - Class-28 | Microsoft Windows",
+          "type": "hls"
+        },
+        {
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6370914679112/6370914679112.m3u8",
+          "label": "Computer. - Class-29 | Microsoft Windows",
+          "type": "hls"
+        },
+        {
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6370965741112/6370965741112.m3u8",
+          "label": "Computer. - Class-30 | Microsoft Windows",
+          "type": "hls"
+        },
+        {
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6371024048112/6371024048112.m3u8",
+          "label": "Computer. - Class-31 | Microsoft Windows",
+          "type": "hls"
+        },
+        {
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6371257083112/6371257083112.m3u8",
+          "label": "Computer. - Class-32 | MS-Office",
+          "type": "hls"
+        },
+        {
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6371301325112/6371301325112.m3u8",
+          "label": "Computer. - Class-33 | MS-Office",
+          "type": "hls"
+        },
+        {
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6371347076112/6371347076112.m3u8",
+          "label": "Computer. - Class-34 | MS-Office",
+          "type": "hls"
+        },
+        {
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6371465639112/6371465639112.m3u8",
+          "label": "Computer. - Class-35 | MS-Office",
+          "type": "hls"
+        },
+        {
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6371506955112/6371506955112.m3u8",
+          "label": "Computer. - Class-36 | MS-Office",
+          "type": "hls"
+        },
+        {
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6371636968112/6371636968112.m3u8",
+          "label": "Computer. - Class-37 | Doubt Class",
+          "type": "hls"
+        },
+        {
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6371744643112/6371744643112.m3u8",
+          "label": "Computer. - Class-38 | Number System(Data Representation)",
+          "type": "hls"
+        },
+        {
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6371779502112/6371779502112.m3u8",
+          "label": "Computer. - Class-39 | Number System(Data Representation)",
+          "type": "hls"
+        },
+        {
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6371821378112/6371821378112.m3u8",
+          "label": "Computer. - Class-40 | Number System(Data Representation)",
+          "type": "hls"
+        },
+        {
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6371861206112/6371861206112.m3u8",
+          "label": "Computer. - Class-41 | MS-Office",
+          "type": "hls"
+        },
+        {
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6371915932112/6371915932112.m3u8",
+          "label": "Computer. - Class-42 | MS-Office",
+          "type": "hls"
+        },
+        {
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6372016460112/6372016460112.m3u8",
+          "label": "Computer. - Class-43 | MS-Office",
+          "type": "hls"
+        },
+        {
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/vod_non_drm_hls/migration/3e6zb-OOxLg/3e6zb-OOxLg.m3u8",
+          "label": "Computer. - Class-44 | MS-Office",
+          "type": "hls"
+        },
+        {
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6372102332112/6372102332112.m3u8",
+          "label": "Computer. - Class-45 | MS-Office",
+          "type": "hls"
+        },
+        {
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6372155795112/6372155795112.m3u8",
+          "label": "Computer. - Class-46 | MS-Office",
+          "type": "hls"
+        },
+        {
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6372208081112/6372208081112.m3u8",
+          "label": "Computer. - Class-47 | MS-Office",
+          "type": "hls"
+        },
+        {
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6372360292112/6372360292112.m3u8",
+          "label": "Computer. - Class-48 | MS-Office",
+          "type": "hls"
+        },
+        {
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6372401274112/6372401274112.m3u8",
+          "label": "Computer. - Class-49 | MS-Office",
+          "type": "hls"
+        },
+        {
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6372455457112/6372455457112.m3u8",
+          "label": "Computer. - Class-50 | MS-Office",
+          "type": "hls"
+        },
+        {
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6372690435112/6372690435112.m3u8",
+          "label": "Computer. - Class-52 | MS-Office",
+          "type": "hls"
+        },
+        {
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6372736935112/6372736935112.m3u8",
+          "label": "Computer. - Class-53 | MS-Office",
+          "type": "hls"
+        },
+        {
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/vod_non_drm_hls/migration/czH7t9wSSJg/czH7t9wSSJg.m3u8",
+          "label": "Computer. - Class-54 | Internet",
+          "type": "hls"
+        },
+        {
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6372832514112/6372832514112.m3u8",
+          "label": "Computer. - Class-55 | Internet",
+          "type": "hls"
+        },
+        {
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6372888769112/6372888769112.m3u8",
+          "label": "Computer. - Class-56 | Internet",
+          "type": "hls"
+        },
+        {
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6373101645112/6373101645112.m3u8",
+          "label": "Computer. - Class-57 | Internet",
+          "type": "hls"
+        },
+        {
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6373160215112/6373160215112.m3u8",
+          "label": "Computer. - Class-58 | Internet",
+          "type": "hls"
+        },
+        {
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6373217167112/6373217167112.m3u8",
+          "label": "Computer. - Class-59 | Internet",
+          "type": "hls"
+        },
+        {
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6373375593112/6373375593112.m3u8",
+          "label": "Computer. - Class-60 | Networking",
+          "type": "hls"
+        },
+        {
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6373487879112/6373487879112.m3u8",
+          "label": "Computer. - Class-61 | Networking",
+          "type": "hls"
+        },
+        {
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6373520188112/6373520188112.m3u8",
+          "label": "Computer. - Class-62 | Networking",
+          "type": "hls"
+        },
+        {
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6373557112112/6373557112112.m3u8",
+          "label": "Computer. - Class-63 | Networking",
+          "type": "hls"
+        },
+        {
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6373597880112/6373597880112.m3u8",
+          "label": "Computer. - Class-64 | Networking",
+          "type": "hls"
+        },
+        {
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6373642801112/6373642801112.m3u8",
+          "label": "Computer. - Class-65 | Computer Security",
+          "type": "hls"
+        },
+        {
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6373773750112/6373773750112.m3u8",
+          "label": "Computer. - Class-66 | Computer Security",
+          "type": "hls"
+        },
+        {
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6373812041112/6373812041112.m3u8",
+          "label": "Computer. - Class-67 | Number System (Data Representation)",
+          "type": "hls"
+        },
+        {
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6373853740112/6373853740112.m3u8",
+          "label": "Computer. - Class-68 | Number System (Data Representation)",
+          "type": "hls"
+        },
+        {
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6374043951112/6374043951112.m3u8",
+          "label": "Computer. - Class-69 | Number System (Data Representation)",
+          "type": "hls"
+        },
+        {
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6374167173112/6374167173112.m3u8",
+          "label": "Computer. - Class-70 | Database",
+          "type": "hls"
+        },
+        {
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6374224187112/6374224187112.m3u8",
+          "label": "Computer. - Class-71 | Programming Language",
+          "type": "hls"
+        }
+      ]
+    },
+    {
+      "id": "pdfs",
+      "label": "📄 PDFs",
+      "items": [
+        {
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/1649741720-1644835810-COMPUTER_Syllabus.pdf",
+          "label": "Syllabus",
+          "type": "pdf"
+        },
+        {
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/1657712754-MS-EXCEL_MCQs_(ENGLISH_+_HINDI).pdf",
+          "label": "MS-EXCEL MCQs (English + Hindi)",
+          "type": "pdf"
+        },
+        {
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/1657712754-MS-WORD_MCQs_(ENGLISH_+_HINDI).pdf",
+          "label": "MS-WORD MCQs (English + Hindi)",
+          "type": "pdf"
+        },
+        {
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/1657712754-FILE_EXTENSIONS.pdf",
+          "label": "File Extensions",
+          "type": "pdf"
+        },
+        {
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/1657712754-GOOGLE_CHROME_SHORTCUT_KEYS.pdf",
+          "label": "Google Chrome Shortcut Keys",
+          "type": "pdf"
+        },
+        {
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/1657712513-MS-PPT_SHORTCUT_KEYS.pdf",
+          "label": "MS-PPT Shortcut Keys",
+          "type": "pdf"
+        },
+        {
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/1657712513-MS-EXCEL_SHORTCUT_KEYS.pdf",
+          "label": "MS-Excel Shortcut Keys",
+          "type": "pdf"
+        },
+        {
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/1657712513-MS-WORD_SHORTCUT_KEYS.pdf",
+          "label": "MS-Word Shortcut Keys",
+          "type": "pdf"
+        },
+        {
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/1657712513-WINDOWS_SHORTCUT_KEYS.pdf",
+          "label": "Windows Shortcut Keys",
+          "type": "pdf"
+        },
+        {
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/1657712513-FULL_FORMS.pdf",
+          "label": "Full Forms",
+          "type": "pdf"
+        },
+        {
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/1657712513-History_Generation_of_Computer_(ENGLISH_+_HINDI).pdf",
+          "label": "History & Generation of Computer (English + Hindi)",
+          "type": "pdf"
+        },
+        {
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/1657712313-2000_MCQs_(ENGLISH)_compressed.pdf",
+          "label": "2000 MCQs (English)",
+          "type": "pdf"
+        },
+        {
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/1657712196-1000_MCQs_(HINDI).pdf",
+          "label": "1000 MCQs (Hindi)",
+          "type": "pdf"
+        },
+        {
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/1657712196-1000_MCQs_(ENGLISH).pdf",
+          "label": "1000 MCQs (English)",
+          "type": "pdf"
+        },
+        {
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/1657712147-MCQs_SET-9_(HINDI_+_ENGLISH).pdf",
+          "label": "MCQs Set - 9 (Hindi + English)",
+          "type": "pdf"
+        },
+        {
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/1657712121-MCQs_SET-8_(HINDI_+_ENGLISH).pdf",
+          "label": "MCQs Set - 8 (Hindi + English)",
+          "type": "pdf"
+        },
+        {
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/1657712121-MCQs_SET-7_(HINDI_+_ENGLISH).pdf",
+          "label": "MCQs Set - 7 (Hindi + English)",
+          "type": "pdf"
+        },
+        {
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/1657712121-MCQs_SET-6_(HINDI_+_ENGLISH).pdf",
+          "label": "MCQs Set - 6 (Hindi + English)",
+          "type": "pdf"
+        },
+        {
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/1657712084-MCQs_SET-5_(HINDI_+_ENGLISH).pdf",
+          "label": "MCQs Set - 5 (Hindi + English)",
+          "type": "pdf"
+        },
+        {
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/1657712084-MCQs_SET-4_(HINDI_+_ENGLISH).pdf",
+          "label": "MCQs Set - 4 (Hindi + English)",
+          "type": "pdf"
+        },
+        {
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/1657712084-MCQs_SET-3_(HINDI_+_ENGLISH).pdf",
+          "label": "MCQs Set - 3 (Hindi + English)",
+          "type": "pdf"
+        },
+        {
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/1657712084-MCQs_SET-2_(HINDI_+_ENGLISH).pdf",
+          "label": "MCQs Set - 2 (Hindi + English)",
+          "type": "pdf"
+        },
+        {
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/1657712084-MCQs_SET-1_(HINDI_+_ENGLISH).pdf",
+          "label": "MCQs Set - 1 (Hindi + English)",
+          "type": "pdf"
+        }
+      ]
+    }
+  ],
+  "category": "government"
+}

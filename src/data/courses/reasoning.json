@@ -1,0 +1,3499 @@
+{
+  "id": "reasoning",
+  "name": "Logical Reasoning",
+  "subname": "Reasoning SPL 60 • Verbal & Non-Verbal",
+  "teacher": "Reasoning Faculty",
+  "subject": "Reasoning",
+  "thumb": "/thumbnails/subjects/logical_reasoning.svg",
+  "tabs": [
+    {
+      "id": "videos",
+      "label": "▶ Videos",
+      "items": [
+        {
+          "label": "Bank (VOD) - Class - 01 | Alphabetical Series [21-Dec-2022 11:00]",
+          "url": "https://d3vlg4qjb80h8n.cloudfront.net/file_library/videos/migration/brightcove/6317797336112/6317797336112.m3u8",
+          "type": "hls",
+          "subject": "Bank (VOD)"
+        },
+        {
+          "label": "Bank (VOD) - Class - 02 | Alphabetical Series [22-Dec-2022 11:00]",
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6317625539112/6317625539112.m3u8",
+          "type": "hls",
+          "subject": "Bank (VOD)"
+        },
+        {
+          "label": "Bank (VOD) - Class - 03 | Alphabetical Series [23-Dec-2022 11:00]",
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6317694173112/6317694173112.m3u8",
+          "type": "hls",
+          "subject": "Bank (VOD)"
+        },
+        {
+          "label": "Bank (VOD) - Class - 04 | Alphabetical Series [27-Dec-2022 11:00]",
+          "url": "https://d3vlg4qjb80h8n.cloudfront.net/file_library/videos/migration/brightcove/6317823555112/6317823555112.m3u8",
+          "type": "hls",
+          "subject": "Bank (VOD)"
+        },
+        {
+          "label": "Bank (VOD) - Class - 05 | Alphabetical Series [28-Dec-2022 11:00]",
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6317889720112/6317889720112.m3u8",
+          "type": "hls",
+          "subject": "Bank (VOD)"
+        },
+        {
+          "label": "Bank (VOD) - Class - 06 | Pair formation [02-Jan-2023 18:00]",
+          "url": "https://d3vlg4qjb80h8n.cloudfront.net/file_library/videos/migration/brightcove/6318102700112/6318102700112.m3u8",
+          "type": "hls",
+          "subject": "Bank (VOD)"
+        },
+        {
+          "label": "Bank (VOD) - Class - 07 | Coding Decoding [03-Jan-2023 11:00]",
+          "url": "https://d3vlg4qjb80h8n.cloudfront.net/file_library/videos/migration/brightcove/6318121791112/6318121791112.m3u8",
+          "type": "hls",
+          "subject": "Bank (VOD)"
+        },
+        {
+          "label": "Bank (VOD) - Class - 08 | Coding Decoding [04-Jan-2023 11:00]",
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6318166749112/6318166749112.m3u8",
+          "type": "hls",
+          "subject": "Bank (VOD)"
+        },
+        {
+          "label": "Bank (VOD) - Class - 09 | Coding Decoding [05-Jan-2023 11:00]",
+          "url": "https://d3vlg4qjb80h8n.cloudfront.net/file_library/videos/migration/brightcove/6318212581112/6318212581112.m3u8",
+          "type": "hls",
+          "subject": "Bank (VOD)"
+        },
+        {
+          "label": "Bank (VOD) - Class - 10 | Coding Decoding [06-Jan-2023 11:00]",
+          "url": "https://d3vlg4qjb80h8n.cloudfront.net/file_library/videos/migration/brightcove/6318264615112/6318264615112.m3u8",
+          "type": "hls",
+          "subject": "Bank (VOD)"
+        },
+        {
+          "label": "Bank (VOD) - Class - 11 | Coding Decoding [07-Jan-2023 11:00]",
+          "url": "https://d3vlg4qjb80h8n.cloudfront.net/file_library/videos/migration/brightcove/6318312373112/6318312373112.m3u8",
+          "type": "hls",
+          "subject": "Bank (VOD)"
+        },
+        {
+          "label": "Bank (VOD) - Class - 12  | Ranking [10-Jan-2023 12:45]",
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6318444153112/6318444153112.m3u8",
+          "type": "hls",
+          "subject": "Bank (VOD)"
+        },
+        {
+          "label": "Bank (VOD) - Class - 13  | Ranking [11-Jan-2023 12:45]",
+          "url": "https://d3vlg4qjb80h8n.cloudfront.net/file_library/videos/migration/brightcove/6318494601112/6318494601112.m3u8",
+          "type": "hls",
+          "subject": "Bank (VOD)"
+        },
+        {
+          "label": "Bank (VOD) - Class - 14 | Ranking [12-Jan-2023 12:45]",
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6318544749112/6318544749112.m3u8",
+          "type": "hls",
+          "subject": "Bank (VOD)"
+        },
+        {
+          "label": "Bank (VOD) - Class - 15 | Ranking [13-Jan-2023 12:45]",
+          "url": "https://d3vlg4qjb80h8n.cloudfront.net/file_library/videos/migration/brightcove/6318592003112/6318592003112.m3u8",
+          "type": "hls",
+          "subject": "Bank (VOD)"
+        },
+        {
+          "label": "Bank (VOD) - Class - 16 | Ranking [16-Jan-2023 13:00]",
+          "url": "https://d3vlg4qjb80h8n.cloudfront.net/file_library/videos/migration/brightcove/6318747128112/6318747128112.m3u8",
+          "type": "hls",
+          "subject": "Bank (VOD)"
+        },
+        {
+          "label": "Bank (VOD) - Class-17 | Statements Assumptions [22-Feb-2023 13:00]",
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6320957017112/6320957017112.m3u8",
+          "type": "hls",
+          "subject": "Bank (VOD)"
+        },
+        {
+          "label": "Bank (VOD) - Class-18 | Statements Assumptions [23-Feb-2023 13:00]",
+          "url": "https://d3vlg4qjb80h8n.cloudfront.net/file_library/videos/migration/brightcove/6321020465112/6321020465112.m3u8",
+          "type": "hls",
+          "subject": "Bank (VOD)"
+        },
+        {
+          "label": "Bank (VOD) - Class-19 | Cause and Effect [24-Feb-2023 13:00]",
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6321106009112/6321106009112.m3u8",
+          "type": "hls",
+          "subject": "Bank (VOD)"
+        },
+        {
+          "label": "Bank (VOD) - Class-20 | Cause and Effect [27-Feb-2023 13:00]",
+          "url": "https://d3vlg4qjb80h8n.cloudfront.net/file_library/videos/migration/brightcove/6321301770112/6321301770112.m3u8",
+          "type": "hls",
+          "subject": "Bank (VOD)"
+        },
+        {
+          "label": "Bank (VOD) - Class-21 | Course of Action [28-Feb-2023 13:00]",
+          "url": "https://d3vlg4qjb80h8n.cloudfront.net/file_library/videos/migration/brightcove/6321363125112/6321363125112.m3u8",
+          "type": "hls",
+          "subject": "Bank (VOD)"
+        },
+        {
+          "label": "Bank (VOD) - Class-22 | Statements and Arguments [01-Mar-2023 13:00]",
+          "url": "https://d3vlg4qjb80h8n.cloudfront.net/file_library/videos/migration/brightcove/6321461387112/6321461387112.m3u8",
+          "type": "hls",
+          "subject": "Bank (VOD)"
+        },
+        {
+          "label": "Bank (VOD) - Class-23 | Statements and Arguments [03-Mar-2023 13:00]",
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6321605169112/6321605169112.m3u8",
+          "type": "hls",
+          "subject": "Bank (VOD)"
+        },
+        {
+          "label": "Bank (VOD) - Class-24 | Assertion Reason [04-Mar-2023 13:00]",
+          "url": "https://d3vlg4qjb80h8n.cloudfront.net/file_library/videos/migration/brightcove/6321683644112/6321683644112.m3u8",
+          "type": "hls",
+          "subject": "Bank (VOD)"
+        },
+        {
+          "label": "Bank (VOD) - Class-25 | Statement and Conclusions [13-Mar-2023 13:00]",
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6322476867112/6322476867112.m3u8",
+          "type": "hls",
+          "subject": "Bank (VOD)"
+        },
+        {
+          "label": "Bank (VOD) - Class-26 | Decision making [14-Mar-2023 13:00]",
+          "url": "https://d3vlg4qjb80h8n.cloudfront.net/file_library/videos/migration/brightcove/6322539204112/6322539204112.m3u8",
+          "type": "hls",
+          "subject": "Bank (VOD)"
+        },
+        {
+          "label": "Bank (VOD) - Class-27 | Sitting Arrangements [15-Mar-2023 13:00]",
+          "url": "https://d3vlg4qjb80h8n.cloudfront.net/file_library/videos/migration/brightcove/6322601903112/6322601903112.m3u8",
+          "type": "hls",
+          "subject": "Bank (VOD)"
+        },
+        {
+          "label": "Bank (VOD) - Class-28 | Sitting Arrangements [16-Mar-2023 13:00]",
+          "url": "https://d3vlg4qjb80h8n.cloudfront.net/file_library/videos/migration/brightcove/6322656853112/6322656853112.m3u8",
+          "type": "hls",
+          "subject": "Bank (VOD)"
+        },
+        {
+          "label": "Bank (VOD) - Class-29 | Sitting Arrangements [17-Mar-2023 13:00]",
+          "url": "https://d3vlg4qjb80h8n.cloudfront.net/file_library/videos/migration/brightcove/6322722090112/6322722090112.m3u8",
+          "type": "hls",
+          "subject": "Bank (VOD)"
+        },
+        {
+          "label": "Bank (VOD) - Class-30 | Sitting Arrangements [20-Mar-2023 13:00]",
+          "url": "https://d3vlg4qjb80h8n.cloudfront.net/file_library/videos/migration/brightcove/6322954809112/6322954809112.m3u8",
+          "type": "hls",
+          "subject": "Bank (VOD)"
+        },
+        {
+          "label": "Bank (VOD) - Class-31 | Sitting Arrangements [21-Mar-2023 13:00]",
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6323006509112/6323006509112.m3u8",
+          "type": "hls",
+          "subject": "Bank (VOD)"
+        },
+        {
+          "label": "Bank (VOD) - Class-32 | Sitting Arrangements [22-Mar-2023 13:00]",
+          "url": "https://d3vlg4qjb80h8n.cloudfront.net/file_library/videos/migration/brightcove/6323059989112/6323059989112.m3u8",
+          "type": "hls",
+          "subject": "Bank (VOD)"
+        },
+        {
+          "label": "Bank (VOD) - Class-33 | Sitting Arrangements [23-Mar-2023 13:00]",
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6323131450112/6323131450112.m3u8",
+          "type": "hls",
+          "subject": "Bank (VOD)"
+        },
+        {
+          "label": "Bank (VOD) - Class-34 | Puzzle [27-Mar-2023 13:00]",
+          "url": "https://d3vlg4qjb80h8n.cloudfront.net/file_library/videos/migration/brightcove/6323408780112/6323408780112.m3u8",
+          "type": "hls",
+          "subject": "Bank (VOD)"
+        },
+        {
+          "label": "Bank (VOD) - Class-35 | Puzzle [28-Mar-2023 13:00]",
+          "url": "https://d3vlg4qjb80h8n.cloudfront.net/file_library/videos/migration/brightcove/6323499833112/6323499833112.m3u8",
+          "type": "hls",
+          "subject": "Bank (VOD)"
+        },
+        {
+          "label": "Bank (VOD) - Class-36 | Puzzle [29-Mar-2023 13:00]",
+          "url": "https://d3vlg4qjb80h8n.cloudfront.net/file_library/videos/migration/brightcove/6323578256112/6323578256112.m3u8",
+          "type": "hls",
+          "subject": "Bank (VOD)"
+        },
+        {
+          "label": "Bank (VOD) - Class-37 | Puzzle [30-Mar-2023 13:00]",
+          "url": "https://d3vlg4qjb80h8n.cloudfront.net/file_library/videos/migration/brightcove/6323627427112/6323627427112.m3u8",
+          "type": "hls",
+          "subject": "Bank (VOD)"
+        },
+        {
+          "label": "Bank (VOD) - Class-38 | Puzzle [31-Mar-2023 13:00]",
+          "url": "https://d3vlg4qjb80h8n.cloudfront.net/file_library/videos/migration/brightcove/6323691884112/6323691884112.m3u8",
+          "type": "hls",
+          "subject": "Bank (VOD)"
+        },
+        {
+          "label": "Bank (VOD) - Class-39 | Data Sufficiency [12-Apr-2023 13:00]",
+          "url": "https://d3vlg4qjb80h8n.cloudfront.net/file_library/videos/migration/brightcove/6324712257112/6324712257112.m3u8",
+          "type": "hls",
+          "subject": "Bank (VOD)"
+        },
+        {
+          "label": "Bank (VOD) - Class-40 | Syllogism [14-Apr-2023 13:00]",
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6325017026112/6325017026112.m3u8",
+          "type": "hls",
+          "subject": "Bank (VOD)"
+        },
+        {
+          "label": "Bank (VOD) - Class-41 | Syllogism [17-Apr-2023 13:00]",
+          "url": "https://d3vlg4qjb80h8n.cloudfront.net/file_library/videos/migration/brightcove/6325240889112/6325240889112.m3u8",
+          "type": "hls",
+          "subject": "Bank (VOD)"
+        },
+        {
+          "label": "Bank (VOD) - Class-42 | Syllogism [18-Apr-2023 13:00]",
+          "url": "https://d3vlg4qjb80h8n.cloudfront.net/file_library/videos/migration/brightcove/6325307336112/6325307336112.m3u8",
+          "type": "hls",
+          "subject": "Bank (VOD)"
+        },
+        {
+          "label": "Bank (VOD) - Class-43 | Syllogism [19-Apr-2023 13:00]",
+          "url": "https://d3vlg4qjb80h8n.cloudfront.net/file_library/videos/migration/brightcove/6325364622112/6325364622112.m3u8",
+          "type": "hls",
+          "subject": "Bank (VOD)"
+        },
+        {
+          "label": "Bank (VOD) - Class-44 | Syllogism [20-Apr-2023 13:00]",
+          "url": "https://d3vlg4qjb80h8n.cloudfront.net/file_library/videos/migration/brightcove/6325425027112/6325425027112.m3u8",
+          "type": "hls",
+          "subject": "Bank (VOD)"
+        },
+        {
+          "label": "Bank (VOD) - Class-45 | Syllogism [21-Apr-2023 13:00]",
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6325493782112/6325493782112.m3u8",
+          "type": "hls",
+          "subject": "Bank (VOD)"
+        },
+        {
+          "label": "Bank (VOD) - Class-46 | Syllogism [24-Apr-2023 13:00]",
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6326117922112/6326117922112.m3u8",
+          "type": "hls",
+          "subject": "Bank (VOD)"
+        },
+        {
+          "label": "Bank (VOD) - Class-47 | Syllogism [25-Apr-2023 13:00]",
+          "url": "https://d3vlg4qjb80h8n.cloudfront.net/file_library/videos/migration/brightcove/6326167403112/6326167403112.m3u8",
+          "type": "hls",
+          "subject": "Bank (VOD)"
+        },
+        {
+          "label": "Bank (VOD) - Class-48 | Syllogism [25-Apr-2023 15:30]",
+          "url": "https://d3vlg4qjb80h8n.cloudfront.net/file_library/videos/migration/brightcove/6326182909112/6326182909112.m3u8",
+          "type": "hls",
+          "subject": "Bank (VOD)"
+        },
+        {
+          "label": "Bank (VOD) - Class-49 | Machine Input [08-May-2023 13:00]",
+          "url": "https://d3vlg4qjb80h8n.cloudfront.net/file_library/videos/migration/brightcove/6327010345112/6327010345112.m3u8",
+          "type": "hls",
+          "subject": "Bank (VOD)"
+        },
+        {
+          "label": "Bank (VOD) - Class-50 | Machine Input [09-May-2023 13:00]",
+          "url": "https://d3vlg4qjb80h8n.cloudfront.net/file_library/videos/migration/brightcove/6327072403112/6327072403112.m3u8",
+          "type": "hls",
+          "subject": "Bank (VOD)"
+        },
+        {
+          "label": "Bank (VOD) - Class-51 | Machine Input [10-May-2023 13:00]",
+          "url": "https://d3vlg4qjb80h8n.cloudfront.net/file_library/videos/migration/brightcove/6327133518112/6327133518112.m3u8",
+          "type": "hls",
+          "subject": "Bank (VOD)"
+        },
+        {
+          "label": "Bank (VOD) - Class-52 | Machine Input [11-May-2023 13:00]",
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6327200552112/6327200552112.m3u8",
+          "type": "hls",
+          "subject": "Bank (VOD)"
+        },
+        {
+          "label": "Bank (VOD) - Class-53 | Number Series [12-May-2023 13:00]",
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6327281956112/6327281956112.m3u8",
+          "type": "hls",
+          "subject": "Bank (VOD)"
+        },
+        {
+          "label": "Bank (VOD) - Class-54 | Number Series [15-May-2023 13:00]",
+          "url": "https://d3vlg4qjb80h8n.cloudfront.net/file_library/videos/migration/brightcove/6327504592112/6327504592112.m3u8",
+          "type": "hls",
+          "subject": "Bank (VOD)"
+        },
+        {
+          "label": "Bank (VOD) - Class-55 | Number Series [16-May-2023 13:00]",
+          "url": "https://d3vlg4qjb80h8n.cloudfront.net/file_library/videos/migration/brightcove/6327593498112/6327593498112.m3u8",
+          "type": "hls",
+          "subject": "Bank (VOD)"
+        },
+        {
+          "label": "Bank (VOD) - Class-56 | Number Series [17-May-2023 13:00]",
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6327662657112/6327662657112.m3u8",
+          "type": "hls",
+          "subject": "Bank (VOD)"
+        },
+        {
+          "label": "Bank (VOD) - Class-57 | Blood Relation [24-May-2023 13:00]",
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6328122491112/6328122491112.m3u8",
+          "type": "hls",
+          "subject": "Bank (VOD)"
+        },
+        {
+          "label": "Bank (VOD) - Class-58 | Blood Relation [25-May-2023 13:00]",
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6328179510112/6328179510112.m3u8",
+          "type": "hls",
+          "subject": "Bank (VOD)"
+        },
+        {
+          "label": "Bank (VOD) - Class-59 | Blood Relation [26-May-2023 13:00]",
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6328254890112/6328254890112.m3u8",
+          "type": "hls",
+          "subject": "Bank (VOD)"
+        },
+        {
+          "label": "Bank (VOD) - Class-60 | Blood Relation [29-May-2023 13:00]",
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6328408890112/6328408890112.m3u8",
+          "type": "hls",
+          "subject": "Bank (VOD)"
+        },
+        {
+          "label": "Bank (VOD) - Class-61 | Blood Relation [30-May-2023 13:00]",
+          "url": "https://d3vlg4qjb80h8n.cloudfront.net/file_library/videos/migration/brightcove/6328461617112/6328461617112.m3u8",
+          "type": "hls",
+          "subject": "Bank (VOD)"
+        },
+        {
+          "label": "Bank (VOD) - Class-62 | Direction and Distance [31-May-2023 13:00]",
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6328523598112/6328523598112.m3u8",
+          "type": "hls",
+          "subject": "Bank (VOD)"
+        },
+        {
+          "label": "Bank (VOD) - Class-63 | Direction and Distance [01-Jun-2023 13:00]",
+          "url": "https://d3vlg4qjb80h8n.cloudfront.net/file_library/videos/migration/brightcove/6328589478112/6328589478112.m3u8",
+          "type": "hls",
+          "subject": "Bank (VOD)"
+        },
+        {
+          "label": "Bank (VOD) - Class-64 | Direction and Distance [02-Jun-2023 13:00]",
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6328646385112/6328646385112.m3u8",
+          "type": "hls",
+          "subject": "Bank (VOD)"
+        },
+        {
+          "label": "Bank (VOD) - Class-65 | Direction and Distance [06-Jun-2023 13:00]",
+          "url": "https://d3vlg4qjb80h8n.cloudfront.net/file_library/videos/migration/brightcove/6329267283112/6329267283112.m3u8",
+          "type": "hls",
+          "subject": "Bank (VOD)"
+        },
+        {
+          "label": "Bank (VOD) - Class-66 | Direction and Distance [07-Jun-2023 13:00]",
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6328941975112/6328941975112.m3u8",
+          "type": "hls",
+          "subject": "Bank (VOD)"
+        },
+        {
+          "label": "Bank (VOD) - Class-67 | Inequality [12-Jun-2023 15:00]",
+          "url": "https://d3vlg4qjb80h8n.cloudfront.net/file_library/videos/migration/brightcove/6343963938112/6343963938112.m3u8",
+          "type": "hls",
+          "subject": "Bank (VOD)"
+        },
+        {
+          "label": "Reas (VOD) - Class-01 | Intro [20-Nov-2024 14:30]",
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6364940486112/6364940486112.m3u8",
+          "type": "hls",
+          "subject": "Reas (VOD)"
+        },
+        {
+          "label": "Reas (VOD) - Class-02 | Alphabetical Series [21-Nov-2024 14:30]",
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6364984115112/6364984115112.m3u8",
+          "type": "hls",
+          "subject": "Reas (VOD)"
+        },
+        {
+          "label": "Reas (VOD) - Class-03 | Alphabetical Series [22-Nov-2024 14:30]",
+          "url": "https://d3vlg4qjb80h8n.cloudfront.net/file_library/videos/migration/brightcove/6365037809112/6365037809112.m3u8",
+          "type": "hls",
+          "subject": "Reas (VOD)"
+        },
+        {
+          "label": "Reas (VOD) - Class-04 | Alphabetical Series [23-Nov-2024 14:30]",
+          "url": "https://d3vlg4qjb80h8n.cloudfront.net/file_library/videos/migration/brightcove/6365081061112/6365081061112.m3u8",
+          "type": "hls",
+          "subject": "Reas (VOD)"
+        },
+        {
+          "label": "Reas (VOD) - Class-05 | Alphabetical Series [27-Nov-2024 14:30]",
+          "url": "https://d3vlg4qjb80h8n.cloudfront.net/file_library/videos/migration/brightcove/6365241384112/6365241384112.m3u8",
+          "type": "hls",
+          "subject": "Reas (VOD)"
+        },
+        {
+          "label": "Reas (VOD) - Class-06 | Alphabetical Series [28-Nov-2024 14:30]",
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/vod_non_drm_hls/migration/uzcvPKV_tf0/uzcvPKV_tf0.m3u8",
+          "type": "hls",
+          "subject": "Reas (VOD)"
+        },
+        {
+          "label": "Reas (VOD) - Class-07 | Alphabetical Series [29-Nov-2024 14:30]",
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/vod_non_drm_hls/migration/a0ZXcgie2Og/a0ZXcgie2Og.m3u8",
+          "type": "hls",
+          "subject": "Reas (VOD)"
+        },
+        {
+          "label": "Reas (VOD) - Class-08 | Letter Series [02-Dec-2024 14:30]",
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6365410469112/6365410469112.m3u8",
+          "type": "hls",
+          "subject": "Reas (VOD)"
+        },
+        {
+          "label": "Reas (VOD) - Class-09 | Letter Series [03-Dec-2024 14:30]",
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6365461406112/6365461406112.m3u8",
+          "type": "hls",
+          "subject": "Reas (VOD)"
+        },
+        {
+          "label": "Reas (VOD) - Class-10 | Pair Formation [04-Dec-2024 14:30]",
+          "url": "https://d3vlg4qjb80h8n.cloudfront.net/file_library/videos/migration/brightcove/6365515512112/6365515512112.m3u8",
+          "type": "hls",
+          "subject": "Reas (VOD)"
+        },
+        {
+          "label": "Reas (VOD) - Class-100 | Doubt Class [24-Apr-2025 16:00]",
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6371866401112/6371866401112.m3u8",
+          "type": "hls",
+          "subject": "Reas (VOD)"
+        },
+        {
+          "label": "Reas (VOD) - Class-101 | Sitting Arrangements [28-Apr-2025 16:00]",
+          "url": "https://d3vlg4qjb80h8n.cloudfront.net/file_library/videos/migration/brightcove/6372020061112/6372020061112.m3u8",
+          "type": "hls",
+          "subject": "Reas (VOD)"
+        },
+        {
+          "label": "Reas (VOD) - Class-102 | Sitting Arrangements [29-Apr-2025 16:00]",
+          "url": "https://d3vlg4qjb80h8n.cloudfront.net/file_library/videos/migration/brightcove/6372056906112/6372056906112.m3u8",
+          "type": "hls",
+          "subject": "Reas (VOD)"
+        },
+        {
+          "label": "Reas (VOD) - Class-103 | Sitting Arrangements [30-Apr-2025 16:00]",
+          "url": "https://d3vlg4qjb80h8n.cloudfront.net/file_library/videos/migration/brightcove/6372103999112/6372103999112.m3u8",
+          "type": "hls",
+          "subject": "Reas (VOD)"
+        },
+        {
+          "label": "Reas (VOD) - Class-104 | Sitting Arrangements [01-May-2025 16:00]",
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6372158034112/6372158034112.m3u8",
+          "type": "hls",
+          "subject": "Reas (VOD)"
+        },
+        {
+          "label": "Reas (VOD) - Class-105 | Sitting Arrangements PYQs Practice [02-May-2025 16:00]",
+          "url": "https://d3vlg4qjb80h8n.cloudfront.net/file_library/videos/migration/brightcove/6372211627112/6372211627112.m3u8",
+          "type": "hls",
+          "subject": "Reas (VOD)"
+        },
+        {
+          "label": "Reas (VOD) - Class-106 | Puzzle [05-May-2025 16:00]",
+          "url": "https://d3vlg4qjb80h8n.cloudfront.net/file_library/videos/vod_non_drm_hls/migration/ZNuVUL4bNZI/ZNuVUL4bNZI.m3u8",
+          "type": "hls",
+          "subject": "Reas (VOD)"
+        },
+        {
+          "label": "Reas (VOD) - Class-107 | Puzzle [06-May-2025 16:00]",
+          "url": "https://d3vlg4qjb80h8n.cloudfront.net/file_library/videos/migration/brightcove/6372408858112/6372408858112.m3u8",
+          "type": "hls",
+          "subject": "Reas (VOD)"
+        },
+        {
+          "label": "Reas (VOD) - Class-108 | Puzzle [07-May-2025 16:00]",
+          "url": "https://d3vlg4qjb80h8n.cloudfront.net/file_library/videos/migration/brightcove/6372460285112/6372460285112.m3u8",
+          "type": "hls",
+          "subject": "Reas (VOD)"
+        },
+        {
+          "label": "Reas (VOD) - Class-109 | Puzzle [08-May-2025 16:00]",
+          "url": "https://d3vlg4qjb80h8n.cloudfront.net/file_library/videos/migration/brightcove/6372511938112/6372511938112.m3u8",
+          "type": "hls",
+          "subject": "Reas (VOD)"
+        },
+        {
+          "label": "Reas (VOD) - Class-11 | Pair Formation [05-Dec-2024 14:30]",
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6365573650112/6365573650112.m3u8",
+          "type": "hls",
+          "subject": "Reas (VOD)"
+        },
+        {
+          "label": "Reas (VOD) - Class-110 | Puzzle [09-May-2025 16:00]",
+          "url": "https://d3vlg4qjb80h8n.cloudfront.net/file_library/videos/migration/brightcove/6372564660112/6372564660112.m3u8",
+          "type": "hls",
+          "subject": "Reas (VOD)"
+        },
+        {
+          "label": "Reas (VOD) - Class-111 | Puzzle [13-May-2025 16:00]",
+          "url": "https://d3vlg4qjb80h8n.cloudfront.net/file_library/videos/migration/brightcove/6372739780112/6372739780112.m3u8",
+          "type": "hls",
+          "subject": "Reas (VOD)"
+        },
+        {
+          "label": "Reas (VOD) - Class-112 | Non Verbal [14-May-2025 16:00]",
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6372786775112/6372786775112.m3u8",
+          "type": "hls",
+          "subject": "Reas (VOD)"
+        },
+        {
+          "label": "Reas (VOD) - Class-113 | Non Verbal [15-May-2025 16:00]",
+          "url": "https://d3vlg4qjb80h8n.cloudfront.net/file_library/videos/migration/brightcove/6372837224112/6372837224112.m3u8",
+          "type": "hls",
+          "subject": "Reas (VOD)"
+        },
+        {
+          "label": "Reas (VOD) - Class-114 | Non Verbal [16-May-2025 16:00]",
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6372893209112/6372893209112.m3u8",
+          "type": "hls",
+          "subject": "Reas (VOD)"
+        },
+        {
+          "label": "Reas (VOD) - Class-115 | Non Verbal [19-May-2025 16:00]",
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6373051649112/6373051649112.m3u8",
+          "type": "hls",
+          "subject": "Reas (VOD)"
+        },
+        {
+          "label": "Reas (VOD) - Class-116 | Non Verbal [20-May-2025 16:00]",
+          "url": "https://d3vlg4qjb80h8n.cloudfront.net/file_library/videos/migration/brightcove/6373106064112/6373106064112.m3u8",
+          "type": "hls",
+          "subject": "Reas (VOD)"
+        },
+        {
+          "label": "Reas (VOD) - Class-117 | Non Verbal [22-May-2025 16:00]",
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6373218054112/6373218054112.m3u8",
+          "type": "hls",
+          "subject": "Reas (VOD)"
+        },
+        {
+          "label": "Reas (VOD) - Class-118 | Statement and Assumptions [26-May-2025 16:00]",
+          "url": "https://d3vlg4qjb80h8n.cloudfront.net/file_library/videos/migration/brightcove/6373489612112/6373489612112.m3u8",
+          "type": "hls",
+          "subject": "Reas (VOD)"
+        },
+        {
+          "label": "Reas (VOD) - Class-119 | Statement and Conclusion [27-May-2025 16:00]",
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/vod_non_drm_hls/migration/B75oakA9-Jk/B75oakA9-Jk.m3u8",
+          "type": "hls",
+          "subject": "Reas (VOD)"
+        },
+        {
+          "label": "Reas (VOD) - Class-12 | Dictionary, Word Formation, Jumbling [06-Dec-2024 14:30]",
+          "url": "https://d3vlg4qjb80h8n.cloudfront.net/file_library/videos/migration/brightcove/6365626265112/6365626265112.m3u8",
+          "type": "hls",
+          "subject": "Reas (VOD)"
+        },
+        {
+          "label": "Reas (VOD) - Class-120 | Cause and Effect [29-May-2025 16:00]",
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/vod_non_drm_hls/migration/XojYD7kMjjI/XojYD7kMjjI.m3u8",
+          "type": "hls",
+          "subject": "Reas (VOD)"
+        },
+        {
+          "label": "Reas (VOD) - Class-121 | Course of Action [30-May-2025 16:00]",
+          "url": "https://d3vlg4qjb80h8n.cloudfront.net/file_library/videos/vod_non_drm_hls/migration/ZXCOEzrpRSc/ZXCOEzrpRSc.m3u8",
+          "type": "hls",
+          "subject": "Reas (VOD)"
+        },
+        {
+          "label": "Reas (VOD) - Class-122 | Statement and Argument [02-Jun-2025 16:00]",
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6373777053112/6373777053112.m3u8",
+          "type": "hls",
+          "subject": "Reas (VOD)"
+        },
+        {
+          "label": "Reas (VOD) - Class-123 | Reason Assertion [03-Jun-2025 16:00]",
+          "url": "https://d3vlg4qjb80h8n.cloudfront.net/file_library/videos/migration/brightcove/6373819729112/6373819729112.m3u8",
+          "type": "hls",
+          "subject": "Reas (VOD)"
+        },
+        {
+          "label": "Reas (VOD) - Class-124 | Decision Making [04-Jun-2025 16:00]",
+          "url": "https://d3vlg4qjb80h8n.cloudfront.net/file_library/videos/migration/brightcove/6373857438112/6373857438112.m3u8",
+          "type": "hls",
+          "subject": "Reas (VOD)"
+        },
+        {
+          "label": "Reas (VOD) - Class-125 | Data Sufficiency [05-Jun-2025 16:00]",
+          "url": "https://d3vlg4qjb80h8n.cloudfront.net/file_library/videos/migration/brightcove/6373896545112/6373896545112.m3u8",
+          "type": "hls",
+          "subject": "Reas (VOD)"
+        },
+        {
+          "label": "Reas (VOD) - Class-126  |  Machine Input [05-Jun-2025 17:00]",
+          "url": "https://d3vlg4qjb80h8n.cloudfront.net/file_library/videos/migration/brightcove/6366053804112/6366053804112.m3u8",
+          "type": "hls",
+          "subject": "Reas (VOD)"
+        },
+        {
+          "label": "Reas (VOD) - Class-127 | Machine Input [05-Jun-2025 17:01]",
+          "url": "https://d3vlg4qjb80h8n.cloudfront.net/file_library/videos/migration/brightcove/6366100047112/6366100047112.m3u8",
+          "type": "hls",
+          "subject": "Reas (VOD)"
+        },
+        {
+          "label": "Reas (VOD) - Class-128 | Machine Input [05-Jun-2025 17:02]",
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6366170816112/6366170816112.m3u8",
+          "type": "hls",
+          "subject": "Reas (VOD)"
+        },
+        {
+          "label": "Reas (VOD) - Class-129 | Machine Input [05-Jun-2025 17:03]",
+          "url": "https://d3vlg4qjb80h8n.cloudfront.net/file_library/videos/migration/brightcove/6366218711112/6366218711112.m3u8",
+          "type": "hls",
+          "subject": "Reas (VOD)"
+        },
+        {
+          "label": "Reas (VOD) - Class-13 | Coding Decoding [09-Dec-2024 14:30]",
+          "url": "https://d3vlg4qjb80h8n.cloudfront.net/file_library/videos/migration/brightcove/6365749759112/6365749759112.m3u8",
+          "type": "hls",
+          "subject": "Reas (VOD)"
+        },
+        {
+          "label": "Reas (VOD) - Class-130 | Last Class [06-Jun-2025 13:15]",
+          "url": "https://d3vlg4qjb80h8n.cloudfront.net/file_library/videos/migration/brightcove/6373936508112/6373936508112.m3u8",
+          "type": "hls",
+          "subject": "Reas (VOD)"
+        },
+        {
+          "label": "Reas (VOD) - Class-14 | Coding Decoding [10-Dec-2024 14:30]",
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6365793640112/6365793640112.m3u8",
+          "type": "hls",
+          "subject": "Reas (VOD)"
+        },
+        {
+          "label": "Reas (VOD) - Class-15 | Coding Decoding [11-Dec-2024 14:30]",
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6365838898112/6365838898112.m3u8",
+          "type": "hls",
+          "subject": "Reas (VOD)"
+        },
+        {
+          "label": "Reas (VOD) - Class-16 | Coding Decoding [12-Dec-2024 14:30]",
+          "url": "https://d3vlg4qjb80h8n.cloudfront.net/file_library/videos/migration/brightcove/6365893814112/6365893814112.m3u8",
+          "type": "hls",
+          "subject": "Reas (VOD)"
+        },
+        {
+          "label": "Reas (VOD) - Class-17 | Coding Decoding [13-Dec-2024 14:30]",
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6365940699112/6365940699112.m3u8",
+          "type": "hls",
+          "subject": "Reas (VOD)"
+        },
+        {
+          "label": "Reas (VOD) - Class-18 | Coding Decoding (Chinise Codding Decoding ) [16-Dec-2024 14:30]",
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6366057193112/6366057193112.m3u8",
+          "type": "hls",
+          "subject": "Reas (VOD)"
+        },
+        {
+          "label": "Reas (VOD) - Class-19 | Coding Decoding [17-Dec-2024 14:30]",
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/vod_non_drm_hls/migration/6366101687112/6366101687112.m3u8",
+          "type": "hls",
+          "subject": "Reas (VOD)"
+        },
+        {
+          "label": "Reas (VOD) - Class-20 | Coding Decoding [18-Dec-2024 14:30]",
+          "url": "https://d3vlg4qjb80h8n.cloudfront.net/file_library/videos/migration/brightcove/6366173838112/6366173838112.m3u8",
+          "type": "hls",
+          "subject": "Reas (VOD)"
+        },
+        {
+          "label": "Reas (VOD) - Class-21 | Matrix [19-Dec-2024 14:30]",
+          "url": "https://d3vlg4qjb80h8n.cloudfront.net/file_library/videos/vod_non_drm_hls/migration/QfF1BFTSkQg/QfF1BFTSkQg.m3u8",
+          "type": "hls",
+          "subject": "Reas (VOD)"
+        },
+        {
+          "label": "Reas (VOD) - Class-22 | Live Test [20-Dec-2024 14:30]",
+          "url": "https://d3vlg4qjb80h8n.cloudfront.net/file_library/videos/migration/brightcove/6366269589112/6366269589112.m3u8",
+          "type": "hls",
+          "subject": "Reas (VOD)"
+        },
+        {
+          "label": "Reas (VOD) - Class-23 | Counting Figures [23-Dec-2024 14:30]",
+          "url": "https://d3vlg4qjb80h8n.cloudfront.net/file_library/videos/migration/brightcove/6366367575112/6366367575112.m3u8",
+          "type": "hls",
+          "subject": "Reas (VOD)"
+        },
+        {
+          "label": "Reas (VOD) - Class-24 | Reas | Counting Figures [24-Dec-2024 14:30]",
+          "url": "https://d3vlg4qjb80h8n.cloudfront.net/file_library/videos/migration/brightcove/6366401758112/6366401758112.m3u8",
+          "type": "hls",
+          "subject": "Reas (VOD)"
+        },
+        {
+          "label": "Reas (VOD) - Class-25 | Reas | Counting Figures [25-Dec-2024 14:30]",
+          "url": "https://d3vlg4qjb80h8n.cloudfront.net/file_library/videos/migration/brightcove/6366426592112/6366426592112.m3u8",
+          "type": "hls",
+          "subject": "Reas (VOD)"
+        },
+        {
+          "label": "Reas (VOD) - Class-26 | Reas | Counting Figures [26-Dec-2024 14:30]",
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6366445878112/6366445878112.m3u8",
+          "type": "hls",
+          "subject": "Reas (VOD)"
+        },
+        {
+          "label": "Reas (VOD) - Class-27 | Reas | Counting Figures [27-Dec-2024 14:30]",
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6366473381112/6366473381112.m3u8",
+          "type": "hls",
+          "subject": "Reas (VOD)"
+        },
+        {
+          "label": "Reas (VOD) - Class-28 | Reas | Counting Figures [30-Dec-2024 14:30]",
+          "url": "https://d3vlg4qjb80h8n.cloudfront.net/file_library/videos/migration/brightcove/6366544534112/6366544534112.m3u8",
+          "type": "hls",
+          "subject": "Reas (VOD)"
+        },
+        {
+          "label": "Reas (VOD) - Class-29 | Reas | Counting Figures [31-Dec-2024 14:30]",
+          "url": "https://d3vlg4qjb80h8n.cloudfront.net/file_library/videos/migration/brightcove/6366570568112/6366570568112.m3u8",
+          "type": "hls",
+          "subject": "Reas (VOD)"
+        },
+        {
+          "label": "Reas (VOD) - Class-30 | Blood Relations [02-Jan-2025 14:30]",
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6366614899112/6366614899112.m3u8",
+          "type": "hls",
+          "subject": "Reas (VOD)"
+        },
+        {
+          "label": "Reas (VOD) - Class-31 | Blood Relations [03-Jan-2025 14:30]",
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6366645640112/6366645640112.m3u8",
+          "type": "hls",
+          "subject": "Reas (VOD)"
+        },
+        {
+          "label": "Reas (VOD) - Class-32 | Blood Relations [06-Jan-2025 14:30]",
+          "url": "https://d3vlg4qjb80h8n.cloudfront.net/file_library/videos/migration/brightcove/6366728565112/6366728565112.m3u8",
+          "type": "hls",
+          "subject": "Reas (VOD)"
+        },
+        {
+          "label": "Reas (VOD) - Class-33 | Blood Relations [07-Jan-2025 14:30]",
+          "url": "https://d3vlg4qjb80h8n.cloudfront.net/file_library/videos/migration/brightcove/6366762536112/6366762536112.m3u8",
+          "type": "hls",
+          "subject": "Reas (VOD)"
+        },
+        {
+          "label": "Reas (VOD) - Class-34 | Blood Relations [08-Jan-2025 14:30]",
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6366807363112/6366807363112.m3u8",
+          "type": "hls",
+          "subject": "Reas (VOD)"
+        },
+        {
+          "label": "Reas (VOD) - Class-35 | Blood Relations [14-Jan-2025 14:30]",
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/vod_non_drm_hls/migration/umwMsT5V-5s/umwMsT5V-5s.m3u8",
+          "type": "hls",
+          "subject": "Reas (VOD)"
+        },
+        {
+          "label": "Reas (VOD) - Class-36 | Calendar [15-Jan-2025 14:30]",
+          "url": "https://d3vlg4qjb80h8n.cloudfront.net/file_library/videos/migration/brightcove/6367116725112/6367116725112.m3u8",
+          "type": "hls",
+          "subject": "Reas (VOD)"
+        },
+        {
+          "label": "Reas (VOD) - Class-37 | Calendar [16-Jan-2025 14:30]",
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6367166139112/6367166139112.m3u8",
+          "type": "hls",
+          "subject": "Reas (VOD)"
+        },
+        {
+          "label": "Reas (VOD) - Class-38 | Calendar [17-Jan-2025 14:30]",
+          "url": "https://d3vlg4qjb80h8n.cloudfront.net/file_library/videos/vod_non_drm_hls/migration/oMp6P85B3SQ/oMp6P85B3SQ.m3u8",
+          "type": "hls",
+          "subject": "Reas (VOD)"
+        },
+        {
+          "label": "Reas (VOD) - Class-39 | Calendar [18-Jan-2025 14:30]",
+          "url": "https://d3vlg4qjb80h8n.cloudfront.net/file_library/videos/migration/brightcove/6367285495112/6367285495112.m3u8",
+          "type": "hls",
+          "subject": "Reas (VOD)"
+        },
+        {
+          "label": "Reas (VOD) - Class-40 | Calendar [21-Jan-2025 14:30]",
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6367432774112/6367432774112.m3u8",
+          "type": "hls",
+          "subject": "Reas (VOD)"
+        },
+        {
+          "label": "Reas (VOD) - Class-41 | Calendar [22-Jan-2025 14:30]",
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6367487167112/6367487167112.m3u8",
+          "type": "hls",
+          "subject": "Reas (VOD)"
+        },
+        {
+          "label": "Reas (VOD) - Class-42 | Calendar [23-Jan-2025 14:30]",
+          "url": "https://d3vlg4qjb80h8n.cloudfront.net/file_library/videos/migration/brightcove/6367548752112/6367548752112.m3u8",
+          "type": "hls",
+          "subject": "Reas (VOD)"
+        },
+        {
+          "label": "Reas (VOD) - Class-43 | Inequalities [24-Jan-2025 14:30]",
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6367614921112/6367614921112.m3u8",
+          "type": "hls",
+          "subject": "Reas (VOD)"
+        },
+        {
+          "label": "Reas (VOD) - Class-44 | Inequalities [27-Jan-2025 14:30]",
+          "url": "https://d3vlg4qjb80h8n.cloudfront.net/file_library/videos/migration/brightcove/6367820938112/6367820938112.m3u8",
+          "type": "hls",
+          "subject": "Reas (VOD)"
+        },
+        {
+          "label": "Reas (VOD) - Class-45 | Inequalities [28-Jan-2025 14:30]",
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6367872404112/6367872404112.m3u8",
+          "type": "hls",
+          "subject": "Reas (VOD)"
+        },
+        {
+          "label": "Reas (VOD) - Class-46 | Ranking [29-Jan-2025 14:30]",
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6367931148112/6367931148112.m3u8",
+          "type": "hls",
+          "subject": "Reas (VOD)"
+        },
+        {
+          "label": "Reas (VOD) - Class-47 | Ranking [30-Jan-2025 14:30]",
+          "url": "https://d3vlg4qjb80h8n.cloudfront.net/file_library/videos/vod_non_drm_hls/migration/FMcEkvJ0MB4/FMcEkvJ0MB4.m3u8",
+          "type": "hls",
+          "subject": "Reas (VOD)"
+        },
+        {
+          "label": "Reas (VOD) - Class-48 | Ranking [31-Jan-2025 14:30]",
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6368038541112/6368038541112.m3u8",
+          "type": "hls",
+          "subject": "Reas (VOD)"
+        },
+        {
+          "label": "Reas (VOD) - Class-49 | Number Series [03-Feb-2025 14:30]",
+          "url": "https://d3vlg4qjb80h8n.cloudfront.net/file_library/videos/migration/brightcove/6368187869112/6368187869112.m3u8",
+          "type": "hls",
+          "subject": "Reas (VOD)"
+        },
+        {
+          "label": "Reas (VOD) - Class-50 | Number Series [04-Feb-2025 14:30]",
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/vod_non_drm_hls/migration/6E1qy1cPcH0/6E1qy1cPcH0.m3u8",
+          "type": "hls",
+          "subject": "Reas (VOD)"
+        },
+        {
+          "label": "Reas (VOD) - Class-51 | Number Series [06-Feb-2025 14:30]",
+          "url": "https://d3vlg4qjb80h8n.cloudfront.net/file_library/videos/migration/brightcove/6368357993112/6368357993112.m3u8",
+          "type": "hls",
+          "subject": "Reas (VOD)"
+        },
+        {
+          "label": "Reas (VOD) - Class-52 | Missing Number [07-Feb-2025 14:30]",
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6368420979112/6368420979112.m3u8",
+          "type": "hls",
+          "subject": "Reas (VOD)"
+        },
+        {
+          "label": "Reas (VOD) - Class-53 | Analogy [10-Feb-2025 14:30]",
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6368590488112/6368590488112.m3u8",
+          "type": "hls",
+          "subject": "Reas (VOD)"
+        },
+        {
+          "label": "Reas (VOD) - Class-54 | Analogy [11-Feb-2025 14:30]",
+          "url": "https://d3vlg4qjb80h8n.cloudfront.net/file_library/videos/migration/brightcove/6368638079112/6368638079112.m3u8",
+          "type": "hls",
+          "subject": "Reas (VOD)"
+        },
+        {
+          "label": "Reas (VOD) - Class-55 | Classification / Odd One Out [12-Feb-2025 14:30]",
+          "url": "https://d3vlg4qjb80h8n.cloudfront.net/file_library/videos/migration/brightcove/6368692897112/6368692897112.m3u8",
+          "type": "hls",
+          "subject": "Reas (VOD)"
+        },
+        {
+          "label": "Reas (VOD) - Class-56 | Classification / Odd One Out [13-Feb-2025 14:30]",
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6368747869112/6368747869112.m3u8",
+          "type": "hls",
+          "subject": "Reas (VOD)"
+        },
+        {
+          "label": "Reas (VOD) - Class-57 | Coded Equation (Mathematical Operations) [14-Feb-2025 14:30]",
+          "url": "https://d3vlg4qjb80h8n.cloudfront.net/file_library/videos/migration/brightcove/6368809602112/6368809602112.m3u8",
+          "type": "hls",
+          "subject": "Reas (VOD)"
+        },
+        {
+          "label": "Reas (VOD) - Class-58 | PYQ Practice [19-Feb-2025 14:30]",
+          "url": "https://d3vlg4qjb80h8n.cloudfront.net/file_library/videos/migration/brightcove/6369039206112/6369039206112.m3u8",
+          "type": "hls",
+          "subject": "Reas (VOD)"
+        },
+        {
+          "label": "Reas (VOD) - Class-59 | PYQ Practice [20-Feb-2025 14:30]",
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6369082612112/6369082612112.m3u8",
+          "type": "hls",
+          "subject": "Reas (VOD)"
+        },
+        {
+          "label": "Reas (VOD) - Class-60 | PYQ Practice [21-Feb-2025 14:30]",
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6369135944112/6369135944112.m3u8",
+          "type": "hls",
+          "subject": "Reas (VOD)"
+        },
+        {
+          "label": "Reas (VOD) - Class-61 | Clock [24-Feb-2025 14:30]",
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6369247830112/6369247830112.m3u8",
+          "type": "hls",
+          "subject": "Reas (VOD)"
+        },
+        {
+          "label": "Reas (VOD) - Class-62 | Clock [25-Feb-2025 14:30]",
+          "url": "https://d3vlg4qjb80h8n.cloudfront.net/file_library/videos/migration/brightcove/6369289855112/6369289855112.m3u8",
+          "type": "hls",
+          "subject": "Reas (VOD)"
+        },
+        {
+          "label": "Reas (VOD) - Class-63 | Clock [26-Feb-2025 14:30]",
+          "url": "https://d3vlg4qjb80h8n.cloudfront.net/file_library/videos/migration/brightcove/6369334493112/6369334493112.m3u8",
+          "type": "hls",
+          "subject": "Reas (VOD)"
+        },
+        {
+          "label": "Reas (VOD) - Class-64 | Clock [27-Feb-2025 14:30]",
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6369382592112/6369382592112.m3u8",
+          "type": "hls",
+          "subject": "Reas (VOD)"
+        },
+        {
+          "label": "Reas (VOD) - Class-65 | Clock [28-Feb-2025 14:30]",
+          "url": "https://d3vlg4qjb80h8n.cloudfront.net/file_library/videos/migration/brightcove/6369432335112/6369432335112.m3u8",
+          "type": "hls",
+          "subject": "Reas (VOD)"
+        },
+        {
+          "label": "Reas (VOD) - Class-66 | Clock [03-Mar-2025 14:30]",
+          "url": "https://d3vlg4qjb80h8n.cloudfront.net/file_library/videos/vod_non_drm_hls/migration/SZ80rQB_CKI/SZ80rQB_CKI.m3u8",
+          "type": "hls",
+          "subject": "Reas (VOD)"
+        },
+        {
+          "label": "Reas (VOD) - Class-67 | Syllogism [04-Mar-2025 14:30]",
+          "url": "https://d3vlg4qjb80h8n.cloudfront.net/file_library/videos/migration/brightcove/6369582264112/6369582264112.m3u8",
+          "type": "hls",
+          "subject": "Reas (VOD)"
+        },
+        {
+          "label": "Reas (VOD) - Class-68 | Syllogism [05-Mar-2025 14:30]",
+          "url": "https://d3vlg4qjb80h8n.cloudfront.net/file_library/videos/migration/brightcove/6369625722112/6369625722112.m3u8",
+          "type": "hls",
+          "subject": "Reas (VOD)"
+        },
+        {
+          "label": "Reas (VOD) - Class-69 | Syllogism [06-Mar-2025 14:30]",
+          "url": "https://d3vlg4qjb80h8n.cloudfront.net/file_library/videos/migration/brightcove/6369667395112/6369667395112.m3u8",
+          "type": "hls",
+          "subject": "Reas (VOD)"
+        },
+        {
+          "label": "Reas (VOD) - Class-70 | Syllogism [07-Mar-2025 14:30]",
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6369715013112/6369715013112.m3u8",
+          "type": "hls",
+          "subject": "Reas (VOD)"
+        },
+        {
+          "label": "Reas (VOD) - Class-71 | Syllogism [10-Mar-2025 14:30]",
+          "url": "https://d3vlg4qjb80h8n.cloudfront.net/file_library/videos/migration/brightcove/6369833627112/6369833627112.m3u8",
+          "type": "hls",
+          "subject": "Reas (VOD)"
+        },
+        {
+          "label": "Reas (VOD) - Class-72 | Syllogism [11-Mar-2025 14:30]",
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6369871728112/6369871728112.m3u8",
+          "type": "hls",
+          "subject": "Reas (VOD)"
+        },
+        {
+          "label": "Reas (VOD) - Class-73 | Syllogism [12-Mar-2025 11:00]",
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6369912770112/6369912770112.m3u8",
+          "type": "hls",
+          "subject": "Reas (VOD)"
+        },
+        {
+          "label": "Reas (VOD) - Class-74 | Syllogism [17-Mar-2025 14:30]",
+          "url": "https://d3vlg4qjb80h8n.cloudfront.net/file_library/videos/migration/brightcove/6370135509112/6370135509112.m3u8",
+          "type": "hls",
+          "subject": "Reas (VOD)"
+        },
+        {
+          "label": "Reas (VOD) - Class-75 | Syllogism [18-Mar-2025 14:30]",
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6370179348112/6370179348112.m3u8",
+          "type": "hls",
+          "subject": "Reas (VOD)"
+        },
+        {
+          "label": "Reas (VOD) - Class-76 | Dice ( à¹à¸à¸à¹à¸à¸à¹à¸à¸à¹à¸à¸ ) [19-Mar-2025 14:30]",
+          "url": "https://d3vlg4qjb80h8n.cloudfront.net/file_library/videos/migration/brightcove/6370222539112/6370222539112.m3u8",
+          "type": "hls",
+          "subject": "Reas (VOD)"
+        },
+        {
+          "label": "Reas (VOD) - Class-77 | Dice ( à¹à¸à¸à¹à¸à¸à¹à¸à¸à¹à¸à¸ ) [20-Mar-2025 14:30]",
+          "url": "https://d3vlg4qjb80h8n.cloudfront.net/file_library/videos/migration/brightcove/6370261791112/6370261791112.m3u8",
+          "type": "hls",
+          "subject": "Reas (VOD)"
+        },
+        {
+          "label": "Reas (VOD) - Class-78 | Dice ( à¹à¸à¸à¹à¸à¸à¹à¸à¸à¹à¸à¸ ) [21-Mar-2025 14:30]",
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6370315668112/6370315668112.m3u8",
+          "type": "hls",
+          "subject": "Reas (VOD)"
+        },
+        {
+          "label": "Reas (VOD) - Class-79 | Dice ( à¹à¸à¸à¹à¸à¸à¹à¸à¸à¹à¸à¸ ) [24-Mar-2025 14:30]",
+          "url": "https://d3vlg4qjb80h8n.cloudfront.net/file_library/videos/migration/brightcove/6370456272112/6370456272112.m3u8",
+          "type": "hls",
+          "subject": "Reas (VOD)"
+        },
+        {
+          "label": "Reas (VOD) - Class-80 | Dice ( à¹à¸à¸à¹à¸à¸à¹à¸à¸à¹à¸à¸ ) [25-Mar-2025 14:30]",
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6370510547112/6370510547112.m3u8",
+          "type": "hls",
+          "subject": "Reas (VOD)"
+        },
+        {
+          "label": "Reas (VOD) - Class-81 | Dice ( à¹à¸à¸à¹à¸à¸à¹à¸à¸à¹à¸à¸ ) [26-Mar-2025 14:30]",
+          "url": "https://d3vlg4qjb80h8n.cloudfront.net/file_library/videos/migration/brightcove/6370572024112/6370572024112.m3u8",
+          "type": "hls",
+          "subject": "Reas (VOD)"
+        },
+        {
+          "label": "Reas (VOD) - Class-82 | Dice PYQs Practice [27-Mar-2025 14:30]",
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/vod_non_drm_hls/migration/UD2wrZrznL0/UD2wrZrznL0.m3u8",
+          "type": "hls",
+          "subject": "Reas (VOD)"
+        },
+        {
+          "label": "Reas (VOD) - Class-83 | Cube and Cuboid [28-Mar-2025 14:30]",
+          "url": "https://d3vlg4qjb80h8n.cloudfront.net/file_library/videos/migration/brightcove/6370673790112/6370673790112.m3u8",
+          "type": "hls",
+          "subject": "Reas (VOD)"
+        },
+        {
+          "label": "Reas (VOD) - Class-84 | Cube and Cuboid [31-Mar-2025 14:30]",
+          "url": "https://d3vlg4qjb80h8n.cloudfront.net/file_library/videos/migration/brightcove/6370817667112/6370817667112.m3u8",
+          "type": "hls",
+          "subject": "Reas (VOD)"
+        },
+        {
+          "label": "Reas (VOD) - Class-85 | Cube and Cuboid [01-Apr-2025 14:30]",
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6370863917112/6370863917112.m3u8",
+          "type": "hls",
+          "subject": "Reas (VOD)"
+        },
+        {
+          "label": "Reas (VOD) - Class-86 | Cube and Cuboid [02-Apr-2025 14:30]",
+          "url": "https://d3vlg4qjb80h8n.cloudfront.net/file_library/videos/migration/brightcove/6370914028112/6370914028112.m3u8",
+          "type": "hls",
+          "subject": "Reas (VOD)"
+        },
+        {
+          "label": "Reas (VOD) - Class-87 | Cube and Cuboid [03-Apr-2025 14:30]",
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6370967524112/6370967524112.m3u8",
+          "type": "hls",
+          "subject": "Reas (VOD)"
+        },
+        {
+          "label": "Reas (VOD) - Class-88 | Venn Diagram [04-Apr-2025 14:30]",
+          "url": "https://d3vlg4qjb80h8n.cloudfront.net/file_library/videos/migration/brightcove/6371024967112/6371024967112.m3u8",
+          "type": "hls",
+          "subject": "Reas (VOD)"
+        },
+        {
+          "label": "Reas (VOD) - Class-89 | Venn Diagram [07-Apr-2025 14:30]",
+          "url": "https://www.youtube.com/embed/-bimQdG_Fj4",
+          "type": "external",
+          "subject": "Reas (VOD)"
+        },
+        {
+          "label": "Reas (VOD) - Class-90 | Venn Diagram [08-Apr-2025 14:30]",
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6371212627112/6371212627112.m3u8",
+          "type": "hls",
+          "subject": "Reas (VOD)"
+        },
+        {
+          "label": "Reas (VOD) - Class-91 | Venn Diagram PYQs Practice [09-Apr-2025 14:30]",
+          "url": "https://d3vlg4qjb80h8n.cloudfront.net/file_library/videos/migration/brightcove/6371256042112/6371256042112.m3u8",
+          "type": "hls",
+          "subject": "Reas (VOD)"
+        },
+        {
+          "label": "Reas (VOD) - Class-92 | Cube and Cuboid PYQs Practice [10-Apr-2025 14:30]",
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6371299558112/6371299558112.m3u8",
+          "type": "hls",
+          "subject": "Reas (VOD)"
+        },
+        {
+          "label": "Reas (VOD) - Class-93 | Live Test [11-Apr-2025 14:30]",
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6371348360112/6371348360112.m3u8",
+          "type": "hls",
+          "subject": "Reas (VOD)"
+        },
+        {
+          "label": "Reas (VOD) - Class-94 | Directions and Distance [14-Apr-2025 14:30]",
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6371464495112/6371464495112.m3u8",
+          "type": "hls",
+          "subject": "Reas (VOD)"
+        },
+        {
+          "label": "Reas (VOD) - Class-95 | Directions and Distance [15-Apr-2025 14:30]",
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6371507872112/6371507872112.m3u8",
+          "type": "hls",
+          "subject": "Reas (VOD)"
+        },
+        {
+          "label": "Reas (VOD) - Class-96 | Directions and Distance [16-Apr-2025 14:30]",
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/vod_non_drm_hls/migration/qdaXC2XUVO8/qdaXC2XUVO8.m3u8",
+          "type": "hls",
+          "subject": "Reas (VOD)"
+        },
+        {
+          "label": "Reas (VOD) - Class-97 | Directions and Distance [21-Apr-2025 14:30]",
+          "url": "https://d3vlg4qjb80h8n.cloudfront.net/file_library/videos/migration/brightcove/6371744156112/6371744156112.m3u8",
+          "type": "hls",
+          "subject": "Reas (VOD)"
+        },
+        {
+          "label": "Reas (VOD) - Class-98 | Directions and Distance [22-Apr-2025 14:30]",
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6371780617112/6371780617112.m3u8",
+          "type": "hls",
+          "subject": "Reas (VOD)"
+        },
+        {
+          "label": "Reas (VOD) - Class-99 | Directions and Distance PYQ Practice [23-Apr-2025 14:30]",
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6371820322112/6371820322112.m3u8",
+          "type": "hls",
+          "subject": "Reas (VOD)"
+        },
+        {
+          "label": "Reasoning - Class  -  12 | Reas | Cube & Cuboid [04-Sep-2025 14:30]",
+          "url": "https://d3vlg4qjb80h8n.cloudfront.net/file_library/videos/channel_vod_non_drm_hls/4541002/175697929544836974029/175697929544836974029_6974029.m3u8",
+          "type": "hls",
+          "subject": "Reasoning"
+        },
+        {
+          "label": "Reasoning - Class  -  13 | Reas | Cube & Cuboid [08-Sep-2025 14:30]",
+          "url": "https://d3vlg4qjb80h8n.cloudfront.net/file_library/videos/channel_vod_non_drm_hls/4543955/175732621542046974029/175732621542046974029_6974029.m3u8",
+          "type": "hls",
+          "subject": "Reasoning"
+        },
+        {
+          "label": "Reasoning - Class  -  14 | Reas |  Venn Diagram [09-Sep-2025 14:30]",
+          "url": "https://d3vlg4qjb80h8n.cloudfront.net/file_library/videos/channel_vod_non_drm_hls/4544926/175741236448963190878/175741236448963190878_3190878.m3u8",
+          "type": "hls",
+          "subject": "Reasoning"
+        },
+        {
+          "label": "Reasoning - Class  -  15 | Reas | Venn Diagram [10-Sep-2025 14:30]",
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/channel_vod_non_drm_hls/4545878/175749918523128367574/175749918523128367574_8367574.m3u8",
+          "type": "hls",
+          "subject": "Reasoning"
+        },
+        {
+          "label": "Reasoning - Class  -  16 | Reas | Venn Diagram PYQ Practice [11-Sep-2025 14:30]",
+          "url": "https://d3vlg4qjb80h8n.cloudfront.net/file_library/videos/channel_vod_non_drm_hls/4546809/17575842544654416846/17575842544654416846_416846.m3u8",
+          "type": "hls",
+          "subject": "Reasoning"
+        },
+        {
+          "label": "Reasoning - Class  -  18 | Reas | Counting Figures [15-Sep-2025 14:30]",
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/channel_vod_non_drm_hls/4549537/175793100131046974029/175793100131046974029_6974029.m3u8",
+          "type": "hls",
+          "subject": "Reasoning"
+        },
+        {
+          "label": "Reasoning - Class  - 11  | Reas | Cube & Cuboid [03-Sep-2025 14:30]",
+          "url": "https://d3vlg4qjb80h8n.cloudfront.net/file_library/videos/channel_vod_non_drm_hls/4538972/175689413075666908824/175689413075666908824_6908824.m3u8",
+          "type": "hls",
+          "subject": "Reasoning"
+        },
+        {
+          "label": "Reasoning - Class - 17 | Reas | Counting Figures [12-Sep-2025 14:30]",
+          "url": "https://d3vlg4qjb80h8n.cloudfront.net/file_library/videos/channel_vod_non_drm_hls/4547798/175767204098807140453/175767204098807140453_7140453.m3u8",
+          "type": "hls",
+          "subject": "Reasoning"
+        },
+        {
+          "label": "Reasoning - Class - 19 | Reas | Counting Figures [16-Sep-2025 14:30]",
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/channel_vod_non_drm_hls/4550626/175801802183834819135/175801802183834819135_4819135.m3u8",
+          "type": "hls",
+          "subject": "Reasoning"
+        },
+        {
+          "label": "Reasoning - Class - 30 | Reas | Directions and Distance [01-Oct-2025 14:30]",
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/channel_vod_non_drm_hls/4564493/175931355262253590984/175931355262253590984_3590984.m3u8",
+          "type": "hls",
+          "subject": "Reasoning"
+        },
+        {
+          "label": "Reasoning - Class - 31 | Reas | Directions and Distance [03-Oct-2025 14:30]",
+          "url": "https://d3vlg4qjb80h8n.cloudfront.net/file_library/videos/channel_vod_non_drm_hls/4566140/175948610559428367574/175948610559428367574_8367574.m3u8",
+          "type": "hls",
+          "subject": "Reasoning"
+        },
+        {
+          "label": "Reasoning - Class - 32 | Reas | Directions and Distance [06-Oct-2025 14:30]",
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/channel_vod_non_drm_hls/4568399/175974538956609906065/175974538956609906065_9906065.m3u8",
+          "type": "hls",
+          "subject": "Reasoning"
+        },
+        {
+          "label": "Reasoning - Class - 33 | Reas | Directions and Distance [07-Oct-2025 14:30]",
+          "url": "https://www.youtube.com/embed/eIBICWyDOUU",
+          "type": "external",
+          "subject": "Reasoning"
+        },
+        {
+          "label": "Reasoning - Class - 34 | Reas | Directions and Distance PYQ Practice [08-Oct-2025 14:30]",
+          "url": "https://d3vlg4qjb80h8n.cloudfront.net/file_library/videos/channel_vod_non_drm_hls/4571794/175991761622176399745/175991761622176399745_6399745.m3u8",
+          "type": "hls",
+          "subject": "Reasoning"
+        },
+        {
+          "label": "Reasoning - Class - 35 | Reas | Non-Verbal [09-Oct-2025 14:30]",
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/channel_vod_non_drm_hls/4573057/176000428933804392287/176000428933804392287_4392287.m3u8",
+          "type": "hls",
+          "subject": "Reasoning"
+        },
+        {
+          "label": "Reasoning - Class - 36 | Reas | Non-Verbal [10-Oct-2025 14:30]",
+          "url": "https://d3vlg4qjb80h8n.cloudfront.net/file_library/videos/channel_vod_non_drm_hls/4574509/176008905022235722963/176008905022235722963_5722963.m3u8",
+          "type": "hls",
+          "subject": "Reasoning"
+        },
+        {
+          "label": "Reasoning - Class - 37 | Reas | Non-Verbal [13-Oct-2025 14:30]",
+          "url": "https://www.youtube.com/embed/LkGWEV5-6HM",
+          "type": "external",
+          "subject": "Reasoning"
+        },
+        {
+          "label": "Reasoning - Class - 38 | Reas | Non-Verbal [14-Oct-2025 14:30]",
+          "url": "https://d3vlg4qjb80h8n.cloudfront.net/file_library/videos/channel_vod_non_drm_hls/4577614/176043572083264392287/176043572083264392287_4392287.m3u8",
+          "type": "hls",
+          "subject": "Reasoning"
+        },
+        {
+          "label": "Reasoning - Class - 39 | Reas | Non-Verbal [15-Oct-2025 14:30]",
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/channel_vod_non_drm_hls/4578820/176052280314656399745/176052280314656399745_6399745.m3u8",
+          "type": "hls",
+          "subject": "Reasoning"
+        },
+        {
+          "label": "Reasoning - Class - 40 | Reas | Non-Verbal [16-Oct-2025 14:30]",
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/channel_vod_non_drm_hls/4579867/176060770130446399745/176060770130446399745_6399745.m3u8",
+          "type": "hls",
+          "subject": "Reasoning"
+        },
+        {
+          "label": "Reasoning - Class - 41 | Reas | Non-Verbal [27-Oct-2025 14:30]",
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/channel_vod_non_drm_hls/4584897/176155924217747195824/176155924217747195824_7195824.m3u8",
+          "type": "hls",
+          "subject": "Reasoning"
+        },
+        {
+          "label": "Reasoning - Class - 42 | Reas | Coding Decoding [28-Oct-2025 15:00]",
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/channel_vod_non_drm_hls/4585944/176164769657583907752/176164769657583907752_3907752.m3u8",
+          "type": "hls",
+          "subject": "Reasoning"
+        },
+        {
+          "label": "Reasoning - Class - 43 | Reas | Coding Decoding [29-Oct-2025 14:30]",
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/channel_vod_non_drm_hls/4586978/176173300790428959035/176173300790428959035_8959035.m3u8",
+          "type": "hls",
+          "subject": "Reasoning"
+        },
+        {
+          "label": "Reasoning - Class - 44 | Reas | Coding Decoding [30-Oct-2025 14:30]",
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/channel_vod_non_drm_hls/4588025/176181816457845722963/176181816457845722963_5722963.m3u8",
+          "type": "hls",
+          "subject": "Reasoning"
+        },
+        {
+          "label": "Reasoning - Class - 45 | Reas | Coding Decoding [03-Nov-2025 14:30]",
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/channel_vod_non_drm_hls/4590953/176216475338661268445/176216475338661268445_1268445.m3u8",
+          "type": "hls",
+          "subject": "Reasoning"
+        },
+        {
+          "label": "Reasoning - Class - 46 | Reas | Coding Decoding [04-Nov-2025 14:30]",
+          "url": "https://d3vlg4qjb80h8n.cloudfront.net/file_library/videos/channel_vod_non_drm_hls/4591969/176225118224635722963/176225118224635722963_5722963.m3u8",
+          "type": "hls",
+          "subject": "Reasoning"
+        },
+        {
+          "label": "Reasoning - Class - 47 | Reas | Coding Decoding [05-Nov-2025 14:30]",
+          "url": "https://d3vlg4qjb80h8n.cloudfront.net/file_library/videos/channel_vod_non_drm_hls/4593069/176233744651363907752/176233744651363907752_3907752.m3u8",
+          "type": "hls",
+          "subject": "Reasoning"
+        },
+        {
+          "label": "Reasoning - Class - 48 | Reas | Coding Decoding [06-Nov-2025 14:30]",
+          "url": "https://d3vlg4qjb80h8n.cloudfront.net/file_library/videos/channel_vod_non_drm_hls/4594171/176242369162708291192/176242369162708291192_8291192.m3u8",
+          "type": "hls",
+          "subject": "Reasoning"
+        },
+        {
+          "label": "Reasoning - Class - 49 | Reas | Coding Decoding PYQ Practice [07-Nov-2025 14:30]",
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/channel_vod_non_drm_hls/4595263/176250953447707195824/176250953447707195824_7195824.m3u8",
+          "type": "hls",
+          "subject": "Reasoning"
+        },
+        {
+          "label": "Reasoning - Class - 50 | Reas | Letter Series [10-Nov-2025 14:30]",
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/channel_vod_non_drm_hls/4597612/176276930481105722963/176276930481105722963_5722963.m3u8",
+          "type": "hls",
+          "subject": "Reasoning"
+        },
+        {
+          "label": "Reasoning - Class - 51 | Reas | Letter Series [11-Nov-2025 14:30]",
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/channel_vod_non_drm_hls/4598879/176285632156433107929/176285632156433107929_3107929.m3u8",
+          "type": "hls",
+          "subject": "Reasoning"
+        },
+        {
+          "label": "Reasoning - Class - 52 | Reas | Letter Series [12-Nov-2025 14:30]",
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/channel_vod_non_drm_hls/4599956/176294171920934292795/176294171920934292795_4292795.m3u8",
+          "type": "hls",
+          "subject": "Reasoning"
+        },
+        {
+          "label": "Reasoning - Class - 53 | Reas | Pair Formation [13-Nov-2025 14:30]",
+          "url": "https://d3vlg4qjb80h8n.cloudfront.net/file_library/videos/channel_vod_non_drm_hls/4600986/176302833462426399745/176302833462426399745_6399745.m3u8",
+          "type": "hls",
+          "subject": "Reasoning"
+        },
+        {
+          "label": "Reasoning - Class - 54 | Reas | Pair Formation [14-Nov-2025 14:30]",
+          "url": "https://www.youtube.com/embed/0-DNdcb0qHg",
+          "type": "external",
+          "subject": "Reasoning"
+        },
+        {
+          "label": "Reasoning - Class - 6 | Dice [26-Aug-2025 14:30]",
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/vod_non_drm_ios/4532345/1756295577_3432715925309308/1756295472509_306046748715517760_video_VOD.m3u8",
+          "type": "hls",
+          "subject": "Reasoning"
+        },
+        {
+          "label": "Reasoning - Class - 7 | Dice [27-Aug-2025 14:30]",
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/channel_vod_non_drm_hls/4532111/175628778548214819135/175628778548214819135_4819135.m3u8",
+          "type": "hls",
+          "subject": "Reasoning"
+        },
+        {
+          "label": "Reasoning - Class - 8 | Dice [28-Aug-2025 14:30]",
+          "url": "https://d3vlg4qjb80h8n.cloudfront.net/file_library/videos/channel_vod_non_drm_hls/4533356/175637531681066908824/175637531681066908824_6908824.m3u8",
+          "type": "hls",
+          "subject": "Reasoning"
+        },
+        {
+          "label": "Reasoning - Class- 20 | Reas | Counting Figures [17-Sep-2025 14:30]",
+          "url": "https://d3vlg4qjb80h8n.cloudfront.net/file_library/videos/channel_vod_non_drm_hls/4551670/175810379748253107929/175810379748253107929_3107929.m3u8",
+          "type": "hls",
+          "subject": "Reasoning"
+        },
+        {
+          "label": "Reasoning - Class- 21 | Reas | Counting Figures [18-Sep-2025 14:30]",
+          "url": "https://d3vlg4qjb80h8n.cloudfront.net/file_library/videos/channel_vod_non_drm_hls/4552687/175819018386618367574/175819018386618367574_8367574.m3u8",
+          "type": "hls",
+          "subject": "Reasoning"
+        },
+        {
+          "label": "Reasoning - Class- 22 | Reas | Blood Relation [19-Sep-2025 14:30]",
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/channel_vod_non_drm_hls/4553576/175827654846803590984/175827654846803590984_3590984.m3u8",
+          "type": "hls",
+          "subject": "Reasoning"
+        },
+        {
+          "label": "Reasoning - Class- 23 | Reas | Blood Relation [22-Sep-2025 14:30]",
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/channel_vod_non_drm_hls/4555546/175853585063443190878/175853585063443190878_3190878.m3u8",
+          "type": "hls",
+          "subject": "Reasoning"
+        },
+        {
+          "label": "Reasoning - Class- 24 | Reas | Blood Relation [23-Sep-2025 14:30]",
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/channel_vod_non_drm_hls/4556631/175862241618338367574/175862241618338367574_8367574.m3u8",
+          "type": "hls",
+          "subject": "Reasoning"
+        },
+        {
+          "label": "Reasoning - Class- 25 | Reas | Blood Relation [24-Sep-2025 14:30]",
+          "url": "https://d3vlg4qjb80h8n.cloudfront.net/file_library/videos/channel_vod_non_drm_hls/4557697/175870814630513590984/175870814630513590984_3590984.m3u8",
+          "type": "hls",
+          "subject": "Reasoning"
+        },
+        {
+          "label": "Reasoning - Class- 26 | Reas | Blood Relation [25-Sep-2025 14:30]",
+          "url": "https://d3vlg4qjb80h8n.cloudfront.net/file_library/videos/channel_vod_non_drm_hls/4559176/175879437345994819135/175879437345994819135_4819135.m3u8",
+          "type": "hls",
+          "subject": "Reasoning"
+        },
+        {
+          "label": "Reasoning - Class- 27 | Reas | Blood Relation [26-Sep-2025 14:30]",
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/channel_vod_non_drm_hls/4560273/175888048581428309336/175888048581428309336_8309336.m3u8",
+          "type": "hls",
+          "subject": "Reasoning"
+        },
+        {
+          "label": "Reasoning - Class- 28 | Reas | Blood Relation [29-Sep-2025 14:30]",
+          "url": "https://d3vlg4qjb80h8n.cloudfront.net/file_library/videos/channel_vod_non_drm_hls/4562327/175913933257078367574/175913933257078367574_8367574.m3u8",
+          "type": "hls",
+          "subject": "Reasoning"
+        },
+        {
+          "label": "Reasoning - Class- 29 | Reas | Directions and Distance [30-Sep-2025 14:30]",
+          "url": "https://d3vlg4qjb80h8n.cloudfront.net/file_library/videos/channel_vod_non_drm_hls/4563379/175922707218768367574/175922707218768367574_8367574.m3u8",
+          "type": "hls",
+          "subject": "Reasoning"
+        },
+        {
+          "label": "Reasoning - Class- 5 | Dice [22-Aug-2025 14:30]",
+          "url": "https://d3vlg4qjb80h8n.cloudfront.net/file_library/videos/channel_vod_non_drm_hls/4527443/175585711330376399745/175585711330376399745_6399745.m3u8",
+          "type": "hls",
+          "subject": "Reasoning"
+        },
+        {
+          "label": "Reasoning - Class-01 | Intro [14-Jul-2025 16:00]",
+          "url": "https://d3vlg4qjb80h8n.cloudfront.net/file_library/videos/channel_vod_non_drm_hls/4481693/175249103095957195824/175249103095957195824_7195824.m3u8",
+          "type": "hls",
+          "subject": "Reasoning"
+        },
+        {
+          "label": "Reasoning - Class-02 | Intro [18-Aug-2025 16:00]",
+          "url": "https://d3vlg4qjb80h8n.cloudfront.net/file_library/videos/channel_vod_non_drm_hls/4523021/175551541191019183388/175551541191019183388_9183388.m3u8",
+          "type": "hls",
+          "subject": "Reasoning"
+        },
+        {
+          "label": "Reasoning - Class-03 | Intro [20-Aug-2025 14:30]",
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/channel_vod_non_drm_hls/4525191/175568458662656399745/175568458662656399745_6399745.m3u8",
+          "type": "hls",
+          "subject": "Reasoning"
+        },
+        {
+          "label": "Reasoning - Class-04 | Dice [21-Aug-2025 14:30]",
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/channel_vod_non_drm_hls/4526357/175577062829812356362/175577062829812356362_2356362.m3u8",
+          "type": "hls",
+          "subject": "Reasoning"
+        },
+        {
+          "label": "Reasoning - Class-09 | Reas | Cube & Cuboid [01-Sep-2025 14:30]",
+          "url": "https://d3vlg4qjb80h8n.cloudfront.net/file_library/videos/channel_vod_non_drm_hls/4536566/175672106918413190878/175672106918413190878_3190878.m3u8",
+          "type": "hls",
+          "subject": "Reasoning"
+        },
+        {
+          "label": "Reasoning - Class-10 | Reas | Cube & Cuboid [02-Sep-2025 14:30]",
+          "url": "https://d3vlg4qjb80h8n.cloudfront.net/file_library/videos/channel_vod_non_drm_hls/4537672/175680740389695146684/175680740389695146684_5146684.m3u8",
+          "type": "hls",
+          "subject": "Reasoning"
+        }
+      ]
+    },
+    {
+      "id": "pdfs",
+      "label": "📄 PDFs",
+      "items": [
+        {
+          "label": "Reas (VOD) - 03 June 2024 Class PNG @cwexte",
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/665e620116271_3june-25_compressed.pdf",
+          "type": "pdf"
+        },
+        {
+          "label": "Reas (VOD) - 04 June 2024 Class PNG @cwexte",
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/665faaf377814_4june-25_compressed.pdf",
+          "type": "pdf"
+        },
+        {
+          "label": "Reas (VOD) - 05 June 2024 Class PNG @cwexte",
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/6661132c95700_5june-25_compressed.pdf",
+          "type": "pdf"
+        },
+        {
+          "label": "Reas (VOD) - 07 June 2024 Class PNG @cwexte",
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/66640a7c144d4_7june-25_compressed.pdf",
+          "type": "pdf"
+        },
+        {
+          "label": "Reas (VOD) - 1 April 2024 Class PNG @cwexte",
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/660aefc8b28ee_21png2pdf_compressed.pdf",
+          "type": "pdf"
+        },
+        {
+          "label": "Reas (VOD) - 1 July 2024 Class PNG @cwexte",
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/66828437aa9da_1jul_18_compressed.pdf",
+          "type": "pdf"
+        },
+        {
+          "label": "Reas (VOD) - 1 March 2024 Class PNG @cwexte",
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/65e281427b956_1mar_21.pdf",
+          "type": "pdf"
+        },
+        {
+          "label": "Reas (VOD) - 10 April 2024 Class PNG @cwexte",
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/661657bd9b4ef_10-apr-23_compressed.pdf",
+          "type": "pdf"
+        },
+        {
+          "label": "Reas (VOD) - 10 July 2024 Class PNG @cwexte",
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/668f390f10861_10jul_18_compressed.pdf",
+          "type": "pdf"
+        },
+        {
+          "label": "Reas (VOD) - 10 May 2024 Class PNG @cwexte",
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/663df43f49e28_10-may-23_compressed.pdf",
+          "type": "pdf"
+        },
+        {
+          "label": "Reas (VOD) - 11 April 2024 Class PNG @cwexte",
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/6617aa5fb6725_11-apr-23_compressed.pdf",
+          "type": "pdf"
+        },
+        {
+          "label": "Reas (VOD) - 11 July 2024 Class PNG @cwexte",
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/66908390aa896_11jul_18_compressed.pdf",
+          "type": "pdf"
+        },
+        {
+          "label": "Reas (VOD) - 11 March 2024 Class PNG @cwexte",
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/65ef3a1f919c2_11mar_21_compressed.pdf",
+          "type": "pdf"
+        },
+        {
+          "label": "Reas (VOD) - 12 April 2024 Class PNG @cwexte",
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/661913a75491b_12-apr-23_compressed.pdf",
+          "type": "pdf"
+        },
+        {
+          "label": "Reas (VOD) - 12 July 2024 Class PNG @cwexte",
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/6691e1c636ab9_12jul_18_compressed.pdf",
+          "type": "pdf"
+        },
+        {
+          "label": "Reas (VOD) - 12 June 2024 Class PNG @cwexte",
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/6669b0df507eb_12june-25_compressed.pdf",
+          "type": "pdf"
+        },
+        {
+          "label": "Reas (VOD) - 12 March 2024 Class PNG @cwexte",
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/65f0174db1d00_12mar_21.pdf",
+          "type": "pdf"
+        },
+        {
+          "label": "Reas (VOD) - 13 June 2024 Class PNG @cwexte",
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/666ac8104bdd5_13june-25_compressed.pdf",
+          "type": "pdf"
+        },
+        {
+          "label": "Reas (VOD) - 13 March 2024 Class PNG @cwexte",
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/65f1680c50bd1_13mar_21_compressed.pdf",
+          "type": "pdf"
+        },
+        {
+          "label": "Reas (VOD) - 13 May 2024 Class PNG @cwexte",
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/6641ee1bb82b7_13-may-23_compressed.pdf",
+          "type": "pdf"
+        },
+        {
+          "label": "Reas (VOD) - 14 March 2024 Class PNG @cwexte",
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/65f2c2dbb62bf_14mar_21_compressed.pdf",
+          "type": "pdf"
+        },
+        {
+          "label": "Reas (VOD) - 14 May 2024 Class PNG @cwexte",
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/6643a632a2fea_14-may-23.pdf",
+          "type": "pdf"
+        },
+        {
+          "label": "Reas (VOD) - 15 April 2024 Class PNG @cwexte",
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/661cf9a6f381a_15-apr-23_compressed.pdf",
+          "type": "pdf"
+        },
+        {
+          "label": "Reas (VOD) - 15 July 2024 Cass PNG @cwexte",
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/66951e4bf32ed_15jul_18.pdf",
+          "type": "pdf"
+        },
+        {
+          "label": "Reas (VOD) - 15 March 2024 Class PNG @cwexte",
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/65f444d68a2b2_15mar_21_compressed.pdf",
+          "type": "pdf"
+        },
+        {
+          "label": "Reas (VOD) - 15 May 2024 Class PNG @cwexte",
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/66449c069a8a7_15-may-23_compressed.pdf",
+          "type": "pdf"
+        },
+        {
+          "label": "Reas (VOD) - 16 April 2024 Class PNG @cwexte",
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/661e4c2a25353_16-apr-23_compressed.pdf",
+          "type": "pdf"
+        },
+        {
+          "label": "Reas (VOD) - 16 July 2024 Class PNG @cwexte",
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/6697334f356be_16jul_18_compressed.pdf",
+          "type": "pdf"
+        },
+        {
+          "label": "Reas (VOD) - 16 May 2024  2:00 PM Class PNG @cwexte",
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/6645cfa7a4a17_6564f979dde9e_27nov_8_compressed.pdf",
+          "type": "pdf"
+        },
+        {
+          "label": "Reas (VOD) - 16 May 2024  2:30 PM Class PNG @cwexte",
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/6645d0051c03d_6565d23f23897_28nov_8_compressed.pdf",
+          "type": "pdf"
+        },
+        {
+          "label": "Reas (VOD) - 16 May 2024 Class PNG @cwexte",
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/6645d94a90779_16-may-23_compressed.pdf",
+          "type": "pdf"
+        },
+        {
+          "label": "Reas (VOD) - 17 April 2024 Class PNG @cwexte",
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/661f8d79b88fa_17-apr-23_compressed.pdf",
+          "type": "pdf"
+        },
+        {
+          "label": "Reas (VOD) - 17 July 2024 Class PNG @cwexte",
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/6697873e2624b_17jul_18.pdf",
+          "type": "pdf"
+        },
+        {
+          "label": "Reas (VOD) - 17 June 2024 Class PNG @cwexte",
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/667010b311f75_17june-25_compressed.pdf",
+          "type": "pdf"
+        },
+        {
+          "label": "Reas (VOD) - 18 April 2024 Class PNG @cwexte",
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/6620dea6b49d2_18-apr-23_compressed.pdf",
+          "type": "pdf"
+        },
+        {
+          "label": "Reas (VOD) - 18 July 2024 Class PNG @cwexte",
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/6699069c53069_18jul_18_compressed.pdf",
+          "type": "pdf"
+        },
+        {
+          "label": "Reas (VOD) - 18 June 2024 Class PNG @cwexte",
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/667149f48c078_18june_18_compressed.pdf",
+          "type": "pdf"
+        },
+        {
+          "label": "Reas (VOD) - 19 April 2024 Class PNG @cwexte",
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/66262547dbbb4_19-apr-23_compressed.pdf",
+          "type": "pdf"
+        },
+        {
+          "label": "Reas (VOD) - 19 July 2024 Class PNG @cwexte",
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/669a533f24231_19jul_18.pdf",
+          "type": "pdf"
+        },
+        {
+          "label": "Reas (VOD) - 19 June 2024 Class PNG @cwexte",
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/66729b075e1ba_19june_18_compressed.pdf",
+          "type": "pdf"
+        },
+        {
+          "label": "Reas (VOD) - 19 March 2024 Class PNG @cwexte",
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/65f978094cc24_19mar_21_compressed.pdf",
+          "type": "pdf"
+        },
+        {
+          "label": "Reas (VOD) - 2 April 2024 Class PNG @cwexte",
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/660bcb025d7c8_2apr_21_compressed.pdf",
+          "type": "pdf"
+        },
+        {
+          "label": "Reas (VOD) - 2 July 2024 Class PNG @cwexte",
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/66849c57b6701_2jul_18_compressed.pdf",
+          "type": "pdf"
+        },
+        {
+          "label": "Reas (VOD) - 2 May 2024 Class PNG @cwexte",
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/6634482d42deb_2-may-23_compressed.pdf",
+          "type": "pdf"
+        },
+        {
+          "label": "Reas (VOD) - 20 June 2024 Class PNG @cwexte",
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/66740326f18d4_20june_18_compressed.pdf",
+          "type": "pdf"
+        },
+        {
+          "label": "Reas (VOD) - 21 Feb 2024 Class PNG @cwexte",
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/65d5c8aeecbf5_21feb_21.pdf",
+          "type": "pdf"
+        },
+        {
+          "label": "Reas (VOD) - 21 June 2024 Class PNG @cwexte",
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/667540119b469_21june_18_compressed.pdf",
+          "type": "pdf"
+        },
+        {
+          "label": "Reas (VOD) - 21 March 2024 Class PNG @cwexte",
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/65fc0bf89f9db_21mar_21_compressed.pdf",
+          "type": "pdf"
+        },
+        {
+          "label": "Reas (VOD) - 22 April 2024 Class PNG @cwexte",
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/66263f86456d9_22-apr-23_compressed.pdf",
+          "type": "pdf"
+        },
+        {
+          "label": "Reas (VOD) - 22 Feb 2024 Class PNG @cwexte",
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/65d7650708b63_22feb_21_compressed.pdf",
+          "type": "pdf"
+        },
+        {
+          "label": "Reas (VOD) - 22 July 2024 Class PNG @cwexte",
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/669f083917479_22jul_18_compressed.pdf",
+          "type": "pdf"
+        },
+        {
+          "label": "Reas (VOD) - 22 March 2024 Class PNG @cwexte",
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/66022af3845bf_22mar_21_compressed.pdf",
+          "type": "pdf"
+        },
+        {
+          "label": "Reas (VOD) - 22 May 2024 Class PNG @cwexte",
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/664dc67c92d20_22may-25_compressed.pdf",
+          "type": "pdf"
+        },
+        {
+          "label": "Reas (VOD) - 23 April 2024 Class PNG @cwexte",
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/662795b238c9d_23-apr-23_compressed.pdf",
+          "type": "pdf"
+        },
+        {
+          "label": "Reas (VOD) - 23 Feb 2024 Class PNG @cwexte",
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/65d96a717f88d_23feb_21_compressed.pdf",
+          "type": "pdf"
+        },
+        {
+          "label": "Reas (VOD) - 23 July 2024 Class PNG @cwexte",
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/669f8bfca7bde_23jul_18_compressed.pdf",
+          "type": "pdf"
+        },
+        {
+          "label": "Reas (VOD) - 23 May 2024 Class PNG @cwexte",
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/664f53226438c_23may-25_compressed.pdf",
+          "type": "pdf"
+        },
+        {
+          "label": "Reas (VOD) - 24 April 2024 Class PNG @cwexte",
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/6628e383090ca_24-apr-23_compressed.pdf",
+          "type": "pdf"
+        },
+        {
+          "label": "Reas (VOD) - 24 July 2024 Class PNG @cwexte",
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/66a0dc0481462_24jul_18_compressed.pdf",
+          "type": "pdf"
+        },
+        {
+          "label": "Reas (VOD) - 24 June 2024 Class PNG @cwexte",
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/667951b8c056f_24june_18_compressed.pdf",
+          "type": "pdf"
+        },
+        {
+          "label": "Reas (VOD) - 24 May 2024 Class PNG @cwexte",
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/665069f730303_24may-25_compressed.pdf",
+          "type": "pdf"
+        },
+        {
+          "label": "Reas (VOD) - 25 April 2024 Class PNG @cwexte",
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/662b10bc86189_25-apr-23_compressed.pdf",
+          "type": "pdf"
+        },
+        {
+          "label": "Reas (VOD) - 25 July 2024 Class PNG @cwexte",
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/66a22f2f7146b_25jul_18_compressed.pdf",
+          "type": "pdf"
+        },
+        {
+          "label": "Reas (VOD) - 25 June 2024 Class PNG @cwexte",
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/667b5f9e789e3_25june_18_compressed.pdf",
+          "type": "pdf"
+        },
+        {
+          "label": "Reas (VOD) - 26 April 2024 Class PNG @cwexte",
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/662b994d8a360_26-apr-23_compressed.pdf",
+          "type": "pdf"
+        },
+        {
+          "label": "Reas (VOD) - 26 Feb 2024 Class PNG @cwexte",
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/65dcd9615dfd7_26feb_21_compressed.pdf",
+          "type": "pdf"
+        },
+        {
+          "label": "Reas (VOD) - 26 July 2024 Class PNG @cwexte",
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/66a3780d51729_26jul_18_compressed.pdf",
+          "type": "pdf"
+        },
+        {
+          "label": "Reas (VOD) - 26 June 2024 Class PNG @cwexte",
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/667bee9ac5382_26june_18_compressed.pdf",
+          "type": "pdf"
+        },
+        {
+          "label": "Reas (VOD) - 27 Feb 2024 Class PNG @cwexte",
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/65de37e83ca50_27feb_21_compressed.pdf",
+          "type": "pdf"
+        },
+        {
+          "label": "Reas (VOD) - 27 June 2024 Class PNG @cwexte",
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/667d4054e2ae2_27june_18_compressed.pdf",
+          "type": "pdf"
+        },
+        {
+          "label": "Reas (VOD) - 27 May 2024 Class PNG @cwexte",
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/6654645c92409_27may-25_compressed.pdf",
+          "type": "pdf"
+        },
+        {
+          "label": "Reas (VOD) - 28 Feb 2024 Class PNG @cwexte",
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/65df80ab0d5a3_28feb_21_compressed.pdf",
+          "type": "pdf"
+        },
+        {
+          "label": "Reas (VOD) - 28 March 2024 Class PNG @cwexte",
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/6605539f6752f_28mar_21_compressed.pdf",
+          "type": "pdf"
+        },
+        {
+          "label": "Reas (VOD) - 28 May 2024 Class PNG @cwexte",
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/6655b5e13efb8_28may-25_compressed.pdf",
+          "type": "pdf"
+        },
+        {
+          "label": "Reas (VOD) - 29 April 2024 Class PNG @cwexte",
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/66306892d2207_29-apr-23_compressed.pdf",
+          "type": "pdf"
+        },
+        {
+          "label": "Reas (VOD) - 29 Feb 2024 Class PNG @cwexte",
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/65e0c486427cf_29feb_21.pdf",
+          "type": "pdf"
+        },
+        {
+          "label": "Reas (VOD) - 29 July 2024 Class PNG @cwexte",
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/66a76eef1c140_29jul_18_compressed.pdf",
+          "type": "pdf"
+        },
+        {
+          "label": "Reas (VOD) - 29 March 2024 Class PNG @cwexte",
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/6606959abbfd7_29mar_21_compressed.pdf",
+          "type": "pdf"
+        },
+        {
+          "label": "Reas (VOD) - 29 May 2024 Class PNG @cwexte",
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/6657d6470b45b_29may-25_compressed.pdf",
+          "type": "pdf"
+        },
+        {
+          "label": "Reas (VOD) - 3 April 2024 Class PNG @cwexte",
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/660d2732dafb5_3-apr-23_compressed.pdf",
+          "type": "pdf"
+        },
+        {
+          "label": "Reas (VOD) - 3 July 2024 Class PNG @cwexte",
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/668526aa513f4_3jul_18_compressed.pdf",
+          "type": "pdf"
+        },
+        {
+          "label": "Reas (VOD) - 3 May 2024 Class PNG @cwexte",
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/6634bdf8d15ea_3-may-23_compressed.pdf",
+          "type": "pdf"
+        },
+        {
+          "label": "Reas (VOD) - 30 April 2024 Class PNG @cwexte",
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/6631d7c8a504a_30-apr-23_compressed.pdf",
+          "type": "pdf"
+        },
+        {
+          "label": "Reas (VOD) - 30 May 2024 Class PNG @cwexte",
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/665885bcd2986_30may-25.pdf",
+          "type": "pdf"
+        },
+        {
+          "label": "Reas (VOD) - 31 May 2024 Class PNG @cwexte",
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/665e615690aad_31may-25_compressed.pdf",
+          "type": "pdf"
+        },
+        {
+          "label": "Reas (VOD) - 4 April 2024 Class PNG @cwexte",
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/660f2f39be767_4-apr-23_compressed.pdf",
+          "type": "pdf"
+        },
+        {
+          "label": "Reas (VOD) - 4 July 2024 Class PNG @cwexte",
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/66867b42713cd_4jul_18_compressed.pdf",
+          "type": "pdf"
+        },
+        {
+          "label": "Reas (VOD) - 4 July 2024 Class PNG @cwexte",
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/66867b93d8c56_4jul_26_compressed.pdf",
+          "type": "pdf"
+        },
+        {
+          "label": "Reas (VOD) - 4 March 2024 Class PNG @cwexte",
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/65e66d4f79135_4mar_21_compressed.pdf",
+          "type": "pdf"
+        },
+        {
+          "label": "Reas (VOD) - 5 July 2024 Class PNG @cwexte",
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/668950a9c3255_5jul_18.pdf",
+          "type": "pdf"
+        },
+        {
+          "label": "Reas (VOD) - 5 March 2024 Class PNG @cwexte",
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/65e7864b1204f_5mar_21_compressed.pdf",
+          "type": "pdf"
+        },
+        {
+          "label": "Reas (VOD) - 6 June 2024 Class PNG @cwexte",
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/6661b37703de1_6june-25_compressed.pdf",
+          "type": "pdf"
+        },
+        {
+          "label": "Reas (VOD) - 6 March 2024 Class PNG @cwexte",
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/65e91edac7c54_6mar_21_compressed.pdf",
+          "type": "pdf"
+        },
+        {
+          "label": "Reas (VOD) - 6 May 2024 Class PNG @cwexte",
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/6638be53cdb8c_6-may-23_compressed.pdf",
+          "type": "pdf"
+        },
+        {
+          "label": "Reas (VOD) - 7 May 2024 Class PNG @cwexte",
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/663a0670e9ae8_7-may-23_compressed.pdf",
+          "type": "pdf"
+        },
+        {
+          "label": "Reas (VOD) - 8 July 2024 Class PNG @cwexte",
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/668ca71f3cf63_8jul_18_compressed.pdf",
+          "type": "pdf"
+        },
+        {
+          "label": "Reas (VOD) - 8 March 2024 Class PNG @cwexte",
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/65eb5b1dd6707_8mar_21_compressed.pdf",
+          "type": "pdf"
+        },
+        {
+          "label": "Reas (VOD) - 9 April 2024 Class PNG @cwexte",
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/6615088e9d60c_9-apr-23_compressed.pdf",
+          "type": "pdf"
+        },
+        {
+          "label": "Reas (VOD) - 9 May 2024 Class PNG @cwexte",
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/663ca26013255_9-may-23_compressed.pdf",
+          "type": "pdf"
+        },
+        {
+          "label": "Reas (VOD) - Alphabet PYQ Practice Set @cwexte",
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/6764d86788c55_Reasoning_Book_Chapter_wise_Alphabet_Test_CLASS02_Student.pdf",
+          "type": "pdf"
+        },
+        {
+          "label": "Reas (VOD) - Alphabetical Series Class Questions @cwexte",
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/673db54f31a7d_ALPHABETICAL_SERIES_S.pdf",
+          "type": "pdf"
+        },
+        {
+          "label": "Reas (VOD) - Alphabetical Series Practice Set @cwexte",
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/674d77e0a776b_ALPHABETICAL_SERIES_NEW_PDF.pdf",
+          "type": "pdf"
+        },
+        {
+          "label": "Reas (VOD) - Alphabetical Series | 22 Nov | Class PNG @cwexte",
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/67405c6c2df12_22novSSC_PRATHAMcompressed.pdf",
+          "type": "pdf"
+        },
+        {
+          "label": "Reas (VOD) - Alphabetical Series | 23 Nov | Class PNG @cwexte",
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/6746b93be26cb_23novSSC_PRATHAMcompressed.pdf",
+          "type": "pdf"
+        },
+        {
+          "label": "Reas (VOD) - Alphabetical Series | 28 Nov | Class PNG @cwexte",
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/67490eba79222_28novSSC_PRATHAMcompressed.pdf",
+          "type": "pdf"
+        },
+        {
+          "label": "Reas (VOD) - Alphabetical Series | 29 Nov | Class PNG @cwexte",
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/6749b5079e9c1_29novSSC_PRATHAMcompressed.pdf",
+          "type": "pdf"
+        },
+        {
+          "label": "Reas (VOD) - Alphabetical | 27 Nov | Class PNG @cwexte",
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/6748382bb3859_27novSSC_PRATHAMcompressed.pdf",
+          "type": "pdf"
+        },
+        {
+          "label": "Reas (VOD) - Analogy Class Questions Final @cwexte",
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/67af03af5904b_Analogy_Class_Que_Final_2025_1.pdf",
+          "type": "pdf"
+        },
+        {
+          "label": "Reas (VOD) - Analogy PYQ Practice Set @cwexte",
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/67af033263f6c_Analogy_PYQ_Practice_Set_Final_2025compressed.pdf",
+          "type": "pdf"
+        },
+        {
+          "label": "Reas (VOD) - Analogy | 10 Feb | Class @cwexte",
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/67aa078953c95_10Feb_Analogy_293031353840Pratham123compressed.pdf",
+          "type": "pdf"
+        },
+        {
+          "label": "Reas (VOD) - Analogy | 11 Feb | Class @cwexte",
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/67ab2c010bcfa_11Feb_Analogy_293031353840Pratham123compressed.pdf",
+          "type": "pdf"
+        },
+        {
+          "label": "Reas (VOD) - Analytical Reasoning PYQ @cwexte",
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/68402cd65fc04_Analytical_Reasoning_PYQ.pdf",
+          "type": "pdf"
+        },
+        {
+          "label": "Reas (VOD) - Analytical Reasoning Test @cwexte",
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/68402cfb6534c_Analytical_Reasoning_Test.pdf",
+          "type": "pdf"
+        },
+        {
+          "label": "Reas (VOD) - Assertion And Reason Class Question @cwexte",
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/68402d570cd9f_Assertion_And_Reason_Class_Question.pdf",
+          "type": "pdf"
+        },
+        {
+          "label": "Reas (VOD) - Assertion and Reason | 3 June | Class PNG @cwexte",
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/683ee3724d536_3June_spl3538_and_pratham12_Assertion_and_Reasoncompressed.pdf",
+          "type": "pdf"
+        },
+        {
+          "label": "Reas (VOD) - Assumptions | 26 May | Class PNG @cwexte",
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/6835389bad641_26_may_spl3538_and_pratham12_Assumptionscompressed.pdf",
+          "type": "pdf"
+        },
+        {
+          "label": "Reas (VOD) - Assumptions | 27 May | Class PNG @cwexte",
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/6836ce5472410_27_may_spl3538_and_pratham12_Assumptionscompressed.pdf",
+          "type": "pdf"
+        },
+        {
+          "label": "Reas (VOD) - Blood Relation PYQ Practice Set @cwexte",
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/6787946a2b0c2_BLOOD_RELATION_PYQ_PRACTICE_SET_DONE.pdf",
+          "type": "pdf"
+        },
+        {
+          "label": "Reas (VOD) - Blood Relation Practice Set @cwexte",
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/678786cb29778_BLOOD_RELATION_STUDENT_FILE_FINAL_2025_NEW_FORMAT.pdf",
+          "type": "pdf"
+        },
+        {
+          "label": "Reas (VOD) - Blood Relation | 14 May | Class PNG @cwexte",
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/68256e5dac41b_14may_Non_Verbal_35384042_and_pratham_1234compressed.pdf",
+          "type": "pdf"
+        },
+        {
+          "label": "Reas (VOD) - Blood Relations (Class Que) @cwexte",
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/678a44ef3fafb_BLOOD_RELATION_Class_Que_Student_Final_File_2024.pdf",
+          "type": "pdf"
+        },
+        {
+          "label": "Reas (VOD) - Blood Relations | 08 Jan | Class PNG @cwexte",
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/677f63f397e1d_8jan_2829303135Prathamcompressed.pdf",
+          "type": "pdf"
+        },
+        {
+          "label": "Reas (VOD) - Blood Relations | 14 Jan | Class PNG @cwexte",
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/67874eba2b2f6_14jan_2829303135Prathamcompressed.pdf",
+          "type": "pdf"
+        },
+        {
+          "label": "Reas (VOD) - Blood Relations | 2 Jan | Class PNG @cwexte",
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/67775a940be72_2jan_2829303135Prathamcompressed.pdf",
+          "type": "pdf"
+        },
+        {
+          "label": "Reas (VOD) - Blood Relations | 3 Jan | Class PNG @cwexte",
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/6777d07855ab4_3jan_2829303135Prathamcompressed.pdf",
+          "type": "pdf"
+        },
+        {
+          "label": "Reas (VOD) - Blood Relations | 6 Jan | Class PNG @cwexte",
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/677bc699ace52_6jan_2829303135Prathamcompressed.pdf",
+          "type": "pdf"
+        },
+        {
+          "label": "Reas (VOD) - Blood Relations | 7 Jan | Class PNG @cwexte",
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/677e045104955_7jan_2829303135Prathamcompressed.pdf",
+          "type": "pdf"
+        },
+        {
+          "label": "Reas (VOD) - Calendar (Class Que) @cwexte",
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/678a45528a10f_Calendar_Pdf_CQ_Studdent_Final_2025.pdf",
+          "type": "pdf"
+        },
+        {
+          "label": "Reas (VOD) - Calendar Class Questions @cwexte",
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/67970f0b59f10_Calendar_Class_Questions.pdf",
+          "type": "pdf"
+        },
+        {
+          "label": "Reas (VOD) - Calendar Practice Set @cwexte",
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/67970f8e35026_Calendar_Practice_Set.pdf",
+          "type": "pdf"
+        },
+        {
+          "label": "Reas (VOD) - Calendar | 15 Jan | Class PNG @cwexte",
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/6788971d13846_15jan_2829303135Prathamcompressed.pdf",
+          "type": "pdf"
+        },
+        {
+          "label": "Reas (VOD) - Calendar | 16 Jan | Class PNG @cwexte",
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/6788ee5086efd_16jan_2829303135Prathamcompressed.pdf",
+          "type": "pdf"
+        },
+        {
+          "label": "Reas (VOD) - Calendar | 17 Jan | Class PNG @cwexte",
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/678a461a42bf1_17jan_2829303135Prathamcompressed.pdf",
+          "type": "pdf"
+        },
+        {
+          "label": "Reas (VOD) - Calendar | 18 Jan | Class PNG @cwexte",
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/678d3b6b1f03a_18jan_2829303135Prathamcompressed.pdf",
+          "type": "pdf"
+        },
+        {
+          "label": "Reas (VOD) - Calendar | 21 Jan | Class PNG @cwexte",
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/678f864736899_21jan_2829303135Prathamcompressed.pdf",
+          "type": "pdf"
+        },
+        {
+          "label": "Reas (VOD) - Calendar | 22 Jan | Class PNG @cwexte",
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/6790da68ec539_22jan_2829303135Prathamcompressed.pdf",
+          "type": "pdf"
+        },
+        {
+          "label": "Reas (VOD) - Calendar | 23 Jan | Class PNG @cwexte",
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/67934f471c881_23jan_2829303135Prathamcompressed.pdf",
+          "type": "pdf"
+        },
+        {
+          "label": "Reas (VOD) - Cause And  Effect @cwexte",
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/68402de04b370_Cause_And_Effect_pdf.pdf",
+          "type": "pdf"
+        },
+        {
+          "label": "Reas (VOD) - Cause and Effect | 05 Aug Class PNG @cwexte",
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/66b0fef3ecde4_5_aug_18_compressed.pdf",
+          "type": "pdf"
+        },
+        {
+          "label": "Reas (VOD) - Cause and Effect | 29 May | Class PNG @cwexte",
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/68384a751ef12_29_may_spl3538_and_pratham12_Cause_and_Effectcompressed.pdf",
+          "type": "pdf"
+        },
+        {
+          "label": "Reas (VOD) - Classification (Class Que) Final 2025 @cwexte",
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/67ae8a1695494_CLASSIFICATION_Class_Que_Final_2025.pdf",
+          "type": "pdf"
+        },
+        {
+          "label": "Reas (VOD) - Classification (PYQ Practice Set) 2025 @cwexte",
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/67ae89a07aaaf_Classification_PYQ_Practice_Set_2025compressed.pdf",
+          "type": "pdf"
+        },
+        {
+          "label": "Reas (VOD) - Classification | 12 Feb | Class PNG @cwexte",
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/67ac8a1ccf408_12Feb_Classification_293031353840Pratham123compressed.pdf",
+          "type": "pdf"
+        },
+        {
+          "label": "Reas (VOD) - Clock Class Question @cwexte",
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/67c18c834ca91_Clock_Class_Que_Final_Pdf_2025_3.pdf",
+          "type": "pdf"
+        },
+        {
+          "label": "Reas (VOD) - Clock Practice Set @cwexte",
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/67c18c09eb1bc_CLOCK_Practice_Set_Final_pdf_2025_3.pdf",
+          "type": "pdf"
+        },
+        {
+          "label": "Reas (VOD) - Clock | 21 Feb | Class PNG @cwexte",
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/67bc8e5e906fa_24Feb_Clock_29303135384042Pratham1234.pdf",
+          "type": "pdf"
+        },
+        {
+          "label": "Reas (VOD) - Clock | 24 Feb | Class PNG @cwexte",
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/67bcc0bd66953_24Feb_Clock_29303135384042Pratham1234_1.pdf",
+          "type": "pdf"
+        },
+        {
+          "label": "Reas (VOD) - Clock | 25 Feb | Class PNG @cwexte",
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/67be9c22c9f1f_25Feb_Clock_29303135384042Pratham1234compressed.pdf",
+          "type": "pdf"
+        },
+        {
+          "label": "Reas (VOD) - Clock | 26 Feb | Class PNG @cwexte",
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/67c0015d8a292_26Feb_Clock_29303135384042Pratham1234compressed.pdf",
+          "type": "pdf"
+        },
+        {
+          "label": "Reas (VOD) - Clock | 27 Feb | Class PNG @cwexte",
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/67c11c9f670b3_27Feb_Clock_29303135384042Pratham1234compressed.pdf",
+          "type": "pdf"
+        },
+        {
+          "label": "Reas (VOD) - Clock | 28 Feb | Class PNG @cwexte",
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/67c1925ef2bfe_28Feb_Clock_29303135384042Pratham1234compressed.pdf",
+          "type": "pdf"
+        },
+        {
+          "label": "Reas (VOD) - Clock | 3 March | Class PNG @cwexte",
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/67c5864f265ce_3_Mar_Clock_29303135384042Pratham1234compressed.pdf",
+          "type": "pdf"
+        },
+        {
+          "label": "Reas (VOD) - Coded Equation | 14 Feb | Class PNG @cwexte",
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/67b026b7de58a_14Feb_Coded_Equations3031353840Pratham123compressed.pdf",
+          "type": "pdf"
+        },
+        {
+          "label": "Reas (VOD) - Coding  Decoding PYQ Practice Set @cwexte",
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/6764d8b0cf85a_CODING_DECODING_PIYUSH_SIR_S.pdf",
+          "type": "pdf"
+        },
+        {
+          "label": "Reas (VOD) - Coding Decoding  Practice Set @cwexte",
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/6764d885e63b7_Ch_1Coding_Decoding_Student_Final.pdf",
+          "type": "pdf"
+        },
+        {
+          "label": "Reas (VOD) - Coding Decoding | 10 Dec | Class PNG @cwexte",
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/6758259f12e1f_10decSSC_PRATHAM35compressed.pdf",
+          "type": "pdf"
+        },
+        {
+          "label": "Reas (VOD) - Coding Decoding | 11 Dec | Class PNG @cwexte",
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/675a808a05697_11decSSC_PRATHAM35compressed.pdf",
+          "type": "pdf"
+        },
+        {
+          "label": "Reas (VOD) - Coding Decoding | 12 Dec | Class PNG @cwexte",
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/675bb6c1b8bf9_12decSSC_PRATHAM35compressed.pdf",
+          "type": "pdf"
+        },
+        {
+          "label": "Reas (VOD) - Coding Decoding | 13 Dec | Class PNG @cwexte",
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/675fcdf66f097_13decSSC_PRATHAM35.pdf",
+          "type": "pdf"
+        },
+        {
+          "label": "Reas (VOD) - Coding Decoding | 16 Dec | Class PNG @cwexte",
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/67610320e39d2_16decpratham.pdf",
+          "type": "pdf"
+        },
+        {
+          "label": "Reas (VOD) - Coding Decoding | 17 Dec | Class PNG @cwexte",
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/67625cfebfc8e_17decSSC_PRATHAM35compressed.pdf",
+          "type": "pdf"
+        },
+        {
+          "label": "Reas (VOD) - Coding Decoding | 18 Dec | Class PNG @cwexte",
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/676306e8aa69f_18decSSC_PRATHAM35compressed.pdf",
+          "type": "pdf"
+        },
+        {
+          "label": "Reas (VOD) - Coding Decoding | 9 Dec | Class PNG @cwexte",
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/67579085922b5_9decSSC_PRATHAM35.pdf",
+          "type": "pdf"
+        },
+        {
+          "label": "Reas (VOD) - Counting Figures Class Questions @cwexte",
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/6768f30fc7084_COUNTING_FIGURES_FINAL_PDF_2024.pdf",
+          "type": "pdf"
+        },
+        {
+          "label": "Reas (VOD) - Counting Figures | 23 Dec | Class PNG @cwexte",
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/676a3d8012790_23Dec_2829303135Prathamcompressed.pdf",
+          "type": "pdf"
+        },
+        {
+          "label": "Reas (VOD) - Counting Figures | 24 Dec | Class PNG @cwexte",
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/676aec01aff1f_24Dec_2829303135Prathamcompressed.pdf",
+          "type": "pdf"
+        },
+        {
+          "label": "Reas (VOD) - Counting Figures | 25 Dec | Class PNG @cwexte",
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/676ce6f64fcf7_25Dec_2829303135Prathamcompressed.pdf",
+          "type": "pdf"
+        },
+        {
+          "label": "Reas (VOD) - Counting Figures | 26 Dec | Class PNG @cwexte",
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/676e45b25c39c_26Dec_2829303135Prathamcompressed.pdf",
+          "type": "pdf"
+        },
+        {
+          "label": "Reas (VOD) - Counting Figures | 27 Dec | Class PNG @cwexte",
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/676f943437679_27Dec_2829303135Prathamcompressed.pdf",
+          "type": "pdf"
+        },
+        {
+          "label": "Reas (VOD) - Counting Figures | 30 Dec | Class PNG @cwexte",
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/67738c8278cd6_30Dec_2829303135Prathamcompressed.pdf",
+          "type": "pdf"
+        },
+        {
+          "label": "Reas (VOD) - Counting of Figures Practice Set @cwexte",
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/67762f3035c9b_COUNTING_OF_FIGURES_NEW_STUDENT_PDF.pdf",
+          "type": "pdf"
+        },
+        {
+          "label": "Reas (VOD) - Course of Action Class Question @cwexte",
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/68402fd7ca7e9_Course_of_Action_Class_Question.pdf",
+          "type": "pdf"
+        },
+        {
+          "label": "Reas (VOD) - Course of Action | 06 August Class PNG @cwexte",
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/66b1fa628357d_6_aug_18_compressed.pdf",
+          "type": "pdf"
+        },
+        {
+          "label": "Reas (VOD) - Course of Action | 30 May | Class PNG @cwexte",
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/683997f178d97_30_may_spl3538_and_pratham12_Course_of_Actioncompressed.pdf",
+          "type": "pdf"
+        },
+        {
+          "label": "Reas (VOD) - Cube & Cuboid | 31 March | Class PNG @cwexte",
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/67ea7f85bc9fb_31Mar_CubeCuboid_Spl3538404245_Pratham12345compressed.pdf",
+          "type": "pdf"
+        },
+        {
+          "label": "Reas (VOD) - Cube PYQs Practice | 10 April | Class PNG @cwexte",
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/67f7aabcdb93b_10APR_Cube_PYQs_Practice_Spl3538404245andPratham12345.pdf",
+          "type": "pdf"
+        },
+        {
+          "label": "Reas (VOD) - Cube and Cuboid Class Question @cwexte",
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/67ee77f37b08c_CUBE_AND_CUBOID_Class_Question.pdf",
+          "type": "pdf"
+        },
+        {
+          "label": "Reas (VOD) - Cube and Cuboid Practice Set @cwexte",
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/67ee77005dade_Cube_and_Cuboid_Practice_Set.pdf",
+          "type": "pdf"
+        },
+        {
+          "label": "Reas (VOD) - Cube and Cuboid Test @cwexte",
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/67ee77745f40e_Cube_and_Cuboid_Test.pdf",
+          "type": "pdf"
+        },
+        {
+          "label": "Reas (VOD) - Cube and Cuboid | 1 April | Class PNG @cwexte",
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/67ebcf362dff1_1APR_Cube_and_Cuboid_Spl3538404245andPratham12345compressed.pdf",
+          "type": "pdf"
+        },
+        {
+          "label": "Reas (VOD) - Cube and Cuboid | 2 April | Class PNG @cwexte",
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/67ed2657ce8b2_2APR_Cube_and_Cuboid_Spl3538404245andPratham12345compressed.pdf",
+          "type": "pdf"
+        },
+        {
+          "label": "Reas (VOD) - Cube and Cuboid | 27 March | Class PNG @cwexte",
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/67e68950bd08e_28Mar_CubeCuboid_Spl3538404245_Pratham12345.pdf",
+          "type": "pdf"
+        },
+        {
+          "label": "Reas (VOD) - Cube and Cuboid | 3 April | Class PNG @cwexte",
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/67ee768db43fd_3APR_Cube_and_Cuboid_Spl3538404245andPratham12345compressed.pdf",
+          "type": "pdf"
+        },
+        {
+          "label": "Reas (VOD) - Data Sufficiency | 5 June | Class PNG @cwexte",
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/68417d09b4751_5June_spl3538_and_pratham12_Data_Sufficiencycompressed.pdf",
+          "type": "pdf"
+        },
+        {
+          "label": "Reas (VOD) - Decision making | 4 June | Class PNG @cwexte",
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/68402c302d5e1_4June_spl3538_and_pratham12_Decision_Makingcompressed.pdf",
+          "type": "pdf"
+        },
+        {
+          "label": "Reas (VOD) - Dice Class Question @cwexte",
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/67e543ac3824b_Dice_Class_Question.pdf",
+          "type": "pdf"
+        },
+        {
+          "label": "Reas (VOD) - Dice PYQs Set @cwexte",
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/67e5440fc0b60_Dice_PYQs_Set.pdf",
+          "type": "pdf"
+        },
+        {
+          "label": "Reas (VOD) - Dice Practice Set @cwexte",
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/67e5446ab88e4_Dice_Practice_Set.pdf",
+          "type": "pdf"
+        },
+        {
+          "label": "Reas (VOD) - Dice Short Notes | 27 March | Class PNG @cwexte",
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/67e5430ba20a9_27Mar_DICE_SHORT_NOTES_Spl3538404245_Pratham12345.pdf",
+          "type": "pdf"
+        },
+        {
+          "label": "Reas (VOD) - Dice Test Question @cwexte",
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/67e544e02519d_Dice_Test_Question_Student_File.pdf",
+          "type": "pdf"
+        },
+        {
+          "label": "Reas (VOD) - Dice | 19 March | Class PNG @cwexte",
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/67dab2d3607ac_19_Mar_DICE_Spl3538404245_Pratham12345.pdf",
+          "type": "pdf"
+        },
+        {
+          "label": "Reas (VOD) - Dice | 20 March | Class PNG @cwexte",
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/67dcf2e9909e9_20_Mar_DICE_Spl3538404245_Pratham12345compressed.pdf",
+          "type": "pdf"
+        },
+        {
+          "label": "Reas (VOD) - Dice | 21 March | Class PNG @cwexte",
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/67e1489a3c2a0_21_Mar_DICE_Spl3538404245_Pratham12345compressed.pdf",
+          "type": "pdf"
+        },
+        {
+          "label": "Reas (VOD) - Dice | 24 March | Class PNG @cwexte",
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/67e14a7f40a7c_24_Mar_DICE_Spl3538404245_Pratham12345compressed.pdf",
+          "type": "pdf"
+        },
+        {
+          "label": "Reas (VOD) - Dice | 25 March | Class PNG @cwexte",
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/67e298bbcd442_25Mar_DICE_Spl3538404245_Pratham12345compressed.pdf",
+          "type": "pdf"
+        },
+        {
+          "label": "Reas (VOD) - Dice | 26 March | Class PNG @cwexte",
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/67e4d2b063175_26Mar_DICE_Spl3538404245_Pratham12345compressed.pdf",
+          "type": "pdf"
+        },
+        {
+          "label": "Reas (VOD) - Dictionary ,  Word formation, Jumbling WBP Class Questions @cwexte",
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/6753dde21d936_DICTIONARY_WORD_FORMATION_JUMBLING_WBP_FINAL_STUDENT_PDF_2024.pdf",
+          "type": "pdf"
+        },
+        {
+          "label": "Reas (VOD) - Direction And Distance Class Question @cwexte",
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/6808cd1615b62_Direction_And_Distance_Class_Question_1.pdf",
+          "type": "pdf"
+        },
+        {
+          "label": "Reas (VOD) - Direction And Distance Practice Set @cwexte",
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/6808cd9720076_Direction_And_Distance_Practice_Set_1.pdf",
+          "type": "pdf"
+        },
+        {
+          "label": "Reas (VOD) - Direction And Distance Test @cwexte",
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/6808ce5cf3d96_Direction_And_Distance_Test_1.pdf",
+          "type": "pdf"
+        },
+        {
+          "label": "Reas (VOD) - Direction and Distance PYQ @cwexte",
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/6808cdfb40cf7_Direction_and_Distance_PYQ_1.pdf",
+          "type": "pdf"
+        },
+        {
+          "label": "Reas (VOD) - Directions and Distance | 14 April | Class PNG @cwexte",
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/67fceb8a606b6_14APR_Directions_and_Distance_Spl31353840424548andPratham123456compressed.pdf",
+          "type": "pdf"
+        },
+        {
+          "label": "Reas (VOD) - Directions and Distance | 15 April | Class PNG @cwexte",
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/68006c7badbfa_15APR_Directions_and_Distance_Spl31353840424548andPratham123456compressed.pdf",
+          "type": "pdf"
+        },
+        {
+          "label": "Reas (VOD) - Directions and Distance | 16 April | Class PNG @cwexte",
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/6800719a80a25_16APR_Directions_and_Distance_Spl31353840424548andPratham123456compressed.pdf",
+          "type": "pdf"
+        },
+        {
+          "label": "Reas (VOD) - Directions and Distance | 21 April | Class PNG @cwexte",
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/68061e107260f_21APR_Directions_and_Distance_Spl31353840424548andPratham123456compressed.pdf",
+          "type": "pdf"
+        },
+        {
+          "label": "Reas (VOD) - Directions and Distance | 22 April | Class PNG @cwexte",
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/680783a6b6900_22APR_Directions_and_Distance_Spl31353840424548andPratham123456compressed.pdf",
+          "type": "pdf"
+        },
+        {
+          "label": "Reas (VOD) - Inequalities | 24 Jan | Class PNG @cwexte",
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/6794731b1047f_20250124154505964compressed.pdf",
+          "type": "pdf"
+        },
+        {
+          "label": "Reas (VOD) - Inequalities | 27 Jan | Class PNG @cwexte",
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/6797669ca1f17_27jan_28293031353840Pratham123.pdf",
+          "type": "pdf"
+        },
+        {
+          "label": "Reas (VOD) - Inequalities | 28 Jan | Class PNG @cwexte",
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/6798b12a47f0c_28janInequalities_28293031353840Pratham123compressed.pdf",
+          "type": "pdf"
+        },
+        {
+          "label": "Reas (VOD) - Inequality Class Questions @cwexte",
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/679ae7d5eba10_Inequality_Final_pdf_2025_Class_Que.pdf",
+          "type": "pdf"
+        },
+        {
+          "label": "Reas (VOD) - Inequality Practice Set @cwexte",
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/6798b1b347fa8_Inequality_SSC_Mains_2025.pdf",
+          "type": "pdf"
+        },
+        {
+          "label": "Reas (VOD) - Intro | 20 Nov | Class PNG @cwexte",
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/673db6d5bc8cd_20novSSC_PRATHAMcompressed.pdf",
+          "type": "pdf"
+        },
+        {
+          "label": "Reas (VOD) - Intro | 21 Nov | Class PNG @cwexte",
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/673f1cbe3a4ee_21novSSC_PRATHAMcompressed.pdf",
+          "type": "pdf"
+        },
+        {
+          "label": "Reas (VOD) - Letter Series Class Questions @cwexte",
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/675005600bbc7_LETTER_SERIES_FINAL_PDF_50_Que_1.pdf",
+          "type": "pdf"
+        },
+        {
+          "label": "Reas (VOD) - Letter Series Practice Set @cwexte",
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/674fe342968c7_LETTER_SERIES_FINAL_PDF_60_Que.pdf",
+          "type": "pdf"
+        },
+        {
+          "label": "Reas (VOD) - Letter Series | 2 Dec | Class PNG @cwexte",
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/674da512b01a1_2decSSC_PRATHAMcompressed.pdf",
+          "type": "pdf"
+        },
+        {
+          "label": "Reas (VOD) - Letter Series | 3 Dec | Class PNG @cwexte",
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/674efabb3bf64_3decSSC_PRATHAMcompressed.pdf",
+          "type": "pdf"
+        },
+        {
+          "label": "Reas (VOD) - Live Class Test  | 11 April | Class PNG @cwexte",
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/67f9ab74e4095_11APR_Live_Class_Test_Spl3538404245andPratham12345.pdf",
+          "type": "pdf"
+        },
+        {
+          "label": "Reas (VOD) - Live Test | 20 Dec | Class PNG @cwexte",
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/6768e80e241a7_20decSSC_PRATHAM35compressed.pdf",
+          "type": "pdf"
+        },
+        {
+          "label": "Reas (VOD) - Machine Input Class PNG @cwexte",
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/6841852cb39fe_682336ec16ae3ilovepdfmerged.pdf",
+          "type": "pdf"
+        },
+        {
+          "label": "Reas (VOD) - Matrix | 19 Dec | Class PNG @cwexte",
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/6764eb45bf413_19decSSC_PRATHAM35compressed.pdf",
+          "type": "pdf"
+        },
+        {
+          "label": "Reas (VOD) - Missing Number Class Questions Final @cwexte",
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/67af044d13c23_MISSING_NUMBER_Class_Que_Final_Pdf_2025.pdf",
+          "type": "pdf"
+        },
+        {
+          "label": "Reas (VOD) - Missing Number | 7 Feb | Class PNG @cwexte",
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/67a87370752d7_7_Feb_Number_Series_293031353840Pratham123compressed.pdf",
+          "type": "pdf"
+        },
+        {
+          "label": "Reas (VOD) - Non Verbal PYQs [Part-01] @cwexte",
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/68300156f036d_Non_Verbal_PYQs_PART01.pdf",
+          "type": "pdf"
+        },
+        {
+          "label": "Reas (VOD) - Non Verbal PYQs [Part-02] @cwexte",
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/683001b731fd5_Non_Verbal_PYQs_PART02.pdf",
+          "type": "pdf"
+        },
+        {
+          "label": "Reas (VOD) - Non Verbal PYQs [Part-03] @cwexte",
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/683001faaafb9_Non_Verbal_PYQs_PART03.pdf",
+          "type": "pdf"
+        },
+        {
+          "label": "Reas (VOD) - Non Verbal PYQs [Part-04] @cwexte",
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/68300263c2b27_Non_Verbal_PYQs_PART04.pdf",
+          "type": "pdf"
+        },
+        {
+          "label": "Reas (VOD) - Non Verbal Practice Set @cwexte",
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/682fff72ae6f3_Non_Verbal_Practice_Setcompressed.pdf",
+          "type": "pdf"
+        },
+        {
+          "label": "Reas (VOD) - Non Verbal Reasoning | 15 May | Class PNG @cwexte",
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/6825d2aec635c_15may_Non_Verbal_35384042_and_pratham_1234compressed.pdf",
+          "type": "pdf"
+        },
+        {
+          "label": "Reas (VOD) - Non Verbal Reasoning | 16 May | Class PNG @cwexte",
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/682725b49be97_16may_Non_Verbal_35384042_and_pratham_1234compressed.pdf",
+          "type": "pdf"
+        },
+        {
+          "label": "Reas (VOD) - Non Verbal Test @cwexte",
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/682fff1b25145_Non_Verbal_Test_pdf.pdf",
+          "type": "pdf"
+        },
+        {
+          "label": "Reas (VOD) - Non Verbal | 19 May | Class PNG @cwexte",
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/682b1a8b2396c_19may_Non_Verbal_35384042_and_pratham_1234compressed.pdf",
+          "type": "pdf"
+        },
+        {
+          "label": "Reas (VOD) - Non Verbal | 20 May | Class PNG @cwexte",
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/682d577948e84_20may_Non_Verbal_35384042_and_pratham_1234compressed.pdf",
+          "type": "pdf"
+        },
+        {
+          "label": "Reas (VOD) - Non Verbal | 22 May | Class PNG @cwexte",
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/682ffbd4d87c7_22may_Non_Verbal_35384042_and_pratham_1234compressed.pdf",
+          "type": "pdf"
+        },
+        {
+          "label": "Reas (VOD) - Number Series Class Questions @cwexte",
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/67a5a46a29f9a_NUMBER_SERIES_Class_Que_FINAL_FILE_2025.pdf",
+          "type": "pdf"
+        },
+        {
+          "label": "Reas (VOD) - Number Series Practice Set @cwexte",
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/67a5a36cba6ee_NUMBER_SERIES_Practice_Set_Final_2025.pdf",
+          "type": "pdf"
+        },
+        {
+          "label": "Reas (VOD) - Number Series | 3 Feb | Class PNG @cwexte",
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/67a0af0f4f2f3_3_Feb_Number_Series_293031353840Pratham123compressed.pdf",
+          "type": "pdf"
+        },
+        {
+          "label": "Reas (VOD) - Number Series | 4 Feb | Class PNG @cwexte",
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/67a1f3a1e20ec_4_Feb_Number_Series_293031353840Pratham123_1.pdf",
+          "type": "pdf"
+        },
+        {
+          "label": "Reas (VOD) - Number Series | 6 Feb | Class PNG @cwexte",
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/67a49329cb7eb_6_Feb_Number_Series_293031353840Pratham123compressed.pdf",
+          "type": "pdf"
+        },
+        {
+          "label": "Reas (VOD) - PYQ Practice | 19 Feb | Class PNG @cwexte",
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/67b5b7d0e6ed8_19_Feb_Series_SSC_CGL_2024_Practice293031353840Pratham123compressed.pdf",
+          "type": "pdf"
+        },
+        {
+          "label": "Reas (VOD) - PYQ Practice | 20 Feb | Class PNG @cwexte",
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/67b7e09010737_20_Feb_SSC_CGL_2024_Practice293031353840Pratham123compressed.pdf",
+          "type": "pdf"
+        },
+        {
+          "label": "Reas (VOD) - PYQ Practice | 21 Feb | Class PNG @cwexte",
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/67b8689287683_21_Feb_SSC_CGL_2024_Practice293031353840Pratham123compressed.pdf",
+          "type": "pdf"
+        },
+        {
+          "label": "Reas (VOD) - Pair Formation Class Questions @cwexte",
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/674fe43a53ef5_PAIR_FORMATION_S_2024Piyush_sir.pdf",
+          "type": "pdf"
+        },
+        {
+          "label": "Reas (VOD) - Pair Formation | 4 Dec | Class PNG @cwexte",
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/67504e1d16bcc_4decSSC_PRATHAMcompressed.pdf",
+          "type": "pdf"
+        },
+        {
+          "label": "Reas (VOD) - Pair Formation | 5 Dec | Class PNG @cwexte",
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/67518d8ad34f1_5decSSC_PRATHAMcompressed.pdf",
+          "type": "pdf"
+        },
+        {
+          "label": "Reas (VOD) - Pair Formation | 6 Dec | Class PNG @cwexte",
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/6753df463cbba_6decSSC_PRATHAMcompressed.pdf",
+          "type": "pdf"
+        },
+        {
+          "label": "Reas (VOD) - Piyush Sir Book Link @cwexte",
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/673db73d6bbf5_66e3fec589736Piyush_Sir2.pdf",
+          "type": "pdf"
+        },
+        {
+          "label": "Reas (VOD) - Police Dice,  Cube and Cuboid PYQs @cwexte",
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/67f7a0f2c2d1a_Police_Dice_Cube_and_Cuboid_PYQs.pdf",
+          "type": "pdf"
+        },
+        {
+          "label": "Reas (VOD) - Police course of action | 07 August Class PNG @cwexte",
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/66b3487456ee3_7_aug_18_compressed.pdf",
+          "type": "pdf"
+        },
+        {
+          "label": "Reas (VOD) - Puzzle Complete Class PNG @cwexte",
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/66d80226044c5_664f12ee41150_Puzzle.pdf",
+          "type": "pdf"
+        },
+        {
+          "label": "Reas (VOD) - Puzzle | 13 May | Class PNG @cwexte",
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/68243f0e29f9a_13may_Puzzle_35_and_pratham_1compressed.pdf",
+          "type": "pdf"
+        },
+        {
+          "label": "Reas (VOD) - Puzzle | 5 May | Class PNG @cwexte",
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/6818a7efd5b3d_5MAY_Puzzle_Spl3135andPratham1compressed.pdf",
+          "type": "pdf"
+        },
+        {
+          "label": "Reas (VOD) - Puzzle | 6 May | Class PNG @cwexte",
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/6819fde8b6844_6MAY_Puzzle_Spl3135andPratham1compressed.pdf",
+          "type": "pdf"
+        },
+        {
+          "label": "Reas (VOD) - Puzzle | 7 May | Class PNG @cwexte",
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/681c4dec3b1be_7may_Puzzle_3135_and_pratham_1compressed.pdf",
+          "type": "pdf"
+        },
+        {
+          "label": "Reas (VOD) - Puzzle | 8 May | Class PNG @cwexte",
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/681d96e49c040_8may_Puzzle_3135_and_pratham_1compressed.pdf",
+          "type": "pdf"
+        },
+        {
+          "label": "Reas (VOD) - Puzzle | 9 May | Class PNG @cwexte",
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/681edf7461d76_9may_Puzzle_3135_and_pratham_1compressed.pdf",
+          "type": "pdf"
+        },
+        {
+          "label": "Reas (VOD) - Ranking Class Questions @cwexte",
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/67a874622cab3_Ranking_Class_Que_Final_pdf_2025.pdf",
+          "type": "pdf"
+        },
+        {
+          "label": "Reas (VOD) - Ranking PYQ Practice Set @cwexte",
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/67a06ca18efe8_RANKING_PYQ_Practice_Set_Final_pdf_2025.pdf",
+          "type": "pdf"
+        },
+        {
+          "label": "Reas (VOD) - Ranking Practice Set @cwexte",
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/67a08f8d8282d_Ranking_Practice_Set_Final_pdf_2025.pdf",
+          "type": "pdf"
+        },
+        {
+          "label": "Reas (VOD) - Ranking | 29 Jan | Class PNG @cwexte",
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/679a1a0a7e4ba_29janRanking_293031353840Pratham123compressed.pdf",
+          "type": "pdf"
+        },
+        {
+          "label": "Reas (VOD) - Ranking | 30 Jan | Class PNG @cwexte",
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/679b5c61763ef_30janRanking_293031353840Pratham123compressed.pdf",
+          "type": "pdf"
+        },
+        {
+          "label": "Reas (VOD) - Ranking | 31 Jan | Class PNG @cwexte",
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/679cb2fb86d79_31janRanking_293031353840Pratham123compressed.pdf",
+          "type": "pdf"
+        },
+        {
+          "label": "Reas (VOD) - Reas | Assertion and reason  | 12 August Class PNG @cwexte",
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/66bac6d1ef3b8_12_aug_18_compressed.pdf",
+          "type": "pdf"
+        },
+        {
+          "label": "Reas (VOD) - Reas | Data Sufficiency | 14 August Class PNG @cwexte",
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/66be3eef3734a_14_aug_21_compressed.pdf",
+          "type": "pdf"
+        },
+        {
+          "label": "Reas (VOD) - Reas | Decision Making | 13 August Class PNG @cwexte",
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/66bb533fd5b4c_13_aug_21_compressed.pdf",
+          "type": "pdf"
+        },
+        {
+          "label": "Reas (VOD) - Reas | Syllogims | 02 September Class PNG @cwexte",
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/66d6832eddb25_2sep_21_compressed.pdf",
+          "type": "pdf"
+        },
+        {
+          "label": "Reas (VOD) - Reas | Syllogims | 03 September Class PNG @cwexte",
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/66d701802646f_3sep_21_compressed.pdf",
+          "type": "pdf"
+        },
+        {
+          "label": "Reas (VOD) - Reas | Syllogims | 04 September Class PNG @cwexte",
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/66d84b843c441_4sep_21_compressed.pdf",
+          "type": "pdf"
+        },
+        {
+          "label": "Reas (VOD) - Reas | Syllogism | 21 August Class PNG @cwexte",
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/66c5cc8be7b03_21_aug_21.pdf",
+          "type": "pdf"
+        },
+        {
+          "label": "Reas (VOD) - Reas | Syllogism | 22 August Class PNG @cwexte",
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/66c7151848054_22_aug_21_compressed.pdf",
+          "type": "pdf"
+        },
+        {
+          "label": "Reas (VOD) - Reas | Syllogism | 23 August Class PNG @cwexte",
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/66cd68edf0cf9_23_aug_21_compressed.pdf",
+          "type": "pdf"
+        },
+        {
+          "label": "Reas (VOD) - Reas | Syllogism | 27 August Class PNG @cwexte",
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/66cda99d58015_27_aug_21_compressed.pdf",
+          "type": "pdf"
+        },
+        {
+          "label": "Reas (VOD) - Reas | Syllogism | 28 August Class PNG @cwexte",
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/66cefa908a3fe_28_aug_21_compressed.pdf",
+          "type": "pdf"
+        },
+        {
+          "label": "Reas (VOD) - Reas | Syllogism | 29 August Class PNG @cwexte",
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/66d1285025235_29_aug_21_compressed.pdf",
+          "type": "pdf"
+        },
+        {
+          "label": "Reas (VOD) - Reas | Syllogism | 30 August Class PNG @cwexte",
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/66d1a0a065684_30_aug_21_compressed.pdf",
+          "type": "pdf"
+        },
+        {
+          "label": "Reas (VOD) - Reasoning Full Class Notes (Hand Written)  Part-1 @cwexte",
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/67a1ab85b9bce_Reasoning_Full_Class_Notes_Hand_Written_PART1.pdf",
+          "type": "pdf"
+        },
+        {
+          "label": "Reas (VOD) - Reasoning Full Class Notes (Hand Written) Part-2 @cwexte",
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/67a1abd74e72e_Reasoning_Full_Class_Notes_Hand_Written_PART2.pdf",
+          "type": "pdf"
+        },
+        {
+          "label": "Reas (VOD) - SSC 2025 Reasoning Syllabus @cwexte",
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/673db5136d64c_SSC_2025_Reasoning_Syllabus_S.pdf",
+          "type": "pdf"
+        },
+        {
+          "label": "Reas (VOD) - Seating Arrangement (Class Question) @cwexte",
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/681b0550a7d22_Seating_Arrangement_Class_Question.pdf",
+          "type": "pdf"
+        },
+        {
+          "label": "Reas (VOD) - Seating Arrangement And Puzzle PYQ Practice Set @cwexte",
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/681b07458484a_Seating_Arrangement_And_Puzzle_PYQ_Practice_Setcompressed.pdf",
+          "type": "pdf"
+        },
+        {
+          "label": "Reas (VOD) - Seating Arrangement Practice Set @cwexte",
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/681b060f3d289_Seating_Arrangement_Practice_Set.pdf",
+          "type": "pdf"
+        },
+        {
+          "label": "Reas (VOD) - Series PYQ Practice Set @cwexte",
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/67a5a7dfd8b4e_NUMBER_SERIES_PYQ_Practice_Set_2025_done.pdf",
+          "type": "pdf"
+        },
+        {
+          "label": "Reas (VOD) - Sitting Arrangements | 1 May | Class PNG @cwexte",
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/681474b41c834_1MAY_Sitting_Arrangements_Spl3135andPratham1compressed.pdf",
+          "type": "pdf"
+        },
+        {
+          "label": "Reas (VOD) - Sitting Arrangements | 2 May | Class PNG @cwexte",
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/6814b4b1191b5_2MAY_Sitting_Arrangements_PYQs_Practice_Spl3135andPratham1compressed.pdf",
+          "type": "pdf"
+        },
+        {
+          "label": "Reas (VOD) - Sitting Arrangements | 30 April | Class PNG @cwexte",
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/6812f7157e877_30APR_Sitting_Arrangements_Spl3135andPratham1compressed.pdf",
+          "type": "pdf"
+        },
+        {
+          "label": "Reas (VOD) - Statement & Assumption | 30 July Class PNG @cwexte",
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/66a8ca6381944_30jul_18_compressed.pdf",
+          "type": "pdf"
+        },
+        {
+          "label": "Reas (VOD) - Statement Argument Class Question @cwexte",
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/6840300a0fb21_Statement_Argument_Class_Question.pdf",
+          "type": "pdf"
+        },
+        {
+          "label": "Reas (VOD) - Statement Assumption And Conclusion Class Question @cwexte",
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/6840303326d1f_Statement_Assumption_And_Conclusion_Class_Question.pdf",
+          "type": "pdf"
+        },
+        {
+          "label": "Reas (VOD) - Statement and Argument | 2 June | Class PNG @cwexte",
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/683d913737361_2June_spl3538_and_pratham12_Argumentcompressed.pdf",
+          "type": "pdf"
+        },
+        {
+          "label": "Reas (VOD) - Statement and Arguments | 08 August Class PNG @cwexte",
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/66b49d7817f96_8_aug_18_compressed.pdf",
+          "type": "pdf"
+        },
+        {
+          "label": "Reas (VOD) - Statement and Arguments | 09 August Class PNG @cwexte",
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/66b8682ba02e4_18.pdf",
+          "type": "pdf"
+        },
+        {
+          "label": "Reas (VOD) - Statement and Assumption | 31 July Class PNG @cwexte",
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/66aa27f3c5ea9_31jul_18_compressed.pdf",
+          "type": "pdf"
+        },
+        {
+          "label": "Reas (VOD) - Statement and Conclusion | 01 Aug Class PNG @cwexte",
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/66abb75dd4ab9_1_aug_18_compressed.pdf",
+          "type": "pdf"
+        },
+        {
+          "label": "Reas (VOD) - Statement and Conclusion | 02 Aug Class PNG @cwexte",
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/66adb97dbe526_2_aug_18_compressed.pdf",
+          "type": "pdf"
+        },
+        {
+          "label": "Reas (VOD) - Syllogism Part-1 @cwexte",
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/67dbf4c613248_SYLLOGISM_PYQ_PRACTICE_SET_2025Part1.pdf",
+          "type": "pdf"
+        },
+        {
+          "label": "Reas (VOD) - Syllogism Part-2 @cwexte",
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/67dbf55bc1e4f_SYLLOGISM_PYQ_PRACTICE_SET_2025Part2.pdf",
+          "type": "pdf"
+        },
+        {
+          "label": "Reas (VOD) - Syllogism Part-3 @cwexte",
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/67dbf5c5ea0b6_SYLLOGISM_PYQ_PRACTICE_SET_2025Part3.pdf",
+          "type": "pdf"
+        },
+        {
+          "label": "Reas (VOD) - Syllogism | 10 March | Class PNG @cwexte",
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/67cfd888b4f01_10_Mar_Syllogism29303135384042Pratham1234.pdf",
+          "type": "pdf"
+        },
+        {
+          "label": "Reas (VOD) - Syllogism | 11 March | Class PNG @cwexte",
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/67d00dc620ca0_11_Mar_Syllogism29303135384042Pratham1234.pdf",
+          "type": "pdf"
+        },
+        {
+          "label": "Reas (VOD) - Syllogism | 12 March | Class PNG @cwexte",
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/67d1462430851_12_Mar_Syllogism29303135384042Pratham1234.pdf",
+          "type": "pdf"
+        },
+        {
+          "label": "Reas (VOD) - Syllogism | 17 March | Class PNG @cwexte",
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/67d8fc4427dcc_17_Mar_Syllogism29303135384042Pratham1234.pdf",
+          "type": "pdf"
+        },
+        {
+          "label": "Reas (VOD) - Syllogism | 4 March | Class PNG @cwexte",
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/67c6d8a56ac7b_4_Mar_Syllogism29303135384042Pratham1234compressed.pdf",
+          "type": "pdf"
+        },
+        {
+          "label": "Reas (VOD) - Syllogism | 5 March | Class PNG @cwexte",
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/67c927706c887_5_Mar_Syllogism29303135384042Pratham1234.pdf",
+          "type": "pdf"
+        },
+        {
+          "label": "Reas (VOD) - Syllogism | 6 March | Class PNG @cwexte",
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/67c97c41a1319_6_Mar_Syllogism29303135384042Pratham1234.pdf",
+          "type": "pdf"
+        },
+        {
+          "label": "Reas (VOD) - Syllogism | 7 March | Class PNG @cwexte",
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/67d00c7e7622c_7_Mar_Syllogism29303135384042Pratham1234_1compressed.pdf",
+          "type": "pdf"
+        },
+        {
+          "label": "Reas (VOD) - Teaching Dice, Cube and Cuboid PYQs @cwexte",
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/67f7a08250ba7_Teaching_Dice_Cube_and_Cuboid_PYQs.pdf",
+          "type": "pdf"
+        },
+        {
+          "label": "Reas (VOD) - UPSC CSAT Dice, Cube and Cuboid PYQs @cwexte",
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/67f7a18e4460a_UPSC_CSAT_Dice_Cube_and_Cuboid_PYQs.pdf",
+          "type": "pdf"
+        },
+        {
+          "label": "Reas (VOD) - Venn Diagram  | 7 April | Class PNG @cwexte",
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/67f3bd333515b_7APR_Venn_Diagram_Spl3538404245andPratham12345compressed_1.pdf",
+          "type": "pdf"
+        },
+        {
+          "label": "Reas (VOD) - Venn Diagram (Class Question) @cwexte",
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/67f8abb8de1ea_Venn_Diagram_Class_Question.pdf",
+          "type": "pdf"
+        },
+        {
+          "label": "Reas (VOD) - Venn Diagram PYQ @cwexte",
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/67f8ab411c6c8_Venn_Diagram_PYQ.pdf",
+          "type": "pdf"
+        },
+        {
+          "label": "Reas (VOD) - Venn Diagram Practice Set @cwexte",
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/67f8ac150dfbf_Venn_Diagram_Practice_Set.pdf",
+          "type": "pdf"
+        },
+        {
+          "label": "Reas (VOD) - Venn Diagram Short Notes | 9 April | Class PNG @cwexte",
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/67f65a47a9b06_9APR_Venn_Diagram_Short_Notes_Spl3538404245andPratham12345.pdf",
+          "type": "pdf"
+        },
+        {
+          "label": "Reas (VOD) - Venn Diagram Test @cwexte",
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/67f8ad7104064_Venn_Diagram_Test.pdf",
+          "type": "pdf"
+        },
+        {
+          "label": "Reas (VOD) - Venn Diagram | 4 April | Class PNG @cwexte",
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/67efc85600b42_4APR_Venn_Diagram_Spl3538404245andPratham12345.pdf",
+          "type": "pdf"
+        },
+        {
+          "label": "Reas (VOD) - Venn Diagram | 8 April | Class PNG @cwexte",
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/67f50a0d5e817_8APR_Venn_Diagram_Spl3538404245andPratham12345compressed.pdf",
+          "type": "pdf"
+        },
+        {
+          "label": "Reas (VOD) - Word-Based Problems (English) @cwexte",
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/67c6c628c8b4b_WordBased_Problems_English.pdf",
+          "type": "pdf"
+        },
+        {
+          "label": "Reas (VOD) - Word-Based-Problems (Hindi) @cwexte",
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/67c6c5a114a5b_WordBasedProblems_Hindi.pdf",
+          "type": "pdf"
+        },
+        {
+          "label": "Reasoning - Blood Relation (PYQ) Practice Set @cwexte",
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/68da4ee6c475f_BLOOD_RELATION_PYQs_Practice_Set_Done.pdf",
+          "type": "pdf"
+        },
+        {
+          "label": "Reasoning - Blood Relation Class Questions @cwexte",
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/68d6791b70f72_BLOOD_RELATION_CLASS_QUESTIONS.pdf",
+          "type": "pdf"
+        },
+        {
+          "label": "Reasoning - Blood Relation Test @cwexte",
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/68d678763ee94_Blood_Relation_Test_pdf.pdf",
+          "type": "pdf"
+        },
+        {
+          "label": "Reasoning - Blood Relation | 19 Sept | Class PNG @cwexte",
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/68cd38a78d18d_19sep_485153565860_and_pratham67891011_Counting_Figures_compressed.pdf",
+          "type": "pdf"
+        },
+        {
+          "label": "Reasoning - Blood Relation | 22 Sept | Class PNG @cwexte",
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/68d13a245837d_22sep_485153565860_and_pratham67891011_Counting_Figures_compressed.pdf",
+          "type": "pdf"
+        },
+        {
+          "label": "Reasoning - Blood Relation | 23 Sept | Class PNG @cwexte",
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/68d2798cd37e3_23sep_485153565860_and_pratham67891011_Blood_Relations_compressed.pdf",
+          "type": "pdf"
+        },
+        {
+          "label": "Reasoning - Blood Relation | 24 Sept | Class PNG @cwexte",
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/68d3c7d45d604_24sep_485153565860_and_pratham67891011_Blood_Relations_compressed.pdf",
+          "type": "pdf"
+        },
+        {
+          "label": "Reasoning - Blood Relation | 25 Sept | Class PNG @cwexte",
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/68d52954432fe_25sep_485153565860_and_pratham67891011_Blood_Relations_compressed.pdf",
+          "type": "pdf"
+        },
+        {
+          "label": "Reasoning - Blood Relation | 26 Sept | Class PNG @cwexte",
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/68d677abbd48d_26sep_485153565860_and_pratham67891011_Blood_Relations_compressed.pdf",
+          "type": "pdf"
+        },
+        {
+          "label": "Reasoning - Coding - Decoding | 29-30 Oct | Class PNG @cwexte",
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/69033efe43e21_30oct_Coding_Decoding_compressed.pdf",
+          "type": "pdf"
+        },
+        {
+          "label": "Reasoning - Coding Decoding PYQ Practice Set 2 @cwexte",
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/690de16d71679_Coding_Decoding_PYQ_Practice_Set_2_compressed.pdf",
+          "type": "pdf"
+        },
+        {
+          "label": "Reasoning - Coding Decoding Practice Set @cwexte",
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/690de0b76d23b_Coding_Decoding_Practice_Set_compressed.pdf",
+          "type": "pdf"
+        },
+        {
+          "label": "Reasoning - Coding Decoding Test @cwexte",
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/690ddff9396ac_Coding_Decoding_Test_Pdf_compressed.pdf",
+          "type": "pdf"
+        },
+        {
+          "label": "Reasoning - Coding Decoding | 28 Oct | Class PNG @cwexte",
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/6900a8e57d09b_28oct_Coding_Decoding.pdf",
+          "type": "pdf"
+        },
+        {
+          "label": "Reasoning - Coding Decoding | 3 Nov | Class PNG @cwexte",
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/69099c864373e_3nov_coding_compressed.pdf",
+          "type": "pdf"
+        },
+        {
+          "label": "Reasoning - Coding Decoding | 4 Nov | Class PNG @cwexte",
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/6909dcef02a56_4nov_coding_compressed.pdf",
+          "type": "pdf"
+        },
+        {
+          "label": "Reasoning - Coding-Decoding (Class Question) @cwexte",
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/690ddefb72615_CodingDecoding_Class_Question_compressed.pdf",
+          "type": "pdf"
+        },
+        {
+          "label": "Reasoning - Counting Figures Class Questions @cwexte",
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/68cbe373e44a2_Counting_Figures_Class_Questions.pdf",
+          "type": "pdf"
+        },
+        {
+          "label": "Reasoning - Counting Figures | 12 Sept | Class PNG @cwexte",
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/68c40fb23071c_UPSI_2025_B04_SSC_CPO_2025_B02_Reas_Spl51_53_56_58_60_SSC_Pratham_Batch07_08_09_10_11_Reas_Piyush_Sir_compressed.pdf",
+          "type": "pdf"
+        },
+        {
+          "label": "Reasoning - Counting Figures | 13 Sept | Class PNG @cwexte",
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/68c8069507c15_13sep_485153565860_and_pratham67891011_Counting_Figures_compressed.pdf",
+          "type": "pdf"
+        },
+        {
+          "label": "Reasoning - Counting Figures | 16 Sept | Class PNG @cwexte",
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/68c944a040691_16sep_485153565860_and_pratham67891011_Counting_Figures_compressed.pdf",
+          "type": "pdf"
+        },
+        {
+          "label": "Reasoning - Counting Figures | 17 Sept | Class PNG @cwexte",
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/68ca90f756031_17sep_485153565860_and_pratham67891011_Counting_Figures_compressed.pdf",
+          "type": "pdf"
+        },
+        {
+          "label": "Reasoning - Counting Figures | 18 Sept | Class PNG @cwexte",
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/68cbe2b94cfe0_18sep_485153565860_and_pratham67891011_Counting_Figures_compressed.pdf",
+          "type": "pdf"
+        },
+        {
+          "label": "Reasoning - Counting of Figure PYQs Set Part-1 @cwexte",
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/68cbe69ea7ba6_Counting_Figure_PYQs_Set_Part1.pdf",
+          "type": "pdf"
+        },
+        {
+          "label": "Reasoning - Counting of Figure PYQs Set Part-2 @cwexte",
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/68cbe72058520_Counting_Figure_PYQs_Set_Part2.pdf",
+          "type": "pdf"
+        },
+        {
+          "label": "Reasoning - Counting of Figures Practice Set @cwexte",
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/68cbe421dbbe4_COUNTING_OF_FIGURES_PRACTICE_SET.pdf",
+          "type": "pdf"
+        },
+        {
+          "label": "Reasoning - Counting of Figures Test @cwexte",
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/68cbe5ad5acca_Counting_Figure_Test.pdf",
+          "type": "pdf"
+        },
+        {
+          "label": "Reasoning - Cube & Cuboid | 4 Sept | Class PNG @cwexte",
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/68b966a542945_4_sep_4851535658_and_pratham678910_Cube_compressed.pdf",
+          "type": "pdf"
+        },
+        {
+          "label": "Reasoning - Cube & Cuboid | 8 Sept | Class PNG @cwexte",
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/68bebb78daebe_8sep_4851535658_and_pratham678910_Cube_compressed.pdf",
+          "type": "pdf"
+        },
+        {
+          "label": "Reasoning - Cube and Cuboid Class Question @cwexte",
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/68bebd191aa26_CUBE_AND_CUBOID_Class_Question.pdf",
+          "type": "pdf"
+        },
+        {
+          "label": "Reasoning - Cube and Cuboid Practice Set @cwexte",
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/68bebc0c3b04e_Cube_and_Cuboid_Practice_Set.pdf",
+          "type": "pdf"
+        },
+        {
+          "label": "Reasoning - Cube and Cuboid Test @cwexte",
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/68bebca19358f_Cube_and_Cuboid_Test.pdf",
+          "type": "pdf"
+        },
+        {
+          "label": "Reasoning - Cube | 1 Sept | Class PNG @cwexte",
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/68b689c12340d_1_sep_4851535658_and_pratham678910_Cube.pdf",
+          "type": "pdf"
+        },
+        {
+          "label": "Reasoning - Cube | 2 Sept | Class PNG @cwexte",
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/68b6c3571a012_2_sep_4851535658_and_pratham678910_Cube_compressed.pdf",
+          "type": "pdf"
+        },
+        {
+          "label": "Reasoning - Cube | 3 Sept | Class PNG @cwexte",
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/68b82cc45c540_3_sep_4851535658_and_pratham678910_Cube_compressed.pdf",
+          "type": "pdf"
+        },
+        {
+          "label": "Reasoning - Dice Class Question @cwexte",
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/68b154d18b567_Dice_Class_Question.pdf",
+          "type": "pdf"
+        },
+        {
+          "label": "Reasoning - Dice PYQs Practice Set @cwexte",
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/68b1540a209cd_Dice_PYQs_Set.pdf",
+          "type": "pdf"
+        },
+        {
+          "label": "Reasoning - Dice Practice Set @cwexte",
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/68b1528aa2bc1_Dice_Practice_Set.pdf",
+          "type": "pdf"
+        },
+        {
+          "label": "Reasoning - Dice Test Question (Student File) @cwexte",
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/68b1530dcb2ae_Dice_Test_Question_Student_File.pdf",
+          "type": "pdf"
+        },
+        {
+          "label": "Reasoning - Dice | 20 Aug | Class PNG @cwexte",
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/68a5bef787b5e_20aug_4851535658_and_pratham678910_Dice_compressed.pdf",
+          "type": "pdf"
+        },
+        {
+          "label": "Reasoning - Dice | 21 Aug | Class PNG @cwexte",
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/68a700c0b8c43_21aug_4851535658_and_pratham678910_Dice_compressed.pdf",
+          "type": "pdf"
+        },
+        {
+          "label": "Reasoning - Dice | 22 Aug | Class PNG @cwexte",
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/68a85cbb1115d_22aug_4851535658_and_pratham678910_Dice_compressed.pdf",
+          "type": "pdf"
+        },
+        {
+          "label": "Reasoning - Dice | 26 Aug | Class PNG @cwexte",
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/68ad9fde3836b_26aug_4851535658_and_pratham678910_Dice_compressed.pdf",
+          "type": "pdf"
+        },
+        {
+          "label": "Reasoning - Dice | 28 Aug | Class PNG @cwexte",
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/68b1509e9c79b_28aug_4851535658_and_pratham678910_Dice_compressed.pdf",
+          "type": "pdf"
+        },
+        {
+          "label": "Reasoning - Direction & Distance | 01 Oct | Class PNG @cwexte",
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/68df9cca97fb4_1oct_485153565860_and_pratham67891011_Directions_compressed.pdf",
+          "type": "pdf"
+        },
+        {
+          "label": "Reasoning - Direction & Distance | 02 Oct | Class PNG @cwexte",
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/68e0e24e254cd_2oct_485153565860_and_pratham67891011_Directions_compressed.pdf",
+          "type": "pdf"
+        },
+        {
+          "label": "Reasoning - Direction & Distance | 06 Oct | Class PNG @cwexte",
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/68e3a37eae02e_6oct_485153565860_and_pratham67891011_Directions_compressed.pdf",
+          "type": "pdf"
+        },
+        {
+          "label": "Reasoning - Direction & Distance | 07 Oct | Class PNG @cwexte",
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/68e62bc49ed79_7oct_485153565860_and_pratham67891011_Directions_compressed.pdf",
+          "type": "pdf"
+        },
+        {
+          "label": "Reasoning - Direction & Distance | 30 Sept | Class PNG @cwexte",
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/68dbbd520104a_UP_SI_2025_Batch05_Delhi_Police_2025_Special_Batch_UPSI_2025_B04_SSC_CPO_2025_B02_Reas_Spl51_53_56_58_60_SSC_Pratham_Batch07_08_09_10_11_Reas_Piyush_Sir_compressed.pdf",
+          "type": "pdf"
+        },
+        {
+          "label": "Reasoning - Direction And Distance CSAT Pratice @cwexte",
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/68e6554671354_Direction_CSAT_Practice_compressed.pdf",
+          "type": "pdf"
+        },
+        {
+          "label": "Reasoning - Direction And Distance Class Question @cwexte",
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/68e6522c31dd5_Direction_And_Distance_Class_Question.pdf",
+          "type": "pdf"
+        },
+        {
+          "label": "Reasoning - Direction And Distance Practice Set @cwexte",
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/68e6533603252_Direction_And_Distance_Practice_Set.pdf",
+          "type": "pdf"
+        },
+        {
+          "label": "Reasoning - Direction And Distance Test @cwexte",
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/68e654bacdc2c_Direction_And_Distance_Test.pdf",
+          "type": "pdf"
+        },
+        {
+          "label": "Reasoning - Direction and Distance PYQ @cwexte",
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/68e652b2eedf4_Direction_and_Distance_PYQ.pdf",
+          "type": "pdf"
+        },
+        {
+          "label": "Reasoning - Directions and Distance PYQ Practice | 8 Oct | Class PNG @cwexte",
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/68e6475d644b1_8oct_485153565860_and_pratham67891011_Directions_compressed.pdf",
+          "type": "pdf"
+        },
+        {
+          "label": "Reasoning - Intro | 14 July | Class PNG @cwexte",
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/6874e61294a4e_Pratham9res_spl56_Intro.pdf",
+          "type": "pdf"
+        },
+        {
+          "label": "Reasoning - Intro | 18 Aug | Class PNG @cwexte",
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/68a427ab1f4bc_new_batch_1.pdf",
+          "type": "pdf"
+        },
+        {
+          "label": "Reasoning - Letter Series Class Questions @cwexte",
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/691458963bc4b_LETTER_SERIES_Class_Questions_compressed.pdf",
+          "type": "pdf"
+        },
+        {
+          "label": "Reasoning - Letter Series Practice Set-2 @cwexte",
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/691456b996075_Letter_Series_Practice_Set_2_compressed.pdf",
+          "type": "pdf"
+        },
+        {
+          "label": "Reasoning - Letter Series Test @cwexte",
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/69145795a5e76_Letter_Series_Test_pdf_compressed.pdf",
+          "type": "pdf"
+        },
+        {
+          "label": "Reasoning - Mirror & Water Image | 09 Oct | Class PNG @cwexte",
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/68e7a03f496be_9oct_485153565860_and_pratham67891011_non_verbal_compressed.pdf",
+          "type": "pdf"
+        },
+        {
+          "label": "Reasoning - Mirror & Water Image | 10 Oct | Class PNG @cwexte",
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/68e8f5ee127ba_10oct_485153565860_and_pratham67891011_non_verbal.pdf",
+          "type": "pdf"
+        },
+        {
+          "label": "Reasoning - Non Verbal | 27 Oct | Class PNG @cwexte",
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/69004ef9ad54e_27_oct_nonverbal_compressed.pdf",
+          "type": "pdf"
+        },
+        {
+          "label": "Reasoning - Non-Verbal | 13 Oct | Class PNG @cwexte",
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/68ede430e9010_230pm_Class_Piyush_Sir_13_OCt_compressed.pdf",
+          "type": "pdf"
+        },
+        {
+          "label": "Reasoning - Non-Verbal | 14 Oct | Class PNG @cwexte",
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/68ef33cc89cfd_230pm_Class_Piyush_Sir_13_OCt_1_compressed.pdf",
+          "type": "pdf"
+        },
+        {
+          "label": "Reasoning - Non-Verbal | 15 Oct | Class PNG @cwexte",
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/68ef9255ae4fe_230pm_Class_Piyush_Sir_15_OCt_compressed.pdf",
+          "type": "pdf"
+        },
+        {
+          "label": "Reasoning - Non-Verbal | 16 Oct | Class PNG @cwexte",
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/690054f6ddf4f_230pm_Class_Piyush_Sir_16_OCt_compressed.pdf",
+          "type": "pdf"
+        },
+        {
+          "label": "Reasoning - Reas | 15 Sept | Class PNG @cwexte",
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/68c7b2cab49c7_Arun_Sir_Reas_08.00_AM_15Sep_compressed.pdf",
+          "type": "pdf"
+        },
+        {
+          "label": "Reasoning - Reas | 7 Oct | Class PNG @cwexte",
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/68e62c0a8d5be_7oct_485153565860_and_pratham67891011_Directions_compressed.pdf",
+          "type": "pdf"
+        },
+        {
+          "label": "Reasoning - Venn Diagram (Class Question) @cwexte",
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/68c26acd998dd_Venn_Diagram_Class_Question.pdf",
+          "type": "pdf"
+        },
+        {
+          "label": "Reasoning - Venn Diagram PYQ @cwexte",
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/68c26bb114627_Venn_Diagram_PYQ.pdf",
+          "type": "pdf"
+        },
+        {
+          "label": "Reasoning - Venn Diagram Practice Set @cwexte",
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/68c26b38d76d6_Venn_Diagram_Practice_Set.pdf",
+          "type": "pdf"
+        },
+        {
+          "label": "Reasoning - Venn Diagram Test @cwexte",
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/68c264a92c363_Venn_Diagram_Test.pdf",
+          "type": "pdf"
+        },
+        {
+          "label": "Reasoning - Venn Diagram | 10 Sept | Class PNG @cwexte",
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/68c26015bb10a_10sep_4851535658_and_pratham678910_Venn_Diagram_compressed.pdf",
+          "type": "pdf"
+        },
+        {
+          "label": "Reasoning - Venn Diagram | 11 Sept | Class PNG @cwexte",
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/68c2acba9419f_11sep_4851535658_and_pratham678910_Venn_Diagram_PYQs_Practice_compressed.pdf",
+          "type": "pdf"
+        },
+        {
+          "label": "Reasoning - Venn Diagram | 9 Sept | Class PNG @cwexte",
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/68c143317923e_9sep_4851535658_and_pratham678910_Venn_Diagram_compressed.pdf",
+          "type": "pdf"
+        },
+        {
+          "label": "Syllabus - Introduction Class | 11 April | Class PNG @cwexte",
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/67f9aae3bada6_11APR_Introduction_spl48_Pratham06.pdf",
+          "type": "pdf"
+        }
+      ]
+    }
+  ],
+  "category": "government"
+}

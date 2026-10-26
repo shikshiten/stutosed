@@ -1,0 +1,2621 @@
+{
+  "id": "maths-special-vod",
+  "name": "Mathematics Special VOD",
+  "subname": "Complete Foundation to Advanced VOD Batch",
+  "teacher": "Maths Faculty",
+  "subject": "Maths",
+  "thumb": "/thumbnails/subjects/maths_special_vod.svg",
+  "tabs": [
+    {
+      "id": "videos",
+      "label": "▶ Videos",
+      "items": [
+        {
+          "id": "maths-special-vod-v-1",
+          "label": "Percentage_Class_1",
+          "url": "https://selectionwayrecordedmp4.hranker.com/561/69202b7f3ce596d256c8502a/hls/master.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-special-vod-v-2",
+          "label": "Percentage_Class_2",
+          "url": "https://selectionwayrecordedmp4.hranker.com/561/69202b7f3ce596d256c8502b/hls/master.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-special-vod-v-3",
+          "label": "Percentage_Class_3",
+          "url": "https://selectionwayrecordedmp4.hranker.com/561/69202b7f3ce596d256c8502c/hls/master.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-special-vod-v-4",
+          "label": "Percentage_Class_4",
+          "url": "https://selectionwayrecordedmp4.hranker.com/561/69202b7f3ce596d256c8502d/hls/master.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-special-vod-v-5",
+          "label": "Percentage_Class_5",
+          "url": "https://selectionwayrecordedmp4.hranker.com/561/69202b7f3ce596d256c8502e/hls/master.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-special-vod-v-6",
+          "label": "Percentage_Class_6",
+          "url": "https://selectionwayrecordedmp4.hranker.com/561/69202f813ce596d256c8502f/hls/master.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-special-vod-v-7",
+          "label": "Percentage_Class_7",
+          "url": "https://selectionwayrecordedmp4.hranker.com/561/69202f813ce596d256c85030/hls/master.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-special-vod-v-8",
+          "label": "Percentage_Class_8",
+          "url": "https://selectionwayrecordedmp4.hranker.com/561/69202f813ce596d256c85031/hls/master.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-special-vod-v-9",
+          "label": "Percentage_Class_9",
+          "url": "https://selectionwayrecordedmp4.hranker.com/561/69202f813ce596d256c85032/hls/master.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-special-vod-v-10",
+          "label": "Percentage_Class_10",
+          "url": "https://selectionwayrecordedmp4.hranker.com/561/69202f813ce596d256c85033/hls/master.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-special-vod-v-11",
+          "label": "Percentage_Class_11",
+          "url": "https://selectionwayrecordedmp4.hranker.com/561/69202f813ce596d256c85034/hls/master.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-special-vod-v-12",
+          "label": "Percentage_Class_12",
+          "url": "https://selectionwayrecordedmp4.hranker.com/561/69202f813ce596d256c85035/hls/master.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-special-vod-v-13",
+          "label": "Percentage_Class_13",
+          "url": "https://selectionwayrecordedmp4.hranker.com/561/69202f813ce596d256c85036/hls/master.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-special-vod-v-14",
+          "label": "Percentage_Class_14",
+          "url": "https://selectionwayrecordedmp4.hranker.com/561/69202f813ce596d256c85037/hls/master.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-special-vod-v-15",
+          "label": "Percentage_Class_15",
+          "url": "https://selectionwayrecordedmp4.hranker.com/561/69202f813ce596d256c85038/hls/master.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-special-vod-v-16",
+          "label": "Percentage_Class_16",
+          "url": "https://selectionwayrecordedmp4.hranker.com/561/69214fd5b73ea0f3dc73cb5b/hls/master.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-special-vod-v-17",
+          "label": "Percentage_Class_17",
+          "url": "https://selectionwayrecordedmp4.hranker.com/561/69214fd5b73ea0f3dc73cb5c/hls/master.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-special-vod-v-18",
+          "label": "Percentage_Class_18",
+          "url": "https://selectionwayrecordedmp4.hranker.com/561/69214fd5b73ea0f3dc73cb5d/hls/master.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-special-vod-v-19",
+          "label": "Percentage_Class_19",
+          "url": "https://selectionwayrecordedmp4.hranker.com/561/69214fd5b73ea0f3dc73cb5e/hls/master.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-special-vod-v-20",
+          "label": "Percentage_Class_20",
+          "url": "https://selectionwayrecordedmp4.hranker.com/561/69214fd5b73ea0f3dc73cb5f/hls/master.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-special-vod-v-21",
+          "label": "Percentage_Class_21",
+          "url": "https://selectionwayrecordedmp4.hranker.com/561/692152b5212c836a7a80c7a3/hls/master.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-special-vod-v-22",
+          "label": "Percentage_Class_22",
+          "url": "https://selectionwayrecordedmp4.hranker.com/561/692152b5212c836a7a80c7a4/hls/master.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-special-vod-v-23",
+          "label": "Percentage_Class_23",
+          "url": "https://selectionwayrecordedmp4.hranker.com/561/692152b5212c836a7a80c7a5/hls/master.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-special-vod-v-24",
+          "label": "Percentage_Class_24",
+          "url": "https://selectionwayrecordedmp4.hranker.com/561/692152bc212c836a7a80c7a6/hls/master.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-special-vod-v-25",
+          "label": "Percentage_Class_25",
+          "url": "https://selectionwayrecordedmp4.hranker.com/561/692152e19eaaab49271b0123/hls/master.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-special-vod-v-26",
+          "label": "Percentage_Class_26",
+          "url": "https://selectionwayrecordedmp4.hranker.com/561/692152e19eaaab49271b0124/hls/master.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-special-vod-v-27",
+          "label": "Percentage_Class_27",
+          "url": "https://selectionwayrecordedmp4.hranker.com/561/692152e19eaaab49271b0125/hls/master.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-special-vod-v-28",
+          "label": "Percentage_Class_28",
+          "url": "https://selectionwayrecordedmp4.hranker.com/561/692152e19eaaab49271b0126/hls/master.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-special-vod-v-29",
+          "label": "Ratio_Class_1",
+          "url": "https://selectionwayrecordedmp4.hranker.com/561/692183dc22cf6455f92ca94f/hls/master.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-special-vod-v-30",
+          "label": "Ratio_Class_2",
+          "url": "https://selectionwayrecordedmp4.hranker.com/561/69464f818c23d550e67edb6b/hls/master.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-special-vod-v-31",
+          "label": "Ratio_Class_3",
+          "url": "https://selectionwayrecordedmp4.hranker.com/561/692183dc22cf6455f92ca951/hls/master.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-special-vod-v-32",
+          "label": "Ratio_Class_4",
+          "url": "https://selectionwayrecordedmp4.hranker.com/561/692153091dc5c4a7bc528b49/hls/master.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-special-vod-v-33",
+          "label": "Ratio_Class_5",
+          "url": "https://selectionwayrecordedmp4.hranker.com/561/692183dc22cf6455f92ca952/hls/master.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-special-vod-v-34",
+          "label": "Ratio_Class_6",
+          "url": "https://selectionwayrecordedmp4.hranker.com/561/692183dc22cf6455f92ca953/hls/master.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-special-vod-v-35",
+          "label": "Ratio_Class_7",
+          "url": "https://selectionwayrecordedmp4.hranker.com/561/6921842ebe661b7fe6bf1e60/hls/master.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-special-vod-v-36",
+          "label": "Ratio_Class_8",
+          "url": "https://selectionwayrecordedmp4.hranker.com/561/6921842ebe661b7fe6bf1e61/hls/master.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-special-vod-v-37",
+          "label": "Ratio_Class_9",
+          "url": "https://selectionwayrecordedmp4.hranker.com/561/6921842ebe661b7fe6bf1e62/hls/master.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-special-vod-v-38",
+          "label": "Ratio_Class_10",
+          "url": "https://selectionwayrecordedmp4.hranker.com/561/6921842ebe661b7fe6bf1e63/hls/master.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-special-vod-v-39",
+          "label": "Ratio_Class_11",
+          "url": "https://selectionwayrecordedmp4.hranker.com/561/6921535377483332dfc5bcfe/hls/master.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-special-vod-v-40",
+          "label": "Ratio_Class_12",
+          "url": "https://selectionwayrecordedmp4.hranker.com/561/6921842ebe661b7fe6bf1e64/hls/master.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-special-vod-v-41",
+          "label": "Ratio_Class_13",
+          "url": "https://selectionwayrecordedmp4.hranker.com/561/6921536c9ff1e20c7b538f03/hls/master.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-special-vod-v-42",
+          "label": "Ratio_Class_14",
+          "url": "https://selectionwayrecordedmp4.hranker.com/561/6921536c9ff1e20c7b538f04/hls/master.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-special-vod-v-43",
+          "label": "Profit_Loss_Class_1",
+          "url": "https://selectionwayrecordedmp4.hranker.com/561/69216ff2b20d8b93c0ef4554/hls/master.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-special-vod-v-44",
+          "label": "Profit_Loss_Class_2",
+          "url": "https://selectionwayrecordedmp4.hranker.com/561/69216ff2b20d8b93c0ef4555/hls/master.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-special-vod-v-45",
+          "label": "Profit_Loss_Class_3",
+          "url": "https://selectionwayrecordedmp4.hranker.com/561/69216ff2b20d8b93c0ef4556/hls/master.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-special-vod-v-46",
+          "label": "Profit_Loss_Class_4",
+          "url": "https://selectionwayrecordedmp4.hranker.com/561/69216ff2b20d8b93c0ef4557/hls/master.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-special-vod-v-47",
+          "label": "Profit_Loss_Class_5",
+          "url": "https://selectionwayrecordedmp4.hranker.com/561/694637cffeba20d9b0b88949/hls/master.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-special-vod-v-48",
+          "label": "Profit_Loss_Class_6",
+          "url": "https://selectionwayrecordedmp4.hranker.com/561/6921845dc02a4fd23f441c34/hls/master.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-special-vod-v-49",
+          "label": "Profit_Loss_Class_7",
+          "url": "https://selectionwayrecordedmp4.hranker.com/561/6921845dc02a4fd23f441c35/hls/master.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-special-vod-v-50",
+          "label": "Profit_Loss_Class_8",
+          "url": "https://selectionwayrecordedmp4.hranker.com/561/6921845dc02a4fd23f441c36/hls/master.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-special-vod-v-51",
+          "label": "Profit_Loss_Class_9",
+          "url": "https://selectionwayrecordedmp4.hranker.com/561/6921845dc02a4fd23f441c37/hls/master.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-special-vod-v-52",
+          "label": "Profit_Loss_Class_10",
+          "url": "https://selectionwayrecordedmp4.hranker.com/561/6921845dc02a4fd23f441c38/hls/master.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-special-vod-v-53",
+          "label": "Profit_Loss_Class_11",
+          "url": "https://selectionwayrecordedmp4.hranker.com/561/69229214d043775c3232572c/hls/master.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-special-vod-v-54",
+          "label": "Profit_Loss_Class_12",
+          "url": "https://selectionwayrecordedmp4.hranker.com/561/6946375c3d72cd442bc5992d/hls/master.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-special-vod-v-55",
+          "label": "Profit_Loss_Class_13",
+          "url": "https://selectionwayrecordedmp4.hranker.com/561/69229214d043775c3232572e/hls/master.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-special-vod-v-56",
+          "label": "Profit_Loss_Class_14",
+          "url": "https://selectionwayrecordedmp4.hranker.com/561/69229214d043775c3232572f/hls/master.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-special-vod-v-57",
+          "label": "Discount_Class_1",
+          "url": "https://selectionwayrecordedmp4.hranker.com/561/6922924c80670b21599d2ec3/hls/master.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-special-vod-v-58",
+          "label": "Discount_Class_2",
+          "url": "https://selectionwayrecordedmp4.hranker.com/561/6922924c80670b21599d2ec4/hls/master.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-special-vod-v-59",
+          "label": "Discount_Class_3",
+          "url": "https://selectionwayrecordedmp4.hranker.com/561/6922924c80670b21599d2ec5/hls/master.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-special-vod-v-60",
+          "label": "Discount_Class_4",
+          "url": "https://selectionwayrecordedmp4.hranker.com/561/69463a693d72cd442bc5992f/hls/master.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-special-vod-v-61",
+          "label": "Discount_Class_5",
+          "url": "https://selectionwayrecordedmp4.hranker.com/561/694638e23d72cd442bc5992e/hls/master.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-special-vod-v-62",
+          "label": "Discount_Class_6",
+          "url": "https://selectionwayrecordedmp4.hranker.com/561/6946394efeba20d9b0b8894a/hls/master.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-special-vod-v-63",
+          "label": "Discount_Class_7",
+          "url": "https://selectionwayrecordedmp4.hranker.com/561/6922924c80670b21599d2ec9/hls/master.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-special-vod-v-64",
+          "label": "Discount_Class_9",
+          "url": "https://selectionwayrecordedmp4.hranker.com/561/6922924c80670b21599d2ecb/hls/master.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-special-vod-v-65",
+          "label": "Discount_Class_10",
+          "url": "https://selectionwayrecordedmp4.hranker.com/561/6922924c80670b21599d2ecc/hls/master.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-special-vod-v-66",
+          "label": "Discount_Class_12",
+          "url": "https://selectionwayrecordedmp4.hranker.com/561/6922924c80670b21599d2ece/hls/master.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-special-vod-v-67",
+          "label": "Dishonest_Shopkeeper_1",
+          "url": "https://selectionwayrecordedmp4.hranker.com/561/694ecf5b4577e24306c5207b/hls/master.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-special-vod-v-68",
+          "label": "Dishonest_Shopkeeper_3",
+          "url": "https://selectionwayrecordedmp4.hranker.com/561/694ecf5b4577e24306c5207d/hls/master.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-special-vod-v-69",
+          "label": "Time_Work_Class_1",
+          "url": "https://selectionwayrecordedmp4.hranker.com/561/6922935e644d85e977881bf6/hls/master.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-special-vod-v-70",
+          "label": "Time_Work_Class_2",
+          "url": "https://selectionwayrecordedmp4.hranker.com/561/6922935e644d85e977881bf7/hls/master.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-special-vod-v-71",
+          "label": "Time_Work_Class_3",
+          "url": "https://selectionwayrecordedmp4.hranker.com/561/6922935e644d85e977881bf8/hls/master.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-special-vod-v-72",
+          "label": "Time_Work_Class_4",
+          "url": "https://selectionwayrecordedmp4.hranker.com/561/6922935e644d85e977881bf9/hls/master.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-special-vod-v-73",
+          "label": "Time_Work_Class_6",
+          "url": "https://selectionwayrecordedmp4.hranker.com/561/6922935e644d85e977881bfb/hls/master.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-special-vod-v-74",
+          "label": "Time_Work_Class_7",
+          "url": "https://selectionwayrecordedmp4.hranker.com/561/6922935e644d85e977881bfc/hls/master.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-special-vod-v-75",
+          "label": "Time_Work_Class_8",
+          "url": "https://selectionwayrecordedmp4.hranker.com/561/6922935e644d85e977881bfd/hls/master.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-special-vod-v-76",
+          "label": "Time_Work_Class_9",
+          "url": "https://selectionwayrecordedmp4.hranker.com/561/6922935e644d85e977881bfe/hls/master.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-special-vod-v-77",
+          "label": "Time_Work_Class_10",
+          "url": "https://selectionwayrecordedmp4.hranker.com/561/6922935e644d85e977881bff/hls/master.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-special-vod-v-78",
+          "label": "Time_Work_Class_11",
+          "url": "https://selectionwayrecordedmp4.hranker.com/561/6922935e644d85e977881c00/hls/master.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-special-vod-v-79",
+          "label": "Time_Work_Class_12",
+          "url": "https://selectionwayrecordedmp4.hranker.com/561/6922935e644d85e977881c01/hls/master.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-special-vod-v-80",
+          "label": "Time_Work_Class_13",
+          "url": "https://selectionwayrecordedmp4.hranker.com/561/69463cd73d72cd442bc59930/hls/master.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-special-vod-v-81",
+          "label": "Time_Work_Class_15",
+          "url": "https://selectionwayrecordedmp4.hranker.com/561/6922935e644d85e977881c04/hls/master.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-special-vod-v-82",
+          "label": "Time_Work_Class_16",
+          "url": "https://selectionwayrecordedmp4.hranker.com/561/6922935e644d85e977881c05/hls/master.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-special-vod-v-83",
+          "label": "Time_Work_Class_17",
+          "url": "https://selectionwayrecordedmp4.hranker.com/561/6922935e644d85e977881c06/hls/master.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-special-vod-v-84",
+          "label": "Time_Work_Class_18",
+          "url": "https://selectionwayrecordedmp4.hranker.com/561/6922935e644d85e977881c07/hls/master.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-special-vod-v-85",
+          "label": "Pipe_and_Cistern_1",
+          "url": "https://selectionwayrecordedmp4.hranker.com/561/694e7ce1c407d45e31612c2e/hls/master.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-special-vod-v-86",
+          "label": "Pipe_and_Cistern_2",
+          "url": "https://selectionwayrecordedmp4.hranker.com/561/694e7ce1c407d45e31612c2f/hls/master.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-special-vod-v-87",
+          "label": "Pipe_and_Cistern_3",
+          "url": "https://selectionwayrecordedmp4.hranker.com/561/694e7ce1c407d45e31612c30/hls/master.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-special-vod-v-88",
+          "label": "Pipe_and_Cistern_4",
+          "url": "https://selectionwayrecordedmp4.hranker.com/561/694e7ce1c407d45e31612c31/hls/master.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-special-vod-v-89",
+          "label": "Pipe_and_Cistern_5",
+          "url": "https://selectionwayrecordedmp4.hranker.com/561/694e7ce1c407d45e31612c32/hls/master.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-special-vod-v-90",
+          "label": "Pipe_and_Cistern_6",
+          "url": "https://selectionwayrecordedmp4.hranker.com/561/694e7ce1c407d45e31612c33/hls/master.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-special-vod-v-91",
+          "label": "Pipe_and_Cistern_7",
+          "url": "https://selectionwayrecordedmp4.hranker.com/561/694e7ce1c407d45e31612c34/hls/master.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-special-vod-v-92",
+          "label": "Pipe_and_Cistern_8",
+          "url": "https://selectionwayrecordedmp4.hranker.com/561/694e7ce1c407d45e31612c35/hls/master.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-special-vod-v-93",
+          "label": "Time_Speed_Distance_Class_1",
+          "url": "https://selectionwayrecordedmp4.hranker.com/561/6922929e8b0d4f251f7f7efc/hls/master.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-special-vod-v-94",
+          "label": "Time_Speed_Distance_Class_2",
+          "url": "https://selectionwayrecordedmp4.hranker.com/561/6922929e8b0d4f251f7f7efd/hls/master.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-special-vod-v-95",
+          "label": "Time_Speed_Distance_Class_3",
+          "url": "https://selectionwayrecordedmp4.hranker.com/561/6922929e8b0d4f251f7f7efe/hls/master.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-special-vod-v-96",
+          "label": "Time_Speed_Distance_Class_4",
+          "url": "https://selectionwayrecordedmp4.hranker.com/561/6922929e8b0d4f251f7f7eff/hls/master.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-special-vod-v-97",
+          "label": "Time_Speed_Distance_Class_5",
+          "url": "https://selectionwayrecordedmp4.hranker.com/561/6922929e8b0d4f251f7f7f00/hls/master.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-special-vod-v-98",
+          "label": "Time_Speed_Distance_Class_6",
+          "url": "https://selectionwayrecordedmp4.hranker.com/561/6922929e8b0d4f251f7f7f01/hls/master.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-special-vod-v-99",
+          "label": "Time_Speed_Distance_Class_7",
+          "url": "https://selectionwayrecordedmp4.hranker.com/561/6922929e8b0d4f251f7f7f02/hls/master.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-special-vod-v-100",
+          "label": "Time_Speed_Distance_Class_8",
+          "url": "https://selectionwayrecordedmp4.hranker.com/561/6922929e8b0d4f251f7f7f03/hls/master.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-special-vod-v-101",
+          "label": "Time_Speed_Distance_Class_10",
+          "url": "https://selectionwayrecordedmp4.hranker.com/561/692292bee2b37c269bc949c6/hls/master.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-special-vod-v-102",
+          "label": "Time_Speed_Distance_Class_11",
+          "url": "https://selectionwayrecordedmp4.hranker.com/561/692292bee2b37c269bc949c7/hls/master.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-special-vod-v-103",
+          "label": "Time_Speed_Distance_Class_12",
+          "url": "https://selectionwayrecordedmp4.hranker.com/561/692292bee2b37c269bc949c8/hls/master.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-special-vod-v-104",
+          "label": "Time_Speed_Distance_Class_13",
+          "url": "https://selectionwayrecordedmp4.hranker.com/561/692292bee2b37c269bc949c9/hls/master.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-special-vod-v-105",
+          "label": "Time_Speed_Distance_Class_14",
+          "url": "https://selectionwayrecordedmp4.hranker.com/561/692292bee2b37c269bc949ca/hls/master.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-special-vod-v-106",
+          "label": "Time_Speed_Distance_Class_15",
+          "url": "https://selectionwayrecordedmp4.hranker.com/561/692292bee2b37c269bc949cb/hls/master.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-special-vod-v-107",
+          "label": "Time_Speed_Distance_Class_16",
+          "url": "https://selectionwayrecordedmp4.hranker.com/561/692292bee2b37c269bc949cc/hls/master.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-special-vod-v-108",
+          "label": "Time_Speed_Distance_Class_17",
+          "url": "https://selectionwayrecordedmp4.hranker.com/561/69463c308c23d550e67edb69/hls/master.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-special-vod-v-109",
+          "label": "Train_Class_1",
+          "url": "https://selectionwayrecordedmp4.hranker.com/561/692fd70365f7e3fa35af5426/hls/master.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-special-vod-v-110",
+          "label": "Train_Class_2",
+          "url": "https://selectionwayrecordedmp4.hranker.com/561/692fd70365f7e3fa35af5427/hls/master.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-special-vod-v-111",
+          "label": "Train_Class_3",
+          "url": "https://selectionwayrecordedmp4.hranker.com/561/692fd70365f7e3fa35af5428/hls/master.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-special-vod-v-112",
+          "label": "Train_Class_4",
+          "url": "https://selectionwayrecordedmp4.hranker.com/561/692fd70365f7e3fa35af5429/hls/master.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-special-vod-v-113",
+          "label": "Race_Class_1",
+          "url": "https://selectionwayrecordedmp4.hranker.com/561/692a9a5f759872676ecc8889/hls/master.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-special-vod-v-114",
+          "label": "Race_Class_2",
+          "url": "https://selectionwayrecordedmp4.hranker.com/561/692a9a5f759872676ecc888a/hls/master.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-special-vod-v-115",
+          "label": "Race_Class_3",
+          "url": "https://selectionwayrecordedmp4.hranker.com/561/692a9a5f759872676ecc888b/hls/master.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-special-vod-v-116",
+          "label": "Average_Class_1",
+          "url": "https://selectionwayrecordedmp4.hranker.com/561/6946582d8c23d550e67edb6c/hls/master.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-special-vod-v-117",
+          "label": "Average_Class_2",
+          "url": "https://selectionwayrecordedmp4.hranker.com/561/69294b855a127e81985c606d/hls/master.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-special-vod-v-118",
+          "label": "Average_Class_3",
+          "url": "https://selectionwayrecordedmp4.hranker.com/561/69294b855a127e81985c606e/hls/master.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-special-vod-v-119",
+          "label": "Average_Class_4",
+          "url": "https://selectionwayrecordedmp4.hranker.com/561/69294b855a127e81985c606f/hls/master.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-special-vod-v-120",
+          "label": "Average_Class_7",
+          "url": "https://selectionwayrecordedmp4.hranker.com/561/69294b855a127e81985c6072/hls/master.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-special-vod-v-121",
+          "label": "Average_Class_8",
+          "url": "https://selectionwayrecordedmp4.hranker.com/561/69294b855a127e81985c6073/hls/master.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-special-vod-v-122",
+          "label": "Partnership_Class_1",
+          "url": "https://selectionwayrecordedmp4.hranker.com/561/692ad53b85291c541afcdbe1/hls/master.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-special-vod-v-123",
+          "label": "Partnership_Class_2",
+          "url": "https://selectionwayrecordedmp4.hranker.com/561/692ad53b85291c541afcdbe2/hls/master.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-special-vod-v-124",
+          "label": "Partnership_Class_3",
+          "url": "https://selectionwayrecordedmp4.hranker.com/561/692ad53b85291c541afcdbe3/hls/master.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-special-vod-v-125",
+          "label": "Partnership_Class_4",
+          "url": "https://selectionwayrecordedmp4.hranker.com/561/692ad53b85291c541afcdbe4/hls/master.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-special-vod-v-126",
+          "label": "Mixture_and_Allegation_Class_1",
+          "url": "https://selectionwayrecordedmp4.hranker.com/561/69315c4de1a6850a4d5fb36c/hls/master.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-special-vod-v-127",
+          "label": "Mixture_and_Allegation_Class_2",
+          "url": "https://selectionwayrecordedmp4.hranker.com/561/69315c4de1a6850a4d5fb36d/hls/master.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-special-vod-v-128",
+          "label": "Mixture_and_Allegation_Class_3",
+          "url": "https://selectionwayrecordedmp4.hranker.com/561/69315c4de1a6850a4d5fb36e/hls/master.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-special-vod-v-129",
+          "label": "Mixture_and_Allegation_Class_4",
+          "url": "https://selectionwayrecordedmp4.hranker.com/561/69315c4de1a6850a4d5fb36f/hls/master.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-special-vod-v-130",
+          "label": "Mixture_and_Allegation_Class_6",
+          "url": "https://selectionwayrecordedmp4.hranker.com/561/69315c4de1a6850a4d5fb371/hls/master.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-special-vod-v-131",
+          "label": "Mixture_and_Allegation_Class_7",
+          "url": "https://selectionwayrecordedmp4.hranker.com/561/69315c4de1a6850a4d5fb372/hls/master.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-special-vod-v-132",
+          "label": "Mixture_and_Allegation_Class_8",
+          "url": "https://selectionwayrecordedmp4.hranker.com/561/69315c4de1a6850a4d5fb373/hls/master.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-special-vod-v-133",
+          "label": "Mixture_and_Allegation_Class_9",
+          "url": "https://selectionwayrecordedmp4.hranker.com/561/69315c4de1a6850a4d5fb374/hls/master.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-special-vod-v-134",
+          "label": "Mixture_and_Allegation_Class_10",
+          "url": "https://selectionwayrecordedmp4.hranker.com/561/69315c4de1a6850a4d5fb375/hls/master.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-special-vod-v-135",
+          "label": "Mixture_and_Allegation_Class_11",
+          "url": "https://selectionwayrecordedmp4.hranker.com/561/69315c4de1a6850a4d5fb376/hls/master.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-special-vod-v-136",
+          "label": "Mixture_and_Allegation_Class_13",
+          "url": "https://selectionwayrecordedmp4.hranker.com/561/69315c4de1a6850a4d5fb378/hls/master.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-special-vod-v-137",
+          "label": "Mixture_and_Allegation_Class_14",
+          "url": "https://selectionwayrecordedmp4.hranker.com/561/69315c4de1a6850a4d5fb379/hls/master.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-special-vod-v-138",
+          "label": "Mixture_and_Allegation_Class_15",
+          "url": "https://selectionwayrecordedmp4.hranker.com/561/69315c4de1a6850a4d5fb37a/hls/master.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-special-vod-v-139",
+          "label": "Boat_Stream_class_1",
+          "url": "https://selectionwayrecordedmp4.hranker.com/561/69464f423d72cd442bc59932/hls/master.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-special-vod-v-140",
+          "label": "Boat_Stream_class_2",
+          "url": "https://selectionwayrecordedmp4.hranker.com/561/6925d3f9e47ee59d0587f5a0/hls/master.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-special-vod-v-141",
+          "label": "Boat_Stream_class_3",
+          "url": "https://selectionwayrecordedmp4.hranker.com/561/6925d3f9e47ee59d0587f5a1/hls/master.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-special-vod-v-142",
+          "label": "Age_Class_1",
+          "url": "https://selectionwayrecordedmp4.hranker.com/561/692944f98bf0fdc074912978/hls/master.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-special-vod-v-143",
+          "label": "Age_Class_2",
+          "url": "https://selectionwayrecordedmp4.hranker.com/561/692944f98bf0fdc074912979/hls/master.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-special-vod-v-144",
+          "label": "SI_CI_Class_1",
+          "url": "https://selectionwayrecordedmp4.hranker.com/561/692292f6823b7abf3cc1c553/hls/master.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-special-vod-v-145",
+          "label": "SI_CI_Class_2",
+          "url": "https://selectionwayrecordedmp4.hranker.com/561/692292f6823b7abf3cc1c554/hls/master.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-special-vod-v-146",
+          "label": "SI_CI_Class_3",
+          "url": "https://selectionwayrecordedmp4.hranker.com/561/692292f6823b7abf3cc1c555/hls/master.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-special-vod-v-147",
+          "label": "SI_CI_Class_4",
+          "url": "https://selectionwayrecordedmp4.hranker.com/561/692292f6823b7abf3cc1c556/hls/master.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-special-vod-v-148",
+          "label": "SI_CI_Class_5",
+          "url": "https://selectionwayrecordedmp4.hranker.com/561/692292f6823b7abf3cc1c557/hls/master.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-special-vod-v-149",
+          "label": "SI_CI_Class_6",
+          "url": "https://selectionwayrecordedmp4.hranker.com/561/692292f6823b7abf3cc1c558/hls/master.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-special-vod-v-150",
+          "label": "SI_CI_Class_7",
+          "url": "https://selectionwayrecordedmp4.hranker.com/561/692292f6823b7abf3cc1c559/hls/master.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-special-vod-v-151",
+          "label": "SI_CI_Class_8",
+          "url": "https://selectionwayrecordedmp4.hranker.com/561/692292f6823b7abf3cc1c55a/hls/master.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-special-vod-v-152",
+          "label": "SI_CI_Class_9",
+          "url": "https://selectionwayrecordedmp4.hranker.com/561/692292f6823b7abf3cc1c55b/hls/master.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-special-vod-v-153",
+          "label": "SI_CI_Class_10",
+          "url": "https://selectionwayrecordedmp4.hranker.com/561/692292f6823b7abf3cc1c55c/hls/master.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-special-vod-v-154",
+          "label": "SI_CI_Class_11",
+          "url": "https://selectionwayrecordedmp4.hranker.com/561/692292f6823b7abf3cc1c55d/hls/master.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-special-vod-v-155",
+          "label": "SI_CI_Class_12",
+          "url": "https://selectionwayrecordedmp4.hranker.com/561/692292f6823b7abf3cc1c55e/hls/master.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-special-vod-v-156",
+          "label": "SI_CI_Class_13",
+          "url": "https://selectionwayrecordedmp4.hranker.com/561/692292f6823b7abf3cc1c55f/hls/master.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-special-vod-v-157",
+          "label": "SI_CI_Class_14",
+          "url": "https://selectionwayrecordedmp4.hranker.com/561/6922932f040cfbb5988dcc25/hls/master.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-special-vod-v-158",
+          "label": "SI_CI_Class_15",
+          "url": "https://selectionwayrecordedmp4.hranker.com/561/6922932f040cfbb5988dcc26/hls/master.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-special-vod-v-159",
+          "label": "SI_CI_Class_16",
+          "url": "https://selectionwayrecordedmp4.hranker.com/561/6922932f040cfbb5988dcc27/hls/master.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-special-vod-v-160",
+          "label": "SI_CI_Class_17",
+          "url": "https://selectionwayrecordedmp4.hranker.com/561/6922932f040cfbb5988dcc28/hls/master.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-special-vod-v-161",
+          "label": "SI_CI_Class_19",
+          "url": "https://selectionwayrecordedmp4.hranker.com/561/6922932f040cfbb5988dcc2a/hls/master.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-special-vod-v-162",
+          "label": "SI_CI_Class_20",
+          "url": "https://selectionwayrecordedmp4.hranker.com/561/6922932f040cfbb5988dcc2b/hls/master.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-special-vod-v-163",
+          "label": "SI_CI_Class_21",
+          "url": "https://selectionwayrecordedmp4.hranker.com/561/6922932f040cfbb5988dcc2c/hls/master.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-special-vod-v-164",
+          "label": "SI_CI_Class_22",
+          "url": "https://selectionwayrecordedmp4.hranker.com/561/6922932f040cfbb5988dcc2d/hls/master.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-special-vod-v-165",
+          "label": "SI_CI_Class_23",
+          "url": "https://selectionwayrecordedmp4.hranker.com/561/6922932f040cfbb5988dcc2e/hls/master.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-special-vod-v-166",
+          "label": "Mensuration_2D_Class_1",
+          "url": "https://selectionwayrecordedmp4.hranker.com/561/6925cd1c5b130474d6da9978/hls/master.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-special-vod-v-167",
+          "label": "Mensuration_2D_Class_2",
+          "url": "https://selectionwayrecordedmp4.hranker.com/561/6925cd1c5b130474d6da9979/hls/master.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-special-vod-v-168",
+          "label": "Mensuration_2D_Class_3",
+          "url": "https://selectionwayrecordedmp4.hranker.com/561/6925cd1c5b130474d6da997a/hls/master.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-special-vod-v-169",
+          "label": "Mensuration_2D_Class_4",
+          "url": "https://selectionwayrecordedmp4.hranker.com/561/6925cd1c5b130474d6da997b/hls/master.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-special-vod-v-170",
+          "label": "Mensuration_2D_Class_5",
+          "url": "https://selectionwayrecordedmp4.hranker.com/561/6925cd1c5b130474d6da997c/hls/master.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-special-vod-v-171",
+          "label": "Mensuration_2D_Class_8",
+          "url": "https://selectionwayrecordedmp4.hranker.com/561/6925cd1c5b130474d6da997f/hls/master.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-special-vod-v-172",
+          "label": "Mensuration_2D_Class_9",
+          "url": "https://selectionwayrecordedmp4.hranker.com/561/6925cd1c5b130474d6da9980/hls/master.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-special-vod-v-173",
+          "label": "Mensuration_2D_Class_10",
+          "url": "https://selectionwayrecordedmp4.hranker.com/561/6925cd53730e620e76b7dcaf/hls/master.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-special-vod-v-174",
+          "label": "Mensuration_2D_Class_11",
+          "url": "https://selectionwayrecordedmp4.hranker.com/561/6925cd53730e620e76b7dcb0/hls/master.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-special-vod-v-175",
+          "label": "Mensuration_2D_Class_12",
+          "url": "https://selectionwayrecordedmp4.hranker.com/561/6925cd53730e620e76b7dcb1/hls/master.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-special-vod-v-176",
+          "label": "Mensuration_2D_Class_13",
+          "url": "https://selectionwayrecordedmp4.hranker.com/561/6925cd53730e620e76b7dcb2/hls/master.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-special-vod-v-177",
+          "label": "Mensuration_2D_Class_14",
+          "url": "https://selectionwayrecordedmp4.hranker.com/561/6925cd53730e620e76b7dcb3/hls/master.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-special-vod-v-178",
+          "label": "Mensuration_2D_Class_15",
+          "url": "https://selectionwayrecordedmp4.hranker.com/561/6925cd53730e620e76b7dcb4/hls/master.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-special-vod-v-179",
+          "label": "Mensuration_2D_Class_16",
+          "url": "https://selectionwayrecordedmp4.hranker.com/561/6925cd53730e620e76b7dcb5/hls/master.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-special-vod-v-180",
+          "label": "Mensuration_2D_Class_17",
+          "url": "https://selectionwayrecordedmp4.hranker.com/561/6925cd53730e620e76b7dcb6/hls/master.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-special-vod-v-181",
+          "label": "Mensuration_3D_Class_1",
+          "url": "https://selectionwayrecordedmp4.hranker.com/561/6925ce254d5a9351d6f8e6d4/hls/master.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-special-vod-v-182",
+          "label": "Mensuration_3D_Class_2",
+          "url": "https://selectionwayrecordedmp4.hranker.com/561/6925ce254d5a9351d6f8e6d5/hls/master.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-special-vod-v-183",
+          "label": "Mensuration_3D_Class_3",
+          "url": "https://selectionwayrecordedmp4.hranker.com/561/6925ce254d5a9351d6f8e6d6/hls/master.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-special-vod-v-184",
+          "label": "Mensuration_3D_Class_4",
+          "url": "https://selectionwayrecordedmp4.hranker.com/561/6925ce254d5a9351d6f8e6d7/hls/master.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-special-vod-v-185",
+          "label": "Mensuration_3D_Class_5",
+          "url": "https://selectionwayrecordedmp4.hranker.com/561/6925ce254d5a9351d6f8e6d8/hls/master.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-special-vod-v-186",
+          "label": "Mensuration_3D_Class_6",
+          "url": "https://selectionwayrecordedmp4.hranker.com/561/6925ce254d5a9351d6f8e6d9/hls/master.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-special-vod-v-187",
+          "label": "Mensuration_3D_Class_7",
+          "url": "https://selectionwayrecordedmp4.hranker.com/561/6925ce254d5a9351d6f8e6da/hls/master.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-special-vod-v-188",
+          "label": "Mensuration_3D_Class_8",
+          "url": "https://selectionwayrecordedmp4.hranker.com/561/6925ce254d5a9351d6f8e6db/hls/master.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-special-vod-v-189",
+          "label": "Mensuration_3D_Class_9",
+          "url": "https://selectionwayrecordedmp4.hranker.com/561/6925ce254d5a9351d6f8e6dc/hls/master.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-special-vod-v-190",
+          "label": "Mensuration_3D_Class_10",
+          "url": "https://selectionwayrecordedmp4.hranker.com/561/6925ce254d5a9351d6f8e6dd/hls/master.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-special-vod-v-191",
+          "label": "Mensuration_3D_Class_11",
+          "url": "https://selectionwayrecordedmp4.hranker.com/561/6925ce254d5a9351d6f8e6de/hls/master.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-special-vod-v-192",
+          "label": "Mensuration_3D_Class_12",
+          "url": "https://selectionwayrecordedmp4.hranker.com/561/6925ce254d5a9351d6f8e6df/hls/master.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-special-vod-v-193",
+          "label": "Mensuration_3D_Class_13",
+          "url": "https://selectionwayrecordedmp4.hranker.com/561/6925ce69adec4d7648ca18fc/hls/master.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-special-vod-v-194",
+          "label": "Mensuration_3D_Class_14",
+          "url": "https://selectionwayrecordedmp4.hranker.com/561/6925ce69adec4d7648ca18fd/hls/master.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-special-vod-v-195",
+          "label": "Mensuration_3D_Class_15",
+          "url": "https://selectionwayrecordedmp4.hranker.com/561/6925ce69adec4d7648ca18fe/hls/master.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-special-vod-v-196",
+          "label": "Mensuration_3D_Class_16",
+          "url": "https://selectionwayrecordedmp4.hranker.com/561/6925ce69adec4d7648ca18ff/hls/master.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-special-vod-v-197",
+          "label": "Mensuration_3D_Class_17",
+          "url": "https://selectionwayrecordedmp4.hranker.com/561/6925ce69adec4d7648ca1900/hls/master.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-special-vod-v-198",
+          "label": "Mensuration_3D_Class_18",
+          "url": "https://selectionwayrecordedmp4.hranker.com/561/6925ce69adec4d7648ca1901/hls/master.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-special-vod-v-199",
+          "label": "Mensuration_3D_Class_20",
+          "url": "https://selectionwayrecordedmp4.hranker.com/561/6925ce69adec4d7648ca1903/hls/master.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-special-vod-v-200",
+          "label": "Mensuration_3D_Class_21",
+          "url": "https://selectionwayrecordedmp4.hranker.com/561/6925ce69adec4d7648ca1904/hls/master.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-special-vod-v-201",
+          "label": "Mensuration_3D_Class_22",
+          "url": "https://selectionwayrecordedmp4.hranker.com/561/6925ce69adec4d7648ca1905/hls/master.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-special-vod-v-202",
+          "label": "Mensuration_3D_Class_23",
+          "url": "https://selectionwayrecordedmp4.hranker.com/561/6925ce69adec4d7648ca1906/hls/master.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-special-vod-v-203",
+          "label": "Algebra_class_1",
+          "url": "https://selectionwayrecordedmp4.hranker.com/561/6925cbdb390334bda8519381/hls/master.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-special-vod-v-204",
+          "label": "Algebra_class_2",
+          "url": "https://selectionwayrecordedmp4.hranker.com/561/6925cbdb390334bda8519382/hls/master.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-special-vod-v-205",
+          "label": "Algebra_class_3",
+          "url": "https://selectionwayrecordedmp4.hranker.com/561/6925cbdb390334bda8519383/hls/master.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-special-vod-v-206",
+          "label": "Algebra_class_4",
+          "url": "https://selectionwayrecordedmp4.hranker.com/561/6925cbdb390334bda8519384/hls/master.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-special-vod-v-207",
+          "label": "Algebra_class_5",
+          "url": "https://selectionwayrecordedmp4.hranker.com/561/6925cbdb390334bda8519385/hls/master.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-special-vod-v-208",
+          "label": "Algebra_class_6",
+          "url": "https://selectionwayrecordedmp4.hranker.com/561/6925cbdb390334bda8519386/hls/master.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-special-vod-v-209",
+          "label": "Algebra_class_7",
+          "url": "https://selectionwayrecordedmp4.hranker.com/561/6925cbdb390334bda8519387/hls/master.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-special-vod-v-210",
+          "label": "Algebra_class_9",
+          "url": "https://selectionwayrecordedmp4.hranker.com/561/6925cbdb390334bda8519388/hls/master.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-special-vod-v-211",
+          "label": "Algebra_class_10",
+          "url": "https://selectionwayrecordedmp4.hranker.com/561/6925cc17ace966e2148ecf14/hls/master.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-special-vod-v-212",
+          "label": "Algebra_class_11",
+          "url": "https://selectionwayrecordedmp4.hranker.com/561/6925cc17ace966e2148ecf15/hls/master.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-special-vod-v-213",
+          "label": "Algebra_class_12",
+          "url": "https://selectionwayrecordedmp4.hranker.com/561/6925cc17ace966e2148ecf16/hls/master.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-special-vod-v-214",
+          "label": "Algebra_class_13",
+          "url": "https://selectionwayrecordedmp4.hranker.com/561/6925cc17ace966e2148ecf17/hls/master.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-special-vod-v-215",
+          "label": "Algebra_class_14",
+          "url": "https://selectionwayrecordedmp4.hranker.com/561/6925cc17ace966e2148ecf18/hls/master.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-special-vod-v-216",
+          "label": "Algebra_class_15",
+          "url": "https://selectionwayrecordedmp4.hranker.com/561/6925cc17ace966e2148ecf19/hls/master.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-special-vod-v-217",
+          "label": "Algebra_class_16",
+          "url": "https://selectionwayrecordedmp4.hranker.com/561/6925cc17ace966e2148ecf1a/hls/master.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-special-vod-v-218",
+          "label": "Algebra_class_17",
+          "url": "https://selectionwayrecordedmp4.hranker.com/561/6925cc17ace966e2148ecf1b/hls/master.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-special-vod-v-219",
+          "label": "Algebra_class_18",
+          "url": "https://selectionwayrecordedmp4.hranker.com/561/6925cc17ace966e2148ecf1c/hls/master.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-special-vod-v-220",
+          "label": "Algebra_class_19",
+          "url": "https://selectionwayrecordedmp4.hranker.com/561/6925cc17ace966e2148ecf1d/hls/master.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-special-vod-v-221",
+          "label": "Algebra_class_20",
+          "url": "https://selectionwayrecordedmp4.hranker.com/561/6925cc17ace966e2148ecf1e/hls/master.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-special-vod-v-222",
+          "label": "Algebra_class_21",
+          "url": "https://selectionwayrecordedmp4.hranker.com/561/6925cc620d577a6eaa4123af/hls/master.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-special-vod-v-223",
+          "label": "Algebra_class_22",
+          "url": "https://selectionwayrecordedmp4.hranker.com/561/6925cc620d577a6eaa4123b0/hls/master.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-special-vod-v-224",
+          "label": "Algebra_class_23",
+          "url": "https://selectionwayrecordedmp4.hranker.com/561/6925cc620d577a6eaa4123b1/hls/master.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-special-vod-v-225",
+          "label": "Algebra_class_24",
+          "url": "https://selectionwayrecordedmp4.hranker.com/561/6925cc620d577a6eaa4123b2/hls/master.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-special-vod-v-226",
+          "label": "Algebra_class_25",
+          "url": "https://selectionwayrecordedmp4.hranker.com/561/6925cc620d577a6eaa4123b3/hls/master.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-special-vod-v-227",
+          "label": "Algebra_class_26",
+          "url": "https://selectionwayrecordedmp4.hranker.com/561/6925cc620d577a6eaa4123b4/hls/master.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-special-vod-v-228",
+          "label": "Algebra_class_27",
+          "url": "https://selectionwayrecordedmp4.hranker.com/561/6925cc620d577a6eaa4123b5/hls/master.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-special-vod-v-229",
+          "label": "Algebra_class_28",
+          "url": "https://selectionwayrecordedmp4.hranker.com/561/6925cc620d577a6eaa4123b6/hls/master.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-special-vod-v-230",
+          "label": "Algebra_class_29",
+          "url": "https://selectionwayrecordedmp4.hranker.com/561/6925cc620d577a6eaa4123b7/hls/master.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-special-vod-v-231",
+          "label": "Algebra_class_31",
+          "url": "https://selectionwayrecordedmp4.hranker.com/561/6925cc620d577a6eaa4123b9/hls/master.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-special-vod-v-232",
+          "label": "Algebra_class_32",
+          "url": "https://selectionwayrecordedmp4.hranker.com/561/6925cc620d577a6eaa4123ba/hls/master.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-special-vod-v-233",
+          "label": "Trigonometry_Class_1",
+          "url": "https://selectionwayrecordedmp4.hranker.com/561/692ad87385291c541afcdbe5/hls/master.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-special-vod-v-234",
+          "label": "Trigonometry_Class_2",
+          "url": "https://selectionwayrecordedmp4.hranker.com/561/692ad87385291c541afcdbe6/hls/master.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-special-vod-v-235",
+          "label": "Trigonometry_Class_3",
+          "url": "https://selectionwayrecordedmp4.hranker.com/561/692ad87385291c541afcdbe7/hls/master.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-special-vod-v-236",
+          "label": "Trigonometry_Class_4",
+          "url": "https://selectionwayrecordedmp4.hranker.com/561/692ad87385291c541afcdbe8/hls/master.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-special-vod-v-237",
+          "label": "Trigonometry_Class_5",
+          "url": "https://selectionwayrecordedmp4.hranker.com/561/692ad87385291c541afcdbe9/hls/master.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-special-vod-v-238",
+          "label": "Trigonometry_Class_6",
+          "url": "https://selectionwayrecordedmp4.hranker.com/561/692ad87385291c541afcdbea/hls/master.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-special-vod-v-239",
+          "label": "Trigonometry_Class_7",
+          "url": "https://selectionwayrecordedmp4.hranker.com/561/692ad87385291c541afcdbec/hls/master.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-special-vod-v-240",
+          "label": "Trigonometry_Class_8",
+          "url": "https://selectionwayrecordedmp4.hranker.com/561/692ad87385291c541afcdbeb/hls/master.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-special-vod-v-241",
+          "label": "Trigonometry_Class_9",
+          "url": "https://selectionwayrecordedmp4.hranker.com/561/692ad87385291c541afcdbed/hls/master.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-special-vod-v-242",
+          "label": "Trigonometry_Class_10",
+          "url": "https://selectionwayrecordedmp4.hranker.com/561/692d6d7c82b8be59a912b2c6/hls/master.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-special-vod-v-243",
+          "label": "Trigonometry_Class_11",
+          "url": "https://selectionwayrecordedmp4.hranker.com/561/692d6d7c82b8be59a912b2be/hls/master.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-special-vod-v-244",
+          "label": "Trigonometry_Class_12",
+          "url": "https://selectionwayrecordedmp4.hranker.com/561/692d6d7c82b8be59a912b2bf/hls/master.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-special-vod-v-245",
+          "label": "Trigonometry_Class_13",
+          "url": "https://selectionwayrecordedmp4.hranker.com/561/692d6d7c82b8be59a912b2c0/hls/master.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-special-vod-v-246",
+          "label": "Trigonometry_Class_14",
+          "url": "https://selectionwayrecordedmp4.hranker.com/561/692d6d7c82b8be59a912b2c7/hls/master.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-special-vod-v-247",
+          "label": "Trigonometry_Class_15",
+          "url": "https://selectionwayrecordedmp4.hranker.com/561/692d6d7c82b8be59a912b2c8/hls/master.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-special-vod-v-248",
+          "label": "Trigonometry_Class_16",
+          "url": "https://selectionwayrecordedmp4.hranker.com/561/692d6d7c82b8be59a912b2c1/hls/master.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-special-vod-v-249",
+          "label": "Trigonometry_Class_17",
+          "url": "https://selectionwayrecordedmp4.hranker.com/561/692d6d7c82b8be59a912b2c9/hls/master.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-special-vod-v-250",
+          "label": "Trigonometry_Class_18",
+          "url": "https://selectionwayrecordedmp4.hranker.com/561/692d6d7c82b8be59a912b2cb/hls/master.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-special-vod-v-251",
+          "label": "Trigonometry_Class_19",
+          "url": "https://selectionwayrecordedmp4.hranker.com/561/692d6d7c82b8be59a912b2c2/hls/master.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-special-vod-v-252",
+          "label": "Trigonometry_Class_20",
+          "url": "https://selectionwayrecordedmp4.hranker.com/561/692d6d7c82b8be59a912b2c3/hls/master.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-special-vod-v-253",
+          "label": "Trigonometry_Class_21",
+          "url": "https://selectionwayrecordedmp4.hranker.com/561/692d6d7c82b8be59a912b2ca/hls/master.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-special-vod-v-254",
+          "label": "Trigonometry_Class_22",
+          "url": "https://selectionwayrecordedmp4.hranker.com/561/692d8960529915ea79aa476c/hls/master.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-special-vod-v-255",
+          "label": "Height_&_Distance_Class_1",
+          "url": "https://selectionwayrecordedmp4.hranker.com/561/692d89b3eb755aebf8c8d523/hls/master.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-special-vod-v-256",
+          "label": "Height_&_Distance_Class_2",
+          "url": "https://selectionwayrecordedmp4.hranker.com/561/692d89b3eb755aebf8c8d524/hls/master.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-special-vod-v-257",
+          "label": "Height_&_Distance_Class_3",
+          "url": "https://selectionwayrecordedmp4.hranker.com/561/692d89b3eb755aebf8c8d525/hls/master.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-special-vod-v-258",
+          "label": "Height_&_Distance_Class_4",
+          "url": "https://selectionwayrecordedmp4.hranker.com/561/692d89b3eb755aebf8c8d526/hls/master.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-special-vod-v-259",
+          "label": "Geometry_class_1",
+          "url": "https://selectionwayrecordedmp4.hranker.com/561/6925d1e1f0a8b0fd10432629/hls/master.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-special-vod-v-260",
+          "label": "Geometry_class_2",
+          "url": "https://selectionwayrecordedmp4.hranker.com/561/6925d1e1f0a8b0fd1043262a/hls/master.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-special-vod-v-261",
+          "label": "Geometry_class_3",
+          "url": "https://selectionwayrecordedmp4.hranker.com/561/6925d1e1f0a8b0fd1043262b/hls/master.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-special-vod-v-262",
+          "label": "Geometry_class_4",
+          "url": "https://selectionwayrecordedmp4.hranker.com/561/6925d1e1f0a8b0fd1043262c/hls/master.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-special-vod-v-263",
+          "label": "Geometry_class_5",
+          "url": "https://selectionwayrecordedmp4.hranker.com/561/6925d1e1f0a8b0fd1043262d/hls/master.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-special-vod-v-264",
+          "label": "Geometry_class_6",
+          "url": "https://selectionwayrecordedmp4.hranker.com/561/6925d1e1f0a8b0fd1043262e/hls/master.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-special-vod-v-265",
+          "label": "Geometry_class_7",
+          "url": "https://selectionwayrecordedmp4.hranker.com/561/6925d1e1f0a8b0fd1043262f/hls/master.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-special-vod-v-266",
+          "label": "Geometry_class_9",
+          "url": "https://selectionwayrecordedmp4.hranker.com/561/6925d1e1f0a8b0fd10432631/hls/master.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-special-vod-v-267",
+          "label": "Geometry_class_10",
+          "url": "https://selectionwayrecordedmp4.hranker.com/561/6925d1e1f0a8b0fd10432632/hls/master.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-special-vod-v-268",
+          "label": "Geometry_class_11",
+          "url": "https://selectionwayrecordedmp4.hranker.com/561/6925d1e1f0a8b0fd10432633/hls/master.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-special-vod-v-269",
+          "label": "Geometry_class_12",
+          "url": "https://selectionwayrecordedmp4.hranker.com/561/6925d1e1f0a8b0fd10432634/hls/master.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-special-vod-v-270",
+          "label": "Geometry_class_13",
+          "url": "https://selectionwayrecordedmp4.hranker.com/561/6925d1e1f0a8b0fd10432635/hls/master.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-special-vod-v-271",
+          "label": "Geometry_class_14",
+          "url": "https://selectionwayrecordedmp4.hranker.com/561/6925d1e1f0a8b0fd10432636/hls/master.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-special-vod-v-272",
+          "label": "Geometry_class_15",
+          "url": "https://selectionwayrecordedmp4.hranker.com/561/6925d1e1f0a8b0fd10432637/hls/master.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-special-vod-v-273",
+          "label": "Geometry_class_16",
+          "url": "https://selectionwayrecordedmp4.hranker.com/561/6925d1e1f0a8b0fd10432638/hls/master.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-special-vod-v-274",
+          "label": "Geometry_class_17",
+          "url": "https://selectionwayrecordedmp4.hranker.com/561/6925d1e1f0a8b0fd10432639/hls/master.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-special-vod-v-275",
+          "label": "Geometry_class_18",
+          "url": "https://selectionwayrecordedmp4.hranker.com/561/6925d1e1f0a8b0fd1043263a/hls/master.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-special-vod-v-276",
+          "label": "Geometry_class_19",
+          "url": "https://selectionwayrecordedmp4.hranker.com/561/6925d1e1f0a8b0fd1043263b/hls/master.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-special-vod-v-277",
+          "label": "Geometry_class_20",
+          "url": "https://selectionwayrecordedmp4.hranker.com/561/6925d1e1f0a8b0fd1043263c/hls/master.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-special-vod-v-278",
+          "label": "Geometry_class_21",
+          "url": "https://selectionwayrecordedmp4.hranker.com/561/6925d2886fef8f4546dfdc6e/hls/master.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-special-vod-v-279",
+          "label": "Geometry_class_22",
+          "url": "https://selectionwayrecordedmp4.hranker.com/561/6925d2886fef8f4546dfdc6f/hls/master.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-special-vod-v-280",
+          "label": "Geometry_class_23",
+          "url": "https://selectionwayrecordedmp4.hranker.com/561/6925d2886fef8f4546dfdc70/hls/master.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-special-vod-v-281",
+          "label": "Geometry_class_24",
+          "url": "https://selectionwayrecordedmp4.hranker.com/561/6925d2886fef8f4546dfdc71/hls/master.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-special-vod-v-282",
+          "label": "Geometry_class_25",
+          "url": "https://selectionwayrecordedmp4.hranker.com/561/6925d2886fef8f4546dfdc72/hls/master.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-special-vod-v-283",
+          "label": "Geometry_class_26",
+          "url": "https://selectionwayrecordedmp4.hranker.com/561/6925d2886fef8f4546dfdc73/hls/master.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-special-vod-v-284",
+          "label": "Geometry_class_27",
+          "url": "https://selectionwayrecordedmp4.hranker.com/561/6925d2886fef8f4546dfdc74/hls/master.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-special-vod-v-285",
+          "label": "Geometry_class_30",
+          "url": "https://selectionwayrecordedmp4.hranker.com/561/6925d2886fef8f4546dfdc77/hls/master.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-special-vod-v-286",
+          "label": "Geometry_class_31",
+          "url": "https://selectionwayrecordedmp4.hranker.com/561/6925d2886fef8f4546dfdc78/hls/master.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-special-vod-v-287",
+          "label": "Geometry_class_32",
+          "url": "https://selectionwayrecordedmp4.hranker.com/561/6925d2886fef8f4546dfdc79/hls/master.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-special-vod-v-288",
+          "label": "Geometry_class_33",
+          "url": "https://selectionwayrecordedmp4.hranker.com/561/6925d2886fef8f4546dfdc7a/hls/master.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-special-vod-v-289",
+          "label": "Geometry_class_34",
+          "url": "https://selectionwayrecordedmp4.hranker.com/561/6925d2886fef8f4546dfdc7b/hls/master.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-special-vod-v-290",
+          "label": "Geometry_class_35",
+          "url": "https://selectionwayrecordedmp4.hranker.com/561/6925d2886fef8f4546dfdc7c/hls/master.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-special-vod-v-291",
+          "label": "Geometry_class_36",
+          "url": "https://selectionwayrecordedmp4.hranker.com/561/6925d2886fef8f4546dfdc7d/hls/master.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-special-vod-v-292",
+          "label": "Geometry_class_37",
+          "url": "https://selectionwayrecordedmp4.hranker.com/561/6925d2886fef8f4546dfdc7e/hls/master.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-special-vod-v-293",
+          "label": "Geometry_class_38",
+          "url": "https://selectionwayrecordedmp4.hranker.com/561/6925d2886fef8f4546dfdc7f/hls/master.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-special-vod-v-294",
+          "label": "Geometry_class_40",
+          "url": "https://selectionwayrecordedmp4.hranker.com/561/6925d2886fef8f4546dfdc81/hls/master.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-special-vod-v-295",
+          "label": "Geometry_class_41",
+          "url": "https://selectionwayrecordedmp4.hranker.com/561/6925d2886fef8f4546dfdc82/hls/master.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-special-vod-v-296",
+          "label": "Geometry_class_42",
+          "url": "https://selectionwayrecordedmp4.hranker.com/561/6925d2886fef8f4546dfdc83/hls/master.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-special-vod-v-297",
+          "label": "Geometry_class_43",
+          "url": "https://selectionwayrecordedmp4.hranker.com/561/6925d2d81bf16324a0ebe10d/hls/master.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-special-vod-v-298",
+          "label": "Geometry_class_44",
+          "url": "https://selectionwayrecordedmp4.hranker.com/561/6925d2d81bf16324a0ebe10e/hls/master.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-special-vod-v-299",
+          "label": "Geometry_class_45",
+          "url": "https://selectionwayrecordedmp4.hranker.com/561/6925d2d81bf16324a0ebe10f/hls/master.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-special-vod-v-300",
+          "label": "Geometry_class_46",
+          "url": "https://selectionwayrecordedmp4.hranker.com/561/6925d2d81bf16324a0ebe110/hls/master.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-special-vod-v-301",
+          "label": "Geometry_class_47",
+          "url": "https://selectionwayrecordedmp4.hranker.com/561/6925d2d81bf16324a0ebe111/hls/master.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-special-vod-v-302",
+          "label": "Geometry_class_48",
+          "url": "https://selectionwayrecordedmp4.hranker.com/561/6925d2d81bf16324a0ebe112/hls/master.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-special-vod-v-303",
+          "label": "Geometry_class_49",
+          "url": "https://selectionwayrecordedmp4.hranker.com/561/6925d2d81bf16324a0ebe113/hls/master.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-special-vod-v-304",
+          "label": "Geometry_class_50",
+          "url": "https://selectionwayrecordedmp4.hranker.com/561/6925d2d81bf16324a0ebe114/hls/master.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-special-vod-v-305",
+          "label": "Geometry_class_51",
+          "url": "https://selectionwayrecordedmp4.hranker.com/561/6925d2d81bf16324a0ebe115/hls/master.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-special-vod-v-306",
+          "label": "Geometry_class_52",
+          "url": "https://selectionwayrecordedmp4.hranker.com/561/6925d2d81bf16324a0ebe116/hls/master.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-special-vod-v-307",
+          "label": "Geometry_class_53",
+          "url": "https://selectionwayrecordedmp4.hranker.com/561/6925d2d81bf16324a0ebe117/hls/master.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-special-vod-v-308",
+          "label": "Geometry_class_55",
+          "url": "https://selectionwayrecordedmp4.hranker.com/561/6925d2d81bf16324a0ebe119/hls/master.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-special-vod-v-309",
+          "label": "Geometry_class_56",
+          "url": "https://selectionwayrecordedmp4.hranker.com/561/6925d2d81bf16324a0ebe11a/hls/master.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-special-vod-v-310",
+          "label": "Geometry_class_57",
+          "url": "https://selectionwayrecordedmp4.hranker.com/561/6925d2d81bf16324a0ebe11b/hls/master.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-special-vod-v-311",
+          "label": "Geometry_class_58",
+          "url": "https://selectionwayrecordedmp4.hranker.com/561/6925d2d81bf16324a0ebe11c/hls/master.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-special-vod-v-312",
+          "label": "Geometry_class_59",
+          "url": "https://selectionwayrecordedmp4.hranker.com/561/6925d2d81bf16324a0ebe11d/hls/master.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-special-vod-v-313",
+          "label": "Geometry_class_61",
+          "url": "https://selectionwayrecordedmp4.hranker.com/561/6925d2d81bf16324a0ebe11f/hls/master.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-special-vod-v-314",
+          "label": "Geometry_class_62",
+          "url": "https://selectionwayrecordedmp4.hranker.com/561/6925d2d81bf16324a0ebe120/hls/master.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-special-vod-v-315",
+          "label": "Geometry_class_63",
+          "url": "https://selectionwayrecordedmp4.hranker.com/561/6925d2d81bf16324a0ebe121/hls/master.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-special-vod-v-316",
+          "label": "Geometry_class_64",
+          "url": "https://selectionwayrecordedmp4.hranker.com/561/6925d2d81bf16324a0ebe122/hls/master.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-special-vod-v-317",
+          "label": "Geometry_class_65",
+          "url": "https://selectionwayrecordedmp4.hranker.com/561/6925d2d81bf16324a0ebe123/hls/master.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-special-vod-v-318",
+          "label": "Geometry_class_66",
+          "url": "https://selectionwayrecordedmp4.hranker.com/561/6925d2d81bf16324a0ebe124/hls/master.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-special-vod-v-319",
+          "label": "Geometry_class_67",
+          "url": "https://selectionwayrecordedmp4.hranker.com/561/6925d2d81bf16324a0ebe125/hls/master.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-special-vod-v-320",
+          "label": "Geometry_class_68",
+          "url": "https://selectionwayrecordedmp4.hranker.com/561/6925d2d81bf16324a0ebe126/hls/master.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-special-vod-v-321",
+          "label": "Geometry_class_70",
+          "url": "https://selectionwayrecordedmp4.hranker.com/561/6925d2d81bf16324a0ebe128/hls/master.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-special-vod-v-322",
+          "label": "Geometry_class_71",
+          "url": "https://selectionwayrecordedmp4.hranker.com/561/6925d2d81bf16324a0ebe129/hls/master.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-special-vod-v-323",
+          "label": "[Number System] Class-01 –– Number System – Gagan sir",
+          "url": "https://selectionwayrecordedmp4.hranker.com/561/68e3669f10c7d671132e56ab/hls/master.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-special-vod-v-325",
+          "label": "[Number System] Class-02 –– Number System – Gagan sir",
+          "url": "https://selectionwayrecordedmp4.hranker.com/561/68e3f88210c7d6711353db5c/hls/master.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-special-vod-v-327",
+          "label": "[Number System] Class-03 –– Number System – Gagan sir",
+          "url": "https://selectionwayrecordedmp4.hranker.com/561/68e4f80e290f277f35542716/hls/master.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-special-vod-v-329",
+          "label": "[Number System] Class-04 –– Number System – Gagan sir",
+          "url": "https://selectionwayrecordedmp4.hranker.com/561/68e683b8c181958fac2d7f09/hls/master.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-special-vod-v-331",
+          "label": "[Number System] Class -05 –– Number System – Gagan sir",
+          "url": "https://selectionwayrecordedmp4.hranker.com/561/68e7d4a12201cbe84e9e7e16/hls/master.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-special-vod-v-333",
+          "label": "[Number System] Class -06 –– Number System – Gagan sir",
+          "url": "https://selectionwayrecordedmp4.hranker.com/561/68ebe7d420bd4a562fa9214f/hls/master.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-special-vod-v-335",
+          "label": "[Number System] Class -07 –– Number System – Gagan sir",
+          "url": "https://selectionwayrecordedmp4.hranker.com/561/68ed076b20bd4a562fdb07e8/hls/master.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-special-vod-v-337",
+          "label": "[Number System] Class -08 –– Number System – Gagan sir",
+          "url": "https://selectionwayrecordedmp4.hranker.com/561/68ee65735f33a20cd5cd250a/hls/master.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-special-vod-v-339",
+          "label": "[Number System] Class -09 –– Number System – Gagan sir",
+          "url": "https://selectionwayrecordedmp4.hranker.com/561/68efcce6d3d74585a62560fe/hls/master.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-special-vod-v-341",
+          "label": "[Number System] Class -10 –– Number System – Gagan sir",
+          "url": "https://selectionwayrecordedmp4.hranker.com/561/68f1086835a531ec8d549cbd/hls/master.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-special-vod-v-343",
+          "label": "[Number System] Class -11 –– Number System – Gagan sir",
+          "url": "https://selectionwaylive.hranker.com/561/68f2e75acadb3e241f9939c4/playlist-mpl-vod.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-special-vod-v-345",
+          "label": "[Number System] Class -12 –– Number System – Gagan sir",
+          "url": "https://selectionwaylive.hranker.com/561/68ff951bbed68c50dde07441/playlist-mpl-vod.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-special-vod-v-347",
+          "label": "[Number System] Class -13 –– Number System – Gagan sir",
+          "url": "https://selectionwaylive.hranker.com/561/6900dd895085387730e0231c/playlist-mpl-vod.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-special-vod-v-349",
+          "label": "[Number System] Class -14 –– Number System – Gagan sir",
+          "url": "https://selectionwaylive.hranker.com/561/6902291df48d1caffd7ae5c5/playlist-mpl-vod.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-special-vod-v-351",
+          "label": "[Number System] Class -15 –– Number System – Gagan sir",
+          "url": "https://selectionwaylive.hranker.com/561/690371caf48d1caffd134684/playlist-mpl-vod.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-special-vod-v-353",
+          "label": "[Number System] Class -16 –– Number System – Gagan sir",
+          "url": "https://selectionwaylive.hranker.com/561/6907549a6aeca24e9318d8d6/playlist-mpl-vod.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-special-vod-v-355",
+          "label": "[Number System] Class -17 –– Number System – Gagan sir",
+          "url": "https://selectionwaylive.hranker.com/561/6909927b6aeca24e93e86fb8/playlist-mpl-vod.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-special-vod-v-357",
+          "label": "[Number System] Class -18 –– Number System – Gagan sir",
+          "url": "https://selectionwaylive.hranker.com/561/690b77cf563adc39b9ae8cc9/playlist-mpl-vod.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-special-vod-v-359",
+          "label": "[Number System] Class -19 –– Number System – Gagan sir",
+          "url": "https://selectionwaylive.hranker.com/561/690ce0716aeca24e93727190/playlist-mpl-vod.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-special-vod-v-361",
+          "label": "[Number System] Class -20 –– Number System – Gagan sir",
+          "url": "https://selectionwaylive.hranker.com/561/690eea2f6aeca24e933c184f/playlist-mpl-vod.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-special-vod-v-363",
+          "label": "[Number System] Class -21 –– Number System – Gagan sir",
+          "url": "https://selectionwaylive.hranker.com/561/6911478b932c0deb70248815/playlist-mpl-vod.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-special-vod-v-365",
+          "label": "[Calculation and Simplification] Class -01  –– Calculation and Simplification – Gagan sir",
+          "url": "https://selectionwayrecordedmp4.hranker.com/561/6912d529932c0deb70be72fc/hls/master.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-special-vod-v-367",
+          "label": "[Calculation and Simplification] Class -02  –– Calculation and Simplification – Gagan sir",
+          "url": "https://selectionwaylive.hranker.com/561/691339a2932c0deb70b2641c/playlist-mpl-vod.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-special-vod-v-369",
+          "label": "[Calculation and Simplification] Class -03  –– Calculation and Simplification – Gagan sir",
+          "url": "https://selectionwaylive.hranker.com/561/6914a37080d6461558e84c5b/playlist-mpl-vod.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-special-vod-v-371",
+          "label": "[Calculation and Simplification] Class -04  –– Calculation and Simplification – Gagan sir",
+          "url": "https://selectionwaylive.hranker.com/561/691a0d12932c0deb70f1c2c3/playlist-mpl-vod.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-special-vod-v-373",
+          "label": "[Calculation and Simplification] Class -05  –– Calculation and Simplification – Gagan sir",
+          "url": "https://selectionwaylive.hranker.com/561/691b433b39642e91889fb7ed/playlist-mpl-vod.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-special-vod-v-375",
+          "label": "[Calculation and Simplification] Class -06  –– Calculation and Simplification – Gagan sir",
+          "url": "https://selectionwaylive.hranker.com/561/691c8e7239642e9188a11ab7/playlist-mpl-vod.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-special-vod-v-377",
+          "label": "[Calculation and Simplification] Class -07  –– Calculation and Simplification – Gagan sir",
+          "url": "https://selectionwaylive.hranker.com/561/691df26a39642e9188a2d146/playlist-mpl-vod.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-special-vod-v-379",
+          "label": "[Calculation and Simplification] Class -08  –– Calculation and Simplification – Gagan sir",
+          "url": "https://selectionwaylive.hranker.com/561/691f48d739642e9188a44674/playlist-mpl-vod.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-special-vod-v-381",
+          "label": "[Calculation and Simplification] Class -09  –– Calculation and Simplification – Gagan sir",
+          "url": "https://selectionwaylive.hranker.com/561/69219fd6dd258fd32398d51a/playlist-mpl-vod.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-special-vod-v-383",
+          "label": "[Calculation and Simplification] Class -10  –– Calculation and Simplification – Gagan sir",
+          "url": "https://selectionwaylive.hranker.com/561/69260081dd258fd323fe6f95/playlist-mpl-vod.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-special-vod-v-385",
+          "label": "[Calculation and Simplification] Class -11  –– Calculation and Simplification – Gagan sir",
+          "url": "https://selectionwaylive.hranker.com/561/69273407dd258fd323fa54d7/playlist-mpl-vod.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-special-vod-v-387",
+          "label": "[Calculation and Simplification] Class -12  –– Calculation and Simplification – Gagan sir",
+          "url": "https://selectionwaylive.hranker.com/561/6928311edd258fd323beb3b1/playlist-mpl-vod.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-special-vod-v-389",
+          "label": "[Surds and Indices By Gagan sir] Class - 01 –– Surds and Indices By Gagan sir",
+          "url": "https://selectionwaylive.hranker.com/561/692c91a0dd258fd323ff134d/playlist-mpl-vod.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-special-vod-v-391",
+          "label": "[Surds and Indices By Gagan sir] Class - 02 –– Surds and Indices By Gagan sir",
+          "url": "https://selectionwaylive.hranker.com/561/692d806edd258fd323303ab7/playlist-mpl-vod.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-special-vod-v-393",
+          "label": "[Surds and Indices By Gagan sir] Class - 03 –– Surds and Indices By Gagan sir",
+          "url": "https://selectionwaylive.hranker.com/561/692eb31bdd258fd3239453ab/playlist-mpl-vod.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-special-vod-v-395",
+          "label": "[Surds and Indices By Gagan sir] Class - 04 –– Surds and Indices By Gagan sir",
+          "url": "https://selectionwaylive.hranker.com/561/69301151dd258fd323433108/playlist-mpl-vod.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-special-vod-v-397",
+          "label": "[Surds and Indices By Gagan sir] Class - 05 –– Surds and Indices By Gagan sir",
+          "url": "https://selectionwaylive.hranker.com/561/69314cdedd258fd323fc8522/playlist-mpl-vod.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-special-vod-v-399",
+          "label": "[Surds and Indices By Gagan sir] Class - 06 –– Surds and Indices By Gagan sir",
+          "url": "https://selectionwaylive.hranker.com/561/69340034dd258fd32364d2bf/playlist-mpl-vod.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-special-vod-v-401",
+          "label": "[Surds and Indices By Gagan sir] Class - 07 –– Surds and Indices By Gagan sir",
+          "url": "https://selectionwayrecordedmp4.hranker.com/561/6936df1f6385517afa826069/hls/master.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-special-vod-v-403",
+          "label": "[Surds and Indices By Gagan sir] Class - 08 –– Surds and Indices By Gagan sir",
+          "url": "https://selectionwaylive.hranker.com/561/6937eb926385517afa5894ad/playlist-mpl-vod.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-special-vod-v-405",
+          "label": "[Surds and Indices By Gagan sir] Class - 09 –– Surds and Indices By Gagan sir",
+          "url": "https://selectionwaylive.hranker.com/561/69393b716385517afaf33949/playlist-mpl-vod.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-special-vod-v-407",
+          "label": "[Surds and Indices By Gagan sir] Class - 10 –– Surds and Indices By Gagan sir",
+          "url": "https://selectionwaylive.hranker.com/561/693aad2d6385517afaa506be/playlist-mpl-vod.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-special-vod-v-409",
+          "label": "[LCM and HCF By Gagan sir] Class - 01 –– LCM and HCF By Gagan sir",
+          "url": "https://selectionwaylive.hranker.com/561/693d347c6385517afaa0852e/playlist-mpl-vod.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-special-vod-v-411",
+          "label": "[] Class - 01 ––– LCM and HCF By Gagan sir",
+          "url": "https://www.youtube.com/watch?v=U4rQeaMLvLk&feature=youtu.be",
+          "type": "youtube"
+        },
+        {
+          "id": "maths-special-vod-v-413",
+          "label": "[LCM and HCF By Gagan sir] Class - 02 –– LCM and HCF By Gagan sir",
+          "url": "https://selectionwaylive.hranker.com/561/693ff04e6385517afabb26bc/playlist-mpl-vod.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-special-vod-v-415",
+          "label": "[LCM and HCF By Gagan sir] Class - 03 –– LCM and HCF By Gagan sir",
+          "url": "https://selectionwaylive.hranker.com/561/694122f96385517afa145cd3/playlist-mpl-vod.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-special-vod-v-417",
+          "label": "[LCM and HCF By Gagan sir] Class - 04 –– LCM and HCF By Gagan sir",
+          "url": "https://selectionwaylive.hranker.com/561/694284006385517afabe2fc9/playlist-mpl-vod.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-special-vod-v-419",
+          "label": "[LCM and HCF By Gagan sir] Class - 05 –– LCM and HCF By Gagan sir",
+          "url": "https://selectionwaylive.hranker.com/561/69466779df16ce646391de3c/playlist-mpl-vod.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-special-vod-v-421",
+          "label": "[LCM and HCF By Gagan sir] Class - 06 –– LCM and HCF By Gagan sir",
+          "url": "https://selectionwaylive.hranker.com/561/694a9189b38db8674bc22cb1/playlist-mpl-vod.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-special-vod-v-423",
+          "label": "[LCM and HCF By Gagan sir] Class - 07 –– LCM and HCF By Gagan sir",
+          "url": "https://selectionwaylive.hranker.com/561/694bc5282feca20f817f3ffc/playlist-mpl-vod.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-special-vod-v-425",
+          "label": "[LCM and HCF By Gagan sir] Class - 08 –– LCM and HCF By Gagan sir",
+          "url": "https://selectionwaylive.hranker.com/561/694d0825b54cadeb61a82f45/playlist-mpl-vod.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-special-vod-v-427",
+          "label": "DI_1",
+          "url": "https://selectionwayrecordedmp4.hranker.com/561/692d7a2282b8be59a912b2cc/hls/master.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-special-vod-v-428",
+          "label": "DI_2",
+          "url": "https://selectionwayrecordedmp4.hranker.com/561/69269fd88cc6268d62317a97/hls/master.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-special-vod-v-429",
+          "label": "Probability_Class_1",
+          "url": "https://selectionwayrecordedmp4.hranker.com/561/694ece9cc511cd0e9095f079/hls/master.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-special-vod-v-430",
+          "label": "Probability_Class_2",
+          "url": "https://selectionwayrecordedmp4.hranker.com/561/694ece9cc511cd0e9095f07a/hls/master.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-special-vod-v-431",
+          "label": "Probability_Class_3",
+          "url": "https://selectionwayrecordedmp4.hranker.com/561/694ece9cc511cd0e9095f07b/hls/master.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-special-vod-v-432",
+          "label": "Statistics_Class_1",
+          "url": "https://selectionwayrecordedmp4.hranker.com/561/6925d3af84eb4986e7a2386e/hls/master.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-special-vod-v-433",
+          "label": "Statistics_Class_2",
+          "url": "https://selectionwayrecordedmp4.hranker.com/561/6925d3af84eb4986e7a2386f/hls/master.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-special-vod-v-434",
+          "label": "Statistics_Class_3",
+          "url": "https://selectionwayrecordedmp4.hranker.com/561/6925d3af84eb4986e7a23870/hls/master.m3u8",
+          "type": "hls"
+        }
+      ]
+    },
+    {
+      "id": "pdfs",
+      "label": "📄 PDFs",
+      "items": [
+        {
+          "id": "maths-special-vod-p-324",
+          "label": "[Number System] Class-01 –– Number System – Gagan sir",
+          "url": "https://selectionwayserver.hranker.com/pdfs/files/1760480325844-1759813735845-Number_System_Class-1___Board_pdf__.pdf",
+          "type": "pdf"
+        },
+        {
+          "id": "maths-special-vod-p-326",
+          "label": "[Number System] Class-02 –– Number System – Gagan sir",
+          "url": "https://selectionwayserver.hranker.com/pdfs/files/1760480038092-1759826889367-NUMBER_SYSTEM_CLASS_-2_BOARD__PDF_.pdf",
+          "type": "pdf"
+        },
+        {
+          "id": "maths-special-vod-p-328",
+          "label": "[Number System] Class-03 –– Number System – Gagan sir",
+          "url": "https://selectionwayserver.hranker.com/pdfs/files/1760479373162-1760010540863-Number_System_Class_3_bord_pdf_(1).pdf",
+          "type": "pdf"
+        },
+        {
+          "id": "maths-special-vod-p-330",
+          "label": "[Number System] Class-04 –– Number System – Gagan sir",
+          "url": "https://selectionwayserver.hranker.com/pdfs/files/1760479134660-1760010607951-Number_system_class-4_board_pdf_compress.pdf",
+          "type": "pdf"
+        },
+        {
+          "id": "maths-special-vod-p-332",
+          "label": "[Number System] Class -05 –– Number System – Gagan sir",
+          "url": "https://selectionwayserver.hranker.com/pdfs/files/1760478811472-1760088755536-Number_System_class-5_Board.pdf",
+          "type": "pdf"
+        },
+        {
+          "id": "maths-special-vod-p-334",
+          "label": "[Number System] Class -06 –– Number System – Gagan sir",
+          "url": "https://selectionwayserver.hranker.com/pdfs/files/1760478426685-1760347162583-Number_system_class_-6_Board.pdf",
+          "type": "pdf"
+        },
+        {
+          "id": "maths-special-vod-p-336",
+          "label": "[Number System] Class -07 –– Number System – Gagan sir",
+          "url": "https://selectionwayserver.hranker.com/pdfs/files/1760477859560-1760433853480-Number_System_Class-7_Board.pdf",
+          "type": "pdf"
+        },
+        {
+          "id": "maths-special-vod-p-338",
+          "label": "[Number System] Class -08 –– Number System – Gagan sir",
+          "url": "https://selectionwayserver.hranker.com/pdfs/files/1760528552883-number_System_class_-8_compressed__1_.pdf",
+          "type": "pdf"
+        },
+        {
+          "id": "maths-special-vod-p-340",
+          "label": "[Number System] Class -09 –– Number System – Gagan sir",
+          "url": "https://selectionwayserver.hranker.com/pdfs/files/1760604361882-Number_system__class_-9_compressed.pdf",
+          "type": "pdf"
+        },
+        {
+          "id": "maths-special-vod-p-342",
+          "label": "[Number System] Class -10 –– Number System – Gagan sir",
+          "url": "https://selectionwayserver.hranker.com/pdfs/files/1760789006446-Number_System_Class_-10_BOARD_PDF.pdf",
+          "type": "pdf"
+        },
+        {
+          "id": "maths-special-vod-p-344",
+          "label": "[Number System] Class -11 –– Number System – Gagan sir",
+          "url": "https://selectionwayserver.hranker.com/pdfs/files/1761563938617-number_system_class11_board__REDUCEpdf.pdf",
+          "type": "pdf"
+        },
+        {
+          "id": "maths-special-vod-p-346",
+          "label": "[Number System] Class -12 –– Number System – Gagan sir",
+          "url": "https://selectionwayserver.hranker.com/pdfs/files/1761652274871-number_system_class_12_pdf.pdf",
+          "type": "pdf"
+        },
+        {
+          "id": "maths-special-vod-p-348",
+          "label": "[Number System] Class -13 –– Number System – Gagan sir",
+          "url": "https://selectionwayserver.hranker.com/pdfs/files/1761731632503-Number_System_class_13_Board_pdf.pdf",
+          "type": "pdf"
+        },
+        {
+          "id": "maths-special-vod-p-350",
+          "label": "[Number System] Class -14 –– Number System – Gagan sir",
+          "url": "https://selectionwayserver.hranker.com/pdfs/files/1761819154789-Number_System_classs_14_Board_pdf_RE.pdf",
+          "type": "pdf"
+        },
+        {
+          "id": "maths-special-vod-p-352",
+          "label": "[Number System] Class -15 –– Number System – Gagan sir",
+          "url": "https://selectionwayserver.hranker.com/pdfs/files/1761903091879-Number_SyStem_Class_15_board_pdf.pdf",
+          "type": "pdf"
+        },
+        {
+          "id": "maths-special-vod-p-354",
+          "label": "[Number System] Class -16 –– Number System – Gagan sir",
+          "url": "https://selectionwayserver.hranker.com/pdfs/files/1762168013806-Number_system_class_16_board_pdf.pdf",
+          "type": "pdf"
+        },
+        {
+          "id": "maths-special-vod-p-356",
+          "label": "[Number System] Class -17 –– Number System – Gagan sir",
+          "url": "https://selectionwayserver.hranker.com/pdfs/files/1762340256041-class_17_number_system.pdf",
+          "type": "pdf"
+        },
+        {
+          "id": "maths-special-vod-p-358",
+          "label": "[Number System] Class -18 –– Number System – Gagan sir",
+          "url": "https://selectionwayserver.hranker.com/pdfs/files/1762428963206-Number_system_class_18_board_pdf_RE.pdf",
+          "type": "pdf"
+        },
+        {
+          "id": "maths-special-vod-p-360",
+          "label": "[Number System] Class -19 –– Number System – Gagan sir",
+          "url": "https://selectionwayserver.hranker.com/pdfs/files/1762508197845-Number_System_Class-19_Board_pdf.pdf",
+          "type": "pdf"
+        },
+        {
+          "id": "maths-special-vod-p-362",
+          "label": "[Number System] Class -20 –– Number System – Gagan sir",
+          "url": "https://selectionwayserver.hranker.com/pdfs/files/1762594386791-Number_System_Class_-20_board_pdf.pdf",
+          "type": "pdf"
+        },
+        {
+          "id": "maths-special-vod-p-364",
+          "label": "[Number System] Class -21 –– Number System – Gagan sir",
+          "url": "https://selectionwayserver.hranker.com/pdfs/files/number system class 21.pdf",
+          "type": "pdf"
+        },
+        {
+          "id": "maths-special-vod-p-366",
+          "label": "[Calculation and Simplification] Class -01  –– Calculation and Simplification – Gagan sir",
+          "url": "https://selectionwayserver.hranker.com/pdfs/files/calculation 1.pdf",
+          "type": "pdf"
+        },
+        {
+          "id": "maths-special-vod-p-368",
+          "label": "[Calculation and Simplification] Class -02  –– Calculation and Simplification – Gagan sir",
+          "url": "https://selectionwayserver.hranker.com/pdfs/files/calculation and simplification class 2 pdf.pdf",
+          "type": "pdf"
+        },
+        {
+          "id": "maths-special-vod-p-370",
+          "label": "[Calculation and Simplification] Class -03  –– Calculation and Simplification – Gagan sir",
+          "url": "https://selectionwayserver.hranker.com/pdfs/files/SIMPLIFICATION CLASS 03 BOARD PDF.pdf",
+          "type": "pdf"
+        },
+        {
+          "id": "maths-special-vod-p-372",
+          "label": "[Calculation and Simplification] Class -04  –– Calculation and Simplification – Gagan sir",
+          "url": "https://selectionwayserver.hranker.com/pdfs/files/SIMPLIFICATION CLASS 4 PDF.pdf",
+          "type": "pdf"
+        },
+        {
+          "id": "maths-special-vod-p-374",
+          "label": "[Calculation and Simplification] Class -05  –– Calculation and Simplification – Gagan sir",
+          "url": "https://selectionwayserver.hranker.com/pdfs/files/Simplification Class 5 Board pdf.pdf",
+          "type": "pdf"
+        },
+        {
+          "id": "maths-special-vod-p-376",
+          "label": "[Calculation and Simplification] Class -06  –– Calculation and Simplification – Gagan sir",
+          "url": "https://selectionwayserver.hranker.com/pdfs/files/simplification class 6 board pdf.pdf",
+          "type": "pdf"
+        },
+        {
+          "id": "maths-special-vod-p-378",
+          "label": "[Calculation and Simplification] Class -07  –– Calculation and Simplification – Gagan sir",
+          "url": "https://selectionwayserver.hranker.com/pdfs/files/simplification class 7 board pdf.pdf",
+          "type": "pdf"
+        },
+        {
+          "id": "maths-special-vod-p-380",
+          "label": "[Calculation and Simplification] Class -08  –– Calculation and Simplification – Gagan sir",
+          "url": "https://selectionwayserver.hranker.com/pdfs/files/simplification class 8 board pdf.pdf",
+          "type": "pdf"
+        },
+        {
+          "id": "maths-special-vod-p-382",
+          "label": "[Calculation and Simplification] Class -09  –– Calculation and Simplification – Gagan sir",
+          "url": "https://selectionwayserver.hranker.com/pdfs/files/simplification class 9 pdf.pdf",
+          "type": "pdf"
+        },
+        {
+          "id": "maths-special-vod-p-384",
+          "label": "[Calculation and Simplification] Class -10  –– Calculation and Simplification – Gagan sir",
+          "url": "https://selectionwayserver.hranker.com/pdfs/files/simplification class 10 board pdf.pdf",
+          "type": "pdf"
+        },
+        {
+          "id": "maths-special-vod-p-386",
+          "label": "[Calculation and Simplification] Class -11  –– Calculation and Simplification – Gagan sir",
+          "url": "https://selectionwayserver.hranker.com/pdfs/files/simplification class 11 board pdf.pdf",
+          "type": "pdf"
+        },
+        {
+          "id": "maths-special-vod-p-388",
+          "label": "[Calculation and Simplification] Class -12  –– Calculation and Simplification – Gagan sir",
+          "url": "https://selectionwayserver.hranker.com/pdfs/files/simplification class 12 board pdf new.pdf",
+          "type": "pdf"
+        },
+        {
+          "id": "maths-special-vod-p-390",
+          "label": "[Surds and Indices By Gagan sir] Class - 01 –– Surds and Indices By Gagan sir",
+          "url": "https://selectionwayserver.hranker.com/pdfs/files/surds class 1 board pdf.pdf",
+          "type": "pdf"
+        },
+        {
+          "id": "maths-special-vod-p-392",
+          "label": "[Surds and Indices By Gagan sir] Class - 02 –– Surds and Indices By Gagan sir",
+          "url": "https://selectionwayserver.hranker.com/pdfs/files/surds class 2.pdf",
+          "type": "pdf"
+        },
+        {
+          "id": "maths-special-vod-p-394",
+          "label": "[Surds and Indices By Gagan sir] Class - 03 –– Surds and Indices By Gagan sir",
+          "url": "https://selectionwayserver.hranker.com/pdfs/files/surds class 3 board pdf.pdf",
+          "type": "pdf"
+        },
+        {
+          "id": "maths-special-vod-p-396",
+          "label": "[Surds and Indices By Gagan sir] Class - 04 –– Surds and Indices By Gagan sir",
+          "url": "https://selectionwayserver.hranker.com/pdfs/files/surds class 4 board pdf.pdf",
+          "type": "pdf"
+        },
+        {
+          "id": "maths-special-vod-p-398",
+          "label": "[Surds and Indices By Gagan sir] Class - 05 –– Surds and Indices By Gagan sir",
+          "url": "https://selectionwayserver.hranker.com/pdfs/files/surds class 5 board pdf.pdf",
+          "type": "pdf"
+        },
+        {
+          "id": "maths-special-vod-p-400",
+          "label": "[Surds and Indices By Gagan sir] Class - 06 –– Surds and Indices By Gagan sir",
+          "url": "https://selectionwayserver.hranker.com/pdfs/files/surds and indices class 06 board pdf.pdf",
+          "type": "pdf"
+        },
+        {
+          "id": "maths-special-vod-p-402",
+          "label": "[Surds and Indices By Gagan sir] Class - 07 –– Surds and Indices By Gagan sir",
+          "url": "https://selectionwayserver.hranker.com/pdfs/files/surds class 7 board pdf.pdf",
+          "type": "pdf"
+        },
+        {
+          "id": "maths-special-vod-p-404",
+          "label": "[Surds and Indices By Gagan sir] Class - 08 –– Surds and Indices By Gagan sir",
+          "url": "https://selectionwayserver.hranker.com/pdfs/files/SURDS CLASS 8 BOARD PDF.pdf",
+          "type": "pdf"
+        },
+        {
+          "id": "maths-special-vod-p-406",
+          "label": "[Surds and Indices By Gagan sir] Class - 09 –– Surds and Indices By Gagan sir",
+          "url": "https://selectionwayserver.hranker.com/pdfs/files/surds class 9 board pdf.pdf",
+          "type": "pdf"
+        },
+        {
+          "id": "maths-special-vod-p-408",
+          "label": "[Surds and Indices By Gagan sir] Class - 10 –– Surds and Indices By Gagan sir",
+          "url": "https://selectionwayserver.hranker.com/pdfs/files/surds class 10.pdf",
+          "type": "pdf"
+        },
+        {
+          "id": "maths-special-vod-p-410",
+          "label": "[LCM and HCF By Gagan sir] Class - 01 –– LCM and HCF By Gagan sir",
+          "url": "https://selectionwayserver.hranker.com/pdfs/files/LCM and HCF Class  01.pdf",
+          "type": "pdf"
+        },
+        {
+          "id": "maths-special-vod-p-414",
+          "label": "[LCM and HCF By Gagan sir] Class - 02 –– LCM and HCF By Gagan sir",
+          "url": "https://selectionwayserver.hranker.com/pdfs/files/lcm hcf class 2 board pdf.pdf",
+          "type": "pdf"
+        },
+        {
+          "id": "maths-special-vod-p-416",
+          "label": "[LCM and HCF By Gagan sir] Class - 03 –– LCM and HCF By Gagan sir",
+          "url": "https://selectionwayserver.hranker.com/pdfs/files/class 3 lcm hcf.pdf",
+          "type": "pdf"
+        },
+        {
+          "id": "maths-special-vod-p-418",
+          "label": "[LCM and HCF By Gagan sir] Class - 04 –– LCM and HCF By Gagan sir",
+          "url": "https://selectionwayserver.hranker.com/pdfs/files/lcm hcf class 4.pdf",
+          "type": "pdf"
+        },
+        {
+          "id": "maths-special-vod-p-420",
+          "label": "[LCM and HCF By Gagan sir] Class - 05 –– LCM and HCF By Gagan sir",
+          "url": "https://selectionwayserver.hranker.com/pdfs/files/class 5 lcm hcf pdf.pdf",
+          "type": "pdf"
+        },
+        {
+          "id": "maths-special-vod-p-422",
+          "label": "[LCM and HCF By Gagan sir] Class - 06 –– LCM and HCF By Gagan sir",
+          "url": "https://selectionwayserver.hranker.com/pdfs/files/class 6 lcm hcf.pdf",
+          "type": "pdf"
+        },
+        {
+          "id": "maths-special-vod-p-424",
+          "label": "[LCM and HCF By Gagan sir] Class - 07 –– LCM and HCF By Gagan sir",
+          "url": "https://selectionwayserver.hranker.com/pdfs/files/class 7 lcm hcf board pdf.pdf",
+          "type": "pdf"
+        },
+        {
+          "id": "maths-special-vod-p-426",
+          "label": "[LCM and HCF By Gagan sir] Class - 08 –– LCM and HCF By Gagan sir",
+          "url": "https://selectionwayserver.hranker.com/pdfs/files/class 8 lcm hcf .pdf",
+          "type": "pdf"
+        }
+      ]
+    }
+  ],
+  "category": "government"
+}

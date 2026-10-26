@@ -1,0 +1,2225 @@
+{
+  "id": "eng-practice-31",
+  "name": "English Practice 31",
+  "subname": "Practice Batch 31 • Gopal Verma Sir",
+  "teacher": "Gopal Verma Sir",
+  "subject": "English",
+  "thumb": "/thumbnails/subjects/english_practice_31.svg",
+  "tabs": [
+    {
+      "id": "videos",
+      "label": "▶ Videos",
+      "items": [
+        {
+          "id": "eng-practice-31-turbo-v-1",
+          "label": "[Intro] Eng Practice (Turbo Batch) – Introduction – By Gopal Verma Sir – Careerwill App",
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/vod_non_drm_hls/migration/Fn29cMpXCK8/Fn29cMpXCK8.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "eng-practice-31-turbo-v-2",
+          "label": "[English Practice] Class -01 – Introduction",
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6371632162112/6371632162112.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "eng-practice-31-turbo-v-3",
+          "label": "[English Practice] Announcement",
+          "url": "https://www.youtube.com/embed/U72mvX97wnk",
+          "type": "youtube"
+        },
+        {
+          "id": "eng-practice-31-turbo-v-4",
+          "label": "[English Practice] Class -02 – Identification of Parts of Speech",
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6371741035112/6371741035112.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "eng-practice-31-turbo-v-5",
+          "label": "[English Practice] Class -03 – Identification of Parts of Speech",
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6371776933112/6371776933112.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "eng-practice-31-turbo-v-6",
+          "label": "[English Practice] Class -04 – Identification of Parts of Speech",
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6371817337112/6371817337112.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "eng-practice-31-turbo-v-7",
+          "label": "[English Practice] Class -05 – Identification of Parts of Speech",
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6371860327112/6371860327112.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "eng-practice-31-turbo-v-8",
+          "label": "[English Practice] Class -06 – Identification of Parts of Speech",
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6371912085112/6371912085112.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "eng-practice-31-turbo-v-9",
+          "label": "[English Practice] Class -07 – Identification of Parts of Speech",
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6372015474112/6372015474112.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "eng-practice-31-turbo-v-10",
+          "label": "[English Practice] Class -08 – Para Jumble",
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6372050372112/6372050372112.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "eng-practice-31-turbo-v-11",
+          "label": "[English Practice] Class -09 – Para Jumble",
+          "url": "https://www.youtube.com/embed/Bjrn6tLm9Dk",
+          "type": "youtube"
+        },
+        {
+          "id": "eng-practice-31-turbo-v-12",
+          "label": "[English Practice] Class -10 – Para Jumble",
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6372151171112/6372151171112.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "eng-practice-31-turbo-v-13",
+          "label": "[English Practice] Class -11 – Reading Comprehension",
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6372203110112/6372203110112.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "eng-practice-31-turbo-v-14",
+          "label": "[English Practice] Class -12 – Reading Comprehension",
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6372355603112/6372355603112.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "eng-practice-31-turbo-v-15",
+          "label": "[English Practice] Class -13 – Reading Comprehension",
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6372398509112/6372398509112.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "eng-practice-31-turbo-v-16",
+          "label": "[English Practice] Class -14 – Reading Comprehension",
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6372451135112/6372451135112.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "eng-practice-31-turbo-v-17",
+          "label": "[English Practice] Class -15 – Reading Comprehension",
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6372503188112/6372503188112.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "eng-practice-31-turbo-v-18",
+          "label": "[English Practice] Class -16 – Reading Comprehension",
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6372556982112/6372556982112.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "eng-practice-31-turbo-v-19",
+          "label": "[English Practice] Class -17 – Reading Comprehension",
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6372612890112/6372612890112.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "eng-practice-31-turbo-v-20",
+          "label": "[English Practice] Class -18 – Tense amd Time Practice",
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6372687483112/6372687483112.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "eng-practice-31-turbo-v-21",
+          "label": "[English Practice] Announcement",
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6372727610112/6372727610112.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "eng-practice-31-turbo-v-22",
+          "label": "[English Practice] Class -19 – Tense amd Time Practice",
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6372778884112/6372778884112.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "eng-practice-31-turbo-v-23",
+          "label": "[English Practice] Class -20 – Tense amd Time Practice",
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6372826982112/6372826982112.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "eng-practice-31-turbo-v-24",
+          "label": "[English Practice] Class -21 – Tense amd Time Practice",
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6372883097112/6372883097112.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "eng-practice-31-turbo-v-25",
+          "label": "[English Practice] Class -22 – Tense amd Time Clauses Practice",
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6372954022112/6372954022112.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "eng-practice-31-turbo-v-26",
+          "label": "[English Practice] Class -23 – Tense amd Time Clauses Practice",
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6373041713112/6373041713112.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "eng-practice-31-turbo-v-27",
+          "label": "[English Practice] Class -24 – Question Tags Practice",
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6373095092112/6373095092112.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "eng-practice-31-turbo-v-28",
+          "label": "[English Practice] Class -25 – Question Tags Practice",
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6373154072112/6373154072112.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "eng-practice-31-turbo-v-29",
+          "label": "[English Practice] Class -26 – Voice Practice",
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6373210458112/6373210458112.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "eng-practice-31-turbo-v-30",
+          "label": "[English Practice] Class -27 – Voice Practice",
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6373226403112/6373226403112.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "eng-practice-31-turbo-v-31",
+          "label": "[English Practice] Class-28 – Narration Practice",
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6373421116112/6373421116112.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "eng-practice-31-turbo-v-32",
+          "label": "[English Practice] Class-29 – Narration Practice",
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6373419922112/6373419922112.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "eng-practice-31-turbo-v-33",
+          "label": "[English Practice] Class-30 – Narration Practice",
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6373493091112/6373493091112.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "eng-practice-31-turbo-v-34",
+          "label": "[English Practice] Class-31 – Narration Practice",
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6373526717112/6373526717112.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "eng-practice-31-turbo-v-35",
+          "label": "[English Practice] Class-32 – Verb Basic + Modal Auxiliary + Verb Advance Practice",
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6373567978112/6373567978112.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "eng-practice-31-turbo-v-36",
+          "label": "[English Practice] Class-33 – Verb Basic + Modal Auxiliary + Verb Advance Practice",
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6373605989112/6373605989112.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "eng-practice-31-turbo-v-37",
+          "label": "[English Practice] Class-34 – Verb Basic + Modal Auxiliary + Verb Advance Practice",
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6373649804112/6373649804112.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "eng-practice-31-turbo-v-38",
+          "label": "[English Practice] Class-35 – Verb Basic + Modal Auxiliary + Verb Advance Practice",
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6373688311112/6373688311112.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "eng-practice-31-turbo-v-39",
+          "label": "[English Practice] Class-36 – Verb Basic + Modal Auxiliary + Verb Advance Practice",
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6373782022112/6373782022112.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "eng-practice-31-turbo-v-40",
+          "label": "[English Practice] Class-37 – Verb Basic + Modal Auxiliary + Verb Advance Practice",
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6373823522112/6373823522112.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "eng-practice-31-turbo-v-41",
+          "label": "[English Practice] Class-38 – Verb Basic + Modal Auxiliary + Verb Advance Practice",
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6373863134112/6373863134112.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "eng-practice-31-turbo-v-42",
+          "label": "[English Practice] Class-39 – Preposition",
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6373901205112/6373901205112.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "eng-practice-31-turbo-v-43",
+          "label": "[English Practice] Class-40 – Preposition",
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6373947090112/6373947090112.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "eng-practice-31-turbo-v-44",
+          "label": "[English Practice] Class-41 – Preposition",
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6374051169112/6374051169112.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "eng-practice-31-turbo-v-45",
+          "label": "[English Practice] Class-42 – Preposition",
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6374087247112/6374087247112.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "eng-practice-31-turbo-v-46",
+          "label": "[English Practice] Class-43 – Preposition",
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6374128164112/6374128164112.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "eng-practice-31-turbo-v-47",
+          "label": "[English Practice] Class-44 – Preposition",
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6374179881112/6374179881112.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "eng-practice-31-turbo-v-48",
+          "label": "[English Practice] Class-45 – Conjunction",
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6374236257112/6374236257112.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "eng-practice-31-turbo-v-49",
+          "label": "[English Practice] Class-46 – Conjunction",
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6374352336112/6374352336112.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "eng-practice-31-turbo-v-50",
+          "label": "[English Practice] Class-47 – Conjunction",
+          "url": "https://www.youtube.com/embed/nEo1wI5XJrY",
+          "type": "youtube"
+        },
+        {
+          "id": "eng-practice-31-turbo-v-51",
+          "label": "[English Practice] Class-48 – Conjunction",
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6374523608112/6374523608112.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "eng-practice-31-turbo-v-52",
+          "label": "[English Practice] Class-49 – Conjunction",
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6374573841112/6374573841112.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "eng-practice-31-turbo-v-53",
+          "label": "[English Practice] Class-50 – Article",
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6374616373112/6374616373112.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "eng-practice-31-turbo-v-54",
+          "label": "[English Practice] Class-51 – Article",
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6374661729112/6374661729112.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "eng-practice-31-turbo-v-55",
+          "label": "[English Practice] Class-52 – Article",
+          "url": "https://www.youtube.com/embed/RK23feXq4jY",
+          "type": "youtube"
+        },
+        {
+          "id": "eng-practice-31-turbo-v-56",
+          "label": "[English Practice] Class-53 – Article",
+          "url": "https://www.youtube.com/embed/vbsZxHyOrO8",
+          "type": "youtube"
+        },
+        {
+          "id": "eng-practice-31-turbo-v-57",
+          "label": "[English Practice] Class-54 – Article",
+          "url": "https://www.youtube.com/embed/DuyrInxlV80",
+          "type": "youtube"
+        },
+        {
+          "id": "eng-practice-31-turbo-v-58",
+          "label": "[English Practice] Class-55 – Subject Verb Agreement",
+          "url": "https://www.youtube.com/embed/vVmnvjA7FfU",
+          "type": "youtube"
+        },
+        {
+          "id": "eng-practice-31-turbo-v-59",
+          "label": "[English Practice] Class-56 – Subject Verb Agreement",
+          "url": "https://www.youtube.com/embed/Gxh6_blBiPw",
+          "type": "youtube"
+        },
+        {
+          "id": "eng-practice-31-turbo-v-60",
+          "label": "[English Practice] Class-57 – Subject Verb Agreement",
+          "url": "https://www.youtube.com/embed/0zqfP4-B97E",
+          "type": "youtube"
+        },
+        {
+          "id": "eng-practice-31-turbo-v-61",
+          "label": "[English Practice] Class-58 – Subject Verb Agreement",
+          "url": "https://www.youtube.com/embed/GW1qJhBKxjg",
+          "type": "youtube"
+        },
+        {
+          "id": "eng-practice-31-turbo-v-62",
+          "label": "[English Practice] Class-59 – Subject Verb Agreement",
+          "url": "https://www.youtube.com/embed/nC9vFxxQyH8",
+          "type": "youtube"
+        },
+        {
+          "id": "eng-practice-31-turbo-v-63",
+          "label": "[English Practice] Class-60 – Adverb -1",
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/channel_vod_non_drm_hls/4475720/175188662451757140453/175188662451757140453_7140453.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "eng-practice-31-turbo-v-64",
+          "label": "[English Practice] Class-61 – Adverb -2",
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/channel_vod_non_drm_hls/4476668/175197241840376618747/175197241840376618747_6618747.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "eng-practice-31-turbo-v-65",
+          "label": "[English Practice] Class-62 – Adverb -3",
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/channel_vod_non_drm_hls/4477754/175205798275239762013/175205798275239762013_9762013.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "eng-practice-31-turbo-v-66",
+          "label": "[English Practice] Class-63 – Adjective",
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/channel_vod_non_drm_hls/4478878/175214538939913590984/175214538939913590984_3590984.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "eng-practice-31-turbo-v-67",
+          "label": "[English Practice] Class-64 – Adjective",
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/channel_vod_non_drm_hls/4479897/175223145173138969043/175223145173138969043_8969043.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "eng-practice-31-turbo-v-68",
+          "label": "[English Practice] Class-65 – Adjective",
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/channel_vod_non_drm_hls/4480673/175231698811457316486/175231698811457316486_7316486.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "eng-practice-31-turbo-v-69",
+          "label": "[English Practice] Class-66 – Adjective",
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/channel_vod_non_drm_hls/4481687/175249094329328939759/175249094329328939759_8939759.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "eng-practice-31-turbo-v-70",
+          "label": "[English Practice] Class-67 – Noun",
+          "url": "https://d28xni9778hofl.cloudfront.net/out/v1/2d2b7ac6f6b5464c858f6a6ba8240a5a/index.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "eng-practice-31-turbo-v-71",
+          "label": "[English Practice] Class-68 – Noun",
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/channel_vod_non_drm_hls/4487779/175309564736399906065/175309564736399906065_9906065.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "eng-practice-31-turbo-v-72",
+          "label": "[English Practice] Class-69 – Noun",
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/channel_vod_non_drm_hls/4489458/175318101179388291192/175318101179388291192_8291192.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "eng-practice-31-turbo-v-73",
+          "label": "[English Practice] Class-70 – Pronoun",
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/channel_vod_non_drm_hls/4491000/175326841299145607949/175326841299145607949_5607949.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "eng-practice-31-turbo-v-74",
+          "label": "[English Practice] Class-71 – Pronoun",
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/vod_non_drm_ios/4492583/1753355157_6747172992234056/1753354911130_416047797069905800_video_VOD.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "eng-practice-31-turbo-v-75",
+          "label": "[English Practice] Class-72 – Pronoun",
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/channel_vod_non_drm_hls/4493611/175344043887221590324/175344043887221590324_1590324.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "eng-practice-31-turbo-v-76",
+          "label": "[English Practice] Class-73 – Pronoun",
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/channel_vod_non_drm_hls/4501387/175370008075198969043/175370008075198969043_8969043.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "eng-practice-31-turbo-v-77",
+          "label": "[English Practice] Class-74 – Last Class",
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/channel_vod_non_drm_hls/4502445/175376650029548969043/175376650029548969043_8969043.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "eng-practice-31-turbo-v-78",
+          "label": "[Daily Shots] Best Approach To Solve PQRS",
+          "url": "https://www.youtube.com/embed/meW2nI_G7b8",
+          "type": "youtube"
+        },
+        {
+          "id": "eng-practice-31-turbo-v-79",
+          "label": "[Daily Shots] Best Tips to Solve Cloze Test",
+          "url": "https://www.youtube.com/embed/ytA5Z3t7vZ0",
+          "type": "youtube"
+        },
+        {
+          "id": "eng-practice-31-turbo-v-80",
+          "label": "[Daily Shots] Reading Comprehension Theory and Details",
+          "url": "https://www.youtube.com/embed/suABPyV3n-M",
+          "type": "youtube"
+        },
+        {
+          "id": "eng-practice-31-turbo-v-81",
+          "label": "[Daily Shots] Comp- CT, Rc & Parajumble -01",
+          "url": "https://www.youtube.com/embed/eGYgNGGsq4A",
+          "type": "youtube"
+        },
+        {
+          "id": "eng-practice-31-turbo-v-82",
+          "label": "[Daily Shots] Comp- CT, Rc & Parajumble -02",
+          "url": "https://www.youtube.com/embed/vjdPIDafZpE",
+          "type": "youtube"
+        },
+        {
+          "id": "eng-practice-31-turbo-v-83",
+          "label": "[Daily Shots] Comp- CT, Rc & Parajumble -03",
+          "url": "https://www.youtube.com/embed/TRcUyiOdVhg",
+          "type": "youtube"
+        },
+        {
+          "id": "eng-practice-31-turbo-v-84",
+          "label": "[Daily Shots] Comp- CT, Rc & Parajumble -04",
+          "url": "https://www.youtube.com/embed/R330TX9yulc",
+          "type": "youtube"
+        },
+        {
+          "id": "eng-practice-31-turbo-v-85",
+          "label": "[Daily Shots] Comp- CT, Rc & Parajumble -05",
+          "url": "https://www.youtube.com/embed/Upkox-CaA1U",
+          "type": "youtube"
+        },
+        {
+          "id": "eng-practice-31-turbo-v-86",
+          "label": "[Daily Shots] Comp- CT, Rc & Parajumble -06",
+          "url": "https://www.youtube.com/embed/9zuMsoV-pJk",
+          "type": "youtube"
+        },
+        {
+          "id": "eng-practice-31-turbo-v-87",
+          "label": "[Daily Shots] Comp- CT, Rc & Parajumble -07",
+          "url": "https://www.youtube.com/embed/2sbSJNBjCxM",
+          "type": "youtube"
+        },
+        {
+          "id": "eng-practice-31-turbo-v-88",
+          "label": "[Daily Shots] Comp- CT, Rc & Parajumble -08",
+          "url": "https://www.youtube.com/embed/NYgFIAc6q_Y",
+          "type": "youtube"
+        },
+        {
+          "id": "eng-practice-31-turbo-v-89",
+          "label": "[Daily Shots] Comp- CT, Rc & Parajumble -09",
+          "url": "https://www.youtube.com/embed/1kEVMK3pUxE",
+          "type": "youtube"
+        },
+        {
+          "id": "eng-practice-31-turbo-v-90",
+          "label": "[Daily Shots] Comp- CT, Rc & Parajumble -10",
+          "url": "https://www.youtube.com/embed/ED0DjnQXZOw",
+          "type": "youtube"
+        },
+        {
+          "id": "eng-practice-31-turbo-v-91",
+          "label": "[Daily Shots] Comp- CT, Rc & Parajumble -11",
+          "url": "https://www.youtube.com/embed/FpUsveVRlDo",
+          "type": "youtube"
+        },
+        {
+          "id": "eng-practice-31-turbo-v-92",
+          "label": "[Daily Shots] Comp- CT, Rc & Parajumble -12",
+          "url": "https://www.youtube.com/embed/S-dP0b5iMmo",
+          "type": "youtube"
+        },
+        {
+          "id": "eng-practice-31-turbo-v-93",
+          "label": "[Daily Shots] Comp- CT, Rc & Parajumble -13",
+          "url": "https://www.youtube.com/embed/W9buQWZDDco",
+          "type": "youtube"
+        },
+        {
+          "id": "eng-practice-31-turbo-v-94",
+          "label": "[Daily Shots] Comp- CT, Rc & Parajumble -14",
+          "url": "https://www.youtube.com/embed/Y5SCxHGHmds",
+          "type": "youtube"
+        },
+        {
+          "id": "eng-practice-31-turbo-v-95",
+          "label": "[Daily Shots] Comp- CT, Rc & Parajumble -15",
+          "url": "https://www.youtube.com/embed/VELGDlTUlOg",
+          "type": "youtube"
+        },
+        {
+          "id": "eng-practice-31-turbo-v-96",
+          "label": "[Daily Shots] Comp- CT, Rc & Parajumble -16",
+          "url": "https://www.youtube.com/embed/uspuKUd0-1I",
+          "type": "youtube"
+        },
+        {
+          "id": "eng-practice-31-turbo-v-97",
+          "label": "[Daily Shots] Comp- CT, Rc & Parajumble -17",
+          "url": "https://www.youtube.com/embed/SY_Wqnl78jc",
+          "type": "youtube"
+        },
+        {
+          "id": "eng-practice-31-turbo-v-98",
+          "label": "[Daily Shots] Comp- CT, Rc & Parajumble -18",
+          "url": "https://www.youtube.com/embed/wxnU7KDwEqU",
+          "type": "youtube"
+        },
+        {
+          "id": "eng-practice-31-turbo-v-99",
+          "label": "[Daily Shots] Comp- CT, Rc & Parajumble -19",
+          "url": "https://www.youtube.com/embed/mr9D_aL9iyM",
+          "type": "youtube"
+        },
+        {
+          "id": "eng-practice-31-turbo-v-100",
+          "label": "[Daily Shots] Comp- CT, Rc & Parajumble -20",
+          "url": "https://www.youtube.com/embed/KGP66naDdRw",
+          "type": "youtube"
+        },
+        {
+          "id": "eng-practice-31-turbo-v-101",
+          "label": "[Daily Shots] Comp- CT, Rc & Parajumble -21",
+          "url": "https://www.youtube.com/embed/XCN3BzNRDg0",
+          "type": "youtube"
+        },
+        {
+          "id": "eng-practice-31-turbo-v-102",
+          "label": "[Daily Shots] Comp- CT, Rc & Parajumble -22",
+          "url": "https://www.youtube.com/embed/2WDDp4KJmC0",
+          "type": "youtube"
+        },
+        {
+          "id": "eng-practice-31-turbo-v-103",
+          "label": "[Daily Shots] Comp- CT, Rc & Parajumble -23",
+          "url": "https://www.youtube.com/embed/v0CUKAKKOso",
+          "type": "youtube"
+        },
+        {
+          "id": "eng-practice-31-turbo-v-104",
+          "label": "[Daily Shots] Comp- CT, Rc & Parajumble -24",
+          "url": "https://www.youtube.com/embed/fLwt-YQMVCs",
+          "type": "youtube"
+        },
+        {
+          "id": "eng-practice-31-turbo-v-105",
+          "label": "[Daily Shots] Comp- CT, Rc & Parajumble -25",
+          "url": "https://www.youtube.com/embed/Afjtr2gZbBs",
+          "type": "youtube"
+        },
+        {
+          "id": "eng-practice-31-turbo-v-106",
+          "label": "[Daily Shots] Comp- CT, Rc & Parajumble -26",
+          "url": "https://www.youtube.com/embed/V8tON2zEnaA",
+          "type": "youtube"
+        },
+        {
+          "id": "eng-practice-31-turbo-v-107",
+          "label": "[Daily Shots] Comp- CT, Rc & Parajumble -27",
+          "url": "https://www.youtube.com/embed/JqWxe-Nr5tA",
+          "type": "youtube"
+        },
+        {
+          "id": "eng-practice-31-turbo-v-108",
+          "label": "[Daily Shots] Comp- CT, Rc & Parajumble -28",
+          "url": "https://www.youtube.com/embed/GeHpVigDvaw",
+          "type": "youtube"
+        },
+        {
+          "id": "eng-practice-31-turbo-v-109",
+          "label": "[Daily Shots] Comp- CT, Rc & Parajumble -29",
+          "url": "https://www.youtube.com/embed/vfViK7bUTyI",
+          "type": "youtube"
+        },
+        {
+          "id": "eng-practice-31-turbo-v-110",
+          "label": "[Daily Shots] Comp- CT, Rc & Parajumble -30",
+          "url": "https://www.youtube.com/embed/S9PRxPto7XY",
+          "type": "youtube"
+        },
+        {
+          "id": "eng-practice-31-turbo-v-111",
+          "label": "[Daily Shots] Comp- CT, Rc & Parajumble -31",
+          "url": "https://www.youtube.com/embed/NjMeen_Ud6c",
+          "type": "youtube"
+        },
+        {
+          "id": "eng-practice-31-turbo-v-112",
+          "label": "[Daily Shots] Comp- CT, Rc & Parajumble -32",
+          "url": "https://www.youtube.com/embed/w7gTRstDF60",
+          "type": "youtube"
+        },
+        {
+          "id": "eng-practice-31-turbo-v-113",
+          "label": "[Daily Shots] Comp- CT, Rc & Parajumble -33",
+          "url": "https://www.youtube.com/embed/znKCluak_ms",
+          "type": "youtube"
+        },
+        {
+          "id": "eng-practice-31-turbo-v-114",
+          "label": "[Daily Shots] Comp- CT, Rc & Parajumble -34",
+          "url": "https://www.youtube.com/embed/mPV5PDQioIk",
+          "type": "youtube"
+        },
+        {
+          "id": "eng-practice-31-turbo-v-115",
+          "label": "[Daily Shots] Comp- CT, Rc & Parajumble -35",
+          "url": "https://www.youtube.com/embed/Fy_HA-vT3-k",
+          "type": "youtube"
+        },
+        {
+          "id": "eng-practice-31-turbo-v-116",
+          "label": "[Daily Shots] Comp- CT, Rc & Parajumble -36",
+          "url": "https://www.youtube.com/embed/flGOLGLpnEY",
+          "type": "youtube"
+        },
+        {
+          "id": "eng-practice-31-turbo-v-117",
+          "label": "[Daily Shots] Comp- CT, Rc & Parajumble -37",
+          "url": "https://www.youtube.com/embed/SU9Kx6pa6eE",
+          "type": "youtube"
+        },
+        {
+          "id": "eng-practice-31-turbo-v-118",
+          "label": "[Daily Shots] Comp- CT, Rc & Parajumble -38",
+          "url": "https://www.youtube.com/embed/IiIKc5Iu5Bo",
+          "type": "youtube"
+        },
+        {
+          "id": "eng-practice-31-turbo-v-119",
+          "label": "[Daily Shots (Vocab Wits)] Daily Shot (Vocab Wits) - 01",
+          "url": "https://www.youtube.com/embed/1dGIuirL20U",
+          "type": "youtube"
+        },
+        {
+          "id": "eng-practice-31-turbo-v-120",
+          "label": "[Daily Shots (Vocab Wits)] Daily Shot (Vocab Wits) - 02",
+          "url": "https://www.youtube.com/embed/cHspFehPbH8",
+          "type": "youtube"
+        },
+        {
+          "id": "eng-practice-31-turbo-v-121",
+          "label": "[Daily Shots (Vocab Wits)] Daily Shot (Vocab Wits) - 03",
+          "url": "https://www.youtube.com/embed/4yfaj6OeuEI",
+          "type": "youtube"
+        },
+        {
+          "id": "eng-practice-31-turbo-v-122",
+          "label": "[Daily Shots (Vocab Wits)] Daily Shot (Vocab Wits) - 04",
+          "url": "https://www.youtube.com/embed/Blr55Oky09Y",
+          "type": "youtube"
+        },
+        {
+          "id": "eng-practice-31-turbo-v-123",
+          "label": "[Daily Shots (Vocab Wits)] Daily Shot (Vocab Wits) - 05",
+          "url": "https://www.youtube.com/embed/tg7pWA5rP3M",
+          "type": "youtube"
+        },
+        {
+          "id": "eng-practice-31-turbo-v-124",
+          "label": "[Daily Shots (Vocab Wits)] Daily Shot (Vocab Wits) - 06",
+          "url": "https://www.youtube.com/embed/ed6NGFZOzsY",
+          "type": "youtube"
+        },
+        {
+          "id": "eng-practice-31-turbo-v-125",
+          "label": "[Daily Shots (Vocab Wits)] Daily Shot (Vocab Wits) - 07",
+          "url": "https://www.youtube.com/embed/9_pQ-lqAh3Y",
+          "type": "youtube"
+        },
+        {
+          "id": "eng-practice-31-turbo-v-126",
+          "label": "[Daily Shots (Vocab Wits)] Daily Shot (Vocab Wits) - 08",
+          "url": "https://www.youtube.com/embed/_oYuHe4US-8",
+          "type": "youtube"
+        },
+        {
+          "id": "eng-practice-31-turbo-v-127",
+          "label": "[Daily Shots (Vocab Wits)] Daily Shot (Vocab Wits) - 09",
+          "url": "https://www.youtube.com/embed/HJktgMJlN_k",
+          "type": "youtube"
+        },
+        {
+          "id": "eng-practice-31-turbo-v-128",
+          "label": "[Daily Shots (Vocab Wits)] Daily Shot (Vocab Wits) - 10",
+          "url": "https://www.youtube.com/embed/zI-eyQ-RSYA",
+          "type": "youtube"
+        },
+        {
+          "id": "eng-practice-31-turbo-v-129",
+          "label": "[Daily Shots (Vocab Wits)] Daily Shot (Vocab Wits) - 11",
+          "url": "https://www.youtube.com/embed/zsSebxuG3y8",
+          "type": "youtube"
+        },
+        {
+          "id": "eng-practice-31-turbo-v-130",
+          "label": "[Daily Shots (Vocab Wits)] Daily Shot (Vocab Wits) - OWS - 01",
+          "url": "https://www.youtube.com/embed/xI8qOmb5ZEg",
+          "type": "youtube"
+        },
+        {
+          "id": "eng-practice-31-turbo-v-131",
+          "label": "[Daily Shots (Vocab Wits)] Daily Shot (Vocab Wits) - OWS - 02",
+          "url": "https://www.youtube.com/embed/MaWDuVM-YbQ",
+          "type": "youtube"
+        },
+        {
+          "id": "eng-practice-31-turbo-v-132",
+          "label": "[Daily Shots (Vocab Wits)] Daily Shot (Vocab Wits) - OWS - 03",
+          "url": "https://www.youtube.com/embed/SlH6-YDY434",
+          "type": "youtube"
+        },
+        {
+          "id": "eng-practice-31-turbo-v-133",
+          "label": "[Daily Shots (Vocab Wits)] Daily Shot (Vocab Wits) - OWS - 04",
+          "url": "https://www.youtube.com/embed/LuOF_J_9isc",
+          "type": "youtube"
+        },
+        {
+          "id": "eng-practice-31-turbo-v-134",
+          "label": "[Daily Shots (Vocab Wits)] Daily Shot (Vocab Wits) - OWS - 05",
+          "url": "https://www.youtube.com/embed/OQZqndOM7PM",
+          "type": "youtube"
+        },
+        {
+          "id": "eng-practice-31-turbo-v-135",
+          "label": "[Daily Shots (Vocab Wits)] Daily Shot (Vocab Wits) - OWS - 06",
+          "url": "https://www.youtube.com/embed/1SYZkuaWu5Q",
+          "type": "youtube"
+        },
+        {
+          "id": "eng-practice-31-turbo-v-136",
+          "label": "[Daily Shots (Vocab Wits)] Daily Shot (Vocab Wits) - OWS - 07",
+          "url": "https://www.youtube.com/embed/fbsLeFXfTPY",
+          "type": "youtube"
+        },
+        {
+          "id": "eng-practice-31-turbo-v-137",
+          "label": "[Daily Shots (Vocab Wits)] Daily Shot (Vocab Wits) - OWS - 08",
+          "url": "https://www.youtube.com/embed/byKo2Eyy2bs",
+          "type": "youtube"
+        },
+        {
+          "id": "eng-practice-31-turbo-v-138",
+          "label": "[Daily Shots (Vocab Wits)] Daily Shot (Vocab Wits) - OWS - 09",
+          "url": "https://www.youtube.com/embed/iHv_uRbMkak",
+          "type": "youtube"
+        },
+        {
+          "id": "eng-practice-31-turbo-v-139",
+          "label": "[Daily Shots (Vocab Wits)] Announcement",
+          "url": "https://www.youtube.com/embed/jrDVdBGRKjY",
+          "type": "youtube"
+        },
+        {
+          "id": "eng-practice-31-turbo-v-140",
+          "label": "[Daily Shots (Vocab Wits)] Announcement",
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6373427196112/6373427196112.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "eng-practice-31-turbo-v-141",
+          "label": "[The Vocab Wits Batch] Root Words Day 1",
+          "url": "https://www.youtube.com/embed/_9V74R-t7ow",
+          "type": "youtube"
+        },
+        {
+          "id": "eng-practice-31-turbo-v-142",
+          "label": "[The Vocab Wits Batch] Root Words Day 2",
+          "url": "https://www.youtube.com/embed/c3tfkLeZkWE",
+          "type": "youtube"
+        },
+        {
+          "id": "eng-practice-31-turbo-v-143",
+          "label": "[The Vocab Wits Batch] Root Words Day 3",
+          "url": "https://www.youtube.com/embed/c83yvUNq4Q0",
+          "type": "youtube"
+        },
+        {
+          "id": "eng-practice-31-turbo-v-144",
+          "label": "[The Vocab Wits Batch] Root Words Day 4",
+          "url": "https://www.youtube.com/embed/zDb6dzvzhks",
+          "type": "youtube"
+        },
+        {
+          "id": "eng-practice-31-turbo-v-145",
+          "label": "[The Vocab Wits Batch] Root Words Day 5",
+          "url": "https://www.youtube.com/embed/RK366aEGeqA",
+          "type": "youtube"
+        },
+        {
+          "id": "eng-practice-31-turbo-v-146",
+          "label": "[The Vocab Wits Batch] Root Words Day 6",
+          "url": "https://www.youtube.com/embed/R9aFlhwGsXE",
+          "type": "youtube"
+        },
+        {
+          "id": "eng-practice-31-turbo-v-147",
+          "label": "[The Vocab Wits Batch] Root Words Day 7",
+          "url": "https://www.youtube.com/embed/IlzSlyt7QLE",
+          "type": "youtube"
+        },
+        {
+          "id": "eng-practice-31-turbo-v-148",
+          "label": "[The Vocab Wits Batch] Root Words Day 8",
+          "url": "https://www.youtube.com/embed/bVhZc7WHqM0",
+          "type": "youtube"
+        },
+        {
+          "id": "eng-practice-31-turbo-v-149",
+          "label": "[The Vocab Wits Batch] Root Words Day 9",
+          "url": "https://www.youtube.com/embed/ikqd39dbrUs",
+          "type": "youtube"
+        },
+        {
+          "id": "eng-practice-31-turbo-v-150",
+          "label": "[The Vocab Wits Batch] Root Words Day 10",
+          "url": "https://www.youtube.com/embed/wnRkQIGag7s",
+          "type": "youtube"
+        },
+        {
+          "id": "eng-practice-31-turbo-v-151",
+          "label": "[The Vocab Wits Batch] Root Words Day 11",
+          "url": "https://www.youtube.com/embed/MOKkrHCRsK0",
+          "type": "youtube"
+        },
+        {
+          "id": "eng-practice-31-turbo-v-152",
+          "label": "[The Vocab Wits Batch] Root Words Day 12",
+          "url": "https://www.youtube.com/embed/7m0WWhEPjoA",
+          "type": "youtube"
+        },
+        {
+          "id": "eng-practice-31-turbo-v-153",
+          "label": "[The Vocab Wits Batch] Root Words Day 13",
+          "url": "https://www.youtube.com/embed/nnx1wtQzQ30",
+          "type": "youtube"
+        },
+        {
+          "id": "eng-practice-31-turbo-v-154",
+          "label": "[The Vocab Wits Batch] Root Words Day 14",
+          "url": "https://www.youtube.com/embed/4LatgVqLldA",
+          "type": "youtube"
+        },
+        {
+          "id": "eng-practice-31-turbo-v-155",
+          "label": "[The Vocab Wits Batch] Root Words Day 15",
+          "url": "https://www.youtube.com/embed/AikVwKp-m6g",
+          "type": "youtube"
+        },
+        {
+          "id": "eng-practice-31-turbo-v-156",
+          "label": "[The Vocab Wits Batch] Root Words Day 16",
+          "url": "https://www.youtube.com/embed/CqnMqF5kbrQ",
+          "type": "youtube"
+        },
+        {
+          "id": "eng-practice-31-turbo-v-157",
+          "label": "[The Vocab Wits Batch] Root Words Day 17",
+          "url": "https://www.youtube.com/embed/HSsIExDJJfw",
+          "type": "youtube"
+        },
+        {
+          "id": "eng-practice-31-turbo-v-158",
+          "label": "[The Vocab Wits Batch] Root Words Day 18",
+          "url": "https://www.youtube.com/embed/LdKuN-JPqAM",
+          "type": "youtube"
+        },
+        {
+          "id": "eng-practice-31-turbo-v-159",
+          "label": "[The Vocab Wits Batch] Root Words Day 19",
+          "url": "https://www.youtube.com/embed/3X5okspUEsc",
+          "type": "youtube"
+        },
+        {
+          "id": "eng-practice-31-turbo-v-160",
+          "label": "[The Vocab Wits Batch] Root Words Day 20",
+          "url": "https://www.youtube.com/embed/eS12_a4lNVc",
+          "type": "youtube"
+        },
+        {
+          "id": "eng-practice-31-turbo-v-161",
+          "label": "[The Vocab Wits Batch] Root Words Day 21",
+          "url": "https://www.youtube.com/embed/rp42TI-ocEM",
+          "type": "youtube"
+        },
+        {
+          "id": "eng-practice-31-turbo-v-162",
+          "label": "[The Vocab Wits Batch] Root Words Day 22",
+          "url": "https://www.youtube.com/embed/g2xlsRFzeng",
+          "type": "youtube"
+        },
+        {
+          "id": "eng-practice-31-turbo-v-163",
+          "label": "[The Vocab Wits Batch] Root Words Day 23",
+          "url": "https://www.youtube.com/embed/fWfcxRjOvZM",
+          "type": "youtube"
+        },
+        {
+          "id": "eng-practice-31-turbo-v-164",
+          "label": "[The Vocab Wits Batch] Root Words Day 24",
+          "url": "https://www.youtube.com/embed/_ui_NYJJeVY",
+          "type": "youtube"
+        },
+        {
+          "id": "eng-practice-31-turbo-v-165",
+          "label": "[The Vocab Wits Batch] Root Words Day 25",
+          "url": "https://www.youtube.com/embed/YiD_eQSfjLw",
+          "type": "youtube"
+        },
+        {
+          "id": "eng-practice-31-turbo-v-166",
+          "label": "[The Vocab Wits Batch] One Word Substitution – SSC English – Day 31",
+          "url": "https://www.youtube.com/embed/vSLYiNYB1dI",
+          "type": "youtube"
+        },
+        {
+          "id": "eng-practice-31-turbo-v-167",
+          "label": "[The Vocab Wits Batch] Top 100 Synonym and Antonym for SSC 2025 Exam – 2025 Marathon – English by Gopal Verma Sir #ssc",
+          "url": "https://www.youtube.com/embed/oMJgFBwBm3o",
+          "type": "youtube"
+        },
+        {
+          "id": "eng-practice-31-turbo-v-168",
+          "label": "[The Vocab Wits Batch] One Word Substitution – SSC English – Day 32",
+          "url": "https://www.youtube.com/embed/VLAF1otJ2jI",
+          "type": "youtube"
+        },
+        {
+          "id": "eng-practice-31-turbo-v-169",
+          "label": "[The Vocab Wits Batch] One Word Substitution – SSC English – Day 33",
+          "url": "https://www.youtube.com/embed/D2LUA2FLQDQ",
+          "type": "youtube"
+        },
+        {
+          "id": "eng-practice-31-turbo-v-170",
+          "label": "[The Vocab Wits Batch] One Word Substitution – SSC English – Day 34",
+          "url": "https://www.youtube.com/embed/PXA5LCXmEps",
+          "type": "youtube"
+        },
+        {
+          "id": "eng-practice-31-turbo-v-171",
+          "label": "[The Vocab Wits Batch] Top 100 Idioms and Phrases for SSC 2025 – SSC English Marathon",
+          "url": "https://www.youtube.com/embed/xCHrLTbjfkA",
+          "type": "youtube"
+        },
+        {
+          "id": "eng-practice-31-turbo-v-172",
+          "label": "[The Vocab Wits Batch] One Word Substitution – SSC English – Day 35",
+          "url": "https://www.youtube.com/embed/paDMc-V3hCg",
+          "type": "youtube"
+        },
+        {
+          "id": "eng-practice-31-turbo-v-173",
+          "label": "[The Vocab Wits Batch] Synonym and Antonym – Day - 36 – The Vocab Wits",
+          "url": "https://www.youtube.com/embed/hdRgetlXjSw",
+          "type": "youtube"
+        },
+        {
+          "id": "eng-practice-31-turbo-v-174",
+          "label": "[The Vocab Wits Batch] Synonym and Antonym – Day - 37 – The Vocab Wits",
+          "url": "https://www.youtube.com/embed/BpSYNpV9PP8",
+          "type": "youtube"
+        },
+        {
+          "id": "eng-practice-31-turbo-v-175",
+          "label": "[The Vocab Wits Batch] Synonym and Antonym – Day - 38",
+          "url": "https://www.youtube.com/embed/vAaPQxSOm2s",
+          "type": "youtube"
+        },
+        {
+          "id": "eng-practice-31-turbo-v-176",
+          "label": "[The Vocab Wits Batch] Synonym and Antonym – Day - 39",
+          "url": "https://www.youtube.com/embed/S8f1a37F3zc",
+          "type": "youtube"
+        },
+        {
+          "id": "eng-practice-31-turbo-v-177",
+          "label": "[The Vocab Wits Batch] Synonym and Antonym – Day - 40",
+          "url": "https://www.youtube.com/embed/SIjdbERuleI",
+          "type": "youtube"
+        },
+        {
+          "id": "eng-practice-31-turbo-v-178",
+          "label": "[The Vocab Wits Batch] SSC English One Shot 🔥 Voice, Narration, Error",
+          "url": "https://www.youtube.com/embed/J3TMEaQRgQs",
+          "type": "youtube"
+        },
+        {
+          "id": "eng-practice-31-turbo-v-179",
+          "label": "[Mock Test] Mock Test - 01",
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/vod_non_drm_ios/4478798/1752142261_4795242256681446/1752141915670_92334851607687740_video_VOD.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "eng-practice-31-turbo-v-180",
+          "label": "[Mock Test] Mock Test - 02",
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/vod_non_drm_ios/4478799/1752142316_4865487326468896/1752141940057_141020023989505280_video_VOD.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "eng-practice-31-turbo-v-181",
+          "label": "[Mock Test] Mock Test - 03",
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/vod_non_drm_ios/4478801/1752142379_5252046069228697/1752141967930_759077312370785900_video_VOD.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "eng-practice-31-turbo-v-182",
+          "label": "[Mock Test] Mock Test - 04",
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/vod_non_drm_ios/4478802/1752142408_5122736209006781/1752141984038_689997817754163800_video_VOD.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "eng-practice-31-turbo-v-183",
+          "label": "[Mock Test] Mock Test - 05",
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/vod_non_drm_ios/4478803/1752142437_4639922758034981/1752142002731_266802658778885220_video_VOD.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "eng-practice-31-turbo-v-185",
+          "label": "[Mock Test] Mock Test - 07",
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/vod_non_drm_ios/4478806/1752142531_7660515413321362/1752142372845_99931514658518800_video_VOD.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "eng-practice-31-turbo-v-186",
+          "label": "[Mock Test] Mock Test - 08",
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/vod_non_drm_ios/4478807/1752142536_2333257602555805/1752142403197_130862477688059700_video_VOD.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "eng-practice-31-turbo-v-187",
+          "label": "[Mock Test] Mock Test - 09",
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/vod_non_drm_ios/4478812/1752142618_1832130519301852/1752142432450_301771116436157900_video_VOD.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "eng-practice-31-turbo-v-188",
+          "label": "[Mock Test] Mock Test - 10",
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/vod_non_drm_ios/4478823/1752142969_2049180194699982/1752142462286_107957650102401630_video_VOD.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "eng-practice-31-turbo-v-189",
+          "label": "[Mock Test] Mock Test - 11",
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/vod_non_drm_ios/4478816/1752142745_4846333346117337/1752142567397_524185722962627840_video_VOD.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "eng-practice-31-turbo-v-190",
+          "label": "[Mock Test] Mock Test - 12",
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/vod_non_drm_ios/4478817/1752142750_8632843141218903/1752142596159_397012084072402750_video_VOD.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "eng-practice-31-turbo-v-191",
+          "label": "[Mock Test] Mock Test - 13",
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/vod_non_drm_ios/4478820/1752142825_4093260318718287/1752142614120_66846239839810880_video_VOD.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "eng-practice-31-turbo-v-192",
+          "label": "[Mock Test] Mock Test - 14",
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/vod_non_drm_ios/4478822/1752142836_6401654537877919/1752142650221_91050952967241980_video_VOD.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "eng-practice-31-turbo-v-193",
+          "label": "[Mock Test] Mock Test - 15",
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/vod_non_drm_ios/4478824/1752142973_9664018250173926/1752142681182_557304421393017400_video_VOD.m3u8",
+          "type": "hls"
+        }
+      ]
+    },
+    {
+      "id": "pdfs",
+      "label": "📄 PDFs",
+      "items": [
+        {
+          "id": "eng-practice-31-turbo-p-194",
+          "label": "[Daily Shots] RC + Cloze Test + PQRS Set - 51 PDF",
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/6825818f07f91_DailyShots51PDF.pdf",
+          "type": "pdf"
+        },
+        {
+          "id": "eng-practice-31-turbo-p-195",
+          "label": "[Daily Shots] RC + Cloze Test + PQRS Set - 50 PDF",
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/68258170d7f2a_DAILYSHOTS50.pdf",
+          "type": "pdf"
+        },
+        {
+          "id": "eng-practice-31-turbo-p-196",
+          "label": "[Daily Shots] RC + Cloze Test + PQRS Set - 49 PDF",
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/68258153b90d6_dailyshot49PDF.pdf",
+          "type": "pdf"
+        },
+        {
+          "id": "eng-practice-31-turbo-p-197",
+          "label": "[Daily Shots] RC + Cloze Test + PQRS Set - 48 PDF",
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/681b1efdcbce3_dailyshot48.pdf",
+          "type": "pdf"
+        },
+        {
+          "id": "eng-practice-31-turbo-p-198",
+          "label": "[Daily Shots] RC + Cloze Test + PQRS Set - 47 PDF",
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/681b1edd6f342_Dailyshots47PNG.pdf",
+          "type": "pdf"
+        },
+        {
+          "id": "eng-practice-31-turbo-p-199",
+          "label": "[Daily Shots] RC + Cloze Test + PQRS Set - 46 PDF",
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/681b1ec3cebc2_Dailyshots46.pdf",
+          "type": "pdf"
+        },
+        {
+          "id": "eng-practice-31-turbo-p-200",
+          "label": "[Daily Shots] RC + Cloze Test + PQRS Set - 45 PDF",
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/680b47e93c55a_Dailyshots45.pdf",
+          "type": "pdf"
+        },
+        {
+          "id": "eng-practice-31-turbo-p-201",
+          "label": "[Daily Shots] RC + Cloze Test + PQRS Set - 44 PDF",
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/680b47cd1d702_Dailyshots44.pdf",
+          "type": "pdf"
+        },
+        {
+          "id": "eng-practice-31-turbo-p-202",
+          "label": "[Daily Shots] RC + Cloze Test + PQRS Set - 43 PDF",
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/680b47a5568f2_Dailyshots43pdf.pdf",
+          "type": "pdf"
+        },
+        {
+          "id": "eng-practice-31-turbo-p-203",
+          "label": "[Daily Shots] RC + Cloze Test + PQRS Set - 42 PDF",
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/6800a206763d5_DAILYSHOTS42.pdf",
+          "type": "pdf"
+        },
+        {
+          "id": "eng-practice-31-turbo-p-204",
+          "label": "[Daily Shots] RC + Cloze Test + PQRS Set - 41 PDF",
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/6800a1e2dbed6_DAILYSHOTS41.pdf",
+          "type": "pdf"
+        },
+        {
+          "id": "eng-practice-31-turbo-p-205",
+          "label": "[Daily Shots] RC + Cloze Test + PQRS Set - 40 PDF",
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/6800a1a3aae9c_DAILYSHOTS40.pdf",
+          "type": "pdf"
+        },
+        {
+          "id": "eng-practice-31-turbo-p-206",
+          "label": "[Daily Shots] RC + Cloze Test + PQRS Set - 39 PDF",
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/67f65cfaaee59_DAILYSHOTS39.pdf",
+          "type": "pdf"
+        },
+        {
+          "id": "eng-practice-31-turbo-p-207",
+          "label": "[Daily Shots] RC + Cloze Test + PQRS Set - 38 PDF",
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/67f65ccdd26b8_DAILYSHOTS38.pdf",
+          "type": "pdf"
+        },
+        {
+          "id": "eng-practice-31-turbo-p-208",
+          "label": "[Daily Shots] RC + Cloze Test + PQRS Set - 37 PDF",
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/67f65cb46c538_DAILYSHOTS37.pdf",
+          "type": "pdf"
+        },
+        {
+          "id": "eng-practice-31-turbo-p-209",
+          "label": "[Daily Shots] RC + Cloze Test + PQRS Set - 36 PDF",
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/67ed25a4814be_DAILYSHOTS36.pdf",
+          "type": "pdf"
+        },
+        {
+          "id": "eng-practice-31-turbo-p-210",
+          "label": "[Daily Shots] RC + Cloze Test + PQRS Set - 35 PDF",
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/67ed2576b9d41_DAILYSHOTS351.pdf",
+          "type": "pdf"
+        },
+        {
+          "id": "eng-practice-31-turbo-p-211",
+          "label": "[Daily Shots] RC + Cloze Test + PQRS Set - 34 PDF",
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/67e77584db593_DAILYSHOTS34.pdf",
+          "type": "pdf"
+        },
+        {
+          "id": "eng-practice-31-turbo-p-212",
+          "label": "[Daily Shots] RC + Cloze Test + PQRS Set - 33 PDF",
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/67e77567c8fd2_DAILYSHOTS33.pdf",
+          "type": "pdf"
+        },
+        {
+          "id": "eng-practice-31-turbo-p-213",
+          "label": "[Daily Shots] RC + Cloze Test + PQRS Set - 32 PDF",
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/67e1401900516_DAILYSHOTS32.pdf",
+          "type": "pdf"
+        },
+        {
+          "id": "eng-practice-31-turbo-p-214",
+          "label": "[Daily Shots] RC + Cloze Test + PQRS Set - 31 PDF",
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/67e13fefb6857_DAILYSHOTS31.pdf",
+          "type": "pdf"
+        },
+        {
+          "id": "eng-practice-31-turbo-p-215",
+          "label": "[Daily Shots] RC + Cloze Test + PQRS Set - 30 PDF",
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/67dbc2d65a47d_DAILYSHOTS30.pdf",
+          "type": "pdf"
+        },
+        {
+          "id": "eng-practice-31-turbo-p-216",
+          "label": "[Daily Shots] RC + Cloze Test + PQRS Set - 29 PDF",
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/67dbc2bb16425_DAILYSHOTS29.pdf",
+          "type": "pdf"
+        },
+        {
+          "id": "eng-practice-31-turbo-p-217",
+          "label": "[Daily Shots] RC + Cloze Test + PQRS Set - 28 PDF",
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/67cc2d9ab72e1_DAILYSHOTS28.pdf",
+          "type": "pdf"
+        },
+        {
+          "id": "eng-practice-31-turbo-p-218",
+          "label": "[Daily Shots] RC + Cloze Test + PQRS Set - 27 PDF",
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/67cc2d79300d5_DAILYSHOTS27.pdf",
+          "type": "pdf"
+        },
+        {
+          "id": "eng-practice-31-turbo-p-219",
+          "label": "[Daily Shots] RC + Cloze Test + PQRS Set - 26 PDF",
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/67c58ef31a87a_DAILYSHOTS26..pdf",
+          "type": "pdf"
+        },
+        {
+          "id": "eng-practice-31-turbo-p-220",
+          "label": "[Daily Shots] RC + Cloze Test + PQRS Set - 25 PDF",
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/67c58d19853c5_DAILYSHOTS25...pdf",
+          "type": "pdf"
+        },
+        {
+          "id": "eng-practice-31-turbo-p-221",
+          "label": "[Daily Shots] RC + Cloze Test + PQRS Set - 24 PDF",
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/67c01cabd667e_DAILYSHOTS24.pdf",
+          "type": "pdf"
+        },
+        {
+          "id": "eng-practice-31-turbo-p-222",
+          "label": "[Daily Shots] RC + Cloze Test + PQRS Set - 23 PDF",
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/67bc73a705966_DAILYSHOTS23.pdf",
+          "type": "pdf"
+        },
+        {
+          "id": "eng-practice-31-turbo-p-223",
+          "label": "[Daily Shots] RC + Cloze Test + PQRS Set - 22 PDF",
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/67b868c67694f_DailyShots_22.pdf",
+          "type": "pdf"
+        },
+        {
+          "id": "eng-practice-31-turbo-p-224",
+          "label": "[Daily Shots] RC + Cloze Test + PQRS Set - 21 PDF",
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/67b5f1c068bac_DailyShots21.pdf",
+          "type": "pdf"
+        },
+        {
+          "id": "eng-practice-31-turbo-p-225",
+          "label": "[Daily Shots] RC + Cloze Test + PQRS Set - 20 PDF",
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/67b31d3db25c6_Daily_Shots_20.pdf",
+          "type": "pdf"
+        },
+        {
+          "id": "eng-practice-31-turbo-p-226",
+          "label": "[Daily Shots] RC + Cloze Test + PQRS Set - 19 PDF",
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/67af451487d55_DailyShots19.pdf",
+          "type": "pdf"
+        },
+        {
+          "id": "eng-practice-31-turbo-p-227",
+          "label": "[Daily Shots] RC + Cloze Test + PQRS Set - 18 PDF",
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/67ac8fba9ab30_DailyShots18.pdf",
+          "type": "pdf"
+        },
+        {
+          "id": "eng-practice-31-turbo-p-228",
+          "label": "[Daily Shots] RC + Cloze Test + PQRS Set - 17 PDF",
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/67aa036684b44_RC_ClozeTestPQRSSet17.pdf",
+          "type": "pdf"
+        },
+        {
+          "id": "eng-practice-31-turbo-p-229",
+          "label": "[Daily Shots] RC + Cloze Test + PQRS Set - 16 PDF",
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/67a5fbccbd827_DailyShots16.pdf",
+          "type": "pdf"
+        },
+        {
+          "id": "eng-practice-31-turbo-p-230",
+          "label": "[Daily Shots] RC + Cloze Test + PQRS Set - 15 PDF",
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/67a369f21662f_DailyShots15.pdf",
+          "type": "pdf"
+        },
+        {
+          "id": "eng-practice-31-turbo-p-231",
+          "label": "[Daily Shots] RC + Cloze Test + PQRS Set - 14 PDF",
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/67976219598f5_DailyShotsSheet14.pdf",
+          "type": "pdf"
+        },
+        {
+          "id": "eng-practice-31-turbo-p-232",
+          "label": "[Daily Shots] RC + Cloze Test + PQRS Set - 13 PDF",
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/67937e9844394_DailyShots13.pdf",
+          "type": "pdf"
+        },
+        {
+          "id": "eng-practice-31-turbo-p-233",
+          "label": "[Daily Shots] RC + Cloze Test + PQRS Set - 12 PDF",
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/6790db62597ee_DailyShots12.pdf",
+          "type": "pdf"
+        },
+        {
+          "id": "eng-practice-31-turbo-p-234",
+          "label": "[Daily Shots] RC + Cloze Test + PQRS Set - 11 PDF",
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/678e279d9b7d5_DailyShotsSheet11.pdf",
+          "type": "pdf"
+        },
+        {
+          "id": "eng-practice-31-turbo-p-235",
+          "label": "[Daily Shots] RC + Cloze Test + PQRS Set - 10 PDF",
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/678a487e70c5a_Daily_Shots_Sheet_10.pdf",
+          "type": "pdf"
+        },
+        {
+          "id": "eng-practice-31-turbo-p-236",
+          "label": "[Daily Shots] RC + Cloze Test + PQRS Set - 09 PDF",
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/678797ce28097_Daily_Shots_Sheet_09.pdf",
+          "type": "pdf"
+        },
+        {
+          "id": "eng-practice-31-turbo-p-237",
+          "label": "[Daily Shots] Comp- CT, Rc & Parajumble -08 PDF",
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/6785205422caf_RC_Cloze_Test_PQRS_Set_8.pdf",
+          "type": "pdf"
+        },
+        {
+          "id": "eng-practice-31-turbo-p-238",
+          "label": "[Daily Shots] Comp- CT, Rc & Parajumble -07 PDF",
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/678520479d1a8_Daily_Shots_Sheet_7.pdf",
+          "type": "pdf"
+        },
+        {
+          "id": "eng-practice-31-turbo-p-239",
+          "label": "[Daily Shots] Comp- CT, Rc & Parajumble -06 PDF",
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/677e66aeaf693_RC_Cloze_Test_PQRS_Set_06.pdf",
+          "type": "pdf"
+        },
+        {
+          "id": "eng-practice-31-turbo-p-240",
+          "label": "[Daily Shots] Comp- CT, Rc & Parajumble -05 PDF",
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/677bc0df6cec0_RCClozeTestPQRSSet05.pdf",
+          "type": "pdf"
+        },
+        {
+          "id": "eng-practice-31-turbo-p-241",
+          "label": "[Daily Shots] Comp- CT, Rc & Parajumble -04 PDF",
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/6777b73095b90_RC_Cloze_Test_PQRS_Set_04.pdf",
+          "type": "pdf"
+        },
+        {
+          "id": "eng-practice-31-turbo-p-242",
+          "label": "[Daily Shots] Comp- CT, Rc & Parajumble -03 PDF",
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/67765a09b1889_RC_Cloze_Test_PQRS_Set_03.pdf",
+          "type": "pdf"
+        },
+        {
+          "id": "eng-practice-31-turbo-p-243",
+          "label": "[Daily Shots] Comp- CT, Rc & Parajumble -02 PDF",
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/677659e14dfdf_RC_Cloze_Test_PQRS_Set_02.pdf",
+          "type": "pdf"
+        },
+        {
+          "id": "eng-practice-31-turbo-p-244",
+          "label": "[Daily Shots] Comp- CT, Rc & Parajumble -01 PDF",
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/677659c8c7344_Rc_Cloze_test_PQRS_Sheet_1.pdf",
+          "type": "pdf"
+        },
+        {
+          "id": "eng-practice-31-turbo-p-245",
+          "label": "[Daily Shots] Comp- CT, Rc & Parajumble -10 PDF",
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/682587cef309b_DailyShotsSheet10.pdf",
+          "type": "pdf"
+        },
+        {
+          "id": "eng-practice-31-turbo-p-246",
+          "label": "[Daily Shots] Comp- CT, Rc & Parajumble -09 PDF",
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/682587b4680cd_DailyShotsSheet09.pdf",
+          "type": "pdf"
+        },
+        {
+          "id": "eng-practice-31-turbo-p-247",
+          "label": "[Daily Shots] Comp- CT, Rc & Parajumble -08 PDF",
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/682587a24a730_RCClozeTestPQRSSet8.pdf",
+          "type": "pdf"
+        },
+        {
+          "id": "eng-practice-31-turbo-p-248",
+          "label": "[Daily Shots] Comp- CT, Rc & Parajumble -07 PDF",
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/68258784141e8_DailyShotsSheet7.pdf",
+          "type": "pdf"
+        },
+        {
+          "id": "eng-practice-31-turbo-p-249",
+          "label": "[Daily Shots] Comp- CT, Rc & Parajumble -06 PDF",
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/68258759124d6_RCClozeTestPQRSSet06.pdf",
+          "type": "pdf"
+        },
+        {
+          "id": "eng-practice-31-turbo-p-250",
+          "label": "[Daily Shots] Comp- CT, Rc & Parajumble -05 PDF",
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/680b9367db438_RCClozeTestPQRSSet05.pdf",
+          "type": "pdf"
+        },
+        {
+          "id": "eng-practice-31-turbo-p-251",
+          "label": "[Daily Shots] Comp- CT, Rc & Parajumble -04 PDF",
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/680b9353d3f18_RCClozeTestPQRSSet04.pdf",
+          "type": "pdf"
+        },
+        {
+          "id": "eng-practice-31-turbo-p-252",
+          "label": "[Daily Shots] Comp- CT, Rc & Parajumble -03 PDF",
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/680b93317e6d4_RCClozeTestPQRSSet03.pdf",
+          "type": "pdf"
+        },
+        {
+          "id": "eng-practice-31-turbo-p-253",
+          "label": "[Daily Shots] Comp- CT, Rc & Parajumble -02 PDF",
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/680b931bd6024_RCClozeTestPQRSSet02.pdf",
+          "type": "pdf"
+        },
+        {
+          "id": "eng-practice-31-turbo-p-254",
+          "label": "[Daily Shots] Comp- CT, Rc & Parajumble -01 PDF",
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/680223f252e88_RcClozetestPQRSSheet1.pdf",
+          "type": "pdf"
+        },
+        {
+          "id": "eng-practice-31-turbo-p-255",
+          "label": "[Daily Shots (Vocab Wits)] Daily Shot (Vocab Wits) - OWS - 09",
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/67b47827c5187_Daily_Shot_Vocab_Wits_OWS_09.pdf",
+          "type": "pdf"
+        },
+        {
+          "id": "eng-practice-31-turbo-p-256",
+          "label": "[Daily Shots (Vocab Wits)] Daily Shot (Vocab Wits) - OWS - 08",
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/67b2d36ab688a_Daily_shots_vocab_wits_OWS_9.pdf",
+          "type": "pdf"
+        },
+        {
+          "id": "eng-practice-31-turbo-p-257",
+          "label": "[Daily Shots (Vocab Wits)] Daily Shot (Vocab Wits) - OWS - 07",
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/67adf49e2a1d9_Daily_shots_vocab_wits_OWS_08.pdf",
+          "type": "pdf"
+        },
+        {
+          "id": "eng-practice-31-turbo-p-258",
+          "label": "[Daily Shots (Vocab Wits)] Daily Shot (Vocab Wits) - OWS - 06",
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/67ab402eedaab_Daily_shots_Vocab_Wits_OWS_07.pdf",
+          "type": "pdf"
+        },
+        {
+          "id": "eng-practice-31-turbo-p-259",
+          "label": "[Daily Shots (Vocab Wits)] Daily Shot (Vocab Wits) - OWS - 05",
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/67a748d7a5997_Daily_shots_vocab_wits_05.pdf",
+          "type": "pdf"
+        },
+        {
+          "id": "eng-practice-31-turbo-p-260",
+          "label": "[Daily Shots (Vocab Wits)] Daily Shot (Vocab Wits) - OWS - 04",
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/67a4a5b634e2f_One_word_substitution_04.pdf",
+          "type": "pdf"
+        },
+        {
+          "id": "eng-practice-31-turbo-p-261",
+          "label": "[Daily Shots (Vocab Wits)] Daily Shot (Vocab Wits) - OWS - 03",
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/67a36b3b018e5_One_word_substitution_03.pdf",
+          "type": "pdf"
+        },
+        {
+          "id": "eng-practice-31-turbo-p-262",
+          "label": "[Daily Shots (Vocab Wits)] Daily Shot (Vocab Wits) - OWS - 02",
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/67964a72f15af_One_word_substitution_02.pdf",
+          "type": "pdf"
+        },
+        {
+          "id": "eng-practice-31-turbo-p-263",
+          "label": "[Daily Shots (Vocab Wits)] Daily Shot (Vocab Wits) - OWS - 01",
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/67922aeb7338e_One_word_substitution_01.pdf",
+          "type": "pdf"
+        },
+        {
+          "id": "eng-practice-31-turbo-p-264",
+          "label": "[Daily Shots (Vocab Wits)] Vocab Wits-11",
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/678f815487553_Daily_Shots_Vocab_Wits_11.pdf",
+          "type": "pdf"
+        },
+        {
+          "id": "eng-practice-31-turbo-p-265",
+          "label": "[Daily Shots (Vocab Wits)] Vocab Wits-10",
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/678b73287c592_Daily_Shots_Vocab_Wits_10.pdf",
+          "type": "pdf"
+        },
+        {
+          "id": "eng-practice-31-turbo-p-266",
+          "label": "[Daily Shots (Vocab Wits)] Vocab Wits-09",
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/678b72e86e896_Daily_Shots_Vocab_Wits_9.pdf",
+          "type": "pdf"
+        },
+        {
+          "id": "eng-practice-31-turbo-p-267",
+          "label": "[Daily Shots (Vocab Wits)] Vocab Wits-06",
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/678b729262f3b_Daily_Shots_Vocab_Wits_6.pdf",
+          "type": "pdf"
+        },
+        {
+          "id": "eng-practice-31-turbo-p-268",
+          "label": "[Daily Shots (Vocab Wits)] Vocab Wits-07",
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/678681736522f_Daily_Shots_Vocab_Wits_7.pdf",
+          "type": "pdf"
+        },
+        {
+          "id": "eng-practice-31-turbo-p-269",
+          "label": "[Daily Shots (Vocab Wits)] Vocab Wits-08",
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/677fc0bb79f16_Daily_Shots_Vocab_Wits_8.pdf",
+          "type": "pdf"
+        },
+        {
+          "id": "eng-practice-31-turbo-p-270",
+          "label": "[Daily Shots (Vocab Wits)] Vocab Wits-05",
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/677d2b4b665f9_Daily_Shots_Vocab_Wits_52.pdf",
+          "type": "pdf"
+        },
+        {
+          "id": "eng-practice-31-turbo-p-271",
+          "label": "[Daily Shots (Vocab Wits)] Vocab Wits-04",
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/6778ffac0d074_Daily_Shots_Vocab_Wits_4_PDF.pdf",
+          "type": "pdf"
+        },
+        {
+          "id": "eng-practice-31-turbo-p-272",
+          "label": "[Daily Shots (Vocab Wits)] Vocab Wits-03",
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/67765913ccd8d_DailyShotsVocabWits3.pdf",
+          "type": "pdf"
+        },
+        {
+          "id": "eng-practice-31-turbo-p-273",
+          "label": "[Daily Shots (Vocab Wits)] Vocab Wits-02",
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/6773d4fd8e0e7_DailyShotsVocabWits2.pdf",
+          "type": "pdf"
+        },
+        {
+          "id": "eng-practice-31-turbo-p-274",
+          "label": "[Daily Shots (Vocab Wits)] Vocab Wits-01",
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/67723e14a3fa8_Daily_Shots_Vocab_Wits_1.pdf",
+          "type": "pdf"
+        },
+        {
+          "id": "eng-practice-31-turbo-p-275",
+          "label": "[Study Planner] Study Plan 2025 Day 30",
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/6858d5912c298_Study_Plan_2025_Day_30.pdf",
+          "type": "pdf"
+        },
+        {
+          "id": "eng-practice-31-turbo-p-276",
+          "label": "[Study Planner] Study Plan 2025 Day 29",
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/68384d74912f9_Study_Plan_2025_Day_29.pdf",
+          "type": "pdf"
+        },
+        {
+          "id": "eng-practice-31-turbo-p-277",
+          "label": "[Study Planner] Study Plan 2025 Day 28",
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/6837db6f7523d_Study_Plan_2025_Day_28.pdf",
+          "type": "pdf"
+        },
+        {
+          "id": "eng-practice-31-turbo-p-278",
+          "label": "[Study Planner] Study Plan 2025 Day 27",
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/682fede583e55_Study_Plan_2025_Day_27.pdf",
+          "type": "pdf"
+        },
+        {
+          "id": "eng-practice-31-turbo-p-279",
+          "label": "[Study Planner] Study Plan 2025 Day 26",
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/682fedbe0da4c_Study_Plan_2025_Day_26.pdf",
+          "type": "pdf"
+        },
+        {
+          "id": "eng-practice-31-turbo-p-280",
+          "label": "[Study Planner] Study Plan 2025 Day 25",
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/682d55437ee05_Study_Plan_2025_Day_25.pdf",
+          "type": "pdf"
+        },
+        {
+          "id": "eng-practice-31-turbo-p-281",
+          "label": "[Study Planner] Study Plan 2025 Day 24",
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/682c052142bb9_Study_Plan_2025_Day_24.pdf",
+          "type": "pdf"
+        },
+        {
+          "id": "eng-practice-31-turbo-p-282",
+          "label": "[Study Planner] Study Plan 2025 Day 23",
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/682c050604c42_Study_Plan_2025_Day_23.pdf",
+          "type": "pdf"
+        },
+        {
+          "id": "eng-practice-31-turbo-p-283",
+          "label": "[Study Planner] Study Plan 2025 Day 22",
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/68274ec04f3e0_Study_Plan_2025_Day_22.pdf",
+          "type": "pdf"
+        },
+        {
+          "id": "eng-practice-31-turbo-p-284",
+          "label": "[Study Planner] Study Plan 2025 Day-21",
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/6826b501407a6_Study_Plan_2025_Day_21.pdf",
+          "type": "pdf"
+        },
+        {
+          "id": "eng-practice-31-turbo-p-285",
+          "label": "[Study Planner] Study Plan 2025 Day-20",
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/68258be45c22f_Study_Plan_2025_Day_20.pdf",
+          "type": "pdf"
+        },
+        {
+          "id": "eng-practice-31-turbo-p-286",
+          "label": "[Study Planner] Study Plan 2025 Day-19",
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/68258ba1acb15_Study_Plan_2025_Day_19.pdf",
+          "type": "pdf"
+        },
+        {
+          "id": "eng-practice-31-turbo-p-287",
+          "label": "[Study Planner] Study Plan 2025 Day-18",
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/6822db3952dc5_Study_Plan_2025_Day_18.pdf",
+          "type": "pdf"
+        },
+        {
+          "id": "eng-practice-31-turbo-p-288",
+          "label": "[Study Planner] Study Plan 2025 Day-17",
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/681f39c3d7e82_Study_Plan_2025_Day_17.pdf",
+          "type": "pdf"
+        },
+        {
+          "id": "eng-practice-31-turbo-p-289",
+          "label": "[Study Planner] Study Plan 2025 Day-16",
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/681ed676aa26f_Study_Plan_2025_Day_16.pdf",
+          "type": "pdf"
+        },
+        {
+          "id": "eng-practice-31-turbo-p-290",
+          "label": "[Study Planner] Study Plan 2025 Day-15",
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/681da25c4fdfa_Study_Plan_2025_Day_15.pdf",
+          "type": "pdf"
+        },
+        {
+          "id": "eng-practice-31-turbo-p-291",
+          "label": "[Study Planner] Study Plan 2025 Day-14",
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/681c29955d173_Study_Plan_2025_Day_14.pdf",
+          "type": "pdf"
+        },
+        {
+          "id": "eng-practice-31-turbo-p-292",
+          "label": "[Study Planner] Study Plan 2025 Day-13",
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/681c2976a070c_Study_Plan_2025_Day_13.pdf",
+          "type": "pdf"
+        },
+        {
+          "id": "eng-practice-31-turbo-p-293",
+          "label": "[Study Planner] Study Plan 2025 Day-12",
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/6818a38acb486_Study_Plan_2025_Day_12.pdf",
+          "type": "pdf"
+        },
+        {
+          "id": "eng-practice-31-turbo-p-294",
+          "label": "[Study Planner] Study Plan 2025 Day-11",
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/6818a36f1bc29_Study_Plan_2025_Day_11.pdf",
+          "type": "pdf"
+        },
+        {
+          "id": "eng-practice-31-turbo-p-295",
+          "label": "[Study Planner] Study Plan 2025 Day-10",
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/6815a69d6c88f_Study_Plan_2025_Day_10.pdf",
+          "type": "pdf"
+        },
+        {
+          "id": "eng-practice-31-turbo-p-296",
+          "label": "[Study Planner] Study Plan Day-9",
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/68145c83cafb2_Study_Plan_Day_9_By_Gopal_Verma_Sir.pdf",
+          "type": "pdf"
+        },
+        {
+          "id": "eng-practice-31-turbo-p-297",
+          "label": "[Study Planner] Study Plan 2025 Day-8",
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/6812f53ec8d55_Study_Plan_2025_Day_8.pdf",
+          "type": "pdf"
+        },
+        {
+          "id": "eng-practice-31-turbo-p-298",
+          "label": "[Study Planner] Study Plan 2025 Day-7",
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/68117a6c46534_Study_Plan_2025_Day_7.pdf",
+          "type": "pdf"
+        },
+        {
+          "id": "eng-practice-31-turbo-p-299",
+          "label": "[Study Planner] Study Plan 2025 day-6",
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/680f746dc0083_Study_Plan_2025_day_6.pdf",
+          "type": "pdf"
+        },
+        {
+          "id": "eng-practice-31-turbo-p-300",
+          "label": "[Study Planner] Study Plan 2025 day-5",
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/680f745a5f5a1_Study_Plan_2025_day_5.pdf",
+          "type": "pdf"
+        },
+        {
+          "id": "eng-practice-31-turbo-p-301",
+          "label": "[Study Planner] Study Plan 2025 day-4",
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/680cc72f05306_Study_Plan_2025_Day_4.pdf",
+          "type": "pdf"
+        },
+        {
+          "id": "eng-practice-31-turbo-p-302",
+          "label": "[Study Planner] Study Plan 2025 day-3",
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/680cc71858aff_Study_Plan_2025_Day_3.pdf",
+          "type": "pdf"
+        },
+        {
+          "id": "eng-practice-31-turbo-p-303",
+          "label": "[Study Planner] Study Plan 2025 day-2",
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/680cc6fa20c53_Study_Plan_2025_day_2.pdf",
+          "type": "pdf"
+        },
+        {
+          "id": "eng-practice-31-turbo-p-304",
+          "label": "[Study Planner] SSC ENGLISH STUDY PLAN PRACTICE BATCH 2025",
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/680cc6df2076c_SSC_ENGLISH_STUDY_PLAN_PRACTICE_BATCH_2025.pdf",
+          "type": "pdf"
+        },
+        {
+          "id": "eng-practice-31-turbo-p-305",
+          "label": "[Study Planner] SSC English Study Plan",
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/6806568fc0301_SSC_ENGLISH_STUDY_PLAN_PRACTICE_BATCH_2025.pdf",
+          "type": "pdf"
+        },
+        {
+          "id": "eng-practice-31-turbo-p-306",
+          "label": "[Practice PDF] Adverb Practice Sheet",
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/686de78dc4fc3_Adverb_Practice_Sheet.pdf",
+          "type": "pdf"
+        },
+        {
+          "id": "eng-practice-31-turbo-p-307",
+          "label": "[Practice PDF] Article Practice Sheet",
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/686de775d1ccc_Article_Practice_Sheet.pdf",
+          "type": "pdf"
+        },
+        {
+          "id": "eng-practice-31-turbo-p-308",
+          "label": "[Practice PDF] Mock Test-15",
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/67ea2b8a5b87d_MOCK_TEST_15.pdf",
+          "type": "pdf"
+        },
+        {
+          "id": "eng-practice-31-turbo-p-309",
+          "label": "[Practice PDF] Mock Test-14",
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/67ea2a68d57b9_MOCKTEST14.pdf",
+          "type": "pdf"
+        },
+        {
+          "id": "eng-practice-31-turbo-p-310",
+          "label": "[Practice PDF] Mock Test-13",
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/67e7b52a1b1e9_MOCKTEST13.pdf",
+          "type": "pdf"
+        },
+        {
+          "id": "eng-practice-31-turbo-p-311",
+          "label": "[Practice PDF] Mock Test-12",
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/67e76de06904e_MOCKTEST12.pdf",
+          "type": "pdf"
+        },
+        {
+          "id": "eng-practice-31-turbo-p-312",
+          "label": "[Practice PDF] Mock Test-11",
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/67e6735c19be3_MOCKTEST11.pdf",
+          "type": "pdf"
+        },
+        {
+          "id": "eng-practice-31-turbo-p-313",
+          "label": "[Practice PDF] MOCK TEST-10",
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/67e61d3f45bbf_MOCK_TEST_10.pdf",
+          "type": "pdf"
+        },
+        {
+          "id": "eng-practice-31-turbo-p-314",
+          "label": "[Practice PDF] MOCK TEST-9",
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/67e562d731f1e_MOCK_TEST_9.pdf",
+          "type": "pdf"
+        },
+        {
+          "id": "eng-practice-31-turbo-p-315",
+          "label": "[Practice PDF] MOCK TEST-8",
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/67e4c9589d323_MOCK_TEST_8.pdf",
+          "type": "pdf"
+        },
+        {
+          "id": "eng-practice-31-turbo-p-316",
+          "label": "[Practice PDF] MOCK TEST-7",
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/67e3e673b75ba_MOCK_TEST_7.pdf",
+          "type": "pdf"
+        },
+        {
+          "id": "eng-practice-31-turbo-p-317",
+          "label": "[Practice PDF] MOCK TEST-6",
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/67e3923955cee_MOCKTEST6.pdf",
+          "type": "pdf"
+        },
+        {
+          "id": "eng-practice-31-turbo-p-318",
+          "label": "[Practice PDF] MOCK TEST-5",
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/67e29079c14f6_MOCK_TEST_5_.pdf",
+          "type": "pdf"
+        },
+        {
+          "id": "eng-practice-31-turbo-p-319",
+          "label": "[Practice PDF] MOCK TEST-4",
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/67e22b201ebc8_MOCKTEST4.pdf",
+          "type": "pdf"
+        },
+        {
+          "id": "eng-practice-31-turbo-p-320",
+          "label": "[Practice PDF] MOCK TEST- 3",
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/67e1610a080d3_MOCKTEST3.pdf",
+          "type": "pdf"
+        },
+        {
+          "id": "eng-practice-31-turbo-p-321",
+          "label": "[Practice PDF] MOCK TEST- 2",
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/67e0ff7336055_MOCKTEST2.pdf",
+          "type": "pdf"
+        },
+        {
+          "id": "eng-practice-31-turbo-p-322",
+          "label": "[Practice PDF] MOCK TEST- 1",
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/67e0dea6bdcf8_MOCK_TEST_1.pdf",
+          "type": "pdf"
+        },
+        {
+          "id": "eng-practice-31-turbo-p-323",
+          "label": "[Practice PDF] Preposition Practice Sheet",
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/684cf251a44dd_PrepositionPracticeSheet.pdf",
+          "type": "pdf"
+        },
+        {
+          "id": "eng-practice-31-turbo-p-324",
+          "label": "[Practice PDF] Superfluous Preposition Sheet",
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/684cf234c664f_Superfluous_Preposition_Verb_Forms.pdf",
+          "type": "pdf"
+        },
+        {
+          "id": "eng-practice-31-turbo-p-325",
+          "label": "[Practice PDF] Conjunction Sheet",
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/684cf20381f9d_ConjunctionPracticeBatch.pdf",
+          "type": "pdf"
+        },
+        {
+          "id": "eng-practice-31-turbo-p-326",
+          "label": "[Practice PDF] Voice Practice Sheet",
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/68315719685b2_VoicePracticeBatch.pdf",
+          "type": "pdf"
+        },
+        {
+          "id": "eng-practice-31-turbo-p-327",
+          "label": "[Practice PDF] Narration Practice Sheet",
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/67dae587f4212_Narration_Practice_Batch.pdf",
+          "type": "pdf"
+        },
+        {
+          "id": "eng-practice-31-turbo-p-328",
+          "label": "[Practice PDF] Voice Practice Sheet",
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/67d271cd00692_Voice_Practice_Batch.pdf",
+          "type": "pdf"
+        },
+        {
+          "id": "eng-practice-31-turbo-p-329",
+          "label": "[Practice PDF] Question Tag Practice Sheet",
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/67cff318b89ce_Question_Tag_Practice_Batch.pdf",
+          "type": "pdf"
+        },
+        {
+          "id": "eng-practice-31-turbo-p-330",
+          "label": "[Practice PDF] Conditional Sentences Practice Sheet",
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/67cb259aafca1_Conditional_Sentences_Practice_Batch.pdf",
+          "type": "pdf"
+        },
+        {
+          "id": "eng-practice-31-turbo-p-331",
+          "label": "[Practice PDF] Time and Tense Practice Sheet",
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/67c14e7af3f5a_Time_and_Tense_Practice_Batch_1.pdf",
+          "type": "pdf"
+        },
+        {
+          "id": "eng-practice-31-turbo-p-332",
+          "label": "[Practice PDF] Subject Verb Agreement Practice Sheet",
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/67b420c868e98_Subject_Verb_Agreement_Practice_Batch.pdf",
+          "type": "pdf"
+        },
+        {
+          "id": "eng-practice-31-turbo-p-333",
+          "label": "[Practice PDF] Top 25 Article Practice Sheet",
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/67b420ab9a2a2_TOP_25_ARTICLE_PRACTICE_BATCH_.pdf",
+          "type": "pdf"
+        },
+        {
+          "id": "eng-practice-31-turbo-p-334",
+          "label": "[Practice PDF] Regular Irregular Verbs",
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/67b2bb06bb948_Regular_Irregular_Verbs_.pdf",
+          "type": "pdf"
+        },
+        {
+          "id": "eng-practice-31-turbo-p-335",
+          "label": "[Practice PDF] Article Practice Sheet",
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/67aaf4edb1f93_Article_Practice_Batch.pdf",
+          "type": "pdf"
+        },
+        {
+          "id": "eng-practice-31-turbo-p-336",
+          "label": "[Practice PDF] Conjunction Practice Sheet",
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/67a44422bfb1c_Conjunction_Practice_Batch.pdf",
+          "type": "pdf"
+        },
+        {
+          "id": "eng-practice-31-turbo-p-337",
+          "label": "[Practice PDF] Phrasal Verbs",
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/67a1b8f05afbe_Phrasal_Verbs.pdf",
+          "type": "pdf"
+        },
+        {
+          "id": "eng-practice-31-turbo-p-338",
+          "label": "[Practice PDF] Preposition Top 25 Practice",
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/679dbf5f77185_Preposition_25_practice...pdf",
+          "type": "pdf"
+        },
+        {
+          "id": "eng-practice-31-turbo-p-339",
+          "label": "[Practice PDF] Preposition Practice Sheet",
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/679dbf08ebaf7_Preposition_Practice_Sheet.pdf",
+          "type": "pdf"
+        },
+        {
+          "id": "eng-practice-31-turbo-p-340",
+          "label": "[Practice PDF] Preposition Practice",
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/679dbee06c5d2_Preposition_Practice_Batch.pdf",
+          "type": "pdf"
+        },
+        {
+          "id": "eng-practice-31-turbo-p-341",
+          "label": "[Practice PDF] Preposition Practice Sheet",
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/6799da2a61e69_Preposition_Practice_Sheet.pdf",
+          "type": "pdf"
+        },
+        {
+          "id": "eng-practice-31-turbo-p-342",
+          "label": "[Practice PDF] Verb Advance Practice Sheet",
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/678df4ad08f7e_Verb_Advance_Practice_Student_Copy.pdf",
+          "type": "pdf"
+        },
+        {
+          "id": "eng-practice-31-turbo-p-343",
+          "label": "[Practice PDF] Modal Auxiliary Practice Sheet",
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/678df48aaf746_Modal_Auxiliary_Student_Copy.pdf",
+          "type": "pdf"
+        },
+        {
+          "id": "eng-practice-31-turbo-p-344",
+          "label": "[Practice PDF] Verb Basic Practice Sheet",
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/678b743c0f622_Verb_basic_Student_Copy.pdf",
+          "type": "pdf"
+        },
+        {
+          "id": "eng-practice-31-turbo-p-345",
+          "label": "[Practice PDF] Top-25 Questions of Adverb",
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/678b7420c6e1e_TOP_25_questions_of_adverb.pdf",
+          "type": "pdf"
+        },
+        {
+          "id": "eng-practice-31-turbo-p-346",
+          "label": "[Practice PDF] Adverb Practice Sheet",
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/67874aabb8f8e_Adverb_Practice_Sheet_Student_Copy_1.pdf",
+          "type": "pdf"
+        },
+        {
+          "id": "eng-practice-31-turbo-p-347",
+          "label": "[Practice PDF] Adjective Practice Sheet",
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/677f937ea69f9_ADJECTIVE_Practice.pdf",
+          "type": "pdf"
+        },
+        {
+          "id": "eng-practice-31-turbo-p-348",
+          "label": "[Practice PDF] Top 25 Adjective Practice",
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/677f87d6cfccf_TOP_25_ADJECTIVE_PRACTICE.pdf",
+          "type": "pdf"
+        },
+        {
+          "id": "eng-practice-31-turbo-p-349",
+          "label": "[Practice PDF] Pronoun Practice Sheet",
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/6778c8d63f909_PRONOUN_Practice_Batch_Student_Copy.pdf",
+          "type": "pdf"
+        },
+        {
+          "id": "eng-practice-31-turbo-p-350",
+          "label": "[Practice PDF] Top 25 Pronoun Question",
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/67767c3b6b42d_TOP_25_PRONOUN_QUESTIONS_Student_Copy.pdf",
+          "type": "pdf"
+        },
+        {
+          "id": "eng-practice-31-turbo-p-351",
+          "label": "[Practice PDF] Top 25 Noun Question",
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/67723717a27f3_TOP_25_NOUN_QUESTIONS_Student_Copy.pdf",
+          "type": "pdf"
+        },
+        {
+          "id": "eng-practice-31-turbo-p-352",
+          "label": "[Practice PDF] Noun Sheet",
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/677236e9c1276_NOUN_Practice_Sheet.pdf",
+          "type": "pdf"
+        },
+        {
+          "id": "eng-practice-31-turbo-p-353",
+          "label": "[Practice PDF] Conditional Sentences Practice Sheet",
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/682c1a9eb47cc_ConditionalSentencesPracticeBatch.pdf",
+          "type": "pdf"
+        },
+        {
+          "id": "eng-practice-31-turbo-p-354",
+          "label": "[Practice PDF] Question Tags Practice PDF",
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/682c1a7aef73a_QuestionTagPracticeBatch.pdf",
+          "type": "pdf"
+        },
+        {
+          "id": "eng-practice-31-turbo-p-355",
+          "label": "[Practice PDF] Time and Tense Practice Sheet",
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/68219e6296f04_TimeandTensePracticeBatch.pdf",
+          "type": "pdf"
+        },
+        {
+          "id": "eng-practice-31-turbo-p-356",
+          "label": "[Practice PDF] Cloze Test Set-03",
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/681edcf79258a_CLOZE_TEST_SET3_NDA_CDS_BY_GOPAL_VERMA_SIR_PRACTICE_BATCH.pdf",
+          "type": "pdf"
+        },
+        {
+          "id": "eng-practice-31-turbo-p-357",
+          "label": "[Practice PDF] Cloze Test Set-02",
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/681d7940a26ac_CLOZE_TEST_Set02_Practice_Batch..pdf",
+          "type": "pdf"
+        },
+        {
+          "id": "eng-practice-31-turbo-p-358",
+          "label": "[Practice PDF] Reading Comprehension Set-3",
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/681c8e89ced9b_Reading_Comprehension_UPSC_NDA_CDS_..pdf",
+          "type": "pdf"
+        },
+        {
+          "id": "eng-practice-31-turbo-p-359",
+          "label": "[Practice PDF] Best Approach To Solve Cloze Test",
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/681c374344e1f_Best_approach_to_solve_CLoze_Test.pdf",
+          "type": "pdf"
+        },
+        {
+          "id": "eng-practice-31-turbo-p-360",
+          "label": "[Practice PDF] Cloze Test Set-01",
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/681c2fbf88698_CLOZE_TEST_Set01_Practice_Batch..pdf",
+          "type": "pdf"
+        },
+        {
+          "id": "eng-practice-31-turbo-p-361",
+          "label": "[Practice PDF] Reading Comprehension Set-2",
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/6819a37a87969_Reading_Comprehension_Set2_Practice_Batch..pdf",
+          "type": "pdf"
+        },
+        {
+          "id": "eng-practice-31-turbo-p-362",
+          "label": "[Practice PDF] Reading Comprehension Set-1",
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/6818552052d9e_Reading_Comprehension_Set1_Practice_Batch.pdf",
+          "type": "pdf"
+        },
+        {
+          "id": "eng-practice-31-turbo-p-363",
+          "label": "[Practice PDF] Para Jumbled Level-3",
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/6813381c41eb3_Para_Jumbled_Level_3._1.pdf",
+          "type": "pdf"
+        },
+        {
+          "id": "eng-practice-31-turbo-p-364",
+          "label": "[Practice PDF] Parajumble Level-2 Practice",
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/68117a4009601_PARA_JUMBLE_Level2_Practice_MCQs.pdf",
+          "type": "pdf"
+        },
+        {
+          "id": "eng-practice-31-turbo-p-365",
+          "label": "[Practice PDF] Parajumbled level-01",
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/68104c4eddf78_PARAJUMBLED_LEVEL1_PRACTICE_QUESTIONS.pdf",
+          "type": "pdf"
+        },
+        {
+          "id": "eng-practice-31-turbo-p-366",
+          "label": "[Practice PDF] Identification of POS",
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/68078b9ba98bc_Identification_of_POS_Practice_Batch.....pdf",
+          "type": "pdf"
+        },
+        {
+          "id": "eng-practice-31-turbo-p-367",
+          "label": "[Practice PDF] Identification of Parts of Speech",
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/6805dc027cef8_Identification_of_parts_of_speech_practice_batch...pdf",
+          "type": "pdf"
+        },
+        {
+          "id": "eng-practice-31-turbo-p-387",
+          "label": "[Daily Shots (Vocab Wits) PDF] Vocab Wits-01",
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/6772375875281_Daily_Shots_Vocab_Wits_1.pdf",
+          "type": "pdf"
+        }
+      ]
+    }
+  ],
+  "category": "government"
+}
