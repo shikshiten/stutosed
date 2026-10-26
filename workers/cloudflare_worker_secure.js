@@ -13,7 +13,6 @@ const ALLOWED_UPSTREAMS = [
   'streamvaultpro.cc',
   'fs1qydv17g1-161-162e5df28a45.herokuapp.com',
   'fs1enchanted-flower-68930222-873172716e82.herokuapp.com',
-  'herokuapp.com',
   'vidmoly.net',
   'vidmoly.me',
   'vidmoly.to',
@@ -46,10 +45,73 @@ const ALLOWED_UPSTREAMS = [
   'crwilladmin.com',
   'selectionway.com',
   'storage.googleapis.com',
-  'edgeone.app',
-  'cloudfront.net',
   'hranker.com',
+  // Exact-host specific subdomains (No wildcards)
+  'files.catbox.moe',
+  'hranker-node.s3.ap-south-1.amazonaws.com',
+  'd14v4v80cpjht7.cloudfront.net',
+  'd28xni9778hofl.cloudfront.net',
+  'd3vlg4qjb80h8n.cloudfront.net',
+  'issmatterpurexvivid.edgeone.app',
+  'vividecotest1.edgeone.app',
+  'vividxacidbaseandsaltseng.edgeone.app',
+  'vividxacidbaseandsaltshin.edgeone.app',
+  'vividxacidbasesandsalts.edgeone.app',
+  'vividxacidbasesandsaltsppt.edgeone.app',
+  'vividxacidbasesandsaltsquiz.edgeone.app',
+  'vividxatom.edgeone.app',
+  'vividxatomenglish.edgeone.app',
+  'vividxatomhindi.edgeone.app',
+  'vividxatomppt.edgeone.app',
+  'vividxatomz.edgeone.app',
+  'vividxbiofulltest.edgeone.app',
+  'vividxchemicaleng.edgeone.app',
+  'vividxchemicalhindi.edgeone.app',
+  'vividxchemicalppt.edgeone.app',
+  'vividxchemicalquiz.edgeone.app',
+  'vividxchemicalreactions.edgeone.app',
+  'vividxchemistrytest.edgeone.app',
+  'vividxclassicalddance.edgeone.app',
+  'vividxecofulltest.edgeone.app',
+  'vividxfolkdances.edgeone.app',
+  'vividxfullgeotest.edgeone.app',
+  'vividxfullhistorytest.edgeone.app',
+  'vividxfullpolitytest.edgeone.app',
+  'vividximatterpurelecture.edgeone.app',
+  'vividxismatterpureeng.edgeone.app',
+  'vividxismatterpurehindi.edgeone.app',
+  'vividxismatterpureppt.edgeone.app',
+  'vividxmattereng.edgeone.app',
+  'vividxmatterhindi.edgeone.app',
+  'vividxmatterppt.edgeone.app',
+  'vividxmatters.edgeone.app',
+  'vividxmetalandnon-metal.edgeone.app',
+  'vividxmetalnonmetaleng.edgeone.app',
+  'vividxmetalnonmetalhindi.edgeone.app',
+  'vividxmetalnonmetalppt.edgeone.app',
+  'vividxmetalquiz.edgeone.app',
+  'vividxperiodiceng.edgeone.app',
+  'vividxperiodichindi.edgeone.app',
+  'vividxperiodicppt.edgeone.app',
+  'vividxperiodicquiz.edgeone.app',
+  'vividxperiodictablelecture.edgeone.app',
+  'vividxphysicstest.edgeone.app',
+  'vividxprathambatch.edgeone.app',
+];
+
+const NO_WILDCARD_PLATFORMS = [
+  'workers.dev',
+  'herokuapp.com',
+  'blogspot.com',
+  'appspot.com',
+  'vercel.app',
+  'github.io',
+  'pages.dev',
+  'netlify.app',
+  'render.com',
   'amazonaws.com',
+  'cloudfront.net',
+  'edgeone.app',
   'catbox.moe',
 ];
 
@@ -65,21 +127,41 @@ function isAllowedUpstream(urlStr) {
   try {
     const url = new URL(urlStr);
     const host = url.hostname.toLowerCase();
-    return ALLOWED_UPSTREAMS.some((allowed) => host === allowed || host.endsWith('.' + allowed));
+
+    // 1. Direct exact match
+    if (ALLOWED_UPSTREAMS.includes(host)) return true;
+
+    // 2. Subdomain check with strict public platform protection
+    for (const allowed of ALLOWED_UPSTREAMS) {
+      const isPublic = NO_WILDCARD_PLATFORMS.some((p) => allowed === p || allowed.endsWith('.' + p));
+      if (isPublic) {
+        if (host === allowed) return true;
+        continue;
+      }
+      if (host === allowed || host.endsWith('.' + allowed)) {
+        return true;
+      }
+    }
+    return false;
   } catch {
     return false;
   }
 }
 
-function isAllowedOrigin(originOrReferer) {
-  if (!originOrReferer) return true; // Direct browser stream or curl
-  try {
-    const parsed = new URL(originOrReferer);
-    const host = parsed.hostname.toLowerCase();
-    return ALLOWED_ORIGINS.some((allowed) => host === allowed || host.endsWith('.' + allowed));
-  } catch {
+function isAllowedOrigin(originOrReferer, secFetchSite) {
+  if (secFetchSite === 'cross-site' && !originOrReferer) {
     return false;
   }
+  if (originOrReferer) {
+    try {
+      const parsed = new URL(originOrReferer);
+      const host = parsed.hostname.toLowerCase();
+      return ALLOWED_ORIGINS.some((allowed) => host === allowed || host.endsWith('.' + allowed));
+    } catch {
+      return false;
+    }
+  }
+  return true;
 }
 
 export default {
@@ -87,9 +169,17 @@ export default {
     const url = new URL(request.url);
     const originHeader = request.headers.get('origin');
     const refererHeader = request.headers.get('referer');
+    const secFetchSite = request.headers.get('sec-fetch-site');
 
     // 1. Anti-Hotlink Origin Check
-    if ((originHeader && !isAllowedOrigin(originHeader)) || (refererHeader && !isAllowedOrigin(refererHeader))) {
+    // - If origin or referer present, must be from allowed domains
+    // - If explicitly cross-site without allowed origin, block
+    // - If Sec-Fetch-Site is missing (legacy Android WebView / Telegram in-app), allow
+    const originValid = !originHeader || isAllowedOrigin(originHeader, secFetchSite);
+    const refererValid = !refererHeader || isAllowedOrigin(refererHeader, secFetchSite);
+    const isExplicitCrossSite = secFetchSite === 'cross-site' && (!originHeader || !isAllowedOrigin(originHeader, secFetchSite));
+
+    if (!originValid || !refererValid || isExplicitCrossSite) {
       return new Response('Forbidden: Unauthorized Origin', { status: 403 });
     }
 
