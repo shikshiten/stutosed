@@ -590,16 +590,17 @@ export default function WatchClient() {
 
     setStreamLoading(true);
 
-    fetch(`/api/stream?code=${encodeURIComponent(code)}&provider=${provider}`, {
+    fetch(`/api/v1/stream?code=${encodeURIComponent(code)}&provider=${provider}`, {
       signal: abortController.signal,
     })
       .then((res) => {
         if (!res.ok) throw new Error(`HTTP ${res.status}`);
         return res.json();
       })
-      .then((data) => {
-        if (data?.streamUrl) {
-          setResolvedStreamUrl(data.streamUrl);
+      .then((json) => {
+        const streamData = json?.data || json;
+        if (streamData?.streamUrl) {
+          setResolvedStreamUrl(streamData.streamUrl);
         } else {
           setStreamError('Failed to load stream. Try selecting another server.');
         }
@@ -625,7 +626,7 @@ export default function WatchClient() {
     : isProxyStreamUrl
     ? getWorkerProxyUrl(activeUrl, 'stream')
     : isHrankerHls
-    ? `/api/hls-proxy?url=${encodeURIComponent(activeUrl)}&provider=hranker`
+    ? `/api/v1/hls-proxy?url=${encodeURIComponent(activeUrl)}&provider=hranker`
     : isDirectHlsUrl
     ? activeUrl
     : activeUrl;

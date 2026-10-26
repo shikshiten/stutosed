@@ -175,7 +175,6 @@ Authentication:      Supabase Auth (@supabase/ssr, OAuth 2.0 PKCE, HttpOnly Cook
 Database:            Supabase PostgreSQL (Row Level Security & Triggers)
 Media Streaming:     HLS.js (Adaptive Bitrate) · Custom Reverse Proxies
 Icons:               Lucide React
-Virtualization:      @tanstack/react-virtual
 Hosting & Edge:      Vercel Edge Network
 ```
 
@@ -213,11 +212,6 @@ stutosed/
 │   │   │   │   ├── thumbnail/         # GET /api/v1/thumbnail
 │   │   │   │   ├── hls-proxy/         # GET /api/v1/hls-proxy
 │   │   │   │   └── embed/             # GET /api/v1/embed (410 Gone)
-│   │   │   ├── stream/                # Backward-compatible delegate -> v1/stream
-│   │   │   ├── pdf/                   # Backward-compatible delegate -> v1/pdf
-│   │   │   ├── thumbnail/             # Backward-compatible delegate -> v1/thumbnail
-│   │   │   ├── hls-proxy/             # Backward-compatible delegate -> v1/hls-proxy
-│   │   │   └── embed/                 # Backward-compatible delegate -> v1/embed
 │   │   ├── auth/callback/             # OAuth PKCE session code exchange
 │   │   ├── login/                     # Standalone dedicated login page
 │   │   ├── watch/                     # Dedicated lecture watch portal
@@ -289,7 +283,6 @@ Credentials are never hardcoded in source code. Create a `.env.local` file in th
 | `NEXT_PUBLIC_SUPABASE_ANON_KEY` | `your-supabase-anon-key` | Supabase public anonymous key |
 | `NEXT_PUBLIC_GOOGLE_CLIENT_ID` | `your-google-client-id.apps.googleusercontent.com` | Google OAuth Client ID |
 | `NEXT_PUBLIC_STREAM_PROXY_URL` | `https://seiryu.stutosed.workers.dev` | Cloudflare Worker smart stream proxy |
-| `RESEND_API_KEY` | `re_...` | Resend API key for admin email announcements |
 
 ```bash
 # Install dependencies

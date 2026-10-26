@@ -968,13 +968,14 @@ export default function HomePage() {
       const code = vidmolyMatch?.[1] || earnvidsMatch?.[1];
       const provider = earnvidsMatch ? 'earnvids' : 'vidmoly';
       if (code) {
-        fetch(`/api/stream?code=${encodeURIComponent(code)}&provider=${provider}`)
+        fetch(`/api/v1/stream?code=${encodeURIComponent(code)}&provider=${provider}`)
           .then((r) => r.json())
-          .then((d) => {
-            if (d?.streamUrl) {
+          .then((json) => {
+            const streamData = json?.data || json;
+            if (streamData?.streamUrl) {
               sessionStorage.setItem(
                 'stutosed_prefetched_stream',
-                JSON.stringify({ url: targetItem.url, streamUrl: d.streamUrl })
+                JSON.stringify({ url: targetItem.url, streamUrl: streamData.streamUrl })
               );
             }
           })

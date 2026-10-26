@@ -37,11 +37,6 @@ src/
 │   │   │   ├── thumbnail/route.ts   # GET /api/v1/thumbnail
 │   │   │   ├── hls-proxy/route.ts   # GET /api/v1/hls-proxy
 │   │   │   └── embed/route.ts       # GET /api/v1/embed (410 Gone)
-│   │   ├── pdf/route.ts             # Backward-compat delegate -> v1/pdf
-│   │   ├── stream/route.ts          # Backward-compat delegate -> v1/stream
-│   │   ├── thumbnail/route.ts       # Backward-compat delegate -> v1/thumbnail
-│   │   ├── hls-proxy/route.ts       # Backward-compat delegate -> v1/hls-proxy
-│   │   └── embed/route.ts           # Backward-compat delegate -> v1/embed
 ├── schemas/                         # Zod request validation schemas
 │   ├── pdf.schema.ts
 │   ├── stream.schema.ts
@@ -115,4 +110,4 @@ const data = await apiClient.get<StreamResult>('/api/v1/stream', {
   params: { code: 'abc', provider: 'vidmoly' }
 });
 ```
-Legacy routes under `/api/*` continue to delegate transparently to `/api/v1/*` to maintain full backward compatibility with unmigrated client code.
+All client components call endpoints directly under `/api/v1/*`.

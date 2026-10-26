@@ -161,14 +161,14 @@ export const GateWatchWorkspace: React.FC<GateWatchWorkspaceProps> = ({
     const earnvidsMatch = targetUrl.match(/morencius\.com\/v\/([a-zA-Z0-9]{10,16})/);
     const code = vidmolyMatch?.[1] || earnvidsMatch?.[1];
     const provider = earnvidsMatch ? 'earnvids' : 'vidmoly';
-
     if (code) {
-      fetch(`/api/stream?code=${encodeURIComponent(code)}&provider=${provider}`)
+      fetch(`/api/v1/stream?code=${encodeURIComponent(code)}&provider=${provider}`)
         .then((res) => res.json())
-        .then((data) => {
+        .then((json) => {
           if (isCancelled) return;
-          if (data?.streamUrl) {
-            setResolvedStreamUrl(data.streamUrl);
+          const streamData = json?.data || json;
+          if (streamData?.streamUrl) {
+            setResolvedStreamUrl(streamData.streamUrl);
             setUseIframeFallback(false);
           } else {
             const embedUrl = targetUrl.includes('embed-')

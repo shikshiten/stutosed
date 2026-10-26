@@ -156,7 +156,7 @@ export async function resolveStream(input: StreamQueryInput): Promise<StreamResu
     embedUrl = `https://vidmoly.net/embed-${code}.html`;
   }
 
-  const resolvedStreamUrl = `/api/hls-proxy?url=${encodeURIComponent(embedUrl)}&provider=${provider}`;
+  const resolvedStreamUrl = `/api/v1/hls-proxy?url=${encodeURIComponent(embedUrl)}&provider=${provider}`;
 
   const entry: StreamCacheEntry = {
     streamUrl: resolvedStreamUrl,
