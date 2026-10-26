@@ -27,7 +27,7 @@ export async function GET(request: NextRequest) {
 
   // Rate Limiting: 600 req/60s suitable for high-frequency video .ts segments & M3U8 refreshes
   const clientIp = getClientIp(request);
-  const rateLimitResult = checkRateLimit(`hls-proxy:${clientIp}`, 600, 60);
+  const rateLimitResult = await checkRateLimit(`hls-proxy:${clientIp}`, 600, 60);
   if (!rateLimitResult.allowed) {
     return fail('Rate limit exceeded. Video streaming buffer throttled.', 429, 'RATE_LIMIT_EXCEEDED');
   }
