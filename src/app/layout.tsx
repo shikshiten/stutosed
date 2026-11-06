@@ -11,7 +11,7 @@ const spaceGrotesk = Space_Grotesk({
 });
 
 export const metadata: Metadata = {
-  metadataBase: new URL('https://stutosed.vercel.app'),
+  metadataBase: new URL('https://stutosed.de5.net'),
   title: 'stutosed',
   description: 'Your complete study portal for SSC, Competitive Exams and Bihar Engineering University (BEU) B.Tech courses, lectures, notes, and PDF resources.',
   icons: {
@@ -30,7 +30,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: 'stutosed — Engineering & Competitive Exam Courses',
     description: 'Free high-speed video lectures, notes & study portal for BEU B.Tech and Government exams.',
-    url: 'https://stutosed.vercel.app',
+    url: 'https://stutosed.de5.net',
     siteName: 'stutosed',
     type: 'website',
     images: [
