@@ -42,6 +42,11 @@ yarn-error.log*
 *.tsbuildinfo
 next-env.d.ts
 
+# cloudflare opennext & wrangler
+.open-next/
+.wrangler/
+.dev.vars
+
 # raw bot link dumps, root assets & scratch files
 /Links of coures by bot/
 /new government section batch link/
