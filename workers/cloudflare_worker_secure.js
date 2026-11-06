@@ -116,6 +116,7 @@ const NO_WILDCARD_PLATFORMS = [
 ];
 
 const ALLOWED_ORIGINS = [
+  'stutosed.de5.net',
   'course.stutosed.in',
   'stutosed.in',
   'stutosed.vercel.app',
