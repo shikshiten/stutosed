@@ -67,7 +67,7 @@ export function withApi<TData, TQuery = unknown, TBody = unknown>(
         const key = options.rateLimit.keyGenerator
           ? options.rateLimit.keyGenerator(req)
           : user ? `user:${user.id}` : `ip:${getClientIp(req)}`;
-        rateLimitInfo = enforceRateLimit(
+        rateLimitInfo = await enforceRateLimit(
           key,
           options.rateLimit.limit,
           options.rateLimit.windowSeconds

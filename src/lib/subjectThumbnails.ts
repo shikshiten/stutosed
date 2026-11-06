@@ -134,7 +134,7 @@ function resolveSvgPath(key: string, theme?: 'light' | 'dark'): string {
 }
 
 /**
- * Returns dynamic SVG thumbnail URL pointing to /api/thumbnail endpoint.
+ * Returns dynamic SVG thumbnail URL pointing to /api/v1/thumbnail endpoint.
  * This dynamically renders the exact lecture or item title centered on the card.
  */
 export function getDynamicThumbnailUrl(
@@ -145,7 +145,7 @@ export function getDynamicThumbnailUrl(
   const cleanTitle = (title || 'Study Lecture').trim();
   const cleanCategory = (category || '').trim();
   const mode = theme === 'dark' ? 'dark' : 'light';
-  return `/api/thumbnail?title=${encodeURIComponent(cleanTitle)}&category=${encodeURIComponent(cleanCategory)}&theme=${mode}`;
+  return `/api/v1/thumbnail?title=${encodeURIComponent(cleanTitle)}&category=${encodeURIComponent(cleanCategory)}&theme=${mode}`;
 }
 
 /**

@@ -1,0 +1,1055 @@
+{
+  "id": "vocab-mastery-vod",
+  "name": "Vocab Mastery VOD",
+  "subname": "Complete English Vocabulary & Root Words Batch",
+  "teacher": "English Faculty",
+  "subject": "English",
+  "thumb": "/thumbnails/subjects/vocab_mastery_vod.svg",
+  "tabs": [
+    {
+      "id": "videos",
+      "label": "▶ Videos",
+      "items": [
+        {
+          "id": "vocab-mastery-vod-v-1",
+          "label": "Idioms Lec - 1",
+          "url": "https://selectionwayrecordedmp4.hranker.com/561/68f05d2be4223185659f171c/hls/master.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "vocab-mastery-vod-v-4",
+          "label": "Idioms Lec - 2",
+          "url": "https://selectionwayrecordedmp4.hranker.com/561/68f05d2be4223185659f171b/hls/master.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "vocab-mastery-vod-v-7",
+          "label": "Idioms Lec - 3",
+          "url": "https://selectionwayrecordedmp4.hranker.com/561/68f05d2be4223185659f171a/hls/master.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "vocab-mastery-vod-v-10",
+          "label": "Idioms Lec - 4",
+          "url": "https://selectionwayrecordedmp4.hranker.com/561/68f4ba8604ae4ee13aa014dc/hls/master.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "vocab-mastery-vod-v-13",
+          "label": "Idioms Lec - 5",
+          "url": "https://selectionwayrecordedmp4.hranker.com/561/68f05d2be4223185659f1718/hls/master.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "vocab-mastery-vod-v-16",
+          "label": "Idioms Lec - 6",
+          "url": "https://selectionwayrecordedmp4.hranker.com/561/68f05d2be4223185659f1717/hls/master.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "vocab-mastery-vod-v-19",
+          "label": "Idioms Lec - 7",
+          "url": "https://selectionwayrecordedmp4.hranker.com/561/68f05d2be4223185659f1716/hls/master.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "vocab-mastery-vod-v-22",
+          "label": "Idioms Lec - 8",
+          "url": "https://selectionwayrecordedmp4.hranker.com/561/68f05d2be4223185659f1715/hls/master.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "vocab-mastery-vod-v-25",
+          "label": "Idioms Lec - 9",
+          "url": "https://selectionwayrecordedmp4.hranker.com/561/68f05d2be4223185659f1714/hls/master.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "vocab-mastery-vod-v-28",
+          "label": "Idioms Lec - 10",
+          "url": "https://selectionwayrecordedmp4.hranker.com/561/68f05d2be4223185659f1713/hls/master.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "vocab-mastery-vod-v-31",
+          "label": "Idioms Lec - 11",
+          "url": "https://selectionwayrecordedmp4.hranker.com/561/68f05d2be4223185659f1712/hls/master.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "vocab-mastery-vod-v-34",
+          "label": "Idioms Lec - 12",
+          "url": "https://selectionwayrecordedmp4.hranker.com/561/68f05d2be4223185659f1711/hls/master.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "vocab-mastery-vod-v-37",
+          "label": "Idioms Lec - 13",
+          "url": "https://selectionwayrecordedmp4.hranker.com/561/68f05d2be4223185659f1710/hls/master.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "vocab-mastery-vod-v-40",
+          "label": "Idioms Lec - 14",
+          "url": "https://selectionwayrecordedmp4.hranker.com/561/68ef97005f33a20cd505f12e/hls/master.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "vocab-mastery-vod-v-43",
+          "label": "Idioms Lec - 15",
+          "url": "https://selectionwayrecordedmp4.hranker.com/561/68f05d2be4223185659f170f/hls/master.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "vocab-mastery-vod-v-46",
+          "label": "ANTO SYNO Lec -1",
+          "url": "https://selectionwayrecordedmp4.hranker.com/561/68f51b73b7edd42fab460cb3/hls/master.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "vocab-mastery-vod-v-49",
+          "label": "ANTO SYNO Lec -2",
+          "url": "https://selectionwayrecordedmp4.hranker.com/561/68f09661160d25066372745f/hls/master.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "vocab-mastery-vod-v-52",
+          "label": "ANTO SYNO Lec -3",
+          "url": "https://selectionwayrecordedmp4.hranker.com/561/68f09661160d25066372745e/hls/master.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "vocab-mastery-vod-v-55",
+          "label": "ANTO SYNO Lec -4",
+          "url": "https://selectionwayrecordedmp4.hranker.com/561/68f09661160d25066372745d/hls/master.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "vocab-mastery-vod-v-58",
+          "label": "ANTO SYNO Lec -5",
+          "url": "https://selectionwayrecordedmp4.hranker.com/561/68f09661160d25066372745c/hls/master.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "vocab-mastery-vod-v-61",
+          "label": "ANTO SYNO Lec -6",
+          "url": "https://selectionwayrecordedmp4.hranker.com/561/68f09661160d25066372745b/hls/master.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "vocab-mastery-vod-v-64",
+          "label": "ANTO SYNO Lec -7",
+          "url": "https://selectionwayrecordedmp4.hranker.com/561/68f09661160d25066372745a/hls/master.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "vocab-mastery-vod-v-67",
+          "label": "ANTO SYNO Lec -8",
+          "url": "https://selectionwayrecordedmp4.hranker.com/561/68f09661160d250663727459/hls/master.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "vocab-mastery-vod-v-75",
+          "label": "ANTO SYNO Lec -10",
+          "url": "https://selectionwayrecordedmp4.hranker.com/561/68f09661160d250663727457/hls/master.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "vocab-mastery-vod-v-78",
+          "label": "ANTO SYNO Lec -11",
+          "url": "https://selectionwayrecordedmp4.hranker.com/561/68f09661160d250663727456/hls/master.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "vocab-mastery-vod-v-81",
+          "label": "ANTO SYNO Lec -12",
+          "url": "https://selectionwayrecordedmp4.hranker.com/561/68f09661160d250663727455/hls/master.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "vocab-mastery-vod-v-84",
+          "label": "ANTO SYNO Lec -13",
+          "url": "https://selectionwayrecordedmp4.hranker.com/561/68f09661160d250663727454/hls/master.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "vocab-mastery-vod-v-87",
+          "label": "ANTO SYNO Lec -14",
+          "url": "https://selectionwayrecordedmp4.hranker.com/561/68f09661160d250663727453/hls/master.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "vocab-mastery-vod-v-90",
+          "label": "ANTO SYNO Lec -15",
+          "url": "https://selectionwayrecordedmp4.hranker.com/561/68f09661160d250663727452/hls/master.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "vocab-mastery-vod-v-93",
+          "label": "ANTO SYNO Lec -16",
+          "url": "https://selectionwayrecordedmp4.hranker.com/561/68f09661160d250663727451/hls/master.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "vocab-mastery-vod-v-96",
+          "label": "ANTO SYNO Lec -17",
+          "url": "https://selectionwayrecordedmp4.hranker.com/561/68f09661160d250663727450/hls/master.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "vocab-mastery-vod-v-99",
+          "label": "ANTO SYNO Lec -18",
+          "url": "https://selectionwayrecordedmp4.hranker.com/561/68f09661160d25066372744f/hls/master.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "vocab-mastery-vod-v-102",
+          "label": "ANTO SYNO Lec -19",
+          "url": "https://selectionwayrecordedmp4.hranker.com/561/68f09661160d25066372744e/hls/master.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "vocab-mastery-vod-v-105",
+          "label": "ANTO SYNO Lec -20",
+          "url": "https://selectionwayrecordedmp4.hranker.com/561/68f09661160d25066372744d/hls/master.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "vocab-mastery-vod-v-108",
+          "label": "ANTO SYNO Lec -21",
+          "url": "https://selectionwayrecordedmp4.hranker.com/561/68f4bca535a531ec8df46ca5/hls/master.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "vocab-mastery-vod-v-111",
+          "label": "ANTO SYNO Lec -22",
+          "url": "https://selectionwayrecordedmp4.hranker.com/561/68f148a8b7edd42faba1769d/hls/master.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "vocab-mastery-vod-v-114",
+          "label": "ANTO SYNO Lec -23",
+          "url": "https://selectionwayrecordedmp4.hranker.com/561/68f09661160d25066372744b/hls/master.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "vocab-mastery-vod-v-117",
+          "label": "ANTO SYNO Lec -24",
+          "url": "https://selectionwayrecordedmp4.hranker.com/561/68f09661160d250663727462/hls/master.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "vocab-mastery-vod-v-120",
+          "label": "ANTO SYNO Lec -25",
+          "url": "https://selectionwayrecordedmp4.hranker.com/561/68f09661160d250663727461/hls/master.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "vocab-mastery-vod-v-123",
+          "label": "ANTO SYNO Lec -26",
+          "url": "https://selectionwayrecordedmp4.hranker.com/561/68f09661160d25066372744a/hls/master.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "vocab-mastery-vod-v-126",
+          "label": "Root words - 1",
+          "url": "https://selectionwayrecordedmp4.hranker.com/561/68f4bf8835a531ec8df4e4d4/hls/master.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "vocab-mastery-vod-v-129",
+          "label": "Root words - 2",
+          "url": "https://selectionwayrecordedmp4.hranker.com/561/68f08b28a0766a0fa9d495bd/hls/master.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "vocab-mastery-vod-v-132",
+          "label": "Root words - 3",
+          "url": "https://selectionwayrecordedmp4.hranker.com/561/68f08b28a0766a0fa9d495be/hls/master.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "vocab-mastery-vod-v-135",
+          "label": "Root words - 4",
+          "url": "https://selectionwayrecordedmp4.hranker.com/561/68f519d0b7edd42fab45cc94/hls/master.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "vocab-mastery-vod-v-138",
+          "label": "Root words - 5",
+          "url": "https://selectionwayrecordedmp4.hranker.com/561/68f08b28a0766a0fa9d495c0/hls/master.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "vocab-mastery-vod-v-141",
+          "label": "OWS Lec - 1",
+          "url": "https://selectionwayrecordedmp4.hranker.com/561/68f4c53e35a531ec8df5c812/hls/master.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "vocab-mastery-vod-v-144",
+          "label": "OWS Lec - 2",
+          "url": "https://selectionwayrecordedmp4.hranker.com/561/68f07f4951236b2723e3dbc9/hls/master.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "vocab-mastery-vod-v-147",
+          "label": "OWS Lec - 3",
+          "url": "https://selectionwayrecordedmp4.hranker.com/561/68f07f4951236b2723e3dbc8/hls/master.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "vocab-mastery-vod-v-150",
+          "label": "OWS Lec - 4",
+          "url": "https://selectionwayrecordedmp4.hranker.com/561/68f07f4951236b2723e3dbc7/hls/master.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "vocab-mastery-vod-v-153",
+          "label": "OWS Lec - 5",
+          "url": "https://selectionwayrecordedmp4.hranker.com/561/68f07f4951236b2723e3dbc6/hls/master.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "vocab-mastery-vod-v-156",
+          "label": "OWS Lec - 6",
+          "url": "https://selectionwayrecordedmp4.hranker.com/561/68f07f4951236b2723e3dbc5/hls/master.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "vocab-mastery-vod-v-159",
+          "label": "OWS Lec - 7",
+          "url": "https://selectionwayrecordedmp4.hranker.com/561/68f07f4951236b2723e3dbc4/hls/master.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "vocab-mastery-vod-v-162",
+          "label": "Phrasal verbs Lec -1",
+          "url": "https://selectionwayrecordedmp4.hranker.com/561/68f0846e009cb5852a1edb43/hls/master.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "vocab-mastery-vod-v-165",
+          "label": "Phrasal verbs Lec -2",
+          "url": "https://selectionwayrecordedmp4.hranker.com/561/68f0846e009cb5852a1edb44/hls/master.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "vocab-mastery-vod-v-168",
+          "label": "Phrasal verbs Lec - 3",
+          "url": "https://selectionwayrecordedmp4.hranker.com/561/68f3c0adcadb3e241fc9f876/hls/master.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "vocab-mastery-vod-v-171",
+          "label": "Phrasal verbs practice",
+          "url": "https://selectionwayrecordedmp4.hranker.com/561/68f4c4bb35a531ec8df5b223/hls/master.m3u8",
+          "type": "hls"
+        }
+      ]
+    },
+    {
+      "id": "pdfs",
+      "label": "📄 PDFs",
+      "items": [
+        {
+          "id": "vocab-mastery-vod-p-2",
+          "label": "Idioms Lec - 1",
+          "url": "https://selectionwayserver.hranker.com/pdfs/files/1760885076367-LEC-1_CONCISE.pdf",
+          "type": "pdf"
+        },
+        {
+          "id": "vocab-mastery-vod-p-3",
+          "label": "Idioms Lec - 1",
+          "url": "https://selectionwayserver.hranker.com/pdfs/files/1760885104372-LEC-1_SLIDE.pdf",
+          "type": "pdf"
+        },
+        {
+          "id": "vocab-mastery-vod-p-5",
+          "label": "Idioms Lec - 2",
+          "url": "https://selectionwayserver.hranker.com/pdfs/files/1760886229123-LEC-2_SLIDE.pdf",
+          "type": "pdf"
+        },
+        {
+          "id": "vocab-mastery-vod-p-6",
+          "label": "Idioms Lec - 2",
+          "url": "https://selectionwayserver.hranker.com/pdfs/files/1760886296560-LEC-2_CONCISE.pdf",
+          "type": "pdf"
+        },
+        {
+          "id": "vocab-mastery-vod-p-8",
+          "label": "Idioms Lec - 3",
+          "url": "https://selectionwayserver.hranker.com/pdfs/files/1760885053225-LEC-3_CONCISE.pdf",
+          "type": "pdf"
+        },
+        {
+          "id": "vocab-mastery-vod-p-9",
+          "label": "Idioms Lec - 3",
+          "url": "https://selectionwayserver.hranker.com/pdfs/files/1760886405113-LEC-3_SLIDE.pdf",
+          "type": "pdf"
+        },
+        {
+          "id": "vocab-mastery-vod-p-11",
+          "label": "Idioms Lec - 4",
+          "url": "https://selectionwayserver.hranker.com/pdfs/files/1760886312269-LEC-4_CONCISE'.pdf",
+          "type": "pdf"
+        },
+        {
+          "id": "vocab-mastery-vod-p-12",
+          "label": "Idioms Lec - 4",
+          "url": "https://selectionwayserver.hranker.com/pdfs/files/1760886817857-LEC-4_SLIDE.pdf",
+          "type": "pdf"
+        },
+        {
+          "id": "vocab-mastery-vod-p-14",
+          "label": "Idioms Lec - 5",
+          "url": "https://selectionwayserver.hranker.com/pdfs/files/1760886368544-LEC-5_SLIDE.pdf",
+          "type": "pdf"
+        },
+        {
+          "id": "vocab-mastery-vod-p-15",
+          "label": "Idioms Lec - 5",
+          "url": "https://selectionwayserver.hranker.com/pdfs/files/1760886557074-LEC-5_CONCISE.pdf",
+          "type": "pdf"
+        },
+        {
+          "id": "vocab-mastery-vod-p-17",
+          "label": "Idioms Lec - 6",
+          "url": "https://selectionwayserver.hranker.com/pdfs/files/1760885307319-LEC-6_SLIDE.pdf",
+          "type": "pdf"
+        },
+        {
+          "id": "vocab-mastery-vod-p-18",
+          "label": "Idioms Lec - 6",
+          "url": "https://selectionwayserver.hranker.com/pdfs/files/1760886410185-LEC-6_CONCISE.pdf",
+          "type": "pdf"
+        },
+        {
+          "id": "vocab-mastery-vod-p-20",
+          "label": "Idioms Lec - 7",
+          "url": "https://selectionwayserver.hranker.com/pdfs/files/1760885326585-LEC-7_CONCISE.pdf",
+          "type": "pdf"
+        },
+        {
+          "id": "vocab-mastery-vod-p-21",
+          "label": "Idioms Lec - 7",
+          "url": "https://selectionwayserver.hranker.com/pdfs/files/1760886478513-LEC-7_SLDIE.pdf",
+          "type": "pdf"
+        },
+        {
+          "id": "vocab-mastery-vod-p-23",
+          "label": "Idioms Lec - 8",
+          "url": "https://selectionwayserver.hranker.com/pdfs/files/1760886500605-LEC-8_SLIDE.pdf",
+          "type": "pdf"
+        },
+        {
+          "id": "vocab-mastery-vod-p-24",
+          "label": "Idioms Lec - 8",
+          "url": "https://selectionwayserver.hranker.com/pdfs/files/1760886518451-LEC-8_CONCISE.pdf",
+          "type": "pdf"
+        },
+        {
+          "id": "vocab-mastery-vod-p-26",
+          "label": "Idioms Lec - 9",
+          "url": "https://selectionwayserver.hranker.com/pdfs/files/1760886470076-LEC-9_CONCISE.pdf",
+          "type": "pdf"
+        },
+        {
+          "id": "vocab-mastery-vod-p-27",
+          "label": "Idioms Lec - 9",
+          "url": "https://selectionwayserver.hranker.com/pdfs/files/1760886537549-LEC-9_SLIDE.pdf",
+          "type": "pdf"
+        },
+        {
+          "id": "vocab-mastery-vod-p-29",
+          "label": "Idioms Lec - 10",
+          "url": "https://selectionwayserver.hranker.com/pdfs/files/1760886309376-LEC-10_SLIDE.pdf",
+          "type": "pdf"
+        },
+        {
+          "id": "vocab-mastery-vod-p-30",
+          "label": "Idioms Lec - 10",
+          "url": "https://selectionwayserver.hranker.com/pdfs/files/1760886276280-LEC-10_CONCISE.pdf",
+          "type": "pdf"
+        },
+        {
+          "id": "vocab-mastery-vod-p-32",
+          "label": "Idioms Lec - 11",
+          "url": "https://selectionwayserver.hranker.com/pdfs/files/1760885132833-LEC-11_SLIDE.pdf",
+          "type": "pdf"
+        },
+        {
+          "id": "vocab-mastery-vod-p-33",
+          "label": "Idioms Lec - 11",
+          "url": "https://selectionwayserver.hranker.com/pdfs/files/1762528374904-LEC-11_CONCISE.pdf",
+          "type": "pdf"
+        },
+        {
+          "id": "vocab-mastery-vod-p-35",
+          "label": "Idioms Lec - 12",
+          "url": "https://selectionwayserver.hranker.com/pdfs/files/1760885251959-LEC-12_SLDIE.pdf",
+          "type": "pdf"
+        },
+        {
+          "id": "vocab-mastery-vod-p-36",
+          "label": "Idioms Lec - 12",
+          "url": "https://selectionwayserver.hranker.com/pdfs/files/1760886387917-LEC-12_CONCISE.pdf",
+          "type": "pdf"
+        },
+        {
+          "id": "vocab-mastery-vod-p-38",
+          "label": "Idioms Lec - 13",
+          "url": "https://selectionwayserver.hranker.com/pdfs/files/1760885267125-LEC-13_CONCISE.pdf",
+          "type": "pdf"
+        },
+        {
+          "id": "vocab-mastery-vod-p-39",
+          "label": "Idioms Lec - 13",
+          "url": "https://selectionwayserver.hranker.com/pdfs/files/1760886452836-LEC-13_SLIDE.pdf",
+          "type": "pdf"
+        },
+        {
+          "id": "vocab-mastery-vod-p-41",
+          "label": "Idioms Lec - 14",
+          "url": "https://selectionwayserver.hranker.com/pdfs/files/1760886231846-LEC-14_SLIDE.pdf",
+          "type": "pdf"
+        },
+        {
+          "id": "vocab-mastery-vod-p-42",
+          "label": "Idioms Lec - 14",
+          "url": "https://selectionwayserver.hranker.com/pdfs/files/1760886051482-LEC-14_CONCISE.pdf",
+          "type": "pdf"
+        },
+        {
+          "id": "vocab-mastery-vod-p-44",
+          "label": "Idioms Lec - 15",
+          "url": "https://selectionwayserver.hranker.com/pdfs/files/1760886329853-LEC-15_CONCISE.pdf",
+          "type": "pdf"
+        },
+        {
+          "id": "vocab-mastery-vod-p-45",
+          "label": "Idioms Lec - 15",
+          "url": "https://selectionwayserver.hranker.com/pdfs/files/1760885286563-LEC-15_SLIDE.pdf",
+          "type": "pdf"
+        },
+        {
+          "id": "vocab-mastery-vod-p-47",
+          "label": "ANTO SYNO Lec -1",
+          "url": "https://selectionwayserver.hranker.com/pdfs/files/1760895311507-LEC-1_SLIDE.pdf",
+          "type": "pdf"
+        },
+        {
+          "id": "vocab-mastery-vod-p-48",
+          "label": "ANTO SYNO Lec -1",
+          "url": "https://selectionwayserver.hranker.com/pdfs/files/1760895362451-LEC-1_CONCISE.pdf",
+          "type": "pdf"
+        },
+        {
+          "id": "vocab-mastery-vod-p-50",
+          "label": "ANTO SYNO Lec -2",
+          "url": "https://selectionwayserver.hranker.com/pdfs/files/1760895440259-LEC-2_CONCISE.pdf",
+          "type": "pdf"
+        },
+        {
+          "id": "vocab-mastery-vod-p-51",
+          "label": "ANTO SYNO Lec -2",
+          "url": "https://selectionwayserver.hranker.com/pdfs/files/1760895382617-LEC-2_SLIDE.pdf",
+          "type": "pdf"
+        },
+        {
+          "id": "vocab-mastery-vod-p-53",
+          "label": "ANTO SYNO Lec -3",
+          "url": "https://selectionwayserver.hranker.com/pdfs/files/1760895471069-LEC-3_SLIDE.pdf",
+          "type": "pdf"
+        },
+        {
+          "id": "vocab-mastery-vod-p-54",
+          "label": "ANTO SYNO Lec -3",
+          "url": "https://selectionwayserver.hranker.com/pdfs/files/1760895493745-LEC-3_CONCISE.pdf",
+          "type": "pdf"
+        },
+        {
+          "id": "vocab-mastery-vod-p-56",
+          "label": "ANTO SYNO Lec -4",
+          "url": "https://selectionwayserver.hranker.com/pdfs/files/1760895519372-LEC-4_SLIDE.pdf",
+          "type": "pdf"
+        },
+        {
+          "id": "vocab-mastery-vod-p-57",
+          "label": "ANTO SYNO Lec -4",
+          "url": "https://selectionwayserver.hranker.com/pdfs/files/1760895535753-LEC-4_CONCISE.pdf",
+          "type": "pdf"
+        },
+        {
+          "id": "vocab-mastery-vod-p-59",
+          "label": "ANTO SYNO Lec -5",
+          "url": "https://selectionwayserver.hranker.com/pdfs/files/1760895555286-LEC-5_SLIDE.pdf",
+          "type": "pdf"
+        },
+        {
+          "id": "vocab-mastery-vod-p-60",
+          "label": "ANTO SYNO Lec -5",
+          "url": "https://selectionwayserver.hranker.com/pdfs/files/1760895574336-LEC-5_CONCISE.pdf",
+          "type": "pdf"
+        },
+        {
+          "id": "vocab-mastery-vod-p-62",
+          "label": "ANTO SYNO Lec -6",
+          "url": "https://selectionwayserver.hranker.com/pdfs/files/1760895614185-LEC-6_CONCISE.pdf",
+          "type": "pdf"
+        },
+        {
+          "id": "vocab-mastery-vod-p-63",
+          "label": "ANTO SYNO Lec -6",
+          "url": "https://selectionwayserver.hranker.com/pdfs/files/1760895595359-LEC-6_SLIDE.pdf",
+          "type": "pdf"
+        },
+        {
+          "id": "vocab-mastery-vod-p-65",
+          "label": "ANTO SYNO Lec -7",
+          "url": "https://selectionwayserver.hranker.com/pdfs/files/1760895716818-LEC-7_CONCISE.pdf",
+          "type": "pdf"
+        },
+        {
+          "id": "vocab-mastery-vod-p-66",
+          "label": "ANTO SYNO Lec -7",
+          "url": "https://selectionwayserver.hranker.com/pdfs/files/1760895698026-LEC-7_SLIDE_(1).pdf",
+          "type": "pdf"
+        },
+        {
+          "id": "vocab-mastery-vod-p-68",
+          "label": "ANTO SYNO Lec -8",
+          "url": "https://selectionwayserver.hranker.com/pdfs/files/1760895761322-LEC-8_CONCISE.pdf",
+          "type": "pdf"
+        },
+        {
+          "id": "vocab-mastery-vod-p-69",
+          "label": "ANTO SYNO Lec -8",
+          "url": "https://selectionwayserver.hranker.com/pdfs/files/1760895742708-LEC-8_SLIDE.pdf",
+          "type": "pdf"
+        },
+        {
+          "id": "vocab-mastery-vod-p-70",
+          "label": "ANTO SYNO Lec -900",
+          "url": "https://selectionwayrecordedmp4.hranker.com/561/68f4bbc73cb385cafccd6091/mp4/Anto_Syno_Lec_9_360p.mp4",
+          "type": "pdf"
+        },
+        {
+          "id": "vocab-mastery-vod-p-71",
+          "label": "ANTO SYNO Lec -900",
+          "url": "https://selectionwayrecordedmp4.hranker.com/561/68f4bbc73cb385cafccd6091/mp4/Anto_Syno_Lec_9_480p.mp4",
+          "type": "pdf"
+        },
+        {
+          "id": "vocab-mastery-vod-p-72",
+          "label": "ANTO SYNO Lec -900",
+          "url": "https://selectionwayrecordedmp4.hranker.com/561/68f4bbc73cb385cafccd6091/mp4/Anto_Syno_Lec_9_720p.mp4",
+          "type": "pdf"
+        },
+        {
+          "id": "vocab-mastery-vod-p-73",
+          "label": "ANTO SYNO Lec -900",
+          "url": "https://selectionwayserver.hranker.com/pdfs/files/1760895802633-LEC-9_SLIDE.pdf",
+          "type": "pdf"
+        },
+        {
+          "id": "vocab-mastery-vod-p-74",
+          "label": "ANTO SYNO Lec -900",
+          "url": "https://selectionwayserver.hranker.com/pdfs/files/1760895821794-LEC-9_CONCISE.pdf",
+          "type": "pdf"
+        },
+        {
+          "id": "vocab-mastery-vod-p-76",
+          "label": "ANTO SYNO Lec -10",
+          "url": "https://selectionwayserver.hranker.com/pdfs/files/1760895856805-LEC-10_CONCISE.pdf",
+          "type": "pdf"
+        },
+        {
+          "id": "vocab-mastery-vod-p-77",
+          "label": "ANTO SYNO Lec -10",
+          "url": "https://selectionwayserver.hranker.com/pdfs/files/1760895841395-LEC-10_SLIDE.pdf",
+          "type": "pdf"
+        },
+        {
+          "id": "vocab-mastery-vod-p-79",
+          "label": "ANTO SYNO Lec -11",
+          "url": "https://selectionwayserver.hranker.com/pdfs/files/1760895875211-LEC-11_SLIDE.pdf",
+          "type": "pdf"
+        },
+        {
+          "id": "vocab-mastery-vod-p-80",
+          "label": "ANTO SYNO Lec -11",
+          "url": "https://selectionwayserver.hranker.com/pdfs/files/1760895892285-LEC-11_CONCISE.pdf",
+          "type": "pdf"
+        },
+        {
+          "id": "vocab-mastery-vod-p-82",
+          "label": "ANTO SYNO Lec -12",
+          "url": "https://selectionwayserver.hranker.com/pdfs/files/1760895913031-LEC-12_SLIDE.pdf",
+          "type": "pdf"
+        },
+        {
+          "id": "vocab-mastery-vod-p-83",
+          "label": "ANTO SYNO Lec -12",
+          "url": "https://selectionwayserver.hranker.com/pdfs/files/1760895936456-LEC-12_CONCISE.pdf",
+          "type": "pdf"
+        },
+        {
+          "id": "vocab-mastery-vod-p-85",
+          "label": "ANTO SYNO Lec -13",
+          "url": "https://selectionwayserver.hranker.com/pdfs/files/1760895984483-LEC-13_CONCISE.pdf",
+          "type": "pdf"
+        },
+        {
+          "id": "vocab-mastery-vod-p-86",
+          "label": "ANTO SYNO Lec -13",
+          "url": "https://selectionwayserver.hranker.com/pdfs/files/1760895968054-LEC-13_SLIDE.pdf",
+          "type": "pdf"
+        },
+        {
+          "id": "vocab-mastery-vod-p-88",
+          "label": "ANTO SYNO Lec -14",
+          "url": "https://selectionwayserver.hranker.com/pdfs/files/1760896006416-LEC-14_SLIDE.pdf",
+          "type": "pdf"
+        },
+        {
+          "id": "vocab-mastery-vod-p-89",
+          "label": "ANTO SYNO Lec -14",
+          "url": "https://selectionwayserver.hranker.com/pdfs/files/1760896024308-LEC-14_CONCISE.pdf",
+          "type": "pdf"
+        },
+        {
+          "id": "vocab-mastery-vod-p-91",
+          "label": "ANTO SYNO Lec -15",
+          "url": "https://selectionwayserver.hranker.com/pdfs/files/1760896066808-LEC-15_CONCISE.pdf",
+          "type": "pdf"
+        },
+        {
+          "id": "vocab-mastery-vod-p-92",
+          "label": "ANTO SYNO Lec -15",
+          "url": "https://selectionwayserver.hranker.com/pdfs/files/1760896048510-LEC-15_SLIDE.pdf",
+          "type": "pdf"
+        },
+        {
+          "id": "vocab-mastery-vod-p-94",
+          "label": "ANTO SYNO Lec -16",
+          "url": "https://selectionwayserver.hranker.com/pdfs/files/1760896128307-LEC-16_CONCISE.pdf",
+          "type": "pdf"
+        },
+        {
+          "id": "vocab-mastery-vod-p-95",
+          "label": "ANTO SYNO Lec -16",
+          "url": "https://selectionwayserver.hranker.com/pdfs/files/1760896111725-LEC-16_SLIDE.pdf",
+          "type": "pdf"
+        },
+        {
+          "id": "vocab-mastery-vod-p-97",
+          "label": "ANTO SYNO Lec -17",
+          "url": "https://selectionwayserver.hranker.com/pdfs/files/1760896167332-LEC-17_CONCISE.pdf",
+          "type": "pdf"
+        },
+        {
+          "id": "vocab-mastery-vod-p-98",
+          "label": "ANTO SYNO Lec -17",
+          "url": "https://selectionwayserver.hranker.com/pdfs/files/1760896150730-LEC-17_SLIDE.pdf",
+          "type": "pdf"
+        },
+        {
+          "id": "vocab-mastery-vod-p-100",
+          "label": "ANTO SYNO Lec -18",
+          "url": "https://selectionwayserver.hranker.com/pdfs/files/LEC-18 SLIDE.pdf",
+          "type": "pdf"
+        },
+        {
+          "id": "vocab-mastery-vod-p-101",
+          "label": "ANTO SYNO Lec -18",
+          "url": "https://selectionwayserver.hranker.com/pdfs/files/LEC-18 CONCISE.pdf",
+          "type": "pdf"
+        },
+        {
+          "id": "vocab-mastery-vod-p-103",
+          "label": "ANTO SYNO Lec -19",
+          "url": "https://selectionwayserver.hranker.com/pdfs/files/LEC-19 SLIDE.pdf",
+          "type": "pdf"
+        },
+        {
+          "id": "vocab-mastery-vod-p-104",
+          "label": "ANTO SYNO Lec -19",
+          "url": "https://selectionwayserver.hranker.com/pdfs/files/LEC-19 CONCISE.pdf",
+          "type": "pdf"
+        },
+        {
+          "id": "vocab-mastery-vod-p-106",
+          "label": "ANTO SYNO Lec -20",
+          "url": "https://selectionwayserver.hranker.com/pdfs/files/LEC-20 SLIDE.pdf",
+          "type": "pdf"
+        },
+        {
+          "id": "vocab-mastery-vod-p-107",
+          "label": "ANTO SYNO Lec -20",
+          "url": "https://selectionwayserver.hranker.com/pdfs/files/LEC-20 CONCISE.pdf",
+          "type": "pdf"
+        },
+        {
+          "id": "vocab-mastery-vod-p-109",
+          "label": "ANTO SYNO Lec -21",
+          "url": "https://selectionwayserver.hranker.com/pdfs/files/LEC-21 CONCISE.pdf",
+          "type": "pdf"
+        },
+        {
+          "id": "vocab-mastery-vod-p-110",
+          "label": "ANTO SYNO Lec -21",
+          "url": "https://selectionwayserver.hranker.com/pdfs/files/LEC-21 SLIDE.pdf",
+          "type": "pdf"
+        },
+        {
+          "id": "vocab-mastery-vod-p-112",
+          "label": "ANTO SYNO Lec -22",
+          "url": "https://selectionwayserver.hranker.com/pdfs/files/LEC-22 SLIDE.pdf",
+          "type": "pdf"
+        },
+        {
+          "id": "vocab-mastery-vod-p-113",
+          "label": "ANTO SYNO Lec -22",
+          "url": "https://selectionwayserver.hranker.com/pdfs/files/LEC-22 CONCISE.pdf",
+          "type": "pdf"
+        },
+        {
+          "id": "vocab-mastery-vod-p-115",
+          "label": "ANTO SYNO Lec -23",
+          "url": "https://selectionwayserver.hranker.com/pdfs/files/LEC-23 CONCISE.pdf",
+          "type": "pdf"
+        },
+        {
+          "id": "vocab-mastery-vod-p-116",
+          "label": "ANTO SYNO Lec -23",
+          "url": "https://selectionwayserver.hranker.com/pdfs/files/LEC-23 SLIDE.pdf",
+          "type": "pdf"
+        },
+        {
+          "id": "vocab-mastery-vod-p-118",
+          "label": "ANTO SYNO Lec -24",
+          "url": "https://selectionwayserver.hranker.com/pdfs/files/LEC-24 CONCISE.pdf",
+          "type": "pdf"
+        },
+        {
+          "id": "vocab-mastery-vod-p-119",
+          "label": "ANTO SYNO Lec -24",
+          "url": "https://selectionwayserver.hranker.com/pdfs/files/LEC-24 SLIDE.pdf",
+          "type": "pdf"
+        },
+        {
+          "id": "vocab-mastery-vod-p-121",
+          "label": "ANTO SYNO Lec -25",
+          "url": "https://selectionwayserver.hranker.com/pdfs/files/LEC-25 SLIDE.pdf",
+          "type": "pdf"
+        },
+        {
+          "id": "vocab-mastery-vod-p-122",
+          "label": "ANTO SYNO Lec -25",
+          "url": "https://selectionwayserver.hranker.com/pdfs/files/LEC-25 CONCISE.pdf",
+          "type": "pdf"
+        },
+        {
+          "id": "vocab-mastery-vod-p-124",
+          "label": "ANTO SYNO Lec -26",
+          "url": "https://selectionwayserver.hranker.com/pdfs/files/LEC-26 CONCISE.pdf",
+          "type": "pdf"
+        },
+        {
+          "id": "vocab-mastery-vod-p-125",
+          "label": "ANTO SYNO Lec -26",
+          "url": "https://selectionwayserver.hranker.com/pdfs/files/LEC-26 SLIDE.pdf",
+          "type": "pdf"
+        },
+        {
+          "id": "vocab-mastery-vod-p-127",
+          "label": "Root words - 1",
+          "url": "https://hranker-node.s3.ap-south-1.amazonaws.com/pdfs/files/LEC-1 RW SLIDE.pdf",
+          "type": "pdf"
+        },
+        {
+          "id": "vocab-mastery-vod-p-128",
+          "label": "Root words - 1",
+          "url": "https://hranker-node.s3.ap-south-1.amazonaws.com/pdfs/files/LEC-1 RW CONCISE.pdf",
+          "type": "pdf"
+        },
+        {
+          "id": "vocab-mastery-vod-p-130",
+          "label": "Root words - 2",
+          "url": "https://hranker-node.s3.ap-south-1.amazonaws.com/pdfs/files/LEC-2 RW SLIDE.pdf",
+          "type": "pdf"
+        },
+        {
+          "id": "vocab-mastery-vod-p-131",
+          "label": "Root words - 2",
+          "url": "https://hranker-node.s3.ap-south-1.amazonaws.com/pdfs/files/LEC-2 RW CONCISE.pdf",
+          "type": "pdf"
+        },
+        {
+          "id": "vocab-mastery-vod-p-133",
+          "label": "Root words - 3",
+          "url": "https://hranker-node.s3.ap-south-1.amazonaws.com/pdfs/files/LEC-3 RW CONCISE OWS.pdf",
+          "type": "pdf"
+        },
+        {
+          "id": "vocab-mastery-vod-p-134",
+          "label": "Root words - 3",
+          "url": "https://hranker-node.s3.ap-south-1.amazonaws.com/pdfs/files/LEC-3 RW SLIDE OWS.pdf",
+          "type": "pdf"
+        },
+        {
+          "id": "vocab-mastery-vod-p-136",
+          "label": "Root words - 4",
+          "url": "https://selectionwayserver.hranker.com/pdfs/files/1760896443797-ROOT_WORD_LEC-4_RW_SLIDE.pdf",
+          "type": "pdf"
+        },
+        {
+          "id": "vocab-mastery-vod-p-137",
+          "label": "Root words - 4",
+          "url": "https://selectionwayserver.hranker.com/pdfs/files/1760896462210-ROOT_WORD_LEC-4_CONCISE.pdf",
+          "type": "pdf"
+        },
+        {
+          "id": "vocab-mastery-vod-p-139",
+          "label": "Root words - 5",
+          "url": "https://hranker-node.s3.ap-south-1.amazonaws.com/pdfs/files/LEC-5 RW SLIDE.pdf",
+          "type": "pdf"
+        },
+        {
+          "id": "vocab-mastery-vod-p-140",
+          "label": "Root words - 5",
+          "url": "https://hranker-node.s3.ap-south-1.amazonaws.com/pdfs/files/LEC-5 RW CONCISE.pdf",
+          "type": "pdf"
+        },
+        {
+          "id": "vocab-mastery-vod-p-142",
+          "label": "OWS Lec - 1",
+          "url": "https://hranker-node.s3.ap-south-1.amazonaws.com/pdfs/files/LEC-6 CONCISE OWS.pdf",
+          "type": "pdf"
+        },
+        {
+          "id": "vocab-mastery-vod-p-143",
+          "label": "OWS Lec - 1",
+          "url": "https://hranker-node.s3.ap-south-1.amazonaws.com/pdfs/files/LEC-6 SLIDE OWS.pdf",
+          "type": "pdf"
+        },
+        {
+          "id": "vocab-mastery-vod-p-145",
+          "label": "OWS Lec - 2",
+          "url": "https://hranker-node.s3.ap-south-1.amazonaws.com/pdfs/files/LEC-7 CONCISE OWS.pdf",
+          "type": "pdf"
+        },
+        {
+          "id": "vocab-mastery-vod-p-146",
+          "label": "OWS Lec - 2",
+          "url": "https://hranker-node.s3.ap-south-1.amazonaws.com/pdfs/files/LEC-7 SLIDEOWS.pdf",
+          "type": "pdf"
+        },
+        {
+          "id": "vocab-mastery-vod-p-148",
+          "label": "OWS Lec - 3",
+          "url": "https://hranker-node.s3.ap-south-1.amazonaws.com/pdfs/files/LEC-8 SLIDE OWS.pdf",
+          "type": "pdf"
+        },
+        {
+          "id": "vocab-mastery-vod-p-149",
+          "label": "OWS Lec - 3",
+          "url": "https://hranker-node.s3.ap-south-1.amazonaws.com/pdfs/files/LEC-8 CONCISE OWS.pdf",
+          "type": "pdf"
+        },
+        {
+          "id": "vocab-mastery-vod-p-151",
+          "label": "OWS Lec - 4",
+          "url": "https://hranker-node.s3.ap-south-1.amazonaws.com/pdfs/files/LEC-9 CONCISE OWS.pdf",
+          "type": "pdf"
+        },
+        {
+          "id": "vocab-mastery-vod-p-152",
+          "label": "OWS Lec - 4",
+          "url": "https://hranker-node.s3.ap-south-1.amazonaws.com/pdfs/files/LEC-9 SLIDE OWS.pdf",
+          "type": "pdf"
+        },
+        {
+          "id": "vocab-mastery-vod-p-154",
+          "label": "OWS Lec - 5",
+          "url": "https://hranker-node.s3.ap-south-1.amazonaws.com/pdfs/files/LEC-10 CONCISE OWS.pdf",
+          "type": "pdf"
+        },
+        {
+          "id": "vocab-mastery-vod-p-155",
+          "label": "OWS Lec - 5",
+          "url": "https://hranker-node.s3.ap-south-1.amazonaws.com/pdfs/files/LEC-10 SLIDE OWS.pdf",
+          "type": "pdf"
+        },
+        {
+          "id": "vocab-mastery-vod-p-157",
+          "label": "OWS Lec - 6",
+          "url": "https://hranker-node.s3.ap-south-1.amazonaws.com/pdfs/files/LEC-11 CONCISE OWS.pdf",
+          "type": "pdf"
+        },
+        {
+          "id": "vocab-mastery-vod-p-158",
+          "label": "OWS Lec - 6",
+          "url": "https://hranker-node.s3.ap-south-1.amazonaws.com/pdfs/files/LEC-11 SLIDE OWS.pdf",
+          "type": "pdf"
+        },
+        {
+          "id": "vocab-mastery-vod-p-160",
+          "label": "OWS Lec - 7",
+          "url": "https://hranker-node.s3.ap-south-1.amazonaws.com/pdfs/files/LEC-12 SLIDE OWS.pdf",
+          "type": "pdf"
+        },
+        {
+          "id": "vocab-mastery-vod-p-161",
+          "label": "OWS Lec - 7",
+          "url": "https://hranker-node.s3.ap-south-1.amazonaws.com/pdfs/files/LEC-12 CONCISE OWS.pdf",
+          "type": "pdf"
+        },
+        {
+          "id": "vocab-mastery-vod-p-163",
+          "label": "Phrasal verbs Lec -1",
+          "url": "https://selectionwayserver.hranker.com/pdfs/files/LEC-1 CONCISE phrasal verbs.pdf",
+          "type": "pdf"
+        },
+        {
+          "id": "vocab-mastery-vod-p-164",
+          "label": "Phrasal verbs Lec -1",
+          "url": "https://selectionwayserver.hranker.com/pdfs/files/LEC-1 SLIDE phrasal verbs.pdf",
+          "type": "pdf"
+        },
+        {
+          "id": "vocab-mastery-vod-p-166",
+          "label": "Phrasal verbs Lec -2",
+          "url": "https://selectionwayserver.hranker.com/pdfs/files/LEC-2 CONCISE phrasal verbs.pdf",
+          "type": "pdf"
+        },
+        {
+          "id": "vocab-mastery-vod-p-167",
+          "label": "Phrasal verbs Lec -2",
+          "url": "https://selectionwayserver.hranker.com/pdfs/files/LEC-2 SLIDE phrasal verbs.pdf",
+          "type": "pdf"
+        },
+        {
+          "id": "vocab-mastery-vod-p-169",
+          "label": "Phrasal verbs Lec - 3",
+          "url": "https://selectionwayserver.hranker.com/pdfs/files/LEC-3 SLIDE phrasal verbs.pdf",
+          "type": "pdf"
+        },
+        {
+          "id": "vocab-mastery-vod-p-170",
+          "label": "Phrasal verbs Lec - 3",
+          "url": "https://selectionwayserver.hranker.com/pdfs/files/LEC-3 CONCISE phrasal verbs.pdf",
+          "type": "pdf"
+        },
+        {
+          "id": "vocab-mastery-vod-p-172",
+          "label": "Phrasal verbs practice",
+          "url": "https://selectionwayserver.hranker.com/pdfs/files/Phrasal Verbs 240  Paid and Yt CL.pdf",
+          "type": "pdf"
+        }
+      ]
+    }
+  ],
+  "category": "government"
+}

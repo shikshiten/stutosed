@@ -48,15 +48,62 @@ const SECURE_HOST_SIGNATURES = [
   'cHVibGljYm90c2h1Yi5ibG9nc3BvdC5jb20=',
   'Y2RuLmp3cGxheWVyLmNvbQ==',
   'Y29udGVudC5qd3BsYXRmb3JtLmNvbQ==',
-  'ZWRnZW9uZS5hcHA=', // edgeone.app
-  'Y2xvdWRmcm9udC5uZXQ=', // cloudfront.net
   'aHJhbmtlci5jb20=', // hranker.com
-  'YW1hem9uYXdzLmNvbQ==', // amazonaws.com
-  'Y2F0Ym94Lm1vZQ==', // catbox.moe
   'c3RycDJwLnNpdGU=', // strp2p.site
   'c3R1dG9zZWQuc3RycDJwLnNpdGU=', // stutosed.strp2p.site
   'c3luY3AycC5jb20=', // syncp2p.com
   'c3RyZWFtcDJwLmNvbQ==', // streamp2p.com
+  // Exact-host specific subdomains (No wildcards permitted)
+  'ZmlsZXMuY2F0Ym94Lm1vZQ==', // files.catbox.moe
+  'aHJhbmtlci1ub2RlLnMzLmFwLXNvdXRoLTEuYW1hem9uYXdzLmNvbQ==', // hranker-node.s3.ap-south-1.amazonaws.com
+  'ZDE0djR2ODBjcGpodDcuY2xvdWRmcm9udC5uZXQ=', // d14v4v80cpjht7.cloudfront.net
+  'ZDI4eG5pOTc3OGhvZmwuY2xvdWRmcm9udC5uZXQ=', // d28xni9778hofl.cloudfront.net
+  'ZDN2bGc0cWpiODBoOG4uY2xvdWRmcm9udC5uZXQ=', // d3vlg4qjb80h8n.cloudfront.net
+  'aXNzbWF0dGVycHVyZXh2aXZpZC5lZGdlb25lLmFwcA==',
+  'dml2aWRlY290ZXN0MS5lZGdlb25lLmFwcA==',
+  'dml2aWR4YWNpZGJhc2VhbmRzYWx0c2VuZy5lZGdlb25lLmFwcA==',
+  'dml2aWR4YWNpZGJhc2VhbmRzYWx0c2hpbi5lZGdlb25lLmFwcA==',
+  'dml2aWR4YWNpZGJhc2VzYW5kc2FsdHMuZWRnZW9uZS5hcHA=',
+  'dml2aWR4YWNpZGJhc2VzYW5kc2FsdHNwcHQuZWRnZW9uZS5hcHA=',
+  'dml2aWR4YWNpZGJhc2VzYW5kc2FsdHNxdWl6LmVkZ2VvbmUuYXBw',
+  'dml2aWR4YXRvbS5lZGdlb25lLmFwcA==',
+  'dml2aWR4YXRvbWVuZ2xpc2guZWRnZW9uZS5hcHA=',
+  'dml2aWR4YXRvbWhpbmRpLmVkZ2VvbmUuYXBw',
+  'dml2aWR4YXRvbXBwdC5lZGdlb25lLmFwcA==',
+  'dml2aWR4YXRvbXouZWRnZW9uZS5hcHA=',
+  'dml2aWR4YmlvZnVsbHRlc3QuZWRnZW9uZS5hcHA=',
+  'dml2aWR4Y2hlbWljYWxlbmcuZWRnZW9uZS5hcHA=',
+  'dml2aWR4Y2hlbWljYWxoaW5kaS5lZGdlb25lLmFwcA==',
+  'dml2aWR4Y2hlbWljYWxwcHQuZWRnZW9uZS5hcHA=',
+  'dml2aWR4Y2hlbWljYWxxdWl6LmVkZ2VvbmUuYXBw',
+  'dml2aWR4Y2hlbWljYWxyZWFjdGlvbnMuZWRnZW9uZS5hcHA=',
+  'dml2aWR4Y2hlbWlzdHJ5dGVzdC5lZGdlb25lLmFwcA==',
+  'dml2aWR4Y2xhc3NpY2FsZGRhbmNlLmVkZ2VvbmUuYXBw',
+  'dml2aWR4ZWNvZnVsbHRlc3QuZWRnZW9uZS5hcHA=',
+  'dml2aWR4Zm9sa2RhbmNlcy5lZGdlb25lLmFwcA==',
+  'dml2aWR4ZnVsbGdlb3Rlc3QuZWRnZW9uZS5hcHA=',
+  'dml2aWR4ZnVsbGhpc3Rvcnl0ZXN0LmVkZ2VvbmUuYXBw',
+  'dml2aWR4ZnVsbHBvbGl0eXRlc3QuZWRnZW9uZS5hcHA=',
+  'dml2aWR4aW1hdHRlcnB1cmVsZWN0dXJlLmVkZ2VvbmUuYXBw',
+  'dml2aWR4aXNtYXR0ZXJwdXJlZW5nLmVkZ2VvbmUuYXBw',
+  'dml2aWR4aXNtYXR0ZXJwdXJlaGluZGkuZWRnZW9uZS5hcHA=',
+  'dml2aWR4aXNtYXR0ZXJwdXJlcHB0LmVkZ2VvbmUuYXBw',
+  'dml2aWR4bWF0dGVyZW5nLmVkZ2VvbmUuYXBw',
+  'dml2aWR4bWF0dGVyaGluZGkuZWRnZW9uZS5hcHA=',
+  'dml2aWR4bWF0dGVycHB0LmVkZ2VvbmUuYXBw',
+  'dml2aWR4bWF0dGVycy5lZGdlb25lLmFwcA==',
+  'dml2aWR4bWV0YWxhbmRub24tbWV0YWwuZWRnZW9uZS5hcHA=',
+  'dml2aWR4bWV0YWxub25tZXRhbGVuZy5lZGdlb25lLmFwcA==',
+  'dml2aWR4bWV0YWxub25tZXRhbGhpbmRpLmVkZ2VvbmUuYXBw',
+  'dml2aWR4bWV0YWxub25tZXRhbHBwdC5lZGdlb25lLmFwcA==',
+  'dml2aWR4bWV0YWxxdWl6LmVkZ2VvbmUuYXBw',
+  'dml2aWR4cGVyaW9kaWNlbmcuZWRnZW9uZS5hcHA=',
+  'dml2aWR4cGVyaW9kaWNoaW5kaS5lZGdlb25lLmFwcA==',
+  'dml2aWR4cGVyaW9kaWNwcHQuZWRnZW9uZS5hcHA=',
+  'dml2aWR4cGVyaW9kaWNxdWl6LmVkZ2VvbmUuYXBw',
+  'dml2aWR4cGVyaW9kaWN0YWJsZWxlY3R1cmUuZWRnZW9uZS5hcHA=',
+  'dml2aWR4cGh5c2ljc3Rlc3QuZWRnZW9uZS5hcHA=',
+  'dml2aWR4cHJhdGhhbWJhdGNoLmVkZ2VvbmUuYXBw',
 ];
 
 function decodeSignature(b64: string): string {
@@ -81,7 +128,7 @@ function getResolvedAllowlist(): Set<string> {
 
 const RESOLVED_ALLOWLIST = getResolvedAllowlist();
 
-// Multi-tenant public hosting platforms where suffix wildcard matching MUST NEVER be allowed
+// Multi-tenant and generic cloud platforms where suffix wildcard matching MUST NEVER be allowed
 const NO_WILDCARD_PLATFORMS = [
   'workers.dev',
   'herokuapp.com',
@@ -92,6 +139,10 @@ const NO_WILDCARD_PLATFORMS = [
   'pages.dev',
   'netlify.app',
   'render.com',
+  'amazonaws.com',
+  'cloudfront.net',
+  'edgeone.app',
+  'catbox.moe',
 ];
 
 export function isAllowedUpstream(rawUrl: string): boolean {
@@ -109,7 +160,7 @@ export function isAllowedUpstream(rawUrl: string): boolean {
         (p) => allowed === p || allowed.endsWith('.' + p)
       );
 
-      // Never permit wildcard subdomains on shared multi-tenant platforms (e.g. *.workers.dev)
+      // Never permit wildcard subdomains on shared multi-tenant or public cloud platforms
       if (isPublicPlatform) {
         if (hostname === allowed) return true;
         continue;
@@ -134,17 +185,30 @@ const ALLOWED_APP_DOMAINS = [
   '127.0.0.1',
 ];
 
-export function isAllowedOrigin(originOrReferer: string | null): boolean {
-  if (!originOrReferer) return true; // Browser direct or same-origin non-cross requests
-  try {
-    const parsed = new URL(originOrReferer);
-    const host = parsed.hostname.toLowerCase();
-    return ALLOWED_APP_DOMAINS.some(
-      (allowed) => host === allowed || host.endsWith('.' + allowed)
-    );
-  } catch {
+export function isAllowedOrigin(
+  originOrReferer: string | null,
+  secFetchSite?: string | null
+): boolean {
+  // If explicitly cross-site and no origin provided, block
+  if (secFetchSite === 'cross-site' && !originOrReferer) {
     return false;
   }
+
+  if (originOrReferer) {
+    try {
+      const parsed = new URL(originOrReferer);
+      const host = parsed.hostname.toLowerCase();
+      return ALLOWED_APP_DOMAINS.some(
+        (allowed) => host === allowed || host.endsWith('.' + allowed)
+      );
+    } catch {
+      return false;
+    }
+  }
+
+  // When Origin/Referer and Sec-Fetch-Site are missing (e.g. older Android WebView, Telegram in-app browser),
+  // do not block unless explicitly cross-site
+  return true;
 }
 
 export function getSecureCorsHeaders(origin: string | null): Record<string, string> {

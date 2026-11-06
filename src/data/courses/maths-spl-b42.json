@@ -1,0 +1,2393 @@
+{
+  "id": "maths-spl-b42",
+  "name": "Mathematics B42",
+  "subname": "Maths Special Recorded B-42 • Concept & Practice",
+  "teacher": "Abhinay Sharma Sir",
+  "subject": "Maths",
+  "thumb": "/thumbnails/subjects/maths_spl_b42.svg",
+  "tabs": [
+    {
+      "id": "videos",
+      "label": "▶ Videos",
+      "items": [
+        {
+          "id": "maths-spl-b42-v-1",
+          "label": "Arithmetic - Class-01 – Time & Work – By Abhinay Sir [25-Nov-2024 16:00]",
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/vod_non_drm_hls/migration/l_EgqaS_iQc/l_EgqaS_iQc.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-spl-b42-v-2",
+          "label": "Arithmetic - Class-02 – Time & Work – By Abhinay Sir [26-Nov-2024 16:00]",
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/vod_non_drm_hls/migration/M94j1p3OZZw/M94j1p3OZZw.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-spl-b42-v-3",
+          "label": "Arithmetic - Class-03 – Time & Work – By Abhinay Sir [27-Nov-2024 16:00]",
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6365291000112/6365291000112.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-spl-b42-v-4",
+          "label": "Arithmetic - Class-04 – Time & Work – By Abhinay Sir [28-Nov-2024 16:00]",
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6365290019112/6365290019112.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-spl-b42-v-5",
+          "label": "Arithmetic - Class-05 – Time & Work – By Abhinay Sir [29-Nov-2024 16:00]",
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6365321011112/6365321011112.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-spl-b42-v-6",
+          "label": "Arithmetic - Class-06 – Time & Work – By Abhinay Sir [02-Dec-2024 16:00]",
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6365412717112/6365412717112.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-spl-b42-v-7",
+          "label": "Arithmetic - Class-07 – Pipe & Cistern – By Abhinay Sir [03-Dec-2024 16:00]",
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6365463159112/6365463159112.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-spl-b42-v-8",
+          "label": "Arithmetic - Class-08 – Pipe & Cistern – By Abhinay Sir [04-Dec-2024 16:00]",
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6365515909112/6365515909112.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-spl-b42-v-9",
+          "label": "Arithmetic - Class-09 – Pipe & Cistern – By Abhinay Sir [05-Dec-2024 16:00]",
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6365575572112/6365575572112.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-spl-b42-v-10",
+          "label": "Arithmetic - Class-10 – Work & Wages – By Abhinay Sir [06-Dec-2024 16:00]",
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6365628854112/6365628854112.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-spl-b42-v-11",
+          "label": "Arithmetic - Class-11 – Time And Work Part-01 – By Abhinay Sir [09-Dec-2024 16:00]",
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6365751508112/6365751508112.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-spl-b42-v-12",
+          "label": "Arithmetic - Class-12 – Time And Work Part 02 – By Abhinay Sir [10-Dec-2024 16:00]",
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6365795860112/6365795860112.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-spl-b42-v-13",
+          "label": "Arithmetic - Class-13 – Simplification – By Abhinay Sir [11-Dec-2024 16:00]",
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6365841809112/6365841809112.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-spl-b42-v-14",
+          "label": "Arithmetic - Class-14 – Simplification – By Abhinay Sir [12-Dec-2024 16:00]",
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6365896060112/6365896060112.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-spl-b42-v-15",
+          "label": "Arithmetic - Class-15 – Simplification – By Abhinay Sir [13-Dec-2024 16:00]",
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6365944860112/6365944860112.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-spl-b42-v-16",
+          "label": "Arithmetic - Class-01 – Percentage – By Abhinay Sir [16-Dec-2024 16:00]",
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6366059518112/6366059518112.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-spl-b42-v-17",
+          "label": "Arithmetic - Class-02 – Percentage – By Abhinay Sir [17-Dec-2024 16:00]",
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6366104099112/6366104099112.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-spl-b42-v-18",
+          "label": "Arithmetic - Class-03 – Percentage – By Abhinay Sir [18-Dec-2024 16:00]",
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6366174429112/6366174429112.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-spl-b42-v-19",
+          "label": "Arithmetic - Class-04 – Percentage – By Abhinay Sir [19-Dec-2024 16:00]",
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6366223288112/6366223288112.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-spl-b42-v-20",
+          "label": "Arithmetic - Class-05 – Percentage – By Abhinay Sir [20-Dec-2024 16:00]",
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6366273359112/6366273359112.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-spl-b42-v-21",
+          "label": "Arithmetic - Class-06 – Percentage – By Abhinay Sir [23-Dec-2024 16:00]",
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6366369670112/6366369670112.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-spl-b42-v-22",
+          "label": "Arithmetic - Class-22 – Arithmetic Progression – By Abhinay Sir [24-Dec-2024 16:00]",
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6366404167112/6366404167112.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-spl-b42-v-23",
+          "label": "Arithmetic - Class-23 – Average Part - 01 [25-Dec-2024 16:00]",
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6366429153112/6366429153112.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-spl-b42-v-24",
+          "label": "Arithmetic - Class-24 – Average Part - 02 [26-Dec-2024 16:00]",
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6366449257112/6366449257112.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-spl-b42-v-25",
+          "label": "Arithmetic - Class-25 – Average Part - 03 [27-Dec-2024 16:00]",
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6366475941112/6366475941112.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-spl-b42-v-26",
+          "label": "Arithmetic - Class-26 – Average Part - 04 [28-Dec-2024 16:00]",
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6366500442112/6366500442112.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-spl-b42-v-27",
+          "label": "Arithmetic - Class-27 – Average Part - 05 [29-Dec-2024 16:00]",
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6366521419112/6366521419112.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-spl-b42-v-28",
+          "label": "Arithmetic - Class-28 – SI Part - 01 [30-Dec-2024 16:00]",
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6366545274112/6366545274112.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-spl-b42-v-29",
+          "label": "Arithmetic - Class-29 – SI Part - 02 [31-Dec-2024 16:00]",
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/vod_non_drm_hls/migration/hsIgUpU9I24/hsIgUpU9I24.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-spl-b42-v-30",
+          "label": "Arithmetic - Class-30 – SI Part - 03 [02-Jan-2025 16:00]",
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6366615618112/6366615618112.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-spl-b42-v-31",
+          "label": "Arithmetic - Class-31 – SI Part - 04 [03-Jan-2025 16:30]",
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6366646861112/6366646861112.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-spl-b42-v-32",
+          "label": "Arithmetic - Class-32 – SI Part - 05 [06-Jan-2025 16:00]",
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6366730764112/6366730764112.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-spl-b42-v-33",
+          "label": "Arithmetic - Class-33 – SI Part - 06 [07-Jan-2025 16:00]",
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6366765232112/6366765232112.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-spl-b42-v-34",
+          "label": "Arithmetic - Class-34 – SI Part - 07 [09-Jan-2025 16:00]",
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6366850611112/6366850611112.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-spl-b42-v-35",
+          "label": "Arithmetic - Class-35 – Compound Interest Part -01 [10-Jan-2025 16:00]",
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6366904787112/6366904787112.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-spl-b42-v-36",
+          "label": "Arithmetic - Class-36 – Compound Interest Part- 02 [13-Jan-2025 16:00]",
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6367020619112/6367020619112.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-spl-b42-v-37",
+          "label": "Arithmetic - Class-37 – Compound Interest Part- 03 [14-Jan-2025 16:00]",
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6367073846112/6367073846112.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-spl-b42-v-38",
+          "label": "Arithmetic - Class-38 – Compound Interest Part- 04 [15-Jan-2025 16:00]",
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6367118856112/6367118856112.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-spl-b42-v-39",
+          "label": "Arithmetic - Class-39 – Compound Interest Part- 05 [17-Jan-2025 16:00]",
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6367225123112/6367225123112.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-spl-b42-v-40",
+          "label": "Arithmetic - Class-40 – Compound Interest Part- 06 [18-Jan-2025 16:00]",
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6367286823112/6367286823112.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-spl-b42-v-41",
+          "label": "Arithmetic - Class-41 – Compound Interest Part- 07 [20-Jan-2025 16:00]",
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/vod_non_drm_hls/migration/KtAxqokbykY/KtAxqokbykY.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-spl-b42-v-42",
+          "label": "Arithmetic - Class - 01 – Maths – Number System Part - 01 [21-Jan-2025 10:00]",
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/vod_non_drm_hls/migration/Eb_roasiuDg/Eb_roasiuDg.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-spl-b42-v-43",
+          "label": "Arithmetic - Class-42 – Profit & Loss part -1 [21-Jan-2025 16:00]",
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6367437458112/6367437458112.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-spl-b42-v-44",
+          "label": "Arithmetic - Class - 02 – Maths – Number System Part - 02 [22-Jan-2025 10:00]",
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6367479687112/6367479687112.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-spl-b42-v-45",
+          "label": "Arithmetic - Class-43 – Profit & Loss part -2 [22-Jan-2025 16:00]",
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6367489686112/6367489686112.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-spl-b42-v-46",
+          "label": "Arithmetic - Class - 03 – Maths – Number System Part - 03 [24-Jan-2025 10:00]",
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/vod_non_drm_hls/migration/E7TKbtCKwUQ/E7TKbtCKwUQ.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-spl-b42-v-47",
+          "label": "Arithmetic - Class-44 – Profit & Loss part -3 [24-Jan-2025 16:00]",
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6367617158112/6367617158112.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-spl-b42-v-48",
+          "label": "Arithmetic - Class - 04 – Maths – Number System Part - 04 [27-Jan-2025 10:00]",
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6368944284112/6368944284112.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-spl-b42-v-49",
+          "label": "Arithmetic - Class-45 – Profit & Loss part -4 [27-Jan-2025 16:00]",
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6367822981112/6367822981112.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-spl-b42-v-50",
+          "label": "Arithmetic - Class - 05 – Maths – Number System Part - 05 [28-Jan-2025 10:00]",
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6367864107112/6367864107112.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-spl-b42-v-51",
+          "label": "Arithmetic - Class-46 – Profit & Loss part -5 [28-Jan-2025 16:00]",
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6367874360112/6367874360112.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-spl-b42-v-52",
+          "label": "Arithmetic - Class - 06 – Maths – Number System Part - 06 [29-Jan-2025 10:00]",
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6367922600112/6367922600112.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-spl-b42-v-53",
+          "label": "Arithmetic - Class-47 – Profit & Loss part -6 [29-Jan-2025 16:00]",
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6367934503112/6367934503112.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-spl-b42-v-54",
+          "label": "Arithmetic - Class - 07 – Maths – Number System Part - 07 [30-Jan-2025 10:00]",
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6367979508112/6367979508112.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-spl-b42-v-55",
+          "label": "Arithmetic - Class-48 – Profit & Loss part -7 [30-Jan-2025 16:00]",
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6367989025112/6367989025112.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-spl-b42-v-56",
+          "label": "Arithmetic - Class - 08 – Maths – Number System Part - 08 [31-Jan-2025 10:00]",
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6368029591112/6368029591112.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-spl-b42-v-57",
+          "label": "Arithmetic - Class-49 – Profit & Loss part -8 [31-Jan-2025 16:00]",
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6368040191112/6368040191112.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-spl-b42-v-58",
+          "label": "Arithmetic - Class - 09 – Maths – Number System Part - 09 [01-Feb-2025 10:00]",
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6368093616112/6368093616112.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-spl-b42-v-59",
+          "label": "Arithmetic - Class - 10 – Maths – Number System Part - 10 [02-Feb-2025 10:00]",
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6368144795112/6368144795112.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-spl-b42-v-60",
+          "label": "Arithmetic - Class-50 – Profit & Loss part -9 [03-Feb-2025 16:00]",
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6368191308112/6368191308112.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-spl-b42-v-61",
+          "label": "Arithmetic - Class - 11 – Maths – Number System Part - 11 [03-Feb-2025 20:00]",
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6368199974112/6368199974112.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-spl-b42-v-62",
+          "label": "Arithmetic - Class - 12 – Maths – Number System Part - 12 [04-Feb-2025 10:00]",
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6368228966112/6368228966112.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-spl-b42-v-63",
+          "label": "Arithmetic - Class-51 – Profit & Loss part -10 [04-Feb-2025 16:00]",
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6368237629112/6368237629112.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-spl-b42-v-64",
+          "label": "Arithmetic - Class - 13 – Maths – Number System Part - 13 [06-Feb-2025 10:00]",
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6368943684112/6368943684112.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-spl-b42-v-65",
+          "label": "Arithmetic - Class-52 – Profit & Loss part -11 [06-Feb-2025 16:00]",
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6368363662112/6368363662112.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-spl-b42-v-66",
+          "label": "Arithmetic - Class - 14 – Maths – Number System Part - 14 [07-Feb-2025 10:00]",
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6368412015112/6368412015112.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-spl-b42-v-67",
+          "label": "Arithmetic - Class-53 – Profit & Loss part -12(Discount) [07-Feb-2025 16:00]",
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6368423312112/6368423312112.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-spl-b42-v-68",
+          "label": "Arithmetic - Class - 15 – Maths – Number System Part - 15 [10-Feb-2025 10:00]",
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6368581190112/6368581190112.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-spl-b42-v-69",
+          "label": "Arithmetic - Class-54 – Profit & Loss part -14 ( miscellnous pyqs practice) [10-Feb-2025 16:00]",
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6368593897112/6368593897112.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-spl-b42-v-70",
+          "label": "Arithmetic - Class - 16 – Maths – Number System Part - 16 [11-Feb-2025 10:00]",
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6368630912112/6368630912112.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-spl-b42-v-71",
+          "label": "Arithmetic - Class-01 – LCM & HCF Part - 01 [12-Feb-2025 10:00]",
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6368685015112/6368685015112.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-spl-b42-v-72",
+          "label": "Arithmetic - Class-55 – Time, Speed and Distance Part-01 [12-Feb-2025 16:00]",
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6368696114112/6368696114112.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-spl-b42-v-73",
+          "label": "Arithmetic - Class-56 – Maths – LCM & HCF Part - 02 [13-Feb-2025 10:00]",
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6368739982112/6368739982112.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-spl-b42-v-74",
+          "label": "Arithmetic - Class-57 – Time, Speed and Distance Part-02 [13-Feb-2025 16:00]",
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6368749112112/6368749112112.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-spl-b42-v-75",
+          "label": "Arithmetic - Class-58 – Maths – LCM & HCF Part - 03 [14-Feb-2025 10:00]",
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6368800917112/6368800917112.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-spl-b42-v-76",
+          "label": "Arithmetic - Class-59 – Time, Speed and Distance Part-03 [14-Feb-2025 16:00]",
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6368815176112/6368815176112.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-spl-b42-v-77",
+          "label": "Arithmetic - Class-60 – Maths – LCM & HCF Part - 04 [17-Feb-2025 10:00]",
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6368941160112/6368941160112.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-spl-b42-v-78",
+          "label": "Arithmetic - Class-61 – Time, Speed and Distance Part-04 [17-Feb-2025 16:00]",
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6368948706112/6368948706112.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-spl-b42-v-79",
+          "label": "Arithmetic - Class-62 – Maths – LCM & HCF Part - 05 [18-Feb-2025 10:00]",
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6368982486112/6368982486112.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-spl-b42-v-80",
+          "label": "Arithmetic - Class-63 – Time, Speed and Distance Part-05 [18-Feb-2025 16:00]",
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6368990363112/6368990363112.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-spl-b42-v-81",
+          "label": "Arithmetic - Class-64 – Maths – LCM & HCF Part - 06 [19-Feb-2025 10:00]",
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6369033352112/6369033352112.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-spl-b42-v-82",
+          "label": "Arithmetic - Class-65 –  LCM & HCF part -07 [19-Feb-2025 16:00]",
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6369040735112/6369040735112.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-spl-b42-v-83",
+          "label": "Arithmetic - Class-66 – Maths – Digital Sum [20-Feb-2025 10:00]",
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6369075522112/6369075522112.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-spl-b42-v-84",
+          "label": "Arithmetic - Class-67 –  Time, Speed and Distance Part-06 [20-Feb-2025 16:00]",
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6369087391112/6369087391112.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-spl-b42-v-85",
+          "label": "Arithmetic - Class-68 – Time, Speed and Distance Part-07 [22-Feb-2025 16:00]",
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6369182640112/6369182640112.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-spl-b42-v-86",
+          "label": "Arithmetic - Class-69 – Time, Speed and Distance Part-08 [27-Feb-2025 16:00]",
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6369387661112/6369387661112.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-spl-b42-v-87",
+          "label": "Arithmetic - Class-70 – Time, Speed and Distance Part-09 [02-Mar-2025 10:00]",
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6369513471112/6369513471112.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-spl-b42-v-88",
+          "label": "Arithmetic - Class-71 – Time, Speed and Distance Part-10 (train) [03-Mar-2025 16:00]",
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6369546486112/6369546486112.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-spl-b42-v-89",
+          "label": "Arithmetic - Class-72 – TSD Part -11 (Boat and Stream) [04-Mar-2025 16:00]",
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6369583973112/6369583973112.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-spl-b42-v-90",
+          "label": "Arithmetic - Class-73 – TSD Part -12 (Race) [05-Mar-2025 16:00]",
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6369627752112/6369627752112.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-spl-b42-v-91",
+          "label": "Arithmetic - Class-74 – TSD Part -13 (Race) [06-Mar-2025 16:00]",
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6369671868112/6369671868112.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-spl-b42-v-92",
+          "label": "Arithmetic - Class-09 – LCM & HCF [17-Mar-2025 13:30]",
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6370134505112/6370134505112.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-spl-b42-v-93",
+          "label": "Arithmetic - Class-10 – NS - Miscellaneous Practice Class - 01 [19-Mar-2025 13:00]",
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/vod_non_drm_hls/migration/w0TvyQNkR30/w0TvyQNkR30.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-spl-b42-v-94",
+          "label": "Arithmetic - Class-11 – Miscellaneous Practice Class - 01 [22-Mar-2025 13:00]",
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6370371082112/6370371082112.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-spl-b42-v-95",
+          "label": "Arithmetic - Class-01 – Ratio & Proportion Part-1 [11-Apr-2025 16:00]",
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6371349710112/6371349710112.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-spl-b42-v-96",
+          "label": "Arithmetic - Class-02 – Ratio & Proportion Part-2 [13-Apr-2025 16:00]",
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6371433171112/6371433171112.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-spl-b42-v-97",
+          "label": "Arithmetic - Class-03 – Ratio & Proportion Part-3 [14-Apr-2025 18:00]",
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6371472904112/6371472904112.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-spl-b42-v-98",
+          "label": "Arithmetic - Class-04 – Ratio & Proportion Part-4 [15-Apr-2025 16:00]",
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6371509744112/6371509744112.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-spl-b42-v-99",
+          "label": "Arithmetic - Class-05 – Ratio & Proportion Part-5 [17-Apr-2025 16:00]",
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6371594204112/6371594204112.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-spl-b42-v-100",
+          "label": "Arithmetic - Class-01 – Partnership Part-01 [18-Apr-2025 10:00]",
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6371633131112/6371633131112.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-spl-b42-v-101",
+          "label": "Arithmetic - Class-06 – Ratio & Proportion Part-6 [18-Apr-2025 16:00]",
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6371639985112/6371639985112.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-spl-b42-v-102",
+          "label": "Arithmetic - Class-02 – Partnership Part-02 [19-Apr-2025 10:00]",
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6371674886112/6371674886112.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-spl-b42-v-103",
+          "label": "Arithmetic - Class-03 – Partnership Part-03 [20-Apr-2025 10:00]",
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6371714404112/6371714404112.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-spl-b42-v-104",
+          "label": "Arithmetic - Class-01 – Mixture Part-1 [22-Apr-2025 10:00]",
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6371776410112/6371776410112.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-spl-b42-v-105",
+          "label": "Arithmetic - Class-02 – Mixture Part-2 [23-Apr-2025 10:00]",
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6371815943112/6371815943112.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-spl-b42-v-106",
+          "label": "Arithmetic - Class-07 – Ratio & Proportion Part-7 [23-Apr-2025 16:00]",
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6371823028112/6371823028112.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-spl-b42-v-107",
+          "label": "Arithmetic - Class-03 – Mixture Part-2 [24-Apr-2025 10:00]",
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6371858615112/6371858615112.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-spl-b42-v-108",
+          "label": "Arithmetic - Class-04 – Mixture Part-4 [24-Apr-2025 19:30]",
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6371872733112/6371872733112.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-spl-b42-v-109",
+          "label": "Arithmetic - Class-05 – Mixture Part-5 [25-Apr-2025 10:00]",
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6371909590112/6371909590112.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-spl-b42-v-110",
+          "label": "Arithmetic - Class-01 – Problem & Ages Part-1 [25-Apr-2025 16:00]",
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6371919896112/6371919896112.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-spl-b42-v-111",
+          "label": "Arithmetic - Class-06 – Mixture Part-6 [28-Apr-2025 10:00]",
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6372011701112/6372011701112.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-spl-b42-v-112",
+          "label": "Arithmetic - Class-04 – AMS Class Of Mixture [29-Apr-2025 10:00]",
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/vod_non_drm_hls/migration/NOdZDcoxZ9c/NOdZDcoxZ9c.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-spl-b42-v-113",
+          "label": "Arithmetic - Class-01 – Alligation part -01 [29-Apr-2025 16:00]",
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6372106949112/6372106949112.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-spl-b42-v-114",
+          "label": "Arithmetic - Class-02 – Alligation part -02 [30-Apr-2025 10:00]",
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6372095986112/6372095986112.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-spl-b42-v-115",
+          "label": "Arithmetic - Class - 17 – Maths – Alligation [30-Apr-2025 12:00]",
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6372104263112/6372104263112.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-spl-b42-v-116",
+          "label": "Arithmetic - Class - 18 – Maths – AP, GP & HP [30-Apr-2025 12:10]",
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6372101305112/6372101305112.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-spl-b42-v-117",
+          "label": "Arithmetic - Introduction Class By Abhinay Sir [31-May-2025 14:00]",
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/vod_non_drm_hls/migration/jVBuZLrWItM/jVBuZLrWItM.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-spl-b42-v-118",
+          "label": "Arithmetic - CLASS –– DI Part 1 –– Abhinay Sir [29-Jul-2025 10:10]",
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/vod_non_drm_ios/4503035/1753787771_6279506329996064/1753787655212_211175495741085340_video_VOD.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-spl-b42-v-119",
+          "label": "Arithmetic - CLASS –– DI Part 2 –– Abhinay Sir [29-Jul-2025 11:00]",
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/vod_non_drm_ios/4503050/1753788352_8527848977175817/1753787802643_202449496253253020_video_VOD.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-spl-b42-v-120",
+          "label": "Arithmetic - CLASS –– Surds and Indices –– Abhinay Sir [29-Jul-2025 11:30]",
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/vod_non_drm_ios/4503077/1753789473_6639613675591562/1753788436824_155501188791441600_video_VOD.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-spl-b42-v-121",
+          "label": "Advance - Class-01 – Geometry Class - 01 [16-Dec-2024 12:00]",
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6366053276112/6366053276112.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-spl-b42-v-122",
+          "label": "Advance - Class-02 – Geometry Class - 02 [17-Dec-2024 12:00]",
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6366100508112/6366100508112.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-spl-b42-v-123",
+          "label": "Advance - Class-03 – Geometry Class - 03 [18-Dec-2024 12:00]",
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6366168455112/6366168455112.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-spl-b42-v-124",
+          "label": "Advance - Class-04 – Geometry Class - 04 [19-Dec-2024 12:00]",
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6366217763112/6366217763112.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-spl-b42-v-125",
+          "label": "Advance - Class-05 – Geometry Class - 05 [20-Dec-2024 12:00]",
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/vod_non_drm_hls/migration/M3vE7aEzxOY/M3vE7aEzxOY.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-spl-b42-v-126",
+          "label": "Advance - Class-06 – Geometry Class - 06 [23-Dec-2024 12:30]",
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6366363776112/6366363776112.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-spl-b42-v-127",
+          "label": "Advance - Class-07 – Geometry Class - 07 [24-Dec-2024 12:00]",
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6366400090112/6366400090112.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-spl-b42-v-128",
+          "label": "Advance - Class-08 – Geometry Class - 08 [25-Dec-2024 12:00]",
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6366425558112/6366425558112.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-spl-b42-v-129",
+          "label": "Advance - Class-09 – Geometry Class - 09 [26-Dec-2024 12:00]",
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6366443659112/6366443659112.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-spl-b42-v-130",
+          "label": "Advance - Class-10 – Geometry Class - 10 [27-Dec-2024 12:00]",
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6366471128112/6366471128112.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-spl-b42-v-131",
+          "label": "Advance - Class-11 – Geometry Class - 11 [28-Dec-2024 12:00]",
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6366499286112/6366499286112.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-spl-b42-v-132",
+          "label": "Advance - Class-12 – Geometry Class - 12 [29-Dec-2024 12:00]",
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6366520258112/6366520258112.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-spl-b42-v-133",
+          "label": "Advance - Class-13 – Geometry Class - 13 [31-Dec-2024 12:00]",
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6366567410112/6366567410112.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-spl-b42-v-134",
+          "label": "Advance - Class-14 – Geometry Class - 14 [02-Jan-2025 12:00]",
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6366613079112/6366613079112.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-spl-b42-v-135",
+          "label": "Advance - Class-15 – Miscellenous Practice - 01 [03-Jan-2025 12:00]",
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6366643796112/6366643796112.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-spl-b42-v-136",
+          "label": "Advance - Class-16 – Miscellenous Practice - 02 [06-Jan-2025 12:00]",
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6366726325112/6366726325112.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-spl-b42-v-137",
+          "label": "Advance - Class-17 – Miscellenous Practice - 03 [07-Jan-2025 12:00]",
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6366760008112/6366760008112.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-spl-b42-v-138",
+          "label": "Advance - Class-18 – Miscellaneous Part - 04 (Ratio & Proportion)} [09-Jan-2025 12:00]",
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6366845845112/6366845845112.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-spl-b42-v-139",
+          "label": "Advance - Class-19 – Miscellenous Practice - 05 [10-Jan-2025 12:00]",
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6366897788112/6366897788112.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-spl-b42-v-140",
+          "label": "Advance - Class-20 – Miscellenous Practice - 06 [13-Jan-2025 12:00]",
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6367015765112/6367015765112.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-spl-b42-v-141",
+          "label": "Advance - Class-21 – Miscellenous Practice - 07 [14-Jan-2025 12:00]",
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6367064864112/6367064864112.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-spl-b42-v-142",
+          "label": "Advance - Class-01 – Trigonometry - 01 [24-Feb-2025 10:00]",
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6369243513112/6369243513112.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-spl-b42-v-143",
+          "label": "Advance - Class-02 – Trigonometry - 02 [25-Feb-2025 10:00]",
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6369285965112/6369285965112.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-spl-b42-v-144",
+          "label": "Advance - Class-03 – Trigonometry - 03 [26-Feb-2025 10:00]",
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6369329914112/6369329914112.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-spl-b42-v-145",
+          "label": "Advance - Class-04 – Trigonometry - 04 [27-Feb-2025 10:00]",
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6369378710112/6369378710112.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-spl-b42-v-146",
+          "label": "Advance - Class-05 – Trigonometry - 05 [03-Mar-2025 10:00]",
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6369539509112/6369539509112.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-spl-b42-v-147",
+          "label": "Advance - Class-06 – Trigonometry - 06 [04-Mar-2025 10:00]",
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6369577312112/6369577312112.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-spl-b42-v-148",
+          "label": "Advance - Class-07 – Trigonometry - 07 [06-Mar-2025 10:00]",
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6369660542112/6369660542112.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-spl-b42-v-149",
+          "label": "Advance - Class-08 – Trigonometry - 08 [07-Mar-2025 10:00]",
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6369709032112/6369709032112.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-spl-b42-v-150",
+          "label": "Advance - Class-09 – Trigonometry - 09 [10-Mar-2025 10:00]",
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6369830444112/6369830444112.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-spl-b42-v-151",
+          "label": "Advance - Class-10 – Trigonometry - 10 [11-Mar-2025 10:00]",
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6369868165112/6369868165112.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-spl-b42-v-152",
+          "label": "Advance - Class-11 – Trigonometry - 11 [12-Mar-2025 10:00]",
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6369910085112/6369910085112.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-spl-b42-v-153",
+          "label": "Advance - Class-12 – Trigonometry-12 [17-Mar-2025 10:00]",
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6370132430112/6370132430112.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-spl-b42-v-154",
+          "label": "Advance - Class-13 – Trigonometry-13 [18-Mar-2025 10:00]",
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/vod_non_drm_hls/migration/ZPsBQkk97LY/ZPsBQkk97LY.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-spl-b42-v-155",
+          "label": "Advance - Class-14 – Trigonometry - 14 [18-Mar-2025 16:00]",
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6370182449112/6370182449112.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-spl-b42-v-156",
+          "label": "Advance - Class-15 – Trigonometry-15 [19-Mar-2025 10:00]",
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6370217497112/6370217497112.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-spl-b42-v-157",
+          "label": "Advance - Class-16 – Trigonometry-16 [20-Mar-2025 10:00]",
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6370258426112/6370258426112.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-spl-b42-v-158",
+          "label": "Advance - Class-17 – Trigonometry - 17 [20-Mar-2025 16:00]",
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/vod_non_drm_hls/migration/6Qgc3X1zJfo/6Qgc3X1zJfo.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-spl-b42-v-159",
+          "label": "Advance - Class-18 – Trigonometry-18 [22-Mar-2025 10:00]",
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6370364228112/6370364228112.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-spl-b42-v-160",
+          "label": "Advance - Class-19 – Trigonometry-19 [24-Mar-2025 10:00]",
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6370452802112/6370452802112.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-spl-b42-v-161",
+          "label": "Advance - Class-01 – Algebra [25-Mar-2025 10:00]",
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6370505780112/6370505780112.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-spl-b42-v-162",
+          "label": "Advance - Class-01 – Height & Distance part -1 [25-Mar-2025 16:00]",
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6370513648112/6370513648112.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-spl-b42-v-163",
+          "label": "Advance - Class-02 – Algebra [26-Mar-2025 10:00]",
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6370565875112/6370565875112.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-spl-b42-v-164",
+          "label": "Advance - Class-03 – Algebra [27-Mar-2025 10:00]",
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6370617938112/6370617938112.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-spl-b42-v-165",
+          "label": "Advance - Class-04 – Algebra [28-Mar-2025 10:00]",
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6370665185112/6370665185112.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-spl-b42-v-166",
+          "label": "Advance - Class-02 – Height & Distance part- 2 [28-Mar-2025 16:00]",
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6370676119112/6370676119112.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-spl-b42-v-167",
+          "label": "Advance - Class-05 – Algebra [31-Mar-2025 16:00]",
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6370821100112/6370821100112.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-spl-b42-v-168",
+          "label": "Advance - Class-06 – Algebra [01-Apr-2025 10:00]",
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6370859021112/6370859021112.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-spl-b42-v-169",
+          "label": "Advance - Class-07 – Algebra [03-Apr-2025 10:00]",
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6370960486112/6370960486112.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-spl-b42-v-170",
+          "label": "Advance - Class-03 – Height & Distance part- 3 [03-Apr-2025 16:00]",
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6370969884112/6370969884112.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-spl-b42-v-171",
+          "label": "Advance - Class-08 – Algebra [04-Apr-2025 10:00]",
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6371016612112/6371016612112.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-spl-b42-v-172",
+          "label": "Advance - Class-09 – Algebra [07-Apr-2025 10:00]",
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6371160455112/6371160455112.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-spl-b42-v-173",
+          "label": "Advance - Class-04 – Height & Distance miscellaneous [07-Apr-2025 16:00]",
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/vod_non_drm_hls/migration/A2tFmUXy3is/A2tFmUXy3is.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-spl-b42-v-174",
+          "label": "Advance - Class-10 – Algebra [08-Apr-2025 10:00]",
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6371203580112/6371203580112.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-spl-b42-v-175",
+          "label": "Advance - Class-05 – Height & Distance Miscellaneous Part-2 [08-Apr-2025 16:00]",
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6371213976112/6371213976112.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-spl-b42-v-176",
+          "label": "Advance - Class-11 – Algebra [09-Apr-2025 10:00]",
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6371252929112/6371252929112.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-spl-b42-v-177",
+          "label": "Advance - Class-06 – TSD Miscellaneous Part - 01 [09-Apr-2025 16:00]",
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6371259763112/6371259763112.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-spl-b42-v-178",
+          "label": "Advance - Class-12 – Algebra [10-Apr-2025 10:00]",
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6371295864112/6371295864112.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-spl-b42-v-179",
+          "label": "Advance - Class-04 – TSD Miscellaneous Part - 02 [10-Apr-2025 13:30]",
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6371299043112/6371299043112.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-spl-b42-v-180",
+          "label": "Advance - Class-13 – Algebra [11-Apr-2025 10:00]",
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6371341827112/6371341827112.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-spl-b42-v-181",
+          "label": "Advance - Class-01 – Polynomial & Equations [14-Apr-2025 10:00]",
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6371457606112/6371457606112.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-spl-b42-v-182",
+          "label": "Advance - Class-02 – Polynomial & Equations [15-Apr-2025 10:00]",
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6371500915112/6371500915112.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-spl-b42-v-183",
+          "label": "Advance - Inverse Trigonometric Function [15-Apr-2025 17:23]",
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6371512540112/6371512540112.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-spl-b42-v-184",
+          "label": "Advance - Class-03 – Polynomial & Equations [16-Apr-2025 10:00]",
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6371543485112/6371543485112.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-spl-b42-v-185",
+          "label": "Advance - Co-ordinate Geometry Part 01 [29-Apr-2025 10:00]",
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6372060620112/6372060620112.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-spl-b42-v-186",
+          "label": "Advance - Co-ordinate Geometry Part 02 [29-Apr-2025 10:01]",
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6372058683112/6372058683112.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-spl-b42-v-187",
+          "label": "Advance - Co-ordinate Geometry Part 03 [29-Apr-2025 10:02]",
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6372061131112/6372061131112.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-spl-b42-v-188",
+          "label": "Advance - Co-ordinate Geometry Part 04 [29-Apr-2025 10:03]",
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6372060536112/6372060536112.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-spl-b42-v-189",
+          "label": "Advance - Geometry - 1 [29-Apr-2025 10:04]",
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6372060267112/6372060267112.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-spl-b42-v-190",
+          "label": "Advance - Geometry - 2 [29-Apr-2025 10:05]",
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6372059769112/6372059769112.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-spl-b42-v-191",
+          "label": "Advance - Geometry - 3 [29-Apr-2025 10:06]",
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6372059285112/6372059285112.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-spl-b42-v-192",
+          "label": "Advance - Geometry - 4 [29-Apr-2025 10:07]",
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6372059286112/6372059286112.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-spl-b42-v-193",
+          "label": "Advance - Geometry - 5 [29-Apr-2025 10:08]",
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6372059689112/6372059689112.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-spl-b42-v-194",
+          "label": "Advance - Geometry - 6 [29-Apr-2025 10:09]",
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6372061632112/6372061632112.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-spl-b42-v-195",
+          "label": "Advance - Geometry - 7 [29-Apr-2025 10:10]",
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6372060551112/6372060551112.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-spl-b42-v-196",
+          "label": "Advance - Geometry - 8 [29-Apr-2025 10:11]",
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6372062124112/6372062124112.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-spl-b42-v-197",
+          "label": "Advance - Geometry - 9 [29-Apr-2025 10:12]",
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6372060058112/6372060058112.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-spl-b42-v-198",
+          "label": "Advance - Geometry - 10 [29-Apr-2025 10:13]",
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6372060174112/6372060174112.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-spl-b42-v-199",
+          "label": "Advance - Geometry - 11 [29-Apr-2025 10:14]",
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6372058786112/6372058786112.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-spl-b42-v-200",
+          "label": "Advance - Geometry - 12 [29-Apr-2025 10:15]",
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6372061633112/6372061633112.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-spl-b42-v-201",
+          "label": "Advance - Geometry - 13 [29-Apr-2025 10:16]",
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6372060758112/6372060758112.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-spl-b42-v-202",
+          "label": "Advance - Geometry - 14 [29-Apr-2025 10:17]",
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6372061926112/6372061926112.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-spl-b42-v-203",
+          "label": "Advance - Geometry - 15 [29-Apr-2025 10:18]",
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6372061159112/6372061159112.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-spl-b42-v-204",
+          "label": "Advance - Geometry - 16 [29-Apr-2025 10:19]",
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6372060364112/6372060364112.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-spl-b42-v-205",
+          "label": "Advance - Geometry - 17 [29-Apr-2025 10:20]",
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6372061237112/6372061237112.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-spl-b42-v-206",
+          "label": "Advance - Geometry - 18 [29-Apr-2025 10:21]",
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6372060465112/6372060465112.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-spl-b42-v-207",
+          "label": "Advance - Geometry - 19 [29-Apr-2025 10:22]",
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6372060466112/6372060466112.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-spl-b42-v-208",
+          "label": "Advance - Geometry - 20 [29-Apr-2025 10:23]",
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6372060962112/6372060962112.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-spl-b42-v-209",
+          "label": "Advance - Geometry - 21 [29-Apr-2025 10:24]",
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6372061543112/6372061543112.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-spl-b42-v-210",
+          "label": "Advance - Geometry - 22 [29-Apr-2025 10:25]",
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6372060853112/6372060853112.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-spl-b42-v-211",
+          "label": "Advance - Geometry - 23 [29-Apr-2025 10:26]",
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6372059394112/6372059394112.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-spl-b42-v-212",
+          "label": "Advance - Geometry - 24 [29-Apr-2025 10:27]",
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6372061061112/6372061061112.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-spl-b42-v-213",
+          "label": "Advance - Geometry - 25 [29-Apr-2025 10:28]",
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6372061240112/6372061240112.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-spl-b42-v-214",
+          "label": "Advance - Geometry - 26 [29-Apr-2025 10:29]",
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6372061241112/6372061241112.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-spl-b42-v-215",
+          "label": "Advance - Geometry - 27 [29-Apr-2025 10:30]",
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6372059772112/6372059772112.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-spl-b42-v-216",
+          "label": "Advance - Geometry - 28 [29-Apr-2025 10:31]",
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6372061345112/6372061345112.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-spl-b42-v-217",
+          "label": "Advance - Geometry - 29 [29-Apr-2025 10:32]",
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6372060963112/6372060963112.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-spl-b42-v-218",
+          "label": "Advance - Geometry - 30 [29-Apr-2025 10:33]",
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6372061347112/6372061347112.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-spl-b42-v-219",
+          "label": "Advance - Geometry - 31 [29-Apr-2025 10:34]",
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6372061064112/6372061064112.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-spl-b42-v-220",
+          "label": "Advance - Mensuration 2D - 1 [29-Apr-2025 10:36]",
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6372062301112/6372062301112.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-spl-b42-v-221",
+          "label": "Advance - Mensuration 2D - 2 [29-Apr-2025 10:37]",
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6372063759112/6372063759112.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-spl-b42-v-222",
+          "label": "Advance - Mensuration 2D - 3 [29-Apr-2025 10:38]",
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6372062970112/6372062970112.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-spl-b42-v-223",
+          "label": "Advance - Mensuration 2D - 4 [29-Apr-2025 10:39]",
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6372064245112/6372064245112.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-spl-b42-v-224",
+          "label": "Advance - Mensuration 3D - 1 [29-Apr-2025 10:40]",
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6372062681112/6372062681112.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-spl-b42-v-225",
+          "label": "Advance - Mensuration 3D - 2 [29-Apr-2025 10:41]",
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6372061796112/6372061796112.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-spl-b42-v-226",
+          "label": "Advance - Mensuration 3D - 3 [29-Apr-2025 10:42]",
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6372062971112/6372062971112.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-spl-b42-v-227",
+          "label": "Advance - Mensuration 3D - 4 [29-Apr-2025 10:43]",
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6372062682112/6372062682112.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-spl-b42-v-228",
+          "label": "Advance - Mensuration 3D - 5 [29-Apr-2025 10:44]",
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6372062481112/6372062481112.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-spl-b42-v-229",
+          "label": "Advance - Mensuration 3D - 6 [29-Apr-2025 10:45]",
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6372063473112/6372063473112.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-spl-b42-v-230",
+          "label": "Advance - Mensuration 3D - 7 [29-Apr-2025 10:46]",
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6372061797112/6372061797112.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-spl-b42-v-231",
+          "label": "Advance - Mensuration 3D - 8 [29-Apr-2025 10:47]",
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6372062081112/6372062081112.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-spl-b42-v-232",
+          "label": "Advance - Statistics – L-01 [29-Apr-2025 13:00]",
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6372061535112/6372061535112.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-spl-b42-v-233",
+          "label": "Advance - Statistics – L-02 [29-Apr-2025 13:01]",
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6372059682112/6372059682112.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-spl-b42-v-234",
+          "label": "Advance - Statistics – L-03 [29-Apr-2025 13:02]",
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6372061153112/6372061153112.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-spl-b42-v-235",
+          "label": "Advance - Probability – L-01 [29-Apr-2025 13:10]",
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6372062249112/6372062249112.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-spl-b42-v-236",
+          "label": "Advance - Probability – L-02 [29-Apr-2025 13:11]",
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6372061651112/6372061651112.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-spl-b42-v-237",
+          "label": "Advance - Probability – L-03 [29-Apr-2025 13:12]",
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6372061267112/6372061267112.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-spl-b42-v-238",
+          "label": "Advance - Probability – L-04 [29-Apr-2025 13:15]",
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6372061652112/6372061652112.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-spl-b42-v-239",
+          "label": "Advance - Probability – L-05 [29-Apr-2025 13:16]",
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6372061754112/6372061754112.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-spl-b42-v-240",
+          "label": "Advance - Probability – L-06 [29-Apr-2025 13:17]",
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6372060577112/6372060577112.m3u8",
+          "type": "hls"
+        }
+      ]
+    },
+    {
+      "id": "pdfs",
+      "label": "📄 PDFs",
+      "items": [
+        {
+          "id": "maths-spl-b42-p-241",
+          "label": "Arithmetic - Number System Part-10 Without Annotation & Annotation @cwexte",
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/67a05470d6904_ilovepdfmerged_14compressed.pdf",
+          "type": "pdf"
+        },
+        {
+          "id": "maths-spl-b42-p-242",
+          "label": "Arithmetic - Number System Part-9 Without Annotation & Annotation @cwexte",
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/67a0536b10059_ilovepdfmerged_13compressed.pdf",
+          "type": "pdf"
+        },
+        {
+          "id": "maths-spl-b42-p-243",
+          "label": "Arithmetic - Number System Part-8 Without Annotation & Annotation @cwexte",
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/679c72e10c5d0_ilovepdfmerged_9compressed.pdf",
+          "type": "pdf"
+        },
+        {
+          "id": "maths-spl-b42-p-244",
+          "label": "Arithmetic - Number System Part-7 Without Annotation & Annotation @cwexte",
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/679b22d0b801f_ilovepdfmerged_18compressed.pdf",
+          "type": "pdf"
+        },
+        {
+          "id": "maths-spl-b42-p-245",
+          "label": "Arithmetic - Number System Part-4 Without Annotation & Annotation @cwexte",
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/67987ded8e8e8_ilovepdfmerged_10compressed.pdf",
+          "type": "pdf"
+        },
+        {
+          "id": "maths-spl-b42-p-246",
+          "label": "Arithmetic - Number System Part-3 without annotation & annotation @cwexte",
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/67977c3a08b0f_Number_System_part_3_without_annotation_annotationcompressed_1.pdf",
+          "type": "pdf"
+        },
+        {
+          "id": "maths-spl-b42-p-247",
+          "label": "Arithmetic - Number System part-4 Without Annotation & Annotation @cwexte",
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/6797354432b10_Number_System_part4_Without_Annotation_Annotation_.pdf",
+          "type": "pdf"
+        },
+        {
+          "id": "maths-spl-b42-p-248",
+          "label": "Arithmetic - Number Sheet-1 @cwexte",
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/67970bba20797_Number_System_sheet_01.pdf",
+          "type": "pdf"
+        },
+        {
+          "id": "maths-spl-b42-p-249",
+          "label": "Arithmetic - Number System Class - 2 Annotation & Without Annotation @cwexte",
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/679261411ccf9_67909319e802eNumberSystemClass2AnnotationWithoutAnnotationcompressed.pdf",
+          "type": "pdf"
+        },
+        {
+          "id": "maths-spl-b42-p-250",
+          "label": "Arithmetic - Number System-1 Without Annotation & Annotation @cwexte",
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/678f3e645e205_ilovepdfmerged_50compressed.pdf",
+          "type": "pdf"
+        },
+        {
+          "id": "maths-spl-b42-p-251",
+          "label": "Arithmetic - Alligation Part - 2 Without Annotation & Annotation @cwexte",
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/6811dda120e14_ilovepdfmerged_18compressed.pdf",
+          "type": "pdf"
+        },
+        {
+          "id": "maths-spl-b42-p-252",
+          "label": "Arithmetic - Mixture and Alligation Practice Sheet @cwexte",
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/6811d19167737_Mixture_and_alligation_practice_sheet.pdf",
+          "type": "pdf"
+        },
+        {
+          "id": "maths-spl-b42-p-253",
+          "label": "Arithmetic - Mixture  Without Annotation & Annotation @cwexte",
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/6811acddbd16e_ilovepdfmerged_16compressed.pdf",
+          "type": "pdf"
+        },
+        {
+          "id": "maths-spl-b42-p-254",
+          "label": "Arithmetic - Alligation Part - 1 Without Annotation & Annotation @cwexte",
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/6811abaf56c9b_ilovepdfmerged_15compressed.pdf",
+          "type": "pdf"
+        },
+        {
+          "id": "maths-spl-b42-p-255",
+          "label": "Arithmetic - AMS Class of Mixture @cwexte",
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/6810ab10eefa7_Ams_class_of_mixture.pdf",
+          "type": "pdf"
+        },
+        {
+          "id": "maths-spl-b42-p-256",
+          "label": "Arithmetic - Printable Sheet - Ratio & Proportion Class-6 @cwexte",
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/681060a0651d6_Printable_Sheet_Ratio_Proportion_class_6_1.pdf",
+          "type": "pdf"
+        },
+        {
+          "id": "maths-spl-b42-p-257",
+          "label": "Arithmetic - Mixture Class-3,4&5 @cwexte",
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/6810604e92a16_Mixture_class_3merged.pdf",
+          "type": "pdf"
+        },
+        {
+          "id": "maths-spl-b42-p-258",
+          "label": "Arithmetic - Mixture Class-6 @cwexte",
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/680f69efdf881_Mixture_class_6.pdf",
+          "type": "pdf"
+        },
+        {
+          "id": "maths-spl-b42-p-259",
+          "label": "Arithmetic - Problem on Ages Class-1 @cwexte",
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/680ca880c64cb_problem_on_ages_class_1.pdf",
+          "type": "pdf"
+        },
+        {
+          "id": "maths-spl-b42-p-260",
+          "label": "Arithmetic - Problem on Ages - Annotation @cwexte",
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/680ca7ef5217d_Annotation_Problem_on_agescompressed.pdf",
+          "type": "pdf"
+        },
+        {
+          "id": "maths-spl-b42-p-261",
+          "label": "Arithmetic - Problem on Ages - Without Annotation @cwexte",
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/680ca53004469_Without_Annotation_Problem_on_agescompressed.pdf",
+          "type": "pdf"
+        },
+        {
+          "id": "maths-spl-b42-p-262",
+          "label": "Arithmetic - Mixture -(DPP-02) @cwexte",
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/680b7c14c95e0_Mixture_DPP_02.pdf",
+          "type": "pdf"
+        },
+        {
+          "id": "maths-spl-b42-p-263",
+          "label": "Arithmetic - Mixture Class-1&2 @cwexte",
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/6809e6d959dbf_Mixture_class_1mergedcompressed.pdf",
+          "type": "pdf"
+        },
+        {
+          "id": "maths-spl-b42-p-264",
+          "label": "Arithmetic - Mixture - 3 Without Annotation & Annotation @cwexte",
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/6809dac029369_ilovepdfmerged_25compressed.pdf",
+          "type": "pdf"
+        },
+        {
+          "id": "maths-spl-b42-p-265",
+          "label": "Arithmetic - Ratio & Proportion Part -7 Without Annotation & Annotation @cwexte",
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/6809bdc64999e_ilovepdfmerged_21compressed.pdf",
+          "type": "pdf"
+        },
+        {
+          "id": "maths-spl-b42-p-266",
+          "label": "Arithmetic - Mixture - 2 Without Annotation & Annotation @cwexte",
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/680884b5d09f1_ilovepdfmerged_20compressed.pdf",
+          "type": "pdf"
+        },
+        {
+          "id": "maths-spl-b42-p-267",
+          "label": "Arithmetic - Mixture - DPP Question With Solution @cwexte",
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/6807608560836_mixture_dpp_question_with_solution.pdf",
+          "type": "pdf"
+        },
+        {
+          "id": "maths-spl-b42-p-268",
+          "label": "Arithmetic - Mixture - 1 Without Annotation & Annotation @cwexte",
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/680733e9a129a_ilovepdfmerged_11compressed.pdf",
+          "type": "pdf"
+        },
+        {
+          "id": "maths-spl-b42-p-269",
+          "label": "Arithmetic - Ratio and Proportion - 3 Without Annotation & Annotation @cwexte",
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/6807204963f3a_ilovepdfmerged_8compressed.pdf",
+          "type": "pdf"
+        },
+        {
+          "id": "maths-spl-b42-p-270",
+          "label": "Arithmetic - Partnership Part-3 Annotation & Without Annotation @cwexte",
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/6805d0b125bd8_ilovepdfmerged_6compressed.pdf",
+          "type": "pdf"
+        },
+        {
+          "id": "maths-spl-b42-p-271",
+          "label": "Arithmetic - Ratio and Proportion - 4 Without Annotation & Annotation @cwexte",
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/68006ababdc89_ilovepdfmerged_1compressed.pdf",
+          "type": "pdf"
+        },
+        {
+          "id": "maths-spl-b42-p-272",
+          "label": "Arithmetic - TSD Miscellaneous Part -2 Annotation & Without Annotation @cwexte",
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/67fcc43fa1e92_ilovepdfmerged_58compressed.pdf",
+          "type": "pdf"
+        },
+        {
+          "id": "maths-spl-b42-p-273",
+          "label": "Arithmetic - Algebra DPP -08 Question with Solution @cwexte",
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/67fc8e0c8e502_Algebra_DPP_08_Question_with_solution.pdf",
+          "type": "pdf"
+        },
+        {
+          "id": "maths-spl-b42-p-274",
+          "label": "Arithmetic - Ratio and Proportion - 2 Without Annotation & Annotation @cwexte",
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/67fc8dcf9c66c_ilovepdfmerged_55compressed.pdf",
+          "type": "pdf"
+        },
+        {
+          "id": "maths-spl-b42-p-275",
+          "label": "Arithmetic - TSD Miscellaneous Part-2 @cwexte",
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/67fa897103f70_TSD_miscellaneous_part_2.pdf",
+          "type": "pdf"
+        },
+        {
+          "id": "maths-spl-b42-p-276",
+          "label": "Arithmetic - Ratio and Proportion - 1 Without Annotation & Annotation @cwexte",
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/67f9a9332a911_ilovepdfmerged_54compressed.pdf",
+          "type": "pdf"
+        },
+        {
+          "id": "maths-spl-b42-p-277",
+          "label": "Arithmetic - Printable Sheet - Time, Speed and Distance Part-(1 to 13) @cwexte",
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/67f8b52d50a15_Printable_Sheet_Time_Speed_and_Distance_Part_07.pdf",
+          "type": "pdf"
+        },
+        {
+          "id": "maths-spl-b42-p-278",
+          "label": "Arithmetic - TSD Miscellaneous Part -2 Annotation & Without  Annotation @cwexte",
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/67fcc1f97073f_ilovepdfmerged_57compressed.pdf",
+          "type": "pdf"
+        },
+        {
+          "id": "maths-spl-b42-p-279",
+          "label": "Arithmetic - Time Speed & Distance - 13 Without Annotation & Annotation @cwexte",
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/67ca7aad90c33_ilovepdfmerged_20250307T101552.769compressed.pdf",
+          "type": "pdf"
+        },
+        {
+          "id": "maths-spl-b42-p-280",
+          "label": "Arithmetic - Race and Circular Motion (Practice Sheet with Solution) @cwexte",
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/67c9768aa9721_Race_and_Circular_Motion_Practice_sheet_with_solution.pdf",
+          "type": "pdf"
+        },
+        {
+          "id": "maths-spl-b42-p-281",
+          "label": "Arithmetic - Time Speed & Distance - 12 Without Annotation & Annotation @cwexte",
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/67c925a304a5f_ilovepdfmerged_20250306T100119.609compressed.pdf",
+          "type": "pdf"
+        },
+        {
+          "id": "maths-spl-b42-p-282",
+          "label": "Arithmetic - Train Practice Sheet With Solution @cwexte",
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/67c9242ca3822_Train_practice_sheet_with_solution.pdf",
+          "type": "pdf"
+        },
+        {
+          "id": "maths-spl-b42-p-283",
+          "label": "Arithmetic - Boat & Stream (Practice Sheet with Solution) @cwexte",
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/67c923ea118db_Boat_Stream_Practice_sheet_with_solution.pdf",
+          "type": "pdf"
+        },
+        {
+          "id": "maths-spl-b42-p-284",
+          "label": "Arithmetic - Time Speed & Distance -  11 Without Annotation & Annotation @cwexte",
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/67c92398dc31b_ilovepdfmerged_20250306T095250.660compressed.pdf",
+          "type": "pdf"
+        },
+        {
+          "id": "maths-spl-b42-p-285",
+          "label": "Arithmetic - Train - 10 Without Annotation & Annotation @cwexte",
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/67c66b88812ff_ilovepdfmergedcompressed.pdf",
+          "type": "pdf"
+        },
+        {
+          "id": "maths-spl-b42-p-286",
+          "label": "Arithmetic - Time Speed & Distance - 9 Without Annotation & Annotation @cwexte",
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/67c536d5de544_ilovepdfmerged_20250303T102640.996compressed.pdf",
+          "type": "pdf"
+        },
+        {
+          "id": "maths-spl-b42-p-287",
+          "label": "Arithmetic - Time Speed & Distance - 8 Without Annotation & Annotation @cwexte",
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/67c11d38d515d_ilovepdfmerged_20250228T074808.499compressed.pdf",
+          "type": "pdf"
+        },
+        {
+          "id": "maths-spl-b42-p-288",
+          "label": "Arithmetic - Time Speed and Distance Practice Sheet @cwexte",
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/67bc445890da7_TIME_SPEED_AND_DISTANCE_PRACTICE_SHEET_1.pdf",
+          "type": "pdf"
+        },
+        {
+          "id": "maths-spl-b42-p-289",
+          "label": "Arithmetic - Time Speed & Distance - 7 Without Annotation & Annotation @cwexte",
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/67ba8f3916e31_ilovepdfmerged_98compressed.pdf",
+          "type": "pdf"
+        },
+        {
+          "id": "maths-spl-b42-p-290",
+          "label": "Arithmetic - Time Speed & Distance - 6 Without Annotation & Annotation @cwexte",
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/67b7e2251806d_ilovepdfmerged_87compressed.pdf",
+          "type": "pdf"
+        },
+        {
+          "id": "maths-spl-b42-p-291",
+          "label": "Arithmetic - Digital Sum Part -1 Without Annotation & Annotation @cwexte",
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/67b6cce44c259_ilovepdfmerged_86compressed.pdf",
+          "type": "pdf"
+        },
+        {
+          "id": "maths-spl-b42-p-292",
+          "label": "Arithmetic - LCM & HCF-7 Without Annotation & Annotation @cwexte",
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/67b6bfd6c9d33_ilovepdfmerged_83compressed.pdf",
+          "type": "pdf"
+        },
+        {
+          "id": "maths-spl-b42-p-293",
+          "label": "Arithmetic - LCM & HCF-6 Without Annotation & Annotation @cwexte",
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/67b6bf93d7de6_ilovepdfmerged_84compressed.pdf",
+          "type": "pdf"
+        },
+        {
+          "id": "maths-spl-b42-p-294",
+          "label": "Arithmetic - Time Speed and Distance Sheet @cwexte",
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/67b5ca22a73d4_TIME_SPEED_AND_DISTANCE_PRACTICE_SHEET.pdf",
+          "type": "pdf"
+        },
+        {
+          "id": "maths-spl-b42-p-295",
+          "label": "Arithmetic - Time Speed & Distance - 5 Without Annotation & Annotation @cwexte",
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/67b56ba9b93e8_op.pdf",
+          "type": "pdf"
+        },
+        {
+          "id": "maths-spl-b42-p-296",
+          "label": "Arithmetic - LCM & HCF Practice Sheet @cwexte",
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/67b5679f5282f_HCF_AND_LCM_PRACTICE_SHEET.pdf",
+          "type": "pdf"
+        },
+        {
+          "id": "maths-spl-b42-p-297",
+          "label": "Arithmetic - LCM & HCF-5 Without Annotation & Annotation @cwexte",
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/67b42f6c6d1d8_ilovepdfmerged_70compressed.pdf",
+          "type": "pdf"
+        },
+        {
+          "id": "maths-spl-b42-p-298",
+          "label": "Arithmetic - Time Speed & Distance - 4 Without Annotation & Annotation @cwexte",
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/67b3c46bcf14f_ilovepdfmerged_66compressed.pdf",
+          "type": "pdf"
+        },
+        {
+          "id": "maths-spl-b42-p-299",
+          "label": "Arithmetic - LCM & HCF -4 Without Annotation & Annotation @cwexte",
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/67b2f310766cb_ilovepdfmerged_63compressed.pdf",
+          "type": "pdf"
+        },
+        {
+          "id": "maths-spl-b42-p-300",
+          "label": "Arithmetic - LCM & HCF -3 Without Annotation & Annotation @cwexte",
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/67b02efe88d94_ilovepdfmerged_60compressed.pdf",
+          "type": "pdf"
+        },
+        {
+          "id": "maths-spl-b42-p-301",
+          "label": "Arithmetic - Time Speed & Distance - 3 Without Annotation & Annotation @cwexte",
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/67b02ea9e7c07_ilovepdfmerged_59compressed.pdf",
+          "type": "pdf"
+        },
+        {
+          "id": "maths-spl-b42-p-302",
+          "label": "Arithmetic - Time Speed & Distance - 2 Without Annotation & Annotation @cwexte",
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/67aea1a60fa45_ilovepdfmerged_53compressed.pdf",
+          "type": "pdf"
+        },
+        {
+          "id": "maths-spl-b42-p-303",
+          "label": "Arithmetic - LCM & HCF -2 Without Annotation & Annotation @cwexte",
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/67aea0e8e7d16_ilovepdfmerged_52compressed.pdf",
+          "type": "pdf"
+        },
+        {
+          "id": "maths-spl-b42-p-304",
+          "label": "Arithmetic - Time Speed & Distance Sheet-1 @cwexte",
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/67ad6143aedc3_TIMESPEED_DISTANCE_DPP_1.pdf",
+          "type": "pdf"
+        },
+        {
+          "id": "maths-spl-b42-p-305",
+          "label": "Arithmetic - Time Speed & Distance - 1 Without Annotation & Annotation @cwexte",
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/67ad6102b96a0_ilovepdfmerged_43compressed.pdf",
+          "type": "pdf"
+        },
+        {
+          "id": "maths-spl-b42-p-306",
+          "label": "Arithmetic - LCM & HCF -1  Without Annotation & Annotation @cwexte",
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/67ac6bd37c10b_ilovepdfmerged_42compressed.pdf",
+          "type": "pdf"
+        },
+        {
+          "id": "maths-spl-b42-p-307",
+          "label": "Arithmetic - Profit and Loss Part- 13 Without Annotation & Annotation @cwexte",
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/67aa0ffb1136b_ilovepdfmerged_33compressed.pdf",
+          "type": "pdf"
+        },
+        {
+          "id": "maths-spl-b42-p-308",
+          "label": "Arithmetic - Profit and Loss Part- 12 Without Annotation & Annotation @cwexte",
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/67a871f2d4bc8_ilovepdfmerged_29compressed.pdf",
+          "type": "pdf"
+        },
+        {
+          "id": "maths-spl-b42-p-309",
+          "label": "Arithmetic - Profit and Loss Part- 11 Without Annotation & Annotation @cwexte",
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/67a5acb6adf2c_ilovepdfmerged_28compressed.pdf",
+          "type": "pdf"
+        },
+        {
+          "id": "maths-spl-b42-p-310",
+          "label": "Arithmetic - Profit & Loss Sheet-4 @cwexte",
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/67a494d3cedb5_Profit_Loss_sheet_04.pdf",
+          "type": "pdf"
+        },
+        {
+          "id": "maths-spl-b42-p-311",
+          "label": "Arithmetic - Profit and Loss Part- 10 Without Annotation & Annotation @cwexte",
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/67a2eef928094_ilovepdfmerged_21compressed.pdf",
+          "type": "pdf"
+        },
+        {
+          "id": "maths-spl-b42-p-312",
+          "label": "Arithmetic - Profit and Loss Part- 9 Without Annotation & Annotation @cwexte",
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/67a1a933c3bbd_ilovepdfmerged_15compressed.pdf",
+          "type": "pdf"
+        },
+        {
+          "id": "maths-spl-b42-p-313",
+          "label": "Arithmetic - Profit & Loss Sheet -3 @cwexte",
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/67a069d843ee1_Profit_Loss_SHEET_03.pdf",
+          "type": "pdf"
+        },
+        {
+          "id": "maths-spl-b42-p-314",
+          "label": "Arithmetic - Profit and Loss Part- 8 Without Annotation & Annotation @cwexte",
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/679d728ff21c2_ilovepdfmerged_11compressed.pdf",
+          "type": "pdf"
+        },
+        {
+          "id": "maths-spl-b42-p-315",
+          "label": "Arithmetic - Profit and Loss Part- 7 Without Annotation & Annotation @cwexte",
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/679c304996f43_ilovepdfmerged_6compressed.pdf",
+          "type": "pdf"
+        },
+        {
+          "id": "maths-spl-b42-p-316",
+          "label": "Arithmetic - Profit and Loss 2025 with Solution @cwexte",
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/679a21e48c975_profit_and_loss_2025_with_solution.pdf",
+          "type": "pdf"
+        },
+        {
+          "id": "maths-spl-b42-p-317",
+          "label": "Arithmetic - Compound Interest 2025 with Solution @cwexte",
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/679a21ae9cee2_compound_interest_2025_with_solution.pdf",
+          "type": "pdf"
+        },
+        {
+          "id": "maths-spl-b42-p-318",
+          "label": "Arithmetic - Simple Interest 2025 with Solution @cwexte",
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/679a21816bae3_simple_interest_2025_with_solution.pdf",
+          "type": "pdf"
+        },
+        {
+          "id": "maths-spl-b42-p-319",
+          "label": "Arithmetic - Profit and Loss Part- 6 Without Annotation & Annotation @cwexte",
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/679a20d27c826_ilovepdfmerged_15compressed.pdf",
+          "type": "pdf"
+        },
+        {
+          "id": "maths-spl-b42-p-320",
+          "label": "Arithmetic - Profit and Loss Part- 5 Without Annotation & Annotation @cwexte",
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/6799bac2cec94_Profit_and_Loss_Part_5_Without_Annotation_Annotation_compressed.pdf",
+          "type": "pdf"
+        },
+        {
+          "id": "maths-spl-b42-p-321",
+          "label": "Arithmetic - Profit & Loss Sheet -02 (Question with Solution).pdf @cwexte",
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/6798b4900e81a_Profit_Loss_sheet_02_Question_with_Solution.pdf",
+          "type": "pdf"
+        },
+        {
+          "id": "maths-spl-b42-p-322",
+          "label": "Arithmetic - Profit and Loss Part-4 Without Annotation & Annotation @cwexte",
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/67977d14f21b2_ilovepdfmerged_8compressed.pdf",
+          "type": "pdf"
+        },
+        {
+          "id": "maths-spl-b42-p-323",
+          "label": "Arithmetic - Profit and Loss Part-3 Without Annotation & Annotation @cwexte",
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/67977c1312b39_Profit_and_Loss_Part_3_without_annotation_annotationcompressed.pdf",
+          "type": "pdf"
+        },
+        {
+          "id": "maths-spl-b42-p-324",
+          "label": "Arithmetic - Profit & Loss Sheet-2 (Question & Solution) @cwexte",
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/67970c86cc4c0_Profit_Loss_sheet_02_Question_with_Solution.pdf",
+          "type": "pdf"
+        },
+        {
+          "id": "maths-spl-b42-p-325",
+          "label": "Arithmetic - Profit & Loss Sheet-1 (Question & Solution) @cwexte",
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/67970c3f15838_Profit_Loss_sheet_01_Question_with_Solution.pdf",
+          "type": "pdf"
+        },
+        {
+          "id": "maths-spl-b42-p-326",
+          "label": "Arithmetic - Profit & Loss-2 Annotation & Without Annotation @cwexte",
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/679266a0ea42e_ilovepdfmerged_1compressed.pdf",
+          "type": "pdf"
+        },
+        {
+          "id": "maths-spl-b42-p-327",
+          "label": "Arithmetic - Profit & Loss Annotation & Without Annotation @cwexte",
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/6790d84e3eecb_ilovepdfmergedcompressed.pdf",
+          "type": "pdf"
+        },
+        {
+          "id": "maths-spl-b42-p-328",
+          "label": "Arithmetic - Average Practice Sheet with Solution @cwexte",
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/678f808b8f44f_Average_practice_sheet_with_solution.pdf",
+          "type": "pdf"
+        },
+        {
+          "id": "maths-spl-b42-p-329",
+          "label": "Arithmetic - Installment (C.I) Practice Sheet with Solution @cwexte",
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/678f7de01da27_Installment_C.I_Practice_sheet_with_solution.pdf",
+          "type": "pdf"
+        },
+        {
+          "id": "maths-spl-b42-p-330",
+          "label": "Arithmetic - Compound Interest-7 Without Annotation & Annotation @cwexte",
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/678f3db3e5cfc_ilovepdfmerged_49compressed.pdf",
+          "type": "pdf"
+        },
+        {
+          "id": "maths-spl-b42-p-331",
+          "label": "Arithmetic - Compound Interest-6 Without Annotation & Annotation @cwexte",
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/678d3840a14ce_ilovepdfmerged_47compressed.pdf",
+          "type": "pdf"
+        },
+        {
+          "id": "maths-spl-b42-p-332",
+          "label": "Arithmetic - Compound Interest-5 Without Annotation & Annotation @cwexte",
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/678a4701a8ee0_ilovepdfmerged_44compressed.pdf",
+          "type": "pdf"
+        },
+        {
+          "id": "maths-spl-b42-p-333",
+          "label": "Arithmetic - Compound Interest-4 Without Annotation  & Annotation @cwexte",
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/67889886e69f4_compound_interest_4_Without_Annotation_Annotation_compressed.pdf",
+          "type": "pdf"
+        },
+        {
+          "id": "maths-spl-b42-p-334",
+          "label": "Arithmetic - Compound Interest (Part - 3) Without Annotation -& Annotation @cwexte",
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/67874e42023fb_Compound_Interest_part_3_Without_Annotation_Annotation_compressed.pdf",
+          "type": "pdf"
+        },
+        {
+          "id": "maths-spl-b42-p-335",
+          "label": "Arithmetic - AP,GP, HP Practice Sheet with Solution @cwexte",
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/6786484c4e7ea_APGP_HP_practice_sheet_with_solution.pdf",
+          "type": "pdf"
+        },
+        {
+          "id": "maths-spl-b42-p-336",
+          "label": "Arithmetic - Compound Interest-2 Without Annotation & Annotation @cwexte",
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/6785f8a3896e2_compound_interest_2_Without_Annotation_Annotation_compressed.pdf",
+          "type": "pdf"
+        },
+        {
+          "id": "maths-spl-b42-p-337",
+          "label": "Arithmetic - Compound Interest (Practice sheet with solution) @cwexte",
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/6785f84039dff_Compound_Interest_Practice_sheet_with_solution.pdf",
+          "type": "pdf"
+        },
+        {
+          "id": "maths-spl-b42-p-338",
+          "label": "Arithmetic - Compound Interestart-01 Without Annotation & Annotation @cwexte",
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/6781feef7b8a3_Compound_Interest_Part_01_Without_Annotation_Annotationcompressed.pdf",
+          "type": "pdf"
+        },
+        {
+          "id": "maths-spl-b42-p-339",
+          "label": "Arithmetic - Simple Interest Part -7 Without Annotation & Annotation @cwexte",
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/6780f2ca1ff9a_ilovepdfmerged_20compressed.pdf",
+          "type": "pdf"
+        },
+        {
+          "id": "maths-spl-b42-p-340",
+          "label": "Arithmetic - Simple interest part -6 Without Annotation & Annotation @cwexte",
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/677e15b017d61_Simple_interest_part_6_Without_Annotation_Annotation_1.pdf",
+          "type": "pdf"
+        },
+        {
+          "id": "maths-spl-b42-p-341",
+          "label": "Arithmetic - Simple Interest Part - 5 Without Annotation & Annotation @cwexte",
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/677cc59372596_Simple_Interest_Part_5_Without_Annotation_Annotationcompressed.pdf",
+          "type": "pdf"
+        },
+        {
+          "id": "maths-spl-b42-p-342",
+          "label": "Arithmetic - Simple Interest Part - 4 Without Annotation & Annotation @cwexte",
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/677b6bdf5f0fe_Simple_Interest_Part_4_Without_Annotation_Annotationcompressed.pdf",
+          "type": "pdf"
+        },
+        {
+          "id": "maths-spl-b42-p-343",
+          "label": "Arithmetic - Simple Interest Part - 3 without annotation & annotation @cwexte",
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/6777586d8f89a_ilovepdfmerged_3compressed.pdf",
+          "type": "pdf"
+        },
+        {
+          "id": "maths-spl-b42-p-344",
+          "label": "Arithmetic - Simple Interest (Practice sheet with solution) @cwexte",
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/677757a972b4b_Simple_Interest_Practice_sheet_with_solution.pdf",
+          "type": "pdf"
+        },
+        {
+          "id": "maths-spl-b42-p-345",
+          "label": "Arithmetic - Average PYQ @cwexte",
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/67775792f0ed7_Average_pyq.pdf",
+          "type": "pdf"
+        },
+        {
+          "id": "maths-spl-b42-p-346",
+          "label": "Arithmetic - Number System PYQ @cwexte",
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/6777577a59180_Number_System_pyq.pdf",
+          "type": "pdf"
+        },
+        {
+          "id": "maths-spl-b42-p-347",
+          "label": "Arithmetic - Simple Interest Part - 2 without annotation & annotation @cwexte",
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/67762e5785bf3_Simple_interest_Part_2_without_annotation_annotationcompressed.pdf",
+          "type": "pdf"
+        },
+        {
+          "id": "maths-spl-b42-p-348",
+          "label": "Arithmetic - Simple Interest Part-1 without annotation & annotation @cwexte",
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/677392fac6ee1_Simple_interest_part1_without_annotation_annotationcompressed.pdf",
+          "type": "pdf"
+        },
+        {
+          "id": "maths-spl-b42-p-349",
+          "label": "Arithmetic - Average Part-5 Without Annotation & Annotation @cwexte",
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/677235ee7c402_Average_Part_5_Without_Annotation_Annotation.pdf",
+          "type": "pdf"
+        },
+        {
+          "id": "maths-spl-b42-p-350",
+          "label": "Arithmetic - Average Part-4 annotation & without annotation @cwexte",
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/6770eaa614ad6_Average_Part_4_Without_Annotation_Annotation.pdf",
+          "type": "pdf"
+        },
+        {
+          "id": "maths-spl-b42-p-351",
+          "label": "Arithmetic - Average Part-3 annotation & Without annotation @cwexte",
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/676f95485bc5b_ilovepdfmerged_24.pdf",
+          "type": "pdf"
+        },
+        {
+          "id": "maths-spl-b42-p-352",
+          "label": "Arithmetic - Average Part-2 annotation & Without annotation @cwexte",
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/676f951e2951f_ilovepdfmerged_23.pdf",
+          "type": "pdf"
+        },
+        {
+          "id": "maths-spl-b42-p-353",
+          "label": "Arithmetic - Average Part-1 annotation & Without annotation @cwexte",
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/676ce5b68e775_Average_Part_1_without_Annotation.pdf",
+          "type": "pdf"
+        },
+        {
+          "id": "maths-spl-b42-p-354",
+          "label": "Arithmetic - AP, GP ,HP without annotation @cwexte",
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/676aff810ad8a_AP_GP_HP_without_annotationcompressed.pdf",
+          "type": "pdf"
+        },
+        {
+          "id": "maths-spl-b42-p-355",
+          "label": "Arithmetic - AP, GP ,HP annotation @cwexte",
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/676aff6c372d0_AP_GP_HP_annotationcompressed.pdf",
+          "type": "pdf"
+        },
+        {
+          "id": "maths-spl-b42-p-356",
+          "label": "Arithmetic - Percentage Class-6 annotation & without annotation @cwexte",
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/676a53530d141_percenatage_Class_6_without_annotation_annotation.pdf",
+          "type": "pdf"
+        },
+        {
+          "id": "maths-spl-b42-p-357",
+          "label": "Arithmetic - Percentage Practice Sheet @cwexte",
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/676946227fc92_Percentage_Practice_sheet_Question_with_solution.pdf",
+          "type": "pdf"
+        },
+        {
+          "id": "maths-spl-b42-p-358",
+          "label": "Arithmetic - Percentage Class-5 annotation @cwexte",
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/67664e5430e3d_percenatage_Class_5_annotationcompressed.pdf",
+          "type": "pdf"
+        },
+        {
+          "id": "maths-spl-b42-p-359",
+          "label": "Arithmetic - Percentage Class-5 without annotation @cwexte",
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/67664e3464f39_percenatage_Class_5_without_annotationcompressed.pdf",
+          "type": "pdf"
+        },
+        {
+          "id": "maths-spl-b42-p-360",
+          "label": "Arithmetic - Percentage Class-4 annotation & without annotation @cwexte",
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/6764d5183b5ab_ilovepdfmerged.pdf",
+          "type": "pdf"
+        },
+        {
+          "id": "maths-spl-b42-p-361",
+          "label": "Arithmetic - Percentage PYQ's @cwexte",
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/6762fceb5876e_PERCENATGE_PYQscompressed.pdf",
+          "type": "pdf"
+        },
+        {
+          "id": "maths-spl-b42-p-362",
+          "label": "Arithmetic - Pipe and Cistern PYQ's @cwexte",
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/6762fcc927133_Pipe_and_Cisterncompressed.pdf",
+          "type": "pdf"
+        },
+        {
+          "id": "maths-spl-b42-p-363",
+          "label": "Arithmetic - Time and Work PYQ's @cwexte",
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/6762fc716255f_Time_and_Workcompressed.pdf",
+          "type": "pdf"
+        },
+        {
+          "id": "maths-spl-b42-p-364",
+          "label": "Arithmetic - Simplification PYQ's @cwexte",
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/6762fc013eb2c_Simplification_PYQs_.pdf",
+          "type": "pdf"
+        },
+        {
+          "id": "maths-spl-b42-p-365",
+          "label": "Arithmetic - Work & Wages & (chain rule) (Practice sheet) @cwexte",
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/6762fb7d088fa_Work_Wages_chain_rule_Practice_sheet.pdf",
+          "type": "pdf"
+        },
+        {
+          "id": "maths-spl-b42-p-366",
+          "label": "Arithmetic - Simplification Practice Sheet (Question with solution) @cwexte",
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/6762fb2c21ec7_Simplification_practice_sheet_Question_with_solution.pdf",
+          "type": "pdf"
+        },
+        {
+          "id": "maths-spl-b42-p-367",
+          "label": "Arithmetic - Percentage Class-1,2,3 annotation & without annotation @cwexte",
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/6764d41ea7b73_percentage_Class_13_annotation_without_annotation_1.pdf",
+          "type": "pdf"
+        },
+        {
+          "id": "maths-spl-b42-p-368",
+          "label": "Arithmetic - Pipe and Cistern (Practice Sheet) @cwexte",
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/675d1c9a2cf52_Pipe_and_Cistern_practice_sheet_.pdf",
+          "type": "pdf"
+        },
+        {
+          "id": "maths-spl-b42-p-369",
+          "label": "Arithmetic - Simplification Class PNG-1,2,3 @cwexte",
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/675d1c3f67b6e_ilovepdfmerged_62compressed.pdf",
+          "type": "pdf"
+        },
+        {
+          "id": "maths-spl-b42-p-370",
+          "label": "Arithmetic - Chain Rule – 10 Dec – Class PNG @cwexte",
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/6759337cd6bb3_chainrulemenwomen_with_Annotationcompressed.pdf",
+          "type": "pdf"
+        },
+        {
+          "id": "maths-spl-b42-p-371",
+          "label": "Arithmetic - Chain Rule – 9 Dec – Class PNG @cwexte",
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/6757da09c4866_Chain_rule_part_1_annotationcompressed.pdf",
+          "type": "pdf"
+        },
+        {
+          "id": "maths-spl-b42-p-372",
+          "label": "Arithmetic - Work and Wages Practice Sheet @cwexte",
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/67569ac573583_Work_Wages_Practice_sheet.pdf",
+          "type": "pdf"
+        },
+        {
+          "id": "maths-spl-b42-p-373",
+          "label": "Arithmetic - Work & Wages  – 6 Dec – Class PNG @cwexte",
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/6753d9cc5af5c_Workwages_annotationcompressed.pdf",
+          "type": "pdf"
+        },
+        {
+          "id": "maths-spl-b42-p-374",
+          "label": "Arithmetic - Time and Work Sheet @cwexte",
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/6753d9885fd15_Time_and_work_practice_sheet.pdf",
+          "type": "pdf"
+        },
+        {
+          "id": "maths-spl-b42-p-375",
+          "label": "Arithmetic - Pipe and Cistern – 5 Dec – Class PNG @cwexte",
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/67528a2febcd9_Pipe_cistern_3_annotationcompressed.pdf",
+          "type": "pdf"
+        },
+        {
+          "id": "maths-spl-b42-p-376",
+          "label": "Arithmetic - Pipe and Cistern – 4 Dec – Class PNG @cwexte",
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/67528a0bbc138_Pipe_and_Cistern_Class2_annotationcompressed.pdf",
+          "type": "pdf"
+        },
+        {
+          "id": "maths-spl-b42-p-377",
+          "label": "Arithmetic - Pipe and Cistern – 3 Dec – Class PNG @cwexte",
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/67503e987c895_Pipe_and_Cistern_Class1_annotationcompressed.pdf",
+          "type": "pdf"
+        },
+        {
+          "id": "maths-spl-b42-p-378",
+          "label": "Arithmetic - Time & Work – 2 Dec – Class PNG @cwexte",
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/674e985ae823a_time_and_work_5_annotation_1compressed.pdf",
+          "type": "pdf"
+        },
+        {
+          "id": "maths-spl-b42-p-379",
+          "label": "Arithmetic - Time & Work – 29 Nov – Class PNG @cwexte",
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/674aacaca5084_time_and_work4_annotationcompressed.pdf",
+          "type": "pdf"
+        },
+        {
+          "id": "maths-spl-b42-p-380",
+          "label": "Arithmetic - Time & Work – 28 Nov – Class PNG @cwexte",
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/674916891100b_time_and_work_3_annotationcompressed.pdf",
+          "type": "pdf"
+        },
+        {
+          "id": "maths-spl-b42-p-381",
+          "label": "Arithmetic - Time & Work – 27 Nov – Class PNG @cwexte",
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/6747172584303_Time_and_work_part_2_annotationcompressed.pdf",
+          "type": "pdf"
+        },
+        {
+          "id": "maths-spl-b42-p-382",
+          "label": "Arithmetic - Time & Work – 26 Nov – Class PNG @cwexte",
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/6746bb3ed438f_time_work_part_1_annotationcompressed.pdf",
+          "type": "pdf"
+        },
+        {
+          "id": "maths-spl-b42-p-383",
+          "label": "Arithmetic - Demo Class – 25 Nov – Class PNG @cwexte",
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/67448c1df3fb3_demo_class_career_will_annotationcompressed.pdf",
+          "type": "pdf"
+        },
+        {
+          "id": "maths-spl-b42-p-384",
+          "label": "Arithmetic - Number System Sheet-4 @cwexte",
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/67a8721597d9a_NUMBER_SYSTEM_Practice_sheet_04.pdf",
+          "type": "pdf"
+        },
+        {
+          "id": "maths-spl-b42-p-385",
+          "label": "Arithmetic - Number System Sheet-3 @cwexte",
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/67a446fc1e50d_NUMBER_SYSTEM_SHEET_03.pdf",
+          "type": "pdf"
+        },
+        {
+          "id": "maths-spl-b42-p-386",
+          "label": "Arithmetic - Number system Sheet -2 @cwexte",
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/679d721d8e3c8_Number_system_sheet_02.pdf",
+          "type": "pdf"
+        },
+        {
+          "id": "maths-spl-b42-p-387",
+          "label": "Arithmetic - Number System 2025 with Solution @cwexte",
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/679a22f802f43_number_system_2025_with_solution.pdf",
+          "type": "pdf"
+        },
+        {
+          "id": "maths-spl-b42-p-388",
+          "label": "Arithmetic - Number System Part-16 Without Annotation & Annotation @cwexte",
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/67ab0a1472f82_ilovepdfmerged_37compressed.pdf",
+          "type": "pdf"
+        },
+        {
+          "id": "maths-spl-b42-p-389",
+          "label": "Arithmetic - Number System Part-15 Without Annotation & Annotation @cwexte",
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/67a9b7f1de1f6_ilovepdfmerged_31compressed.pdf",
+          "type": "pdf"
+        },
+        {
+          "id": "maths-spl-b42-p-390",
+          "label": "Arithmetic - Number System Part-14  Annotation @cwexte",
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/67a8714caecd5_Annotation_number_system_part_14compressed.pdf",
+          "type": "pdf"
+        },
+        {
+          "id": "maths-spl-b42-p-391",
+          "label": "Arithmetic - Number System Part-13 Without Annotation & Annotation @cwexte",
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/67a462ab52eb7_ilovepdfmerged_23compressed.pdf",
+          "type": "pdf"
+        },
+        {
+          "id": "maths-spl-b42-p-392",
+          "label": "Arithmetic - Number System Part-12 Without Annotation & Annotation @cwexte",
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/67a1b1df53578_ilovepdfmerged_16compressed.pdf",
+          "type": "pdf"
+        },
+        {
+          "id": "maths-spl-b42-p-393",
+          "label": "Arithmetic - Number System Part-11 Without Annotation & Annotation @cwexte",
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/67a1b1a2a62da_ilovepdfmerged_17compressed.pdf",
+          "type": "pdf"
+        },
+        {
+          "id": "maths-spl-b42-p-394",
+          "label": "Arithmetic - Number System Part-6 Without Annotation & Annotation @cwexte",
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/6799fa23b2075_ilovepdfmerged_14compressed.pdf",
+          "type": "pdf"
+        },
+        {
+          "id": "maths-spl-b42-p-395",
+          "label": "Arithmetic - Number System Part-5 Without Annotation & Annotation @cwexte",
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/6799f93abd888_ilovepdfmerged_13compressed.pdf",
+          "type": "pdf"
+        }
+      ]
+    }
+  ],
+  "category": "government"
+}

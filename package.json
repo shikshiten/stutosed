@@ -1,17 +1,18 @@
 {
-  "name": "courses-app",
+  "name": "stutosed",
   "version": "0.1.0",
   "private": true,
   "scripts": {
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "eslint"
+    "lint": "eslint",
+    "deploy": "opennextjs-cloudflare build && opennextjs-cloudflare deploy",
+    "preview": "opennextjs-cloudflare build && opennextjs-cloudflare preview"
   },
   "dependencies": {
     "@supabase/ssr": "^0.5.2",
     "@supabase/supabase-js": "^2.45.6",
-    "@tanstack/react-virtual": "^3.11.2",
     "@vercel/analytics": "^1.5.0",
     "hls.js": "^1.5.15",
     "lucide-react": "^0.454.0",
@@ -22,6 +23,7 @@
     "zod": "^4.6.5"
   },
   "devDependencies": {
+    "@opennextjs/cloudflare": "^1.20.16",
     "@tailwindcss/postcss": "^4.0.0",
     "@types/node": "^20.0.0",
     "@types/react": "^19.0.0",
@@ -29,6 +31,7 @@
     "eslint": "^9.0.0",
     "eslint-config-next": "^15.1.0",
     "tailwindcss": "^4.0.0",
-    "typescript": "^5.0.0"
+    "typescript": "^5.0.0",
+    "wrangler": "^4.158.0"
   }
 }

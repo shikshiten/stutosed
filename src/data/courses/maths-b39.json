@@ -1,0 +1,2993 @@
+{
+  "id": "maths-b39",
+  "name": "Mathematics B39",
+  "subname": "Maths Batch 39 • Complete Arithmetic & Advanced",
+  "teacher": "Maths Faculty",
+  "subject": "Maths",
+  "thumb": "/thumbnails/subjects/maths_b39.svg",
+  "tabs": [
+    {
+      "id": "videos",
+      "label": "▶ Videos",
+      "items": [
+        {
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6353371890112/6353371890112.m3u8",
+          "label": "[Arithmetic] Class- 01 || Percentage",
+          "type": "hls"
+        },
+        {
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6353445993112/6353445993112.m3u8",
+          "label": "[Arithmetic] Class- 02 || Percentage",
+          "type": "hls"
+        },
+        {
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6353521570112/6353521570112.m3u8",
+          "label": "[Arithmetic] Class- 03 || Percentage",
+          "type": "hls"
+        },
+        {
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6353590676112/6353590676112.m3u8",
+          "label": "[Arithmetic] Class-04 || Percentage",
+          "type": "hls"
+        },
+        {
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6353760913112/6353760913112.m3u8",
+          "label": "[Arithmetic] Class-05 || Percentage",
+          "type": "hls"
+        },
+        {
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6353815960112/6353815960112.m3u8",
+          "label": "[Arithmetic] Class-06 || Percentage",
+          "type": "hls"
+        },
+        {
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6353877244112/6353877244112.m3u8",
+          "label": "[Arithmetic] Class-07 || Percentage",
+          "type": "hls"
+        },
+        {
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6353949433112/6353949433112.m3u8",
+          "label": "[Arithmetic] Class-08 || Percentage",
+          "type": "hls"
+        },
+        {
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6354026054112/6354026054112.m3u8",
+          "label": "[Arithmetic] Class-09 || Percentage",
+          "type": "hls"
+        },
+        {
+          "url": "https://www.youtube.com/embed/L6IfWjoUqkg",
+          "label": "[Arithmetic] Class-10 || Percentage",
+          "type": "external"
+        },
+        {
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6354741780112/6354741780112.m3u8",
+          "label": "[Arithmetic] Class-11 || Percentage",
+          "type": "hls"
+        },
+        {
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6354809823112/6354809823112.m3u8",
+          "label": "[Arithmetic] Class-12 || Percentage",
+          "type": "hls"
+        },
+        {
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6354868515112/6354868515112.m3u8",
+          "label": "[Arithmetic] Class-13 || Percentage",
+          "type": "hls"
+        },
+        {
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6354941547112/6354941547112.m3u8",
+          "label": "[Arithmetic] Class-14 || Percentage",
+          "type": "hls"
+        },
+        {
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6355015063112/6355015063112.m3u8",
+          "label": "[Arithmetic] Class-15 || Percentage",
+          "type": "hls"
+        },
+        {
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6355233844112/6355233844112.m3u8",
+          "label": "[Arithmetic] Class-16 || Percentage",
+          "type": "hls"
+        },
+        {
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6355299988112/6355299988112.m3u8",
+          "label": "[Arithmetic] Class-17 || Percentage",
+          "type": "hls"
+        },
+        {
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6355363080112/6355363080112.m3u8",
+          "label": "[Arithmetic] Class-18 || Percentage",
+          "type": "hls"
+        },
+        {
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6355437123112/6355437123112.m3u8",
+          "label": "[Arithmetic] Class-19 || Percentage",
+          "type": "hls"
+        },
+        {
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6355607290112/6355607290112.m3u8",
+          "label": "[Arithmetic] Class-20 || Percentage",
+          "type": "hls"
+        },
+        {
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6355660818112/6355660818112.m3u8",
+          "label": "[Arithmetic] Class-21 || Percentage",
+          "type": "hls"
+        },
+        {
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6355714600112/6355714600112.m3u8",
+          "label": "[Arithmetic] Class-22 || Percentage",
+          "type": "hls"
+        },
+        {
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6355768462112/6355768462112.m3u8",
+          "label": "[Arithmetic] Class-23 || Percentage",
+          "type": "hls"
+        },
+        {
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6355837315112/6355837315112.m3u8",
+          "label": "[Arithmetic] Class-24 || Percentage",
+          "type": "hls"
+        },
+        {
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6356162105112/6356162105112.m3u8",
+          "label": "[Arithmetic] Class-25 || Percentage",
+          "type": "hls"
+        },
+        {
+          "url": "https://www.youtube.com/embed/aMGcJ-Wh-Ug",
+          "label": "[Arithmetic] Class-26 || Percentage",
+          "type": "external"
+        },
+        {
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6356439527112/6356439527112.m3u8",
+          "label": "[Arithmetic] Class-27 || Percentage",
+          "type": "hls"
+        },
+        {
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6356567560112/6356567560112.m3u8",
+          "label": "[Arithmetic] Class-28 || Percentage",
+          "type": "hls"
+        },
+        {
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6357095542112/6357095542112.m3u8",
+          "label": "[Arithmetic] Class-29 || Percentage",
+          "type": "hls"
+        },
+        {
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6357229361112/6357229361112.m3u8",
+          "label": "[Arithmetic] Class-30 || Percentage",
+          "type": "hls"
+        },
+        {
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6357416784112/6357416784112.m3u8",
+          "label": "[Arithmetic] Class-31 || Percentage",
+          "type": "hls"
+        },
+        {
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6357609695112/6357609695112.m3u8",
+          "label": "[Arithmetic] Class-32 || Percentage",
+          "type": "hls"
+        },
+        {
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6357737308112/6357737308112.m3u8",
+          "label": "[Arithmetic] Class -1 || Ratio",
+          "type": "hls"
+        },
+        {
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6358058921112/6358058921112.m3u8",
+          "label": "[Arithmetic] Class-02 || Ratio",
+          "type": "hls"
+        },
+        {
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6358173933112/6358173933112.m3u8",
+          "label": "[Arithmetic] Class-03 || Ratio",
+          "type": "hls"
+        },
+        {
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6358296005112/6358296005112.m3u8",
+          "label": "[Arithmetic] Class-04 || Ratio",
+          "type": "hls"
+        },
+        {
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6358426119112/6358426119112.m3u8",
+          "label": "[Arithmetic] Class-05 || Ratio",
+          "type": "hls"
+        },
+        {
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6358536588112/6358536588112.m3u8",
+          "label": "[Arithmetic] Class-06 || Ratio",
+          "type": "hls"
+        },
+        {
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6358653027112/6358653027112.m3u8",
+          "label": "[Arithmetic] Class-07 || Ratio",
+          "type": "hls"
+        },
+        {
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6358855083112/6358855083112.m3u8",
+          "label": "[Arithmetic] Class-08 || Ratio",
+          "type": "hls"
+        },
+        {
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6358968479112/6358968479112.m3u8",
+          "label": "[Arithmetic] Class-09 || Ratio",
+          "type": "hls"
+        },
+        {
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6359088764112/6359088764112.m3u8",
+          "label": "[Arithmetic] Class-10 || Ratio",
+          "type": "hls"
+        },
+        {
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6359221711112/6359221711112.m3u8",
+          "label": "[Arithmetic] Class-11 || Ratio",
+          "type": "hls"
+        },
+        {
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6359344873112/6359344873112.m3u8",
+          "label": "[Arithmetic] Class-12 || Ratio",
+          "type": "hls"
+        },
+        {
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6359565474112/6359565474112.m3u8",
+          "label": "[Arithmetic] Class-13 || Ratio",
+          "type": "hls"
+        },
+        {
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6359686099112/6359686099112.m3u8",
+          "label": "[Arithmetic] Class-14 || Ratio",
+          "type": "hls"
+        },
+        {
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6359727626112/6359727626112.m3u8",
+          "label": "[Arithmetic] Class-15 || Ratio",
+          "type": "hls"
+        },
+        {
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6359784519112/6359784519112.m3u8",
+          "label": "[Arithmetic] Class-16 || Ratio",
+          "type": "hls"
+        },
+        {
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6359838470112/6359838470112.m3u8",
+          "label": "[Arithmetic] Class-17 || Ratio",
+          "type": "hls"
+        },
+        {
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6359970016112/6359970016112.m3u8",
+          "label": "[Arithmetic] Class-18 || Ratio",
+          "type": "hls"
+        },
+        {
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6360023014112/6360023014112.m3u8",
+          "label": "[Arithmetic] Class-1 || Problem on Ages",
+          "type": "hls"
+        },
+        {
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6360074299112/6360074299112.m3u8",
+          "label": "[Arithmetic] Class-02 || Problem on Ages",
+          "type": "hls"
+        },
+        {
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6360135061112/6360135061112.m3u8",
+          "label": "[Arithmetic] Class-1 || Profit and Loss",
+          "type": "hls"
+        },
+        {
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6360189066112/6360189066112.m3u8",
+          "label": "[Arithmetic] Class-02 || Profit and Loss",
+          "type": "hls"
+        },
+        {
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6360286821112/6360286821112.m3u8",
+          "label": "[Arithmetic] Class-03 || Profit and Loss",
+          "type": "hls"
+        },
+        {
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6338720236112/6338720236112.m3u8",
+          "label": "[Arithmetic] Class-1 || Race",
+          "type": "hls"
+        },
+        {
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6338834903112/6338834903112.m3u8",
+          "label": "[Arithmetic] Class-02 || Race",
+          "type": "hls"
+        },
+        {
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6338899866112/6338899866112.m3u8",
+          "label": "[Arithmetic] Class-03 || Race",
+          "type": "hls"
+        },
+        {
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6360340916112/6360340916112.m3u8",
+          "label": "[Arithmetic] Class-04 || Profit and Loss",
+          "type": "hls"
+        },
+        {
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6360394782112/6360394782112.m3u8",
+          "label": "[Arithmetic] Class-05 || Profit and Loss",
+          "type": "hls"
+        },
+        {
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6360792155112/6360792155112.m3u8",
+          "label": "[Arithmetic] Class-06 || Profit and Loss",
+          "type": "hls"
+        },
+        {
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6360861545112/6360861545112.m3u8",
+          "label": "[Arithmetic] Class-07 || Profit and Loss",
+          "type": "hls"
+        },
+        {
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6360930215112/6360930215112.m3u8",
+          "label": "[Arithmetic] Class-08 || Profit and Loss",
+          "type": "hls"
+        },
+        {
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6361075222112/6361075222112.m3u8",
+          "label": "[Arithmetic] Class-09 || Profit and Loss",
+          "type": "hls"
+        },
+        {
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6361126815112/6361126815112.m3u8",
+          "label": "[Arithmetic] Class-10 || Profit and Loss",
+          "type": "hls"
+        },
+        {
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6361178967112/6361178967112.m3u8",
+          "label": "[Arithmetic] Class-11 || Profit and Loss",
+          "type": "hls"
+        },
+        {
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6361235271112/6361235271112.m3u8",
+          "label": "[Arithmetic] Class-12 || Profit and Loss",
+          "type": "hls"
+        },
+        {
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6361378221112/6361378221112.m3u8",
+          "label": "[Arithmetic] Class-13 || Profit and Loss",
+          "type": "hls"
+        },
+        {
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6361426986112/6361426986112.m3u8",
+          "label": "[Arithmetic] Class-14 || Profit and Loss",
+          "type": "hls"
+        },
+        {
+          "url": "https://www.youtube.com/embed/h8-jgpv-inU",
+          "label": "[Arithmetic] Class-15 || Profit and Loss",
+          "type": "external"
+        },
+        {
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6361532934112/6361532934112.m3u8",
+          "label": "[Arithmetic] Well wishes for Happy Teachers day by Gagan Pratap Sir",
+          "type": "hls"
+        },
+        {
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6361588962112/6361588962112.m3u8",
+          "label": "[Arithmetic] Class-16 || Profit and Loss",
+          "type": "hls"
+        },
+        {
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6361639060112/6361639060112.m3u8",
+          "label": "[Arithmetic] Class-1 || Discount",
+          "type": "hls"
+        },
+        {
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6361823683112/6361823683112.m3u8",
+          "label": "[Arithmetic] Class-02 || Discount",
+          "type": "hls"
+        },
+        {
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6361863091112/6361863091112.m3u8",
+          "label": "[Arithmetic] Class-03 || Discount",
+          "type": "hls"
+        },
+        {
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6361907293112/6361907293112.m3u8",
+          "label": "[Arithmetic] Class-04 | Maths | Discount",
+          "type": "hls"
+        },
+        {
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6361949065112/6361949065112.m3u8",
+          "label": "[Arithmetic] Class-05 | Maths | Discount",
+          "type": "hls"
+        },
+        {
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6362008659112/6362008659112.m3u8",
+          "label": "[Arithmetic] Class-06 | Maths | Discount",
+          "type": "hls"
+        },
+        {
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6362048884112/6362048884112.m3u8",
+          "label": "[Arithmetic] Class-07 | Maths | Discount",
+          "type": "hls"
+        },
+        {
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6362093978112/6362093978112.m3u8",
+          "label": "[Arithmetic] Class-08 | Maths | Discount",
+          "type": "hls"
+        },
+        {
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6362141962112/6362141962112.m3u8",
+          "label": "[Arithmetic] Class-09 | Maths | Discount",
+          "type": "hls"
+        },
+        {
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6362376983112/6362376983112.m3u8",
+          "label": "[Arithmetic] Class-10 | Maths | Discount",
+          "type": "hls"
+        },
+        {
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6362421874112/6362421874112.m3u8",
+          "label": "[Arithmetic] Class-11 | Maths | Discount",
+          "type": "hls"
+        },
+        {
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6362476070112/6362476070112.m3u8",
+          "label": "[Arithmetic] Class-12 | Maths | Discount",
+          "type": "hls"
+        },
+        {
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6362528583112/6362528583112.m3u8",
+          "label": "[Arithmetic] Class-13 | Maths | Discount",
+          "type": "hls"
+        },
+        {
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6362584738112/6362584738112.m3u8",
+          "label": "[Arithmetic] Class-14 | Maths | Discount",
+          "type": "hls"
+        },
+        {
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6362659371112/6362659371112.m3u8",
+          "label": "[Arithmetic] Class -1  | Maths || Partnership",
+          "type": "hls"
+        },
+        {
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6328610230112/6328610230112.m3u8",
+          "label": "[Arithmetic] Arith | Class -01 | Miscellaneous (Dishonest Shopkeeper)",
+          "type": "hls"
+        },
+        {
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6328671379112/6328671379112.m3u8",
+          "label": "[Arithmetic] Arith | Class -02| Miscellaneous (Dishonest Shopkeeper)",
+          "type": "hls"
+        },
+        {
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6328842372112/6328842372112.m3u8",
+          "label": "[Arithmetic] Arith | Class -03 | Miscellaneous (Dishonest Shopkeeper)",
+          "type": "hls"
+        },
+        {
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6362785108112/6362785108112.m3u8",
+          "label": "[Arithmetic] Class -02 | Maths || Partnership",
+          "type": "hls"
+        },
+        {
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6362826350112/6362826350112.m3u8",
+          "label": "[Arithmetic] Class -03 | Maths || Partnership",
+          "type": "hls"
+        },
+        {
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6362870043112/6362870043112.m3u8",
+          "label": "[Arithmetic] Class -04 | Maths || Partnership",
+          "type": "hls"
+        },
+        {
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6362931248112/6362931248112.m3u8",
+          "label": "[Arithmetic] Class -01 | Maths || Average",
+          "type": "hls"
+        },
+        {
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6362969827112/6362969827112.m3u8",
+          "label": "[Arithmetic] Class -02 | Maths || Average",
+          "type": "hls"
+        },
+        {
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6363017203112/6363017203112.m3u8",
+          "label": "[Arithmetic] Class -03 | Maths || Average",
+          "type": "hls"
+        },
+        {
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6363061172112/6363061172112.m3u8",
+          "label": "[Arithmetic] Class -04 | Maths || Average",
+          "type": "hls"
+        },
+        {
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6363107146112/6363107146112.m3u8",
+          "label": "[Arithmetic] Class -05 | Maths || Average",
+          "type": "hls"
+        },
+        {
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6363228468112/6363228468112.m3u8",
+          "label": "[Arithmetic] Class -06 | Maths || Average",
+          "type": "hls"
+        },
+        {
+          "url": "https://www.youtube.com/embed/2ZPv6DI-860",
+          "label": "[Arithmetic] Class -07 | Maths || Average",
+          "type": "external"
+        },
+        {
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6363320905112/6363320905112.m3u8",
+          "label": "[Arithmetic] Class -08 | Maths || Average",
+          "type": "hls"
+        },
+        {
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6363363599112/6363363599112.m3u8",
+          "label": "[Arithmetic] Class -09 | Maths || Average",
+          "type": "hls"
+        },
+        {
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6363540261112/6363540261112.m3u8",
+          "label": "[Arithmetic] Class -10 | Maths || Average",
+          "type": "hls"
+        },
+        {
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6363580591112/6363580591112.m3u8",
+          "label": "[Arithmetic] Class -11 | Maths || Average",
+          "type": "hls"
+        },
+        {
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6363625769112/6363625769112.m3u8",
+          "label": "[Arithmetic] Class-1 | Maths || Mixture and Alligation",
+          "type": "hls"
+        },
+        {
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6363675578112/6363675578112.m3u8",
+          "label": "[Arithmetic] Class-02 | Maths || Mixture and Alligation",
+          "type": "hls"
+        },
+        {
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6363728933112/6363728933112.m3u8",
+          "label": "[Arithmetic] Class-03 | Maths || Mixture and Alligation",
+          "type": "hls"
+        },
+        {
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6363780527112/6363780527112.m3u8",
+          "label": "[Arithmetic] Class-04 | Maths || Mixture and Alligation",
+          "type": "hls"
+        },
+        {
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6364165840112/6364165840112.m3u8",
+          "label": "[Arithmetic] Class -05 || Mixture and Alligation",
+          "type": "hls"
+        },
+        {
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6364215102112/6364215102112.m3u8",
+          "label": "[Arithmetic] Class -06 || Mixture and Alligation",
+          "type": "hls"
+        },
+        {
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6364276504112/6364276504112.m3u8",
+          "label": "[Arithmetic] Class -07 || Mixture and Alligation",
+          "type": "hls"
+        },
+        {
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6364329126112/6364329126112.m3u8",
+          "label": "[Arithmetic] Class -08 || Mixture and Alligation",
+          "type": "hls"
+        },
+        {
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6364384923112/6364384923112.m3u8",
+          "label": "[Arithmetic] Class -09 || Mixture and Alligation",
+          "type": "hls"
+        },
+        {
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/vod_non_drm_hls/migration/6364535160112/6364535160112.m3u8",
+          "label": "[Arithmetic] Class -10 || Mixture and Alligation",
+          "type": "hls"
+        },
+        {
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6364579850112/6364579850112.m3u8",
+          "label": "[Arithmetic] Class -11 || Mixture and Alligation",
+          "type": "hls"
+        },
+        {
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6364633229112/6364633229112.m3u8",
+          "label": "[Arithmetic] Class -12 || Mixture and Alligation",
+          "type": "hls"
+        },
+        {
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6364736850112/6364736850112.m3u8",
+          "label": "[Arithmetic] Class -13 || Mixture and Alligation",
+          "type": "hls"
+        },
+        {
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6364890380112/6364890380112.m3u8",
+          "label": "[Arithmetic] Class -14 || Mixture and Alligation",
+          "type": "hls"
+        },
+        {
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6364937055112/6364937055112.m3u8",
+          "label": "[Arithmetic] Class -15 || Mixture and Alligation",
+          "type": "hls"
+        },
+        {
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6364981624112/6364981624112.m3u8",
+          "label": "[Arithmetic] Class -16 || Mixture and Alligation",
+          "type": "hls"
+        },
+        {
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6365034172112/6365034172112.m3u8",
+          "label": "[Arithmetic] Class-1 || Simple Intrest",
+          "type": "hls"
+        },
+        {
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6365148020112/6365148020112.m3u8",
+          "label": "[Arithmetic] Class-02 || Simple Intrest",
+          "type": "hls"
+        },
+        {
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6365197459112/6365197459112.m3u8",
+          "label": "[Arithmetic] Class-03 || Simple Intrest",
+          "type": "hls"
+        },
+        {
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6365236222112/6365236222112.m3u8",
+          "label": "[Arithmetic] Class-04 || Simple Intrest",
+          "type": "hls"
+        },
+        {
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6365280540112/6365280540112.m3u8",
+          "label": "[Arithmetic] Class-05 || Simple Intrest",
+          "type": "hls"
+        },
+        {
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6365315868112/6365315868112.m3u8",
+          "label": "[Arithmetic] Class-06 || Simple Intrest",
+          "type": "hls"
+        },
+        {
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6365404558112/6365404558112.m3u8",
+          "label": "[Arithmetic] Class-07 || Simple Intrest",
+          "type": "hls"
+        },
+        {
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6365455463112/6365455463112.m3u8",
+          "label": "[Arithmetic] Class-08 || Simple Intrest",
+          "type": "hls"
+        },
+        {
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6365510147112/6365510147112.m3u8",
+          "label": "[Arithmetic] Class-09 || Simple Intrest",
+          "type": "hls"
+        },
+        {
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6365570589112/6365570589112.m3u8",
+          "label": "[Arithmetic] Class-10 || Simple Intrest",
+          "type": "hls"
+        },
+        {
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6365620634112/6365620634112.m3u8",
+          "label": "[Arithmetic] Class-11 || Simple Intrest",
+          "type": "hls"
+        },
+        {
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6365670775112/6365670775112.m3u8",
+          "label": "[Arithmetic] Class-12 || Simple Intrest",
+          "type": "hls"
+        },
+        {
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6365746906112/6365746906112.m3u8",
+          "label": "[Arithmetic] Class-1 || Compound Interest",
+          "type": "hls"
+        },
+        {
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6365791671112/6365791671112.m3u8",
+          "label": "[Arithmetic] Class-02 || Compound Interest",
+          "type": "hls"
+        },
+        {
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6365836613112/6365836613112.m3u8",
+          "label": "[Arithmetic] Class-03 || Compound Interest",
+          "type": "hls"
+        },
+        {
+          "url": "https://www.youtube.com/embed/U_FXcFQ1Ze0",
+          "label": "[Arithmetic] Class-04 || Compound Interest",
+          "type": "external"
+        },
+        {
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6365936444112/6365936444112.m3u8",
+          "label": "[Arithmetic] Class-05 || Compound Interest",
+          "type": "hls"
+        },
+        {
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6366169215112/6366169215112.m3u8",
+          "label": "[Arithmetic] Class-06 || Compound Interest",
+          "type": "hls"
+        },
+        {
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6366216611112/6366216611112.m3u8",
+          "label": "[Arithmetic] Class-07 || Compound Interest",
+          "type": "hls"
+        },
+        {
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6366264686112/6366264686112.m3u8",
+          "label": "[Arithmetic] Class-08 || Compound Interest",
+          "type": "hls"
+        },
+        {
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6366305344112/6366305344112.m3u8",
+          "label": "[Arithmetic] Class-09 || Compound Interest",
+          "type": "hls"
+        },
+        {
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6366364042112/6366364042112.m3u8",
+          "label": "[Arithmetic] Class-10 || Compound Interest",
+          "type": "hls"
+        },
+        {
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6366400380112/6366400380112.m3u8",
+          "label": "[Arithmetic] Class-11 || Compound Interest",
+          "type": "hls"
+        },
+        {
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6366425286112/6366425286112.m3u8",
+          "label": "[Arithmetic] Class-12 || Compound Interest",
+          "type": "hls"
+        },
+        {
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6366443185112/6366443185112.m3u8",
+          "label": "[Arithmetic] Class-13 || Compound Interest",
+          "type": "hls"
+        },
+        {
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6366471127112/6366471127112.m3u8",
+          "label": "[Arithmetic] Class-14 || Compound Interest",
+          "type": "hls"
+        },
+        {
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6366499549112/6366499549112.m3u8",
+          "label": "[Arithmetic] Class-15 || Compound Interest",
+          "type": "hls"
+        },
+        {
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6373655180112/6373655180112.m3u8",
+          "label": "[Arithmetic] Class-16 || Complete Installment of SI and CI (किस्तों वाले सवाल) || By Gagan Pratap Sir",
+          "type": "hls"
+        },
+        {
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6367019858112/6367019858112.m3u8",
+          "label": "[Arithmetic] Class-01 || Time and Work",
+          "type": "hls"
+        },
+        {
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6367073463112/6367073463112.m3u8",
+          "label": "[Arithmetic] Class-02 || Time and Work",
+          "type": "hls"
+        },
+        {
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6367119071112/6367119071112.m3u8",
+          "label": "[Arithmetic] Class-03 || Time and Work",
+          "type": "hls"
+        },
+        {
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6367385187112/6367385187112.m3u8",
+          "label": "[Arithmetic] Class-04 || Time and Work",
+          "type": "hls"
+        },
+        {
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6367437369112/6367437369112.m3u8",
+          "label": "[Arithmetic] Class-05 || Time and Work",
+          "type": "hls"
+        },
+        {
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6367490096112/6367490096112.m3u8",
+          "label": "[Arithmetic] Class-06 || Time and Work",
+          "type": "hls"
+        },
+        {
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6367553005112/6367553005112.m3u8",
+          "label": "[Arithmetic] Class-07 || Time and Work",
+          "type": "hls"
+        },
+        {
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6367618447112/6367618447112.m3u8",
+          "label": "[Arithmetic] Class-08 || Time and Work",
+          "type": "hls"
+        },
+        {
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6367823088112/6367823088112.m3u8",
+          "label": "[Arithmetic] Class-09 || Time and Work",
+          "type": "hls"
+        },
+        {
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6367874448112/6367874448112.m3u8",
+          "label": "[Arithmetic] Class-10 || Time and Work",
+          "type": "hls"
+        },
+        {
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6367936274112/6367936274112.m3u8",
+          "label": "[Arithmetic] Class-11 || Time and Work",
+          "type": "hls"
+        },
+        {
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6367988655112/6367988655112.m3u8",
+          "label": "[Arithmetic] Class-12 || Time and Work",
+          "type": "hls"
+        },
+        {
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6368040888112/6368040888112.m3u8",
+          "label": "[Arithmetic] Class-13 || Time and Work",
+          "type": "hls"
+        },
+        {
+          "url": "https://www.youtube.com/embed/eOdgfdgrNc-",
+          "label": "[Arithmetic] off",
+          "type": "external"
+        },
+        {
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6368190822112/6368190822112.m3u8",
+          "label": "[Arithmetic] Class-14 || Time and Work",
+          "type": "hls"
+        },
+        {
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6368238943112/6368238943112.m3u8",
+          "label": "[Arithmetic] Class-15 || Time and Work",
+          "type": "hls"
+        },
+        {
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6368423127112/6368423127112.m3u8",
+          "label": "[Arithmetic] Class-16 || Time and Work",
+          "type": "hls"
+        },
+        {
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6368594495112/6368594495112.m3u8",
+          "label": "[Arithmetic] Class-17 || Time and Work",
+          "type": "hls"
+        },
+        {
+          "url": "https://www.youtube.com/embed/yEKb45A48J4",
+          "label": "[Arithmetic] Class-1 || Pipe and Cistern",
+          "type": "external"
+        },
+        {
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6368697422112/6368697422112.m3u8",
+          "label": "[Arithmetic] Class-2 || Pipe and Cistern",
+          "type": "hls"
+        },
+        {
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6368750600112/6368750600112.m3u8",
+          "label": "[Arithmetic] Class-03 || Pipe and Cistern",
+          "type": "hls"
+        },
+        {
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6368947825112/6368947825112.m3u8",
+          "label": "[Arithmetic] Class-04 || Pipe and Cistern",
+          "type": "hls"
+        },
+        {
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6368989677112/6368989677112.m3u8",
+          "label": "[Arithmetic] Class-05 || Pipe and Cistern",
+          "type": "hls"
+        },
+        {
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6369087192112/6369087192112.m3u8",
+          "label": "[Arithmetic] Class-1 || Time, Speed and Distance",
+          "type": "hls"
+        },
+        {
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6369139660112/6369139660112.m3u8",
+          "label": "[Arithmetic] Class-02 || Time, Speed and Distance",
+          "type": "hls"
+        },
+        {
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6369250919112/6369250919112.m3u8",
+          "label": "[Arithmetic] Class-03 || Time, Speed and Distance",
+          "type": "hls"
+        },
+        {
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6369291892112/6369291892112.m3u8",
+          "label": "[Arithmetic] Class-04 || Time, Speed and Distance",
+          "type": "hls"
+        },
+        {
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6369337894112/6369337894112.m3u8",
+          "label": "[Arithmetic] Class-05 || Time, Speed and Distance",
+          "type": "hls"
+        },
+        {
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6369433864112/6369433864112.m3u8",
+          "label": "[Arithmetic] Class-06 || Time, Speed and Distance",
+          "type": "hls"
+        },
+        {
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6369586728112/6369586728112.m3u8",
+          "label": "[Arithmetic] Class-07 || Time, Speed and Distance",
+          "type": "hls"
+        },
+        {
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6369628349112/6369628349112.m3u8",
+          "label": "[Arithmetic] Class-08 || Time, Speed and Distance",
+          "type": "hls"
+        },
+        {
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6369669415112/6369669415112.m3u8",
+          "label": "[Arithmetic] Class-09 || Time, Speed and Distance",
+          "type": "hls"
+        },
+        {
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6369768795112/6369768795112.m3u8",
+          "label": "[Arithmetic] Class-10 || Time, Speed and Distance",
+          "type": "hls"
+        },
+        {
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6369837220112/6369837220112.m3u8",
+          "label": "[Arithmetic] Class-11 || Time, Speed and Distance",
+          "type": "hls"
+        },
+        {
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6369876525112/6369876525112.m3u8",
+          "label": "[Arithmetic] Class-12 || Time, Speed and Distance",
+          "type": "hls"
+        },
+        {
+          "url": "https://www.youtube.com/embed/KN2E62N5MMc",
+          "label": "[Arithmetic] Class-13 || Time, Speed and Distance",
+          "type": "external"
+        },
+        {
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6370182454112/6370182454112.m3u8",
+          "label": "[Arithmetic] Class-14 || Time, Speed and Distance",
+          "type": "hls"
+        },
+        {
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6370224388112/6370224388112.m3u8",
+          "label": "[Arithmetic] Class-15 || Time, Speed and Distance",
+          "type": "hls"
+        },
+        {
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6370316624112/6370316624112.m3u8",
+          "label": "[Arithmetic] Class-16 || Time, Speed and Distance",
+          "type": "hls"
+        },
+        {
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6370457017112/6370457017112.m3u8",
+          "label": "[Arithmetic] Class-17 || Time, Speed and Distance",
+          "type": "hls"
+        },
+        {
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6370512561112/6370512561112.m3u8",
+          "label": "[Arithmetic] Class-1 || Boat and Steam",
+          "type": "hls"
+        },
+        {
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6370626006112/6370626006112.m3u8",
+          "label": "[Arithmetic] Class-2 || Boat and Steam",
+          "type": "hls"
+        },
+        {
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6370675352112/6370675352112.m3u8",
+          "label": "[Arithmetic] Class-03 || Boat and Steam",
+          "type": "hls"
+        },
+        {
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6370823891112/6370823891112.m3u8",
+          "label": "[Arithmetic] Class-1 || Train",
+          "type": "hls"
+        },
+        {
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6370916938112/6370916938112.m3u8",
+          "label": "[Arithmetic] Class-02 || Train",
+          "type": "hls"
+        },
+        {
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6370972134112/6370972134112.m3u8",
+          "label": "[Arithmetic] Class-03 || Train",
+          "type": "hls"
+        },
+        {
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6371027500112/6371027500112.m3u8",
+          "label": "[Arithmetic] Class-04 || Train",
+          "type": "hls"
+        },
+        {
+          "url": "https://www.youtube.com/embed/FZcXLL4KjFM",
+          "label": "[Arithmetic] Final Message by Gagan Pratap sir",
+          "type": "external"
+        },
+        {
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6338835510112/6338835510112.m3u8",
+          "label": "[Advance] Class-1 || Statistics ||  CGL MAINS 2023",
+          "type": "hls"
+        },
+        {
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6338849498112/6338849498112.m3u8",
+          "label": "[Advance] Class-2 || Statistics || CGL MAINS 2023",
+          "type": "hls"
+        },
+        {
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6338981630112/6338981630112.m3u8",
+          "label": "[Advance] Class-3 || Statistics || CGL MAINS 2023",
+          "type": "hls"
+        },
+        {
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6355357265112/6355357265112.m3u8",
+          "label": "[Advance] CLASS-01 || 3D Mensuration",
+          "type": "hls"
+        },
+        {
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6355424817112/6355424817112.m3u8",
+          "label": "[Advance] Class-02 || 3D Menstruation",
+          "type": "hls"
+        },
+        {
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6355605491112/6355605491112.m3u8",
+          "label": "[Advance] Class-03 || 3D Menstruation",
+          "type": "hls"
+        },
+        {
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6355655982112/6355655982112.m3u8",
+          "label": "[Advance] Class-04 || 3D Menstruation",
+          "type": "hls"
+        },
+        {
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6355709180112/6355709180112.m3u8",
+          "label": "[Advance] Class-05 || 3D Menstruation",
+          "type": "hls"
+        },
+        {
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6355765173112/6355765173112.m3u8",
+          "label": "[Advance] Class-06 || 3D Menstruation",
+          "type": "hls"
+        },
+        {
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6355827984112/6355827984112.m3u8",
+          "label": "[Advance] Class-07 || 3D Menstruation",
+          "type": "hls"
+        },
+        {
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6356150148112/6356150148112.m3u8",
+          "label": "[Advance] Class-08 || 3D Menstruation",
+          "type": "hls"
+        },
+        {
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6356293302112/6356293302112.m3u8",
+          "label": "[Advance] Class-09 || 3D Menstruation",
+          "type": "hls"
+        },
+        {
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6356429137112/6356429137112.m3u8",
+          "label": "[Advance] Class-10 || 3D Menstruation",
+          "type": "hls"
+        },
+        {
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6356555316112/6356555316112.m3u8",
+          "label": "[Advance] Class-11 || 3D Menstruation",
+          "type": "hls"
+        },
+        {
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6356711493112/6356711493112.m3u8",
+          "label": "[Advance] Class-12 || 3D Menstruation",
+          "type": "hls"
+        },
+        {
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6357085751112/6357085751112.m3u8",
+          "label": "[Advance] Class-13 || 3D Menstruation",
+          "type": "hls"
+        },
+        {
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6357216628112/6357216628112.m3u8",
+          "label": "[Advance] Class-14 || 3D Mensuration",
+          "type": "hls"
+        },
+        {
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6357395031112/6357395031112.m3u8",
+          "label": "[Advance] Class-15 || 3D Mensuration",
+          "type": "hls"
+        },
+        {
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6357596150112/6357596150112.m3u8",
+          "label": "[Advance] Class-16 || 3D Mensuration",
+          "type": "hls"
+        },
+        {
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6357728738112/6357728738112.m3u8",
+          "label": "[Advance] Class-17 || 3D Mensuration",
+          "type": "hls"
+        },
+        {
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6358050254112/6358050254112.m3u8",
+          "label": "[Advance] Class-18 || 3D Mensuration",
+          "type": "hls"
+        },
+        {
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6358163904112/6358163904112.m3u8",
+          "label": "[Advance] Class-19 || 3D Mensuration",
+          "type": "hls"
+        },
+        {
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6358286863112/6358286863112.m3u8",
+          "label": "[Advance] Class-20 || 3D Mensuration",
+          "type": "hls"
+        },
+        {
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6358420029112/6358420029112.m3u8",
+          "label": "[Advance] Class-21 || 3D Mensuration",
+          "type": "hls"
+        },
+        {
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6358526607112/6358526607112.m3u8",
+          "label": "[Advance] Class-22 || 3D Mensuration",
+          "type": "hls"
+        },
+        {
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6358646152112/6358646152112.m3u8",
+          "label": "[Advance] Class-23 || 3D Mensuration",
+          "type": "hls"
+        },
+        {
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6358845327112/6358845327112.m3u8",
+          "label": "[Advance] Class-01 || Geometry",
+          "type": "hls"
+        },
+        {
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6358957161112/6358957161112.m3u8",
+          "label": "[Advance] Class-02 || Geometry",
+          "type": "hls"
+        },
+        {
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6359043254112/6359043254112.m3u8",
+          "label": "[Advance] Class-24 || 3D Mensuration",
+          "type": "hls"
+        },
+        {
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6359077321112/6359077321112.m3u8",
+          "label": "[Advance] Class-03 || Geometry",
+          "type": "hls"
+        },
+        {
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6359176566112/6359176566112.m3u8",
+          "label": "[Advance] Class-25 || 3D Mensuration",
+          "type": "hls"
+        },
+        {
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6359213322112/6359213322112.m3u8",
+          "label": "[Advance] Class-04 || Geometry",
+          "type": "hls"
+        },
+        {
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6359336141112/6359336141112.m3u8",
+          "label": "[Advance] Class-05 || Geometry",
+          "type": "hls"
+        },
+        {
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6359596579112/6359596579112.m3u8",
+          "label": "[Advance] Class-26 || 3D Mensuration",
+          "type": "hls"
+        },
+        {
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6359617805112/6359617805112.m3u8",
+          "label": "[Advance] Class-06 || Geometry",
+          "type": "hls"
+        },
+        {
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6359682052112/6359682052112.m3u8",
+          "label": "[Advance] Class-07 || Geometry",
+          "type": "hls"
+        },
+        {
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6322846572112/6322846572112.m3u8",
+          "label": "[Advance] Class-27 || 3D Mensuration",
+          "type": "hls"
+        },
+        {
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6359743243112/6359743243112.m3u8",
+          "label": "[Advance] Class-08 || Geometry",
+          "type": "hls"
+        },
+        {
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6359801191112/6359801191112.m3u8",
+          "label": "[Advance] Class-09 || Geometry",
+          "type": "hls"
+        },
+        {
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6359932504112/6359932504112.m3u8",
+          "label": "[Advance] Class-10 || Geometry",
+          "type": "hls"
+        },
+        {
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6359984182112/6359984182112.m3u8",
+          "label": "[Advance] Class-11 || Geometry",
+          "type": "hls"
+        },
+        {
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6360038337112/6360038337112.m3u8",
+          "label": "[Advance] Class-12 || Geometry",
+          "type": "hls"
+        },
+        {
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6360093649112/6360093649112.m3u8",
+          "label": "[Advance] Class-13 || Geometry",
+          "type": "hls"
+        },
+        {
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6360149035112/6360149035112.m3u8",
+          "label": "[Advance] Class-14 || Geometry",
+          "type": "hls"
+        },
+        {
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6360302470112/6360302470112.m3u8",
+          "label": "[Advance] Class-15 || Geometry",
+          "type": "hls"
+        },
+        {
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6360360741112/6360360741112.m3u8",
+          "label": "[Advance] Class-16 || Geometry",
+          "type": "hls"
+        },
+        {
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6360408328112/6360408328112.m3u8",
+          "label": "[Advance] Class-17 || Geometry",
+          "type": "hls"
+        },
+        {
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6360806275112/6360806275112.m3u8",
+          "label": "[Advance] Class-01 || Number System",
+          "type": "hls"
+        },
+        {
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6360812970112/6360812970112.m3u8",
+          "label": "[Advance] Class-18 || Geometry",
+          "type": "hls"
+        },
+        {
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6360878677112/6360878677112.m3u8",
+          "label": "[Advance] Class-02 || Number System",
+          "type": "hls"
+        },
+        {
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6361084728112/6361084728112.m3u8",
+          "label": "[Advance] Class-03 || Number System",
+          "type": "hls"
+        },
+        {
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6361091086112/6361091086112.m3u8",
+          "label": "[Advance] Class-19 || Geometry",
+          "type": "hls"
+        },
+        {
+          "url": "https://www.youtube.com/embed/4OVLZZ8FA3U",
+          "label": "[Advance] Class-04 || Number System",
+          "type": "external"
+        },
+        {
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6361141090112/6361141090112.m3u8",
+          "label": "[Advance] Class-20 || Geometry",
+          "type": "hls"
+        },
+        {
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6361193558112/6361193558112.m3u8",
+          "label": "[Advance] Class-05 || Number System",
+          "type": "hls"
+        },
+        {
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6361196113112/6361196113112.m3u8",
+          "label": "[Advance] Class-21 || Geometry",
+          "type": "hls"
+        },
+        {
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6361256260112/6361256260112.m3u8",
+          "label": "[Advance] Class-06 || Number System",
+          "type": "hls"
+        },
+        {
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6361260073112/6361260073112.m3u8",
+          "label": "[Advance] Class-22 || Geometry",
+          "type": "hls"
+        },
+        {
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6361392928112/6361392928112.m3u8",
+          "label": "[Advance] Class-07 || Number System",
+          "type": "hls"
+        },
+        {
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6361439682112/6361439682112.m3u8",
+          "label": "[Advance] Class-08 || Number System",
+          "type": "hls"
+        },
+        {
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6361445283112/6361445283112.m3u8",
+          "label": "[Advance] Class-23 || Geometry",
+          "type": "hls"
+        },
+        {
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6361493607112/6361493607112.m3u8",
+          "label": "[Advance] Class-09 || Number System",
+          "type": "hls"
+        },
+        {
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6361498048112/6361498048112.m3u8",
+          "label": "[Advance] Class-24 || Geometry",
+          "type": "hls"
+        },
+        {
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6361549588112/6361549588112.m3u8",
+          "label": "[Advance] Class-10 || Number System",
+          "type": "hls"
+        },
+        {
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6361559485112/6361559485112.m3u8",
+          "label": "[Advance] Class-25 || Geometry",
+          "type": "hls"
+        },
+        {
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6361608734112/6361608734112.m3u8",
+          "label": "[Advance] Class-11 || Number System",
+          "type": "hls"
+        },
+        {
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6361610174112/6361610174112.m3u8",
+          "label": "[Advance] Class-26 || Geometry",
+          "type": "hls"
+        },
+        {
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6361783884112/6361783884112.m3u8",
+          "label": "[Advance] Class-12 || Number System",
+          "type": "hls"
+        },
+        {
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6361830954112/6361830954112.m3u8",
+          "label": "[Advance] Class-13 || Number System",
+          "type": "hls"
+        },
+        {
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6361834061112/6361834061112.m3u8",
+          "label": "[Advance] Class-27 || Geometry",
+          "type": "hls"
+        },
+        {
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6361870264112/6361870264112.m3u8",
+          "label": "[Advance] Class-14 || Number System",
+          "type": "hls"
+        },
+        {
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6361874183112/6361874183112.m3u8",
+          "label": "[Advance] Class-28 || Geometry",
+          "type": "hls"
+        },
+        {
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6361911807112/6361911807112.m3u8",
+          "label": "[Advance] Class-15 || Number System",
+          "type": "hls"
+        },
+        {
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6361918804112/6361918804112.m3u8",
+          "label": "[Advance] Class-29 || Geometry",
+          "type": "hls"
+        },
+        {
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6362013413112/6362013413112.m3u8",
+          "label": "[Advance] Class-16 || Number System",
+          "type": "hls"
+        },
+        {
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6362016945112/6362016945112.m3u8",
+          "label": "[Advance] Class-30 || Geometry",
+          "type": "hls"
+        },
+        {
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6362055557112/6362055557112.m3u8",
+          "label": "[Advance] Class-17 || Number System",
+          "type": "hls"
+        },
+        {
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6362103510112/6362103510112.m3u8",
+          "label": "[Advance] Class-18 || Number System",
+          "type": "hls"
+        },
+        {
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6362108409112/6362108409112.m3u8",
+          "label": "[Advance] Class-31 || Geometry",
+          "type": "hls"
+        },
+        {
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6362151119112/6362151119112.m3u8",
+          "label": "[Advance] Class-19 || Number System",
+          "type": "hls"
+        },
+        {
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6362155144112/6362155144112.m3u8",
+          "label": "[Advance] Class-32 || Geometry",
+          "type": "hls"
+        },
+        {
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6362341824112/6362341824112.m3u8",
+          "label": "[Advance] Class-33 || Geometry",
+          "type": "hls"
+        },
+        {
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6362384461112/6362384461112.m3u8",
+          "label": "[Advance] Class-20 || Number System",
+          "type": "hls"
+        },
+        {
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6362388367112/6362388367112.m3u8",
+          "label": "[Advance] Class-34 || Geometry",
+          "type": "hls"
+        },
+        {
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6362431436112/6362431436112.m3u8",
+          "label": "[Advance] Class- 1 || Calculation and Simplification",
+          "type": "hls"
+        },
+        {
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6362434867112/6362434867112.m3u8",
+          "label": "[Advance] Class-35 || Geometry",
+          "type": "hls"
+        },
+        {
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6362487432112/6362487432112.m3u8",
+          "label": "[Advance] Class-02 || Calculation and Simplification",
+          "type": "hls"
+        },
+        {
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6362489489112/6362489489112.m3u8",
+          "label": "[Advance] Class-36 || Geometry",
+          "type": "hls"
+        },
+        {
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6362538601112/6362538601112.m3u8",
+          "label": "[Advance] Class-03 || Calculation and Simplification",
+          "type": "hls"
+        },
+        {
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6362542621112/6362542621112.m3u8",
+          "label": "[Advance] Class-37 || Geometry",
+          "type": "hls"
+        },
+        {
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6362595023112/6362595023112.m3u8",
+          "label": "[Advance] Class-38 || Geometry",
+          "type": "hls"
+        },
+        {
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6362666926112/6362666926112.m3u8",
+          "label": "[Advance] Class-04 || Calculation and Simplification",
+          "type": "hls"
+        },
+        {
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6362668502112/6362668502112.m3u8",
+          "label": "[Advance] Class-39 || Geometry",
+          "type": "hls"
+        },
+        {
+          "url": "https://www.youtube.com/embed/Pq2WwLOwY7I",
+          "label": "[Advance] Class-05 || Calculation and Simplification",
+          "type": "external"
+        },
+        {
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6362712358112/6362712358112.m3u8",
+          "label": "[Advance] Class-40 || Geometry",
+          "type": "hls"
+        },
+        {
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6362792661112/6362792661112.m3u8",
+          "label": "[Advance] Class-06 || Calculation and Simplification",
+          "type": "hls"
+        },
+        {
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6362936431112/6362936431112.m3u8",
+          "label": "[Advance] Class-07 || Calculation and Simplification",
+          "type": "hls"
+        },
+        {
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6362939649112/6362939649112.m3u8",
+          "label": "[Advance] Class-41 || Geometry",
+          "type": "hls"
+        },
+        {
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6339437874112/6339437874112.m3u8",
+          "label": "[Advance] Class-1 || Probability || CGL MAINS 2023",
+          "type": "hls"
+        },
+        {
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6340138831112/6340138831112.m3u8",
+          "label": "[Advance] Class-2 || Probability || CGL MAINS 2023",
+          "type": "hls"
+        },
+        {
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6340139588112/6340139588112.m3u8",
+          "label": "[Advance] Class-3 || Probability || CGL MAINS 2023",
+          "type": "hls"
+        },
+        {
+          "url": "https://www.youtube.com/embed/2rarQAGU21g",
+          "label": "[Advance] Class-08 || Calculation and Simplification",
+          "type": "external"
+        },
+        {
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6362981529112/6362981529112.m3u8",
+          "label": "[Advance] Class-42 || Geometry",
+          "type": "hls"
+        },
+        {
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6363023224112/6363023224112.m3u8",
+          "label": "[Advance] Class-09 || Calculation and Simplification",
+          "type": "hls"
+        },
+        {
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6363027509112/6363027509112.m3u8",
+          "label": "[Advance] Class-43 || Geometry",
+          "type": "hls"
+        },
+        {
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6363069340112/6363069340112.m3u8",
+          "label": "[Advance] Class-10 || Calculation and Simplification",
+          "type": "hls"
+        },
+        {
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6363070696112/6363070696112.m3u8",
+          "label": "[Advance] Class-44 || Geometry",
+          "type": "hls"
+        },
+        {
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6363115199112/6363115199112.m3u8",
+          "label": "[Advance] Class-11 || Calculation and Simplification",
+          "type": "hls"
+        },
+        {
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6363119293112/6363119293112.m3u8",
+          "label": "[Advance] Class-45 || Geometry",
+          "type": "hls"
+        },
+        {
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6363237797112/6363237797112.m3u8",
+          "label": "[Advance] Class-46 || Geometry",
+          "type": "hls"
+        },
+        {
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6363278298112/6363278298112.m3u8",
+          "label": "[Advance] Class-12 || Calculation and Simplification",
+          "type": "hls"
+        },
+        {
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6363281174112/6363281174112.m3u8",
+          "label": "[Advance] Class-47 || Geometry",
+          "type": "hls"
+        },
+        {
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6363326694112/6363326694112.m3u8",
+          "label": "[Advance] Class-13 || Calculation and Simplification",
+          "type": "hls"
+        },
+        {
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6363329631112/6363329631112.m3u8",
+          "label": "[Advance] Class-48 || Geometry",
+          "type": "hls"
+        },
+        {
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6363373650112/6363373650112.m3u8",
+          "label": "[Advance] Class-49 || Geometry",
+          "type": "hls"
+        },
+        {
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6363546241112/6363546241112.m3u8",
+          "label": "[Advance] Class-14 || Calculation and Simplification",
+          "type": "hls"
+        },
+        {
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6363548796112/6363548796112.m3u8",
+          "label": "[Advance] Class-50 || Geometry",
+          "type": "hls"
+        },
+        {
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6363585662112/6363585662112.m3u8",
+          "label": "[Advance] Class-15 || Calculation and Simplification",
+          "type": "hls"
+        },
+        {
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6363589499112/6363589499112.m3u8",
+          "label": "[Advance] Class-51 || Geometry",
+          "type": "hls"
+        },
+        {
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6363624573112/6363624573112.m3u8",
+          "label": "[Advance] Class- 16 || Calculation and Simplification",
+          "type": "hls"
+        },
+        {
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6363636282112/6363636282112.m3u8",
+          "label": "[Advance] Class-52 || Geometry",
+          "type": "hls"
+        },
+        {
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6363685937112/6363685937112.m3u8",
+          "label": "[Advance] Class-53 || Geometry",
+          "type": "hls"
+        },
+        {
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6339252994112/6339252994112.m3u8",
+          "label": "[Advance] Class-1 || Permutation and Combination",
+          "type": "hls"
+        },
+        {
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6339260826112/6339260826112.m3u8",
+          "label": "[Advance] Class-2 || Permutation and Combination",
+          "type": "hls"
+        },
+        {
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6339379028112/6339379028112.m3u8",
+          "label": "[Advance] Class-3 || Permutation and Combination",
+          "type": "hls"
+        },
+        {
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6363792170112/6363792170112.m3u8",
+          "label": "[Advance] Class-54 || Geometry",
+          "type": "hls"
+        },
+        {
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6345817275112/6345817275112.m3u8",
+          "label": "[Advance] Class-55 || Geometry",
+          "type": "hls"
+        },
+        {
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6345870162112/6345870162112.m3u8",
+          "label": "[Advance] Class-56 || Geometry",
+          "type": "hls"
+        },
+        {
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6345933727112/6345933727112.m3u8",
+          "label": "[Advance] Class-57 || Geometry",
+          "type": "hls"
+        },
+        {
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6345998783112/6345998783112.m3u8",
+          "label": "[Advance] Class-58 || Geometry",
+          "type": "hls"
+        },
+        {
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/vod_non_drm_hls/migration/6346061345112/6346061345112.m3u8",
+          "label": "[Advance] Class-59 || Geometry",
+          "type": "hls"
+        },
+        {
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6346333951112/6346333951112.m3u8",
+          "label": "[Advance] Class-60 || Geometry",
+          "type": "hls"
+        },
+        {
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6346729514112/6346729514112.m3u8",
+          "label": "[Advance] Class-62 || Geometry",
+          "type": "hls"
+        },
+        {
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6346344962112/6346344962112.m3u8",
+          "label": "[Advance] Class-61 || Geometry",
+          "type": "hls"
+        },
+        {
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6346483191112/6346483191112.m3u8",
+          "label": "[Advance] Class-63 || Geometry",
+          "type": "hls"
+        },
+        {
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6346731938112/6346731938112.m3u8",
+          "label": "[Advance] Class-64 || Geometry",
+          "type": "hls"
+        },
+        {
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6346790362112/6346790362112.m3u8",
+          "label": "[Advance] Class-65 || Geometry",
+          "type": "hls"
+        },
+        {
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6346867408112/6346867408112.m3u8",
+          "label": "[Advance] Class-66 || Geometry",
+          "type": "hls"
+        },
+        {
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6346931480112/6346931480112.m3u8",
+          "label": "[Advance] Class-67 || Geometry",
+          "type": "hls"
+        },
+        {
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6347009388112/6347009388112.m3u8",
+          "label": "[Advance] Class-68 || Geometry",
+          "type": "hls"
+        },
+        {
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6347198994112/6347198994112.m3u8",
+          "label": "[Advance] Class-69 || Geometry",
+          "type": "hls"
+        },
+        {
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6347254541112/6347254541112.m3u8",
+          "label": "[Advance] Class-70 || Geometry",
+          "type": "hls"
+        },
+        {
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6347315845112/6347315845112.m3u8",
+          "label": "[Advance] Class-71 || Geometry",
+          "type": "hls"
+        },
+        {
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6347452442112/6347452442112.m3u8",
+          "label": "[Advance] Class-72 || Geometry",
+          "type": "hls"
+        },
+        {
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6347674938112/6347674938112.m3u8",
+          "label": "[Advance] Class-73 || Geometry",
+          "type": "hls"
+        },
+        {
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6347744739112/6347744739112.m3u8",
+          "label": "[Advance] Class-74 || Geometry",
+          "type": "hls"
+        },
+        {
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6347826065112/6347826065112.m3u8",
+          "label": "[Advance] Class-75 || Geometry",
+          "type": "hls"
+        },
+        {
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6347922885112/6347922885112.m3u8",
+          "label": "[Advance] Class-76 || Geometry",
+          "type": "hls"
+        },
+        {
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6347998236112/6347998236112.m3u8",
+          "label": "[Advance] Class-77 || Geometry",
+          "type": "hls"
+        },
+        {
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6348205609112/6348205609112.m3u8",
+          "label": "[Advance] Class-78 || Geometry",
+          "type": "hls"
+        },
+        {
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6348264277112/6348264277112.m3u8",
+          "label": "[Advance] Class-79 || Geometry",
+          "type": "hls"
+        },
+        {
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6348327058112/6348327058112.m3u8",
+          "label": "[Advance] Class-80 || Geometry",
+          "type": "hls"
+        },
+        {
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6364174522112/6364174522112.m3u8",
+          "label": "[Advance] Class-01 | Coordinate Geometry",
+          "type": "hls"
+        },
+        {
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6364226740112/6364226740112.m3u8",
+          "label": "[Advance] Class-02 | Coordinate Geometry",
+          "type": "hls"
+        },
+        {
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6364289215112/6364289215112.m3u8",
+          "label": "[Advance] Class-03 | Coordinate Geometry",
+          "type": "hls"
+        },
+        {
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6364337421112/6364337421112.m3u8",
+          "label": "[Advance] Class-04 | Coordinate Geometry",
+          "type": "hls"
+        },
+        {
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6364400335112/6364400335112.m3u8",
+          "label": "[Advance] Class-05 | Coordinate Geometry",
+          "type": "hls"
+        },
+        {
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6364544407112/6364544407112.m3u8",
+          "label": "[Advance] Class-06 | Coordinate Geometry",
+          "type": "hls"
+        },
+        {
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6364646011112/6364646011112.m3u8",
+          "label": "[Advance] Class-07 | Coordinate Geometry",
+          "type": "hls"
+        },
+        {
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6364745576112/6364745576112.m3u8",
+          "label": "[Advance] Class-08 | Coordinate Geometry",
+          "type": "hls"
+        },
+        {
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6364855739112/6364855739112.m3u8",
+          "label": "[Advance] Class-09 | Coordinate Geometry",
+          "type": "hls"
+        },
+        {
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6364899935112/6364899935112.m3u8",
+          "label": "[Advance] Class-10 | Coordinate Geometry",
+          "type": "hls"
+        },
+        {
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6364991728112/6364991728112.m3u8",
+          "label": "[Advance] Class-01 || Algebra",
+          "type": "hls"
+        },
+        {
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6365042992112/6365042992112.m3u8",
+          "label": "[Advance] Class-02 || Algebra",
+          "type": "hls"
+        },
+        {
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6365158341112/6365158341112.m3u8",
+          "label": "[Advance] Class-03 || Algebra",
+          "type": "hls"
+        },
+        {
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6365204600112/6365204600112.m3u8",
+          "label": "[Advance] Class-04 || Algebra",
+          "type": "hls"
+        },
+        {
+          "url": "https://www.youtube.com/embed/zUGfresxHE0",
+          "label": "[Advance] Class-21 | Number system",
+          "type": "external"
+        },
+        {
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6365246524112/6365246524112.m3u8",
+          "label": "[Advance] Class-05 || Algebra",
+          "type": "hls"
+        },
+        {
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6324767780112/6324767780112.m3u8",
+          "label": "[Advance] Class-22 | Number System",
+          "type": "hls"
+        },
+        {
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6324960900112/6324960900112.m3u8",
+          "label": "[Advance] Class-23 | Number System",
+          "type": "hls"
+        },
+        {
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6325029188112/6325029188112.m3u8",
+          "label": "[Advance] Class-24 | Number System",
+          "type": "hls"
+        },
+        {
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6325260551112/6325260551112.m3u8",
+          "label": "[Advance] Class-25 | Number System",
+          "type": "hls"
+        },
+        {
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6325320896112/6325320896112.m3u8",
+          "label": "[Advance] Class-26 | Number System",
+          "type": "hls"
+        },
+        {
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6325380906112/6325380906112.m3u8",
+          "label": "[Advance] Class-27 | Number System",
+          "type": "hls"
+        },
+        {
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6325443674112/6325443674112.m3u8",
+          "label": "[Advance] Class-28 | Number System",
+          "type": "hls"
+        },
+        {
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6325501690112/6325501690112.m3u8",
+          "label": "[Advance] Class-29 | Number System",
+          "type": "hls"
+        },
+        {
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6326131107112/6326131107112.m3u8",
+          "label": "[Advance] Class-30 | Number System",
+          "type": "hls"
+        },
+        {
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6326187240112/6326187240112.m3u8",
+          "label": "[Advance] Class-31 | Number System",
+          "type": "hls"
+        },
+        {
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6326242190112/6326242190112.m3u8",
+          "label": "[Advance] Class-32 | Number System",
+          "type": "hls"
+        },
+        {
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6326310498112/6326310498112.m3u8",
+          "label": "[Advance] Class-33 | Number of Factors",
+          "type": "hls"
+        },
+        {
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6326387109112/6326387109112.m3u8",
+          "label": "[Advance] Class-34 | Number of Factors",
+          "type": "hls"
+        },
+        {
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6326564429112/6326564429112.m3u8",
+          "label": "[Advance] Class-35 | Number System",
+          "type": "hls"
+        },
+        {
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6326617152112/6326617152112.m3u8",
+          "label": "[Advance] Class-36 | Number System",
+          "type": "hls"
+        },
+        {
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6365292452112/6365292452112.m3u8",
+          "label": "[Advance] Class-6 || Algebra",
+          "type": "hls"
+        },
+        {
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6365324328112/6365324328112.m3u8",
+          "label": "[Advance] Class-07 || Algebra",
+          "type": "hls"
+        },
+        {
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6365415933112/6365415933112.m3u8",
+          "label": "[Advance] Class-08 || Algebra",
+          "type": "hls"
+        },
+        {
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6365467707112/6365467707112.m3u8",
+          "label": "[Advance] Class-09 || Algebra",
+          "type": "hls"
+        },
+        {
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6365520425112/6365520425112.m3u8",
+          "label": "[Advance] Class-10 || Algebra",
+          "type": "hls"
+        },
+        {
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6365579602112/6365579602112.m3u8",
+          "label": "[Advance] Class-11 || Algebra",
+          "type": "hls"
+        },
+        {
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6365631331112/6365631331112.m3u8",
+          "label": "[Advance] Class-12 || Algebra",
+          "type": "hls"
+        },
+        {
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6365754625112/6365754625112.m3u8",
+          "label": "[Advance] Class-13 || Algebra",
+          "type": "hls"
+        },
+        {
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6365798499112/6365798499112.m3u8",
+          "label": "[Advance] Class-14 || Algebra",
+          "type": "hls"
+        },
+        {
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6365845127112/6365845127112.m3u8",
+          "label": "[Advance] Class-15 || Algebra",
+          "type": "hls"
+        },
+        {
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6365900653112/6365900653112.m3u8",
+          "label": "[Advance] Class-16 || Algebra",
+          "type": "hls"
+        },
+        {
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6365946567112/6365946567112.m3u8",
+          "label": "[Advance] Class-17 || Algebra",
+          "type": "hls"
+        },
+        {
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6366107603112/6366107603112.m3u8",
+          "label": "[Advance] Class-18 || Algebra",
+          "type": "hls"
+        },
+        {
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6366178856112/6366178856112.m3u8",
+          "label": "[Advance] Class-19 || Algebra",
+          "type": "hls"
+        },
+        {
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6366226981112/6366226981112.m3u8",
+          "label": "[Advance] Class-20 || Algebra",
+          "type": "hls"
+        },
+        {
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6366275417112/6366275417112.m3u8",
+          "label": "[Advance] Class-21 || Algebra",
+          "type": "hls"
+        },
+        {
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6366370933112/6366370933112.m3u8",
+          "label": "[Advance] Class-22 || Algebra",
+          "type": "hls"
+        },
+        {
+          "url": "https://www.youtube.com/embed/aab3tWiaE6Q",
+          "label": "[Advance] Class-23 || Algebra",
+          "type": "external"
+        },
+        {
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6366429624112/6366429624112.m3u8",
+          "label": "[Advance] Class-24 || Algebra",
+          "type": "hls"
+        },
+        {
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6366449231112/6366449231112.m3u8",
+          "label": "[Advance] Class-25 || Algebra",
+          "type": "hls"
+        },
+        {
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6366477489112/6366477489112.m3u8",
+          "label": "[Advance] Class-26 || Algebra",
+          "type": "hls"
+        },
+        {
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6366547384112/6366547384112.m3u8",
+          "label": "[Advance] Class-27 || Algebra",
+          "type": "hls"
+        },
+        {
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6366573025112/6366573025112.m3u8",
+          "label": "[Advance] Class-28 || Algebra",
+          "type": "hls"
+        },
+        {
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6366616083112/6366616083112.m3u8",
+          "label": "[Advance] Class-29 || Algebra",
+          "type": "hls"
+        },
+        {
+          "url": "https://www.youtube.com/embed/zYsT0ABkhsY",
+          "label": "[Advance] Class-30 || Algebra",
+          "type": "external"
+        },
+        {
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6366673455112/6366673455112.m3u8",
+          "label": "[Advance] Class-31 || Algebra",
+          "type": "hls"
+        },
+        {
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6366733397112/6366733397112.m3u8",
+          "label": "[Advance] Class-32 || Algebra",
+          "type": "hls"
+        },
+        {
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6366759299112/6366759299112.m3u8",
+          "label": "[Advance] Class-33 || Algebra",
+          "type": "hls"
+        },
+        {
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6366767937112/6366767937112.m3u8",
+          "label": "[Advance] Class-34 || Algebra",
+          "type": "hls"
+        },
+        {
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6366804488112/6366804488112.m3u8",
+          "label": "[Advance] Class-35 || Algebra",
+          "type": "hls"
+        },
+        {
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6366813021112/6366813021112.m3u8",
+          "label": "[Advance] Class-36 || Algebra",
+          "type": "hls"
+        },
+        {
+          "url": "https://www.youtube.com/embed/2qtz9Qr3sy0",
+          "label": "[Advance] Class-37 || Algebra",
+          "type": "external"
+        },
+        {
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6366853932112/6366853932112.m3u8",
+          "label": "[Advance] Class-38 || Algebra",
+          "type": "hls"
+        },
+        {
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6366908613112/6366908613112.m3u8",
+          "label": "[Advance] Class-01 || Trigonometry",
+          "type": "hls"
+        },
+        {
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6367026544112/6367026544112.m3u8",
+          "label": "[Advance] Class-02 || Trigonometry",
+          "type": "hls"
+        },
+        {
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6367076235112/6367076235112.m3u8",
+          "label": "[Advance] Class-03 || Trigonometry",
+          "type": "hls"
+        },
+        {
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6367123859112/6367123859112.m3u8",
+          "label": "[Advance] Class-04 || Trigonometry",
+          "type": "hls"
+        },
+        {
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6367389310112/6367389310112.m3u8",
+          "label": "[Advance] Class-05 || Trigonometry",
+          "type": "hls"
+        },
+        {
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6367441440112/6367441440112.m3u8",
+          "label": "[Advance] Class-06 || Trigonometry",
+          "type": "hls"
+        },
+        {
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6367494934112/6367494934112.m3u8",
+          "label": "[Advance] Class-07 || Trigonometry",
+          "type": "hls"
+        },
+        {
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6367557288112/6367557288112.m3u8",
+          "label": "[Advance] Class-08 || Trigonometry",
+          "type": "hls"
+        },
+        {
+          "url": "https://www.youtube.com/embed/xE_5pGWpLio",
+          "label": "[Advance] Class-09 || Trigonometry",
+          "type": "external"
+        },
+        {
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6367827110112/6367827110112.m3u8",
+          "label": "[Advance] Class-10 || Trigonometry",
+          "type": "hls"
+        },
+        {
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6367877792112/6367877792112.m3u8",
+          "label": "[Advance] Class-11 || Trigonometry",
+          "type": "hls"
+        },
+        {
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6369291902112/6369291902112.m3u8",
+          "label": "[Advance] Class-1 || DI",
+          "type": "hls"
+        },
+        {
+          "url": "https://www.youtube.com/embed/z7Df0ljbtXc",
+          "label": "[Advance] Class-12 || Trigonometry",
+          "type": "external"
+        },
+        {
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6369291314112/6369291314112.m3u8",
+          "label": "[Advance] Class-2 || DI",
+          "type": "hls"
+        },
+        {
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6367993459112/6367993459112.m3u8",
+          "label": "[Advance] Class-13 || Trigonometry",
+          "type": "hls"
+        },
+        {
+          "url": "https://www.youtube.com/embed/JKM2mlKBYiQ",
+          "label": "[Advance] Class-14 || Trigonometry",
+          "type": "external"
+        },
+        {
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6368110125112/6368110125112.m3u8",
+          "label": "[Advance] Class-15 || Trigonometry",
+          "type": "hls"
+        },
+        {
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6368195164112/6368195164112.m3u8",
+          "label": "[Advance] Class-16 || Trigonometry",
+          "type": "hls"
+        },
+        {
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6368240778112/6368240778112.m3u8",
+          "label": "[Advance] Class-17 || Trigonometry",
+          "type": "hls"
+        },
+        {
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6368424993112/6368424993112.m3u8",
+          "label": "[Advance] Class-18 || Trigonometry",
+          "type": "hls"
+        },
+        {
+          "url": "https://www.youtube.com/embed/f4WodYuyp_4",
+          "label": "[Advance] Class-19 || Trigonometry",
+          "type": "external"
+        },
+        {
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6368645534112/6368645534112.m3u8",
+          "label": "[Advance] Class-20 || Trigonometry",
+          "type": "hls"
+        },
+        {
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6368698998112/6368698998112.m3u8",
+          "label": "[Advance] Class-21 || Trigonometry",
+          "type": "hls"
+        },
+        {
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6368754960112/6368754960112.m3u8",
+          "label": "[Advance] Class-22 || Trigonometry",
+          "type": "hls"
+        },
+        {
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6368951642112/6368951642112.m3u8",
+          "label": "[Advance] Class-23 || Trigonometry",
+          "type": "hls"
+        },
+        {
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6368994094112/6368994094112.m3u8",
+          "label": "[Advance] Class-24 || Trigonometry",
+          "type": "hls"
+        },
+        {
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6369044256112/6369044256112.m3u8",
+          "label": "[Advance] Class-25 || Trigonometry",
+          "type": "hls"
+        },
+        {
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6369092630112/6369092630112.m3u8",
+          "label": "[Advance] Class-1 || Height and Distance",
+          "type": "hls"
+        },
+        {
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6369141672112/6369141672112.m3u8",
+          "label": "[Advance] Class-2 || Height and Distance",
+          "type": "hls"
+        },
+        {
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6369253098112/6369253098112.m3u8",
+          "label": "[Advance] Class-03 || Height and Distance",
+          "type": "hls"
+        },
+        {
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6369296179112/6369296179112.m3u8",
+          "label": "[Advance] Class-04 || Height and Distance",
+          "type": "hls"
+        },
+        {
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6369340450112/6369340450112.m3u8",
+          "label": "[Advance] Class- 01 || Surds and Indices",
+          "type": "hls"
+        },
+        {
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6369389529112/6369389529112.m3u8",
+          "label": "[Advance] Class-02 || Surds and Indices",
+          "type": "hls"
+        },
+        {
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6369438786112/6369438786112.m3u8",
+          "label": "[Advance] Class-03 || Surds and Indices",
+          "type": "hls"
+        },
+        {
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6369587500112/6369587500112.m3u8",
+          "label": "[Advance] Class-04 || Surds and Indices",
+          "type": "hls"
+        },
+        {
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6369630699112/6369630699112.m3u8",
+          "label": "[Advance] Class-05 || Surds and Indices",
+          "type": "hls"
+        },
+        {
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6369672862112/6369672862112.m3u8",
+          "label": "[Advance] Class-06 || Surds and Indices",
+          "type": "hls"
+        },
+        {
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6369720669112/6369720669112.m3u8",
+          "label": "[Advance] Class-07 || Surds and Indices",
+          "type": "hls"
+        },
+        {
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6369772419112/6369772419112.m3u8",
+          "label": "[Advance] Class-08 || Surds and Indices",
+          "type": "hls"
+        },
+        {
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6369827900112/6369827900112.m3u8",
+          "label": "[Advance] Class-09 || Surds and Indices",
+          "type": "hls"
+        },
+        {
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6369839868112/6369839868112.m3u8",
+          "label": "[Advance] Class-1 || 2D Mensuration",
+          "type": "hls"
+        },
+        {
+          "url": "https://www.youtube.com/embed/b92wqMqEXK0",
+          "label": "[Advance] Class-11 || HCF & LCM",
+          "type": "external"
+        },
+        {
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6351470763112/6351470763112.m3u8",
+          "label": "[Advance] Class-12 || HCF & LCM",
+          "type": "hls"
+        },
+        {
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6351580447112/6351580447112.m3u8",
+          "label": "[Advance] Class-13 || HCF & LCM",
+          "type": "hls"
+        },
+        {
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6351738352112/6351738352112.m3u8",
+          "label": "[Advance] Class-14 || HCF & LCM",
+          "type": "hls"
+        },
+        {
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6351803664112/6351803664112.m3u8",
+          "label": "[Advance] Class-15 || HCF & LCM",
+          "type": "hls"
+        },
+        {
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6351878044112/6351878044112.m3u8",
+          "label": "[Advance] Class-16 || HCF & LCM",
+          "type": "hls"
+        },
+        {
+          "url": "https://www.youtube.com/embed/DpPeCsHjFrc",
+          "label": "[Advance] Class-17 || HCF & LCM",
+          "type": "external"
+        },
+        {
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6352036360112/6352036360112.m3u8",
+          "label": "[Advance] Class-18 || HCF & LCM",
+          "type": "hls"
+        },
+        {
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6352124191112/6352124191112.m3u8",
+          "label": "[Advance] Class-19 || HCF & LCM",
+          "type": "hls"
+        },
+        {
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6352180019112/6352180019112.m3u8",
+          "label": "[Advance] Class-20 || HCF & LCM",
+          "type": "hls"
+        },
+        {
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6352240642112/6352240642112.m3u8",
+          "label": "[Advance] Class-21 || HCF & LCM",
+          "type": "hls"
+        },
+        {
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6352410928112/6352410928112.m3u8",
+          "label": "[Advance] Class-22 || HCF & LCM",
+          "type": "hls"
+        },
+        {
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6352462155112/6352462155112.m3u8",
+          "label": "[Advance] Class-23 || HCF & LCM",
+          "type": "hls"
+        },
+        {
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6352526686112/6352526686112.m3u8",
+          "label": "[Advance] Class-24 || HCF & LCM",
+          "type": "hls"
+        },
+        {
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6369881439112/6369881439112.m3u8",
+          "label": "[Advance] Class-2 || 2D Mensuration",
+          "type": "hls"
+        },
+        {
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6369921679112/6369921679112.m3u8",
+          "label": "[Advance] Class-03 || 2D Mensuration",
+          "type": "hls"
+        },
+        {
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6370143373112/6370143373112.m3u8",
+          "label": "[Advance] Class-04 || 2D Mensuration",
+          "type": "hls"
+        },
+        {
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6370226429112/6370226429112.m3u8",
+          "label": "[Advance] Class-05 || 2D Mensuration",
+          "type": "hls"
+        },
+        {
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6370269678112/6370269678112.m3u8",
+          "label": "[Advance] Class-06 || 2D Mensuration",
+          "type": "hls"
+        },
+        {
+          "url": "https://www.youtube.com/embed/Lr2cahZKHB8",
+          "label": "[Advance] Class-07 || 2D Mensuration",
+          "type": "external"
+        },
+        {
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6370462301112/6370462301112.m3u8",
+          "label": "[Advance] Class-08 || 2D Mensuration",
+          "type": "hls"
+        },
+        {
+          "url": "https://www.youtube.com/embed/ZLp77wD5ryE",
+          "label": "[Advance] Class-09 || 2D Mensuration",
+          "type": "external"
+        },
+        {
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6370578167112/6370578167112.m3u8",
+          "label": "[Advance] Class-10 || 2D Mensuration",
+          "type": "hls"
+        },
+        {
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6370627789112/6370627789112.m3u8",
+          "label": "[Advance] Class-11 || 2D Mensuration",
+          "type": "hls"
+        },
+        {
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6370679873112/6370679873112.m3u8",
+          "label": "[Advance] Class-12 || 2D Mensuration",
+          "type": "hls"
+        },
+        {
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6370826121112/6370826121112.m3u8",
+          "label": "[Advance] Class-13 || 2D Mensuration",
+          "type": "hls"
+        },
+        {
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6370921285112/6370921285112.m3u8",
+          "label": "[Advance] Class-14 || 2D Mensuration",
+          "type": "hls"
+        },
+        {
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6370972827112/6370972827112.m3u8",
+          "label": "[Advance] Class-15 || 2D Mensuration",
+          "type": "hls"
+        },
+        {
+          "url": "https://www.youtube.com/embed/bb7WRapZ9-w",
+          "label": "[Advance] Class-16 || 2D Mensuration",
+          "type": "external"
+        },
+        {
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6371171683112/6371171683112.m3u8",
+          "label": "[Advance] Class-17 || 2D Mensuration",
+          "type": "hls"
+        },
+        {
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6345043583112/6345043583112.m3u8",
+          "label": "[Advance] Class -1 || Quadratic Equation",
+          "type": "hls"
+        },
+        {
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6345178618112/6345178618112.m3u8",
+          "label": "[Advance] Class-02 || Quadratic Equation",
+          "type": "hls"
+        },
+        {
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6345348821112/6345348821112.m3u8",
+          "label": "[Advance] Class-03 || Quadratic Equation",
+          "type": "hls"
+        },
+        {
+          "url": "https://www.youtube.com/embed/UO8Jr000Grw",
+          "label": "[Advance] Class-04 || Quadratic Equation",
+          "type": "external"
+        },
+        {
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6353001015112/6353001015112.m3u8",
+          "label": "[Advance] Final Class || Maxima and Minima",
+          "type": "hls"
+        }
+      ]
+    },
+    {
+      "id": "pdfs",
+      "label": "📄 PDFs",
+      "items": [
+        {
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/67ea7ff1385b2_Train.pdf",
+          "label": "[Arithmetic] Train Sheet",
+          "type": "pdf"
+        },
+        {
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/67da4eda20c83_Boat_and_stream_Sheet.pdf",
+          "label": "[Arithmetic] Boat and Stream Sheet",
+          "type": "pdf"
+        },
+        {
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/67d95592ca33e_Time_Speed_and_Distance_Sheet_3.pdf",
+          "label": "[Arithmetic] Time , Speed and Distance Sheet-3",
+          "type": "pdf"
+        },
+        {
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/67ca5b27509ed_Time_Speed_and_Distance_Sheet_2.pdf",
+          "label": "[Arithmetic] Time Speed and Distance Sheet-2",
+          "type": "pdf"
+        },
+        {
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/67bfffb243f3b_Surds_Indices_1.pdf",
+          "label": "[Arithmetic] Surds & Indices-1",
+          "type": "pdf"
+        },
+        {
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/67b7e40aee8f1_Time_Speed_and_Distance_Sheet_1.pdf",
+          "label": "[Arithmetic] Time , Speed and Distance Sheet -1",
+          "type": "pdf"
+        },
+        {
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/67a2ed60cf741_Pipes_and_Cistern.pdf",
+          "label": "[Arithmetic] Pipes and Cistern Sheet",
+          "type": "pdf"
+        },
+        {
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/6798c3948d261_Time_and_Work_Sheet_3.pdf",
+          "label": "[Arithmetic] Time and Work Sheet-3",
+          "type": "pdf"
+        },
+        {
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/678647081f226_Time_and_Work_Sheet_2.pdf",
+          "label": "[Arithmetic] Time and Work Sheet -2",
+          "type": "pdf"
+        },
+        {
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/6784fb657050a_Time_and_Work_Sheet_1.pdf",
+          "label": "[Arithmetic] Time and Work Sheet -1",
+          "type": "pdf"
+        },
+        {
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/677235355f1d0_DOC20230731WA0015..pdf",
+          "label": "[Arithmetic] Complete Installment",
+          "type": "pdf"
+        },
+        {
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/6762a05c7e55d_Compound_Interest_sheet_3.pdf",
+          "label": "[Arithmetic] Compund Intrest Sheet-3",
+          "type": "pdf"
+        },
+        {
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/675d0c630a731_Compound_Interest_sheet_2_2.pdf",
+          "label": "[Arithmetic] Compound Interest sheet-2",
+          "type": "pdf"
+        },
+        {
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/67578f7b40d2a_Compound_Interest_Sheet_1.pdf",
+          "label": "[Arithmetic] Compound Interest Sheet -1",
+          "type": "pdf"
+        },
+        {
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/674d62b6b7382_Simple_Interest_Sheet_2.pdf",
+          "label": "[Arithmetic] Simple Interest Sheet-2",
+          "type": "pdf"
+        },
+        {
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/67406d85a12c7_Simple_Interest_Sheet1compressed.pdf",
+          "label": "[Arithmetic] Simple Interest Sheet-1",
+          "type": "pdf"
+        },
+        {
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/672e02e23f50c_Mixture_and_Alligation_Sheet_3.pdf",
+          "label": "[Arithmetic] Mixture and Alligation Sheet -3",
+          "type": "pdf"
+        },
+        {
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/672e02934d041_Mixture_and_Alligation_Sheet_2.pdf",
+          "label": "[Arithmetic] Mixture and Alligation Sheet -2",
+          "type": "pdf"
+        },
+        {
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/6718dce9203bf_Mixture_and_Alligation_Sheet_1.pdf",
+          "label": "[Arithmetic] Mixture and Alligation Sheet -1",
+          "type": "pdf"
+        },
+        {
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/66fa93f386568_Partnership_Sheet.pdf",
+          "label": "[Arithmetic] Partnership Sheet",
+          "type": "pdf"
+        },
+        {
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/66fa6605374a0_Profit_and_Loss_Miscelleneaous371740crwill.pdf",
+          "label": "[Arithmetic] Dishonest Shopkeeper",
+          "type": "pdf"
+        },
+        {
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/66ec0b24aa0bc_Discount_Sheet_2.pdf",
+          "label": "[Arithmetic] Discount Sheet -2",
+          "type": "pdf"
+        },
+        {
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/66e140819e02a_Discount Sheet.pdf",
+          "label": "[Arithmetic] Discount Sheet -1",
+          "type": "pdf"
+        },
+        {
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/66d6e2185b9f1_Profit and Loss  Sheet - 3.pdf",
+          "label": "[Arithmetic] Profit and Loss  Sheet-3",
+          "type": "pdf"
+        },
+        {
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/66cd7aa332a7c_Profit and Loss Sheet -2.pdf",
+          "label": "[Arithmetic] Profit and Loss Sheet-2",
+          "type": "pdf"
+        },
+        {
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/66bb084b412cc_6516b86da96f4_RACE   Sheet.pdf",
+          "label": "[Arithmetic] Race Sheet",
+          "type": "pdf"
+        },
+        {
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/66b6ffd03889a_Profit and Loss Sheet -1.pdf",
+          "label": "[Arithmetic] Profit and Loss Sheet-1",
+          "type": "pdf"
+        },
+        {
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/66b3474e0388f_Problem on Ages.pdf",
+          "label": "[Arithmetic] Problem on Ages",
+          "type": "pdf"
+        },
+        {
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/66b1ba49d135f_Ratio Miscellaneous.pdf",
+          "label": "[Arithmetic] Ratio Miscellaneous",
+          "type": "pdf"
+        },
+        {
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/66977fa7d1ea9_Ratio Sheet Final.pdf",
+          "label": "[Arithmetic] Ratio Sheet Final",
+          "type": "pdf"
+        },
+        {
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/668ddd311e4da_Percentage  Sheet -3.pdf",
+          "label": "[Arithmetic] Percentage  Sheet-3",
+          "type": "pdf"
+        },
+        {
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/667516be61b47_Percentage Sheet-2.pdf",
+          "label": "[Arithmetic] Percentage Sheet-2",
+          "type": "pdf"
+        },
+        {
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/66547caa7d84b_Percentage Sheet -1.pdf",
+          "label": "[Arithmetic] Percentage Sheet-1",
+          "type": "pdf"
+        },
+        {
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/680077a870fbe_66459282d0f82Maxima_Minima.pdf",
+          "label": "[Advance] Maxima & Minima",
+          "type": "pdf"
+        },
+        {
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/67f5167c3a3d0_6787d0342422965a7f7de3b7fcQuadraticEquation1.pdf",
+          "label": "[Advance] Quadratic Equations Sheet",
+          "type": "pdf"
+        },
+        {
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/67ea59899b293_Mensuration_Sheet_4_Polygon.pdf",
+          "label": "[Advance] Mensuration Sheet-4 (Polygon)",
+          "type": "pdf"
+        },
+        {
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/67e269a8565fd_2D_Mensuration_Sheet_3.pdf",
+          "label": "[Advance] 2D Mensuration Sheet -3",
+          "type": "pdf"
+        },
+        {
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/67dcf06f8b1da_2D_Mensuration_Sheet_2.pdf",
+          "label": "[Advance] 2D Mensuration Sheet -2",
+          "type": "pdf"
+        },
+        {
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/67cfdbdac3316_2D_Mensuration_Sheet_1.pdf",
+          "label": "[Advance] 2D Mensuration Sheet-1",
+          "type": "pdf"
+        },
+        {
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/67ce82ece7c5b_HCF_Sheet.pdf",
+          "label": "[Advance] HCF Sheet",
+          "type": "pdf"
+        },
+        {
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/67ce82b9a4d31_6627466a3a6e5LCM_SHEET_Sheet1.pdf",
+          "label": "[Advance] LCM Sheet-1",
+          "type": "pdf"
+        },
+        {
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/67ce6d1a60fe4_Surds_Indices_Sheet_2.pdf",
+          "label": "[Advance] Surds & Indices Sheet-2",
+          "type": "pdf"
+        },
+        {
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/67c7d1a6776f3_Surds_Indices_1_1.pdf",
+          "label": "[Advance] Surds & Indices-1",
+          "type": "pdf"
+        },
+        {
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/67b7e2e04048a_Height_and_Distance.pdf",
+          "label": "[Advance] Height and Distance",
+          "type": "pdf"
+        },
+        {
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/67a2eddf680c1_Trigonometry_Sheet5.pdf",
+          "label": "[Advance] Trigonometry Sheet-5",
+          "type": "pdf"
+        },
+        {
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/679c1aaf0f381_trigonometry4.pdf",
+          "label": "[Advance] Trigonometry Sheet-4",
+          "type": "pdf"
+        },
+        {
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/679b2062835f0_DI_Sheet_2_TABULAR_DI_LINE_GRAPH_.pdf",
+          "label": "[Advance] DI  Sheet -2 (TABULAR DI  & LINE GRAPH)",
+          "type": "pdf"
+        },
+        {
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/679a189039d43_DI_Sheet_1_PIE_AND_BAR_CHART.pdf",
+          "label": "[Advance] DI  Sheet -1 (PIE AND BAR CHART)",
+          "type": "pdf"
+        },
+        {
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/679c19822a0eb_trigonometry3.pdf",
+          "label": "[Advance] Trigonometry-3",
+          "type": "pdf"
+        },
+        {
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/678643cf018fe_Trigonometry2.pdf",
+          "label": "[Advance] Trigonometry-2",
+          "type": "pdf"
+        },
+        {
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/6782017090797_trigonometry_Sheet_1.pdf",
+          "label": "[Advance] Trigonometry Sheet -1",
+          "type": "pdf"
+        },
+        {
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/677d62d286a09_Algebra_Sheet_6.pdf",
+          "label": "[Advance] Algebra Sheet -6.",
+          "type": "pdf"
+        },
+        {
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/677b847f651bd_Algebra_Sheet_5.pdf",
+          "label": "[Advance] Algebra Sheet -5",
+          "type": "pdf"
+        },
+        {
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/6764d65faef04_Algebra_sheet_4.pdf",
+          "label": "[Advance] Algebra sheet -4",
+          "type": "pdf"
+        },
+        {
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/675ad93dc9b6c_Algebra_sheet_3.pdf",
+          "label": "[Advance] Algebra Sheet-3",
+          "type": "pdf"
+        },
+        {
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/674febcb3ae9d_Algebra_Sheet_2.pdf",
+          "label": "[Advance] Algebra Sheet -2",
+          "type": "pdf"
+        },
+        {
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/67483e3e9d17e_Number_System_Sheet10.pdf",
+          "label": "[Advance] Number System Sheet-10",
+          "type": "pdf"
+        },
+        {
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/67483e0bdb461_Number_System_Sheet9_Factors.pdf",
+          "label": "[Advance] Number System Sheet-9 (Factors)",
+          "type": "pdf"
+        },
+        {
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/67483dc96fdcf_Number_System_Sheet8.pdf",
+          "label": "[Advance] Number System Sheet-8",
+          "type": "pdf"
+        },
+        {
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/67483d96ef038_Number_System_Sheet7.pdf",
+          "label": "[Advance] Number System Sheet-7",
+          "type": "pdf"
+        },
+        {
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/67483a5b250c6_Number_Sheet6_Series.pdf",
+          "label": "[Advance] Number Sheet-6 (Series)",
+          "type": "pdf"
+        },
+        {
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/67483a07cdf6e_Number_System_Sheet5.pdf",
+          "label": "[Advance] Number System Sheet-5",
+          "type": "pdf"
+        },
+        {
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/67403fc7e89e8_Algebra_Sheet_1.pdf",
+          "label": "[Advance] Algebra Sheet -1",
+          "type": "pdf"
+        },
+        {
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/672b53a627cd0_Coordinate_Geometry.pdf",
+          "label": "[Advance] Co-ordinate Geometry",
+          "type": "pdf"
+        },
+        {
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/671db4ea85c12_ilovepdfmerged.pdf",
+          "label": "[Advance] Geometry Sheet -12 ,13, 14, 15",
+          "type": "pdf"
+        },
+        {
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/671cafcdc285b_66b5a28e294326541ef40a762b6540cada5da5e652cf4ec7ac38Permutation_and_Combination.pdf",
+          "label": "[Advance] Permutation and Combination Sheet",
+          "type": "pdf"
+        },
+        {
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/671cacfcbe729_Probability_Sheet3_1.pdf",
+          "label": "[Advance] Probability Sheet-3",
+          "type": "pdf"
+        },
+        {
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/6711f73035e81_Geometry_sheet_11.pdf",
+          "label": "[Advance] Geometry Sheet-11",
+          "type": "pdf"
+        },
+        {
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/6710b0ace8ca5_Average_Sheet_2.pdf",
+          "label": "[Advance] Average Sheet -2",
+          "type": "pdf"
+        },
+        {
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/670d3cc25b454_Average_Sheet_2.pdf",
+          "label": "[Advance] Algebra Sheet-2",
+          "type": "pdf"
+        },
+        {
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/670cae5a39f8e_Average_sheet_1.pdf",
+          "label": "[Advance] Average Sheet 1",
+          "type": "pdf"
+        },
+        {
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/670908314f9f3_Geometry_10_1.pdf",
+          "label": "[Advance] Geometry Sheet-10",
+          "type": "pdf"
+        },
+        {
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/670500aa470fd_Probability_Sheet2.pdf",
+          "label": "[Advance] Probability Sheet-2",
+          "type": "pdf"
+        },
+        {
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/6705004f5c36f_Probability_Sheet1.pdf",
+          "label": "[Advance] Probability Sheet-1",
+          "type": "pdf"
+        },
+        {
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/6704c988d90e7_Geometry_Sheet9.pdf",
+          "label": "[Advance] Geometry Sheet-9",
+          "type": "pdf"
+        },
+        {
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/6704c8fb9fe79_Average_sheet_1.pdf",
+          "label": "[Advance] Algebra Sheet -1",
+          "type": "pdf"
+        },
+        {
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/6703c7f8a9a6e_Simplification_Sheet.pdf",
+          "label": "[Advance] Simplification Sheet",
+          "type": "pdf"
+        },
+        {
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/66f7a8a8f0b6a_Calculation_and_Simplification_Sheet_2.pdf",
+          "label": "[Advance] Calculation and Simplification Sheet -2",
+          "type": "pdf"
+        },
+        {
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/66f63bb707cc7_Geometry_Sheet_8.pdf",
+          "label": "[Advance] Geometry Sheet - 8",
+          "type": "pdf"
+        },
+        {
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/66f3fa7c0ec46_Calculation_and_Simplification_Sheet_1.pdf",
+          "label": "[Advance] Calculation and Simplification Sheet -1",
+          "type": "pdf"
+        },
+        {
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/66f267887459c_Geometry_7.pdf",
+          "label": "[Advance] Geometry Sheet-7",
+          "type": "pdf"
+        },
+        {
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/66e254c6ec3f6_NUMBER SYSTEM SHEET -4 ( divisibility rules ).pdf",
+          "label": "[Advance] NUMBER SYSTEM SHEET-4 ( divisibility rules )",
+          "type": "pdf"
+        },
+        {
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/66e032936d32c_Geometry Sheet-6.pdf",
+          "label": "[Advance] Geometry Sheet-6",
+          "type": "pdf"
+        },
+        {
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/66d84e1d2f77f_Number System Sheet-  3.pdf",
+          "label": "[Advance] Number System Sheet-3",
+          "type": "pdf"
+        },
+        {
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/66d287447b17d_Geometry Sheet- 5.pdf",
+          "label": "[Advance] Geometry Sheet- 5",
+          "type": "pdf"
+        },
+        {
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/66cd7b2ebc10d_Number System Sheet -2.pdf",
+          "label": "[Advance] Number System Sheet-2",
+          "type": "pdf"
+        },
+        {
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/66cd7af986422_Number System Sheet - 1.pdf",
+          "label": "[Advance] Number System Sheet-1",
+          "type": "pdf"
+        },
+        {
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/66c8493a505d0_Geometry Sheet- 4.pdf",
+          "label": "[Advance] Geometry Sheet-4",
+          "type": "pdf"
+        },
+        {
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/66b453d734da2_Geometry Sheet-3.pdf",
+          "label": "[Advance] Geometry Sheet-3",
+          "type": "pdf"
+        },
+        {
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/66aa1f828a113_Mensuration Sheet-6_300165_crwill.pdf",
+          "label": "[Advance] Mensuration Sheet-6",
+          "type": "pdf"
+        },
+        {
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/66a8a68362946_Geometry Sheet - 2.pdf",
+          "label": "[Advance] Geometry Sheet-2",
+          "type": "pdf"
+        },
+        {
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/66a88467f32fa_Mensuration sheet -5.pdf",
+          "label": "[Advance] Mensuration Sheet-5",
+          "type": "pdf"
+        },
+        {
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/669f7417a02c0_Geometry Sheet - 1.pdf",
+          "label": "[Advance] Geometry Sheet-1",
+          "type": "pdf"
+        },
+        {
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/6697dff0625de_Mensuration Sheet- 4.pdf",
+          "label": "[Advance] Mensuration Sheet - 04",
+          "type": "pdf"
+        },
+        {
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/668943f2b4ad6_3D Mensuration  Sheet-3.pdf",
+          "label": "[Advance] 3D Mensuration  Sheet-3",
+          "type": "pdf"
+        },
+        {
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/66849b4cb16bf_3D Mensuration 2.pdf",
+          "label": "[Advance] 3D Mensuration Sheet-2",
+          "type": "pdf"
+        },
+        {
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/667b61c8a0497_3D Mensuration Sheet-1 (1).pdf",
+          "label": "[Advance] 3D Mensuration Sheet-1",
+          "type": "pdf"
+        },
+        {
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/665e5b95ae42e_Statistics Sheet.pdf",
+          "label": "[Advance] Statistics Sheet",
+          "type": "pdf"
+        },
+        {
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/665e5b2446fe0_Statistics Sheet - with solutions.pdf",
+          "label": "[Advance] Statistics Sheet - with solutions",
+          "type": "pdf"
+        },
+        {
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/664c873aea956_66260ddc3a6a7_65f94b876390d_6489ba79b6c68_Syllabus (1).pdf",
+          "label": "[Syllabus] Syllabus",
+          "type": "pdf"
+        },
+        {
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/6714b034432b0_problem_on_agescompressed.pdf",
+          "label": "[Hand Written Notes] Problem on Ages Class Notes",
+          "type": "pdf"
+        },
+        {
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/6714afd592bb6_Ratio_class_notescompressed.pdf",
+          "label": "[Hand Written Notes] Ratio Class Notes",
+          "type": "pdf"
+        },
+        {
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/6714af5f49684_Profit_and_loss_class_notescompressed.pdf",
+          "label": "[Hand Written Notes] Profit and Loss Class Notes",
+          "type": "pdf"
+        },
+        {
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/66b1caa550b55_Percentage  Sheet-3 (1-34) Questio.pdf",
+          "label": "[Hand Written Notes] Percentage  Sheet-3 (1-34) Question",
+          "type": "pdf"
+        },
+        {
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/66b1ca86804e0_Percentage Sheet-2 (150) Question.pdf",
+          "label": "[Hand Written Notes] Percentage Sheet-2 (150) Question",
+          "type": "pdf"
+        },
+        {
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/66b1ca687a1e1_Percentage Sheet -1 (160 Question).pdf",
+          "label": "[Hand Written Notes] Percentage Sheet -1 (160 Question)",
+          "type": "pdf"
+        }
+      ]
+    }
+  ],
+  "category": "government"
+}

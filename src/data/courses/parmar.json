@@ -1,0 +1,1576 @@
+{
+  "id": "parmar",
+  "name": "Parmar Academy GK",
+  "subname": "Parmar 4.0 GK • General Awareness & GS",
+  "teacher": "Parmar Sir",
+  "subject": "General Knowledge",
+  "thumb": "/thumbnails/subjects/parmar_academy_gk.svg",
+  "isParmar": true,
+  "parmarData": {
+    "BIOLOGY": {
+      "lectures": [
+        {
+          "title": "CELL - LEC 1",
+          "links": {
+            "url": "https://publicbotshub.blogspot.com/p/file-stream-bot.html?watch=69b90b3f13a84022525e5df2",
+            "notes_en": "https://fs1qydv17g1-161-162e5df28a45.herokuapp.com/dl/69b90b4913a84022525e5df4",
+            "notes_hi": "https://fs1qydv17g1-161-162e5df28a45.herokuapp.com/dl/69b90b5213a84022525e5df6",
+            "quiz": "https://fs1qydv17g1-161-162e5df28a45.herokuapp.com/dl/69b90b5c13a84022525e5df8",
+            "handwritten": "https://fs1qydv17g1-161-162e5df28a45.herokuapp.com/dl/69b90b6913a84022525e5dfa",
+            "downloadUrl": "https://publicbotshub.blogspot.com/p/file-stream-bot.html?dl=69b90b3f13a84022525e5df2"
+          }
+        },
+        {
+          "title": "PLANT TISSUES - LEC 2",
+          "links": {
+            "url": "https://publicbotshub.blogspot.com/p/file-stream-bot.html?watch=69b90b6f13a84022525e5dfc",
+            "notes_en": "https://fs1qydv17g1-161-162e5df28a45.herokuapp.com/dl/69b90b7813a84022525e5dfe",
+            "notes_hi": "https://fs1qydv17g1-161-162e5df28a45.herokuapp.com/dl/69b90b8113a84022525e5e00",
+            "quiz": "https://fs1qydv17g1-161-162e5df28a45.herokuapp.com/dl/69b90b8913a84022525e5e02",
+            "handwritten": "https://fs1qydv17g1-161-162e5df28a45.herokuapp.com/dl/69b90b9213a84022525e5e04",
+            "downloadUrl": "https://publicbotshub.blogspot.com/p/file-stream-bot.html?dl=69b90b6f13a84022525e5dfc"
+          }
+        },
+        {
+          "title": "ANIMAL TISSUES - LEC 3",
+          "links": {
+            "url": "https://publicbotshub.blogspot.com/p/file-stream-bot.html?watch=69b90b9a13a84022525e5e06",
+            "notes_en": "https://fs1qydv17g1-161-162e5df28a45.herokuapp.com/dl/69b90ba313a84022525e5e08",
+            "notes_hi": "https://fs1qydv17g1-161-162e5df28a45.herokuapp.com/dl/69b90bac13a84022525e5e0a",
+            "quiz": "https://fs1qydv17g1-161-162e5df28a45.herokuapp.com/dl/69b90bb613a84022525e5e0c",
+            "handwritten": "https://fs1qydv17g1-161-162e5df28a45.herokuapp.com/dl/69b90bbd13a84022525e5e0e",
+            "downloadUrl": "https://publicbotshub.blogspot.com/p/file-stream-bot.html?dl=69b90b9a13a84022525e5e06"
+          }
+        },
+        {
+          "title": "PLANT KINGDOM - LEC 4",
+          "links": {
+            "url": "https://publicbotshub.blogspot.com/p/file-stream-bot.html?watch=69b90bc613a84022525e5e10",
+            "notes_en": "https://fs1qydv17g1-161-162e5df28a45.herokuapp.com/dl/69b90bcf13a84022525e5e12",
+            "notes_hi": "https://fs1qydv17g1-161-162e5df28a45.herokuapp.com/dl/69b90bd713a84022525e5e14",
+            "quiz": "https://fs1qydv17g1-161-162e5df28a45.herokuapp.com/dl/69b90bdf13a84022525e5e16",
+            "handwritten": "https://fs1qydv17g1-161-162e5df28a45.herokuapp.com/dl/69b90be913a84022525e5e18",
+            "downloadUrl": "https://publicbotshub.blogspot.com/p/file-stream-bot.html?dl=69b90bc613a84022525e5e10"
+          }
+        },
+        {
+          "title": "ANIMAL KINGDOM - LEC 5",
+          "links": {
+            "url": "https://publicbotshub.blogspot.com/p/file-stream-bot.html?watch=69b90bf313a84022525e5e1a",
+            "notes_en": "https://fs1qydv17g1-161-162e5df28a45.herokuapp.com/dl/69b90bfb13a84022525e5e1c",
+            "notes_hi": "https://fs1qydv17g1-161-162e5df28a45.herokuapp.com/dl/69b90c0413a84022525e5e1e",
+            "quiz": "https://fs1qydv17g1-161-162e5df28a45.herokuapp.com/dl/69b90c0c13a84022525e5e20",
+            "handwritten": "https://fs1qydv17g1-161-162e5df28a45.herokuapp.com/dl/69b90c1613a84022525e5e22",
+            "downloadUrl": "https://publicbotshub.blogspot.com/p/file-stream-bot.html?dl=69b90bf313a84022525e5e1a"
+          }
+        },
+        {
+          "title": "NERVOUS SYSTEM - LEC 6",
+          "links": {
+            "url": "https://publicbotshub.blogspot.com/p/file-stream-bot.html?watch=69b90c2213a84022525e5e24",
+            "notes_en": "https://fs1qydv17g1-161-162e5df28a45.herokuapp.com/dl/69b90c2a13a84022525e5e26",
+            "notes_hi": "https://fs1qydv17g1-161-162e5df28a45.herokuapp.com/dl/69b90c3213a84022525e5e2a",
+            "quiz": "https://fs1qydv17g1-161-162e5df28a45.herokuapp.com/dl/69b90c3913a84022525e5e2c",
+            "handwritten": "https://fs1qydv17g1-161-162e5df28a45.herokuapp.com/dl/69b90c4113a84022525e5e2e",
+            "downloadUrl": "https://publicbotshub.blogspot.com/p/file-stream-bot.html?dl=69b90c2213a84022525e5e24"
+          }
+        },
+        {
+          "title": "HORMONES & PLANT MOVEMENTS - LEC 7",
+          "links": {
+            "url": "https://publicbotshub.blogspot.com/p/file-stream-bot.html?watch=69b90c4a13a84022525e5e30",
+            "notes_en": "https://fs1qydv17g1-161-162e5df28a45.herokuapp.com/dl/69b90c5413a84022525e5e32",
+            "notes_hi": "https://fs1qydv17g1-161-162e5df28a45.herokuapp.com/dl/69b90c5e13a84022525e5e34",
+            "quiz": "https://fs1qydv17g1-161-162e5df28a45.herokuapp.com/dl/69b90c6513a84022525e5e36",
+            "handwritten": "https://fs1qydv17g1-161-162e5df28a45.herokuapp.com/dl/69b90c7113a84022525e5e38",
+            "downloadUrl": "https://publicbotshub.blogspot.com/p/file-stream-bot.html?dl=69b90c4a13a84022525e5e30"
+          }
+        },
+        {
+          "title": "REPRODUCTION - LEC 8",
+          "links": {
+            "url": "https://publicbotshub.blogspot.com/p/file-stream-bot.html?watch=69b90c7a13a84022525e5e3a",
+            "download_url": "https://fs1qydv17g1-161-162e5df28a45.herokuapp.com/dl/6999a9ccd59ec0ed1c8eae58",
+            "notes_en": "https://fs1qydv17g1-161-162e5df28a45.herokuapp.com/dl/69b90c8213a84022525e5e3c",
+            "notes_hi": "https://fs1qydv17g1-161-162e5df28a45.herokuapp.com/dl/69b90c8a13a84022525e5e3e",
+            "quiz": "https://fs1qydv17g1-161-162e5df28a45.herokuapp.com/dl/69b90c9113a84022525e5e40",
+            "handwritten": "https://fs1qydv17g1-161-162e5df28a45.herokuapp.com/dl/69b90c9913a84022525e5e42",
+            "downloadUrl": "https://publicbotshub.blogspot.com/p/file-stream-bot.html?dl=69b90c7a13a84022525e5e3a"
+          }
+        },
+        {
+          "title": "DIGESTIVE AND RESPIRATORY SYSTEM - LEC 9",
+          "links": {
+            "url": "https://publicbotshub.blogspot.com/p/file-stream-bot.html?watch=69b90ca213a84022525e5e44",
+            "download_url": "https://fs1qydv17g1-161-162e5df28a45.herokuapp.com/dl/699bee92079b6e6aba672ec3",
+            "notes_en": "https://fs1qydv17g1-161-162e5df28a45.herokuapp.com/dl/69b90ca913a84022525e5e46",
+            "notes_hi": "https://fs1qydv17g1-161-162e5df28a45.herokuapp.com/dl/69b90cb013a84022525e5e48",
+            "quiz": "https://fs1qydv17g1-161-162e5df28a45.herokuapp.com/dl/69b90cb613a84022525e5e4a",
+            "handwritten": "https://fs1qydv17g1-161-162e5df28a45.herokuapp.com/dl/69b90cc013a84022525e5e4c",
+            "downloadUrl": "https://publicbotshub.blogspot.com/p/file-stream-bot.html?dl=69b90ca213a84022525e5e44"
+          }
+        },
+        {
+          "title": "CIRCULATORY AND EXCRETORY SYSTEM - LEC 10",
+          "links": {
+            "url": "https://publicbotshub.blogspot.com/p/file-stream-bot.html?watch=69b90cc913a84022525e5e4e",
+            "download_url": "https://fs1qydv17g1-161-162e5df28a45.herokuapp.com/dl/699d420af82e73da0d009db6",
+            "notes_en": "https://fs1qydv17g1-161-162e5df28a45.herokuapp.com/dl/69b90cd213a84022525e5e50",
+            "notes_hi": "https://fs1qydv17g1-161-162e5df28a45.herokuapp.com/dl/69b90cd913a84022525e5e52",
+            "quiz": "https://fs1qydv17g1-161-162e5df28a45.herokuapp.com/dl/69b90ce113a84022525e5e54",
+            "handwritten": "https://fs1qydv17g1-161-162e5df28a45.herokuapp.com/dl/69b90cea13a84022525e5e56",
+            "downloadUrl": "https://publicbotshub.blogspot.com/p/file-stream-bot.html?dl=69b90cc913a84022525e5e4e"
+          }
+        },
+        {
+          "title": "DISEASES - LEC 11",
+          "links": {
+            "url": "https://publicbotshub.blogspot.com/p/file-stream-bot.html?watch=69b90cf313a84022525e5e58",
+            "download_url": "https://fs1qydv17g1-161-162e5df28a45.herokuapp.com/dl/699e988f6324dee97ea9577b",
+            "notes_en": "https://fs1qydv17g1-161-162e5df28a45.herokuapp.com/dl/69b90cff13a84022525e5e5a",
+            "notes_hi": "https://fs1qydv17g1-161-162e5df28a45.herokuapp.com/dl/69b90d0713a84022525e5e5c",
+            "quiz": "https://fs1qydv17g1-161-162e5df28a45.herokuapp.com/dl/69b90d0f13a84022525e5e5f",
+            "handwritten": "https://fs1qydv17g1-161-162e5df28a45.herokuapp.com/dl/69b90d1b13a84022525e5e61",
+            "downloadUrl": "https://publicbotshub.blogspot.com/p/file-stream-bot.html?dl=69b90cf313a84022525e5e58"
+          }
+        },
+        {
+          "title": "NUTRITION - LEC 12",
+          "links": {
+            "url": "https://publicbotshub.blogspot.com/p/file-stream-bot.html?watch=69b90d2713a84022525e5e63",
+            "download_url": "https://fs1qydv17g1-161-162e5df28a45.herokuapp.com/dl/699fe54f42ba9673f171cb91",
+            "notes_en": "https://fs1qydv17g1-161-162e5df28a45.herokuapp.com/dl/69b90d5713a84022525e5e69",
+            "notes_hi": "https://fs1qydv17g1-161-162e5df28a45.herokuapp.com/dl/69b90d6013a84022525e5e6f",
+            "quiz": "https://fs1qydv17g1-161-162e5df28a45.herokuapp.com/dl/69b90d6813a84022525e5e71",
+            "handwritten": "https://fs1qydv17g1-161-162e5df28a45.herokuapp.com/dl/69b90d7013a84022525e5e73",
+            "downloadUrl": "https://publicbotshub.blogspot.com/p/file-stream-bot.html?dl=69b90d2713a84022525e5e63"
+          }
+        },
+        {
+          "title": "GENETICS AND SKELETAL SYSTEM - LEC 13",
+          "links": {
+            "url": "https://publicbotshub.blogspot.com/p/file-stream-bot.html?watch=69b90d8313a84022525e5e75",
+            "download_url": "https://fs1qydv17g1-161-162e5df28a45.herokuapp.com/dl/69a137c4dcb55ad542e194c3",
+            "notes_en": "https://fs1qydv17g1-161-162e5df28a45.herokuapp.com/dl/69b90d9213a84022525e5e77",
+            "notes_hi": "https://fs1qydv17g1-161-162e5df28a45.herokuapp.com/dl/69b90d9c13a84022525e5e79",
+            "quiz": "https://fs1qydv17g1-161-162e5df28a45.herokuapp.com/dl/69b90da613a84022525e5e7b",
+            "handwritten": "https://fs1qydv17g1-161-162e5df28a45.herokuapp.com/dl/69b90daf13a84022525e5e7d",
+            "downloadUrl": "https://publicbotshub.blogspot.com/p/file-stream-bot.html?dl=69b90d8313a84022525e5e75"
+          }
+        },
+        {
+          "title": "BIOLOGY FULL TEST",
+          "links": {
+            "quiz": "https://vividxbiofulltest.edgeone.app/"
+          }
+        }
+      ]
+    },
+    "ECONOMICS": {
+      "lectures": [
+        {
+          "title": "BASICS OF ECONOMY - LEC 1",
+          "links": {
+            "url": "https://www.youtube.com/live/UANZRZ6Mk9c?si=O_YZfT1uxW--vMt4",
+            "notes_en": "https://fs1qydv17g1-161-162e5df28a45.herokuapp.com/dl/69b9082013a84022525e5d2f",
+            "notes_hi": "https://fs1qydv17g1-161-162e5df28a45.herokuapp.com/dl/69b9082913a84022525e5d33",
+            "quiz": "https://fs1qydv17g1-161-162e5df28a45.herokuapp.com/dl/69b9083113a84022525e5d38",
+            "handwritten": "https://fs1qydv17g1-161-162e5df28a45.herokuapp.com/dl/69b9083813a84022525e5d3c"
+          }
+        },
+        {
+          "title": "MICROECONOMICS - LEC 2",
+          "links": {
+            "url": "https://publicbotshub.blogspot.com/p/file-stream-bot.html?watch=69b9084013a84022525e5d40",
+            "download_url": "https://fs1qydv17g1-161-162e5df28a45.herokuapp.com/dl/69a19dde6f54f56440f4bc00",
+            "notes_en": "https://fs1qydv17g1-161-162e5df28a45.herokuapp.com/dl/69b9084713a84022525e5d42",
+            "notes_hi": "https://fs1qydv17g1-161-162e5df28a45.herokuapp.com/dl/69b9085113a84022525e5d43",
+            "quiz": "https://fs1qydv17g1-161-162e5df28a45.herokuapp.com/dl/69b9085f13a84022525e5d47",
+            "handwritten": "https://fs1qydv17g1-161-162e5df28a45.herokuapp.com/dl/69b9086e13a84022525e5d4e",
+            "downloadUrl": "https://publicbotshub.blogspot.com/p/file-stream-bot.html?dl=69b9084013a84022525e5d40"
+          }
+        },
+        {
+          "title": "INFLATION AND UNEMPLOYMENT - LEC 3",
+          "links": {
+            "url": "https://publicbotshub.blogspot.com/p/file-stream-bot.html?watch=69b9087e13a84022525e5d53",
+            "notes_en": "https://fs1qydv17g1-161-162e5df28a45.herokuapp.com/dl/69b9088913a84022525e5d55",
+            "notes_hi": "https://fs1qydv17g1-161-162e5df28a45.herokuapp.com/dl/69b9089313a84022525e5d56",
+            "quiz": "https://fs1qydv17g1-161-162e5df28a45.herokuapp.com/dl/69b908b913a84022525e5d60",
+            "handwritten": "https://fs1qydv17g1-161-162e5df28a45.herokuapp.com/dl/69b908c213a84022525e5d63",
+            "downloadUrl": "https://publicbotshub.blogspot.com/p/file-stream-bot.html?dl=69b9087e13a84022525e5d53"
+          }
+        },
+        {
+          "title": "NATIONAL INCOME - LEC 4",
+          "links": {
+            "url": "https://publicbotshub.blogspot.com/p/file-stream-bot.html?watch=69b908cc13a84022525e5d65",
+            "notes_en": "https://fs1qydv17g1-161-162e5df28a45.herokuapp.com/dl/69b908d413a84022525e5d69",
+            "notes_hi": "https://fs1qydv17g1-161-162e5df28a45.herokuapp.com/dl/69b908dd13a84022525e5d6b",
+            "quiz": "https://fs1qydv17g1-161-162e5df28a45.herokuapp.com/dl/69b908e513a84022525e5d6d",
+            "handwritten": "https://fs1qydv17g1-161-162e5df28a45.herokuapp.com/dl/69b908ec13a84022525e5d6f",
+            "downloadUrl": "https://publicbotshub.blogspot.com/p/file-stream-bot.html?dl=69b908cc13a84022525e5d65"
+          }
+        },
+        {
+          "title": "NATIONAL INCOME - MCQs",
+          "links": {
+            "url": "https://publicbotshub.blogspot.com/p/file-stream-bot.html?watch=69b908f413a84022525e5d71",
+            "notes_en": "https://fs1qydv17g1-161-162e5df28a45.herokuapp.com/dl/69b908fd13a84022525e5d73",
+            "quiz": "https://fs1qydv17g1-161-162e5df28a45.herokuapp.com/dl/69b9090313a84022525e5d75",
+            "downloadUrl": "https://publicbotshub.blogspot.com/p/file-stream-bot.html?dl=69b908f413a84022525e5d71"
+          }
+        },
+        {
+          "title": "BUDGET AND TAXATION - LEC 5",
+          "links": {
+            "url": "https://publicbotshub.blogspot.com/p/file-stream-bot.html?watch=69b9090b13a84022525e5d77",
+            "notes_en": "https://fs1qydv17g1-161-162e5df28a45.herokuapp.com/dl/69b9091313a84022525e5d79",
+            "notes_hi": "https://fs1qydv17g1-161-162e5df28a45.herokuapp.com/dl/69b9091b13a84022525e5d7b",
+            "quiz": "https://fs1qydv17g1-161-162e5df28a45.herokuapp.com/dl/69b9092213a84022525e5d7d",
+            "handwritten": "https://fs1qydv17g1-161-162e5df28a45.herokuapp.com/dl/69b9092b13a84022525e5d7f",
+            "downloadUrl": "https://publicbotshub.blogspot.com/p/file-stream-bot.html?dl=69b9090b13a84022525e5d77"
+          }
+        },
+        {
+          "title": "MONETRY POLICY - LEC 6",
+          "links": {
+            "url": "https://publicbotshub.blogspot.com/p/file-stream-bot.html?watch=69b9093413a84022525e5d81",
+            "notes_en": "https://fs1qydv17g1-161-162e5df28a45.herokuapp.com/dl/69b9094813a84022525e5d83",
+            "notes_hi": "https://fs1qydv17g1-161-162e5df28a45.herokuapp.com/dl/69b9094f13a84022525e5d85",
+            "quiz": "https://fs1qydv17g1-161-162e5df28a45.herokuapp.com/dl/69b9095713a84022525e5d87",
+            "handwritten": "https://fs1qydv17g1-161-162e5df28a45.herokuapp.com/dl/69b9095f13a84022525e5d89",
+            "downloadUrl": "https://publicbotshub.blogspot.com/p/file-stream-bot.html?dl=69b9093413a84022525e5d81"
+          }
+        },
+        {
+          "title": "BANKING SYSTEM - LEC 7",
+          "links": {
+            "url": "https://publicbotshub.blogspot.com/p/file-stream-bot.html?watch=69b9096813a84022525e5d8b",
+            "notes_en": "https://fs1qydv17g1-161-162e5df28a45.herokuapp.com/dl/69b9096f13a84022525e5d8d",
+            "notes_hi": "https://fs1qydv17g1-161-162e5df28a45.herokuapp.com/dl/69b9097613a84022525e5d8f",
+            "quiz": "https://fs1qydv17g1-161-162e5df28a45.herokuapp.com/dl/69b9097e13a84022525e5d91",
+            "handwritten": "https://fs1qydv17g1-161-162e5df28a45.herokuapp.com/dl/69b9098613a84022525e5d93",
+            "downloadUrl": "https://publicbotshub.blogspot.com/p/file-stream-bot.html?dl=69b9096813a84022525e5d8b"
+          }
+        },
+        {
+          "title": "BANKING SYSTEM PART 2 - LEC 8",
+          "links": {
+            "url": "https://publicbotshub.blogspot.com/p/file-stream-bot.html?watch=69b9098e13a84022525e5d95",
+            "notes_en": "https://fs1qydv17g1-161-162e5df28a45.herokuapp.com/dl/69b9099613a84022525e5d97",
+            "notes_hi": "https://fs1qydv17g1-161-162e5df28a45.herokuapp.com/dl/69b9099e13a84022525e5d99",
+            "quiz": "https://fs1qydv17g1-161-162e5df28a45.herokuapp.com/dl/69b909a513a84022525e5d9b",
+            "handwritten": "https://fs1qydv17g1-161-162e5df28a45.herokuapp.com/dl/69b909af13a84022525e5d9d",
+            "downloadUrl": "https://publicbotshub.blogspot.com/p/file-stream-bot.html?dl=69b9098e13a84022525e5d95"
+          }
+        },
+        {
+          "title": "BALANCE OF PAYMENTS - LEC 9",
+          "links": {
+            "url": "https://publicbotshub.blogspot.com/p/file-stream-bot.html?watch=69b909b713a84022525e5d9f",
+            "notes_en": "https://fs1qydv17g1-161-162e5df28a45.herokuapp.com/dl/69b909bf13a84022525e5da1",
+            "notes_hi": "https://fs1qydv17g1-161-162e5df28a45.herokuapp.com/dl/69b909c713a84022525e5da3",
+            "quiz": "https://fs1qydv17g1-161-162e5df28a45.herokuapp.com/dl/69b909cf13a84022525e5da5",
+            "handwritten": "https://fs1qydv17g1-161-162e5df28a45.herokuapp.com/dl/69b909d613a84022525e5da7",
+            "downloadUrl": "https://publicbotshub.blogspot.com/p/file-stream-bot.html?dl=69b909b713a84022525e5d9f"
+          }
+        },
+        {
+          "title": "POVERTY - LEC 10",
+          "links": {
+            "url": "https://publicbotshub.blogspot.com/p/file-stream-bot.html?watch=69b909df13a84022525e5da9",
+            "notes_en": "https://fs1qydv17g1-161-162e5df28a45.herokuapp.com/dl/69b909e713a84022525e5dab",
+            "notes_hi": "https://fs1qydv17g1-161-162e5df28a45.herokuapp.com/dl/69b909ef13a84022525e5dad",
+            "quiz": "https://fs1qydv17g1-161-162e5df28a45.herokuapp.com/dl/69b909f713a84022525e5daf",
+            "handwritten": "https://fs1qydv17g1-161-162e5df28a45.herokuapp.com/dl/69b90a0613a84022525e5db1",
+            "downloadUrl": "https://publicbotshub.blogspot.com/p/file-stream-bot.html?dl=69b909df13a84022525e5da9"
+          }
+        },
+        {
+          "title": "5 YEAR PLAN - LEC 11",
+          "links": {
+            "url": "https://publicbotshub.blogspot.com/p/file-stream-bot.html?watch=69b90a0e13a84022525e5db3",
+            "notes_en": "https://fs1qydv17g1-161-162e5df28a45.herokuapp.com/dl/69b90a1713a84022525e5db5",
+            "notes_hi": "https://fs1qydv17g1-161-162e5df28a45.herokuapp.com/dl/69b90a2013a84022525e5db7",
+            "quiz": "https://fs1qydv17g1-161-162e5df28a45.herokuapp.com/dl/69b90a2713a84022525e5db9",
+            "handwritten": "https://fs1qydv17g1-161-162e5df28a45.herokuapp.com/dl/69b90a3213a84022525e5dbb",
+            "downloadUrl": "https://publicbotshub.blogspot.com/p/file-stream-bot.html?dl=69b90a0e13a84022525e5db3"
+          }
+        },
+        {
+          "title": "ECO WEEKLY TEST 1",
+          "links": {
+            "quiz": "https://vividecotest1.edgeone.app/"
+          }
+        },
+        {
+          "title": "FULL ECONOMICS TEST",
+          "links": {
+            "quiz": "https://vividxecofulltest.edgeone.app/"
+          }
+        }
+      ]
+    },
+    "STATIC G.K": {
+      "lectures": [
+        {
+          "title": "CLASSICAL DANCE - LEC 1",
+          "links": {
+            "url": "https://publicbotshub.blogspot.com/p/file-stream-bot.html?watch=69b910b313a84022525e5f2e",
+            "download_url": "https://fs1qydv17g1-161-162e5df28a45.herokuapp.com/dl/69a8729326779a7245d7aa83",
+            "notes_en": "https://fs1qydv17g1-161-162e5df28a45.herokuapp.com/dl/69b910bd13a84022525e5f30",
+            "notes_hi": "https://fs1qydv17g1-161-162e5df28a45.herokuapp.com/dl/69b910c413a84022525e5f32",
+            "quiz": "https://vividxclassicalddance.edgeone.app/",
+            "downloadUrl": "https://publicbotshub.blogspot.com/p/file-stream-bot.html?dl=69b910b313a84022525e5f2e"
+          }
+        },
+        {
+          "title": "FOLK DANCES PART 1 - LEC 2",
+          "links": {
+            "url": "https://publicbotshub.blogspot.com/p/file-stream-bot.html?watch=69b910d313a84022525e5f36",
+            "download_url": "https://fs1qydv17g1-161-162e5df28a45.herokuapp.com/dl/69a9726449368302c8f16503",
+            "notes_en": "https://fs1qydv17g1-161-162e5df28a45.herokuapp.com/dl/69b910db13a84022525e5f38",
+            "notes_hi": "https://fs1qydv17g1-161-162e5df28a45.herokuapp.com/dl/69b910e313a84022525e5f3a",
+            "quiz": "https://vividxfolkdances.edgeone.app/",
+            "downloadUrl": "https://publicbotshub.blogspot.com/p/file-stream-bot.html?dl=69b910d313a84022525e5f36"
+          }
+        },
+        {
+          "title": "FOLK DANCES PART 2 - LEC 3",
+          "links": {
+            "url": "https://publicbotshub.blogspot.com/p/file-stream-bot.html?watch=69b910f413a84022525e5f3e",
+            "download_url": "https://fs1qydv17g1-161-162e5df28a45.herokuapp.com/dl/69a9727949368302c8f16509",
+            "notes_en": "https://fs1qydv17g1-161-162e5df28a45.herokuapp.com/dl/69b910fb13a84022525e5f40",
+            "notes_hi": "https://fs1qydv17g1-161-162e5df28a45.herokuapp.com/dl/69b9110313a84022525e5f42",
+            "downloadUrl": "https://publicbotshub.blogspot.com/p/file-stream-bot.html?dl=69b910f413a84022525e5f3e"
+          }
+        },
+        {
+          "title": "FESTIVALS OF INDIA PART 1 - LEC 4",
+          "links": {
+            "url": "https://publicbotshub.blogspot.com/p/file-stream-bot.html?watch=69b9110b13a84022525e5f44",
+            "notes_en": "https://fs1qydv17g1-161-162e5df28a45.herokuapp.com/dl/69b9111213a84022525e5f46",
+            "notes_hi": "https://fs1qydv17g1-161-162e5df28a45.herokuapp.com/dl/69b9111913a84022525e5f48",
+            "quiz": "https://fs1qydv17g1-161-162e5df28a45.herokuapp.com/dl/69b9112013a84022525e5f4a",
+            "downloadUrl": "https://publicbotshub.blogspot.com/p/file-stream-bot.html?dl=69b9110b13a84022525e5f44"
+          }
+        },
+        {
+          "title": "FESTIVALS OF INDIA PART 2 - LEC 5",
+          "links": {
+            "url": "https://publicbotshub.blogspot.com/p/file-stream-bot.html?watch=69b9112913a84022525e5f4c",
+            "notes_en": "https://fs1qydv17g1-161-162e5df28a45.herokuapp.com/dl/69b9113013a84022525e5f4e",
+            "notes_hi": "https://fs1qydv17g1-161-162e5df28a45.herokuapp.com/dl/69b9113813a84022525e5f50",
+            "downloadUrl": "https://publicbotshub.blogspot.com/p/file-stream-bot.html?dl=69b9112913a84022525e5f4c"
+          }
+        }
+      ]
+    },
+    "CHEMISTRY": {
+      "lectures": [
+        {
+          "title": "STATES OF MATTER - LEC 1",
+          "links": {
+            "url": "https://www.youtube.com/live/jMYO5GMZRJM?si=44z3hlYajcMr159c",
+            "notes_en": "https://vividxmattereng.edgeone.app/",
+            "notes_hi": "https://vividxmatterhindi.edgeone.app/",
+            "quiz": "https://vividxmatters.edgeone.app/",
+            "handwritten": "https://vividxmatterppt.edgeone.app/"
+          }
+        },
+        {
+          "title": "ISS MATTER PURE? - LEC 2",
+          "links": {
+            "url": "https://vividximatterpurelecture.edgeone.app/",
+            "download_url": "https://fs1qydv17g1-161-162e5df28a45.herokuapp.com/dl/69ad0aea522131182bea2e2e",
+            "notes_en": "https://vividxismatterpureeng.edgeone.app/",
+            "notes_hi": "https://vividxismatterpurehindi.edgeone.app/",
+            "quiz": "https://issmatterpurexvivid.edgeone.app/",
+            "handwritten": "https://vividxismatterpureppt.edgeone.app/"
+          }
+        },
+        {
+          "title": "ATOM & ITS STRUCTURE - LEC 3",
+          "links": {
+            "url": "https://vividxatomz.edgeone.app/",
+            "download_url": "https://fs1qydv17g1-161-162e5df28a45.herokuapp.com/dl/69ad0b06522131182bea2e36",
+            "notes_en": "https://vividxatomenglish.edgeone.app/",
+            "notes_hi": "https://vividxatomhindi.edgeone.app/",
+            "quiz": "https://vividxatom.edgeone.app/",
+            "handwritten": "https://vividxatomppt.edgeone.app/"
+          }
+        },
+        {
+          "title": "PERIODIC TABLE - LEC 4",
+          "links": {
+            "url": "https://vividxperiodictablelecture.edgeone.app/",
+            "notes_en": "https://vividxperiodiceng.edgeone.app/",
+            "notes_hi": "https://vividxperiodichindi.edgeone.app/",
+            "quiz": "https://vividxperiodicquiz.edgeone.app/",
+            "handwritten": "https://vividxperiodicppt.edgeone.app/"
+          }
+        },
+        {
+          "title": "CHEMICAL REACTIONS - LEC 5",
+          "links": {
+            "url": "https://vividxchemicalreactions.edgeone.app/",
+            "notes_en": "https://vividxchemicaleng.edgeone.app/",
+            "notes_hi": "https://vividxchemicalhindi.edgeone.app/",
+            "quiz": "https://vividxchemicalquiz.edgeone.app/",
+            "handwritten": "https://vividxchemicalppt.edgeone.app/"
+          }
+        },
+        {
+          "title": "METALS AND NON-METALS - LEC 6",
+          "links": {
+            "url": "https://vividxmetalandnon-metal.edgeone.app/",
+            "notes_en": "https://vividxmetalnonmetaleng.edgeone.app/",
+            "notes_hi": "https://vividxmetalnonmetalhindi.edgeone.app/",
+            "quiz": "https://vividxmetalquiz.edgeone.app/",
+            "handwritten": "https://vividxmetalnonmetalppt.edgeone.app/"
+          }
+        },
+        {
+          "title": "ACID, BASE & SALTS - LEC 7",
+          "links": {
+            "url": "https://vividxacidbasesandsalts.edgeone.app/",
+            "notes_en": "https://vividxacidbaseandsaltseng.edgeone.app/",
+            "notes_hi": "https://vividxacidbaseandsaltshin.edgeone.app/",
+            "quiz": "https://vividxacidbasesandsaltsquiz.edgeone.app/",
+            "handwritten": "https://vividxacidbasesandsaltsppt.edgeone.app/"
+          }
+        },
+        {
+          "title": "CARBON AND ITS COMPOUNDS - LEC 8",
+          "links": {
+            "url": "https://publicbotshub.blogspot.com/p/file-stream-bot.html?watch=69bf92e728e78901690fd2c9",
+            "notes_en": "https://fs1qydv17g1-161-162e5df28a45.herokuapp.com/dl/69bf930028e78901690fd2cd",
+            "notes_hi": "https://fs1qydv17g1-161-162e5df28a45.herokuapp.com/dl/69bf930e28e78901690fd2cf",
+            "quiz": "https://fs1qydv17g1-161-162e5df28a45.herokuapp.com/dl/69bf92f328e78901690fd2cb",
+            "handwritten": "https://fs1qydv17g1-161-162e5df28a45.herokuapp.com/dl/69bf931e28e78901690fd2d1",
+            "downloadUrl": "https://publicbotshub.blogspot.com/p/file-stream-bot.html?dl=69bf92e728e78901690fd2c9"
+          }
+        },
+        {
+          "title": "CARBON AND ITS COMPOUNDS PART 2 - LEC 9",
+          "links": {
+            "url": "https://publicbotshub.blogspot.com/p/file-stream-bot.html?watch=69bf932828e78901690fd2d3",
+            "notes_en": "https://fs1qydv17g1-161-162e5df28a45.herokuapp.com/dl/69bf933628e78901690fd2d5",
+            "notes_hi": "https://fs1qydv17g1-161-162e5df28a45.herokuapp.com/dl/69bf934228e78901690fd2d9",
+            "quiz": "https://fs1qydv17g1-161-162e5df28a45.herokuapp.com/dl/69bf934d28e78901690fd2db",
+            "handwritten": "https://fs1qydv17g1-161-162e5df28a45.herokuapp.com/dl/69bf935828e78901690fd2dd",
+            "downloadUrl": "https://publicbotshub.blogspot.com/p/file-stream-bot.html?dl=69bf932828e78901690fd2d3"
+          }
+        },
+        {
+          "title": "CHEMISTRY FULL TEST",
+          "links": {
+            "quiz": "https://vividxchemistrytest.edgeone.app/"
+          }
+        }
+      ]
+    },
+    "PHYSICS": {
+      "lectures": [
+        {
+          "title": "MOTION - LEC 1",
+          "links": {
+            "url": "https://www.youtube.com/live/QrJPCY6GxlM?si=X0VBx2yFV9aDlN0c",
+            "notes_en": "https://fs1qydv17g1-161-162e5df28a45.herokuapp.com/dl/69bf936628e78901690fd2df",
+            "notes_hi": "https://fs1qydv17g1-161-162e5df28a45.herokuapp.com/dl/69bf937228e78901690fd2e1",
+            "quiz": "https://fs1qydv17g1-161-162e5df28a45.herokuapp.com/dl/69bf937b28e78901690fd2e3",
+            "handwritten": "https://fs1qydv17g1-161-162e5df28a45.herokuapp.com/dl/69bf938528e78901690fd2e5"
+          }
+        },
+        {
+          "title": "FORCE AND LAWS OF MOTION - LEC 2",
+          "links": {
+            "url": "https://publicbotshub.blogspot.com/p/file-stream-bot.html?watch=69bbd0ab911839277fe01062",
+            "notes_en": "https://fs1qydv17g1-161-162e5df28a45.herokuapp.com/dl/69bf93a028e78901690fd2ec",
+            "notes_hi": "https://fs1qydv17g1-161-162e5df28a45.herokuapp.com/dl/69bf93a928e78901690fd2ee",
+            "quiz": "https://fs1qydv17g1-161-162e5df28a45.herokuapp.com/dl/69bf93b128e78901690fd2f0",
+            "handwritten": "https://fs1qydv17g1-161-162e5df28a45.herokuapp.com/dl/69bf93bb28e78901690fd2f2",
+            "downloadUrl": "https://publicbotshub.blogspot.com/p/file-stream-bot.html?dl=69bbd0ab911839277fe01062"
+          }
+        },
+        {
+          "title": "GRAVITATION AND WORK DONE - LEC 3",
+          "links": {
+            "url": "https://publicbotshub.blogspot.com/p/file-stream-bot.html?watch=69bf96d228e78901690fd2f8",
+            "notes_en": "https://fs1qydv17g1-161-162e5df28a45.herokuapp.com/dl/69c17f09b2ea87e77ff5a68c",
+            "notes_hi": "https://fs1qydv17g1-161-162e5df28a45.herokuapp.com/dl/69c17f11b2ea87e77ff5a68e",
+            "quiz": "https://fs1qydv17g1-161-162e5df28a45.herokuapp.com/dl/69be49646abf9573a5e1436a",
+            "handwritten": "https://fs1qydv17g1-161-162e5df28a45.herokuapp.com/dl/69bdaeb36abf9573a5e142d2",
+            "downloadUrl": "https://publicbotshub.blogspot.com/p/file-stream-bot.html?dl=69bf96d228e78901690fd2f8"
+          }
+        },
+        {
+          "title": "SOUND - LEC 4",
+          "links": {
+            "url": "https://publicbotshub.blogspot.com/p/file-stream-bot.html?watch=69c0d20bb2ea87e77ff5a5f8",
+            "notes_en": "https://fs1qydv17g1-161-162e5df28a45.herokuapp.com/dl/69c8cfe203ce62c2c595f8fa",
+            "notes_hi": "https://fs1qydv17g1-161-162e5df28a45.herokuapp.com/dl/69c8cfea03ce62c2c595f8fc",
+            "quiz": "https://fs1qydv17g1-161-162e5df28a45.herokuapp.com/dl/69c17f18b2ea87e77ff5a690",
+            "handwritten": "https://fs1qydv17g1-161-162e5df28a45.herokuapp.com/dl/69c17f20b2ea87e77ff5a692",
+            "downloadUrl": "https://publicbotshub.blogspot.com/p/file-stream-bot.html?dl=69c0d20bb2ea87e77ff5a5f8"
+          }
+        },
+        {
+          "title": "REFLECTION AND REFRACTION - LEC 5",
+          "links": {
+            "url": "https://publicbotshub.blogspot.com/p/file-stream-bot.html?watch=69c3e4e45e326e12e26763d7",
+            "notes_en": "https://fs1qydv17g1-161-162e5df28a45.herokuapp.com/dl/69c8d00b03ce62c2c595f903",
+            "notes_hi": "https://fs1qydv17g1-161-162e5df28a45.herokuapp.com/dl/69c8d01203ce62c2c595f905",
+            "quiz": "https://fs1qydv17g1-161-162e5df28a45.herokuapp.com/dl/69c3e50c5e326e12e26763d9",
+            "handwritten": "https://fs1qydv17g1-161-162e5df28a45.herokuapp.com/dl/69c3e5125e326e12e26763db",
+            "downloadUrl": "https://publicbotshub.blogspot.com/p/file-stream-bot.html?dl=69c3e4e45e326e12e26763d7"
+          }
+        },
+        {
+          "title": "HUMAN EYE AND VISION - LEC 6",
+          "links": {
+            "url": "https://publicbotshub.blogspot.com/p/file-stream-bot.html?watch=69c3e3d85e326e12e26763d5",
+            "notes_en": "https://fs1qydv17g1-161-162e5df28a45.herokuapp.com/dl/69c8d03503ce62c2c595f90a",
+            "notes_hi": "https://fs1qydv17g1-161-162e5df28a45.herokuapp.com/dl/69c8d03c03ce62c2c595f90c",
+            "quiz": "https://fs1qydv17g1-161-162e5df28a45.herokuapp.com/dl/69c8d04403ce62c2c595f90e",
+            "handwritten": "https://fs1qydv17g1-161-162e5df28a45.herokuapp.com/dl/69c8d04c03ce62c2c595f910",
+            "downloadUrl": "https://publicbotshub.blogspot.com/p/file-stream-bot.html?dl=69c3e3d85e326e12e26763d5"
+          }
+        },
+        {
+          "title": "ELECTRICITY - LEC 7",
+          "links": {
+            "url": "https://publicbotshub.blogspot.com/p/file-stream-bot.html?watch=69c4c7522924e5555c455a28",
+            "notes_en": "https://fs1qydv17g1-161-162e5df28a45.herokuapp.com/dl/69c8d05b03ce62c2c595f913",
+            "notes_hi": "https://fs1qydv17g1-161-162e5df28a45.herokuapp.com/dl/69c8d06203ce62c2c595f915",
+            "quiz": "https://fs1qydv17g1-161-162e5df28a45.herokuapp.com/dl/69c8d06903ce62c2c595f917",
+            "handwritten": "https://fs1qydv17g1-161-162e5df28a45.herokuapp.com/dl/69c8d07103ce62c2c595f919",
+            "downloadUrl": "https://publicbotshub.blogspot.com/p/file-stream-bot.html?dl=69c4c7522924e5555c455a28"
+          }
+        },
+        {
+          "title": "MAGNETIC EFFECTS OF ELECTRIC CURRENT - LEC 8",
+          "links": {
+            "url": "https://publicbotshub.blogspot.com/p/file-stream-bot.html?watch=69c8d07a03ce62c2c595f91b",
+            "notes_en": "https://fs1qydv17g1-161-162e5df28a45.herokuapp.com/dl/69c8efc703ce62c2c595f98c",
+            "notes_hi": "https://fs1qydv17g1-161-162e5df28a45.herokuapp.com/dl/69c8efcf03ce62c2c595f98e",
+            "quiz": "https://fs1qydv17g1-161-162e5df28a45.herokuapp.com/dl/69c8d08303ce62c2c595f91d",
+            "handwritten": "https://fs1qydv17g1-161-162e5df28a45.herokuapp.com/dl/69c8d08a03ce62c2c595f91f",
+            "downloadUrl": "https://publicbotshub.blogspot.com/p/file-stream-bot.html?dl=69c8d07a03ce62c2c595f91b"
+          }
+        },
+        {
+          "title": "PHYSICS FULL TEST",
+          "links": {
+            "quiz": "https://vividxphysicstest.edgeone.app/"
+          }
+        }
+      ]
+    },
+    "POLITY": {
+      "lectures": [
+        {
+          "title": "MAKING OF CONSTITUTION - LEC 1",
+          "links": {
+            "url": "https://publicbotshub.blogspot.com/p/file-stream-bot.html?watch=69b90dc713a84022525e5e80",
+            "notes_en": "https://fs1qydv17g1-161-162e5df28a45.herokuapp.com/dl/69b90df313a84022525e5e82",
+            "notes_hi": "https://fs1qydv17g1-161-162e5df28a45.herokuapp.com/dl/69b90dfc13a84022525e5e84",
+            "quiz": "https://fs1qydv17g1-161-162e5df28a45.herokuapp.com/dl/69b90e0813a84022525e5e86",
+            "handwritten": "https://fs1qydv17g1-161-162e5df28a45.herokuapp.com/dl/69b90e1013a84022525e5e88",
+            "downloadUrl": "https://publicbotshub.blogspot.com/p/file-stream-bot.html?dl=69b90dc713a84022525e5e80"
+          }
+        },
+        {
+          "title": "SALIENT FEATURES OF CONSTITUTION - LEC 2",
+          "links": {
+            "url": "https://publicbotshub.blogspot.com/p/file-stream-bot.html?watch=69b90e1813a84022525e5e8a",
+            "notes_en": "https://fs1qydv17g1-161-162e5df28a45.herokuapp.com/dl/69b90e2013a84022525e5e8c",
+            "notes_hi": "https://fs1qydv17g1-161-162e5df28a45.herokuapp.com/dl/69b90e2813a84022525e5e8e",
+            "quiz": "https://fs1qydv17g1-161-162e5df28a45.herokuapp.com/dl/69b90e3213a84022525e5e90",
+            "handwritten": "https://fs1qydv17g1-161-162e5df28a45.herokuapp.com/dl/69b90e3913a84022525e5e92",
+            "downloadUrl": "https://publicbotshub.blogspot.com/p/file-stream-bot.html?dl=69b90e1813a84022525e5e8a"
+          }
+        },
+        {
+          "title": "PREAMBLE - LEC 3",
+          "links": {
+            "url": "https://publicbotshub.blogspot.com/p/file-stream-bot.html?watch=69b90e4213a84022525e5e94",
+            "notes_en": "https://fs1qydv17g1-161-162e5df28a45.herokuapp.com/dl/69b90e4e13a84022525e5e96",
+            "notes_hi": "https://fs1qydv17g1-161-162e5df28a45.herokuapp.com/dl/69b90e5413a84022525e5e98",
+            "quiz": "https://fs1qydv17g1-161-162e5df28a45.herokuapp.com/dl/69b90e5f13a84022525e5e9a",
+            "handwritten": "https://fs1qydv17g1-161-162e5df28a45.herokuapp.com/dl/69b90e6913a84022525e5e9c",
+            "downloadUrl": "https://publicbotshub.blogspot.com/p/file-stream-bot.html?dl=69b90e4213a84022525e5e94"
+          }
+        },
+        {
+          "title": "PART 1 AND PART 2 OF CONSTITUTION - LEC 4",
+          "links": {
+            "url": "https://publicbotshub.blogspot.com/p/file-stream-bot.html?watch=69b90e7213a84022525e5e9e",
+            "notes_en": "https://fs1qydv17g1-161-162e5df28a45.herokuapp.com/dl/69b90e7a13a84022525e5ea0",
+            "notes_hi": "https://fs1qydv17g1-161-162e5df28a45.herokuapp.com/dl/69b90e8213a84022525e5ea2",
+            "quiz": "https://fs1qydv17g1-161-162e5df28a45.herokuapp.com/dl/69b90e8a13a84022525e5ea4",
+            "handwritten": "https://fs1qydv17g1-161-162e5df28a45.herokuapp.com/dl/69b90e9213a84022525e5ea6",
+            "downloadUrl": "https://publicbotshub.blogspot.com/p/file-stream-bot.html?dl=69b90e7213a84022525e5e9e"
+          }
+        },
+        {
+          "title": "FUNDAMENTAL RIGHTS - LEC 5",
+          "links": {
+            "url": "https://publicbotshub.blogspot.com/p/file-stream-bot.html?watch=69b90e9b13a84022525e5ea8",
+            "notes_en": "https://fs1qydv17g1-161-162e5df28a45.herokuapp.com/dl/69b90ea213a84022525e5eaa",
+            "notes_hi": "https://fs1qydv17g1-161-162e5df28a45.herokuapp.com/dl/69b90eaa13a84022525e5eac",
+            "quiz": "https://fs1qydv17g1-161-162e5df28a45.herokuapp.com/dl/69b90ea213a84022525e5eaa",
+            "handwritten": "https://fs1qydv17g1-161-162e5df28a45.herokuapp.com/dl/69b90eaa13a84022525e5eac",
+            "downloadUrl": "https://publicbotshub.blogspot.com/p/file-stream-bot.html?dl=69b90e9b13a84022525e5ea8"
+          }
+        },
+        {
+          "title": "FUNDAMENTAL RIGHTS PART 2 - LEC 6",
+          "links": {
+            "url": "https://publicbotshub.blogspot.com/p/file-stream-bot.html?watch=69b90eb313a84022525e5eae",
+            "notes_en": "https://fs1qydv17g1-161-162e5df28a45.herokuapp.com/dl/69b90ebb13a84022525e5eb0",
+            "notes_hi": "https://fs1qydv17g1-161-162e5df28a45.herokuapp.com/dl/69b90ec313a84022525e5eb2",
+            "quiz": "https://fs1qydv17g1-161-162e5df28a45.herokuapp.com/dl/69b90ecb13a84022525e5eb4",
+            "handwritten": "https://fs1qydv17g1-161-162e5df28a45.herokuapp.com/dl/69b90ed313a84022525e5eb6",
+            "downloadUrl": "https://publicbotshub.blogspot.com/p/file-stream-bot.html?dl=69b90eb313a84022525e5eae"
+          }
+        },
+        {
+          "title": "DPSP AND FUNDAMENTAL DUTIES - LEC 7",
+          "links": {
+            "url": "https://publicbotshub.blogspot.com/p/file-stream-bot.html?watch=69b90edb13a84022525e5eb8",
+            "notes_en": "https://fs1qydv17g1-161-162e5df28a45.herokuapp.com/dl/69b90ee413a84022525e5eba",
+            "notes_hi": "https://fs1qydv17g1-161-162e5df28a45.herokuapp.com/dl/69b90eeb13a84022525e5ebc",
+            "quiz": "https://fs1qydv17g1-161-162e5df28a45.herokuapp.com/dl/69b90ef713a84022525e5ebe",
+            "handwritten": "https://fs1qydv17g1-161-162e5df28a45.herokuapp.com/dl/69b90eff13a84022525e5ec0",
+            "downloadUrl": "https://publicbotshub.blogspot.com/p/file-stream-bot.html?dl=69b90edb13a84022525e5eb8"
+          }
+        },
+        {
+          "title": "PRESIDENT & VICE PRESIDENT - LEC 8",
+          "links": {
+            "url": "https://publicbotshub.blogspot.com/p/file-stream-bot.html?watch=69b90f0413a84022525e5ec2",
+            "notes_en": "https://fs1qydv17g1-161-162e5df28a45.herokuapp.com/dl/69b90f0c13a84022525e5ec4",
+            "notes_hi": "https://fs1qydv17g1-161-162e5df28a45.herokuapp.com/dl/69b90f1313a84022525e5ec6",
+            "quiz": "https://fs1qydv17g1-161-162e5df28a45.herokuapp.com/dl/69b90f1a13a84022525e5ec8",
+            "handwritten": "https://fs1qydv17g1-161-162e5df28a45.herokuapp.com/dl/69b90f2113a84022525e5eca",
+            "downloadUrl": "https://publicbotshub.blogspot.com/p/file-stream-bot.html?dl=69b90f0413a84022525e5ec2"
+          }
+        },
+        {
+          "title": "PRIME MINISTER & COUNCILING OF MINISTERS - LEC 9",
+          "links": {
+            "url": "https://publicbotshub.blogspot.com/p/file-stream-bot.html?watch=69b90f2913a84022525e5ecc",
+            "notes_en": "https://fs1qydv17g1-161-162e5df28a45.herokuapp.com/dl/69b90f3013a84022525e5ece",
+            "notes_hi": "https://fs1qydv17g1-161-162e5df28a45.herokuapp.com/dl/69b90f3713a84022525e5ed0",
+            "quiz": "https://fs1qydv17g1-161-162e5df28a45.herokuapp.com/dl/69b90f3e13a84022525e5ed2",
+            "handwritten": "https://fs1qydv17g1-161-162e5df28a45.herokuapp.com/dl/69b90f4613a84022525e5ed4",
+            "downloadUrl": "https://publicbotshub.blogspot.com/p/file-stream-bot.html?dl=69b90f2913a84022525e5ecc"
+          }
+        },
+        {
+          "title": "PARLIAMENT - LEC 10",
+          "links": {
+            "url": "https://publicbotshub.blogspot.com/p/file-stream-bot.html?watch=69b90f4d13a84022525e5ed6",
+            "notes_en": "https://fs1qydv17g1-161-162e5df28a45.herokuapp.com/dl/69b90f5513a84022525e5ed8",
+            "notes_hi": "https://fs1qydv17g1-161-162e5df28a45.herokuapp.com/dl/69b90f5d13a84022525e5eda",
+            "quiz": "https://fs1qydv17g1-161-162e5df28a45.herokuapp.com/dl/69b90f6613a84022525e5edc",
+            "handwritten": "https://fs1qydv17g1-161-162e5df28a45.herokuapp.com/dl/69b90f6d13a84022525e5ede",
+            "downloadUrl": "https://publicbotshub.blogspot.com/p/file-stream-bot.html?dl=69b90f4d13a84022525e5ed6"
+          }
+        },
+        {
+          "title": "PARLIAMENT PART 2 - LEC 11",
+          "links": {
+            "url": "https://publicbotshub.blogspot.com/p/file-stream-bot.html?watch=69b90f7913a84022525e5ee0",
+            "notes_en": "https://fs1qydv17g1-161-162e5df28a45.herokuapp.com/dl/69b90f8213a84022525e5ee2",
+            "notes_hi": "https://fs1qydv17g1-161-162e5df28a45.herokuapp.com/dl/69b90f8d13a84022525e5ee4",
+            "quiz": "https://fs1qydv17g1-161-162e5df28a45.herokuapp.com/dl/69b90f9613a84022525e5ee6",
+            "handwritten": "https://fs1qydv17g1-161-162e5df28a45.herokuapp.com/dl/69b90f9d13a84022525e5ee8",
+            "downloadUrl": "https://publicbotshub.blogspot.com/p/file-stream-bot.html?dl=69b90f7913a84022525e5ee0"
+          }
+        },
+        {
+          "title": "PARLIAMENT MCQs",
+          "links": {
+            "url": "https://publicbotshub.blogspot.com/p/file-stream-bot.html?watch=69b90fa713a84022525e5eea",
+            "notes_en": "https://fs1qydv17g1-161-162e5df28a45.herokuapp.com/dl/69b90fac13a84022525e5eec",
+            "downloadUrl": "https://publicbotshub.blogspot.com/p/file-stream-bot.html?dl=69b90fa713a84022525e5eea"
+          }
+        },
+        {
+          "title": "STATE LEGISLATURE - LEC 12",
+          "links": {
+            "url": "https://publicbotshub.blogspot.com/p/file-stream-bot.html?watch=69b90fb513a84022525e5eee",
+            "notes_en": "https://fs1qydv17g1-161-162e5df28a45.herokuapp.com/dl/69b90fbd13a84022525e5ef0",
+            "notes_hi": "https://fs1qydv17g1-161-162e5df28a45.herokuapp.com/dl/69b90fc513a84022525e5ef2",
+            "quiz": "https://fs1qydv17g1-161-162e5df28a45.herokuapp.com/dl/69b90fcd13a84022525e5ef4",
+            "handwritten": "https://fs1qydv17g1-161-162e5df28a45.herokuapp.com/dl/69b90fd413a84022525e5ef6",
+            "downloadUrl": "https://publicbotshub.blogspot.com/p/file-stream-bot.html?dl=69b90fb513a84022525e5eee"
+          }
+        },
+        {
+          "title": "COURTS - LEC 13",
+          "links": {
+            "url": "https://publicbotshub.blogspot.com/p/file-stream-bot.html?watch=69b90fdb13a84022525e5ef8",
+            "notes_en": "https://fs1qydv17g1-161-162e5df28a45.herokuapp.com/dl/69b90fe313a84022525e5efa",
+            "notes_hi": "https://fs1qydv17g1-161-162e5df28a45.herokuapp.com/dl/69b90feb13a84022525e5efc",
+            "quiz": "https://fs1qydv17g1-161-162e5df28a45.herokuapp.com/dl/69b90ff313a84022525e5efe",
+            "handwritten": "https://fs1qydv17g1-161-162e5df28a45.herokuapp.com/dl/69b90ffa13a84022525e5f00",
+            "downloadUrl": "https://publicbotshub.blogspot.com/p/file-stream-bot.html?dl=69b90fdb13a84022525e5ef8"
+          }
+        },
+        {
+          "title": "LOCAL BODIES - LEC 14",
+          "links": {
+            "url": "https://publicbotshub.blogspot.com/p/file-stream-bot.html?watch=69b9100213a84022525e5f02",
+            "notes_en": "https://fs1qydv17g1-161-162e5df28a45.herokuapp.com/dl/69b9100913a84022525e5f04",
+            "notes_hi": "https://fs1qydv17g1-161-162e5df28a45.herokuapp.com/dl/69b9101013a84022525e5f06",
+            "quiz": "https://fs1qydv17g1-161-162e5df28a45.herokuapp.com/dl/69b9101713a84022525e5f08",
+            "handwritten": "https://fs1qydv17g1-161-162e5df28a45.herokuapp.com/dl/69b9101e13a84022525e5f0a",
+            "downloadUrl": "https://publicbotshub.blogspot.com/p/file-stream-bot.html?dl=69b9100213a84022525e5f02"
+          }
+        },
+        {
+          "title": "LOCAL BODIES - MCQs",
+          "links": {
+            "url": "https://publicbotshub.blogspot.com/p/file-stream-bot.html?watch=69b9102913a84022525e5f0c",
+            "notes_en": "https://fs1qydv17g1-161-162e5df28a45.herokuapp.com/dl/69b9102e13a84022525e5f0e",
+            "downloadUrl": "https://publicbotshub.blogspot.com/p/file-stream-bot.html?dl=69b9102913a84022525e5f0c"
+          }
+        },
+        {
+          "title": "CONSTITUTIONAL AND NON CONSTITUTIONAL BODIES - LEC 15",
+          "links": {
+            "url": "https://publicbotshub.blogspot.com/p/file-stream-bot.html?watch=69b9103613a84022525e5f10",
+            "notes_en": "https://fs1qydv17g1-161-162e5df28a45.herokuapp.com/dl/69b9103e13a84022525e5f12",
+            "notes_hi": "https://fs1qydv17g1-161-162e5df28a45.herokuapp.com/dl/69b9104613a84022525e5f14",
+            "quiz": "https://fs1qydv17g1-161-162e5df28a45.herokuapp.com/dl/69b9104e13a84022525e5f16",
+            "handwritten": "https://fs1qydv17g1-161-162e5df28a45.herokuapp.com/dl/69b9105513a84022525e5f18",
+            "downloadUrl": "https://publicbotshub.blogspot.com/p/file-stream-bot.html?dl=69b9103613a84022525e5f10"
+          }
+        },
+        {
+          "title": "EMERGENCY,AMENDMENTS AND INTER STATE RELATIONS - LEC 16",
+          "links": {
+            "url": "https://publicbotshub.blogspot.com/p/file-stream-bot.html?watch=69b9105d13a84022525e5f1a",
+            "notes_en": "https://fs1qydv17g1-161-162e5df28a45.herokuapp.com/dl/69b9106413a84022525e5f1c",
+            "notes_hi": "https://fs1qydv17g1-161-162e5df28a45.herokuapp.com/dl/69b9106b13a84022525e5f1e",
+            "quiz": "https://fs1qydv17g1-161-162e5df28a45.herokuapp.com/dl/69b9107213a84022525e5f20",
+            "handwritten": "https://fs1qydv17g1-161-162e5df28a45.herokuapp.com/dl/69b9107a13a84022525e5f22",
+            "downloadUrl": "https://publicbotshub.blogspot.com/p/file-stream-bot.html?dl=69b9105d13a84022525e5f1a"
+          }
+        },
+        {
+          "title": "HISTORICAL BACKGROUND (ACTS) - LEC 17",
+          "links": {
+            "url": "https://publicbotshub.blogspot.com/p/file-stream-bot.html?watch=69b9108113a84022525e5f24",
+            "notes_en": "https://fs1qydv17g1-161-162e5df28a45.herokuapp.com/dl/69b9108813a84022525e5f26",
+            "notes_hi": "https://fs1qydv17g1-161-162e5df28a45.herokuapp.com/dl/69b9109013a84022525e5f28",
+            "quiz": "https://fs1qydv17g1-161-162e5df28a45.herokuapp.com/dl/69b9109e13a84022525e5f2a",
+            "handwritten": "https://fs1qydv17g1-161-162e5df28a45.herokuapp.com/dl/69b910a613a84022525e5f2c",
+            "downloadUrl": "https://publicbotshub.blogspot.com/p/file-stream-bot.html?dl=69b9108113a84022525e5f24"
+          }
+        },
+        {
+          "title": "POLITY TEST 1",
+          "links": {
+            "quiz": "https://fs1qydv17g1-161-162e5df28a45.herokuapp.com/dl/69c8d4cc03ce62c2c595f92f"
+          }
+        },
+        {
+          "title": "POLITY TEST 2",
+          "links": {
+            "quiz": "https://fs1qydv17g1-161-162e5df28a45.herokuapp.com/dl/69c8d4d203ce62c2c595f931"
+          }
+        },
+        {
+          "title": "POLITY TEST 3",
+          "links": {
+            "quiz": "https://fs1qydv17g1-161-162e5df28a45.herokuapp.com/dl/69c8d4d703ce62c2c595f933"
+          }
+        },
+        {
+          "title": "FULL POLITY TEST",
+          "links": {
+            "quiz": "https://vividxfullpolitytest.edgeone.app/"
+          }
+        }
+      ]
+    },
+    "ANCIENT HISTORY": {
+      "lectures": [
+        {
+          "title": "STONE AGE - LEC 1",
+          "links": {
+            "url": "https://publicbotshub.blogspot.com/p/file-stream-bot.html?watch=69b9017913a84022525e5bb8",
+            "notes_en": "https://fs1qydv17g1-161-162e5df28a45.herokuapp.com/dl/69b9018913a84022525e5bba",
+            "notes_hi": "https://fs1qydv17g1-161-162e5df28a45.herokuapp.com/dl/69b9019213a84022525e5bbc",
+            "quiz": "https://fs1qydv17g1-161-162e5df28a45.herokuapp.com/dl/69b9019b13a84022525e5bbe",
+            "handwritten": "https://fs1qydv17g1-161-162e5df28a45.herokuapp.com/dl/69b901a413a84022525e5bc0",
+            "downloadUrl": "https://publicbotshub.blogspot.com/p/file-stream-bot.html?dl=69b9017913a84022525e5bb8"
+          }
+        },
+        {
+          "title": "INDUS VALLEY CIVILISATION - LEC 2",
+          "links": {
+            "url": "https://publicbotshub.blogspot.com/p/file-stream-bot.html?watch=69b901ae13a84022525e5bc2",
+            "notes_en": "https://fs1qydv17g1-161-162e5df28a45.herokuapp.com/dl/69b901b613a84022525e5bc4",
+            "notes_hi": "https://fs1qydv17g1-161-162e5df28a45.herokuapp.com/dl/69b901bd13a84022525e5bc6",
+            "quiz": "https://fs1qydv17g1-161-162e5df28a45.herokuapp.com/dl/69b901c613a84022525e5bc8",
+            "handwritten": "https://fs1qydv17g1-161-162e5df28a45.herokuapp.com/dl/69b901d513a84022525e5bca",
+            "downloadUrl": "https://publicbotshub.blogspot.com/p/file-stream-bot.html?dl=69b901ae13a84022525e5bc2"
+          }
+        },
+        {
+          "title": "VEDIC AGE - LEC 3",
+          "links": {
+            "url": "https://publicbotshub.blogspot.com/p/file-stream-bot.html?watch=69b901f213a84022525e5bcc",
+            "notes_en": "https://fs1qydv17g1-161-162e5df28a45.herokuapp.com/dl/69b901fa13a84022525e5bce",
+            "notes_hi": "https://fs1qydv17g1-161-162e5df28a45.herokuapp.com/dl/69b9020113a84022525e5bd0",
+            "quiz": "https://fs1qydv17g1-161-162e5df28a45.herokuapp.com/dl/69b9020a13a84022525e5bd2",
+            "handwritten": "https://fs1qydv17g1-161-162e5df28a45.herokuapp.com/dl/69b9021213a84022525e5bd4",
+            "downloadUrl": "https://publicbotshub.blogspot.com/p/file-stream-bot.html?dl=69b901f213a84022525e5bcc"
+          }
+        },
+        {
+          "title": "BUDDHISM AND JAINISM - LEC 4",
+          "links": {
+            "url": "https://publicbotshub.blogspot.com/p/file-stream-bot.html?watch=69b9022013a84022525e5bd6",
+            "notes_en": "https://fs1qydv17g1-161-162e5df28a45.herokuapp.com/dl/69b9023b13a84022525e5bd8",
+            "notes_hi": "https://fs1qydv17g1-161-162e5df28a45.herokuapp.com/dl/69b9025113a84022525e5bda",
+            "quiz": "https://fs1qydv17g1-161-162e5df28a45.herokuapp.com/dl/69b9029113a84022525e5c04",
+            "handwritten": "https://fs1qydv17g1-161-162e5df28a45.herokuapp.com/dl/69b902db13a84022525e5c08",
+            "downloadUrl": "https://publicbotshub.blogspot.com/p/file-stream-bot.html?dl=69b9022013a84022525e5bd6"
+          }
+        },
+        {
+          "title": "MAHAJANPADAS AND MAGADHA - LEC 5",
+          "links": {
+            "url": "https://publicbotshub.blogspot.com/p/file-stream-bot.html?watch=69b902ef13a84022525e5c0a",
+            "notes_en": "https://fs1qydv17g1-161-162e5df28a45.herokuapp.com/dl/69b902fe13a84022525e5c0c",
+            "notes_hi": "https://fs1qydv17g1-161-162e5df28a45.herokuapp.com/dl/69b9030c13a84022525e5c0e",
+            "quiz": "https://fs1qydv17g1-161-162e5df28a45.herokuapp.com/dl/69b9031413a84022525e5c10",
+            "handwritten": "https://fs1qydv17g1-161-162e5df28a45.herokuapp.com/dl/69b9032013a84022525e5c12",
+            "downloadUrl": "https://publicbotshub.blogspot.com/p/file-stream-bot.html?dl=69b902ef13a84022525e5c0a"
+          }
+        },
+        {
+          "title": "MAURYAN EMPIRE - LEC 6",
+          "links": {
+            "url": "https://publicbotshub.blogspot.com/p/file-stream-bot.html?watch=69b9032d13a84022525e5c14",
+            "notes_en": "https://fs1qydv17g1-161-162e5df28a45.herokuapp.com/dl/69b9033413a84022525e5c16",
+            "notes_hi": "https://fs1qydv17g1-161-162e5df28a45.herokuapp.com/dl/69b9033d13a84022525e5c18",
+            "quiz": "https://fs1qydv17g1-161-162e5df28a45.herokuapp.com/dl/69b9034513a84022525e5c1a",
+            "handwritten": "https://fs1qydv17g1-161-162e5df28a45.herokuapp.com/dl/69b9034f13a84022525e5c1c",
+            "downloadUrl": "https://publicbotshub.blogspot.com/p/file-stream-bot.html?dl=69b9032d13a84022525e5c14"
+          }
+        },
+        {
+          "title": "POST MAURYAN EMPIRE - LEC 7",
+          "links": {
+            "url": "https://publicbotshub.blogspot.com/p/file-stream-bot.html?watch=69b9035713a84022525e5c1e",
+            "notes_en": "https://fs1qydv17g1-161-162e5df28a45.herokuapp.com/dl/69b9035e13a84022525e5c20",
+            "notes_hi": "https://fs1qydv17g1-161-162e5df28a45.herokuapp.com/dl/69b9036613a84022525e5c22",
+            "quiz": "https://fs1qydv17g1-161-162e5df28a45.herokuapp.com/dl/69b9036e13a84022525e5c24",
+            "handwritten": "https://fs1qydv17g1-161-162e5df28a45.herokuapp.com/dl/69b9037613a84022525e5c26",
+            "downloadUrl": "https://publicbotshub.blogspot.com/p/file-stream-bot.html?dl=69b9035713a84022525e5c1e"
+          }
+        },
+        {
+          "title": "SANGAM AGE - LEC 8",
+          "links": {
+            "url": "https://publicbotshub.blogspot.com/p/file-stream-bot.html?watch=69b9038113a84022525e5c28",
+            "notes_en": "https://fs1qydv17g1-161-162e5df28a45.herokuapp.com/dl/69b9038913a84022525e5c2a",
+            "notes_hi": "https://fs1qydv17g1-161-162e5df28a45.herokuapp.com/dl/69b9039213a84022525e5c2c",
+            "quiz": "https://fs1qydv17g1-161-162e5df28a45.herokuapp.com/dl/69b9039b13a84022525e5c2e",
+            "handwritten": "https://fs1qydv17g1-161-162e5df28a45.herokuapp.com/dl/69b903a513a84022525e5c30",
+            "downloadUrl": "https://publicbotshub.blogspot.com/p/file-stream-bot.html?dl=69b9038113a84022525e5c28"
+          }
+        },
+        {
+          "title": "GUPTA ERA - LEC 9",
+          "links": {
+            "url": "https://publicbotshub.blogspot.com/p/file-stream-bot.html?watch=69b903b013a84022525e5c32",
+            "notes_en": "https://fs1qydv17g1-161-162e5df28a45.herokuapp.com/dl/69b903b713a84022525e5c34",
+            "notes_hi": "https://fs1qydv17g1-161-162e5df28a45.herokuapp.com/dl/69b903c013a84022525e5c36",
+            "quiz": "https://fs1qydv17g1-161-162e5df28a45.herokuapp.com/dl/69b903cb13a84022525e5c38",
+            "handwritten": "https://fs1qydv17g1-161-162e5df28a45.herokuapp.com/dl/69b903d213a84022525e5c3a",
+            "downloadUrl": "https://publicbotshub.blogspot.com/p/file-stream-bot.html?dl=69b903b013a84022525e5c32"
+          }
+        },
+        {
+          "title": "POST GUPTA ERA PART 1 - LEC 10",
+          "links": {
+            "url": "https://publicbotshub.blogspot.com/p/file-stream-bot.html?watch=69b903db13a84022525e5c3c",
+            "notes_en": "https://fs1qydv17g1-161-162e5df28a45.herokuapp.com/dl/69b903e213a84022525e5c3e",
+            "notes_hi": "https://fs1qydv17g1-161-162e5df28a45.herokuapp.com/dl/69b903eb13a84022525e5c40",
+            "quiz": "https://fs1qydv17g1-161-162e5df28a45.herokuapp.com/dl/69b903f213a84022525e5c42",
+            "handwritten": "https://fs1qydv17g1-161-162e5df28a45.herokuapp.com/dl/69b903fb13a84022525e5c44",
+            "downloadUrl": "https://publicbotshub.blogspot.com/p/file-stream-bot.html?dl=69b903db13a84022525e5c3c"
+          }
+        },
+        {
+          "title": "POST GUPTA ERA PART 2 - LEC 11",
+          "links": {
+            "url": "https://publicbotshub.blogspot.com/p/file-stream-bot.html?watch=69b9040d13a84022525e5c46",
+            "notes_en": "https://fs1qydv17g1-161-162e5df28a45.herokuapp.com/dl/69b9041513a84022525e5c48",
+            "notes_hi": "https://fs1qydv17g1-161-162e5df28a45.herokuapp.com/dl/69b9041d13a84022525e5c4a",
+            "quiz": "https://fs1qydv17g1-161-162e5df28a45.herokuapp.com/dl/69b9042413a84022525e5c4c",
+            "handwritten": "https://fs1qydv17g1-161-162e5df28a45.herokuapp.com/dl/69b9042e13a84022525e5c4e",
+            "downloadUrl": "https://publicbotshub.blogspot.com/p/file-stream-bot.html?dl=69b9040d13a84022525e5c46"
+          }
+        },
+        {
+          "title": "CHOLAS AND TRIPARTITE STRUGGLE - LEC 12",
+          "links": {
+            "url": "https://publicbotshub.blogspot.com/p/file-stream-bot.html?watch=69b9044113a84022525e5c50",
+            "notes_en": "https://fs1qydv17g1-161-162e5df28a45.herokuapp.com/dl/69b9044c13a84022525e5c52",
+            "notes_hi": "https://fs1qydv17g1-161-162e5df28a45.herokuapp.com/dl/69b9045213a84022525e5c54",
+            "quiz": "https://fs1qydv17g1-161-162e5df28a45.herokuapp.com/dl/69b9045a13a84022525e5c56",
+            "handwritten": "https://fs1qydv17g1-161-162e5df28a45.herokuapp.com/dl/69b9046313a84022525e5c58",
+            "downloadUrl": "https://publicbotshub.blogspot.com/p/file-stream-bot.html?dl=69b9044113a84022525e5c50"
+          }
+        },
+        {
+          "title": "HISTORY TEST 1",
+          "links": {
+            "quiz": "https://fs1qydv17g1-161-162e5df28a45.herokuapp.com/dl/69c8d4aa03ce62c2c595f923"
+          }
+        },
+        {
+          "title": "HISTORY TEST 2",
+          "links": {
+            "quiz": "https://fs1qydv17g1-161-162e5df28a45.herokuapp.com/dl/69c8d4af03ce62c2c595f925"
+          }
+        }
+      ]
+    },
+    "MEDIEVAL HISTORY": {
+      "lectures": [
+        {
+          "title": "INVANSION OF ISLAM - LEC 1",
+          "links": {
+            "url": "https://publicbotshub.blogspot.com/p/file-stream-bot.html?watch=69b9046c13a84022525e5c5a",
+            "notes_en": "https://fs1qydv17g1-161-162e5df28a45.herokuapp.com/dl/69b9047c13a84022525e5c5c",
+            "notes_hi": "https://fs1qydv17g1-161-162e5df28a45.herokuapp.com/dl/69b9048313a84022525e5c5e",
+            "quiz": "https://fs1qydv17g1-161-162e5df28a45.herokuapp.com/dl/69b9048f13a84022525e5c60",
+            "handwritten": "https://fs1qydv17g1-161-162e5df28a45.herokuapp.com/dl/69b9049513a84022525e5c62",
+            "downloadUrl": "https://publicbotshub.blogspot.com/p/file-stream-bot.html?dl=69b9046c13a84022525e5c5a"
+          }
+        },
+        {
+          "title": "DELHI SULTANATE PART 1 - LEC 2",
+          "links": {
+            "url": "https://publicbotshub.blogspot.com/p/file-stream-bot.html?watch=69b904a013a84022525e5c64",
+            "notes_en": "https://fs1qydv17g1-161-162e5df28a45.herokuapp.com/dl/69b904a913a84022525e5c66",
+            "notes_hi": "https://fs1qydv17g1-161-162e5df28a45.herokuapp.com/dl/69b904b113a84022525e5c68",
+            "quiz": "https://fs1qydv17g1-161-162e5df28a45.herokuapp.com/dl/69b904b813a84022525e5c6a",
+            "handwritten": "https://fs1qydv17g1-161-162e5df28a45.herokuapp.com/dl/69b904c013a84022525e5c6c",
+            "downloadUrl": "https://publicbotshub.blogspot.com/p/file-stream-bot.html?dl=69b904a013a84022525e5c64"
+          }
+        },
+        {
+          "title": "DELHI SULTANATE PART 2 - LEC 3",
+          "links": {
+            "url": "https://publicbotshub.blogspot.com/p/file-stream-bot.html?watch=69b904c913a84022525e5c6e",
+            "notes_en": "https://fs1qydv17g1-161-162e5df28a45.herokuapp.com/dl/69b904d213a84022525e5c70",
+            "notes_hi": "https://fs1qydv17g1-161-162e5df28a45.herokuapp.com/dl/69b904db13a84022525e5c72",
+            "quiz": "https://fs1qydv17g1-161-162e5df28a45.herokuapp.com/dl/69b904e213a84022525e5c74",
+            "handwritten": "https://fs1qydv17g1-161-162e5df28a45.herokuapp.com/dl/69b904eb13a84022525e5c76",
+            "downloadUrl": "https://publicbotshub.blogspot.com/p/file-stream-bot.html?dl=69b904c913a84022525e5c6e"
+          }
+        },
+        {
+          "title": "LECTURE 1 , 2 AND 3 - (MCQ - PDF)",
+          "links": {
+            "notes_en": "https://fs1qydv17g1-161-162e5df28a45.herokuapp.com/dl/69b904f213a84022525e5c78"
+          }
+        },
+        {
+          "title": "VIJAYNAGARA EMPIRE BAHMANI KINGDOM - LEC 4",
+          "links": {
+            "url": "https://publicbotshub.blogspot.com/p/file-stream-bot.html?watch=69b904fb13a84022525e5c7a",
+            "notes_en": "https://fs1qydv17g1-161-162e5df28a45.herokuapp.com/dl/69b9050413a84022525e5c7c",
+            "notes_hi": "https://fs1qydv17g1-161-162e5df28a45.herokuapp.com/dl/69b9050d13a84022525e5c7e",
+            "quiz": "https://fs1qydv17g1-161-162e5df28a45.herokuapp.com/dl/69b9051613a84022525e5c80",
+            "handwritten": "https://fs1qydv17g1-161-162e5df28a45.herokuapp.com/dl/69b9051d13a84022525e5c82",
+            "downloadUrl": "https://publicbotshub.blogspot.com/p/file-stream-bot.html?dl=69b904fb13a84022525e5c7a"
+          }
+        },
+        {
+          "title": "MUGHAL EMPIRE PART 1 - LEC 5",
+          "links": {
+            "url": "https://publicbotshub.blogspot.com/p/file-stream-bot.html?watch=69b9052713a84022525e5c84",
+            "notes_en": "https://fs1qydv17g1-161-162e5df28a45.herokuapp.com/dl/69b9053013a84022525e5c86",
+            "notes_hi": "https://fs1qydv17g1-161-162e5df28a45.herokuapp.com/dl/69b9053713a84022525e5c88",
+            "quiz": "https://fs1qydv17g1-161-162e5df28a45.herokuapp.com/dl/69b9053f13a84022525e5c8a",
+            "handwritten": "https://fs1qydv17g1-161-162e5df28a45.herokuapp.com/dl/69b9054613a84022525e5c8c",
+            "downloadUrl": "https://publicbotshub.blogspot.com/p/file-stream-bot.html?dl=69b9052713a84022525e5c84"
+          }
+        },
+        {
+          "title": "MUGHAL EMPIRE PART 2 - LEC 6",
+          "links": {
+            "url": "https://publicbotshub.blogspot.com/p/file-stream-bot.html?watch=69b9054e13a84022525e5c8e",
+            "notes_en": "https://fs1qydv17g1-161-162e5df28a45.herokuapp.com/dl/69b9055613a84022525e5c90",
+            "notes_hi": "https://fs1qydv17g1-161-162e5df28a45.herokuapp.com/dl/69b9055e13a84022525e5c92",
+            "quiz": "https://fs1qydv17g1-161-162e5df28a45.herokuapp.com/dl/69b9056613a84022525e5c94",
+            "handwritten": "https://fs1qydv17g1-161-162e5df28a45.herokuapp.com/dl/69b9056d13a84022525e5c96",
+            "downloadUrl": "https://publicbotshub.blogspot.com/p/file-stream-bot.html?dl=69b9054e13a84022525e5c8e"
+          }
+        },
+        {
+          "title": "AURANGEB AND LATER MUGHALS - LEC 7",
+          "links": {
+            "url": "https://publicbotshub.blogspot.com/p/file-stream-bot.html?watch=69b9057613a84022525e5c98",
+            "notes_en": "https://fs1qydv17g1-161-162e5df28a45.herokuapp.com/dl/69b9057f13a84022525e5c9a",
+            "notes_hi": "https://fs1qydv17g1-161-162e5df28a45.herokuapp.com/dl/69b9058713a84022525e5c9c",
+            "quiz": "https://fs1qydv17g1-161-162e5df28a45.herokuapp.com/dl/69b9058f13a84022525e5c9e",
+            "handwritten": "https://fs1qydv17g1-161-162e5df28a45.herokuapp.com/dl/69b9059613a84022525e5ca0",
+            "downloadUrl": "https://publicbotshub.blogspot.com/p/file-stream-bot.html?dl=69b9057613a84022525e5c98"
+          }
+        },
+        {
+          "title": "MARATHAS - LEC 8",
+          "links": {
+            "url": "https://publicbotshub.blogspot.com/p/file-stream-bot.html?watch=69b9059f13a84022525e5ca2",
+            "notes_en": "https://fs1qydv17g1-161-162e5df28a45.herokuapp.com/dl/69b905b813a84022525e5ca4",
+            "notes_hi": "https://fs1qydv17g1-161-162e5df28a45.herokuapp.com/dl/69b905eb13a84022525e5ca6",
+            "quiz": "https://fs1qydv17g1-161-162e5df28a45.herokuapp.com/dl/69b905f513a84022525e5ca8",
+            "handwritten": "https://fs1qydv17g1-161-162e5df28a45.herokuapp.com/dl/69b905fd13a84022525e5caa",
+            "downloadUrl": "https://publicbotshub.blogspot.com/p/file-stream-bot.html?dl=69b9059f13a84022525e5ca2"
+          }
+        },
+        {
+          "title": "BHAKTI & SUFI MOVEMENT - LEC 9",
+          "links": {
+            "url": "https://publicbotshub.blogspot.com/p/file-stream-bot.html?watch=69b9060813a84022525e5cac",
+            "notes_en": "https://fs1qydv17g1-161-162e5df28a45.herokuapp.com/dl/69b9061913a84022525e5cae",
+            "notes_hi": "https://fs1qydv17g1-161-162e5df28a45.herokuapp.com/dl/69b9062713a84022525e5cb0",
+            "quiz": "https://fs1qydv17g1-161-162e5df28a45.herokuapp.com/dl/69b9063013a84022525e5cb4",
+            "downloadUrl": "https://publicbotshub.blogspot.com/p/file-stream-bot.html?dl=69b9060813a84022525e5cac"
+          }
+        },
+        {
+          "title": "HISTORY TEST 3",
+          "links": {
+            "quiz": "https://fs1qydv17g1-161-162e5df28a45.herokuapp.com/dl/69c8d4b503ce62c2c595f927"
+          }
+        },
+        {
+          "title": "HISTORY TEST 4",
+          "links": {
+            "quiz": "https://fs1qydv17g1-161-162e5df28a45.herokuapp.com/dl/69c8d4bb03ce62c2c595f929"
+          }
+        }
+      ]
+    },
+    "MODERN HISTORY": {
+      "lectures": [
+        {
+          "title": "ADVENT OF EUROPEANS - LEC 1",
+          "links": {
+            "url": "https://publicbotshub.blogspot.com/p/file-stream-bot.html?watch=69b9063a13a84022525e5cb9",
+            "notes_en": "https://fs1qydv17g1-161-162e5df28a45.herokuapp.com/dl/69b9064713a84022525e5cbe",
+            "notes_hi": "https://fs1qydv17g1-161-162e5df28a45.herokuapp.com/dl/69b9065013a84022525e5cc0",
+            "quiz": "https://fs1qydv17g1-161-162e5df28a45.herokuapp.com/dl/69b9065813a84022525e5cc2",
+            "handwritten": "https://fs1qydv17g1-161-162e5df28a45.herokuapp.com/dl/69b9066113a84022525e5cc4",
+            "downloadUrl": "https://publicbotshub.blogspot.com/p/file-stream-bot.html?dl=69b9063a13a84022525e5cb9"
+          }
+        },
+        {
+          "title": "SOCIO RELIGIOUS REFORM MOVEMENTS - LEC 2",
+          "links": {
+            "url": "https://publicbotshub.blogspot.com/p/file-stream-bot.html?watch=69b9066f13a84022525e5cc6",
+            "notes_en": "https://fs1qydv17g1-161-162e5df28a45.herokuapp.com/dl/69b9067713a84022525e5cc8",
+            "notes_hi": "https://fs1qydv17g1-161-162e5df28a45.herokuapp.com/dl/69b9068813a84022525e5cca",
+            "quiz": "https://fs1qydv17g1-161-162e5df28a45.herokuapp.com/dl/69b9069113a84022525e5ccc",
+            "handwritten": "https://fs1qydv17g1-161-162e5df28a45.herokuapp.com/dl/69b9069a13a84022525e5cce",
+            "downloadUrl": "https://publicbotshub.blogspot.com/p/file-stream-bot.html?dl=69b9066f13a84022525e5cc6"
+          }
+        },
+        {
+          "title": "REVOLT OF 1857 - LEC 3",
+          "links": {
+            "url": "https://publicbotshub.blogspot.com/p/file-stream-bot.html?watch=69b906a313a84022525e5cd0",
+            "notes_en": "https://fs1qydv17g1-161-162e5df28a45.herokuapp.com/dl/69b906b613a84022525e5cd2",
+            "notes_hi": "https://fs1qydv17g1-161-162e5df28a45.herokuapp.com/dl/69b906bf13a84022525e5cd4",
+            "quiz": "https://fs1qydv17g1-161-162e5df28a45.herokuapp.com/dl/69b906c913a84022525e5cd6",
+            "handwritten": "https://fs1qydv17g1-161-162e5df28a45.herokuapp.com/dl/69b906d313a84022525e5cda",
+            "downloadUrl": "https://publicbotshub.blogspot.com/p/file-stream-bot.html?dl=69b906a313a84022525e5cd0"
+          }
+        },
+        {
+          "title": "INDIAN NATIONAL CONGRESS INC - LEC 4",
+          "links": {
+            "url": "https://publicbotshub.blogspot.com/p/file-stream-bot.html?watch=69b906dc13a84022525e5ce0",
+            "notes_en": "https://fs1qydv17g1-161-162e5df28a45.herokuapp.com/dl/69b906e513a84022525e5ce2",
+            "notes_hi": "https://fs1qydv17g1-161-162e5df28a45.herokuapp.com/dl/69b906ef13a84022525e5ce6",
+            "quiz": "https://fs1qydv17g1-161-162e5df28a45.herokuapp.com/dl/69b906f713a84022525e5ce8",
+            "handwritten": "https://fs1qydv17g1-161-162e5df28a45.herokuapp.com/dl/69b9070013a84022525e5cea",
+            "downloadUrl": "https://publicbotshub.blogspot.com/p/file-stream-bot.html?dl=69b906dc13a84022525e5ce0"
+          }
+        },
+        {
+          "title": "PARTITION OF BENGAL - LEC 5",
+          "links": {
+            "url": "https://publicbotshub.blogspot.com/p/file-stream-bot.html?watch=69b9070913a84022525e5cec",
+            "notes_en": "https://fs1qydv17g1-161-162e5df28a45.herokuapp.com/dl/69b9071213a84022525e5cee",
+            "notes_hi": "https://fs1qydv17g1-161-162e5df28a45.herokuapp.com/dl/69b9071913a84022525e5cf0",
+            "quiz": "https://fs1qydv17g1-161-162e5df28a45.herokuapp.com/dl/69b9072113a84022525e5cf2",
+            "handwritten": "https://fs1qydv17g1-161-162e5df28a45.herokuapp.com/dl/69b9072913a84022525e5cf4",
+            "downloadUrl": "https://publicbotshub.blogspot.com/p/file-stream-bot.html?dl=69b9070913a84022525e5cec"
+          }
+        },
+        {
+          "title": "GANDHIAN ERA - LEC 6",
+          "links": {
+            "url": "https://publicbotshub.blogspot.com/p/file-stream-bot.html?watch=69b9073613a84022525e5cf6",
+            "notes_en": "https://fs1qydv17g1-161-162e5df28a45.herokuapp.com/dl/69b9074013a84022525e5cf8",
+            "notes_hi": "https://fs1qydv17g1-161-162e5df28a45.herokuapp.com/dl/69b9074713a84022525e5cfa",
+            "quiz": "https://fs1qydv17g1-161-162e5df28a45.herokuapp.com/dl/69b9074f13a84022525e5cfc",
+            "handwritten": "https://fs1qydv17g1-161-162e5df28a45.herokuapp.com/dl/69b9076413a84022525e5cfe",
+            "downloadUrl": "https://publicbotshub.blogspot.com/p/file-stream-bot.html?dl=69b9073613a84022525e5cf6"
+          }
+        },
+        {
+          "title": "BHAGAT SINGH AND REVOLUTIONARY ACTIVITIES - LEC 7",
+          "links": {
+            "url": "https://publicbotshub.blogspot.com/p/file-stream-bot.html?watch=69b9077913a84022525e5d00",
+            "notes_en": "https://fs1qydv17g1-161-162e5df28a45.herokuapp.com/dl/69b9078f13a84022525e5d02",
+            "notes_hi": "https://fs1qydv17g1-161-162e5df28a45.herokuapp.com/dl/69b9079713a84022525e5d04",
+            "quiz": "https://fs1qydv17g1-161-162e5df28a45.herokuapp.com/dl/69b9079f13a84022525e5d06",
+            "handwritten": "https://fs1qydv17g1-161-162e5df28a45.herokuapp.com/dl/69b907ac13a84022525e5d0a",
+            "downloadUrl": "https://publicbotshub.blogspot.com/p/file-stream-bot.html?dl=69b9077913a84022525e5d00"
+          }
+        },
+        {
+          "title": "CIVIL DISOBEDIENCE MOVEMENT - LEC 8",
+          "links": {
+            "url": "https://publicbotshub.blogspot.com/p/file-stream-bot.html?watch=69b907b713a84022525e5d0e",
+            "notes_en": "https://fs1qydv17g1-161-162e5df28a45.herokuapp.com/dl/69b907c113a84022525e5d10",
+            "notes_hi": "https://fs1qydv17g1-161-162e5df28a45.herokuapp.com/dl/69b907cf13a84022525e5d13",
+            "quiz": "https://fs1qydv17g1-161-162e5df28a45.herokuapp.com/dl/69b907d813a84022525e5d15",
+            "handwritten": "https://fs1qydv17g1-161-162e5df28a45.herokuapp.com/dl/69b907e013a84022525e5d19",
+            "downloadUrl": "https://publicbotshub.blogspot.com/p/file-stream-bot.html?dl=69b907b713a84022525e5d0e"
+          }
+        },
+        {
+          "title": "QUIT INDIA MOVEMENT - LEC 9",
+          "links": {
+            "url": "https://publicbotshub.blogspot.com/p/file-stream-bot.html?watch=69b907eb13a84022525e5d1c",
+            "notes_en": "https://fs1qydv17g1-161-162e5df28a45.herokuapp.com/dl/69b907f213a84022525e5d1f",
+            "notes_hi": "https://fs1qydv17g1-161-162e5df28a45.herokuapp.com/dl/69b907fa13a84022525e5d25",
+            "quiz": "https://fs1qydv17g1-161-162e5df28a45.herokuapp.com/dl/69b9080213a84022525e5d27",
+            "handwritten": "https://fs1qydv17g1-161-162e5df28a45.herokuapp.com/dl/69b9080b13a84022525e5d29",
+            "downloadUrl": "https://publicbotshub.blogspot.com/p/file-stream-bot.html?dl=69b907eb13a84022525e5d1c"
+          }
+        },
+        {
+          "title": "HISTORY TEST 5",
+          "links": {
+            "quiz": "https://fs1qydv17g1-161-162e5df28a45.herokuapp.com/dl/69c8d4c103ce62c2c595f92b"
+          }
+        },
+        {
+          "title": "FULL HISTORY TEST",
+          "links": {
+            "quiz": "https://vividxfullhistorytest.edgeone.app/"
+          }
+        }
+      ]
+    },
+    "GEOGRAPHY": {
+      "lectures": [
+        {
+          "title": "SOLAR SYSTEM - LEC 1",
+          "links": {
+            "notes_en": "https://fs1qydv17g1-161-162e5df28a45.herokuapp.com/dl/69b8fa9513a84022525e5a93",
+            "notes_hi": "https://fs1qydv17g1-161-162e5df28a45.herokuapp.com/dl/69b8fa9513a84022525e5a92",
+            "quiz": "https://fs1qydv17g1-161-162e5df28a45.herokuapp.com/dl/69b8fac813a84022525e5a9a",
+            "handwritten": "https://fs1qydv17g1-161-162e5df28a45.herokuapp.com/dl/69b8fac813a84022525e5a99"
+          }
+        },
+        {
+          "title": "LATITUDE AND LONGITUDE - LEC 2",
+          "links": {
+            "url": "https://publicbotshub.blogspot.com/p/file-stream-bot.html?watch=69b8fac813a84022525e5a97",
+            "notes_en": "https://fs1qydv17g1-161-162e5df28a45.herokuapp.com/dl/69b8fac813a84022525e5a98",
+            "notes_hi": "https://fs1qydv17g1-161-162e5df28a45.herokuapp.com/dl/69b8fac813a84022525e5a9",
+            "quiz": "https://fs1qydv17g1-161-162e5df28a45.herokuapp.com/dl/69b8fac913a84022525e5a9b",
+            "handwritten": "https://fs1qydv17g1-161-162e5df28a45.herokuapp.com/dl/69b8fad213a84022525e5aa2",
+            "downloadUrl": "https://publicbotshub.blogspot.com/p/file-stream-bot.html?dl=69b8fac813a84022525e5a97"
+          }
+        },
+        {
+          "title": "EARTH'S INTERIOR AND PLATE TECHTONICS - LEC 3",
+          "links": {
+            "url": "https://publicbotshub.blogspot.com/p/file-stream-bot.html?watch=69b8fad213a84022525e5aa3",
+            "notes_en": "https://fs1qydv17g1-161-162e5df28a45.herokuapp.com/dl/69b8fad213a84022525e5aa4",
+            "notes_hi": "https://fs1qydv17g1-161-162e5df28a45.herokuapp.com/dl/69b8fad213a84022525e5aa5",
+            "quiz": "https://fs1qydv17g1-161-162e5df28a45.herokuapp.com/dl/69b8fae813a84022525e5aaa",
+            "handwritten": "https://fs1qydv17g1-161-162e5df28a45.herokuapp.com/dl/69b8fae813a84022525e5aac",
+            "downloadUrl": "https://publicbotshub.blogspot.com/p/file-stream-bot.html?dl=69b8fad213a84022525e5aa3"
+          }
+        },
+        {
+          "title": "OCEAN AND CONTINENTS - LEC 4",
+          "links": {
+            "url": "https://publicbotshub.blogspot.com/p/file-stream-bot.html?watch=69b8fae813a84022525e5aad",
+            "notes_en": "https://fs1qydv17g1-161-162e5df28a45.herokuapp.com/dl/69b8fae813a84022525e5aae",
+            "notes_hi": "https://fs1qydv17g1-161-162e5df28a45.herokuapp.com/dl/69b8fae813a84022525e5aaf",
+            "quiz": "https://fs1qydv17g1-161-162e5df28a45.herokuapp.com/dl/69b8fae813a84022525e5aab",
+            "handwritten": "https://fs1qydv17g1-161-162e5df28a45.herokuapp.com/dl/69b8fb0e13a84022525e5ab6",
+            "downloadUrl": "https://publicbotshub.blogspot.com/p/file-stream-bot.html?dl=69b8fae813a84022525e5aad"
+          }
+        },
+        {
+          "title": "ROCKS AND VOLCANO - LEC 5",
+          "links": {
+            "url": "https://publicbotshub.blogspot.com/p/file-stream-bot.html?watch=69b8fc3f13a84022525e5acc",
+            "notes_en": "https://fs1qydv17g1-161-162e5df28a45.herokuapp.com/dl/69b8fc4713a84022525e5ace",
+            "notes_hi": "https://fs1qydv17g1-161-162e5df28a45.herokuapp.com/dl/69b8fc5113a84022525e5ad0",
+            "quiz": "https://fs1qydv17g1-161-162e5df28a45.herokuapp.com/dl/69b8fc5913a84022525e5ad2",
+            "handwritten": "https://fs1qydv17g1-161-162e5df28a45.herokuapp.com/dl/69b8fc6213a84022525e5ad4",
+            "downloadUrl": "https://publicbotshub.blogspot.com/p/file-stream-bot.html?dl=69b8fc3f13a84022525e5acc"
+          }
+        },
+        {
+          "title": "GEOMORPHIC PROCESSES - LEC 6",
+          "links": {
+            "url": "https://publicbotshub.blogspot.com/p/file-stream-bot.html?watch=69b8fc7313a84022525e5ad6",
+            "notes_en": "https://fs1qydv17g1-161-162e5df28a45.herokuapp.com/dl/69b8f3e213a84022525e5977",
+            "notes_hi": "https://fs1qydv17g1-161-162e5df28a45.herokuapp.com/dl/69b8f3ed13a84022525e5979",
+            "quiz": "https://fs1qydv17g1-161-162e5df28a45.herokuapp.com/dl/69b8fcb513a84022525e5ada",
+            "handwritten": "https://fs1qydv17g1-161-162e5df28a45.herokuapp.com/dl/69b8fcbf13a84022525e5adc",
+            "downloadUrl": "https://publicbotshub.blogspot.com/p/file-stream-bot.html?dl=69b8fc7313a84022525e5ad6"
+          }
+        },
+        {
+          "title": "LANDFORMS - LEC 7",
+          "links": {
+            "url": "https://publicbotshub.blogspot.com/p/file-stream-bot.html?watch=69b8fcca13a84022525e5ade",
+            "notes_en": "https://fs1qydv17g1-161-162e5df28a45.herokuapp.com/dl/69b8fcd213a84022525e5ae0",
+            "notes_hi": "https://fs1qydv17g1-161-162e5df28a45.herokuapp.com/dl/69b8fcda13a84022525e5ae2",
+            "quiz": "https://fs1qydv17g1-161-162e5df28a45.herokuapp.com/dl/69b8fce513a84022525e5ae4",
+            "handwritten": "https://fs1qydv17g1-161-162e5df28a45.herokuapp.com/dl/69b8fcf113a84022525e5ae6",
+            "downloadUrl": "https://publicbotshub.blogspot.com/p/file-stream-bot.html?dl=69b8fcca13a84022525e5ade"
+          }
+        },
+        {
+          "title": "ATMOSPHERE - LEC 8",
+          "links": {
+            "url": "https://publicbotshub.blogspot.com/p/file-stream-bot.html?watch=69b8fcf913a84022525e5ae8",
+            "notes_en": "https://fs1qydv17g1-161-162e5df28a45.herokuapp.com/dl/69b8fd0313a84022525e5aea",
+            "notes_hi": "https://fs1qydv17g1-161-162e5df28a45.herokuapp.com/dl/69b8fd0f13a84022525e5aec",
+            "quiz": "https://fs1qydv17g1-161-162e5df28a45.herokuapp.com/dl/69b8fd1813a84022525e5aee",
+            "handwritten": "https://fs1qydv17g1-161-162e5df28a45.herokuapp.com/dl/69b8fd2013a84022525e5af0",
+            "downloadUrl": "https://publicbotshub.blogspot.com/p/file-stream-bot.html?dl=69b8fcf913a84022525e5ae8"
+          }
+        },
+        {
+          "title": "CONDENSATION AND PRECIPITATION - LEC 9",
+          "links": {
+            "url": "https://publicbotshub.blogspot.com/p/file-stream-bot.html?watch=69b8fd2913a84022525e5af2",
+            "notes_en": "https://fs1qydv17g1-161-162e5df28a45.herokuapp.com/dl/69b8fd3113a84022525e5af4",
+            "notes_hi": "https://fs1qydv17g1-161-162e5df28a45.herokuapp.com/dl/69b8fd3913a84022525e5af6",
+            "quiz": "https://fs1qydv17g1-161-162e5df28a45.herokuapp.com/dl/69b8fd4313a84022525e5af8",
+            "handwritten": "https://fs1qydv17g1-161-162e5df28a45.herokuapp.com/dl/69b8fd4a13a84022525e5afa",
+            "downloadUrl": "https://publicbotshub.blogspot.com/p/file-stream-bot.html?dl=69b8fd2913a84022525e5af2"
+          }
+        },
+        {
+          "title": "WIND - LEC 10",
+          "links": {
+            "url": "https://publicbotshub.blogspot.com/p/file-stream-bot.html?watch=69b8fd5213a84022525e5afc",
+            "notes_en": "https://fs1qydv17g1-161-162e5df28a45.herokuapp.com/dl/69b8fd5d13a84022525e5afe",
+            "notes_hi": "https://fs1qydv17g1-161-162e5df28a45.herokuapp.com/dl/69b8fd6513a84022525e5b00",
+            "quiz": "https://fs1qydv17g1-161-162e5df28a45.herokuapp.com/dl/69b8fd7213a84022525e5b02",
+            "handwritten": "https://fs1qydv17g1-161-162e5df28a45.herokuapp.com/dl/69b8fd7a13a84022525e5b04",
+            "downloadUrl": "https://publicbotshub.blogspot.com/p/file-stream-bot.html?dl=69b8fd5213a84022525e5afc"
+          }
+        },
+        {
+          "title": "CYCLONE AND OCEAN CURRENTS - LEC 11",
+          "links": {
+            "url": "https://publicbotshub.blogspot.com/p/file-stream-bot.html?watch=69b8fd8213a84022525e5b06",
+            "notes_en": "https://fs1qydv17g1-161-162e5df28a45.herokuapp.com/dl/69b8fd8a13a84022525e5b08",
+            "notes_hi": "https://fs1qydv17g1-161-162e5df28a45.herokuapp.com/dl/69b8fd9713a84022525e5b0a",
+            "quiz": "https://fs1qydv17g1-161-162e5df28a45.herokuapp.com/dl/69b8fd9e13a84022525e5b0c",
+            "handwritten": "https://fs1qydv17g1-161-162e5df28a45.herokuapp.com/dl/69b8fda713a84022525e5b0e",
+            "downloadUrl": "https://publicbotshub.blogspot.com/p/file-stream-bot.html?dl=69b8fd8213a84022525e5b06"
+          }
+        },
+        {
+          "title": "INDIA AND IT'S LOCATION - LEC 12",
+          "links": {
+            "url": "https://publicbotshub.blogspot.com/p/file-stream-bot.html?watch=69b8fdb213a84022525e5b10",
+            "notes_en": "https://fs1qydv17g1-161-162e5df28a45.herokuapp.com/dl/69b8fdb913a84022525e5b12",
+            "notes_hi": "https://fs1qydv17g1-161-162e5df28a45.herokuapp.com/dl/69b8fdc513a84022525e5b14",
+            "quiz": "https://fs1qydv17g1-161-162e5df28a45.herokuapp.com/dl/69b8fdce13a84022525e5b16",
+            "handwritten": "https://fs1qydv17g1-161-162e5df28a45.herokuapp.com/dl/69b8fdd813a84022525e5b18",
+            "downloadUrl": "https://publicbotshub.blogspot.com/p/file-stream-bot.html?dl=69b8fdb213a84022525e5b10"
+          }
+        },
+        {
+          "title": "HIMALAYAS - LEC 13",
+          "links": {
+            "url": "https://publicbotshub.blogspot.com/p/file-stream-bot.html?watch=69b8fde713a84022525e5b1a",
+            "notes_en": "https://fs1qydv17g1-161-162e5df28a45.herokuapp.com/dl/69b8fdef13a84022525e5b1c",
+            "notes_hi": "https://fs1qydv17g1-161-162e5df28a45.herokuapp.com/dl/69b8fdf713a84022525e5b1e",
+            "quiz": "https://fs1qydv17g1-161-162e5df28a45.herokuapp.com/dl/69b8fdff13a84022525e5b20",
+            "handwritten": "https://fs1qydv17g1-161-162e5df28a45.herokuapp.com/dl/69b8fe0713a84022525e5b22",
+            "downloadUrl": "https://publicbotshub.blogspot.com/p/file-stream-bot.html?dl=69b8fde713a84022525e5b1a"
+          }
+        },
+        {
+          "title": "PENINSULAR PLATEAU - LEC 14",
+          "links": {
+            "url": "https://publicbotshub.blogspot.com/p/file-stream-bot.html?watch=69b8fe0f13a84022525e5b24",
+            "notes_en": "https://fs1qydv17g1-161-162e5df28a45.herokuapp.com/dl/69b8fe1713a84022525e5b26",
+            "notes_hi": "https://fs1qydv17g1-161-162e5df28a45.herokuapp.com/dl/69b8fe1f13a84022525e5b28",
+            "quiz": "https://fs1qydv17g1-161-162e5df28a45.herokuapp.com/dl/69b8fe2713a84022525e5b2a",
+            "handwritten": "https://fs1qydv17g1-161-162e5df28a45.herokuapp.com/dl/69b8fe2f13a84022525e5b2c",
+            "downloadUrl": "https://publicbotshub.blogspot.com/p/file-stream-bot.html?dl=69b8fe0f13a84022525e5b24"
+          }
+        },
+        {
+          "title": "PLAINS AND ISLANDS - LEC 15",
+          "links": {
+            "url": "https://publicbotshub.blogspot.com/p/file-stream-bot.html?watch=69ca0965b22de884d2a0f039",
+            "notes_en": "https://fs1qydv17g1-161-162e5df28a45.herokuapp.com/dl/69b8fe4113a84022525e5b30",
+            "notes_hi": "https://fs1qydv17g1-161-162e5df28a45.herokuapp.com/dl/69b8fe4b13a84022525e5b32",
+            "quiz": "https://fs1qydv17g1-161-162e5df28a45.herokuapp.com/dl/69b8fe5313a84022525e5b34",
+            "handwritten": "https://fs1qydv17g1-161-162e5df28a45.herokuapp.com/dl/69b8fe5b13a84022525e5b36",
+            "downloadUrl": "https://publicbotshub.blogspot.com/p/file-stream-bot.html?dl=69ca0965b22de884d2a0f039"
+          }
+        },
+        {
+          "title": "HIMALAYAN RIVER SYSTEM - LEC 16",
+          "links": {
+            "url": "https://publicbotshub.blogspot.com/p/file-stream-bot.html?watch=69b8fe6413a84022525e5b38",
+            "notes_en": "https://fs1qydv17g1-161-162e5df28a45.herokuapp.com/dl/69b8fe6c13a84022525e5b3a",
+            "notes_hi": "https://fs1qydv17g1-161-162e5df28a45.herokuapp.com/dl/69b8fe7413a84022525e5b3c",
+            "quiz": "https://fs1qydv17g1-161-162e5df28a45.herokuapp.com/dl/69b8fe7c13a84022525e5b3e",
+            "handwritten": "https://fs1qydv17g1-161-162e5df28a45.herokuapp.com/dl/69b8fe8313a84022525e5b40",
+            "downloadUrl": "https://publicbotshub.blogspot.com/p/file-stream-bot.html?dl=69b8fe6413a84022525e5b38"
+          }
+        },
+        {
+          "title": "RIVER SYSTEM MCQs",
+          "links": {
+            "url": "https://publicbotshub.blogspot.com/p/file-stream-bot.html?watch=69b8fe8c13a84022525e5b42",
+            "notes_en": "https://fs1qydv17g1-161-162e5df28a45.herokuapp.com/dl/69b8fe9413a84022525e5b44",
+            "downloadUrl": "https://publicbotshub.blogspot.com/p/file-stream-bot.html?dl=69b8fe8c13a84022525e5b42"
+          }
+        },
+        {
+          "title": "PENINSULAR RIVERS - LEC 17",
+          "links": {
+            "url": "https://publicbotshub.blogspot.com/p/file-stream-bot.html?watch=69b8fe9c13a84022525e5b46",
+            "notes_en": "https://fs1qydv17g1-161-162e5df28a45.herokuapp.com/dl/69b8fea413a84022525e5b48",
+            "notes_hi": "https://fs1qydv17g1-161-162e5df28a45.herokuapp.com/dl/69b8feae13a84022525e5b4a",
+            "quiz": "https://fs1qydv17g1-161-162e5df28a45.herokuapp.com/dl/69b8feb513a84022525e5b4c",
+            "handwritten": "https://fs1qydv17g1-161-162e5df28a45.herokuapp.com/dl/69b8febe13a84022525e5b4e",
+            "downloadUrl": "https://publicbotshub.blogspot.com/p/file-stream-bot.html?dl=69b8fe9c13a84022525e5b46"
+          }
+        },
+        {
+          "title": "DAMS , LAKES AND WATERFALLS - LEC 18",
+          "links": {
+            "url": "https://publicbotshub.blogspot.com/p/file-stream-bot.html?watch=69b8fec713a84022525e5b50",
+            "notes_en": "https://fs1qydv17g1-161-162e5df28a45.herokuapp.com/dl/69b8f5c113a84022525e59f4",
+            "notes_hi": "https://fs1qydv17g1-161-162e5df28a45.herokuapp.com/dl/69b8f5c713a84022525e59f6",
+            "quiz": "https://fs1qydv17g1-161-162e5df28a45.herokuapp.com/dl/69b8fef813a84022525e5b54",
+            "handwritten": "https://fs1qydv17g1-161-162e5df28a45.herokuapp.com/dl/69b8f5d413a84022525e59fa",
+            "downloadUrl": "https://publicbotshub.blogspot.com/p/file-stream-bot.html?dl=69b8fec713a84022525e5b50"
+          }
+        },
+        {
+          "title": "MONSOON - LEC 19",
+          "links": {
+            "url": "https://publicbotshub.blogspot.com/p/file-stream-bot.html?watch=69b8ff1613a84022525e5b57",
+            "notes_en": "https://fs1qydv17g1-161-162e5df28a45.herokuapp.com/dl/69b8ff1f13a84022525e5b59",
+            "notes_hi": "https://fs1qydv17g1-161-162e5df28a45.herokuapp.com/dl/69b8ff2713a84022525e5b5b",
+            "quiz": "https://fs1qydv17g1-161-162e5df28a45.herokuapp.com/dl/69b8ff2f13a84022525e5b5d",
+            "handwritten": "https://fs1qydv17g1-161-162e5df28a45.herokuapp.com/dl/69b8ff3913a84022525e5b5f",
+            "downloadUrl": "https://publicbotshub.blogspot.com/p/file-stream-bot.html?dl=69b8ff1613a84022525e5b57"
+          }
+        },
+        {
+          "title": "MONSOON MCQs",
+          "links": {
+            "url": "https://publicbotshub.blogspot.com/p/file-stream-bot.html?watch=69b8ff4013a84022525e5b61",
+            "notes_en": "https://fs1qydv17g1-161-162e5df28a45.herokuapp.com/dl/69b8ff4913a84022525e5b63",
+            "downloadUrl": "https://publicbotshub.blogspot.com/p/file-stream-bot.html?dl=69b8ff4013a84022525e5b61"
+          }
+        },
+        {
+          "title": "FORESTS AND GRASSLANDS - LEC 20",
+          "links": {
+            "url": "https://publicbotshub.blogspot.com/p/file-stream-bot.html?watch=69b8ff5013a84022525e5b65",
+            "notes_en": "https://fs1qydv17g1-161-162e5df28a45.herokuapp.com/dl/69b8ff5d13a84022525e5b67",
+            "notes_hi": "https://fs1qydv17g1-161-162e5df28a45.herokuapp.com/dl/69b8ff6513a84022525e5b69",
+            "quiz": "https://fs1qydv17g1-161-162e5df28a45.herokuapp.com/dl/69b8ff6e13a84022525e5b6b",
+            "handwritten": "https://fs1qydv17g1-161-162e5df28a45.herokuapp.com/dl/69b8ff7613a84022525e5b6d",
+            "downloadUrl": "https://publicbotshub.blogspot.com/p/file-stream-bot.html?dl=69b8ff5013a84022525e5b65"
+          }
+        },
+        {
+          "title": "SOIL - LEC 21",
+          "links": {
+            "url": "https://publicbotshub.blogspot.com/p/file-stream-bot.html?watch=69b8ff7f13a84022525e5b6f",
+            "notes_en": "https://fs1qydv17g1-161-162e5df28a45.herokuapp.com/dl/69b8ff8713a84022525e5b71",
+            "notes_hi": "https://fs1qydv17g1-161-162e5df28a45.herokuapp.com/dl/69b8ff8f13a84022525e5b73",
+            "quiz": "https://fs1qydv17g1-161-162e5df28a45.herokuapp.com/dl/69b8ff9b13a84022525e5b75",
+            "handwritten": "https://fs1qydv17g1-161-162e5df28a45.herokuapp.com/dl/69b8ffa613a84022525e5b77",
+            "downloadUrl": "https://publicbotshub.blogspot.com/p/file-stream-bot.html?dl=69b8ff7f13a84022525e5b6f"
+          }
+        },
+        {
+          "title": "AGRICULTURE - LEC 22",
+          "links": {
+            "url": "https://publicbotshub.blogspot.com/p/file-stream-bot.html?watch=69b8ffaf13a84022525e5b79",
+            "notes_en": "https://fs1qydv17g1-161-162e5df28a45.herokuapp.com/dl/69b8ffb713a84022525e5b7b",
+            "notes_hi": "https://fs1qydv17g1-161-162e5df28a45.herokuapp.com/dl/69b8ffbf13a84022525e5b7d",
+            "quiz": "https://fs1qydv17g1-161-162e5df28a45.herokuapp.com/dl/69b8ffc813a84022525e5b7f",
+            "handwritten": "https://fs1qydv17g1-161-162e5df28a45.herokuapp.com/dl/69b8ffd213a84022525e5b81",
+            "downloadUrl": "https://publicbotshub.blogspot.com/p/file-stream-bot.html?dl=69b8ffaf13a84022525e5b79"
+          }
+        },
+        {
+          "title": "MINERALS - LEC 23",
+          "links": {
+            "url": "https://publicbotshub.blogspot.com/p/file-stream-bot.html?watch=69b8ffda13a84022525e5b83",
+            "notes_en": "https://fs1qydv17g1-161-162e5df28a45.herokuapp.com/dl/69b8ffe213a84022525e5b85",
+            "notes_hi": "https://fs1qydv17g1-161-162e5df28a45.herokuapp.com/dl/69b8ffec13a84022525e5b87",
+            "quiz": "https://fs1qydv17g1-161-162e5df28a45.herokuapp.com/dl/69b8fff913a84022525e5b89",
+            "handwritten": "https://fs1qydv17g1-161-162e5df28a45.herokuapp.com/dl/69b9000213a84022525e5b8b",
+            "downloadUrl": "https://publicbotshub.blogspot.com/p/file-stream-bot.html?dl=69b8ffda13a84022525e5b83"
+          }
+        },
+        {
+          "title": "TRANSPORT - LEC 24",
+          "links": {
+            "url": "https://publicbotshub.blogspot.com/p/file-stream-bot.html?watch=69b9000a13a84022525e5b8d",
+            "notes_en": "https://fs1qydv17g1-161-162e5df28a45.herokuapp.com/dl/69b9001213a84022525e5b8f",
+            "notes_hi": "https://fs1qydv17g1-161-162e5df28a45.herokuapp.com/dl/69b9001c13a84022525e5b91",
+            "quiz": "https://fs1qydv17g1-161-162e5df28a45.herokuapp.com/dl/69b9002813a84022525e5b93",
+            "handwritten": "https://fs1qydv17g1-161-162e5df28a45.herokuapp.com/dl/69b9003313a84022525e5b95",
+            "downloadUrl": "https://publicbotshub.blogspot.com/p/file-stream-bot.html?dl=69b9000a13a84022525e5b8d"
+          }
+        },
+        {
+          "title": "WORLD MAP PART 1 - LEC 25",
+          "links": {
+            "url": "https://publicbotshub.blogspot.com/p/file-stream-bot.html?watch=69b9003b13a84022525e5b97",
+            "handwritten": "https://fs1qydv17g1-161-162e5df28a45.herokuapp.com/dl/69b9004413a84022525e5b99",
+            "downloadUrl": "https://publicbotshub.blogspot.com/p/file-stream-bot.html?dl=69b9003b13a84022525e5b97"
+          }
+        },
+        {
+          "title": "WORLD MAP PART 2 - LEC 26",
+          "links": {
+            "notes_en": "https://fs1qydv17g1-161-162e5df28a45.herokuapp.com/dl/69b8f6bd13a84022525e5a42",
+            "notes_hi": "https://fs1qydv17g1-161-162e5df28a45.herokuapp.com/dl/69b9010913a84022525e5ba8",
+            "quiz": "https://fs1qydv17g1-161-162e5df28a45.herokuapp.com/dl/69b9011013a84022525e5baa",
+            "handwritten": "https://fs1qydv17g1-161-162e5df28a45.herokuapp.com/dl/69b9011913a84022525e5bac"
+          }
+        },
+        {
+          "title": "HUMAN GEOGRAPHY - LEC 27",
+          "links": {
+            "url": "https://publicbotshub.blogspot.com/p/file-stream-bot.html?watch=69b9012113a84022525e5bae",
+            "notes_en": "https://fs1qydv17g1-161-162e5df28a45.herokuapp.com/dl/69b9012a13a84022525e5bb0",
+            "notes_hi": "https://fs1qydv17g1-161-162e5df28a45.herokuapp.com/dl/69b9013513a84022525e5bb2",
+            "quiz": "https://fs1qydv17g1-161-162e5df28a45.herokuapp.com/dl/69b9014213a84022525e5bb4",
+            "handwritten": "https://fs1qydv17g1-161-162e5df28a45.herokuapp.com/dl/69b9014b13a84022525e5bb6",
+            "downloadUrl": "https://publicbotshub.blogspot.com/p/file-stream-bot.html?dl=69b9012113a84022525e5bae"
+          }
+        },
+        {
+          "title": "GEOGRAPHY TEST 1",
+          "links": {
+            "quiz": "https://fs1qydv17g1-161-162e5df28a45.herokuapp.com/dl/69c8d4f003ce62c2c595f937"
+          }
+        },
+        {
+          "title": "GEOGRAPHY TEST 2",
+          "links": {
+            "quiz": "https://fs1qydv17g1-161-162e5df28a45.herokuapp.com/dl/69c8d4f603ce62c2c595f939"
+          }
+        },
+        {
+          "title": "GEOGRAPHY TEST 3",
+          "links": {
+            "quiz": "https://fs1qydv17g1-161-162e5df28a45.herokuapp.com/dl/69c8d4fb03ce62c2c595f93b"
+          }
+        },
+        {
+          "title": "GEOGRAPHY TEST 4",
+          "links": {
+            "quiz": "https://fs1qydv17g1-161-162e5df28a45.herokuapp.com/dl/69c8d50103ce62c2c595f93d"
+          }
+        },
+        {
+          "title": "GEOGRAPHY TEST 5",
+          "links": {
+            "quiz": "https://fs1qydv17g1-161-162e5df28a45.herokuapp.com/dl/69c8d51203ce62c2c595f93f"
+          }
+        },
+        {
+          "title": "GEOGRAPHY TEST 6",
+          "links": {
+            "quiz": "https://fs1qydv17g1-161-162e5df28a45.herokuapp.com/dl/69c8d51d03ce62c2c595f941"
+          }
+        },
+        {
+          "title": "FULL GEOGRAPHY TEST",
+          "links": {
+            "quiz": "https://vividxfullgeotest.edgeone.app/"
+          }
+        }
+      ]
+    },
+    "ENVIROMENT AND ECOLOGY": {
+      "lectures": [
+        {
+          "title": "DIFFERENT CYCLES",
+          "links": {
+            "notes_en": "https://fs1qydv17g1-161-162e5df28a45.herokuapp.com/dl/69d0a6116d440ae7398a4ea9",
+            "notes_hi": "https://fs1qydv17g1-161-162e5df28a45.herokuapp.com/dl/69d0a61c6d440ae7398a4eab"
+          }
+        },
+        {
+          "title": "ENVIROMENT AND ECOLOGY - LEC 1",
+          "links": {
+            "url": "https://publicbotshub.blogspot.com/p/file-stream-bot.html?watch=69d0a6256d440ae7398a4ead",
+            "notes_en": "https://fs1qydv17g1-161-162e5df28a45.herokuapp.com/dl/69d0a62c6d440ae7398a4eaf",
+            "downloadUrl": "https://publicbotshub.blogspot.com/p/file-stream-bot.html?dl=69d0a6256d440ae7398a4ead"
+          }
+        },
+        {
+          "title": "ENVIROMENT AND ECOLOGY - LEC 2",
+          "links": {
+            "url": "https://publicbotshub.blogspot.com/p/file-stream-bot.html?watch=69d0a63d6d440ae7398a4eb3",
+            "notes_en": "https://fs1qydv17g1-161-162e5df28a45.herokuapp.com/dl/69d0a6436d440ae7398a4eb5",
+            "notes_hi": "https://fs1qydv17g1-161-162e5df28a45.herokuapp.com/dl/69d0a6486d440ae7398a4eb7",
+            "downloadUrl": "https://publicbotshub.blogspot.com/p/file-stream-bot.html?dl=69d0a63d6d440ae7398a4eb3"
+          }
+        },
+        {
+          "title": "ENVIROMENT AND ECOLOGY - LEC 3",
+          "links": {
+            "url": "https://publicbotshub.blogspot.com/p/file-stream-bot.html?watch=69d0a64f6d440ae7398a4eb9",
+            "notes_en": "https://fs1qydv17g1-161-162e5df28a45.herokuapp.com/dl/69d0a6566d440ae7398a4ebb",
+            "notes_hi": "https://fs1qydv17g1-161-162e5df28a45.herokuapp.com/dl/69d0a65d6d440ae7398a4ebd",
+            "downloadUrl": "https://publicbotshub.blogspot.com/p/file-stream-bot.html?dl=69d0a64f6d440ae7398a4eb9"
+          }
+        }
+      ]
+    }
+  },
+  "category": "government"
+}

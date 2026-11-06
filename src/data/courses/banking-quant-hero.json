@@ -1,0 +1,1247 @@
+{
+  "id": "banking-quant-hero",
+  "name": "Banking Quantitative Aptitude (Quant)",
+  "subname": "The Maths Hero Complete Quant for SBI PO, IBPS PO, RRB & RBI",
+  "teacher": "Aashish Arora Sir",
+  "subject": "Banking",
+  "category": "gov-exams",
+  "thumb": "https://files.catbox.moe/97ydfl.jpg",
+  "desc": "Complete Banking Quantitative Aptitude curriculum by Aashish Arora Sir. Video lectures streamed via custom StreamP2P player on stutosed.strp2p.site with high-yield PDF notes & practice sheets directly accessible without login.",
+  "isFolderMode": true,
+  "tabs": [
+    {
+      "id": "speed-maths",
+      "label": "01. Speed Maths & Vedic Maths",
+      "subname": "10 items (1 Videos & 9 Practice Sheets)",
+      "thumb": "https://files.catbox.moe/97ydfl.jpg",
+      "items": [
+        {
+          "id": "paxide",
+          "label": "Speed Math-Vedic Math - Part I",
+          "url": "https://stutosed.strp2p.site/#pending-paxide",
+          "type": "streamp2p",
+          "thumb": "https://files.catbox.moe/97ydfl.jpg",
+          "duration": 8369,
+          "category": "videos",
+          "subject": "Speed Maths",
+          "folderName": "Speed Maths",
+          "servers": [
+            {
+              "name": "StreamP2P Player",
+              "url": "https://stutosed.strp2p.site/#pending-paxide",
+              "type": "streamp2p"
+            }
+          ]
+        },
+        {
+          "id": "pdf-003",
+          "label": "Speed Math-Vedic Math - Part I (Notes 1)",
+          "url": "https://files.catbox.moe/zodex3.pdf",
+          "downloadUrl": "https://files.catbox.moe/zodex3.pdf",
+          "type": "pdf",
+          "thumb": "https://files.catbox.moe/97ydfl.jpg",
+          "category": "pdfs",
+          "subject": "Speed Maths",
+          "folderName": "Speed Maths"
+        },
+        {
+          "id": "pdf-004",
+          "label": "Speed Math-Vedic Math - Part I (Notes 2)",
+          "url": "https://files.catbox.moe/ctbqtp.pdf",
+          "downloadUrl": "https://files.catbox.moe/ctbqtp.pdf",
+          "type": "pdf",
+          "thumb": "https://files.catbox.moe/97ydfl.jpg",
+          "category": "pdfs",
+          "subject": "Speed Maths",
+          "folderName": "Speed Maths"
+        },
+        {
+          "id": "pdf-005",
+          "label": "Speed Maths Class 1 Practice Sheet (330 Questions)",
+          "url": "https://files.catbox.moe/1snl83.pdf",
+          "downloadUrl": "https://files.catbox.moe/1snl83.pdf",
+          "type": "pdf",
+          "thumb": "https://files.catbox.moe/97ydfl.jpg",
+          "category": "pdfs",
+          "subject": "Speed Maths",
+          "folderName": "Speed Maths"
+        },
+        {
+          "id": "pdf-007",
+          "label": "Speed Math-Vedic Math - Part II (Notes 1)",
+          "url": "https://files.catbox.moe/y41rvn.pdf",
+          "downloadUrl": "https://files.catbox.moe/y41rvn.pdf",
+          "type": "pdf",
+          "thumb": "https://files.catbox.moe/97ydfl.jpg",
+          "category": "pdfs",
+          "subject": "Speed Maths",
+          "folderName": "Speed Maths"
+        },
+        {
+          "id": "pdf-008",
+          "label": "Speed Math-Vedic Math - Part II (Notes 2)",
+          "url": "https://files.catbox.moe/1t32ey.pdf",
+          "downloadUrl": "https://files.catbox.moe/1t32ey.pdf",
+          "type": "pdf",
+          "thumb": "https://files.catbox.moe/97ydfl.jpg",
+          "category": "pdfs",
+          "subject": "Speed Maths",
+          "folderName": "Speed Maths"
+        },
+        {
+          "id": "pdf-010",
+          "label": "Base Method of Multiplication Percentage to Fraction (Notes)",
+          "url": "https://files.catbox.moe/brplnp.pdf",
+          "downloadUrl": "https://files.catbox.moe/brplnp.pdf",
+          "type": "pdf",
+          "thumb": "https://files.catbox.moe/97ydfl.jpg",
+          "category": "pdfs",
+          "subject": "Speed Maths",
+          "folderName": "Speed Maths"
+        },
+        {
+          "id": "pdf-012",
+          "label": "Speed Math-Vedic Math - Part III (Notes)",
+          "url": "https://files.catbox.moe/fvmnxy.pdf",
+          "downloadUrl": "https://files.catbox.moe/fvmnxy.pdf",
+          "type": "pdf",
+          "thumb": "https://files.catbox.moe/97ydfl.jpg",
+          "category": "pdfs",
+          "subject": "Speed Maths",
+          "folderName": "Speed Maths"
+        },
+        {
+          "id": "pdf-013",
+          "label": "Speed Maths Class 2 Practice Sheet (460 Questions)",
+          "url": "https://files.catbox.moe/9nlra9.pdf",
+          "downloadUrl": "https://files.catbox.moe/9nlra9.pdf",
+          "type": "pdf",
+          "thumb": "https://files.catbox.moe/97ydfl.jpg",
+          "category": "pdfs",
+          "subject": "Speed Maths",
+          "folderName": "Speed Maths"
+        },
+        {
+          "id": "pdf-014",
+          "label": "Speed Maths Class 3 Practice Sheet (300 Questions)",
+          "url": "https://files.catbox.moe/lpsuf0.pdf",
+          "downloadUrl": "https://files.catbox.moe/lpsuf0.pdf",
+          "type": "pdf",
+          "thumb": "https://files.catbox.moe/97ydfl.jpg",
+          "category": "pdfs",
+          "subject": "Speed Maths",
+          "folderName": "Speed Maths"
+        }
+      ]
+    },
+    {
+      "id": "simplification",
+      "label": "02. Simplification & Approximation",
+      "subname": "27 items (7 Videos & 20 Practice Sheets)",
+      "thumb": "https://asset.syncp2p.com/7OaeboLAYtfDhZ7DC5aX6g/qtd/krnvuoui/l1knbz/poster.png",
+      "items": [
+        {
+          "id": "pdf-015",
+          "label": "Simplification Approximation Part - 1 (Notes 1)",
+          "url": "https://files.catbox.moe/gn42rj.pdf",
+          "downloadUrl": "https://files.catbox.moe/gn42rj.pdf",
+          "type": "pdf",
+          "thumb": "https://files.catbox.moe/97ydfl.jpg",
+          "category": "pdfs",
+          "subject": "Simplification",
+          "folderName": "Simplification"
+        },
+        {
+          "id": "pdf-016",
+          "label": "Simplification Approximation Part - 1 (Notes 2)",
+          "url": "https://files.catbox.moe/zyw1xq.pdf",
+          "downloadUrl": "https://files.catbox.moe/zyw1xq.pdf",
+          "type": "pdf",
+          "thumb": "https://files.catbox.moe/97ydfl.jpg",
+          "category": "pdfs",
+          "subject": "Simplification",
+          "folderName": "Simplification"
+        },
+        {
+          "id": "pdf-017",
+          "label": "Simplification-Approximation Class 1 Practice Sheet",
+          "url": "https://files.catbox.moe/ou6osj.pdf",
+          "downloadUrl": "https://files.catbox.moe/ou6osj.pdf",
+          "type": "pdf",
+          "thumb": "https://files.catbox.moe/97ydfl.jpg",
+          "category": "pdfs",
+          "subject": "Simplification",
+          "folderName": "Simplification"
+        },
+        {
+          "id": "ung16w",
+          "label": "Simplification Approximation Part - 2",
+          "url": "https://stutosed.strp2p.site/#ung16w",
+          "type": "streamp2p",
+          "thumb": "https://asset.syncp2p.com/7OaeboLAYtfDhZ7DC5aX6g/qtd/krnvuoui/l1knbz/poster.png",
+          "preview": "https://asset.syncp2p.com/5x0wRtvfODtdKdDyhbrSQg/qtd/krnvuoui/l1knbz/preview.webp",
+          "duration": 4775,
+          "category": "videos",
+          "subject": "Simplification",
+          "folderName": "Simplification",
+          "servers": [
+            {
+              "name": "StreamP2P Player",
+              "url": "https://stutosed.strp2p.site/#ung16w",
+              "type": "streamp2p"
+            }
+          ]
+        },
+        {
+          "id": "pdf-019",
+          "label": "Simplification Approximation Part - 2 (Notes 1)",
+          "url": "https://files.catbox.moe/ajpp8s.pdf",
+          "downloadUrl": "https://files.catbox.moe/ajpp8s.pdf",
+          "type": "pdf",
+          "thumb": "https://files.catbox.moe/97ydfl.jpg",
+          "category": "pdfs",
+          "subject": "Simplification",
+          "folderName": "Simplification"
+        },
+        {
+          "id": "pdf-020",
+          "label": "Simplification Approximation Part - 2 (Notes 2)",
+          "url": "https://files.catbox.moe/rt33y2.pdf",
+          "downloadUrl": "https://files.catbox.moe/rt33y2.pdf",
+          "type": "pdf",
+          "thumb": "https://files.catbox.moe/97ydfl.jpg",
+          "category": "pdfs",
+          "subject": "Simplification",
+          "folderName": "Simplification"
+        },
+        {
+          "id": "pdf-021",
+          "label": "Maths Hero Simplification 2 Practice Sheet",
+          "url": "https://files.catbox.moe/0c29mt.pdf",
+          "downloadUrl": "https://files.catbox.moe/0c29mt.pdf",
+          "type": "pdf",
+          "thumb": "https://files.catbox.moe/97ydfl.jpg",
+          "category": "pdfs",
+          "subject": "Simplification",
+          "folderName": "Simplification"
+        },
+        {
+          "id": "asqeun",
+          "label": "Simplification Approximation Part - 3",
+          "url": "https://stutosed.strp2p.site/#asqeun",
+          "type": "streamp2p",
+          "thumb": "https://asset.syncp2p.com/SwHWj2-mvcZZat-n4mzj_A/unl/krnvuoui/x8gpjt/poster.png",
+          "preview": "https://asset.syncp2p.com/Xwo5Spm_zLpqQc4AszYcRg/unl/krnvuoui/x8gpjt/preview.webp",
+          "duration": 7012,
+          "category": "videos",
+          "subject": "Simplification",
+          "folderName": "Simplification",
+          "servers": [
+            {
+              "name": "StreamP2P Player",
+              "url": "https://stutosed.strp2p.site/#asqeun",
+              "type": "streamp2p"
+            }
+          ]
+        },
+        {
+          "id": "pdf-023",
+          "label": "Simplification Approximation Part - 3 (Notes 1)",
+          "url": "https://files.catbox.moe/j1k0n3.pdf",
+          "downloadUrl": "https://files.catbox.moe/j1k0n3.pdf",
+          "type": "pdf",
+          "thumb": "https://files.catbox.moe/97ydfl.jpg",
+          "category": "pdfs",
+          "subject": "Simplification",
+          "folderName": "Simplification"
+        },
+        {
+          "id": "pdf-024",
+          "label": "Simplification Approximation Part - 3 (Notes 2)",
+          "url": "https://files.catbox.moe/hw8pf4.pdf",
+          "downloadUrl": "https://files.catbox.moe/hw8pf4.pdf",
+          "type": "pdf",
+          "thumb": "https://files.catbox.moe/97ydfl.jpg",
+          "category": "pdfs",
+          "subject": "Simplification",
+          "folderName": "Simplification"
+        },
+        {
+          "id": "pdf-025",
+          "label": "Maths Hero Simplification Practice Sheet 3",
+          "url": "https://files.catbox.moe/331h8p.pdf",
+          "downloadUrl": "https://files.catbox.moe/331h8p.pdf",
+          "type": "pdf",
+          "thumb": "https://files.catbox.moe/97ydfl.jpg",
+          "category": "pdfs",
+          "subject": "Simplification",
+          "folderName": "Simplification"
+        },
+        {
+          "id": "3pmsgc",
+          "label": "Simplification Approximation Part - 4",
+          "url": "https://stutosed.strp2p.site/#3pmsgc",
+          "type": "streamp2p",
+          "thumb": "https://asset.syncp2p.com/5ynMxh77KQj4iEeUzpJ9-A/unl/krnvuoui/hapdwp/poster.png",
+          "preview": "https://asset.syncp2p.com/DFaj8ebOeP8-tiXDvZxJbg/unl/krnvuoui/hapdwp/preview.webp",
+          "duration": 6079,
+          "category": "videos",
+          "subject": "Simplification",
+          "folderName": "Simplification",
+          "servers": [
+            {
+              "name": "StreamP2P Player",
+              "url": "https://stutosed.strp2p.site/#3pmsgc",
+              "type": "streamp2p"
+            }
+          ]
+        },
+        {
+          "id": "pdf-027",
+          "label": "Simplification Approximation Part - 4 (Notes 1)",
+          "url": "https://files.catbox.moe/ecmxav.pdf",
+          "downloadUrl": "https://files.catbox.moe/ecmxav.pdf",
+          "type": "pdf",
+          "thumb": "https://files.catbox.moe/97ydfl.jpg",
+          "category": "pdfs",
+          "subject": "Simplification",
+          "folderName": "Simplification"
+        },
+        {
+          "id": "pdf-028",
+          "label": "Simplification Approximation Part - 4 (Notes 2)",
+          "url": "https://files.catbox.moe/9ut7ms.pdf",
+          "downloadUrl": "https://files.catbox.moe/9ut7ms.pdf",
+          "type": "pdf",
+          "thumb": "https://files.catbox.moe/97ydfl.jpg",
+          "category": "pdfs",
+          "subject": "Simplification",
+          "folderName": "Simplification"
+        },
+        {
+          "id": "8ckudr",
+          "label": "Simplification Approximation Part - 5",
+          "url": "https://stutosed.strp2p.site/#8ckudr",
+          "type": "streamp2p",
+          "thumb": "https://asset.syncp2p.com/hkPfp9i-mHLjROrAItpIhA/unl/krnvuoui/x8gp5n/poster.png",
+          "preview": "https://asset.syncp2p.com/8R4MaoCGzC9h5Or_uaneAw/unl/krnvuoui/x8gp5n/preview.webp",
+          "duration": 6486,
+          "category": "videos",
+          "subject": "Simplification",
+          "folderName": "Simplification",
+          "servers": [
+            {
+              "name": "StreamP2P Player",
+              "url": "https://stutosed.strp2p.site/#8ckudr",
+              "type": "streamp2p"
+            }
+          ]
+        },
+        {
+          "id": "pdf-030",
+          "label": "Simplification Approximation Part - 5 (Notes 1)",
+          "url": "https://files.catbox.moe/gtam6m.pdf",
+          "downloadUrl": "https://files.catbox.moe/gtam6m.pdf",
+          "type": "pdf",
+          "thumb": "https://files.catbox.moe/97ydfl.jpg",
+          "category": "pdfs",
+          "subject": "Simplification",
+          "folderName": "Simplification"
+        },
+        {
+          "id": "pdf-031",
+          "label": "Simplification Approximation Part - 5 (Notes 2)",
+          "url": "https://files.catbox.moe/uzxzuh.pdf",
+          "downloadUrl": "https://files.catbox.moe/uzxzuh.pdf",
+          "type": "pdf",
+          "thumb": "https://files.catbox.moe/97ydfl.jpg",
+          "category": "pdfs",
+          "subject": "Simplification",
+          "folderName": "Simplification"
+        },
+        {
+          "id": "5o9haw",
+          "label": "Simplification Approximation Part - 6",
+          "url": "https://stutosed.strp2p.site/#5o9haw",
+          "type": "streamp2p",
+          "thumb": "https://asset.syncp2p.com/w2oHNMOuVQ6Obbacf4NaaQ/qtd/krnvuoui/59ab5z/poster.png",
+          "preview": "https://asset.syncp2p.com/93su0dMDEPwoazeVKO5pQA/qtd/krnvuoui/59ab5z/preview.webp",
+          "duration": 4700,
+          "category": "videos",
+          "subject": "Simplification",
+          "folderName": "Simplification",
+          "servers": [
+            {
+              "name": "StreamP2P Player",
+              "url": "https://stutosed.strp2p.site/#5o9haw",
+              "type": "streamp2p"
+            }
+          ]
+        },
+        {
+          "id": "pdf-033",
+          "label": "Simplification Approximation Part - 6 (Notes 1)",
+          "url": "https://files.catbox.moe/4ovyuu.pdf",
+          "downloadUrl": "https://files.catbox.moe/4ovyuu.pdf",
+          "type": "pdf",
+          "thumb": "https://files.catbox.moe/97ydfl.jpg",
+          "category": "pdfs",
+          "subject": "Simplification",
+          "folderName": "Simplification"
+        },
+        {
+          "id": "pdf-034",
+          "label": "Simplification Approximation Part - 6 (Notes 2)",
+          "url": "https://files.catbox.moe/bn8kff.pdf",
+          "downloadUrl": "https://files.catbox.moe/bn8kff.pdf",
+          "type": "pdf",
+          "thumb": "https://files.catbox.moe/97ydfl.jpg",
+          "category": "pdfs",
+          "subject": "Simplification",
+          "folderName": "Simplification"
+        },
+        {
+          "id": "sk5mkc",
+          "label": "Simplification Approximation Part - 7",
+          "url": "https://stutosed.strp2p.site/#sk5mkc",
+          "type": "streamp2p",
+          "thumb": "https://asset.syncp2p.com/c4StMXXU2c-Uf_SgUF3jFw/qtd/krnvuoui/evsdl3/poster.png",
+          "preview": "https://asset.syncp2p.com/2wNXK3Y0yHikJGUZBkHzsg/qtd/krnvuoui/evsdl3/preview.webp",
+          "duration": 6483,
+          "category": "videos",
+          "subject": "Simplification",
+          "folderName": "Simplification",
+          "servers": [
+            {
+              "name": "StreamP2P Player",
+              "url": "https://stutosed.strp2p.site/#sk5mkc",
+              "type": "streamp2p"
+            }
+          ]
+        },
+        {
+          "id": "pdf-036",
+          "label": "Simplification Approximation Part - 7 (Notes 1)",
+          "url": "https://files.catbox.moe/aaz42c.pdf",
+          "downloadUrl": "https://files.catbox.moe/aaz42c.pdf",
+          "type": "pdf",
+          "thumb": "https://files.catbox.moe/97ydfl.jpg",
+          "category": "pdfs",
+          "subject": "Simplification",
+          "folderName": "Simplification"
+        },
+        {
+          "id": "pdf-037",
+          "label": "Simplification Approximation Part - 7 (Notes 2)",
+          "url": "https://files.catbox.moe/4y1jdq.pdf",
+          "downloadUrl": "https://files.catbox.moe/4y1jdq.pdf",
+          "type": "pdf",
+          "thumb": "https://files.catbox.moe/97ydfl.jpg",
+          "category": "pdfs",
+          "subject": "Simplification",
+          "folderName": "Simplification"
+        },
+        {
+          "id": "f1pbkw",
+          "label": "Simplification Approximation Part - 8",
+          "url": "https://stutosed.strp2p.site/#f1pbkw",
+          "type": "streamp2p",
+          "thumb": "https://asset.syncp2p.com/tqRUxoAAcXJi79K-bDs3Xg/unl/krnvuoui/mc69sl/poster.png",
+          "preview": "https://asset.syncp2p.com/gb7lIBhLft5jHsM00RN24Q/unl/krnvuoui/mc69sl/preview.webp",
+          "duration": 3857,
+          "category": "videos",
+          "subject": "Simplification",
+          "folderName": "Simplification",
+          "servers": [
+            {
+              "name": "StreamP2P Player",
+              "url": "https://stutosed.strp2p.site/#f1pbkw",
+              "type": "streamp2p"
+            }
+          ]
+        },
+        {
+          "id": "pdf-039",
+          "label": "Simplification Approximation Part - 8 (Notes 1)",
+          "url": "https://files.catbox.moe/4yg71h.pdf",
+          "downloadUrl": "https://files.catbox.moe/4yg71h.pdf",
+          "type": "pdf",
+          "thumb": "https://files.catbox.moe/97ydfl.jpg",
+          "category": "pdfs",
+          "subject": "Simplification",
+          "folderName": "Simplification"
+        },
+        {
+          "id": "pdf-040",
+          "label": "Simplification Approximation Part - 8 (Notes 2)",
+          "url": "https://files.catbox.moe/q8n3yg.pdf",
+          "downloadUrl": "https://files.catbox.moe/q8n3yg.pdf",
+          "type": "pdf",
+          "thumb": "https://files.catbox.moe/97ydfl.jpg",
+          "category": "pdfs",
+          "subject": "Simplification",
+          "folderName": "Simplification"
+        },
+        {
+          "id": "pdf-041",
+          "label": "Maths Hero Simplification Practice Sheet 4",
+          "url": "https://files.catbox.moe/jt1i8s.pdf",
+          "downloadUrl": "https://files.catbox.moe/jt1i8s.pdf",
+          "type": "pdf",
+          "thumb": "https://files.catbox.moe/97ydfl.jpg",
+          "category": "pdfs",
+          "subject": "Simplification",
+          "folderName": "Simplification"
+        }
+      ]
+    },
+    {
+      "id": "number-series",
+      "label": "03. Number Series (Missing & Wrong)",
+      "subname": "23 items (7 Videos & 16 Practice Sheets)",
+      "thumb": "https://asset.syncp2p.com/4aO74BovVqWvD3e8G_V-tw/qtd/krnvuoui/lq452z/poster.png",
+      "items": [
+        {
+          "id": "vhnziy",
+          "label": "Number Series Basic and Types",
+          "url": "https://stutosed.strp2p.site/#vhnziy",
+          "type": "streamp2p",
+          "thumb": "https://asset.syncp2p.com/3IgM9GOXedkyTTkXsZM3Tw/nc9/krnvuoui/i5hlwc/poster.png",
+          "preview": "https://asset.syncp2p.com/xSY2l4z8OQryOjkP_R4YPQ/nc9/krnvuoui/i5hlwc/preview.webp",
+          "duration": 6160,
+          "category": "videos",
+          "subject": "Number Series",
+          "folderName": "Number Series",
+          "servers": [
+            {
+              "name": "StreamP2P Player",
+              "url": "https://stutosed.strp2p.site/#vhnziy",
+              "type": "streamp2p"
+            }
+          ]
+        },
+        {
+          "id": "pdf-043",
+          "label": "Number Series Basic and Types (Notes)",
+          "url": "https://files.catbox.moe/19i148.pdf",
+          "downloadUrl": "https://files.catbox.moe/19i148.pdf",
+          "type": "pdf",
+          "thumb": "https://files.catbox.moe/97ydfl.jpg",
+          "category": "pdfs",
+          "subject": "Number Series",
+          "folderName": "Number Series"
+        },
+        {
+          "id": "3pmspu",
+          "label": "Number Series Basics Types 02",
+          "url": "https://stutosed.strp2p.site/#3pmspu",
+          "type": "streamp2p",
+          "thumb": "https://asset.syncp2p.com/BWlW5fkduML2TMRZn-fzaA/qtd/krnvuoui/pz9ob8/poster.png",
+          "preview": "https://asset.syncp2p.com/PA7KmDY-75zdF1ETb5y5Gg/qtd/krnvuoui/pz9ob8/preview.webp",
+          "duration": 3235,
+          "category": "videos",
+          "subject": "Number Series",
+          "folderName": "Number Series",
+          "servers": [
+            {
+              "name": "StreamP2P Player",
+              "url": "https://stutosed.strp2p.site/#3pmspu",
+              "type": "streamp2p"
+            }
+          ]
+        },
+        {
+          "id": "pdf-045",
+          "label": "Number Series Basics Types 02 (Notes)",
+          "url": "https://files.catbox.moe/0g0i85.pdf",
+          "downloadUrl": "https://files.catbox.moe/0g0i85.pdf",
+          "type": "pdf",
+          "thumb": "https://files.catbox.moe/97ydfl.jpg",
+          "category": "pdfs",
+          "subject": "Number Series",
+          "folderName": "Number Series"
+        },
+        {
+          "id": "asqesk",
+          "label": "Missing Number Series Part-1",
+          "url": "https://stutosed.strp2p.site/#asqesk",
+          "type": "streamp2p",
+          "thumb": "https://asset.syncp2p.com/zs1vYXuvHl5ZAgynwH4HXQ/6sy/krnvuoui/pz9ox9/poster.png",
+          "preview": "https://asset.syncp2p.com/7Zhc8NgJ5535spwF0Q0NmQ/6sy/krnvuoui/pz9ox9/preview.webp",
+          "duration": 5486,
+          "category": "videos",
+          "subject": "Number Series",
+          "folderName": "Number Series",
+          "servers": [
+            {
+              "name": "StreamP2P Player",
+              "url": "https://stutosed.strp2p.site/#asqesk",
+              "type": "streamp2p"
+            }
+          ]
+        },
+        {
+          "id": "pdf-047",
+          "label": "Missing Number Series Part-1 (Notes 1)",
+          "url": "https://files.catbox.moe/5vobx6.pdf",
+          "downloadUrl": "https://files.catbox.moe/5vobx6.pdf",
+          "type": "pdf",
+          "thumb": "https://files.catbox.moe/97ydfl.jpg",
+          "category": "pdfs",
+          "subject": "Number Series",
+          "folderName": "Number Series"
+        },
+        {
+          "id": "pdf-048",
+          "label": "Missing Number Series Part-1 (Notes 2)",
+          "url": "https://files.catbox.moe/jprvoz.pdf",
+          "downloadUrl": "https://files.catbox.moe/jprvoz.pdf",
+          "type": "pdf",
+          "thumb": "https://files.catbox.moe/97ydfl.jpg",
+          "category": "pdfs",
+          "subject": "Number Series",
+          "folderName": "Number Series"
+        },
+        {
+          "id": "q5zw5l",
+          "label": "Missing Number Series Part-2",
+          "url": "https://stutosed.strp2p.site/#q5zw5l",
+          "type": "streamp2p",
+          "thumb": "https://asset.syncp2p.com/G3I7JVigAiLPxJX6Mg4vrw/qtd/krnvuoui/59a1rt/poster.png",
+          "preview": "https://asset.syncp2p.com/RASYE0kkYRKNsN3Zwq0NnQ/qtd/krnvuoui/59a1rt/preview.webp",
+          "duration": 5719,
+          "category": "videos",
+          "subject": "Number Series",
+          "folderName": "Number Series",
+          "servers": [
+            {
+              "name": "StreamP2P Player",
+              "url": "https://stutosed.strp2p.site/#q5zw5l",
+              "type": "streamp2p"
+            }
+          ]
+        },
+        {
+          "id": "pdf-050",
+          "label": "Missing Number Series Part-2 (Notes 1)",
+          "url": "https://files.catbox.moe/ksl7zv.pdf",
+          "downloadUrl": "https://files.catbox.moe/ksl7zv.pdf",
+          "type": "pdf",
+          "thumb": "https://files.catbox.moe/97ydfl.jpg",
+          "category": "pdfs",
+          "subject": "Number Series",
+          "folderName": "Number Series"
+        },
+        {
+          "id": "pdf-051",
+          "label": "Missing Number Series Part-2 (Notes 2)",
+          "url": "https://files.catbox.moe/a4khvq.pdf",
+          "downloadUrl": "https://files.catbox.moe/a4khvq.pdf",
+          "type": "pdf",
+          "thumb": "https://files.catbox.moe/97ydfl.jpg",
+          "category": "pdfs",
+          "subject": "Number Series",
+          "folderName": "Number Series"
+        },
+        {
+          "id": "paxkof",
+          "label": "Wrong Number Series Part-1",
+          "url": "https://stutosed.strp2p.site/#paxkof",
+          "type": "streamp2p",
+          "thumb": "https://asset.syncp2p.com/VgAHx_LV3PLR7dsqqTbCaA/qtd/krnvuoui/8h3vd5/poster.png",
+          "preview": "https://asset.syncp2p.com/gfElvf7msDehyZtiAZ8LZA/qtd/krnvuoui/8h3vd5/preview.webp",
+          "duration": 5567,
+          "category": "videos",
+          "subject": "Number Series",
+          "folderName": "Number Series",
+          "servers": [
+            {
+              "name": "StreamP2P Player",
+              "url": "https://stutosed.strp2p.site/#paxkof",
+              "type": "streamp2p"
+            }
+          ]
+        },
+        {
+          "id": "pdf-053",
+          "label": "Wrong Number Series Part-1 (Notes 1)",
+          "url": "https://files.catbox.moe/gul74q.pdf",
+          "downloadUrl": "https://files.catbox.moe/gul74q.pdf",
+          "type": "pdf",
+          "thumb": "https://files.catbox.moe/97ydfl.jpg",
+          "category": "pdfs",
+          "subject": "Number Series",
+          "folderName": "Number Series"
+        },
+        {
+          "id": "pdf-054",
+          "label": "Wrong Number Series Part-1 (Notes 2)",
+          "url": "https://files.catbox.moe/7hjj3c.pdf",
+          "downloadUrl": "https://files.catbox.moe/7hjj3c.pdf",
+          "type": "pdf",
+          "thumb": "https://files.catbox.moe/97ydfl.jpg",
+          "category": "pdfs",
+          "subject": "Number Series",
+          "folderName": "Number Series"
+        },
+        {
+          "id": "keogdo",
+          "label": "Wrong Number Series Part-2",
+          "url": "https://stutosed.strp2p.site/#keogdo",
+          "type": "streamp2p",
+          "thumb": "https://asset.syncp2p.com/lpwg84joBNv8S8L2jW1OoA/qtd/krnvuoui/oxrq9s/poster.png",
+          "preview": "https://asset.syncp2p.com/cH89vnJ00QgtLo1MLZP7ow/qtd/krnvuoui/oxrq9s/preview.webp",
+          "duration": 4534,
+          "category": "videos",
+          "subject": "Number Series",
+          "folderName": "Number Series",
+          "servers": [
+            {
+              "name": "StreamP2P Player",
+              "url": "https://stutosed.strp2p.site/#keogdo",
+              "type": "streamp2p"
+            }
+          ]
+        },
+        {
+          "id": "pdf-056",
+          "label": "Wrong Number Series Part-2 (Notes)",
+          "url": "https://files.catbox.moe/ibbny3.pdf",
+          "downloadUrl": "https://files.catbox.moe/ibbny3.pdf",
+          "type": "pdf",
+          "thumb": "https://files.catbox.moe/97ydfl.jpg",
+          "category": "pdfs",
+          "subject": "Number Series",
+          "folderName": "Number Series"
+        },
+        {
+          "id": "rycva3",
+          "label": "Wrong Number Series Part-3",
+          "url": "https://stutosed.strp2p.site/#rycva3",
+          "type": "streamp2p",
+          "thumb": "https://asset.syncp2p.com/AWC08Wu_Ud6idkm-EK13GA/meb/krnvuoui/rgj3t9/poster.png",
+          "preview": "https://asset.syncp2p.com/zpPeoCWaYLsJk7VUM95eXg/meb/krnvuoui/rgj3t9/preview.webp",
+          "duration": 5647,
+          "category": "videos",
+          "subject": "Number Series",
+          "folderName": "Number Series",
+          "servers": [
+            {
+              "name": "StreamP2P Player",
+              "url": "https://stutosed.strp2p.site/#rycva3",
+              "type": "streamp2p"
+            }
+          ]
+        },
+        {
+          "id": "pdf-058",
+          "label": "Wrong Number Series Part-3 (Notes 1)",
+          "url": "https://files.catbox.moe/ugkfxy.pdf",
+          "downloadUrl": "https://files.catbox.moe/ugkfxy.pdf",
+          "type": "pdf",
+          "thumb": "https://files.catbox.moe/97ydfl.jpg",
+          "category": "pdfs",
+          "subject": "Number Series",
+          "folderName": "Number Series"
+        },
+        {
+          "id": "pdf-059",
+          "label": "Wrong Number Series Part-3 (Notes 2)",
+          "url": "https://files.catbox.moe/67bim2.pdf",
+          "downloadUrl": "https://files.catbox.moe/67bim2.pdf",
+          "type": "pdf",
+          "thumb": "https://files.catbox.moe/97ydfl.jpg",
+          "category": "pdfs",
+          "subject": "Number Series",
+          "folderName": "Number Series"
+        },
+        {
+          "id": "pdf-060",
+          "label": "Missing Series Practice Sheet 1",
+          "url": "https://files.catbox.moe/3yzz0u.pdf",
+          "downloadUrl": "https://files.catbox.moe/3yzz0u.pdf",
+          "type": "pdf",
+          "thumb": "https://files.catbox.moe/97ydfl.jpg",
+          "category": "pdfs",
+          "subject": "Number Series",
+          "folderName": "Number Series"
+        },
+        {
+          "id": "pdf-061",
+          "label": "Missing Series Practice Sheet 2",
+          "url": "https://files.catbox.moe/kpkw66.pdf",
+          "downloadUrl": "https://files.catbox.moe/kpkw66.pdf",
+          "type": "pdf",
+          "thumb": "https://files.catbox.moe/97ydfl.jpg",
+          "category": "pdfs",
+          "subject": "Number Series",
+          "folderName": "Number Series"
+        },
+        {
+          "id": "pdf-062",
+          "label": "Missing Series Practice Sheet 3",
+          "url": "https://files.catbox.moe/srb8et.pdf",
+          "downloadUrl": "https://files.catbox.moe/srb8et.pdf",
+          "type": "pdf",
+          "thumb": "https://files.catbox.moe/97ydfl.jpg",
+          "category": "pdfs",
+          "subject": "Number Series",
+          "folderName": "Number Series"
+        },
+        {
+          "id": "pdf-063",
+          "label": "The Maths Hero Wrong Number Series Practice Sheet 1",
+          "url": "https://files.catbox.moe/7y3mcw.pdf",
+          "downloadUrl": "https://files.catbox.moe/7y3mcw.pdf",
+          "type": "pdf",
+          "thumb": "https://files.catbox.moe/97ydfl.jpg",
+          "category": "pdfs",
+          "subject": "Number Series",
+          "folderName": "Number Series"
+        },
+        {
+          "id": "pdf-064",
+          "label": "The Maths Hero Wrong Number Series Practice Sheet 2",
+          "url": "https://files.catbox.moe/ilry90.pdf",
+          "downloadUrl": "https://files.catbox.moe/ilry90.pdf",
+          "type": "pdf",
+          "thumb": "https://files.catbox.moe/97ydfl.jpg",
+          "category": "pdfs",
+          "subject": "Number Series",
+          "folderName": "Number Series"
+        }
+      ]
+    },
+    {
+      "id": "quadratic-equations",
+      "label": "04. Quadratic & Cubic Equations",
+      "subname": "22 items (8 Videos & 14 Practice Sheets)",
+      "thumb": "https://asset.syncp2p.com/lM5tE4qR4rN5k12yBvR33w/qtd/krnvuoui/1p3zvd/poster.png",
+      "items": [
+        {
+          "id": "yjthdz",
+          "label": "Linear Quadratic and Cubic Equations Algebra Basics",
+          "url": "https://stutosed.strp2p.site/#yjthdz",
+          "type": "streamp2p",
+          "thumb": "https://asset.syncp2p.com/6lsez7-HO7tsvX3jnM0qhA/6sy/krnvuoui/n6q5tt/poster.png",
+          "preview": "https://asset.syncp2p.com/ybpgsOvOH2sDvU2Y71L_BQ/6sy/krnvuoui/n6q5tt/preview.webp",
+          "duration": 5307,
+          "category": "videos",
+          "subject": "Quadratic Equations",
+          "folderName": "Quadratic Equations",
+          "servers": [
+            {
+              "name": "StreamP2P Player",
+              "url": "https://stutosed.strp2p.site/#yjthdz",
+              "type": "streamp2p"
+            }
+          ]
+        },
+        {
+          "id": "pdf-066",
+          "label": "Linear Quadratic and Cubic Equations Algebra Basics (Notes)",
+          "url": "https://files.catbox.moe/6ah3b4.pdf",
+          "downloadUrl": "https://files.catbox.moe/6ah3b4.pdf",
+          "type": "pdf",
+          "thumb": "https://files.catbox.moe/97ydfl.jpg",
+          "category": "pdfs",
+          "subject": "Quadratic Equations",
+          "folderName": "Quadratic Equations"
+        },
+        {
+          "id": "6z1ryk",
+          "label": "Quadratic Equations (How to solve Fast Solution Tricks)",
+          "url": "https://stutosed.strp2p.site/#6z1ryk",
+          "type": "streamp2p",
+          "thumb": "https://asset.syncp2p.com/sMW70kf2fC11ngx6Yu257Q/qtd/krnvuoui/hapory/poster.png",
+          "preview": "https://asset.syncp2p.com/JbxkazOptV33OVf4jFZYcQ/qtd/krnvuoui/hapory/preview.webp",
+          "duration": 5679,
+          "category": "videos",
+          "subject": "Quadratic Equations",
+          "folderName": "Quadratic Equations",
+          "servers": [
+            {
+              "name": "StreamP2P Player",
+              "url": "https://stutosed.strp2p.site/#6z1ryk",
+              "type": "streamp2p"
+            }
+          ]
+        },
+        {
+          "id": "pdf-068",
+          "label": "Quadratic Equations (How to solve Fast Solution Tricks) (Notes)",
+          "url": "https://files.catbox.moe/g1ngzz.pdf",
+          "downloadUrl": "https://files.catbox.moe/g1ngzz.pdf",
+          "type": "pdf",
+          "thumb": "https://files.catbox.moe/97ydfl.jpg",
+          "category": "pdfs",
+          "subject": "Quadratic Equations",
+          "folderName": "Quadratic Equations"
+        },
+        {
+          "id": "1lac3c",
+          "label": "Quadratic Equations (Finding Roots How to Compare Roots)",
+          "url": "https://stutosed.strp2p.site/#1lac3c",
+          "type": "streamp2p",
+          "thumb": "https://asset.syncp2p.com/-4m7NG3OAEpFfsS5wauJHw/qtd/krnvuoui/ubd85w/poster.png",
+          "preview": "https://asset.syncp2p.com/_R9BGPOx3I4NPYPITP1lRw/qtd/krnvuoui/ubd85w/preview.webp",
+          "duration": 5662,
+          "category": "videos",
+          "subject": "Quadratic Equations",
+          "folderName": "Quadratic Equations",
+          "servers": [
+            {
+              "name": "StreamP2P Player",
+              "url": "https://stutosed.strp2p.site/#1lac3c",
+              "type": "streamp2p"
+            }
+          ]
+        },
+        {
+          "id": "pdf-070",
+          "label": "Quadratic Equations (Finding Roots How to Compare Roots) (Notes)",
+          "url": "https://files.catbox.moe/uj87i7.pdf",
+          "downloadUrl": "https://files.catbox.moe/uj87i7.pdf",
+          "type": "pdf",
+          "thumb": "https://files.catbox.moe/97ydfl.jpg",
+          "category": "pdfs",
+          "subject": "Quadratic Equations",
+          "folderName": "Quadratic Equations"
+        },
+        {
+          "id": "asqem1",
+          "label": "Quadratic Equations (Comparison of Roots Part-2)",
+          "url": "https://stutosed.strp2p.site/#asqem1",
+          "type": "streamp2p",
+          "thumb": "https://asset.syncp2p.com/gImdE1gCth5tx2bKZjVxXg/qtd/krnvuoui/mc6pk1/poster.png",
+          "preview": "https://asset.syncp2p.com/rNBjmhE-gMy-LFOwf8mhlw/qtd/krnvuoui/mc6pk1/preview.webp",
+          "duration": 2752,
+          "category": "videos",
+          "subject": "Quadratic Equations",
+          "folderName": "Quadratic Equations",
+          "servers": [
+            {
+              "name": "StreamP2P Player",
+              "url": "https://stutosed.strp2p.site/#asqem1",
+              "type": "streamp2p"
+            }
+          ]
+        },
+        {
+          "id": "pdf-072",
+          "label": "Quadratic Equations (Comparison of Roots Part-2) (Notes)",
+          "url": "https://files.catbox.moe/3x4xg7.pdf",
+          "downloadUrl": "https://files.catbox.moe/3x4xg7.pdf",
+          "type": "pdf",
+          "thumb": "https://files.catbox.moe/97ydfl.jpg",
+          "category": "pdfs",
+          "subject": "Quadratic Equations",
+          "folderName": "Quadratic Equations"
+        },
+        {
+          "id": "asqemx",
+          "label": "Quadratic Equations (Practice Questions)",
+          "url": "https://stutosed.strp2p.site/#asqemx",
+          "type": "streamp2p",
+          "thumb": "https://asset.syncp2p.com/8MpzZUJbLolsIVCyt_1cWw/qtd/krnvuoui/bqmhkc/poster.png",
+          "preview": "https://asset.syncp2p.com/Jhu1X4QU1ebDTN4rXpr2Gg/qtd/krnvuoui/bqmhkc/preview.webp",
+          "duration": 6293,
+          "category": "videos",
+          "subject": "Quadratic Equations",
+          "folderName": "Quadratic Equations",
+          "servers": [
+            {
+              "name": "StreamP2P Player",
+              "url": "https://stutosed.strp2p.site/#asqemx",
+              "type": "streamp2p"
+            }
+          ]
+        },
+        {
+          "id": "pdf-074",
+          "label": "Quadratic Equations (Practice Questions) (Notes)",
+          "url": "https://files.catbox.moe/w7j6ld.pdf",
+          "downloadUrl": "https://files.catbox.moe/w7j6ld.pdf",
+          "type": "pdf",
+          "thumb": "https://files.catbox.moe/97ydfl.jpg",
+          "category": "pdfs",
+          "subject": "Quadratic Equations",
+          "folderName": "Quadratic Equations"
+        },
+        {
+          "id": "nf3lbc",
+          "label": "Quadratic Equations (Practice Questions-2)",
+          "url": "https://stutosed.strp2p.site/#nf3lbc",
+          "type": "streamp2p",
+          "thumb": "https://asset.syncp2p.com/0jrYpe8JTI2iREYxBM_MwA/qtd/krnvuoui/mc6poj/poster.png",
+          "preview": "https://asset.syncp2p.com/4hEoJVRlbFA26Us_DDLHTw/qtd/krnvuoui/mc6poj/preview.webp",
+          "duration": 2520,
+          "category": "videos",
+          "subject": "Quadratic Equations",
+          "folderName": "Quadratic Equations",
+          "servers": [
+            {
+              "name": "StreamP2P Player",
+              "url": "https://stutosed.strp2p.site/#nf3lbc",
+              "type": "streamp2p"
+            }
+          ]
+        },
+        {
+          "id": "pdf-076",
+          "label": "Quadratic Equations (Practice Questions-2) (Notes)",
+          "url": "https://files.catbox.moe/5n7w1n.pdf",
+          "downloadUrl": "https://files.catbox.moe/5n7w1n.pdf",
+          "type": "pdf",
+          "thumb": "https://files.catbox.moe/97ydfl.jpg",
+          "category": "pdfs",
+          "subject": "Quadratic Equations",
+          "folderName": "Quadratic Equations"
+        },
+        {
+          "id": "dmvqn8",
+          "label": "Quadratic Equations (Practice Questions-3)",
+          "url": "https://stutosed.strp2p.site/#dmvqn8",
+          "type": "streamp2p",
+          "thumb": "https://asset.syncp2p.com/M-3ojz9uRQpJjq-gsd93Dw/qtd/krnvuoui/vkwbp8/poster.png",
+          "preview": "https://asset.syncp2p.com/NBQfud4okljNK6KKUR7IsQ/qtd/krnvuoui/vkwbp8/preview.webp",
+          "duration": 6037,
+          "category": "videos",
+          "subject": "Quadratic Equations",
+          "folderName": "Quadratic Equations",
+          "servers": [
+            {
+              "name": "StreamP2P Player",
+              "url": "https://stutosed.strp2p.site/#dmvqn8",
+              "type": "streamp2p"
+            }
+          ]
+        },
+        {
+          "id": "pdf-078",
+          "label": "Quadratic Equations (Practice Questions-3) (Notes)",
+          "url": "https://files.catbox.moe/ef1tub.pdf",
+          "downloadUrl": "https://files.catbox.moe/ef1tub.pdf",
+          "type": "pdf",
+          "thumb": "https://files.catbox.moe/97ydfl.jpg",
+          "category": "pdfs",
+          "subject": "Quadratic Equations",
+          "folderName": "Quadratic Equations"
+        },
+        {
+          "id": "keogr6",
+          "label": "Quadratic Equations (All Types of Square Root Questions)",
+          "url": "https://stutosed.strp2p.site/#keogr6",
+          "type": "streamp2p",
+          "thumb": "https://asset.syncp2p.com/8CNAA50vY1T40MOSfDF0rw/unl/krnvuoui/dmn3xa/poster.png",
+          "preview": "https://asset.syncp2p.com/K01zpQ15_3vgOz1ZR-Taug/unl/krnvuoui/dmn3xa/preview.webp",
+          "duration": 9067,
+          "category": "videos",
+          "subject": "Quadratic Equations",
+          "folderName": "Quadratic Equations",
+          "servers": [
+            {
+              "name": "StreamP2P Player",
+              "url": "https://stutosed.strp2p.site/#keogr6",
+              "type": "streamp2p"
+            }
+          ]
+        },
+        {
+          "id": "pdf-080",
+          "label": "Quadratic Equations (All Types of Square Root Questions) (Notes 1)",
+          "url": "https://files.catbox.moe/qwupoy.pdf",
+          "downloadUrl": "https://files.catbox.moe/qwupoy.pdf",
+          "type": "pdf",
+          "thumb": "https://files.catbox.moe/97ydfl.jpg",
+          "category": "pdfs",
+          "subject": "Quadratic Equations",
+          "folderName": "Quadratic Equations"
+        },
+        {
+          "id": "pdf-081",
+          "label": "Quadratic Equations (All Types of Square Root Questions) (Notes 2)",
+          "url": "https://files.catbox.moe/e6hcm6.pdf",
+          "downloadUrl": "https://files.catbox.moe/e6hcm6.pdf",
+          "type": "pdf",
+          "thumb": "https://files.catbox.moe/97ydfl.jpg",
+          "category": "pdfs",
+          "subject": "Quadratic Equations",
+          "folderName": "Quadratic Equations"
+        },
+        {
+          "id": "pdf-082",
+          "label": "The Maths Hero Quadratic Equations Practice Sheet-1",
+          "url": "https://files.catbox.moe/74fip1.pdf",
+          "downloadUrl": "https://files.catbox.moe/74fip1.pdf",
+          "type": "pdf",
+          "thumb": "https://files.catbox.moe/97ydfl.jpg",
+          "category": "pdfs",
+          "subject": "Quadratic Equations",
+          "folderName": "Quadratic Equations"
+        },
+        {
+          "id": "pdf-083",
+          "label": "The Maths Hero Quadratic Equations Practice Sheet-2",
+          "url": "https://files.catbox.moe/8u1q7m.pdf",
+          "downloadUrl": "https://files.catbox.moe/8u1q7m.pdf",
+          "type": "pdf",
+          "thumb": "https://files.catbox.moe/97ydfl.jpg",
+          "category": "pdfs",
+          "subject": "Quadratic Equations",
+          "folderName": "Quadratic Equations"
+        },
+        {
+          "id": "pdf-084",
+          "label": "The Maths Hero Quadratic Equations Practice Sheet-3",
+          "url": "https://files.catbox.moe/44s87f.pdf",
+          "downloadUrl": "https://files.catbox.moe/44s87f.pdf",
+          "type": "pdf",
+          "thumb": "https://files.catbox.moe/97ydfl.jpg",
+          "category": "pdfs",
+          "subject": "Quadratic Equations",
+          "folderName": "Quadratic Equations"
+        },
+        {
+          "id": "pdf-085",
+          "label": "The Maths Hero Quadratic Equations Practice Sheet-4",
+          "url": "https://files.catbox.moe/v0p670.pdf",
+          "downloadUrl": "https://files.catbox.moe/v0p670.pdf",
+          "type": "pdf",
+          "thumb": "https://files.catbox.moe/97ydfl.jpg",
+          "category": "pdfs",
+          "subject": "Quadratic Equations",
+          "folderName": "Quadratic Equations"
+        },
+        {
+          "id": "pdf-086",
+          "label": "The Maths Hero Quadratic Equations Practice Sheet-5",
+          "url": "https://files.catbox.moe/y3a1j3.pdf",
+          "downloadUrl": "https://files.catbox.moe/y3a1j3.pdf",
+          "type": "pdf",
+          "thumb": "https://files.catbox.moe/97ydfl.jpg",
+          "category": "pdfs",
+          "subject": "Quadratic Equations",
+          "folderName": "Quadratic Equations"
+        }
+      ]
+    },
+    {
+      "id": "percentage",
+      "label": "05. Percentage & Successive Change",
+      "subname": "7 items (4 Videos & 3 Practice Sheets)",
+      "thumb": "https://asset.syncp2p.com/tqRUxoAAcXJi79K-bDs3Xg/unl/krnvuoui/mc69sl/poster.png",
+      "items": [
+        {
+          "id": "ebw3cs",
+          "label": "Percentage to Fraction and Vice Versa (Basics)",
+          "url": "https://stutosed.strp2p.site/#ebw3cs",
+          "type": "streamp2p",
+          "thumb": "https://asset.syncp2p.com/zzl5shBdqYeYNO5Rrynktg/meb/krnvuoui/hapuqg/poster.png",
+          "preview": "https://asset.syncp2p.com/2VQUm2R_YUvPXZpnS1T6Lw/meb/krnvuoui/hapuqg/preview.webp",
+          "duration": 3973,
+          "category": "videos",
+          "subject": "Percentage",
+          "folderName": "Percentage",
+          "servers": [
+            {
+              "name": "StreamP2P Player",
+              "url": "https://stutosed.strp2p.site/#ebw3cs",
+              "type": "streamp2p"
+            }
+          ]
+        },
+        {
+          "id": "pdf-088",
+          "label": "Percentage to Fraction and Vice Versa (Basics) (Notes)",
+          "url": "https://files.catbox.moe/4n9c7b.pdf",
+          "downloadUrl": "https://files.catbox.moe/4n9c7b.pdf",
+          "type": "pdf",
+          "thumb": "https://files.catbox.moe/97ydfl.jpg",
+          "category": "pdfs",
+          "subject": "Percentage",
+          "folderName": "Percentage"
+        },
+        {
+          "id": "asqe6z",
+          "label": "Basics of Percentage (Change Successive Change and Its Operations)",
+          "url": "https://stutosed.strp2p.site/#asqe6z",
+          "type": "streamp2p",
+          "thumb": "https://asset.syncp2p.com/KAlNmmPFAt0OwOt7HwrNBQ/qtd/krnvuoui/bqmhm9/poster.png",
+          "preview": "https://asset.syncp2p.com/Z-TMsphGkXBBxe10iEtG7w/qtd/krnvuoui/bqmhm9/preview.webp",
+          "duration": 15835,
+          "category": "videos",
+          "subject": "Percentage",
+          "folderName": "Percentage",
+          "servers": [
+            {
+              "name": "StreamP2P Player",
+              "url": "https://stutosed.strp2p.site/#asqe6z",
+              "type": "streamp2p"
+            }
+          ]
+        },
+        {
+          "id": "ung1ho",
+          "label": "Successive Percentage Change Practice Other Important Questions",
+          "url": "https://stutosed.strp2p.site/#ung1ho",
+          "type": "streamp2p",
+          "thumb": "https://asset.syncp2p.com/zD0bLdeGVe4DuHm4V5Ih1g/qtd/krnvuoui/59ayzx/poster.png",
+          "preview": "https://asset.syncp2p.com/xrZZVHgNnm1JZOgS9Rfx-Q/qtd/krnvuoui/59ayzx/preview.webp",
+          "duration": 5342,
+          "category": "videos",
+          "subject": "Percentage",
+          "folderName": "Percentage",
+          "servers": [
+            {
+              "name": "StreamP2P Player",
+              "url": "https://stutosed.strp2p.site/#ung1ho",
+              "type": "streamp2p"
+            }
+          ]
+        },
+        {
+          "id": "pdf-091",
+          "label": "Successive Percentage Change Practice Other Important Questions (Notes 1)",
+          "url": "https://files.catbox.moe/g244d5.pdf",
+          "downloadUrl": "https://files.catbox.moe/g244d5.pdf",
+          "type": "pdf",
+          "thumb": "https://files.catbox.moe/97ydfl.jpg",
+          "category": "pdfs",
+          "subject": "Percentage",
+          "folderName": "Percentage"
+        },
+        {
+          "id": "pdf-092",
+          "label": "Successive Percentage Change Practice Other Important Questions (Notes 2)",
+          "url": "https://files.catbox.moe/0v210i.pdf",
+          "downloadUrl": "https://files.catbox.moe/0v210i.pdf",
+          "type": "pdf",
+          "thumb": "https://files.catbox.moe/97ydfl.jpg",
+          "category": "pdfs",
+          "subject": "Percentage",
+          "folderName": "Percentage"
+        },
+        {
+          "id": "paxkll",
+          "label": "Applications of Percentage [Important Practice Questions]",
+          "url": "https://stutosed.strp2p.site/#paxkll",
+          "type": "streamp2p",
+          "thumb": "https://asset.syncp2p.com/PD_1nL3d1DpUZN8F40vJug/qtd/krnvuoui/8h3wvb/poster.png",
+          "preview": "https://asset.syncp2p.com/qCCgt5FjxS4ya2N-9-mYdw/qtd/krnvuoui/8h3wvb/preview.webp",
+          "duration": 5405,
+          "category": "videos",
+          "subject": "Percentage",
+          "folderName": "Percentage",
+          "servers": [
+            {
+              "name": "StreamP2P Player",
+              "url": "https://stutosed.strp2p.site/#paxkll",
+              "type": "streamp2p"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

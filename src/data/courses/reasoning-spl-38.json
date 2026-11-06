@@ -1,0 +1,2279 @@
+{
+  "id": "reasoning-spl-38",
+  "name": "Reasoning Special 38",
+  "subname": "Reasoning SPL 38 • Complete Verbal & Non-Verbal",
+  "teacher": "Piyush Varshney Sir",
+  "subject": "Reasoning",
+  "thumb": "/thumbnails/subjects/reasoning_spl_38.svg",
+  "tabs": [
+    {
+      "id": "videos",
+      "label": "▶ Videos",
+      "items": [
+        {
+          "id": "reasoning-spl-38-v-1",
+          "label": "Class-01 – Intro",
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6366273528112/6366273528112.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "reasoning-spl-38-v-2",
+          "label": "Class-02 – Alphabetical Series",
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6366369478112/6366369478112.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "reasoning-spl-38-v-3",
+          "label": "Class-03 – Alphabetical Series",
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6366403865112/6366403865112.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "reasoning-spl-38-v-4",
+          "label": "Class-04 – Alphabetical Series",
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6366428198112/6366428198112.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "reasoning-spl-38-v-5",
+          "label": "Class-05 – Alphabetical Series",
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6366448685112/6366448685112.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "reasoning-spl-38-v-6",
+          "label": "Class-06 – Alphabetical Series",
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6366475366112/6366475366112.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "reasoning-spl-38-v-7",
+          "label": "Class-07 – Alphabetical Series",
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6366544869112/6366544869112.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "reasoning-spl-38-v-8",
+          "label": "Class-08 – Letter Series",
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6366570724112/6366570724112.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "reasoning-spl-38-v-9",
+          "label": "Class-09 – Letter Series",
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6366615149112/6366615149112.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "reasoning-spl-38-v-10",
+          "label": "Class-10 – Pair Formation",
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6366646933112/6366646933112.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "reasoning-spl-38-v-11",
+          "label": "Class-11 – Pair Formation",
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6366730170112/6366730170112.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "reasoning-spl-38-v-12",
+          "label": "Class-12 – Coding Decoding",
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6366764935112/6366764935112.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "reasoning-spl-38-v-13",
+          "label": "Class-13 – Coding Decoding",
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6366810458112/6366810458112.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "reasoning-spl-38-v-14",
+          "label": "Class-14 – Coding Decoding",
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6367073083112/6367073083112.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "reasoning-spl-38-v-15",
+          "label": "Class-15 – Coding Decoding",
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6367119551112/6367119551112.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "reasoning-spl-38-v-16",
+          "label": "Class-16 – Coding Decoding",
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6367170392112/6367170392112.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "reasoning-spl-38-v-17",
+          "label": "Class-17 – Coding Decoding",
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6367225218112/6367225218112.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "reasoning-spl-38-v-18",
+          "label": "Class-18 – Coding Decoding",
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6367437545112/6367437545112.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "reasoning-spl-38-v-19",
+          "label": "Class-19 – Dictionary, Word Formation, Jumbling",
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6367489680112/6367489680112.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "reasoning-spl-38-v-20",
+          "label": "Class-20 – Inequalities",
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6367614921112/6367614921112.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "reasoning-spl-38-v-21",
+          "label": "Class-21 – Inequalities",
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6367820938112/6367820938112.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "reasoning-spl-38-v-22",
+          "label": "Class-22 – Inequalities",
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6367872404112/6367872404112.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "reasoning-spl-38-v-23",
+          "label": "Class-23 – Ranking",
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6367931148112/6367931148112.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "reasoning-spl-38-v-24",
+          "label": "Class-24 – Ranking",
+          "url": "https://www.youtube.com/watch?v=FMcEkvJ0MB4",
+          "type": "youtube"
+        },
+        {
+          "id": "reasoning-spl-38-v-25",
+          "label": "Class-25 – Ranking",
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6368038541112/6368038541112.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "reasoning-spl-38-v-26",
+          "label": "Class-26 – Number Series",
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6368187869112/6368187869112.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "reasoning-spl-38-v-27",
+          "label": "Class-27 – Number Series",
+          "url": "https://www.youtube.com/watch?v=6E1qy1cPcH0",
+          "type": "youtube"
+        },
+        {
+          "id": "reasoning-spl-38-v-28",
+          "label": "Class-28 – Number Series",
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6368357993112/6368357993112.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "reasoning-spl-38-v-29",
+          "label": "Class-29 – Missing Number",
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6368420979112/6368420979112.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "reasoning-spl-38-v-30",
+          "label": "Class-30 – Analogy",
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6368590488112/6368590488112.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "reasoning-spl-38-v-31",
+          "label": "Class-31 – Analogy",
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6368638079112/6368638079112.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "reasoning-spl-38-v-32",
+          "label": "Class-32 – Classification",
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6368692897112/6368692897112.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "reasoning-spl-38-v-33",
+          "label": "Class-33 – Classification",
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6368747869112/6368747869112.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "reasoning-spl-38-v-34",
+          "label": "Class-34 – Coded Equation",
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6368809602112/6368809602112.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "reasoning-spl-38-v-35",
+          "label": "Class-35 – PYQ Practice",
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6369039206112/6369039206112.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "reasoning-spl-38-v-36",
+          "label": "Class-36 – PYQ Practice",
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6369082612112/6369082612112.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "reasoning-spl-38-v-37",
+          "label": "Class-37 – PYQ Practice",
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6369135944112/6369135944112.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "reasoning-spl-38-v-38",
+          "label": "Class-38 – Clock",
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6369247830112/6369247830112.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "reasoning-spl-38-v-39",
+          "label": "Class-39 – Clock",
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6369289855112/6369289855112.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "reasoning-spl-38-v-40",
+          "label": "Class-40 – Clock",
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6369334493112/6369334493112.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "reasoning-spl-38-v-41",
+          "label": "Class-41 – Clock",
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6369382592112/6369382592112.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "reasoning-spl-38-v-42",
+          "label": "Class-42 – Clock",
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6369432335112/6369432335112.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "reasoning-spl-38-v-43",
+          "label": "Class-43 – Clock",
+          "url": "https://www.youtube.com/watch?v=SZ80rQB_CKI",
+          "type": "youtube"
+        },
+        {
+          "id": "reasoning-spl-38-v-44",
+          "label": "Class-44 – Syllogism",
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6369582264112/6369582264112.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "reasoning-spl-38-v-45",
+          "label": "Class-45 – Syllogism",
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6369625722112/6369625722112.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "reasoning-spl-38-v-46",
+          "label": "Class-46 – Syllogism",
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6369667395112/6369667395112.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "reasoning-spl-38-v-47",
+          "label": "Class-47 – Syllogism",
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6369715013112/6369715013112.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "reasoning-spl-38-v-48",
+          "label": "Class-48 – Syllogism",
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6369833627112/6369833627112.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "reasoning-spl-38-v-49",
+          "label": "Class-49 – Syllogism",
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6369871728112/6369871728112.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "reasoning-spl-38-v-50",
+          "label": "Class-50 – Syllogism",
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6369912770112/6369912770112.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "reasoning-spl-38-v-51",
+          "label": "Class-51 – Syllogism",
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6370135509112/6370135509112.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "reasoning-spl-38-v-52",
+          "label": "Class-52 – Syllogism",
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6370179348112/6370179348112.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "reasoning-spl-38-v-53",
+          "label": "Class-53 – Dice ( पासा )",
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6370222539112/6370222539112.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "reasoning-spl-38-v-54",
+          "label": "Class-54 – Dice ( पासा )",
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6370261791112/6370261791112.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "reasoning-spl-38-v-55",
+          "label": "Class-55 – Dice ( पासा )",
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6370315668112/6370315668112.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "reasoning-spl-38-v-56",
+          "label": "Class-56 – Dice ( पासा )",
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6370456272112/6370456272112.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "reasoning-spl-38-v-57",
+          "label": "Class-57 – Dice ( पासा )",
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6370510547112/6370510547112.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "reasoning-spl-38-v-58",
+          "label": "Class-58 – Dice ( पासा )",
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6370572024112/6370572024112.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "reasoning-spl-38-v-59",
+          "label": "Class-59 – Dice PYQs Practice",
+          "url": "https://www.youtube.com/watch?v=UD2wrZrznL0",
+          "type": "youtube"
+        },
+        {
+          "id": "reasoning-spl-38-v-60",
+          "label": "Class-60 – Cube and Cuboid",
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6370673790112/6370673790112.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "reasoning-spl-38-v-61",
+          "label": "Class-61 – Cube and Cuboid",
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6370817667112/6370817667112.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "reasoning-spl-38-v-62",
+          "label": "Class-62 – Cube and Cuboid",
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6370863917112/6370863917112.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "reasoning-spl-38-v-63",
+          "label": "Class-63 – Cube and Cuboid",
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6370914028112/6370914028112.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "reasoning-spl-38-v-64",
+          "label": "Class-64 – Cube and Cuboid",
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6370967524112/6370967524112.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "reasoning-spl-38-v-65",
+          "label": "Class-65 – Venn Diagram",
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6371024967112/6371024967112.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "reasoning-spl-38-v-66",
+          "label": "Class-66 – Venn Diagram",
+          "url": "https://www.youtube.com/watch?v=-bimQdG_Fj4",
+          "type": "youtube"
+        },
+        {
+          "id": "reasoning-spl-38-v-67",
+          "label": "Class-67 – Venn Diagram",
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6371212627112/6371212627112.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "reasoning-spl-38-v-68",
+          "label": "Class-68 – Venn Diagram PYQs Practice",
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6371256042112/6371256042112.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "reasoning-spl-38-v-69",
+          "label": "Class-69 – Cube and Cuboid PYQs Practice",
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6371299558112/6371299558112.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "reasoning-spl-38-v-70",
+          "label": "Class-70 – Live Test",
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6371348360112/6371348360112.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "reasoning-spl-38-v-71",
+          "label": "Class-71 – Directions and Distance",
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6371464495112/6371464495112.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "reasoning-spl-38-v-72",
+          "label": "Class-72 – Directions and Distance",
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6371507872112/6371507872112.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "reasoning-spl-38-v-73",
+          "label": "Class-73 – Directions and Distance",
+          "url": "https://www.youtube.com/watch?v=qdaXC2XUVO8",
+          "type": "youtube"
+        },
+        {
+          "id": "reasoning-spl-38-v-74",
+          "label": "Class-74 – Directions and Distance",
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6371744156112/6371744156112.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "reasoning-spl-38-v-75",
+          "label": "Class-75 – Directions and Distance",
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6371780617112/6371780617112.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "reasoning-spl-38-v-76",
+          "label": "Class-76 – Directions and Distance PYQ Practice",
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6371820322112/6371820322112.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "reasoning-spl-38-v-77",
+          "label": "Class-77 – Counting Figures",
+          "url": "https://www.youtube.com/watch?v=jSxxTH57kqo",
+          "type": "youtube"
+        },
+        {
+          "id": "reasoning-spl-38-v-78",
+          "label": "Class-78 – Counting Figures",
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6371909295112/6371909295112.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "reasoning-spl-38-v-79",
+          "label": "Class-79 – Counting Figures",
+          "url": "https://www.youtube.com/watch?v=qc47dpwwxm4",
+          "type": "youtube"
+        },
+        {
+          "id": "reasoning-spl-38-v-80",
+          "label": "Class-80 – Counting Figures",
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6372055559112/6372055559112.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "reasoning-spl-38-v-81",
+          "label": "Class-81 – Counting Figures",
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6372101254112/6372101254112.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "reasoning-spl-38-v-82",
+          "label": "Class-82 – Counting Figures PYQs Practice",
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6372155237112/6372155237112.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "reasoning-spl-38-v-83",
+          "label": "Class-83 – Blood Relation",
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6372208299112/6372208299112.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "reasoning-spl-38-v-84",
+          "label": "Class-84 – Blood Relation",
+          "url": "https://www.youtube.com/watch?v=f2z0lFgAzmI",
+          "type": "youtube"
+        },
+        {
+          "id": "reasoning-spl-38-v-85",
+          "label": "Class-85 – Blood Relation",
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6372402282112/6372402282112.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "reasoning-spl-38-v-86",
+          "label": "Class-86 – Blood Relation",
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6372455984112/6372455984112.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "reasoning-spl-38-v-87",
+          "label": "Class-87 – Blood Relation",
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6372510383112/6372510383112.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "reasoning-spl-38-v-88",
+          "label": "Class-88 – Blood Relation",
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6372563591112/6372563591112.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "reasoning-spl-38-v-89",
+          "label": "Class-89 – Blood Relation PYQ Practice",
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6372736560112/6372736560112.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "reasoning-spl-38-v-90",
+          "label": "Class-90 – Non Verbal",
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6372786775112/6372786775112.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "reasoning-spl-38-v-91",
+          "label": "Class-91 – Non Verbal",
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6372837224112/6372837224112.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "reasoning-spl-38-v-92",
+          "label": "Class-92 – Non Verbal",
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6372893209112/6372893209112.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "reasoning-spl-38-v-93",
+          "label": "Class-93 – Non Verbal",
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6373051649112/6373051649112.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "reasoning-spl-38-v-94",
+          "label": "Class-94 – Non Verbal",
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6373106064112/6373106064112.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "reasoning-spl-38-v-95",
+          "label": "Class-95 – Non Verbal",
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6373218054112/6373218054112.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "reasoning-spl-38-v-96",
+          "label": "Class-96 – Statement and Assumptions",
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6373489612112/6373489612112.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "reasoning-spl-38-v-97",
+          "label": "Class-97 – Statement and Assumptions",
+          "url": "https://www.youtube.com/watch?v=B75oakA9-Jk",
+          "type": "youtube"
+        },
+        {
+          "id": "reasoning-spl-38-v-98",
+          "label": "Class-98 – Cause and Effect",
+          "url": "https://www.youtube.com/watch?v=XojYD7kMjjI",
+          "type": "youtube"
+        },
+        {
+          "id": "reasoning-spl-38-v-99",
+          "label": "Class-99 – Course of Action",
+          "url": "https://www.youtube.com/watch?v=ZXCOEzrpRSc",
+          "type": "youtube"
+        },
+        {
+          "id": "reasoning-spl-38-v-100",
+          "label": "Class-100 – Statement and Argument",
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6373777053112/6373777053112.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "reasoning-spl-38-v-101",
+          "label": "Class-101 – Reason Assertion",
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6373819729112/6373819729112.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "reasoning-spl-38-v-102",
+          "label": "Class-102 – Decision Making",
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6373857438112/6373857438112.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "reasoning-spl-38-v-103",
+          "label": "Class-103 – Data Sufficiency",
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6373896545112/6373896545112.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "reasoning-spl-38-v-104",
+          "label": "Class-104 – Machine Input",
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6366053804112/6366053804112.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "reasoning-spl-38-v-105",
+          "label": "Class-105 – Machine Input",
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6366100047112/6366100047112.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "reasoning-spl-38-v-106",
+          "label": "Class-106 – Machine Input",
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6366170816112/6366170816112.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "reasoning-spl-38-v-107",
+          "label": "Class-107 – Machine Input",
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6366218711112/6366218711112.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "reasoning-spl-38-v-108",
+          "label": "Class-108 – Matrix",
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6374047101112/6374047101112.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "reasoning-spl-38-v-109",
+          "label": "Class-109 – Sitting Arrangements",
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6372020061112/6372020061112.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "reasoning-spl-38-v-110",
+          "label": "Class-110 – Sitting Arrangements",
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6372056906112/6372056906112.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "reasoning-spl-38-v-111",
+          "label": "Class-111 – Sitting Arrangements",
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6372103999112/6372103999112.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "reasoning-spl-38-v-112",
+          "label": "Class-112 – Sitting Arrangements",
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6372158034112/6372158034112.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "reasoning-spl-38-v-113",
+          "label": "Class-113 – Sitting Arrangements PYQs Practice",
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6372211627112/6372211627112.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "reasoning-spl-38-v-114",
+          "label": "Class-114 – Puzzle",
+          "url": "https://www.youtube.com/watch?v=ZNuVUL4bNZI",
+          "type": "youtube"
+        },
+        {
+          "id": "reasoning-spl-38-v-115",
+          "label": "Class-115 – Puzzle",
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6372408858112/6372408858112.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "reasoning-spl-38-v-116",
+          "label": "Class-116 – Puzzle",
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6372460285112/6372460285112.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "reasoning-spl-38-v-117",
+          "label": "Class-117 – Puzzle",
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6372511938112/6372511938112.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "reasoning-spl-38-v-118",
+          "label": "Class-118 – Puzzle",
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6372564660112/6372564660112.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "reasoning-spl-38-v-119",
+          "label": "Class-119 – Puzzle",
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6372739780112/6372739780112.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "reasoning-spl-38-v-120",
+          "label": "Class-120 – Calendar",
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6374168332112/6374168332112.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "reasoning-spl-38-v-121",
+          "label": "Class-121 – Calendar",
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6374225675112/6374225675112.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "reasoning-spl-38-v-122",
+          "label": "Class-122 – Calendar",
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6374343812112/6374343812112.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "reasoning-spl-38-v-123",
+          "label": "Class-123 – Calendar",
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6374422726112/6374422726112.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "reasoning-spl-38-v-124",
+          "label": "Class-124 – Calendar",
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6374509344112/6374509344112.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "reasoning-spl-38-v-125",
+          "label": "Class-125 – Calendar",
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6374566059112/6374566059112.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "reasoning-spl-38-v-126",
+          "label": "Class-126 – Calendar",
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6374607463112/6374607463112.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "reasoning-spl-38-v-127",
+          "label": "Class-127 – Calendar PYQs Practice",
+          "url": "https://www.youtube.com/watch?v=y7Asd3QBkl0",
+          "type": "youtube"
+        },
+        {
+          "id": "reasoning-spl-38-v-128",
+          "label": "Class-128 – Doubt Class",
+          "url": "https://www.youtube.com/watch?v=E65SQp8ho4I",
+          "type": "youtube"
+        }
+      ]
+    },
+    {
+      "id": "pdfs",
+      "label": "📄 PDFs",
+      "items": [
+        {
+          "id": "reasoning-spl-38-p-129",
+          "label": "Coded Equations – 19 July – Class PNG",
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/687b8558f3323_19July_4245485153_and_pratham45678_Coded_Equationscompressed.pdf",
+          "type": "pdf"
+        },
+        {
+          "id": "reasoning-spl-38-p-130",
+          "label": "Analogy – 17 July – Class PNG",
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/687a07a48f646_17July_4245485153_and_pratham45678_CPO_Analogycompressed.pdf",
+          "type": "pdf"
+        },
+        {
+          "id": "reasoning-spl-38-p-131",
+          "label": "Number Series – 14 July – Class PNG",
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/6874e5d204534_14_July_4245485153_and_pratham45678_CPO_Number_Series.pdf",
+          "type": "pdf"
+        },
+        {
+          "id": "reasoning-spl-38-p-132",
+          "label": "Number Series – 11 July – Class PNG",
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/6870fcc89a76f_11_July_4245485153_and_pratham45678_CPO_Number_Series.pdf",
+          "type": "pdf"
+        },
+        {
+          "id": "reasoning-spl-38-p-133",
+          "label": "Inequalities – 08 July – Class PNG",
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/686d07fabf53d_08_July_4245485153_and_pratham45678_CPO_Inequalitiescompressed.pdf",
+          "type": "pdf"
+        },
+        {
+          "id": "reasoning-spl-38-p-134",
+          "label": "Analytical – 04 July – Class PNG",
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/6867b936740c6_4July_spl404245485153_and_pratham345678_CPO_Analyticalcompressed.pdf",
+          "type": "pdf"
+        },
+        {
+          "id": "reasoning-spl-38-p-135",
+          "label": "Statement Assumptions – 24 June – Class PNG",
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/685a85945fb92_24June_spl404245485153_and_pratham345678_CPO_Statement_Assumptionscompressed.pdf",
+          "type": "pdf"
+        },
+        {
+          "id": "reasoning-spl-38-p-136",
+          "label": "Calendar – 23 June – Class PNG",
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/68594659ab538_23June_spl38404245485153_and_pratham2345678_CPO_Calendar_Short_Notes.pdf",
+          "type": "pdf"
+        },
+        {
+          "id": "reasoning-spl-38-p-137",
+          "label": "Calendar – 20 June – Class PNG",
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/685944dcb37f8_20June_spl38404245485153_and_pratham2345678_CPO_Calendarcompressed.pdf",
+          "type": "pdf"
+        },
+        {
+          "id": "reasoning-spl-38-p-138",
+          "label": "Calendar Practice Set – Class PNG",
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/685940d07fb86_Calendar_Practice_Set.pdf",
+          "type": "pdf"
+        },
+        {
+          "id": "reasoning-spl-38-p-139",
+          "label": "Calendar Class Questions – Class PNG",
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/685940369ce3d_Calendar_Class_Questions.pdf",
+          "type": "pdf"
+        },
+        {
+          "id": "reasoning-spl-38-p-140",
+          "label": "Calendar PYQs Practice Set",
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/68593f939334f_Calendar_PYQs_Practice_Set.pdf",
+          "type": "pdf"
+        },
+        {
+          "id": "reasoning-spl-38-p-141",
+          "label": "Calendar Test PDF",
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/68593ee26d62b_Calendar_Test_Pdf.pdf",
+          "type": "pdf"
+        },
+        {
+          "id": "reasoning-spl-38-p-142",
+          "label": "Calendar – 18 June – Class PNG",
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/68540158830a6_19June_spl38404245485153_and_pratham2345678_CPO_Calendarcompressed.pdf",
+          "type": "pdf"
+        },
+        {
+          "id": "reasoning-spl-38-p-143",
+          "label": "Calendar – 18 June – Class PNG",
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/6852a17042868_18_June_Calendarcompressed.pdf",
+          "type": "pdf"
+        },
+        {
+          "id": "reasoning-spl-38-p-144",
+          "label": "Reas – 17 June – Class PNG",
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/68514f081d890_17_June_Calender_230pm_class_By_Piyush_Sircompressed.pdf",
+          "type": "pdf"
+        },
+        {
+          "id": "reasoning-spl-38-p-145",
+          "label": "Reas – 16 June – Class PNG",
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/684ff891e55f2_16_june_Calendarcompressed.pdf",
+          "type": "pdf"
+        },
+        {
+          "id": "reasoning-spl-38-p-146",
+          "label": "Reas – 13 June – PNG",
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/684c00a9905d5_13June_spl38404245485153_and_pratham2345678_CPO_Calendarcompressed.pdf",
+          "type": "pdf"
+        },
+        {
+          "id": "reasoning-spl-38-p-147",
+          "label": "Reas –12 June – Class PNG",
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/684ad0a89ca4c_12June_spl38404245485153_and_pratham2345678_CPO_Calendar.pdf",
+          "type": "pdf"
+        },
+        {
+          "id": "reasoning-spl-38-p-148",
+          "label": "Machine Input Class PNG",
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/6841852cb39fe_682336ec16ae3ilovepdfmerged.pdf",
+          "type": "pdf"
+        },
+        {
+          "id": "reasoning-spl-38-p-149",
+          "label": "Data Sufficiency – 5 June – Class PNG",
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/68417d09b4751_5June_spl3538_and_pratham12_Data_Sufficiencycompressed.pdf",
+          "type": "pdf"
+        },
+        {
+          "id": "reasoning-spl-38-p-150",
+          "label": "Statement Assumption And Conclusion Class Question",
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/6840303326d1f_Statement_Assumption_And_Conclusion_Class_Question.pdf",
+          "type": "pdf"
+        },
+        {
+          "id": "reasoning-spl-38-p-151",
+          "label": "Statement Argument Class Question",
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/6840300a0fb21_Statement_Argument_Class_Question.pdf",
+          "type": "pdf"
+        },
+        {
+          "id": "reasoning-spl-38-p-152",
+          "label": "Course of Action Class Question",
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/68402fd7ca7e9_Course_of_Action_Class_Question.pdf",
+          "type": "pdf"
+        },
+        {
+          "id": "reasoning-spl-38-p-153",
+          "label": "Cause And Effect",
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/68402de04b370_Cause_And_Effect_pdf.pdf",
+          "type": "pdf"
+        },
+        {
+          "id": "reasoning-spl-38-p-154",
+          "label": "Assertion And Reason Class Question",
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/68402d570cd9f_Assertion_And_Reason_Class_Question.pdf",
+          "type": "pdf"
+        },
+        {
+          "id": "reasoning-spl-38-p-155",
+          "label": "Analytical Reasoning Test",
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/68402cfb6534c_Analytical_Reasoning_Test.pdf",
+          "type": "pdf"
+        },
+        {
+          "id": "reasoning-spl-38-p-156",
+          "label": "Analytical Reasoning PYQ",
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/68402cd65fc04_Analytical_Reasoning_PYQ.pdf",
+          "type": "pdf"
+        },
+        {
+          "id": "reasoning-spl-38-p-157",
+          "label": "Decision making – 4 June – Class PNG",
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/68402c302d5e1_4June_spl3538_and_pratham12_Decision_Makingcompressed.pdf",
+          "type": "pdf"
+        },
+        {
+          "id": "reasoning-spl-38-p-158",
+          "label": "Assertion and Reason – 3 June – Class PNG",
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/683ee3724d536_3June_spl3538_and_pratham12_Assertion_and_Reasoncompressed.pdf",
+          "type": "pdf"
+        },
+        {
+          "id": "reasoning-spl-38-p-159",
+          "label": "Statement and Argument – 2 June – Class PNG",
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/683d913737361_2June_spl3538_and_pratham12_Argumentcompressed.pdf",
+          "type": "pdf"
+        },
+        {
+          "id": "reasoning-spl-38-p-160",
+          "label": "Course of Action – 30 May – Class PNG",
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/683997f178d97_30_may_spl3538_and_pratham12_Course_of_Actioncompressed.pdf",
+          "type": "pdf"
+        },
+        {
+          "id": "reasoning-spl-38-p-161",
+          "label": "Cause and Effect – 29 May – Class PNG",
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/68384a751ef12_29_may_spl3538_and_pratham12_Cause_and_Effectcompressed.pdf",
+          "type": "pdf"
+        },
+        {
+          "id": "reasoning-spl-38-p-162",
+          "label": "Assumptions – 27 May – Class PNG",
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/6836ce5472410_27_may_spl3538_and_pratham12_Assumptionscompressed.pdf",
+          "type": "pdf"
+        },
+        {
+          "id": "reasoning-spl-38-p-163",
+          "label": "Assumptions – 26 May – Class PNG",
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/6835389bad641_26_may_spl3538_and_pratham12_Assumptionscompressed.pdf",
+          "type": "pdf"
+        },
+        {
+          "id": "reasoning-spl-38-p-164",
+          "label": "Non Verbal PYQs [Part-04]",
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/68300263c2b27_Non_Verbal_PYQs_PART04.pdf",
+          "type": "pdf"
+        },
+        {
+          "id": "reasoning-spl-38-p-165",
+          "label": "Non Verbal PYQs [Part-03]",
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/683001faaafb9_Non_Verbal_PYQs_PART03.pdf",
+          "type": "pdf"
+        },
+        {
+          "id": "reasoning-spl-38-p-166",
+          "label": "Non Verbal PYQs [Part-02]",
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/683001b731fd5_Non_Verbal_PYQs_PART02.pdf",
+          "type": "pdf"
+        },
+        {
+          "id": "reasoning-spl-38-p-167",
+          "label": "Non Verbal PYQs [Part-01]",
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/68300156f036d_Non_Verbal_PYQs_PART01.pdf",
+          "type": "pdf"
+        },
+        {
+          "id": "reasoning-spl-38-p-168",
+          "label": "Non Verbal Practice Set",
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/682fff72ae6f3_Non_Verbal_Practice_Setcompressed.pdf",
+          "type": "pdf"
+        },
+        {
+          "id": "reasoning-spl-38-p-169",
+          "label": "Non Verbal Test",
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/682fff1b25145_Non_Verbal_Test_pdf.pdf",
+          "type": "pdf"
+        },
+        {
+          "id": "reasoning-spl-38-p-170",
+          "label": "Non Verbal – 22 May – Class PNG",
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/682ffbd4d87c7_22may_Non_Verbal_35384042_and_pratham_1234compressed.pdf",
+          "type": "pdf"
+        },
+        {
+          "id": "reasoning-spl-38-p-171",
+          "label": "Non Verbal – 20 May – Class PNG",
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/682d577948e84_20may_Non_Verbal_35384042_and_pratham_1234compressed.pdf",
+          "type": "pdf"
+        },
+        {
+          "id": "reasoning-spl-38-p-172",
+          "label": "Non Verbal – 19 May – Class PNG",
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/682b1a8b2396c_19may_Non_Verbal_35384042_and_pratham_1234compressed.pdf",
+          "type": "pdf"
+        },
+        {
+          "id": "reasoning-spl-38-p-173",
+          "label": "Non Verbal Reasoning – 16 May – Class PNG",
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/682725b49be97_16may_Non_Verbal_35384042_and_pratham_1234compressed.pdf",
+          "type": "pdf"
+        },
+        {
+          "id": "reasoning-spl-38-p-174",
+          "label": "Non Verbal Reasoning – 15 May – Class PNG",
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/6825d2aec635c_15may_Non_Verbal_35384042_and_pratham_1234compressed.pdf",
+          "type": "pdf"
+        },
+        {
+          "id": "reasoning-spl-38-p-175",
+          "label": "Blood Relation – 14 May – Class PNG",
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/68256e5dac41b_14may_Non_Verbal_35384042_and_pratham_1234compressed.pdf",
+          "type": "pdf"
+        },
+        {
+          "id": "reasoning-spl-38-p-176",
+          "label": "Blood Relation – 13 May – Class PNG",
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/68243ddf734e9_13may_Blood_Relations_PYQs_3840424548_and_pratham_23456compressed.pdf",
+          "type": "pdf"
+        },
+        {
+          "id": "reasoning-spl-38-p-177",
+          "label": "Blood Relation PYQ's Practice Set",
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/681ef1e8aa141_BLOOD_RELATION_PYQ_PRACTICE_SETcompressed.pdf",
+          "type": "pdf"
+        },
+        {
+          "id": "reasoning-spl-38-p-178",
+          "label": "Blood Relation Test",
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/681ef171972e5_Blood_Relation_Test_pdf.pdf",
+          "type": "pdf"
+        },
+        {
+          "id": "reasoning-spl-38-p-179",
+          "label": "Blood Relation Practice Set",
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/681ef115c6391_BLOOD_RELATION_PRACTICE_SET.pdf",
+          "type": "pdf"
+        },
+        {
+          "id": "reasoning-spl-38-p-180",
+          "label": "Blood Relations Class Question",
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/681eefc191414_BLOOD_RELATION_CLASS_QUESTIONS.pdf",
+          "type": "pdf"
+        },
+        {
+          "id": "reasoning-spl-38-p-181",
+          "label": "Blood Relation – 9 May – Class PNG",
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/681ede2a28642_9may_Blood_Relations_3840424548_and_pratham_23456compressed.pdf",
+          "type": "pdf"
+        },
+        {
+          "id": "reasoning-spl-38-p-182",
+          "label": "Blood Relation – 8 May – Class PNG",
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/681d96a932d47_8may_Blood_Relations_3840424548_and_pratham_23456compressed.pdf",
+          "type": "pdf"
+        },
+        {
+          "id": "reasoning-spl-38-p-183",
+          "label": "Blood Relation – 7 May – Class PNG",
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/681c4d6ac2b7c_7may_Blood_Relations_3840424548_and_pratham_23456compressed.pdf",
+          "type": "pdf"
+        },
+        {
+          "id": "reasoning-spl-38-p-184",
+          "label": "Blood Relation – 6 May – Class PNG",
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/6819ff474f744_6may_Blood_Relation_Spl3840424548andPratham23456compressed.pdf",
+          "type": "pdf"
+        },
+        {
+          "id": "reasoning-spl-38-p-185",
+          "label": "Blood Relation – 5 May – Class PNG",
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/6818a778ce809_5_may_Blood_Relation_Spl3840424548andPratham23456compressed.pdf",
+          "type": "pdf"
+        },
+        {
+          "id": "reasoning-spl-38-p-186",
+          "label": "Counting Figure Test",
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/6815d4cd3ac17_Counting_Figure_Test_Pdf.pdf",
+          "type": "pdf"
+        },
+        {
+          "id": "reasoning-spl-38-p-187",
+          "label": "Counting Figure Practice Set-1&2",
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/6815d4463378f_ilovepdfmerged_39.pdf",
+          "type": "pdf"
+        },
+        {
+          "id": "reasoning-spl-38-p-188",
+          "label": "Counting Figure Practice Set",
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/6815d1a27b645_Counting_Figure_Practice_Set_1.pdf",
+          "type": "pdf"
+        },
+        {
+          "id": "reasoning-spl-38-p-189",
+          "label": "Counting Figures Final PDF 2024",
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/6815c6b7b8681_COUNTING_FIGURES_FINAL_PDF_2024.pdf",
+          "type": "pdf"
+        },
+        {
+          "id": "reasoning-spl-38-p-190",
+          "label": "Blood Relation – 2 May – Class PNG",
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/6814b51131fe0_2_may_Blood_Relation_Spl3840424548andPratham23456compressed.pdf",
+          "type": "pdf"
+        },
+        {
+          "id": "reasoning-spl-38-p-191",
+          "label": "Counting Figures – 1 May – Class PNG",
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/681475108bcfd_1_may_Counting_Figures_PYQs_Practice_Spl3840424548andPratham23456compressed.pdf",
+          "type": "pdf"
+        },
+        {
+          "id": "reasoning-spl-38-p-192",
+          "label": "Counting Figures – 30 April – Class PNG",
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/6812f6e960723_30APR_Counting_Figures_Spl3840424548andPratham23456compressed.pdf",
+          "type": "pdf"
+        },
+        {
+          "id": "reasoning-spl-38-p-193",
+          "label": "Counting Figures – 24 April – Class PNG",
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/680a1f7a7d358_24APR_Counting_Figures_Spl3840424548andPratham23456compressed.pdf",
+          "type": "pdf"
+        },
+        {
+          "id": "reasoning-spl-38-p-194",
+          "label": "Direction And Distance Test",
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/6808ce5cf3d96_Direction_And_Distance_Test_1.pdf",
+          "type": "pdf"
+        },
+        {
+          "id": "reasoning-spl-38-p-195",
+          "label": "Direction and Distance PYQ",
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/6808cdfb40cf7_Direction_and_Distance_PYQ_1.pdf",
+          "type": "pdf"
+        },
+        {
+          "id": "reasoning-spl-38-p-196",
+          "label": "Direction And Distance Practice Set",
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/6808cd9720076_Direction_And_Distance_Practice_Set_1.pdf",
+          "type": "pdf"
+        },
+        {
+          "id": "reasoning-spl-38-p-197",
+          "label": "Direction And Distance Class Question",
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/6808cd1615b62_Direction_And_Distance_Class_Question_1.pdf",
+          "type": "pdf"
+        },
+        {
+          "id": "reasoning-spl-38-p-198",
+          "label": "Directions and Distance – 22 April – Class PNG",
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/680783a6b6900_22APR_Directions_and_Distance_Spl31353840424548andPratham123456compressed.pdf",
+          "type": "pdf"
+        },
+        {
+          "id": "reasoning-spl-38-p-199",
+          "label": "Directions and Distance – 21 April – Class PNG",
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/68061e107260f_21APR_Directions_and_Distance_Spl31353840424548andPratham123456compressed.pdf",
+          "type": "pdf"
+        },
+        {
+          "id": "reasoning-spl-38-p-200",
+          "label": "Directions and Distance – 16 April – Class PNG",
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/6800719a80a25_16APR_Directions_and_Distance_Spl31353840424548andPratham123456compressed.pdf",
+          "type": "pdf"
+        },
+        {
+          "id": "reasoning-spl-38-p-201",
+          "label": "Directions and Distance – 15 April – Class PNG",
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/68006c7badbfa_15APR_Directions_and_Distance_Spl31353840424548andPratham123456compressed.pdf",
+          "type": "pdf"
+        },
+        {
+          "id": "reasoning-spl-38-p-202",
+          "label": "Directions and Distance – 14 April – Class PNG",
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/67fceb8a606b6_14APR_Directions_and_Distance_Spl31353840424548andPratham123456compressed.pdf",
+          "type": "pdf"
+        },
+        {
+          "id": "reasoning-spl-38-p-203",
+          "label": "Live Class Test – 11 April – Class PNG",
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/67f9ab74e4095_11APR_Live_Class_Test_Spl3538404245andPratham12345.pdf",
+          "type": "pdf"
+        },
+        {
+          "id": "reasoning-spl-38-p-204",
+          "label": "Venn Diagram Test",
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/67f8ad7104064_Venn_Diagram_Test.pdf",
+          "type": "pdf"
+        },
+        {
+          "id": "reasoning-spl-38-p-205",
+          "label": "Venn Diagram Practice Set",
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/67f8ac150dfbf_Venn_Diagram_Practice_Set.pdf",
+          "type": "pdf"
+        },
+        {
+          "id": "reasoning-spl-38-p-206",
+          "label": "Venn Diagram (Class Question)",
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/67f8abb8de1ea_Venn_Diagram_Class_Question.pdf",
+          "type": "pdf"
+        },
+        {
+          "id": "reasoning-spl-38-p-207",
+          "label": "Venn Diagram PYQ",
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/67f8ab411c6c8_Venn_Diagram_PYQ.pdf",
+          "type": "pdf"
+        },
+        {
+          "id": "reasoning-spl-38-p-208",
+          "label": "Cube PYQs Practice – 10 April – Class PNG",
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/67f7aabcdb93b_10APR_Cube_PYQs_Practice_Spl3538404245andPratham12345.pdf",
+          "type": "pdf"
+        },
+        {
+          "id": "reasoning-spl-38-p-209",
+          "label": "UPSC CSAT Dice, Cube and Cuboid PYQs",
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/67f7a18e4460a_UPSC_CSAT_Dice_Cube_and_Cuboid_PYQs.pdf",
+          "type": "pdf"
+        },
+        {
+          "id": "reasoning-spl-38-p-210",
+          "label": "Police Dice, Cube and Cuboid PYQs",
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/67f7a0f2c2d1a_Police_Dice_Cube_and_Cuboid_PYQs.pdf",
+          "type": "pdf"
+        },
+        {
+          "id": "reasoning-spl-38-p-211",
+          "label": "Teaching Dice, Cube and Cuboid PYQs",
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/67f7a08250ba7_Teaching_Dice_Cube_and_Cuboid_PYQs.pdf",
+          "type": "pdf"
+        },
+        {
+          "id": "reasoning-spl-38-p-212",
+          "label": "Venn Diagram Short Notes – 9 April – Class PNG",
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/67f65a47a9b06_9APR_Venn_Diagram_Short_Notes_Spl3538404245andPratham12345.pdf",
+          "type": "pdf"
+        },
+        {
+          "id": "reasoning-spl-38-p-213",
+          "label": "Venn Diagram – 8 April – Class PNG",
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/67f50a0d5e817_8APR_Venn_Diagram_Spl3538404245andPratham12345compressed.pdf",
+          "type": "pdf"
+        },
+        {
+          "id": "reasoning-spl-38-p-214",
+          "label": "Venn Diagram – 7 April – Class PNG",
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/67f3bd333515b_7APR_Venn_Diagram_Spl3538404245andPratham12345compressed_1.pdf",
+          "type": "pdf"
+        },
+        {
+          "id": "reasoning-spl-38-p-215",
+          "label": "Venn Diagram – 4 April – Class PNG",
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/67efc85600b42_4APR_Venn_Diagram_Spl3538404245andPratham12345.pdf",
+          "type": "pdf"
+        },
+        {
+          "id": "reasoning-spl-38-p-216",
+          "label": "Cube and Cuboid Class Question",
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/67ee77f37b08c_CUBE_AND_CUBOID_Class_Question.pdf",
+          "type": "pdf"
+        },
+        {
+          "id": "reasoning-spl-38-p-217",
+          "label": "Cube and Cuboid Test",
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/67ee77745f40e_Cube_and_Cuboid_Test.pdf",
+          "type": "pdf"
+        },
+        {
+          "id": "reasoning-spl-38-p-218",
+          "label": "Cube and Cuboid Practice Set",
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/67ee77005dade_Cube_and_Cuboid_Practice_Set.pdf",
+          "type": "pdf"
+        },
+        {
+          "id": "reasoning-spl-38-p-219",
+          "label": "Cube and Cuboid – 3 April – Class PNG",
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/67ee768db43fd_3APR_Cube_and_Cuboid_Spl3538404245andPratham12345compressed.pdf",
+          "type": "pdf"
+        },
+        {
+          "id": "reasoning-spl-38-p-220",
+          "label": "Cube and Cuboid – 2 April – Class PNG",
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/67ed2657ce8b2_2APR_Cube_and_Cuboid_Spl3538404245andPratham12345compressed.pdf",
+          "type": "pdf"
+        },
+        {
+          "id": "reasoning-spl-38-p-221",
+          "label": "Cube and Cuboid – 1 April – Class PNG",
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/67ebcf362dff1_1APR_Cube_and_Cuboid_Spl3538404245andPratham12345compressed.pdf",
+          "type": "pdf"
+        },
+        {
+          "id": "reasoning-spl-38-p-222",
+          "label": "Cube & Cuboid – 31 March – Class PNG",
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/67ea7f85bc9fb_31Mar_CubeCuboid_Spl3538404245_Pratham12345compressed.pdf",
+          "type": "pdf"
+        },
+        {
+          "id": "reasoning-spl-38-p-223",
+          "label": "Cube and Cuboid – 27 March – Class PNG",
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/67e68950bd08e_28Mar_CubeCuboid_Spl3538404245_Pratham12345.pdf",
+          "type": "pdf"
+        },
+        {
+          "id": "reasoning-spl-38-p-224",
+          "label": "Dice Test Question",
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/67e544e02519d_Dice_Test_Question_Student_File.pdf",
+          "type": "pdf"
+        },
+        {
+          "id": "reasoning-spl-38-p-225",
+          "label": "Dice Practice Set",
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/67e5446ab88e4_Dice_Practice_Set.pdf",
+          "type": "pdf"
+        },
+        {
+          "id": "reasoning-spl-38-p-226",
+          "label": "Dice PYQs Set",
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/67e5440fc0b60_Dice_PYQs_Set.pdf",
+          "type": "pdf"
+        },
+        {
+          "id": "reasoning-spl-38-p-227",
+          "label": "Dice Class Question",
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/67e543ac3824b_Dice_Class_Question.pdf",
+          "type": "pdf"
+        },
+        {
+          "id": "reasoning-spl-38-p-228",
+          "label": "Dice Short Notes – 27 March – Class PNG",
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/67e5430ba20a9_27Mar_DICE_SHORT_NOTES_Spl3538404245_Pratham12345.pdf",
+          "type": "pdf"
+        },
+        {
+          "id": "reasoning-spl-38-p-229",
+          "label": "Dice – 26 March – Class PNG",
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/67e4d2b063175_26Mar_DICE_Spl3538404245_Pratham12345compressed.pdf",
+          "type": "pdf"
+        },
+        {
+          "id": "reasoning-spl-38-p-230",
+          "label": "Dice – 25 March – Class PNG",
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/67e298bbcd442_25Mar_DICE_Spl3538404245_Pratham12345compressed.pdf",
+          "type": "pdf"
+        },
+        {
+          "id": "reasoning-spl-38-p-231",
+          "label": "Dice – 24 March – Class PNG",
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/67e14a7f40a7c_24_Mar_DICE_Spl3538404245_Pratham12345compressed.pdf",
+          "type": "pdf"
+        },
+        {
+          "id": "reasoning-spl-38-p-232",
+          "label": "Dice – 21 March – Class PNG",
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/67e1489a3c2a0_21_Mar_DICE_Spl3538404245_Pratham12345compressed.pdf",
+          "type": "pdf"
+        },
+        {
+          "id": "reasoning-spl-38-p-233",
+          "label": "Dice – 20 March – Class PNG",
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/67dcf2e9909e9_20_Mar_DICE_Spl3538404245_Pratham12345compressed.pdf",
+          "type": "pdf"
+        },
+        {
+          "id": "reasoning-spl-38-p-234",
+          "label": "Syllogism Part-3",
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/67dbf5c5ea0b6_SYLLOGISM_PYQ_PRACTICE_SET_2025Part3.pdf",
+          "type": "pdf"
+        },
+        {
+          "id": "reasoning-spl-38-p-235",
+          "label": "Syllogism Part-2",
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/67dbf55bc1e4f_SYLLOGISM_PYQ_PRACTICE_SET_2025Part2.pdf",
+          "type": "pdf"
+        },
+        {
+          "id": "reasoning-spl-38-p-236",
+          "label": "Syllogism Part-1",
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/67dbf4c613248_SYLLOGISM_PYQ_PRACTICE_SET_2025Part1.pdf",
+          "type": "pdf"
+        },
+        {
+          "id": "reasoning-spl-38-p-237",
+          "label": "Dice – 19 March – Class PNG",
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/67dab2d3607ac_19_Mar_DICE_Spl3538404245_Pratham12345.pdf",
+          "type": "pdf"
+        },
+        {
+          "id": "reasoning-spl-38-p-238",
+          "label": "Syllogism – 17 March – Class PNG",
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/67d8fc4427dcc_17_Mar_Syllogism29303135384042Pratham1234.pdf",
+          "type": "pdf"
+        },
+        {
+          "id": "reasoning-spl-38-p-239",
+          "label": "Syllogism – 12 March – Class PNG",
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/67d1462430851_12_Mar_Syllogism29303135384042Pratham1234.pdf",
+          "type": "pdf"
+        },
+        {
+          "id": "reasoning-spl-38-p-240",
+          "label": "Syllogism – 11 March – Class PNG",
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/67d00dc620ca0_11_Mar_Syllogism29303135384042Pratham1234.pdf",
+          "type": "pdf"
+        },
+        {
+          "id": "reasoning-spl-38-p-241",
+          "label": "Syllogism – 7 March – Class PNG",
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/67d00c7e7622c_7_Mar_Syllogism29303135384042Pratham1234_1compressed.pdf",
+          "type": "pdf"
+        },
+        {
+          "id": "reasoning-spl-38-p-242",
+          "label": "Syllogism – 10 March – Class PNG",
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/67cfd888b4f01_10_Mar_Syllogism29303135384042Pratham1234.pdf",
+          "type": "pdf"
+        },
+        {
+          "id": "reasoning-spl-38-p-243",
+          "label": "Syllogism – 6 March – Class PNG",
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/67c97c41a1319_6_Mar_Syllogism29303135384042Pratham1234.pdf",
+          "type": "pdf"
+        },
+        {
+          "id": "reasoning-spl-38-p-244",
+          "label": "Syllogism – 5 March – Class PNG",
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/67c927706c887_5_Mar_Syllogism29303135384042Pratham1234.pdf",
+          "type": "pdf"
+        },
+        {
+          "id": "reasoning-spl-38-p-245",
+          "label": "Syllogism – 4 March – Class PNG",
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/67c6d8a56ac7b_4_Mar_Syllogism29303135384042Pratham1234compressed.pdf",
+          "type": "pdf"
+        },
+        {
+          "id": "reasoning-spl-38-p-246",
+          "label": "Clock – 3 March – Class PNG",
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/67c5864f265ce_3_Mar_Clock_29303135384042Pratham1234compressed.pdf",
+          "type": "pdf"
+        },
+        {
+          "id": "reasoning-spl-38-p-247",
+          "label": "Clock – 28 Feb – Class PNG",
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/67c1925ef2bfe_28Feb_Clock_29303135384042Pratham1234compressed.pdf",
+          "type": "pdf"
+        },
+        {
+          "id": "reasoning-spl-38-p-248",
+          "label": "Clock Class Question",
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/67c18c834ca91_Clock_Class_Que_Final_Pdf_2025_3.pdf",
+          "type": "pdf"
+        },
+        {
+          "id": "reasoning-spl-38-p-249",
+          "label": "Clock Practice Set",
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/67c18c09eb1bc_CLOCK_Practice_Set_Final_pdf_2025_3.pdf",
+          "type": "pdf"
+        },
+        {
+          "id": "reasoning-spl-38-p-250",
+          "label": "Clock – 27 Feb – Class PNG",
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/67c11c9f670b3_27Feb_Clock_29303135384042Pratham1234compressed.pdf",
+          "type": "pdf"
+        },
+        {
+          "id": "reasoning-spl-38-p-251",
+          "label": "Clock – 26 Feb – Class PNG",
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/67c0015d8a292_26Feb_Clock_29303135384042Pratham1234compressed.pdf",
+          "type": "pdf"
+        },
+        {
+          "id": "reasoning-spl-38-p-252",
+          "label": "Clock – 25 Feb – Class PNG",
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/67be9c22c9f1f_25Feb_Clock_29303135384042Pratham1234compressed.pdf",
+          "type": "pdf"
+        },
+        {
+          "id": "reasoning-spl-38-p-253",
+          "label": "Clock – 24 Feb – Class PNG",
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/67bcc0bd66953_24Feb_Clock_293031353840Pratham1234_1.pdf",
+          "type": "pdf"
+        },
+        {
+          "id": "reasoning-spl-38-p-254",
+          "label": "Clock – 21 Feb – Class PNG",
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/67bc8e5e906fa_24Feb_Clock_293031353840Pratham1234.pdf",
+          "type": "pdf"
+        },
+        {
+          "id": "reasoning-spl-38-p-255",
+          "label": "PYQ Practice – 21 Feb – Class PNG",
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/67b8689287683_21_Feb_SSC_CGL_2024_Practice293031353840Pratham123compressed.pdf",
+          "type": "pdf"
+        },
+        {
+          "id": "reasoning-spl-38-p-256",
+          "label": "PYQ Practice – 20 Feb – Class PNG",
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/67b7e09010737_20_Feb_SSC_CGL_2024_Practice293031353840Pratham123compressed.pdf",
+          "type": "pdf"
+        },
+        {
+          "id": "reasoning-spl-38-p-257",
+          "label": "PYQ Practice – 19 Feb – Class PNG",
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/67b5b7d0e6ed8_19_Feb_Series_SSC_CGL_2024_Practice293031353840Pratham123compressed.pdf",
+          "type": "pdf"
+        },
+        {
+          "id": "reasoning-spl-38-p-258",
+          "label": "Coded Equation – 14 Feb – Class PNG",
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/67b026b7de58a_14Feb_Coded_Equations3031353840Pratham123compressed.pdf",
+          "type": "pdf"
+        },
+        {
+          "id": "reasoning-spl-38-p-259",
+          "label": "Missing Number Class Questions Final",
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/67af044d13c23_MISSING_NUMBER_Class_Que_Final_Pdf_2025.pdf",
+          "type": "pdf"
+        },
+        {
+          "id": "reasoning-spl-38-p-260",
+          "label": "Analogy Class Questions Final",
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/67af03af5904b_Analogy_Class_Que_Final_2025_1.pdf",
+          "type": "pdf"
+        },
+        {
+          "id": "reasoning-spl-38-p-261",
+          "label": "Analogy PYQ Practice Set",
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/67af033263f6c_Analogy_PYQ_Practice_Set_Final_2025compressed.pdf",
+          "type": "pdf"
+        },
+        {
+          "id": "reasoning-spl-38-p-262",
+          "label": "Classification (Class Que) Final 2025",
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/67ae8a1695494_CLASSIFICATION_Class_Que_Final_2025.pdf",
+          "type": "pdf"
+        },
+        {
+          "id": "reasoning-spl-38-p-263",
+          "label": "Classification (PYQ Practice Set) 2025",
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/67ae89a07aaaf_Classification_PYQ_Practice_Set_2025compressed.pdf",
+          "type": "pdf"
+        },
+        {
+          "id": "reasoning-spl-38-p-264",
+          "label": "Classification – 12 Feb – Class PNG",
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/67ac8a1ccf408_12Feb_Classification_293031353840Pratham123compressed.pdf",
+          "type": "pdf"
+        },
+        {
+          "id": "reasoning-spl-38-p-265",
+          "label": "Analogy – 11 Feb – Class",
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/67ab2c010bcfa_11Feb_Analogy_293031353840Pratham123compressed.pdf",
+          "type": "pdf"
+        },
+        {
+          "id": "reasoning-spl-38-p-266",
+          "label": "Analogy – 10 Feb – Class",
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/67aa078953c95_10Feb_Analogy_293031353840Pratham123compressed.pdf",
+          "type": "pdf"
+        },
+        {
+          "id": "reasoning-spl-38-p-267",
+          "label": "Missing Number – 7 Feb – Class PNG",
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/67a87370752d7_7_Feb_Number_Series_293031353840Pratham123compressed.pdf",
+          "type": "pdf"
+        },
+        {
+          "id": "reasoning-spl-38-p-268",
+          "label": "Series PYQ Practice Set",
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/67a5a7dfd8b4e_NUMBER_SERIES_PYQ_Practice_Set_2025_done.pdf",
+          "type": "pdf"
+        },
+        {
+          "id": "reasoning-spl-38-p-269",
+          "label": "Number Series Class Questions",
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/67a5a46a29f9a_NUMBER_SERIES_Class_Que_FINAL_FILE_2025.pdf",
+          "type": "pdf"
+        },
+        {
+          "id": "reasoning-spl-38-p-270",
+          "label": "Number Series Practice Set",
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/67a5a36cba6ee_NUMBER_SERIES_Practice_Set_Final_2025.pdf",
+          "type": "pdf"
+        },
+        {
+          "id": "reasoning-spl-38-p-271",
+          "label": "Number Series – 6 Feb – Class PNG",
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/67a49329cb7eb_6_Feb_Number_Series_293031353840Pratham123compressed.pdf",
+          "type": "pdf"
+        },
+        {
+          "id": "reasoning-spl-38-p-272",
+          "label": "Number Series – 4 Feb – Class PNG",
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/67a1f3a1e20ec_4_Feb_Number_Series_293031353840Pratham123_1.pdf",
+          "type": "pdf"
+        },
+        {
+          "id": "reasoning-spl-38-p-273",
+          "label": "Number Series – 3 Feb – Class PNG",
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/67a0af0f4f2f3_3_Feb_Number_Series_293031353840Pratham123compressed.pdf",
+          "type": "pdf"
+        },
+        {
+          "id": "reasoning-spl-38-p-274",
+          "label": "Ranking Practice Set",
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/67a08f8d8282d_Ranking_Practice_Set_Final_pdf_2025.pdf",
+          "type": "pdf"
+        },
+        {
+          "id": "reasoning-spl-38-p-275",
+          "label": "Ranking Class Questions",
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/67a8740ca5890_Ranking_Class_Que_Final_pdf_2025.pdf",
+          "type": "pdf"
+        },
+        {
+          "id": "reasoning-spl-38-p-276",
+          "label": "Ranking PYQ Practice Set",
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/67a06ca18efe8_RANKING_PYQ_Practice_Set_Final_pdf_2025.pdf",
+          "type": "pdf"
+        },
+        {
+          "id": "reasoning-spl-38-p-277",
+          "label": "Ranking – 31 Jan – Class PNG",
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/679cb2fb86d79_31janRanking_293031353840Pratham123compressed.pdf",
+          "type": "pdf"
+        },
+        {
+          "id": "reasoning-spl-38-p-278",
+          "label": "Ranking – 30 Jan – Class PNG",
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/679b5c61763ef_30janRanking_293031353840Pratham123compressed.pdf",
+          "type": "pdf"
+        },
+        {
+          "id": "reasoning-spl-38-p-279",
+          "label": "Ranking – 29 Jan – Class PNG",
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/679a1a0a7e4ba_29janRanking_293031353840Pratham123compressed.pdf",
+          "type": "pdf"
+        },
+        {
+          "id": "reasoning-spl-38-p-280",
+          "label": "Inequality Class Questions",
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/679ae7d5eba10_Inequality_Final_pdf_2025_Class_Que.pdf",
+          "type": "pdf"
+        },
+        {
+          "id": "reasoning-spl-38-p-281",
+          "label": "Inequality Practice Set",
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/6798b1b347fa8_Inequality_SSC_Mains_2025.pdf",
+          "type": "pdf"
+        },
+        {
+          "id": "reasoning-spl-38-p-282",
+          "label": "Inequalities – 28 Jan – Class PNG",
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/6798b12a47f0c_28janInequalities_28293031353840Pratham123compressed.pdf",
+          "type": "pdf"
+        },
+        {
+          "id": "reasoning-spl-38-p-283",
+          "label": "Inequalities – 27 Jan – Class PNG",
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/6797669ca1f17_27jan_28293031353840Pratham123.pdf",
+          "type": "pdf"
+        },
+        {
+          "id": "reasoning-spl-38-p-284",
+          "label": "Inequalities – 24 Jan – Class PNG",
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/6794731b1047f_20250124154505964compressed.pdf",
+          "type": "pdf"
+        },
+        {
+          "id": "reasoning-spl-38-p-285",
+          "label": "Alphabet PYQ Practice Set",
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/679747b6ce0c1_6764d86788c55ReasoningBookChapterwiseAlphabetTestCLASS02Student.pdf",
+          "type": "pdf"
+        },
+        {
+          "id": "reasoning-spl-38-p-286",
+          "label": "Dictionary, Word Formation, Jumbling – 23 Jan – Class PNG",
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/67934fc665a48_23Dec_38Pratham02compressed.pdf",
+          "type": "pdf"
+        },
+        {
+          "id": "reasoning-spl-38-p-287",
+          "label": "Dictionary, Word Formation, Jumbling – 22 Jan – Class PNG",
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/6790da9c47f48_22jan_38Pratham02compressed.pdf",
+          "type": "pdf"
+        },
+        {
+          "id": "reasoning-spl-38-p-288",
+          "label": "Coding Decoding PYQ Practice Set",
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/679747701a558_6790d98c4b721CodingDecodingPYQPracticeSet.pdf",
+          "type": "pdf"
+        },
+        {
+          "id": "reasoning-spl-38-p-289",
+          "label": "Coding Decoding Practice Set",
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/6797475b8ac91_6790d97248aa4CodingDecodingPracticeSet.pdf",
+          "type": "pdf"
+        },
+        {
+          "id": "reasoning-spl-38-p-290",
+          "label": "Coding Decoding – 21 Jan – Class PNG",
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/678f867c2a5e7_21jan_38Pratham02compressed.pdf",
+          "type": "pdf"
+        },
+        {
+          "id": "reasoning-spl-38-p-291",
+          "label": "Coding Decoding – 17 Jan – Class PNG",
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/678a465c11b6a_17jan_38Pratham02compressed.pdf",
+          "type": "pdf"
+        },
+        {
+          "id": "reasoning-spl-38-p-292",
+          "label": "Coding Decoding – 16 Jan – Class PNG",
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/6788ee8005f67_16jan_38Pratham02.pdf",
+          "type": "pdf"
+        },
+        {
+          "id": "reasoning-spl-38-p-293",
+          "label": "Coding Decoding – 15 Jan – Class PNG",
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/678897accdb39_20250115172027565.pdf",
+          "type": "pdf"
+        },
+        {
+          "id": "reasoning-spl-38-p-294",
+          "label": "Coding Decoding – 14 Jan – Class PNG",
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/67874e75647f5_14jan_38Pratham02compressed.pdf",
+          "type": "pdf"
+        },
+        {
+          "id": "reasoning-spl-38-p-295",
+          "label": "Coding Decoding – 08 Jan – Class PNG",
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/677f639960f77_8jan_38Pratham02.pdf",
+          "type": "pdf"
+        },
+        {
+          "id": "reasoning-spl-38-p-296",
+          "label": "Coding Decoding – 7 Jan – Class PNG",
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/677d6574960c6_7jan_38Pratham02.pdf",
+          "type": "pdf"
+        },
+        {
+          "id": "reasoning-spl-38-p-297",
+          "label": "Pair Formation – 6 Jan – Class PNG",
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/677bc64c720a0_6jan_38Pratham02compressed.pdf",
+          "type": "pdf"
+        },
+        {
+          "id": "reasoning-spl-38-p-298",
+          "label": "Pair Formation – 3 Jan – Class PNG",
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/6777d029ddaa4_3jan_38Pratham02compressed.pdf",
+          "type": "pdf"
+        },
+        {
+          "id": "reasoning-spl-38-p-299",
+          "label": "Pair Formation Class Questions",
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/6777ce4e37ed1_674fe43a53ef5PAIRFORMATIONS2024Piyushsir.pdf",
+          "type": "pdf"
+        },
+        {
+          "id": "reasoning-spl-38-p-300",
+          "label": "Letter Series Practice Set",
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/67775ae2ba14e_674fe342968c7LETTERSERIESFINALPDF60Que.pdf",
+          "type": "pdf"
+        },
+        {
+          "id": "reasoning-spl-38-p-301",
+          "label": "Letter Series – 2 Jan – Class PNG",
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/67775a32a890a_1jan_38Pratham02compressed.pdf",
+          "type": "pdf"
+        },
+        {
+          "id": "reasoning-spl-38-p-302",
+          "label": "Letter Series – 31 Dec – Class PNG",
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/677759b6713f1_31Dec_38Pratham02.pdf",
+          "type": "pdf"
+        },
+        {
+          "id": "reasoning-spl-38-p-303",
+          "label": "Letter Series Class Questions",
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/6776561e2fdd4_675005600bbc7LETTERSERIESFINALPDF50Que1.pdf",
+          "type": "pdf"
+        },
+        {
+          "id": "reasoning-spl-38-p-304",
+          "label": "Letter Series – 30 Dec – Class PNG",
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/67762ecbea631_31Dec_38Pratham02.pdf",
+          "type": "pdf"
+        },
+        {
+          "id": "reasoning-spl-38-p-305",
+          "label": "Alphabetical Series Practice Set",
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/6773d4c0a8908_ALPHABETICAL_SERIES_NEW_PDF.pdf",
+          "type": "pdf"
+        },
+        {
+          "id": "reasoning-spl-38-p-306",
+          "label": "Alphabetical Series – 30 Dec – Class PNG",
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/67738c2c7ca7e_30Dec_38Pratham02compressed.pdf",
+          "type": "pdf"
+        },
+        {
+          "id": "reasoning-spl-38-p-307",
+          "label": "Alphabetical Series – 27 Dec – Class PNG",
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/676f94871783a_27Dec_38Pratham02compressed.pdf",
+          "type": "pdf"
+        },
+        {
+          "id": "reasoning-spl-38-p-308",
+          "label": "Alphabetical Series – 26 Dec – Class PNG",
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/676e44160b052_26Dec_38Pratham02compressed.pdf",
+          "type": "pdf"
+        },
+        {
+          "id": "reasoning-spl-38-p-309",
+          "label": "Alphabetical Series – 25 Dec – Class PNG",
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/676ce67f1af86_25Dec_38Pratham02compressed.pdf",
+          "type": "pdf"
+        },
+        {
+          "id": "reasoning-spl-38-p-310",
+          "label": "Alphabetical Series – 24 Dec – Class PNG",
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/676aec27cbfd0_24Dec_38Pratham02.pdf",
+          "type": "pdf"
+        },
+        {
+          "id": "reasoning-spl-38-p-311",
+          "label": "Alphabetical Series – 23 Dec – Class PNG",
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/676a3d02d3252_23Dec_38Pratham02compressed.pdf",
+          "type": "pdf"
+        },
+        {
+          "id": "reasoning-spl-38-p-312",
+          "label": "Intro – 20 Dec – Class PNG",
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/6768e8cd33a34_20decSSC_PRATHAM238compressed.pdf",
+          "type": "pdf"
+        },
+        {
+          "id": "reasoning-spl-38-p-313",
+          "label": "Alphabetical Series Class Questions",
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/6768f6f03a0ce_Alphabetical_Series_Class_Questions.pdf",
+          "type": "pdf"
+        },
+        {
+          "id": "reasoning-spl-38-p-314",
+          "label": "SSC 2025 Reasoning Syllabus",
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/6768f6d9c9bdb_SSC_2025_Reasoning_Syllabus.pdf",
+          "type": "pdf"
+        },
+        {
+          "id": "reasoning-spl-38-p-315",
+          "label": "Piyush Sir Book Link",
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/6768f6bd25c42_Piyush_Sir_Book_Link.pdf",
+          "type": "pdf"
+        },
+        {
+          "id": "reasoning-spl-38-p-316",
+          "label": "[Practice Set] Coded Equations Class Questions",
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/687b860a2b2cb_Coded_Equations_Class_Questions.pdf",
+          "type": "pdf"
+        },
+        {
+          "id": "reasoning-spl-38-p-317",
+          "label": "[Practice Set] Classification Class Questions",
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/687a2fe137472_CLASSIFICATION_Class_Questions.pdf",
+          "type": "pdf"
+        },
+        {
+          "id": "reasoning-spl-38-p-318",
+          "label": "[Practice Set] Classification PYQ Practice Set",
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/687a2f3d263e1_Classification_PYQ_Practice_Setcompressed.pdf",
+          "type": "pdf"
+        },
+        {
+          "id": "reasoning-spl-38-p-319",
+          "label": "[Practice Set] Classification – 18 July – Class PNG",
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/687a2e8140eea_18July_4245485153_and_pratham45678_CPO_Odd_One_Out.pdf",
+          "type": "pdf"
+        },
+        {
+          "id": "reasoning-spl-38-p-320",
+          "label": "[Practice Set] Analogy – 16 July – Class PNG",
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/687a11eaed14b_16July_4245485153_and_pratham45678_CPO_Analogy.pdf",
+          "type": "pdf"
+        },
+        {
+          "id": "reasoning-spl-38-p-321",
+          "label": "[Practice Set] Analogy Class Questions",
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/687a09baacb2c_Analogy_Class_Questions.pdf",
+          "type": "pdf"
+        },
+        {
+          "id": "reasoning-spl-38-p-322",
+          "label": "[Practice Set] Analogy PYQ Practice Set",
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/687a091949351_Analogy_PYQ_Practice_Set11zon.pdf",
+          "type": "pdf"
+        },
+        {
+          "id": "reasoning-spl-38-p-323",
+          "label": "[Practice Set] Word-Based Problems (English)",
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/67c6c628c8b4b_WordBased_Problems_English.pdf",
+          "type": "pdf"
+        },
+        {
+          "id": "reasoning-spl-38-p-324",
+          "label": "[Practice Set] Word-Based-Problems (Hindi)",
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/67c6c5a114a5b_WordBasedProblems_Hindi.pdf",
+          "type": "pdf"
+        },
+        {
+          "id": "reasoning-spl-38-p-325",
+          "label": "[Practice Set] Reasoning Full Class Notes (Hand Written) Part-2",
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/67a1abd74e72e_Reasoning_Full_Class_Notes_Hand_Written_PART2.pdf",
+          "type": "pdf"
+        },
+        {
+          "id": "reasoning-spl-38-p-326",
+          "label": "[Practice Set] Reasoning Full Class Notes (Hand Written) Part-1",
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/67a1ab85b9bce_Reasoning_Full_Class_Notes_Hand_Written_PART1.pdf",
+          "type": "pdf"
+        },
+        {
+          "id": "reasoning-spl-38-p-327",
+          "label": "[Practice Set] Non Verbal Reasoning PY Book Part-2",
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/6706511346410_Reasoning_PY_BookPiyush_SirHINDI.pdfcompressedPart2_1.pdf",
+          "type": "pdf"
+        },
+        {
+          "id": "reasoning-spl-38-p-328",
+          "label": "[Practice Set] Non Verbal Reasoning PY Book Part-1",
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/670650c84a262_Reasoning_PY_BookPiyush_SirHINDI.pdfcompressedPart1_1.pdf",
+          "type": "pdf"
+        },
+        {
+          "id": "reasoning-spl-38-p-329",
+          "label": "[Practice Set] Dictionary,Word Formation,Jumbling Final",
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/64cde49877e9c_DICTIONARY,%20WORD%20FORMATION,%20JUMBLING%20WBP%20FINAL%20STUDENT%20PDF%202023.pdf",
+          "type": "pdf"
+        },
+        {
+          "id": "reasoning-spl-38-p-330",
+          "label": "[Practice Set] Word-Based Problems (English)",
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/1651743437-35__Word-Based_Problems_(English)_compressed.pdf",
+          "type": "pdf"
+        },
+        {
+          "id": "reasoning-spl-38-p-331",
+          "label": "[Practice Set] Word-Based-Problems (Hindi)",
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/1652416408-Word-Based-Problems_(Hindi).pdf",
+          "type": "pdf"
+        },
+        {
+          "id": "reasoning-spl-38-p-332",
+          "label": "[Practice Set] Reasoning Full Class Notes (Hand Written)",
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/1626956450-Reasoning_Full_Class_Notes.pdf",
+          "type": "pdf"
+        },
+        {
+          "id": "reasoning-spl-38-p-333",
+          "label": "[Practice Set] Non-Verbal Full",
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/1652416247-Non-Verbal.pdf",
+          "type": "pdf"
+        },
+        {
+          "id": "reasoning-spl-38-p-334",
+          "label": "[Practice Set] Open Dice",
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/1628583793-Open_Dice.pdf",
+          "type": "pdf"
+        },
+        {
+          "id": "reasoning-spl-38-p-335",
+          "label": "[Practice Set] Matrix",
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/1652416239-Matrix.pdf",
+          "type": "pdf"
+        },
+        {
+          "id": "reasoning-spl-38-p-336",
+          "label": "[Practice Set] Age Based",
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/1638361828-Age_Based.pdf",
+          "type": "pdf"
+        },
+        {
+          "id": "reasoning-spl-38-p-337",
+          "label": "[Practice Set] Age",
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/1648807575-6.pdf",
+          "type": "pdf"
+        },
+        {
+          "id": "reasoning-spl-38-p-338",
+          "label": "[Practice Set] DI Sheet",
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/1639053334-1639041338-DI_Sheet_-_1.pdf",
+          "type": "pdf"
+        },
+        {
+          "id": "reasoning-spl-38-p-339",
+          "label": "[Practice Set] Decision Making",
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/1652416021-Decision_Making.pdf",
+          "type": "pdf"
+        },
+        {
+          "id": "reasoning-spl-38-p-340",
+          "label": "[Practice Set] Cause and Effect",
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/1652415996-Cause_and_Effect.pdf",
+          "type": "pdf"
+        },
+        {
+          "id": "reasoning-spl-38-p-341",
+          "label": "[Practice Set] Assertion and Reason",
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/1652415975-Assertion_and_Reason.pdf",
+          "type": "pdf"
+        },
+        {
+          "id": "reasoning-spl-38-p-342",
+          "label": "[Practice Set] Ranking Test",
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/1652416373-Ranking_Test.pdf",
+          "type": "pdf"
+        },
+        {
+          "id": "reasoning-spl-38-p-343",
+          "label": "[Practice Set] Statement – Courses of Action",
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/1626955894-30__Statement_–_Courses_of_Action.pdf",
+          "type": "pdf"
+        },
+        {
+          "id": "reasoning-spl-38-p-344",
+          "label": "[Practice Set] Statement – Conclusions",
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/1626955799-29__Statement_–_Conclusions.pdf",
+          "type": "pdf"
+        },
+        {
+          "id": "reasoning-spl-38-p-345",
+          "label": "[Practice Set] Statement – Assumptions",
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/1626955799-28__Statement_–_Assumptions.pdf",
+          "type": "pdf"
+        },
+        {
+          "id": "reasoning-spl-38-p-346",
+          "label": "[Practice Set] Statement – Arguments",
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/1626955799-27__Statement_–_Arguments.pdf",
+          "type": "pdf"
+        },
+        {
+          "id": "reasoning-spl-38-p-347",
+          "label": "[Practice Set] Machine Input–Output",
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/1626955799-26___Machine_Input–Output.pdf",
+          "type": "pdf"
+        },
+        {
+          "id": "reasoning-spl-38-p-348",
+          "label": "[Practice Set] Inequality",
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/1652416169-Inequality.pdf",
+          "type": "pdf"
+        },
+        {
+          "id": "reasoning-spl-38-p-349",
+          "label": "[Practice Set] Venn–Diagram",
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/1626955799-24__Venn–Diagram.pdf",
+          "type": "pdf"
+        },
+        {
+          "id": "reasoning-spl-38-p-350",
+          "label": "[Practice Set] Box & Floor Puzzle - 2",
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/1647233287-Box_Floor_Puzzle_-_2.pdf",
+          "type": "pdf"
+        },
+        {
+          "id": "reasoning-spl-38-p-351",
+          "label": "[Practice Set] Box & Floor Puzzle - 1",
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/1647233287-Box_Floor_Puzzle_-_1_compressed.pdf",
+          "type": "pdf"
+        },
+        {
+          "id": "reasoning-spl-38-p-352",
+          "label": "[Practice Set] Puzzle",
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/1652416368-Puzzle.pdf",
+          "type": "pdf"
+        },
+        {
+          "id": "reasoning-spl-38-p-353",
+          "label": "[Practice Set] Seating Arrangement",
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/1652416380-Seating_Arrangement.pdf",
+          "type": "pdf"
+        },
+        {
+          "id": "reasoning-spl-38-p-354",
+          "label": "[Practice Set] Syllogism",
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/1652416386-Syllogism.pdf",
+          "type": "pdf"
+        },
+        {
+          "id": "reasoning-spl-38-p-355",
+          "label": "[Practice Set] Direction and Distance",
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/1652416150-Direction_and_Distance.pdf",
+          "type": "pdf"
+        },
+        {
+          "id": "reasoning-spl-38-p-356",
+          "label": "[Practice Set] Clock",
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/1652415790-Clock.pdf",
+          "type": "pdf"
+        },
+        {
+          "id": "reasoning-spl-38-p-357",
+          "label": "[Practice Set] Calendar",
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/1652415687-Calendar.pdf",
+          "type": "pdf"
+        },
+        {
+          "id": "reasoning-spl-38-p-358",
+          "label": "[Practice Set] Blood Relation",
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/66767c2e3f20a_BLOOD%20RELATION%20(STUDENT%20PDF%20FINAL)%202024.pdf",
+          "type": "pdf"
+        },
+        {
+          "id": "reasoning-spl-38-p-359",
+          "label": "[Practice Set] Blood Relation",
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/1652415697-Blood_Relation.pdf",
+          "type": "pdf"
+        },
+        {
+          "id": "reasoning-spl-38-p-360",
+          "label": "[Practice Set] Counting Figures",
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/64ba5c0eb3f31_COUNTING%20FIGURES%20FINAL%20STUDENT%20PDF%202023.pdf",
+          "type": "pdf"
+        },
+        {
+          "id": "reasoning-spl-38-p-361",
+          "label": "[Practice Set] Cube and Cuboid",
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/1652415709-Cube_and_Cuboid.pdf",
+          "type": "pdf"
+        },
+        {
+          "id": "reasoning-spl-38-p-362",
+          "label": "[Practice Set] Dice",
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/1652415718-Dice.pdf",
+          "type": "pdf"
+        },
+        {
+          "id": "reasoning-spl-38-p-363",
+          "label": "[Practice Set] Coded Equations",
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/6673cf96ad207_CODED%20EQUATIONS%20FINAL%20PDF%202024.pdf",
+          "type": "pdf"
+        },
+        {
+          "id": "reasoning-spl-38-p-364",
+          "label": "[Practice Set] Coded Equation",
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/1652414794-Coded_Equation.pdf",
+          "type": "pdf"
+        },
+        {
+          "id": "reasoning-spl-38-p-365",
+          "label": "[Practice Set] Odd One Out (Classification)",
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/1626954517-11__Odd_One_Out_(Classification).pdf",
+          "type": "pdf"
+        },
+        {
+          "id": "reasoning-spl-38-p-366",
+          "label": "[Practice Set] Analogy or Similarity",
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/1626954517-10__Analogy_or_Similarity.pdf",
+          "type": "pdf"
+        },
+        {
+          "id": "reasoning-spl-38-p-367",
+          "label": "[Practice Set] Missing Number",
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/1626954517-9__Missing_Number.pdf",
+          "type": "pdf"
+        },
+        {
+          "id": "reasoning-spl-38-p-368",
+          "label": "[Practice Set] Number Series",
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/1626954517-8__Number_Series.pdf",
+          "type": "pdf"
+        },
+        {
+          "id": "reasoning-spl-38-p-369",
+          "label": "[Practice Set] Jumbling",
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/1652416211-Jumbling.pdf",
+          "type": "pdf"
+        },
+        {
+          "id": "reasoning-spl-38-p-370",
+          "label": "[Practice Set] Dictionary",
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/1652416049-Dictionary.pdf",
+          "type": "pdf"
+        },
+        {
+          "id": "reasoning-spl-38-p-371",
+          "label": "[Practice Set] Word Formation",
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/1652416400-Word_Formation.pdf",
+          "type": "pdf"
+        },
+        {
+          "id": "reasoning-spl-38-p-372",
+          "label": "[Practice Set] Alphabetical Series",
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/1652416074-Alphabetical_Series.pdf",
+          "type": "pdf"
+        },
+        {
+          "id": "reasoning-spl-38-p-373",
+          "label": "[Practice Set] Alphabet Series",
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/66767c1622b4a_ALPHABETICAL%20SERIES%20(STUDENT%20PDF%20FINAL)%202024.pdf",
+          "type": "pdf"
+        },
+        {
+          "id": "reasoning-spl-38-p-374",
+          "label": "[Practice Set] Letter Series",
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/66767c228e873_LETTER%20SERIES%20(STUDENT)%20PDF%202024.pdf",
+          "type": "pdf"
+        },
+        {
+          "id": "reasoning-spl-38-p-375",
+          "label": "[Practice Set] Pair Formation",
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/1652415866-Pair_Formation_(1).pdf",
+          "type": "pdf"
+        },
+        {
+          "id": "reasoning-spl-38-p-376",
+          "label": "[Practice Set] Coding Decoding",
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/1652415806-Coding_Decoding.pdf",
+          "type": "pdf"
+        }
+      ]
+    }
+  ],
+  "category": "government"
+}

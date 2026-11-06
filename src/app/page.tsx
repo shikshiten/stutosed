@@ -15,7 +15,7 @@ import { getAvatarGradient, getInitials } from '@/components/ProfileMenu';
 import { PrivacyTermsModal } from '@/components/PrivacyTermsModal';
 import { LibraryView } from '@/components/LibraryView';
 import { COURSE_CATEGORIES, getCategoryById } from '@/config/categories';
-import { INITIAL_COURSES, getTotalStats, getCourseById, getCoursesByCategory } from '@/lib/coursesData';
+import { INITIAL_COURSES, getTotalStats, getCourseById, getCoursesByCategory, loadCourseDetails } from '@/lib/coursesData';
 import { getSubjectThumbnail, getDynamicThumbnailUrl } from '@/lib/subjectThumbnails';
 import { Course, LectureItem, UserProfile } from '@/types';
 import { getWorkerProxyUrl, resolveDirectMediaUrl } from '@/lib/proxyConfig';
@@ -968,13 +968,14 @@ export default function HomePage() {
       const code = vidmolyMatch?.[1] || earnvidsMatch?.[1];
       const provider = earnvidsMatch ? 'earnvids' : 'vidmoly';
       if (code) {
-        fetch(`/api/stream?code=${encodeURIComponent(code)}&provider=${provider}`)
+        fetch(`/api/v1/stream?code=${encodeURIComponent(code)}&provider=${provider}`)
           .then((r) => r.json())
-          .then((d) => {
-            if (d?.streamUrl) {
+          .then((json) => {
+            const streamData = json?.data || json;
+            if (streamData?.streamUrl) {
               sessionStorage.setItem(
                 'stutosed_prefetched_stream',
-                JSON.stringify({ url: targetItem.url, streamUrl: d.streamUrl })
+                JSON.stringify({ url: targetItem.url, streamUrl: streamData.streamUrl })
               );
             }
           })
@@ -987,9 +988,9 @@ export default function HomePage() {
   };
 
   // Resume last played lecture
-  const handleResumeLastPlayed = () => {
+  const handleResumeLastPlayed = async () => {
     if (!lastPlayed) return;
-    const course = getCourseById(lastPlayed.courseId);
+    const course = (lastPlayed.courseId ? await loadCourseDetails(lastPlayed.courseId) : null) || (lastPlayed.courseId ? getCourseById(lastPlayed.courseId) : undefined);
     if (!course) return;
 
     let targetList: LectureItem[] = [];

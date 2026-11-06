@@ -1,0 +1,307 @@
+{
+  "id": "gate-ece-made-easy-signal-system",
+  "name": "Signal and System — Made Easy",
+  "subname": "ECE • Made Easy Complete GATE Course",
+  "teacher": "Made Easy Faculty",
+  "subject": "ECE",
+  "category": "gate",
+  "thumb": "",
+  "isFolderMode": false,
+  "tabs": [
+    {
+      "id": "signal-and-system",
+      "label": "Signal and System",
+      "subname": "Made Easy Complete Lectures",
+      "items": [
+        {
+          "id": "ss-1",
+          "label": "000 - S&S - Lecture 1 A (Introduction & Different Operations On Signal)",
+          "url": "https://vidmoly.net/embed-hxc8m7bozhld.html",
+          "type": "hls",
+          "subject": "Signal and System",
+          "folderName": "Signal and System"
+        },
+        {
+          "id": "ss-2",
+          "label": "001 - S&S - Lecture 1 B (Different Operations On Signal)",
+          "url": "https://vidmoly.net/embed-5ylwsuanbpnp.html",
+          "type": "hls",
+          "subject": "Signal and System",
+          "folderName": "Signal and System"
+        },
+        {
+          "id": "ss-3",
+          "label": "002 - S&S - Lecture 2 A (Signal Classification)",
+          "url": "https://vidmoly.net/embed-0x7xevv3lqiw.html",
+          "type": "hls",
+          "subject": "Signal and System",
+          "folderName": "Signal and System"
+        },
+        {
+          "id": "ss-4",
+          "label": "003 - S&S - Lecture 2 B (Signal Classification)",
+          "url": "https://vidmoly.net/embed-in9c4pvfc3cy.html",
+          "type": "hls",
+          "subject": "Signal and System",
+          "folderName": "Signal and System"
+        },
+        {
+          "id": "ss-5",
+          "label": "004 - S&S - Lecture 3 (Signal Classification)",
+          "url": "https://vidmoly.net/embed-8tp90w8bhb5j.html",
+          "type": "hls",
+          "subject": "Signal and System",
+          "folderName": "Signal and System"
+        },
+        {
+          "id": "ss-6",
+          "label": "005 - S&S - Lecture 4 A (Signal Classification)",
+          "url": "https://vidmoly.net/embed-eahujlsm2cjh.html",
+          "type": "hls",
+          "subject": "Signal and System",
+          "folderName": "Signal and System"
+        },
+        {
+          "id": "ss-7",
+          "label": "006 - S&S - Lecture 4 B (Basic Signals)",
+          "url": "https://vidmoly.net/embed-2wxu7t0nojab.html",
+          "type": "hls",
+          "subject": "Signal and System",
+          "folderName": "Signal and System"
+        },
+        {
+          "id": "ss-8",
+          "label": "007 - S&S - Lecture 5 A (Basic Signals)",
+          "url": "https://vidmoly.net/embed-c0z8a39rbx9p.html",
+          "type": "hls",
+          "subject": "Signal and System",
+          "folderName": "Signal and System"
+        },
+        {
+          "id": "ss-9",
+          "label": "008 - S&S - Lecture 5 B (Different Operations On Signal)",
+          "url": "https://vidmoly.net/embed-5gd67zdoa21y.html",
+          "type": "hls",
+          "subject": "Signal and System",
+          "folderName": "Signal and System"
+        },
+        {
+          "id": "ss-10",
+          "label": "009 - S&S - Lecture 5 C (Different Operations On Signal)",
+          "url": "https://vidmoly.net/embed-a3mk9xlmt93o.html",
+          "type": "hls",
+          "subject": "Signal and System",
+          "folderName": "Signal and System"
+        },
+        {
+          "id": "ss-11",
+          "label": "010 - S&S - Lecture 6 (Basic System Properties)",
+          "url": "https://vidmoly.net/embed-qqtlp88nxb4h.html",
+          "type": "hls",
+          "subject": "Signal and System",
+          "folderName": "Signal and System"
+        },
+        {
+          "id": "ss-12",
+          "label": "011 - S&S - Lecture 7 (Basic System Properties)",
+          "url": "https://vidmoly.net/embed-8vg90ijp1bs5.html",
+          "type": "hls",
+          "subject": "Signal and System",
+          "folderName": "Signal and System"
+        },
+        {
+          "id": "ss-13",
+          "label": "012 - S&S - Lecture 8 A (LTI - System)",
+          "url": "https://vidmoly.net/embed-yieoh7cjt9x7.html",
+          "type": "hls",
+          "subject": "Signal and System",
+          "folderName": "Signal and System"
+        },
+        {
+          "id": "ss-14",
+          "label": "013 - S&S - Lecture 8 B (Fourier - Series)",
+          "url": "https://vidmoly.net/embed-rfn5uoalqu3i.html",
+          "type": "hls",
+          "subject": "Signal and System",
+          "folderName": "Signal and System"
+        },
+        {
+          "id": "ss-15",
+          "label": "014 - S&S - Lecture 9 A (Fourier Series)",
+          "url": "https://vidmoly.net/embed-yon4fp7yoyca.html",
+          "type": "hls",
+          "subject": "Signal and System",
+          "folderName": "Signal and System"
+        },
+        {
+          "id": "ss-16",
+          "label": "018 - S&S - Lecture 10 C (Fourier Transform)",
+          "url": "https://vidmoly.net/embed-enesxob9byo9.html",
+          "type": "hls",
+          "subject": "Signal and System",
+          "folderName": "Signal and System"
+        },
+        {
+          "id": "ss-17",
+          "label": "019 - S&S - Lecture 10 D (Fourier Transform)",
+          "url": "https://vidmoly.net/embed-bi7gj3piofoq.html",
+          "type": "hls",
+          "subject": "Signal and System",
+          "folderName": "Signal and System"
+        },
+        {
+          "id": "ss-18",
+          "label": "020 - S&S - Lecture 11 A (Fourier Transform)",
+          "url": "https://vidmoly.net/embed-enbumkprgo8n.html",
+          "type": "hls",
+          "subject": "Signal and System",
+          "folderName": "Signal and System"
+        },
+        {
+          "id": "ss-19",
+          "label": "021 - S&S - Lecture 11 B (Laplace Transform)",
+          "url": "https://vidmoly.net/embed-9qo3hvbkef0h.html",
+          "type": "hls",
+          "subject": "Signal and System",
+          "folderName": "Signal and System"
+        },
+        {
+          "id": "ss-20",
+          "label": "022 - S&S - Lecture 11 C (Laplace Transform)",
+          "url": "https://vidmoly.net/embed-1i3p87tjzbpm.html",
+          "type": "hls",
+          "subject": "Signal and System",
+          "folderName": "Signal and System"
+        },
+        {
+          "id": "ss-21",
+          "label": "023 - S&S - Lecture 12 A (Laplace Transform)",
+          "url": "https://vidmoly.net/embed-3f94d04t03sn.html",
+          "type": "hls",
+          "subject": "Signal and System",
+          "folderName": "Signal and System"
+        },
+        {
+          "id": "ss-22",
+          "label": "024 - S&S - Lecture 12 B (Sampling Theorem)",
+          "url": "https://vidmoly.net/embed-vkn5d07v873p.html",
+          "type": "hls",
+          "subject": "Signal and System",
+          "folderName": "Signal and System"
+        },
+        {
+          "id": "ss-23",
+          "label": "025 - S&S - Lecture 13 A (Sampling Theorem)",
+          "url": "https://vidmoly.net/embed-e4lkfhrsryyo.html",
+          "type": "hls",
+          "subject": "Signal and System",
+          "folderName": "Signal and System"
+        },
+        {
+          "id": "ss-24",
+          "label": "026 - S&S - Lecture 13 B (Discrete line signal and system)",
+          "url": "https://vidmoly.net/embed-0qw2gx6j3i2u.html",
+          "type": "hls",
+          "subject": "Signal and System",
+          "folderName": "Signal and System"
+        },
+        {
+          "id": "ss-25",
+          "label": "027 - S&S - Lecture 14 A (Discrete line signal and system)",
+          "url": "https://vidmoly.net/embed-wtgi889okv4f.html",
+          "type": "hls",
+          "subject": "Signal and System",
+          "folderName": "Signal and System"
+        },
+        {
+          "id": "ss-26",
+          "label": "028 - S&S - Lecture 14 B (Z-transform)",
+          "url": "https://vidmoly.net/embed-pn886muo4u5b.html",
+          "type": "hls",
+          "subject": "Signal and System",
+          "folderName": "Signal and System"
+        },
+        {
+          "id": "ss-27",
+          "label": "029 - S&S - Lecture 15 A (Z-transform)",
+          "url": "https://vidmoly.net/embed-pbq6mcpgpi7d.html",
+          "type": "hls",
+          "subject": "Signal and System",
+          "folderName": "Signal and System"
+        },
+        {
+          "id": "ss-28",
+          "label": "030 - S&S - Lecture 15 B (Z-transform)",
+          "url": "https://vidmoly.net/embed-qvw7uzyi04om.html",
+          "type": "hls",
+          "subject": "Signal and System",
+          "folderName": "Signal and System"
+        },
+        {
+          "id": "ss-29",
+          "label": "031 - S&S - Lecture 16 A (Discrete-Time FS)",
+          "url": "https://vidmoly.net/embed-i4j89k5no2lo.html",
+          "type": "hls",
+          "subject": "Signal and System",
+          "folderName": "Signal and System"
+        },
+        {
+          "id": "ss-30",
+          "label": "032 - S&S - Lecture 16 B (Discrete-Time FS)",
+          "url": "https://vidmoly.net/embed-fchzzpixurso.html",
+          "type": "hls",
+          "subject": "Signal and System",
+          "folderName": "Signal and System"
+        },
+        {
+          "id": "ss-31",
+          "label": "033 - S&S - Lecture 16 C (Discrete-Time FS)",
+          "url": "https://vidmoly.net/embed-i9wkuv6md2bb.html",
+          "type": "hls",
+          "subject": "Signal and System",
+          "folderName": "Signal and System"
+        },
+        {
+          "id": "ss-32",
+          "label": "034 - S&S - Lecture 17 A (DTFS and DTFT)",
+          "url": "https://vidmoly.net/embed-wpoayuzn2d72.html",
+          "type": "hls",
+          "subject": "Signal and System",
+          "folderName": "Signal and System"
+        },
+        {
+          "id": "ss-33",
+          "label": "035 - S&S - Lecture 17 B (DFT)",
+          "url": "https://vidmoly.net/embed-0l8ajp70omvw.html",
+          "type": "hls",
+          "subject": "Signal and System",
+          "folderName": "Signal and System"
+        },
+        {
+          "id": "ss-34",
+          "label": "036 - S&S - Lecture 17 C (DFT)",
+          "url": "https://vidmoly.net/embed-u5j59vaikyxt.html",
+          "type": "hls",
+          "subject": "Signal and System",
+          "folderName": "Signal and System"
+        },
+        {
+          "id": "ss-35",
+          "label": "037 - S&S - Lecture 18 A (Digital Filters)",
+          "url": "https://vidmoly.net/embed-2aiode5y4dmo.html",
+          "type": "hls",
+          "subject": "Signal and System",
+          "folderName": "Signal and System"
+        },
+        {
+          "id": "ss-36",
+          "label": "038 - S&S - Lecture 18 B (Digital Filters and DT Processing of CT Signal)",
+          "url": "https://vidmoly.net/embed-gyenncrdieii.html",
+          "type": "hls",
+          "subject": "Signal and System",
+          "folderName": "Signal and System"
+        }
+      ]
+    }
+  ]
+}

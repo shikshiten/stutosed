@@ -1,18 +1,15 @@
 import { Course } from '@/types';
-import rawData from './coursesData.json';
+import manifestData from '@/data/courses-manifest.json';
 
-// Normalize course categories (default to 'beu' for BEU, 'government' for govt exams)
-export const INITIAL_COURSES: Course[] = ((rawData as unknown as Course[]) || [])
-  .map((c) => ({
-    ...c,
-    category: c.category || (c.id === 'beu-1st-year' ? 'beu' : 'government'),
-  }))
-  .sort((a, b) =>
-    a.name.localeCompare(b.name, undefined, { numeric: true, sensitivity: 'base' })
-  );
+// In-memory cache for on-demand lazy loaded course details
+const courseDetailsCache = new Map<string, Course>();
+
+// Lightweight manifest list of all courses (~10 KB total) for dashboard, filters, and cards
+export const INITIAL_COURSES: Course[] = (manifestData as unknown as Course[]) || [];
 
 export function getCourseById(id: string): Course | undefined {
-  return INITIAL_COURSES.find((c) => c.id === id);
+  if (!id) return undefined;
+  return courseDetailsCache.get(id) || INITIAL_COURSES.find((c) => c.id === id);
 }
 
 export function getCoursesByCategory(categoryId: string): Course[] {
@@ -20,7 +17,31 @@ export function getCoursesByCategory(categoryId: string): Course[] {
   return INITIAL_COURSES.filter((c) => (c.category || '').toLowerCase() === categoryId.toLowerCase());
 }
 
+/**
+ * Lazy loads the full course details (tabs, lectures, items, parmarData, prathamBySubject)
+ * on demand as a separate code-split static chunk.
+ */
+export async function loadCourseDetails(courseId: string): Promise<Course | null> {
+  if (!courseId) return null;
+  if (courseDetailsCache.has(courseId)) {
+    return courseDetailsCache.get(courseId)!;
+  }
+  try {
+    const courseModule = await import(`@/data/courses/${courseId}.json`);
+    const course = (courseModule.default || courseModule) as Course;
+    courseDetailsCache.set(courseId, course);
+    return course;
+  } catch (err) {
+    console.warn(`[coursesData] Failed to lazy load course details for: ${courseId}`, err);
+    return getCourseById(courseId) || null;
+  }
+}
+
 export function countCourseStats(course: Course): { videos: number; resources: number } {
+  if (course.stats) {
+    return course.stats;
+  }
+
   if (course.isParmar && course.parmarData) {
     let videos = 0;
     let resources = 0;
@@ -72,4 +93,3 @@ export function getTotalStats(): { totalVideos: number; totalPDFs: number; total
     totalCourses: INITIAL_COURSES.length,
   };
 }
-

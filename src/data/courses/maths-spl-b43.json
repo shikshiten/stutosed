@@ -1,0 +1,3389 @@
+{
+  "id": "maths-spl-b43",
+  "name": "Mathematics B43",
+  "subname": "Maths Special B-43 • Complete Arithmetic & Advanced",
+  "teacher": "Gagan Pratap Sir",
+  "subject": "Maths",
+  "thumb": "/thumbnails/subjects/maths_spl_b43.svg",
+  "tabs": [
+    {
+      "id": "videos",
+      "label": "▶ Videos",
+      "items": [
+        {
+          "id": "maths-spl-b43-v-1",
+          "label": "Arithmetic - Class-1 –– Problem on Ages [07-Aug-2024 11:00]",
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6360023014112/6360023014112.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-spl-b43-v-2",
+          "label": "Arithmetic - Class-02 –– Problem on Ages [08-Aug-2024 11:00]",
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6360074299112/6360074299112.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-spl-b43-v-3",
+          "label": "Arithmetic - Class-01 – Percentage [23-Oct-2024 16:00]",
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/vod_non_drm_hls/migration/VGajz-yzhSg/VGajz-yzhSg.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-spl-b43-v-4",
+          "label": "Arithmetic - Class-02 – Percentage [24-Oct-2024 16:00]",
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6363682696112/6363682696112.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-spl-b43-v-5",
+          "label": "Arithmetic - Class-03 – Percentage [25-Oct-2024 16:00]",
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6363735174112/6363735174112.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-spl-b43-v-6",
+          "label": "Arithmetic - Class-04 – Percentage [26-Oct-2024 16:00]",
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6363788587112/6363788587112.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-spl-b43-v-7",
+          "label": "Arithmetic - Class-05 – Percentage [05-Nov-2024 16:00]",
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6364222344112/6364222344112.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-spl-b43-v-8",
+          "label": "Arithmetic - Class-06 – Percentage [06-Nov-2024 16:00]",
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6364283890112/6364283890112.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-spl-b43-v-9",
+          "label": "Arithmetic - Class-07 – Percentage [08-Nov-2024 16:00]",
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6364396159112/6364396159112.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-spl-b43-v-10",
+          "label": "Arithmetic - Class-08 – Percentage [11-Nov-2024 16:00]",
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6364539340112/6364539340112.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-spl-b43-v-11",
+          "label": "Arithmetic - Class-09 – Percentage [12-Nov-2024 16:00]",
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6364585249112/6364585249112.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-spl-b43-v-12",
+          "label": "Arithmetic - Class-10 – Percentage [13-Nov-2024 16:00]",
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6364641238112/6364641238112.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-spl-b43-v-13",
+          "label": "Arithmetic - Class-11 – Percentage [15-Nov-2024 16:00]",
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6364743220112/6364743220112.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-spl-b43-v-14",
+          "label": "Arithmetic - Class-12 – Percentage [19-Nov-2024 16:00]",
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6364895832112/6364895832112.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-spl-b43-v-15",
+          "label": "Arithmetic - Class-13 – Percentage [20-Nov-2024 16:00]",
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6364943378112/6364943378112.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-spl-b43-v-16",
+          "label": "Arithmetic - Class-14 – Percentage [21-Nov-2024 16:00]",
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6364987784112/6364987784112.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-spl-b43-v-17",
+          "label": "Arithmetic - Class-15 – Percentage [22-Nov-2024 16:30]",
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6365039964112/6365039964112.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-spl-b43-v-18",
+          "label": "Arithmetic - Class-16 – Percentage [25-Nov-2024 16:00]",
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6365155317112/6365155317112.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-spl-b43-v-19",
+          "label": "Arithmetic - Class-17 – Percentage [26-Nov-2024 16:00]",
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6365201669112/6365201669112.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-spl-b43-v-20",
+          "label": "Arithmetic - Class-18 – Percentage [27-Nov-2024 16:00]",
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6365242999112/6365242999112.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-spl-b43-v-21",
+          "label": "Arithmetic - Class-19 – Percentage [28-Nov-2024 16:00]",
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6365290699112/6365290699112.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-spl-b43-v-22",
+          "label": "Arithmetic - Class-20 – Percentage [02-Dec-2024 16:00]",
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6365411466112/6365411466112.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-spl-b43-v-23",
+          "label": "Arithmetic - Class-21 – Percentage [03-Dec-2024 16:30]",
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6365466120112/6365466120112.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-spl-b43-v-24",
+          "label": "Arithmetic - Class-22 – Percentage [04-Dec-2024 16:00]",
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/vod_non_drm_hls/migration/zgwAv7etYbI/zgwAv7etYbI.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-spl-b43-v-25",
+          "label": "Arithmetic - Class-23 – Percentage [05-Dec-2024 16:00]",
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6365575764112/6365575764112.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-spl-b43-v-26",
+          "label": "Arithmetic - Class-24 – Percentage [06-Dec-2024 16:00]",
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6365628099112/6365628099112.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-spl-b43-v-27",
+          "label": "Arithmetic - Class-25 – Percentage [10-Dec-2024 16:00]",
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6365795741112/6365795741112.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-spl-b43-v-28",
+          "label": "Arithmetic - Class-26 – Percentage [11-Dec-2024 16:00]",
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6365843357112/6365843357112.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-spl-b43-v-29",
+          "label": "Arithmetic - Class-27 – Percentage [12-Dec-2024 16:00]",
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6365897050112/6365897050112.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-spl-b43-v-30",
+          "label": "Arithmetic - Class-28 – Percentage [13-Dec-2024 16:00]",
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6365943894112/6365943894112.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-spl-b43-v-31",
+          "label": "Arithmetic - Class-29 – Percentage [17-Dec-2024 16:00]",
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6366105059112/6366105059112.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-spl-b43-v-32",
+          "label": "Arithmetic - Class-30 – Percentage [18-Dec-2024 16:00]",
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6366176269112/6366176269112.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-spl-b43-v-33",
+          "label": "Arithmetic - Class-1 –– Ratio and Proportion [19-Dec-2024 16:00]",
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6366223175112/6366223175112.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-spl-b43-v-34",
+          "label": "Arithmetic - Class-02 –– Ratio and Proportion [20-Dec-2024 16:30]",
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6366272901112/6366272901112.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-spl-b43-v-35",
+          "label": "Arithmetic - Class-03 –– Ratio and Proportion [23-Dec-2024 16:00]",
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6366368144112/6366368144112.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-spl-b43-v-36",
+          "label": "Arithmetic - Class-04 –– Ratio and Proportion [24-Dec-2024 16:00]",
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6366404249112/6366404249112.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-spl-b43-v-37",
+          "label": "Arithmetic - Class-05 –– Ratio and Proportion [25-Dec-2024 16:30]",
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6366428229112/6366428229112.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-spl-b43-v-38",
+          "label": "Arithmetic - Class-06 –– Ratio and Proportion [26-Dec-2024 16:00]",
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6366448512112/6366448512112.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-spl-b43-v-39",
+          "label": "Arithmetic - Class-07 –– Ratio and Proportion [27-Dec-2024 16:00]",
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6366475374112/6366475374112.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-spl-b43-v-40",
+          "label": "Arithmetic - Class-08 –– Ratio and Proportion [30-Dec-2024 16:00]",
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6366545741112/6366545741112.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-spl-b43-v-41",
+          "label": "Arithmetic - Class-09 –– Ratio and Proportion [31-Dec-2024 16:00]",
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6366570917112/6366570917112.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-spl-b43-v-42",
+          "label": "Arithmetic - Class-10 –– Maths –– Ratio and Proportion [02-Jan-2025 12:00]",
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6366612106112/6366612106112.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-spl-b43-v-43",
+          "label": "Arithmetic - Class-11 –– Maths –– Ratio and Proportion [02-Jan-2025 16:00]",
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6366615442112/6366615442112.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-spl-b43-v-44",
+          "label": "Arithmetic - Class-12 –– Maths –– Ratio and Proportion [03-Jan-2025 12:00]",
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6366644100112/6366644100112.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-spl-b43-v-45",
+          "label": "Arithmetic - Class-13 –– Maths –– Ratio and Proportion [03-Jan-2025 16:00]",
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6366647333112/6366647333112.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-spl-b43-v-46",
+          "label": "Arithmetic - Class-14 –– Maths –– Ratio and Proportion [06-Jan-2025 12:00]",
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6366724676112/6366724676112.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-spl-b43-v-47",
+          "label": "Arithmetic - Class-15 –– Maths –– Ratio and Proportion [06-Jan-2025 16:00]",
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6366730467112/6366730467112.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-spl-b43-v-48",
+          "label": "Arithmetic - Class-16 –– Maths –– Ratio and Proportion [07-Jan-2025 16:30]",
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6366766398112/6366766398112.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-spl-b43-v-49",
+          "label": "Arithmetic - Class-17 –– Maths –– Ratio and Proportion [08-Jan-2025 16:00]",
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6366810761112/6366810761112.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-spl-b43-v-50",
+          "label": "Arithmetic - Class-18 –– Maths –– Ratio and Proportion [10-Jan-2025 16:00]",
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/vod_non_drm_hls/migration/9jgG-qOsAMY/9jgG-qOsAMY.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-spl-b43-v-51",
+          "label": "Arithmetic - Class-19 –– Maths –– Ratio and Proportion [11-Jan-2025 10:00]",
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6366942164112/6366942164112.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-spl-b43-v-52",
+          "label": "Arithmetic - Class-01 –– Time and Work [13-Jan-2025 16:00]",
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6367019858112/6367019858112.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-spl-b43-v-53",
+          "label": "Arithmetic - Class-02 –– Time and Work [14-Jan-2025 16:00]",
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6367073463112/6367073463112.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-spl-b43-v-54",
+          "label": "Arithmetic - Class-03 –– Time and Work [15-Jan-2025 16:00]",
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6367119071112/6367119071112.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-spl-b43-v-55",
+          "label": "Arithmetic - Class-04 –– Time and Work [20-Jan-2025 16:00]",
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6367385187112/6367385187112.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-spl-b43-v-56",
+          "label": "Arithmetic - Class-05 –– Time and Work [21-Jan-2025 16:00]",
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6367437369112/6367437369112.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-spl-b43-v-57",
+          "label": "Arithmetic - Class-06 –– Time and Work [22-Jan-2025 16:00]",
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6367490096112/6367490096112.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-spl-b43-v-58",
+          "label": "Arithmetic - Class-07 –– Time and Work [23-Jan-2025 16:00]",
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6367553005112/6367553005112.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-spl-b43-v-59",
+          "label": "Arithmetic - Class-08 –– Time and Work [24-Jan-2025 16:30]",
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6367618447112/6367618447112.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-spl-b43-v-60",
+          "label": "Arithmetic - Class-09 –– Time and Work [27-Jan-2025 16:00]",
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6367823088112/6367823088112.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-spl-b43-v-61",
+          "label": "Arithmetic - Class-10 –– Time and Work [28-Jan-2025 16:00]",
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6367874448112/6367874448112.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-spl-b43-v-62",
+          "label": "Arithmetic - Class-11 –– Time and Work [29-Jan-2025 16:30]",
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6367936274112/6367936274112.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-spl-b43-v-63",
+          "label": "Arithmetic - Class-12 –– Time and Work [30-Jan-2025 16:00]",
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6367988655112/6367988655112.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-spl-b43-v-64",
+          "label": "Arithmetic - Class-13 –– Time and Work [31-Jan-2025 16:00]",
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6368040888112/6368040888112.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-spl-b43-v-65",
+          "label": "Arithmetic - Class-14 –– Time and Work [03-Feb-2025 16:00]",
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6368190822112/6368190822112.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-spl-b43-v-66",
+          "label": "Arithmetic - Class-15 –– Time and Work [04-Feb-2025 16:30]",
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6368238943112/6368238943112.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-spl-b43-v-67",
+          "label": "Arithmetic - Class-16 –– Time and Work [07-Feb-2025 16:00]",
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6368423127112/6368423127112.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-spl-b43-v-68",
+          "label": "Arithmetic - Class-17 –– Time and Work [10-Feb-2025 16:00]",
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6368594495112/6368594495112.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-spl-b43-v-69",
+          "label": "Arithmetic - Class-1 –– Pipe and Cistern [11-Feb-2025 16:00]",
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/vod_non_drm_hls/migration/yEKb45A48J4/yEKb45A48J4.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-spl-b43-v-70",
+          "label": "Arithmetic - Class-2 –– Pipe and Cistern [12-Feb-2025 16:30]",
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6368697422112/6368697422112.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-spl-b43-v-71",
+          "label": "Arithmetic - Class-03 –– Pipe and Cistern [13-Feb-2025 16:00]",
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6368750600112/6368750600112.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-spl-b43-v-72",
+          "label": "Arithmetic - Class-04 –– Pipe and Cistern [17-Feb-2025 16:00]",
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6368947825112/6368947825112.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-spl-b43-v-73",
+          "label": "Arithmetic - Class-05 –– Pipe and Cistern [18-Feb-2025 16:00]",
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6368989677112/6368989677112.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-spl-b43-v-74",
+          "label": "Arithmetic - Class-1 –– Time, Speed and Distance [20-Feb-2025 16:00]",
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6369087192112/6369087192112.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-spl-b43-v-75",
+          "label": "Arithmetic - Class-02 –– Time, Speed and Distance [21-Feb-2025 16:30]",
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6369139660112/6369139660112.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-spl-b43-v-76",
+          "label": "Arithmetic - Class-03 –– Time, Speed and Distance [24-Feb-2025 16:00]",
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6369250919112/6369250919112.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-spl-b43-v-77",
+          "label": "Arithmetic - Class-04 –– Time, Speed and Distance [25-Feb-2025 16:30]",
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6369291892112/6369291892112.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-spl-b43-v-78",
+          "label": "Arithmetic - Class-05 –– Time, Speed and Distance [26-Feb-2025 16:00]",
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6369337894112/6369337894112.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-spl-b43-v-79",
+          "label": "Arithmetic - Class-06 –– Time, Speed and Distance [28-Feb-2025 16:00]",
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6369433864112/6369433864112.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-spl-b43-v-80",
+          "label": "Arithmetic - Class-07 –– Time, Speed and Distance [04-Mar-2025 16:00]",
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6369586728112/6369586728112.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-spl-b43-v-81",
+          "label": "Arithmetic - Class-08 –– Time, Speed and Distance [05-Mar-2025 16:00]",
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6369628349112/6369628349112.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-spl-b43-v-82",
+          "label": "Arithmetic - Class-09 –– Time, Speed and Distance [06-Mar-2025 16:00]",
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6369669415112/6369669415112.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-spl-b43-v-83",
+          "label": "Arithmetic - Class-10 –– Time, Speed and Distance [08-Mar-2025 16:00]",
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6369768795112/6369768795112.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-spl-b43-v-84",
+          "label": "Arithmetic - Class-11 –– Time, Speed and Distance [10-Mar-2025 16:30]",
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6369837220112/6369837220112.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-spl-b43-v-85",
+          "label": "Arithmetic - Class-12 –– Time, Speed and Distance [11-Mar-2025 16:00]",
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6369876525112/6369876525112.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-spl-b43-v-86",
+          "label": "Arithmetic - Class-13 –– Time, Speed and Distance [17-Mar-2025 16:00]",
+          "url": "https://www.youtube.com/embed/KN2E62N5MMc",
+          "type": "youtube"
+        },
+        {
+          "id": "maths-spl-b43-v-87",
+          "label": "Arithmetic - Class-14 –– Time, Speed and Distance [18-Mar-2025 16:00]",
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6370182454112/6370182454112.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-spl-b43-v-88",
+          "label": "Arithmetic - Class-15 –– Time, Speed and Distance [19-Mar-2025 16:00]",
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6370224388112/6370224388112.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-spl-b43-v-89",
+          "label": "Arithmetic - Class-16 –– Time, Speed and Distance [21-Mar-2025 16:00]",
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6370316624112/6370316624112.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-spl-b43-v-90",
+          "label": "Arithmetic - Class-17 –– Time, Speed and Distance [24-Mar-2025 16:00]",
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6370457017112/6370457017112.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-spl-b43-v-91",
+          "label": "Arithmetic - Class-1 –– Boat and Steam [25-Mar-2025 16:00]",
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6370512561112/6370512561112.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-spl-b43-v-92",
+          "label": "Arithmetic - Class-2 –– Boat and Steam [27-Mar-2025 16:00]",
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6370626006112/6370626006112.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-spl-b43-v-93",
+          "label": "Arithmetic - Class-03 –– Boat and Steam [28-Mar-2025 16:00]",
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6370675352112/6370675352112.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-spl-b43-v-94",
+          "label": "Arithmetic - Class-1 –– Train [31-Mar-2025 16:30]",
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6370823891112/6370823891112.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-spl-b43-v-95",
+          "label": "Arithmetic - Class-02 –– Train [02-Apr-2025 16:00]",
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6370916938112/6370916938112.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-spl-b43-v-96",
+          "label": "Arithmetic - Class-03 –– Train [03-Apr-2025 16:00]",
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6370972134112/6370972134112.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-spl-b43-v-97",
+          "label": "Arithmetic - Class-04 –– Train [04-Apr-2025 16:00]",
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6371027500112/6371027500112.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-spl-b43-v-98",
+          "label": "Arithmetic - Class- 1 –– Partnership [08-Apr-2025 16:00]",
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6371213300112/6371213300112.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-spl-b43-v-99",
+          "label": "Arithmetic - Class-1 –– Race [08-Apr-2025 17:00]",
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6338720236112/6338720236112.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-spl-b43-v-100",
+          "label": "Arithmetic - Class-02 –– Race [08-Apr-2025 17:02]",
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6338834903112/6338834903112.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-spl-b43-v-101",
+          "label": "Arithmetic - Class-03 –– Race [08-Apr-2025 17:04]",
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6338899866112/6338899866112.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-spl-b43-v-102",
+          "label": "Arithmetic - Class-02 –– Partnership [09-Apr-2025 16:00]",
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6371260532112/6371260532112.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-spl-b43-v-103",
+          "label": "Arithmetic - Class-03 –– Partnership [10-Apr-2025 16:00]",
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6371304343112/6371304343112.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-spl-b43-v-104",
+          "label": "Arithmetic - Class -1 –– Profit and Loss [14-Apr-2025 16:00]",
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6371468882112/6371468882112.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-spl-b43-v-105",
+          "label": "Arithmetic - Clasa-2 –– Profit and Loss [15-Apr-2025 16:00]",
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6371511104112/6371511104112.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-spl-b43-v-106",
+          "label": "Arithmetic - Clasa-03 –– Profit and Loss [17-Apr-2025 16:00]",
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6371593915112/6371593915112.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-spl-b43-v-107",
+          "label": "Arithmetic - Clasa-04 –– Profit and Loss [18-Apr-2025 16:00]",
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6371640371112/6371640371112.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-spl-b43-v-108",
+          "label": "Arithmetic - Clasa-05 –– Profit and Loss [19-Apr-2025 09:00]",
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6371674554112/6371674554112.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-spl-b43-v-109",
+          "label": "Arithmetic - Clasa-06 –– Profit and Loss [21-Apr-2025 16:00]",
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6371747943112/6371747943112.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-spl-b43-v-110",
+          "label": "Arithmetic - Clasa-07 –– Profit and Loss [22-Apr-2025 16:00]",
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6371784434112/6371784434112.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-spl-b43-v-111",
+          "label": "Arithmetic - Clasa-08 –– Profit and Loss [23-Apr-2025 16:00]",
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6371823222112/6371823222112.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-spl-b43-v-112",
+          "label": "Arithmetic - Clasa-09 –– Profit and Loss [25-Apr-2025 16:00]",
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6371919898112/6371919898112.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-spl-b43-v-113",
+          "label": "Arithmetic - Clasa-10 –– Profit and Loss [28-Apr-2025 16:00]",
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6372020857112/6372020857112.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-spl-b43-v-114",
+          "label": "Arithmetic - Clasa-11 –– Profit and Loss [29-Apr-2025 20:00]",
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6372064488112/6372064488112.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-spl-b43-v-115",
+          "label": "Arithmetic - Clasa-12 –– Profit and Loss [30-Apr-2025 16:00]",
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6372103422112/6372103422112.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-spl-b43-v-116",
+          "label": "Arithmetic - Clasa-13 –– Profit and Loss [01-May-2025 16:00]",
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6372159698112/6372159698112.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-spl-b43-v-117",
+          "label": "Arithmetic - Clasa-14 –– Profit and Loss [02-May-2025 20:00]",
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6372218256112/6372218256112.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-spl-b43-v-118",
+          "label": "Arithmetic - Class -1 –– Discount [05-May-2025 16:00]",
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6372363358112/6372363358112.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-spl-b43-v-119",
+          "label": "Arithmetic - Class-02 –– Discount [06-May-2025 16:30]",
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6372409376112/6372409376112.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-spl-b43-v-120",
+          "label": "Arithmetic - Class-03 –– Discount [07-May-2025 16:00]",
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6372458412112/6372458412112.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-spl-b43-v-121",
+          "label": "Arithmetic - Class-04 –– Discount [09-May-2025 16:00]",
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6372565190112/6372565190112.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-spl-b43-v-122",
+          "label": "Arithmetic - Class-05 –– Discount [12-May-2025 16:00]",
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6372695339112/6372695339112.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-spl-b43-v-123",
+          "label": "Arithmetic - Class-06 –– Discount [13-May-2025 20:00]",
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6372750141112/6372750141112.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-spl-b43-v-124",
+          "label": "Arithmetic - Class-07 –– Discount [14-May-2025 16:00]",
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6372787851112/6372787851112.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-spl-b43-v-125",
+          "label": "Arithmetic - Class-08 –– Discount [15-May-2025 16:00]",
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6372836853112/6372836853112.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-spl-b43-v-126",
+          "label": "Arithmetic - Class-09 –– Discount [17-May-2025 09:00]",
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6372948605112/6372948605112.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-spl-b43-v-127",
+          "label": "Arithmetic - Class-10 –– Discount [20-May-2025 16:00]",
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6373105769112/6373105769112.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-spl-b43-v-128",
+          "label": "Arithmetic - Class-11 –– Discount [21-May-2025 20:00]",
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6373173683112/6373173683112.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-spl-b43-v-129",
+          "label": "Arithmetic - Class-12 –– Discount [22-May-2025 16:00]",
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6373220318112/6373220318112.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-spl-b43-v-130",
+          "label": "Arithmetic - Class-13 –– Discount [23-May-2025 16:00]",
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6373379793112/6373379793112.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-spl-b43-v-131",
+          "label": "Arithmetic - Class-1 –– Mixture and Alligation [26-May-2025 16:00]",
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6373490110112/6373490110112.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-spl-b43-v-132",
+          "label": "Arithmetic - Arith – Class -01 – Miscellaneous (Dishonest Shopkeeper) [26-May-2025 22:00]",
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6328610230112/6328610230112.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-spl-b43-v-133",
+          "label": "Arithmetic - Arith – Class -02– Miscellaneous (Dishonest Shopkeeper) [26-May-2025 22:02]",
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6328671379112/6328671379112.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-spl-b43-v-134",
+          "label": "Arithmetic - Arith – Class -03 – Miscellaneous (Dishonest Shopkeeper) [26-May-2025 22:04]",
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6328842372112/6328842372112.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-spl-b43-v-135",
+          "label": "Arithmetic - Class-02 –– Mixture and Alligation [27-May-2025 16:00]",
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6373521442112/6373521442112.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-spl-b43-v-136",
+          "label": "Arithmetic - Class-03 –– Mixture and Alligation [28-May-2025 16:00]",
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6373560649112/6373560649112.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-spl-b43-v-137",
+          "label": "Arithmetic - Class-04 –– Mixture and Alligation [02-Jun-2025 09:00]",
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6373768319112/6373768319112.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-spl-b43-v-138",
+          "label": "Arithmetic - Class-05 –– Mixture and Alligation [05-Jun-2025 16:00]",
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6373898011112/6373898011112.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-spl-b43-v-139",
+          "label": "Arithmetic - Class-06 –– Mixture and Alligation [06-Jun-2025 16:00]",
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6373940837112/6373940837112.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-spl-b43-v-140",
+          "label": "Arithmetic - Class-07 –– Mixture and Alligation [09-Jun-2025 16:00]",
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6374044830112/6374044830112.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-spl-b43-v-141",
+          "label": "Arithmetic - Class-08 –– Mixture and Alligation [10-Jun-2025 16:00]",
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6374080997112/6374080997112.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-spl-b43-v-142",
+          "label": "Arithmetic - Class-09 –– Mixture and Alligation [11-Jun-2025 16:00]",
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6374124076112/6374124076112.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-spl-b43-v-143",
+          "label": "Arithmetic - Class-10 –– Mixture and Alligation [12-Jun-2025 16:00]",
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6374175352112/6374175352112.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-spl-b43-v-144",
+          "label": "Arithmetic - Class-11 –– Mixture and Alligation [16-Jun-2025 16:00]",
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6374347486112/6374347486112.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-spl-b43-v-145",
+          "label": "Arithmetic - Class-12 –– Mixture and Alligation [17-Jun-2025 16:00]",
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6374435349112/6374435349112.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-spl-b43-v-146",
+          "label": "Arithmetic - Class-13 –– Mixture and Alligation [18-Jun-2025 16:00]",
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6374515771112/6374515771112.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-spl-b43-v-147",
+          "label": "Arithmetic - Class-14 –– Mixture and Alligation [19-Jun-2025 16:00]",
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6374568780112/6374568780112.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-spl-b43-v-148",
+          "label": "Arithmetic - Class-15 –– Mixture and Alligation [20-Jun-2025 16:00]",
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6374608801112/6374608801112.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-spl-b43-v-149",
+          "label": "Arithmetic - Class-1 –– Average [23-Jun-2025 16:00]",
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/vod_non_drm_hls/migration/OVk_rbjTuwM/OVk_rbjTuwM.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-spl-b43-v-150",
+          "label": "Arithmetic - Class-2 –– Average [24-Jun-2025 16:00]",
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/vod_non_drm_hls/migration/6c75ISEndIk/6c75ISEndIk.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-spl-b43-v-151",
+          "label": "Arithmetic - Class-03 –– Average [26-Jun-2025 16:00]",
+          "url": "https://www.youtube.com/embed/RWW2Gd6cpDw",
+          "type": "youtube"
+        },
+        {
+          "id": "maths-spl-b43-v-152",
+          "label": "Arithmetic - Class-04 –– Average [27-Jun-2025 16:00]",
+          "url": "https://www.youtube.com/embed/_91qbhMmV3M",
+          "type": "youtube"
+        },
+        {
+          "id": "maths-spl-b43-v-153",
+          "label": "Arithmetic - Class-05 –– Average [01-Jul-2025 16:00]",
+          "url": "https://www.youtube.com/embed/yQfBt9GMiBo",
+          "type": "youtube"
+        },
+        {
+          "id": "maths-spl-b43-v-154",
+          "label": "Arithmetic - Class-06 –– Average [02-Jul-2025 16:00]",
+          "url": "https://www.youtube.com/embed/hQszWzs5Rhc",
+          "type": "youtube"
+        },
+        {
+          "id": "maths-spl-b43-v-155",
+          "label": "Arithmetic - Class-07 –– Average [04-Jul-2025 16:00]",
+          "url": "https://www.youtube.com/embed/_5m-Mm1BVxk",
+          "type": "youtube"
+        },
+        {
+          "id": "maths-spl-b43-v-156",
+          "label": "Arithmetic - Class-08 –– Average [05-Jul-2025 10:00]",
+          "url": "https://www.youtube.com/embed/dtg0jO6HDMo",
+          "type": "youtube"
+        },
+        {
+          "id": "maths-spl-b43-v-157",
+          "label": "Arithmetic - Class-1 –– Simple Interest [07-Jul-2025 08:00]",
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6365034172112/6365034172112.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-spl-b43-v-158",
+          "label": "Arithmetic - Class-02 –– Simple Interest [07-Jul-2025 08:02]",
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6365148020112/6365148020112.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-spl-b43-v-159",
+          "label": "Arithmetic - Class-03 –– Simple Interest [07-Jul-2025 08:04]",
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6365197459112/6365197459112.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-spl-b43-v-160",
+          "label": "Arithmetic - Class-04 –– Simple Interest [07-Jul-2025 08:06]",
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6365236222112/6365236222112.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-spl-b43-v-161",
+          "label": "Arithmetic - Class-05 –– Simple Interest [07-Jul-2025 08:08]",
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6365280540112/6365280540112.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-spl-b43-v-162",
+          "label": "Arithmetic - Class-06 –– Simple Interest [07-Jul-2025 08:10]",
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6365315868112/6365315868112.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-spl-b43-v-163",
+          "label": "Arithmetic - Class-07 –– Simple Interest [07-Jul-2025 08:12]",
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6365404558112/6365404558112.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-spl-b43-v-164",
+          "label": "Arithmetic - Class-08 –– Simple Interest [07-Jul-2025 08:14]",
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6365455463112/6365455463112.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-spl-b43-v-165",
+          "label": "Arithmetic - Class-09 –– Simple Interest [07-Jul-2025 08:16]",
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6365510147112/6365510147112.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-spl-b43-v-166",
+          "label": "Arithmetic - Class-10 –– Simple Interest [07-Jul-2025 08:18]",
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6365570589112/6365570589112.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-spl-b43-v-167",
+          "label": "Arithmetic - Class-11 –– Simple Interest [07-Jul-2025 08:20]",
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6365620634112/6365620634112.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-spl-b43-v-168",
+          "label": "Arithmetic - Class-12 –– Simple Interest [07-Jul-2025 08:22]",
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6365670775112/6365670775112.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-spl-b43-v-169",
+          "label": "Arithmetic - Class-1 –– Compound Interest [07-Jul-2025 08:24]",
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6365746906112/6365746906112.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-spl-b43-v-170",
+          "label": "Arithmetic - Class-02 –– Compound Interest [07-Jul-2025 08:26]",
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6365791671112/6365791671112.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-spl-b43-v-171",
+          "label": "Arithmetic - Class-03 –– Compound Interest [07-Jul-2025 08:28]",
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6365836613112/6365836613112.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-spl-b43-v-172",
+          "label": "Arithmetic - Class-04 –– Compound Interest [07-Jul-2025 08:30]",
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/vod_non_drm_hls/migration/U_FXcFQ1Ze0/U_FXcFQ1Ze0.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-spl-b43-v-173",
+          "label": "Arithmetic - Class-05 –– Compound Interest [07-Jul-2025 08:32]",
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6365936444112/6365936444112.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-spl-b43-v-174",
+          "label": "Arithmetic - Class-06 –– Compound Interest [07-Jul-2025 08:34]",
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6366169215112/6366169215112.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-spl-b43-v-175",
+          "label": "Arithmetic - Class-07 –– Compound Interest [07-Jul-2025 08:36]",
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6366216611112/6366216611112.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-spl-b43-v-176",
+          "label": "Arithmetic - Class-08 –– Compound Interest [07-Jul-2025 08:38]",
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6366264686112/6366264686112.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-spl-b43-v-177",
+          "label": "Arithmetic - Class-09 –– Compound Interest [07-Jul-2025 08:40]",
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6366305344112/6366305344112.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-spl-b43-v-178",
+          "label": "Arithmetic - Class-10 –– Compound Interest [07-Jul-2025 08:42]",
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6366364042112/6366364042112.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-spl-b43-v-179",
+          "label": "Arithmetic - Class-11 –– Compound Interest [07-Jul-2025 08:44]",
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6366400380112/6366400380112.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-spl-b43-v-180",
+          "label": "Arithmetic - Class-12 –– Compound Interest [07-Jul-2025 08:46]",
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6366425286112/6366425286112.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-spl-b43-v-181",
+          "label": "Arithmetic - Class-13 –– Compound Interest [07-Jul-2025 08:48]",
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6366443185112/6366443185112.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-spl-b43-v-182",
+          "label": "Arithmetic - Class-14 –– Compound Interest [07-Jul-2025 08:50]",
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6366471127112/6366471127112.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-spl-b43-v-183",
+          "label": "Arithmetic - Class-15 –– Compound Interest [07-Jul-2025 08:52]",
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6366499549112/6366499549112.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-spl-b43-v-184",
+          "label": "Arithmetic - Class-16 –– Complete Installment of SI and CI (किस्तों वाले सवाल) –– By Gagan Pratap Sir [07-Jul-2025 08:54]",
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6373655180112/6373655180112.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-spl-b43-v-185",
+          "label": "Arithmetic - Final Class –– Maxima and Minima [28-Jul-2025 10:00]",
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6353001015112/6353001015112.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-spl-b43-v-186",
+          "label": "Advance - Class-01 –– Geometry [22-Jul-2024 18:00]",
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6358845327112/6358845327112.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-spl-b43-v-187",
+          "label": "Advance - Class-02 –– Geometry [23-Jul-2024 18:00]",
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6358957161112/6358957161112.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-spl-b43-v-188",
+          "label": "Advance - Class-03 –– Geometry [24-Jul-2024 18:00]",
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6359077321112/6359077321112.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-spl-b43-v-189",
+          "label": "Advance - Class-04 –– Geometry [25-Jul-2024 18:00]",
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6359213322112/6359213322112.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-spl-b43-v-190",
+          "label": "Advance - Class-05 –– Geometry [26-Jul-2024 18:00]",
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6359336141112/6359336141112.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-spl-b43-v-191",
+          "label": "Advance - Class-06 –– Geometry [30-Jul-2024 18:00]",
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6359617805112/6359617805112.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-spl-b43-v-192",
+          "label": "Advance - Class-07 –– Geometry [31-Jul-2024 18:00]",
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6359682052112/6359682052112.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-spl-b43-v-193",
+          "label": "Advance - Class-08 –– Geometry [01-Aug-2024 18:00]",
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6359743243112/6359743243112.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-spl-b43-v-194",
+          "label": "Advance - Class-09 –– Geometry [02-Aug-2024 18:00]",
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6359801191112/6359801191112.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-spl-b43-v-195",
+          "label": "Advance - Class-10 –– Geometry [05-Aug-2024 18:00]",
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6359932504112/6359932504112.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-spl-b43-v-196",
+          "label": "Advance - Class-11 –– Geometry [06-Aug-2024 18:00]",
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6359984182112/6359984182112.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-spl-b43-v-197",
+          "label": "Advance - Class-12 –– Geometry [07-Aug-2024 18:00]",
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6360038337112/6360038337112.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-spl-b43-v-198",
+          "label": "Advance - Class-13 –– Geometry [08-Aug-2024 18:00]",
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6360093649112/6360093649112.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-spl-b43-v-199",
+          "label": "Advance - Class-14 –– Geometry [09-Aug-2024 18:00]",
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6360149035112/6360149035112.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-spl-b43-v-200",
+          "label": "Advance - Class-15 –– Geometry [12-Aug-2024 18:00]",
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6360302470112/6360302470112.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-spl-b43-v-201",
+          "label": "Advance - Class-16 –– Geometry [13-Aug-2024 18:00]",
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6360360741112/6360360741112.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-spl-b43-v-202",
+          "label": "Advance - Class-17 –– Geometry [14-Aug-2024 16:00]",
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6360408328112/6360408328112.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-spl-b43-v-203",
+          "label": "Advance - Class-01 –– Number System [22-Aug-2024 16:00]",
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6360806275112/6360806275112.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-spl-b43-v-204",
+          "label": "Advance - Class-18 –– Geometry [22-Aug-2024 18:00]",
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6360812970112/6360812970112.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-spl-b43-v-205",
+          "label": "Advance - Class-02 –– Number System [23-Aug-2024 16:00]",
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6360878677112/6360878677112.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-spl-b43-v-206",
+          "label": "Advance - Class-03 –– Number System [27-Aug-2024 16:00]",
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6361084728112/6361084728112.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-spl-b43-v-207",
+          "label": "Advance - Class-19 –– Geometry [27-Aug-2024 20:00]",
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6361091086112/6361091086112.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-spl-b43-v-208",
+          "label": "Advance - Class-04 –– Number System [28-Aug-2024 16:00]",
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/vod_non_drm_hls/migration/4OVLZZ8FA3U/4OVLZZ8FA3U.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-spl-b43-v-209",
+          "label": "Advance - Class-20 –– Geometry [28-Aug-2024 18:00]",
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6361141090112/6361141090112.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-spl-b43-v-210",
+          "label": "Advance - Class-05 –– Number System [29-Aug-2024 16:00]",
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6361193558112/6361193558112.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-spl-b43-v-211",
+          "label": "Advance - Class-21 –– Geometry [29-Aug-2024 18:00]",
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6361196113112/6361196113112.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-spl-b43-v-212",
+          "label": "Advance - Class-06 –– Number System [30-Aug-2024 16:30]",
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6361256260112/6361256260112.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-spl-b43-v-213",
+          "label": "Advance - Class-22 –– Geometry [30-Aug-2024 18:00]",
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6361260073112/6361260073112.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-spl-b43-v-214",
+          "label": "Advance - Class-07 –– Number System [02-Sep-2024 16:30]",
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6361392928112/6361392928112.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-spl-b43-v-215",
+          "label": "Advance - Class-08 –– Number System [03-Sep-2024 16:00]",
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6361439682112/6361439682112.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-spl-b43-v-216",
+          "label": "Advance - Class-23 –– Geometry [03-Sep-2024 20:00]",
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6361445283112/6361445283112.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-spl-b43-v-217",
+          "label": "Advance - Class-09 –– Number System [04-Sep-2024 16:00]",
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6361493607112/6361493607112.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-spl-b43-v-218",
+          "label": "Advance - Class-24 –– Geometry [04-Sep-2024 18:00]",
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6361498048112/6361498048112.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-spl-b43-v-219",
+          "label": "Advance - Class-10 –– Number System [05-Sep-2024 16:00]",
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6361549588112/6361549588112.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-spl-b43-v-220",
+          "label": "Advance - Class-25 –– Geometry [05-Sep-2024 20:30]",
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6361559485112/6361559485112.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-spl-b43-v-221",
+          "label": "Advance - Class-11 –– Number System [06-Sep-2024 16:30]",
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6361608734112/6361608734112.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-spl-b43-v-222",
+          "label": "Advance - Class-26 –– Geometry [06-Sep-2024 18:00]",
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6361610174112/6361610174112.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-spl-b43-v-223",
+          "label": "Advance - Class-12 –– Number System [10-Sep-2024 16:00]",
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6361783884112/6361783884112.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-spl-b43-v-224",
+          "label": "Advance - Class-13 –– Number System [11-Sep-2024 16:30]",
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6361830954112/6361830954112.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-spl-b43-v-225",
+          "label": "Advance - Class-27 –– Geometry [11-Sep-2024 18:00]",
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6361834061112/6361834061112.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-spl-b43-v-226",
+          "label": "Advance - Class-14 –– Number System [12-Sep-2024 16:30]",
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6361870264112/6361870264112.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-spl-b43-v-227",
+          "label": "Advance - Class-28 –– Geometry [12-Sep-2024 18:00]",
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6361874183112/6361874183112.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-spl-b43-v-228",
+          "label": "Advance - Class-15 –– Number System [13-Sep-2024 16:00]",
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6361911807112/6361911807112.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-spl-b43-v-229",
+          "label": "Advance - Class-29 –– Geometry [13-Sep-2024 18:00]",
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6361918804112/6361918804112.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-spl-b43-v-230",
+          "label": "Advance - Class-16 –– Number System [16-Sep-2024 16:00]",
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6362013413112/6362013413112.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-spl-b43-v-231",
+          "label": "Advance - Class-30 –– Geometry [16-Sep-2024 18:00]",
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6362016945112/6362016945112.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-spl-b43-v-232",
+          "label": "Advance - Class-17 –– Number System [17-Sep-2024 16:00]",
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6362055557112/6362055557112.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-spl-b43-v-233",
+          "label": "Advance - Class-18 –– Number System [18-Sep-2024 16:00]",
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6362103510112/6362103510112.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-spl-b43-v-234",
+          "label": "Advance - Class-31 –– Geometry [18-Sep-2024 18:00]",
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6362108409112/6362108409112.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-spl-b43-v-235",
+          "label": "Advance - Class-19 –– Number System [19-Sep-2024 16:00]",
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6362151119112/6362151119112.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-spl-b43-v-236",
+          "label": "Advance - Class-32 –– Geometry [19-Sep-2024 18:00]",
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6362155144112/6362155144112.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-spl-b43-v-237",
+          "label": "Advance - Class-33 –– Geometry [23-Sep-2024 18:00]",
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6362341824112/6362341824112.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-spl-b43-v-238",
+          "label": "Advance - Class-20 –– Number System [24-Sep-2024 16:00]",
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6362384461112/6362384461112.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-spl-b43-v-239",
+          "label": "Advance - Class-34 –– Geometry [24-Sep-2024 18:00]",
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6362388367112/6362388367112.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-spl-b43-v-240",
+          "label": "Advance - Class- 1 –– Calculation and Simplification [25-Sep-2024 16:00]",
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6362431436112/6362431436112.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-spl-b43-v-241",
+          "label": "Advance - Class-35 –– Geometry [25-Sep-2024 18:00]",
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6362434867112/6362434867112.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-spl-b43-v-242",
+          "label": "Advance - Class-02 –– Calculation and Simplification [26-Sep-2024 16:00]",
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6362487432112/6362487432112.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-spl-b43-v-243",
+          "label": "Advance - Class-36 –– Geometry [26-Sep-2024 18:00]",
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6362489489112/6362489489112.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-spl-b43-v-244",
+          "label": "Advance - Class-03 –– Calculation and Simplification [27-Sep-2024 16:00]",
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6362538601112/6362538601112.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-spl-b43-v-245",
+          "label": "Advance - Class-37 –– Geometry [27-Sep-2024 18:00]",
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6362542621112/6362542621112.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-spl-b43-v-246",
+          "label": "Advance - Class-38 –– Geometry [28-Sep-2024 18:00]",
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6362595023112/6362595023112.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-spl-b43-v-247",
+          "label": "Advance - Class-04 –– Calculation and Simplification [30-Sep-2024 16:00]",
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6362666926112/6362666926112.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-spl-b43-v-248",
+          "label": "Advance - Class-39 –– Geometry [30-Sep-2024 18:00]",
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6362668502112/6362668502112.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-spl-b43-v-249",
+          "label": "Advance - Class-05 –– Calculation and Simplification [01-Oct-2024 16:00]",
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/vod_non_drm_hls/migration/Pq2WwLOwY7I/Pq2WwLOwY7I.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-spl-b43-v-250",
+          "label": "Advance - Class-40 –– Geometry [01-Oct-2024 18:00]",
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6362712358112/6362712358112.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-spl-b43-v-251",
+          "label": "Advance - Class-06 –– Calculation and Simplification [03-Oct-2024 16:00]",
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6362792661112/6362792661112.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-spl-b43-v-252",
+          "label": "Advance - Class-07 –– Calculation and Simplification [07-Oct-2024 16:00]",
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6362936431112/6362936431112.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-spl-b43-v-253",
+          "label": "Advance - Class-41 –– Geometry [07-Oct-2024 18:00]",
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6362939649112/6362939649112.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-spl-b43-v-254",
+          "label": "Advance - Class-08 –– Calculation and Simplification [08-Oct-2024 16:30]",
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/vod_non_drm_hls/migration/2rarQAGU21g/2rarQAGU21g.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-spl-b43-v-255",
+          "label": "Advance - Class-42 –– Geometry [08-Oct-2024 18:00]",
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6362981529112/6362981529112.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-spl-b43-v-256",
+          "label": "Advance - Class-09 –– Calculation and Simplification [09-Oct-2024 16:00]",
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6363023224112/6363023224112.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-spl-b43-v-257",
+          "label": "Advance - Class-43 –– Geometry [09-Oct-2024 18:00]",
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6363027509112/6363027509112.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-spl-b43-v-258",
+          "label": "Advance - Class-10 –– Calculation and Simplification [10-Oct-2024 16:30]",
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6363069340112/6363069340112.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-spl-b43-v-259",
+          "label": "Advance - Class-44 –– Geometry [10-Oct-2024 18:00]",
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6363070696112/6363070696112.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-spl-b43-v-260",
+          "label": "Advance - Class-11 –– Calculation and Simplification [11-Oct-2024 16:00]",
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6363115199112/6363115199112.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-spl-b43-v-261",
+          "label": "Advance - Class-45 –– Geometry [11-Oct-2024 18:00]",
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6363119293112/6363119293112.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-spl-b43-v-262",
+          "label": "Advance - Class-46 –– Geometry [14-Oct-2024 18:00]",
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6363237797112/6363237797112.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-spl-b43-v-263",
+          "label": "Advance - Class-12 –– Calculation and Simplification [15-Oct-2024 16:00]",
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6363278298112/6363278298112.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-spl-b43-v-264",
+          "label": "Advance - Class-47 –– Geometry [15-Oct-2024 18:00]",
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6363281174112/6363281174112.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-spl-b43-v-265",
+          "label": "Advance - Class-13 –– Calculation and Simplification [16-Oct-2024 16:00]",
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6363326694112/6363326694112.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-spl-b43-v-266",
+          "label": "Advance - Class-48 –– Geometry [16-Oct-2024 18:00]",
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6363329631112/6363329631112.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-spl-b43-v-267",
+          "label": "Advance - Class-49 –– Geometry [17-Oct-2024 18:00]",
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6363373650112/6363373650112.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-spl-b43-v-268",
+          "label": "Advance - Class-14 –– Calculation and Simplification [21-Oct-2024 16:30]",
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6363546241112/6363546241112.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-spl-b43-v-269",
+          "label": "Advance - Class-50 –– Geometry [21-Oct-2024 18:00]",
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6363548796112/6363548796112.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-spl-b43-v-270",
+          "label": "Advance - Class-15 –– Calculation and Simplification [22-Oct-2024 16:00]",
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6363585662112/6363585662112.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-spl-b43-v-271",
+          "label": "Advance - Class-51 –– Geometry [22-Oct-2024 18:00]",
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6363589499112/6363589499112.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-spl-b43-v-272",
+          "label": "Advance - Class- 16 –– Calculation and Simplification [23-Oct-2024 11:00]",
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6363624573112/6363624573112.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-spl-b43-v-273",
+          "label": "Advance - Class-52 –– Geometry [23-Oct-2024 18:00]",
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6363636282112/6363636282112.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-spl-b43-v-274",
+          "label": "Advance - Class-53 –– Geometry [24-Oct-2024 18:00]",
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6363685937112/6363685937112.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-spl-b43-v-275",
+          "label": "Advance - Class-1 –– Probability [26-Oct-2024 14:00]",
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6339437874112/6339437874112.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-spl-b43-v-276",
+          "label": "Advance - Class-2 –– Probability [26-Oct-2024 14:02]",
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6340138831112/6340138831112.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-spl-b43-v-277",
+          "label": "Advance - Class-3 –– Probability [26-Oct-2024 14:04]",
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6340139588112/6340139588112.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-spl-b43-v-278",
+          "label": "Advance - Class-1 –– Permutation and Combination [26-Oct-2024 14:10]",
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6339252994112/6339252994112.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-spl-b43-v-279",
+          "label": "Advance - Class-2 –– Permutation and Combination [26-Oct-2024 14:12]",
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6339260826112/6339260826112.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-spl-b43-v-280",
+          "label": "Advance - Class-3 –– Permutation and Combination [26-Oct-2024 14:14]",
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6339379028112/6339379028112.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-spl-b43-v-281",
+          "label": "Advance - Class-1 –– Statistics [26-Oct-2024 15:00]",
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6338835510112/6338835510112.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-spl-b43-v-282",
+          "label": "Advance - Class-2 –– Statistics [26-Oct-2024 15:02]",
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6338849498112/6338849498112.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-spl-b43-v-283",
+          "label": "Advance - Class-3 –– Statistics [26-Oct-2024 15:10]",
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6338981630112/6338981630112.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-spl-b43-v-284",
+          "label": "Advance - Class-54 –– Geometry [26-Oct-2024 18:00]",
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6363792170112/6363792170112.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-spl-b43-v-285",
+          "label": "Advance - Class-55 –– Geometry [31-Oct-2024 08:00]",
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6345817275112/6345817275112.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-spl-b43-v-286",
+          "label": "Advance - Class-56 –– Geometry [31-Oct-2024 08:01]",
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6345870162112/6345870162112.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-spl-b43-v-287",
+          "label": "Advance - Class-57 –– Geometry [31-Oct-2024 08:02]",
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6345933727112/6345933727112.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-spl-b43-v-288",
+          "label": "Advance - Class-58 –– Geometry [31-Oct-2024 08:03]",
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6345998783112/6345998783112.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-spl-b43-v-289",
+          "label": "Advance - Class-59 –– Geometry [31-Oct-2024 08:04]",
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/vod_non_drm_hls/migration/6346061345112/6346061345112.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-spl-b43-v-290",
+          "label": "Advance - Class-60 –– Geometry [31-Oct-2024 08:05]",
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6346333951112/6346333951112.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-spl-b43-v-291",
+          "label": "Advance - Class-61 –– Geometry [31-Oct-2024 08:06]",
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6346344962112/6346344962112.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-spl-b43-v-292",
+          "label": "Advance - Class-62 –– Geometry [31-Oct-2024 08:07]",
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6346729514112/6346729514112.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-spl-b43-v-293",
+          "label": "Advance - Class-63 –– Geometry [31-Oct-2024 08:08]",
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6346483191112/6346483191112.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-spl-b43-v-294",
+          "label": "Advance - Class-64 –– Geometry [31-Oct-2024 08:09]",
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6346731938112/6346731938112.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-spl-b43-v-295",
+          "label": "Advance - Class-65 –– Geometry [31-Oct-2024 08:10]",
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6346790362112/6346790362112.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-spl-b43-v-296",
+          "label": "Advance - Class-66 –– Geometry [31-Oct-2024 08:11]",
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6346867408112/6346867408112.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-spl-b43-v-297",
+          "label": "Advance - Class-67 –– Geometry [31-Oct-2024 08:12]",
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6346931480112/6346931480112.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-spl-b43-v-298",
+          "label": "Advance - Class-68 –– Geometry [31-Oct-2024 08:13]",
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6347009388112/6347009388112.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-spl-b43-v-299",
+          "label": "Advance - Class-69 –– Geometry [31-Oct-2024 08:14]",
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6347198994112/6347198994112.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-spl-b43-v-300",
+          "label": "Advance - Class-71 –– Geometry [31-Oct-2024 08:15]",
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6347315845112/6347315845112.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-spl-b43-v-301",
+          "label": "Advance - Class-70 –– Geometry [31-Oct-2024 08:15]",
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6347254541112/6347254541112.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-spl-b43-v-302",
+          "label": "Advance - Class-72 –– Geometry [31-Oct-2024 08:16]",
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6347452442112/6347452442112.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-spl-b43-v-303",
+          "label": "Advance - Class-73 –– Geometry [31-Oct-2024 08:17]",
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6347674938112/6347674938112.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-spl-b43-v-304",
+          "label": "Advance - Class-74 –– Geometry [31-Oct-2024 08:18]",
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6347744739112/6347744739112.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-spl-b43-v-305",
+          "label": "Advance - Class-75 –– Geometry [31-Oct-2024 08:19]",
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6347826065112/6347826065112.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-spl-b43-v-306",
+          "label": "Advance - Class-76 –– Geometry [31-Oct-2024 08:20]",
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6347922885112/6347922885112.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-spl-b43-v-307",
+          "label": "Advance - Class-77 –– Geometry [31-Oct-2024 08:21]",
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6347998236112/6347998236112.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-spl-b43-v-308",
+          "label": "Advance - Class-79 –– Geometry [31-Oct-2024 08:22]",
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6348264277112/6348264277112.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-spl-b43-v-309",
+          "label": "Advance - Class-78 –– Geometry [31-Oct-2024 08:22]",
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6348205609112/6348205609112.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-spl-b43-v-310",
+          "label": "Advance - Class-80 –– Geometry [31-Oct-2024 08:23]",
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6348327058112/6348327058112.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-spl-b43-v-311",
+          "label": "Advance - Class-01 – Coordinate Geometry [04-Nov-2024 18:00]",
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6364174522112/6364174522112.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-spl-b43-v-312",
+          "label": "Advance - Class-02 – Coordinate Geometry [05-Nov-2024 18:00]",
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6364226740112/6364226740112.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-spl-b43-v-313",
+          "label": "Advance - Class-03 – Coordinate Geometry [06-Nov-2024 18:00]",
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6364289215112/6364289215112.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-spl-b43-v-314",
+          "label": "Advance - Class-04 – Coordinate Geometry [07-Nov-2024 18:00]",
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6364337421112/6364337421112.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-spl-b43-v-315",
+          "label": "Advance - Class-05 – Coordinate Geometry [08-Nov-2024 18:00]",
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6364400335112/6364400335112.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-spl-b43-v-316",
+          "label": "Advance - Class-06 – Coordinate Geometry [11-Nov-2024 18:00]",
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6364544407112/6364544407112.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-spl-b43-v-317",
+          "label": "Advance - Class-07 – Coordinate Geometry [13-Nov-2024 18:00]",
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6364646011112/6364646011112.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-spl-b43-v-318",
+          "label": "Advance - Class-08 – Coordinate Geometry [15-Nov-2024 18:00]",
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6364745576112/6364745576112.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-spl-b43-v-319",
+          "label": "Advance - Class-09 – Coordinate Geometry [18-Nov-2024 18:00]",
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6364855739112/6364855739112.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-spl-b43-v-320",
+          "label": "Advance - Class-10 – Coordinate Geometry [19-Nov-2024 18:00]",
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6364899935112/6364899935112.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-spl-b43-v-321",
+          "label": "Advance - Class-01 –– Algebra [21-Nov-2024 18:00]",
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6364991728112/6364991728112.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-spl-b43-v-322",
+          "label": "Advance - Class-02 –– Algebra [22-Nov-2024 18:00]",
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6365042992112/6365042992112.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-spl-b43-v-323",
+          "label": "Advance - Class-03 –– Algebra [25-Nov-2024 18:00]",
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6365158341112/6365158341112.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-spl-b43-v-324",
+          "label": "Advance - Class-04 –– Algebra [26-Nov-2024 18:00]",
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6365204600112/6365204600112.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-spl-b43-v-325",
+          "label": "Advance - Class-05 –– Algebra [27-Nov-2024 18:00]",
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6365246524112/6365246524112.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-spl-b43-v-326",
+          "label": "Advance - Class-6 –– Algebra [28-Nov-2024 18:00]",
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6365292452112/6365292452112.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-spl-b43-v-327",
+          "label": "Advance - Class-07 –– Algebra [29-Nov-2024 18:00]",
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6365324328112/6365324328112.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-spl-b43-v-328",
+          "label": "Advance - Class-08 –– Algebra [02-Dec-2024 18:00]",
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6365415933112/6365415933112.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-spl-b43-v-329",
+          "label": "Advance - Class-09 –– Algebra [03-Dec-2024 18:00]",
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6365467707112/6365467707112.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-spl-b43-v-330",
+          "label": "Advance - Class-10 –– Algebra [04-Dec-2024 18:00]",
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6365520425112/6365520425112.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-spl-b43-v-331",
+          "label": "Advance - Class-11 –– Algebra [05-Dec-2024 18:00]",
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6365579602112/6365579602112.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-spl-b43-v-332",
+          "label": "Advance - Class-12 –– Algebra [06-Dec-2024 18:00]",
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6365631331112/6365631331112.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-spl-b43-v-333",
+          "label": "Advance - Class-13 –– Algebra [09-Dec-2024 18:00]",
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6365754625112/6365754625112.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-spl-b43-v-334",
+          "label": "Advance - Class-14 –– Algebra [10-Dec-2024 18:00]",
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6365798499112/6365798499112.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-spl-b43-v-335",
+          "label": "Advance - Class-15 –– Algebra [11-Dec-2024 18:00]",
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6365845127112/6365845127112.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-spl-b43-v-336",
+          "label": "Advance - Class-16 –– Algebra [12-Dec-2024 18:00]",
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6365900653112/6365900653112.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-spl-b43-v-337",
+          "label": "Advance - Class-17 –– Algebra [13-Dec-2024 18:30]",
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6365946567112/6365946567112.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-spl-b43-v-338",
+          "label": "Advance - Class-18 –– Algebra [17-Dec-2024 18:00]",
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6366107603112/6366107603112.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-spl-b43-v-339",
+          "label": "Advance - Class-19 –– Algebra [18-Dec-2024 18:00]",
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6366178856112/6366178856112.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-spl-b43-v-340",
+          "label": "Advance - Class-20 –– Algebra [19-Dec-2024 18:00]",
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6366226981112/6366226981112.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-spl-b43-v-341",
+          "label": "Advance - Class-21 –– Algebra [20-Dec-2024 18:00]",
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6366275417112/6366275417112.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-spl-b43-v-342",
+          "label": "Advance - Class-22 –– Algebra [23-Dec-2024 18:00]",
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6366370933112/6366370933112.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-spl-b43-v-343",
+          "label": "Advance - Class-23 –– Algebra [24-Dec-2024 18:00]",
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/vod_non_drm_hls/migration/aab3tWiaE6Q/aab3tWiaE6Q.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-spl-b43-v-344",
+          "label": "Advance - Class-24 –– Algebra [25-Dec-2024 18:00]",
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6366429624112/6366429624112.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-spl-b43-v-345",
+          "label": "Advance - Class-25 –– Algebra [26-Dec-2024 18:00]",
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6366449231112/6366449231112.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-spl-b43-v-346",
+          "label": "Advance - Class-26 –– Algebra [27-Dec-2024 18:00]",
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6366477489112/6366477489112.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-spl-b43-v-347",
+          "label": "Advance - Class-27 –– Algebra [30-Dec-2024 18:00]",
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6366547384112/6366547384112.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-spl-b43-v-348",
+          "label": "Advance - Class-28 –– Algebra [31-Dec-2024 18:00]",
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6366573025112/6366573025112.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-spl-b43-v-349",
+          "label": "Advance - Class-29 –– Algebra [02-Jan-2025 18:00]",
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6366616083112/6366616083112.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-spl-b43-v-350",
+          "label": "Advance - Class-30 –– Algebra [03-Jan-2025 18:00]",
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/vod_non_drm_hls/migration/zYsT0ABkhsY/zYsT0ABkhsY.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-spl-b43-v-351",
+          "label": "Advance - Class-31 –– Algebra [04-Jan-2025 10:00]",
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6366673455112/6366673455112.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-spl-b43-v-352",
+          "label": "Advance - Class-32 –– Algebra [06-Jan-2025 18:30]",
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6366733397112/6366733397112.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-spl-b43-v-353",
+          "label": "Advance - Class-33 –– Algebra [07-Jan-2025 12:00]",
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6366759299112/6366759299112.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-spl-b43-v-354",
+          "label": "Advance - Class-34 –– Algebra [07-Jan-2025 18:00]",
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6366767937112/6366767937112.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-spl-b43-v-355",
+          "label": "Advance - Class-35 –– Algebra [08-Jan-2025 12:00]",
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6366804488112/6366804488112.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-spl-b43-v-356",
+          "label": "Advance - Class-36 –– Algebra [08-Jan-2025 18:00]",
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6366813021112/6366813021112.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-spl-b43-v-357",
+          "label": "Advance - Class-37 –– Algebra [09-Jan-2025 12:00]",
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/vod_non_drm_hls/migration/2qtz9Qr3sy0/2qtz9Qr3sy0.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-spl-b43-v-358",
+          "label": "Advance - Class-38 –– Algebra [09-Jan-2025 18:00]",
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6366853932112/6366853932112.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-spl-b43-v-359",
+          "label": "Advance - Class-01 –– Trigonometry [10-Jan-2025 18:00]",
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6366908613112/6366908613112.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-spl-b43-v-360",
+          "label": "Advance - Class-02 –– Trigonometry [13-Jan-2025 18:00]",
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6367026544112/6367026544112.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-spl-b43-v-361",
+          "label": "Advance - Class-03 –– Trigonometry [14-Jan-2025 18:00]",
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6367076235112/6367076235112.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-spl-b43-v-362",
+          "label": "Advance - Class-04 –– Trigonometry [15-Jan-2025 18:00]",
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6367123859112/6367123859112.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-spl-b43-v-363",
+          "label": "Advance - Class-05 –– Trigonometry [20-Jan-2025 18:00]",
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6367389310112/6367389310112.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-spl-b43-v-364",
+          "label": "Advance - Class-06 –– Trigonometry [21-Jan-2025 18:30]",
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6367441440112/6367441440112.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-spl-b43-v-365",
+          "label": "Advance - Class-07 –– Trigonometry [22-Jan-2025 18:15]",
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6367494934112/6367494934112.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-spl-b43-v-366",
+          "label": "Advance - Class-08 –– Trigonometry [23-Jan-2025 18:00]",
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6367557288112/6367557288112.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-spl-b43-v-367",
+          "label": "Advance - Class-09 –– Trigonometry [24-Jan-2025 18:00]",
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/vod_non_drm_hls/migration/xE_5pGWpLio/xE_5pGWpLio.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-spl-b43-v-368",
+          "label": "Advance - Class-10 –– Trigonometry [27-Jan-2025 18:00]",
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6367827110112/6367827110112.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-spl-b43-v-369",
+          "label": "Advance - Class-11 –– Trigonometry [28-Jan-2025 18:00]",
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6367877792112/6367877792112.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-spl-b43-v-370",
+          "label": "Advance - Class-1 –– DI [29-Jan-2025 17:10]",
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6369291902112/6369291902112.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-spl-b43-v-371",
+          "label": "Advance - Class-12 –– Trigonometry [29-Jan-2025 18:00]",
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/vod_non_drm_hls/migration/z7Df0ljbtXc/z7Df0ljbtXc.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-spl-b43-v-372",
+          "label": "Advance - Class-2 –– DI [30-Jan-2025 12:00]",
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6369291314112/6369291314112.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-spl-b43-v-373",
+          "label": "Advance - Class-13 –– Trigonometry [30-Jan-2025 18:00]",
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6367993459112/6367993459112.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-spl-b43-v-374",
+          "label": "Advance - Class-14 –– Trigonometry [31-Jan-2025 18:00]",
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/vod_non_drm_hls/migration/JKM2mlKBYiQ/JKM2mlKBYiQ.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-spl-b43-v-375",
+          "label": "Advance - Class-15 –– Trigonometry [01-Feb-2025 18:00]",
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6368110125112/6368110125112.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-spl-b43-v-376",
+          "label": "Advance - Class-16 –– Trigonometry [03-Feb-2025 18:00]",
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6368195164112/6368195164112.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-spl-b43-v-377",
+          "label": "Advance - Class-17 –– Trigonometry [04-Feb-2025 18:00]",
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6368240778112/6368240778112.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-spl-b43-v-378",
+          "label": "Advance - Class-18 –– Trigonometry [07-Feb-2025 18:00]",
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6368424993112/6368424993112.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-spl-b43-v-379",
+          "label": "Advance - Class-19 –– Trigonometry [10-Feb-2025 18:00]",
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/vod_non_drm_hls/migration/f4WodYuyp_4/f4WodYuyp_4.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-spl-b43-v-380",
+          "label": "Advance - Class-20 –– Trigonometry [11-Feb-2025 18:00]",
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6368645534112/6368645534112.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-spl-b43-v-381",
+          "label": "Advance - Class-21 –– Trigonometry [12-Feb-2025 18:00]",
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6368698998112/6368698998112.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-spl-b43-v-382",
+          "label": "Advance - Class-22 –– Trigonometry [13-Feb-2025 18:00]",
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6368754960112/6368754960112.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-spl-b43-v-383",
+          "label": "Advance - Class-23 –– Trigonometry [17-Feb-2025 18:00]",
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6368951642112/6368951642112.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-spl-b43-v-384",
+          "label": "Advance - Class-24 –– Trigonometry [18-Feb-2025 18:00]",
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6368994094112/6368994094112.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-spl-b43-v-385",
+          "label": "Advance - Class-25 –– Trigonometry [19-Feb-2025 18:00]",
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6369044256112/6369044256112.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-spl-b43-v-386",
+          "label": "Advance - Class-1 –– Height and Distance [20-Feb-2025 18:00]",
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6369092630112/6369092630112.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-spl-b43-v-387",
+          "label": "Advance - Class-2 –– Height and Distance [21-Feb-2025 18:00]",
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6369141672112/6369141672112.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-spl-b43-v-388",
+          "label": "Advance - Class-03 –– Height and Distance [24-Feb-2025 18:30]",
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6369253098112/6369253098112.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-spl-b43-v-389",
+          "label": "Advance - Class-04 –– Height and Distance [25-Feb-2025 18:00]",
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6369296179112/6369296179112.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-spl-b43-v-390",
+          "label": "Advance - Class- 01 –– Surds and Indices [26-Feb-2025 18:00]",
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6369340450112/6369340450112.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-spl-b43-v-391",
+          "label": "Advance - Class-02 –– Surds and Indices [27-Feb-2025 18:00]",
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6369389529112/6369389529112.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-spl-b43-v-392",
+          "label": "Advance - Class-03 –– Surds and Indices [28-Feb-2025 18:00]",
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6369438786112/6369438786112.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-spl-b43-v-393",
+          "label": "Advance - Class-04 –– Surds and Indices [04-Mar-2025 18:15]",
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6369587500112/6369587500112.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-spl-b43-v-394",
+          "label": "Advance - Class-05 –– Surds and Indices [05-Mar-2025 18:00]",
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6369630699112/6369630699112.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-spl-b43-v-395",
+          "label": "Advance - Class-06 –– Surds and Indices [06-Mar-2025 18:00]",
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6369672862112/6369672862112.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-spl-b43-v-396",
+          "label": "Advance - Class-07 –– Surds and Indices [07-Mar-2025 18:00]",
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6369720669112/6369720669112.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-spl-b43-v-397",
+          "label": "Advance - Class-08 –– Surds and Indices [08-Mar-2025 18:00]",
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6369772419112/6369772419112.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-spl-b43-v-398",
+          "label": "Advance - Class-09 –– Surds and Indices [10-Mar-2025 10:00]",
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6369827900112/6369827900112.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-spl-b43-v-399",
+          "label": "Advance - Class-1 –– 2D Mensuration [10-Mar-2025 18:00]",
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6369839868112/6369839868112.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-spl-b43-v-400",
+          "label": "Advance - Class-11 –– HCF & LCM [10-Mar-2025 19:00]",
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/vod_non_drm_hls/migration/b92wqMqEXK0/b92wqMqEXK0.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-spl-b43-v-401",
+          "label": "Advance - Class-12 –– HCF & LCM [10-Mar-2025 19:01]",
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6351470763112/6351470763112.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-spl-b43-v-402",
+          "label": "Advance - Class-13 –– HCF & LCM [10-Mar-2025 19:02]",
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6351580447112/6351580447112.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-spl-b43-v-403",
+          "label": "Advance - Class-14 –– HCF & LCM [10-Mar-2025 19:03]",
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6351738352112/6351738352112.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-spl-b43-v-404",
+          "label": "Advance - Class-15 –– HCF & LCM [10-Mar-2025 19:04]",
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6351803664112/6351803664112.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-spl-b43-v-405",
+          "label": "Advance - Class-16 –– HCF & LCM [10-Mar-2025 19:05]",
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6351878044112/6351878044112.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-spl-b43-v-406",
+          "label": "Advance - Class-17 –– HCF & LCM [10-Mar-2025 19:06]",
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/vod_non_drm_hls/migration/DpPeCsHjFrc/DpPeCsHjFrc.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-spl-b43-v-407",
+          "label": "Advance - Class-18 –– HCF & LCM [10-Mar-2025 19:07]",
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6352036360112/6352036360112.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-spl-b43-v-408",
+          "label": "Advance - Class-19 –– HCF & LCM [10-Mar-2025 19:08]",
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6352124191112/6352124191112.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-spl-b43-v-409",
+          "label": "Advance - Class-20 –– HCF & LCM [10-Mar-2025 19:09]",
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6352180019112/6352180019112.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-spl-b43-v-410",
+          "label": "Advance - Class-21 –– HCF & LCM [10-Mar-2025 19:10]",
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6352240642112/6352240642112.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-spl-b43-v-411",
+          "label": "Advance - Class-22 –– HCF & LCM [10-Mar-2025 19:11]",
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6352410928112/6352410928112.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-spl-b43-v-412",
+          "label": "Advance - Class-23 –– HCF & LCM [10-Mar-2025 19:12]",
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6352462155112/6352462155112.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-spl-b43-v-413",
+          "label": "Advance - Class-24 –– HCF & LCM [10-Mar-2025 19:13]",
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6352526686112/6352526686112.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-spl-b43-v-414",
+          "label": "Advance - Class-2 –– 2D Mensuration [11-Mar-2025 18:00]",
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6369881439112/6369881439112.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-spl-b43-v-415",
+          "label": "Advance - Class-03 –– 2D Mensuration [12-Mar-2025 18:00]",
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6369921679112/6369921679112.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-spl-b43-v-416",
+          "label": "Advance - Class-04 –– 2D Mensuration [17-Mar-2025 18:00]",
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6370143373112/6370143373112.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-spl-b43-v-417",
+          "label": "Advance - Class-05 –– 2D Mensuration [19-Mar-2025 18:00]",
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6370226429112/6370226429112.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-spl-b43-v-418",
+          "label": "Advance - Class-06 –– 2D Mensuration [20-Mar-2025 18:00]",
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6370269678112/6370269678112.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-spl-b43-v-419",
+          "label": "Advance - Class-07 –– 2D Mensuration [21-Mar-2025 18:00]",
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/vod_non_drm_hls/migration/Lr2cahZKHB8/Lr2cahZKHB8.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-spl-b43-v-420",
+          "label": "Advance - Class-08 –– 2D Mensuration [24-Mar-2025 18:00]",
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6370462301112/6370462301112.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-spl-b43-v-421",
+          "label": "Advance - Class-09 –– 2D Mensuration [25-Mar-2025 18:00]",
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/vod_non_drm_hls/migration/ZLp77wD5ryE/ZLp77wD5ryE.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-spl-b43-v-422",
+          "label": "Advance - Class-10 –– 2D Mensuration [26-Mar-2025 18:00]",
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6370578167112/6370578167112.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-spl-b43-v-423",
+          "label": "Advance - Class-11 –– 2D Mensuration [27-Mar-2025 18:00]",
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6370627789112/6370627789112.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-spl-b43-v-424",
+          "label": "Advance - Class-12 –– 2D Mensuration [28-Mar-2025 18:00]",
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6370679873112/6370679873112.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-spl-b43-v-425",
+          "label": "Advance - Class-13 –– 2D Mensuration [31-Mar-2025 18:00]",
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6370826121112/6370826121112.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-spl-b43-v-426",
+          "label": "Advance - Class-14 –– 2D Mensuration [02-Apr-2025 18:00]",
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6370921285112/6370921285112.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-spl-b43-v-427",
+          "label": "Advance - Class-15 –– 2D Mensuration [03-Apr-2025 18:00]",
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6370972827112/6370972827112.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-spl-b43-v-428",
+          "label": "Advance - Class-16 –– 2D Mensuration [04-Apr-2025 18:00]",
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/vod_non_drm_hls/migration/bb7WRapZ9-w/bb7WRapZ9-w.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-spl-b43-v-429",
+          "label": "Advance - Class-17 –– 2D Mensuration [07-Apr-2025 18:00]",
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6371171683112/6371171683112.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-spl-b43-v-430",
+          "label": "Advance - Class -1 –– Quadratic Equation [08-Apr-2025 16:00]",
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6345043583112/6345043583112.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-spl-b43-v-431",
+          "label": "Advance - Class-02 –– Quadratic Equation [08-Apr-2025 16:02]",
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6345178618112/6345178618112.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-spl-b43-v-432",
+          "label": "Advance - Class-03 –– Quadratic Equation [08-Apr-2025 17:00]",
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6345348821112/6345348821112.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-spl-b43-v-433",
+          "label": "Advance - Class-04 –– Quadratic Equation [08-Apr-2025 17:02]",
+          "url": "https://www.youtube.com/embed/UO8Jr000Grw",
+          "type": "youtube"
+        },
+        {
+          "id": "maths-spl-b43-v-434",
+          "label": "Advance - Class-01 –– 3D Mensuration [08-Apr-2025 18:00]",
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6371220300112/6371220300112.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-spl-b43-v-435",
+          "label": "Advance - Class-02 –– 3D Mensuration [09-Apr-2025 18:00]",
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/vod_non_drm_hls/migration/BT36oT5HiYY/BT36oT5HiYY.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-spl-b43-v-436",
+          "label": "Advance - Class-03 –– 3D Mensuration [10-Apr-2025 18:00]",
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6371343026112/6371343026112.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-spl-b43-v-437",
+          "label": "Advance - Class-04 –– 3D Mensuration [11-Apr-2025 18:00]",
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6371355137112/6371355137112.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-spl-b43-v-438",
+          "label": "Advance - Class-05 –– 3D Mensuration [14-Apr-2025 18:00]",
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6371472608112/6371472608112.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-spl-b43-v-439",
+          "label": "Advance - Class-06 –– 3D Mensuration [15-Apr-2025 18:00]",
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/vod_non_drm_hls/migration/fsCBBtoKabc/fsCBBtoKabc.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-spl-b43-v-440",
+          "label": "Advance - Class-07 –– 3D Mensuration [16-Apr-2025 18:00]",
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6371557182112/6371557182112.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-spl-b43-v-441",
+          "label": "Advance - Class-08 –– 3D Mensuration [17-Apr-2025 18:00]",
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6371597336112/6371597336112.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-spl-b43-v-442",
+          "label": "Advance - Class-09 –– 3D Mensuration [18-Apr-2025 18:00]",
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6371642689112/6371642689112.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-spl-b43-v-443",
+          "label": "Advance - Class-10 –– 3D Mensuration [21-Apr-2025 18:00]",
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6371750214112/6371750214112.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-spl-b43-v-444",
+          "label": "Advance - Class-11 –– 3D Mensuration [22-Apr-2025 18:00]",
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6371787371112/6371787371112.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-spl-b43-v-445",
+          "label": "Advance - Class-12 –– 3D Mensuration [23-Apr-2025 18:00]",
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6371829033112/6371829033112.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-spl-b43-v-446",
+          "label": "Advance - Class-13 –– 3D Mensuration [24-Apr-2025 18:00]",
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6371868559112/6371868559112.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-spl-b43-v-447",
+          "label": "Advance - Class-14 –– 3D Mensuration [25-Apr-2025 18:30]",
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6371926007112/6371926007112.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-spl-b43-v-448",
+          "label": "Advance - Class-15 –– 3D Mensuration [28-Apr-2025 18:00]",
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6372023688112/6372023688112.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-spl-b43-v-449",
+          "label": "Advance - Class-16 –– 3D Mensuration [29-Apr-2025 18:00]",
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6372060734112/6372060734112.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-spl-b43-v-450",
+          "label": "Advance - Class-17 –– 3D Mensuration [30-Apr-2025 18:00]",
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6372107452112/6372107452112.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-spl-b43-v-451",
+          "label": "Advance - Class-18 –– 3D Mensuration [01-May-2025 18:00]",
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6372164364112/6372164364112.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-spl-b43-v-452",
+          "label": "Advance - Class-19 –– 3D Mensuration [02-May-2025 18:00]",
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6372215265112/6372215265112.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-spl-b43-v-453",
+          "label": "Advance - Class-20 –– 3D Mensuration [03-May-2025 09:00]",
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6372256558112/6372256558112.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-spl-b43-v-454",
+          "label": "Advance - Class-21 –– 3D Mensuration [05-May-2025 18:00]",
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6372366281112/6372366281112.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-spl-b43-v-455",
+          "label": "Advance - Class-22 –– 3D Mensuration [06-May-2025 18:00]",
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6372413101112/6372413101112.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-spl-b43-v-456",
+          "label": "Advance - Class-23 –– 3D Mensuration [07-May-2025 12:00]",
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6372452249112/6372452249112.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-spl-b43-v-457",
+          "label": "Advance - Class -24 –– 3D mensuration [15-May-2025 20:00]",
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6322846572112/6322846572112.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-spl-b43-v-458",
+          "label": "Advance - Class-17 – Number System [03-Jun-2025 18:00]",
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6373822772112/6373822772112.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-spl-b43-v-459",
+          "label": "Advance - Class-18 – Number System [05-Jun-2025 18:00]",
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6373900291112/6373900291112.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-spl-b43-v-460",
+          "label": "Advance - Class-19 – Number System [06-Jun-2025 18:00]",
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6373943012112/6373943012112.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-spl-b43-v-461",
+          "label": "Advance - Class-20 – Number System [07-Jun-2025 18:00]",
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6373990141112/6373990141112.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-spl-b43-v-462",
+          "label": "Advance - Class-21 – Number System [09-Jun-2025 12:00]",
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6374041329112/6374041329112.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-spl-b43-v-463",
+          "label": "Advance - Class-22 – Number System [11-Jun-2025 12:00]",
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6374119000112/6374119000112.m3u8",
+          "type": "hls"
+        },
+        {
+          "id": "maths-spl-b43-v-464",
+          "label": "Advance - Class-23 –– Number System [12-Jul-2025 11:00]",
+          "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/channel_vod_non_drm_hls/4480491/175230438740387140453/175230438740387140453_7140453.m3u8",
+          "type": "hls"
+        }
+      ]
+    },
+    {
+      "id": "pdfs",
+      "label": "📄 PDFs",
+      "items": [
+        {
+          "id": "maths-spl-b43-p-465",
+          "label": "Syllabus - Syllabus @cwexte",
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/66a0d14d157ae_666fff3d1c4c8_664c873aea956_66260ddc3a6a7_65f94b876390d_6489ba79b6c68_Syllabus (1).pdf",
+          "type": "pdf"
+        },
+        {
+          "id": "maths-spl-b43-p-466",
+          "label": "Arithmetic - Number System Sheet -6 (Unit Digit) @cwexte",
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/68723a61ae7b5_NUMBER_SYSTEM_SHEET_6_unit_digit.pdf",
+          "type": "pdf"
+        },
+        {
+          "id": "maths-spl-b43-p-467",
+          "label": "Arithmetic - Problem on Ages @cwexte",
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/66b3474e0388f_Problem on Ages.pdf",
+          "type": "pdf"
+        },
+        {
+          "id": "maths-spl-b43-p-468",
+          "label": "Arithmetic - Complete Installment @cwexte",
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/677235355f1d0_DOC20230731WA0015..pdf",
+          "type": "pdf"
+        },
+        {
+          "id": "maths-spl-b43-p-469",
+          "label": "Arithmetic - Compund Intrest Sheet-3 @cwexte",
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/6762a05c7e55d_Compound_Interest_sheet_3.pdf",
+          "type": "pdf"
+        },
+        {
+          "id": "maths-spl-b43-p-470",
+          "label": "Arithmetic - Compound Interest sheet-2 @cwexte",
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/675d0c630a731_Compound_Interest_sheet_2_2.pdf",
+          "type": "pdf"
+        },
+        {
+          "id": "maths-spl-b43-p-471",
+          "label": "Arithmetic - Compound Interest Sheet -1 @cwexte",
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/67578f7b40d2a_Compound_Interest_Sheet_1.pdf",
+          "type": "pdf"
+        },
+        {
+          "id": "maths-spl-b43-p-472",
+          "label": "Arithmetic - Simple Interest Sheet-2 @cwexte",
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/674d62b6b7382_Simple_Interest_Sheet_2.pdf",
+          "type": "pdf"
+        },
+        {
+          "id": "maths-spl-b43-p-473",
+          "label": "Arithmetic - Simple Interest Sheet-1 @cwexte",
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/67406d85a12c7_Simple_Interest_Sheet1compressed.pdf",
+          "type": "pdf"
+        },
+        {
+          "id": "maths-spl-b43-p-474",
+          "label": "Arithmetic - Average Sheet-2 @cwexte",
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/6863d52e75dda_Average_Sheet_2.pdf",
+          "type": "pdf"
+        },
+        {
+          "id": "maths-spl-b43-p-475",
+          "label": "Arithmetic - Average Sheet-1 @cwexte",
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/6859457c07913_Average_Sheet1.pdf",
+          "type": "pdf"
+        },
+        {
+          "id": "maths-spl-b43-p-476",
+          "label": "Arithmetic - Mixture and  Alligation Sheet -3 @cwexte",
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/6850ed57c7a98_Mixture_and_Alligation_Sheet_3.pdf",
+          "type": "pdf"
+        },
+        {
+          "id": "maths-spl-b43-p-477",
+          "label": "Arithmetic - Mixture and Alligation Sheet-2 @cwexte",
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/6849265b9a754_Mixture_and_Alligation_Sheet_2compressed.pdf",
+          "type": "pdf"
+        },
+        {
+          "id": "maths-spl-b43-p-478",
+          "label": "Arithmetic - Dishonest Shopkeeper @cwexte",
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/683542672cfe2_Dishonest_Shopkeeper432714crwill.pdf",
+          "type": "pdf"
+        },
+        {
+          "id": "maths-spl-b43-p-479",
+          "label": "Arithmetic - Mixture and Alligation Sheet-1 @cwexte",
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/683541e30ef0d_Mixture_and_Alligation_Sheet_1.pdf",
+          "type": "pdf"
+        },
+        {
+          "id": "maths-spl-b43-p-480",
+          "label": "Arithmetic - Discount Sheet- 2 @cwexte",
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/682d2e2e25b3b_Discount_Sheet_2.pdf",
+          "type": "pdf"
+        },
+        {
+          "id": "maths-spl-b43-p-481",
+          "label": "Arithmetic - Discount Sheet-1 @cwexte",
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/6819b8781a308_Discount_Sheet1_2.pdf",
+          "type": "pdf"
+        },
+        {
+          "id": "maths-spl-b43-p-482",
+          "label": "Arithmetic - Profit and Loss Sheet-3 @cwexte",
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/681202f03af37_Profit_and_Loss_Sheet_3.pdf",
+          "type": "pdf"
+        },
+        {
+          "id": "maths-spl-b43-p-483",
+          "label": "Arithmetic - Profit and Loss Sheet -2 @cwexte",
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/680209bc657bc_Profit_and_Loss_Sheet_2.pdf",
+          "type": "pdf"
+        },
+        {
+          "id": "maths-spl-b43-p-484",
+          "label": "Arithmetic - Profit and Loss Sheet -3 @cwexte",
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/680208cc2d40a_Profit_and_Loss_Sheet_3.pdf",
+          "type": "pdf"
+        },
+        {
+          "id": "maths-spl-b43-p-485",
+          "label": "Arithmetic - Profit and Loss Sheet-1 @cwexte",
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/67fd3782f18bb_Profit_and_Loss_Sheet_1.pdf",
+          "type": "pdf"
+        },
+        {
+          "id": "maths-spl-b43-p-486",
+          "label": "Arithmetic - Race Sheet @cwexte",
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/67f516f09ca27_66bb084b412cc6516b86da96f4RACE_Sheet.pdf",
+          "type": "pdf"
+        },
+        {
+          "id": "maths-spl-b43-p-487",
+          "label": "Arithmetic - Train Sheet @cwexte",
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/67f5015feb834_Train_1.pdf",
+          "type": "pdf"
+        },
+        {
+          "id": "maths-spl-b43-p-488",
+          "label": "Arithmetic - Partnership Sheet @cwexte",
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/67f4a918ba648_Partnership.pdf",
+          "type": "pdf"
+        },
+        {
+          "id": "maths-spl-b43-p-489",
+          "label": "Arithmetic - Boat and Stream Sheet @cwexte",
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/67da4eda20c83_Boat_and_stream_Sheet.pdf",
+          "type": "pdf"
+        },
+        {
+          "id": "maths-spl-b43-p-490",
+          "label": "Arithmetic - Time , Speed and Distance Sheet-3 @cwexte",
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/67d95592ca33e_Time_Speed_and_Distance_Sheet_3.pdf",
+          "type": "pdf"
+        },
+        {
+          "id": "maths-spl-b43-p-491",
+          "label": "Arithmetic - Time Speed and Distance Sheet-2 @cwexte",
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/67ca5b5320361_Time_Speed_and_Distance_Sheet_2.pdf",
+          "type": "pdf"
+        },
+        {
+          "id": "maths-spl-b43-p-492",
+          "label": "Arithmetic - Time , Speed and Distance Sheet -1 @cwexte",
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/67b7e40aee8f1_Time_Speed_and_Distance_Sheet_1.pdf",
+          "type": "pdf"
+        },
+        {
+          "id": "maths-spl-b43-p-493",
+          "label": "Arithmetic - Pipes and Cistern Sheet @cwexte",
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/67a2ed60cf741_Pipes_and_Cistern.pdf",
+          "type": "pdf"
+        },
+        {
+          "id": "maths-spl-b43-p-494",
+          "label": "Arithmetic - Time and Work Sheet-3 @cwexte",
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/6798c3948d261_Time_and_Work_Sheet_3.pdf",
+          "type": "pdf"
+        },
+        {
+          "id": "maths-spl-b43-p-495",
+          "label": "Arithmetic - Time and Work Sheet -2 @cwexte",
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/678647081f226_Time_and_Work_Sheet_2.pdf",
+          "type": "pdf"
+        },
+        {
+          "id": "maths-spl-b43-p-496",
+          "label": "Arithmetic - Time and Work Sheet -1 @cwexte",
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/6784fb657050a_Time_and_Work_Sheet_1.pdf",
+          "type": "pdf"
+        },
+        {
+          "id": "maths-spl-b43-p-497",
+          "label": "Arithmetic - Ratio Sheet -2 @cwexte",
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/6780e7a20c88a_Ratio_Sheet_2.pdf",
+          "type": "pdf"
+        },
+        {
+          "id": "maths-spl-b43-p-498",
+          "label": "Arithmetic - Ratio Sheet @cwexte",
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/676a9f061a1f9_Ratio_Sheet.pdf",
+          "type": "pdf"
+        },
+        {
+          "id": "maths-spl-b43-p-499",
+          "label": "Arithmetic - Percentage sheet-3 @cwexte",
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/675d0b85d7d32_Percentage_sheet_3.pdf",
+          "type": "pdf"
+        },
+        {
+          "id": "maths-spl-b43-p-500",
+          "label": "Arithmetic - Percentage Sheet -2 @cwexte",
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/674914db82935_Percentage_Sheet_2.pdf",
+          "type": "pdf"
+        },
+        {
+          "id": "maths-spl-b43-p-501",
+          "label": "Arithmetic - Percentage Sheet -1 @cwexte",
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/672e022287cb0_Percentage_Sheet_1.pdf",
+          "type": "pdf"
+        },
+        {
+          "id": "maths-spl-b43-p-502",
+          "label": "Arithmetic - Problem on Ages Class Notes @cwexte",
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/6714b034432b0_problem_on_agescompressed.pdf",
+          "type": "pdf"
+        },
+        {
+          "id": "maths-spl-b43-p-503",
+          "label": "Arithmetic - Ratio Class Notes @cwexte",
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/6714afd592bb6_Ratio_class_notescompressed.pdf",
+          "type": "pdf"
+        },
+        {
+          "id": "maths-spl-b43-p-504",
+          "label": "Arithmetic - Profit and Loss Class Notes @cwexte",
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/6714af5f49684_Profit_and_loss_class_notescompressed.pdf",
+          "type": "pdf"
+        },
+        {
+          "id": "maths-spl-b43-p-505",
+          "label": "Advance - Maxima & Minima @cwexte",
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/68a2e7650df43_680077a870fbe_66459282d0f82Maxima_Minima.pdf",
+          "type": "pdf"
+        },
+        {
+          "id": "maths-spl-b43-p-506",
+          "label": "Advance - Quadratic Equations Sheet @cwexte",
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/67f5167c3a3d0_6787d0342422965a7f7de3b7fcQuadraticEquation1.pdf",
+          "type": "pdf"
+        },
+        {
+          "id": "maths-spl-b43-p-507",
+          "label": "Advance - DI  Sheet -2 (TABULAR DI  & LINE GRAPH) @cwexte",
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/679b2062835f0_DI_Sheet_2_TABULAR_DI_LINE_GRAPH_.pdf",
+          "type": "pdf"
+        },
+        {
+          "id": "maths-spl-b43-p-508",
+          "label": "Advance - DI  Sheet -1 (PIE AND BAR CHART) @cwexte",
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/679a189039d43_DI_Sheet_1_PIE_AND_BAR_CHART.pdf",
+          "type": "pdf"
+        },
+        {
+          "id": "maths-spl-b43-p-509",
+          "label": "Advance - Number System Sheet-5 @cwexte",
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/683fd64c9c842_NUMBER_SYSTEM_SHEET_5.pdf",
+          "type": "pdf"
+        },
+        {
+          "id": "maths-spl-b43-p-510",
+          "label": "Advance - Mensuration Sheet-6 @cwexte",
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/68248b6c08433_Mensuration_Sheet6407661crwill.pdf",
+          "type": "pdf"
+        },
+        {
+          "id": "maths-spl-b43-p-511",
+          "label": "Advance - 3D Mensuration Sheet-5 @cwexte",
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/6819b926674d3_3D_Mensuration_Sheet_5.pdf",
+          "type": "pdf"
+        },
+        {
+          "id": "maths-spl-b43-p-512",
+          "label": "Advance - 3D Mensuration Sheet-4 @cwexte",
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/6811aaaa635b5_3D_Mensuration_Sheet_4.pdf",
+          "type": "pdf"
+        },
+        {
+          "id": "maths-spl-b43-p-513",
+          "label": "Advance - 3D Mensuration Sheet-3 @cwexte",
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/6809becd20dba_3D_Mensuration_Sheet_3.pdf",
+          "type": "pdf"
+        },
+        {
+          "id": "maths-spl-b43-p-514",
+          "label": "Advance - 3D Mensuration Sheet- 2 @cwexte",
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/680650c5b2172_3D_Mensuration_Sheet_2.pdf",
+          "type": "pdf"
+        },
+        {
+          "id": "maths-spl-b43-p-515",
+          "label": "Advance - 3D Mensuration Sheet -1 @cwexte",
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/67f86cec7dd3e_3D_Mensuration_Sheet_1.pdf",
+          "type": "pdf"
+        },
+        {
+          "id": "maths-spl-b43-p-516",
+          "label": "Advance - Mensuration Sheet-4 (Polygon) @cwexte",
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/67ea59899b293_Mensuration_Sheet_4_Polygon.pdf",
+          "type": "pdf"
+        },
+        {
+          "id": "maths-spl-b43-p-517",
+          "label": "Advance - 2D Mensuration Sheet -3 @cwexte",
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/67e269a8565fd_2D_Mensuration_Sheet_3.pdf",
+          "type": "pdf"
+        },
+        {
+          "id": "maths-spl-b43-p-518",
+          "label": "Advance - 2D Mensuration Sheet -2 @cwexte",
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/67dcf06f8b1da_2D_Mensuration_Sheet_2.pdf",
+          "type": "pdf"
+        },
+        {
+          "id": "maths-spl-b43-p-519",
+          "label": "Advance - 2D Mensuration Sheet-1 @cwexte",
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/67cfdbdac3316_2D_Mensuration_Sheet_1.pdf",
+          "type": "pdf"
+        },
+        {
+          "id": "maths-spl-b43-p-520",
+          "label": "Advance - HCF Sheet @cwexte",
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/67ce82ece7c5b_HCF_Sheet.pdf",
+          "type": "pdf"
+        },
+        {
+          "id": "maths-spl-b43-p-521",
+          "label": "Advance - LCM Sheet-1 @cwexte",
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/67ce82b9a4d31_6627466a3a6e5LCM_SHEET_Sheet1.pdf",
+          "type": "pdf"
+        },
+        {
+          "id": "maths-spl-b43-p-522",
+          "label": "Advance - Surds & Indices Sheet-2 @cwexte",
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/67ce6d1a60fe4_Surds_Indices_Sheet_2.pdf",
+          "type": "pdf"
+        },
+        {
+          "id": "maths-spl-b43-p-523",
+          "label": "Advance - Surds & Indices-1 @cwexte",
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/67c7d1a6776f3_Surds_Indices_1_1.pdf",
+          "type": "pdf"
+        },
+        {
+          "id": "maths-spl-b43-p-524",
+          "label": "Advance - Height and Distance @cwexte",
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/67b7e2e04048a_Height_and_Distance.pdf",
+          "type": "pdf"
+        },
+        {
+          "id": "maths-spl-b43-p-525",
+          "label": "Advance - Trigonometry Sheet-5 @cwexte",
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/67a2eddf680c1_Trigonometry_Sheet5.pdf",
+          "type": "pdf"
+        },
+        {
+          "id": "maths-spl-b43-p-526",
+          "label": "Advance - Trigonometry Sheet-4 @cwexte",
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/679c1aaf0f381_trigonometry4.pdf",
+          "type": "pdf"
+        },
+        {
+          "id": "maths-spl-b43-p-527",
+          "label": "Advance - Trigonometry-3 @cwexte",
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/679c19a85aa72_trigonometry3.pdf",
+          "type": "pdf"
+        },
+        {
+          "id": "maths-spl-b43-p-528",
+          "label": "Advance - Trigonometry-2 @cwexte",
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/678643cf018fe_Trigonometry2.pdf",
+          "type": "pdf"
+        },
+        {
+          "id": "maths-spl-b43-p-529",
+          "label": "Advance - Trigonometry Sheet -1 @cwexte",
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/6782017090797_trigonometry_Sheet_1.pdf",
+          "type": "pdf"
+        },
+        {
+          "id": "maths-spl-b43-p-530",
+          "label": "Advance - Algebra Sheet -6. @cwexte",
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/677d62d286a09_Algebra_Sheet_6.pdf",
+          "type": "pdf"
+        },
+        {
+          "id": "maths-spl-b43-p-531",
+          "label": "Advance - Algebra Sheet -5 @cwexte",
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/677b847f651bd_Algebra_Sheet_5.pdf",
+          "type": "pdf"
+        },
+        {
+          "id": "maths-spl-b43-p-532",
+          "label": "Advance - Algebra sheet -4 @cwexte",
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/6764d65faef04_Algebra_sheet_4.pdf",
+          "type": "pdf"
+        },
+        {
+          "id": "maths-spl-b43-p-533",
+          "label": "Advance - Algebra Sheet-3 @cwexte",
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/675ad9a22318d_Algebra_sheet_3.pdf",
+          "type": "pdf"
+        },
+        {
+          "id": "maths-spl-b43-p-534",
+          "label": "Advance - Algebra Sheet -2 @cwexte",
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/674febcb3ae9d_Algebra_Sheet_2.pdf",
+          "type": "pdf"
+        },
+        {
+          "id": "maths-spl-b43-p-535",
+          "label": "Advance - Algebra Sheet -1 @cwexte",
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/67403fc7e89e8_Algebra_Sheet_1.pdf",
+          "type": "pdf"
+        },
+        {
+          "id": "maths-spl-b43-p-536",
+          "label": "Advance - Number System Sheet-4 (divisibility rules) @cwexte",
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/673840c29e6ee_NUMBER_SYSTEM_SHEET4_divisibility_rules_427067crwill.pdf",
+          "type": "pdf"
+        },
+        {
+          "id": "maths-spl-b43-p-537",
+          "label": "Advance - Statistics Sheet - with Solutions @cwexte",
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/672c5a5796855_Statistics_Sheet_with_solutions379650crwill.pdf",
+          "type": "pdf"
+        },
+        {
+          "id": "maths-spl-b43-p-538",
+          "label": "Advance - Statistics Sheet @cwexte",
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/672c5a23e4c3a_Statistics_Sheet379661crwill.pdf",
+          "type": "pdf"
+        },
+        {
+          "id": "maths-spl-b43-p-539",
+          "label": "Advance - Co-ordinate Geometry @cwexte",
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/672b53a627cd0_Coordinate_Geometry.pdf",
+          "type": "pdf"
+        },
+        {
+          "id": "maths-spl-b43-p-540",
+          "label": "Advance - Geometry Sheet -12 ,13, 14, 15 @cwexte",
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/671db4ea85c12_ilovepdfmerged.pdf",
+          "type": "pdf"
+        },
+        {
+          "id": "maths-spl-b43-p-541",
+          "label": "Advance - Permutation and Combination Sheet @cwexte",
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/671cafcdc285b_66b5a28e294326541ef40a762b6540cada5da5e652cf4ec7ac38Permutation_and_Combination.pdf",
+          "type": "pdf"
+        },
+        {
+          "id": "maths-spl-b43-p-542",
+          "label": "Advance - Probability Sheet-3 @cwexte",
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/671cae6cb6e35_Probability_Sheet3_1.pdf",
+          "type": "pdf"
+        },
+        {
+          "id": "maths-spl-b43-p-543",
+          "label": "Advance - Probability Sheet-2 @cwexte",
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/671cadcdd83e9_Probability_Sheet2.pdf",
+          "type": "pdf"
+        },
+        {
+          "id": "maths-spl-b43-p-544",
+          "label": "Advance - Probability Sheet-1 @cwexte",
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/671cad86dcc49_Probability_Sheet1.pdf",
+          "type": "pdf"
+        },
+        {
+          "id": "maths-spl-b43-p-545",
+          "label": "Advance - Geometry Sheet-11 @cwexte",
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/6711f73035e81_Geometry_sheet_11.pdf",
+          "type": "pdf"
+        },
+        {
+          "id": "maths-spl-b43-p-546",
+          "label": "Advance - Geometry Sheet-10 @cwexte",
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/670908314f9f3_Geometry_10_1.pdf",
+          "type": "pdf"
+        },
+        {
+          "id": "maths-spl-b43-p-547",
+          "label": "Advance - Geometry Sheet-9 @cwexte",
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/6704c988d90e7_Geometry_Sheet9.pdf",
+          "type": "pdf"
+        },
+        {
+          "id": "maths-spl-b43-p-548",
+          "label": "Advance - Simplification Sheet @cwexte",
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/6703c7f8a9a6e_Simplification_Sheet.pdf",
+          "type": "pdf"
+        },
+        {
+          "id": "maths-spl-b43-p-549",
+          "label": "Advance - Calculation and Simplification Sheet -2 @cwexte",
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/66f7a8a8f0b6a_Calculation_and_Simplification_Sheet_2.pdf",
+          "type": "pdf"
+        },
+        {
+          "id": "maths-spl-b43-p-550",
+          "label": "Advance - Geometry Sheet - 8 @cwexte",
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/66f63bb707cc7_Geometry_Sheet_8.pdf",
+          "type": "pdf"
+        },
+        {
+          "id": "maths-spl-b43-p-551",
+          "label": "Advance - Calculation and Simplification Sheet -1 @cwexte",
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/66f3fa7c0ec46_Calculation_and_Simplification_Sheet_1.pdf",
+          "type": "pdf"
+        },
+        {
+          "id": "maths-spl-b43-p-552",
+          "label": "Advance - Geometry Sheet-7 @cwexte",
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/66f267887459c_Geometry_7.pdf",
+          "type": "pdf"
+        },
+        {
+          "id": "maths-spl-b43-p-553",
+          "label": "Advance - Geometry Sheet-6 @cwexte",
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/66e032936d32c_Geometry Sheet-6.pdf",
+          "type": "pdf"
+        },
+        {
+          "id": "maths-spl-b43-p-554",
+          "label": "Advance - Number System Sheet-3 @cwexte",
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/66d84e1d2f77f_Number System Sheet-  3.pdf",
+          "type": "pdf"
+        },
+        {
+          "id": "maths-spl-b43-p-555",
+          "label": "Advance - Geometry Sheet- 5 @cwexte",
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/66d287447b17d_Geometry Sheet- 5.pdf",
+          "type": "pdf"
+        },
+        {
+          "id": "maths-spl-b43-p-556",
+          "label": "Advance - Geometry Sheet-4 @cwexte",
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/66d10ff3103ef_Geometry Sheet- 4.pdf",
+          "type": "pdf"
+        },
+        {
+          "id": "maths-spl-b43-p-557",
+          "label": "Advance - Number System Sheet-2 @cwexte",
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/66cd7b2ebc10d_Number System Sheet -2.pdf",
+          "type": "pdf"
+        },
+        {
+          "id": "maths-spl-b43-p-558",
+          "label": "Advance - Number System Sheet-1 @cwexte",
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/66cd7af986422_Number System Sheet - 1.pdf",
+          "type": "pdf"
+        },
+        {
+          "id": "maths-spl-b43-p-559",
+          "label": "Advance - Geometry Sheet-3 @cwexte",
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/66b453d734da2_Geometry Sheet-3.pdf",
+          "type": "pdf"
+        },
+        {
+          "id": "maths-spl-b43-p-560",
+          "label": "Advance - Geometry Sheet-2 @cwexte",
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/66a8a68362946_Geometry Sheet - 2.pdf",
+          "type": "pdf"
+        },
+        {
+          "id": "maths-spl-b43-p-561",
+          "label": "Advance - Geometry Sheet-1 @cwexte",
+          "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/669f7468ec02b_Geometry Sheet - 1.pdf",
+          "type": "pdf"
+        }
+      ]
+    }
+  ],
+  "category": "government"
+}

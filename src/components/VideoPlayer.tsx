@@ -309,11 +309,12 @@ export const VideoPlayer: React.FC<VideoPlayerProps> = ({
 
     const abortController = new AbortController();
 
-    fetch(`/api/stream?code=${code}&provider=${provider}`, { signal: abortController.signal })
+    fetch(`/api/v1/stream?code=${code}&provider=${provider}`, { signal: abortController.signal })
       .then((r) => r.json())
-      .then((data) => {
-        if (data.streamUrl) {
-          setResolvedStreamUrl(data.streamUrl);
+      .then((res) => {
+        const streamData = res?.data || res;
+        if (streamData?.streamUrl) {
+          setResolvedStreamUrl(streamData.streamUrl);
         } else {
           setStreamError('Failed to load stream. Try selecting another server.');
         }
@@ -336,7 +337,7 @@ export const VideoPlayer: React.FC<VideoPlayerProps> = ({
   const videoSourceUrl = isProxyStreamUrl
     ? getWorkerProxyUrl(activeUrl, 'stream')
     : isHrankerHls
-    ? `/api/hls-proxy?url=${encodeURIComponent(activeUrl)}&provider=hranker`
+    ? `/api/v1/hls-proxy?url=${encodeURIComponent(activeUrl)}&provider=hranker`
     : isHlsUrl
     ? activeUrl
     : resolvedStreamUrl;
