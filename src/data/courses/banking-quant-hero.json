@@ -12,13 +12,13 @@
     {
       "id": "speed-maths",
       "label": "01. Speed Maths & Vedic Maths",
-      "subname": "10 items (1 Videos & 9 Practice Sheets)",
+      "subname": "13 items (4 Videos & 9 Practice Sheets)",
       "thumb": "https://files.catbox.moe/97ydfl.jpg",
       "items": [
         {
           "id": "paxide",
           "label": "Speed Math-Vedic Math - Part I",
-          "url": "https://stutosed.strp2p.site/#pending-paxide",
+          "url": "https://stutosed.strp2p.site/#paxide",
           "type": "streamp2p",
           "thumb": "https://files.catbox.moe/97ydfl.jpg",
           "duration": 8369,
@@ -28,7 +28,7 @@
           "servers": [
             {
               "name": "StreamP2P Player",
-              "url": "https://stutosed.strp2p.site/#pending-paxide",
+              "url": "https://stutosed.strp2p.site/#paxide",
               "type": "streamp2p"
             }
           ]
@@ -67,6 +67,24 @@
           "folderName": "Speed Maths"
         },
         {
+          "id": "tubslx",
+          "label": "Speed Math-Vedic Math - Part II",
+          "url": "https://stutosed.strp2p.site/#tubslx",
+          "type": "streamp2p",
+          "thumb": "https://stutosed.strp2p.site/xKYSvgkQ-VGnroOCVpNWXQ/unl/krnvuoui/59agaw/poster.png",
+          "duration": 7452,
+          "category": "videos",
+          "subject": "Speed Maths",
+          "folderName": "Speed Maths",
+          "servers": [
+            {
+              "name": "StreamP2P Player",
+              "url": "https://stutosed.strp2p.site/#tubslx",
+              "type": "streamp2p"
+            }
+          ]
+        },
+        {
           "id": "pdf-007",
           "label": "Speed Math-Vedic Math - Part II (Notes 1)",
           "url": "https://files.catbox.moe/y41rvn.pdf",
@@ -89,6 +107,24 @@
           "folderName": "Speed Maths"
         },
         {
+          "id": "ebwqom",
+          "label": "Base Method of Multiplication Percentage to Fraction",
+          "url": "https://stutosed.strp2p.site/#ebwqom",
+          "type": "streamp2p",
+          "thumb": "https://stutosed.strp2p.site/spMOyt1_b88BVDC-EczeAQ/meb/krnvuoui/oxrvrh/poster.png",
+          "duration": 5113,
+          "category": "videos",
+          "subject": "Speed Maths",
+          "folderName": "Speed Maths",
+          "servers": [
+            {
+              "name": "StreamP2P Player",
+              "url": "https://stutosed.strp2p.site/#ebwqom",
+              "type": "streamp2p"
+            }
+          ]
+        },
+        {
           "id": "pdf-010",
           "label": "Base Method of Multiplication Percentage to Fraction (Notes)",
           "url": "https://files.catbox.moe/brplnp.pdf",
@@ -98,6 +134,24 @@
           "category": "pdfs",
           "subject": "Speed Maths",
           "folderName": "Speed Maths"
+        },
+        {
+          "id": "yjtee8",
+          "label": "Speed Math-Vedic Math - Part III",
+          "url": "https://stutosed.strp2p.site/#yjtee8",
+          "type": "streamp2p",
+          "thumb": "https://stutosed.strp2p.site/jdqQNJ6ViXspb3f2kEiVEQ/qtd/xieomrse/i5hqvy/poster.png",
+          "duration": 5148,
+          "category": "videos",
+          "subject": "Speed Maths",
+          "folderName": "Speed Maths",
+          "servers": [
+            {
+              "name": "StreamP2P Player",
+              "url": "https://stutosed.strp2p.site/#yjtee8",
+              "type": "streamp2p"
+            }
+          ]
         },
         {
           "id": "pdf-012",
@@ -1129,14 +1183,14 @@
     {
       "id": "percentage",
       "label": "05. Percentage & Successive Change",
-      "subname": "7 items (4 Videos & 3 Practice Sheets)",
+      "subname": "13 items (10 Videos & 3 Practice Sheets)",
       "thumb": "https://asset.syncp2p.com/tqRUxoAAcXJi79K-bDs3Xg/unl/krnvuoui/mc69sl/poster.png",
       "items": [
         {
-          "id": "ebw3cs",
+          "id": "Ogganl6Vt",
           "label": "Percentage to Fraction and Vice Versa (Basics)",
-          "url": "https://stutosed.strp2p.site/#ebw3cs",
-          "type": "streamp2p",
+          "url": "https://player.abyssplayer.com/Ogganl6Vt",
+          "type": "abyss",
           "thumb": "https://asset.syncp2p.com/zzl5shBdqYeYNO5Rrynktg/meb/krnvuoui/hapuqg/poster.png",
           "preview": "https://asset.syncp2p.com/2VQUm2R_YUvPXZpnS1T6Lw/meb/krnvuoui/hapuqg/preview.webp",
           "duration": 3973,
@@ -1145,9 +1199,9 @@
           "folderName": "Percentage",
           "servers": [
             {
-              "name": "StreamP2P Player",
-              "url": "https://stutosed.strp2p.site/#ebw3cs",
-              "type": "streamp2p"
+              "name": "Abyss Server",
+              "url": "https://player.abyssplayer.com/Ogganl6Vt",
+              "type": "abyss"
             }
           ]
         },
@@ -1163,10 +1217,10 @@
           "folderName": "Percentage"
         },
         {
-          "id": "asqe6z",
+          "id": "BZjWBHI1j",
           "label": "Basics of Percentage (Change Successive Change and Its Operations)",
-          "url": "https://stutosed.strp2p.site/#asqe6z",
-          "type": "streamp2p",
+          "url": "https://player.abyssplayer.com/BZjWBHI1j",
+          "type": "abyss",
           "thumb": "https://asset.syncp2p.com/KAlNmmPFAt0OwOt7HwrNBQ/qtd/krnvuoui/bqmhm9/poster.png",
           "preview": "https://asset.syncp2p.com/Z-TMsphGkXBBxe10iEtG7w/qtd/krnvuoui/bqmhm9/preview.webp",
           "duration": 15835,
@@ -1175,17 +1229,17 @@
           "folderName": "Percentage",
           "servers": [
             {
-              "name": "StreamP2P Player",
-              "url": "https://stutosed.strp2p.site/#asqe6z",
-              "type": "streamp2p"
+              "name": "Abyss Server",
+              "url": "https://player.abyssplayer.com/BZjWBHI1j",
+              "type": "abyss"
             }
           ]
         },
         {
-          "id": "ung1ho",
+          "id": "ZKmvlKoDH",
           "label": "Successive Percentage Change Practice Other Important Questions",
-          "url": "https://stutosed.strp2p.site/#ung1ho",
-          "type": "streamp2p",
+          "url": "https://player.abyssplayer.com/ZKmvlKoDH",
+          "type": "abyss",
           "thumb": "https://asset.syncp2p.com/zD0bLdeGVe4DuHm4V5Ih1g/qtd/krnvuoui/59ayzx/poster.png",
           "preview": "https://asset.syncp2p.com/xrZZVHgNnm1JZOgS9Rfx-Q/qtd/krnvuoui/59ayzx/preview.webp",
           "duration": 5342,
@@ -1194,9 +1248,9 @@
           "folderName": "Percentage",
           "servers": [
             {
-              "name": "StreamP2P Player",
-              "url": "https://stutosed.strp2p.site/#ung1ho",
-              "type": "streamp2p"
+              "name": "Abyss Server",
+              "url": "https://player.abyssplayer.com/ZKmvlKoDH",
+              "type": "abyss"
             }
           ]
         },
@@ -1223,10 +1277,10 @@
           "folderName": "Percentage"
         },
         {
-          "id": "paxkll",
+          "id": "1CnTONLmz",
           "label": "Applications of Percentage [Important Practice Questions]",
-          "url": "https://stutosed.strp2p.site/#paxkll",
-          "type": "streamp2p",
+          "url": "https://player.abyssplayer.com/1CnTONLmz",
+          "type": "abyss",
           "thumb": "https://asset.syncp2p.com/PD_1nL3d1DpUZN8F40vJug/qtd/krnvuoui/8h3wvb/poster.png",
           "preview": "https://asset.syncp2p.com/qCCgt5FjxS4ya2N-9-mYdw/qtd/krnvuoui/8h3wvb/preview.webp",
           "duration": 5405,
@@ -1235,9 +1289,973 @@
           "folderName": "Percentage",
           "servers": [
             {
-              "name": "StreamP2P Player",
-              "url": "https://stutosed.strp2p.site/#paxkll",
-              "type": "streamp2p"
+              "name": "Abyss Server",
+              "url": "https://player.abyssplayer.com/1CnTONLmz",
+              "type": "abyss"
+            }
+          ]
+        },
+        {
+          "id": "xg3sWYhBT",
+          "label": "Concept of Voting and Practice Questions",
+          "url": "https://player.abyssplayer.com/xg3sWYhBT",
+          "type": "abyss",
+          "thumb": "https://stutosed.strp2p.site/XNzCforsq4azyF3ClFhbUA/qtd/xieomrse/g3ijct/poster.png",
+          "duration": 5666,
+          "category": "videos",
+          "subject": "Percentage",
+          "folderName": "Percentage",
+          "servers": [
+            {
+              "name": "Abyss Server",
+              "url": "https://player.abyssplayer.com/xg3sWYhBT",
+              "type": "abyss"
+            }
+          ]
+        },
+        {
+          "id": "BN18CTA6b",
+          "label": "Venn Diagram [Detailed Basic Concept]",
+          "url": "https://player.abyssplayer.com/BN18CTA6b",
+          "type": "abyss",
+          "thumb": "https://stutosed.strp2p.site/j5HyQyRlP-NVpwYkpdL21A/qtd/xieomrse/oxr1bq/poster.png",
+          "duration": 3792,
+          "category": "videos",
+          "subject": "Percentage",
+          "folderName": "Percentage",
+          "servers": [
+            {
+              "name": "Abyss Server",
+              "url": "https://player.abyssplayer.com/BN18CTA6b",
+              "type": "abyss"
+            }
+          ]
+        },
+        {
+          "id": "cCpmF7_CC",
+          "label": "Two Variables Venn Diagram Practice Questions",
+          "url": "https://player.abyssplayer.com/cCpmF7_CC",
+          "type": "abyss",
+          "thumb": "https://stutosed.strp2p.site/jPgywmCRDW1CrIa0vNOC9g/qtd/xieomrse/mc6n8r/poster.png",
+          "duration": 5759,
+          "category": "videos",
+          "subject": "Percentage",
+          "folderName": "Percentage",
+          "servers": [
+            {
+              "name": "Abyss Server",
+              "url": "https://player.abyssplayer.com/cCpmF7_CC",
+              "type": "abyss"
+            }
+          ]
+        },
+        {
+          "id": "g33b5ux6y",
+          "label": "Three Variables Venn Diagram Practice Questions - Marks Based Practice Questions",
+          "url": "https://player.abyssplayer.com/g33b5ux6y",
+          "type": "abyss",
+          "thumb": "https://stutosed.strp2p.site/CF-9e62Y_-iWiLV51iVP0w/6sy/xieomrse/hap35y/poster.png",
+          "duration": 5822,
+          "category": "videos",
+          "subject": "Percentage",
+          "folderName": "Percentage",
+          "servers": [
+            {
+              "name": "Abyss Server",
+              "url": "https://player.abyssplayer.com/g33b5ux6y",
+              "type": "abyss"
+            }
+          ]
+        },
+        {
+          "id": "2Spkon06t",
+          "label": "Pass-Fail - Marks Concepts and Questions",
+          "url": "https://player.abyssplayer.com/2Spkon06t",
+          "type": "abyss",
+          "thumb": "https://stutosed.strp2p.site/LqrqqUJMOVFjUf35NSktpg/qtd/xieomrse/ubdzfv/poster.png",
+          "duration": 3656,
+          "category": "videos",
+          "subject": "Percentage",
+          "folderName": "Percentage",
+          "servers": [
+            {
+              "name": "Abyss Server",
+              "url": "https://player.abyssplayer.com/2Spkon06t",
+              "type": "abyss"
+            }
+          ]
+        },
+        {
+          "id": "TNM7D0xLH",
+          "label": "Concept of Commission and Questions - Income-Exp-Savings Based Questions",
+          "url": "https://player.abyssplayer.com/TNM7D0xLH",
+          "type": "abyss",
+          "thumb": "https://stutosed.strp2p.site/UL2noY59RlmMIf8gGelamQ/qtd/xieomrse/hap35u/poster.png",
+          "duration": 4946,
+          "category": "videos",
+          "subject": "Percentage",
+          "folderName": "Percentage",
+          "servers": [
+            {
+              "name": "Abyss Server",
+              "url": "https://player.abyssplayer.com/TNM7D0xLH",
+              "type": "abyss"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "ratio-proportion",
+      "label": "06. Ratio & Proportion",
+      "subname": "11 Video Lectures",
+      "thumb": "https://stutosed.strp2p.site/46sYuDZYiSBvUMlzhwUSSA/qtd/xieomrse/dmnfbn/poster.png",
+      "items": [
+        {
+          "id": "mxUNOMP5c",
+          "label": "Ratio and Proportion Basics and Concepts",
+          "url": "https://player.abyssplayer.com/mxUNOMP5c",
+          "type": "abyss",
+          "thumb": "https://stutosed.strp2p.site/46sYuDZYiSBvUMlzhwUSSA/qtd/xieomrse/dmnfbn/poster.png",
+          "duration": 5597,
+          "category": "videos",
+          "subject": "Ratio and Proportion",
+          "folderName": "Ratio and Proportion",
+          "servers": [
+            {
+              "name": "Abyss Server",
+              "url": "https://player.abyssplayer.com/mxUNOMP5c",
+              "type": "abyss"
+            }
+          ]
+        },
+        {
+          "id": "cOyRBKrbf",
+          "label": "Ratio Basics and Concepts Part-2",
+          "url": "https://player.abyssplayer.com/cOyRBKrbf",
+          "type": "abyss",
+          "thumb": "https://stutosed.strp2p.site/Bln1KXil5tQqtdAsbZJKDg/qtd/xieomrse/9fuawl/poster.png",
+          "duration": 5500,
+          "category": "videos",
+          "subject": "Ratio and Proportion",
+          "folderName": "Ratio and Proportion",
+          "servers": [
+            {
+              "name": "Abyss Server",
+              "url": "https://player.abyssplayer.com/cOyRBKrbf",
+              "type": "abyss"
+            }
+          ]
+        },
+        {
+          "id": "S9Ji3gxsR",
+          "label": "Ratio and Proportion Class 3",
+          "url": "https://player.abyssplayer.com/S9Ji3gxsR",
+          "type": "abyss",
+          "thumb": "https://stutosed.strp2p.site/TWLrsAlM_PaXgzBD2fu8gw/qtd/xieomrse/swlt5i/poster.png",
+          "duration": 6106,
+          "category": "videos",
+          "subject": "Ratio and Proportion",
+          "folderName": "Ratio and Proportion",
+          "servers": [
+            {
+              "name": "Abyss Server",
+              "url": "https://player.abyssplayer.com/S9Ji3gxsR",
+              "type": "abyss"
+            }
+          ]
+        },
+        {
+          "id": "mc7fWDr_B",
+          "label": "Ratio and Proportion Class 4",
+          "url": "https://player.abyssplayer.com/mc7fWDr_B",
+          "type": "abyss",
+          "thumb": "https://stutosed.strp2p.site/9dQArW1uXL5-m8f-1_4Ntg/qtd/xieomrse/rgjyb9/poster.png",
+          "duration": 5573,
+          "category": "videos",
+          "subject": "Ratio and Proportion",
+          "folderName": "Ratio and Proportion",
+          "servers": [
+            {
+              "name": "Abyss Server",
+              "url": "https://player.abyssplayer.com/mc7fWDr_B",
+              "type": "abyss"
+            }
+          ]
+        },
+        {
+          "id": "fDLSMRvlU",
+          "label": "Ratio and Proportion Class 5",
+          "url": "https://player.abyssplayer.com/fDLSMRvlU",
+          "type": "abyss",
+          "thumb": "https://stutosed.strp2p.site/VFb5HC-sXjsNIocM_IpDaA/qtd/xieomrse/pz95vg/poster.png",
+          "duration": 5876,
+          "category": "videos",
+          "subject": "Ratio and Proportion",
+          "folderName": "Ratio and Proportion",
+          "servers": [
+            {
+              "name": "Abyss Server",
+              "url": "https://player.abyssplayer.com/fDLSMRvlU",
+              "type": "abyss"
+            }
+          ]
+        },
+        {
+          "id": "ty857Tf7u",
+          "label": "Ratio and Proportion Class 6",
+          "url": "https://player.abyssplayer.com/ty857Tf7u",
+          "type": "abyss",
+          "thumb": "https://stutosed.strp2p.site/waQvrLylRCMRbOqrSjm5Lw/qtd/xieomrse/hap3tf/poster.png",
+          "duration": 5557,
+          "category": "videos",
+          "subject": "Ratio and Proportion",
+          "folderName": "Ratio and Proportion",
+          "servers": [
+            {
+              "name": "Abyss Server",
+              "url": "https://player.abyssplayer.com/ty857Tf7u",
+              "type": "abyss"
+            }
+          ]
+        },
+        {
+          "id": "GSjLTzdc0",
+          "label": "Ratio and Proportion Class 7",
+          "url": "https://player.abyssplayer.com/GSjLTzdc0",
+          "type": "abyss",
+          "thumb": "https://stutosed.strp2p.site/yVbBxjqp_SHERvdGLH4J_w/6sy/xieomrse/evsc3z/poster.png",
+          "duration": 5607,
+          "category": "videos",
+          "subject": "Ratio and Proportion",
+          "folderName": "Ratio and Proportion",
+          "servers": [
+            {
+              "name": "Abyss Server",
+              "url": "https://player.abyssplayer.com/GSjLTzdc0",
+              "type": "abyss"
+            }
+          ]
+        },
+        {
+          "id": "Hali4XHat",
+          "label": "Ratio and Proportion Class 8",
+          "url": "https://player.abyssplayer.com/Hali4XHat",
+          "type": "abyss",
+          "thumb": "https://stutosed.strp2p.site/em7n9AGIEIKcXzikMatF1A/6sy/xieomrse/g3ijqc/poster.png",
+          "duration": 5499,
+          "category": "videos",
+          "subject": "Ratio and Proportion",
+          "folderName": "Ratio and Proportion",
+          "servers": [
+            {
+              "name": "Abyss Server",
+              "url": "https://player.abyssplayer.com/Hali4XHat",
+              "type": "abyss"
+            }
+          ]
+        },
+        {
+          "id": "TThR3ZlQE",
+          "label": "Ratio and Proportion Class 9",
+          "url": "https://player.abyssplayer.com/TThR3ZlQE",
+          "type": "abyss",
+          "thumb": "https://stutosed.strp2p.site/-lF11QrvrVpzXMt8qvbhXQ/6sy/xieomrse/pz95vv/poster.png",
+          "duration": 4744,
+          "category": "videos",
+          "subject": "Ratio and Proportion",
+          "folderName": "Ratio and Proportion",
+          "servers": [
+            {
+              "name": "Abyss Server",
+              "url": "https://player.abyssplayer.com/TThR3ZlQE",
+              "type": "abyss"
+            }
+          ]
+        },
+        {
+          "id": "IxUMY8Blc",
+          "label": "Ratio and Proportion Class 10",
+          "url": "https://player.abyssplayer.com/IxUMY8Blc",
+          "type": "abyss",
+          "thumb": "https://stutosed.strp2p.site/CKTdcaik1otyhY5s08ebxA/6sy/xieomrse/8h3g6g/poster.png",
+          "duration": 5827,
+          "category": "videos",
+          "subject": "Ratio and Proportion",
+          "folderName": "Ratio and Proportion",
+          "servers": [
+            {
+              "name": "Abyss Server",
+              "url": "https://player.abyssplayer.com/IxUMY8Blc",
+              "type": "abyss"
+            }
+          ]
+        },
+        {
+          "id": "y5rcsRbhXO",
+          "label": "Ratio and Proportion Class 11",
+          "url": "https://player.abyssplayer.com/y5rcsRbhXO",
+          "type": "abyss",
+          "thumb": "https://stutosed.strp2p.site/lL1BNvu9Ikay5X1-sJ5IKg/6sy/xieomrse/mc6njo/poster.png",
+          "duration": 4084,
+          "category": "videos",
+          "subject": "Ratio and Proportion",
+          "folderName": "Ratio and Proportion",
+          "servers": [
+            {
+              "name": "Abyss Server",
+              "url": "https://player.abyssplayer.com/y5rcsRbhXO",
+              "type": "abyss"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "mixture-alligation",
+      "label": "07. Mixture & Alligation",
+      "subname": "6 Video Lectures",
+      "thumb": "https://stutosed.strp2p.site/OxgL0aDtBjdDIp0Aqv5WGg/qtd/xieomrse/mc6n3y/poster.png",
+      "items": [
+        {
+          "id": "WVSFEwuQt",
+          "label": "Mixtures and Alligation Class 01",
+          "url": "https://player.abyssplayer.com/WVSFEwuQt",
+          "type": "abyss",
+          "thumb": "https://stutosed.strp2p.site/OxgL0aDtBjdDIp0Aqv5WGg/qtd/xieomrse/mc6n3y/poster.png",
+          "duration": 3965,
+          "category": "videos",
+          "subject": "Mixture Alligation",
+          "folderName": "Mixture Alligation",
+          "servers": [
+            {
+              "name": "Abyss Server",
+              "url": "https://player.abyssplayer.com/WVSFEwuQt",
+              "type": "abyss"
+            }
+          ]
+        },
+        {
+          "id": "GaEMTHybs",
+          "label": "Mixtures and Alligation Class 02",
+          "url": "https://player.abyssplayer.com/GaEMTHybs",
+          "type": "abyss",
+          "thumb": "https://stutosed.strp2p.site/ag_2zeFM4AAtn0VEOpQ6pA/qtd/xieomrse/9fuabd/poster.png",
+          "duration": 5552,
+          "category": "videos",
+          "subject": "Mixture Alligation",
+          "folderName": "Mixture Alligation",
+          "servers": [
+            {
+              "name": "Abyss Server",
+              "url": "https://player.abyssplayer.com/GaEMTHybs",
+              "type": "abyss"
+            }
+          ]
+        },
+        {
+          "id": "HYNo5IG49",
+          "label": "Mixtures and Alligation Class 03",
+          "url": "https://player.abyssplayer.com/HYNo5IG49",
+          "type": "abyss",
+          "thumb": "https://stutosed.strp2p.site/ZYmeICYtPBpn5rguAS0qfA/qtd/xieomrse/oxr1g3/poster.png",
+          "duration": 5517,
+          "category": "videos",
+          "subject": "Mixture Alligation",
+          "folderName": "Mixture Alligation",
+          "servers": [
+            {
+              "name": "Abyss Server",
+              "url": "https://player.abyssplayer.com/HYNo5IG49",
+              "type": "abyss"
+            }
+          ]
+        },
+        {
+          "id": "TYlHPLIj5",
+          "label": "Mixtures and Alligation Class 04",
+          "url": "https://player.abyssplayer.com/TYlHPLIj5",
+          "type": "abyss",
+          "thumb": "https://stutosed.strp2p.site/3Cbt0Gi4lUCyceCmnA_Fzg/qtd/xieomrse/6teqvj/poster.png",
+          "duration": 5694,
+          "category": "videos",
+          "subject": "Mixture Alligation",
+          "folderName": "Mixture Alligation",
+          "servers": [
+            {
+              "name": "Abyss Server",
+              "url": "https://player.abyssplayer.com/TYlHPLIj5",
+              "type": "abyss"
+            }
+          ]
+        },
+        {
+          "id": "06lyki0ug",
+          "label": "Mixtures and Alligation Class 05",
+          "url": "https://player.abyssplayer.com/06lyki0ug",
+          "type": "abyss",
+          "thumb": "https://stutosed.strp2p.site/NjtVk8gNN9W9EmSYlzJZ7g/qtd/xieomrse/8h3gps/poster.png",
+          "duration": 5732,
+          "category": "videos",
+          "subject": "Mixture Alligation",
+          "folderName": "Mixture Alligation",
+          "servers": [
+            {
+              "name": "Abyss Server",
+              "url": "https://player.abyssplayer.com/06lyki0ug",
+              "type": "abyss"
+            }
+          ]
+        },
+        {
+          "id": "upCAQlc4o",
+          "label": "Mixtures and Alligation Class 06",
+          "url": "https://player.abyssplayer.com/upCAQlc4o",
+          "type": "abyss",
+          "thumb": "https://stutosed.strp2p.site/0HX_fHRP5JL3asTBfnknZQ/qtd/xieomrse/evscwx/poster.png",
+          "duration": 5683,
+          "category": "videos",
+          "subject": "Mixture Alligation",
+          "folderName": "Mixture Alligation",
+          "servers": [
+            {
+              "name": "Abyss Server",
+              "url": "https://player.abyssplayer.com/upCAQlc4o",
+              "type": "abyss"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "profit-loss-discount",
+      "label": "08. Profit, Loss & Discount",
+      "subname": "7 Video Lectures",
+      "thumb": "https://stutosed.strp2p.site/bXpmmPA0rGgbJH5fODw1Lw/qtd/xieomrse/l1kvb8/poster.png",
+      "items": [
+        {
+          "id": "A0HjCIu2p",
+          "label": "Profit Loss Discount [Foundation Class]",
+          "url": "https://player.abyssplayer.com/A0HjCIu2p",
+          "type": "abyss",
+          "thumb": "https://stutosed.strp2p.site/bXpmmPA0rGgbJH5fODw1Lw/qtd/xieomrse/l1kvb8/poster.png",
+          "duration": 6110,
+          "category": "videos",
+          "subject": "Profit Loss and Discount",
+          "folderName": "Profit Loss and Discount",
+          "servers": [
+            {
+              "name": "Abyss Server",
+              "url": "https://player.abyssplayer.com/A0HjCIu2p",
+              "type": "abyss"
+            }
+          ]
+        },
+        {
+          "id": "lhSekCSwf",
+          "label": "Profit Loss Discount Class 2",
+          "url": "https://player.abyssplayer.com/lhSekCSwf",
+          "type": "abyss",
+          "thumb": "https://stutosed.strp2p.site/VtmM2tSzdRNvtGQCY9liLw/qtd/xieomrse/qecmpg/poster.png",
+          "duration": 5723,
+          "category": "videos",
+          "subject": "Profit Loss and Discount",
+          "folderName": "Profit Loss and Discount",
+          "servers": [
+            {
+              "name": "Abyss Server",
+              "url": "https://player.abyssplayer.com/lhSekCSwf",
+              "type": "abyss"
+            }
+          ]
+        },
+        {
+          "id": "mnwTYQWqy",
+          "label": "Profit Loss Discount Class 3",
+          "url": "https://player.abyssplayer.com/mnwTYQWqy",
+          "type": "abyss",
+          "thumb": "https://stutosed.strp2p.site/fk5zXrQ3SuY0H0nXQxpv0Q/qtd/xieomrse/6teqaf/poster.png",
+          "duration": 4826,
+          "category": "videos",
+          "subject": "Profit Loss and Discount",
+          "folderName": "Profit Loss and Discount",
+          "servers": [
+            {
+              "name": "Abyss Server",
+              "url": "https://player.abyssplayer.com/mnwTYQWqy",
+              "type": "abyss"
+            }
+          ]
+        },
+        {
+          "id": "Cr8VPTg7n9",
+          "label": "Profit Loss Discount Class 4",
+          "url": "https://player.abyssplayer.com/Cr8VPTg7n9",
+          "type": "abyss",
+          "thumb": "https://stutosed.strp2p.site/fBu9HkbJ_7LeLaUPD5FtWQ/qtd/xieomrse/pz95yp/poster.png",
+          "duration": 5618,
+          "category": "videos",
+          "subject": "Profit Loss and Discount",
+          "folderName": "Profit Loss and Discount",
+          "servers": [
+            {
+              "name": "Abyss Server",
+              "url": "https://player.abyssplayer.com/Cr8VPTg7n9",
+              "type": "abyss"
+            }
+          ]
+        },
+        {
+          "id": "4fIFZ6Dz9",
+          "label": "Profit Loss Discount Class 5",
+          "url": "https://player.abyssplayer.com/4fIFZ6Dz9",
+          "type": "abyss",
+          "thumb": "https://stutosed.strp2p.site/N21UPYUXytFQthIBvZGJYA/qtd/xieomrse/oxr1i5/poster.png",
+          "duration": 5616,
+          "category": "videos",
+          "subject": "Profit Loss and Discount",
+          "folderName": "Profit Loss and Discount",
+          "servers": [
+            {
+              "name": "Abyss Server",
+              "url": "https://player.abyssplayer.com/4fIFZ6Dz9",
+              "type": "abyss"
+            }
+          ]
+        },
+        {
+          "id": "IPO6Nbo_T",
+          "label": "Profit Loss Discount (Dishonest Seller)",
+          "url": "https://player.abyssplayer.com/IPO6Nbo_T",
+          "type": "abyss",
+          "thumb": "https://stutosed.strp2p.site/ecYYdLrRY4iCIxKJ8WGLfw/qtd/xieomrse/mc6nvc/poster.png",
+          "duration": 5067,
+          "category": "videos",
+          "subject": "Profit Loss and Discount",
+          "folderName": "Profit Loss and Discount",
+          "servers": [
+            {
+              "name": "Abyss Server",
+              "url": "https://player.abyssplayer.com/IPO6Nbo_T",
+              "type": "abyss"
+            }
+          ]
+        },
+        {
+          "id": "vDTuS7Z9a",
+          "label": "Profit Loss Discount Class 6",
+          "url": "https://player.abyssplayer.com/vDTuS7Z9a",
+          "type": "abyss",
+          "thumb": "https://stutosed.strp2p.site/p-ekpP3o86EIcxGcr_NN-g/qtd/xieomrse/bqmdt5/poster.png",
+          "duration": 5042,
+          "category": "videos",
+          "subject": "Profit Loss and Discount",
+          "folderName": "Profit Loss and Discount",
+          "servers": [
+            {
+              "name": "Abyss Server",
+              "url": "https://player.abyssplayer.com/vDTuS7Z9a",
+              "type": "abyss"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "progression-ap-gp-hp",
+      "label": "09. Progression (AP, GP, HP)",
+      "subname": "2 Video Lectures",
+      "thumb": "https://stutosed.strp2p.site/cgUKIC46XikQJ3XctDQbDQ/qtd/xieomrse/evsc1g/poster.png",
+      "items": [
+        {
+          "id": "TR5x_X_-m",
+          "label": "AP GP HP Class 01",
+          "url": "https://player.abyssplayer.com/TR5x_X_-m",
+          "type": "abyss",
+          "thumb": "https://stutosed.strp2p.site/cgUKIC46XikQJ3XctDQbDQ/qtd/xieomrse/evsc1g/poster.png",
+          "duration": 5838,
+          "category": "videos",
+          "subject": "Progression (AP, GP, HP)",
+          "folderName": "Progression (AP, GP, HP)",
+          "servers": [
+            {
+              "name": "Abyss Server",
+              "url": "https://player.abyssplayer.com/TR5x_X_-m",
+              "type": "abyss"
+            }
+          ]
+        },
+        {
+          "id": "1NxjKRn-2",
+          "label": "AP GP HP Class 02",
+          "url": "https://player.abyssplayer.com/1NxjKRn-2",
+          "type": "abyss",
+          "thumb": "https://stutosed.strp2p.site/xmVfERsJdfyD-QCC9K9Spw/qtd/xieomrse/kyow6r/poster.png",
+          "duration": 6003,
+          "category": "videos",
+          "subject": "Progression (AP, GP, HP)",
+          "folderName": "Progression (AP, GP, HP)",
+          "servers": [
+            {
+              "name": "Abyss Server",
+              "url": "https://player.abyssplayer.com/1NxjKRn-2",
+              "type": "abyss"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "partnership",
+      "label": "10. Partnership",
+      "subname": "5 Video Lectures",
+      "thumb": "https://stutosed.strp2p.site/1HjMmfBSd0M9Bx2jmk-kqg/qtd/xieomrse/i5h8xn/poster.png",
+      "items": [
+        {
+          "id": "Su7CFKmWD",
+          "label": "Partnership Class 01",
+          "url": "https://player.abyssplayer.com/Su7CFKmWD",
+          "type": "abyss",
+          "thumb": "https://stutosed.strp2p.site/1HjMmfBSd0M9Bx2jmk-kqg/qtd/xieomrse/i5h8xn/poster.png",
+          "duration": 5058,
+          "category": "videos",
+          "subject": "Partnership",
+          "folderName": "Partnership",
+          "servers": [
+            {
+              "name": "Abyss Server",
+              "url": "https://player.abyssplayer.com/Su7CFKmWD",
+              "type": "abyss"
+            }
+          ]
+        },
+        {
+          "id": "t9XJT6ivO",
+          "label": "Partnership Class 02",
+          "url": "https://player.abyssplayer.com/t9XJT6ivO",
+          "type": "abyss",
+          "thumb": "https://stutosed.strp2p.site/epxAdfV71HfdVNRvZ0PNWQ/qtd/xieomrse/x8gr1d/poster.png",
+          "duration": 5266,
+          "category": "videos",
+          "subject": "Partnership",
+          "folderName": "Partnership",
+          "servers": [
+            {
+              "name": "Abyss Server",
+              "url": "https://player.abyssplayer.com/t9XJT6ivO",
+              "type": "abyss"
+            }
+          ]
+        },
+        {
+          "id": "vdhmbA5f7",
+          "label": "Partnership Class 03",
+          "url": "https://player.abyssplayer.com/vdhmbA5f7",
+          "type": "abyss",
+          "thumb": "https://stutosed.strp2p.site/_AIP4A2Q1ENoN7xqVU45Qw/qtd/xieomrse/l1kvea/poster.png",
+          "duration": 5282,
+          "category": "videos",
+          "subject": "Partnership",
+          "folderName": "Partnership",
+          "servers": [
+            {
+              "name": "Abyss Server",
+              "url": "https://player.abyssplayer.com/vdhmbA5f7",
+              "type": "abyss"
+            }
+          ]
+        },
+        {
+          "id": "gIBQici7Z",
+          "label": "Partnership Class 04",
+          "url": "https://player.abyssplayer.com/gIBQici7Z",
+          "type": "abyss",
+          "thumb": "https://stutosed.strp2p.site/yg65gGNoG0Erx_QmYBceAg/qtd/xieomrse/6teqbv/poster.png",
+          "duration": 4777,
+          "category": "videos",
+          "subject": "Partnership",
+          "folderName": "Partnership",
+          "servers": [
+            {
+              "name": "Abyss Server",
+              "url": "https://player.abyssplayer.com/gIBQici7Z",
+              "type": "abyss"
+            }
+          ]
+        },
+        {
+          "id": "ZgpJexwNQ",
+          "label": "Entry Method (from Basic)- Partnership",
+          "url": "https://player.abyssplayer.com/ZgpJexwNQ",
+          "type": "abyss",
+          "thumb": "https://stutosed.strp2p.site/0Qeu9mRL7b9fAdwX-NlFyA/qtd/xieomrse/qecmdp/poster.png",
+          "duration": 2140,
+          "category": "videos",
+          "subject": "Partnership",
+          "folderName": "Partnership",
+          "servers": [
+            {
+              "name": "Abyss Server",
+              "url": "https://player.abyssplayer.com/ZgpJexwNQ",
+              "type": "abyss"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "average",
+      "label": "11. Average",
+      "subname": "5 Video Lectures",
+      "thumb": "https://stutosed.strp2p.site/qKKDuHZ5seecx7kE0kI01g/qtd/xieomrse/mc6nfa/poster.png",
+      "items": [
+        {
+          "id": "JN_HpU472",
+          "label": "Average 01",
+          "url": "https://player.abyssplayer.com/JN_HpU472",
+          "type": "abyss",
+          "thumb": "https://stutosed.strp2p.site/qKKDuHZ5seecx7kE0kI01g/qtd/xieomrse/mc6nfa/poster.png",
+          "duration": 4443,
+          "category": "videos",
+          "subject": "Average",
+          "folderName": "Average",
+          "servers": [
+            {
+              "name": "Abyss Server",
+              "url": "https://player.abyssplayer.com/JN_HpU472",
+              "type": "abyss"
+            }
+          ]
+        },
+        {
+          "id": "b2VAOIO7t",
+          "label": "Average 02",
+          "url": "https://player.abyssplayer.com/b2VAOIO7t",
+          "type": "abyss",
+          "thumb": "https://stutosed.strp2p.site/HZa0PmLevnRzLnGGIQpK_g/qtd/xieomrse/8h3grd/poster.png",
+          "duration": 5426,
+          "category": "videos",
+          "subject": "Average",
+          "folderName": "Average",
+          "servers": [
+            {
+              "name": "Abyss Server",
+              "url": "https://player.abyssplayer.com/b2VAOIO7t",
+              "type": "abyss"
+            }
+          ]
+        },
+        {
+          "id": "EA1J7QdhK",
+          "label": "Average 03 (Concept of Joining-Leaving)",
+          "url": "https://player.abyssplayer.com/EA1J7QdhK",
+          "type": "abyss",
+          "thumb": "https://stutosed.strp2p.site/pQ2rNXwsHKjYufVvGYU7Jg/qtd/xieomrse/bqmdz1/poster.png",
+          "duration": 4886,
+          "category": "videos",
+          "subject": "Average",
+          "folderName": "Average",
+          "servers": [
+            {
+              "name": "Abyss Server",
+              "url": "https://player.abyssplayer.com/EA1J7QdhK",
+              "type": "abyss"
+            }
+          ]
+        },
+        {
+          "id": "-flSZO9Pq",
+          "label": "Average 04",
+          "url": "https://player.abyssplayer.com/-flSZO9Pq",
+          "type": "abyss",
+          "thumb": "https://stutosed.strp2p.site/fVAXr3AxbWvETqzBj-44dQ/qtd/xieomrse/hap369/poster.png",
+          "duration": 5029,
+          "category": "videos",
+          "subject": "Average",
+          "folderName": "Average",
+          "servers": [
+            {
+              "name": "Abyss Server",
+              "url": "https://player.abyssplayer.com/-flSZO9Pq",
+              "type": "abyss"
+            }
+          ]
+        },
+        {
+          "id": "VJLB-bP80H",
+          "label": "Average 05",
+          "url": "https://player.abyssplayer.com/VJLB-bP80H",
+          "type": "abyss",
+          "thumb": "https://stutosed.strp2p.site/2LZgOykeeh_mZPNjudUtiQ/qtd/xieomrse/pz95er/poster.png",
+          "duration": 5574,
+          "category": "videos",
+          "subject": "Average",
+          "folderName": "Average",
+          "servers": [
+            {
+              "name": "Abyss Server",
+              "url": "https://player.abyssplayer.com/VJLB-bP80H",
+              "type": "abyss"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "ages",
+      "label": "12. Problems on Ages",
+      "subname": "2 Video Lectures",
+      "thumb": "https://stutosed.strp2p.site/gOVO3rSq4499LqmRbN6UMQ/qtd/xieomrse/9fuast/poster.png",
+      "items": [
+        {
+          "id": "7aOKGR5sNe",
+          "label": "Ages Class - 01",
+          "url": "https://player.abyssplayer.com/7aOKGR5sNe",
+          "type": "abyss",
+          "thumb": "https://stutosed.strp2p.site/gOVO3rSq4499LqmRbN6UMQ/qtd/xieomrse/9fuast/poster.png",
+          "duration": 5574,
+          "category": "videos",
+          "subject": "Ages",
+          "folderName": "Ages",
+          "servers": [
+            {
+              "name": "Abyss Server",
+              "url": "https://player.abyssplayer.com/7aOKGR5sNe",
+              "type": "abyss"
+            }
+          ]
+        },
+        {
+          "id": "_hY9qC_vL",
+          "label": "Ages Class 02",
+          "url": "https://player.abyssplayer.com/_hY9qC_vL",
+          "type": "abyss",
+          "thumb": "https://stutosed.strp2p.site/2rtK4P5Gsh56W4fPWGhIyA/qtd/xieomrse/dmnfk1/poster.png",
+          "duration": 4500,
+          "category": "videos",
+          "subject": "Ages",
+          "folderName": "Ages",
+          "servers": [
+            {
+              "name": "Abyss Server",
+              "url": "https://player.abyssplayer.com/_hY9qC_vL",
+              "type": "abyss"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "simple-compound-interest",
+      "label": "13. Simple & Compound Interest (SI & CI)",
+      "subname": "6 Video Lectures",
+      "thumb": "https://stutosed.strp2p.site/maXyLJXWg1vPXy7tbxhSXw/qtd/xieomrse/l1kvhw/poster.png",
+      "items": [
+        {
+          "id": "HZEX9PYen",
+          "label": "SI CI Class 01 (Basics Concepts)",
+          "url": "https://player.abyssplayer.com/HZEX9PYen",
+          "type": "abyss",
+          "thumb": "https://stutosed.strp2p.site/maXyLJXWg1vPXy7tbxhSXw/qtd/xieomrse/l1kvhw/poster.png",
+          "duration": 6258,
+          "category": "videos",
+          "subject": "Simple & Compound Interest",
+          "folderName": "Simple & Compound Interest",
+          "servers": [
+            {
+              "name": "Abyss Server",
+              "url": "https://player.abyssplayer.com/HZEX9PYen",
+              "type": "abyss"
+            }
+          ]
+        },
+        {
+          "id": "t1rMaVVUz",
+          "label": "SI CI Class 02",
+          "url": "https://player.abyssplayer.com/t1rMaVVUz",
+          "type": "abyss",
+          "thumb": "https://stutosed.strp2p.site/PizHZABsBd_SpmO2e856xw/qtd/xieomrse/hap36v/poster.png",
+          "duration": 5657,
+          "category": "videos",
+          "subject": "Simple & Compound Interest",
+          "folderName": "Simple & Compound Interest",
+          "servers": [
+            {
+              "name": "Abyss Server",
+              "url": "https://player.abyssplayer.com/t1rMaVVUz",
+              "type": "abyss"
+            }
+          ]
+        },
+        {
+          "id": "vBzutU29r",
+          "label": "SI CI Class 03",
+          "url": "https://player.abyssplayer.com/vBzutU29r",
+          "type": "abyss",
+          "thumb": "https://stutosed.strp2p.site/BqsAEV0lqCSLGOdUjAPmGg/qtd/xieomrse/n6qboe/poster.png",
+          "duration": 5018,
+          "category": "videos",
+          "subject": "Simple & Compound Interest",
+          "folderName": "Simple & Compound Interest",
+          "servers": [
+            {
+              "name": "Abyss Server",
+              "url": "https://player.abyssplayer.com/vBzutU29r",
+              "type": "abyss"
+            }
+          ]
+        },
+        {
+          "id": "R9eewhBEC",
+          "label": "SI CI Class 04",
+          "url": "https://player.abyssplayer.com/R9eewhBEC",
+          "type": "abyss",
+          "thumb": "https://stutosed.strp2p.site/Hc8UuIO0ZIgudno-BQ5-9Q/qtd/xieomrse/qecmrl/poster.png",
+          "duration": 5468,
+          "category": "videos",
+          "subject": "Simple & Compound Interest",
+          "folderName": "Simple & Compound Interest",
+          "servers": [
+            {
+              "name": "Abyss Server",
+              "url": "https://player.abyssplayer.com/R9eewhBEC",
+              "type": "abyss"
+            }
+          ]
+        },
+        {
+          "id": "xp-pfFjgV",
+          "label": "SI CI Class 05",
+          "url": "https://player.abyssplayer.com/xp-pfFjgV",
+          "type": "abyss",
+          "thumb": "https://stutosed.strp2p.site/xooPNH-hgpchB4P31Du4HA/qtd/xieomrse/59ahcj/poster.png",
+          "duration": 5445,
+          "category": "videos",
+          "subject": "Simple & Compound Interest",
+          "folderName": "Simple & Compound Interest",
+          "servers": [
+            {
+              "name": "Abyss Server",
+              "url": "https://player.abyssplayer.com/xp-pfFjgV",
+              "type": "abyss"
+            }
+          ]
+        },
+        {
+          "id": "1ei28qKEX",
+          "label": "SI CI Class 06",
+          "url": "https://player.abyssplayer.com/1ei28qKEX",
+          "type": "abyss",
+          "thumb": "https://stutosed.strp2p.site/67BPGAFsufz2ZsUKMLvnTw/qtd/xieomrse/8h3gnr/poster.png",
+          "duration": 4802,
+          "category": "videos",
+          "subject": "Simple & Compound Interest",
+          "folderName": "Simple & Compound Interest",
+          "servers": [
+            {
+              "name": "Abyss Server",
+              "url": "https://player.abyssplayer.com/1ei28qKEX",
+              "type": "abyss"
             }
           ]
         }

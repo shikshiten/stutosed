@@ -4,7 +4,7 @@ import React, { useState, useMemo } from 'react';
 import { Course } from '@/types';
 import { countCourseStats } from '@/lib/coursesData';
 import { getSubjectThumbnail, getDynamicThumbnailUrl } from '@/lib/subjectThumbnails';
-import { Search, Video, FileText, ArrowRight, Layers } from 'lucide-react';
+import { Search, Video, FileText, ArrowRight, Layers, BookOpen } from 'lucide-react';
 
 interface CourseGridProps {
   courses: Course[];
@@ -127,30 +127,47 @@ export const CourseGrid: React.FC<CourseGridProps> = ({
                   className="course-card"
                   onClick={() => onSelectCourse(course)}
                 >
-                  <img
-                    className="course-thumb"
-                    src={thumbUrl}
-                    alt={course.name || 'Course'}
-                    loading="lazy"
-                    onError={(e) => {
-                      const target = e.currentTarget;
-                      const fallback = `/thumbnails/default_course_${theme === 'dark' ? 'dark' : 'light'}.svg`;
-                      if (!target.src.includes('default_course')) {
-                        target.src = fallback;
-                      }
+                  <div
+                    style={{
+                      padding: '18px 20px 14px',
+                      background: 'linear-gradient(135deg, rgba(204, 120, 92, 0.14) 0%, rgba(204, 120, 92, 0.03) 100%)',
+                      borderBottom: '1px solid var(--border)',
+                      display: 'flex',
+                      alignItems: 'center',
+                      justifyContent: 'space-between',
+                      gap: '12px',
                     }}
-                  />
-                  <div className="course-body">
-                    <div className="course-tags">
-                      <span className="tag tag-vid" style={{ display: 'inline-flex', alignItems: 'center', gap: '4px' }}>
-                        <Video width={11} height={11} />
-                        <span>{stats.videos} VIDEOS</span>
-                      </span>
-                      <span className="tag tag-pdf" style={{ display: 'inline-flex', alignItems: 'center', gap: '4px' }}>
-                        <FileText width={11} height={11} />
-                        <span>{stats.resources} PDFS</span>
-                      </span>
+                  >
+                    <div
+                      style={{
+                        width: '38px',
+                        height: '38px',
+                        borderRadius: 'var(--r-md)',
+                        background: 'rgba(204, 120, 92, 0.15)',
+                        display: 'flex',
+                        alignItems: 'center',
+                        justifyContent: 'center',
+                        color: 'var(--accent)',
+                        flexShrink: 0,
+                      }}
+                    >
+                      <BookOpen width={18} height={18} />
                     </div>
+                    <span
+                      style={{
+                        fontSize: '11px',
+                        fontWeight: 700,
+                        color: 'var(--accent)',
+                        background: 'var(--bg-card)',
+                        border: '1px solid var(--border)',
+                        padding: '3px 8px',
+                        borderRadius: 'var(--r-pill)',
+                      }}
+                    >
+                      {stats.videos} Lectures
+                    </span>
+                  </div>
+                  <div className="course-body">
                     <h3 className="course-name">{course.name}</h3>
                     {course.teacher && <div className="course-teacher">{course.teacher}</div>}
                     {course.subname && (!course.teacher || course.subname.trim().toLowerCase() !== course.teacher.trim().toLowerCase()) && (

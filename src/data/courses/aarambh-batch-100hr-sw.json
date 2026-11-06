@@ -8,7 +8,7 @@
   "tabs": [
     {
       "id": "videos",
-      "label": "▶ Videos",
+      "label": "Videos",
       "items": [
         {
           "id": "aarambh-batch-100hr-sw-v-1",
@@ -554,7 +554,7 @@
     },
     {
       "id": "pdfs",
-      "label": "📄 PDFs",
+      "label": "PDFs",
       "items": [
         {
           "id": "aarambh-batch-100hr-sw-p-2",

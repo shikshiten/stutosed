@@ -1,9 +1,9 @@
 'use client';
 
 import React, { useState, useEffect, useMemo, useRef } from 'react';
-import Hls from 'hls.js';
+import dynamic from 'next/dynamic';
 import { Course, LectureItem } from '@/types';
-import { INITIAL_COURSES } from '@/lib/coursesData';
+import { INITIAL_COURSES, loadCourseDetails } from '@/lib/coursesData';
 import { getSubjectThumbnail, getDynamicThumbnailUrl } from '@/lib/subjectThumbnails';
 import { getLectureTopicDescription } from '@/lib/topicDescriptions';
 import {
@@ -12,7 +12,23 @@ import {
   isVideoSaved,
   toggleSaveVideo,
 } from '@/lib/libraryStorage';
-import { GateWatchWorkspace } from './GateWatchWorkspace';
+
+const GateWatchWorkspace = dynamic(
+  () => import('./GateWatchWorkspace').then((m) => m.GateWatchWorkspace),
+  {
+    ssr: false,
+    loading: () => (
+      <div className="watch-page-container">
+        <div style={{ minHeight: '60vh', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
+          <div style={{ display: 'flex', alignItems: 'center', gap: '12px', color: 'var(--text-muted)' }}>
+            <div className="player-spinner" style={{ width: '28px', height: '28px' }} />
+            <span>Loading GATE lecture workspace…</span>
+          </div>
+        </div>
+      </div>
+    ),
+  }
+);
 import {
   Cpu,
   Layers,
@@ -82,655 +98,10 @@ function formatLectureTime(seconds: number): string {
   return `${m}:${s < 10 ? '0' : ''}${s}`;
 }
 
-// ============================================================================
-// SINGLE EMBEDDED INLINE THEATER PLAYER COMPONENT (NO MODALS, NO SECOND SCREEN)
-// ============================================================================
-const InlineTheaterPlayer: React.FC<{
-  lecture: LectureItem;
-  lectureIndex: number;
-  totalLectures: number;
-  onClose: () => void;
-  onNavigate: (index: number) => void;
-  onMarkWatched: (url: string, label?: string) => void;
-  theme?: 'light' | 'dark';
-}> = ({
-  lecture,
-  lectureIndex,
-  totalLectures,
-  onClose,
-  onNavigate,
-  onMarkWatched,
-  theme = 'light',
-}) => {
-  const videoRef = useRef<HTMLVideoElement | null>(null);
-  const hlsRef = useRef<Hls | null>(null);
-  const containerRef = useRef<HTMLDivElement | null>(null);
-  const hideControlsTimer = useRef<NodeJS.Timeout | null>(null);
-
-  const [isPlaying, setIsPlaying] = useState<boolean>(false);
-  const [isBuffering, setIsBuffering] = useState<boolean>(true);
-  const [currentTime, setCurrentTime] = useState<number>(0);
-  const [duration, setDuration] = useState<number>(0);
-  const [volume, setVolume] = useState<number>(1);
-  const [isMuted, setIsMuted] = useState<boolean>(false);
-  const [playbackSpeed, setPlaybackSpeed] = useState<number>(1);
-  const [showSpeedMenu, setShowSpeedMenu] = useState<boolean>(false);
-  const [resolvedStreamUrl, setResolvedStreamUrl] = useState<string | null>(null);
-  const [useIframeFallback, setUseIframeFallback] = useState<boolean>(false);
-  const [isFullscreen, setIsFullscreen] = useState<boolean>(false);
-  const [showControls, setShowControls] = useState<boolean>(true);
-
-  const onMarkWatchedRef = useRef(onMarkWatched);
-  useEffect(() => {
-    onMarkWatchedRef.current = onMarkWatched;
-  });
-
-  // Mark watched immediately on play start
-  useEffect(() => {
-    if (lecture.url) {
-      onMarkWatchedRef.current?.(lecture.url, lecture.label);
-    }
-  }, [lecture.url]);
-
-  // Resolve stream URL whenever active lecture changes
-  useEffect(() => {
-    let isCancelled = false;
-    setIsBuffering(true);
-    setResolvedStreamUrl(null);
-    setUseIframeFallback(false);
-    setCurrentTime(0);
-    setDuration(0);
-
-    const targetUrl = lecture.url || '';
-    if (!targetUrl) {
-      setIsBuffering(false);
-      return;
-    }
-
-    // Direct YouTube Detection
-    if (
-      targetUrl.includes('youtube.com') ||
-      targetUrl.includes('youtu.be') ||
-      lecture.type === 'youtube'
-    ) {
-      const ytId = targetUrl.match(/(?:v=|youtu\.be\/|live\/)([a-zA-Z0-9_-]{11})/)?.[1];
-      if (ytId) {
-        setResolvedStreamUrl(`https://www.youtube.com/embed/${ytId}?autoplay=1&enablejsapi=1`);
-        setUseIframeFallback(true);
-        setIsBuffering(false);
-        setIsPlaying(true);
-        return;
-      }
-    }
-
-    // Vidmoly or Earnvids Code extraction
-    const vidmolyMatch = targetUrl.match(/(?:embed-|w\/|vidmoly\.(?:net|me|to)\/)([a-zA-Z0-9]{10,16})/);
-    const earnvidsMatch = targetUrl.match(/morencius\.com\/v\/([a-zA-Z0-9]{10,16})/);
-    const code = vidmolyMatch?.[1] || earnvidsMatch?.[1];
-    const provider = earnvidsMatch ? 'earnvids' : 'vidmoly';
-
-    if (code) {
-      fetch(`/api/v1/stream?code=${encodeURIComponent(code)}&provider=${provider}`)
-        .then((res) => res.json())
-        .then((json) => {
-          if (isCancelled) return;
-          const streamData = json?.data || json;
-          if (streamData?.streamUrl) {
-            setResolvedStreamUrl(streamData.streamUrl);
-            setUseIframeFallback(false);
-          } else {
-            const embedUrl = targetUrl.includes('embed-')
-              ? targetUrl
-              : targetUrl.replace('/w/', '/embed-') + '.html';
-            setResolvedStreamUrl(embedUrl);
-            setUseIframeFallback(true);
-            setIsBuffering(false);
-          }
-        })
-        .catch(() => {
-          if (isCancelled) return;
-          const embedUrl = targetUrl.includes('embed-')
-            ? targetUrl
-            : targetUrl.replace('/w/', '/embed-') + '.html';
-          setResolvedStreamUrl(embedUrl);
-          setUseIframeFallback(true);
-          setIsBuffering(false);
-        });
-    } else {
-      setResolvedStreamUrl(targetUrl);
-      setUseIframeFallback(true);
-      setIsBuffering(false);
-    }
-
-    return () => {
-      isCancelled = true;
-    };
-  }, [lecture.url, lecture.type]);
-
-  // Attach HLS or Native Video stream
-  useEffect(() => {
-    if (!resolvedStreamUrl || useIframeFallback) return;
-
-    const video = videoRef.current;
-    if (!video) return;
-
-    if (hlsRef.current) {
-      hlsRef.current.destroy();
-      hlsRef.current = null;
-    }
-
-    if (video.canPlayType('application/vnd.apple.mpegurl')) {
-      video.src = resolvedStreamUrl;
-      video.play().catch(() => {});
-    } else if (Hls.isSupported()) {
-      const hls = new Hls({
-        enableWorker: true,
-        progressive: true,
-        maxBufferLength: 30,
-      });
-      hlsRef.current = hls;
-      hls.loadSource(resolvedStreamUrl);
-      hls.attachMedia(video);
-      hls.on(Hls.Events.MANIFEST_PARSED, () => {
-        video.play().catch(() => {});
-      });
-      hls.on(Hls.Events.ERROR, (_evt, data) => {
-        if (data.fatal) {
-          switch (data.type) {
-            case Hls.ErrorTypes.NETWORK_ERROR:
-              hls.startLoad();
-              break;
-            case Hls.ErrorTypes.MEDIA_ERROR:
-              hls.recoverMediaError();
-              break;
-            default:
-              hls.destroy();
-              setUseIframeFallback(true);
-              break;
-          }
-        }
-      });
-    } else {
-      video.src = resolvedStreamUrl;
-      video.play().catch(() => {});
-    }
-
-    return () => {
-      if (hlsRef.current) {
-        hlsRef.current.destroy();
-        hlsRef.current = null;
-      }
-    };
-  }, [resolvedStreamUrl, useIframeFallback]);
-
-  const handleMouseMove = () => {
-    setShowControls(true);
-    if (hideControlsTimer.current) clearTimeout(hideControlsTimer.current);
-    if (isPlaying) {
-      hideControlsTimer.current = setTimeout(() => setShowControls(false), 3200);
-    }
-  };
-
-  const togglePlay = () => {
-    const video = videoRef.current;
-    if (!video) return;
-    if (isPlaying) {
-      video.pause();
-    } else {
-      video.play().catch(() => {});
-    }
-  };
-
-  const handleSeek = (e: React.ChangeEvent<HTMLInputElement>) => {
-    const time = parseFloat(e.target.value);
-    setCurrentTime(time);
-    if (videoRef.current) {
-      videoRef.current.currentTime = time;
-    }
-  };
-
-  const handleSpeedSelect = (spd: number) => {
-    setPlaybackSpeed(spd);
-    setShowSpeedMenu(false);
-    if (videoRef.current) {
-      videoRef.current.playbackRate = spd;
-    }
-  };
-
-  const toggleMute = () => {
-    if (videoRef.current) {
-      const nextMuted = !isMuted;
-      videoRef.current.muted = nextMuted;
-      setIsMuted(nextMuted);
-    }
-  };
-
-  const toggleFullscreen = () => {
-    const el = containerRef.current;
-    if (!el) return;
-    if (!document.fullscreenElement) {
-      el.requestFullscreen?.().catch(() => {});
-      setIsFullscreen(true);
-    } else {
-      document.exitFullscreen?.().catch(() => {});
-      setIsFullscreen(false);
-    }
-  };
-
-  return (
-    <div
-      id="gate-inline-player"
-      ref={containerRef}
-      onMouseMove={handleMouseMove}
-      style={{
-        marginBottom: '28px',
-        borderRadius: 'var(--r-xl)',
-        overflow: 'hidden',
-        background: '#090d16',
-        border: '1px solid rgba(255, 107, 74, 0.35)',
-        boxShadow: '0 16px 48px rgba(0,0,0,0.5)',
-        position: 'relative',
-      }}
-    >
-      {/* Player Header Bar */}
-      <div
-        style={{
-          display: 'flex',
-          alignItems: 'center',
-          justifyContent: 'space-between',
-          padding: '12px 20px',
-          background: 'rgba(255, 255, 255, 0.04)',
-          borderBottom: '1px solid rgba(255, 255, 255, 0.08)',
-          gap: '12px',
-        }}
-      >
-        <div style={{ display: 'flex', alignItems: 'center', gap: '10px', minWidth: 0 }}>
-          <span
-            style={{
-              display: 'inline-flex',
-              alignItems: 'center',
-              gap: '6px',
-              padding: '3px 10px',
-              borderRadius: 'var(--r-pill)',
-              background: 'rgba(255, 107, 74, 0.18)',
-              color: 'var(--accent)',
-              fontSize: '11px',
-              fontWeight: 800,
-              letterSpacing: '0.4px',
-              textTransform: 'uppercase',
-              flexShrink: 0,
-            }}
-          >
-            <span
-              style={{
-                width: '6px',
-                height: '6px',
-                borderRadius: '50%',
-                background: 'var(--accent)',
-                boxShadow: '0 0 8px var(--accent)',
-              }}
-            />
-            Lecture {lectureIndex + 1} of {totalLectures}
-          </span>
-          <h3
-            style={{
-              margin: 0,
-              fontSize: '13.5px',
-              fontWeight: 700,
-              color: '#ffffff',
-              whiteSpace: 'nowrap',
-              overflow: 'hidden',
-              textOverflow: 'ellipsis',
-            }}
-          >
-            {lecture.label}
-          </h3>
-        </div>
-
-        <div style={{ display: 'flex', alignItems: 'center', gap: '6px', flexShrink: 0 }}>
-          <button
-            onClick={() => lectureIndex > 0 && onNavigate(lectureIndex - 1)}
-            disabled={lectureIndex <= 0}
-            title="Previous Lecture"
-            style={{
-              background: 'rgba(255, 255, 255, 0.08)',
-              border: '1px solid rgba(255, 255, 255, 0.1)',
-              borderRadius: 'var(--r-sm)',
-              color: lectureIndex > 0 ? '#ffffff' : 'rgba(255, 255, 255, 0.3)',
-              cursor: lectureIndex > 0 ? 'pointer' : 'not-allowed',
-              padding: '6px 10px',
-              display: 'flex',
-              alignItems: 'center',
-              gap: '4px',
-              fontSize: '12px',
-              fontWeight: 600,
-              transition: 'all 0.15s ease',
-            }}
-          >
-            <ChevronLeft width={14} height={14} />
-            <span>Prev</span>
-          </button>
-
-          <button
-            onClick={() => lectureIndex < totalLectures - 1 && onNavigate(lectureIndex + 1)}
-            disabled={lectureIndex >= totalLectures - 1}
-            title="Next Lecture"
-            style={{
-              background: 'rgba(255, 255, 255, 0.08)',
-              border: '1px solid rgba(255, 255, 255, 0.1)',
-              borderRadius: 'var(--r-sm)',
-              color: lectureIndex < totalLectures - 1 ? '#ffffff' : 'rgba(255, 255, 255, 0.3)',
-              cursor: lectureIndex < totalLectures - 1 ? 'pointer' : 'not-allowed',
-              padding: '6px 10px',
-              display: 'flex',
-              alignItems: 'center',
-              gap: '4px',
-              fontSize: '12px',
-              fontWeight: 600,
-              transition: 'all 0.15s ease',
-            }}
-          >
-            <span>Next</span>
-            <ChevronRight width={14} height={14} />
-          </button>
-
-          <button
-            onClick={onClose}
-            title="Close Player"
-            style={{
-              background: 'rgba(255, 255, 255, 0.08)',
-              border: '1px solid rgba(255, 255, 255, 0.1)',
-              borderRadius: 'var(--r-sm)',
-              color: '#ffffff',
-              cursor: 'pointer',
-              padding: '6px',
-              display: 'flex',
-              alignItems: 'center',
-              justifyContent: 'center',
-              marginLeft: '4px',
-            }}
-          >
-            <X width={14} height={14} />
-          </button>
-        </div>
-      </div>
-
-      {/* 16:9 Video Canvas */}
-      <div
-        style={{
-          position: 'relative',
-          width: '100%',
-          aspectRatio: '16/9',
-          background: '#000000',
-          overflow: 'hidden',
-          display: 'flex',
-          alignItems: 'center',
-          justifyContent: 'center',
-        }}
-      >
-        {useIframeFallback ? (
-          <iframe
-            src={resolvedStreamUrl || ''}
-            title={lecture.label}
-            style={{ width: '100%', height: '100%', border: 'none' }}
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share; fullscreen"
-            allowFullScreen
-          />
-        ) : (
-          <>
-            <video
-              ref={videoRef}
-              playsInline
-              preload="auto"
-              style={{ width: '100%', height: '100%', objectFit: 'contain' }}
-              onPlay={() => setIsPlaying(true)}
-              onPause={() => setIsPlaying(false)}
-              onWaiting={() => setIsBuffering(true)}
-              onPlaying={() => setIsBuffering(false)}
-              onTimeUpdate={() => {
-                if (videoRef.current) setCurrentTime(videoRef.current.currentTime);
-              }}
-              onLoadedMetadata={() => {
-                if (videoRef.current) setDuration(videoRef.current.duration);
-              }}
-              onEnded={() => {
-                onMarkWatched(lecture.url, lecture.label);
-                if (lectureIndex < totalLectures - 1) {
-                  onNavigate(lectureIndex + 1);
-                }
-              }}
-              onClick={togglePlay}
-            />
-
-            {/* Buffering Spinner */}
-            {isBuffering && (
-              <div
-                style={{
-                  position: 'absolute',
-                  inset: 0,
-                  display: 'flex',
-                  alignItems: 'center',
-                  justifyContent: 'center',
-                  background: 'rgba(0,0,0,0.4)',
-                  pointerEvents: 'none',
-                }}
-              >
-                <div className="player-spinner" style={{ width: '44px', height: '44px' }} />
-              </div>
-            )}
-
-            {/* Controls Overlay */}
-            <div
-              style={{
-                position: 'absolute',
-                inset: 0,
-                display: 'flex',
-                flexDirection: 'column',
-                justifyContent: 'space-between',
-                padding: '16px',
-                background:
-                  'linear-gradient(to top, rgba(0,0,0,0.85) 0%, rgba(0,0,0,0.1) 40%, transparent 65%)',
-                opacity: showControls || !isPlaying ? 1 : 0,
-                transition: 'opacity 0.25s ease',
-                pointerEvents: showControls || !isPlaying ? 'auto' : 'none',
-              }}
-            >
-              {/* Center Play/Pause button */}
-              <div
-                style={{
-                  flex: 1,
-                  display: 'flex',
-                  alignItems: 'center',
-                  justifyContent: 'center',
-                }}
-              >
-                <button
-                  onClick={togglePlay}
-                  style={{
-                    width: '60px',
-                    height: '60px',
-                    borderRadius: '50%',
-                    background: 'rgba(0,0,0,0.65)',
-                    backdropFilter: 'blur(8px)',
-                    border: '1px solid rgba(255,255,255,0.2)',
-                    color: '#ffffff',
-                    cursor: 'pointer',
-                    display: 'flex',
-                    alignItems: 'center',
-                    justifyContent: 'center',
-                    boxShadow: '0 8px 24px rgba(0,0,0,0.5)',
-                    transition: 'transform 0.15s ease',
-                  }}
-                >
-                  {isPlaying ? (
-                    <Pause width={26} height={26} />
-                  ) : (
-                    <Play width={26} height={26} fill="currentColor" />
-                  )}
-                </button>
-              </div>
-
-              {/* Bottom Control Bar */}
-              <div style={{ display: 'flex', flexDirection: 'column', gap: '8px' }}>
-                {/* Timeline / Seekbar */}
-                <input
-                  type="range"
-                  min={0}
-                  max={duration || 100}
-                  step={0.1}
-                  value={currentTime}
-                  onChange={handleSeek}
-                  style={{
-                    width: '100%',
-                    accentColor: 'var(--accent)',
-                    cursor: 'pointer',
-                    height: '5px',
-                  }}
-                />
-
-                <div
-                  style={{
-                    display: 'flex',
-                    alignItems: 'center',
-                    justifyContent: 'space-between',
-                    color: '#ffffff',
-                    fontSize: '12px',
-                    fontWeight: 600,
-                  }}
-                >
-                  <div style={{ display: 'flex', alignItems: 'center', gap: '14px' }}>
-                    <button
-                      onClick={togglePlay}
-                      style={{
-                        background: 'none',
-                        border: 'none',
-                        color: '#ffffff',
-                        cursor: 'pointer',
-                        padding: 0,
-                        display: 'flex',
-                      }}
-                    >
-                      {isPlaying ? (
-                        <Pause width={18} height={18} />
-                      ) : (
-                        <Play width={18} height={18} fill="currentColor" />
-                      )}
-                    </button>
-
-                    <button
-                      onClick={toggleMute}
-                      style={{
-                        background: 'none',
-                        border: 'none',
-                        color: '#ffffff',
-                        cursor: 'pointer',
-                        padding: 0,
-                        display: 'flex',
-                      }}
-                    >
-                      {isMuted ? <VolumeX width={18} height={18} /> : <Volume2 width={18} height={18} />}
-                    </button>
-
-                    <span style={{ fontSize: '12px', fontVariantNumeric: 'tabular-nums' }}>
-                      {formatLectureTime(currentTime)} / {formatLectureTime(duration)}
-                    </span>
-                  </div>
-
-                  <div
-                    style={{
-                      display: 'flex',
-                      alignItems: 'center',
-                      gap: '12px',
-                      position: 'relative',
-                    }}
-                  >
-                    {/* Speed Selector */}
-                    <div style={{ position: 'relative' }}>
-                      <button
-                        onClick={() => setShowSpeedMenu((p) => !p)}
-                        style={{
-                          background: 'rgba(255,255,255,0.12)',
-                          border: 'none',
-                          color: '#ffffff',
-                          borderRadius: 'var(--r-sm)',
-                          padding: '3px 8px',
-                          fontSize: '11.5px',
-                          fontWeight: 700,
-                          cursor: 'pointer',
-                        }}
-                      >
-                        {playbackSpeed}x
-                      </button>
-
-                      {showSpeedMenu && (
-                        <div
-                          style={{
-                            position: 'absolute',
-                            bottom: '100%',
-                            right: 0,
-                            marginBottom: '6px',
-                            background: '#161b26',
-                            border: '1px solid rgba(255,255,255,0.15)',
-                            borderRadius: 'var(--r-md)',
-                            padding: '4px',
-                            display: 'flex',
-                            flexDirection: 'column',
-                            gap: '2px',
-                            boxShadow: '0 8px 24px rgba(0,0,0,0.6)',
-                            zIndex: 10,
-                          }}
-                        >
-                          {[0.75, 1, 1.25, 1.5, 2].map((spd) => (
-                            <button
-                              key={spd}
-                              onClick={() => handleSpeedSelect(spd)}
-                              style={{
-                                background: playbackSpeed === spd ? 'var(--accent)' : 'transparent',
-                                border: 'none',
-                                color: '#ffffff',
-                                padding: '5px 12px',
-                                fontSize: '11px',
-                                fontWeight: 600,
-                                borderRadius: '4px',
-                                cursor: 'pointer',
-                                textAlign: 'left',
-                              }}
-                            >
-                              {spd}x
-                            </button>
-                          ))}
-                        </div>
-                      )}
-                    </div>
-
-                    {/* Fullscreen Toggle */}
-                    <button
-                      onClick={toggleFullscreen}
-                      style={{
-                        background: 'none',
-                        border: 'none',
-                        color: '#ffffff',
-                        cursor: 'pointer',
-                        padding: 0,
-                        display: 'flex',
-                      }}
-                    >
-                      {isFullscreen ? <Minimize width={18} height={18} /> : <Maximize width={18} height={18} />}
-                    </button>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </>
-        )}
-      </div>
-    </div>
-  );
-};
 
 
 export const GateEngineeringView: React.FC<GateEngineeringViewProps> = ({
-  course,
+  course: initialCourse,
   onSelectCourse,
   onPlayVideo,
   theme = 'light',
@@ -742,6 +113,32 @@ export const GateEngineeringView: React.FC<GateEngineeringViewProps> = ({
   onStepChange,
   onMarkWatched,
 }) => {
+  const [loadedCourse, setLoadedCourse] = useState<Course | null>(initialCourse);
+  const [loadingDetails, setLoadingDetails] = useState<boolean>(false);
+
+  useEffect(() => {
+    if (initialCourse?.tabs && initialCourse.tabs.length > 0) {
+      setLoadedCourse(initialCourse);
+      return;
+    }
+    const targetId = initialCourse?.id || 'gate-ece-made-easy-signal-system';
+    setLoadingDetails(true);
+    let isCancelled = false;
+    loadCourseDetails(targetId).then((detailed) => {
+      if (!isCancelled && detailed) {
+        setLoadedCourse(detailed);
+      }
+      if (!isCancelled) {
+        setLoadingDetails(false);
+      }
+    });
+    return () => {
+      isCancelled = true;
+    };
+  }, [initialCourse]);
+
+  const course = loadedCourse || initialCourse;
+
   // Navigation drill-down state:
   // Step 1: 'branches' (ECE)
   // Step 2: 'institutes' (Made Easy under ECE)
@@ -810,8 +207,7 @@ export const GateEngineeringView: React.FC<GateEngineeringViewProps> = ({
     if (course?.tabs && course.tabs.length > 0 && course.tabs[0].items?.length > 0) {
       return course.tabs[0].items;
     }
-    const gateCourse = INITIAL_COURSES.find((c) => c.id === 'gate-ece-made-easy-signal-system');
-    return gateCourse?.tabs?.[0]?.items || [];
+    return [];
   }, [course]);
 
   // Filter lectures based on search query
@@ -849,6 +245,39 @@ export const GateEngineeringView: React.FC<GateEngineeringViewProps> = ({
 
   // Dedicated 2-Column Watch Experience for Signal & System (matching screenshot & /watch format)
   if (currentStep === 'lectures') {
+    if (loadingDetails || allLectures.length === 0) {
+      return (
+        <div className="watch-page-container">
+          <header className="watch-top-nav">
+            <div className="nav-left-cell">
+              <button
+                className="watch-nav-btn"
+                onClick={() => {
+                  setGateStep('subjects');
+                  setSelectedSubject(null);
+                  onStepChange?.('subjects', 'ECE', 'Made Easy', null, '/ece/madeeasy');
+                }}
+                title="Back to Made Easy Subjects"
+              >
+                <ArrowLeft width={18} height={18} />
+                <span className="btn-label-desktop">Back</span>
+              </button>
+            </div>
+            <div className="nav-center-cell">
+              <span className="nav-course-brand">{course?.name || 'Signal and System — Made Easy'}</span>
+            </div>
+            <div className="nav-right-cell" />
+          </header>
+          <div style={{ minHeight: '60vh', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
+            <div style={{ display: 'flex', alignItems: 'center', gap: '12px', color: 'var(--text-muted)' }}>
+              <div className="player-spinner" style={{ width: '28px', height: '28px' }} />
+              <span>Loading GATE lecture…</span>
+            </div>
+          </div>
+        </div>
+      );
+    }
+
     return (
       <GateWatchWorkspace
         allLectures={allLectures}

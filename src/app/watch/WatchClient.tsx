@@ -37,7 +37,9 @@ import {
   Minimize,
   Moon,
   Sun,
+  AlertTriangle,
 } from 'lucide-react';
+import { ComplaintModal } from '@/components/ComplaintModal';
 
 const WATCHED_KEY = 'onafbu_watched_v1';
 const LAST_PLAYED_KEY = 'stutosed_last_played_v1';
@@ -283,6 +285,7 @@ export default function WatchClient() {
   // Video Server Loading Notice state
   const [loadingNoticeVisible, setLoadingNoticeVisible] = useState(false);
   const [loadingSeconds, setLoadingSeconds] = useState(0);
+  const [showComplaintModal, setShowComplaintModal] = useState(false);
 
   // Action states
   const [isBookmarked, setIsBookmarked] = useState(false);
@@ -440,7 +443,7 @@ export default function WatchClient() {
   }, [currentItem, courseInfo, subjectParam, folderParam]);
 
 
-  // Active Server & URL resolution (prioritizing ESTE over ALBA, deduplicating identical URLs)
+  // Active Server & URL resolution (deduplicating identical URLs)
   const servers: ServerOption[] = useMemo(() => {
     if (currentItem?.servers && currentItem.servers.length > 0) {
       const seen = new Set<string>();
@@ -453,11 +456,7 @@ export default function WatchClient() {
           distinct.push({ ...s, url: resolvedUrl });
         }
       }
-      return distinct.sort((a, b) => {
-        const aIsEste = a.name?.toUpperCase().includes('ESTE') ? 1 : 0;
-        const bIsEste = b.name?.toUpperCase().includes('ESTE') ? 1 : 0;
-        return bIsEste - aIsEste;
-      });
+      return distinct;
     }
     if (currentItem?.url) return [{ name: 'Server 1', url: resolveDirectMediaUrl(currentItem.url), type: currentItem.type }];
     return [];
@@ -475,9 +474,7 @@ export default function WatchClient() {
     activeUrl.includes('publicbotshub') ||
     activeUrl.includes('herokuapp.com') ||
     activeUrl.endsWith('.mp4') ||
-    activeUrl.endsWith('.mkv') ||
-    activeServer?.name?.toUpperCase().includes('ESTE');
-  const isAlbaActive = false;
+    activeUrl.endsWith('.mkv');
 
   const vidmolyCode = isVidmolyUrl ? extractVidmolyCode(activeUrl) : null;
   const earnvidsCode = isEarnvidsUrl ? extractEarnvidsCode(activeUrl) : null;
@@ -495,6 +492,13 @@ export default function WatchClient() {
       currentItem?.type === 'streamp2p' ||
       activeServer?.type === 'streamp2p');
 
+  const isAbyssUrl =
+    !isPendingLecture &&
+    (activeUrl.includes('abyssplayer.com') ||
+      activeUrl.includes('abyss.to') ||
+      currentItem?.type === 'abyss' ||
+      activeServer?.type === 'abyss');
+
   const streamP2PId = useMemo(() => {
     if (!isStreamP2PUrl || isPendingLecture) return null;
     const m = activeUrl.match(/(?:streamp2p\.com\/e\/|strp2p\.site\/#|strp2p\.site\/|streamp2p\.com\/api\/v1\/video\/manage\/|id=)([a-zA-Z0-9]+)/);
@@ -505,9 +509,17 @@ export default function WatchClient() {
     return null;
   }, [isStreamP2PUrl, isPendingLecture, activeUrl, currentItem]);
 
-  // Embedded Lecture Mode (Official YouTube & StreamP2P custom embed player on stutosed.strp2p.site)
+  // Embedded Lecture Mode (Abyss native player, YouTube & StreamP2P)
   const embedUrl = useMemo(() => {
     if (isPendingLecture) return null;
+    if (isAbyssUrl) {
+      if (activeUrl.includes('player.abyssplayer.com')) {
+        return activeUrl;
+      }
+      const abyssIdMatch = activeUrl.match(/(?:abyss\.to\/|abyssplayer\.com\/|files\/)([a-zA-Z0-9_-]{8,15})/);
+      const fileId = abyssIdMatch ? abyssIdMatch[1] : (currentItem?.id || '');
+      return `https://player.abyssplayer.com/${fileId}`;
+    }
     if (isStreamP2PUrl) {
       if (streamP2PId) {
         return `https://stutosed.strp2p.site/#${streamP2PId}&api=all`;
@@ -521,9 +533,12 @@ export default function WatchClient() {
       return activeUrl;
     }
     return null;
-  }, [isPendingLecture, isStreamP2PUrl, streamP2PId, isYouTubeUrl, ytId, activeUrl]);
+  }, [isPendingLecture, isAbyssUrl, isStreamP2PUrl, streamP2PId, isYouTubeUrl, ytId, activeUrl, currentItem]);
 
   const isEmbedMode = Boolean(embedUrl);
+  // Abyss and Banking Quant lectures must use the original provider player without
+  // Stutosed's extra player overlay or transparent seek controls.
+  const isOriginalP2PMode = (courseInfo.id === 'banking-quant-hero' && isStreamP2PUrl) || isAbyssUrl;
   const needsApiResolution = !isEmbedMode && !isPendingLecture && (isVidmolyUrl || isEarnvidsUrl);
 
   // Trigger server loading notice whenever lecture or server changes (native video only)
@@ -543,7 +558,7 @@ export default function WatchClient() {
       setLoadingNoticeVisible(false);
       return;
     }
-    if (isPlaying && !streamLoading && !isBuffering) {
+    if (isPlaying && !streamLoading && !isBuffering && !streamError) {
       const timer = setTimeout(() => {
         setLoadingNoticeVisible(false);
       }, 700);
@@ -553,7 +568,7 @@ export default function WatchClient() {
       setLoadingSeconds((prev) => prev + 1);
     }, 1000);
     return () => clearInterval(interval);
-  }, [loadingNoticeVisible, isPlaying, streamLoading, isBuffering, isEmbedMode, isStreamP2PUrl, isPendingLecture]);
+  }, [loadingNoticeVisible, isPlaying, streamLoading, isBuffering, isEmbedMode, isStreamP2PUrl, isPendingLecture, streamError]);
 
   // Stream Resolution with fast in-memory cache
   useEffect(() => {
@@ -726,7 +741,7 @@ export default function WatchClient() {
             case Hls.ErrorTypes.NETWORK_ERROR:
               if (data.response?.code === 404) {
                 setStreamError(
-                  '⏳ This lecture is currently being processed by Vidmoly servers. Newly uploaded videos take a few minutes to encode. Please check back shortly or select one of the ready lectures (e.g. Lecture 2 A, 5 C, 7, 8 A).'
+                  'This lecture is currently being processed by Vidmoly servers. Newly uploaded videos take a few minutes to encode. Please check back shortly or select one of the ready lectures (e.g. Lecture 2 A, 5 C, 7, 8 A).'
                 );
                 hls.destroy();
                 hlsRef.current = null;
@@ -1406,6 +1421,7 @@ export default function WatchClient() {
             ref={containerRef}
             className={`player-box ${isFullscreen ? 'is-fullscreen' : ''} ${
               isEmbedMode ? 'is-embed-mode' : ''
+            } ${isOriginalP2PMode ? 'original-p2p-mode' : ''
             } ${
               !showControls ? 'controls-hidden' : 'controls-visible'
             }`}
@@ -1468,23 +1484,64 @@ export default function WatchClient() {
               }}
             >
               {/* Busy Server Loading Notice Overlay */}
-              {loadingNoticeVisible && (
-                <div className="player-loading-notice-card" role="status" aria-live="polite">
+              {!isOriginalP2PMode && loadingNoticeVisible && (
+                <div
+                  className={`player-loading-notice-card ${loadingSeconds > 18 || Boolean(streamError) ? 'is-unavailable' : ''}`}
+                  role="status"
+                  aria-live="polite"
+                >
                   <div className="loading-notice-spinner">
-                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round" className="spin-icon">
-                      <path d="M21 12a9 9 0 1 1-6.219-8.56" />
-                    </svg>
+                    {loadingSeconds > 18 || Boolean(streamError) ? (
+                      <AlertTriangle width={18} height={18} stroke="#ef4444" />
+                    ) : (
+                      <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round" className="spin-icon">
+                        <path d="M21 12a9 9 0 1 1-6.219-8.56" />
+                      </svg>
+                    )}
                   </div>
                   <div className="loading-notice-content">
                     <div className="loading-notice-title">
-                      <span>Connecting to Video Server</span>
-                      <span className="loading-notice-badge">Server Busy</span>
+                      <span>{loadingSeconds > 18 || Boolean(streamError) ? 'Playback Unavailable' : 'Connecting to Video Server'}</span>
+                      <span className={`loading-notice-badge ${loadingSeconds > 18 || Boolean(streamError) ? 'is-unavailable' : loadingSeconds > 6 ? 'is-waiting' : ''}`}>
+                        {loadingSeconds > 18 || Boolean(streamError) ? 'UNAVAILABLE' : loadingSeconds > 6 ? 'PLEASE WAIT' : 'CONNECTING'}
+                      </span>
                     </div>
                     <p className="loading-notice-desc">
-                      {loadingSeconds > 4
-                        ? "Upstream server is taking longer than usual. Please wait a moment, or switch to Server 2 / ALBA / ESTE above."
-                        : "Please wait, video may take 3–5 seconds to load due to high server traffic."}
+                      {loadingSeconds > 18 || Boolean(streamError)
+                        ? "Abhi playback iski available nahi hai. Upstream server se video load nahi ho pa rahi hai."
+                        : loadingSeconds > 6
+                        ? "Upstream server is taking a little longer than usual. Please stay here, it will open soon."
+                        : "Please wait, video is fetching from server..."}
                     </p>
+                    {(loadingSeconds > 18 || Boolean(streamError)) && (
+                      <div className="loading-notice-actions">
+                        <button
+                          type="button"
+                          className="loading-notice-action-btn"
+                          onClick={(e) => {
+                            e.stopPropagation();
+                            setShowComplaintModal(true);
+                          }}
+                        >
+                          <AlertTriangle width={13} height={13} />
+                          <span>Complain to Developer</span>
+                        </button>
+                        {servers.length > 1 && (
+                          <button
+                            type="button"
+                            className="loading-notice-action-btn secondary"
+                            onClick={(e) => {
+                              e.stopPropagation();
+                              setSelectedServerIndex((prev) => (prev + 1) % servers.length);
+                              setStreamError(null);
+                              setLoadingSeconds(0);
+                            }}
+                          >
+                            Try Next Server
+                          </button>
+                        )}
+                      </div>
+                    )}
                   </div>
                   <button
                     className="loading-notice-close"
@@ -1499,7 +1556,7 @@ export default function WatchClient() {
                 </div>
               )}
               {/* TOP OVERLAY */}
-              <div className="player-top-overlay" onClick={(e) => e.stopPropagation()}>
+              {!isOriginalP2PMode && <div className="player-top-overlay" onClick={(e) => e.stopPropagation()}>
                 <div className="player-title-block">
                   <div className="player-course-chip">{courseInfo.name}</div>
                   <h2 className="player-lecture-heading" title={currentItem.label}>
@@ -1521,7 +1578,7 @@ export default function WatchClient() {
                             resetControlsTimer();
                           }}
                         >
-                          {srv.name?.replace(/^[^\w]+/, '').trim() || `Server ${idx + 1}`}
+                          {srv.name?.replace(/\b(ALBA|ESTE)\b/gi, '').replace(/[()[\]]/g, '').replace(/^[^\w]+/, '').trim() || `Server ${idx + 1}`}
                         </button>
                       ))}
                     </div>
@@ -1536,7 +1593,7 @@ export default function WatchClient() {
                     ✕
                   </button>
                 </div>
-              </div>
+              </div>}
 
               {/* CENTER OVERLAY: Only in native video mode */}
               {!isEmbedMode && !isPendingLecture && (
@@ -1747,7 +1804,7 @@ export default function WatchClient() {
                     }}
                   />
                   {/* Transparent Double-Tap / Double-Click Seek Zones for StreamP2P */}
-                  {isStreamP2PUrl && (
+                  {isStreamP2PUrl && !isOriginalP2PMode && (
                     <>
                       <div
                         className="player-doubletap-zone left"
@@ -1795,13 +1852,125 @@ export default function WatchClient() {
                   )}
                 </div>
               ) : (
-                <video
-                  ref={videoRef}
-                  playsInline
-                  preload="auto"
-                  className="player-native-video"
-                  title={currentItem.label}
-                />
+                <>
+                  <video
+                    ref={videoRef}
+                    playsInline
+                    preload="auto"
+                    className="player-native-video"
+                    title={currentItem.label}
+                  />
+
+                  {/* Playback Unavailable Central Fallback Screen */}
+                  {(Boolean(streamError) || (streamLoading && loadingSeconds > 18)) && (
+                    <div
+                      className="player-unavailable-screen"
+                      style={{
+                        position: 'absolute',
+                        inset: 0,
+                        zIndex: 25,
+                        display: 'flex',
+                        flexDirection: 'column',
+                        alignItems: 'center',
+                        justifyContent: 'center',
+                        background: 'radial-gradient(circle at 50% 40%, rgba(24, 24, 27, 0.96) 0%, rgba(9, 9, 11, 0.98) 100%)',
+                        padding: '32px 24px',
+                        textAlign: 'center',
+                        color: '#ffffff',
+                      }}
+                      onClick={(e) => e.stopPropagation()}
+                    >
+                      <div
+                        style={{
+                          width: '60px',
+                          height: '60px',
+                          borderRadius: '50%',
+                          background: 'rgba(239, 68, 68, 0.15)',
+                          border: '1px solid rgba(239, 68, 68, 0.35)',
+                          display: 'flex',
+                          alignItems: 'center',
+                          justifyContent: 'center',
+                          color: '#ef4444',
+                          marginBottom: '16px',
+                          boxShadow: '0 0 24px rgba(239, 68, 68, 0.25)',
+                        }}
+                      >
+                        <AlertTriangle width={28} height={28} />
+                      </div>
+                      <div
+                        style={{
+                          fontSize: '11px',
+                          textTransform: 'uppercase',
+                          letterSpacing: '1px',
+                          fontWeight: 800,
+                          color: '#ef4444',
+                          marginBottom: '8px',
+                          background: 'rgba(239, 68, 68, 0.12)',
+                          padding: '4px 12px',
+                          borderRadius: 'var(--r-pill)',
+                          border: '1px solid rgba(239, 68, 68, 0.3)',
+                        }}
+                      >
+                        Playback Unavailable
+                      </div>
+                      <h3 style={{ fontSize: '20px', fontWeight: 700, margin: '0 0 10px', color: '#ffffff', maxWidth: '520px', lineHeight: 1.35 }}>
+                        Abhi playback iski available nahi hai
+                      </h3>
+                      <p style={{ fontSize: '13.5px', color: 'rgba(255, 255, 255, 0.72)', maxWidth: '480px', lineHeight: 1.55, margin: '0 0 24px' }}>
+                        Upstream video server is unable to deliver this lecture stream right now. You can report directly to the developer to get this link fixed.
+                      </p>
+                      <div style={{ display: 'flex', alignItems: 'center', gap: '12px', flexWrap: 'wrap', justifyContent: 'center' }}>
+                        <button
+                          type="button"
+                          onClick={() => setShowComplaintModal(true)}
+                          style={{
+                            display: 'inline-flex',
+                            alignItems: 'center',
+                            gap: '8px',
+                            padding: '12px 24px',
+                            borderRadius: 'var(--r-pill)',
+                            background: 'linear-gradient(135deg, #ef4444 0%, #dc2626 100%)',
+                            color: '#ffffff',
+                            border: 'none',
+                            fontWeight: 700,
+                            fontSize: '13.5px',
+                            cursor: 'pointer',
+                            boxShadow: '0 4px 18px rgba(239, 68, 68, 0.45)',
+                            transition: 'all 0.2s ease',
+                          }}
+                        >
+                          <AlertTriangle width={16} height={16} />
+                          <span>Complain to Developer</span>
+                        </button>
+                        {servers.length > 1 && (
+                          <button
+                            type="button"
+                            onClick={() => {
+                              setSelectedServerIndex((prev) => (prev + 1) % servers.length);
+                              setStreamError(null);
+                              setLoadingSeconds(0);
+                            }}
+                            style={{
+                              display: 'inline-flex',
+                              alignItems: 'center',
+                              gap: '8px',
+                              padding: '12px 20px',
+                              borderRadius: 'var(--r-pill)',
+                              background: 'rgba(255, 255, 255, 0.1)',
+                              border: '1px solid rgba(255, 255, 255, 0.2)',
+                              color: '#ffffff',
+                              fontWeight: 600,
+                              fontSize: '13.5px',
+                              cursor: 'pointer',
+                            }}
+                          >
+                            Try Server {((selectedServerIndex + 1) % servers.length) + 1}
+                          </button>
+                        )}
+                      </div>
+                    </div>
+                  )}
+                </>
               )}
 
               {/* BOTTOM FLOATING OVERLAY: Only in native video mode */}
@@ -2095,6 +2264,17 @@ export default function WatchClient() {
           </div>
         </aside>
       </div>
+
+      {/* Complain to Developer Pop-up Modal */}
+      <ComplaintModal
+        isOpen={showComplaintModal}
+        onClose={() => setShowComplaintModal(false)}
+        courseName={courseInfo.name}
+        lectureTitle={currentItem.label}
+        lectureUrl={activeUrl}
+        serverName={activeServer?.name}
+        theme={theme}
+      />
     </div>
   );
 }

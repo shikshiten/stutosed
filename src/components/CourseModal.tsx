@@ -62,7 +62,7 @@ export const CourseModal: React.FC<CourseModalProps> = ({
   const [activeMediaFilter, setActiveMediaFilter] = useState<'all' | 'videos' | 'pdfs'>('all');
   const [filterSearch, setFilterSearch] = useState<string>('');
   const [isSearchExpanded, setIsSearchExpanded] = useState<boolean>(false);
-  const [viewMode, setViewMode] = useState<'list' | 'grid'>('grid');
+  const [viewMode, setViewMode] = useState<'list' | 'grid'>('list');
   const [visibleLimit, setVisibleLimit] = useState<number>(40);
   const [hoveredIdx, setHoveredIdx] = useState<number | null>(null);
 
@@ -359,6 +359,10 @@ export const CourseModal: React.FC<CourseModalProps> = ({
 
   // Centralized lecture item click handler (direct YouTube open, bot link open, PDF modal, or video player)
   const handleItemClick = (item: LectureItem, idx: number) => {
+    const videoPlaylist = activeItems.filter((lecture) => lecture.type !== 'pdf');
+    const targetPlaylist = item.type === 'pdf' ? activeItems : videoPlaylist;
+    const targetIndex = targetPlaylist.indexOf(item);
+
     if (item.url && item.type !== 'pdf') {
       saveMemory(item.url);
     }
@@ -387,7 +391,7 @@ export const CourseModal: React.FC<CourseModalProps> = ({
         window.open(directUrl, '_blank', 'noopener,noreferrer');
         return;
       }
-      onOpenPdf(item, activeItems, idx);
+      onOpenPdf(item, activeItems, activeItems.indexOf(item) >= 0 ? activeItems.indexOf(item) : idx);
       return;
     }
     if (!item.url && item.links) {
@@ -398,7 +402,7 @@ export const CourseModal: React.FC<CourseModalProps> = ({
         return;
       }
     }
-    onPlayVideo(activeItems, idx);
+    onPlayVideo(targetPlaylist, targetIndex >= 0 ? targetIndex : idx);
   };
 
   return (
@@ -619,13 +623,7 @@ export const CourseModal: React.FC<CourseModalProps> = ({
               </button>
             </div>
             <span className="lecture-count-badge">
-              {(() => {
-                const v = activeItems.filter((i) => i.type !== 'pdf').length;
-                const p = activeItems.filter((i) => i.type === 'pdf').length;
-                if (v > 0 && p > 0) return `${v} Lec • ${p} PDF`;
-                if (p > 0) return `${p} ${p === 1 ? 'PDF' : 'PDFs'}`;
-                return `${v} ${v === 1 ? 'lecture' : 'lectures'}`;
-              })()}
+              {activeItems.some((i) => i.type === 'pdf') ? 'Lectures & Notes' : 'Lectures'}
             </span>
           </div>
 
@@ -719,58 +717,47 @@ export const CourseModal: React.FC<CourseModalProps> = ({
                 >
                   <div
                     style={{
-                      width: '100%',
-                      aspectRatio: '16/9',
-                      overflow: 'hidden',
-                      position: 'relative',
-                      background: 'var(--bg-card-hover)',
+                      padding: '20px 22px 16px',
+                      background: 'linear-gradient(135deg, rgba(204, 120, 92, 0.12) 0%, rgba(204, 120, 92, 0.02) 100%)',
+                      borderBottom: '1px solid var(--border)',
+                      display: 'flex',
+                      alignItems: 'center',
+                      justifyContent: 'space-between',
+                      gap: '12px',
                     }}
                   >
-                    <img
-                      src={getSubjectThumbnail(tab.label, null, tab.id, theme)}
-                      alt=""
-                      onError={(e) => {
-                        const target = e.currentTarget;
-                        const fallback = `/thumbnails/default_course_${theme === 'dark' ? 'dark' : 'light'}.svg`;
-                        if (!target.src.includes('default_course')) {
-                          target.src = fallback;
-                        }
+                    <div
+                      style={{
+                        width: '42px',
+                        height: '42px',
+                        borderRadius: 'var(--r-md)',
+                        background: 'rgba(204, 120, 92, 0.15)',
+                        display: 'flex',
+                        alignItems: 'center',
+                        justifyContent: 'center',
+                        color: 'var(--accent)',
+                        flexShrink: 0,
                       }}
-                      style={{ width: '100%', height: '100%', objectFit: 'cover' }}
-                    />
+                    >
+                      <Folder width={22} height={22} />
+                    </div>
                     {(() => {
                       const vids = tab.items.filter((i) => i.type !== 'pdf').length;
                       const pdfs = tab.items.filter((i) => i.type === 'pdf').length;
                       return (
-                        <div
+                        <span
                           style={{
-                            position: 'absolute',
-                            bottom: '10px',
-                            right: '10px',
-                            background: 'rgba(0,0,0,0.8)',
-                            backdropFilter: 'blur(4px)',
-                            color: '#ffffff',
                             fontSize: '11px',
                             fontWeight: 700,
-                            padding: '4px 10px',
+                            color: 'var(--accent)',
+                            background: 'var(--bg-card)',
+                            border: '1px solid var(--border)',
+                            padding: '3px 8px',
                             borderRadius: 'var(--r-pill)',
-                            display: 'flex',
-                            alignItems: 'center',
-                            gap: '6px',
                           }}
                         >
-                          {vids > 0 && (
-                            <span style={{ display: 'inline-flex', alignItems: 'center', gap: '3px' }}>
-                              <Video width={12} height={12} /> {vids} {vids === 1 ? 'Lecture' : 'Lectures'}
-                            </span>
-                          )}
-                          {vids > 0 && pdfs > 0 && <span style={{ opacity: 0.6 }}>•</span>}
-                          {pdfs > 0 && (
-                            <span style={{ display: 'inline-flex', alignItems: 'center', gap: '3px', color: '#ffb299' }}>
-                              <FileText width={11} height={11} /> {pdfs} {pdfs === 1 ? 'PDF' : 'PDFs'}
-                            </span>
-                          )}
-                        </div>
+                          {vids} Lectures {pdfs > 0 ? `• ${pdfs} Notes` : ''}
+                        </span>
                       );
                     })()}
                   </div>
@@ -788,15 +775,9 @@ export const CourseModal: React.FC<CourseModalProps> = ({
                       {tab.label}
                     </div>
                     {(() => {
-                      const vids = tab.items.filter((i) => i.type !== 'pdf').length;
-                      const pdfs = tab.items.filter((i) => i.type === 'pdf').length;
                       const desc =
                         tab.subname ||
-                        (vids > 0 && pdfs > 0
-                          ? `${vids} Video Lectures • ${pdfs} Practice Sheets & Notes`
-                          : vids > 0
-                          ? `${vids} Video Lectures Available`
-                          : `${pdfs} Practice Sheets & Notes Available`);
+                        'Video Lectures & Practice Notes';
                       return (
                         <div style={{ fontSize: '13px', color: 'var(--text-muted)', marginBottom: '14px' }}>
                           {desc}
@@ -858,30 +839,6 @@ export const CourseModal: React.FC<CourseModalProps> = ({
                   <ArrowLeft width={16} height={16} />
                   <span>Back to Subjects</span>
                 </button>
-
-                {(() => {
-                  const vCount = activeItems.filter((i) => i.type !== 'pdf').length;
-                  const pCount = activeItems.filter((i) => i.type === 'pdf').length;
-                  if (vCount > 0 && pCount > 0) {
-                    return (
-                      <span style={{ fontSize: '12px', color: 'var(--text-muted)', fontWeight: 600 }}>
-                        {vCount} {vCount === 1 ? 'lecture' : 'lectures'} • {pCount} {pCount === 1 ? 'PDF' : 'PDFs'}
-                      </span>
-                    );
-                  }
-                  if (pCount > 0) {
-                    return (
-                      <span style={{ fontSize: '12px', color: 'var(--text-muted)', fontWeight: 600 }}>
-                        {pCount} {pCount === 1 ? 'study PDF' : 'study PDFs'}
-                      </span>
-                    );
-                  }
-                  return (
-                    <span style={{ fontSize: '12px', color: 'var(--text-muted)', fontWeight: 600 }}>
-                      {vCount} {vCount === 1 ? 'lecture' : 'lectures'}
-                    </span>
-                  );
-                })()}
               </div>
             )}
 
@@ -895,7 +852,6 @@ export const CourseModal: React.FC<CourseModalProps> = ({
               const renderVideoCard = (item: LectureItem, idx: number) => {
                 const isWatched = watchedUrls.has(item.url);
                 const isYt = isYouTubeItem(item);
-                const thumb = getLectureThumb(item);
 
                 return (
                   <div
@@ -905,332 +861,201 @@ export const CourseModal: React.FC<CourseModalProps> = ({
                     onClick={() => handleItemClick(item, idx)}
                     onMouseEnter={() => setHoveredIdx(idx)}
                     onMouseLeave={() => setHoveredIdx(null)}
+                    style={{
+                      background: 'var(--bg-card)',
+                      border: '1px solid var(--border)',
+                      borderRadius: 'var(--r-lg)',
+                      padding: '16px 18px',
+                      display: 'flex',
+                      flexDirection: 'column',
+                      justifyContent: 'space-between',
+                      gap: '12px',
+                      cursor: 'pointer',
+                      transition: 'all 0.2s cubic-bezier(0.4, 0, 0.2, 1)',
+                      position: 'relative',
+                    }}
                   >
-                    {/* 16:9 Thumbnail Cover */}
-                    <div
-                      style={{
-                        position: 'relative',
-                        width: '100%',
-                        aspectRatio: '16/9',
-                        overflow: 'hidden',
-                        background: 'var(--bg-card-hover)',
-                      }}
-                    >
-                      {/* Hover Video Preview (StreamP2P MP4 preview) */}
-                      {hoveredIdx === idx && item.preview ? (
-                        <video
-                          src={item.preview}
-                          autoPlay
-                          loop
-                          muted
-                          playsInline
-                          style={{
-                            position: 'absolute',
-                            inset: 0,
-                            width: '100%',
-                            height: '100%',
-                            objectFit: 'cover',
-                            zIndex: 2,
-                            pointerEvents: 'none',
-                          }}
-                        />
-                      ) : null}
-
-                      <img
-                        src={thumb}
-                        alt=""
-                        className="grid-thumb-img"
-                        onError={(e) => {
-                          const target = e.currentTarget;
-                          const fallback = `/thumbnails/default_lecture_${theme === 'dark' ? 'dark' : 'light'}.svg`;
-                          if (!target.src.includes('default_lecture')) {
-                            target.src = fallback;
-                          }
-                        }}
-                        style={{
-                          width: '100%',
-                          height: '100%',
-                          objectFit: 'cover',
-                          transition: 'transform 0.3s ease',
-                        }}
-                      />
-                      <div
-                        style={{
-                          position: 'absolute',
-                          inset: 0,
-                          zIndex: 3,
-                          pointerEvents: 'none',
-                          background:
-                            'linear-gradient(to top, rgba(0,0,0,0.8) 0%, rgba(0,0,0,0.2) 50%, transparent 80%)',
-                        }}
-                      />
-
-                      {/* Lecture Index Badge */}
-                      <div
-                        style={{
-                          position: 'absolute',
-                          top: '10px',
-                          left: '10px',
-                          zIndex: 4,
-                          background: 'rgba(0,0,0,0.7)',
-                          backdropFilter: 'blur(4px)',
-                          color: '#ffffff',
-                          fontSize: '11px',
-                          fontWeight: 700,
-                          padding: '3px 8px',
-                          borderRadius: 'var(--r-pill)',
-                          border: '1px solid rgba(255,255,255,0.15)',
-                        }}
-                      >
-                        #{idx + 1}
-                      </div>
-
-                      {/* Watched Badge */}
-                      {isWatched && (
-                        <div
-                          style={{
-                            position: 'absolute',
-                            top: '10px',
-                            right: '10px',
-                            zIndex: 4,
-                            background: 'rgba(93,184,114,0.95)',
-                            color: '#ffffff',
-                            fontSize: '11px',
-                            fontWeight: 700,
-                            padding: '3px 8px',
-                            borderRadius: 'var(--r-pill)',
-                          }}
-                        >
-                          ✓ Watched
-                        </div>
-                      )}
-
-                      {/* Subject Tag on bottom of thumbnail */}
-                      {item.subject && (
-                        <div
-                          style={{
-                            position: 'absolute',
-                            bottom: '8px',
-                            left: '10px',
-                            zIndex: 4,
-                            color: 'rgba(255,255,255,0.9)',
-                            fontSize: '11px',
-                            fontWeight: 600,
-                            textShadow: '0 1px 3px rgba(0,0,0,0.9)',
-                          }}
-                        >
-                          {item.subject}
-                        </div>
-                      )}
-
-                      {/* Subtle type badge and duration on thumbnail */}
-                      <div
-                        style={{
-                          position: 'absolute',
-                          bottom: '8px',
-                          right: '10px',
-                          zIndex: 4,
-                          display: 'flex',
-                          alignItems: 'center',
-                          gap: '4px',
-                        }}
-                      >
-                        {item.duration ? (
-                          <div
-                            style={{
-                              background: 'rgba(0,0,0,0.75)',
-                              backdropFilter: 'blur(4px)',
-                              color: '#ffffff',
-                              fontSize: '10px',
-                              fontWeight: 700,
-                              padding: '2px 6px',
-                              borderRadius: '4px',
-                              fontVariantNumeric: 'tabular-nums',
-                            }}
-                          >
-                            {formatItemDuration(item.duration)}
-                          </div>
-                        ) : null}
-                        {item.id?.startsWith('pending-') && (
-                          <div
-                            style={{
-                              background: 'rgba(0,0,0,0.7)',
-                              backdropFilter: 'blur(4px)',
-                              color: '#f59e0b',
-                              fontSize: '10px',
-                              fontWeight: 700,
-                              padding: '2px 7px',
-                              borderRadius: '4px',
-                              textTransform: 'uppercase',
-                              letterSpacing: '0.4px',
-                            }}
-                          >
-                            ⏳ In Queue
-                          </div>
-                        )}
-                      </div>
-                    </div>
-
-                    {/* Card Content */}
-                    <div
-                      style={{
-                        padding: '14px 16px',
-                        display: 'flex',
-                        flexDirection: 'column',
-                        flex: 1,
-                        justifyContent: 'space-between',
-                      }}
-                    >
-                      <div
-                        style={{
-                          fontSize: '14px',
-                          fontWeight: 600,
-                          color: 'var(--text)',
-                          lineHeight: 1.35,
-                          marginBottom: '6px',
-                          display: '-webkit-box',
-                          WebkitLineClamp: 2,
-                          WebkitBoxOrient: 'vertical',
-                          overflow: 'hidden',
-                        }}
-                      >
-                        {item.label}
-                      </div>
-
-                      {/* Bot/Parmar Attachment links */}
-                      {item.links && Object.keys(item.links).some((k) => k !== 'url') && (
-                        <div style={{ display: 'flex', flexWrap: 'wrap', gap: '5px', margin: '4px 0 8px' }}>
-                          {(item.links.notes_en || item.links.en_pdf) && (
-                            <button
-                              onClick={(e) => {
-                                e.stopPropagation();
-                                const target = resolveDirectMediaUrl(item.links!.notes_en || item.links!.en_pdf);
-                                window.open(target, '_blank', 'noopener,noreferrer');
-                              }}
-                              title="Open English Notes"
-                              style={{
-                                display: 'inline-flex',
-                                alignItems: 'center',
-                                gap: '3px',
-                                padding: '3px 7px',
-                                fontSize: '10.5px',
-                                fontWeight: 600,
-                                borderRadius: 'var(--r-sm)',
-                                border: '1px solid var(--border)',
-                                background: 'var(--bg-card-hover)',
-                                color: 'var(--accent)',
-                                cursor: 'pointer',
-                              }}
-                            >
-                              <FileText width={11} height={11} /> Notes EN
-                            </button>
-                          )}
-                          {(item.links.notes_hi || item.links.hi_pdf) && (
-                            <button
-                              onClick={(e) => {
-                                e.stopPropagation();
-                                const target = resolveDirectMediaUrl(item.links!.notes_hi || item.links!.hi_pdf);
-                                window.open(target, '_blank', 'noopener,noreferrer');
-                              }}
-                              title="Open Hindi Notes"
-                              style={{
-                                display: 'inline-flex',
-                                alignItems: 'center',
-                                gap: '3px',
-                                padding: '3px 7px',
-                                fontSize: '10.5px',
-                                fontWeight: 600,
-                                borderRadius: 'var(--r-sm)',
-                                border: '1px solid var(--border)',
-                                background: 'var(--bg-card-hover)',
-                                color: '#e67e22',
-                                cursor: 'pointer',
-                              }}
-                            >
-                              <FileText width={11} height={11} /> Notes HI
-                            </button>
-                          )}
-                          {item.links.handwritten && (
-                            <button
-                              onClick={(e) => {
-                                e.stopPropagation();
-                                const target = resolveDirectMediaUrl(item.links!.handwritten);
-                                window.open(target, '_blank', 'noopener,noreferrer');
-                              }}
-                              title="Open Handwritten Notes"
-                              style={{
-                                display: 'inline-flex',
-                                alignItems: 'center',
-                                gap: '3px',
-                                padding: '3px 7px',
-                                fontSize: '10.5px',
-                                fontWeight: 600,
-                                borderRadius: 'var(--r-sm)',
-                                border: '1px solid var(--border)',
-                                background: 'var(--bg-card-hover)',
-                                color: '#27ae60',
-                                cursor: 'pointer',
-                              }}
-                            >
-                              <FileText width={11} height={11} /> Handwritten
-                            </button>
-                          )}
-                          {item.links.quiz && (
-                            <button
-                              onClick={(e) => {
-                                e.stopPropagation();
-                                window.open(resolveDirectMediaUrl(item.links!.quiz), '_blank', 'noopener,noreferrer');
-                              }}
-                              title="Open Quiz"
-                              style={{
-                                display: 'inline-flex',
-                                alignItems: 'center',
-                                gap: '3px',
-                                padding: '3px 7px',
-                                fontSize: '10.5px',
-                                fontWeight: 600,
-                                borderRadius: 'var(--r-sm)',
-                                border: '1px solid var(--border)',
-                                background: 'var(--bg-card-hover)',
-                                color: '#8e44ad',
-                                cursor: 'pointer',
-                              }}
-                            >
-                              <ExternalLink width={11} height={11} /> Quiz
-                            </button>
-                          )}
-                        </div>
-                      )}
-
+                    <div>
+                      {/* Top Header Row: Index & Duration & Status */}
                       <div
                         style={{
                           display: 'flex',
                           alignItems: 'center',
                           justifyContent: 'space-between',
-                          paddingTop: '8px',
-                          borderTop: '1px solid var(--border)',
+                          gap: '8px',
+                          marginBottom: '10px',
                         }}
                       >
-                        <span style={{ fontSize: '11px', color: 'var(--text-muted)', fontWeight: 500 }}>
-                          {item.subject || (isYt ? 'YouTube Lecture' : 'Video Lecture')}
-                        </span>
-
                         <div style={{ display: 'flex', alignItems: 'center', gap: '6px' }}>
-                          {isYt && (
+                          <span
+                            style={{
+                              fontSize: '11px',
+                              fontWeight: 700,
+                              color: 'var(--accent)',
+                              background: 'rgba(204,120,92,0.12)',
+                              padding: '2.5px 7px',
+                              borderRadius: 'var(--r-sm)',
+                              fontVariantNumeric: 'tabular-nums',
+                            }}
+                          >
+                            #{idx + 1}
+                          </span>
+                          {item.subject && (
                             <span
                               style={{
-                                display: 'inline-flex',
-                                alignItems: 'center',
-                                gap: '3px',
                                 fontSize: '11px',
-                                fontWeight: 700,
-                                color: '#ff4b4b',
+                                fontWeight: 600,
+                                color: 'var(--text-muted)',
+                                background: 'var(--bg-card-subtle)',
+                                padding: '2px 7px',
+                                borderRadius: 'var(--r-sm)',
+                                border: '1px solid var(--border)',
                               }}
                             >
-                              <ExternalLink width={11} height={11} /> Open
+                              {item.subject}
                             </span>
                           )}
                         </div>
+
+                        <div style={{ display: 'flex', alignItems: 'center', gap: '6px' }}>
+                          {item.duration ? (
+                            <span
+                              style={{
+                                fontSize: '11px',
+                                fontWeight: 600,
+                                color: 'var(--text-muted)',
+                                fontVariantNumeric: 'tabular-nums',
+                              }}
+                            >
+                              {formatItemDuration(item.duration)}
+                            </span>
+                          ) : null}
+                          {item.id?.startsWith('pending-') && (
+                            <span
+                              style={{
+                                fontSize: '10px',
+                                fontWeight: 700,
+                                color: '#f59e0b',
+                                background: 'rgba(245,158,11,0.12)',
+                                padding: '2px 6px',
+                                borderRadius: '4px',
+                                textTransform: 'uppercase',
+                              }}
+                            >
+                              In Queue
+                            </span>
+                          )}
+                        </div>
+                      </div>
+
+                      {/* Lecture Title ("kewal naming hi rehne do") */}
+                      <h4
+                        style={{
+                          fontSize: '14.5px',
+                          fontWeight: 600,
+                          color: 'var(--text)',
+                          lineHeight: 1.4,
+                          margin: 0,
+                          display: '-webkit-box',
+                          WebkitLineClamp: 3,
+                          WebkitBoxOrient: 'vertical',
+                          overflow: 'hidden',
+                        }}
+                      >
+                        {item.label}
+                      </h4>
+                    </div>
+
+                    {/* Bot/Parmar Attachment links & Action Bar */}
+                    <div
+                      style={{
+                        paddingTop: '10px',
+                        borderTop: '1px solid var(--border-subtle)',
+                        marginTop: 'auto',
+                        display: 'flex',
+                        alignItems: 'center',
+                        justifyContent: 'space-between',
+                        gap: '8px',
+                      }}
+                    >
+                      <div style={{ display: 'flex', flexWrap: 'wrap', gap: '4px' }}>
+                        {item.links && Object.keys(item.links).some((k) => k !== 'url') && (
+                          <>
+                            {(item.links.notes_en || item.links.en_pdf) && (
+                              <button
+                                onClick={(e) => {
+                                  e.stopPropagation();
+                                  const target = resolveDirectMediaUrl(item.links!.notes_en || item.links!.en_pdf);
+                                  window.open(target, '_blank', 'noopener,noreferrer');
+                                }}
+                                title="Open English Notes"
+                                style={{
+                                  display: 'inline-flex',
+                                  alignItems: 'center',
+                                  gap: '3px',
+                                  padding: '3px 7px',
+                                  fontSize: '10.5px',
+                                  fontWeight: 600,
+                                  borderRadius: 'var(--r-sm)',
+                                  border: '1px solid var(--border)',
+                                  background: 'var(--bg-card-hover)',
+                                  color: 'var(--accent)',
+                                  cursor: 'pointer',
+                                }}
+                              >
+                                <FileText width={11} height={11} /> Notes EN
+                              </button>
+                            )}
+                            {(item.links.notes_hi || item.links.hi_pdf) && (
+                              <button
+                                onClick={(e) => {
+                                  e.stopPropagation();
+                                  const target = resolveDirectMediaUrl(item.links!.notes_hi || item.links!.hi_pdf);
+                                  window.open(target, '_blank', 'noopener,noreferrer');
+                                }}
+                                title="Open Hindi Notes"
+                                style={{
+                                  display: 'inline-flex',
+                                  alignItems: 'center',
+                                  gap: '3px',
+                                  padding: '3px 7px',
+                                  fontSize: '10.5px',
+                                  fontWeight: 600,
+                                  borderRadius: 'var(--r-sm)',
+                                  border: '1px solid var(--border)',
+                                  background: 'var(--bg-card-hover)',
+                                  color: 'var(--accent)',
+                                  cursor: 'pointer',
+                                }}
+                              >
+                                <FileText width={11} height={11} /> Notes HI
+                              </button>
+                            )}
+                          </>
+                        )}
+                      </div>
+
+                      <div style={{ display: 'flex', alignItems: 'center', gap: '8px' }}>
+                        <span
+                          style={{
+                            display: 'inline-flex',
+                            alignItems: 'center',
+                            gap: '4px',
+                            fontSize: '11.5px',
+                            fontWeight: 700,
+                            color: isYt ? '#ff4b4b' : 'var(--accent)',
+                          }}
+                        >
+                          {isYt ? (
+                            <>
+                              <ExternalLink width={12} height={12} /> Open
+                            </>
+                          ) : (
+                            <>
+                              <Play width={12} height={12} fill="currentColor" /> Play
+                            </>
+                          )}
+                        </span>
                       </div>
                     </div>
                   </div>
@@ -1701,18 +1526,6 @@ export const CourseModal: React.FC<CourseModalProps> = ({
                           <h3 style={{ margin: 0, fontSize: '15.5px', fontWeight: 700, color: 'var(--text)' }}>
                             Practice Sheets & Study Notes
                           </h3>
-                          <span
-                            style={{
-                              fontSize: '11px',
-                              background: 'var(--bg-card-hover)',
-                              padding: '2px 8px',
-                              borderRadius: 'var(--r-pill)',
-                              color: 'var(--text-muted)',
-                              fontWeight: 600,
-                            }}
-                          >
-                            {pdfItems.length}
-                          </span>
                         </div>
                       )}
 

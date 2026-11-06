@@ -142,10 +142,7 @@ export function getDynamicThumbnailUrl(
   category?: string | null,
   theme?: 'light' | 'dark'
 ): string {
-  const cleanTitle = (title || 'Study Lecture').trim();
-  const cleanCategory = (category || '').trim();
-  const mode = theme === 'dark' ? 'dark' : 'light';
-  return `/api/v1/thumbnail?title=${encodeURIComponent(cleanTitle)}&category=${encodeURIComponent(cleanCategory)}&theme=${mode}`;
+  return '';
 }
 
 /**
@@ -156,7 +153,7 @@ export function getLectureThumbnail(
   category?: string | null,
   theme?: 'light' | 'dark'
 ): string {
-  return getDynamicThumbnailUrl(title, category, theme);
+  return '';
 }
 
 /**
@@ -172,39 +169,5 @@ export function getSubjectThumbnail(
   tabIdOrName?: string | null,
   theme?: 'light' | 'dark'
 ): string {
-  const s = (subjectName || '').trim();
-  const t = (tabIdOrName || '').trim();
-  const mode = theme === 'dark' ? 'dark' : 'light';
-
-  // 1. Check tab ID in canonical mapping (e.g. 'static-gk', 'civil-umeed', 'computer')
-  const normTabId = t.toLowerCase().replace(/[^a-z0-9_-]/g, '-').replace(/-+/g, '-').replace(/^-|-$/g, '');
-  if (normTabId && BATCH_SUBJECT_MAP[normTabId]) {
-    return resolveSvgPath(BATCH_SUBJECT_MAP[normTabId], theme);
-  }
-
-  // 2. Check subject / course name in canonical mapping
-  const normSubj = s.toLowerCase().replace(/[^a-z0-9_-]/g, '-').replace(/-+/g, '-').replace(/^-|-$/g, '');
-  if (normSubj && BATCH_SUBJECT_MAP[normSubj]) {
-    return resolveSvgPath(BATCH_SUBJECT_MAP[normSubj], theme);
-  }
-
-  // 3. Themed SVG fallback if provided (e.g. from coursesData.json thumb field)
-  if (fallbackThumb && fallbackThumb.endsWith('.svg')) {
-    if (fallbackThumb.includes('_dark.svg') || fallbackThumb.includes('_light.svg')) {
-      return fallbackThumb.replace(/_(dark|light)\.svg$/, `_${mode}.svg`);
-    }
-    return fallbackThumb.replace(/\.svg$/, `_${mode}.svg`);
-  }
-
-  if (fallbackThumb && (fallbackThumb.endsWith('.png') || fallbackThumb.endsWith('.jpg') || fallbackThumb.endsWith('.webp'))) {
-    return fallbackThumb;
-  }
-
-  // 4. Dynamic Title-based Minimalist SVG generator with centered title
-  const cleanTitle = (s || t || 'Study Lecture').trim();
-  if (cleanTitle) {
-    return getDynamicThumbnailUrl(cleanTitle, t, theme);
-  }
-
-  return `/thumbnails/default_course_${mode}.svg`;
+  return '';
 }

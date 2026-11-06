@@ -8,7 +8,7 @@
   "tabs": [
     {
       "id": "videos",
-      "label": "▶ Videos",
+      "label": "Videos",
       "items": [
         {
           "id": "maths-special-1-loki-v-1",
@@ -1100,7 +1100,7 @@
     },
     {
       "id": "pdfs",
-      "label": "📄 PDFs",
+      "label": "PDFs",
       "items": [
         {
           "id": "maths-special-1-loki-p-2",

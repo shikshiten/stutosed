@@ -227,7 +227,8 @@ export const GateWatchWorkspace: React.FC<GateWatchWorkspaceProps> = ({
       hlsRef.current = null;
     }
 
-    if (video.canPlayType('application/vnd.apple.mpegurl')) {
+    const isSafari = typeof navigator !== 'undefined' && /^((?!chrome|android).)*safari/i.test(navigator.userAgent);
+    if (video.canPlayType('application/vnd.apple.mpegurl') && (isSafari || !Hls.isSupported())) {
       video.src = resolvedStreamUrl;
       video.play().catch(() => {});
     } else if (Hls.isSupported()) {
@@ -447,6 +448,29 @@ export const GateWatchWorkspace: React.FC<GateWatchWorkspaceProps> = ({
   const bufferedPercent = duration > 0 ? (bufferedTime / duration) * 100 : 0;
   const servers = currentLecture?.servers || [];
 
+  if (!currentLecture) {
+    return (
+      <div className="watch-page-container">
+        <header className="watch-top-nav">
+          <div className="nav-left-cell">
+            <button className="watch-nav-btn" onClick={onBackToSubjects} title="Back to Made Easy Subjects">
+              <ArrowLeft width={18} height={18} />
+              <span className="btn-label-desktop">Back</span>
+            </button>
+          </div>
+          <div className="nav-center-cell">
+            <span className="nav-course-brand">{courseName}</span>
+          </div>
+          <div className="nav-right-cell" />
+        </header>
+        <div style={{ minHeight: '50vh', display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center', gap: '16px' }}>
+          <h3 style={{ color: 'var(--text)' }}>No lectures available</h3>
+          <button className="watch-nav-btn" onClick={onBackToSubjects}>Return to Subjects</button>
+        </div>
+      </div>
+    );
+  }
+
   return (
     <div className="watch-page-container">
       {/* 1. TOP RESPONSIVE HEADER BAR */}
@@ -497,8 +521,8 @@ export const GateWatchWorkspace: React.FC<GateWatchWorkspaceProps> = ({
               <div className="player-top-overlay" onClick={(e) => e.stopPropagation()}>
                 <div className="player-title-block">
                   <div className="player-course-chip">Signal and System • Made Easy</div>
-                  <h2 className="player-lecture-heading" title={currentLecture.label}>
-                    {currentLecture.label}
+                  <h2 className="player-lecture-heading" title={currentLecture?.label || ''}>
+                    {currentLecture?.label || 'Lecture'}
                   </h2>
                 </div>
 
@@ -597,8 +621,8 @@ export const GateWatchWorkspace: React.FC<GateWatchWorkspaceProps> = ({
                   }}
                 >
                   <iframe
-                    src={resolvedStreamUrl || currentLecture.url}
-                    title={currentLecture.label}
+                    src={resolvedStreamUrl || currentLecture?.url || ''}
+                    title={currentLecture?.label || 'Lecture'}
                     style={{ width: '100%', height: '100%', border: 'none', display: 'block' }}
                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share; fullscreen"
                     allowFullScreen
@@ -610,7 +634,7 @@ export const GateWatchWorkspace: React.FC<GateWatchWorkspaceProps> = ({
                   playsInline
                   preload="auto"
                   className="player-native-video"
-                  title={currentLecture.label}
+                  title={currentLecture?.label || 'Lecture'}
                 />
               )}
 
@@ -783,7 +807,7 @@ export const GateWatchWorkspace: React.FC<GateWatchWorkspaceProps> = ({
             </div>
 
             {/* Lecture Title */}
-            <h1 className="watch-lecture-title">{currentLecture.label}</h1>
+            <h1 className="watch-lecture-title">{currentLecture?.label || 'Lecture'}</h1>
 
             {/* Action Buttons Dock */}
             <div className="watch-action-bar">

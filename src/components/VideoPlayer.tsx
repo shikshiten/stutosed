@@ -35,7 +35,9 @@ import {
   Minimize,
   Eye,
   BookOpen,
+  AlertTriangle,
 } from 'lucide-react';
+import { ComplaintModal } from '@/components/ComplaintModal';
 
 interface VideoPlayerProps {
   playlist: LectureItem[];
@@ -130,6 +132,7 @@ export const VideoPlayer: React.FC<VideoPlayerProps> = ({
   // Video Server Loading Notice state
   const [loadingNoticeVisible, setLoadingNoticeVisible] = useState<boolean>(false);
   const [loadingSeconds, setLoadingSeconds] = useState<number>(0);
+  const [showComplaintModal, setShowComplaintModal] = useState<boolean>(false);
 
   // Library & Bookmark States
   const [isBookmarked, setIsBookmarked] = useState<boolean>(false);
@@ -171,8 +174,12 @@ export const VideoPlayer: React.FC<VideoPlayerProps> = ({
 
   // Handle auto-dismissal when video begins playing, or advance elapsed loading seconds
   useEffect(() => {
+    if (isEmbedMode) {
+      setLoadingNoticeVisible(false);
+      return;
+    }
     if (!loadingNoticeVisible) return;
-    if (isPlaying && !streamLoading && !isBuffering) {
+    if (isPlaying && !streamLoading && !isBuffering && !streamError) {
       const timer = setTimeout(() => {
         setLoadingNoticeVisible(false);
       }, 700);
@@ -182,7 +189,7 @@ export const VideoPlayer: React.FC<VideoPlayerProps> = ({
       setLoadingSeconds((prev) => prev + 1);
     }, 1000);
     return () => clearInterval(interval);
-  }, [loadingNoticeVisible, isPlaying, streamLoading, isBuffering]);
+  }, [loadingNoticeVisible, isPlaying, streamLoading, isBuffering, streamError]);
 
   // Track Fullscreen status
   useEffect(() => {
@@ -236,7 +243,7 @@ export const VideoPlayer: React.FC<VideoPlayerProps> = ({
     resetControlsTimer();
   };
 
-  // Determine active URL from servers array or fallback (prioritizing ESTE over ALBA, deduplicating identical URLs)
+  // Determine active URL from servers array or fallback (deduplicating identical URLs)
   const servers: ServerOption[] = useMemo(() => {
     if (currentItem?.servers && currentItem.servers.length > 0) {
       const seen = new Set<string>();
@@ -248,11 +255,7 @@ export const VideoPlayer: React.FC<VideoPlayerProps> = ({
           distinct.push(s);
         }
       }
-      return distinct.sort((a, b) => {
-        const aIsEste = a.name?.toUpperCase().includes('ESTE') ? 1 : 0;
-        const bIsEste = b.name?.toUpperCase().includes('ESTE') ? 1 : 0;
-        return bIsEste - aIsEste;
-      });
+      return distinct;
     }
     return [];
   }, [currentItem]);
@@ -261,6 +264,24 @@ export const VideoPlayer: React.FC<VideoPlayerProps> = ({
   const activeUrl = activeServer?.url || currentItem?.url || '';
 
   // Determine URL types
+  const isAbyssUrl =
+    activeUrl.includes('abyssplayer.com') ||
+    activeUrl.includes('abyss.to') ||
+    currentItem?.type === 'abyss' ||
+    activeServer?.type === 'abyss';
+
+  const abyssEmbedUrl = useMemo(() => {
+    if (!isAbyssUrl) return null;
+    if (activeUrl.includes('player.abyssplayer.com')) {
+      return activeUrl;
+    }
+    const match = activeUrl.match(/(?:abyss\.to\/|abyssplayer\.com\/|files\/)([a-zA-Z0-9_-]{8,15})/);
+    const fileId = match ? match[1] : (currentItem?.id || '');
+    return `https://player.abyssplayer.com/${fileId}`;
+  }, [isAbyssUrl, activeUrl, currentItem]);
+
+  const isEmbedMode = Boolean(abyssEmbedUrl);
+
   const isVidmolyUrl = activeUrl.includes('vidmoly.');
   const isEarnvidsUrl = activeUrl.includes('morencius.') || activeUrl.includes('earnvids.');
   const isYouTubeUrl = activeUrl.includes('youtube.') || activeUrl.includes('youtu.be');
@@ -272,12 +293,9 @@ export const VideoPlayer: React.FC<VideoPlayerProps> = ({
     activeUrl.includes('publicbotshub') ||
     activeUrl.includes('herokuapp.com') ||
     activeUrl.endsWith('.mp4') ||
-    activeUrl.endsWith('.mkv') ||
-    activeServer?.name?.toUpperCase().includes('ESTE');
+    activeUrl.endsWith('.mkv');
 
-  const isAlbaActive = false;
-
-  const needsApiResolution = (isVidmolyUrl || isEarnvidsUrl) && !isHlsUrl;
+  const needsApiResolution = !isEmbedMode && (isVidmolyUrl || isEarnvidsUrl) && !isHlsUrl;
 
   // Resolve stream URL for Vidmoly/Earnvids via cached server-side API
   useEffect(() => {
@@ -398,7 +416,7 @@ export const VideoPlayer: React.FC<VideoPlayerProps> = ({
             case Hls.ErrorTypes.NETWORK_ERROR:
               if (data.response?.code === 404) {
                 setStreamError(
-                  '⏳ This lecture is currently being processed by Vidmoly servers. Newly uploaded videos take a few minutes to encode. Please check back shortly or select one of the ready lectures (e.g. Lecture 2 A, 5 C, 7, 8 A).'
+                  'This lecture is currently being processed by Vidmoly servers. Newly uploaded videos take a few minutes to encode. Please check back shortly or select one of the ready lectures (e.g. Lecture 2 A, 5 C, 7, 8 A).'
                 );
                 hls.destroy();
                 hlsRef.current = null;
@@ -668,6 +686,7 @@ export const VideoPlayer: React.FC<VideoPlayerProps> = ({
 
   // Mobile Touch Double-Tap to Seek (-10s / +10s) with gesture detection
   const handleViewportTouchEnd = (e: React.TouchEvent<HTMLDivElement>) => {
+    if (isEmbedMode) return;
     const target = e.target as HTMLElement;
     if (
       target.closest('button') ||
@@ -986,6 +1005,7 @@ export const VideoPlayer: React.FC<VideoPlayerProps> = ({
                 className="player-viewport"
                 onTouchEnd={handleViewportTouchEnd}
                 onClick={(e) => {
+                  if (isEmbedMode) return;
                   const target = e.target as HTMLElement;
                   if (
                     target.closest('button') ||
@@ -1015,22 +1035,63 @@ export const VideoPlayer: React.FC<VideoPlayerProps> = ({
               >
                 {/* Busy Server Loading Notice Overlay */}
                 {loadingNoticeVisible && (
-                  <div className="player-loading-notice-card" role="status" aria-live="polite">
+                  <div
+                    className={`player-loading-notice-card ${loadingSeconds > 18 || Boolean(streamError) ? 'is-unavailable' : ''}`}
+                    role="status"
+                    aria-live="polite"
+                  >
                     <div className="loading-notice-spinner">
-                      <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round" className="spin-icon">
-                        <path d="M21 12a9 9 0 1 1-6.219-8.56" />
-                      </svg>
+                      {loadingSeconds > 18 || Boolean(streamError) ? (
+                        <AlertTriangle width={18} height={18} stroke="#ef4444" />
+                      ) : (
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round" className="spin-icon">
+                          <path d="M21 12a9 9 0 1 1-6.219-8.56" />
+                        </svg>
+                      )}
                     </div>
                     <div className="loading-notice-content">
                       <div className="loading-notice-title">
-                        <span>Connecting to Video Server</span>
-                        <span className="loading-notice-badge">Server Busy</span>
+                        <span>{loadingSeconds > 18 || Boolean(streamError) ? 'Playback Unavailable' : 'Connecting to Video Server'}</span>
+                        <span className={`loading-notice-badge ${loadingSeconds > 18 || Boolean(streamError) ? 'is-unavailable' : loadingSeconds > 6 ? 'is-waiting' : ''}`}>
+                          {loadingSeconds > 18 || Boolean(streamError) ? 'UNAVAILABLE' : loadingSeconds > 6 ? 'PLEASE WAIT' : 'CONNECTING'}
+                        </span>
                       </div>
                       <p className="loading-notice-desc">
-                        {loadingSeconds > 4
-                          ? "Upstream server is taking longer than usual. Please wait a moment, or switch to Server 2 / ALBA / ESTE above."
-                          : "Please wait, video may take 3–5 seconds to load due to high server traffic."}
+                        {loadingSeconds > 18 || Boolean(streamError)
+                          ? "Abhi playback iski available nahi hai. Upstream server se video load nahi ho pa rahi hai."
+                          : loadingSeconds > 6
+                          ? "Upstream server is taking a little longer than usual. Please stay here, it will open soon."
+                          : "Please wait, video is fetching from server..."}
                       </p>
+                      {(loadingSeconds > 18 || Boolean(streamError)) && (
+                        <div className="loading-notice-actions">
+                          <button
+                            type="button"
+                            className="loading-notice-action-btn"
+                            onClick={(e) => {
+                              e.stopPropagation();
+                              setShowComplaintModal(true);
+                            }}
+                          >
+                            <AlertTriangle width={13} height={13} />
+                            <span>Complain to Developer</span>
+                          </button>
+                          {servers.length > 1 && (
+                            <button
+                              type="button"
+                              className="loading-notice-action-btn secondary"
+                              onClick={(e) => {
+                                e.stopPropagation();
+                                setSelectedServerIndex((prev) => (prev + 1) % servers.length);
+                                setStreamError(null);
+                                setLoadingSeconds(0);
+                              }}
+                            >
+                              Try Next Server
+                            </button>
+                          )}
+                        </div>
+                      )}
                     </div>
                     <button
                       className="loading-notice-close"
@@ -1070,7 +1131,7 @@ export const VideoPlayer: React.FC<VideoPlayerProps> = ({
                               resetControlsTimer();
                             }}
                           >
-                            {srv.name?.replace(/^[^\w]+/, '').trim() || `Server ${idx + 1}`}
+                            {srv.name?.replace(/\b(ALBA|ESTE)\b/gi, '').replace(/[()[\]]/g, '').replace(/^[^\w]+/, '').trim() || `Server ${idx + 1}`}
                           </button>
                         ))}
                       </div>
@@ -1094,6 +1155,7 @@ export const VideoPlayer: React.FC<VideoPlayerProps> = ({
                 </div>
 
                 {/* 2. CENTER OVERLAY (Frosted Glass Play + Static Skip Arrows) */}
+                {!isEmbedMode && (
                 <div className="player-center-overlay">
                   <button
                     className="player-center-skip-arrow backward"
@@ -1162,6 +1224,8 @@ export const VideoPlayer: React.FC<VideoPlayerProps> = ({
                   </button>
                 </div>
 
+                )}
+
                 {/* Double-tap indicator */}
                 {skipFeedback && (
                   <div className={`player-skip-indicator ${skipFeedback}`}>
@@ -1175,7 +1239,42 @@ export const VideoPlayer: React.FC<VideoPlayerProps> = ({
                 )}
 
                 {/* Video Media Canvas */}
-                {isYouTubeUrl ? (
+                {isAbyssUrl && abyssEmbedUrl ? (
+                  <div
+                    className="player-iframe-container"
+                    style={{
+                      position: 'absolute',
+                      inset: 0,
+                      width: '100%',
+                      height: '100%',
+                      zIndex: 10,
+                      background: '#000000',
+                      pointerEvents: 'auto',
+                      touchAction: 'auto',
+                    }}
+                  >
+                    <iframe
+                      ref={iframeRef}
+                      key={abyssEmbedUrl}
+                      src={abyssEmbedUrl}
+                      title={currentItem.label}
+                      style={{
+                        width: '100%',
+                        height: '100%',
+                        border: 'none',
+                        display: 'block',
+                        pointerEvents: 'auto',
+                        touchAction: 'auto',
+                      }}
+                      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share; fullscreen"
+                      allowFullScreen
+                      onLoad={() => {
+                        setStreamLoading(false);
+                        setLoadingNoticeVisible(false);
+                      }}
+                    />
+                  </div>
+                ) : isYouTubeUrl ? (
                   (() => {
                     const ytId = activeUrl.match(/(?:v=|youtu\.be\/|live\/)([a-zA-Z0-9_-]{11})/)?.[1];
                     const youtubeWatchUrl = ytId
@@ -1195,16 +1294,129 @@ export const VideoPlayer: React.FC<VideoPlayerProps> = ({
                     );
                   })()
                 ) : (
-                  <video
-                    ref={videoRef}
-                    playsInline
-                    preload="auto"
-                    className="player-native-video"
-                    title={currentItem.label}
-                  />
+                  <>
+                    <video
+                      ref={videoRef}
+                      playsInline
+                      preload="auto"
+                      className="player-native-video"
+                      title={currentItem.label}
+                    />
+
+                    {/* Playback Unavailable Central Fallback Screen */}
+                    {(Boolean(streamError) || (streamLoading && loadingSeconds > 18)) && (
+                      <div
+                        className="player-unavailable-screen"
+                        style={{
+                          position: 'absolute',
+                          inset: 0,
+                          zIndex: 25,
+                          display: 'flex',
+                          flexDirection: 'column',
+                          alignItems: 'center',
+                          justifyContent: 'center',
+                          background: 'radial-gradient(circle at 50% 40%, rgba(24, 24, 27, 0.96) 0%, rgba(9, 9, 11, 0.98) 100%)',
+                          padding: '32px 24px',
+                          textAlign: 'center',
+                          color: '#ffffff',
+                        }}
+                        onClick={(e) => e.stopPropagation()}
+                      >
+                        <div
+                          style={{
+                            width: '60px',
+                            height: '60px',
+                            borderRadius: '50%',
+                            background: 'rgba(239, 68, 68, 0.15)',
+                            border: '1px solid rgba(239, 68, 68, 0.35)',
+                            display: 'flex',
+                            alignItems: 'center',
+                            justifyContent: 'center',
+                            color: '#ef4444',
+                            marginBottom: '16px',
+                            boxShadow: '0 0 24px rgba(239, 68, 68, 0.25)',
+                          }}
+                        >
+                          <AlertTriangle width={28} height={28} />
+                        </div>
+                        <div
+                          style={{
+                            fontSize: '11px',
+                            textTransform: 'uppercase',
+                            letterSpacing: '1px',
+                            fontWeight: 800,
+                            color: '#ef4444',
+                            marginBottom: '8px',
+                            background: 'rgba(239, 68, 68, 0.12)',
+                            padding: '4px 12px',
+                            borderRadius: 'var(--r-pill)',
+                            border: '1px solid rgba(239, 68, 68, 0.3)',
+                          }}
+                        >
+                          Playback Unavailable
+                        </div>
+                        <h3 style={{ fontSize: '20px', fontWeight: 700, margin: '0 0 10px', color: '#ffffff', maxWidth: '520px', lineHeight: 1.35 }}>
+                          Abhi playback iski available nahi hai
+                        </h3>
+                        <p style={{ fontSize: '13.5px', color: 'rgba(255, 255, 255, 0.72)', maxWidth: '480px', lineHeight: 1.55, margin: '0 0 24px' }}>
+                          Upstream video server is unable to deliver this lecture stream right now. You can report directly to the developer to get this link fixed.
+                        </p>
+                        <div style={{ display: 'flex', alignItems: 'center', gap: '12px', flexWrap: 'wrap', justifyContent: 'center' }}>
+                          <button
+                            type="button"
+                            onClick={() => setShowComplaintModal(true)}
+                            style={{
+                              display: 'inline-flex',
+                              alignItems: 'center',
+                              gap: '8px',
+                              padding: '12px 24px',
+                              borderRadius: 'var(--r-pill)',
+                              background: 'linear-gradient(135deg, #ef4444 0%, #dc2626 100%)',
+                              color: '#ffffff',
+                              border: 'none',
+                              fontWeight: 700,
+                              fontSize: '13.5px',
+                              cursor: 'pointer',
+                              boxShadow: '0 4px 18px rgba(239, 68, 68, 0.45)',
+                              transition: 'all 0.2s ease',
+                            }}
+                          >
+                            <AlertTriangle width={16} height={16} />
+                            <span>Complain to Developer</span>
+                          </button>
+                          {servers.length > 1 && (
+                            <button
+                              type="button"
+                              onClick={() => {
+                                setSelectedServerIndex((prev) => (prev + 1) % servers.length);
+                                setStreamError(null);
+                                setLoadingSeconds(0);
+                              }}
+                              style={{
+                                display: 'inline-flex',
+                                alignItems: 'center',
+                                gap: '8px',
+                                padding: '12px 20px',
+                                borderRadius: 'var(--r-pill)',
+                                background: 'rgba(255, 255, 255, 0.1)',
+                                border: '1px solid rgba(255, 255, 255, 0.2)',
+                                color: '#ffffff',
+                                fontWeight: 600,
+                                fontSize: '13.5px',
+                                cursor: 'pointer',
+                              }}
+                            >
+                              Try Server {((selectedServerIndex + 1) % servers.length) + 1}
+                            </button>
+                          )}
+                        </div>
+                      </div>
+                    )}
+                  </>
                 )}
 
                 {/* 3. BOTTOM FLOATING OVERLAY (Seekbar, Controls & In-Fullscreen Speed Menu) */}
+                {!isEmbedMode && (
                 <div
                   className="player-bottom-overlay"
                   onClick={(e) => e.stopPropagation()}
@@ -1391,6 +1603,7 @@ export const VideoPlayer: React.FC<VideoPlayerProps> = ({
                     </div>
                   </div>
                 </div>
+                )}
               </div>
             </div>
 
@@ -1516,6 +1729,16 @@ export const VideoPlayer: React.FC<VideoPlayerProps> = ({
           </aside>
         </div>
       </div>
+
+      {/* Complain to Developer Pop-up Modal */}
+      <ComplaintModal
+        isOpen={showComplaintModal}
+        onClose={() => setShowComplaintModal(false)}
+        courseName={courseName}
+        lectureTitle={currentItem.label}
+        lectureUrl={activeUrl}
+        serverName={activeServer?.name}
+      />
     </div>
   );
 };

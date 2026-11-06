@@ -8,7 +8,7 @@
   "tabs": [
     {
       "id": "videos",
-      "label": "▶ Videos",
+      "label": "Videos",
       "items": [
         {
           "id": "reasoning-spl-38-v-1",
@@ -782,7 +782,7 @@
     },
     {
       "id": "pdfs",
-      "label": "📄 PDFs",
+      "label": "PDFs",
       "items": [
         {
           "id": "reasoning-spl-38-p-129",

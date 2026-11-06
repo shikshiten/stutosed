@@ -13,8 +13,6 @@ interface SidebarProps {
   onClose: () => void;
   theme: 'light' | 'dark';
   onToggleTheme: () => void;
-  watchedCount: number;
-  totalVideos: number;
   user: UserProfile | null;
   userName: string;
   activeView: AppView;
@@ -27,16 +25,12 @@ export const Sidebar: React.FC<SidebarProps> = ({
   onClose,
   theme,
   onToggleTheme,
-  watchedCount,
-  totalVideos,
   user,
   userName,
   activeView,
   onSelectView,
   onOpenAuth,
 }) => {
-  const pct = Math.min(Math.round((watchedCount / (totalVideos || 1)) * 100), 100);
-
   const handleNav = (view: AppView) => {
     onSelectView(view);
     if (typeof window !== 'undefined' && window.innerWidth <= 768) {
@@ -182,52 +176,6 @@ export const Sidebar: React.FC<SidebarProps> = ({
             <span>Help &amp; Community</span>
           </button>
         </nav>
-
-        {/* Sidebar Learning Progress Box */}
-        <div
-          style={{
-            background: 'var(--bg-card-subtle)',
-            border: '1px solid var(--border)',
-            borderRadius: 'var(--r-lg)',
-            padding: '16px',
-            marginBottom: '20px',
-            boxShadow: 'var(--sh-card)',
-          }}
-        >
-          <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', marginBottom: '8px' }}>
-            <div style={{ display: 'flex', alignItems: 'center', gap: '6px' }}>
-              <CheckCircle2 width={15} height={15} style={{ color: 'var(--green)' }} />
-              <span style={{ fontSize: '12px', color: 'var(--text-muted)', fontWeight: 600 }}>Your Progress</span>
-            </div>
-            <span style={{ fontSize: '13px', color: 'var(--text)', fontWeight: 700 }}>{pct}%</span>
-          </div>
-
-          {/* Slim animated progress track */}
-          <div
-            style={{
-              height: '6px',
-              background: 'var(--border)',
-              borderRadius: 'var(--r-pill)',
-              overflow: 'hidden',
-              position: 'relative',
-            }}
-          >
-            <div
-              style={{
-                width: `${pct}%`,
-                height: '100%',
-                background: 'linear-gradient(90deg, var(--accent) 0%, var(--green) 100%)',
-                borderRadius: 'var(--r-pill)',
-                transition: 'width 0.5s cubic-bezier(0.16, 1, 0.3, 1)',
-              }}
-            />
-          </div>
-
-          <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginTop: '8px', fontSize: '11px', color: 'var(--text-dim)' }}>
-            <span>{watchedCount} Classes</span>
-            <span>{totalVideos} Total</span>
-          </div>
-        </div>
 
         {/* Bottom toolbar with light/dark theme switch & Account */}
         <div style={{ borderTop: '1px solid var(--border)', paddingTop: '16px', display: 'flex', flexDirection: 'column', gap: '8px' }}>

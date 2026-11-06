@@ -39,7 +39,6 @@ export const COURSE_CATEGORIES: CategoryConfig[] = [
     iconName: 'Cpu',
     accentColor: '#f59e0b',
     accentDim: 'rgba(245, 158, 11, 0.12)',
-    badge: 'Active',
   },
 ];
 

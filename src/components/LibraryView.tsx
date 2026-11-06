@@ -99,7 +99,7 @@ export const LibraryView: React.FC<LibraryViewProps> = ({
           </div>
           <h1 className="library-main-title">My Study Library</h1>
           <p className="library-subtitle">
-            Aapke bookmarked batches aur batch-wise saved video lectures yahan automatically organized hain.
+            Your bookmarked batches and saved video lectures are automatically organized here.
           </p>
         </div>
       </div>
@@ -135,10 +135,10 @@ export const LibraryView: React.FC<LibraryViewProps> = ({
               <div className="empty-icon-wrap">
                 <FolderHeart width={36} height={36} color="var(--accent)" />
               </div>
-              <h3>Koi Saved Video Nahi Hai</h3>
+              <h3>No Saved Videos Yet</h3>
               <p>
-                Jab aap kisi bhi lecture ko dekhte waqt <b>Save Video</b> par click karenge,
-                toh woh automatic apne batch folder me save ho jayega.
+                When you click <b>Save Video</b> while watching any lecture,
+                it will automatically be saved into its batch folder here.
               </p>
               <button className="library-action-btn" onClick={onExploreCourses}>
                 <BookOpen width={16} height={16} />
@@ -247,9 +247,9 @@ export const LibraryView: React.FC<LibraryViewProps> = ({
               <div className="empty-icon-wrap">
                 <BookmarkCheck width={36} height={36} color="var(--accent)" />
               </div>
-              <h3>Koi Bookmarked Batch Nahi Hai</h3>
+              <h3>No Bookmarked Batches Yet</h3>
               <p>
-                Aap kisi bhi Batch ke card par ya video page par <b>Bookmark Batch</b> click karke use yahan pin kar sakte hain.
+                Click <b>Bookmark Batch</b> on any course card or video page to pin it here for quick access.
               </p>
               <button className="library-action-btn" onClick={onExploreCourses}>
                 <BookOpen width={16} height={16} />
@@ -264,20 +264,31 @@ export const LibraryView: React.FC<LibraryViewProps> = ({
                     className="bookmarked-course-click"
                     onClick={() => onSelectCourse(course)}
                   >
-                    <div className="bookmarked-card-thumb">
-                      <img
-                        src={getSubjectThumbnail(course.subject || course.name, course.thumb, course.id, theme)}
-                        alt={course.name}
-                        className="bookmarked-thumb-img"
-                        onError={(e) => {
-                          const target = e.currentTarget;
-                          const fallback = `/thumbnails/default_course_${theme === 'dark' ? 'dark' : 'light'}.svg`;
-                          if (!target.src.includes('default_course')) {
-                            target.src = fallback;
-                          }
+                    <div
+                      style={{
+                        padding: '16px 18px',
+                        background: 'linear-gradient(135deg, rgba(204, 120, 92, 0.12) 0%, rgba(204, 120, 92, 0.02) 100%)',
+                        borderBottom: '1px solid var(--border)',
+                        display: 'flex',
+                        alignItems: 'center',
+                        justifyContent: 'space-between',
+                      }}
+                    >
+                      <div
+                        style={{
+                          width: '38px',
+                          height: '38px',
+                          borderRadius: 'var(--r-md)',
+                          background: 'rgba(204, 120, 92, 0.15)',
+                          display: 'flex',
+                          alignItems: 'center',
+                          justifyContent: 'center',
+                          color: 'var(--accent)',
                         }}
-                      />
-                      <span className="bookmarked-category-chip">
+                      >
+                        <BookOpen width={18} height={18} />
+                      </div>
+                      <span className="bookmarked-category-chip" style={{ position: 'static' }}>
                         {(course.category === 'beu' || course.id.startsWith('beu')) ? 'BEU Engineering' : 'Govt Exams'}
                       </span>
                     </div>

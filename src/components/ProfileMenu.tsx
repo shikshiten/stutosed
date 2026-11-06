@@ -291,34 +291,6 @@ export const ProfileMenu: React.FC<ProfileMenuProps> = ({
               <span>My Library</span>
             </button>
 
-            <button
-              onClick={() => {
-                onSelectView('profile');
-                setIsOpen(false);
-              }}
-              style={{
-                display: 'flex',
-                alignItems: 'center',
-                justifyContent: 'space-between',
-                padding: '8px 12px',
-                borderRadius: 'var(--r-md)',
-                fontSize: '13px',
-                fontWeight: 500,
-                color: 'var(--text)',
-                width: '100%',
-                textAlign: 'left',
-                transition: 'background 0.15s ease',
-              }}
-              className="dropdown-menu-item"
-            >
-              <div style={{ display: 'flex', alignItems: 'center', gap: '10px' }}>
-                <CheckCircle2 width={15} height={15} style={{ color: 'var(--green)' }} />
-                <span>My Progress</span>
-              </div>
-              <span style={{ fontSize: '10.5px', fontWeight: 700, color: 'var(--text-muted)', background: 'var(--bg)', padding: '2px 6px', borderRadius: 'var(--r-sm)' }}>
-                {watchedCount}
-              </span>
-            </button>
 
             <button
               onClick={() => {

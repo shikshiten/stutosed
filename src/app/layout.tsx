@@ -35,7 +35,7 @@ export const metadata: Metadata = {
     type: 'website',
     images: [
       {
-        url: '/thumbnails/default_course_dark.svg',
+        url: '/favicon.png',
         width: 1280,
         height: 720,
         alt: 'stutosed learning portal',
@@ -46,7 +46,7 @@ export const metadata: Metadata = {
     card: 'summary_large_image',
     title: 'stutosed — Engineering & Competitive Exam Courses',
     description: 'Free high-speed video lectures, notes & study portal for BEU B.Tech and Government exams.',
-    images: ['/thumbnails/default_course_dark.svg'],
+    images: ['/favicon.png'],
   },
 };
 

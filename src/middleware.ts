@@ -11,12 +11,19 @@ export async function updateSession(request: NextRequest): Promise<NextResponse>
   const supabaseUrl = process.env.NEXT_PUBLIC_SUPABASE_URL;
   const supabaseAnonKey = process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY;
 
+  const pathname = request.nextUrl.pathname;
+  const isSpaTab = pathname.startsWith('/ece') || pathname.startsWith('/gate') || pathname.startsWith('/gov-exams');
+
   // Never crash the entire app if environment variables are missing or unreadable in Edge runtime
   if (!supabaseUrl || !supabaseAnonKey) {
-    return NextResponse.next({ request });
+    return isSpaTab
+      ? NextResponse.rewrite(new URL('/', request.url), { request })
+      : NextResponse.next({ request });
   }
 
-  let supabaseResponse = NextResponse.next({ request });
+  let supabaseResponse = isSpaTab
+    ? NextResponse.rewrite(new URL('/', request.url), { request })
+    : NextResponse.next({ request });
 
   try {
     const supabase = createServerClient(supabaseUrl, supabaseAnonKey, {

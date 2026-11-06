@@ -1,9 +1,15 @@
 'use client';
 
-import React, { useState, useMemo, useEffect } from 'react';
+import React, { useState, useMemo, useEffect, useRef } from 'react';
 import { Course } from '@/types';
 import { countCourseStats } from '@/lib/coursesData';
 import { getSubjectThumbnail } from '@/lib/subjectThumbnails';
+import {
+  getGovtFolderActivity,
+  recordGovtFolderOpen,
+  GOVT_FOLDER_ACTIVITY_EVENT,
+} from '@/lib/govtNavigationMemory';
+import type { GovtFolderActivity } from '@/lib/govtNavigationMemory';
 import {
   Calculator,
   BookOpen,
@@ -131,12 +137,18 @@ export const GOVT_DISCIPLINES: GovtDisciplineDef[] = [
   },
 ];
 
+const compareGovtActivity = (a?: GovtFolderActivity, b?: GovtFolderActivity): number => {
+  if ((b?.count || 0) !== (a?.count || 0)) return (b?.count || 0) - (a?.count || 0);
+  return (b?.lastOpened || 0) - (a?.lastOpened || 0);
+};
+
 interface GovernmentExamsViewProps {
   courses: Course[];
   onSelectCourse: (course: Course) => void;
   theme?: 'light' | 'dark';
   initialDiscipline?: GovtDisciplineId | null;
   onDisciplineChange?: (discipline: GovtDisciplineId | null) => void;
+  userId?: string | null;
 }
 
 export const GovernmentExamsView: React.FC<GovernmentExamsViewProps> = ({
@@ -145,6 +157,7 @@ export const GovernmentExamsView: React.FC<GovernmentExamsViewProps> = ({
   theme = 'light',
   initialDiscipline = null,
   onDisciplineChange,
+  userId = null,
 }) => {
   // Navigation State: null = Level 1 (Discipline Hub), or a GovtDisciplineId = Level 2 (Sub-Folder)
   const [activeDiscipline, setActiveDiscipline] = useState<GovtDisciplineId | null>(initialDiscipline);
@@ -152,12 +165,36 @@ export const GovernmentExamsView: React.FC<GovernmentExamsViewProps> = ({
   const [subSearch, setSubSearch] = useState('');
   const [selectedFaculty, setSelectedFaculty] = useState<string>('All');
   const [viewMode, setViewMode] = useState<'grid' | 'list'>('grid');
+  const [activityRevision, setActivityRevision] = useState(0);
+  const lastTrackedDiscipline = useRef<{ id: GovtDisciplineId | null; scope: string }>({ id: null, scope: 'guest' });
+
+  // Refresh ordering when activity changes in this tab or another open tab.
+  useEffect(() => {
+    const refreshActivity = () => setActivityRevision((revision) => revision + 1);
+    window.addEventListener(GOVT_FOLDER_ACTIVITY_EVENT, refreshActivity);
+    window.addEventListener('storage', refreshActivity);
+    return () => {
+      window.removeEventListener(GOVT_FOLDER_ACTIVITY_EVENT, refreshActivity);
+      window.removeEventListener('storage', refreshActivity);
+    };
+  }, []);
 
   useEffect(() => {
     if (initialDiscipline !== undefined) {
       setActiveDiscipline(initialDiscipline);
     }
   }, [initialDiscipline]);
+
+  // Count both button navigation and direct URL navigation once per scope.
+  useEffect(() => {
+    const scope = userId || 'guest';
+    const previous = lastTrackedDiscipline.current;
+    if (activeDiscipline && (previous.id !== activeDiscipline || previous.scope !== scope)) {
+      // The parent records course opens; this view only owns discipline folders.
+      recordGovtFolderOpen(`discipline:${activeDiscipline}`, userId);
+    }
+    lastTrackedDiscipline.current = { id: activeDiscipline, scope };
+  }, [activeDiscipline, userId]);
 
   const handleSelectDiscipline = (discId: GovtDisciplineId | null) => {
     setActiveDiscipline(discId);
@@ -168,6 +205,16 @@ export const GovernmentExamsView: React.FC<GovernmentExamsViewProps> = ({
     }
     window.scrollTo({ top: 0, behavior: 'smooth' });
   };
+
+  const folderActivity = useMemo(() => getGovtFolderActivity(userId), [userId, activityRevision]);
+
+  const sortedDisciplines = useMemo(
+    () =>
+      GOVT_DISCIPLINES.map((discipline, index) => ({ discipline, index }))
+        .sort((a, b) => compareGovtActivity(folderActivity[`discipline:${a.discipline.id}`], folderActivity[`discipline:${b.discipline.id}`]) || a.index - b.index)
+        .map(({ discipline }) => discipline),
+    [folderActivity]
+  );
 
   // Map courses to disciplines
   const disciplineStats = useMemo(() => {
@@ -228,29 +275,37 @@ export const GovernmentExamsView: React.FC<GovernmentExamsViewProps> = ({
   // Scoped filtered courses for Level 2
   const filteredSubCourses = useMemo(() => {
     const q = (subSearch || '').trim().toLowerCase();
-    return currentDisciplineCourses.filter((c) => {
-      const matchFaculty = selectedFaculty === 'All' || c.teacher?.trim() === selectedFaculty;
-      const matchQuery =
-        q === '' ||
-        (c.name || '').toLowerCase().includes(q) ||
-        (c.subname || '').toLowerCase().includes(q) ||
-        (c.teacher || '').toLowerCase().includes(q);
-      return matchFaculty && matchQuery;
-    });
-  }, [currentDisciplineCourses, selectedFaculty, subSearch]);
+    return currentDisciplineCourses
+      .map((course, index) => ({ course, index }))
+      .filter(({ course: c }) => {
+        const matchFaculty = selectedFaculty === 'All' || c.teacher?.trim() === selectedFaculty;
+        const matchQuery =
+          q === '' ||
+          (c.name || '').toLowerCase().includes(q) ||
+          (c.subname || '').toLowerCase().includes(q) ||
+          (c.teacher || '').toLowerCase().includes(q);
+        return matchFaculty && matchQuery;
+      })
+      .sort((a, b) => compareGovtActivity(folderActivity[`course:${a.course.id}`], folderActivity[`course:${b.course.id}`]) || a.index - b.index)
+      .map(({ course }) => course);
+  }, [currentDisciplineCourses, selectedFaculty, subSearch, folderActivity]);
 
   // Global search results across all govt courses (when searching in Level 1)
   const globalSearchResults = useMemo(() => {
     const q = (globalSearch || '').trim().toLowerCase();
     if (!q) return [];
-    return courses.filter(
-      (c) =>
-        (c.name || '').toLowerCase().includes(q) ||
-        (c.subname || '').toLowerCase().includes(q) ||
-        (c.teacher || '').toLowerCase().includes(q) ||
-        (c.subject || '').toLowerCase().includes(q)
-    );
-  }, [courses, globalSearch]);
+    return courses
+      .map((course, index) => ({ course, index }))
+      .filter(
+        ({ course: c }) =>
+          (c.name || '').toLowerCase().includes(q) ||
+          (c.subname || '').toLowerCase().includes(q) ||
+          (c.teacher || '').toLowerCase().includes(q) ||
+          (c.subject || '').toLowerCase().includes(q)
+      )
+      .sort((a, b) => compareGovtActivity(folderActivity[`course:${a.course.id}`], folderActivity[`course:${b.course.id}`]) || a.index - b.index)
+      .map(({ course }) => course);
+  }, [courses, globalSearch, folderActivity]);
 
   return (
     <div className="gov-exams-container animate-fade-in" style={{ padding: '8px 0 48px' }}>
@@ -376,24 +431,6 @@ export const GovernmentExamsView: React.FC<GovernmentExamsViewProps> = ({
                 <Layers width={14} height={14} style={{ color: 'var(--accent)' }} />
                 <span>
                   {activeDiscipline ? currentDisciplineCourses.length : overallStats.totalCourses} Batches
-                </span>
-              </div>
-              <span style={{ color: 'var(--border)' }}>•</span>
-              <div style={{ display: 'flex', alignItems: 'center', gap: '5px', fontSize: '12px', fontWeight: 600, color: 'var(--text-muted)' }}>
-                <Video width={13} height={13} style={{ color: '#10b981' }} />
-                <span>
-                  {activeDiscipline
-                    ? disciplineStats.get(activeDiscipline)?.videoCount || 0
-                    : overallStats.totalVideos}+ Videos
-                </span>
-              </div>
-              <span style={{ color: 'var(--border)' }}>•</span>
-              <div style={{ display: 'flex', alignItems: 'center', gap: '5px', fontSize: '12px', fontWeight: 600, color: 'var(--text-muted)' }}>
-                <FileText width={13} height={13} style={{ color: '#06b6d4' }} />
-                <span>
-                  {activeDiscipline
-                    ? disciplineStats.get(activeDiscipline)?.pdfCount || 0
-                    : overallStats.totalPDFs}+ PDFs
                 </span>
               </div>
             </div>
@@ -536,7 +573,7 @@ export const GovernmentExamsView: React.FC<GovernmentExamsViewProps> = ({
                     Explore by Subject Discipline
                   </h2>
                   <p style={{ fontSize: '13px', color: 'var(--text-muted)', margin: '4px 0 0' }}>
-                    Select a subject folder below to discover specialized faculty batches and focused study material.
+                    Select a subject folder below to discover specialized faculty batches and focused study material. Your frequently opened folders appear first.
                   </p>
                 </div>
 
@@ -547,7 +584,7 @@ export const GovernmentExamsView: React.FC<GovernmentExamsViewProps> = ({
                       gap: '20px',
                     }}
                   >
-                    {GOVT_DISCIPLINES.map((disc) => {
+                    {sortedDisciplines.map((disc) => {
                       const stat = disciplineStats.get(disc.id) || { courses: [], videoCount: 0, pdfCount: 0 };
                       const DiscIcon = disc.icon;
 
@@ -984,26 +1021,48 @@ const CourseCardItem: React.FC<CourseCardItemProps> = ({
         position: 'relative',
       }}
     >
-      {/* Thumbnail with overlay badge */}
-      <div style={{ position: 'relative', width: '100%', height: '148px', overflow: 'hidden', background: 'var(--bg-card-subtle)' }}>
-        <img
-          src={thumbUrl}
-          alt={course.name}
-          loading="lazy"
-          onError={(e) => {
-            const target = e.currentTarget;
-            const fallback = `/thumbnails/default_course_${theme === 'dark' ? 'dark' : 'light'}.svg`;
-            if (!target.src.includes('default_course')) {
-              target.src = fallback;
-            }
-          }}
+      {/* Course Banner Header */}
+      <div
+        style={{
+          position: 'relative',
+          width: '100%',
+          padding: '18px 20px 14px',
+          background: 'linear-gradient(135deg, rgba(204, 120, 92, 0.14) 0%, rgba(204, 120, 92, 0.03) 100%)',
+          borderBottom: '1px solid var(--border)',
+          display: 'flex',
+          alignItems: 'center',
+          justifyContent: 'space-between',
+          gap: '12px',
+        }}
+      >
+        <div
           style={{
-            width: '100%',
-            height: '100%',
-            objectFit: 'cover',
-            transition: 'transform 0.35s ease',
+            width: '38px',
+            height: '38px',
+            borderRadius: 'var(--r-md)',
+            background: 'rgba(204, 120, 92, 0.15)',
+            display: 'flex',
+            alignItems: 'center',
+            justifyContent: 'center',
+            color: 'var(--accent)',
+            flexShrink: 0,
           }}
-        />
+        >
+          <BookOpen width={18} height={18} />
+        </div>
+        <span
+          style={{
+            fontSize: '11px',
+            fontWeight: 700,
+            color: 'var(--accent)',
+            background: 'var(--bg-card)',
+            border: '1px solid var(--border)',
+            padding: '3px 8px',
+            borderRadius: 'var(--r-pill)',
+          }}
+        >
+          {stats.videos} Lectures
+        </span>
 
         {/* Top-Right Tag */}
         {isCombinedHighlight && (
@@ -1097,29 +1156,6 @@ const CourseCardItem: React.FC<CourseCardItemProps> = ({
         </div>
 
         <div>
-          {/* Metadata Metrics Cluster: Video Count & PDF Count */}
-          <div
-            style={{
-              display: 'grid',
-              gridTemplateColumns: '1fr 1fr',
-              gap: '8px',
-              padding: '8px 10px',
-              borderRadius: 'var(--r-md)',
-              background: 'var(--bg-card-subtle)',
-              border: '1px solid var(--border)',
-              marginBottom: '12px',
-            }}
-          >
-            <div style={{ display: 'flex', alignItems: 'center', gap: '6px', fontSize: '11.5px', fontWeight: 600, color: 'var(--text)' }}>
-              <Video width={13} height={13} style={{ color: '#10b981' }} />
-              <span>{stats.videos} Videos</span>
-            </div>
-            <div style={{ display: 'flex', alignItems: 'center', gap: '6px', fontSize: '11.5px', fontWeight: 600, color: 'var(--text)' }}>
-              <FileText width={13} height={13} style={{ color: '#06b6d4' }} />
-              <span>{stats.resources} PDFs</span>
-            </div>
-          </div>
-
           {/* Open Course Action Hint */}
           <div
             style={{
@@ -1179,24 +1215,21 @@ const CourseListItem: React.FC<CourseListItemProps> = ({
       className="course-list-item-hover"
     >
       <div style={{ display: 'flex', alignItems: 'center', gap: '14px', minWidth: 0 }}>
-        <img
-          src={thumbUrl}
-          alt={course.name}
-          loading="lazy"
-          onError={(e) => {
-            const target = e.currentTarget;
-            const fallback = `/thumbnails/default_course_${theme === 'dark' ? 'dark' : 'light'}.svg`;
-            if (!target.src.includes('default_course')) target.src = fallback;
-          }}
+        <div
           style={{
-            width: '64px',
-            height: '42px',
+            width: '40px',
+            height: '40px',
             borderRadius: 'var(--r-md)',
-            objectFit: 'cover',
+            background: 'rgba(204, 120, 92, 0.12)',
+            display: 'flex',
+            alignItems: 'center',
+            justifyContent: 'center',
+            color: 'var(--accent)',
             flexShrink: 0,
-            border: '1px solid var(--border)',
           }}
-        />
+        >
+          <BookOpen width={18} height={18} />
+        </div>
 
         <div style={{ minWidth: 0 }}>
           <h4
@@ -1214,39 +1247,13 @@ const CourseListItem: React.FC<CourseListItemProps> = ({
             {course.name}
           </h4>
           <div style={{ display: 'flex', alignItems: 'center', gap: '8px', fontSize: '12px', color: 'var(--text-muted)' }}>
-            {course.teacher && <span>👤 {course.teacher}</span>}
+            {course.teacher && <span>{course.teacher}</span>}
             {course.subname && <span>• {course.subname}</span>}
           </div>
         </div>
       </div>
 
       <div style={{ display: 'flex', alignItems: 'center', gap: '16px', flexShrink: 0 }}>
-        {/* Stats Pill */}
-        <div
-          style={{
-            display: 'flex',
-            alignItems: 'center',
-            gap: '10px',
-            padding: '5px 12px',
-            borderRadius: 'var(--r-pill)',
-            background: 'var(--bg-card-subtle)',
-            border: '1px solid var(--border)',
-            fontSize: '11.5px',
-            fontWeight: 600,
-            color: 'var(--text)',
-          }}
-        >
-          <span style={{ display: 'inline-flex', alignItems: 'center', gap: '4px' }}>
-            <Video width={12} height={12} style={{ color: '#10b981' }} />
-            <span>{stats.videos} vids</span>
-          </span>
-          <span style={{ color: 'var(--border)' }}>•</span>
-          <span style={{ display: 'inline-flex', alignItems: 'center', gap: '4px' }}>
-            <FileText width={12} height={12} style={{ color: '#06b6d4' }} />
-            <span>{stats.resources} pdfs</span>
-          </span>
-        </div>
-
         <button
           style={{
             background: 'none',

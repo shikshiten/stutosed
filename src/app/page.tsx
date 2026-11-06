@@ -23,6 +23,7 @@ import { createClient } from '@/lib/supabase/client';
 import { pullCloudUserData, syncLectureWatched } from '@/lib/supabaseSync';
 import {
   BookOpen,
+  BookmarkCheck,
   Send,
   Sparkles,
   Play,
@@ -113,58 +114,24 @@ const ResumeThumbnail: React.FC<{
   courseName?: string;
   lectureTitle?: string;
   theme?: 'light' | 'dark';
-}> = ({ thumb, courseName, lectureTitle, theme }) => {
-  const [hasError, setHasError] = useState(false);
-
-  const resolvedSrc = useMemo(() => {
-    let src = thumb || '';
-    if (!src && lectureTitle) {
-      src = getDynamicThumbnailUrl(lectureTitle, courseName, theme);
-    } else if (!src && courseName) {
-      src = getSubjectThumbnail(courseName, null, courseName, theme);
-    } else if (src && src.endsWith('.svg') && theme) {
-      if (src.includes('_dark.svg') || src.includes('_light.svg')) {
-        src = src.replace(/_(light|dark)\.svg$/, `_${theme}.svg`);
-      }
-    }
-    return src;
-  }, [thumb, courseName, lectureTitle, theme]);
-
-  if (hasError || !resolvedSrc) {
-    return (
-      <div
-        style={{
-          width: '84px',
-          height: '56px',
-          borderRadius: 'var(--r-md)',
-          background: 'linear-gradient(135deg, rgba(204,120,92,0.18), rgba(204,120,92,0.06))',
-          border: '1px solid rgba(204,120,92,0.25)',
-          display: 'flex',
-          alignItems: 'center',
-          justifyContent: 'center',
-          color: 'var(--accent)',
-          flexShrink: 0,
-        }}
-      >
-        <Play width={20} height={20} fill="currentColor" />
-      </div>
-    );
-  }
-
+}> = () => {
   return (
-    <img
-      src={resolvedSrc}
-      alt=""
-      onError={() => setHasError(true)}
+    <div
       style={{
         width: '84px',
         height: '56px',
         borderRadius: 'var(--r-md)',
-        objectFit: 'cover',
-        border: '1px solid var(--border)',
+        background: 'linear-gradient(135deg, rgba(204,120,92,0.18), rgba(204,120,92,0.06))',
+        border: '1px solid rgba(204,120,92,0.25)',
+        display: 'flex',
+        alignItems: 'center',
+        justifyContent: 'center',
+        color: 'var(--accent)',
         flexShrink: 0,
       }}
-    />
+    >
+      <Play width={20} height={20} fill="currentColor" />
+    </div>
   );
 };
 
@@ -1095,8 +1062,6 @@ export default function HomePage() {
         onClose={() => setIsSidebarOpen(false)}
         theme={theme}
         onToggleTheme={handleToggleTheme}
-        watchedCount={watchedUrls.size}
-        totalVideos={stats.totalVideos}
         user={user}
         userName={userName}
         activeView={activeView}
@@ -2108,6 +2073,11 @@ export default function HomePage() {
                     style={{
                       background: avatarBg,
                       color: '#ffffff',
+                      display: 'flex',
+                      alignItems: 'center',
+                      justifyContent: 'center',
+                      lineHeight: 1,
+                      textAlign: 'center',
                     }}
                   >
                     {initials}
@@ -2259,85 +2229,87 @@ export default function HomePage() {
               </div>
             </div>
 
-            {/* Learning Metrics Grid */}
-            <div className="profile-stats-grid">
-              <div className="profile-stat-card">
-                <div style={{ display: 'flex', alignItems: 'center', gap: '6px', color: 'var(--accent)' }}>
-                  <CheckCircle2 width={15} height={15} />
-                  <span className="stat-header-label" style={{ fontSize: '11px', fontWeight: 700, textTransform: 'uppercase' }}>Watched</span>
-                </div>
-                <div className="profile-stat-num">
-                  {watchedUrls.size}
-                </div>
-                <div className="stat-sub-label" style={{ fontSize: '11.5px', color: 'var(--text-muted)' }}>
-                  lectures completed
-                </div>
-              </div>
-
-              <div className="profile-stat-card">
-                <div style={{ display: 'flex', alignItems: 'center', gap: '6px', color: 'var(--green)' }}>
-                  <ShieldCheck width={15} height={15} />
-                  <span className="stat-header-label" style={{ fontSize: '11px', fontWeight: 700, textTransform: 'uppercase' }}>Completion</span>
-                </div>
-                <div className="profile-stat-num">
-                  {Math.min(Math.round((watchedUrls.size / (stats.totalVideos || 1)) * 100), 100)}%
-                </div>
-                <div className="stat-sub-label" style={{ fontSize: '11.5px', color: 'var(--text-muted)' }}>
-                  study progress
-                </div>
-              </div>
-
-              <div className="profile-stat-card">
-                <div style={{ display: 'flex', alignItems: 'center', gap: '6px', color: 'var(--beu-blue)' }}>
-                  <Layers width={15} height={15} />
-                  <span className="stat-header-label" style={{ fontSize: '11px', fontWeight: 700, textTransform: 'uppercase' }}>Batches</span>
-                </div>
-                <div className="profile-stat-num">
-                  {stats.totalCourses}
-                </div>
-                <div className="stat-sub-label" style={{ fontSize: '11.5px', color: 'var(--text-muted)' }}>
-                  active tracks
-                </div>
-              </div>
-
-              <div className="profile-stat-card">
-                <div style={{ display: 'flex', alignItems: 'center', gap: '6px', color: 'var(--orange)' }}>
-                  <FileText width={15} height={15} />
-                  <span className="stat-header-label" style={{ fontSize: '11px', fontWeight: 700, textTransform: 'uppercase' }}>PDF Notes</span>
-                </div>
-                <div className="profile-stat-num">
-                  {stats.totalPDFs}
-                </div>
-                <div className="stat-sub-label" style={{ fontSize: '11.5px', color: 'var(--text-muted)' }}>
-                  curated notes
-                </div>
-              </div>
-            </div>
-
-            {/* Clear Watched History button */}
-            <div style={{ display: 'flex', justifyContent: 'flex-end' }}>
-              <button
-                onClick={() => {
-                  if (confirm('Are you sure you want to reset your watched history?')) {
-                    try {
-                      localStorage.removeItem(WATCHED_KEY);
-                    } catch {}
-                    setWatchedUrls(new Set());
-                  }
-                }}
+            {/* Quick Navigation Cards */}
+            <div style={{
+              display: 'grid',
+              gridTemplateColumns: 'repeat(auto-fit, minmax(240px, 1fr))',
+              gap: '14px',
+            }}>
+              <div
+                onClick={() => handleViewChange('library')}
                 style={{
-                  fontSize: '12px',
-                  color: 'var(--text-muted)',
-                  border: '1px solid var(--border)',
-                  padding: '7px 16px',
-                  borderRadius: 'var(--r-md)',
-                  cursor: 'pointer',
                   background: 'var(--bg-card)',
-                  transition: 'all 0.2s',
+                  border: '1px solid var(--border)',
+                  borderRadius: 'var(--r-xl)',
+                  padding: '18px 20px',
+                  display: 'flex',
+                  alignItems: 'center',
+                  gap: '14px',
+                  cursor: 'pointer',
+                  boxShadow: 'var(--sh-card)',
                 }}
+                className="profile-action-card"
               >
-                Reset Watched Progress
-              </button>
+                <div style={{
+                  width: '42px',
+                  height: '42px',
+                  borderRadius: 'var(--r-lg)',
+                  background: 'rgba(204,120,92,0.12)',
+                  color: 'var(--accent)',
+                  display: 'flex',
+                  alignItems: 'center',
+                  justifyContent: 'center',
+                  flexShrink: 0,
+                }}>
+                  <BookmarkCheck width={20} height={20} />
+                </div>
+                <div>
+                  <div style={{ fontSize: '14px', fontWeight: 700, color: 'var(--text)', marginBottom: '2px' }}>
+                    My Library
+                  </div>
+                  <div style={{ fontSize: '12px', color: 'var(--text-muted)' }}>
+                    Access your bookmarked courses & saved lectures
+                  </div>
+                </div>
+              </div>
+
+              <div
+                onClick={() => handleViewChange('help')}
+                style={{
+                  background: 'var(--bg-card)',
+                  border: '1px solid var(--border)',
+                  borderRadius: 'var(--r-xl)',
+                  padding: '18px 20px',
+                  display: 'flex',
+                  alignItems: 'center',
+                  gap: '14px',
+                  cursor: 'pointer',
+                  boxShadow: 'var(--sh-card)',
+                }}
+                className="profile-action-card"
+              >
+                <div style={{
+                  width: '42px',
+                  height: '42px',
+                  borderRadius: 'var(--r-lg)',
+                  background: 'rgba(59,130,246,0.12)',
+                  color: 'var(--beu-blue)',
+                  display: 'flex',
+                  alignItems: 'center',
+                  justifyContent: 'center',
+                  flexShrink: 0,
+                }}>
+                  <HelpCircle width={20} height={20} />
+                </div>
+                <div>
+                  <div style={{ fontSize: '14px', fontWeight: 700, color: 'var(--text)', marginBottom: '2px' }}>
+                    Help & Community
+                  </div>
+                  <div style={{ fontSize: '12px', color: 'var(--text-muted)' }}>
+                    Get support, report issues & join community
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         )}

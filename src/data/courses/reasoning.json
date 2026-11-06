@@ -8,7 +8,7 @@
   "tabs": [
     {
       "id": "videos",
-      "label": "▶ Videos",
+      "label": "Videos",
       "items": [
         {
           "label": "Bank (VOD) - Class - 01 | Alphabetical Series [21-Dec-2022 11:00]",
@@ -1520,7 +1520,7 @@
     },
     {
       "id": "pdfs",
-      "label": "📄 PDFs",
+      "label": "PDFs",
       "items": [
         {
           "label": "Reas (VOD) - 03 June 2024 Class PNG @cwexte",

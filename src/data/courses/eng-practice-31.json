@@ -8,7 +8,7 @@
   "tabs": [
     {
       "id": "videos",
-      "label": "▶ Videos",
+      "label": "Videos",
       "items": [
         {
           "id": "eng-practice-31-turbo-v-1",
@@ -1074,7 +1074,7 @@
         },
         {
           "id": "eng-practice-31-turbo-v-178",
-          "label": "[The Vocab Wits Batch] SSC English One Shot 🔥 Voice, Narration, Error",
+          "label": "[The Vocab Wits Batch] SSC English One Shot Voice, Narration, Error",
           "url": "https://www.youtube.com/embed/J3TMEaQRgQs",
           "type": "youtube"
         },
@@ -1166,7 +1166,7 @@
     },
     {
       "id": "pdfs",
-      "label": "📄 PDFs",
+      "label": "PDFs",
       "items": [
         {
           "id": "eng-practice-31-turbo-p-194",

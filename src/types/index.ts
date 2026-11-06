@@ -1,4 +1,4 @@
-export type MediaURLType = 'hls' | 'youtube' | 'pdf' | 'external' | 'streamp2p' | 'unknown';
+export type MediaURLType = 'hls' | 'youtube' | 'pdf' | 'external' | 'streamp2p' | 'abyss' | 'unknown';
 
 export interface ServerOption {
   name: string;

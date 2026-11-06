@@ -8,7 +8,7 @@
   "tabs": [
     {
       "id": "videos",
-      "label": "▶ Videos",
+      "label": "Videos",
       "items": [
         {
           "url": "https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6364211602112/6364211602112.m3u8",
@@ -1474,7 +1474,7 @@
     },
     {
       "id": "pdfs",
-      "label": "📄 PDFs",
+      "label": "PDFs",
       "items": [
         {
           "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/673346eac1a19_ratio_12_November.pdf",
