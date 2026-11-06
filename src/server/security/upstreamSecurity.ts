@@ -178,6 +178,7 @@ export function isAllowedUpstream(rawUrl: string): boolean {
 
 // ── Origin & Anti-Hotlinking Protection ──────────────────────────────────────────
 const ALLOWED_APP_DOMAINS = [
+  'stutosed.de5.net',
   'course.stutosed.in',
   'stutosed.in',
   'stutosed.vercel.app',

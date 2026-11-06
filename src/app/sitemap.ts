@@ -2,7 +2,7 @@ import { MetadataRoute } from 'next';
 import { INITIAL_COURSES } from '@/lib/coursesData';
 
 export default function sitemap(): MetadataRoute.Sitemap {
-  const baseUrl = 'https://stutosed.vercel.app';
+  const baseUrl = process.env.NEXT_PUBLIC_APP_URL || 'https://stutosed.de5.net';
 
   const staticPages: MetadataRoute.Sitemap = [
     {
