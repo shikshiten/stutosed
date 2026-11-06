@@ -70,7 +70,7 @@
   --font-display: 'Atyp Display', 'Atyp Text', sans-serif;
   --font-serif: 'Atyp Display', 'Atyp Text', sans-serif;
   --font-sans: 'Atyp Text', 'Atyp Display', sans-serif;
-  --font-brand: var(--font-brand), 'Space Grotesk', sans-serif;
+  --font-brand: 'Atyp Display', 'Space Grotesk', sans-serif;
   --font-mono: 'JetBrains Mono', ui-monospace, monospace;
 
 

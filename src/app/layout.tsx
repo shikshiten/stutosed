@@ -1,13 +1,5 @@
 import type { Metadata } from 'next';
-import { Space_Grotesk } from 'next/font/google';
 import './globals.css';
-
-const spaceGrotesk = Space_Grotesk({
-  subsets: ['latin'],
-  weight: ['600', '700'],
-  variable: '--font-brand',
-  display: 'swap',
-});
 
 export const metadata: Metadata = {
   metadataBase: new URL('https://stutosed.de5.net'),
@@ -55,7 +47,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" data-theme="light" suppressHydrationWarning className={spaceGrotesk.variable}>
+    <html lang="en" data-theme="light" suppressHydrationWarning>
       <head>
         <link rel="icon" type="image/svg+xml" href="/favicon.svg?v=stutosed-white" />
         <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png?v=stutosed-white" />
