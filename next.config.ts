@@ -10,10 +10,6 @@ const securityHeaders = [
     value: 'max-age=63072000; includeSubDomains; preload',
   },
   {
-    key: 'X-Frame-Options',
-    value: 'SAMEORIGIN',
-  },
-  {
     key: 'X-Content-Type-Options',
     value: 'nosniff',
   },
@@ -28,9 +24,16 @@ const securityHeaders = [
 ];
 
 const nextConfig: NextConfig = {
+  output: 'standalone',
   devIndicators: false,
   eslint: {
     ignoreDuringBuilds: true,
+  },
+  webpack: (config, { dev }) => {
+    if (dev) {
+      config.cache = false;
+    }
+    return config;
   },
   async headers() {
     return [

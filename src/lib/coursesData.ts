@@ -26,11 +26,21 @@ export async function loadCourseDetails(courseId: string): Promise<Course | null
   if (courseDetailsCache.has(courseId)) {
     return courseDetailsCache.get(courseId)!;
   }
+  if (typeof window === 'undefined') {
+    return getCourseById(courseId) || null;
+  }
   try {
-    const courseModule = await import(`@/data/courses/${courseId}.json`);
-    const course = (courseModule.default || courseModule) as Course;
-    courseDetailsCache.set(courseId, course);
-    return course;
+    const res = await fetch(`/api/v1/course?id=${encodeURIComponent(courseId)}`);
+    if (!res.ok) {
+      return getCourseById(courseId) || null;
+    }
+    const json = await res.json();
+    const course = (json?.data || json) as Course;
+    if (course && course.id) {
+      courseDetailsCache.set(courseId, course);
+      return course;
+    }
+    return getCourseById(courseId) || null;
   } catch (err) {
     console.warn(`[coursesData] Failed to lazy load course details for: ${courseId}`, err);
     return getCourseById(courseId) || null;

@@ -182,6 +182,8 @@ const ALLOWED_APP_DOMAINS = [
   'course.stutosed.in',
   'stutosed.in',
   'stutosed.vercel.app',
+  'run.app',
+  'google.com',
   'localhost',
   '127.0.0.1',
 ];
